@@ -1,0 +1,169 @@
+<!-- HTML header for doxygen 1.9.1-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>LPV: 快速上手</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/SVG"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<link href="lpv_stylesheet.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-custom.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 100px;">
+  <td id="projectlogo" style="padding-left: 1em; text-align: center; vertical-align: middle;"><img alt="Logo" src="lpv_logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em; vertical-align: bottom; padding-bottom: 5px; ">
+   <!--<div id="projectname">LPV-->
+   <!--</div>-->
+   <div id="projectbrief">Leaper Vision Toolkit</div>
+   <div id="projectbrief"><a href="../../cn/html/index.html">中文</a> / <a href="../../en/html/index.html">English</a></div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="PageDoc"><div class="header">
+  <div class="headertitle">
+<div class="title">快速上手 </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p><a class="anchor" id="md_Z__stonewall_doc_cn_t01_quick_guide"></a> </p><h1>安装</h1>
+<ol type="1">
+<li>解压 lpv_xxxx.zip 文件到任意目录。</li>
+<li>[可选] 如果未安装 Visual C++ Redistributable Package 14 或以上版本，需从<a href="https://support.microsoft.com/en-us/topic/the-latest-supported-visual-c-downloads-2647da03-1eea-4433-9aff-95f26a218cc0">微软官方网站</a>下载安装，也可以用我们提供的<a href="http://fileserver.hzleaper.com:8085/d/f3af040915194d27a993/">下载链接</a>下载。</li>
+<li>按照所需的开发平台 (x86 或者 x64)，需选择 runner/x86 或者 runner/x64 作为 LPV 运行目录，然后注册和使用该目录下的 LPV dll。</li>
+</ol>
+<h1>使用 License 文件注册</h1>
+<ol type="1">
+<li>运行 LPV 运行目录下的 lpvKeyTool.exe ，生成 lpv.lic 文件。</li>
+<li>将生成的 lpv.lic 文件放给我们或者您的 LPV SDK 技术支持，我们将为您的机器注册，发回 lpv.lic 文件。</li>
+<li>将该 lpv.lic 文件放在 LPV 根目录下 (./runner)，保证名称与 “lpv.lic” 完全一致。</li>
+<li>右键 LPV 根目录下的 reg_run_as_admin.bat 文件，选择以管理员运行，在所有平台(x64和x86)下注册所有授权的 LPV dll。</li>
+<li>右键 LPV 运行目录下的 reg32and64_run_as_admin.bat 文件，选择以管理员运行，在所需平台下注册所有授权的 LPV dll。</li>
+</ol>
+<h1>使用加密狗注册</h1>
+<ol type="1">
+<li>插入 LPV 加密狗，检查加密狗是否亮灯。</li>
+<li>右键 LPV 根目录下的 reg_run_as_admin.bat 文件，选择以管理员运行，在所有平台(x64和x86)下注册所有授权的 LPV dll。</li>
+<li>右键 LPV 运行目录下的 reg32and64_run_as_admin.bat 文件，选择以管理员运行，在所需平台下注册所有授权的 LPV dll。</li>
+</ol>
+<h1>如何添加库到 Visual Studio 工程</h1>
+<h2>C<code>#</code></h2>
+<ol type="1">
+<li>右键工程的 Reference 项，点击 Add Reference</li>
+<li>选择 COM 页面，找到 LPVCoreLib（必须）及其他希望加入的 LPVXXXLib 算法库，勾选后点击 OK 。</li>
+<li>在代码文件中添加 using <a class="el" href="namespace_l_p_v_core_lib.html" title="LPV 基础模块，提供图像、ROI、绘制等基础功能。">LPVCoreLib</a>; 以使用 LImage 等基础类。 <div class="fragment"><div class="line"> {c#}</div>
+<div class="line">// 添加using</div>
+<div class="line">using LPVCoreLib;</div>
+<div class="line"> </div>
+<div class="line">// 添加算法类声明并实例化</div>
+<div class="line">LMatch m_lmatch = new LMatch();</div>
+<div class="line"> </div>
+<div class="line">// 调用接口函数，如下，设置模板匹配数量，设置角度范围</div>
+<div class="line">m_lmatch.MaxCount = 1;</div>
+<div class="line">m_lmatch.AngleTolerance = 180;</div>
+<div class="line"> </div>
+<div class="line">// 调用接口，处理返回错误码，如下，进行模板匹配</div>
+<div class="line">LPVErrorCode errCode = m_lmatch.Match(m_source_img, (LRegion)m_roi, out m_match_results);</div>
+<div class="line">if (errCode != LPVErrorCode::LPVNoError) {}</div>
+</div><!-- fragment --></li>
+</ol>
+<h2>C++ (MFC)</h2>
+<ol type="1">
+<li>拷贝 demo/mfcdemo/Wrappers 文件夹到工程目录，或添加该目录到工程配置 include 中</li>
+<li>在代码中添加对所需类对应的 .h 文件，创建包装类和对应的 dispatch，以 LImage 为例： <div class="fragment"><div class="line"> {c++}</div>
+<div class="line">// 添加include文件</div>
+<div class="line">#include &quot;../Wrappers/LPVPat/CLMatch.h&quot;</div>
+<div class="line"> </div>
+<div class="line">// 添加算法类声明，这个包装类会在构造函数中默认调用 CreateDispatch 生成实例</div>
+<div class="line">CLMatch m_lmatch;</div>
+<div class="line">// 或者也可以手动调用 CreateDispatch，如下：</div>
+<div class="line">// CLMatch m_lmatch(false);</div>
+<div class="line">// // ... 进行一些其他操作，随后再生成实例</div>
+<div class="line">// m_lmatch.CreateDispatch(__uuidof(LMatch));</div>
+<div class="line"> </div>
+<div class="line">// 调用接口函数，如下，设置模板匹配数量，设置角度范围</div>
+<div class="line">m_lmatch.put_MaxCount(1);</div>
+<div class="line">m_lmatch.put_AngleTolerance(180);</div>
+<div class="line">    </div>
+<div class="line">// 调用接口，处理返回错误码，如下，进行模板匹配</div>
+<div class="line">LPVErrorCode errCode = (LPVErrorCode)m_lmatch.Match(m_source_img, m_roi, (LPDISPATCH*)&amp;m_match_results);</div>
+<div class="line">if (errCode != LPVErrorCode::LPVNoError) {}</div>
+</div><!-- fragment --></li>
+</ol>
+<h2>C++ (QT)</h2>
+<ol type="1">
+<li>您可以使用 Active Qt 框架生成 LPV 类的 QAxObject 形式的封装，请参照 QT 的<a href="https://doc.qt.io/qt-5/activeqt-container.html">官方教程</a>。</li>
+<li>若您希望继续使用我们提供的 MFC 封装，您需要执行以上的 C++ (MFC) 中的所有步骤。</li>
+<li>然后，拷贝 demo/mfcdemo/Wrappers 文件夹中的 framework.h 到你的 QT 项目的代码文件夹，并添加到项目中；</li>
+</ol>
+<ol type="1">
+<li>项目属性中需要修改配置：<ul>
+<li>通用-&gt;使用 MFC，修改成“在共享DLL中使用MFC”；</li>
+<li>通用-&gt;字符集，修改成“不设置”；</li>
+<li>C/C++-&gt;预编译头文件，修改成“不使用预编译头文件”；</li>
+</ul>
+</li>
+<li>所有 cpp 文件中都需要首先 include “framework.h”；</li>
+</ol>
+<p>完成以上步骤之后，即可按照 C++(MFC) 的相同的方法来写代码。 </p>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- HTML footer for doxygen 1.9.1-->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+© 2021 <a href="http://www.hzleaper.com/">杭州利珀科技有限公司</a>
+</small></address>
+</body>
+</html>

@@ -1,0 +1,513 @@
+<!-- HTML header for doxygen 1.9.1-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>LPV: ILMatch接口 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/SVG"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<link href="lpv_stylesheet.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-custom.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 100px;">
+  <td id="projectlogo" style="padding-left: 1em; text-align: center; vertical-align: middle;"><img alt="Logo" src="lpv_logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em; vertical-align: bottom; padding-bottom: 5px; ">
+   <!--<div id="projectname">LPV-->
+   <!--</div>-->
+   <div id="projectbrief">Leaper Vision Toolkit</div>
+   <div id="projectbrief"><a href="../../cn/html/index.html">中文</a> / <a href="../../en/html/index.html">English</a></div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespace_l_p_v_pat_lib.html">LPVPatLib</a></li><li class="navelem"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html">ILMatch</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#properties">属性</a>  </div>
+  <div class="headertitle">
+<div class="title">ILMatch接口 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>该接口提供模板匹配的功能。  
+ <a href="interface_l_p_v_pat_lib_1_1_i_l_match.html#details">更多...</a></p>
+<div class="dynheader">
+类 ILMatch 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="interface_l_p_v_pat_lib_1_1_i_l_match.png" alt=""/>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:aee8dc02e7627b4813e8304d4b0939398"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#aee8dc02e7627b4813e8304d4b0939398">GetPatCenter</a> ([out] double *pCenX, [out] double *pCenY, [out] double *pAngle)</td></tr>
+<tr class="separator:aee8dc02e7627b4813e8304d4b0939398"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d127ea0cfa9e73edc423e7e78eb7930"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a5d127ea0cfa9e73edc423e7e78eb7930">GetPatImage</a> ([out] <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *pImg)</td></tr>
+<tr class="separator:a5d127ea0cfa9e73edc423e7e78eb7930"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a160bf0d3f54c6f3f9de032ff6a32e131"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a160bf0d3f54c6f3f9de032ff6a32e131">IsLearnt</a> ([out, retval] VARIANT_BOOL *pVal)</td></tr>
+<tr class="separator:a160bf0d3f54c6f3f9de032ff6a32e131"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96582e8df9f7dc3157955f152a7a2df5"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a96582e8df9f7dc3157955f152a7a2df5">Learn</a> ([in] <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *pImg, [in] <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a> *pRegion, [out, retval] enum <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> *pError)</td></tr>
+<tr class="separator:a96582e8df9f7dc3157955f152a7a2df5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a7081a6ae822924f041870246da8cd8"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a1a7081a6ae822924f041870246da8cd8">Load</a> ([in] BSTR filename, [out, retval] enum <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> *pError)</td></tr>
+<tr class="separator:a1a7081a6ae822924f041870246da8cd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9be0ac054105b8ebf883fc02f1435bde"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a9be0ac054105b8ebf883fc02f1435bde">Match</a> ([in] <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *pImg, [in] <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a> *pRegion, [out] <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match_results.html">ILMatchResults</a> **ppResults, [out, retval] enum <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> *pError)</td></tr>
+<tr class="separator:a9be0ac054105b8ebf883fc02f1435bde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ab1f63c21e798020bdcbefeeb757955"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a6ab1f63c21e798020bdcbefeeb757955">Save</a> ([in] BSTR filename, [out, retval] enum <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> *pError)</td></tr>
+<tr class="separator:a6ab1f63c21e798020bdcbefeeb757955"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a286a3c54dafe7b90c73a38fe3d7be8e2"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a286a3c54dafe7b90c73a38fe3d7be8e2">SetPatCenter</a> ([in] <a class="el" href="namespace_l_p_v_pat_lib.html#abd47a1f7a1a0eeeb888538e857dc5800">LPVPatCenterMode</a> centerMode, [in, defaultvalue(0)] double cenX, [in, defaultvalue(0)] double cenY, [in, defaultvalue(0)] double angle)</td></tr>
+<tr class="separator:a286a3c54dafe7b90c73a38fe3d7be8e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+属性</h2></td></tr>
+<tr class="memitem:a659ae867dc0562c44d5e7e23e83451d1"><td class="memItemLeft" align="right" valign="top"><a id="a659ae867dc0562c44d5e7e23e83451d1"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a659ae867dc0562c44d5e7e23e83451d1">AcceptScore</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a659ae867dc0562c44d5e7e23e83451d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">用于筛选匹配结果的最小匹配分数，取值在 1 ~ 100 的范围。分数越高表示匹配标准越严格。<br  />
+匹配搜索过程并不会遍历所有候选位置，而是先基于候选位置与模板的近似相似度进行排序，然后依次优化其最终的匹配位置、角度和缩放比例等到亚像素精度。 当找到足够多的满足匹配分数的结果时，将停止搜索。 <br /></td></tr>
+<tr class="separator:a659ae867dc0562c44d5e7e23e83451d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89c9e21a723b9b597dd9a0d6e603c268"><td class="memItemLeft" align="right" valign="top"><a id="a89c9e21a723b9b597dd9a0d6e603c268"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a89c9e21a723b9b597dd9a0d6e603c268">AngleTolerance</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a89c9e21a723b9b597dd9a0d6e603c268"><td class="mdescLeft">&#160;</td><td class="mdescRight">匹配搜索的角度范围，取值在 0 ~ 180 的范围。 默认设置为 5，表示角度搜索范围为 -5° ~ 5°。 <br /></td></tr>
+<tr class="separator:a89c9e21a723b9b597dd9a0d6e603c268"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a542dd1f32b1fbc5542b62af811442f1f"><td class="memItemLeft" align="right" valign="top"><a id="a542dd1f32b1fbc5542b62af811442f1f"></a>
+VARIANT_BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a542dd1f32b1fbc5542b62af811442f1f">ExcludeBoundary</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a542dd1f32b1fbc5542b62af811442f1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否剔除图像或 ROI 区域边界上的匹配结果 <br /></td></tr>
+<tr class="separator:a542dd1f32b1fbc5542b62af811442f1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8698837361cab3af9df6444df07cb5c9"><td class="memItemLeft" align="right" valign="top"><a id="a8698837361cab3af9df6444df07cb5c9"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a8698837361cab3af9df6444df07cb5c9">GrayValueWeight</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a8698837361cab3af9df6444df07cb5c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">融合匹配权重，用于合并基于形状相似性的匹配分数和基于灰度特征的匹配分数。<br  />
+默认设置为 0， 即灰度分数不参与匹配评价。最终匹配分数按照该公式计算: \( Score = Score_{shape} \times (1 - w) + Score_{gray} \times w \). <br /></td></tr>
+<tr class="separator:a8698837361cab3af9df6444df07cb5c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3aaacc8a93dd34624fef0c7b495ba22"><td class="memItemLeft" align="right" valign="top"><a id="af3aaacc8a93dd34624fef0c7b495ba22"></a>
+VARIANT_BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#af3aaacc8a93dd34624fef0c7b495ba22">IgnorePolarity</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:af3aaacc8a93dd34624fef0c7b495ba22"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否在匹配过程中忽略边缘极性。默认关闭这个配置。 <br /></td></tr>
+<tr class="separator:af3aaacc8a93dd34624fef0c7b495ba22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af98b71a5ec504565e5456260acbd9ee5"><td class="memItemLeft" align="right" valign="top"><a id="af98b71a5ec504565e5456260acbd9ee5"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#af98b71a5ec504565e5456260acbd9ee5">MaxCount</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:af98b71a5ec504565e5456260acbd9ee5"><td class="mdescLeft">&#160;</td><td class="mdescRight">期望的最大匹配数量 <br /></td></tr>
+<tr class="separator:af98b71a5ec504565e5456260acbd9ee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a565f9fc27fac6eb35a3a701be4c291fd"><td class="memItemLeft" align="right" valign="top"><a id="a565f9fc27fac6eb35a3a701be4c291fd"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a565f9fc27fac6eb35a3a701be4c291fd">Overlap</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a565f9fc27fac6eb35a3a701be4c291fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">匹配结果之间的最大重叠比例（百分比）。匹配结果中的缺失特征也计入重叠比例，视为与背景的重叠。 默认设置为 50，表示 50% 的重叠比例。 <br /></td></tr>
+<tr class="separator:a565f9fc27fac6eb35a3a701be4c291fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ce2228fa3bc8c2d1ee84415c9cd31ef"><td class="memItemLeft" align="right" valign="top"><a id="a4ce2228fa3bc8c2d1ee84415c9cd31ef"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a4ce2228fa3bc8c2d1ee84415c9cd31ef">ScaleTolerance</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a4ce2228fa3bc8c2d1ee84415c9cd31ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">匹配搜索的缩放范围，取值在 0 ~ 50 的范围。 默认设置为 0，表示匹配过程没有缩放。若设置为 10 则指定 90% ~ 110% 的缩放比例搜索范围。 <br /></td></tr>
+<tr class="separator:a4ce2228fa3bc8c2d1ee84415c9cd31ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96531b7cf8e966783eae8eb8ce890aa9"><td class="memItemLeft" align="right" valign="top"><a id="a96531b7cf8e966783eae8eb8ce890aa9"></a>
+VARIANT_BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a96531b7cf8e966783eae8eb8ce890aa9">StrictScore</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a96531b7cf8e966783eae8eb8ce890aa9"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否在匹配过程中启用严格评分。默认关闭这个配置。<br  />
+若启用严格评分，匹配结果的分数将基于原始图像和所有特征细节计算。否则，分数可能在缩小并平滑后的图像上计算，该过程更快速但相比前者考虑更少细节。 <br /></td></tr>
+<tr class="separator:a96531b7cf8e966783eae8eb8ce890aa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbef665577f470c617fc26dd4e10ff17"><td class="memItemLeft" align="right" valign="top"><a id="acbef665577f470c617fc26dd4e10ff17"></a>
+VARIANT_BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#acbef665577f470c617fc26dd4e10ff17">UseCache</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:acbef665577f470c617fc26dd4e10ff17"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否在匹配过程中使用缓存数据。 开启缓存将稍微加快匹配过程，但占用更多的内存控件。默认开启这个配置。 <br /></td></tr>
+<tr class="separator:acbef665577f470c617fc26dd4e10ff17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>该接口提供模板匹配的功能。 </p>
+<p>模板匹配用于在指定图像和 ROI 区域中基于训练的模板，搜索和定位一个或多个匹配结果。<br  />
+该算法具有高实时性和高亚像素角度的特点。匹配过程基于从模板图像中训练得到的形状特征，结合图像的灰度特征。 可以定位目标物体的旋转、平移和缩放，可有效应对产线环境的光照变化、物体材质变化引起的明暗、对比度、模糊等现象。</p>
+<p>使用这个接口，需要创建一个 <a class="el" href="class_l_p_v_pat_lib_1_1_l_match.html">LMatch</a> 对象。</p>
+<p>C++: </p><div class="fragment"><div class="line">CLMatch m_match;</div>
+<div class="line">m_match.Learn(m_template_img, <span class="keyword">null</span>);</div>
+<div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = (<a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>)m_match.Match(m_img, m_roi, (LPDISPATCH*)&amp;m_match_results);</div>
+<div class="line"><span class="keywordflow">if</span> (err != <a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>.LPVNoError) <span class="keywordflow">return</span>;</div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">LPV 算法或函数运行过程中遇到的错误。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:138</div></div>
+</div><!-- fragment --><p>C#: </p><div class="fragment"><div class="line">LMatch m_match = <span class="keyword">new</span> LMatch();</div>
+<div class="line">m_match.Learn(m_template_img, <span class="keyword">null</span>);</div>
+<div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = (<a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>)m_match.Detect(m_img, (LRegion)m_roi, out m_match_results);</div>
+<div class="line"><span class="keywordflow">if</span> (err != <a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>.LPVNoError) <span class="keywordflow">return</span>;</div>
+</div><!-- fragment --> </div><h2 class="groupheader">成员函数说明</h2>
+<a id="aee8dc02e7627b4813e8304d4b0939398"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee8dc02e7627b4813e8304d4b0939398">&#9670;&nbsp;</a></span>GetPatCenter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HRESULT GetPatCenter </td>
+          <td>(</td>
+          <td class="paramtype">[out] double *&#160;</td>
+          <td class="paramname"><em>pCenX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">[out] double *&#160;</td>
+          <td class="paramname"><em>pCenY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">[out] double *&#160;</td>
+          <td class="paramname"><em>pAngle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>获取当前配置的模板中心 </p><dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">pCenX</td><td>返回模板中心的 x 坐标 </td></tr>
+    <tr><td class="paramname">pCenY</td><td>返回模板中心的 y 坐标 </td></tr>
+    <tr><td class="paramname">pAngle</td><td>返回模板的 0° 角度 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a286a3c54dafe7b90c73a38fe3d7be8e2">SetPatCenter()</a>. </dd></dl>
+
+</div>
+</div>
+<a id="a5d127ea0cfa9e73edc423e7e78eb7930"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d127ea0cfa9e73edc423e7e78eb7930">&#9670;&nbsp;</a></span>GetPatImage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HRESULT GetPatImage </td>
+          <td>(</td>
+          <td class="paramtype">[out] <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>pImg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>获取模板图像 </p><dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">pImg</td><td>返回图像 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a160bf0d3f54c6f3f9de032ff6a32e131"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a160bf0d3f54c6f3f9de032ff6a32e131">&#9670;&nbsp;</a></span>IsLearnt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HRESULT IsLearnt </td>
+          <td>(</td>
+          <td class="paramtype">[out, retval] VARIANT_BOOL *&#160;</td>
+          <td class="paramname"><em>pVal</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>检查 <a class="el" href="class_l_p_v_pat_lib_1_1_l_match.html">LMatch</a> 对象是否已训练。 </p><dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">pVal</td><td>若已训练，返回 True，否则返回 False。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a96582e8df9f7dc3157955f152a7a2df5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96582e8df9f7dc3157955f152a7a2df5">&#9670;&nbsp;</a></span>Learn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HRESULT Learn </td>
+          <td>(</td>
+          <td class="paramtype">[in] <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>pImg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">[in] <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a> *&#160;</td>
+          <td class="paramname"><em>pRegion</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">[out, retval] enum <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> *&#160;</td>
+          <td class="paramname"><em>pError</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>训练模板，使用输入的图像。模板中心可根据需求修改。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pImg</td><td>输入的图像 </td></tr>
+    <tr><td class="paramname">pRegion</td><td>输入的 ROI 区域，用于限定模板在输入图像中的位置。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">pError</td><td>返回错误码。训练过程可能失败，若在输入图像中没有找到任何可用的特征。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a160bf0d3f54c6f3f9de032ff6a32e131">IsLearnt()</a>, <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a286a3c54dafe7b90c73a38fe3d7be8e2">SetPatCenter()</a>, <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a1a7081a6ae822924f041870246da8cd8">Load()</a>, <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a9be0ac054105b8ebf883fc02f1435bde">Match()</a>. </dd></dl>
+
+</div>
+</div>
+<a id="a1a7081a6ae822924f041870246da8cd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a7081a6ae822924f041870246da8cd8">&#9670;&nbsp;</a></span>Load()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HRESULT Load </td>
+          <td>(</td>
+          <td class="paramtype">[in] BSTR&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">[out, retval] enum <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> *&#160;</td>
+          <td class="paramname"><em>pError</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>从指定文件读取模板匹配类。<br  />
+指定文件可为图像文件，将读取该图像并用于训练模板。也可为 .stp 文件，将读取其中包含的模板图像、训练特征和匹配参数。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>文件路径，可为绝对或相对路径，包含文件夹、文件名和扩展名 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">pError</td><td>返回错误码 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a6ab1f63c21e798020bdcbefeeb757955">Save()</a>. </dd></dl>
+
+</div>
+</div>
+<a id="a9be0ac054105b8ebf883fc02f1435bde"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9be0ac054105b8ebf883fc02f1435bde">&#9670;&nbsp;</a></span>Match()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HRESULT Match </td>
+          <td>(</td>
+          <td class="paramtype">[in] <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>pImg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">[in] <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a> *&#160;</td>
+          <td class="paramname"><em>pRegion</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">[out] <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match_results.html">ILMatchResults</a> **&#160;</td>
+          <td class="paramname"><em>ppResults</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">[out, retval] enum <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> *&#160;</td>
+          <td class="paramname"><em>pError</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>在输入的图像中，执行模板匹配。输出的匹配位置基于该图像坐标系。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pImg</td><td>输入的图像 </td></tr>
+    <tr><td class="paramname">pRegion</td><td>输入的 ROI 区域，用于限定模板匹配的区域。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ppResults</td><td>返回匹配结果 </td></tr>
+    <tr><td class="paramname">pError</td><td>返回错误码 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6ab1f63c21e798020bdcbefeeb757955"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ab1f63c21e798020bdcbefeeb757955">&#9670;&nbsp;</a></span>Save()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HRESULT Save </td>
+          <td>(</td>
+          <td class="paramtype">[in] BSTR&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">[out, retval] enum <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> *&#160;</td>
+          <td class="paramname"><em>pError</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>保存模板匹配类到指定的文件。<br  />
+保存内容基于给定的文件扩展名，若扩展名为图像扩展名 (.bmp, .png, .jpg, etc.) ，则保存模板图像， 若扩展名为 .stp，则保存模板图像、训练特征和匹配参数。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>文件路径，可为绝对或相对路径，包含文件夹、文件名和扩展名 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">pError</td><td>返回错误码 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a1a7081a6ae822924f041870246da8cd8">Load()</a>. </dd></dl>
+
+</div>
+</div>
+<a id="a286a3c54dafe7b90c73a38fe3d7be8e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a286a3c54dafe7b90c73a38fe3d7be8e2">&#9670;&nbsp;</a></span>SetPatCenter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HRESULT SetPatCenter </td>
+          <td>(</td>
+          <td class="paramtype">[in] <a class="el" href="namespace_l_p_v_pat_lib.html#abd47a1f7a1a0eeeb888538e857dc5800">LPVPatCenterMode</a>&#160;</td>
+          <td class="paramname"><em>centerMode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">[in, defaultvalue(0)] double&#160;</td>
+          <td class="paramname"><em>cenX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">[in, defaultvalue(0)] double&#160;</td>
+          <td class="paramname"><em>cenY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">[in, defaultvalue(0)] double&#160;</td>
+          <td class="paramname"><em>angle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>修改模板匹配结果中心的设置方式。默认设置为使用模板图像的中心作为匹配结果中心。<br  />
+匹配结果将基于配置方式输出不同的中心点坐标。如若设置匹配图像的左上角点作为中心，所有的匹配结果将总是输出相同的左上角位置作为中心。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">centerMode</td><td>匹配结果中心的设置方式，查看 LPVPatCenterMode. </td></tr>
+    <tr><td class="paramname">cenX</td><td>若使用自定义位置，输入该位置的 x 坐标 </td></tr>
+    <tr><td class="paramname">cenY</td><td>若使用自定义位置，输入该位置的 y 坐标 </td></tr>
+    <tr><td class="paramname">angle</td><td>若使用自定义位置，输入指定的角度作为 0° </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#aee8dc02e7627b4813e8304d4b0939398">GetPatCenter()</a>. </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- HTML footer for doxygen 1.9.1-->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+© 2021 <a href="http://www.hzleaper.com/">杭州利珀科技有限公司</a>
+</small></address>
+</body>
+</html>
