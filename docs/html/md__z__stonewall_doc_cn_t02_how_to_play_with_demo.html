@@ -1,0 +1,92 @@
+<!-- HTML header for doxygen 1.9.1-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>LPV: 如何操作 DEMO 程序</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/SVG"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<link href="lpv_stylesheet.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 100px;">
+  <td id="projectlogo" style="padding-left: 1em; text-align: center; vertical-align: middle;"><img alt="Logo" src="lpv_logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em; vertical-align: bottom; padding-bottom: 20px; ">
+   <!--<div id="projectname">LPV-->
+   <!--</div>-->
+   <div id="projectbrief">Leaper Vision Toolkit</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div class="PageDoc"><div class="header">
+  <div class="headertitle">
+<div class="title">如何操作 DEMO 程序 </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p>DEMO 程序位于 demo 文件夹下的所需平台对应的文件夹内，如 demo/x64 。</p>
+<p>注意：DEMO 程序的平台需与安装注册的 lpv 版本对应。</p>
+<h1>DEMO 程序</h1>
+<h2>Sanity DEMO</h2>
+<p>演示图像、ROI、模板、标定等基础功能。</p>
+<p>源代码位置（C++）：mfcdemo/MFCSanity</p>
+<p>源代码位置（C::）：csharpdemo/CSharpSanity</p>
+<ol type="1">
+<li>点击 Load Image 按钮，加载图片和模板。</li>
+<li>点击 Template Learn 按钮，按照roi的位置抠图，学习模板。</li>
+<li>点击 Template Match 按钮，执行模板匹配，右侧显示像素坐标。</li>
+<li>点击 Calibrate 按钮，执行9点标定，右侧显示物理坐标。</li>
+<li>点击 Reset Calibration 按钮，重置标定，右侧显示像素坐标。</li>
+<li>点击 Save Calibration 按钮，保存标定文件，右侧显示物理坐标。</li>
+<li>点击 Load Calibration 按钮，加载标定文件。</li>
+<li>点击 Copy &amp; Save 按钮，执行保存图像，在 exe 同级的 images 目录保存拷贝的 jpg 图像。</li>
+<li>拖动图形界面中的 ROI 边界，可移动或改变 ROI 形状。</li>
+<li>点击 Reset Roi 按钮，按照当前图像尺寸重置roi位置。</li>
+</ol>
+<h2>HikCam DEMO</h2>
+<p>演示相机与图像类间的交互，以海康相机为例。</p>
+<p>源代码位置（C::）：csharpdemo/CSharpHikCam</p>
+<ol type="1">
+<li>安装海康相机驱动。</li>
+<li>打开 MVS 查询相机序列号，填入右侧文本输入框中。</li>
+<li>点击 Start 按钮，打开相机。</li>
+<li>点击 Run (Continues Trigger) 按钮，切换为连续触发，不断更新和显示相机采集到的图像。</li>
+<li>点击 Snap (Soft Trigger) 按钮，切换为软触发，获取一帧图像并显示。 </li>
+</ol>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- HTML footer for doxygen 1.9.1-->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+© 2021 <a href="http://www.hzleaper.com/">杭州利珀科技有限公司</a>
+</small></address>
+</body>
+</html>
