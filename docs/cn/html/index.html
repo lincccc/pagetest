@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>LPV: 首页</title>
+<title>LPV: \htmlinclude &quot;mainpage_title.html&quot;</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 100px;">
-  <td id="projectlogo" style="padding-left: 1em; text-align: center; vertical-align: middle;"><img alt="Logo" src="lpv_logo.png"/></td>
+  <td id="projectlogo" style="padding-left: 1em; text-align: center; vertical-align: middle;"><a href="index.html"><img alt="Logo" src="lpv_logo.png"/></a></td>
   <td id="projectalign" style="padding-left: 0.5em; vertical-align: bottom; padding-bottom: 5px; ">
    <!--<div id="projectname">LPV-->
    <!--</div>-->
@@ -75,25 +75,208 @@ $(function() {
 
 <div class="PageDoc"><div class="header">
   <div class="headertitle">
-<div class="title">LPV 文档</div>  </div>
+<div class="title"><center style="font-size:20px; font-weight:normal; padding: var(--spacing-medium)"><p><img src="lpv_logo_mainpage.png" alt="logo"><p><p><i>Leaper Vision Toolkit</i><p></center> </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md_Z__stonewall_doc_mainpage_cn"></a></p><ul>
-<li><a href="./pages.html"><b>教程</b></a></li>
-<li>模块:<ul>
-<li>lpvCore. <a class="el" href="namespace_l_p_v_core_lib.html">基础功能</a></li>
-<li>lpvImgProc. <a class="el" href="namespace_l_p_v_img_proc_lib.html">图像处理</a></li>
-<li>lpvLocate. <a class="el" href="namespace_l_p_v_locate_lib.html">目标定位</a></li>
-<li>lpvPat. <a class="el" href="namespace_l_p_v_pat_lib.html">模板匹配</a></li>
-<li>lpvBlob. <a class="el" href="namespace_l_p_v_blob_lib.html">斑点分析</a></li>
-<li>lpvCalib. <a class="el" href="namespace_l_p_v_calib_lib.html">相机标定</a></li>
-<li>lpvBarcode. <a class="el" href="namespace_l_p_v_barcode_lib.html">条码检测</a></li>
-<li>lpvIB. <a class="el" href="namespace_l_p_v_i_b_lib.html">连接到灵闪 IntelliBlink</a></li>
-<li>lpvDisplay. <a class="el" href="namespace_l_p_v_display_lib.html">显示控件</a> </li>
-</ul>
-</li>
-</ul>
-</div></div><!-- PageDoc -->
+<div class="textblock"><!DOCTYPE html>
+<html>
+<head>
+<style>
+.featuretable {
+  text-align: center;
+  font-size: 12px;
+  margin: auto calc(var(--spacing-large) * 2);
+}
+
+.shortcutbtn {
+  border-style: solid;
+  border-width: 2px;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 8px;
+}
+
+.tryfreebtn {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.tryfreebtn:hover {
+  cursor: pointer;
+}
+
+.getstartbtn {
+  background-color: white;
+  border-style: solid;
+  border-width: 2px;
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+.getstartbtn:hover {
+  cursor: pointer;
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: white;
+}
+
+.picoverview {
+  float: right;
+  margin: 0 0 var(--spacing-large) var(--spacing-large);
+  width: 52%;
+  height: 52%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #f1f1f1;
+}
+
+.img-acu
+{
+  float: left;
+  background-size: 125%;
+  margin: var(--spacing-small);
+  color:white;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  width: 300px;
+  height: 200px;
+}
+
+.img-acu:hover {
+  color:transparent;
+}
+
+.img-pattern {
+  background:transparent url("mainpage_pat_source.png") center top no-repeat;
+}
+
+.img-pattern:hover {
+  background-image: url("mainpage_pat_result.png");
+}
+
+.img-barcode {
+  background:transparent url("mainpage_id_source.png") center top no-repeat;
+}
+
+.img-barcode:hover {
+  background-image: url("mainpage_id_result.png");
+}
+
+.img-calib {
+  background:transparent url("mainpage_ffd_source.png") center top no-repeat;
+}
+
+.img-calib:hover {
+  background-image: url("mainpage_ffd_result.png");
+}
+
+.img-button {
+  border: none;
+  color: white;
+  width: 300px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+  cursor: pointer;
+  width: 300px;
+  height: 200px;
+  border-radius: 0px;
+  padding: 20px;
+}
+
+.img-button:hover {
+  opacity: 0;
+}
+
+.img-button-pat {
+  background-color: rgba(121,121,23,0.5);
+}
+
+.img-button-barcode {
+  background-color: rgba(23,196,121,0.5);
+}
+
+.img-button-calib {
+  background-color: rgba(23,121,196,0.5);
+}
+
+
+</style>
+</head>
+<body>
+
+<table style="margin: auto calc(var(--spacing-large) * 2);">
+<tr>
+<td>
+<p><img src="mainpage_overview.png" alt="" class="picoverview">
+</p>
+<p><h3>高性能 Leaper 机器视觉工具库</h3></p>
+<p>Leaper Vision Toolkit (LPV) 为帮助用户构建应用于各个工业检测领域的机器视觉应用而设计，并提供最大程度的灵活性。LPV 允许开发者按照实际需求任意组织视觉处理流程，配置多线程，调整任意视觉算法工具的所有开放参数。</p>
+
+<p><h3>完全掌控整个机器视觉系统</h3></p>
+<p>LPV 提供稳定、有效的 Leaper 视觉算法工具库，用户可自由构建应用于各个领域的机器视觉解决方案，包括定位、测量、对位、检测和识别等。</p>
+</td>
+</tr>
+</table>
+
+<center style="margin: calc(var(--spacing-large) * 4) 0;">
+<p><h2>高效 · 灵活 · 可扩展性</h2></p>
+<p style="max-width: 800px;">为快速设计和实施而设计，满足 OEM 和高级机器视觉系统开发的需求。多种适用不同使用场景的算法库和用户交互界面控件，可完全整合 LPV 模块到 OEM 应用及设备平台。</p>
+
+<table class="featuretable">
+<tr>
+<td>
+<a href="namespace_l_p_v_pat_lib.html" title="LPV Pattern Matching">
+  <div class="img-acu img-pattern"><button class="img-button img-button-pat">Inspection</button></div>
+</a>
+<a href="namespace_l_p_v_barcode_lib.html" title="LPV Barcode Inspection">
+  <div class="img-acu img-barcode"><button class="img-button img-button-barcode">Identification</button></div>
+</a>
+<a href="namespace_l_p_v_calib_lib.html" title="LPV Camera Calibration">
+  <div class="img-acu img-calib"><button class="img-button img-button-calib">Calibration</button></div>
+</a>
+</td>
+</tr>
+</table>
+
+</center>
+
+<center style="margin: calc(var(--spacing-large) * 4) 0;">
+<p><h2>连接到灵闪 IntelliBlink 平台</h2></p>
+<p style="max-width: 800px;">灵闪是一个基于利珀科技机器视觉基础框架开发的轻便的智能算法配置及组合工具平台。通过所见即所得的交互界面和简单的拖拽操作，用于快速开发和迭代定位、测量、缺陷检测等机器视觉任务。灵闪平台提供一系列覆盖具体应用需求的算法工具包。LPV 能够无缝连接到灵闪平台，帮助用户直接使用其在灵闪平台上开发的机器视觉解决方案，将其集成到 LPV 应用程序中运行、操作，实现更大程度上的灵活性和可扩展性。</p>
+<table class="featuretable">
+<tr>
+<td>
+<video controls>
+  <source src="ibservice_sub.mp4" type="video/mp4">
+浏览器不支持 video 标签。
+</video>
+</td>
+</tr>
+</table>
+
+<hr>
+<div>
+<center style="margin: calc(var(--spacing-large) * 4) 0; background-color: ">
+<h1>了解更多 Leaper Vision Toolkit 的信息</h1>
+<p><i>准备好体验更高效便捷的机器视觉方案研发过程？</i></p>
+<div>
+<a href="contact_us.html"><button class="shortcutbtn tryfreebtn">免费试用</button></a>
+<a href="usergroup0.html"><button class="shortcutbtn getstartbtn">入门指南</button></a>
+</div>
+</center>
+</div>
+
+</body>
+</html>
+ </div></div><!-- PageDoc -->
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.9.1-->
 <!-- start footer part -->

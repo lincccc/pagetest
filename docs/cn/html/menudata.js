@@ -23,7 +23,6 @@
  @licend  The above is the entire license notice for the JavaScript code in this file
 */
 var menudata={children:[
-{text:"首页",url:"index.html"},
 {text:"入门指南",url:"usergroup0.html",children:[
 {text:"快速上手",url:"quick_guide.html"},
 {text:"操作 DEMO 程序",url:"how_to_play_with_demo.html"},

@@ -760,7 +760,6 @@ html.dark-mode iframe#MSearchResults {
 
 div.header {
     border-bottom: 1px solid var(--separator-color);
-    background-color: var(--page-background-color);
     background-image: none;
 }
 
@@ -770,11 +769,11 @@ div.contents, div.header .title, div.header .summary {
 
 div.contents, div.header .title  {
     line-height: initial;
-    margin: calc(var(--spacing-medium) + .2em) auto var(--spacing-medium) auto;
+    margin: auto auto var(--spacing-medium) auto;
 }
 
 div.header .summary {
-    margin: var(--spacing-medium) auto 0 auto;
+    margin: auto auto 0 auto;
 }
 
 div.headertitle {
@@ -784,7 +783,7 @@ div.headertitle {
 div.header .title {
     font-weight: 600;
     font-size: 210%;
-    padding: var(--spacing-medium) var(--spacing-large);
+    padding: calc(var(--spacing-medium) * 2 + .2em) var(--spacing-medium) var(--spacing-large) var(--spacing-large);
     word-break: break-word;
 }
 
@@ -792,7 +791,7 @@ div.header .summary {
     width: auto;
     display: block;
     float: none;
-    padding: 0 var(--spacing-large);
+    padding: var(--spacing-medium) 0 var(--spacing-large) var(--spacing-large);
 }
 
 td.memSeparator {

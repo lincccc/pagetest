@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>LPV: LPV Documentation</title>
+<title>LPV: \htmlinclude &quot;mainpage_title.html&quot;</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 100px;">
-  <td id="projectlogo" style="padding-left: 1em; text-align: center; vertical-align: middle;"><img alt="Logo" src="lpv_logo.png"/></td>
+  <td id="projectlogo" style="padding-left: 1em; text-align: center; vertical-align: middle;"><a href="index.html"><img alt="Logo" src="lpv_logo.png"/></a></td>
   <td id="projectalign" style="padding-left: 0.5em; vertical-align: bottom; padding-bottom: 5px; ">
    <!--<div id="projectname">LPV-->
    <!--</div>-->
@@ -75,25 +75,208 @@ $(function() {
 
 <div class="PageDoc"><div class="header">
   <div class="headertitle">
-<div class="title">LPV Documentation </div>  </div>
+<div class="title"><center style="font-size:20px; font-weight:normal; padding: var(--spacing-medium)"><p><img src="lpv_logo_mainpage.png" alt="logo"><p><p><i>Leaper Vision Toolkit</i><p></center> </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md_Z__stonewall_doc_mainpage_en"></a></p><ul>
-<li><a href="./pages.html"><b>Tutorials</b></a></li>
-<li>Modules:<ul>
-<li>lpvCore. <a class="el" href="namespace_l_p_v_core_lib.html">Core functionalities</a></li>
-<li>lpvImgProc. <a class="el" href="namespace_l_p_v_img_proc_lib.html">Image processing</a></li>
-<li>lpvLocate. <a class="el" href="namespace_l_p_v_locate_lib.html">Object location</a></li>
-<li>lpvPat. <a class="el" href="namespace_l_p_v_pat_lib.html">Pattern matching</a></li>
-<li>lpvBlob. <a class="el" href="namespace_l_p_v_blob_lib.html">Blob analysis</a></li>
-<li>lpvCalib. <a class="el" href="namespace_l_p_v_calib_lib.html">Camera calibration</a></li>
-<li>lpvBarcode. <a class="el" href="namespace_l_p_v_barcode_lib.html">Barcdoe Inspection</a></li>
-<li>lpvIB. <a class="el" href="namespace_l_p_v_i_b_lib.html">Connect to IntelliBlink</a></li>
-<li>lpvDisplay. <a class="el" href="namespace_l_p_v_display_lib.html">Display Control</a> </li>
-</ul>
-</li>
-</ul>
-</div></div><!-- PageDoc -->
+<div class="textblock"><!DOCTYPE html>
+<html>
+<head>
+<style>
+.featuretable {
+  text-align: center;
+  font-size: 12px;
+  margin: auto calc(var(--spacing-large) * 2);
+}
+
+.shortcutbtn {
+  border-style: solid;
+  border-width: 2px;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 8px;
+}
+
+.tryfreebtn {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.tryfreebtn:hover {
+  cursor: pointer;
+}
+
+.getstartbtn {
+  background-color: white;
+  border-style: solid;
+  border-width: 2px;
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+.getstartbtn:hover {
+  cursor: pointer;
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: white;
+}
+
+.picoverview {
+  float: right;
+  margin: 0 0 var(--spacing-large) var(--spacing-large);
+  width: 52%;
+  height: 52%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #f1f1f1;
+}
+
+.img-acu
+{
+  float: left;
+  background-size: 125%;
+  margin: var(--spacing-small);
+  color:white;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  width: 300px;
+  height: 200px;
+}
+
+.img-acu:hover {
+  color:transparent;
+}
+
+.img-pattern {
+  background:transparent url("mainpage_pat_source.png") center top no-repeat;
+}
+
+.img-pattern:hover {
+  background-image: url("mainpage_pat_result.png");
+}
+
+.img-barcode {
+  background:transparent url("mainpage_id_source.png") center top no-repeat;
+}
+
+.img-barcode:hover {
+  background-image: url("mainpage_id_result.png");
+}
+
+.img-calib {
+  background:transparent url("mainpage_ffd_source.png") center top no-repeat;
+}
+
+.img-calib:hover {
+  background-image: url("mainpage_ffd_result.png");
+}
+
+.img-button {
+  border: none;
+  color: white;
+  width: 300px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+  cursor: pointer;
+  width: 300px;
+  height: 200px;
+  border-radius: 0px;
+  padding: 20px;
+}
+
+.img-button:hover {
+  opacity: 0;
+}
+
+.img-button-pat {
+  background-color: rgba(121,121,23,0.5);
+}
+
+.img-button-barcode {
+  background-color: rgba(23,196,121,0.5);
+}
+
+.img-button-calib {
+  background-color: rgba(23,121,196,0.5);
+}
+
+
+</style>
+</head>
+<body>
+
+<table style="margin: auto calc(var(--spacing-large) * 2);">
+<tr>
+<td>
+<p><img src="mainpage_overview.png" alt="" class="picoverview">
+</p>
+<p><h3>High-performance library of Leaper vision tools</h3></p>
+<p>Leaper Vision Toolkit (LPV) is designed to help user build the widest range of machine vision applications with ultimate flexibility. LPV allows developers to write their own vision processing, configure multi-threading, and access all tool properties and options.</p>
+
+<p><h3>Take control of your machine vision systems</h3></p>
+<p>With LPV, users get proven, reliable Leaper vision tools and the freedom to build the widest range of machine vision applications including guidance, inspection, gauging, and identification.</p>
+</td>
+</tr>
+</table>
+
+<center style="margin: calc(var(--spacing-large) * 4) 0;">
+<p><h2>Powerful, flexible and scalable</h2></p>
+<p style="max-width: 800px;">LPV is designed for OEMs and advanced vision systems developers in mind. Extensive libraries and user controls fully integrate LPV software into OEM and capital equipment machines.</p>
+
+<table class="featuretable">
+<tr>
+<td>
+<a href="namespace_l_p_v_pat_lib.html" title="LPV Pattern Matching">
+  <div class="img-acu img-pattern"><button class="img-button img-button-pat">Inspection</button></div>
+</a>
+<a href="namespace_l_p_v_barcode_lib.html" title="LPV Barcode Inspection">
+  <div class="img-acu img-barcode"><button class="img-button img-button-barcode">Identification</button></div>
+</a>
+<a href="namespace_l_p_v_calib_lib.html" title="LPV Camera Calibration">
+  <div class="img-acu img-calib"><button class="img-button img-button-calib">Calibration</button></div>
+</a>
+</td>
+</tr>
+</table>
+
+</center>
+
+<center style="margin: calc(var(--spacing-large) * 4) 0;">
+<p><h2>Connect to IntelliBlink</h2></p>
+<p style="max-width: 800px;">IntelliBlink is a lightweight intelligent machine vision platform powered by Leaper Vision. You can use its WYSIWYG user interface to develop various optical location and measurement tasks via drag-and-drop operations, and benefits from its powerful algorithm toolkits. LPV is capable to connect to IntelliBlink seamlessly, helps you to make use of the easy-built IntelliBlink tasks, integrate, execute and manipulate them in a LPV application. </p>
+<table class="featuretable">
+<tr>
+<td>
+<video controls>
+  <source src="ibservice_sub.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</td>
+</tr>
+</table>
+
+<hr>
+<div>
+<center style="margin: calc(var(--spacing-large) * 4) 0; background-color: ">
+<h1>Learn more about Leaper Vision Toolkit</h1>
+<p><i>Ready for an amazing machine vision application develop experience?</i></p>
+<div>
+<a href="contact_us.html"><button class="shortcutbtn tryfreebtn">Try Free</button></a>
+<a href="usergroup0.html"><button class="shortcutbtn getstartbtn">Get Started</button></a>
+</div>
+</center>
+</div>
+
+</body>
+</html>
+ </div></div><!-- PageDoc -->
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.9.1-->
 <!-- start footer part -->

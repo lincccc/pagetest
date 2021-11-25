@@ -24,7 +24,7 @@
 */
 var menudata={children:[
 {text:"Main Page",url:"index.html"},
-{text:"Tutorial",url:"usergroup0.html",children:[
+{text:"Get Started",url:"usergroup0.html",children:[
 {text:"Quick Guide",url:"quick_guide.html"},
 {text:"Play with DEMOs",url:"how_to_play_with_demo.html"},
 {text:"Use LDisplay Control",url:"use_display_control.html"}]},

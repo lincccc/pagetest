@@ -1,6 +1,6 @@
 var indexSectionsWithContent =
 {
-  0: "_abcdefghiklmnopqrstuvwxyz如常快随",
+  0: "\_abcdefghiklmnopqrstuvwxyz如常快随",
   1: "_il",
   2: "l",
   3: "abcdefghilmoprstuvwx",
@@ -8,7 +8,7 @@ var indexSectionsWithContent =
   5: "l",
   6: "l",
   7: "abcdefghiklmnopqrstuvwxyz",
-  8: "如常快随"
+  8: "\如常快随"
 };
 
 var indexSectionNames =

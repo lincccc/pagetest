@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['open_622',['Open',['../interface_l_p_v_img_proc_lib_1_1_i_l_image_morph.html#ad4dfefa0bf474ca5c9f11a1be319ce7b',1,'LPVImgProcLib::ILImageMorph']]],
-  ['opticaldensity_623',['OpticalDensity',['../interface_l_p_v_img_proc_lib_1_1_i_l_image_filter.html#acef590ad5559f95b3a0dab5c54776e83',1,'LPVImgProcLib::ILImageFilter']]],
-  ['outerradius_624',['OuterRadius',['../interface_l_p_v_core_lib_1_1_i_l_annulus_region.html#ab9ae3df1eb9786add7cd3b88591d862c',1,'LPVCoreLib::ILAnnulusRegion']]],
-  ['overlap_625',['Overlap',['../interface_l_p_v_pat_lib_1_1_i_l_match.html#a565f9fc27fac6eb35a3a701be4c291fd',1,'LPVPatLib::ILMatch']]]
+  ['name_620',['Name',['../interface_l_p_v_i_b_lib_1_1_i_l_i_b_data.html#a702bf43ab0d89f3f85af19741ccc16b9',1,'LPVIBLib::ILIBData::Name()'],['../interface_l_p_v_i_b_lib_1_1_i_l_i_b_algo_result.html#a702bf43ab0d89f3f85af19741ccc16b9',1,'LPVIBLib::ILIBAlgoResult::Name()'],['../interface_l_p_v_i_b_lib_1_1_i_l_i_b_algo_config.html#a702bf43ab0d89f3f85af19741ccc16b9',1,'LPVIBLib::ILIBAlgoConfig::Name()'],['../interface_l_p_v_i_b_lib_1_1_i_l_i_b_task_result.html#a702bf43ab0d89f3f85af19741ccc16b9',1,'LPVIBLib::ILIBTaskResult::Name()'],['../interface_l_p_v_i_b_lib_1_1_i_l_i_b_task_config.html#a702bf43ab0d89f3f85af19741ccc16b9',1,'LPVIBLib::ILIBTaskConfig::Name()']]],
+  ['normscore_621',['NormScore',['../interface_l_p_v_locate_lib_1_1_i_l_line_detector.html#aec82c900668193ea6f222b80bf3dc848',1,'LPVLocateLib::ILLineDetector::NormScore()'],['../interface_l_p_v_locate_lib_1_1_i_l_circle_detector.html#aec82c900668193ea6f222b80bf3dc848',1,'LPVLocateLib::ILCircleDetector::NormScore()']]]
 ];
