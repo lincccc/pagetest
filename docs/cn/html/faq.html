@@ -79,18 +79,17 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="md_Z__stonewall_doc_cn_t99_faq"></a> </p><h1>编译错误</h1>
-<h4>Q1. C++ error C3506: there is no typelib registered for LIBID XXX</h4>
-<p>The error indicates the LPV libraries are not well registered for your platform.</p><ol type="1">
-<li>Make sure there's NO special character in the path of the registration file, like @ ( ) * &amp; . Rename the folder with special characters.</li>
-<li>Re-register by run the <b>runner/reg_run_as_admin.bat</b> script as administrator.</li>
+<h4>Q1. C++ 错误 C3506：没有为 LIBID XXX 注册的类型库</h4>
+<p>该错误表示对应平台的 LPV 模块在该机器上并未成功注册。</p><ol type="1">
+<li>首先，确认 LPV 所在的文件夹路径**不包含任何特殊字符**，如 @ ( ) * &amp; 。命名该路径中包含特殊字符的文件夹。</li>
+<li>重新注册 LPV 模块，以管理员运行 <b>runner/reg_run_as_admin.bat</b> 脚本。</li>
 </ol>
-<h4>Q2. C# error CS0246: The type or namespace name 'LPVXXXLib' could not be found (are you missing a using directive or an assembly reference?)</h4>
-<p>Same as Q1, it's due to the LPV libraries are not well registered, please follow the steps in Q1.</p>
+<h4>Q2. C# error CS0246: 找不到类型或命名空间名称 'LPVXXXLib' （是否缺少 using 指令或程序集引用?）</h4>
+<p>与 Q1 相同，其原因为对应平台的 LPV 模块在该机器上并未成功注册。请按 Q1 步骤排查和解决问题。</p>
 <h1>运行错误</h1>
-<h4>Q3. Call CreateDispatch fail with error 800401F0 CoInitialize has not been called. (C++ only)</h4>
-<p>You need to call CoInitializeEx when your program starts and CoUnitialize when it terminates. You should do it before create and initialize LPV classes. The best place to do this is in InitInstance and ExitInstance of your MFC application.</p>
-<p>For example: </p><div class="fragment"><div class="line"> {c++}</div>
-<div class="line">BOOL CMFCApp::InitInstance()</div>
+<h4>Q3. C++ 调用 CreateDispatch 失败，返回错误 0x800401F0 尚未调用 CoInitialize</h4>
+<p>需要在程序开始处调用 CoInitializeEx，结束处调用 CoUnitialize。需要在使用 LPV 模块前调用初始化。以 MFC 程序为例，推荐的调用位置为 MFC 程序的 InitInstance 和 ExitInstance 方法中。</p>
+<p>例如: </p><div class="fragment"><div class="line">BOOL CMFCApp::InitInstance()</div>
 <div class="line">{</div>
 <div class="line">    CoInitializeEx(NULL, COINIT_MULTITHREADED);</div>
 <div class="line">    // etc.</div>
@@ -101,18 +100,18 @@ $(function() {
 <div class="line">    CoUninitialize();</div>
 <div class="line">    return CWinApp::ExitInstance();</div>
 <div class="line">}</div>
-</div><!-- fragment --><h4>Q4. Call CreateDispatch fail and return 0 with NULL m_lpDispatch. (C++ only)</h4>
-<p>Same as Q1, it's due to the LPV libraries are not well registered, please follow the steps in Q1.</p>
-<h4>Q5. Open the .net form with LPV display control, the designer report error: Could not find type 'AxLPVDisplayLib.AxLDisplay'. Please make sure that the assembly that contains this type is referenced. If this type is a part of your development project, make sure that the project has been successfully built using settings for your current platform or Any CPU.</h4>
-<p>If you are using the x86 LPV libraries. You just need to compile the project in x86(32bit), then restart Visual Studio.</p>
-<p>If you are using the x64 LPV libraries. Since Visual Studio is natively 32bit, it cannot do GUI editing in some components (e.g. LDisplay control) in 64bit. To resolve this error, you should:</p><ol type="1">
-<li>Register the 32bit LPV libraries if you have not. Run <b>runner/reg_run_as_admin.bat</b> script as administrator.</li>
-<li>Change the solution to x86(32bit) or AnyCPU.</li>
-<li>Delete the obj/bin folder of the solution.</li>
-<li>Clean and rebuild the solution.</li>
-<li>Restart Visual Studio.</li>
-<li>Change the solution back to x64(64bit).</li>
-<li>Open the designer for GUI editing. </li>
+</div><!-- fragment --><h4>Q4. C++ 调用 CreateDispatch 失败，返回 False 且 m_lpDispatch 为空指针</h4>
+<p>与 Q1 相同，其原因为对应平台的 LPV 模块在该机器上并未成功注册。请按 Q1 步骤排查和解决问题。</p>
+<h4>Q5. C# 及其他 .net 调用 LPV 显示控件，编辑器报错：找不到 'AxLPVDisplayLib.AxLDisplay'，请确保已引用包含此类型的程序集。如果此类型为开发项目的一部分，请确保已成功生成。</h4>
+<p>对 x86 平台，只需重新编译该程序的 x86(32bit) 平台，然后重启 Visual Studio。</p>
+<p>对 x64 平台，因为 Visual Studio 本身是 32 位的，其不能使用 x64 版本的控件（如 LDisplay 控件）进行图形化编辑。然后按照如下步骤：</p><ol type="1">
+<li>重新注册 LPV 模块的 32 位版本，以管理员运行 <b>runner/reg_run_as_admin.bat</b> 脚本。</li>
+<li>修改解决方案平台为 x86(32bit) 或者 AnyCPU</li>
+<li>删除解决方案文件下的 obj/bin 文件夹。</li>
+<li>清空和重新编译该解决方案。</li>
+<li>重启 Visual Studio</li>
+<li>修改解决方案平台回到 x64(64bit)</li>
+<li>打开编辑器，确认错误是否已消除 </li>
 </ol>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->

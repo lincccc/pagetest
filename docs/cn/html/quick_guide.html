@@ -82,24 +82,29 @@ $(function() {
 <ol type="1">
 <li>解压 lpv_xxxx.zip 文件到任意目录。</li>
 <li>[可选] 如果未安装 Visual C++ Redistributable Package 14 或以上版本，需从<a href="https://support.microsoft.com/en-us/topic/the-latest-supported-visual-c-downloads-2647da03-1eea-4433-9aff-95f26a218cc0">微软官方网站</a>下载安装，也可以用我们提供的<a href="http://fileserver.hzleaper.com:8085/d/f3af040915194d27a993/">下载链接</a>下载。</li>
-<li>按照所需的开发平台 (x86 或者 x64)，需选择 runner/x86 或者 runner/x64 作为 LPV 运行目录，然后注册和使用该目录下的 LPV dll。</li>
+<li>按照所需的开发平台 (x86 或者 x64)，需选择 runner/x86 或者 runner/x64 作为 LPV 运行目录，然后注册和使用该目录下的 LPV 模块。</li>
 </ol>
-<h1>使用 License 文件注册</h1>
+<h1>注册</h1>
 <ol type="1">
-<li>运行 LPV 运行目录下的 lpvKeyTool.exe ，生成 lpv.lic 文件。</li>
-<li>将生成的 lpv.lic 文件放给我们或者您的 LPV SDK 技术支持，我们将为您的机器注册，发回 lpv.lic 文件。</li>
-<li>将该 lpv.lic 文件放在 LPV 根目录下 (./runner)，保证名称与 “lpv.lic” 完全一致。</li>
-<li>右键 LPV 根目录下的 reg_run_as_admin.bat 文件，选择以管理员运行，在所有平台(x64和x86)下注册所有授权的 LPV dll。</li>
-<li>右键 LPV 运行目录下的 reg32and64_run_as_admin.bat 文件，选择以管理员运行，在所需平台下注册所有授权的 LPV dll。</li>
+<li>右键 LPV 根目录下的 <b>reg_run_as_admin.bat</b> 文件，选择以管理员运行，在所有平台(x64和x86)下注册所有授权的 LPV 模块。</li>
+<li>双击运行 LPV 根目录下的 <b>check_lpv_module_path.bat</b> 文件，可查看已注册的 LPV 模块路径。</li>
 </ol>
-<h1>使用加密狗注册</h1>
+<h1>授权</h1>
+<h3>试用版：使用 License 文件进行授权</h3>
+<ol type="1">
+<li>运行 LPV 运行目录下的 <b>lpvKeyTool.exe</b> ，生成 <b>lpv.key</b> 文件。</li>
+<li>将生成的 lpv.key 文件放给我们或者您的 LPV SDK 技术支持，我们将为您的机器进行授权，并发回 <b>lpv.lic</b> 文件。</li>
+<li>将该 lpv.lic 文件放在 LPV 根目录下 (./runner)，保证名称与 “lpv.lic” 完全一致。</li>
+<li>或者，打开任意一个 demo 程序，弹出未授权提示，选择是并上传 lpv.lic 文件，将自动复制该文件到可授权的目录。</li>
+</ol>
+<p><em>注：该授权方式仅提供短期试用，试用期到期后将提示过期，请联系我们或者您的 LPV SDK 技术支持。</em></p>
+<h3>正式版：使用加密狗进行授权</h3>
 <ol type="1">
 <li>插入 LPV 加密狗，检查加密狗是否亮灯。</li>
-<li>右键 LPV 根目录下的 reg_run_as_admin.bat 文件，选择以管理员运行，在所有平台(x64和x86)下注册所有授权的 LPV dll。</li>
-<li>右键 LPV 运行目录下的 reg32and64_run_as_admin.bat 文件，选择以管理员运行，在所需平台下注册所有授权的 LPV dll。</li>
+<li>打开任意一个 demo 程序，检测授权是否正常。</li>
 </ol>
 <h1>如何添加库到 Visual Studio 工程</h1>
-<h2>C<code>#</code></h2>
+<h2>.NET (C<code>#</code>)</h2>
 <ol type="1">
 <li>右键工程的 Reference 项，点击 Add Reference</li>
 <li>选择 COM 页面，找到 LPVCoreLib（必须）及其他希望加入的 LPVXXXLib 算法库，勾选后点击 OK 。</li>
@@ -143,14 +148,29 @@ $(function() {
 </div><!-- fragment --></li>
 </ol>
 <h2>C++ (QT)</h2>
-<ol type="1">
-<li>您可以使用 Active Qt 框架生成 LPV 类的 QAxObject 形式的封装，请参照 QT 的<a href="https://doc.qt.io/qt-5/activeqt-container.html">官方教程</a>。</li>
-<li>若您希望继续使用我们提供的 MFC 封装，您需要执行以上的 C++ (MFC) 中的所有步骤。</li>
+<p>您可以使用 <b>Active Qt 框架</b> 生成 LPV 类的 QAxObject 形式的封装，请参照 QT 的<a href="https://doc.qt.io/qt-5/activeqt-container.html">官方教程</a>。</p>
+<p>您也可以基于 <a href="https://docs.microsoft.com/zh-cn/cpp/cpp/compiler-com-support"><b>编译器 COM 支持</b></a> 直接将 LPV 模块编译转换为 C++ 头文件然后调用 LPV 类 </p><div class="fragment"><div class="line"> {c++}</div>
+<div class="line">// 添加 #import 预处理器指令</div>
+<div class="line">// 使用我们为各个模块准备的 #import 用的头文件</div>
+<div class="line">#include &quot;../../QtCommon/LPVMatch.h&quot;</div>
+<div class="line"> </div>
+<div class="line">// 添加算法类声明，这是一个由编译器产生的指向该算法类接口的智能指针</div>
+<div class="line">ILMatchPtr m_lmatch;</div>
+<div class="line">// 使用算法类的 uuid 再生成实例</div>
+<div class="line">// m_lmatch = ILMatchPtr(__uuidof(LMatch));</div>
+<div class="line"> </div>
+<div class="line">// 调用接口函数，如下，设置模板匹配数量，设置角度范围</div>
+<div class="line">m_lmatch.put_MaxCount(1);</div>
+<div class="line">m_lmatch.put_AngleTolerance(180);</div>
+<div class="line">    </div>
+<div class="line">// 调用接口，处理返回错误码，如下，进行模板匹配</div>
+<div class="line">LPVErrorCode errCode = (LPVErrorCode)m_lmatch.Match(m_source_img, m_roi, (LPDISPATCH*)&amp;m_match_results);</div>
+<div class="line">if (errCode != LPVErrorCode::LPVNoError) {}</div>
+</div><!-- fragment --><p>若您希望继续使用我们提供的 **MFC 封装**：</p><ol type="1">
+<li>您需要执行以上的 C++ (MFC) 中的所有步骤。</li>
 <li>然后，拷贝 demo/mfcdemo/Wrappers 文件夹中的 framework.h 到你的 QT 项目的代码文件夹，并添加到项目中；</li>
-</ol>
-<ol type="1">
 <li>项目属性中需要修改配置：<ul>
-<li>通用-&gt;使用 MFC，修改成“在共享DLL中使用MFC”；</li>
+<li>通用-&gt;使用 MFC，修改成“在共享模块中使用MFC”；</li>
 <li>通用-&gt;字符集，修改成“不设置”；</li>
 <li>C/C++-&gt;预编译头文件，修改成“不使用预编译头文件”；</li>
 </ul>

@@ -89,8 +89,7 @@ $(function() {
 <h1>Execution Failure</h1>
 <h4>Q3. Call CreateDispatch fail with error 800401F0 CoInitialize has not been called. (C++ only)</h4>
 <p>You need to call CoInitializeEx when your program starts and CoUnitialize when it terminates. You should do it before create and initialize LPV classes. The best place to do this is in InitInstance and ExitInstance of your MFC application.</p>
-<p>For example: </p><div class="fragment"><div class="line"> {c++}</div>
-<div class="line">BOOL CMFCApp::InitInstance()</div>
+<p>For example: </p><div class="fragment"><div class="line">BOOL CMFCApp::InitInstance()</div>
 <div class="line">{</div>
 <div class="line">    CoInitializeEx(NULL, COINIT_MULTITHREADED);</div>
 <div class="line">    // etc.</div>

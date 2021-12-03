@@ -82,29 +82,35 @@ $(function() {
 <ol type="1">
 <li>Extract lpv_xxxx.zip file to any directory.</li>
 <li>[Optional] If you don't have Visual C++ Redistributable Package 14 or higher installed on your machine, you may have to download then install one from Microsoft's official website(<a href="https://support.microsoft.com/en-us/topic/the-latest-supported-visual-c-downloads-2647da03-1eea-4433-9aff-95f26a218cc0">https://support.microsoft.com/en-us/topic/the-latest-supported-visual-c-downloads-2647da03-1eea-4433-9aff-95f26a218cc0</a>), or <a href="http://fileserver.hzleaper.com:8085/d/f3af040915194d27a993/">our link</a>.</li>
-<li>According to your required develop platform (x86 or x64), you should use either runner/x64 or runner/86 as your LPV runner folder, then register and use LPV dlls under that folder.</li>
+<li>According to your required develop platform (x86 or x64), you should use either runner/x64 or runner/86 as your LPV runner folder, then register and use LPV modules under that folder.</li>
 </ol>
-<h1>Registration via License File</h1>
+<h1>Registration</h1>
 <ol type="1">
-<li>Run lpvKeyTool.exe under your LPV runner folder(either runner/x64 or runner/86). It generates a lpv.key file.</li>
-<li>Send the generated lpv.key file to us or your LPV SDK Tech Support. We will send you back a lpv.lic file.</li>
-<li>Put the license file under the root runner folder(./runner), and with the exactly name "lpv.lic".</li>
-<li>RMC the reg_run_as_admin.bat file under the root runner folder, click Run as administrator. It will then register all licensed LPV dlls of all platforms(both x86 and x64).</li>
-<li>Or, if you wish to only register one platform, RMC the reg32and64_run_as_admin.bat file under your LPV runner folder(for example runner/x86), click Run as administrator. It will then register all licensed LPV dlls of the specified platform.</li>
+<li>RMC the <b>reg_run_as_admin.bat</b> file under the root runner folder, click Run as administrator. It will then register all licensed LPV modules of all platforms(both x86 and x64).</li>
+<li>Double click to <b>run the check_lpv_module_path.bat</b> file under the root runner folder, it will print out the path of all well-registered LPV modules.</li>
 </ol>
-<h1>Registration via Sentinel Protection Key</h1>
+<h1>Licensing</h1>
+<h3>Trial Version: Use License File</h3>
+<ol type="1">
+<li>Run <b>lpvKeyTool.exe</b> under your LPV runner folder(either runner/x64 or runner/86). It generates a <b>lpv.key</b> file.</li>
+<li>Send the generated lpv.key file to us or your LPV SDK Tech Support. We will send you back a <b>lpv.lic</b> file.</li>
+<li>Put the license file under the root runner folder(./runner), and with the exactly name "lpv.lic".</li>
+<li>Or, open any demo application, it will pop up the unlicensed warning dialog, click YES and upload the lpv.lic file, we will copy it for you to the right folder.</li>
+</ol>
+<p><em>Note: This approach is only for short-term evaluation, you'll be notified when the trial period expired, please contact us or your LPV SDK Tech Support.</em></p>
+<h3>Full Version: Sentinel Protection Key</h3>
 <ol type="1">
 <li>Plug in the Sentinel Protection Key of LPV. Make sure the key blinks.</li>
-<li>RMC the reg_run_as_admin.bat file under the root runner folder, click Run as administrator. It will then register all licensed LPV dlls of all platforms(both x86 and x64).</li>
-<li>Or, if you wish to only register one platform, RMC the reg32and64_run_as_admin.bat file under your LPV runner folder(for example runner/x86), click Run as administrator. It will then register all licensed LPV dlls of the specified platform.</li>
+<li>Open any demo application to see it if it works as expected.</li>
 </ol>
 <h1>How to Add LPV Libraries to Visual Studio Projects</h1>
-<h2>C<code>#</code></h2>
+<h2>.NET (C<code>#</code>)</h2>
 <ol type="1">
 <li>RMC your C# project, click "Add Reference"</li>
 <li>Under COM -&gt; Type Libraries panel, search and find <a class="el" href="namespace_l_p_v_core_lib.html" title="LPV Core Library, provide basic functionalities.">LPVCoreLib</a> (must-have) and other LPVXXXLibs according to your application, then click OK to add reference (and Interop) to them in your project.</li>
 <li>In your code, add the line "using LPVCoreLib;" to start using core classes such as LImage.</li>
-<li>The following code show a short example: <div class="fragment"><div class="line"> {c#}</div>
+</ol>
+<p>The following code show a short example: </p><div class="fragment"><div class="line"> {c#}</div>
 <div class="line">// add using.</div>
 <div class="line">using LPVCoreLib;</div>
 <div class="line"> </div>
@@ -118,14 +124,13 @@ $(function() {
 <div class="line">// call LPV functions and handle the returned error code, such as do pattern matching.</div>
 <div class="line">LPVErrorCode errCode = m_lmatch.Match(m_source_img, (LRegion)m_roi, out m_match_results);</div>
 <div class="line">if (errCode != LPVErrorCode::LPVNoError) {}</div>
-</div><!-- fragment --></li>
-</ol>
-<h2>C++ (MFC)</h2>
+</div><!-- fragment --><h2>C++ (MFC)</h2>
 <ol type="1">
 <li>Copy "demo/mfcdemo/Wrappers" folder to your project folder, or add path to the wrapper folder to your project property's include path.</li>
 <li>In your code, add the corresponding .h wrapper file of your required LPV class.</li>
 <li>Add definition of the wrapper class, and create dispatch.</li>
-<li>The following code show a short example: <div class="fragment"><div class="line"> {c++}</div>
+</ol>
+<p>The following code show a short example: </p><div class="fragment"><div class="line"> {c++}</div>
 <div class="line">// add include</div>
 <div class="line">#include &quot;../Wrappers/LPVPat/CLMatch.h&quot;</div>
 <div class="line"> </div>
@@ -143,12 +148,26 @@ $(function() {
 <div class="line">// call LPV functions and handle the returned error code, such as do pattern matching.</div>
 <div class="line">LPVErrorCode errCode = (LPVErrorCode)m_lmatch.Match(m_source_img, m_roi, (LPDISPATCH*)&amp;m_match_results);</div>
 <div class="line">if (errCode != LPVErrorCode::LPVNoError) {}</div>
-</div><!-- fragment --></li>
-</ol>
-<h2>C++ (QT)</h2>
-<ol type="1">
-<li>You could use Active Qt to generate QAxObject wrappers for LPV classes, please follow the QT's <a href="https://doc.qt.io/qt-5/activeqt-container.html">official guide</a>.</li>
-<li>Or, if you wish to use the pre-installed MFC wrapper, you should do all steps above in C++ (MFC) section.</li>
+</div><!-- fragment --><h2>C++ (QT)</h2>
+<p>You could use <b>Active Qt</b> to generate QAxObject wrappers for LPV classes, please follow the QT's <a href="https://doc.qt.io/qt-5/activeqt-container.html">official guide</a>.</p>
+<p>Alternatively, you could use <a href="https://docs.microsoft.com/zh-cn/cpp/cpp/compiler-com-support"><b>Compiler COM Support</b></a> to directly read LPV modules out and convert it to C++ headers, as the following:</p>
+<div class="fragment"><div class="line"> {c++}</div>
+<div class="line">// include the header files with #import preprocessor directive</div>
+<div class="line">#include &quot;../../QtCommon/LPVMatch.h&quot;</div>
+<div class="line"> </div>
+<div class="line">// add declaration of LPV interface, it&#39;s a smart pointer</div>
+<div class="line">ILMatchPtr m_lmatch;</div>
+<div class="line">// use uuid of LPV class to initialize the object</div>
+<div class="line">// m_lmatch = ILMatchPtr(__uuidof(LMatch));</div>
+<div class="line"> </div>
+<div class="line">// call LPV functions, such as set pattern matching&#39;s maximum count, or angle tolerance.</div>
+<div class="line">m_lmatch.put_MaxCount(1);</div>
+<div class="line">m_lmatch.put_AngleTolerance(180);</div>
+<div class="line"> </div>
+<div class="line">// call LPV functions and handle the returned error code, such as do pattern matching.</div>
+<div class="line">LPVErrorCode errCode = (LPVErrorCode)m_lmatch.Match(m_source_img, m_roi, (LPDISPATCH*)&amp;m_match_results);</div>
+<div class="line">if (errCode != LPVErrorCode::LPVNoError) {}</div>
+</div><!-- fragment --><p>If you wish to use the <b>pre-installed MFC wrapper</b>, you should do all steps above in C++ (MFC) section.</p><ol type="1">
 <li>Then copy framework.h under "demo/mfcdemo/Wrappers" folder to your QT project folder, and also add them to your QT project.</li>
 <li>Modify your QT project's property:<ul>
 <li>General -&gt; Use of MFC, set to "Use MFC in a Shared DLL".</li>
