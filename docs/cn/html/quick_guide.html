@@ -127,7 +127,21 @@ $(function() {
 <h2>C++ (MFC)</h2>
 <ol type="1">
 <li>拷贝 demo/mfcdemo/Wrappers 文件夹到工程目录，或添加该目录到工程配置 include 中</li>
-<li>在代码中添加对所需类对应的 .h 文件，创建包装类和对应的 dispatch，以 LImage 为例： <div class="fragment"><div class="line"> {c++}</div>
+<li>在程序开始处调用 CoInitializeEx，结束处调用 CoUnitialize。需要在使用 LPV 模块前调用初始化。以 MFC 程序为例，推荐的调用位置为 MFC 程序的 InitInstance 和 ExitInstance 方法中，如： <div class="fragment"><div class="line"> {c++}</div>
+<div class="line">BOOL CMFCApp::InitInstance()</div>
+<div class="line">{</div>
+<div class="line">    CoInitializeEx(NULL, COINIT_MULTITHREADED);</div>
+<div class="line">    // etc.</div>
+<div class="line">    CWinApp::InitInstance();</div>
+<div class="line">}</div>
+<div class="line">INT CMFCApp::ExitInstance()</div>
+<div class="line">{</div>
+<div class="line">    CoUninitialize();</div>
+<div class="line">    return CWinApp::ExitInstance();</div>
+<div class="line">}</div>
+</div><!-- fragment --></li>
+<li>在代码中添加对所需类对应的 .h 文件</li>
+<li>创建包装类和对应的 dispatch，以 LImage 为例： <div class="fragment"><div class="line"> {c++}</div>
 <div class="line">// 添加include文件</div>
 <div class="line">#include &quot;../Wrappers/LPVPat/CLMatch.h&quot;</div>
 <div class="line"> </div>
@@ -154,6 +168,9 @@ $(function() {
 <div class="line">// 使用我们为各个模块准备的 #import 用的头文件</div>
 <div class="line">#include &quot;../../QtCommon/LPVMatch.h&quot;</div>
 <div class="line"> </div>
+<div class="line">// 在最开始程序启动时，初始化 COM</div>
+<div class="line">CoInitializeEx(NULL, COINIT_MULTITHREADED);</div>
+<div class="line"> </div>
 <div class="line">// 添加算法类声明，这是一个由编译器产生的指向该算法类接口的智能指针</div>
 <div class="line">ILMatchPtr m_lmatch;</div>
 <div class="line">// 使用算法类的 uuid 再生成实例</div>
@@ -166,6 +183,9 @@ $(function() {
 <div class="line">// 调用接口，处理返回错误码，如下，进行模板匹配</div>
 <div class="line">LPVErrorCode errCode = (LPVErrorCode)m_lmatch.Match(m_source_img, m_roi, (LPDISPATCH*)&amp;m_match_results);</div>
 <div class="line">if (errCode != LPVErrorCode::LPVNoError) {}</div>
+<div class="line"> </div>
+<div class="line">// 在程序退出时，析构 COM</div>
+<div class="line">CoUninitialize();</div>
 </div><!-- fragment --><p>若您希望继续使用我们提供的 **MFC 封装**：</p><ol type="1">
 <li>您需要执行以上的 C++ (MFC) 中的所有步骤。</li>
 <li>然后，拷贝 demo/mfcdemo/Wrappers 文件夹中的 framework.h 到你的 QT 项目的代码文件夹，并添加到项目中；</li>

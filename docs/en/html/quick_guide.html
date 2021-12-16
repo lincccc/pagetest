@@ -127,6 +127,19 @@ $(function() {
 </div><!-- fragment --><h2>C++ (MFC)</h2>
 <ol type="1">
 <li>Copy "demo/mfcdemo/Wrappers" folder to your project folder, or add path to the wrapper folder to your project property's include path.</li>
+<li>Call CoInitializeEx when your program starts and CoUnitialize when it terminates. You should do it before create and initialize LPV classes. The best place to do this is in InitInstance and ExitInstance of your MFC application, as following: <div class="fragment"><div class="line"> {c++}</div>
+<div class="line">BOOL CMFCApp::InitInstance()</div>
+<div class="line">{</div>
+<div class="line">    CoInitializeEx(NULL, COINIT_MULTITHREADED);</div>
+<div class="line">    // etc.</div>
+<div class="line">    CWinApp::InitInstance();</div>
+<div class="line">}</div>
+<div class="line">INT CMFCApp::ExitInstance()</div>
+<div class="line">{</div>
+<div class="line">    CoUninitialize();</div>
+<div class="line">    return CWinApp::ExitInstance();</div>
+<div class="line">}</div>
+</div><!-- fragment --></li>
 <li>In your code, add the corresponding .h wrapper file of your required LPV class.</li>
 <li>Add definition of the wrapper class, and create dispatch.</li>
 </ol>
@@ -155,6 +168,9 @@ $(function() {
 <div class="line">// include the header files with #import preprocessor directive</div>
 <div class="line">#include &quot;../../QtCommon/LPVMatch.h&quot;</div>
 <div class="line"> </div>
+<div class="line">// init COM at the beginning</div>
+<div class="line">CoInitializeEx(NULL, COINIT_MULTITHREADED);</div>
+<div class="line"> </div>
 <div class="line">// add declaration of LPV interface, it&#39;s a smart pointer</div>
 <div class="line">ILMatchPtr m_lmatch;</div>
 <div class="line">// use uuid of LPV class to initialize the object</div>
@@ -167,6 +183,9 @@ $(function() {
 <div class="line">// call LPV functions and handle the returned error code, such as do pattern matching.</div>
 <div class="line">LPVErrorCode errCode = (LPVErrorCode)m_lmatch.Match(m_source_img, m_roi, (LPDISPATCH*)&amp;m_match_results);</div>
 <div class="line">if (errCode != LPVErrorCode::LPVNoError) {}</div>
+<div class="line"> </div>
+<div class="line">// uninit COM at the end</div>
+<div class="line">CoUninitialize();</div>
 </div><!-- fragment --><p>If you wish to use the <b>pre-installed MFC wrapper</b>, you should do all steps above in C++ (MFC) section.</p><ol type="1">
 <li>Then copy framework.h under "demo/mfcdemo/Wrappers" folder to your QT project folder, and also add them to your QT project.</li>
 <li>Modify your QT project's property:<ul>
