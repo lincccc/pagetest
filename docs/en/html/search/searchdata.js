@@ -8,7 +8,7 @@ var indexSectionsWithContent =
   5: "l",
   6: "l",
   7: "abcdefghiklmnopqrstuvwxyz",
-  8: "\cfhq"
+  8: "\cfhpq"
 };
 
 var indexSectionNames =

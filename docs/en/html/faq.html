@@ -78,16 +78,38 @@ $(function() {
 <div class="title">FAQ </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md_Z__stonewall_doc_en_t99_faq"></a> </p><h1>Compile Failure</h1>
-<h4>Q1. C++ error C3506: there is no typelib registered for LIBID XXX</h4>
+<div class="textblock"><p><a class="anchor" id="md_Z__stonewall_doc_en_t99_faq"></a> <br  />
+</p>
+<h1>Compile Failure</h1>
+<h4><a class="anchor" id="faq1"></a>
+Q1. C++ error C3506: there is no typelib registered for LIBID XXX</h4>
+<blockquote class="doxtable">
 <p>The error indicates the LPV libraries are not well registered for your platform.</p><ol type="1">
 <li>Make sure there's NO special character in the path of the registration file, like @ ( ) * &amp; . Rename the folder with special characters.</li>
-<li>Re-register by run the <b>runner/reg_run_as_admin.bat</b> script as administrator.</li>
+<li>Re-register by run the <b>runner/reg_run_as_admin.bat</b> script as administrator. </li>
 </ol>
-<h4>Q2. C# error CS0246: The type or namespace name 'LPVXXXLib' could not be found (are you missing a using directive or an assembly reference?)</h4>
-<p>Same as Q1, it's due to the LPV libraries are not well registered, please follow the steps in Q1.</p>
+</blockquote>
+<h4><a class="anchor" id="faq6"></a>
+Q2. C++ error MSB8036: The Windows SDK version XX.XX was not found.</h4>
+<blockquote class="doxtable">
+<p>The error occurs when Visual Studio or MSBuild can't find the Windows SDK requested by your project in the expected location.<br  />
+ The demo projects target the 10.0.16299.0 Windows SDK. If you don't have that version installed, you may right-click on the project node, under the <b>Configuration Properties &gt; General &gt; Target Platform</b>, select any available one. </p>
+</blockquote>
+<h4><a class="anchor" id="faq7"></a>
+Q3. C++ error MSB8020: The build tools for Visual Studio XXXX (Platform Toolset = 'vXXX') cannot be found.</h4>
+<blockquote class="doxtable">
+<p>To resolve this issue, upgrade the project to use the current Visual Studio toolset, or use the Visual Studio Installer to install the specified build toolset.<br  />
+ The demo projects use Visual Studio 2017 (v141) toolset. If you don't have VS 2017 or 2015 installed, you may right-click on the project node, under the <b>Configuration Properties &gt; General &gt; Platform Toolset</b>, change to any available one. </p>
+</blockquote>
+<h4><a class="anchor" id="faq2"></a>
+Q4. C# error CS0246: The type or namespace name 'LPVXXXLib' could not be found (are you missing a using directive or an assembly reference?)</h4>
+<blockquote class="doxtable">
+<p>Same as <a href="#faq1">Q1</a>, it's due to the LPV libraries are not well registered, please follow the steps in <a href="#faq1">Q1</a>. </p>
+</blockquote>
 <h1>Execution Failure</h1>
-<h4>Q3. Call CreateDispatch fail with error 800401F0 CoInitialize has not been called. (C++ only)</h4>
+<h4><a class="anchor" id="faq3"></a>
+Q5. Call CreateDispatch fail with error 800401F0 CoInitialize has not been called. (C++ only)</h4>
+<blockquote class="doxtable">
 <p>You need to call CoInitializeEx when your program starts and CoUnitialize when it terminates. You should do it before create and initialize LPV classes. The best place to do this is in InitInstance and ExitInstance of your MFC application.</p>
 <p>For example: </p><div class="fragment"><div class="line">BOOL CMFCApp::InitInstance()</div>
 <div class="line">{</div>
@@ -100,9 +122,15 @@ $(function() {
 <div class="line">    CoUninitialize();</div>
 <div class="line">    return CWinApp::ExitInstance();</div>
 <div class="line">}</div>
-</div><!-- fragment --><h4>Q4. Call CreateDispatch fail and return 0 with NULL m_lpDispatch. (C++ only)</h4>
-<p>Same as Q1, it's due to the LPV libraries are not well registered, please follow the steps in Q1.</p>
-<h4>Q5. Open the .net form with LPV display control, the designer report error: Could not find type 'AxLPVDisplayLib.AxLDisplay'. Please make sure that the assembly that contains this type is referenced. If this type is a part of your development project, make sure that the project has been successfully built using settings for your current platform or Any CPU.</h4>
+</div><!-- fragment --> </blockquote>
+<h4><a class="anchor" id="faq4"></a>
+Q6. Call CreateDispatch fail and return 0 with NULL m_lpDispatch. (C++ only)</h4>
+<blockquote class="doxtable">
+<p>Same as <a href="#faq1">Q1</a>, it's due to the LPV libraries are not well registered, please follow the steps in <a href="#faq1">Q1</a>. </p>
+</blockquote>
+<h4><a class="anchor" id="faq5"></a>
+Q7. Open the .net form with LPV display control, the designer report error: Could not find type 'AxLPVDisplayLib.AxLDisplay'.</h4>
+<blockquote class="doxtable">
 <p>If you are using the x86 LPV libraries. You just need to compile the project in x86(32bit), then restart Visual Studio.</p>
 <p>If you are using the x64 LPV libraries. Since Visual Studio is natively 32bit, it cannot do GUI editing in some components (e.g. LDisplay control) in 64bit. To resolve this error, you should:</p><ol type="1">
 <li>Register the 32bit LPV libraries if you have not. Run <b>runner/reg_run_as_admin.bat</b> script as administrator.</li>
@@ -113,6 +141,7 @@ $(function() {
 <li>Change the solution back to x64(64bit).</li>
 <li>Open the designer for GUI editing. </li>
 </ol>
+</blockquote>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 <!-- HTML footer for doxygen 1.9.1-->

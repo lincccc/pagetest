@@ -148,6 +148,14 @@ Public 成员函数</h2></td></tr>
 OLE_COLOR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#abe4f56038c6366eda4bd3c20347895d8">BackColor</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:abe4f56038c6366eda4bd3c20347895d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">显示控件的背景色 <br /></td></tr>
 <tr class="separator:abe4f56038c6366eda4bd3c20347895d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae349e9b7738d1a129b9a0fc752638818"><td class="memItemLeft" align="right" valign="top"><a id="ae349e9b7738d1a129b9a0fc752638818"></a>
+OLE_COLOR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#ae349e9b7738d1a129b9a0fc752638818">CenterCrossColor</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:ae349e9b7738d1a129b9a0fc752638818"><td class="mdescLeft">&#160;</td><td class="mdescRight">图像中心十字的颜色 <br /></td></tr>
+<tr class="separator:ae349e9b7738d1a129b9a0fc752638818"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a026be87f21ac788ce99957e59746ca39"><td class="memItemLeft" align="right" valign="top"><a id="a026be87f21ac788ce99957e59746ca39"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#a026be87f21ac788ce99957e59746ca39">CenterCrossSize</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a026be87f21ac788ce99957e59746ca39"><td class="mdescLeft">&#160;</td><td class="mdescRight">图像中心十字的尺寸，默认值为 -1，表示全屏显示 <br /></td></tr>
+<tr class="separator:a026be87f21ac788ce99957e59746ca39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b0398ff6fa618556f94bb816c03248c"><td class="memItemLeft" align="right" valign="top"><a id="a0b0398ff6fa618556f94bb816c03248c"></a>
 <a class="el" href="namespace_l_p_v_display_lib.html#abc2f2be19cc9a20d8f4b71ddb968d49b">LPVDisplayFlags</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#a0b0398ff6fa618556f94bb816c03248c">DisplayFlags</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:a0b0398ff6fa618556f94bb816c03248c"><td class="mdescLeft">&#160;</td><td class="mdescRight">显示控的显示模式，查看 LPVDisplayFlags <br /></td></tr>
@@ -257,7 +265,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 </div><div class="memdoc">
 <p>在场景中新增一个可绘制对象。通常是一个几何形状，或某些算法的输出结果。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pDrawable</td><td>可绘制对象，应当为实现 <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_drawable.html">ILDrawable</a> 的类型。 </td></tr>
+    <tr><td class="paramname">pDrawable</td><td>可绘制对象，应当为实现 <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_drawable.html">ILDrawable</a> 的类型，或 <a class="el" href="interface_l_p_v_display_lib_1_1_i_l_text.html">LText</a> 类型。 </td></tr>
     <tr><td class="paramname">drawFlags</td><td>该可绘制对象的绘制参数。 </td></tr>
   </table>
   </dd>

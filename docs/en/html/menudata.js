@@ -23,11 +23,10 @@
  @licend  The above is the entire license notice for the JavaScript code in this file
 */
 var menudata={children:[
-{text:"Main Page",url:"index.html"},
 {text:"Get Started",url:"usergroup0.html",children:[
 {text:"Quick Guide",url:"quick_guide.html"},
 {text:"Play with DEMOs",url:"how_to_play_with_demo.html"},
-{text:"Use LDisplay Control",url:"use_display_control.html"}]},
+{text:"Display Control",url:"use_display_control.html"}]},
 {text:"LPV Modules",url:"usergroup1.html",children:[
 {text:"<b>Basics</b> <i><small>lpvCore</small></i>",url:"namespace_l_p_v_core_lib.html"},
 {text:"<b>Geometry</b> <i><small>lpvGeom</small></i>",url:"namespace_l_p_v_geom_lib.html"},

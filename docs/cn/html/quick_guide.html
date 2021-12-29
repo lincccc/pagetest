@@ -78,7 +78,9 @@ $(function() {
 <div class="title">快速上手 </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md_Z__stonewall_doc_cn_t01_quick_guide"></a> </p><h1>安装</h1>
+<div class="textblock"><p><a class="anchor" id="md_Z__stonewall_doc_cn_t01_quick_guide"></a> <br  />
+</p>
+<h1>安装</h1>
 <ol type="1">
 <li>解压 lpv_xxxx.zip 文件到任意目录。</li>
 <li>[可选] 如果未安装 Visual C++ Redistributable Package 14 或以上版本，需从<a href="https://support.microsoft.com/en-us/topic/the-latest-supported-visual-c-downloads-2647da03-1eea-4433-9aff-95f26a218cc0">微软官方网站</a>下载安装，也可以用我们提供的<a href="http://fileserver.hzleaper.com:8085/d/f3af040915194d27a993/">下载链接</a>下载。</li>
@@ -103,8 +105,10 @@ $(function() {
 <li>插入 LPV 加密狗，检查加密狗是否亮灯。</li>
 <li>打开任意一个 demo 程序，检测授权是否正常。</li>
 </ol>
-<h1>如何添加库到 Visual Studio 工程</h1>
-<h2>.NET (C<code>#</code>)</h2>
+<p><br  />
+ </p><hr  />
+<h1>添加库到 Visual Studio 工程</h1>
+<h2>.NET (C#)</h2>
 <ol type="1">
 <li>右键工程的 Reference 项，点击 Add Reference</li>
 <li>选择 COM 页面，找到 LPVCoreLib（必须）及其他希望加入的 LPVXXXLib 算法库，勾选后点击 OK 。</li>
@@ -174,14 +178,15 @@ $(function() {
 <div class="line">// 添加算法类声明，这是一个由编译器产生的指向该算法类接口的智能指针</div>
 <div class="line">ILMatchPtr m_lmatch;</div>
 <div class="line">// 使用算法类的 uuid 再生成实例</div>
-<div class="line">// m_lmatch = ILMatchPtr(__uuidof(LMatch));</div>
+<div class="line">m_lmatch = ILMatchPtr(__uuidof(LMatch));</div>
 <div class="line"> </div>
 <div class="line">// 调用接口函数，如下，设置模板匹配数量，设置角度范围</div>
-<div class="line">m_lmatch.put_MaxCount(1);</div>
-<div class="line">m_lmatch.put_AngleTolerance(180);</div>
+<div class="line">m_lmatch-&gt;put_MaxCount(1);</div>
+<div class="line">m_lmatch-&gt;put_AngleTolerance(180);</div>
 <div class="line">    </div>
 <div class="line">// 调用接口，处理返回错误码，如下，进行模板匹配</div>
-<div class="line">LPVErrorCode errCode = (LPVErrorCode)m_lmatch.Match(m_source_img, m_roi, (LPDISPATCH*)&amp;m_match_results);</div>
+<div class="line">ILMatchResultsPtr m_match_results;</div>
+<div class="line">LPVErrorCode errCode = (LPVErrorCode)m_lmatch-&gt;Match(m_source_img, m_roi, &amp;m_match_results);</div>
 <div class="line">if (errCode != LPVErrorCode::LPVNoError) {}</div>
 <div class="line"> </div>
 <div class="line">// 在程序退出时，析构 COM</div>
