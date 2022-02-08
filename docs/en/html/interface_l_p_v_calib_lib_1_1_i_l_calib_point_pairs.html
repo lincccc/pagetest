@@ -9,6 +9,7 @@
 <title>LPV: ILCalibPointPairs Interface Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="tutorial-utils.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
@@ -96,39 +97,40 @@ Inheritance diagram for ILCalibPointPairs:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab6de64de9e17d5749dc9562a4fe09771"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_point_pairs.html#ab6de64de9e17d5749dc9562a4fe09771">AddPointPair</a> ([in] double imagePointX, [in] double imagePointY, [in] double worldPointX, [in] double worldPointY)</td></tr>
-<tr class="separator:ab6de64de9e17d5749dc9562a4fe09771"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99bb73dd6c85783ddaa1bf2f97ba9f87"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_point_pairs.html#a99bb73dd6c85783ddaa1bf2f97ba9f87">Count</a> ([out, retval] int *pVal)</td></tr>
-<tr class="separator:a99bb73dd6c85783ddaa1bf2f97ba9f87"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af85a6671977b5f4d1542ff9e2fc78098"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_point_pairs.html#af85a6671977b5f4d1542ff9e2fc78098">Draw</a> ([in] HDC hdc, [in] int index, [in, defaultvalue(1)] double zoomX, [in, defaultvalue(0)] double zoomY, [in, defaultvalue(0)] double panX, [in, defaultvalue(0)] double panY)</td></tr>
-<tr class="separator:af85a6671977b5f4d1542ff9e2fc78098"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15f7b41b5e3cdc74979f57d114fbb1b6"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_point_pairs.html#a15f7b41b5e3cdc74979f57d114fbb1b6">DrawAll</a> ([in] HDC hdc, [in, defaultvalue(1)] double zoomX, [in, defaultvalue(0)] double zoomY, [in, defaultvalue(0)] double panX, [in, defaultvalue(0)] double panY)</td></tr>
-<tr class="separator:a15f7b41b5e3cdc74979f57d114fbb1b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ff4e364d96cf73041a8c9bc0d14441c"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_point_pairs.html#a9ff4e364d96cf73041a8c9bc0d14441c">GetImagePoint</a> ([in] int index, [out, retval] <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_point.html">ILPoint</a> **ppImagePoint)</td></tr>
-<tr class="separator:a9ff4e364d96cf73041a8c9bc0d14441c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa8ed10de0d53499000b16c0644136b08"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_point_pairs.html#aa8ed10de0d53499000b16c0644136b08">GetWorldPoint</a> ([in] int index, [out, retval] <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_point.html">ILPoint</a> **ppWorldPoint)</td></tr>
-<tr class="separator:aa8ed10de0d53499000b16c0644136b08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a7081a6ae822924f041870246da8cd8"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_point_pairs.html#a1a7081a6ae822924f041870246da8cd8">Load</a> ([in] BSTR filename, [out, retval] enum <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> *pError)</td></tr>
-<tr class="separator:a1a7081a6ae822924f041870246da8cd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a828d0933abd2fa4a72950a3fee81dec6"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_point_pairs.html#a828d0933abd2fa4a72950a3fee81dec6">Reset</a> ()</td></tr>
-<tr class="separator:a828d0933abd2fa4a72950a3fee81dec6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ab1f63c21e798020bdcbefeeb757955"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_point_pairs.html#a6ab1f63c21e798020bdcbefeeb757955">Save</a> ([in] BSTR filename, [out, retval] enum <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> *pError)</td></tr>
-<tr class="separator:a6ab1f63c21e798020bdcbefeeb757955"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a1cbe76816d1828a1579880f39a39a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_point_pairs.html#a5a1cbe76816d1828a1579880f39a39a7">AddPointPair</a> (double imagePointX, double imagePointY, double worldPointX, double worldPointY)</td></tr>
+<tr class="separator:a5a1cbe76816d1828a1579880f39a39a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cb7c47723f72f9554e3905fc94140e4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_point_pairs.html#a0cb7c47723f72f9554e3905fc94140e4">Count</a> ()</td></tr>
+<tr class="separator:a0cb7c47723f72f9554e3905fc94140e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af19e586c2c7bb2f3c27ada1ebaa61990"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_point_pairs.html#af19e586c2c7bb2f3c27ada1ebaa61990">Draw</a> (HDC hdc, int index, double zoomX, double zoomY, double panX, double panY)</td></tr>
+<tr class="separator:af19e586c2c7bb2f3c27ada1ebaa61990"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cdcc9b967df555bd98038fa44f077ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_point_pairs.html#a4cdcc9b967df555bd98038fa44f077ee">DrawAll</a> (HDC hdc, double zoomX, double zoomY, double panX, double panY)</td></tr>
+<tr class="separator:a4cdcc9b967df555bd98038fa44f077ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa46ca218a9645ab612f053303c2b9fed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_point.html">ILPoint</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_point_pairs.html#aa46ca218a9645ab612f053303c2b9fed">GetImagePoint</a> (int index)</td></tr>
+<tr class="separator:aa46ca218a9645ab612f053303c2b9fed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11be8e921485589271a25e220d15703e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_point.html">ILPoint</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_point_pairs.html#a11be8e921485589271a25e220d15703e">GetWorldPoint</a> (int index)</td></tr>
+<tr class="separator:a11be8e921485589271a25e220d15703e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc33f804a59dbd9a1f824ea51862aaa2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_point_pairs.html#acc33f804a59dbd9a1f824ea51862aaa2">Load</a> (BSTR filename)</td></tr>
+<tr class="separator:acc33f804a59dbd9a1f824ea51862aaa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a372de693ad40b3f42839c8ec6ac845f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_point_pairs.html#a372de693ad40b3f42839c8ec6ac845f4">Reset</a> ()</td></tr>
+<tr class="separator:a372de693ad40b3f42839c8ec6ac845f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedf9b00d47787a935a044ce74d0df887"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_point_pairs.html#aedf9b00d47787a935a044ce74d0df887">Save</a> (BSTR filename)</td></tr>
+<tr class="separator:aedf9b00d47787a935a044ce74d0df887"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This interface holds a collection of image and world point pairs. </p>
-<p>Usually you get the <a class="el" href="class_l_p_v_calib_lib_1_1_l_calib_point_pairs.html">LCalibPointPairs</a> object from the <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#a0421d83d9b9e09099124adb77303e212">ILCalibBoard::Detect()</a> as detection result. You can then use this interface to access individual point pair and draw them on graphics windows. You can also construct a point pair collection manually via <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_point_pairs.html#ab6de64de9e17d5749dc9562a4fe09771">AddPointPair()</a>.</p>
-<p>C++: </p><div class="fragment"><div class="line">CLCalibPointPairs m_pnt_pairs;</div>
-<div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = (<a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>)m_calib_board.Detect(m_img, (LPDISPATCH*)&amp;m_pnt_pairs);</div>
+<p>Usually you get the <a class="el" href="class_l_p_v_calib_lib_1_1_l_calib_point_pairs.html">LCalibPointPairs</a> object from the <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#aa174ae718c73636f93cff15578386560">ILCalibBoard::Detect()</a> as detection result. You can then use this interface to access individual point pair and draw them on graphics windows. You can also construct a point pair collection manually via <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_point_pairs.html#a5a1cbe76816d1828a1579880f39a39a7">AddPointPair()</a>.</p>
+<h3>Example Code </h3>
+ <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">ILCalibPointPairsPtr m_pnt_pairs(__uuidof(LCalibPointPairs));</div>
+<div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = m_calib_board-&gt;Detect(m_img, &amp;m_pnt_pairs);</div>
 <div class="line"><span class="keywordflow">if</span> (err != LPVErrorCode::LPVNoError) <span class="keywordflow">return</span>;</div>
 <div class="line"><span class="keywordtype">int</span> c = m_pnt_pairs-&gt;Count();</div>
 <div class="line"><span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; c; ++i) {</div>
-<div class="line">    LPoint imgPnt = m_pnt_pairs-&gt;GetImagePoint(i);</div>
-<div class="line">    LPoint worldPnt = m_pnt_pairs-&gt;GetWorldPoint(i);</div>
+<div class="line">    ILPointPtr imgPnt = m_pnt_pairs-&gt;GetImagePoint(i);</div>
+<div class="line">    ILPointPtr worldPnt = m_pnt_pairs-&gt;GetWorldPoint(i);</div>
 <div class="line">    <span class="comment">// handle each point pair</span></div>
 <div class="line">}</div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">This enumeration represents the type of a LPV function error.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:149</div></div>
-</div><!-- fragment --><p>C#: </p><div class="fragment"><div class="line">LCalibPointPairs m_pnt_pairs;</div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">This enumeration represents the type of a LPV function error.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:155</div></div>
+</div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LCalibPointPairs m_pnt_pairs;</div>
 <div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = (<a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>)m_calib_board.Detect(m_img, out m_pnt_pairs);</div>
 <div class="line"><span class="keywordflow">if</span> (err != <a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>.LPVNoError) <span class="keywordflow">return</span>;</div>
 <div class="line"><span class="keywordtype">int</span> c = m_pnt_pairs-&gt;Count();</div>
@@ -137,35 +139,35 @@ Public Member Functions</h2></td></tr>
 <div class="line">    LPoint worldPnt = m_pnt_pairs-&gt;GetWorldPoint(i);</div>
 <div class="line">    <span class="comment">// handle each point pair</span></div>
 <div class="line">}</div>
-</div><!-- fragment --> </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ab6de64de9e17d5749dc9562a4fe09771"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab6de64de9e17d5749dc9562a4fe09771">&#9670;&nbsp;</a></span>AddPointPair()</h2>
+</div><!-- fragment --> </div>  </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a5a1cbe76816d1828a1579880f39a39a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a1cbe76816d1828a1579880f39a39a7">&#9670;&nbsp;</a></span>AddPointPair()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT AddPointPair </td>
+          <td class="memname">void AddPointPair </td>
           <td>(</td>
-          <td class="paramtype">[in] double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>imagePointX</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in] double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>imagePointY</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in] double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>worldPointX</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in] double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>worldPointY</em>&#160;</td>
         </tr>
         <tr>
@@ -187,17 +189,16 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a99bb73dd6c85783ddaa1bf2f97ba9f87"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a99bb73dd6c85783ddaa1bf2f97ba9f87">&#9670;&nbsp;</a></span>Count()</h2>
+<a id="a0cb7c47723f72f9554e3905fc94140e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0cb7c47723f72f9554e3905fc94140e4">&#9670;&nbsp;</a></span>Count()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT Count </td>
+          <td class="memname">int Count </td>
           <td>(</td>
-          <td class="paramtype">[out, retval] int *&#160;</td>
-          <td class="paramname"><em>pVal</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -206,46 +207,46 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="af85a6671977b5f4d1542ff9e2fc78098"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af85a6671977b5f4d1542ff9e2fc78098">&#9670;&nbsp;</a></span>Draw()</h2>
+<a id="af19e586c2c7bb2f3c27ada1ebaa61990"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af19e586c2c7bb2f3c27ada1ebaa61990">&#9670;&nbsp;</a></span>Draw()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT Draw </td>
+          <td class="memname">void Draw </td>
           <td>(</td>
-          <td class="paramtype">[in] HDC&#160;</td>
+          <td class="paramtype">HDC&#160;</td>
           <td class="paramname"><em>hdc</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in] int&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>index</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in, defaultvalue(1)] double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>zoomX</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in, defaultvalue(0)] double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>zoomY</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in, defaultvalue(0)] double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>panX</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in, defaultvalue(0)] double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>panY</em>&#160;</td>
         </tr>
         <tr>
@@ -261,44 +262,44 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_point_pairs.html#a15f7b41b5e3cdc74979f57d114fbb1b6">DrawAll()</a>. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_point_pairs.html#a4cdcc9b967df555bd98038fa44f077ee">DrawAll()</a>. </dd></dl>
 
 </div>
 </div>
-<a id="a15f7b41b5e3cdc74979f57d114fbb1b6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a15f7b41b5e3cdc74979f57d114fbb1b6">&#9670;&nbsp;</a></span>DrawAll()</h2>
+<a id="a4cdcc9b967df555bd98038fa44f077ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cdcc9b967df555bd98038fa44f077ee">&#9670;&nbsp;</a></span>DrawAll()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT DrawAll </td>
+          <td class="memname">void DrawAll </td>
           <td>(</td>
-          <td class="paramtype">[in] HDC&#160;</td>
+          <td class="paramtype">HDC&#160;</td>
           <td class="paramname"><em>hdc</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in, defaultvalue(1)] double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>zoomX</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in, defaultvalue(0)] double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>zoomY</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in, defaultvalue(0)] double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>panX</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in, defaultvalue(0)] double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>panY</em>&#160;</td>
         </tr>
         <tr>
@@ -308,32 +309,22 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Draw all image points in the collection onto provide device context. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_point_pairs.html#af85a6671977b5f4d1542ff9e2fc78098">Draw()</a>. </dd></dl>
+<p>Draw all image points in the collection onto provide device context. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_point_pairs.html#af19e586c2c7bb2f3c27ada1ebaa61990">Draw()</a>. </dd></dl>
 
 </div>
 </div>
-<a id="a9ff4e364d96cf73041a8c9bc0d14441c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9ff4e364d96cf73041a8c9bc0d14441c">&#9670;&nbsp;</a></span>GetImagePoint()</h2>
+<a id="aa46ca218a9645ab612f053303c2b9fed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa46ca218a9645ab612f053303c2b9fed">&#9670;&nbsp;</a></span>GetImagePoint()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT GetImagePoint </td>
+          <td class="memname"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_point.html">ILPoint</a>* GetImagePoint </td>
           <td>(</td>
-          <td class="paramtype">[in] int&#160;</td>
-          <td class="paramname"><em>index</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">[out, retval] <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_point.html">ILPoint</a> **&#160;</td>
-          <td class="paramname"><em>ppImagePoint</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -345,35 +336,25 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">pImagePoint</td><td>Return the image point of given index. </td></tr>
+    <tr><td class="paramname">imagePoint</td><td>Return the image point of given index. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="aa8ed10de0d53499000b16c0644136b08"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa8ed10de0d53499000b16c0644136b08">&#9670;&nbsp;</a></span>GetWorldPoint()</h2>
+<a id="a11be8e921485589271a25e220d15703e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11be8e921485589271a25e220d15703e">&#9670;&nbsp;</a></span>GetWorldPoint()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT GetWorldPoint </td>
+          <td class="memname"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_point.html">ILPoint</a>* GetWorldPoint </td>
           <td>(</td>
-          <td class="paramtype">[in] int&#160;</td>
-          <td class="paramname"><em>index</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">[out, retval] <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_point.html">ILPoint</a> **&#160;</td>
-          <td class="paramname"><em>ppWorldPoint</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -385,50 +366,40 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">pImagePoint</td><td>Return the world point of given index. </td></tr>
+    <tr><td class="paramname">imagePoint</td><td>Return the world point of given index. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a1a7081a6ae822924f041870246da8cd8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1a7081a6ae822924f041870246da8cd8">&#9670;&nbsp;</a></span>Load()</h2>
+<a id="acc33f804a59dbd9a1f824ea51862aaa2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc33f804a59dbd9a1f824ea51862aaa2">&#9670;&nbsp;</a></span>Load()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT Load </td>
+          <td class="memname"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> Load </td>
           <td>(</td>
-          <td class="paramtype">[in] BSTR&#160;</td>
-          <td class="paramname"><em>filename</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">BSTR&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">[out, retval] enum <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> *&#160;</td>
-          <td class="paramname"><em>pError</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Load the point pair collection from a specified file. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_point_pairs.html#a6ab1f63c21e798020bdcbefeeb757955">Save()</a> </dd></dl>
+<p>Load the point pair collection from a specified file. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_point_pairs.html#aedf9b00d47787a935a044ce74d0df887">Save()</a> </dd></dl>
 
 </div>
 </div>
-<a id="a828d0933abd2fa4a72950a3fee81dec6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a828d0933abd2fa4a72950a3fee81dec6">&#9670;&nbsp;</a></span>Reset()</h2>
+<a id="a372de693ad40b3f42839c8ec6ac845f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a372de693ad40b3f42839c8ec6ac845f4">&#9670;&nbsp;</a></span>Reset()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT Reset </td>
+          <td class="memname">void Reset </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -439,32 +410,22 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a6ab1f63c21e798020bdcbefeeb757955"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6ab1f63c21e798020bdcbefeeb757955">&#9670;&nbsp;</a></span>Save()</h2>
+<a id="aedf9b00d47787a935a044ce74d0df887"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedf9b00d47787a935a044ce74d0df887">&#9670;&nbsp;</a></span>Save()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT Save </td>
+          <td class="memname"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> Save </td>
           <td>(</td>
-          <td class="paramtype">[in] BSTR&#160;</td>
-          <td class="paramname"><em>filename</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">BSTR&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">[out, retval] enum <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> *&#160;</td>
-          <td class="paramname"><em>pError</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Save the point pair collection to a specified file. It should be a .cpair file with the positions and corresponding information of all point pairs. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_point_pairs.html#a1a7081a6ae822924f041870246da8cd8">Load()</a> </dd></dl>
+<p>Save the point pair collection to a specified file. It should be a .cpair file with the positions and corresponding information of all point pairs. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_point_pairs.html#acc33f804a59dbd9a1f824ea51862aaa2">Load()</a> </dd></dl>
 
 </div>
 </div>
@@ -472,7 +433,12 @@ Public Member Functions</h2></td></tr>
 <!-- HTML footer for doxygen 1.9.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-© 2021 <a href="http://www.hzleaper.com/">Hangzhou Leaper Tech. Ltd.</a>
+© 2022 <a href="http://www.hzleaper.com/">Hangzhou Leaper Tech. Ltd.</a>
 </small></address>
+<script type="text/javascript">
+//<![CDATA[
+addTutorialsButtons();
+//]]>
+</script>
 </body>
 </html>

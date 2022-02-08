@@ -9,6 +9,7 @@
 <title>LPV: ILCalib Interface Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="tutorial-utils.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
@@ -103,38 +104,38 @@ Inheritance diagram for ILCalib:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae27e048c818629e92721a4da81b2d878"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#ae27e048c818629e92721a4da81b2d878">AddPoint</a> ([in] double imagePointX, [in] double imagePointY, [in] double worldPointX, [in] double worldPointY, [out, retval] enum <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> *pError)</td></tr>
-<tr class="separator:ae27e048c818629e92721a4da81b2d878"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aadddde9c8d1e2f7adc10059e27166c52"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#aadddde9c8d1e2f7adc10059e27166c52">AddPoints</a> ([in] <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_point_pairs.html">ILCalibPointPairs</a> *pPointPairs, [out, retval] enum <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> *pError)</td></tr>
-<tr class="separator:aadddde9c8d1e2f7adc10059e27166c52"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa04e892344aace8dbdd0a4a926a6561b"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#aa04e892344aace8dbdd0a4a926a6561b">Calibrate</a> ([out, retval] enum <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> *pError)</td></tr>
-<tr class="separator:aa04e892344aace8dbdd0a4a926a6561b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5853b4420c58e63ed9d8687ce0689f09"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a5853b4420c58e63ed9d8687ce0689f09">FixImage</a> ([in] <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *pImage, [out] <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *pFixedImage, [out, retval] enum <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> *pError)</td></tr>
-<tr class="separator:a5853b4420c58e63ed9d8687ce0689f09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c402432eaa58b9fdeeda1dddb7a968a"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a9c402432eaa58b9fdeeda1dddb7a968a">GenPostTransformMatrix</a> ([in] <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_point_pairs.html">ILCalibPointPairs</a> *pPointPairs, [out, retval] enum <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> *pError)</td></tr>
-<tr class="separator:a9c402432eaa58b9fdeeda1dddb7a968a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6631bc7e270d64f7645469abbc244877"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a6631bc7e270d64f7645469abbc244877">ImageToWorld</a> ([in] double imagePointX, [in] double imagePointY, [out] double *pWorldPointX, [out] double *pWorldPointY)</td></tr>
-<tr class="separator:a6631bc7e270d64f7645469abbc244877"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93e51d9cea1c3059ce2ac41cccb9adf0"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a93e51d9cea1c3059ce2ac41cccb9adf0">IsCalibrated</a> ([out, retval] VARIANT_BOOL *pVal)</td></tr>
-<tr class="separator:a93e51d9cea1c3059ce2ac41cccb9adf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a7081a6ae822924f041870246da8cd8"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a1a7081a6ae822924f041870246da8cd8">Load</a> ([in] BSTR filename, [out, retval] enum <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> *pError)</td></tr>
-<tr class="separator:a1a7081a6ae822924f041870246da8cd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a828d0933abd2fa4a72950a3fee81dec6"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a828d0933abd2fa4a72950a3fee81dec6">Reset</a> ()</td></tr>
-<tr class="separator:a828d0933abd2fa4a72950a3fee81dec6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ab1f63c21e798020bdcbefeeb757955"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a6ab1f63c21e798020bdcbefeeb757955">Save</a> ([in] BSTR filename, [out, retval] enum <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> *pError)</td></tr>
-<tr class="separator:a6ab1f63c21e798020bdcbefeeb757955"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff5db2d1fc2f7026b3f33210a6bbcfea"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#aff5db2d1fc2f7026b3f33210a6bbcfea">SetImageSize</a> ([in] int w, [in] int h)</td></tr>
-<tr class="separator:aff5db2d1fc2f7026b3f33210a6bbcfea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeae4d41bbf0736ea0f935738e3853197"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#aeae4d41bbf0736ea0f935738e3853197">SetPostTransform</a> ([in] double offsetX, [in] double offsetY, [in] double deltaAngle)</td></tr>
-<tr class="separator:aeae4d41bbf0736ea0f935738e3853197"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13a25b06cc2092bae78a2d04e9c98e52"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a13a25b06cc2092bae78a2d04e9c98e52">SetPostTransformMatrix</a> ([in] int cols, [in] int rows, [in] SAFEARRAY(double) data)</td></tr>
-<tr class="separator:a13a25b06cc2092bae78a2d04e9c98e52"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a143bc0502ddfa10717aff8510f2affb6"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a143bc0502ddfa10717aff8510f2affb6">SetPostTransformMatrix23</a> ([in] struct <a class="el" href="struct_l_p_v_core_lib_1_1_l_matrix23.html">LMatrix23</a> *data)</td></tr>
-<tr class="separator:a143bc0502ddfa10717aff8510f2affb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2adb01ac44b7f10189b00bbe63165b40"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a2adb01ac44b7f10189b00bbe63165b40">SetPostTransformMatrix33</a> ([in] struct <a class="el" href="struct_l_p_v_core_lib_1_1_l_matrix33.html">LMatrix33</a> *data)</td></tr>
-<tr class="separator:a2adb01ac44b7f10189b00bbe63165b40"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd204daff475d7d1de98747d34aad5be"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#afd204daff475d7d1de98747d34aad5be">WorldToImage</a> ([in] double worldPointX, [in] double worldPointY, [out] double *pImagePointX, [out] double *pImagePointY)</td></tr>
-<tr class="separator:afd204daff475d7d1de98747d34aad5be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8dea6d64fac7b6ae78047578280d1dbe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a8dea6d64fac7b6ae78047578280d1dbe">AddPoint</a> (double imagePointX, double imagePointY, double worldPointX, double worldPointY)</td></tr>
+<tr class="separator:a8dea6d64fac7b6ae78047578280d1dbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc20ac1907ab5cce9d2d7bd9ff60a29c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#afc20ac1907ab5cce9d2d7bd9ff60a29c">AddPoints</a> (<a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_point_pairs.html">ILCalibPointPairs</a> *pointPairs)</td></tr>
+<tr class="separator:afc20ac1907ab5cce9d2d7bd9ff60a29c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1201727fe2071c60e9c8d715a8cdc2b7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a1201727fe2071c60e9c8d715a8cdc2b7">Calibrate</a> ()</td></tr>
+<tr class="separator:a1201727fe2071c60e9c8d715a8cdc2b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3b5ec6cb9ccb7dd76b228f215137af7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#ab3b5ec6cb9ccb7dd76b228f215137af7">FixImage</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *image, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *fixedImage)</td></tr>
+<tr class="separator:ab3b5ec6cb9ccb7dd76b228f215137af7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9bd59c44a47d4d60c6b93381c08f1c4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#aa9bd59c44a47d4d60c6b93381c08f1c4">GenPostTransformMatrix</a> (<a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_point_pairs.html">ILCalibPointPairs</a> *pointPairs)</td></tr>
+<tr class="separator:aa9bd59c44a47d4d60c6b93381c08f1c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ce0cd25c9f176f2ea389900b8b807be"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a8ce0cd25c9f176f2ea389900b8b807be">ImageToWorld</a> (double imagePointX, double imagePointY, double *worldPointX, double *worldPointY)</td></tr>
+<tr class="separator:a8ce0cd25c9f176f2ea389900b8b807be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb434c2170d12543d8f9530244db555e"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#adb434c2170d12543d8f9530244db555e">IsCalibrated</a> ()</td></tr>
+<tr class="separator:adb434c2170d12543d8f9530244db555e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc33f804a59dbd9a1f824ea51862aaa2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#acc33f804a59dbd9a1f824ea51862aaa2">Load</a> (BSTR filename)</td></tr>
+<tr class="separator:acc33f804a59dbd9a1f824ea51862aaa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a372de693ad40b3f42839c8ec6ac845f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a372de693ad40b3f42839c8ec6ac845f4">Reset</a> ()</td></tr>
+<tr class="separator:a372de693ad40b3f42839c8ec6ac845f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedf9b00d47787a935a044ce74d0df887"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#aedf9b00d47787a935a044ce74d0df887">Save</a> (BSTR filename)</td></tr>
+<tr class="separator:aedf9b00d47787a935a044ce74d0df887"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ff6a237751631480a627fdc88add08d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a3ff6a237751631480a627fdc88add08d">SetImageSize</a> (int w, int h)</td></tr>
+<tr class="separator:a3ff6a237751631480a627fdc88add08d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8c572785f3997e0c7af0511b97703c7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#ab8c572785f3997e0c7af0511b97703c7">SetPostTransform</a> (double offsetX, double offsetY, double deltaAngle)</td></tr>
+<tr class="separator:ab8c572785f3997e0c7af0511b97703c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1322fb8a9d02ee7143595fe4041690d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#ac1322fb8a9d02ee7143595fe4041690d">SetPostTransformMatrix</a> (int cols, int rows, SAFEARRAY *data)</td></tr>
+<tr class="separator:ac1322fb8a9d02ee7143595fe4041690d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a340a8929cbbc28b8b63bb58bfd4a9a96"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a340a8929cbbc28b8b63bb58bfd4a9a96">SetPostTransformMatrix23</a> (<a class="el" href="struct_l_p_v_core_lib_1_1_l_matrix23.html">LMatrix23</a> *data)</td></tr>
+<tr class="separator:a340a8929cbbc28b8b63bb58bfd4a9a96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f7326737028f1763ca3c7518d12fac3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a7f7326737028f1763ca3c7518d12fac3">SetPostTransformMatrix33</a> (<a class="el" href="struct_l_p_v_core_lib_1_1_l_matrix33.html">LMatrix33</a> *data)</td></tr>
+<tr class="separator:a7f7326737028f1763ca3c7518d12fac3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45d73ba0171b02f1f2138954332ba401"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a45d73ba0171b02f1f2138954332ba401">WorldToImage</a> (double worldPointX, double worldPointY, double *imagePointX, double *imagePointY)</td></tr>
+<tr class="separator:a45d73ba0171b02f1f2138954332ba401"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
@@ -144,21 +145,21 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
  \( \sqrt{ \frac{1}{n} \sum_{i=0}^{n} distance(p^{image}_i, p^{proj}_i)^2 } \). <br /></td></tr>
 <tr class="separator:a3f6872a72c3c76b0cdcb95055b99108e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac70483f402f9c1e0d5c2c981a218d31"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_calib_lib.html#ad344ab8b10fd89a846adf98b31b264aa">LPVFixImageMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#aac70483f402f9c1e0d5c2c981a218d31">FixImageMode</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:aac70483f402f9c1e0d5c2c981a218d31"><td class="mdescLeft">&#160;</td><td class="mdescRight">The mode to fix image used in <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a5853b4420c58e63ed9d8687ce0689f09">FixImage()</a>.  <a href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#aac70483f402f9c1e0d5c2c981a218d31">More...</a><br /></td></tr>
+<tr class="memdesc:aac70483f402f9c1e0d5c2c981a218d31"><td class="mdescLeft">&#160;</td><td class="mdescRight">The mode to fix image used in <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#ab3b5ec6cb9ccb7dd76b228f215137af7">FixImage()</a>.  <a href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#aac70483f402f9c1e0d5c2c981a218d31">More...</a><br /></td></tr>
 <tr class="separator:aac70483f402f9c1e0d5c2c981a218d31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af72bdfca06b9bd432d2c5115005bbfbc"><td class="memItemLeft" align="right" valign="top"><a id="af72bdfca06b9bd432d2c5115005bbfbc"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#af72bdfca06b9bd432d2c5115005bbfbc">FixImageOffsetX</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:af72bdfca06b9bd432d2c5115005bbfbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">The x-coordinate offset (in pixel unit) of the fixed image used in <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a5853b4420c58e63ed9d8687ce0689f09">FixImage()</a>, used together with <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a21df5721e2e01bfd6eab1ece9704e4c2" title="The y-coordinate offset (in pixel unit) of the fixed image used in FixImage(), used together with Fix...">FixImageOffsetY</a>.<br  />
+<tr class="memdesc:af72bdfca06b9bd432d2c5115005bbfbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">The x-coordinate offset (in pixel unit) of the fixed image used in <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#ab3b5ec6cb9ccb7dd76b228f215137af7">FixImage()</a>, used together with <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a21df5721e2e01bfd6eab1ece9704e4c2" title="The y-coordinate offset (in pixel unit) of the fixed image used in FixImage(), used together with Fix...">FixImageOffsetY</a>.<br  />
 By default, it's 0, means no offset in x-coordinate. You may change the offset to translate the fixed image, for example move the inspect region to the center of the fixed image. <br /></td></tr>
 <tr class="separator:af72bdfca06b9bd432d2c5115005bbfbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21df5721e2e01bfd6eab1ece9704e4c2"><td class="memItemLeft" align="right" valign="top"><a id="a21df5721e2e01bfd6eab1ece9704e4c2"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a21df5721e2e01bfd6eab1ece9704e4c2">FixImageOffsetY</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a21df5721e2e01bfd6eab1ece9704e4c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The y-coordinate offset (in pixel unit) of the fixed image used in <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a5853b4420c58e63ed9d8687ce0689f09">FixImage()</a>, used together with <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#af72bdfca06b9bd432d2c5115005bbfbc" title="The x-coordinate offset (in pixel unit) of the fixed image used in FixImage(), used together with Fix...">FixImageOffsetX</a>.<br  />
+<tr class="memdesc:a21df5721e2e01bfd6eab1ece9704e4c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The y-coordinate offset (in pixel unit) of the fixed image used in <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#ab3b5ec6cb9ccb7dd76b228f215137af7">FixImage()</a>, used together with <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#af72bdfca06b9bd432d2c5115005bbfbc" title="The x-coordinate offset (in pixel unit) of the fixed image used in FixImage(), used together with Fix...">FixImageOffsetX</a>.<br  />
 By default, it's 0, means no offset in y-coordinate. You may change the offset to translate the fixed image, for example move the inspect region to the center of the fixed image. <br /></td></tr>
 <tr class="separator:a21df5721e2e01bfd6eab1ece9704e4c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c65ab87d30846912951723fc454716c"><td class="memItemLeft" align="right" valign="top"><a id="a8c65ab87d30846912951723fc454716c"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a8c65ab87d30846912951723fc454716c">FixImageScale</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a8c65ab87d30846912951723fc454716c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The scale of the fixed image used in <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a5853b4420c58e63ed9d8687ce0689f09">FixImage()</a>.<br  />
+<tr class="memdesc:a8c65ab87d30846912951723fc454716c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The scale of the fixed image used in <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#ab3b5ec6cb9ccb7dd76b228f215137af7">FixImage()</a>.<br  />
 By default, it's 1, means no scale. You may change the scale factor to zoom in/out the fixed image. <br /></td></tr>
 <tr class="separator:a8c65ab87d30846912951723fc454716c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5baf43154fe9d08eb332cdc9673a53d4"><td class="memItemLeft" align="right" valign="top"><a id="a5baf43154fe9d08eb332cdc9673a53d4"></a>
@@ -172,41 +173,35 @@ By default, it's 1, means no scale. You may change the scale factor to zoom in/o
 <p>To use this interface, you should create a calibration object, such as:</p>
 <p><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_n_points.html" title="This interface provide functionalities of the n-points camera model.">ILCalibNPoints</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_pin_hole.html" title="This interface provide functionalities of the pinhole camera model.">ILCalibPinHole</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_f_f_d.html" title="This interface provide functionalities of the FFD camera model.">ILCalibFFD</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_custom.html" title="This interface provide functionalities of the custom camera model.">ILCalibCustom</a>... </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ae27e048c818629e92721a4da81b2d878"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae27e048c818629e92721a4da81b2d878">&#9670;&nbsp;</a></span>AddPoint()</h2>
+<a id="a8dea6d64fac7b6ae78047578280d1dbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8dea6d64fac7b6ae78047578280d1dbe">&#9670;&nbsp;</a></span>AddPoint()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT AddPoint </td>
+          <td class="memname"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> AddPoint </td>
           <td>(</td>
-          <td class="paramtype">[in] double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>imagePointX</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in] double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>imagePointY</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in] double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>worldPointX</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in] double&#160;</td>
-          <td class="paramname"><em>worldPointY</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">[out, retval] enum <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> *&#160;</td>
-          <td class="paramname"><em>pError</em>&#160;</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>worldPointY</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -226,47 +221,37 @@ By default, it's 1, means no scale. You may change the scale factor to zoom in/o
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">pError</td><td>Return error code if anything is wrong. </td></tr>
+    <tr><td class="paramname">error</td><td>Return error code if anything is wrong. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="aadddde9c8d1e2f7adc10059e27166c52"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aadddde9c8d1e2f7adc10059e27166c52">&#9670;&nbsp;</a></span>AddPoints()</h2>
+<a id="afc20ac1907ab5cce9d2d7bd9ff60a29c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc20ac1907ab5cce9d2d7bd9ff60a29c">&#9670;&nbsp;</a></span>AddPoints()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT AddPoints </td>
+          <td class="memname"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> AddPoints </td>
           <td>(</td>
-          <td class="paramtype">[in] <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_point_pairs.html">ILCalibPointPairs</a> *&#160;</td>
-          <td class="paramname"><em>pPointPairs</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_point_pairs.html">ILCalibPointPairs</a> *&#160;</td>
+          <td class="paramname"><em>pointPairs</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">[out, retval] enum <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> *&#160;</td>
-          <td class="paramname"><em>pError</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Add a collection of point pairs for calibration, usually you get these point pairs from a calibration board. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pPointPairs</td><td>The collection of point pairs. </td></tr>
+    <tr><td class="paramname">pointPairs</td><td>The collection of point pairs. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">pError</td><td>Return error code if anything is wrong. </td></tr>
+    <tr><td class="paramname">error</td><td>Return error code if anything is wrong. </td></tr>
   </table>
   </dd>
 </dl>
@@ -274,53 +259,46 @@ By default, it's 1, means no scale. You may change the scale factor to zoom in/o
 
 </div>
 </div>
-<a id="aa04e892344aace8dbdd0a4a926a6561b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa04e892344aace8dbdd0a4a926a6561b">&#9670;&nbsp;</a></span>Calibrate()</h2>
+<a id="a1201727fe2071c60e9c8d715a8cdc2b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1201727fe2071c60e9c8d715a8cdc2b7">&#9670;&nbsp;</a></span>Calibrate()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT Calibrate </td>
+          <td class="memname"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> Calibrate </td>
           <td>(</td>
-          <td class="paramtype">[out, retval] enum <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> *&#160;</td>
-          <td class="paramname"><em>pError</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Do calibration with current configuration and point pairs added. </p><dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">pError</td><td>Return error code if anything is wrong. </td></tr>
+    <tr><td class="paramname">error</td><td>Return error code if anything is wrong. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a5853b4420c58e63ed9d8687ce0689f09"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5853b4420c58e63ed9d8687ce0689f09">&#9670;&nbsp;</a></span>FixImage()</h2>
+<a id="ab3b5ec6cb9ccb7dd76b228f215137af7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3b5ec6cb9ccb7dd76b228f215137af7">&#9670;&nbsp;</a></span>FixImage()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT FixImage </td>
+          <td class="memname"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> FixImage </td>
           <td>(</td>
-          <td class="paramtype">[in] <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
-          <td class="paramname"><em>pImage</em>, </td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>image</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[out] <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
-          <td class="paramname"><em>pFixedImage</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">[out, retval] enum <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> *&#160;</td>
-          <td class="paramname"><em>pError</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>fixedImage</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -332,14 +310,14 @@ By default, it's 1, means no scale. You may change the scale factor to zoom in/o
 <p>Fix the image for undistort (and untilt).<br  />
 The mapping works with a calibrated system, if not it returns the LPVErrCalibNotCalib error. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pImage</td><td>The input image. </td></tr>
+    <tr><td class="paramname">image</td><td>The input image. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">pFixedImage</td><td>The fixed result image. </td></tr>
-    <tr><td class="paramname">pError</td><td>Return error code if anything is wrong. </td></tr>
+    <tr><td class="paramname">fixedImage</td><td>The fixed result image. </td></tr>
+    <tr><td class="paramname">error</td><td>Return error code if anything is wrong. </td></tr>
   </table>
   </dd>
 </dl>
@@ -347,75 +325,65 @@ The mapping works with a calibrated system, if not it returns the LPVErrCalibNot
 
 </div>
 </div>
-<a id="a9c402432eaa58b9fdeeda1dddb7a968a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9c402432eaa58b9fdeeda1dddb7a968a">&#9670;&nbsp;</a></span>GenPostTransformMatrix()</h2>
+<a id="aa9bd59c44a47d4d60c6b93381c08f1c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9bd59c44a47d4d60c6b93381c08f1c4">&#9670;&nbsp;</a></span>GenPostTransformMatrix()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT GenPostTransformMatrix </td>
+          <td class="memname"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> GenPostTransformMatrix </td>
           <td>(</td>
-          <td class="paramtype">[in] <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_point_pairs.html">ILCalibPointPairs</a> *&#160;</td>
-          <td class="paramname"><em>pPointPairs</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_point_pairs.html">ILCalibPointPairs</a> *&#160;</td>
+          <td class="paramname"><em>pointPairs</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">[out, retval] enum <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> *&#160;</td>
-          <td class="paramname"><em>pError</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Generate and set the post-transform matrix, according to the pairs of some pixel positions in the output fixed image and their expected world positions. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pPointPairs</td><td>The collection of point pairs. </td></tr>
+    <tr><td class="paramname">pointPairs</td><td>The collection of point pairs. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">pError</td><td>Return error code if anything is wrong. </td></tr>
+    <tr><td class="paramname">error</td><td>Return error code if anything is wrong. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a6631bc7e270d64f7645469abbc244877"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6631bc7e270d64f7645469abbc244877">&#9670;&nbsp;</a></span>ImageToWorld()</h2>
+<a id="a8ce0cd25c9f176f2ea389900b8b807be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ce0cd25c9f176f2ea389900b8b807be">&#9670;&nbsp;</a></span>ImageToWorld()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT ImageToWorld </td>
+          <td class="memname">void ImageToWorld </td>
           <td>(</td>
-          <td class="paramtype">[in] double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>imagePointX</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in] double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>imagePointY</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[out] double *&#160;</td>
-          <td class="paramname"><em>pWorldPointX</em>, </td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>worldPointX</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[out] double *&#160;</td>
-          <td class="paramname"><em>pWorldPointY</em>&#160;</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>worldPointY</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -434,76 +402,65 @@ The mapping works with a calibrated system, if not it returns the <a class="el" 
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">pWorldPointX</td><td>Return the x-coordinate of the world point. </td></tr>
-    <tr><td class="paramname">pWorldPointY</td><td>Return the y-coordinate of the world point. </td></tr>
+    <tr><td class="paramname">worldPointX</td><td>Return the x-coordinate of the world point. </td></tr>
+    <tr><td class="paramname">worldPointY</td><td>Return the y-coordinate of the world point. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a93e51d9cea1c3059ce2ac41cccb9adf0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a93e51d9cea1c3059ce2ac41cccb9adf0">&#9670;&nbsp;</a></span>IsCalibrated()</h2>
+<a id="adb434c2170d12543d8f9530244db555e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb434c2170d12543d8f9530244db555e">&#9670;&nbsp;</a></span>IsCalibrated()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT IsCalibrated </td>
+          <td class="memname">BOOL IsCalibrated </td>
           <td>(</td>
-          <td class="paramtype">[out, retval] VARIANT_BOOL *&#160;</td>
-          <td class="paramname"><em>pVal</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Check whether the calibration object is well-calibrated. </p><dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">pVal</td><td>Return True if it's calibrated, otherwise, return False. </td></tr>
+    <tr><td class="paramname">val</td><td>Return True if it's calibrated, otherwise, return False. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a1a7081a6ae822924f041870246da8cd8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1a7081a6ae822924f041870246da8cd8">&#9670;&nbsp;</a></span>Load()</h2>
+<a id="acc33f804a59dbd9a1f824ea51862aaa2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc33f804a59dbd9a1f824ea51862aaa2">&#9670;&nbsp;</a></span>Load()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT Load </td>
+          <td class="memname"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> Load </td>
           <td>(</td>
-          <td class="paramtype">[in] BSTR&#160;</td>
-          <td class="paramname"><em>filename</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">BSTR&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">[out, retval] enum <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> *&#160;</td>
-          <td class="paramname"><em>pError</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Load the calibration from a specified file.<br  />
-It should be a .calib file with the calibrated camera matrices in it. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a6ab1f63c21e798020bdcbefeeb757955">Save()</a> </dd></dl>
+It should be a .calib file with the calibrated camera matrices in it. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#aedf9b00d47787a935a044ce74d0df887">Save()</a> </dd></dl>
 
 </div>
 </div>
-<a id="a828d0933abd2fa4a72950a3fee81dec6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a828d0933abd2fa4a72950a3fee81dec6">&#9670;&nbsp;</a></span>Reset()</h2>
+<a id="a372de693ad40b3f42839c8ec6ac845f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a372de693ad40b3f42839c8ec6ac845f4">&#9670;&nbsp;</a></span>Reset()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT Reset </td>
+          <td class="memname">void Reset </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -514,52 +471,42 @@ It should be a .calib file with the calibrated camera matrices in it. </p><dl cl
 
 </div>
 </div>
-<a id="a6ab1f63c21e798020bdcbefeeb757955"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6ab1f63c21e798020bdcbefeeb757955">&#9670;&nbsp;</a></span>Save()</h2>
+<a id="aedf9b00d47787a935a044ce74d0df887"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedf9b00d47787a935a044ce74d0df887">&#9670;&nbsp;</a></span>Save()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT Save </td>
+          <td class="memname"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> Save </td>
           <td>(</td>
-          <td class="paramtype">[in] BSTR&#160;</td>
-          <td class="paramname"><em>filename</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">BSTR&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">[out, retval] enum <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> *&#160;</td>
-          <td class="paramname"><em>pError</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Save the calibration to a specified file.<br  />
-The serialized file is .calib file with the calibrated camera matrices as well as all the calibration configurations. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a1a7081a6ae822924f041870246da8cd8">Load()</a> </dd></dl>
+The serialized file is .calib file with the calibrated camera matrices as well as all the calibration configurations. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#acc33f804a59dbd9a1f824ea51862aaa2">Load()</a> </dd></dl>
 
 </div>
 </div>
-<a id="aff5db2d1fc2f7026b3f33210a6bbcfea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aff5db2d1fc2f7026b3f33210a6bbcfea">&#9670;&nbsp;</a></span>SetImageSize()</h2>
+<a id="a3ff6a237751631480a627fdc88add08d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ff6a237751631480a627fdc88add08d">&#9670;&nbsp;</a></span>SetImageSize()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT SetImageSize </td>
+          <td class="memname">void SetImageSize </td>
           <td>(</td>
-          <td class="paramtype">[in] int&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>w</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in] int&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>h</em>&#160;</td>
         </tr>
         <tr>
@@ -579,28 +526,28 @@ The serialized file is .calib file with the calibrated camera matrices as well a
 
 </div>
 </div>
-<a id="aeae4d41bbf0736ea0f935738e3853197"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeae4d41bbf0736ea0f935738e3853197">&#9670;&nbsp;</a></span>SetPostTransform()</h2>
+<a id="ab8c572785f3997e0c7af0511b97703c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8c572785f3997e0c7af0511b97703c7">&#9670;&nbsp;</a></span>SetPostTransform()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT SetPostTransform </td>
+          <td class="memname">void SetPostTransform </td>
           <td>(</td>
-          <td class="paramtype">[in] double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>offsetX</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in] double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>offsetY</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in] double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>deltaAngle</em>&#160;</td>
         </tr>
         <tr>
@@ -620,32 +567,32 @@ If both post-transform origin and matrix is configured, the first one is applied
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a13a25b06cc2092bae78a2d04e9c98e52">SetPostTransformMatrix()</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a143bc0502ddfa10717aff8510f2affb6">SetPostTransformMatrix23()</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a2adb01ac44b7f10189b00bbe63165b40">SetPostTransformMatrix33()</a>. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#ac1322fb8a9d02ee7143595fe4041690d">SetPostTransformMatrix()</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a340a8929cbbc28b8b63bb58bfd4a9a96">SetPostTransformMatrix23()</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a7f7326737028f1763ca3c7518d12fac3">SetPostTransformMatrix33()</a>. </dd></dl>
 
 </div>
 </div>
-<a id="a13a25b06cc2092bae78a2d04e9c98e52"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a13a25b06cc2092bae78a2d04e9c98e52">&#9670;&nbsp;</a></span>SetPostTransformMatrix()</h2>
+<a id="ac1322fb8a9d02ee7143595fe4041690d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1322fb8a9d02ee7143595fe4041690d">&#9670;&nbsp;</a></span>SetPostTransformMatrix()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT SetPostTransformMatrix </td>
+          <td class="memname">void SetPostTransformMatrix </td>
           <td>(</td>
-          <td class="paramtype">[in] int&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>cols</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in] int&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>rows</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in] SAFEARRAY(double)&#160;</td>
+          <td class="paramtype">SAFEARRAY *&#160;</td>
           <td class="paramname"><em>data</em>&#160;</td>
         </tr>
         <tr>
@@ -667,20 +614,20 @@ see <a href="https://en.wikipedia.org/wiki/Transformation_matrix">https://en.wik
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#aeae4d41bbf0736ea0f935738e3853197">SetPostTransform()</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a143bc0502ddfa10717aff8510f2affb6">SetPostTransformMatrix23()</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a2adb01ac44b7f10189b00bbe63165b40">SetPostTransformMatrix33()</a>. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#ab8c572785f3997e0c7af0511b97703c7">SetPostTransform()</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a340a8929cbbc28b8b63bb58bfd4a9a96">SetPostTransformMatrix23()</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a7f7326737028f1763ca3c7518d12fac3">SetPostTransformMatrix33()</a>. </dd></dl>
 
 </div>
 </div>
-<a id="a143bc0502ddfa10717aff8510f2affb6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a143bc0502ddfa10717aff8510f2affb6">&#9670;&nbsp;</a></span>SetPostTransformMatrix23()</h2>
+<a id="a340a8929cbbc28b8b63bb58bfd4a9a96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a340a8929cbbc28b8b63bb58bfd4a9a96">&#9670;&nbsp;</a></span>SetPostTransformMatrix23()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT SetPostTransformMatrix23 </td>
+          <td class="memname">void SetPostTransformMatrix23 </td>
           <td>(</td>
-          <td class="paramtype">[in] struct <a class="el" href="struct_l_p_v_core_lib_1_1_l_matrix23.html">LMatrix23</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="struct_l_p_v_core_lib_1_1_l_matrix23.html">LMatrix23</a> *&#160;</td>
           <td class="paramname"><em>data</em></td><td>)</td>
           <td></td>
         </tr>
@@ -692,20 +639,20 @@ see <a href="https://en.wikipedia.org/wiki/Transformation_matrix">https://en.wik
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#aeae4d41bbf0736ea0f935738e3853197">SetPostTransform()</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a13a25b06cc2092bae78a2d04e9c98e52">SetPostTransformMatrix()</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a2adb01ac44b7f10189b00bbe63165b40">SetPostTransformMatrix33()</a>. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#ab8c572785f3997e0c7af0511b97703c7">SetPostTransform()</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#ac1322fb8a9d02ee7143595fe4041690d">SetPostTransformMatrix()</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a7f7326737028f1763ca3c7518d12fac3">SetPostTransformMatrix33()</a>. </dd></dl>
 
 </div>
 </div>
-<a id="a2adb01ac44b7f10189b00bbe63165b40"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2adb01ac44b7f10189b00bbe63165b40">&#9670;&nbsp;</a></span>SetPostTransformMatrix33()</h2>
+<a id="a7f7326737028f1763ca3c7518d12fac3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f7326737028f1763ca3c7518d12fac3">&#9670;&nbsp;</a></span>SetPostTransformMatrix33()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT SetPostTransformMatrix33 </td>
+          <td class="memname">void SetPostTransformMatrix33 </td>
           <td>(</td>
-          <td class="paramtype">[in] struct <a class="el" href="struct_l_p_v_core_lib_1_1_l_matrix33.html">LMatrix33</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="struct_l_p_v_core_lib_1_1_l_matrix33.html">LMatrix33</a> *&#160;</td>
           <td class="paramname"><em>data</em></td><td>)</td>
           <td></td>
         </tr>
@@ -717,39 +664,39 @@ see <a href="https://en.wikipedia.org/wiki/Transformation_matrix">https://en.wik
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#aeae4d41bbf0736ea0f935738e3853197">SetPostTransform()</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a13a25b06cc2092bae78a2d04e9c98e52">SetPostTransformMatrix()</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a143bc0502ddfa10717aff8510f2affb6">SetPostTransformMatrix23()</a>. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#ab8c572785f3997e0c7af0511b97703c7">SetPostTransform()</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#ac1322fb8a9d02ee7143595fe4041690d">SetPostTransformMatrix()</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a340a8929cbbc28b8b63bb58bfd4a9a96">SetPostTransformMatrix23()</a>. </dd></dl>
 
 </div>
 </div>
-<a id="afd204daff475d7d1de98747d34aad5be"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afd204daff475d7d1de98747d34aad5be">&#9670;&nbsp;</a></span>WorldToImage()</h2>
+<a id="a45d73ba0171b02f1f2138954332ba401"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45d73ba0171b02f1f2138954332ba401">&#9670;&nbsp;</a></span>WorldToImage()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT WorldToImage </td>
+          <td class="memname">void WorldToImage </td>
           <td>(</td>
-          <td class="paramtype">[in] double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>worldPointX</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in] double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>worldPointY</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[out] double *&#160;</td>
-          <td class="paramname"><em>pImagePointX</em>, </td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>imagePointX</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[out] double *&#160;</td>
-          <td class="paramname"><em>pImagePointY</em>&#160;</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>imagePointY</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -763,8 +710,13 @@ The mapping works with a calibrated system, if not it returns the <a class="el" 
   <table class="params">
     <tr><td class="paramname">worldPointX</td><td>The x-coordinate of the world point. </td></tr>
     <tr><td class="paramname">worldPointY</td><td>The y-coordinate of the world point. </td></tr>
-    <tr><td class="paramname">pImagePointX</td><td>Return the x-coordinate of the image point. </td></tr>
-    <tr><td class="paramname">pImagePointY</td><td>Return the y-coordinate of the image point. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">imagePointX</td><td>Return the x-coordinate of the image point. </td></tr>
+    <tr><td class="paramname">imagePointY</td><td>Return the y-coordinate of the image point. </td></tr>
   </table>
   </dd>
 </dl>
@@ -792,7 +744,7 @@ The mapping works with a calibrated system, if not it returns the <a class="el" 
 </table>
 </div><div class="memdoc">
 
-<p>The mode to fix image used in <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a5853b4420c58e63ed9d8687ce0689f09">FixImage()</a>. </p>
+<p>The mode to fix image used in <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#ab3b5ec6cb9ccb7dd76b228f215137af7">FixImage()</a>. </p>
 <p>Change the mode will also affect the image-world mapping logic. <br  />
 <a class="el" href="namespace_l_p_v_calib_lib.html#ad344ab8b10fd89a846adf98b31b264aaa8333f5d1b1274bef506a325c1e61e411">LPVFixImageNone </a> (Default) indicate user is using the original image captured by the camera for the subsequent detection or inspection tasks, so the image point in the image-world mapping logic is in the coordinates of the <b>original</b> image. Correspondingly, for <a class="el" href="namespace_l_p_v_calib_lib.html#ad344ab8b10fd89a846adf98b31b264aaab476028fd5631d6ea1d07493c65d9178">LPVFixImageUndistort </a> mode, the image point is in the coordinates of the <b>undistorted</b> image. For <a class="el" href="namespace_l_p_v_calib_lib.html#ad344ab8b10fd89a846adf98b31b264aaa62452e7390a6d1be2716174c7bf2495b">LPVFixImageUndistortAndUntilt </a> mode, it's in the coordinates of the <b> undistorted and untilt </b> image. If you want to use different mapping logic at the same time, you may have to duplicate the calibration object via Copy() and set different <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#aac70483f402f9c1e0d5c2c981a218d31" title="The mode to fix image used in FixImage().">FixImageMode</a> for them.</p>
 <p>Different calibration model support different fix mode, as the table below.</p>
@@ -815,7 +767,12 @@ The mapping works with a calibrated system, if not it returns the <a class="el" 
 <!-- HTML footer for doxygen 1.9.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-© 2021 <a href="http://www.hzleaper.com/">Hangzhou Leaper Tech. Ltd.</a>
+© 2022 <a href="http://www.hzleaper.com/">Hangzhou Leaper Tech. Ltd.</a>
 </small></address>
+<script type="text/javascript">
+//<![CDATA[
+addTutorialsButtons();
+//]]>
+</script>
 </body>
 </html>

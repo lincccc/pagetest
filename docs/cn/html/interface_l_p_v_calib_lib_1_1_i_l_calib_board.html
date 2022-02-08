@@ -9,6 +9,7 @@
 <title>LPV: ILCalibBoard接口 参考</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="tutorial-utils.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
@@ -97,19 +98,19 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
-<tr class="memitem:a0421d83d9b9e09099124adb77303e212"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#a0421d83d9b9e09099124adb77303e212">Detect</a> ([in] <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *pImg, [out] <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_point_pairs.html">ILCalibPointPairs</a> **ppPointPairs, [out, retval] enum <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> *pError)</td></tr>
-<tr class="separator:a0421d83d9b9e09099124adb77303e212"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a7081a6ae822924f041870246da8cd8"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#a1a7081a6ae822924f041870246da8cd8">Load</a> ([in] BSTR filename, [out, retval] enum <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> *pError)</td></tr>
-<tr class="separator:a1a7081a6ae822924f041870246da8cd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ab1f63c21e798020bdcbefeeb757955"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#a6ab1f63c21e798020bdcbefeeb757955">Save</a> ([in] BSTR filename, [out, retval] enum <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> *pError)</td></tr>
-<tr class="separator:a6ab1f63c21e798020bdcbefeeb757955"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa174ae718c73636f93cff15578386560"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#aa174ae718c73636f93cff15578386560">Detect</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_point_pairs.html">ILCalibPointPairs</a> **pointPairs)</td></tr>
+<tr class="separator:aa174ae718c73636f93cff15578386560"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc33f804a59dbd9a1f824ea51862aaa2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#acc33f804a59dbd9a1f824ea51862aaa2">Load</a> (BSTR filename)</td></tr>
+<tr class="separator:acc33f804a59dbd9a1f824ea51862aaa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedf9b00d47787a935a044ce74d0df887"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#aedf9b00d47787a935a044ce74d0df887">Save</a> (BSTR filename)</td></tr>
+<tr class="separator:aedf9b00d47787a935a044ce74d0df887"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 属性</h2></td></tr>
-<tr class="memitem:a2311077c53514f6ddd9f142212138f98"><td class="memItemLeft" align="right" valign="top"><a id="a2311077c53514f6ddd9f142212138f98"></a>
-VARIANT_BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#a2311077c53514f6ddd9f142212138f98">AutoRemoveBad</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a2311077c53514f6ddd9f142212138f98"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否自动剔除检测到的坏点。默认设置为关闭。坏点指的是可能由标定板表面赃物、成像不佳等原因造成的定位不佳的点。 <br /></td></tr>
-<tr class="separator:a2311077c53514f6ddd9f142212138f98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78520409e85555fd726b3eee218107aa"><td class="memItemLeft" align="right" valign="top"><a id="a78520409e85555fd726b3eee218107aa"></a>
+BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#a78520409e85555fd726b3eee218107aa">AutoRemoveBad</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a78520409e85555fd726b3eee218107aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否自动剔除检测到的坏点。默认设置为关闭。坏点指的是可能由标定板表面赃物、成像不佳等原因造成的定位不佳的点。 <br /></td></tr>
+<tr class="separator:a78520409e85555fd726b3eee218107aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a68aaff181af41e3062684fc72690b5af"><td class="memItemLeft" align="right" valign="top"><a id="a68aaff181af41e3062684fc72690b5af"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#a68aaff181af41e3062684fc72690b5af">BoardThickness</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:a68aaff181af41e3062684fc72690b5af"><td class="mdescLeft">&#160;</td><td class="mdescRight">标定板厚度，与 <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#a49e5f30b18e9d5f64878d4e45f71deec" title="标定板的网格间距。 对于棋盘格和分散式二维码棋盘格标定板，其指的是一个黑色方块的物理尺寸。 对于圆点阵标定板，其指的是相邻两个圆点中心的物理距离。">SquareSize</a> 相同单位。<br  />
@@ -140,53 +141,48 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 对于棋盘格和分散式二维码棋盘格标定板，其指的是一个黑色方块的物理尺寸。<br  />
 对于圆点阵标定板，其指的是相邻两个圆点中心的物理距离。 <br /></td></tr>
 <tr class="separator:a49e5f30b18e9d5f64878d4e45f71deec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab819b85f62d3035be73e8a2cd9f5a93d"><td class="memItemLeft" align="right" valign="top"><a id="ab819b85f62d3035be73e8a2cd9f5a93d"></a>
-VARIANT_BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#ab819b85f62d3035be73e8a2cd9f5a93d">UseLFSubPixCorner</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:ab819b85f62d3035be73e8a2cd9f5a93d"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否使用直线拟合方法检测标定板定位点。默认设置为关闭。仅影响棋盘格和二维码棋盘格标定板。 <br /></td></tr>
-<tr class="separator:ab819b85f62d3035be73e8a2cd9f5a93d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5146b955fed19ebfeb97f84fc39edc1"><td class="memItemLeft" align="right" valign="top"><a id="aa5146b955fed19ebfeb97f84fc39edc1"></a>
+BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#aa5146b955fed19ebfeb97f84fc39edc1">UseLFSubPixCorner</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:aa5146b955fed19ebfeb97f84fc39edc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否使用直线拟合方法检测标定板定位点。默认设置为关闭。仅影响棋盘格和二维码棋盘格标定板。 <br /></td></tr>
+<tr class="separator:aa5146b955fed19ebfeb97f84fc39edc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><p>该接口提供标定板相关的功能。 </p>
 <p>标定板为预知规格和图案的平面，用于拍摄后检测和生成用于标定的图像和物理点对。<br  />
 该接口支持 3 种类型的标定板，查看 LPVCalibBoardType</p>
 <p>使用这个接口，需要创建一个 <a class="el" href="class_l_p_v_calib_lib_1_1_l_calib_board.html">LCalibBoard</a> 对象。</p>
-<p>C++: </p><div class="fragment"><div class="line">CLCalibBoard m_calib_board;</div>
-<div class="line">m_calib_board.put_GridWidth(10);</div>
-<div class="line">m_calib_board.put_GridHeight(7);</div>
-<div class="line">m_calib_board.put_SquareSize(1);</div>
-<div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = (<a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>)m_calib_board.Detect(m_img, (LPDISPATCH*)&amp;m_pnt_pairs);</div>
+<h3>示例代码 </h3>
+ <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">ILCalibBoardPtr m_calib_board(__uuidof(LCalibBoard));</div>
+<div class="line">m_calib_board-&gt;GridWidth = 10;</div>
+<div class="line">m_calib_board-&gt;GridHeight = 7;</div>
+<div class="line">m_calib_board-&gt;SquareSize = 1;</div>
+<div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = m_calib_board-&gt;Detect(m_img, &amp;m_pnt_pairs);</div>
 <div class="line"><span class="keywordflow">if</span> (err != LPVErrorCode::LPVNoError) <span class="keywordflow">return</span>;</div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">LPV 算法或函数运行过程中遇到的错误。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:149</div></div>
-</div><!-- fragment --><p>C#: </p><div class="fragment"><div class="line">LCalibBoard m_calib_board = <span class="keyword">new</span> LCalibBoard();</div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">LPV 算法或函数运行过程中遇到的错误。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:155</div></div>
+</div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LCalibBoard m_calib_board = <span class="keyword">new</span> LCalibBoard();</div>
 <div class="line">m_calib_board.GridWidth = 10;</div>
 <div class="line">m_calib_board.GridHeight = 7;</div>
 <div class="line">m_calib_board.SquareSize = 1;</div>
 <div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = m_calib_board.Detect(m_img, out m_pnt_pairs);</div>
 <div class="line"><span class="keywordflow">if</span> (err != LPVErrorCode::LPVNoError) <span class="keywordflow">return</span>;</div>
-</div><!-- fragment --> </div><h2 class="groupheader">成员函数说明</h2>
-<a id="a0421d83d9b9e09099124adb77303e212"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0421d83d9b9e09099124adb77303e212">&#9670;&nbsp;</a></span>Detect()</h2>
+</div><!-- fragment --> </div>  </div><h2 class="groupheader">成员函数说明</h2>
+<a id="aa174ae718c73636f93cff15578386560"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa174ae718c73636f93cff15578386560">&#9670;&nbsp;</a></span>Detect()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT Detect </td>
+          <td class="memname"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> Detect </td>
           <td>(</td>
-          <td class="paramtype">[in] <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
-          <td class="paramname"><em>pImg</em>, </td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>img</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[out] <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_point_pairs.html">ILCalibPointPairs</a> **&#160;</td>
-          <td class="paramname"><em>ppPointPairs</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">[out, retval] enum <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> *&#160;</td>
-          <td class="paramname"><em>pError</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_point_pairs.html">ILCalibPointPairs</a> **&#160;</td>
+          <td class="paramname"><em>pointPairs</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -197,42 +193,32 @@ VARIANT_BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </div><div class="memdoc">
 <p>在输入的图像中检测标定板，返回生成的图像和物理点对。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pImg</td><td>输入的图像 </td></tr>
+    <tr><td class="paramname">img</td><td>输入的图像 </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>返回值</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">ppPointPairs</td><td>返回生成的图像和物理点对集合 </td></tr>
-    <tr><td class="paramname">pError</td><td>返回错误码 </td></tr>
+    <tr><td class="paramname">pointPairs</td><td>返回生成的图像和物理点对集合 </td></tr>
+    <tr><td class="paramname">error</td><td>返回错误码 </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a1a7081a6ae822924f041870246da8cd8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1a7081a6ae822924f041870246da8cd8">&#9670;&nbsp;</a></span>Load()</h2>
+<a id="acc33f804a59dbd9a1f824ea51862aaa2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc33f804a59dbd9a1f824ea51862aaa2">&#9670;&nbsp;</a></span>Load()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT Load </td>
+          <td class="memname"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> Load </td>
           <td>(</td>
-          <td class="paramtype">[in] BSTR&#160;</td>
-          <td class="paramname"><em>filename</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">BSTR&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">[out, retval] enum <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> *&#160;</td>
-          <td class="paramname"><em>pError</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -245,36 +231,26 @@ VARIANT_BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </dl>
 <dl class="retval"><dt>返回值</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">pError</td><td>返回错误码 </td></tr>
+    <tr><td class="paramname">error</td><td>返回错误码 </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#a6ab1f63c21e798020bdcbefeeb757955">Save()</a> </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#aedf9b00d47787a935a044ce74d0df887">Save()</a> </dd></dl>
 
 </div>
 </div>
-<a id="a6ab1f63c21e798020bdcbefeeb757955"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6ab1f63c21e798020bdcbefeeb757955">&#9670;&nbsp;</a></span>Save()</h2>
+<a id="aedf9b00d47787a935a044ce74d0df887"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedf9b00d47787a935a044ce74d0df887">&#9670;&nbsp;</a></span>Save()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT Save </td>
+          <td class="memname"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> Save </td>
           <td>(</td>
-          <td class="paramtype">[in] BSTR&#160;</td>
-          <td class="paramname"><em>filename</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">BSTR&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">[out, retval] enum <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> *&#160;</td>
-          <td class="paramname"><em>pError</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -287,11 +263,11 @@ VARIANT_BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </dl>
 <dl class="retval"><dt>返回值</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">pError</td><td>返回错误码 </td></tr>
+    <tr><td class="paramname">error</td><td>返回错误码 </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#a1a7081a6ae822924f041870246da8cd8">Load()</a> </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#acc33f804a59dbd9a1f824ea51862aaa2">Load()</a> </dd></dl>
 
 </div>
 </div>
@@ -299,7 +275,12 @@ VARIANT_BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <!-- HTML footer for doxygen 1.9.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-© 2021 <a href="http://www.hzleaper.com/">杭州利珀科技有限公司</a>
+© 2022 <a href="http://www.hzleaper.com/">杭州利珀科技有限公司</a>
 </small></address>
+<script type="text/javascript">
+//<![CDATA[
+addTutorialsButtons();
+//]]>
+</script>
 </body>
 </html>

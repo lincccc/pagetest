@@ -36,6 +36,7 @@ var menudata={children:[
 {text:"<b>Blob Analysis</b> <i><small>lpvBlob</small></i>",url:"namespace_l_p_v_blob_lib.html"},
 {text:"<b>Camera Calibration</b> <i><small>lpvCalib</small></i>",url:"namespace_l_p_v_calib_lib.html"},
 {text:"<b>Barcode Inspection</b> <i><small>lpvBarcode</small></i>",url:"namespace_l_p_v_barcode_lib.html"},
+{text:"<b>Math & Data Analysis</b> <i><small>lpvMath</small></i>",url:"namespace_l_p_v_math_lib.html"},
 {text:"<b>Display Control</b> <i><small>lpvDisplay</small></i>",url:"namespace_l_p_v_display_lib.html"},
 {text:"<b>Connect to IntelliBlink</b> <i><small>lpvIB</small></i>",url:"namespace_l_p_v_i_b_lib.html"},
 {text:"Index",url:"classes.html"}]},

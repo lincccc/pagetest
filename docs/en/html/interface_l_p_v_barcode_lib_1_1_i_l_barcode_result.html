@@ -9,6 +9,7 @@
 <title>LPV: ILBarcodeResult Interface Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="tutorial-utils.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
@@ -97,89 +98,75 @@ Inheritance diagram for ILBarcodeResult:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7d110d75e5ad9c5e2b7c20f79139c67f"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_result.html#a7d110d75e5ad9c5e2b7c20f79139c67f">Draw</a> ([in] HDC hdc, [in] <a class="el" href="namespace_l_p_v_barcode_lib.html#a84df8395b042233913ed7ab7ac86aec9">LPVBarcodeDrawFlags</a> drawFlags, [in, defaultvalue(1)] double zoomX, [in, defaultvalue(0)] double zoomY, [in, defaultvalue(0)] double panX, [in, defaultvalue(0)] double panY)</td></tr>
-<tr class="separator:a7d110d75e5ad9c5e2b7c20f79139c67f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a195da8d19555f397bd53b621edbccf8d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_result.html#a195da8d19555f397bd53b621edbccf8d">Draw</a> (HDC hdc, <a class="el" href="namespace_l_p_v_barcode_lib.html#a84df8395b042233913ed7ab7ac86aec9">LPVBarcodeDrawFlags</a> drawFlags, double zoomX, double zoomY, double panX, double panY)</td></tr>
+<tr class="separator:a195da8d19555f397bd53b621edbccf8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
-<tr class="memitem:a8c10230001bab42de01beb2843f8c327"><td class="memItemLeft" align="right" valign="top"><a id="a8c10230001bab42de01beb2843f8c327"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_result.html#a8c10230001bab42de01beb2843f8c327">Angle</a><code> [get]</code></td></tr>
-<tr class="memdesc:a8c10230001bab42de01beb2843f8c327"><td class="mdescLeft">&#160;</td><td class="mdescRight">The angle of the barcode. <br /></td></tr>
-<tr class="separator:a8c10230001bab42de01beb2843f8c327"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad058aa55da0641c4ba58a63ea467bc9"><td class="memItemLeft" align="right" valign="top"><a id="aad058aa55da0641c4ba58a63ea467bc9"></a>
-<a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_point.html">ILPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_result.html#aad058aa55da0641c4ba58a63ea467bc9">Center</a><code> [get]</code></td></tr>
-<tr class="memdesc:aad058aa55da0641c4ba58a63ea467bc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The center of the barcode. <br /></td></tr>
-<tr class="separator:aad058aa55da0641c4ba58a63ea467bc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59620d43d89670eae4a16512bc2da45c"><td class="memItemLeft" align="right" valign="top"><a id="a59620d43d89670eae4a16512bc2da45c"></a>
-BSTR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_result.html#a59620d43d89670eae4a16512bc2da45c">DecodedString</a><code> [get]</code></td></tr>
-<tr class="memdesc:a59620d43d89670eae4a16512bc2da45c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The barcode's decoded string. <br /></td></tr>
-<tr class="separator:a59620d43d89670eae4a16512bc2da45c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99f032ab46b3f4c69d497b7ff5702d56"><td class="memItemLeft" align="right" valign="top"><a id="a99f032ab46b3f4c69d497b7ff5702d56"></a>
-<a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_result.html#a99f032ab46b3f4c69d497b7ff5702d56">Quad</a><code> [get]</code></td></tr>
-<tr class="memdesc:a99f032ab46b3f4c69d497b7ff5702d56"><td class="mdescLeft">&#160;</td><td class="mdescRight">The quadrangle region of the barcode. <br /></td></tr>
-<tr class="separator:a99f032ab46b3f4c69d497b7ff5702d56"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9cb395d76228ba1c3b66e723b57d0fe3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_barcode_lib.html#a30448639d7ee070028ecf22e707e1951">LPVBarcodeQualityGrade</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_result.html#a9cb395d76228ba1c3b66e723b57d0fe3">Quality</a> ([in] <a class="el" href="namespace_l_p_v_barcode_lib.html#ae2c805658fd677520e4953101b586020">LPVBarcodeQualityParam</a> param)<code> [get]</code></td></tr>
-<tr class="memdesc:a9cb395d76228ba1c3b66e723b57d0fe3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The barcode quality grading for individual parameter.  <a href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_result.html#a9cb395d76228ba1c3b66e723b57d0fe3">More...</a><br /></td></tr>
-<tr class="separator:a9cb395d76228ba1c3b66e723b57d0fe3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8c91d1d0d032783e8a7841a2c1932e1"><td class="memItemLeft" align="right" valign="top"><a id="ac8c91d1d0d032783e8a7841a2c1932e1"></a>
-<a class="el" href="namespace_l_p_v_barcode_lib.html#a30448639d7ee070028ecf22e707e1951">LPVBarcodeQualityGrade</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_result.html#ac8c91d1d0d032783e8a7841a2c1932e1">QualityOverall</a><code> [get]</code></td></tr>
-<tr class="memdesc:ac8c91d1d0d032783e8a7841a2c1932e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The barcode overall quality grading. <br /></td></tr>
-<tr class="separator:ac8c91d1d0d032783e8a7841a2c1932e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5080d342b7871a79bc81bb98d4e5a331"><td class="memItemLeft" align="right" valign="top"><a id="a5080d342b7871a79bc81bb98d4e5a331"></a>
-<a class="el" href="namespace_l_p_v_barcode_lib.html#a8d35ae44acaae621a58bd6ac4cafb72f">LPVBarcodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_result.html#a5080d342b7871a79bc81bb98d4e5a331">Type</a><code> [get]</code></td></tr>
-<tr class="memdesc:a5080d342b7871a79bc81bb98d4e5a331"><td class="mdescLeft">&#160;</td><td class="mdescRight">The barcode type. <br /></td></tr>
-<tr class="separator:a5080d342b7871a79bc81bb98d4e5a331"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bd988cd0cfad22f5d47bf7d72e497c5"><td class="memItemLeft" align="right" valign="top"><a id="a5bd988cd0cfad22f5d47bf7d72e497c5"></a>
+Angle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_result.html#a5bd988cd0cfad22f5d47bf7d72e497c5">id</a><code> [get]</code></td></tr>
+<tr class="memdesc:a5bd988cd0cfad22f5d47bf7d72e497c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The center of the barcode. <br /></td></tr>
+<tr class="separator:a5bd988cd0cfad22f5d47bf7d72e497c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf5b1bdc53199e4bd72d15a70e8d2156"><td class="memItemLeft" align="right" valign="top"><a id="acf5b1bdc53199e4bd72d15a70e8d2156"></a>
+Type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_result.html#acf5b1bdc53199e4bd72d15a70e8d2156">id</a><code> [get]</code></td></tr>
+<tr class="memdesc:acf5b1bdc53199e4bd72d15a70e8d2156"><td class="mdescLeft">&#160;</td><td class="mdescRight">The quadrangle region of the barcode. <br /></td></tr>
+<tr class="separator:acf5b1bdc53199e4bd72d15a70e8d2156"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb2e86f4aea8241086dd38cea7114594"><td class="memItemLeft" align="right" valign="top"><a id="aeb2e86f4aea8241086dd38cea7114594"></a>
+<a class="el" href="namespace_l_p_v_barcode_lib.html#ae2c805658fd677520e4953101b586020">LPVBarcodeQualityParam</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_result.html#aeb2e86f4aea8241086dd38cea7114594">id</a><code> [get]</code></td></tr>
+<tr class="memdesc:aeb2e86f4aea8241086dd38cea7114594"><td class="mdescLeft">&#160;</td><td class="mdescRight">The barcode's decoded string. <br /></td></tr>
+<tr class="separator:aeb2e86f4aea8241086dd38cea7114594"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This interface holds a single barcode inspection result and is used to access its properties. </p>
-<p>Usually you get the <a class="el" href="class_l_p_v_barcode_lib_1_1_l_barcode_result.html">LBarcodeResult</a> object from the <a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_results.html#a692fc7207c6dbbcc435a0e55c63dc7f4">ILBarcodeResults::Item()</a> function. You can then use this interface to access to the detailed barcode informations and draw the result on graphics windows.</p>
-<p>C++: </p><div class="fragment"><div class="line">CLBarcodeResult codeRes;</div>
+<p>Usually you get the <a class="el" href="class_l_p_v_barcode_lib_1_1_l_barcode_result.html">LBarcodeResult</a> object from the <a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_results.html#a46acfe1518a7666088d29032cf1f3ae2">ILBarcodeResults::Item()</a> function. You can then use this interface to access to the detailed barcode informations and draw the result on graphics windows.</p>
+<h3>Example Code </h3>
+ <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">CLBarcodeResult codeRes;</div>
 <div class="line">codeRes = m_code_results-&gt;Item(i);</div>
 <div class="line">CString text;</div>
 <div class="line">codeRes.get_DecodedString(&amp;text);</div>
-</div><!-- fragment --><p>C#: </p><div class="fragment"><div class="line">LBarcodeResult codeResb = m_code_results-&gt;Item(i);</div>
+</div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LBarcodeResult codeResb = m_code_results-&gt;Item(i);</div>
 <div class="line">String text = codeRes.DecodedString;</div>
-</div><!-- fragment --> </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a7d110d75e5ad9c5e2b7c20f79139c67f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7d110d75e5ad9c5e2b7c20f79139c67f">&#9670;&nbsp;</a></span>Draw()</h2>
+</div><!-- fragment --> </div>  </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a195da8d19555f397bd53b621edbccf8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a195da8d19555f397bd53b621edbccf8d">&#9670;&nbsp;</a></span>Draw()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT Draw </td>
+          <td class="memname">void Draw </td>
           <td>(</td>
-          <td class="paramtype">[in] HDC&#160;</td>
+          <td class="paramtype">HDC&#160;</td>
           <td class="paramname"><em>hdc</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in] <a class="el" href="namespace_l_p_v_barcode_lib.html#a84df8395b042233913ed7ab7ac86aec9">LPVBarcodeDrawFlags</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespace_l_p_v_barcode_lib.html#a84df8395b042233913ed7ab7ac86aec9">LPVBarcodeDrawFlags</a>&#160;</td>
           <td class="paramname"><em>drawFlags</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in, defaultvalue(1)] double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>zoomX</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in, defaultvalue(0)] double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>zoomY</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in, defaultvalue(0)] double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>panX</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in, defaultvalue(0)] double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>panY</em>&#160;</td>
         </tr>
         <tr>
@@ -198,44 +185,16 @@ BSTR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 
 </div>
 </div>
-<h2 class="groupheader">Property Documentation</h2>
-<a id="a9cb395d76228ba1c3b66e723b57d0fe3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9cb395d76228ba1c3b66e723b57d0fe3">&#9670;&nbsp;</a></span>Quality</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespace_l_p_v_barcode_lib.html#a30448639d7ee070028ecf22e707e1951">LPVBarcodeQualityGrade</a> Quality([in] <a class="el" href="namespace_l_p_v_barcode_lib.html#ae2c805658fd677520e4953101b586020">LPVBarcodeQualityParam</a> param)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>The barcode quality grading for individual parameter. </p>
-<table class="doxtable">
-<tr>
-<td>1D Barcode</td><td><a class="el" href="namespace_l_p_v_barcode_lib.html#ae2c805658fd677520e4953101b586020ae143bb9b49e8d555a93281a2abf02011">Decode </a>, <a class="el" href="namespace_l_p_v_barcode_lib.html#ae2c805658fd677520e4953101b586020abfb13a71d7e37e31d928dfa15c8d0e74">SC </a>, <a class="el" href="namespace_l_p_v_barcode_lib.html#ae2c805658fd677520e4953101b586020abc48eda499c922c750dbaf9a0a5c2e24">MinR </a>, <a class="el" href="namespace_l_p_v_barcode_lib.html#ae2c805658fd677520e4953101b586020ad9f89ef59f6f2cc9a97a415ba15fde77">EC </a>, <a class="el" href="namespace_l_p_v_barcode_lib.html#ae2c805658fd677520e4953101b586020ae9a7d33d4e63d7ac78ea349d22ec37b5">MOD </a>, <a class="el" href="namespace_l_p_v_barcode_lib.html#ae2c805658fd677520e4953101b586020a20c51d8e1c53f23a5f906bc7f2628120">Defects </a>, <a class="el" href="namespace_l_p_v_barcode_lib.html#ae2c805658fd677520e4953101b586020acba3e43d33f66c4f2407c9a922514e17">Decodability </a>  </td></tr>
-<tr>
-<td>Data Matrix</td><td><a class="el" href="namespace_l_p_v_barcode_lib.html#ae2c805658fd677520e4953101b586020a2e66123cd6aad80156bf46388418df9b">AN </a>, <a class="el" href="namespace_l_p_v_barcode_lib.html#ae2c805658fd677520e4953101b586020a549dea2155f6cbcf33830bfb4cade41e">GN </a>, <a class="el" href="namespace_l_p_v_barcode_lib.html#ae2c805658fd677520e4953101b586020abfb13a71d7e37e31d928dfa15c8d0e74">SC </a>, <a class="el" href="namespace_l_p_v_barcode_lib.html#ae2c805658fd677520e4953101b586020a6b1cbcb2e797c39466a81a30673b6472">FPD </a>, <a class="el" href="namespace_l_p_v_barcode_lib.html#ae2c805658fd677520e4953101b586020a622b51ebfcfadd2e65aa1671a332b851">UEC </a>, <a class="el" href="namespace_l_p_v_barcode_lib.html#ae2c805658fd677520e4953101b586020ae9a7d33d4e63d7ac78ea349d22ec37b5">MOD </a>, <a class="el" href="namespace_l_p_v_barcode_lib.html#ae2c805658fd677520e4953101b586020aeb27c38723319ebdb62cc6030d4e87b5">RM </a>  </td></tr>
-<tr>
-<td>QR</td><td><a class="el" href="namespace_l_p_v_barcode_lib.html#ae2c805658fd677520e4953101b586020ae143bb9b49e8d555a93281a2abf02011">Decode </a>, <a class="el" href="namespace_l_p_v_barcode_lib.html#ae2c805658fd677520e4953101b586020abfb13a71d7e37e31d928dfa15c8d0e74">SC </a>, <a class="el" href="namespace_l_p_v_barcode_lib.html#ae2c805658fd677520e4953101b586020a2e66123cd6aad80156bf46388418df9b">AN </a>, <a class="el" href="namespace_l_p_v_barcode_lib.html#ae2c805658fd677520e4953101b586020a549dea2155f6cbcf33830bfb4cade41e">GN </a>, <a class="el" href="namespace_l_p_v_barcode_lib.html#ae2c805658fd677520e4953101b586020ae9a7d33d4e63d7ac78ea349d22ec37b5">MOD </a>, <a class="el" href="namespace_l_p_v_barcode_lib.html#ae2c805658fd677520e4953101b586020aeb27c38723319ebdb62cc6030d4e87b5">RM </a>, <a class="el" href="namespace_l_p_v_barcode_lib.html#ae2c805658fd677520e4953101b586020a6b1cbcb2e797c39466a81a30673b6472">FPD </a>  </td></tr>
-</table>
-
-</div>
-</div>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.9.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-© 2021 <a href="http://www.hzleaper.com/">Hangzhou Leaper Tech. Ltd.</a>
+© 2022 <a href="http://www.hzleaper.com/">Hangzhou Leaper Tech. Ltd.</a>
 </small></address>
+<script type="text/javascript">
+//<![CDATA[
+addTutorialsButtons();
+//]]>
+</script>
 </body>
 </html>

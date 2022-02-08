@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['equalize_960',['Equalize',['../interface_l_p_v_img_proc_lib_1_1_i_l_image_filter.html#a0947a2ca762a4e1288cbdda7773909c3',1,'LPVImgProcLib::ILImageFilter']]],
-  ['erode_961',['Erode',['../interface_l_p_v_img_proc_lib_1_1_i_l_image_morph.html#a5399bab89963976e4a28eb269e946223',1,'LPVImgProcLib::ILImageMorph']]],
-  ['executetasksync_962',['ExecuteTaskSync',['../interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html#ad2db856ab47b8a128e7608b68593dc52',1,'LPVIBLib::ILIBService']]]
+  ['equalize_1024',['Equalize',['../interface_l_p_v_img_proc_lib_1_1_i_l_image_filter.html#abb83bb7ee4950042bfb2a6d17e139668',1,'LPVImgProcLib::ILImageFilter']]],
+  ['erode_1025',['Erode',['../interface_l_p_v_img_proc_lib_1_1_i_l_image_morph.html#a66a23f3529e6eb88e8c799f0407a3ef5',1,'LPVImgProcLib::ILImageMorph']]],
+  ['executetasksync_1026',['ExecuteTaskSync',['../interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html#a518d1fb020e7ce59675f45dbdd95be1c',1,'LPVIBLib::ILIBService']]],
+  ['exposurefusion_1027',['ExposureFusion',['../interface_l_p_v_img_proc_lib_1_1_i_l_h_d_r.html#a352c95095228a2a9d2ceb3988dad3487',1,'LPVImgProcLib::ILHDR']]]
 ];

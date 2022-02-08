@@ -9,6 +9,7 @@
 <title>LPV: ILIBService Interface Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="tutorial-utils.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
@@ -96,71 +97,66 @@ Inheritance diagram for ILIBService:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad2db856ab47b8a128e7608b68593dc52"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html#ad2db856ab47b8a128e7608b68593dc52">ExecuteTaskSync</a> ([in] int taskId, [in] <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *pImage, [out] <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_task_result.html">ILIBTaskResult</a> **ppTaskResult, [out, retval] int *pErrCode)</td></tr>
-<tr class="separator:ad2db856ab47b8a128e7608b68593dc52"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93b9e35e7a49b2f52454aa0b91786d54"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html#a93b9e35e7a49b2f52454aa0b91786d54">GetAlgoConfig</a> ([in] int taskId, [in] BSTR algoName, [out, retval] <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_algo_config.html">ILIBAlgoConfig</a> **ppAlgoConfig)</td></tr>
-<tr class="separator:a93b9e35e7a49b2f52454aa0b91786d54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41686bc67530d15a12b2cd6b21d2c146"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html#a41686bc67530d15a12b2cd6b21d2c146">GetErrMsg</a> ([in] int errCode, [out, retval] BSTR *pErrMsg)</td></tr>
-<tr class="separator:a41686bc67530d15a12b2cd6b21d2c146"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac36a84ca1a194b305ffd0cfefb49b4cf"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html#ac36a84ca1a194b305ffd0cfefb49b4cf">GetTaskConfig</a> ([in] int taskId, [out, retval] <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_task_config.html">ILIBTaskConfig</a> **ppTaskConfig)</td></tr>
-<tr class="separator:ac36a84ca1a194b305ffd0cfefb49b4cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4cbd55a48631d2adbfb347b686607d45"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html#a4cbd55a48631d2adbfb347b686607d45">IsReady</a> ([out, retval] VARIANT_BOOL *pVal)</td></tr>
-<tr class="separator:a4cbd55a48631d2adbfb347b686607d45"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4fb7c4545a2cd1f90ae2610641b7904"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html#ad4fb7c4545a2cd1f90ae2610641b7904">LoadTask</a> ([in] BSTR filename, [out] int *pTaskId, [out, retval] int *pErrCode)</td></tr>
-<tr class="separator:ad4fb7c4545a2cd1f90ae2610641b7904"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae99f015652bcacf5661043fe863eb0d8"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html#ae99f015652bcacf5661043fe863eb0d8">SetAlgoConfig</a> ([in] int taskId, [in] BSTR algoName, [in] <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_algo_config.html">ILIBAlgoConfig</a> *pAlgoConfig, [out, retval] int *pErrCode)</td></tr>
-<tr class="separator:ae99f015652bcacf5661043fe863eb0d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1d96dddaa99b90934aba5f037586493"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html#ad1d96dddaa99b90934aba5f037586493">SetTaskConfig</a> ([in] int taskId, [in] <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_task_config.html">ILIBTaskConfig</a> *pTaskConfig, [out, retval] int *pErrCode)</td></tr>
-<tr class="separator:ad1d96dddaa99b90934aba5f037586493"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a010e5c3387ca743c6a8835d11d2512f2"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html#a010e5c3387ca743c6a8835d11d2512f2">SetUp</a> ([in] BSTR ibPath)</td></tr>
-<tr class="separator:a010e5c3387ca743c6a8835d11d2512f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6909a23d8f3db5c58af72d70a645c956"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html#a6909a23d8f3db5c58af72d70a645c956">TearDown</a> ()</td></tr>
-<tr class="separator:a6909a23d8f3db5c58af72d70a645c956"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a518d1fb020e7ce59675f45dbdd95be1c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html#a518d1fb020e7ce59675f45dbdd95be1c">ExecuteTaskSync</a> (int taskId, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *image, <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_task_result.html">ILIBTaskResult</a> **taskResult)</td></tr>
+<tr class="separator:a518d1fb020e7ce59675f45dbdd95be1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bed1e376c84bb1c5e0ce49efe5658fc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_algo_config.html">ILIBAlgoConfig</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html#a9bed1e376c84bb1c5e0ce49efe5658fc">GetAlgoConfig</a> (int taskId, BSTR algoName)</td></tr>
+<tr class="separator:a9bed1e376c84bb1c5e0ce49efe5658fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a82dfd725b4d9982a1eeb35fb68e463"><td class="memItemLeft" align="right" valign="top">BSTR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html#a7a82dfd725b4d9982a1eeb35fb68e463">GetErrMsg</a> (int errCode)</td></tr>
+<tr class="separator:a7a82dfd725b4d9982a1eeb35fb68e463"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a694efb0352aa5daea86405e2579e8ff8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_task_config.html">ILIBTaskConfig</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html#a694efb0352aa5daea86405e2579e8ff8">GetTaskConfig</a> (int taskId)</td></tr>
+<tr class="separator:a694efb0352aa5daea86405e2579e8ff8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06d21a51a97e29d464e5690452fe7565"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html#a06d21a51a97e29d464e5690452fe7565">IsReady</a> ()</td></tr>
+<tr class="separator:a06d21a51a97e29d464e5690452fe7565"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37a3d7ed9bb58a6bd9683603e559af65"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html#a37a3d7ed9bb58a6bd9683603e559af65">LoadTask</a> (BSTR filename, int *taskId)</td></tr>
+<tr class="separator:a37a3d7ed9bb58a6bd9683603e559af65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40758abe66408c107fe07ef1d11286a7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html#a40758abe66408c107fe07ef1d11286a7">SetAlgoConfig</a> (int taskId, BSTR algoName, <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_algo_config.html">ILIBAlgoConfig</a> *algoConfig)</td></tr>
+<tr class="separator:a40758abe66408c107fe07ef1d11286a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd27a54e852e3adc33c87cd2d42fd2f6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html#abd27a54e852e3adc33c87cd2d42fd2f6">SetTaskConfig</a> (int taskId, <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_task_config.html">ILIBTaskConfig</a> *taskConfig)</td></tr>
+<tr class="separator:abd27a54e852e3adc33c87cd2d42fd2f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f6cd8f2f316d8454675ae992af88551"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html#a5f6cd8f2f316d8454675ae992af88551">SetUp</a> (BSTR ibPath)</td></tr>
+<tr class="separator:a5f6cd8f2f316d8454675ae992af88551"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a931587596081ef8178c2b128facb0411"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html#a931587596081ef8178c2b128facb0411">TearDown</a> ()</td></tr>
+<tr class="separator:a931587596081ef8178c2b128facb0411"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This interface provide functionalities to connect to the IntelliBlink service. </p>
 <p>IntelliBlink is a lightweight intelligent machine vision platform powered by Leaper Vision. You can use its WYSIWYG user interface to develop various optical location and measurement tasks via drag-and-drop operations, and benefits from its powerful algorithm toolkits: Location, Counting, Presence, Math &amp; Logic, Image Filter, Geometry, Calibration, Identification, Classification, etc.</p>
 <p>The LPV IB service module helps you to make use of the flexible and scalable IntelliBlink tasks, to integrate, execute and manipulate them in a LPV application.</p>
-<p>C++: </p><div class="fragment"><div class="line">CLIBService m_ib_service;</div>
-<div class="line">m_ib_service.SetUp(L<span class="stringliteral">&quot;path to the IntelliBlink root folder, say D:/Programs/IntelliBlink/&quot;</span>);</div>
-<div class="line"><span class="keywordflow">if</span> (m_ib_service.IsReady()) <span class="keywordflow">return</span>; <span class="comment">// set up IB service failed</span></div>
+<h3>Example Code </h3>
+ <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">ILIBServicePtr m_ib_service(__uuidof(LIBService));</div>
+<div class="line">m_ib_service-&gt;SetUp(L<span class="stringliteral">&quot;path to the IntelliBlink root folder, say D:/Programs/IntelliBlink/&quot;</span>);</div>
+<div class="line"><span class="keywordflow">if</span> (m_ib_service-&gt;IsReady()) <span class="keywordflow">return</span>; <span class="comment">// set up IB service failed</span></div>
 <div class="line"><span class="comment">// do stuff, like load task, execute then get result</span></div>
-<div class="line">m_ib_service.TearDown();</div>
-</div><!-- fragment --><p>C#: </p><div class="fragment"><div class="line">LIBService m_ib_service = <span class="keyword">new</span> LIBService();</div>
+<div class="line">m_ib_service-&gt;TearDown();</div>
+</div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LIBService m_ib_service = <span class="keyword">new</span> LIBService();</div>
 <div class="line">m_ib_service.SetUp(<span class="stringliteral">&quot;path to the IntelliBlink root folder, say D:/Programs/IntelliBlink/&quot;</span>);</div>
 <div class="line"><span class="keywordflow">if</span> (m_ib_service.IsReady()) <span class="keywordflow">return</span>; <span class="comment">// set up IB service failed</span></div>
 <div class="line"><span class="comment">// do stuff, like load task, execute then get result</span></div>
 <div class="line">m_ib_service.TearDown();</div>
-</div><!-- fragment --> </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ad2db856ab47b8a128e7608b68593dc52"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad2db856ab47b8a128e7608b68593dc52">&#9670;&nbsp;</a></span>ExecuteTaskSync()</h2>
+</div><!-- fragment --> </div>  </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a518d1fb020e7ce59675f45dbdd95be1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a518d1fb020e7ce59675f45dbdd95be1c">&#9670;&nbsp;</a></span>ExecuteTaskSync()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT ExecuteTaskSync </td>
+          <td class="memname">int ExecuteTaskSync </td>
           <td>(</td>
-          <td class="paramtype">[in] int&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>taskId</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in] <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
-          <td class="paramname"><em>pImage</em>, </td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>image</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[out] <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_task_result.html">ILIBTaskResult</a> **&#160;</td>
-          <td class="paramname"><em>ppTaskResult</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">[out, retval] int *&#160;</td>
-          <td class="paramname"><em>pErrCode</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_task_result.html">ILIBTaskResult</a> **&#160;</td>
+          <td class="paramname"><em>taskResult</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -172,43 +168,37 @@ Public Member Functions</h2></td></tr>
 <p>Execute the IntelliBlink task synchronously based on the given image. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">taskId</td><td>The unique task ID. </td></tr>
-    <tr><td class="paramname">pImage</td><td>The input image. </td></tr>
+    <tr><td class="paramname">image</td><td>The input image. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">ppTaskResult</td><td>Output the task results. </td></tr>
-    <tr><td class="paramname">pErrCode</td><td>Return the error code if anything is wrong, return <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aae917cd39742ab4cec9119219cae9154c">LPVNoError</a> if succeed. </td></tr>
+    <tr><td class="paramname">taskResult</td><td>Output the task results. </td></tr>
+    <tr><td class="paramname">errCode</td><td>Return the error code if anything is wrong, return <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aae917cd39742ab4cec9119219cae9154c">LPVNoError</a> if succeed. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a93b9e35e7a49b2f52454aa0b91786d54"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a93b9e35e7a49b2f52454aa0b91786d54">&#9670;&nbsp;</a></span>GetAlgoConfig()</h2>
+<a id="a9bed1e376c84bb1c5e0ce49efe5658fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9bed1e376c84bb1c5e0ce49efe5658fc">&#9670;&nbsp;</a></span>GetAlgoConfig()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT GetAlgoConfig </td>
+          <td class="memname"><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_algo_config.html">ILIBAlgoConfig</a>* GetAlgoConfig </td>
           <td>(</td>
-          <td class="paramtype">[in] int&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>taskId</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in] BSTR&#160;</td>
-          <td class="paramname"><em>algoName</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">[out, retval] <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_algo_config.html">ILIBAlgoConfig</a> **&#160;</td>
-          <td class="paramname"><em>ppAlgoConfig</em>&#160;</td>
+          <td class="paramtype">BSTR&#160;</td>
+          <td class="paramname"><em>algoName</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -228,36 +218,26 @@ Return null if failed to find the task with the specified ID or its algorithm wi
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">ppAlgoConfig</td><td>Return the algorithm configuration. </td></tr>
+    <tr><td class="paramname">algoConfig</td><td>Return the algorithm configuration. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html#ae99f015652bcacf5661043fe863eb0d8">SetAlgoConfig()</a>, <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html#ac36a84ca1a194b305ffd0cfefb49b4cf">GetTaskConfig()</a>. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html#a40758abe66408c107fe07ef1d11286a7">SetAlgoConfig()</a>, <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html#a694efb0352aa5daea86405e2579e8ff8">GetTaskConfig()</a>. </dd></dl>
 
 </div>
 </div>
-<a id="a41686bc67530d15a12b2cd6b21d2c146"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a41686bc67530d15a12b2cd6b21d2c146">&#9670;&nbsp;</a></span>GetErrMsg()</h2>
+<a id="a7a82dfd725b4d9982a1eeb35fb68e463"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a82dfd725b4d9982a1eeb35fb68e463">&#9670;&nbsp;</a></span>GetErrMsg()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT GetErrMsg </td>
+          <td class="memname">BSTR GetErrMsg </td>
           <td>(</td>
-          <td class="paramtype">[in] int&#160;</td>
-          <td class="paramname"><em>errCode</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>errCode</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">[out, retval] BSTR *&#160;</td>
-          <td class="paramname"><em>pErrMsg</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -269,35 +249,25 @@ Return null if failed to find the task with the specified ID or its algorithm wi
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">pErrMsg</td><td>Return the error message. </td></tr>
+    <tr><td class="paramname">errMsg</td><td>Return the error message. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="ac36a84ca1a194b305ffd0cfefb49b4cf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac36a84ca1a194b305ffd0cfefb49b4cf">&#9670;&nbsp;</a></span>GetTaskConfig()</h2>
+<a id="a694efb0352aa5daea86405e2579e8ff8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a694efb0352aa5daea86405e2579e8ff8">&#9670;&nbsp;</a></span>GetTaskConfig()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT GetTaskConfig </td>
+          <td class="memname"><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_task_config.html">ILIBTaskConfig</a>* GetTaskConfig </td>
           <td>(</td>
-          <td class="paramtype">[in] int&#160;</td>
-          <td class="paramname"><em>taskId</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>taskId</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">[out, retval] <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_task_config.html">ILIBTaskConfig</a> **&#160;</td>
-          <td class="paramname"><em>ppTaskConfig</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -309,61 +279,54 @@ Return null if failed to find the task with the specified ID or its algorithm wi
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">ppTaskConfig</td><td>Return the task configuration. </td></tr>
+    <tr><td class="paramname">taskConfig</td><td>Return the task configuration. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html#ad1d96dddaa99b90934aba5f037586493">SetTaskConfig()</a>, <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html#a93b9e35e7a49b2f52454aa0b91786d54">GetAlgoConfig()</a>. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html#abd27a54e852e3adc33c87cd2d42fd2f6">SetTaskConfig()</a>, <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html#a9bed1e376c84bb1c5e0ce49efe5658fc">GetAlgoConfig()</a>. </dd></dl>
 
 </div>
 </div>
-<a id="a4cbd55a48631d2adbfb347b686607d45"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4cbd55a48631d2adbfb347b686607d45">&#9670;&nbsp;</a></span>IsReady()</h2>
+<a id="a06d21a51a97e29d464e5690452fe7565"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06d21a51a97e29d464e5690452fe7565">&#9670;&nbsp;</a></span>IsReady()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT IsReady </td>
+          <td class="memname">BOOL IsReady </td>
           <td>(</td>
-          <td class="paramtype">[out, retval] VARIANT_BOOL *&#160;</td>
-          <td class="paramname"><em>pVal</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Check whether the service is ready. </p><dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">pVal</td><td>True for the service is ready, otherwise, return False. </td></tr>
+    <tr><td class="paramname">val</td><td>True for the service is ready, otherwise, return False. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="ad4fb7c4545a2cd1f90ae2610641b7904"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad4fb7c4545a2cd1f90ae2610641b7904">&#9670;&nbsp;</a></span>LoadTask()</h2>
+<a id="a37a3d7ed9bb58a6bd9683603e559af65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37a3d7ed9bb58a6bd9683603e559af65">&#9670;&nbsp;</a></span>LoadTask()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT LoadTask </td>
+          <td class="memname">int LoadTask </td>
           <td>(</td>
-          <td class="paramtype">[in] BSTR&#160;</td>
+          <td class="paramtype">BSTR&#160;</td>
           <td class="paramname"><em>filename</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[out] int *&#160;</td>
-          <td class="paramname"><em>pTaskId</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">[out, retval] int *&#160;</td>
-          <td class="paramname"><em>pErrCode</em>&#160;</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>taskId</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -374,7 +337,7 @@ Return null if failed to find the task with the specified ID or its algorithm wi
 </div><div class="memdoc">
 <p>Load the IntelliBlink task from a specified file. </p><dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">pTaskId</td><td>Output the unique task ID. </td></tr>
+    <tr><td class="paramname">taskId</td><td>Output the unique task ID. </td></tr>
   </table>
   </dd>
 </dl>
@@ -386,42 +349,36 @@ Return null if failed to find the task with the specified ID or its algorithm wi
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">pError</td><td>Return error code if anything is wrong. </td></tr>
+    <tr><td class="paramname">error</td><td>Return error code if anything is wrong. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="ae99f015652bcacf5661043fe863eb0d8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae99f015652bcacf5661043fe863eb0d8">&#9670;&nbsp;</a></span>SetAlgoConfig()</h2>
+<a id="a40758abe66408c107fe07ef1d11286a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40758abe66408c107fe07ef1d11286a7">&#9670;&nbsp;</a></span>SetAlgoConfig()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT SetAlgoConfig </td>
+          <td class="memname">int SetAlgoConfig </td>
           <td>(</td>
-          <td class="paramtype">[in] int&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>taskId</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in] BSTR&#160;</td>
+          <td class="paramtype">BSTR&#160;</td>
           <td class="paramname"><em>algoName</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in] <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_algo_config.html">ILIBAlgoConfig</a> *&#160;</td>
-          <td class="paramname"><em>pAlgoConfig</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">[out, retval] int *&#160;</td>
-          <td class="paramname"><em>pErrCode</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_algo_config.html">ILIBAlgoConfig</a> *&#160;</td>
+          <td class="paramname"><em>algoConfig</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -434,43 +391,37 @@ Return null if failed to find the task with the specified ID or its algorithm wi
   <table class="params">
     <tr><td class="paramname">taskId</td><td>The unique task ID. </td></tr>
     <tr><td class="paramname">algoName</td><td>The unique name of the algorithm tool. </td></tr>
-    <tr><td class="paramname">pAlgoConfig</td><td>The change configuration. </td></tr>
+    <tr><td class="paramname">algoConfig</td><td>The change configuration. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">pErrCode</td><td>Return the error code if anything is wrong, return LPVNoError if succeed. </td></tr>
+    <tr><td class="paramname">errCode</td><td>Return the error code if anything is wrong, return LPVNoError if succeed. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html#a93b9e35e7a49b2f52454aa0b91786d54">GetAlgoConfig()</a>, <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html#ad1d96dddaa99b90934aba5f037586493">SetTaskConfig()</a>. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html#a9bed1e376c84bb1c5e0ce49efe5658fc">GetAlgoConfig()</a>, <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html#abd27a54e852e3adc33c87cd2d42fd2f6">SetTaskConfig()</a>. </dd></dl>
 
 </div>
 </div>
-<a id="ad1d96dddaa99b90934aba5f037586493"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad1d96dddaa99b90934aba5f037586493">&#9670;&nbsp;</a></span>SetTaskConfig()</h2>
+<a id="abd27a54e852e3adc33c87cd2d42fd2f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd27a54e852e3adc33c87cd2d42fd2f6">&#9670;&nbsp;</a></span>SetTaskConfig()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT SetTaskConfig </td>
+          <td class="memname">int SetTaskConfig </td>
           <td>(</td>
-          <td class="paramtype">[in] int&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>taskId</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in] <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_task_config.html">ILIBTaskConfig</a> *&#160;</td>
-          <td class="paramname"><em>pTaskConfig</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">[out, retval] int *&#160;</td>
-          <td class="paramname"><em>pErrCode</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_task_config.html">ILIBTaskConfig</a> *&#160;</td>
+          <td class="paramname"><em>taskConfig</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -482,30 +433,30 @@ Return null if failed to find the task with the specified ID or its algorithm wi
 <p>Set the changed configuration to the task with the given task ID. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">taskId</td><td>The unique task ID. </td></tr>
-    <tr><td class="paramname">pTaskConfig</td><td>The change configuration. </td></tr>
+    <tr><td class="paramname">taskConfig</td><td>The change configuration. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">pErrCode</td><td>Return the error code if anything is wrong, return <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aae917cd39742ab4cec9119219cae9154c">LPVNoError</a> if succeed. </td></tr>
+    <tr><td class="paramname">errCode</td><td>Return the error code if anything is wrong, return <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aae917cd39742ab4cec9119219cae9154c">LPVNoError</a> if succeed. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html#ac36a84ca1a194b305ffd0cfefb49b4cf">GetTaskConfig()</a>, <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html#ae99f015652bcacf5661043fe863eb0d8">SetAlgoConfig()</a>. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html#a694efb0352aa5daea86405e2579e8ff8">GetTaskConfig()</a>, <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html#a40758abe66408c107fe07ef1d11286a7">SetAlgoConfig()</a>. </dd></dl>
 
 </div>
 </div>
-<a id="a010e5c3387ca743c6a8835d11d2512f2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a010e5c3387ca743c6a8835d11d2512f2">&#9670;&nbsp;</a></span>SetUp()</h2>
+<a id="a5f6cd8f2f316d8454675ae992af88551"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f6cd8f2f316d8454675ae992af88551">&#9670;&nbsp;</a></span>SetUp()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT SetUp </td>
+          <td class="memname">void SetUp </td>
           <td>(</td>
-          <td class="paramtype">[in] BSTR&#160;</td>
+          <td class="paramtype">BSTR&#160;</td>
           <td class="paramname"><em>ibPath</em></td><td>)</td>
           <td></td>
         </tr>
@@ -518,18 +469,18 @@ Return null if failed to find the task with the specified ID or its algorithm wi
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html#a6909a23d8f3db5c58af72d70a645c956">TearDown()</a>. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html#a931587596081ef8178c2b128facb0411">TearDown()</a>. </dd></dl>
 
 </div>
 </div>
-<a id="a6909a23d8f3db5c58af72d70a645c956"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6909a23d8f3db5c58af72d70a645c956">&#9670;&nbsp;</a></span>TearDown()</h2>
+<a id="a931587596081ef8178c2b128facb0411"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a931587596081ef8178c2b128facb0411">&#9670;&nbsp;</a></span>TearDown()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT TearDown </td>
+          <td class="memname">void TearDown </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -538,7 +489,7 @@ Return null if failed to find the task with the specified ID or its algorithm wi
 </div><div class="memdoc">
 <p>Tear down the IntelliBlink service.<br  />
 It should be called at the end after finish using any of the LPV IB objects.<br  />
-It's Ok to omit the tear down step, we'll do it automatically when free the service object. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html#a010e5c3387ca743c6a8835d11d2512f2">SetUp()</a>. </dd></dl>
+It's Ok to omit the tear down step, we'll do it automatically when free the service object. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html#a5f6cd8f2f316d8454675ae992af88551">SetUp()</a>. </dd></dl>
 
 </div>
 </div>
@@ -546,7 +497,12 @@ It's Ok to omit the tear down step, we'll do it automatically when free the serv
 <!-- HTML footer for doxygen 1.9.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-© 2021 <a href="http://www.hzleaper.com/">Hangzhou Leaper Tech. Ltd.</a>
+© 2022 <a href="http://www.hzleaper.com/">Hangzhou Leaper Tech. Ltd.</a>
 </small></address>
+<script type="text/javascript">
+//<![CDATA[
+addTutorialsButtons();
+//]]>
+</script>
 </body>
 </html>

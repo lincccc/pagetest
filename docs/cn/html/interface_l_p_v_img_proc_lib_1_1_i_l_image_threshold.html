@@ -9,6 +9,7 @@
 <title>LPV: ILImageThreshold接口 参考</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="tutorial-utils.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
@@ -96,49 +97,50 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
-<tr class="memitem:aba1bcd360938fa44e7ae0cacb1704eec"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#aba1bcd360938fa44e7ae0cacb1704eec">Binarize</a> ([in] <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *pImg, [out] <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *pResult)</td></tr>
-<tr class="separator:aba1bcd360938fa44e7ae0cacb1704eec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93229cd0922135a271577aa67523a2e8"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#a93229cd0922135a271577aa67523a2e8">Clip</a> ([in] <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *pImg, [out] <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *pResult)</td></tr>
-<tr class="separator:a93229cd0922135a271577aa67523a2e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe63f0323cf1f077b8d8bed562ba5ab0"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#abe63f0323cf1f077b8d8bed562ba5ab0">SetThreshold</a> ([in, range(0, 255)] int lb, [in, defaultvalue(255), range(0, 255)] int ub)</td></tr>
-<tr class="separator:abe63f0323cf1f077b8d8bed562ba5ab0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9daf7cbb355f33488d50308c8d6f86ba"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#a9daf7cbb355f33488d50308c8d6f86ba">SetThresholdAdaptGlobal</a> ([in, defaultvalue(0), range(-255, 255)] int lbBias, [in, defaultvalue(0), range(-255, 255)] int ubBias)</td></tr>
-<tr class="separator:a9daf7cbb355f33488d50308c8d6f86ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acfb6b82d42d930aca9939b9caca16c96"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#acfb6b82d42d930aca9939b9caca16c96">SetThresholdAdaptLocal</a> ([in, range(1, 999)] int blockWidth, [in, range(1, 999)] int blockHeight, [in, defaultvalue(0), range(-255, 255)] int lbBias, [in, defaultvalue(0), range(-255, 255)] int ubBias)</td></tr>
-<tr class="separator:acfb6b82d42d930aca9939b9caca16c96"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3657f9383fb070054fffda2a1d1d0eeb"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#a3657f9383fb070054fffda2a1d1d0eeb">Stretch</a> ([in] <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *pImg, [out] <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *pResult)</td></tr>
-<tr class="separator:a3657f9383fb070054fffda2a1d1d0eeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55a3409a3709adf919c637a94380dabe"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#a55a3409a3709adf919c637a94380dabe">ThresholdDistance</a> ([in] <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *pImg, [out] <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *pResult)</td></tr>
-<tr class="separator:a55a3409a3709adf919c637a94380dabe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59c0c39c5e80da825fc2c1d9de6c952f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#a59c0c39c5e80da825fc2c1d9de6c952f">Binarize</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *result)</td></tr>
+<tr class="separator:a59c0c39c5e80da825fc2c1d9de6c952f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedbe4bc3544184c1281eccd57ba23d70"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#aedbe4bc3544184c1281eccd57ba23d70">Clip</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *result)</td></tr>
+<tr class="separator:aedbe4bc3544184c1281eccd57ba23d70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaec01838c8df52617fae459c70991d4e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#aaec01838c8df52617fae459c70991d4e">SetThreshold</a> (int lb, int ub)</td></tr>
+<tr class="separator:aaec01838c8df52617fae459c70991d4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bb4173db5cfa3de10d91adcfe6b536d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#a6bb4173db5cfa3de10d91adcfe6b536d">SetThresholdAdaptGlobal</a> (int lbBias, int ubBias)</td></tr>
+<tr class="separator:a6bb4173db5cfa3de10d91adcfe6b536d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae70a3231282033ea8dbb5f1e3464821"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#aae70a3231282033ea8dbb5f1e3464821">SetThresholdAdaptLocal</a> (int blockWidth, int blockHeight, int lbBias, int ubBias)</td></tr>
+<tr class="separator:aae70a3231282033ea8dbb5f1e3464821"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6429d720bd21ba61c7dda9cddce9ffdb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#a6429d720bd21ba61c7dda9cddce9ffdb">Stretch</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *result)</td></tr>
+<tr class="separator:a6429d720bd21ba61c7dda9cddce9ffdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6402e4daad03df6b21ea437e9dd7a6df"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#a6402e4daad03df6b21ea437e9dd7a6df">ThresholdDistance</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *result)</td></tr>
+<tr class="separator:a6402e4daad03df6b21ea437e9dd7a6df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><p>该接口类提供了阈值相关的算子 </p>
 <p>阈值算子是一类经典的图像分割方法，将一个图像分为需要分析的前景区域和背景。 分割过程基于图像中像素灰度在前景和背景区域的分布，对每一个像素，将其与给定的阈值或自动适应的阈值进行比较，以此区分前景和背景像素。</p>
 <p>使用这个接口，需要创建一个 <a class="el" href="class_l_p_v_img_proc_lib_1_1_l_image_threshold.html">LImageThreshold</a> 对象。</p>
-<p>C++: </p><div class="fragment"><div class="line">CLImageThreshold m_threshold_op;</div>
+<h3>示例代码 </h3>
+ <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">ILImageThresholdPtr m_threshold_op(__uuidof(LImageThreshold));</div>
+<div class="line">m_threshold_op-&gt;SetThreshold(100, 200);</div>
+<div class="line">m_threshold_op-&gt;Binarize(m_img, m_result_img);</div>
+</div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LImageThreshold m_threshold_op = <span class="keyword">new</span> LImageThreshold();</div>
 <div class="line">m_threshold_op.SetThreshold(100, 200);</div>
 <div class="line">m_threshold_op.Binarize(m_img, m_result_img);</div>
-</div><!-- fragment --><p>C#: </p><div class="fragment"><div class="line">LImageThreshold m_threshold_op = <span class="keyword">new</span> LImageThreshold();</div>
-<div class="line">m_threshold_op.SetThreshold(100, 200);</div>
-<div class="line">m_threshold_op.Binarize(m_img, m_result_img);</div>
-</div><!-- fragment --> </div><h2 class="groupheader">成员函数说明</h2>
-<a id="aba1bcd360938fa44e7ae0cacb1704eec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aba1bcd360938fa44e7ae0cacb1704eec">&#9670;&nbsp;</a></span>Binarize()</h2>
+</div><!-- fragment --> </div>  </div><h2 class="groupheader">成员函数说明</h2>
+<a id="a59c0c39c5e80da825fc2c1d9de6c952f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59c0c39c5e80da825fc2c1d9de6c952f">&#9670;&nbsp;</a></span>Binarize()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT Binarize </td>
+          <td class="memname">void Binarize </td>
           <td>(</td>
-          <td class="paramtype">[in] <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
-          <td class="paramname"><em>pImg</em>, </td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>img</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[out] <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
-          <td class="paramname"><em>pResult</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -151,36 +153,36 @@ Public 成员函数</h2></td></tr>
 若所设置的阈值范围的下限小于上限，输入图像中灰度值在阈值范围内的像素，在结果图中将被设置为前景（255），反之，则被设置为背景（0）。<br  />
 若所设置的阈值范围的下限大于上限，输入图像中灰度值在阈值范围内的像素，在结果图中将被设置为背景（0），反之，则被设置为前景（255）。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pImg</td><td>输入图像 </td></tr>
+    <tr><td class="paramname">img</td><td>输入图像 </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>返回值</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">pResult</td><td>输出结果图像 </td></tr>
+    <tr><td class="paramname">result</td><td>输出结果图像 </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a93229cd0922135a271577aa67523a2e8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a93229cd0922135a271577aa67523a2e8">&#9670;&nbsp;</a></span>Clip()</h2>
+<a id="aedbe4bc3544184c1281eccd57ba23d70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedbe4bc3544184c1281eccd57ba23d70">&#9670;&nbsp;</a></span>Clip()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT Clip </td>
+          <td class="memname">void Clip </td>
           <td>(</td>
-          <td class="paramtype">[in] <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
-          <td class="paramname"><em>pImg</em>, </td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>img</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[out] <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
-          <td class="paramname"><em>pResult</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -193,35 +195,35 @@ Public 成员函数</h2></td></tr>
 若像素的灰度值在所设置的阈值范围内，则在结果图像中保留该灰度值，否则将被设置为阈值范围的上限或下限。<br  />
 如若阈值范围设置为 [100, 200]，像素灰度 150 的结果保留为 150，像素灰度为 230 的被设置为上限 200，像素灰度为 50 的被设置为下限 100. </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pImg</td><td>输入图像 </td></tr>
+    <tr><td class="paramname">img</td><td>输入图像 </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>返回值</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">pResult</td><td>输出结果图像 </td></tr>
+    <tr><td class="paramname">result</td><td>输出结果图像 </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="abe63f0323cf1f077b8d8bed562ba5ab0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abe63f0323cf1f077b8d8bed562ba5ab0">&#9670;&nbsp;</a></span>SetThreshold()</h2>
+<a id="aaec01838c8df52617fae459c70991d4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaec01838c8df52617fae459c70991d4e">&#9670;&nbsp;</a></span>SetThreshold()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT SetThreshold </td>
+          <td class="memname">void SetThreshold </td>
           <td>(</td>
-          <td class="paramtype">[in, range(0, 255)] int&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>lb</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in, defaultvalue(255), range(0, 255)] int&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>ub</em>&#160;</td>
         </tr>
         <tr>
@@ -241,22 +243,22 @@ Public 成员函数</h2></td></tr>
 
 </div>
 </div>
-<a id="a9daf7cbb355f33488d50308c8d6f86ba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9daf7cbb355f33488d50308c8d6f86ba">&#9670;&nbsp;</a></span>SetThresholdAdaptGlobal()</h2>
+<a id="a6bb4173db5cfa3de10d91adcfe6b536d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6bb4173db5cfa3de10d91adcfe6b536d">&#9670;&nbsp;</a></span>SetThresholdAdaptGlobal()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT SetThresholdAdaptGlobal </td>
+          <td class="memname">void SetThresholdAdaptGlobal </td>
           <td>(</td>
-          <td class="paramtype">[in, defaultvalue(0), range(-255, 255)] int&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>lbBias</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in, defaultvalue(0), range(-255, 255)] int&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>ubBias</em>&#160;</td>
         </tr>
         <tr>
@@ -277,34 +279,34 @@ Public 成员函数</h2></td></tr>
 
 </div>
 </div>
-<a id="acfb6b82d42d930aca9939b9caca16c96"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acfb6b82d42d930aca9939b9caca16c96">&#9670;&nbsp;</a></span>SetThresholdAdaptLocal()</h2>
+<a id="aae70a3231282033ea8dbb5f1e3464821"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae70a3231282033ea8dbb5f1e3464821">&#9670;&nbsp;</a></span>SetThresholdAdaptLocal()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT SetThresholdAdaptLocal </td>
+          <td class="memname">void SetThresholdAdaptLocal </td>
           <td>(</td>
-          <td class="paramtype">[in, range(1, 999)] int&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>blockWidth</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in, range(1, 999)] int&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>blockHeight</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in, defaultvalue(0), range(-255, 255)] int&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>lbBias</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in, defaultvalue(0), range(-255, 255)] int&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>ubBias</em>&#160;</td>
         </tr>
         <tr>
@@ -327,23 +329,23 @@ Public 成员函数</h2></td></tr>
 
 </div>
 </div>
-<a id="a3657f9383fb070054fffda2a1d1d0eeb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3657f9383fb070054fffda2a1d1d0eeb">&#9670;&nbsp;</a></span>Stretch()</h2>
+<a id="a6429d720bd21ba61c7dda9cddce9ffdb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6429d720bd21ba61c7dda9cddce9ffdb">&#9670;&nbsp;</a></span>Stretch()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT Stretch </td>
+          <td class="memname">void Stretch </td>
           <td>(</td>
-          <td class="paramtype">[in] <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
-          <td class="paramname"><em>pImg</em>, </td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>img</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[out] <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
-          <td class="paramname"><em>pResult</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -356,36 +358,36 @@ Public 成员函数</h2></td></tr>
 若像素的灰度值在所设置的阈值范围内，则将其拉伸到 0 到 255 的数值；超出的像素设置为 0 或 255.<br  />
 如若阈值范围设置为 [100, 200]，像素灰度在 [0, 100] 设置为 0，像素灰度在 [200, 255] 设置为 255，像素灰度在 [101, 199] 之间的按照 \(p \times 255 / 200\) 计算。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pImg</td><td>输入图像 </td></tr>
+    <tr><td class="paramname">img</td><td>输入图像 </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>返回值</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">pResult</td><td>输出结果图像 </td></tr>
+    <tr><td class="paramname">result</td><td>输出结果图像 </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a55a3409a3709adf919c637a94380dabe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a55a3409a3709adf919c637a94380dabe">&#9670;&nbsp;</a></span>ThresholdDistance()</h2>
+<a id="a6402e4daad03df6b21ea437e9dd7a6df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6402e4daad03df6b21ea437e9dd7a6df">&#9670;&nbsp;</a></span>ThresholdDistance()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT ThresholdDistance </td>
+          <td class="memname">void ThresholdDistance </td>
           <td>(</td>
-          <td class="paramtype">[in] <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
-          <td class="paramname"><em>pImg</em>, </td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>img</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[out] <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
-          <td class="paramname"><em>pResult</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -397,13 +399,13 @@ Public 成员函数</h2></td></tr>
 <p>计算输入图像中的每个像素，其灰度值与阈值范围下限的距离。<br  />
 如若阈值范围下限为 25，灰度值为 100 的像素，其输出值为 75. </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pImg</td><td>输入图像 </td></tr>
+    <tr><td class="paramname">img</td><td>输入图像 </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>返回值</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">pResult</td><td>输出结果图像 </td></tr>
+    <tr><td class="paramname">result</td><td>输出结果图像 </td></tr>
   </table>
   </dd>
 </dl>
@@ -414,7 +416,12 @@ Public 成员函数</h2></td></tr>
 <!-- HTML footer for doxygen 1.9.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-© 2021 <a href="http://www.hzleaper.com/">杭州利珀科技有限公司</a>
+© 2022 <a href="http://www.hzleaper.com/">杭州利珀科技有限公司</a>
 </small></address>
+<script type="text/javascript">
+//<![CDATA[
+addTutorialsButtons();
+//]]>
+</script>
 </body>
 </html>

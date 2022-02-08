@@ -9,6 +9,7 @@
 <title>LPV: LPVBarcodeLib 模块参考手册</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="tutorial-utils.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
@@ -118,9 +119,9 @@ $(function() {
 <tr class="separator:a84df8395b042233913ed7ab7ac86aec9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30448639d7ee070028ecf22e707e1951"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_l_p_v_barcode_lib.html#a30448639d7ee070028ecf22e707e1951">LPVBarcodeQualityGrade</a> { <br />
 &#160;&#160;<a class="el" href="namespace_l_p_v_barcode_lib.html#a30448639d7ee070028ecf22e707e1951a2cb11b345fc4be494600185e727ed79a">LPVBarcodeQualityGradeF</a> = 0
-, <b>LPVBarcodeQualityGradeD</b>
-, <b>LPVBarcodeQualityGradeB</b>
-, <b>LPVBarcodeQualityGradeC</b>
+, <a class="el" href="namespace_l_p_v_barcode_lib.html#a30448639d7ee070028ecf22e707e1951abe93a7cfa028b231cb094e410817d067">LPVBarcodeQualityGradeD</a>
+, <a class="el" href="namespace_l_p_v_barcode_lib.html#a30448639d7ee070028ecf22e707e1951ac38c27a14ddb58948eee42afa439162e">LPVBarcodeQualityGradeC</a>
+, <a class="el" href="namespace_l_p_v_barcode_lib.html#a30448639d7ee070028ecf22e707e1951a1055a67ca877864311346543e1e7ae4c">LPVBarcodeQualityGradeB</a>
 , <br />
 &#160;&#160;<a class="el" href="namespace_l_p_v_barcode_lib.html#a30448639d7ee070028ecf22e707e1951a735da4e9b1f1f5c0e4cd173fdc1dabc5">LPVBarcodeQualityGradeA</a>
 <br />
@@ -179,11 +180,12 @@ $(function() {
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><p>LPV 条码库，提供一维和二维条码的检测功能。 </p>
 <p>该模块用于一维和二维条码的识别和质量检测。 使用该模块中的类和算法，需按照以下方式引用该模块：</p>
-<p>C++: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &quot;LPVBarcode.h&quot;</span></div>
-</div><!-- fragment --><p>C#: </p><div class="fragment"><div class="line"><span class="keyword">using</span> <a class="code" href="namespace_l_p_v_barcode_lib.html">LPVBarcodeLib</a>;</div>
-<div class="ttc" id="anamespace_l_p_v_barcode_lib_html"><div class="ttname"><a href="namespace_l_p_v_barcode_lib.html">LPVBarcodeLib</a></div><div class="ttdoc">LPV 条码库，提供一维和二维条码的检测功能。</div><div class="ttdef"><b>Definition:</b> LPVBarcode.idl:45</div></div>
-</div><!-- fragment --><p><b>MFC Demo:</b> MFCBarcode <br  />
-<b>C# Demo:</b> CSharpBarcode </p>
+<h3>示例代码 </h3>
+ <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line"><span class="preprocessor">#include &quot;LPVBarcode.h&quot;</span></div>
+</div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line"><span class="keyword">using</span> <a class="code" href="namespace_l_p_v_barcode_lib.html">LPVBarcodeLib</a>;</div>
+<div class="ttc" id="anamespace_l_p_v_barcode_lib_html"><div class="ttname"><a href="namespace_l_p_v_barcode_lib.html">LPVBarcodeLib</a></div><div class="ttdoc">LPV 条码库，提供一维和二维条码的检测功能。</div><div class="ttdef"><b>Definition:</b> LPVBarcode.idl:47</div></div>
+</div><!-- fragment --> </div> <p><b>MFC Demo:</b> <a class="el" href="how_to_play_with_demo.html#demo_barcode">MFCBarcode</a> <br  />
+<b>C# Demo:</b> <a class="el" href="how_to_play_with_demo.html#demo_barcode">CSharpBarcode</a> </p>
 </div><h2 class="groupheader">枚举类型说明</h2>
 <a id="a84df8395b042233913ed7ab7ac86aec9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a84df8395b042233913ed7ab7ac86aec9">&#9670;&nbsp;</a></span>LPVBarcodeDrawFlags</h2>
@@ -227,9 +229,15 @@ $(function() {
 
 <p>描述条码质量检测的等级 </p>
 <table class="fieldtable">
-<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a30448639d7ee070028ecf22e707e1951a2cb11b345fc4be494600185e727ed79a"></a>LPVBarcodeQualityGradeF&#160;</td><td class="fielddoc"><p>不通过 </p>
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a30448639d7ee070028ecf22e707e1951a2cb11b345fc4be494600185e727ed79a"></a>LPVBarcodeQualityGradeF&#160;</td><td class="fielddoc"><p>等级 F，不通过 </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a30448639d7ee070028ecf22e707e1951a735da4e9b1f1f5c0e4cd173fdc1dabc5"></a>LPVBarcodeQualityGradeA&#160;</td><td class="fielddoc"><p>通过，最优等级 </p>
+<tr><td class="fieldname"><a id="a30448639d7ee070028ecf22e707e1951abe93a7cfa028b231cb094e410817d067"></a>LPVBarcodeQualityGradeD&#160;</td><td class="fielddoc"><p>等级 D </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a30448639d7ee070028ecf22e707e1951ac38c27a14ddb58948eee42afa439162e"></a>LPVBarcodeQualityGradeC&#160;</td><td class="fielddoc"><p>等级 C </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a30448639d7ee070028ecf22e707e1951a1055a67ca877864311346543e1e7ae4c"></a>LPVBarcodeQualityGradeB&#160;</td><td class="fielddoc"><p>等级 B </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a30448639d7ee070028ecf22e707e1951a735da4e9b1f1f5c0e4cd173fdc1dabc5"></a>LPVBarcodeQualityGradeA&#160;</td><td class="fielddoc"><p>等级 A，最优等级 </p>
 </td></tr>
 </table>
 
@@ -340,7 +348,12 @@ $(function() {
 <!-- HTML footer for doxygen 1.9.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-© 2021 <a href="http://www.hzleaper.com/">杭州利珀科技有限公司</a>
+© 2022 <a href="http://www.hzleaper.com/">杭州利珀科技有限公司</a>
 </small></address>
+<script type="text/javascript">
+//<![CDATA[
+addTutorialsButtons();
+//]]>
+</script>
 </body>
 </html>

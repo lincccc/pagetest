@@ -9,6 +9,7 @@
 <title>LPV: ILLineDetector接口 参考</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="tutorial-utils.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
@@ -97,8 +98,8 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
-<tr class="memitem:a63db31953ac872d398f9ab9675b04076"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_locate_lib_1_1_i_l_line_detector.html#a63db31953ac872d398f9ab9675b04076">Detect</a> ([in] <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *pImg, [in] <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_rot_rect_region.html">ILRotRectRegion</a> *pRegion, [out] <a class="el" href="interface_l_p_v_locate_lib_1_1_i_l_line_results.html">ILLineResults</a> **ppResults, [out, retval] enum <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> *pError)</td></tr>
-<tr class="separator:a63db31953ac872d398f9ab9675b04076"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7258fe60f5492fcaeae95285ec077ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_locate_lib_1_1_i_l_line_detector.html#aa7258fe60f5492fcaeae95285ec077ab">Detect</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_rot_rect_region.html">ILRotRectRegion</a> *region, <a class="el" href="interface_l_p_v_locate_lib_1_1_i_l_line_results.html">ILLineResults</a> **results)</td></tr>
+<tr class="separator:aa7258fe60f5492fcaeae95285ec077ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 属性</h2></td></tr>
@@ -117,10 +118,10 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_locate_lib_1_1_i_l_line_detector.html#af98b71a5ec504565e5456260acbd9ee5">MaxCount</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:af98b71a5ec504565e5456260acbd9ee5"><td class="mdescLeft">&#160;</td><td class="mdescRight">最大检出个数 <br /></td></tr>
 <tr class="separator:af98b71a5ec504565e5456260acbd9ee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec82c900668193ea6f222b80bf3dc848"><td class="memItemLeft" align="right" valign="top"><a id="aec82c900668193ea6f222b80bf3dc848"></a>
-VARIANT_BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_locate_lib_1_1_i_l_line_detector.html#aec82c900668193ea6f222b80bf3dc848">NormScore</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:aec82c900668193ea6f222b80bf3dc848"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否基于区域中的最大梯度值归一化直线分数。 <br /></td></tr>
-<tr class="separator:aec82c900668193ea6f222b80bf3dc848"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af26c591cf8421882e8e6d17ffb7e6452"><td class="memItemLeft" align="right" valign="top"><a id="af26c591cf8421882e8e6d17ffb7e6452"></a>
+BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_locate_lib_1_1_i_l_line_detector.html#af26c591cf8421882e8e6d17ffb7e6452">NormScore</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:af26c591cf8421882e8e6d17ffb7e6452"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否基于区域中的最大梯度值归一化直线分数。 <br /></td></tr>
+<tr class="separator:af26c591cf8421882e8e6d17ffb7e6452"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afad2aa7828e45b84ec1f3f80f3787305"><td class="memItemLeft" align="right" valign="top"><a id="afad2aa7828e45b84ec1f3f80f3787305"></a>
 <a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0b">LPVPolarity</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_locate_lib_1_1_i_l_line_detector.html#afad2aa7828e45b84ec1f3f80f3787305">Polarity</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:afad2aa7828e45b84ec1f3f80f3787305"><td class="mdescLeft">&#160;</td><td class="mdescRight">检测的极性。极性指的是边缘相对于区域的扫描方向（旋转矩形的角度方向）的变换方式， 由白（亮）像素向黑（暗）像素转变，或由黑（暗）像素向白（亮）像素转变。 <br /></td></tr>
@@ -130,46 +131,41 @@ VARIANT_BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <div class="textblock"><p>该接口提供直线定位的功能。 </p>
 <p>直线定位用于在输入图像中和指定的区域中，定位一条或多条直线边缘。<br  />
 该算法具有高实时性、高亚像素精度等特点，其局限性在于其定位直线的角度在给定区域的扫描方向的 (-10, +10) 范围内。 因此，使用该算法需要指定目标直线的大致方向。</p>
-<p>C++: </p><div class="fragment"><div class="line">CLLineDetector m_line_detector;</div>
-<div class="line">m_line_detector.put_Polarity(LPVPolarity::LPVPolarityEither);</div>
-<div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = (<a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>)m_line_detector.Detect(m_img, m_roi, (LPDISPATCH*)&amp;m_line_results);</div>
-<div class="line"><span class="keywordflow">if</span> (err != <a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>.LPVNoError) <span class="keywordflow">return</span>;</div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">LPV 算法或函数运行过程中遇到的错误。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:149</div></div>
-</div><!-- fragment --><p>C#: </p><div class="fragment"><div class="line">LLineDetector m_line_detector = <span class="keyword">new</span> LLineDetector();</div>
+<h3>示例代码 </h3>
+ <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">ILLineDetectorPtr m_line_detector(__uuidof(LLineDetector));</div>
+<div class="line">m_line_detector-&gt;Polarity = LPVPolarity::LPVPolarityEither;</div>
+<div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = m_line_detector-&gt;Detect(m_img, m_roi, &amp;m_line_results);</div>
+<div class="line"><span class="keywordflow">if</span> (err != LPVErrorCode::LPVNoError) <span class="keywordflow">return</span>;</div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">LPV 算法或函数运行过程中遇到的错误。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:155</div></div>
+</div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LLineDetector m_line_detector = <span class="keyword">new</span> LLineDetector();</div>
 <div class="line">m_line_detector.Polarity = <a class="code" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0b">LPVPolarity</a>.LPVPolarityEither;</div>
 <div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = (<a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>)m_line_detector.Detect(m_img, (LRotRectRegion)m_roi, out m_line_results);</div>
 <div class="line"><span class="keywordflow">if</span> (err != <a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>.LPVNoError) <span class="keywordflow">return</span>;</div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html_ad8a4d763bb82cc129119ff1cf0bc0e0b"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0b">LPVCoreLib::LPVPolarity</a></div><div class="ttdeci">LPVPolarity</div><div class="ttdoc">该枚举类型表示要定位的物体或边的极性</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:510</div></div>
-</div><!-- fragment --> </div><h2 class="groupheader">成员函数说明</h2>
-<a id="a63db31953ac872d398f9ab9675b04076"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a63db31953ac872d398f9ab9675b04076">&#9670;&nbsp;</a></span>Detect()</h2>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_ad8a4d763bb82cc129119ff1cf0bc0e0b"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0b">LPVCoreLib::LPVPolarity</a></div><div class="ttdeci">LPVPolarity</div><div class="ttdoc">该枚举类型表示要定位的物体或边的极性</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:541</div></div>
+</div><!-- fragment --> </div>  </div><h2 class="groupheader">成员函数说明</h2>
+<a id="aa7258fe60f5492fcaeae95285ec077ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7258fe60f5492fcaeae95285ec077ab">&#9670;&nbsp;</a></span>Detect()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT Detect </td>
+          <td class="memname"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> Detect </td>
           <td>(</td>
-          <td class="paramtype">[in] <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
-          <td class="paramname"><em>pImg</em>, </td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>img</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in] <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_rot_rect_region.html">ILRotRectRegion</a> *&#160;</td>
-          <td class="paramname"><em>pRegion</em>, </td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_rot_rect_region.html">ILRotRectRegion</a> *&#160;</td>
+          <td class="paramname"><em>region</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[out] <a class="el" href="interface_l_p_v_locate_lib_1_1_i_l_line_results.html">ILLineResults</a> **&#160;</td>
-          <td class="paramname"><em>ppResults</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">[out, retval] enum <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> *&#160;</td>
-          <td class="paramname"><em>pError</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_locate_lib_1_1_i_l_line_results.html">ILLineResults</a> **&#160;</td>
+          <td class="paramname"><em>results</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -180,15 +176,15 @@ VARIANT_BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </div><div class="memdoc">
 <p>检测和定位直线。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pImg</td><td>输入的图像 </td></tr>
-    <tr><td class="paramname">pRegion</td><td>输入的区域，一个旋转矩形区域对象，以其旋转角度为扫描方向。 </td></tr>
+    <tr><td class="paramname">img</td><td>输入的图像 </td></tr>
+    <tr><td class="paramname">region</td><td>输入的区域，一个旋转矩形区域对象，以其旋转角度为扫描方向。 </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>返回值</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">ppResults</td><td>返回直线定位结果 </td></tr>
-    <tr><td class="paramname">pError</td><td>返回错误码 </td></tr>
+    <tr><td class="paramname">results</td><td>返回直线定位结果 </td></tr>
+    <tr><td class="paramname">error</td><td>返回错误码 </td></tr>
   </table>
   </dd>
 </dl>
@@ -217,7 +213,7 @@ VARIANT_BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </div><div class="memdoc">
 
 <p>检测的分数阈值。用于删选所有边缘结果中高于该阈值的直线。可根据分数图表选择合适的阈值。 </p>
-<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_locate_lib_1_1_i_l_line_results.html#af9c61ea1163e06ef113d4c78267bc19f">ILLineResults::DrawScoreChart()</a>. </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_locate_lib_1_1_i_l_line_results.html#a54ab763668a5303c740f32f0c403cabf">ILLineResults::DrawScoreChart()</a>. </dd></dl>
 
 </div>
 </div>
@@ -225,7 +221,12 @@ VARIANT_BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <!-- HTML footer for doxygen 1.9.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-© 2021 <a href="http://www.hzleaper.com/">杭州利珀科技有限公司</a>
+© 2022 <a href="http://www.hzleaper.com/">杭州利珀科技有限公司</a>
 </small></address>
+<script type="text/javascript">
+//<![CDATA[
+addTutorialsButtons();
+//]]>
+</script>
 </body>
 </html>

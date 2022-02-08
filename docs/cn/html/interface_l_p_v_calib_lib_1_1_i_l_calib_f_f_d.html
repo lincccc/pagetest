@@ -9,6 +9,7 @@
 <title>LPV: ILCalibFFD接口 参考</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="tutorial-utils.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
@@ -99,41 +100,41 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
-<tr class="memitem:a0709fd5e91cd4aa1fabc731f7cdc4e1d"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_f_f_d.html#a0709fd5e91cd4aa1fabc731f7cdc4e1d">SetFFDGrid</a> ([in] int cols, [in] int rows)</td></tr>
-<tr class="separator:a0709fd5e91cd4aa1fabc731f7cdc4e1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b657ebf0112c1dc2fa9c2c493c39863"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_f_f_d.html#a2b657ebf0112c1dc2fa9c2c493c39863">SetFFDGrid</a> (int cols, int rows)</td></tr>
+<tr class="separator:a2b657ebf0112c1dc2fa9c2c493c39863"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_interface_l_p_v_calib_lib_1_1_i_l_calib"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_interface_l_p_v_calib_lib_1_1_i_l_calib')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html">ILCalib</a></td></tr>
-<tr class="memitem:ae27e048c818629e92721a4da81b2d878 inherit pub_methods_interface_l_p_v_calib_lib_1_1_i_l_calib"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#ae27e048c818629e92721a4da81b2d878">AddPoint</a> ([in] double imagePointX, [in] double imagePointY, [in] double worldPointX, [in] double worldPointY, [out, retval] enum <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> *pError)</td></tr>
-<tr class="separator:ae27e048c818629e92721a4da81b2d878 inherit pub_methods_interface_l_p_v_calib_lib_1_1_i_l_calib"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aadddde9c8d1e2f7adc10059e27166c52 inherit pub_methods_interface_l_p_v_calib_lib_1_1_i_l_calib"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#aadddde9c8d1e2f7adc10059e27166c52">AddPoints</a> ([in] <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_point_pairs.html">ILCalibPointPairs</a> *pPointPairs, [out, retval] enum <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> *pError)</td></tr>
-<tr class="separator:aadddde9c8d1e2f7adc10059e27166c52 inherit pub_methods_interface_l_p_v_calib_lib_1_1_i_l_calib"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa04e892344aace8dbdd0a4a926a6561b inherit pub_methods_interface_l_p_v_calib_lib_1_1_i_l_calib"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#aa04e892344aace8dbdd0a4a926a6561b">Calibrate</a> ([out, retval] enum <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> *pError)</td></tr>
-<tr class="separator:aa04e892344aace8dbdd0a4a926a6561b inherit pub_methods_interface_l_p_v_calib_lib_1_1_i_l_calib"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5853b4420c58e63ed9d8687ce0689f09 inherit pub_methods_interface_l_p_v_calib_lib_1_1_i_l_calib"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a5853b4420c58e63ed9d8687ce0689f09">FixImage</a> ([in] <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *pImage, [out] <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *pFixedImage, [out, retval] enum <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> *pError)</td></tr>
-<tr class="separator:a5853b4420c58e63ed9d8687ce0689f09 inherit pub_methods_interface_l_p_v_calib_lib_1_1_i_l_calib"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c402432eaa58b9fdeeda1dddb7a968a inherit pub_methods_interface_l_p_v_calib_lib_1_1_i_l_calib"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a9c402432eaa58b9fdeeda1dddb7a968a">GenPostTransformMatrix</a> ([in] <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_point_pairs.html">ILCalibPointPairs</a> *pPointPairs, [out, retval] enum <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> *pError)</td></tr>
-<tr class="separator:a9c402432eaa58b9fdeeda1dddb7a968a inherit pub_methods_interface_l_p_v_calib_lib_1_1_i_l_calib"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6631bc7e270d64f7645469abbc244877 inherit pub_methods_interface_l_p_v_calib_lib_1_1_i_l_calib"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a6631bc7e270d64f7645469abbc244877">ImageToWorld</a> ([in] double imagePointX, [in] double imagePointY, [out] double *pWorldPointX, [out] double *pWorldPointY)</td></tr>
-<tr class="separator:a6631bc7e270d64f7645469abbc244877 inherit pub_methods_interface_l_p_v_calib_lib_1_1_i_l_calib"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93e51d9cea1c3059ce2ac41cccb9adf0 inherit pub_methods_interface_l_p_v_calib_lib_1_1_i_l_calib"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a93e51d9cea1c3059ce2ac41cccb9adf0">IsCalibrated</a> ([out, retval] VARIANT_BOOL *pVal)</td></tr>
-<tr class="separator:a93e51d9cea1c3059ce2ac41cccb9adf0 inherit pub_methods_interface_l_p_v_calib_lib_1_1_i_l_calib"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a7081a6ae822924f041870246da8cd8 inherit pub_methods_interface_l_p_v_calib_lib_1_1_i_l_calib"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a1a7081a6ae822924f041870246da8cd8">Load</a> ([in] BSTR filename, [out, retval] enum <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> *pError)</td></tr>
-<tr class="separator:a1a7081a6ae822924f041870246da8cd8 inherit pub_methods_interface_l_p_v_calib_lib_1_1_i_l_calib"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a828d0933abd2fa4a72950a3fee81dec6 inherit pub_methods_interface_l_p_v_calib_lib_1_1_i_l_calib"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a828d0933abd2fa4a72950a3fee81dec6">Reset</a> ()</td></tr>
-<tr class="separator:a828d0933abd2fa4a72950a3fee81dec6 inherit pub_methods_interface_l_p_v_calib_lib_1_1_i_l_calib"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ab1f63c21e798020bdcbefeeb757955 inherit pub_methods_interface_l_p_v_calib_lib_1_1_i_l_calib"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a6ab1f63c21e798020bdcbefeeb757955">Save</a> ([in] BSTR filename, [out, retval] enum <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> *pError)</td></tr>
-<tr class="separator:a6ab1f63c21e798020bdcbefeeb757955 inherit pub_methods_interface_l_p_v_calib_lib_1_1_i_l_calib"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff5db2d1fc2f7026b3f33210a6bbcfea inherit pub_methods_interface_l_p_v_calib_lib_1_1_i_l_calib"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#aff5db2d1fc2f7026b3f33210a6bbcfea">SetImageSize</a> ([in] int w, [in] int h)</td></tr>
-<tr class="separator:aff5db2d1fc2f7026b3f33210a6bbcfea inherit pub_methods_interface_l_p_v_calib_lib_1_1_i_l_calib"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeae4d41bbf0736ea0f935738e3853197 inherit pub_methods_interface_l_p_v_calib_lib_1_1_i_l_calib"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#aeae4d41bbf0736ea0f935738e3853197">SetPostTransform</a> ([in] double offsetX, [in] double offsetY, [in] double deltaAngle)</td></tr>
-<tr class="separator:aeae4d41bbf0736ea0f935738e3853197 inherit pub_methods_interface_l_p_v_calib_lib_1_1_i_l_calib"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13a25b06cc2092bae78a2d04e9c98e52 inherit pub_methods_interface_l_p_v_calib_lib_1_1_i_l_calib"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a13a25b06cc2092bae78a2d04e9c98e52">SetPostTransformMatrix</a> ([in] int cols, [in] int rows, [in] SAFEARRAY(double) data)</td></tr>
-<tr class="separator:a13a25b06cc2092bae78a2d04e9c98e52 inherit pub_methods_interface_l_p_v_calib_lib_1_1_i_l_calib"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a143bc0502ddfa10717aff8510f2affb6 inherit pub_methods_interface_l_p_v_calib_lib_1_1_i_l_calib"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a143bc0502ddfa10717aff8510f2affb6">SetPostTransformMatrix23</a> ([in] struct <a class="el" href="struct_l_p_v_core_lib_1_1_l_matrix23.html">LMatrix23</a> *data)</td></tr>
-<tr class="separator:a143bc0502ddfa10717aff8510f2affb6 inherit pub_methods_interface_l_p_v_calib_lib_1_1_i_l_calib"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2adb01ac44b7f10189b00bbe63165b40 inherit pub_methods_interface_l_p_v_calib_lib_1_1_i_l_calib"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a2adb01ac44b7f10189b00bbe63165b40">SetPostTransformMatrix33</a> ([in] struct <a class="el" href="struct_l_p_v_core_lib_1_1_l_matrix33.html">LMatrix33</a> *data)</td></tr>
-<tr class="separator:a2adb01ac44b7f10189b00bbe63165b40 inherit pub_methods_interface_l_p_v_calib_lib_1_1_i_l_calib"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd204daff475d7d1de98747d34aad5be inherit pub_methods_interface_l_p_v_calib_lib_1_1_i_l_calib"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#afd204daff475d7d1de98747d34aad5be">WorldToImage</a> ([in] double worldPointX, [in] double worldPointY, [out] double *pImagePointX, [out] double *pImagePointY)</td></tr>
-<tr class="separator:afd204daff475d7d1de98747d34aad5be inherit pub_methods_interface_l_p_v_calib_lib_1_1_i_l_calib"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8dea6d64fac7b6ae78047578280d1dbe inherit pub_methods_interface_l_p_v_calib_lib_1_1_i_l_calib"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a8dea6d64fac7b6ae78047578280d1dbe">AddPoint</a> (double imagePointX, double imagePointY, double worldPointX, double worldPointY)</td></tr>
+<tr class="separator:a8dea6d64fac7b6ae78047578280d1dbe inherit pub_methods_interface_l_p_v_calib_lib_1_1_i_l_calib"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc20ac1907ab5cce9d2d7bd9ff60a29c inherit pub_methods_interface_l_p_v_calib_lib_1_1_i_l_calib"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#afc20ac1907ab5cce9d2d7bd9ff60a29c">AddPoints</a> (<a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_point_pairs.html">ILCalibPointPairs</a> *pointPairs)</td></tr>
+<tr class="separator:afc20ac1907ab5cce9d2d7bd9ff60a29c inherit pub_methods_interface_l_p_v_calib_lib_1_1_i_l_calib"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1201727fe2071c60e9c8d715a8cdc2b7 inherit pub_methods_interface_l_p_v_calib_lib_1_1_i_l_calib"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a1201727fe2071c60e9c8d715a8cdc2b7">Calibrate</a> ()</td></tr>
+<tr class="separator:a1201727fe2071c60e9c8d715a8cdc2b7 inherit pub_methods_interface_l_p_v_calib_lib_1_1_i_l_calib"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3b5ec6cb9ccb7dd76b228f215137af7 inherit pub_methods_interface_l_p_v_calib_lib_1_1_i_l_calib"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#ab3b5ec6cb9ccb7dd76b228f215137af7">FixImage</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *image, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *fixedImage)</td></tr>
+<tr class="separator:ab3b5ec6cb9ccb7dd76b228f215137af7 inherit pub_methods_interface_l_p_v_calib_lib_1_1_i_l_calib"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9bd59c44a47d4d60c6b93381c08f1c4 inherit pub_methods_interface_l_p_v_calib_lib_1_1_i_l_calib"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#aa9bd59c44a47d4d60c6b93381c08f1c4">GenPostTransformMatrix</a> (<a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_point_pairs.html">ILCalibPointPairs</a> *pointPairs)</td></tr>
+<tr class="separator:aa9bd59c44a47d4d60c6b93381c08f1c4 inherit pub_methods_interface_l_p_v_calib_lib_1_1_i_l_calib"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ce0cd25c9f176f2ea389900b8b807be inherit pub_methods_interface_l_p_v_calib_lib_1_1_i_l_calib"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a8ce0cd25c9f176f2ea389900b8b807be">ImageToWorld</a> (double imagePointX, double imagePointY, double *worldPointX, double *worldPointY)</td></tr>
+<tr class="separator:a8ce0cd25c9f176f2ea389900b8b807be inherit pub_methods_interface_l_p_v_calib_lib_1_1_i_l_calib"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb434c2170d12543d8f9530244db555e inherit pub_methods_interface_l_p_v_calib_lib_1_1_i_l_calib"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#adb434c2170d12543d8f9530244db555e">IsCalibrated</a> ()</td></tr>
+<tr class="separator:adb434c2170d12543d8f9530244db555e inherit pub_methods_interface_l_p_v_calib_lib_1_1_i_l_calib"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc33f804a59dbd9a1f824ea51862aaa2 inherit pub_methods_interface_l_p_v_calib_lib_1_1_i_l_calib"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#acc33f804a59dbd9a1f824ea51862aaa2">Load</a> (BSTR filename)</td></tr>
+<tr class="separator:acc33f804a59dbd9a1f824ea51862aaa2 inherit pub_methods_interface_l_p_v_calib_lib_1_1_i_l_calib"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a372de693ad40b3f42839c8ec6ac845f4 inherit pub_methods_interface_l_p_v_calib_lib_1_1_i_l_calib"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a372de693ad40b3f42839c8ec6ac845f4">Reset</a> ()</td></tr>
+<tr class="separator:a372de693ad40b3f42839c8ec6ac845f4 inherit pub_methods_interface_l_p_v_calib_lib_1_1_i_l_calib"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedf9b00d47787a935a044ce74d0df887 inherit pub_methods_interface_l_p_v_calib_lib_1_1_i_l_calib"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#aedf9b00d47787a935a044ce74d0df887">Save</a> (BSTR filename)</td></tr>
+<tr class="separator:aedf9b00d47787a935a044ce74d0df887 inherit pub_methods_interface_l_p_v_calib_lib_1_1_i_l_calib"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ff6a237751631480a627fdc88add08d inherit pub_methods_interface_l_p_v_calib_lib_1_1_i_l_calib"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a3ff6a237751631480a627fdc88add08d">SetImageSize</a> (int w, int h)</td></tr>
+<tr class="separator:a3ff6a237751631480a627fdc88add08d inherit pub_methods_interface_l_p_v_calib_lib_1_1_i_l_calib"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8c572785f3997e0c7af0511b97703c7 inherit pub_methods_interface_l_p_v_calib_lib_1_1_i_l_calib"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#ab8c572785f3997e0c7af0511b97703c7">SetPostTransform</a> (double offsetX, double offsetY, double deltaAngle)</td></tr>
+<tr class="separator:ab8c572785f3997e0c7af0511b97703c7 inherit pub_methods_interface_l_p_v_calib_lib_1_1_i_l_calib"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1322fb8a9d02ee7143595fe4041690d inherit pub_methods_interface_l_p_v_calib_lib_1_1_i_l_calib"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#ac1322fb8a9d02ee7143595fe4041690d">SetPostTransformMatrix</a> (int cols, int rows, SAFEARRAY *data)</td></tr>
+<tr class="separator:ac1322fb8a9d02ee7143595fe4041690d inherit pub_methods_interface_l_p_v_calib_lib_1_1_i_l_calib"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a340a8929cbbc28b8b63bb58bfd4a9a96 inherit pub_methods_interface_l_p_v_calib_lib_1_1_i_l_calib"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a340a8929cbbc28b8b63bb58bfd4a9a96">SetPostTransformMatrix23</a> (<a class="el" href="struct_l_p_v_core_lib_1_1_l_matrix23.html">LMatrix23</a> *data)</td></tr>
+<tr class="separator:a340a8929cbbc28b8b63bb58bfd4a9a96 inherit pub_methods_interface_l_p_v_calib_lib_1_1_i_l_calib"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f7326737028f1763ca3c7518d12fac3 inherit pub_methods_interface_l_p_v_calib_lib_1_1_i_l_calib"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a7f7326737028f1763ca3c7518d12fac3">SetPostTransformMatrix33</a> (<a class="el" href="struct_l_p_v_core_lib_1_1_l_matrix33.html">LMatrix33</a> *data)</td></tr>
+<tr class="separator:a7f7326737028f1763ca3c7518d12fac3 inherit pub_methods_interface_l_p_v_calib_lib_1_1_i_l_calib"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45d73ba0171b02f1f2138954332ba401 inherit pub_methods_interface_l_p_v_calib_lib_1_1_i_l_calib"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a45d73ba0171b02f1f2138954332ba401">WorldToImage</a> (double worldPointX, double worldPointY, double *imagePointX, double *imagePointY)</td></tr>
+<tr class="separator:a45d73ba0171b02f1f2138954332ba401 inherit pub_methods_interface_l_p_v_calib_lib_1_1_i_l_calib"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 额外继承的成员函数</h2></td></tr>
@@ -144,21 +145,21 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
  \( \sqrt{ \frac{1}{n} \sum_{i=0}^{n} distance(p^{image}_i, p^{proj}_i)^2 } \) <br /></td></tr>
 <tr class="separator:a3f6872a72c3c76b0cdcb95055b99108e inherit properties_interface_l_p_v_calib_lib_1_1_i_l_calib"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac70483f402f9c1e0d5c2c981a218d31 inherit properties_interface_l_p_v_calib_lib_1_1_i_l_calib"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_calib_lib.html#ad344ab8b10fd89a846adf98b31b264aa">LPVFixImageMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#aac70483f402f9c1e0d5c2c981a218d31">FixImageMode</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:aac70483f402f9c1e0d5c2c981a218d31 inherit properties_interface_l_p_v_calib_lib_1_1_i_l_calib"><td class="mdescLeft">&#160;</td><td class="mdescRight">用于 <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a5853b4420c58e63ed9d8687ce0689f09">FixImage()</a> 指定图像修正的模式。  <a href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#aac70483f402f9c1e0d5c2c981a218d31">更多...</a><br /></td></tr>
+<tr class="memdesc:aac70483f402f9c1e0d5c2c981a218d31 inherit properties_interface_l_p_v_calib_lib_1_1_i_l_calib"><td class="mdescLeft">&#160;</td><td class="mdescRight">用于 <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#ab3b5ec6cb9ccb7dd76b228f215137af7">FixImage()</a> 指定图像修正的模式。  <a href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#aac70483f402f9c1e0d5c2c981a218d31">更多...</a><br /></td></tr>
 <tr class="separator:aac70483f402f9c1e0d5c2c981a218d31 inherit properties_interface_l_p_v_calib_lib_1_1_i_l_calib"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af72bdfca06b9bd432d2c5115005bbfbc inherit properties_interface_l_p_v_calib_lib_1_1_i_l_calib"><td class="memItemLeft" align="right" valign="top"><a id="af72bdfca06b9bd432d2c5115005bbfbc"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#af72bdfca06b9bd432d2c5115005bbfbc">FixImageOffsetX</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:af72bdfca06b9bd432d2c5115005bbfbc inherit properties_interface_l_p_v_calib_lib_1_1_i_l_calib"><td class="mdescLeft">&#160;</td><td class="mdescRight">修正图像 <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a5853b4420c58e63ed9d8687ce0689f09">FixImage()</a> 时使用的 x 方向偏移量，以像素为单位，与 <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a21df5721e2e01bfd6eab1ece9704e4c2" title="修正图像 FixImage() 时使用的 y 方向偏移量，以像素为单位，与 FixImageOffsetY 同时使用。 默认设置为 0，即无 y 方向偏移。修改该数值可移动修正图像中有效像素的位置，如将...">FixImageOffsetY</a> 同时使用。<br  />
+<tr class="memdesc:af72bdfca06b9bd432d2c5115005bbfbc inherit properties_interface_l_p_v_calib_lib_1_1_i_l_calib"><td class="mdescLeft">&#160;</td><td class="mdescRight">修正图像 <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#ab3b5ec6cb9ccb7dd76b228f215137af7">FixImage()</a> 时使用的 x 方向偏移量，以像素为单位，与 <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a21df5721e2e01bfd6eab1ece9704e4c2" title="修正图像 FixImage() 时使用的 y 方向偏移量，以像素为单位，与 FixImageOffsetY 同时使用。 默认设置为 0，即无 y 方向偏移。修改该数值可移动修正图像中有效像素的位置，如将...">FixImageOffsetY</a> 同时使用。<br  />
 默认设置为 0，即无 x 方向偏移。修改该数值可移动修正图像中有效像素的位置，如将检测区域移动到修正图像的中心附近。 <br /></td></tr>
 <tr class="separator:af72bdfca06b9bd432d2c5115005bbfbc inherit properties_interface_l_p_v_calib_lib_1_1_i_l_calib"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21df5721e2e01bfd6eab1ece9704e4c2 inherit properties_interface_l_p_v_calib_lib_1_1_i_l_calib"><td class="memItemLeft" align="right" valign="top"><a id="a21df5721e2e01bfd6eab1ece9704e4c2"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a21df5721e2e01bfd6eab1ece9704e4c2">FixImageOffsetY</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a21df5721e2e01bfd6eab1ece9704e4c2 inherit properties_interface_l_p_v_calib_lib_1_1_i_l_calib"><td class="mdescLeft">&#160;</td><td class="mdescRight">修正图像 <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a5853b4420c58e63ed9d8687ce0689f09">FixImage()</a> 时使用的 y 方向偏移量，以像素为单位，与 <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a21df5721e2e01bfd6eab1ece9704e4c2" title="修正图像 FixImage() 时使用的 y 方向偏移量，以像素为单位，与 FixImageOffsetY 同时使用。 默认设置为 0，即无 y 方向偏移。修改该数值可移动修正图像中有效像素的位置，如将...">FixImageOffsetY</a> 同时使用。<br  />
+<tr class="memdesc:a21df5721e2e01bfd6eab1ece9704e4c2 inherit properties_interface_l_p_v_calib_lib_1_1_i_l_calib"><td class="mdescLeft">&#160;</td><td class="mdescRight">修正图像 <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#ab3b5ec6cb9ccb7dd76b228f215137af7">FixImage()</a> 时使用的 y 方向偏移量，以像素为单位，与 <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a21df5721e2e01bfd6eab1ece9704e4c2" title="修正图像 FixImage() 时使用的 y 方向偏移量，以像素为单位，与 FixImageOffsetY 同时使用。 默认设置为 0，即无 y 方向偏移。修改该数值可移动修正图像中有效像素的位置，如将...">FixImageOffsetY</a> 同时使用。<br  />
 默认设置为 0，即无 y 方向偏移。修改该数值可移动修正图像中有效像素的位置，如将检测区域移动到修正图像的中心附近。 <br /></td></tr>
 <tr class="separator:a21df5721e2e01bfd6eab1ece9704e4c2 inherit properties_interface_l_p_v_calib_lib_1_1_i_l_calib"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c65ab87d30846912951723fc454716c inherit properties_interface_l_p_v_calib_lib_1_1_i_l_calib"><td class="memItemLeft" align="right" valign="top"><a id="a8c65ab87d30846912951723fc454716c"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a8c65ab87d30846912951723fc454716c">FixImageScale</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a8c65ab87d30846912951723fc454716c inherit properties_interface_l_p_v_calib_lib_1_1_i_l_calib"><td class="mdescLeft">&#160;</td><td class="mdescRight">修正图像 <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a5853b4420c58e63ed9d8687ce0689f09">FixImage()</a> 时使用的缩放比例。<br  />
+<tr class="memdesc:a8c65ab87d30846912951723fc454716c inherit properties_interface_l_p_v_calib_lib_1_1_i_l_calib"><td class="mdescLeft">&#160;</td><td class="mdescRight">修正图像 <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#ab3b5ec6cb9ccb7dd76b228f215137af7">FixImage()</a> 时使用的缩放比例。<br  />
 默认设置为 1，即无缩放。修改该数值可放大或缩小修正后的图像。 <br /></td></tr>
 <tr class="separator:a8c65ab87d30846912951723fc454716c inherit properties_interface_l_p_v_calib_lib_1_1_i_l_calib"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5baf43154fe9d08eb332cdc9673a53d4 inherit properties_interface_l_p_v_calib_lib_1_1_i_l_calib"><td class="memItemLeft" align="right" valign="top"><a id="a5baf43154fe9d08eb332cdc9673a53d4"></a>
@@ -171,36 +172,37 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 <p>在 FFD 标定模型中，使用自由形变网格来描述图像和物理坐标之间的映射关系。形变网格为参数化的自由曲面，基于提供的图像和物理点对优化得到。<br  />
 该模型适应于任意的畸变类型。</p>
 <p>使用这个接口，需要创建一个 <a class="el" href="class_l_p_v_calib_lib_1_1_l_calib_f_f_d.html">LCalibFFD</a> 对象。</p>
-<p>C++: </p><div class="fragment"><div class="line">CLCalibFFD m_calib;</div>
-<div class="line">m_calib_board.Detect(m_img, (LPDISPATCH*)&amp;m_pnt_pairs);</div>
-<div class="line">m_calib.AddPoints(m_pnt_pairs);</div>
-<div class="line">m_calib.SetFFDGrid(4, 4); <span class="comment">// use 4x4 FFD grid</span></div>
-<div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = (<a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>)m_calib.Calibrate();</div>
-<div class="line"><span class="keywordflow">if</span> (err != LPVErrorCode::LPVNoError || !m_calib.IsCalibrated()) <span class="keywordflow">return</span>;</div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">LPV 算法或函数运行过程中遇到的错误。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:149</div></div>
-</div><!-- fragment --><p>C#: </p><div class="fragment"><div class="line">LCalibFFD m_calib = <span class="keyword">new</span> LCalibFFD();</div>
+<h3>示例代码 </h3>
+ <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">ILCalibFFDPtr m_calib(__uuidof(LCalibFFD));</div>
+<div class="line">m_calib_board-&gt;Detect(m_img, &amp;m_pnt_pairs);</div>
+<div class="line">m_calib-&gt;AddPoints(m_pnt_pairs);</div>
+<div class="line">m_calib-&gt;SetFFDGrid(4, 4); <span class="comment">// use 4x4 FFD grid</span></div>
+<div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = m_calib-&gt;Calibrate();</div>
+<div class="line"><span class="keywordflow">if</span> (err != LPVErrorCode::LPVNoError || !m_calib-&gt;IsCalibrated()) <span class="keywordflow">return</span>;</div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">LPV 算法或函数运行过程中遇到的错误。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:155</div></div>
+</div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LCalibFFD m_calib = <span class="keyword">new</span> LCalibFFD();</div>
 <div class="line">LCalibPointPairs pnt_pairs = m_calib_board.Detect(m_img);</div>
 <div class="line">m_calib.AddPoints(pnt_pairs);</div>
 <div class="line">m_calib.SetFFDGrid(4, 4); <span class="comment">// use 4x4 FFD grid</span></div>
 <div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = m_calib.Calibrate();</div>
 <div class="line"><span class="keywordflow">if</span> (err != <a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>.LPVNoError || !m_calib.IsCalibrated()) <span class="keywordflow">return</span>;</div>
-</div><!-- fragment --> </div><h2 class="groupheader">成员函数说明</h2>
-<a id="a0709fd5e91cd4aa1fabc731f7cdc4e1d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0709fd5e91cd4aa1fabc731f7cdc4e1d">&#9670;&nbsp;</a></span>SetFFDGrid()</h2>
+</div><!-- fragment --> </div>  </div><h2 class="groupheader">成员函数说明</h2>
+<a id="a2b657ebf0112c1dc2fa9c2c493c39863"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b657ebf0112c1dc2fa9c2c493c39863">&#9670;&nbsp;</a></span>SetFFDGrid()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT SetFFDGrid </td>
+          <td class="memname">void SetFFDGrid </td>
           <td>(</td>
-          <td class="paramtype">[in] int&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>cols</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in] int&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>rows</em>&#160;</td>
         </tr>
         <tr>
@@ -224,7 +226,12 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 <!-- HTML footer for doxygen 1.9.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-© 2021 <a href="http://www.hzleaper.com/">杭州利珀科技有限公司</a>
+© 2022 <a href="http://www.hzleaper.com/">杭州利珀科技有限公司</a>
 </small></address>
+<script type="text/javascript">
+//<![CDATA[
+addTutorialsButtons();
+//]]>
+</script>
 </body>
 </html>

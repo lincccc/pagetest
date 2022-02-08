@@ -9,6 +9,7 @@
 <title>LPV: LPVImgProcLib Module Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="tutorial-utils.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
@@ -90,6 +91,9 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_edge_filter.html">ILEdgeFilter</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This interface provide functionalities of edge extraction.  <a href="interface_l_p_v_img_proc_lib_1_1_i_l_edge_filter.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_h_d_r.html">ILHDR</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This interface provide functionalities of High Dynamic Range Imaging(HDR).  <a href="interface_l_p_v_img_proc_lib_1_1_i_l_h_d_r.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_histogram.html">ILHistogram</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This interface provide functionalities of histogram calculation out of image.  <a href="interface_l_p_v_img_proc_lib_1_1_i_l_histogram.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -109,6 +113,8 @@ Data Structures</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This interface provide functionalities of threshold operations.  <a href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_p_v_img_proc_lib_1_1_l_edge_filter.html">LEdgeFilter</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_p_v_img_proc_lib_1_1_l_h_d_r.html">LHDR</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_p_v_img_proc_lib_1_1_l_histogram.html">LHistogram</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -146,7 +152,13 @@ Enumerations</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>LPV Image Process Library, provides classes for various image processing operations. </p>
-<p>This library provides classes for image processing. To include the definitions of the library's classes, use the following directive: </p>
+<p>This library provides classes for image processing. To include the definitions of the library's classes, use the following directive:</p>
+<h3>Example Code </h3>
+ <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line"><span class="preprocessor">#include &quot;LPVImgProc.h&quot;</span></div>
+</div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line"><span class="keyword">using</span> <a class="code" href="namespace_l_p_v_img_proc_lib.html">LPVImgProcLib</a>;</div>
+<div class="ttc" id="anamespace_l_p_v_img_proc_lib_html"><div class="ttname"><a href="namespace_l_p_v_img_proc_lib.html">LPVImgProcLib</a></div><div class="ttdoc">LPV Image Process Library, provides classes for various image processing operations.</div><div class="ttdef"><b>Definition:</b> LPVImgProc.idl:45</div></div>
+</div><!-- fragment --> </div> <p><b>MFC Demo:</b> <a class="el" href="how_to_play_with_demo.html#demo_imgproc">MFCImgProc</a> <br  />
+<b>C# Demo:</b> <a class="el" href="how_to_play_with_demo.html#demo_imgproc">CSharpImgProc</a> </p>
 </div><h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="ae9fce5290064b3ab00a2b0c192245c0d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae9fce5290064b3ab00a2b0c192245c0d">&#9670;&nbsp;</a></span>LPVEdgeKernel</h2>
@@ -230,7 +242,12 @@ Enumerations</h2></td></tr>
 <!-- HTML footer for doxygen 1.9.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-© 2021 <a href="http://www.hzleaper.com/">Hangzhou Leaper Tech. Ltd.</a>
+© 2022 <a href="http://www.hzleaper.com/">Hangzhou Leaper Tech. Ltd.</a>
 </small></address>
+<script type="text/javascript">
+//<![CDATA[
+addTutorialsButtons();
+//]]>
+</script>
 </body>
 </html>

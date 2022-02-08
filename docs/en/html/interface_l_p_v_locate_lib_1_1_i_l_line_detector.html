@@ -9,6 +9,7 @@
 <title>LPV: ILLineDetector Interface Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="tutorial-utils.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
@@ -97,8 +98,8 @@ Inheritance diagram for ILLineDetector:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a63db31953ac872d398f9ab9675b04076"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_locate_lib_1_1_i_l_line_detector.html#a63db31953ac872d398f9ab9675b04076">Detect</a> ([in] <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *pImg, [in] <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_rot_rect_region.html">ILRotRectRegion</a> *pRegion, [out] <a class="el" href="interface_l_p_v_locate_lib_1_1_i_l_line_results.html">ILLineResults</a> **ppResults, [out, retval] enum <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> *pError)</td></tr>
-<tr class="separator:a63db31953ac872d398f9ab9675b04076"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7258fe60f5492fcaeae95285ec077ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_locate_lib_1_1_i_l_line_detector.html#aa7258fe60f5492fcaeae95285ec077ab">Detect</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_rot_rect_region.html">ILRotRectRegion</a> *region, <a class="el" href="interface_l_p_v_locate_lib_1_1_i_l_line_results.html">ILLineResults</a> **results)</td></tr>
+<tr class="separator:aa7258fe60f5492fcaeae95285ec077ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
@@ -117,10 +118,10 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_locate_lib_1_1_i_l_line_detector.html#af98b71a5ec504565e5456260acbd9ee5">MaxCount</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:af98b71a5ec504565e5456260acbd9ee5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum of lines to find. <br /></td></tr>
 <tr class="separator:af98b71a5ec504565e5456260acbd9ee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec82c900668193ea6f222b80bf3dc848"><td class="memItemLeft" align="right" valign="top"><a id="aec82c900668193ea6f222b80bf3dc848"></a>
-VARIANT_BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_locate_lib_1_1_i_l_line_detector.html#aec82c900668193ea6f222b80bf3dc848">NormScore</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:aec82c900668193ea6f222b80bf3dc848"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether we should normalize the score based on maximum gradient in region. <br /></td></tr>
-<tr class="separator:aec82c900668193ea6f222b80bf3dc848"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af26c591cf8421882e8e6d17ffb7e6452"><td class="memItemLeft" align="right" valign="top"><a id="af26c591cf8421882e8e6d17ffb7e6452"></a>
+BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_locate_lib_1_1_i_l_line_detector.html#af26c591cf8421882e8e6d17ffb7e6452">NormScore</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:af26c591cf8421882e8e6d17ffb7e6452"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether we should normalize the score based on maximum gradient in region. <br /></td></tr>
+<tr class="separator:af26c591cf8421882e8e6d17ffb7e6452"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afad2aa7828e45b84ec1f3f80f3787305"><td class="memItemLeft" align="right" valign="top"><a id="afad2aa7828e45b84ec1f3f80f3787305"></a>
 <a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0b">LPVPolarity</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_locate_lib_1_1_i_l_line_detector.html#afad2aa7828e45b84ec1f3f80f3787305">Polarity</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:afad2aa7828e45b84ec1f3f80f3787305"><td class="mdescLeft">&#160;</td><td class="mdescRight">The detection polarity. Polarity defines the edge transition according to region's direction, black pixels are dark, white pixels are light. <br /></td></tr>
@@ -128,49 +129,44 @@ VARIANT_BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This interface provide functionalities of line detection. </p>
-<p>Line detector is designed to locate a single or multiple line edges in given image and along the ROI region's direction.<br  />
-The algorithm is real-time and of sub-pixel accuracy, while the limitation is it could only detect parallel lines with small angle range (-10, +10) relative to the ROI region's direction. So, to use this detector, you should have a basic idea of the target lines' direction.</p>
+<p>Line detector is designed to locate a single or multiple line edges in given image and along the region's direction.<br  />
+The algorithm is real-time and of sub-pixel accuracy, while the limitation is it could only detect parallel lines with small angle range (-10, +10) relative to the region's direction. So, to use this detector, you should have a basic idea of the target lines' direction.</p>
 <p>To use this interface, you should create a <a class="el" href="class_l_p_v_locate_lib_1_1_l_line_detector.html">LLineDetector</a> object.</p>
-<p>C++: </p><div class="fragment"><div class="line">CLLineDetector m_line_detector;</div>
-<div class="line">m_line_detector.put_Polarity(LPVPolarity::LPVPolarityEither);</div>
-<div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = (<a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>)m_line_detector.Detect(m_img, m_roi, (LPDISPATCH*)&amp;m_line_results);</div>
-<div class="line"><span class="keywordflow">if</span> (err != <a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>.LPVNoError) <span class="keywordflow">return</span>;</div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">This enumeration represents the type of a LPV function error.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:149</div></div>
-</div><!-- fragment --><p>C#: </p><div class="fragment"><div class="line">LLineDetector m_line_detector = <span class="keyword">new</span> LLineDetector();</div>
+<h3>Example Code </h3>
+ <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">ILLineDetectorPtr m_line_detector(__uuidof(LLineDetector));</div>
+<div class="line">m_line_detector-&gt;Polarity = LPVPolarity::LPVPolarityEither;</div>
+<div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = m_line_detector-&gt;Detect(m_img, m_roi, &amp;m_line_results);</div>
+<div class="line"><span class="keywordflow">if</span> (err != LPVErrorCode::LPVNoError) <span class="keywordflow">return</span>;</div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">This enumeration represents the type of a LPV function error.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:155</div></div>
+</div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LLineDetector m_line_detector = <span class="keyword">new</span> LLineDetector();</div>
 <div class="line">m_line_detector.Polarity = <a class="code" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0b">LPVPolarity</a>.LPVPolarityEither;</div>
 <div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = (<a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>)m_line_detector.Detect(m_img, (LRotRectRegion)m_roi, out m_line_results);</div>
 <div class="line"><span class="keywordflow">if</span> (err != <a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>.LPVNoError) <span class="keywordflow">return</span>;</div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html_ad8a4d763bb82cc129119ff1cf0bc0e0b"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0b">LPVCoreLib::LPVPolarity</a></div><div class="ttdeci">LPVPolarity</div><div class="ttdoc">This enumeration represents the polarity of the edge or object to be located.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:510</div></div>
-</div><!-- fragment --> </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a63db31953ac872d398f9ab9675b04076"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a63db31953ac872d398f9ab9675b04076">&#9670;&nbsp;</a></span>Detect()</h2>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_ad8a4d763bb82cc129119ff1cf0bc0e0b"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0b">LPVCoreLib::LPVPolarity</a></div><div class="ttdeci">LPVPolarity</div><div class="ttdoc">This enumeration represents the polarity of the edge or object to be located.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:541</div></div>
+</div><!-- fragment --> </div>  </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="aa7258fe60f5492fcaeae95285ec077ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7258fe60f5492fcaeae95285ec077ab">&#9670;&nbsp;</a></span>Detect()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT Detect </td>
+          <td class="memname"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> Detect </td>
           <td>(</td>
-          <td class="paramtype">[in] <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
-          <td class="paramname"><em>pImg</em>, </td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>img</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in] <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_rot_rect_region.html">ILRotRectRegion</a> *&#160;</td>
-          <td class="paramname"><em>pRegion</em>, </td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_rot_rect_region.html">ILRotRectRegion</a> *&#160;</td>
+          <td class="paramname"><em>region</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[out] <a class="el" href="interface_l_p_v_locate_lib_1_1_i_l_line_results.html">ILLineResults</a> **&#160;</td>
-          <td class="paramname"><em>ppResults</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">[out, retval] enum <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> *&#160;</td>
-          <td class="paramname"><em>pError</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_locate_lib_1_1_i_l_line_results.html">ILLineResults</a> **&#160;</td>
+          <td class="paramname"><em>results</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -181,15 +177,15 @@ The algorithm is real-time and of sub-pixel accuracy, while the limitation is it
 </div><div class="memdoc">
 <p>Detect lines using the line detector. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pImg</td><td>The input image. </td></tr>
-    <tr><td class="paramname">pRegion</td><td>The input region, it should be a rotated rectangle region with its direction well-defined. </td></tr>
+    <tr><td class="paramname">img</td><td>The input image. </td></tr>
+    <tr><td class="paramname">region</td><td>The input region, it should be a rotated rectangle region with its direction well-defined. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">ppResults</td><td>Return the line results. </td></tr>
-    <tr><td class="paramname">pError</td><td>Return error code if anything is wrong. </td></tr>
+    <tr><td class="paramname">results</td><td>Return the line results. </td></tr>
+    <tr><td class="paramname">error</td><td>Return error code if anything is wrong. </td></tr>
   </table>
   </dd>
 </dl>
@@ -218,7 +214,7 @@ The algorithm is real-time and of sub-pixel accuracy, while the limitation is it
 </div><div class="memdoc">
 
 <p>The accept score used in detection. It defines the minimum score for identifying the edge as a good line. You may pick a proper score with help of line score chart. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_locate_lib_1_1_i_l_line_results.html#af9c61ea1163e06ef113d4c78267bc19f">ILLineResults::DrawScoreChart()</a>. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_locate_lib_1_1_i_l_line_results.html#a54ab763668a5303c740f32f0c403cabf">ILLineResults::DrawScoreChart()</a>. </dd></dl>
 
 </div>
 </div>
@@ -226,7 +222,12 @@ The algorithm is real-time and of sub-pixel accuracy, while the limitation is it
 <!-- HTML footer for doxygen 1.9.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-© 2021 <a href="http://www.hzleaper.com/">Hangzhou Leaper Tech. Ltd.</a>
+© 2022 <a href="http://www.hzleaper.com/">Hangzhou Leaper Tech. Ltd.</a>
 </small></address>
+<script type="text/javascript">
+//<![CDATA[
+addTutorialsButtons();
+//]]>
+</script>
 </body>
 </html>

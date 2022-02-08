@@ -9,6 +9,7 @@
 <title>LPV: 常见问题</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="tutorial-utils.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
@@ -80,58 +81,49 @@ $(function() {
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="md_Z__stonewall_doc_cn_t99_faq"></a> <br  />
 </p>
-<h1>编译错误</h1>
 <h4><a class="anchor" id="faq1"></a>
-Q1. C++ 错误 C3506：没有为 LIBID XXX 注册的类型库</h4>
+Q1. C++ 编译错误 C3506：没有为 LIBID XXX 注册的类型库</h4>
 <blockquote class="doxtable">
 <p>该错误表示对应平台的 LPV 模块在该机器上并未成功注册。</p><ol type="1">
 <li>首先，确认 LPV 所在的文件夹路径**不包含任何特殊字符**，如 @ ( ) * &amp; 。命名该路径中包含特殊字符的文件夹。</li>
 <li>重新注册 LPV 模块，以管理员运行 <b>runner/reg_run_as_admin.bat</b> 脚本。 </li>
 </ol>
 </blockquote>
-<h4><a class="anchor" id="faq6"></a>
-Q2. C++ error MSB8036: 找不到 Windows SDK 版本 XX.XX</h4>
+<h4><a class="anchor" id="faq2"></a>
+Q2. C++ 编译错误 MSB8036: 找不到 Windows SDK 版本 XX.XX</h4>
 <blockquote class="doxtable">
 <p>如果 Visual Studio 或 MSBuild 在预期位置找不到项目请求的 Windows SDK，会发生此错误。<br  />
  演示程序工程的目标平台为 10.0.16299.0 版本。若您并未安装对应的 Windows SDK，可修改工程对应的目标平台。右键工程打开工程配置界面，在 <b>配置属性 &gt; 常规 &gt; 目标平台</b> ，修改为已安装的版本。 </p>
 </blockquote>
-<h4><a class="anchor" id="faq7"></a>
-Q3. C++ error MSB8020: 无法找到 Visual Studio XXX 的生成工具(平台工具集 =“vXXX”)</h4>
+<h4><a class="anchor" id="faq3"></a>
+Q3. C++ 编译错误 MSB8020: 无法找到 Visual Studio XXX 的生成工具(平台工具集 =“vXXX”)</h4>
 <blockquote class="doxtable">
 <p>若要解决此问题，请将项目升级为使用当前 Visual Studio 工具集，或使用 Visual Studio 安装程序安装指定的生成工具集。<br  />
  演示程序工程使用 Visual Studio 2017 (v141) 工具集。如您并未安装 VS 2017 或者 2015，可修改工程对应的平台工具集。右键工程打开工程配置界面，在 <b>配置属性 &gt; 常规 &gt; 平台工具集</b> ，修改为已安装的版本。 </p>
 </blockquote>
-<h4><a class="anchor" id="faq2"></a>
-Q4. C# error CS0246: 找不到类型或命名空间名称 'LPVXXXLib' （是否缺少 using 指令或程序集引用?）</h4>
-<blockquote class="doxtable">
-<p>与 <a href="#faq1">Q1</a> 相同，其原因为对应平台的 LPV 模块在该机器上并未成功注册。请按 <a href="#faq1">Q1</a> 步骤排查和解决问题。 </p>
-</blockquote>
-<p><br  />
-</p>
-<h1>运行错误</h1>
-<h4><a class="anchor" id="faq3"></a>
-Q5. C++ 调用 CreateDispatch 失败，返回错误 0x800401F0 尚未调用 CoInitialize</h4>
-<blockquote class="doxtable">
-<p>需要在程序开始处调用 CoInitializeEx，结束处调用 CoUnitialize。 需要在使用 LPV 模块前调用初始化。以 MFC 程序为例，推荐的调用位置为 MFC 程序的 InitInstance 和 ExitInstance 方法中。</p>
-<p>例如: </p><div class="fragment"><div class="line">BOOL CMFCApp::InitInstance()</div>
-<div class="line">{</div>
-<div class="line">    CoInitializeEx(NULL, COINIT_MULTITHREADED);</div>
-<div class="line">    // etc.</div>
-<div class="line">    CWinApp::InitInstance();</div>
-<div class="line">}</div>
-<div class="line">INT CMFCApp::ExitInstance()</div>
-<div class="line">{</div>
-<div class="line">    CoUninitialize();</div>
-<div class="line">    return CWinApp::ExitInstance();</div>
-<div class="line">}</div>
-</div><!-- fragment --> </blockquote>
 <h4><a class="anchor" id="faq4"></a>
-Q6. C++ 调用 CreateDispatch 失败，返回 False 且 m_lpDispatch 为空指针</h4>
+Q4. C++ 编译错误 C10083: 无法打开包括文件: "afxwin.h": 找不到文件或目录</h4>
 <blockquote class="doxtable">
-<p>与 <a href="#faq1">Q1</a> 相同，其原因为对应平台的 LPV 模块在该机器上并未成功注册。请按 <a href="#faq1">Q1</a> 步骤排查和解决问题。 </p>
+<p>"afxwin.h" 包含在 MFC 库中。编译 MFC demo 程序，需先安装 MFC 库。 注意：任何 Express 版本的 VC 均不包含 MFC 库，需使用 VC 的付费或社区版本。 </p>
 </blockquote>
 <h4><a class="anchor" id="faq5"></a>
-Q7. C# 及其他 .net 调用 LPV 显示控件，编辑器报错：找不到 'AxLPVDisplayLib.AxLDisplay'，请确保已引用包含此类型的程序集。</h4>
+Q5. C# 编译错误 CS0246: 找不到类型或命名空间名称 'LPVXXXLib' （是否缺少 using 指令或程序集引用?）</h4>
+<blockquote class="doxtable">
+<p>与 <a href="#faq1">Q1</a> 相同，其原因为对应平台的 LPV 模块在该机器上并未成功注册。请按相应步骤排查和解决问题。 </p>
+</blockquote>
+<h4><a class="anchor" id="faq6"></a>
+Q6. C++ 运行时调用 CreateDispatch 失败，返回错误 0x800401F0 尚未调用 CoInitialize</h4>
+<blockquote class="doxtable">
+<p>需要在程序开始处调用 CoInitializeEx，结束处调用 CoUnitialize。 需要在使用 LPV 模块前调用初始化。以 MFC 程序为例，推荐的调用位置为 MFC 程序的 InitInstance 和 ExitInstance 方法中。</p>
+<p>例如:  BOOL CMFCApp::InitInstance() { CoInitializeEx(NULL, COINIT_MULTITHREADED); // etc. CWinApp::InitInstance(); } INT CMFCApp::ExitInstance() { CoUninitialize(); return CWinApp::ExitInstance(); }  </p>
+</blockquote>
+<h4><a class="anchor" id="faq7"></a>
+Q7. C++ 运行时调用 CreateDispatch 失败，返回 False 且 m_lpDispatch 为空指针</h4>
+<blockquote class="doxtable">
+<p>与 <a href="#faq1">Q1</a> 相同，其原因为对应平台的 LPV 模块在该机器上并未成功注册。请按相应步骤排查和解决问题。 </p>
+</blockquote>
+<h4><a class="anchor" id="faq8"></a>
+Q8. C# 及其他 .net 调用 LPV 显示控件，编辑器报错：找不到 'AxLPVDisplayLib.AxLDisplay'，请确保已引用包含此类型的程序集。</h4>
 <blockquote class="doxtable">
 <p>对 x86 平台，只需重新编译该程序的 x86(32bit) 平台，然后重启 Visual Studio。</p>
 <p>对 x64 平台，因为 Visual Studio 本身是 32 位的，其不能使用 x64 版本的控件（如 LDisplay 控件）进行图形化编辑。然后按照如下步骤：</p><ol type="1">
@@ -144,12 +136,29 @@ Q7. C# 及其他 .net 调用 LPV 显示控件，编辑器报错：找不到 'AxL
 <li>打开编辑器，确认错误是否已消除 </li>
 </ol>
 </blockquote>
+<h4><a class="anchor" id="faq9"></a>
+Q9. 注册脚本提示错误 Register failed, error code = 3.</h4>
+<blockquote class="doxtable">
+<p>该错误表示注册工具无法正常加载 LPV 模块。<br  />
+ 通常是由于没有安装正确版本的 Visual C++ Redistributable Package。需从<a href="https://support.microsoft.com/en-us/topic/the-latest-supported-visual-c-downloads-2647da03-1eea-4433-9aff-95f26a218cc0">微软官方网站</a>下载安装，也可以从我们提供的<a href="http://fileserver.hzleaper.com:8085/d/f3af040915194d27a993/">下载链接</a>下载。 </p>
+</blockquote>
+<h4><a class="anchor" id="faq10"></a>
+Q10. 注册脚本提示错误 Register failed, error code = 5.</h4>
+<blockquote class="doxtable">
+<p>该错误表示注册工具无法正常执行注册任务。<br  />
+ 可能是由于未以管理员运行注册脚本，或者 LPV 所在的目录路径不合法。需关闭脚本，再次按照 <a href="#faq1">Q1</a> 提供的步骤确认并重新注册。 </p>
+</blockquote>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 <!-- HTML footer for doxygen 1.9.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-© 2021 <a href="http://www.hzleaper.com/">杭州利珀科技有限公司</a>
+© 2022 <a href="http://www.hzleaper.com/">杭州利珀科技有限公司</a>
 </small></address>
+<script type="text/javascript">
+//<![CDATA[
+addTutorialsButtons();
+//]]>
+</script>
 </body>
 </html>

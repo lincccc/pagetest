@@ -9,6 +9,7 @@
 <title>LPV: LPVDisplayLib Module Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="tutorial-utils.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
@@ -123,7 +124,6 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespace_l_p_v_display_lib.html#abc2f2be19cc9a20d8f4b71ddb968d49ba2af5e0dc0a3d591e11e9b8f55f386e74">LPVDisplayInteractRegion</a> = 0x08
 , <br />
 &#160;&#160;<a class="el" href="namespace_l_p_v_display_lib.html#abc2f2be19cc9a20d8f4b71ddb968d49ba89a1908c841727e26fb2727b2e14422e">LPVDisplayShowPixelUnderMouse</a> = 0x10
-, <a class="el" href="namespace_l_p_v_display_lib.html#abc2f2be19cc9a20d8f4b71ddb968d49bab862ad2ce23c9e9bd57d111bf8a8c6f0">LPVDisplayShowImageCenter</a> = 0x20
 , <a class="el" href="namespace_l_p_v_display_lib.html#abc2f2be19cc9a20d8f4b71ddb968d49ba46b7277f43b18b20a4e0b2d43a29b757">LPVDisplayDefault</a>
 , <a class="el" href="namespace_l_p_v_display_lib.html#abc2f2be19cc9a20d8f4b71ddb968d49bae146d63eac0bcf72ff43ade8f9af4a8e">LPVDisplayAll</a> = 0xff
 <br />
@@ -145,8 +145,12 @@ Enumerations</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>LPV Display Library, provide ui controls for display images, regions, geometric shapes and other algorithms' results. </p>
-<p><b>MFC Demo:</b> MFCDisplay <br  />
-<b>C# Demo:</b> CSharpDisplay </p>
+<h3>Example Code </h3>
+ <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line"><span class="preprocessor">#include &quot;LPVDisplay.h&quot;</span></div>
+</div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line"><span class="keyword">using</span> <a class="code" href="namespace_l_p_v_display_lib.html">LPVDisplayLib</a>;</div>
+<div class="ttc" id="anamespace_l_p_v_display_lib_html"><div class="ttname"><a href="namespace_l_p_v_display_lib.html">LPVDisplayLib</a></div><div class="ttdoc">LPV Display Library, provide ui controls for display images, regions, geometric shapes and other algo...</div><div class="ttdef"><b>Definition:</b> LPVDisplay.idl:46</div></div>
+</div><!-- fragment --> </div> <p><b>MFC Demo:</b> <a class="el" href="how_to_play_with_demo.html#demo_display">MFCDisplay</a> <br  />
+<b>C# Demo:</b> <a class="el" href="how_to_play_with_demo.html#demo_display">CSharpDisplay</a> </p>
 </div><h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="a5361690471ec9bae7d38163800878c4e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5361690471ec9bae7d38163800878c4e">&#9670;&nbsp;</a></span>LPVAlignment</h2>
@@ -202,11 +206,9 @@ Enumerations</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="abc2f2be19cc9a20d8f4b71ddb968d49bac88575727a23f5e48293af093eb3c566"></a>LPVDisplayUseContextMenu&#160;</td><td class="fielddoc"><p>Use context menu by mouse right click </p>
 </td></tr>
-<tr><td class="fieldname"><a id="abc2f2be19cc9a20d8f4b71ddb968d49ba2af5e0dc0a3d591e11e9b8f55f386e74"></a>LPVDisplayInteractRegion&#160;</td><td class="fielddoc"><p>The roi regions in the scene is interactive </p>
+<tr><td class="fieldname"><a id="abc2f2be19cc9a20d8f4b71ddb968d49ba2af5e0dc0a3d591e11e9b8f55f386e74"></a>LPVDisplayInteractRegion&#160;</td><td class="fielddoc"><p>The regions in the scene is interactive </p>
 </td></tr>
 <tr><td class="fieldname"><a id="abc2f2be19cc9a20d8f4b71ddb968d49ba89a1908c841727e26fb2727b2e14422e"></a>LPVDisplayShowPixelUnderMouse&#160;</td><td class="fielddoc"><p>Show current position and pixel value under cursor </p>
-</td></tr>
-<tr><td class="fieldname"><a id="abc2f2be19cc9a20d8f4b71ddb968d49bab862ad2ce23c9e9bd57d111bf8a8c6f0"></a>LPVDisplayShowImageCenter&#160;</td><td class="fielddoc"><p>Show the image center using two crossed lines </p>
 </td></tr>
 <tr><td class="fieldname"><a id="abc2f2be19cc9a20d8f4b71ddb968d49ba46b7277f43b18b20a4e0b2d43a29b757"></a>LPVDisplayDefault&#160;</td><td class="fielddoc"><p>Default display flags, which display a movable, zoom-able and interactive scene with context menu </p>
 </td></tr>
@@ -268,7 +270,12 @@ Enumerations</h2></td></tr>
 <!-- HTML footer for doxygen 1.9.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-© 2021 <a href="http://www.hzleaper.com/">Hangzhou Leaper Tech. Ltd.</a>
+© 2022 <a href="http://www.hzleaper.com/">Hangzhou Leaper Tech. Ltd.</a>
 </small></address>
+<script type="text/javascript">
+//<![CDATA[
+addTutorialsButtons();
+//]]>
+</script>
 </body>
 </html>

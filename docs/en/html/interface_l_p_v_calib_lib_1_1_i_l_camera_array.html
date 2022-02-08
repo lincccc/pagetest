@@ -9,6 +9,7 @@
 <title>LPV: ILCameraArray Interface Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="tutorial-utils.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
@@ -97,32 +98,32 @@ Inheritance diagram for ILCameraArray:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa04e892344aace8dbdd0a4a926a6561b"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_camera_array.html#aa04e892344aace8dbdd0a4a926a6561b">Calibrate</a> ([out, retval] enum <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> *pError)</td></tr>
-<tr class="separator:aa04e892344aace8dbdd0a4a926a6561b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99bb73dd6c85783ddaa1bf2f97ba9f87"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_camera_array.html#a99bb73dd6c85783ddaa1bf2f97ba9f87">Count</a> ([out, retval] int *pVal)</td></tr>
-<tr class="separator:a99bb73dd6c85783ddaa1bf2f97ba9f87"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6631bc7e270d64f7645469abbc244877"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_camera_array.html#a6631bc7e270d64f7645469abbc244877">ImageToWorld</a> ([in] double imagePointX, [in] double imagePointY, [out] double *pWorldPointX, [out] double *pWorldPointY)</td></tr>
-<tr class="separator:a6631bc7e270d64f7645469abbc244877"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4bff36d16b6e64c3250de6ce954b38fe"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_camera_array.html#a4bff36d16b6e64c3250de6ce954b38fe">Init</a> ([in] <a class="el" href="namespace_l_p_v_calib_lib.html#aeaed8df5d288bbe00f4074ae5e7f5990">LPVCalibModel</a> calibModel, [in, defaultvalue(2)] int hCount, [in, defaultvalue(1)] int vCount)</td></tr>
-<tr class="separator:a4bff36d16b6e64c3250de6ce954b38fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af873252319d9980b249d8529e5d270d2"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_camera_array.html#af873252319d9980b249d8529e5d270d2">InitByCopy</a> ([in] <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html">ILCalib</a> *pCalib, [in] int hCount, [in] int vCount, [in, defaultvalue(0)] VARIANT_BOOL copyCalib, [in, defaultvalue(0)] double hStep, [in, defaultvalue(0)] double vStep)</td></tr>
-<tr class="separator:af873252319d9980b249d8529e5d270d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a71e619ab3a0561d37e615c101d7a7e2d"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_camera_array.html#a71e619ab3a0561d37e615c101d7a7e2d">InitByCopyN</a> ([in] SAFEARRAY(IDispatch *) pCalibs, [in] int rows, [in] int hCount, [in] int vCount, [in] VARIANT_BOOL copyCalib, [in] double hStep, [in] double vStep)</td></tr>
-<tr class="separator:a71e619ab3a0561d37e615c101d7a7e2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93e51d9cea1c3059ce2ac41cccb9adf0"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_camera_array.html#a93e51d9cea1c3059ce2ac41cccb9adf0">IsCalibrated</a> ([out, retval] VARIANT_BOOL *pVal)</td></tr>
-<tr class="separator:a93e51d9cea1c3059ce2ac41cccb9adf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a01ee6b03025d9de5ec151e7fa7df191d"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_camera_array.html#a01ee6b03025d9de5ec151e7fa7df191d">Item</a> ([in] int index, [out, retval] <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html">ILCalib</a> **ppCalib)</td></tr>
-<tr class="separator:a01ee6b03025d9de5ec151e7fa7df191d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a7081a6ae822924f041870246da8cd8"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_camera_array.html#a1a7081a6ae822924f041870246da8cd8">Load</a> ([in] BSTR filename, [out, retval] enum <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> *pError)</td></tr>
-<tr class="separator:a1a7081a6ae822924f041870246da8cd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a828d0933abd2fa4a72950a3fee81dec6"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_camera_array.html#a828d0933abd2fa4a72950a3fee81dec6">Reset</a> ()</td></tr>
-<tr class="separator:a828d0933abd2fa4a72950a3fee81dec6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ab1f63c21e798020bdcbefeeb757955"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_camera_array.html#a6ab1f63c21e798020bdcbefeeb757955">Save</a> ([in] BSTR filename, [out, retval] enum <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> *pError)</td></tr>
-<tr class="separator:a6ab1f63c21e798020bdcbefeeb757955"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afbf30549196f3a0e971b48e2727a5502"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_camera_array.html#afbf30549196f3a0e971b48e2727a5502">StitchImage</a> ([in] SAFEARRAY(IDispatch *) pImages, [out] <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *pSTImage, [out, retval] enum <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> *pError)</td></tr>
-<tr class="separator:afbf30549196f3a0e971b48e2727a5502"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd204daff475d7d1de98747d34aad5be"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_camera_array.html#afd204daff475d7d1de98747d34aad5be">WorldToImage</a> ([in] double worldPointX, [in] double worldPointY, [out] double *pImagePointX, [out] double *pImagePointY)</td></tr>
-<tr class="separator:afd204daff475d7d1de98747d34aad5be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1201727fe2071c60e9c8d715a8cdc2b7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_camera_array.html#a1201727fe2071c60e9c8d715a8cdc2b7">Calibrate</a> ()</td></tr>
+<tr class="separator:a1201727fe2071c60e9c8d715a8cdc2b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cb7c47723f72f9554e3905fc94140e4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_camera_array.html#a0cb7c47723f72f9554e3905fc94140e4">Count</a> ()</td></tr>
+<tr class="separator:a0cb7c47723f72f9554e3905fc94140e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ce0cd25c9f176f2ea389900b8b807be"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_camera_array.html#a8ce0cd25c9f176f2ea389900b8b807be">ImageToWorld</a> (double imagePointX, double imagePointY, double *worldPointX, double *worldPointY)</td></tr>
+<tr class="separator:a8ce0cd25c9f176f2ea389900b8b807be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f8bac2009071382e8855c8b8145dfd1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_camera_array.html#a6f8bac2009071382e8855c8b8145dfd1">Init</a> (<a class="el" href="namespace_l_p_v_calib_lib.html#aeaed8df5d288bbe00f4074ae5e7f5990">LPVCalibModel</a> calibModel, int hCount, int vCount)</td></tr>
+<tr class="separator:a6f8bac2009071382e8855c8b8145dfd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20ee2e181bb90209d951665fd554f02e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_camera_array.html#a20ee2e181bb90209d951665fd554f02e">InitByCopy</a> (<a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html">ILCalib</a> *calib, int hCount, int vCount, BOOL copyCalib, double hStep, double vStep)</td></tr>
+<tr class="separator:a20ee2e181bb90209d951665fd554f02e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab60d8783a3661c1dede4d8fc9b610266"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_camera_array.html#ab60d8783a3661c1dede4d8fc9b610266">InitByCopyN</a> (SAFEARRAY *calibs, int rows, int hCount, int vCount, BOOL copyCalib, double hStep, double vStep)</td></tr>
+<tr class="separator:ab60d8783a3661c1dede4d8fc9b610266"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb434c2170d12543d8f9530244db555e"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_camera_array.html#adb434c2170d12543d8f9530244db555e">IsCalibrated</a> ()</td></tr>
+<tr class="separator:adb434c2170d12543d8f9530244db555e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae04723601ec669e5a97fd47a7c37dd1f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html">ILCalib</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_camera_array.html#ae04723601ec669e5a97fd47a7c37dd1f">Item</a> (int index)</td></tr>
+<tr class="separator:ae04723601ec669e5a97fd47a7c37dd1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc33f804a59dbd9a1f824ea51862aaa2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_camera_array.html#acc33f804a59dbd9a1f824ea51862aaa2">Load</a> (BSTR filename)</td></tr>
+<tr class="separator:acc33f804a59dbd9a1f824ea51862aaa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a372de693ad40b3f42839c8ec6ac845f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_camera_array.html#a372de693ad40b3f42839c8ec6ac845f4">Reset</a> ()</td></tr>
+<tr class="separator:a372de693ad40b3f42839c8ec6ac845f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedf9b00d47787a935a044ce74d0df887"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_camera_array.html#aedf9b00d47787a935a044ce74d0df887">Save</a> (BSTR filename)</td></tr>
+<tr class="separator:aedf9b00d47787a935a044ce74d0df887"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb01bcebf1ab4439f5d88318b1d59bbe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_camera_array.html#adb01bcebf1ab4439f5d88318b1d59bbe">StitchImage</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image_list.html">ILImageList</a> *images, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *stitchedImage)</td></tr>
+<tr class="separator:adb01bcebf1ab4439f5d88318b1d59bbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45d73ba0171b02f1f2138954332ba401"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_camera_array.html#a45d73ba0171b02f1f2138954332ba401">WorldToImage</a> (double worldPointX, double worldPointY, double *imagePointX, double *imagePointY)</td></tr>
+<tr class="separator:a45d73ba0171b02f1f2138954332ba401"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
@@ -130,52 +131,81 @@ Properties</h2></td></tr>
 double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_camera_array.html#a3f6872a72c3c76b0cdcb95055b99108e">CalibError</a><code> [get]</code></td></tr>
 <tr class="memdesc:a3f6872a72c3c76b0cdcb95055b99108e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The calibration error of the camera array, which is the maximum error among all calibration objects in it. <br /></td></tr>
 <tr class="separator:a3f6872a72c3c76b0cdcb95055b99108e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f269d9bb011d1f06ca841fe6e970cc9"><td class="memItemLeft" align="right" valign="top"><a id="a7f269d9bb011d1f06ca841fe6e970cc9"></a>
-VARIANT_BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_camera_array.html#a7f269d9bb011d1f06ca841fe6e970cc9">EnableBlend</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a7f269d9bb011d1f06ca841fe6e970cc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether to do blending in the overlap region of multiple views. By default, this feature is on.<br  />
+<tr class="memitem:a117ac3f59f1978a796e99036a1c22baf"><td class="memItemLeft" align="right" valign="top"><a id="a117ac3f59f1978a796e99036a1c22baf"></a>
+BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_camera_array.html#a117ac3f59f1978a796e99036a1c22baf">EnableBlend</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a117ac3f59f1978a796e99036a1c22baf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether to do blending in the overlap region of multiple views. By default, this feature is on.<br  />
 Enable it will output a more smooth image stitching result, but slower. <br /></td></tr>
-<tr class="separator:a7f269d9bb011d1f06ca841fe6e970cc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a117ac3f59f1978a796e99036a1c22baf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This interface provide functionalities of camera array generation, calibration and image stitching. </p>
 <p>Camera array is a set of multiple independent cameras arranged on a known pattern, or one or multiple cameras moving along a fixed path which generate a virtual camera array. You can use this interface to create and manage the camera array, calibrate then stitch the images captured from individual cameras into a large image for preview or inspection.</p>
 <p>To use this interface, you should create a <a class="el" href="class_l_p_v_calib_lib_1_1_l_camera_array.html">LCameraArray</a> object.</p>
-<p>C++: </p><div class="fragment"></div><!-- fragment --><p>C#: </p><div class="fragment"></div><!-- fragment --> </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="aa04e892344aace8dbdd0a4a926a6561b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa04e892344aace8dbdd0a4a926a6561b">&#9670;&nbsp;</a></span>Calibrate()</h2>
+<h3>Example Code </h3>
+ <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">ILCameraArrayPtr m_cam_array(__uuidof(LCameraArray));</div>
+<div class="line">m_cam_array-&gt;Init(LPVCalibModel::LPVCalibPinHole, 2, 1); <span class="comment">// generate a camera array with two cameras</span></div>
+<div class="line"><span class="comment">// calibrate left and right camera individually</span></div>
+<div class="line"><span class="comment">// ...</span></div>
+<div class="line"><span class="comment">// calibrate the camera array</span></div>
+<div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = m_cam_array-&gt;Calibrate();</div>
+<div class="line"><span class="keywordflow">if</span> (err != LPVErrorCode::LPVNoError || !m_cam_array-&gt;IsCalibrated()) {</div>
+<div class="line">    <span class="comment">// something wrong</span></div>
+<div class="line">}</div>
+<div class="line"><span class="comment">// image stitching</span></div>
+<div class="line">ILImageListPtr imgList(__uuidof(LImageList));</div>
+<div class="line">imgList-&gt;Add(m_img_1, <span class="keyword">nullptr</span>);</div>
+<div class="line">imgList-&gt;Add(m_img_2, <span class="keyword">nullptr</span>);</div>
+<div class="line">m_cam_array-&gt;StitchImage(imgList, m_img_stitch);</div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">This enumeration represents the type of a LPV function error.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:155</div></div>
+</div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LCameraArray m_cam_array = <span class="keyword">new</span> LCameraArray();</div>
+<div class="line">m_cam_array.Init(<a class="code" href="namespace_l_p_v_calib_lib.html#aeaed8df5d288bbe00f4074ae5e7f5990">LPVCalibModel</a>.LPVCalibPinHole, 2, 1); <span class="comment">// generate a camera array with two cameras</span></div>
+<div class="line"><span class="comment">// calibrate left and right camera individually</span></div>
+<div class="line"><span class="comment">// ...</span></div>
+<div class="line"><span class="comment">// calibrate the camera array</span></div>
+<div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = m_cam_array.Calibrate();</div>
+<div class="line"><span class="keywordflow">if</span> (err != <a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>.LPVNoError || !m_cam_array.IsCalibrated()) {</div>
+<div class="line">    <span class="comment">// something wrong</span></div>
+<div class="line">}</div>
+<div class="line"><span class="comment">// image stitching</span></div>
+<div class="line">LImageList imgList = <span class="keyword">new</span> LImageList();</div>
+<div class="line">imgList.Add(m_img_1);</div>
+<div class="line">imgList.Add(m_img_2);</div>
+<div class="line">m_cam_array.StitchImage(imgList, m_img_stitch);</div>
+<div class="ttc" id="anamespace_l_p_v_calib_lib_html_aeaed8df5d288bbe00f4074ae5e7f5990"><div class="ttname"><a href="namespace_l_p_v_calib_lib.html#aeaed8df5d288bbe00f4074ae5e7f5990">LPVCalibLib::LPVCalibModel</a></div><div class="ttdeci">LPVCalibModel</div><div class="ttdoc">This enumeration represents the calibration model.</div><div class="ttdef"><b>Definition:</b> LPVCalib.idl:228</div></div>
+</div><!-- fragment --> </div>  </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a1201727fe2071c60e9c8d715a8cdc2b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1201727fe2071c60e9c8d715a8cdc2b7">&#9670;&nbsp;</a></span>Calibrate()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT Calibrate </td>
+          <td class="memname"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> Calibrate </td>
           <td>(</td>
-          <td class="paramtype">[out, retval] enum <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> *&#160;</td>
-          <td class="paramname"><em>pError</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Do calibration with current configuration. Make sure individual views are calibrated, before doing camera array calibration. </p><dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">pError</td><td>Return error code if anything is wrong. </td></tr>
+    <tr><td class="paramname">error</td><td>Return error code if anything is wrong. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a99bb73dd6c85783ddaa1bf2f97ba9f87"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a99bb73dd6c85783ddaa1bf2f97ba9f87">&#9670;&nbsp;</a></span>Count()</h2>
+<a id="a0cb7c47723f72f9554e3905fc94140e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0cb7c47723f72f9554e3905fc94140e4">&#9670;&nbsp;</a></span>Count()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT Count </td>
+          <td class="memname">int Count </td>
           <td>(</td>
-          <td class="paramtype">[out, retval] int *&#160;</td>
-          <td class="paramname"><em>pVal</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -184,35 +214,35 @@ Enable it will output a more smooth image stitching result, but slower. <br /></
 
 </div>
 </div>
-<a id="a6631bc7e270d64f7645469abbc244877"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6631bc7e270d64f7645469abbc244877">&#9670;&nbsp;</a></span>ImageToWorld()</h2>
+<a id="a8ce0cd25c9f176f2ea389900b8b807be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ce0cd25c9f176f2ea389900b8b807be">&#9670;&nbsp;</a></span>ImageToWorld()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT ImageToWorld </td>
+          <td class="memname">void ImageToWorld </td>
           <td>(</td>
-          <td class="paramtype">[in] double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>imagePointX</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in] double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>imagePointY</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[out] double *&#160;</td>
-          <td class="paramname"><em>pWorldPointX</em>, </td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>worldPointX</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[out] double *&#160;</td>
-          <td class="paramname"><em>pWorldPointY</em>&#160;</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>worldPointY</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -231,36 +261,36 @@ The mapping works with a calibrated system, if not it returns the LPVErrCalibNot
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">pWorldPointX</td><td>Return the x-coordinate of the world point. </td></tr>
-    <tr><td class="paramname">pWorldPointY</td><td>Return the y-coordinate of the world point. </td></tr>
+    <tr><td class="paramname">worldPointX</td><td>Return the x-coordinate of the world point. </td></tr>
+    <tr><td class="paramname">worldPointY</td><td>Return the y-coordinate of the world point. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a4bff36d16b6e64c3250de6ce954b38fe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4bff36d16b6e64c3250de6ce954b38fe">&#9670;&nbsp;</a></span>Init()</h2>
+<a id="a6f8bac2009071382e8855c8b8145dfd1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f8bac2009071382e8855c8b8145dfd1">&#9670;&nbsp;</a></span>Init()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT Init </td>
+          <td class="memname">void Init </td>
           <td>(</td>
-          <td class="paramtype">[in] <a class="el" href="namespace_l_p_v_calib_lib.html#aeaed8df5d288bbe00f4074ae5e7f5990">LPVCalibModel</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespace_l_p_v_calib_lib.html#aeaed8df5d288bbe00f4074ae5e7f5990">LPVCalibModel</a>&#160;</td>
           <td class="paramname"><em>calibModel</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in, defaultvalue(2)] int&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>hCount</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in, defaultvalue(1)] int&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>vCount</em>&#160;</td>
         </tr>
         <tr>
@@ -276,50 +306,50 @@ The mapping works with a calibrated system, if not it returns the LPVErrCalibNot
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_camera_array.html#af873252319d9980b249d8529e5d270d2">InitByCopy()</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_camera_array.html#a71e619ab3a0561d37e615c101d7a7e2d">InitByCopyN()</a>. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_camera_array.html#a20ee2e181bb90209d951665fd554f02e">InitByCopy()</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_camera_array.html#ab60d8783a3661c1dede4d8fc9b610266">InitByCopyN()</a>. </dd></dl>
 
 </div>
 </div>
-<a id="af873252319d9980b249d8529e5d270d2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af873252319d9980b249d8529e5d270d2">&#9670;&nbsp;</a></span>InitByCopy()</h2>
+<a id="a20ee2e181bb90209d951665fd554f02e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20ee2e181bb90209d951665fd554f02e">&#9670;&nbsp;</a></span>InitByCopy()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT InitByCopy </td>
+          <td class="memname">void InitByCopy </td>
           <td>(</td>
-          <td class="paramtype">[in] <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html">ILCalib</a> *&#160;</td>
-          <td class="paramname"><em>pCalib</em>, </td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html">ILCalib</a> *&#160;</td>
+          <td class="paramname"><em>calib</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in] int&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>hCount</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in] int&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>vCount</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in, defaultvalue(0)] VARIANT_BOOL&#160;</td>
+          <td class="paramtype">BOOL&#160;</td>
           <td class="paramname"><em>copyCalib</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in, defaultvalue(0)] double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>hStep</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in, defaultvalue(0)] double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>vStep</em>&#160;</td>
         </tr>
         <tr>
@@ -330,62 +360,62 @@ The mapping works with a calibrated system, if not it returns the LPVErrCalibNot
       </table>
 </div><div class="memdoc">
 <p>Initialize the camera array by moving one camera multiple times horizontally and vertically.<br  />
-It generates a \(vCount \times hCount\) camera array. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">pCalib</td><td>The input camera calibration object to move. </td></tr>
+It generates a \(vCount \times hCount\) camera array. </p><dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">calib</td><td>The input camera calibration object to move. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_camera_array.html#a71e619ab3a0561d37e615c101d7a7e2d">InitByCopyN()</a>. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_camera_array.html#ab60d8783a3661c1dede4d8fc9b610266">InitByCopyN()</a>. </dd></dl>
 
 </div>
 </div>
-<a id="a71e619ab3a0561d37e615c101d7a7e2d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a71e619ab3a0561d37e615c101d7a7e2d">&#9670;&nbsp;</a></span>InitByCopyN()</h2>
+<a id="ab60d8783a3661c1dede4d8fc9b610266"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab60d8783a3661c1dede4d8fc9b610266">&#9670;&nbsp;</a></span>InitByCopyN()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT InitByCopyN </td>
+          <td class="memname">void InitByCopyN </td>
           <td>(</td>
-          <td class="paramtype">[in] SAFEARRAY(IDispatch *)&#160;</td>
-          <td class="paramname"><em>pCalibs</em>, </td>
+          <td class="paramtype">SAFEARRAY *&#160;</td>
+          <td class="paramname"><em>calibs</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in] int&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>rows</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in] int&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>hCount</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in] int&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>vCount</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in] VARIANT_BOOL&#160;</td>
+          <td class="paramtype">BOOL&#160;</td>
           <td class="paramname"><em>copyCalib</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in] double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>hStep</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in] double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>vStep</em>&#160;</td>
         </tr>
         <tr>
@@ -395,13 +425,18 @@ It generates a \(vCount \times hCount\) camera array. </p><dl class="params"><dt
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Similar as <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_camera_array.html#af873252319d9980b249d8529e5d270d2">InitByCopy()</a>, initialize the camera array by moving n cameras multiple times horizontally and vertically.<br  />
+<p>Similar as <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_camera_array.html#a20ee2e181bb90209d951665fd554f02e">InitByCopy()</a>, initialize the camera array by moving n cameras multiple times horizontally and vertically.<br  />
 It generates a \((vCount * rows) \times (hCount * n / rows)\) camera array.<br  />
 For example, given 1 2 3 4 input cameras int two rows, move it 3 times horizontally and 2 times vertically, it results in a camera array as:</p>
 <p>\(\begin{matrix}1 &amp; 2 &amp; 1 &amp; 2 &amp; 1 &amp; 2\\3 &amp; 4 &amp; 3 &amp; 4 &amp; 3 &amp; 4\\1 &amp; 2 &amp; 1 &amp; 2 &amp; 1 &amp; 2\\3 &amp; 4 &amp; 3 &amp; 4 &amp; 3 &amp; 4\end{matrix}\)</p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">calibs</td><td>The input collection of camera calibration objects. </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pCalibs</td><td>The input collection of camera calibration objects. </td></tr>
     <tr><td class="paramname">rows</td><td>The count of rows of the input collection. </td></tr>
   </table>
   </dd>
@@ -409,52 +444,41 @@ For example, given 1 2 3 4 input cameras int two rows, move it 3 times horizonta
 
 </div>
 </div>
-<a id="a93e51d9cea1c3059ce2ac41cccb9adf0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a93e51d9cea1c3059ce2ac41cccb9adf0">&#9670;&nbsp;</a></span>IsCalibrated()</h2>
+<a id="adb434c2170d12543d8f9530244db555e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb434c2170d12543d8f9530244db555e">&#9670;&nbsp;</a></span>IsCalibrated()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT IsCalibrated </td>
+          <td class="memname">BOOL IsCalibrated </td>
           <td>(</td>
-          <td class="paramtype">[out, retval] VARIANT_BOOL *&#160;</td>
-          <td class="paramname"><em>pVal</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Check whether the camera array and all calibration objects in it is well-calibrated. </p><dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">pVal</td><td>Return true if it's calibrated, otherwise, return false. </td></tr>
+    <tr><td class="paramname">val</td><td>Return true if it's calibrated, otherwise, return false. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a01ee6b03025d9de5ec151e7fa7df191d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a01ee6b03025d9de5ec151e7fa7df191d">&#9670;&nbsp;</a></span>Item()</h2>
+<a id="ae04723601ec669e5a97fd47a7c37dd1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae04723601ec669e5a97fd47a7c37dd1f">&#9670;&nbsp;</a></span>Item()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT Item </td>
+          <td class="memname"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html">ILCalib</a>* Item </td>
           <td>(</td>
-          <td class="paramtype">[in] int&#160;</td>
-          <td class="paramname"><em>index</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">[out, retval] <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html">ILCalib</a> **&#160;</td>
-          <td class="paramname"><em>ppCalib</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -466,51 +490,41 @@ For example, given 1 2 3 4 input cameras int two rows, move it 3 times horizonta
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">ppCalib</td><td>Return the camera calibration object. </td></tr>
+    <tr><td class="paramname">calib</td><td>Return the camera calibration object. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a1a7081a6ae822924f041870246da8cd8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1a7081a6ae822924f041870246da8cd8">&#9670;&nbsp;</a></span>Load()</h2>
+<a id="acc33f804a59dbd9a1f824ea51862aaa2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc33f804a59dbd9a1f824ea51862aaa2">&#9670;&nbsp;</a></span>Load()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT Load </td>
+          <td class="memname"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> Load </td>
           <td>(</td>
-          <td class="paramtype">[in] BSTR&#160;</td>
-          <td class="paramname"><em>filename</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">BSTR&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">[out, retval] enum <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> *&#160;</td>
-          <td class="paramname"><em>pError</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Load the camera array and its calibration from a specified file.<br  />
-It should be a .calib file with the calibrated camera matrices in it. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_camera_array.html#a6ab1f63c21e798020bdcbefeeb757955">Save()</a>. </dd></dl>
+It should be a .calib file with the calibrated camera matrices in it. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_camera_array.html#aedf9b00d47787a935a044ce74d0df887">Save()</a>. </dd></dl>
 
 </div>
 </div>
-<a id="a828d0933abd2fa4a72950a3fee81dec6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a828d0933abd2fa4a72950a3fee81dec6">&#9670;&nbsp;</a></span>Reset()</h2>
+<a id="a372de693ad40b3f42839c8ec6ac845f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a372de693ad40b3f42839c8ec6ac845f4">&#9670;&nbsp;</a></span>Reset()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT Reset </td>
+          <td class="memname">void Reset </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -521,59 +535,43 @@ It should be a .calib file with the calibrated camera matrices in it. </p><dl cl
 
 </div>
 </div>
-<a id="a6ab1f63c21e798020bdcbefeeb757955"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6ab1f63c21e798020bdcbefeeb757955">&#9670;&nbsp;</a></span>Save()</h2>
+<a id="aedf9b00d47787a935a044ce74d0df887"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedf9b00d47787a935a044ce74d0df887">&#9670;&nbsp;</a></span>Save()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT Save </td>
+          <td class="memname"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> Save </td>
           <td>(</td>
-          <td class="paramtype">[in] BSTR&#160;</td>
-          <td class="paramname"><em>filename</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">BSTR&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">[out, retval] enum <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> *&#160;</td>
-          <td class="paramname"><em>pError</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Save the camera array and its calibration to a specified file.<br  />
-The serialized file is .calib file with the calibrated camera matrices as well as all the calibration configurations. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_camera_array.html#a1a7081a6ae822924f041870246da8cd8">Load()</a>. </dd></dl>
+The serialized file is .calib file with the calibrated camera matrices as well as all the calibration configurations. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_camera_array.html#acc33f804a59dbd9a1f824ea51862aaa2">Load()</a>. </dd></dl>
 
 </div>
 </div>
-<a id="afbf30549196f3a0e971b48e2727a5502"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afbf30549196f3a0e971b48e2727a5502">&#9670;&nbsp;</a></span>StitchImage()</h2>
+<a id="adb01bcebf1ab4439f5d88318b1d59bbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb01bcebf1ab4439f5d88318b1d59bbe">&#9670;&nbsp;</a></span>StitchImage()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT StitchImage </td>
+          <td class="memname"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> StitchImage </td>
           <td>(</td>
-          <td class="paramtype">[in] SAFEARRAY(IDispatch *)&#160;</td>
-          <td class="paramname"><em>pImages</em>, </td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image_list.html">ILImageList</a> *&#160;</td>
+          <td class="paramname"><em>images</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[out] <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
-          <td class="paramname"><em>pSTImage</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">[out, retval] enum <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> *&#160;</td>
-          <td class="paramname"><em>pError</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>stitchedImage</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -585,49 +583,49 @@ The serialized file is .calib file with the calibrated camera matrices as well a
 <p>Stitch the images from all cameras in the matrix.<br  />
 The stitching works with a calibrated system, if not it returns the LPVErrCalibNotCalib error. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pImages</td><td>The input images, should be a collection of <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">LImage</a> objects. It's in the same order as the cameras row by row. </td></tr>
+    <tr><td class="paramname">images</td><td>The input image list, in the same order as the cameras row by row. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">pSTImage</td><td>The result image. </td></tr>
-    <tr><td class="paramname">pError</td><td>Return error code if anything is wrong. </td></tr>
+    <tr><td class="paramname">stitchedImage</td><td>The result image. </td></tr>
+    <tr><td class="paramname">error</td><td>Return error code if anything is wrong. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="afd204daff475d7d1de98747d34aad5be"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afd204daff475d7d1de98747d34aad5be">&#9670;&nbsp;</a></span>WorldToImage()</h2>
+<a id="a45d73ba0171b02f1f2138954332ba401"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45d73ba0171b02f1f2138954332ba401">&#9670;&nbsp;</a></span>WorldToImage()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT WorldToImage </td>
+          <td class="memname">void WorldToImage </td>
           <td>(</td>
-          <td class="paramtype">[in] double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>worldPointX</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in] double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>worldPointY</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[out] double *&#160;</td>
-          <td class="paramname"><em>pImagePointX</em>, </td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>imagePointX</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[out] double *&#160;</td>
-          <td class="paramname"><em>pImagePointY</em>&#160;</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>imagePointY</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -641,8 +639,13 @@ The mapping works with a calibrated system, if not it returns the LPVErrCalibNot
   <table class="params">
     <tr><td class="paramname">worldPointX</td><td>The x-coordinate of the world point. </td></tr>
     <tr><td class="paramname">worldPointY</td><td>The y-coordinate of the world point. </td></tr>
-    <tr><td class="paramname">pImagePointX</td><td>Return the x-coordinate of the stitching image point. </td></tr>
-    <tr><td class="paramname">pImagePointY</td><td>Return the y-coordinate of the stitching image point. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">imagePointX</td><td>Return the x-coordinate of the stitching image point. </td></tr>
+    <tr><td class="paramname">imagePointY</td><td>Return the y-coordinate of the stitching image point. </td></tr>
   </table>
   </dd>
 </dl>
@@ -653,7 +656,12 @@ The mapping works with a calibrated system, if not it returns the LPVErrCalibNot
 <!-- HTML footer for doxygen 1.9.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-© 2021 <a href="http://www.hzleaper.com/">Hangzhou Leaper Tech. Ltd.</a>
+© 2022 <a href="http://www.hzleaper.com/">Hangzhou Leaper Tech. Ltd.</a>
 </small></address>
+<script type="text/javascript">
+//<![CDATA[
+addTutorialsButtons();
+//]]>
+</script>
 </body>
 </html>

@@ -9,6 +9,7 @@
 <title>LPV: ILCalibRotation Interface Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="tutorial-utils.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
@@ -97,37 +98,37 @@ Inheritance diagram for ILCalibRotation:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a05721fb95a5ab0f3dcffb3766263d1cf"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_rotation.html#a05721fb95a5ab0f3dcffb3766263d1cf">AddRotPoint</a> ([in] double pntX, [in] double pntY, [in, defaultvalue(-1)] double angle)</td></tr>
-<tr class="separator:a05721fb95a5ab0f3dcffb3766263d1cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76b934c693861656b5b3a763345a487b"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_rotation.html#a76b934c693861656b5b3a763345a487b">AddRotPointPair</a> ([in] double pntX1, [in] double pntY1, [in] double pntX2, [in] double pntY2, [in, defaultvalue(-1)] double angle)</td></tr>
-<tr class="separator:a76b934c693861656b5b3a763345a487b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0568f2712b1fe539ee380e8f713d0bf"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_rotation.html#ac0568f2712b1fe539ee380e8f713d0bf">Align</a> ([in] double pntX1, [in] double pntY1, [in] double pntX2, [in] double pntY2, [out] double *dx, [out] double *dy, [out] double *da)</td></tr>
-<tr class="separator:ac0568f2712b1fe539ee380e8f713d0bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a797cdceb978d420aca87d97e552c88f3"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_rotation.html#a797cdceb978d420aca87d97e552c88f3">AlignTo</a> ([in] double pntX1, [in] double pntY1, [in] double pntX2, [in] double pntY2, [in] double aimPointX1, [in] double aimPointY1, [in] double aimPointX2, [in] double aimPointY2, [out] double *dx, [out] double *dy, [out] double *da)</td></tr>
-<tr class="separator:a797cdceb978d420aca87d97e552c88f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa04e892344aace8dbdd0a4a926a6561b"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_rotation.html#aa04e892344aace8dbdd0a4a926a6561b">Calibrate</a> ([out, retval] enum <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> *pError)</td></tr>
-<tr class="separator:aa04e892344aace8dbdd0a4a926a6561b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc42db4b0b1df0e4384c64a513c23b7a"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_rotation.html#abc42db4b0b1df0e4384c64a513c23b7a">GetRotCenter</a> ([out, retval] <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_point.html">ILPoint</a> **ppCenter)</td></tr>
-<tr class="separator:abc42db4b0b1df0e4384c64a513c23b7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93e51d9cea1c3059ce2ac41cccb9adf0"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_rotation.html#a93e51d9cea1c3059ce2ac41cccb9adf0">IsCalibrated</a> ([out, retval] VARIANT_BOOL *pVal)</td></tr>
-<tr class="separator:a93e51d9cea1c3059ce2ac41cccb9adf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a7081a6ae822924f041870246da8cd8"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_rotation.html#a1a7081a6ae822924f041870246da8cd8">Load</a> ([in] BSTR filename, [out, retval] enum <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> *pError)</td></tr>
-<tr class="separator:a1a7081a6ae822924f041870246da8cd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a828d0933abd2fa4a72950a3fee81dec6"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_rotation.html#a828d0933abd2fa4a72950a3fee81dec6">Reset</a> ()</td></tr>
-<tr class="separator:a828d0933abd2fa4a72950a3fee81dec6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ab1f63c21e798020bdcbefeeb757955"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_rotation.html#a6ab1f63c21e798020bdcbefeeb757955">Save</a> ([in] BSTR filename, [out, retval] enum <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> *pError)</td></tr>
-<tr class="separator:a6ab1f63c21e798020bdcbefeeb757955"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9db3aa6de2fd21d9a95dfd56669df1c"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_rotation.html#ad9db3aa6de2fd21d9a95dfd56669df1c">SetAim</a> ([in] double aimPointX1, [in] double aimPointY1, [in] double aimPointX2, [in] double aimPointY2)</td></tr>
-<tr class="separator:ad9db3aa6de2fd21d9a95dfd56669df1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36fe8a3a5a2fd920b0bfa0b79184b0c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_rotation.html#a36fe8a3a5a2fd920b0bfa0b79184b0c5">AddRotPoint</a> (double pntX, double pntY, double angle)</td></tr>
+<tr class="separator:a36fe8a3a5a2fd920b0bfa0b79184b0c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e05b13722ec85f5abf625edfdce006d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_rotation.html#a4e05b13722ec85f5abf625edfdce006d">AddRotPointPair</a> (double pntX1, double pntY1, double pntX2, double pntY2, double angle)</td></tr>
+<tr class="separator:a4e05b13722ec85f5abf625edfdce006d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfa38ee5c13ae77037139694636f4246"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_rotation.html#adfa38ee5c13ae77037139694636f4246">Align</a> (double pntX1, double pntY1, double pntX2, double pntY2, double *dx, double *dy, double *da)</td></tr>
+<tr class="separator:adfa38ee5c13ae77037139694636f4246"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99e9289b0f6620924b27845d1e104259"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_rotation.html#a99e9289b0f6620924b27845d1e104259">AlignTo</a> (double pntX1, double pntY1, double pntX2, double pntY2, double aimPointX1, double aimPointY1, double aimPointX2, double aimPointY2, double *dx, double *dy, double *da)</td></tr>
+<tr class="separator:a99e9289b0f6620924b27845d1e104259"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1201727fe2071c60e9c8d715a8cdc2b7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_rotation.html#a1201727fe2071c60e9c8d715a8cdc2b7">Calibrate</a> ()</td></tr>
+<tr class="separator:a1201727fe2071c60e9c8d715a8cdc2b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb781fcc40b4775829323b47e9f2f3d9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_point.html">ILPoint</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_rotation.html#afb781fcc40b4775829323b47e9f2f3d9">GetRotCenter</a> ()</td></tr>
+<tr class="separator:afb781fcc40b4775829323b47e9f2f3d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb434c2170d12543d8f9530244db555e"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_rotation.html#adb434c2170d12543d8f9530244db555e">IsCalibrated</a> ()</td></tr>
+<tr class="separator:adb434c2170d12543d8f9530244db555e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc33f804a59dbd9a1f824ea51862aaa2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_rotation.html#acc33f804a59dbd9a1f824ea51862aaa2">Load</a> (BSTR filename)</td></tr>
+<tr class="separator:acc33f804a59dbd9a1f824ea51862aaa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a372de693ad40b3f42839c8ec6ac845f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_rotation.html#a372de693ad40b3f42839c8ec6ac845f4">Reset</a> ()</td></tr>
+<tr class="separator:a372de693ad40b3f42839c8ec6ac845f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedf9b00d47787a935a044ce74d0df887"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_rotation.html#aedf9b00d47787a935a044ce74d0df887">Save</a> (BSTR filename)</td></tr>
+<tr class="separator:aedf9b00d47787a935a044ce74d0df887"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa201f495beffb2cdfc968b32e859599d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_rotation.html#aa201f495beffb2cdfc968b32e859599d">SetAim</a> (double aimPointX1, double aimPointY1, double aimPointX2, double aimPointY2)</td></tr>
+<tr class="separator:aa201f495beffb2cdfc968b32e859599d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
-<tr class="memitem:a1027ebdf8790c81fa219133d925f1f4d"><td class="memItemLeft" align="right" valign="top"><a id="a1027ebdf8790c81fa219133d925f1f4d"></a>
-VARIANT_BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_rotation.html#a1027ebdf8790c81fa219133d925f1f4d">TranslationOnRotation</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a1027ebdf8790c81fa219133d925f1f4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the translation platform is dependent on the rotation platform. By default, it's off.<br  />
+<tr class="memitem:a6c2578df48ee9f04d8f4c3402ddc6395"><td class="memItemLeft" align="right" valign="top"><a id="a6c2578df48ee9f04d8f4c3402ddc6395"></a>
+BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_rotation.html#a6c2578df48ee9f04d8f4c3402ddc6395">TranslationOnRotation</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a6c2578df48ee9f04d8f4c3402ddc6395"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the translation platform is dependent on the rotation platform. By default, it's off.<br  />
 If yes, then the rotation drives and changes the coordinates of translation platform, affect its translation direction in physical world.<br  />
 . <br /></td></tr>
-<tr class="separator:a1027ebdf8790c81fa219133d925f1f4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a6c2578df48ee9f04d8f4c3402ddc6395"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This interface provide functionalities of the rotation center calibration and alignment task. </p>
@@ -135,17 +136,18 @@ If yes, then the rotation drives and changes the coordinates of translation plat
 The center is estimated with the rotation points or pairs of points around the center. The rotation calibration is usually done after the hand-eye calibration using <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_n_points.html">N-Points</a> model. Thus, the points here in most use case indicates the world points.</p>
 <p>After calibration, you can use the center for aim-object alignment, it report the translation and rotation for align the aim and object point.</p>
 <p>To use this interface, you should create a <a class="el" href="class_l_p_v_calib_lib_1_1_l_calib_rotation.html">LCalibRotation</a> object.</p>
-<p>C++: </p><div class="fragment"><div class="line">CLCalibRotation m_rot_calib;</div>
-<div class="line">m_rot_calib.AddRotPoint(0, 100, 0, -100, -1);</div>
-<div class="line">m_rot_calib.AddRotPoint(100, 100, -100, -100, -1);</div>
-<div class="line">m_rot_calib.AddRotPoint(0, 100, 0, -100, -1);</div>
-<div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = (<a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>)m_rot_calib.Calibrate(); <span class="comment">// the rotation center should be (0, 0)</span></div>
-<div class="line"><span class="keywordflow">if</span> (err != LPVErrorCode::LPVNoError || !m_rot_calib.IsCalibrated()) <span class="keywordflow">return</span>;</div>
-<div class="line">m_rot_calib.SetAim(0, 10, 0, 90);</div>
+<h3>Example Code </h3>
+ <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">ILCalibRotationPtr m_rot_calib(__uuidof(LCalibRotation));</div>
+<div class="line">m_rot_calib-&gt;AddRotPoint(0, 100, 0, -100, -1);</div>
+<div class="line">m_rot_calib-&gt;AddRotPoint(100, 100, -100, -100, -1);</div>
+<div class="line">m_rot_calib-&gt;AddRotPoint(0, 100, 0, -100, -1);</div>
+<div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = m_rot_calib-&gt;Calibrate(); <span class="comment">// the rotation center should be (0, 0)</span></div>
+<div class="line"><span class="keywordflow">if</span> (err != LPVErrorCode::LPVNoError || !m_rot_calib-&gt;IsCalibrated()) <span class="keywordflow">return</span>;</div>
+<div class="line">m_rot_calib-&gt;SetAim(0, 10, 0, 90);</div>
 <div class="line"><span class="keywordtype">double</span> dx, dy, da;</div>
-<div class="line">m_rot_calib.Align(10, 0, 90, 0, &amp;dx, &amp;dy, &amp;da);</div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">This enumeration represents the type of a LPV function error.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:149</div></div>
-</div><!-- fragment --><p>C#: </p><div class="fragment"><div class="line">LCalibRotation m_rot_calib = <span class="keyword">new</span> LCalibRotation();</div>
+<div class="line">m_rot_calib-&gt;Align(10, 0, 90, 0, &amp;dx, &amp;dy, &amp;da);</div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">This enumeration represents the type of a LPV function error.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:155</div></div>
+</div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LCalibRotation m_rot_calib = <span class="keyword">new</span> LCalibRotation();</div>
 <div class="line">m_rot_calib.AddRotPoint(0, 100, 0, -100, -1);</div>
 <div class="line">m_rot_calib.AddRotPoint(100, 100, -100, -100, -1);</div>
 <div class="line">m_rot_calib.AddRotPoint(0, 100, 0, -100, -1);</div>
@@ -154,29 +156,29 @@ The center is estimated with the rotation points or pairs of points around the c
 <div class="line">m_rot_calib.SetAim(0, 10, 0, 90);</div>
 <div class="line"><span class="keywordtype">double</span> dx, dy, da;</div>
 <div class="line">m_rot_calib.Align(10, 0, 90, 0, out dx, out dy, out da);</div>
-</div><!-- fragment --> </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a05721fb95a5ab0f3dcffb3766263d1cf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a05721fb95a5ab0f3dcffb3766263d1cf">&#9670;&nbsp;</a></span>AddRotPoint()</h2>
+</div><!-- fragment --> </div>  </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a36fe8a3a5a2fd920b0bfa0b79184b0c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36fe8a3a5a2fd920b0bfa0b79184b0c5">&#9670;&nbsp;</a></span>AddRotPoint()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT AddRotPoint </td>
+          <td class="memname">void AddRotPoint </td>
           <td>(</td>
-          <td class="paramtype">[in] double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>pntX</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in] double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>pntY</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in, defaultvalue(-1)] double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>angle</em>&#160;</td>
         </tr>
         <tr>
@@ -197,40 +199,40 @@ The center is estimated with the rotation points or pairs of points around the c
 
 </div>
 </div>
-<a id="a76b934c693861656b5b3a763345a487b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a76b934c693861656b5b3a763345a487b">&#9670;&nbsp;</a></span>AddRotPointPair()</h2>
+<a id="a4e05b13722ec85f5abf625edfdce006d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e05b13722ec85f5abf625edfdce006d">&#9670;&nbsp;</a></span>AddRotPointPair()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT AddRotPointPair </td>
+          <td class="memname">void AddRotPointPair </td>
           <td>(</td>
-          <td class="paramtype">[in] double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>pntX1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in] double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>pntY1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in] double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>pntX2</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in] double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>pntY2</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in, defaultvalue(-1)] double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>angle</em>&#160;</td>
         </tr>
         <tr>
@@ -253,52 +255,52 @@ The center is estimated with the rotation points or pairs of points around the c
 
 </div>
 </div>
-<a id="ac0568f2712b1fe539ee380e8f713d0bf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac0568f2712b1fe539ee380e8f713d0bf">&#9670;&nbsp;</a></span>Align()</h2>
+<a id="adfa38ee5c13ae77037139694636f4246"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfa38ee5c13ae77037139694636f4246">&#9670;&nbsp;</a></span>Align()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT Align </td>
+          <td class="memname">void Align </td>
           <td>(</td>
-          <td class="paramtype">[in] double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>pntX1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in] double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>pntY1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in] double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>pntX2</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in] double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>pntY2</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[out] double *&#160;</td>
+          <td class="paramtype">double *&#160;</td>
           <td class="paramname"><em>dx</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[out] double *&#160;</td>
+          <td class="paramtype">double *&#160;</td>
           <td class="paramname"><em>dy</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[out] double *&#160;</td>
+          <td class="paramtype">double *&#160;</td>
           <td class="paramname"><em>da</em>&#160;</td>
         </tr>
         <tr>
@@ -308,80 +310,80 @@ The center is estimated with the rotation points or pairs of points around the c
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Align the object to the configured aim position. The mapping works with a calibrated system, if not it returns the <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aa564aa76ea75ffa30b29cfcfb3a5b503b">LPVErrCalibNotCalib </a> error. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_rotation.html#ad9db3aa6de2fd21d9a95dfd56669df1c">SetAim()</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_rotation.html#a797cdceb978d420aca87d97e552c88f3">AlignTo()</a>. </dd></dl>
+<p>Align the object to the configured aim position. The mapping works with a calibrated system, if not it returns the <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aa564aa76ea75ffa30b29cfcfb3a5b503b">LPVErrCalibNotCalib </a> error. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_rotation.html#aa201f495beffb2cdfc968b32e859599d">SetAim()</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_rotation.html#a99e9289b0f6620924b27845d1e104259">AlignTo()</a>. </dd></dl>
 
 </div>
 </div>
-<a id="a797cdceb978d420aca87d97e552c88f3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a797cdceb978d420aca87d97e552c88f3">&#9670;&nbsp;</a></span>AlignTo()</h2>
+<a id="a99e9289b0f6620924b27845d1e104259"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99e9289b0f6620924b27845d1e104259">&#9670;&nbsp;</a></span>AlignTo()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT AlignTo </td>
+          <td class="memname">void AlignTo </td>
           <td>(</td>
-          <td class="paramtype">[in] double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>pntX1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in] double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>pntY1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in] double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>pntX2</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in] double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>pntY2</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in] double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>aimPointX1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in] double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>aimPointY1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in] double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>aimPointX2</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in] double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>aimPointY2</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[out] double *&#160;</td>
+          <td class="paramtype">double *&#160;</td>
           <td class="paramname"><em>dx</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[out] double *&#160;</td>
+          <td class="paramtype">double *&#160;</td>
           <td class="paramname"><em>dy</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[out] double *&#160;</td>
+          <td class="paramtype">double *&#160;</td>
           <td class="paramname"><em>da</em>&#160;</td>
         </tr>
         <tr>
@@ -391,120 +393,107 @@ The center is estimated with the rotation points or pairs of points around the c
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Align the object to the given aim position. The mapping works with a calibrated system, if not it returns the <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aa564aa76ea75ffa30b29cfcfb3a5b503b">LPVErrCalibNotCalib </a> error. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_rotation.html#ac0568f2712b1fe539ee380e8f713d0bf">Align()</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_rotation.html#ad9db3aa6de2fd21d9a95dfd56669df1c">SetAim()</a>. </dd></dl>
+<p>Align the object to the given aim position. The mapping works with a calibrated system, if not it returns the <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aa564aa76ea75ffa30b29cfcfb3a5b503b">LPVErrCalibNotCalib </a> error. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_rotation.html#adfa38ee5c13ae77037139694636f4246">Align()</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_rotation.html#aa201f495beffb2cdfc968b32e859599d">SetAim()</a>. </dd></dl>
 
 </div>
 </div>
-<a id="aa04e892344aace8dbdd0a4a926a6561b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa04e892344aace8dbdd0a4a926a6561b">&#9670;&nbsp;</a></span>Calibrate()</h2>
+<a id="a1201727fe2071c60e9c8d715a8cdc2b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1201727fe2071c60e9c8d715a8cdc2b7">&#9670;&nbsp;</a></span>Calibrate()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT Calibrate </td>
+          <td class="memname"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> Calibrate </td>
           <td>(</td>
-          <td class="paramtype">[out, retval] enum <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> *&#160;</td>
-          <td class="paramname"><em>pError</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Do calibration with current configuration and the rotation points added. </p><dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">pError</td><td>Return error code if anything is wrong. </td></tr>
+    <tr><td class="paramname">error</td><td>Return error code if anything is wrong. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="abc42db4b0b1df0e4384c64a513c23b7a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abc42db4b0b1df0e4384c64a513c23b7a">&#9670;&nbsp;</a></span>GetRotCenter()</h2>
+<a id="afb781fcc40b4775829323b47e9f2f3d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb781fcc40b4775829323b47e9f2f3d9">&#9670;&nbsp;</a></span>GetRotCenter()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT GetRotCenter </td>
+          <td class="memname"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_point.html">ILPoint</a>* GetRotCenter </td>
           <td>(</td>
-          <td class="paramtype">[out, retval] <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_point.html">ILPoint</a> **&#160;</td>
-          <td class="paramname"><em>ppCenter</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Get the estimated rotation center </p><dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">ppCenter</td><td>Return the rotation center. </td></tr>
+    <tr><td class="paramname">center</td><td>Return the rotation center. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a93e51d9cea1c3059ce2ac41cccb9adf0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a93e51d9cea1c3059ce2ac41cccb9adf0">&#9670;&nbsp;</a></span>IsCalibrated()</h2>
+<a id="adb434c2170d12543d8f9530244db555e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb434c2170d12543d8f9530244db555e">&#9670;&nbsp;</a></span>IsCalibrated()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT IsCalibrated </td>
+          <td class="memname">BOOL IsCalibrated </td>
           <td>(</td>
-          <td class="paramtype">[out, retval] VARIANT_BOOL *&#160;</td>
-          <td class="paramname"><em>pVal</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Check whether the calibration object is well-calibrated. </p><dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">pVal</td><td>Return true if it's calibrated, otherwise, return false. </td></tr>
+    <tr><td class="paramname">val</td><td>Return true if it's calibrated, otherwise, return false. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a1a7081a6ae822924f041870246da8cd8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1a7081a6ae822924f041870246da8cd8">&#9670;&nbsp;</a></span>Load()</h2>
+<a id="acc33f804a59dbd9a1f824ea51862aaa2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc33f804a59dbd9a1f824ea51862aaa2">&#9670;&nbsp;</a></span>Load()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT Load </td>
+          <td class="memname"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> Load </td>
           <td>(</td>
-          <td class="paramtype">[in] BSTR&#160;</td>
-          <td class="paramname"><em>filename</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">BSTR&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">[out, retval] enum <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> *&#160;</td>
-          <td class="paramname"><em>pError</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Load the calibration from a specified file.<br  />
-It should be a .calib file with the calibrated rotation center in it. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_rotation.html#a6ab1f63c21e798020bdcbefeeb757955">Save()</a> </dd></dl>
+It should be a .calib file with the calibrated rotation center in it. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_rotation.html#aedf9b00d47787a935a044ce74d0df887">Save()</a> </dd></dl>
 
 </div>
 </div>
-<a id="a828d0933abd2fa4a72950a3fee81dec6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a828d0933abd2fa4a72950a3fee81dec6">&#9670;&nbsp;</a></span>Reset()</h2>
+<a id="a372de693ad40b3f42839c8ec6ac845f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a372de693ad40b3f42839c8ec6ac845f4">&#9670;&nbsp;</a></span>Reset()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT Reset </td>
+          <td class="memname">void Reset </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -515,64 +504,54 @@ It should be a .calib file with the calibrated rotation center in it. </p><dl cl
 
 </div>
 </div>
-<a id="a6ab1f63c21e798020bdcbefeeb757955"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6ab1f63c21e798020bdcbefeeb757955">&#9670;&nbsp;</a></span>Save()</h2>
+<a id="aedf9b00d47787a935a044ce74d0df887"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedf9b00d47787a935a044ce74d0df887">&#9670;&nbsp;</a></span>Save()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT Save </td>
+          <td class="memname"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> Save </td>
           <td>(</td>
-          <td class="paramtype">[in] BSTR&#160;</td>
-          <td class="paramname"><em>filename</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">BSTR&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">[out, retval] enum <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> *&#160;</td>
-          <td class="paramname"><em>pError</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Save the calibration to a specified file.<br  />
-The serialized file is .calib file with the calibrated rotation center as well as all the calibration configurations. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_rotation.html#a1a7081a6ae822924f041870246da8cd8">Load()</a> </dd></dl>
+The serialized file is .calib file with the calibrated rotation center as well as all the calibration configurations. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_rotation.html#acc33f804a59dbd9a1f824ea51862aaa2">Load()</a> </dd></dl>
 
 </div>
 </div>
-<a id="ad9db3aa6de2fd21d9a95dfd56669df1c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad9db3aa6de2fd21d9a95dfd56669df1c">&#9670;&nbsp;</a></span>SetAim()</h2>
+<a id="aa201f495beffb2cdfc968b32e859599d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa201f495beffb2cdfc968b32e859599d">&#9670;&nbsp;</a></span>SetAim()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT SetAim </td>
+          <td class="memname">void SetAim </td>
           <td>(</td>
-          <td class="paramtype">[in] double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>aimPointX1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in] double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>aimPointY1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in] double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>aimPointX2</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in] double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>aimPointY2</em>&#160;</td>
         </tr>
         <tr>
@@ -582,7 +561,7 @@ The serialized file is .calib file with the calibrated rotation center as well a
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Set the aligning aim position. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_rotation.html#ac0568f2712b1fe539ee380e8f713d0bf">Align()</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_rotation.html#a797cdceb978d420aca87d97e552c88f3">AlignTo()</a>. </dd></dl>
+<p>Set the aligning aim position. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_rotation.html#adfa38ee5c13ae77037139694636f4246">Align()</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_rotation.html#a99e9289b0f6620924b27845d1e104259">AlignTo()</a>. </dd></dl>
 
 </div>
 </div>
@@ -590,7 +569,12 @@ The serialized file is .calib file with the calibrated rotation center as well a
 <!-- HTML footer for doxygen 1.9.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-© 2021 <a href="http://www.hzleaper.com/">Hangzhou Leaper Tech. Ltd.</a>
+© 2022 <a href="http://www.hzleaper.com/">Hangzhou Leaper Tech. Ltd.</a>
 </small></address>
+<script type="text/javascript">
+//<![CDATA[
+addTutorialsButtons();
+//]]>
+</script>
 </body>
 </html>

@@ -9,6 +9,7 @@
 <title>LPV: ILText接口 参考</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="tutorial-utils.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
@@ -97,8 +98,8 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
-<tr class="memitem:a19d07147a9b13aca0f90043680215612"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_text.html#a19d07147a9b13aca0f90043680215612">Draw</a> ([in] HDC hdc, [in, defaultvalue(1)] double zoomX, [in, defaultvalue(0)] double zoomY, [in, defaultvalue(0)] double panX, [in, defaultvalue(0)] double panY)</td></tr>
-<tr class="separator:a19d07147a9b13aca0f90043680215612"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0edc1aa636ff6fe09560e7f205a0633b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_text.html#a0edc1aa636ff6fe09560e7f205a0633b">Draw</a> (HDC hdc, double zoomX, double zoomY, double panX, double panY)</td></tr>
+<tr class="separator:a0edc1aa636ff6fe09560e7f205a0633b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 属性</h2></td></tr>
@@ -122,20 +123,21 @@ BSTR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><p>该接口对应一个可绘制的对象。 </p>
 <p>使用这个接口，需要创建一个 <a class="el" href="class_l_p_v_display_lib_1_1_l_text.html">LText</a> 对象。</p>
-<p>C++: </p><div class="fragment"><div class="line">CLText m_text;</div>
-<div class="line">m_text.put_Text(L<span class="stringliteral">&quot;My Text&quot;</span>);</div>
+<h3>示例代码 </h3>
+ <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">ILTextPtr m_text(__uuidof(LText));</div>
+<div class="line">m_text-&gt;Text = L<span class="stringliteral">&quot;My Text&quot;</span>;</div>
 <div class="line"><span class="comment">// put the text on (200, 200), center-aligned</span></div>
-<div class="line">m_text.put_PosX(200);</div>
-<div class="line">m_text.put_PosY(200);</div>
-<div class="line">m_text.put_Alignment(<a class="code" href="namespace_l_p_v_display_lib.html#a5361690471ec9bae7d38163800878c4ea8b9bc1124d6c2895b963ff1086f05b1c">LPVAlignCenter</a>);</div>
+<div class="line">m_text-&gt;PosX = 200;</div>
+<div class="line">m_text-&gt;PosY = 200;</div>
+<div class="line">m_text-&gt;Alignment = <a class="code" href="namespace_l_p_v_display_lib.html#a5361690471ec9bae7d38163800878c4ea8b9bc1124d6c2895b963ff1086f05b1c">LPVAlignCenter</a>;</div>
 <div class="line"><span class="comment">// change the color to red</span></div>
-<div class="line">m_sys.SetFontColor(m_text, m_sys.GetColorRef(255, 0, 0));</div>
+<div class="line">m_sys-&gt;SetFontColor(m_text, m_sys-&gt;GetColorRef(255, 0, 0));</div>
 <div class="line"><span class="comment">// draw the text in the display control</span></div>
-<div class="line">m_display.AddObject(m_text, 0);</div>
+<div class="line">m_display-&gt;AddObject(m_text, 0);</div>
 <div class="line"><span class="comment">// or, draw it in your own device context</span></div>
-<div class="line">m_text.Draw(hdc, zoomX, zoomY, panX, panY);</div>
-<div class="ttc" id="anamespace_l_p_v_display_lib_html_a5361690471ec9bae7d38163800878c4ea8b9bc1124d6c2895b963ff1086f05b1c"><div class="ttname"><a href="namespace_l_p_v_display_lib.html#a5361690471ec9bae7d38163800878c4ea8b9bc1124d6c2895b963ff1086f05b1c">LPVDisplayLib::LPVAlignCenter</a></div><div class="ttdeci">@ LPVAlignCenter</div><div class="ttdef"><b>Definition:</b> LPVDisplay.idl:182</div></div>
-</div><!-- fragment --><p>C#: </p><div class="fragment"><div class="line">LText m_text = <span class="keyword">new</span> LText();</div>
+<div class="line">m_text-&gt;Draw(hdc, zoomX, zoomY, panX, panY);</div>
+<div class="ttc" id="anamespace_l_p_v_display_lib_html_a5361690471ec9bae7d38163800878c4ea8b9bc1124d6c2895b963ff1086f05b1c"><div class="ttname"><a href="namespace_l_p_v_display_lib.html#a5361690471ec9bae7d38163800878c4ea8b9bc1124d6c2895b963ff1086f05b1c">LPVDisplayLib::LPVAlignCenter</a></div><div class="ttdeci">@ LPVAlignCenter</div><div class="ttdef"><b>Definition:</b> LPVDisplay.idl:189</div></div>
+</div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LText m_text = <span class="keyword">new</span> LText();</div>
 <div class="line">m_text.Text = <span class="stringliteral">&quot;My Text&quot;</span>;</div>
 <div class="line"><span class="comment">// put the text on (200, 200), center-aligned</span></div>
 <div class="line">m_text.PosX = 200;</div>
@@ -147,41 +149,41 @@ BSTR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 <div class="line">m_display.AddObject(m_text, 0);</div>
 <div class="line"><span class="comment">// or, draw it in your own device context</span></div>
 <div class="line">m_text.Draw(hdc, zoomX, zoomY, panX, panY);</div>
-</div><!-- fragment --> </div><h2 class="groupheader">成员函数说明</h2>
-<a id="a19d07147a9b13aca0f90043680215612"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a19d07147a9b13aca0f90043680215612">&#9670;&nbsp;</a></span>Draw()</h2>
+</div><!-- fragment --> </div>  </div><h2 class="groupheader">成员函数说明</h2>
+<a id="a0edc1aa636ff6fe09560e7f205a0633b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0edc1aa636ff6fe09560e7f205a0633b">&#9670;&nbsp;</a></span>Draw()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT Draw </td>
+          <td class="memname">void Draw </td>
           <td>(</td>
-          <td class="paramtype">[in] HDC&#160;</td>
+          <td class="paramtype">HDC&#160;</td>
           <td class="paramname"><em>hdc</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in, defaultvalue(1)] double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>zoomX</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in, defaultvalue(0)] double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>zoomY</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in, defaultvalue(0)] double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>panX</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in, defaultvalue(0)] double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>panY</em>&#160;</td>
         </tr>
         <tr>
@@ -201,7 +203,7 @@ BSTR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_text.html#a19d07147a9b13aca0f90043680215612">Draw()</a> </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_text.html#a0edc1aa636ff6fe09560e7f205a0633b">Draw()</a> </dd></dl>
 
 </div>
 </div>
@@ -209,7 +211,12 @@ BSTR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 <!-- HTML footer for doxygen 1.9.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-© 2021 <a href="http://www.hzleaper.com/">杭州利珀科技有限公司</a>
+© 2022 <a href="http://www.hzleaper.com/">杭州利珀科技有限公司</a>
 </small></address>
+<script type="text/javascript">
+//<![CDATA[
+addTutorialsButtons();
+//]]>
+</script>
 </body>
 </html>

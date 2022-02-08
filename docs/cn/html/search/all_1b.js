@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['如何使用_20ldisplay_20显示控件_783',['如何使用 LDisplay 显示控件',['../use_display_control.html',1,'']]]
+  ['快速上手_836',['快速上手',['../quick_guide.html',1,'']]]
 ];

@@ -1,7 +1,10 @@
 var searchData=
 [
-  ['binarize_928',['Binarize',['../interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#aba1bcd360938fa44e7ae0cacb1704eec',1,'LPVImgProcLib::ILImageThreshold']]],
-  ['bisectline_929',['BisectLine',['../interface_l_p_v_geom_lib_1_1_i_l_line.html#a7a5f1796f0f887ea03178a6ffff1bac6',1,'LPVGeomLib::ILLine']]],
-  ['bottomhat_930',['BottomHat',['../interface_l_p_v_img_proc_lib_1_1_i_l_image_morph.html#a611fe9b275b5148198afeb649c23a82c',1,'LPVImgProcLib::ILImageMorph']]],
-  ['build_931',['Build',['../interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a4d05b26bc874882a4e2307dc327e0841',1,'LPVBlobLib::ILBlobAnalysis::Build()'],['../interface_l_p_v_img_proc_lib_1_1_i_l_histogram.html#ab986a2bb2573cb5383d67efb8c29f2f4',1,'LPVImgProcLib::ILHistogram::Build()']]]
+  ['binarize_989',['Binarize',['../interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#a59c0c39c5e80da825fc2c1d9de6c952f',1,'LPVImgProcLib::ILImageThreshold']]],
+  ['bisectline_990',['BisectLine',['../interface_l_p_v_geom_lib_1_1_i_l_line.html#aaf1aac71d95a31bb0cf11af00687f9a0',1,'LPVGeomLib::ILLine']]],
+  ['blend_991',['Blend',['../interface_l_p_v_img_proc_lib_1_1_i_l_image_arithm.html#acfe14eacf1d5bc838d521a82f1ce0b6a',1,'LPVImgProcLib::ILImageArithm']]],
+  ['bottomhat_992',['BottomHat',['../interface_l_p_v_img_proc_lib_1_1_i_l_image_morph.html#a23926cb2e4d46e1df2663d49953f4c36',1,'LPVImgProcLib::ILImageMorph']]],
+  ['build_993',['Build',['../interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a3fa422a523020216c502e3c17a35118e',1,'LPVBlobLib::ILBlobAnalysis::Build()'],['../interface_l_p_v_img_proc_lib_1_1_i_l_histogram.html#a224974bdf8cadeeca3eeff325bb6afa4',1,'LPVImgProcLib::ILHistogram::Build()']]],
+  ['buildcrf_994',['BuildCRF',['../interface_l_p_v_img_proc_lib_1_1_i_l_h_d_r.html#af0da8bd9f3989e2bccd172ae7c75fde3',1,'LPVImgProcLib::ILHDR']]],
+  ['buildfromdatavec_995',['BuildFromDataVec',['../interface_l_p_v_img_proc_lib_1_1_i_l_histogram.html#aa043d1fcfa1848cdbb8e30f0da8d39a2',1,'LPVImgProcLib::ILHistogram']]]
 ];

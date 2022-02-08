@@ -9,6 +9,7 @@
 <title>LPV: LPVCoreLib Module Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="tutorial-utils.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
@@ -100,6 +101,9 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This interface expose APIs to access/manipulate/draw a LPV <a class="el" href="class_l_p_v_core_lib_1_1_l_image.html">LImage</a> object.  <a href="interface_l_p_v_core_lib_1_1_i_l_image.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image_list.html">ILImageList</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This interface defines a list of <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">LImage</a> object.  <a href="interface_l_p_v_core_lib_1_1_i_l_image_list.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_mask_region.html">ILMaskRegion</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This interface expose APIs to create/modify a mask region object.  <a href="interface_l_p_v_core_lib_1_1_i_l_mask_region.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -123,6 +127,8 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_p_v_core_lib_1_1_l_circle_region.html">LCircleRegion</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_p_v_core_lib_1_1_l_image.html">LImage</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_p_v_core_lib_1_1_l_image_list.html">LImageList</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_p_v_core_lib_1_1_l_mask_region.html">LMaskRegion</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -186,43 +192,75 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a9c7c60c3ff92e1b019f872af1d31e858"><td class="mdescLeft">&#160;</td><td class="mdescRight">This enumeration represents the flags to control which part of a data chart should be drawn.  <a href="namespace_l_p_v_core_lib.html#a9c7c60c3ff92e1b019f872af1d31e858">More...</a><br /></td></tr>
 <tr class="separator:a9c7c60c3ff92e1b019f872af1d31e858"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2621143506dcb8d80e6b3892ecfd8a7c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_l_p_v_core_lib.html#a2621143506dcb8d80e6b3892ecfd8a7c">LPVColor</a> { <br />
+&#160;&#160;<a class="el" href="namespace_l_p_v_core_lib.html#a2621143506dcb8d80e6b3892ecfd8a7caf10bfb2b94715c1d68ca2baadd15020a">LPVWhite</a> = 0xffffff
+, <a class="el" href="namespace_l_p_v_core_lib.html#a2621143506dcb8d80e6b3892ecfd8a7caffc035dbe9f989a90a03d56d88fee315">LPVBlack</a> = 0x000000
+, <a class="el" href="namespace_l_p_v_core_lib.html#a2621143506dcb8d80e6b3892ecfd8a7ca1f190cf06356d2427e36f180bcd85962">LPVRed</a> = 0x0000ff
+, <a class="el" href="namespace_l_p_v_core_lib.html#a2621143506dcb8d80e6b3892ecfd8a7caa101ae5e90a09ab454ed5e3ec748ea88">LPVDarkRed</a> = 0x000080
+, <br />
+&#160;&#160;<a class="el" href="namespace_l_p_v_core_lib.html#a2621143506dcb8d80e6b3892ecfd8a7ca33d26b8153e3663f64890c9d775ccc59">LPVGreen</a> = 0x00ff00
+, <a class="el" href="namespace_l_p_v_core_lib.html#a2621143506dcb8d80e6b3892ecfd8a7caf65404520e6bdde297ffbbcf30fce87c">LPVDarkGreen</a> = 0x008000
+, <a class="el" href="namespace_l_p_v_core_lib.html#a2621143506dcb8d80e6b3892ecfd8a7ca13bf082d97b044c78923cb75e72cebfa">LPVBlue</a> = 0xff0000
+, <a class="el" href="namespace_l_p_v_core_lib.html#a2621143506dcb8d80e6b3892ecfd8a7ca385db4468fdbc5bec37e07c3062bffe8">LPVDarkBlue</a> = 0x800000
+, <br />
+&#160;&#160;<a class="el" href="namespace_l_p_v_core_lib.html#a2621143506dcb8d80e6b3892ecfd8a7ca3b8544f44c63e3db3809026df0fb7e47">LPVCyan</a> = 0xffff00
+, <a class="el" href="namespace_l_p_v_core_lib.html#a2621143506dcb8d80e6b3892ecfd8a7ca286d364f70b49b6e5cf196bc2cc8edd5">LPVDarkCyan</a> = 0x808000
+, <a class="el" href="namespace_l_p_v_core_lib.html#a2621143506dcb8d80e6b3892ecfd8a7ca9c771621a06bbe5c3bc81ad22d168d96">LPVMagenta</a> = 0xff00ff
+, <a class="el" href="namespace_l_p_v_core_lib.html#a2621143506dcb8d80e6b3892ecfd8a7ca20c03f06f6a5ffa78c4f6f0940426e16">LPVDarkMagenta</a> = 0x800080
+, <br />
+&#160;&#160;<a class="el" href="namespace_l_p_v_core_lib.html#a2621143506dcb8d80e6b3892ecfd8a7ca3ffc8c93ca2207e326976d3186fabb5e">LPVYellow</a> = 0x00ffff
+, <a class="el" href="namespace_l_p_v_core_lib.html#a2621143506dcb8d80e6b3892ecfd8a7cacc67e1c3671e350f0b4231225fa7c20c">LPVDarkYellow</a> = 0x008080
+, <a class="el" href="namespace_l_p_v_core_lib.html#a2621143506dcb8d80e6b3892ecfd8a7cad6c69b04424960fcd8ce053f8e2588f7">LPVGray</a> = 0xa4a0a0
+, <a class="el" href="namespace_l_p_v_core_lib.html#a2621143506dcb8d80e6b3892ecfd8a7ca0949117dc15572fbe4c708477c69e9bd">LPVDarkGray</a> = 0x808080
+, <br />
+&#160;&#160;<a class="el" href="namespace_l_p_v_core_lib.html#a2621143506dcb8d80e6b3892ecfd8a7ca8031cea1ae1083cca55bdb4d79407d0c">LPVLightGray</a> = 0xc0c0c0
+<br />
+ }</td></tr>
+<tr class="memdesc:a2621143506dcb8d80e6b3892ecfd8a7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This enumeration represents the commonly used colors.  <a href="namespace_l_p_v_core_lib.html#a2621143506dcb8d80e6b3892ecfd8a7c">More...</a><br /></td></tr>
+<tr class="separator:a2621143506dcb8d80e6b3892ecfd8a7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a753df57c2ab9773ee9dff5747163ee4a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> { <br />
 &#160;&#160;<a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aae917cd39742ab4cec9119219cae9154c">LPVNoError</a> = 0
+, <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aabbf67fe25d55f1992ff910a940d253e0">LPVNoResult</a> = 1
+, <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aa6c86c8d764f7297c3a52417b2775e2fd">LPVErrUnknown</a> = 0x81000000
 , <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aa1e8131193c09ada160ef6ef71e566fb9">LPVErrEmptyImage</a> = 0x81000001
-, <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aad295f65ccd8512ad2675092e238e0510">LPVErrEmptyRegion</a> = 0x81000002
-, <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aabd4826cc319f445244f0b519c5597d62">LPVErrFileUnsupportFormat</a> = 0x81000101
 , <br />
-&#160;&#160;<a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aa72a11d49220c598e08e7e30c9ead94a5">LPVErrFileEmpty</a> = 0x81000102
+&#160;&#160;<a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aad295f65ccd8512ad2675092e238e0510">LPVErrEmptyRegion</a> = 0x81000002
+, <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aa0fce4537e01f074c242dcc3dfcc8162e">LPVErrSizeTooSmall</a> = 0x81000003
+, <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aa5603da2cd2004ac94743087f21f6732d">LPVErrSizeNotMatch</a> = 0x81000004
+, <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aa2ba0621d4b3ce1958d0ed58113d0d3b1">LPVErrTypeNotMatch</a> = 0x81000005
+, <br />
+&#160;&#160;<a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aabd4826cc319f445244f0b519c5597d62">LPVErrFileUnsupportFormat</a> = 0x81000101
+, <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aa72a11d49220c598e08e7e30c9ead94a5">LPVErrFileEmpty</a> = 0x81000102
 , <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aab4e26e14e61be6f453a202ae0d1e565f">LPVErrFileFailEncode</a> = 0x81000103
 , <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aa7f62963bcb05d01d7633227d1a6fc9c9">LPVErrFileFailDecode</a> = 0x81000104
-, <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aa4515261e6d6533797a0f9345d3af3b97">LPVErrFileFailOpen</a> = 0x81000105
 , <br />
-&#160;&#160;<a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aaa12dfa18e9e3d24a14ac4ddefb5cab61">LPVErrFileUnexpect</a> = 0x81000106
+&#160;&#160;<a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aa4515261e6d6533797a0f9345d3af3b97">LPVErrFileFailOpen</a> = 0x81000105
+, <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aaa12dfa18e9e3d24a14ac4ddefb5cab61">LPVErrFileUnexpect</a> = 0x81000106
 , <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aa6ab9750e65582fdca7458cd2b7b2e649">LPVErrFileFailSave</a> = 0x81000107
 , <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aaa074f3170d06a6b4c2f7179ba86aff1f">LPVErrFileFailLoad</a> = 0x81000108
-, <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aa3e21d82a7c3ed094371cdf7a2fbf7393">LPVErrCalibTooFewPoints</a> = 0x81000201
 , <br />
-&#160;&#160;<a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aab3ff7eda3563848d23a10faa10adca6d">LPVErrCalibUnequalImageWorldPoints</a> = 0x81000202
+&#160;&#160;<a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aa3e21d82a7c3ed094371cdf7a2fbf7393">LPVErrCalibTooFewPoints</a> = 0x81000201
+, <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aab3ff7eda3563848d23a10faa10adca6d">LPVErrCalibUnequalImageWorldPoints</a> = 0x81000202
 , <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aa96f537f22cb87dd0cb9f8daa9a25d4f6">LPVErrCalibFailDetectImagePoints</a> = 0x81000203
 , <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aa02cd941550ca3ecb7ed14a79cff54403">LPVErrCalibFailCalibration</a> = 0x81000204
-, <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aa79303c4c8dc368a6cfb321d92db68718">LPVErrCalibUnexpect</a> = 0x81000205
 , <br />
-&#160;&#160;<a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aa564aa76ea75ffa30b29cfcfb3a5b503b">LPVErrCalibNotCalib</a> = 0x81000206
+&#160;&#160;<a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aa79303c4c8dc368a6cfb321d92db68718">LPVErrCalibUnexpect</a> = 0x81000205
+, <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aa564aa76ea75ffa30b29cfcfb3a5b503b">LPVErrCalibNotCalib</a> = 0x81000206
 , <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aacd9c66644aca5e93c49e306e55b9e59c">LPVErrCalibPointsCollinear</a> = 0x81000207
 , <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aabc36e1d8135ec0552eeb79aa9fea14a1">LPVErrWithoutImgSize</a> = 0x81000208
-, <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aa5f7411d8f07d4a2b164e77e846425b3b">LPVErrInvalidAxisDir</a> = 0x81000209
 , <br />
-&#160;&#160;<a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aaf43c87d49cbd1db518a570d1520e0fd1">LPVErrFailMultiCameraCalibration</a> = 0x8100020a
+&#160;&#160;<a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aa5f7411d8f07d4a2b164e77e846425b3b">LPVErrInvalidAxisDir</a> = 0x81000209
+, <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aaf43c87d49cbd1db518a570d1520e0fd1">LPVErrFailMultiCameraCalibration</a> = 0x8100020a
 , <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aaa8f8a4a1fcbe7f8b05dc05e7626267a9">LPVErrFailDetectRefInstance</a> = 0x8100020b
 , <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aa762c518faea375a98f90053875518a8b">LPVErrFailUpdateRefInstance</a> = 0x8100020c
-, <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aae3ad7ee20bd6d9d1c10bb34e753ea997">LPVErrFailVerifyRefInstance</a> = 0x8100020d
 , <br />
-&#160;&#160;<a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aa3b6fd82d7c02bd985f1592d09b72ce46">LPVErrFailImageSizeNotMatch</a> = 0x8100020e
+&#160;&#160;<a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aae3ad7ee20bd6d9d1c10bb34e753ea997">LPVErrFailVerifyRefInstance</a> = 0x8100020d
+, <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aa3b6fd82d7c02bd985f1592d09b72ce46">LPVErrFailImageSizeNotMatch</a> = 0x8100020e
 , <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aa032b538de8794bbc00095648f0f52a90">LPVErrFailDistortionModelNotMatch</a> = 0x8100020f
 , <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aa4a1b9ef60a55329f405d66d37508dbe2">LPVErrCalibRotationFailed</a> = 0x81000299
-, <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aaa9c87ef17870fb3ce00a352f4854f435">LPVErrPatFailTrain</a> = 0x81000301
 , <br />
-&#160;&#160;<a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aa1e66eddeb8e950570251de5a2d619859">LPVErrPatNotTrain</a> = 0x81000302
+&#160;&#160;<a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aaa9c87ef17870fb3ce00a352f4854f435">LPVErrPatFailTrain</a> = 0x81000301
+, <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aa1e66eddeb8e950570251de5a2d619859">LPVErrPatNotTrain</a> = 0x81000302
 <br />
  }</td></tr>
 <tr class="memdesc:a753df57c2ab9773ee9dff5747163ee4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">This enumeration represents the type of a LPV function error.  <a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">More...</a><br /></td></tr>
@@ -329,11 +367,12 @@ Enumerations</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>LPV Core Library, provide basic functionalities. </p>
 <p>All other LPV Libraries rely on this library. To include the definitions of the library's classes, use the following directive:</p>
-<p>C++: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &quot;LPVCore.h&quot;</span></div>
-</div><!-- fragment --><p>C#: </p><div class="fragment"><div class="line"><span class="keyword">using</span> <a class="code" href="namespace_l_p_v_core_lib.html">LPVCoreLib</a>;</div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html"><div class="ttname"><a href="namespace_l_p_v_core_lib.html">LPVCoreLib</a></div><div class="ttdoc">LPV Core Library, provide basic functionalities.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:87</div></div>
-</div><!-- fragment --><p><b>MFC Demo:</b> MFCSanity, MFCRegion <br  />
-<b>C# Demo:</b> CSharpSanity, CSharpRegion, CSharpHikCam </p>
+<h3>Example Code </h3>
+ <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line"><span class="preprocessor">#include &quot;LPVCore.h&quot;</span></div>
+</div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line"><span class="keyword">using</span> <a class="code" href="namespace_l_p_v_core_lib.html">LPVCoreLib</a>;</div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html"><div class="ttname"><a href="namespace_l_p_v_core_lib.html">LPVCoreLib</a></div><div class="ttdoc">LPV Core Library, provide basic functionalities.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:93</div></div>
+</div><!-- fragment --> </div> <p><b>MFC Demo:</b> <a class="el" href="how_to_play_with_demo.html#demo_sanity">MFCSanity</a>, <a class="el" href="how_to_play_with_demo.html#demo_region">MFCRegion</a> <br  />
+<b>C# Demo:</b> <a class="el" href="how_to_play_with_demo.html#demo_sanity">CSharpSanity</a>, <a class="el" href="how_to_play_with_demo.html#demo_region">CSharpRegion</a>, <a class="el" href="how_to_play_with_demo.html#demo_hikcam">CSharpHikCam</a> </p>
 </div><h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="a044b4c1019ab24bd62eed3e7fd764b85"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a044b4c1019ab24bd62eed3e7fd764b85">&#9670;&nbsp;</a></span>LPVAggregation</h2>
@@ -399,6 +438,58 @@ Enumerations</h2></td></tr>
 
 </div>
 </div>
+<a id="a2621143506dcb8d80e6b3892ecfd8a7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2621143506dcb8d80e6b3892ecfd8a7c">&#9670;&nbsp;</a></span>LPVColor</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespace_l_p_v_core_lib.html#a2621143506dcb8d80e6b3892ecfd8a7c">LPVColor</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This enumeration represents the commonly used colors. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a2621143506dcb8d80e6b3892ecfd8a7caf10bfb2b94715c1d68ca2baadd15020a"></a>LPVWhite&#160;</td><td class="fielddoc"><p style="background-color:#ffffff;border:1px solid;width:100px;text-align:center;">White </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a2621143506dcb8d80e6b3892ecfd8a7caffc035dbe9f989a90a03d56d88fee315"></a>LPVBlack&#160;</td><td class="fielddoc"><p style="background-color:#000000;border:1px solid;width:100px;text-align:center;">Black </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a2621143506dcb8d80e6b3892ecfd8a7ca1f190cf06356d2427e36f180bcd85962"></a>LPVRed&#160;</td><td class="fielddoc"><p style="background-color:#ff0000;border:1px solid;width:100px;text-align:center;">Red </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a2621143506dcb8d80e6b3892ecfd8a7caa101ae5e90a09ab454ed5e3ec748ea88"></a>LPVDarkRed&#160;</td><td class="fielddoc"><p style="background-color:#800000;border:1px solid;width:100px;text-align:center;">Dark red </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a2621143506dcb8d80e6b3892ecfd8a7ca33d26b8153e3663f64890c9d775ccc59"></a>LPVGreen&#160;</td><td class="fielddoc"><p style="background-color:#00ff00;border:1px solid;width:100px;text-align:center;">Green </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a2621143506dcb8d80e6b3892ecfd8a7caf65404520e6bdde297ffbbcf30fce87c"></a>LPVDarkGreen&#160;</td><td class="fielddoc"><p style="background-color:#008000;border:1px solid;width:100px;text-align:center;">Dark green </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a2621143506dcb8d80e6b3892ecfd8a7ca13bf082d97b044c78923cb75e72cebfa"></a>LPVBlue&#160;</td><td class="fielddoc"><p style="background-color:#0000ff;border:1px solid;width:100px;text-align:center;">Blue </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a2621143506dcb8d80e6b3892ecfd8a7ca385db4468fdbc5bec37e07c3062bffe8"></a>LPVDarkBlue&#160;</td><td class="fielddoc"><p style="background-color:#000080;border:1px solid;width:100px;text-align:center;">Dark blue </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a2621143506dcb8d80e6b3892ecfd8a7ca3b8544f44c63e3db3809026df0fb7e47"></a>LPVCyan&#160;</td><td class="fielddoc"><p style="background-color:#00ffff;border:1px solid;width:100px;text-align:center;">Cyan </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a2621143506dcb8d80e6b3892ecfd8a7ca286d364f70b49b6e5cf196bc2cc8edd5"></a>LPVDarkCyan&#160;</td><td class="fielddoc"><p style="background-color:#008080;border:1px solid;width:100px;text-align:center;">Dark cyan </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a2621143506dcb8d80e6b3892ecfd8a7ca9c771621a06bbe5c3bc81ad22d168d96"></a>LPVMagenta&#160;</td><td class="fielddoc"><p style="background-color:#ff00ff;border:1px solid;width:100px;text-align:center;">Magenta </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a2621143506dcb8d80e6b3892ecfd8a7ca20c03f06f6a5ffa78c4f6f0940426e16"></a>LPVDarkMagenta&#160;</td><td class="fielddoc"><p style="background-color:#800080;border:1px solid;width:100px;text-align:center;">Dark magenta </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a2621143506dcb8d80e6b3892ecfd8a7ca3ffc8c93ca2207e326976d3186fabb5e"></a>LPVYellow&#160;</td><td class="fielddoc"><p style="background-color:#ffff00;border:1px solid;width:100px;text-align:center;">Yellow </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a2621143506dcb8d80e6b3892ecfd8a7cacc67e1c3671e350f0b4231225fa7c20c"></a>LPVDarkYellow&#160;</td><td class="fielddoc"><p style="background-color:#808000;border:1px solid;width:100px;text-align:center;">Dark yellow </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a2621143506dcb8d80e6b3892ecfd8a7cad6c69b04424960fcd8ce053f8e2588f7"></a>LPVGray&#160;</td><td class="fielddoc"><p style="background-color:#a0a0a4;border:1px solid;width:100px;text-align:center;">Gray </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a2621143506dcb8d80e6b3892ecfd8a7ca0949117dc15572fbe4c708477c69e9bd"></a>LPVDarkGray&#160;</td><td class="fielddoc"><p style="background-color:#808080;border:1px solid;width:100px;text-align:center;">Dark gray </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a2621143506dcb8d80e6b3892ecfd8a7ca8031cea1ae1083cca55bdb4d79407d0c"></a>LPVLightGray&#160;</td><td class="fielddoc"><p style="background-color:#c0c0c0;border:1px solid;width:100px;text-align:center;">Light gray </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <a id="a753df57c2ab9773ee9dff5747163ee4a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a753df57c2ab9773ee9dff5747163ee4a">&#9670;&nbsp;</a></span>LPVErrorCode</h2>
 
@@ -415,9 +506,19 @@ Enumerations</h2></td></tr>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a753df57c2ab9773ee9dff5747163ee4aae917cd39742ab4cec9119219cae9154c"></a>LPVNoError&#160;</td><td class="fielddoc"><p>No error </p>
 </td></tr>
+<tr><td class="fieldname"><a id="a753df57c2ab9773ee9dff5747163ee4aabbf67fe25d55f1992ff910a940d253e0"></a>LPVNoResult&#160;</td><td class="fielddoc"><p>No result(and no error), for example, the algorithm reports nothing found </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a753df57c2ab9773ee9dff5747163ee4aa6c86c8d764f7297c3a52417b2775e2fd"></a>LPVErrUnknown&#160;</td><td class="fielddoc"><p>Unknown error </p>
+</td></tr>
 <tr><td class="fieldname"><a id="a753df57c2ab9773ee9dff5747163ee4aa1e8131193c09ada160ef6ef71e566fb9"></a>LPVErrEmptyImage&#160;</td><td class="fielddoc"><p>The input image is empty </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a753df57c2ab9773ee9dff5747163ee4aad295f65ccd8512ad2675092e238e0510"></a>LPVErrEmptyRegion&#160;</td><td class="fielddoc"><p>The input region is empty </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a753df57c2ab9773ee9dff5747163ee4aa0fce4537e01f074c242dcc3dfcc8162e"></a>LPVErrSizeTooSmall&#160;</td><td class="fielddoc"><p>The size is too small </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a753df57c2ab9773ee9dff5747163ee4aa5603da2cd2004ac94743087f21f6732d"></a>LPVErrSizeNotMatch&#160;</td><td class="fielddoc"><p>The size does not match </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a753df57c2ab9773ee9dff5747163ee4aa2ba0621d4b3ce1958d0ed58113d0d3b1"></a>LPVErrTypeNotMatch&#160;</td><td class="fielddoc"><p>The type does not match </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a753df57c2ab9773ee9dff5747163ee4aabd4826cc319f445244f0b519c5597d62"></a>LPVErrFileUnsupportFormat&#160;</td><td class="fielddoc"><p>Failed to parse the input file of an unsupported format </p>
 </td></tr>
@@ -737,7 +838,12 @@ Enumerations</h2></td></tr>
 <!-- HTML footer for doxygen 1.9.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-© 2021 <a href="http://www.hzleaper.com/">Hangzhou Leaper Tech. Ltd.</a>
+© 2022 <a href="http://www.hzleaper.com/">Hangzhou Leaper Tech. Ltd.</a>
 </small></address>
+<script type="text/javascript">
+//<![CDATA[
+addTutorialsButtons();
+//]]>
+</script>
 </body>
 </html>

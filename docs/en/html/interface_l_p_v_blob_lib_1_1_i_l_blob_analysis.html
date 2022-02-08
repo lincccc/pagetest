@@ -9,6 +9,7 @@
 <title>LPV: ILBlobAnalysis Interface Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="tutorial-utils.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
@@ -97,28 +98,28 @@ Inheritance diagram for ILBlobAnalysis:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a23dc4008719273cca7e1a98533bc79f2"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a23dc4008719273cca7e1a98533bc79f2">AddBackgroundRange</a> ([in, range(0, 255)] int grayLB, [in, range(0, 255)] int grayUB)</td></tr>
-<tr class="separator:a23dc4008719273cca7e1a98533bc79f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8afaeae6e2747c29f5f3b1019373757"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#af8afaeae6e2747c29f5f3b1019373757">AddBlobFilter</a> ([in] <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_filter.html">ILBlobFilter</a> *pFilter)</td></tr>
-<tr class="separator:af8afaeae6e2747c29f5f3b1019373757"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a136cb0df94117e12425de8292e7289d5"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a136cb0df94117e12425de8292e7289d5">AddBlobRange</a> ([in, range(0, 255)] int grayLB, [in, range(0, 255)] int grayUB)</td></tr>
-<tr class="separator:a136cb0df94117e12425de8292e7289d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d05b26bc874882a4e2307dc327e0841"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a4d05b26bc874882a4e2307dc327e0841">Build</a> ([in] <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *pImg, [in] <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a> *pRegion, [out] <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_results.html">ILBlobResults</a> **ppResults, [out, retval] enum <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> *pError)</td></tr>
-<tr class="separator:a4d05b26bc874882a4e2307dc327e0841"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3e0650d63f270e0b153d9c36d29353b"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#ad3e0650d63f270e0b153d9c36d29353b">Preview</a> ([in] <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *pImg, [out] <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *ppOutputImg)</td></tr>
-<tr class="separator:ad3e0650d63f270e0b153d9c36d29353b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a828d0933abd2fa4a72950a3fee81dec6"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a828d0933abd2fa4a72950a3fee81dec6">Reset</a> ()</td></tr>
-<tr class="separator:a828d0933abd2fa4a72950a3fee81dec6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe623d5f6ae621af576262430b017c51"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#afe623d5f6ae621af576262430b017c51">ResetBlobFilter</a> ()</td></tr>
-<tr class="separator:afe623d5f6ae621af576262430b017c51"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0b8a3e6319a7310b10cb459cc4d5751"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#ac0b8a3e6319a7310b10cb459cc4d5751">SelectRangeAuto</a> ([in] <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *pImage, [in] int x, [in] int y, [in, defaultvalue(1)] double zoomX, [in, defaultvalue(0)] double zoomY, [in, defaultvalue(0)] double panX, [in, defaultvalue(0)] double panY, [in, defaultvalue(30)] int tolerance, [out, defaultvalue(0)] int *pGrayLB, [out, defaultvalue(0)] int *pGrayUB, [out, defaultvalue(0)] <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *pRangeMask)</td></tr>
-<tr class="separator:ac0b8a3e6319a7310b10cb459cc4d5751"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeace1f867d44b22ba23526ff5d5dcbbe"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#aeace1f867d44b22ba23526ff5d5dcbbe">SetRangeThresholdAdaptGlobal</a> ([in] enum <a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0b">LPVPolarity</a> blobPolarity)</td></tr>
-<tr class="separator:aeace1f867d44b22ba23526ff5d5dcbbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade988fed1a564fc0207e49c14416ae94"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#ade988fed1a564fc0207e49c14416ae94">SetRangeThresholdAdaptLocal</a> ([in] enum <a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0b">LPVPolarity</a> blobPolarity, [in, range(0, 999)] int blockSize, [in, defaultvalue(0), range(-255, 255)] int bias)</td></tr>
-<tr class="separator:ade988fed1a564fc0207e49c14416ae94"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6676bf5ad78fed8b2bf8a4001fa61166"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a6676bf5ad78fed8b2bf8a4001fa61166">SetSoftThresholdRange</a> ([in, range(0, 255)] int softRange)</td></tr>
-<tr class="separator:a6676bf5ad78fed8b2bf8a4001fa61166"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3dcb6d76d5d979ad8b4e7a150a8e428"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#ab3dcb6d76d5d979ad8b4e7a150a8e428">AddBackgroundRange</a> (int grayLB, int grayUB)</td></tr>
+<tr class="separator:ab3dcb6d76d5d979ad8b4e7a150a8e428"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc583ffbdc7101ddf7147f95bd7b5e8d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#abc583ffbdc7101ddf7147f95bd7b5e8d">AddBlobFilter</a> (<a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_filter.html">ILBlobFilter</a> *filter)</td></tr>
+<tr class="separator:abc583ffbdc7101ddf7147f95bd7b5e8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28b3e77770d7ddfde96e70dcd61847fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a28b3e77770d7ddfde96e70dcd61847fb">AddBlobRange</a> (int grayLB, int grayUB)</td></tr>
+<tr class="separator:a28b3e77770d7ddfde96e70dcd61847fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fa422a523020216c502e3c17a35118e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a3fa422a523020216c502e3c17a35118e">Build</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a> *region, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_results.html">ILBlobResults</a> **results)</td></tr>
+<tr class="separator:a3fa422a523020216c502e3c17a35118e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29a96cd3e656608ae2fd27d2773ee9b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a29a96cd3e656608ae2fd27d2773ee9b7">Preview</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *outputImg)</td></tr>
+<tr class="separator:a29a96cd3e656608ae2fd27d2773ee9b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a372de693ad40b3f42839c8ec6ac845f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a372de693ad40b3f42839c8ec6ac845f4">Reset</a> ()</td></tr>
+<tr class="separator:a372de693ad40b3f42839c8ec6ac845f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2f1e028b5180c68b2b14fc91e036e82"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#aa2f1e028b5180c68b2b14fc91e036e82">ResetBlobFilter</a> ()</td></tr>
+<tr class="separator:aa2f1e028b5180c68b2b14fc91e036e82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9267b751bc487e2c17f1025a46c8d46b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a9267b751bc487e2c17f1025a46c8d46b">SelectRangeAuto</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *image, int x, int y, double zoomX, double zoomY, double panX, double panY, int tolerance, int *grayLB, int *grayUB, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *rangeMask)</td></tr>
+<tr class="separator:a9267b751bc487e2c17f1025a46c8d46b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3e8a634acc3131a25ef9c8cf9de9610"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#ac3e8a634acc3131a25ef9c8cf9de9610">SetRangeThresholdAdaptGlobal</a> (<a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0b">LPVPolarity</a> blobPolarity)</td></tr>
+<tr class="separator:ac3e8a634acc3131a25ef9c8cf9de9610"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17a890d2df11a4c0e6bdfeec02d58e1e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a17a890d2df11a4c0e6bdfeec02d58e1e">SetRangeThresholdAdaptLocal</a> (<a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0b">LPVPolarity</a> blobPolarity, int blockSize, int bias)</td></tr>
+<tr class="separator:a17a890d2df11a4c0e6bdfeec02d58e1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef671f7367adaf9fd523e108b1202523"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#aef671f7367adaf9fd523e108b1202523">SetSoftThresholdRange</a> (int softRange)</td></tr>
+<tr class="separator:aef671f7367adaf9fd523e108b1202523"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
@@ -127,12 +128,12 @@ Properties</h2></td></tr>
 <tr class="separator:ad0af46e25eefcb153ca18c7f1d13a491"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53a770cb473e4565576f64d52faf7147"><td class="memItemLeft" align="right" valign="top"><a id="a53a770cb473e4565576f64d52faf7147"></a>
 <a class="el" href="namespace_l_p_v_core_lib.html#a94e1c7f9477f3336e89b598280ef0ebe">LPVExcludeBoundaryMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a53a770cb473e4565576f64d52faf7147">ExcludeBoundaryMode</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a53a770cb473e4565576f64d52faf7147"><td class="mdescLeft">&#160;</td><td class="mdescRight">The mode how to handle blobs that intersect the ROI boundary (exclude the entire blob, exclude only those outset pixels, or do nothing), see LPVExcludeBoundaryMode. <br /></td></tr>
+<tr class="memdesc:a53a770cb473e4565576f64d52faf7147"><td class="mdescLeft">&#160;</td><td class="mdescRight">The mode how to handle blobs that intersect the region boundary (exclude the entire blob, exclude only those outset pixels, or do nothing), see LPVExcludeBoundaryMode. <br /></td></tr>
 <tr class="separator:a53a770cb473e4565576f64d52faf7147"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a601fac3bf5c995b46a37bd7d273192a8"><td class="memItemLeft" align="right" valign="top"><a id="a601fac3bf5c995b46a37bd7d273192a8"></a>
-VARIANT_BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a601fac3bf5c995b46a37bd7d273192a8">FillHole</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a601fac3bf5c995b46a37bd7d273192a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether to enable the contribution of holes in the overall blob statistics. By default, it's off. <br /></td></tr>
-<tr class="separator:a601fac3bf5c995b46a37bd7d273192a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77f715bc781e4a18ea0c14a21e0d8b53"><td class="memItemLeft" align="right" valign="top"><a id="a77f715bc781e4a18ea0c14a21e0d8b53"></a>
+BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a77f715bc781e4a18ea0c14a21e0d8b53">FillHole</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a77f715bc781e4a18ea0c14a21e0d8b53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether to enable the contribution of holes in the overall blob statistics. By default, it's off. <br /></td></tr>
+<tr class="separator:a77f715bc781e4a18ea0c14a21e0d8b53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a759c03e2b252669aee63d2e178835685"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a759c03e2b252669aee63d2e178835685">Hierarchy</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:a759c03e2b252669aee63d2e178835685"><td class="mdescLeft">&#160;</td><td class="mdescRight">The hierarchy of the result blob contours.  <a href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a759c03e2b252669aee63d2e178835685">More...</a><br /></td></tr>
 <tr class="separator:a759c03e2b252669aee63d2e178835685"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -147,32 +148,33 @@ VARIANT_BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <div class="textblock"><p>This interface provide functionalities of blob analysis. </p>
 <p>Blob analysis is a useful approach to segment object from background into connected components of similar grayscale values. Various geometric features, such as area, perimeter or circularity, can be computed on these blobs. In addition, image-related features, such as average luminance or contrast, can be computed based on the image attached.</p>
 <p>To use this interface, you should create a <a class="el" href="class_l_p_v_blob_lib_1_1_l_blob_analysis.html">LBlobAnalysis</a> object.</p>
-<p>C++: </p><div class="fragment"><div class="line">CLBlobAnalysis m_blob_ana;</div>
-<div class="line">m_blob_ana.AddBlobRange(50, 100);</div>
-<div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = (<a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>)m_blob_ana.Build(m_img, m_roi, (LPDISPATCH*)&amp;m_blob_result);</div>
-<div class="line"><span class="keywordflow">if</span> (err != <a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>.LPVNoError) <span class="keywordflow">return</span>;</div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">This enumeration represents the type of a LPV function error.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:149</div></div>
-</div><!-- fragment --><p>C#: </p><div class="fragment"><div class="line">LBlobAnalysis m_blob_ana = <span class="keyword">new</span> LBlobAnalysis();</div>
+<h3>Example Code </h3>
+ <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">ILBlobAnalysisPtr m_blob_ana(__uuidof(LBlobAnalysis));</div>
+<div class="line">m_blob_ana-&gt;AddBlobRange(50, 100);</div>
+<div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = m_blob_ana-&gt;Build(m_img, m_roi, &amp;m_blob_result);</div>
+<div class="line"><span class="keywordflow">if</span> (err != LPVErrorCode::LPVNoError) <span class="keywordflow">return</span>;</div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">This enumeration represents the type of a LPV function error.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:155</div></div>
+</div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LBlobAnalysis m_blob_ana = <span class="keyword">new</span> LBlobAnalysis();</div>
 <div class="line">m_blob_ana.AddBlobRange(50, 100);</div>
 <div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = (<a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>)m_blob_ana.Build(m_img, (LRegion)m_roi, out m_blob_result);</div>
 <div class="line"><span class="keywordflow">if</span> (err != <a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>.LPVNoError) <span class="keywordflow">return</span>;</div>
-</div><!-- fragment --> </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a23dc4008719273cca7e1a98533bc79f2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a23dc4008719273cca7e1a98533bc79f2">&#9670;&nbsp;</a></span>AddBackgroundRange()</h2>
+</div><!-- fragment --> </div>  </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ab3dcb6d76d5d979ad8b4e7a150a8e428"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3dcb6d76d5d979ad8b4e7a150a8e428">&#9670;&nbsp;</a></span>AddBackgroundRange()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT AddBackgroundRange </td>
+          <td class="memname">void AddBackgroundRange </td>
           <td>(</td>
-          <td class="paramtype">[in, range(0, 255)] int&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>grayLB</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in, range(0, 255)] int&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>grayUB</em>&#160;</td>
         </tr>
         <tr>
@@ -189,50 +191,50 @@ VARIANT_BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a136cb0df94117e12425de8292e7289d5">AddBlobRange()</a>, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#ac0b8a3e6319a7310b10cb459cc4d5751">SelectRangeAuto()</a>. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a28b3e77770d7ddfde96e70dcd61847fb">AddBlobRange()</a>, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a9267b751bc487e2c17f1025a46c8d46b">SelectRangeAuto()</a>. </dd></dl>
 
 </div>
 </div>
-<a id="af8afaeae6e2747c29f5f3b1019373757"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af8afaeae6e2747c29f5f3b1019373757">&#9670;&nbsp;</a></span>AddBlobFilter()</h2>
+<a id="abc583ffbdc7101ddf7147f95bd7b5e8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc583ffbdc7101ddf7147f95bd7b5e8d">&#9670;&nbsp;</a></span>AddBlobFilter()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT AddBlobFilter </td>
+          <td class="memname">void AddBlobFilter </td>
           <td>(</td>
-          <td class="paramtype">[in] <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_filter.html">ILBlobFilter</a> *&#160;</td>
-          <td class="paramname"><em>pFilter</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_filter.html">ILBlobFilter</a> *&#160;</td>
+          <td class="paramname"><em>filter</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Add a alternative blob filter. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pFilter</td><td>The new blob filter </td></tr>
+    <tr><td class="paramname">filter</td><td>The new blob filter </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a136cb0df94117e12425de8292e7289d5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a136cb0df94117e12425de8292e7289d5">&#9670;&nbsp;</a></span>AddBlobRange()</h2>
+<a id="a28b3e77770d7ddfde96e70dcd61847fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28b3e77770d7ddfde96e70dcd61847fb">&#9670;&nbsp;</a></span>AddBlobRange()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT AddBlobRange </td>
+          <td class="memname">void AddBlobRange </td>
           <td>(</td>
-          <td class="paramtype">[in, range(0, 255)] int&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>grayLB</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in, range(0, 255)] int&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>grayUB</em>&#160;</td>
         </tr>
         <tr>
@@ -249,39 +251,33 @@ VARIANT_BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a23dc4008719273cca7e1a98533bc79f2">AddBackgroundRange()</a>, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#ac0b8a3e6319a7310b10cb459cc4d5751">SelectRangeAuto()</a>. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#ab3dcb6d76d5d979ad8b4e7a150a8e428">AddBackgroundRange()</a>, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a9267b751bc487e2c17f1025a46c8d46b">SelectRangeAuto()</a>. </dd></dl>
 
 </div>
 </div>
-<a id="a4d05b26bc874882a4e2307dc327e0841"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4d05b26bc874882a4e2307dc327e0841">&#9670;&nbsp;</a></span>Build()</h2>
+<a id="a3fa422a523020216c502e3c17a35118e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fa422a523020216c502e3c17a35118e">&#9670;&nbsp;</a></span>Build()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT Build </td>
+          <td class="memname"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> Build </td>
           <td>(</td>
-          <td class="paramtype">[in] <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
-          <td class="paramname"><em>pImg</em>, </td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>img</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in] <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a> *&#160;</td>
-          <td class="paramname"><em>pRegion</em>, </td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a> *&#160;</td>
+          <td class="paramname"><em>region</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[out] <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_results.html">ILBlobResults</a> **&#160;</td>
-          <td class="paramname"><em>ppResults</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">[out, retval] enum <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> *&#160;</td>
-          <td class="paramname"><em>pError</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_results.html">ILBlobResults</a> **&#160;</td>
+          <td class="paramname"><em>results</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -290,40 +286,40 @@ VARIANT_BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Build the blobs using the input image and the provided ROI region. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Build the blobs using the input image and the provided region. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pImg</td><td>The input image. </td></tr>
-    <tr><td class="paramname">pRegion</td><td>The input region. </td></tr>
+    <tr><td class="paramname">img</td><td>The input image. </td></tr>
+    <tr><td class="paramname">region</td><td>The input region. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">ppResults</td><td>Return the blob results. </td></tr>
-    <tr><td class="paramname">pError</td><td>Return error code if anything is wrong. </td></tr>
+    <tr><td class="paramname">results</td><td>Return the blob results. </td></tr>
+    <tr><td class="paramname">error</td><td>Return error code if anything is wrong. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="ad3e0650d63f270e0b153d9c36d29353b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad3e0650d63f270e0b153d9c36d29353b">&#9670;&nbsp;</a></span>Preview()</h2>
+<a id="a29a96cd3e656608ae2fd27d2773ee9b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29a96cd3e656608ae2fd27d2773ee9b7">&#9670;&nbsp;</a></span>Preview()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT Preview </td>
+          <td class="memname">void Preview </td>
           <td>(</td>
-          <td class="paramtype">[in] <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
-          <td class="paramname"><em>pImg</em>, </td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>img</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[out] <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
-          <td class="paramname"><em>ppOutputImg</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>outputImg</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -334,27 +330,27 @@ VARIANT_BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </div><div class="memdoc">
 <p>Preview the binarized image the input image with current foreground and background range configuration. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pImg</td><td>The input image. </td></tr>
+    <tr><td class="paramname">img</td><td>The input image. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">ppOutputImg</td><td>Return the preview image. </td></tr>
+    <tr><td class="paramname">outputImg</td><td>Return the preview image. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a828d0933abd2fa4a72950a3fee81dec6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a828d0933abd2fa4a72950a3fee81dec6">&#9670;&nbsp;</a></span>Reset()</h2>
+<a id="a372de693ad40b3f42839c8ec6ac845f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a372de693ad40b3f42839c8ec6ac845f4">&#9670;&nbsp;</a></span>Reset()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT Reset </td>
+          <td class="memname">void Reset </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -365,14 +361,14 @@ VARIANT_BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 
 </div>
 </div>
-<a id="afe623d5f6ae621af576262430b017c51"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afe623d5f6ae621af576262430b017c51">&#9670;&nbsp;</a></span>ResetBlobFilter()</h2>
+<a id="aa2f1e028b5180c68b2b14fc91e036e82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2f1e028b5180c68b2b14fc91e036e82">&#9670;&nbsp;</a></span>ResetBlobFilter()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT ResetBlobFilter </td>
+          <td class="memname">void ResetBlobFilter </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -383,77 +379,77 @@ VARIANT_BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 
 </div>
 </div>
-<a id="ac0b8a3e6319a7310b10cb459cc4d5751"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac0b8a3e6319a7310b10cb459cc4d5751">&#9670;&nbsp;</a></span>SelectRangeAuto()</h2>
+<a id="a9267b751bc487e2c17f1025a46c8d46b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9267b751bc487e2c17f1025a46c8d46b">&#9670;&nbsp;</a></span>SelectRangeAuto()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT SelectRangeAuto </td>
+          <td class="memname">void SelectRangeAuto </td>
           <td>(</td>
-          <td class="paramtype">[in] <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
-          <td class="paramname"><em>pImage</em>, </td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>image</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in] int&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>x</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in] int&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>y</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in, defaultvalue(1)] double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>zoomX</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in, defaultvalue(0)] double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>zoomY</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in, defaultvalue(0)] double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>panX</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in, defaultvalue(0)] double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>panY</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in, defaultvalue(30)] int&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>tolerance</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[out, defaultvalue(0)] int *&#160;</td>
-          <td class="paramname"><em>pGrayLB</em>, </td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>grayLB</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[out, defaultvalue(0)] int *&#160;</td>
-          <td class="paramname"><em>pGrayUB</em>, </td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>grayUB</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[out, defaultvalue(0)] <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
-          <td class="paramname"><em>pRangeMask</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>rangeMask</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -464,7 +460,7 @@ VARIANT_BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </div><div class="memdoc">
 <p>Select a grayscale value range on the provided image. You should then explicitly add the range as blob or background range. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pImage</td><td>The input image. </td></tr>
+    <tr><td class="paramname">image</td><td>The input image. </td></tr>
     <tr><td class="paramname">x</td><td>The x-coordinate of the cursor(selected) position. </td></tr>
     <tr><td class="paramname">y</td><td>The y-coordinate of the cursor(selected) position. </td></tr>
     <tr><td class="paramname">tolerance</td><td>The maximum relative difference of neighbor pixels that build the selection </td></tr>
@@ -473,26 +469,26 @@ VARIANT_BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">pGrayLB</td><td>Return the lower bound of the grayscale value range. Optional, could be null. </td></tr>
-    <tr><td class="paramname">pGrayUB</td><td>Return the upper bound of the grayscale value range. Optional, could be null. </td></tr>
-    <tr><td class="paramname">pRangeMask</td><td>Return the mask image of the same size as the input image, white pixels represent the ones in selected grayscale value range. Optional, could be null. </td></tr>
+    <tr><td class="paramname">grayLB</td><td>Return the lower bound of the grayscale value range. Optional, could be null. </td></tr>
+    <tr><td class="paramname">grayUB</td><td>Return the upper bound of the grayscale value range. Optional, could be null. </td></tr>
+    <tr><td class="paramname">rangeMask</td><td>Return the mask image of the same size as the input image, white pixels represent the ones in selected grayscale value range. Optional, could be null. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a136cb0df94117e12425de8292e7289d5">AddBlobRange()</a>, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a23dc4008719273cca7e1a98533bc79f2">AddBackgroundRange()</a>. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a28b3e77770d7ddfde96e70dcd61847fb">AddBlobRange()</a>, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#ab3dcb6d76d5d979ad8b4e7a150a8e428">AddBackgroundRange()</a>. </dd></dl>
 
 </div>
 </div>
-<a id="aeace1f867d44b22ba23526ff5d5dcbbe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeace1f867d44b22ba23526ff5d5dcbbe">&#9670;&nbsp;</a></span>SetRangeThresholdAdaptGlobal()</h2>
+<a id="ac3e8a634acc3131a25ef9c8cf9de9610"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3e8a634acc3131a25ef9c8cf9de9610">&#9670;&nbsp;</a></span>SetRangeThresholdAdaptGlobal()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT SetRangeThresholdAdaptGlobal </td>
+          <td class="memname">void SetRangeThresholdAdaptGlobal </td>
           <td>(</td>
-          <td class="paramtype">[in] enum <a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0b">LPVPolarity</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0b">LPVPolarity</a>&#160;</td>
           <td class="paramname"><em>blobPolarity</em></td><td>)</td>
           <td></td>
         </tr>
@@ -507,28 +503,28 @@ VARIANT_BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 
 </div>
 </div>
-<a id="ade988fed1a564fc0207e49c14416ae94"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ade988fed1a564fc0207e49c14416ae94">&#9670;&nbsp;</a></span>SetRangeThresholdAdaptLocal()</h2>
+<a id="a17a890d2df11a4c0e6bdfeec02d58e1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17a890d2df11a4c0e6bdfeec02d58e1e">&#9670;&nbsp;</a></span>SetRangeThresholdAdaptLocal()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT SetRangeThresholdAdaptLocal </td>
+          <td class="memname">void SetRangeThresholdAdaptLocal </td>
           <td>(</td>
-          <td class="paramtype">[in] enum <a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0b">LPVPolarity</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0b">LPVPolarity</a>&#160;</td>
           <td class="paramname"><em>blobPolarity</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in, range(0, 999)] int&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>blockSize</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in, defaultvalue(0), range(-255, 255)] int&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>bias</em>&#160;</td>
         </tr>
         <tr>
@@ -549,16 +545,16 @@ VARIANT_BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 
 </div>
 </div>
-<a id="a6676bf5ad78fed8b2bf8a4001fa61166"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6676bf5ad78fed8b2bf8a4001fa61166">&#9670;&nbsp;</a></span>SetSoftThresholdRange()</h2>
+<a id="aef671f7367adaf9fd523e108b1202523"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef671f7367adaf9fd523e108b1202523">&#9670;&nbsp;</a></span>SetSoftThresholdRange()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT SetSoftThresholdRange </td>
+          <td class="memname">void SetSoftThresholdRange </td>
           <td>(</td>
-          <td class="paramtype">[in, range(0, 255)] int&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>softRange</em></td><td>)</td>
           <td></td>
         </tr>
@@ -680,7 +676,12 @@ For example, if we define blob color range to be [100, 200], and soft thresholdi
 <!-- HTML footer for doxygen 1.9.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-© 2021 <a href="http://www.hzleaper.com/">Hangzhou Leaper Tech. Ltd.</a>
+© 2022 <a href="http://www.hzleaper.com/">Hangzhou Leaper Tech. Ltd.</a>
 </small></address>
+<script type="text/javascript">
+//<![CDATA[
+addTutorialsButtons();
+//]]>
+</script>
 </body>
 </html>

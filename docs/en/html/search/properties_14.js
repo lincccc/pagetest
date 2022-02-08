@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['verifyquality_1558',['VerifyQuality',['../interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#afea8f4f9ae7d645db5ea703c36c6fcef',1,'LPVBarcodeLib::ILBarcodeDetector']]],
-  ['vscrollbarpolicy_1559',['VScrollBarPolicy',['../interface_l_p_v_display_lib_1_1_i_l_display.html#a5e4301818dc221a0a7430da87c444e97',1,'LPVDisplayLib::ILDisplay']]]
+  ['width_1662',['Width',['../interface_l_p_v_core_lib_1_1_i_l_image.html#abbe7749c3b402f7dfe64f936774cfcd4',1,'LPVCoreLib::ILImage::Width()'],['../interface_l_p_v_core_lib_1_1_i_l_rect_region.html#abbe7749c3b402f7dfe64f936774cfcd4',1,'LPVCoreLib::ILRectRegion::Width()'],['../interface_l_p_v_core_lib_1_1_i_l_rot_rect_region.html#abbe7749c3b402f7dfe64f936774cfcd4',1,'LPVCoreLib::ILRotRectRegion::Width()'],['../interface_l_p_v_geom_lib_1_1_i_l_rect.html#aa182392274653d9a2654f8938f88325f',1,'LPVGeomLib::ILRect::Width()']]]
 ];

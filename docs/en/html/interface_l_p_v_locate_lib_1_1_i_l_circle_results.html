@@ -9,6 +9,7 @@
 <title>LPV: ILCircleResults Interface Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="tutorial-utils.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
@@ -96,32 +97,33 @@ Inheritance diagram for ILCircleResults:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a99bb73dd6c85783ddaa1bf2f97ba9f87"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_locate_lib_1_1_i_l_circle_results.html#a99bb73dd6c85783ddaa1bf2f97ba9f87">Count</a> ([out, retval] int *pVal)</td></tr>
-<tr class="separator:a99bb73dd6c85783ddaa1bf2f97ba9f87"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abdabcf4c9a4d56d4fbd1fbe0325e4285"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_locate_lib_1_1_i_l_circle_results.html#abdabcf4c9a4d56d4fbd1fbe0325e4285">Draw</a> ([in] HDC hdc, [in] int index, [in] <a class="el" href="namespace_l_p_v_locate_lib.html#a66db827ab9c59f74eced43a71d65c30f">LPVCircleDrawFlags</a> drawFlags, [in, defaultvalue(1)] double zoomX, [in, defaultvalue(0)] double zoomY, [in, defaultvalue(0)] double panX, [in, defaultvalue(0)] double panY)</td></tr>
-<tr class="separator:abdabcf4c9a4d56d4fbd1fbe0325e4285"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74b832ef83141fa033ee9d62c3763f2f"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_locate_lib_1_1_i_l_circle_results.html#a74b832ef83141fa033ee9d62c3763f2f">DrawAll</a> ([in] HDC hdc, [in] <a class="el" href="namespace_l_p_v_locate_lib.html#a66db827ab9c59f74eced43a71d65c30f">LPVCircleDrawFlags</a> drawFlags, [in, defaultvalue(1)] double zoomX, [in, defaultvalue(0)] double zoomY, [in, defaultvalue(0)] double panX, [in, defaultvalue(0)] double panY)</td></tr>
-<tr class="separator:a74b832ef83141fa033ee9d62c3763f2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9c61ea1163e06ef113d4c78267bc19f"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_locate_lib_1_1_i_l_circle_results.html#af9c61ea1163e06ef113d4c78267bc19f">DrawScoreChart</a> ([in] HDC hdc, [in] enum <a class="el" href="namespace_l_p_v_core_lib.html#a9c7c60c3ff92e1b019f872af1d31e858">LPVChartDrawFlags</a> bDrawFlags, [in, defaultvalue(0)] int xGridStep, [in, defaultvalue(0)] int yGridStep)</td></tr>
-<tr class="separator:af9c61ea1163e06ef113d4c78267bc19f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5061a3626cdd36810c924fdd2095b7cd"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_locate_lib_1_1_i_l_circle_results.html#a5061a3626cdd36810c924fdd2095b7cd">Item</a> ([in] int index, [out, retval] struct <a class="el" href="struct_l_p_v_locate_lib_1_1_l_circle_result.html">LCircleResult</a> *pResult)</td></tr>
-<tr class="separator:a5061a3626cdd36810c924fdd2095b7cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a828d0933abd2fa4a72950a3fee81dec6"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_locate_lib_1_1_i_l_circle_results.html#a828d0933abd2fa4a72950a3fee81dec6">Reset</a> ()</td></tr>
-<tr class="separator:a828d0933abd2fa4a72950a3fee81dec6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cb7c47723f72f9554e3905fc94140e4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_locate_lib_1_1_i_l_circle_results.html#a0cb7c47723f72f9554e3905fc94140e4">Count</a> ()</td></tr>
+<tr class="separator:a0cb7c47723f72f9554e3905fc94140e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c92065288fa6ec9e93cb0246d49d296"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_locate_lib_1_1_i_l_circle_results.html#a9c92065288fa6ec9e93cb0246d49d296">Draw</a> (HDC hdc, int index, <a class="el" href="namespace_l_p_v_locate_lib.html#a66db827ab9c59f74eced43a71d65c30f">LPVCircleDrawFlags</a> drawFlags, double zoomX, double zoomY, double panX, double panY)</td></tr>
+<tr class="separator:a9c92065288fa6ec9e93cb0246d49d296"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3ef0211af918d3ff20689eada0f182d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_locate_lib_1_1_i_l_circle_results.html#ab3ef0211af918d3ff20689eada0f182d">DrawAll</a> (HDC hdc, <a class="el" href="namespace_l_p_v_locate_lib.html#a66db827ab9c59f74eced43a71d65c30f">LPVCircleDrawFlags</a> drawFlags, double zoomX, double zoomY, double panX, double panY)</td></tr>
+<tr class="separator:ab3ef0211af918d3ff20689eada0f182d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54ab763668a5303c740f32f0c403cabf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_locate_lib_1_1_i_l_circle_results.html#a54ab763668a5303c740f32f0c403cabf">DrawScoreChart</a> (HDC hdc, <a class="el" href="namespace_l_p_v_core_lib.html#a9c7c60c3ff92e1b019f872af1d31e858">LPVChartDrawFlags</a> bDrawFlags, int xGridStep, int yGridStep)</td></tr>
+<tr class="separator:a54ab763668a5303c740f32f0c403cabf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d8a530005f5678ba0959e87205eb024"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_l_p_v_locate_lib_1_1_l_circle_result.html">LCircleResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_locate_lib_1_1_i_l_circle_results.html#a2d8a530005f5678ba0959e87205eb024">Item</a> (int index)</td></tr>
+<tr class="separator:a2d8a530005f5678ba0959e87205eb024"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a372de693ad40b3f42839c8ec6ac845f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_locate_lib_1_1_i_l_circle_results.html#a372de693ad40b3f42839c8ec6ac845f4">Reset</a> ()</td></tr>
+<tr class="separator:a372de693ad40b3f42839c8ec6ac845f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This interface holds a collection of circle detection results. </p>
-<p>Usually you get the <a class="el" href="class_l_p_v_locate_lib_1_1_l_circle_results.html">LCircleResults</a> object from the <a class="el" href="interface_l_p_v_locate_lib_1_1_i_l_circle_detector.html#a4ca12ecd0d507ff77c464d678b8dd4ef">ILCircleDetector::Detect()</a> as detection result. You can then use this interface to access individual result and draw the results on graphics windows.</p>
-<p>C++: </p><div class="fragment"><div class="line">CLCircleResults m_circle_results;</div>
-<div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = (<a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>)m_circle_detector.Detect(m_img, m_roi, (LPDISPATCH*)&amp;m_circle_results);</div>
+<p>Usually you get the <a class="el" href="class_l_p_v_locate_lib_1_1_l_circle_results.html">LCircleResults</a> object from the <a class="el" href="interface_l_p_v_locate_lib_1_1_i_l_circle_detector.html#a82d4b13de035d99f1b5374a7617ee108">ILCircleDetector::Detect()</a> as detection result. You can then use this interface to access individual result and draw the results on graphics windows.</p>
+<h3>Example Code </h3>
+ <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">ILCircleResultsPtr m_circle_results;</div>
+<div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = m_circle_detector-&gt;Detect(m_img, m_roi, &amp;m_circle_results);</div>
 <div class="line"><span class="keywordflow">if</span> (err != LPVErrorCode::LPVNoError) <span class="keywordflow">return</span>;</div>
 <div class="line"><span class="keywordtype">int</span> c = m_circle_results-&gt;Count();</div>
 <div class="line"><span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; c; ++i) {</div>
 <div class="line">    LCircleResult result = m_circle_results-&gt;Item(i);</div>
 <div class="line">    <span class="comment">// handle each circle result</span></div>
 <div class="line">}</div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">This enumeration represents the type of a LPV function error.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:149</div></div>
-</div><!-- fragment --><p>C#: </p><div class="fragment"><div class="line">LCircleResults m_circle_results;</div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">This enumeration represents the type of a LPV function error.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:155</div></div>
+</div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LCircleResults m_circle_results;</div>
 <div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = (<a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>)m_circle_detector.Detect(m_img, (LAnnulusRegion)m_roi, out m_circle_results);</div>
 <div class="line"><span class="keywordflow">if</span> (err != <a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>.LPVNoError) <span class="keywordflow">return</span>;</div>
 <div class="line"><span class="keywordtype">int</span> c = m_circle_results.Count();</div>
@@ -129,18 +131,17 @@ Public Member Functions</h2></td></tr>
 <div class="line">    LCircleResult result = m_circle_results.Item(i);</div>
 <div class="line">    <span class="comment">// handle each circle result</span></div>
 <div class="line">}</div>
-</div><!-- fragment --> </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a99bb73dd6c85783ddaa1bf2f97ba9f87"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a99bb73dd6c85783ddaa1bf2f97ba9f87">&#9670;&nbsp;</a></span>Count()</h2>
+</div><!-- fragment --> </div>  </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a0cb7c47723f72f9554e3905fc94140e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0cb7c47723f72f9554e3905fc94140e4">&#9670;&nbsp;</a></span>Count()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT Count </td>
+          <td class="memname">int Count </td>
           <td>(</td>
-          <td class="paramtype">[out, retval] int *&#160;</td>
-          <td class="paramname"><em>pVal</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -149,52 +150,52 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="abdabcf4c9a4d56d4fbd1fbe0325e4285"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abdabcf4c9a4d56d4fbd1fbe0325e4285">&#9670;&nbsp;</a></span>Draw()</h2>
+<a id="a9c92065288fa6ec9e93cb0246d49d296"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c92065288fa6ec9e93cb0246d49d296">&#9670;&nbsp;</a></span>Draw()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT Draw </td>
+          <td class="memname">void Draw </td>
           <td>(</td>
-          <td class="paramtype">[in] HDC&#160;</td>
+          <td class="paramtype">HDC&#160;</td>
           <td class="paramname"><em>hdc</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in] int&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>index</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in] <a class="el" href="namespace_l_p_v_locate_lib.html#a66db827ab9c59f74eced43a71d65c30f">LPVCircleDrawFlags</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespace_l_p_v_locate_lib.html#a66db827ab9c59f74eced43a71d65c30f">LPVCircleDrawFlags</a>&#160;</td>
           <td class="paramname"><em>drawFlags</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in, defaultvalue(1)] double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>zoomX</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in, defaultvalue(0)] double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>zoomY</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in, defaultvalue(0)] double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>panX</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in, defaultvalue(0)] double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>panY</em>&#160;</td>
         </tr>
         <tr>
@@ -211,7 +212,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_locate_lib_1_1_i_l_circle_results.html#a74b832ef83141fa033ee9d62c3763f2f">DrawAll()</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_locate_lib_1_1_i_l_circle_results.html#ab3ef0211af918d3ff20689eada0f182d">DrawAll()</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">hdc</td><td>Handle to the device context of the destination window or bitmap. </td></tr>
@@ -221,46 +222,46 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a74b832ef83141fa033ee9d62c3763f2f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a74b832ef83141fa033ee9d62c3763f2f">&#9670;&nbsp;</a></span>DrawAll()</h2>
+<a id="ab3ef0211af918d3ff20689eada0f182d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3ef0211af918d3ff20689eada0f182d">&#9670;&nbsp;</a></span>DrawAll()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT DrawAll </td>
+          <td class="memname">void DrawAll </td>
           <td>(</td>
-          <td class="paramtype">[in] HDC&#160;</td>
+          <td class="paramtype">HDC&#160;</td>
           <td class="paramname"><em>hdc</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in] <a class="el" href="namespace_l_p_v_locate_lib.html#a66db827ab9c59f74eced43a71d65c30f">LPVCircleDrawFlags</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespace_l_p_v_locate_lib.html#a66db827ab9c59f74eced43a71d65c30f">LPVCircleDrawFlags</a>&#160;</td>
           <td class="paramname"><em>drawFlags</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in, defaultvalue(1)] double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>zoomX</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in, defaultvalue(0)] double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>zoomY</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in, defaultvalue(0)] double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>panX</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in, defaultvalue(0)] double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>panY</em>&#160;</td>
         </tr>
         <tr>
@@ -270,7 +271,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Draw all circle results onto provide device context. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_locate_lib_1_1_i_l_circle_results.html#abdabcf4c9a4d56d4fbd1fbe0325e4285">Draw()</a> </dd></dl>
+<p>Draw all circle results onto provide device context. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_locate_lib_1_1_i_l_circle_results.html#a9c92065288fa6ec9e93cb0246d49d296">Draw()</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">hdc</td><td>Handle to the device context of the destination window or bitmap. </td></tr>
@@ -280,34 +281,34 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="af9c61ea1163e06ef113d4c78267bc19f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af9c61ea1163e06ef113d4c78267bc19f">&#9670;&nbsp;</a></span>DrawScoreChart()</h2>
+<a id="a54ab763668a5303c740f32f0c403cabf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54ab763668a5303c740f32f0c403cabf">&#9670;&nbsp;</a></span>DrawScoreChart()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT DrawScoreChart </td>
+          <td class="memname">void DrawScoreChart </td>
           <td>(</td>
-          <td class="paramtype">[in] HDC&#160;</td>
+          <td class="paramtype">HDC&#160;</td>
           <td class="paramname"><em>hdc</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in] enum <a class="el" href="namespace_l_p_v_core_lib.html#a9c7c60c3ff92e1b019f872af1d31e858">LPVChartDrawFlags</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespace_l_p_v_core_lib.html#a9c7c60c3ff92e1b019f872af1d31e858">LPVChartDrawFlags</a>&#160;</td>
           <td class="paramname"><em>bDrawFlags</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in, defaultvalue(0)] int&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>xGridStep</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in, defaultvalue(0)] int&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>yGridStep</em>&#160;</td>
         </tr>
         <tr>
@@ -317,7 +318,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Draw a score chart onto provide device context. It represents the score distributions along the ROI region's direction. It's useful for determining a proper acceptable score. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Draw a score chart onto provide device context. It represents the score distributions along the region's direction. It's useful for determining a proper acceptable score. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">hdc</td><td>Handle to the device context of the destination window or bitmap. </td></tr>
     <tr><td class="paramname">bDrawFlags</td><td>Flags to control which part of a data chart should be drawn, see LPVChartDrawFlags for usage. </td></tr>
@@ -329,28 +330,18 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a5061a3626cdd36810c924fdd2095b7cd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5061a3626cdd36810c924fdd2095b7cd">&#9670;&nbsp;</a></span>Item()</h2>
+<a id="a2d8a530005f5678ba0959e87205eb024"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d8a530005f5678ba0959e87205eb024">&#9670;&nbsp;</a></span>Item()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT Item </td>
+          <td class="memname"><a class="el" href="struct_l_p_v_locate_lib_1_1_l_circle_result.html">LCircleResult</a> Item </td>
           <td>(</td>
-          <td class="paramtype">[in] int&#160;</td>
-          <td class="paramname"><em>index</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">[out, retval] struct <a class="el" href="struct_l_p_v_locate_lib_1_1_l_circle_result.html">LCircleResult</a> *&#160;</td>
-          <td class="paramname"><em>pResult</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -362,21 +353,21 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">pResult</td><td>Return the circle result of given index. </td></tr>
+    <tr><td class="paramname">result</td><td>Return the circle result of given index. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a828d0933abd2fa4a72950a3fee81dec6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a828d0933abd2fa4a72950a3fee81dec6">&#9670;&nbsp;</a></span>Reset()</h2>
+<a id="a372de693ad40b3f42839c8ec6ac845f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a372de693ad40b3f42839c8ec6ac845f4">&#9670;&nbsp;</a></span>Reset()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT Reset </td>
+          <td class="memname">void Reset </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -391,7 +382,12 @@ Public Member Functions</h2></td></tr>
 <!-- HTML footer for doxygen 1.9.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-© 2021 <a href="http://www.hzleaper.com/">Hangzhou Leaper Tech. Ltd.</a>
+© 2022 <a href="http://www.hzleaper.com/">Hangzhou Leaper Tech. Ltd.</a>
 </small></address>
+<script type="text/javascript">
+//<![CDATA[
+addTutorialsButtons();
+//]]>
+</script>
 </body>
 </html>

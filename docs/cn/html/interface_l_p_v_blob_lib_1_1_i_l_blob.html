@@ -9,6 +9,7 @@
 <title>LPV: ILBlob接口 参考</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="tutorial-utils.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
@@ -96,161 +97,159 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
-<tr class="memitem:a62faecb491dafcff265aeb6294ef7520"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html#a62faecb491dafcff265aeb6294ef7520">AttachImage</a> ([in] <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *pImage)</td></tr>
-<tr class="separator:a62faecb491dafcff265aeb6294ef7520"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10c44c21499804a29c1a4c474c3f53ca"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html#a10c44c21499804a29c1a4c474c3f53ca">CountContour</a> ([out, retval] int *pVal)</td></tr>
-<tr class="separator:a10c44c21499804a29c1a4c474c3f53ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0efc3216644d0b72ce9506866b639214"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html#a0efc3216644d0b72ce9506866b639214">CountHole</a> ([out, retval] int *pVal)</td></tr>
-<tr class="separator:a0efc3216644d0b72ce9506866b639214"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00eebe772df03c4d2a74ca58ccc5066a"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html#a00eebe772df03c4d2a74ca58ccc5066a">Draw</a> ([in] HDC hdc, [in] <a class="el" href="namespace_l_p_v_blob_lib.html#a4585601573e75e76ba7f6f7eaf3566c7">LPVBlobDrawFlags</a> drawFlags, [in, defaultvalue(1)] double zoomX, [in, defaultvalue(0)] double zoomY, [in, defaultvalue(0)] double panX, [in, defaultvalue(0)] double panY)</td></tr>
-<tr class="separator:a00eebe772df03c4d2a74ca58ccc5066a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af18deb7d44edcf0226327ca5e8e79027"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html#af18deb7d44edcf0226327ca5e8e79027">FromRegion</a> ([in] <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a> *pRegion, [in] <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *pImage)</td></tr>
-<tr class="separator:af18deb7d44edcf0226327ca5e8e79027"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e0747a7c4faa56f2c0ca3396f1fa231"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html#a8e0747a7c4faa56f2c0ca3396f1fa231">GetAngle</a> ([in, defaultvalue(0)]VARIANT_BOOL alwaysUp, [out, retval] double *pVal)</td></tr>
-<tr class="separator:a8e0747a7c4faa56f2c0ca3396f1fa231"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae529b2e6122e0c52e0499350a027d357"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html#ae529b2e6122e0c52e0499350a027d357">GetCenter</a> ([out, retval] <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_point.html">ILPoint</a> **ppVal)</td></tr>
-<tr class="separator:ae529b2e6122e0c52e0499350a027d357"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50fed23e57b88d6e9802fbd34bb6a781"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html#a50fed23e57b88d6e9802fbd34bb6a781">GetContour</a> ([in] int index, [out, retval] <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a> **ppVal)</td></tr>
-<tr class="separator:a50fed23e57b88d6e9802fbd34bb6a781"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76f6f8b1f3d8088a3d6fee6e60255471"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html#a76f6f8b1f3d8088a3d6fee6e60255471">GetContrast</a> ([in] enum <a class="el" href="namespace_l_p_v_core_lib.html#a044b4c1019ab24bd62eed3e7fd764b85">LPVAggregation</a> aggType, [in] double percentage, [out, retval] double *pVal)</td></tr>
-<tr class="separator:a76f6f8b1f3d8088a3d6fee6e60255471"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb7d6ebf58d709f1b8e317446374ac59"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html#adb7d6ebf58d709f1b8e317446374ac59">GetFeature</a> ([in] <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50">LPVBlobFeatures</a> feature, [out, retval] double *pVal)</td></tr>
-<tr class="separator:adb7d6ebf58d709f1b8e317446374ac59"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a598f4179ad3e8750fc69ff968e934a4f"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html#a598f4179ad3e8750fc69ff968e934a4f">GetHole</a> ([in] int index, [out, retval] <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a> **ppVal)</td></tr>
-<tr class="separator:a598f4179ad3e8750fc69ff968e934a4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf46a17dc3760d20d10d65d7d072c184"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html#acf46a17dc3760d20d10d65d7d072c184">GetLuminance</a> ([in] enum <a class="el" href="namespace_l_p_v_core_lib.html#a044b4c1019ab24bd62eed3e7fd764b85">LPVAggregation</a> aggType, [in] double percentage, [out, retval] double *pVal)</td></tr>
-<tr class="separator:acf46a17dc3760d20d10d65d7d072c184"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d64a0a192e91609dd1af0eebb894ad9"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html#a1d64a0a192e91609dd1af0eebb894ad9">GetRect</a> ([out, retval] <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_rect.html">ILRect</a> **ppVal)</td></tr>
-<tr class="separator:a1d64a0a192e91609dd1af0eebb894ad9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9dbd7634f390ba1bd775b3867b40f595"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html#a9dbd7634f390ba1bd775b3867b40f595">GetRotRect</a> ([out, retval] <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_rect.html">ILRect</a> **ppVal)</td></tr>
-<tr class="separator:a9dbd7634f390ba1bd775b3867b40f595"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed0cbde17b0174e9f3a730203dc4dc4c"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html#aed0cbde17b0174e9f3a730203dc4dc4c">ToRegion</a> ([out, retval] <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a> **ppRegion)</td></tr>
-<tr class="separator:aed0cbde17b0174e9f3a730203dc4dc4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55f71d79803f0f1adca6b16788bb3421"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html#a55f71d79803f0f1adca6b16788bb3421">AttachImage</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *image)</td></tr>
+<tr class="separator:a55f71d79803f0f1adca6b16788bb3421"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a90022b0fca4ee3d2f07374c8c74a58"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html#a3a90022b0fca4ee3d2f07374c8c74a58">CountContour</a> ()</td></tr>
+<tr class="separator:a3a90022b0fca4ee3d2f07374c8c74a58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affc98cc748385ff11c7083d8b0c3c562"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html#affc98cc748385ff11c7083d8b0c3c562">CountHole</a> ()</td></tr>
+<tr class="separator:affc98cc748385ff11c7083d8b0c3c562"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a522d0d5a2e75e149ac7a3f09fef5ce0b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html#a522d0d5a2e75e149ac7a3f09fef5ce0b">Draw</a> (HDC hdc, <a class="el" href="namespace_l_p_v_blob_lib.html#a4585601573e75e76ba7f6f7eaf3566c7">LPVBlobDrawFlags</a> drawFlags, double zoomX, double zoomY, double panX, double panY)</td></tr>
+<tr class="separator:a522d0d5a2e75e149ac7a3f09fef5ce0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adadd4ea09b8ca3d5b514078a7d4c4236"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html#adadd4ea09b8ca3d5b514078a7d4c4236">FromRegion</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a> *region, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *image)</td></tr>
+<tr class="separator:adadd4ea09b8ca3d5b514078a7d4c4236"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9accbf73ea18b07ff9e944d8d661a158"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html#a9accbf73ea18b07ff9e944d8d661a158">GetAngle</a> ([in, defaultvalue(0)]BOOL alwaysUp)</td></tr>
+<tr class="separator:a9accbf73ea18b07ff9e944d8d661a158"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0f9905b2560ab8a11bcb29d1a72e21b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_point.html">ILPoint</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html#af0f9905b2560ab8a11bcb29d1a72e21b">GetCenter</a> ()</td></tr>
+<tr class="separator:af0f9905b2560ab8a11bcb29d1a72e21b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a039b1190a5c107325664d30c346a9041"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html#a039b1190a5c107325664d30c346a9041">GetContour</a> (int index)</td></tr>
+<tr class="separator:a039b1190a5c107325664d30c346a9041"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b4e5dc2bbf9cefb5be609d31d5b0dc8"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html#a0b4e5dc2bbf9cefb5be609d31d5b0dc8">GetContrast</a> (<a class="el" href="namespace_l_p_v_core_lib.html#a044b4c1019ab24bd62eed3e7fd764b85">LPVAggregation</a> aggType, double percentage)</td></tr>
+<tr class="separator:a0b4e5dc2bbf9cefb5be609d31d5b0dc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9343a8f047843e973e61cb311f9023f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html#ac9343a8f047843e973e61cb311f9023f">GetFeature</a> (<a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50">LPVBlobFeatures</a> feature)</td></tr>
+<tr class="separator:ac9343a8f047843e973e61cb311f9023f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4439092fc762f49f1f0650a813d8f41b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html#a4439092fc762f49f1f0650a813d8f41b">GetHole</a> (int index)</td></tr>
+<tr class="separator:a4439092fc762f49f1f0650a813d8f41b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae95fc2b28eed37d4817bea36226f3eb1"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html#ae95fc2b28eed37d4817bea36226f3eb1">GetLuminance</a> (<a class="el" href="namespace_l_p_v_core_lib.html#a044b4c1019ab24bd62eed3e7fd764b85">LPVAggregation</a> aggType, double percentage)</td></tr>
+<tr class="separator:ae95fc2b28eed37d4817bea36226f3eb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a298cb1d21f02123b1b52dc1dd530e4e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_rect.html">ILRect</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html#a298cb1d21f02123b1b52dc1dd530e4e4">GetRect</a> ()</td></tr>
+<tr class="separator:a298cb1d21f02123b1b52dc1dd530e4e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af862abdfe54b18ccb7e3ddfee7766237"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_rect.html">ILRect</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html#af862abdfe54b18ccb7e3ddfee7766237">GetRotRect</a> ()</td></tr>
+<tr class="separator:af862abdfe54b18ccb7e3ddfee7766237"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bedd8eab75488f3be5abe93187ce028"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html#a2bedd8eab75488f3be5abe93187ce028">ToRegion</a> ()</td></tr>
+<tr class="separator:a2bedd8eab75488f3be5abe93187ce028"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><p>该接口对应一个斑点，提供斑点的属性计算、转换和绘制等功能 </p>
-<p>通常通过调用 <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_results.html#af4bc0c13d478e532c8737a80ff7eb6ad">ILBlobResults::Item()</a> 得到该 <a class="el" href="class_l_p_v_blob_lib_1_1_l_blob.html">LBlob</a> 对象。 可以通过该接口计算感兴趣的斑点属性特征，访问斑点信息，绘制斑点到给定的图形设备等。</p>
-<p>C++: </p><div class="fragment"><div class="line">CLBlob blob;</div>
-<div class="line">blob = m_blob_results-&gt;Item(i);</div>
-<div class="line"><span class="keywordtype">double</span> area = blob.GetFeature(LPVBlobFeatures::LPVBlobArea));</div>
-</div><!-- fragment --><p>C#: </p><div class="fragment"><div class="line">LBlob blob = m_blob_results.Item(i);</div>
+<p>通常通过调用 <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_results.html#aeb1e8e771d9b1f8dded408f08776afb8">ILBlobResults::Item()</a> 得到该 <a class="el" href="class_l_p_v_blob_lib_1_1_l_blob.html">LBlob</a> 对象。 可以通过该接口计算感兴趣的斑点属性特征，访问斑点信息，绘制斑点到给定的图形设备等。</p>
+<h3>示例代码 </h3>
+ <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">ILBlobPtr blob = m_blob_results-&gt;Item(i);</div>
+<div class="line"><span class="keywordtype">double</span> area = blob-&gt;GetFeature(LPVBlobFeatures::LPVBlobArea));</div>
+</div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LBlob blob = m_blob_results.Item(i);</div>
 <div class="line"><span class="keywordtype">double</span> area = blob.GetFeature(<a class="code" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50">LPVBlobFeatures</a>.LPVBlobArea));</div>
-<div class="ttc" id="anamespace_l_p_v_blob_lib_html_a45c2c9b22e80b8f2439fcdbcf94cec50"><div class="ttname"><a href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50">LPVBlobLib::LPVBlobFeatures</a></div><div class="ttdeci">LPVBlobFeatures</div><div class="ttdoc">该枚举表示斑点的数值类型的属性特征</div><div class="ttdef"><b>Definition:</b> LPVBlob.idl:54</div></div>
-</div><!-- fragment --> </div><h2 class="groupheader">成员函数说明</h2>
-<a id="a62faecb491dafcff265aeb6294ef7520"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a62faecb491dafcff265aeb6294ef7520">&#9670;&nbsp;</a></span>AttachImage()</h2>
+<div class="ttc" id="anamespace_l_p_v_blob_lib_html_a45c2c9b22e80b8f2439fcdbcf94cec50"><div class="ttname"><a href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50">LPVBlobLib::LPVBlobFeatures</a></div><div class="ttdeci">LPVBlobFeatures</div><div class="ttdoc">该枚举表示斑点的数值类型的属性特征</div><div class="ttdef"><b>Definition:</b> LPVBlob.idl:56</div></div>
+</div><!-- fragment --> </div>  </div><h2 class="groupheader">成员函数说明</h2>
+<a id="a55f71d79803f0f1adca6b16788bb3421"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55f71d79803f0f1adca6b16788bb3421">&#9670;&nbsp;</a></span>AttachImage()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT AttachImage </td>
+          <td class="memname">void AttachImage </td>
           <td>(</td>
-          <td class="paramtype">[in] <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
-          <td class="paramname"><em>pImage</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>image</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>绑定输入的图像到斑点，用于计算图像相关的属性特征，如亮度、对比度、清晰度等。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pImage</td><td>输入的图像 </td></tr>
+    <tr><td class="paramname">image</td><td>输入的图像 </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a10c44c21499804a29c1a4c474c3f53ca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a10c44c21499804a29c1a4c474c3f53ca">&#9670;&nbsp;</a></span>CountContour()</h2>
+<a id="a3a90022b0fca4ee3d2f07374c8c74a58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a90022b0fca4ee3d2f07374c8c74a58">&#9670;&nbsp;</a></span>CountContour()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT CountContour </td>
+          <td class="memname">int CountContour </td>
           <td>(</td>
-          <td class="paramtype">[out, retval] int *&#160;</td>
-          <td class="paramname"><em>pVal</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>获取斑点的外轮廓个数 </p><dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">pVal</td><td>返回个数 </td></tr>
+<p>获取斑点的外轮廓个数 </p><dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">val</td><td>返回个数 </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html#a50fed23e57b88d6e9802fbd34bb6a781">GetContour()</a>, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html#a0efc3216644d0b72ce9506866b639214">CountHole()</a> </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html#a039b1190a5c107325664d30c346a9041">GetContour()</a>, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html#affc98cc748385ff11c7083d8b0c3c562">CountHole()</a> </dd></dl>
 
 </div>
 </div>
-<a id="a0efc3216644d0b72ce9506866b639214"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0efc3216644d0b72ce9506866b639214">&#9670;&nbsp;</a></span>CountHole()</h2>
+<a id="affc98cc748385ff11c7083d8b0c3c562"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affc98cc748385ff11c7083d8b0c3c562">&#9670;&nbsp;</a></span>CountHole()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT CountHole </td>
+          <td class="memname">int CountHole </td>
           <td>(</td>
-          <td class="paramtype">[out, retval] int *&#160;</td>
-          <td class="paramname"><em>pVal</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>获取斑点的孔洞个数 </p><dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">pVal</td><td>返回个数 </td></tr>
+<p>获取斑点的孔洞个数 </p><dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">val</td><td>返回个数 </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html#a598f4179ad3e8750fc69ff968e934a4f">GetHole()</a>, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html#a10c44c21499804a29c1a4c474c3f53ca">CountContour()</a> </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html#a4439092fc762f49f1f0650a813d8f41b">GetHole()</a>, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html#a3a90022b0fca4ee3d2f07374c8c74a58">CountContour()</a> </dd></dl>
 
 </div>
 </div>
-<a id="a00eebe772df03c4d2a74ca58ccc5066a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a00eebe772df03c4d2a74ca58ccc5066a">&#9670;&nbsp;</a></span>Draw()</h2>
+<a id="a522d0d5a2e75e149ac7a3f09fef5ce0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a522d0d5a2e75e149ac7a3f09fef5ce0b">&#9670;&nbsp;</a></span>Draw()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT Draw </td>
+          <td class="memname">void Draw </td>
           <td>(</td>
-          <td class="paramtype">[in] HDC&#160;</td>
+          <td class="paramtype">HDC&#160;</td>
           <td class="paramname"><em>hdc</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in] <a class="el" href="namespace_l_p_v_blob_lib.html#a4585601573e75e76ba7f6f7eaf3566c7">LPVBlobDrawFlags</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespace_l_p_v_blob_lib.html#a4585601573e75e76ba7f6f7eaf3566c7">LPVBlobDrawFlags</a>&#160;</td>
           <td class="paramname"><em>drawFlags</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in, defaultvalue(1)] double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>zoomX</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in, defaultvalue(0)] double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>zoomY</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in, defaultvalue(0)] double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>panX</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in, defaultvalue(0)] double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>panY</em>&#160;</td>
         </tr>
         <tr>
@@ -274,23 +273,23 @@ Public 成员函数</h2></td></tr>
 
 </div>
 </div>
-<a id="af18deb7d44edcf0226327ca5e8e79027"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af18deb7d44edcf0226327ca5e8e79027">&#9670;&nbsp;</a></span>FromRegion()</h2>
+<a id="adadd4ea09b8ca3d5b514078a7d4c4236"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adadd4ea09b8ca3d5b514078a7d4c4236">&#9670;&nbsp;</a></span>FromRegion()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT FromRegion </td>
+          <td class="memname">void FromRegion </td>
           <td>(</td>
-          <td class="paramtype">[in] <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a> *&#160;</td>
-          <td class="paramname"><em>pRegion</em>, </td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a> *&#160;</td>
+          <td class="paramname"><em>region</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in] <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
-          <td class="paramname"><em>pImage</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>image</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -301,36 +300,26 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>根据输入的区域对象，生成一个斑点对象 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pRegion</td><td>输入的区域对象 </td></tr>
-    <tr><td class="paramname">pImage</td><td>输入的图像，绑定到该斑点，用于计算图像相关的属性特征，如亮度、对比度、清晰度等。可为空。 </td></tr>
+    <tr><td class="paramname">region</td><td>输入的区域对象 </td></tr>
+    <tr><td class="paramname">image</td><td>输入的图像，绑定到该斑点，用于计算图像相关的属性特征，如亮度、对比度、清晰度等。可为空。 </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a8e0747a7c4faa56f2c0ca3396f1fa231"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8e0747a7c4faa56f2c0ca3396f1fa231">&#9670;&nbsp;</a></span>GetAngle()</h2>
+<a id="a9accbf73ea18b07ff9e944d8d661a158"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9accbf73ea18b07ff9e944d8d661a158">&#9670;&nbsp;</a></span>GetAngle()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT GetAngle </td>
+          <td class="memname">double GetAngle </td>
           <td>(</td>
-          <td class="paramtype">[in, defaultvalue(0)] VARIANT_BOOL&#160;</td>
-          <td class="paramname"><em>alwaysUp</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">[in, defaultvalue(0)] BOOL&#160;</td>
+          <td class="paramname"><em>alwaysUp</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">[out, retval] double *&#160;</td>
-          <td class="paramname"><em>pVal</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -344,17 +333,16 @@ Public 成员函数</h2></td></tr>
 
 </div>
 </div>
-<a id="ae529b2e6122e0c52e0499350a027d357"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae529b2e6122e0c52e0499350a027d357">&#9670;&nbsp;</a></span>GetCenter()</h2>
+<a id="af0f9905b2560ab8a11bcb29d1a72e21b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0f9905b2560ab8a11bcb29d1a72e21b">&#9670;&nbsp;</a></span>GetCenter()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT GetCenter </td>
+          <td class="memname"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_point.html">ILPoint</a>* GetCenter </td>
           <td>(</td>
-          <td class="paramtype">[out, retval] <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_point.html">ILPoint</a> **&#160;</td>
-          <td class="paramname"><em>ppVal</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -363,65 +351,49 @@ Public 成员函数</h2></td></tr>
 
 </div>
 </div>
-<a id="a50fed23e57b88d6e9802fbd34bb6a781"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a50fed23e57b88d6e9802fbd34bb6a781">&#9670;&nbsp;</a></span>GetContour()</h2>
+<a id="a039b1190a5c107325664d30c346a9041"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a039b1190a5c107325664d30c346a9041">&#9670;&nbsp;</a></span>GetContour()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT GetContour </td>
+          <td class="memname"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a>* GetContour </td>
           <td>(</td>
-          <td class="paramtype">[in] int&#160;</td>
-          <td class="paramname"><em>index</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">[out, retval] <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a> **&#160;</td>
-          <td class="paramname"><em>ppVal</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>获取指定索引对应的斑点外轮廓 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramname">index</td><td>输入指定的索引，从 0 开始但小于总数的数字 </td></tr>
-    <tr><td class="paramname">ppVal</td><td>返回外轮廓为一个多边形 </td></tr>
+    <tr><td class="paramname">val</td><td>返回外轮廓为一个多边形 </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html#a10c44c21499804a29c1a4c474c3f53ca">CountContour()</a>, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html#a598f4179ad3e8750fc69ff968e934a4f">GetHole()</a> </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html#a3a90022b0fca4ee3d2f07374c8c74a58">CountContour()</a>, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html#a4439092fc762f49f1f0650a813d8f41b">GetHole()</a> </dd></dl>
 
 </div>
 </div>
-<a id="a76f6f8b1f3d8088a3d6fee6e60255471"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a76f6f8b1f3d8088a3d6fee6e60255471">&#9670;&nbsp;</a></span>GetContrast()</h2>
+<a id="a0b4e5dc2bbf9cefb5be609d31d5b0dc8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b4e5dc2bbf9cefb5be609d31d5b0dc8">&#9670;&nbsp;</a></span>GetContrast()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT GetContrast </td>
+          <td class="memname">double GetContrast </td>
           <td>(</td>
-          <td class="paramtype">[in] enum <a class="el" href="namespace_l_p_v_core_lib.html#a044b4c1019ab24bd62eed3e7fd764b85">LPVAggregation</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespace_l_p_v_core_lib.html#a044b4c1019ab24bd62eed3e7fd764b85">LPVAggregation</a>&#160;</td>
           <td class="paramname"><em>aggType</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in] double&#160;</td>
-          <td class="paramname"><em>percentage</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">[out, retval] double *&#160;</td>
-          <td class="paramname"><em>pVal</em>&#160;</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>percentage</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -440,28 +412,18 @@ Public 成员函数</h2></td></tr>
 
 </div>
 </div>
-<a id="adb7d6ebf58d709f1b8e317446374ac59"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adb7d6ebf58d709f1b8e317446374ac59">&#9670;&nbsp;</a></span>GetFeature()</h2>
+<a id="ac9343a8f047843e973e61cb311f9023f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9343a8f047843e973e61cb311f9023f">&#9670;&nbsp;</a></span>GetFeature()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT GetFeature </td>
+          <td class="memname">double GetFeature </td>
           <td>(</td>
-          <td class="paramtype">[in] <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50">LPVBlobFeatures</a>&#160;</td>
-          <td class="paramname"><em>feature</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50">LPVBlobFeatures</a>&#160;</td>
+          <td class="paramname"><em>feature</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">[out, retval] double *&#160;</td>
-          <td class="paramname"><em>pVal</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -474,65 +436,49 @@ Public 成员函数</h2></td></tr>
 
 </div>
 </div>
-<a id="a598f4179ad3e8750fc69ff968e934a4f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a598f4179ad3e8750fc69ff968e934a4f">&#9670;&nbsp;</a></span>GetHole()</h2>
+<a id="a4439092fc762f49f1f0650a813d8f41b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4439092fc762f49f1f0650a813d8f41b">&#9670;&nbsp;</a></span>GetHole()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT GetHole </td>
+          <td class="memname"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a>* GetHole </td>
           <td>(</td>
-          <td class="paramtype">[in] int&#160;</td>
-          <td class="paramname"><em>index</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">[out, retval] <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a> **&#160;</td>
-          <td class="paramname"><em>ppVal</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>获取指定索引对应的斑点孔洞轮廓 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramname">index</td><td>输入指定的索引，从 0 开始但小于总数的数字 </td></tr>
-    <tr><td class="paramname">ppVal</td><td>返回孔洞轮廓为一个多边形 </td></tr>
+    <tr><td class="paramname">val</td><td>返回孔洞轮廓为一个多边形 </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html#a0efc3216644d0b72ce9506866b639214">CountHole()</a>, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html#a50fed23e57b88d6e9802fbd34bb6a781">GetContour()</a> </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html#affc98cc748385ff11c7083d8b0c3c562">CountHole()</a>, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html#a039b1190a5c107325664d30c346a9041">GetContour()</a> </dd></dl>
 
 </div>
 </div>
-<a id="acf46a17dc3760d20d10d65d7d072c184"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acf46a17dc3760d20d10d65d7d072c184">&#9670;&nbsp;</a></span>GetLuminance()</h2>
+<a id="ae95fc2b28eed37d4817bea36226f3eb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae95fc2b28eed37d4817bea36226f3eb1">&#9670;&nbsp;</a></span>GetLuminance()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT GetLuminance </td>
+          <td class="memname">double GetLuminance </td>
           <td>(</td>
-          <td class="paramtype">[in] enum <a class="el" href="namespace_l_p_v_core_lib.html#a044b4c1019ab24bd62eed3e7fd764b85">LPVAggregation</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespace_l_p_v_core_lib.html#a044b4c1019ab24bd62eed3e7fd764b85">LPVAggregation</a>&#160;</td>
           <td class="paramname"><em>aggType</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in] double&#160;</td>
-          <td class="paramname"><em>percentage</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">[out, retval] double *&#160;</td>
-          <td class="paramname"><em>pVal</em>&#160;</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>percentage</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -551,74 +497,71 @@ Public 成员函数</h2></td></tr>
 
 </div>
 </div>
-<a id="a1d64a0a192e91609dd1af0eebb894ad9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1d64a0a192e91609dd1af0eebb894ad9">&#9670;&nbsp;</a></span>GetRect()</h2>
+<a id="a298cb1d21f02123b1b52dc1dd530e4e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a298cb1d21f02123b1b52dc1dd530e4e4">&#9670;&nbsp;</a></span>GetRect()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT GetRect </td>
+          <td class="memname"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_rect.html">ILRect</a>* GetRect </td>
           <td>(</td>
-          <td class="paramtype">[out, retval] <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_rect.html">ILRect</a> **&#160;</td>
-          <td class="paramname"><em>ppVal</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>计算斑点的包围矩形 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ppVal</td><td>返回的矩形 </td></tr>
+    <tr><td class="paramname">val</td><td>返回的矩形 </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html#a9dbd7634f390ba1bd775b3867b40f595">GetRotRect()</a>. </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html#af862abdfe54b18ccb7e3ddfee7766237">GetRotRect()</a>. </dd></dl>
 
 </div>
 </div>
-<a id="a9dbd7634f390ba1bd775b3867b40f595"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9dbd7634f390ba1bd775b3867b40f595">&#9670;&nbsp;</a></span>GetRotRect()</h2>
+<a id="af862abdfe54b18ccb7e3ddfee7766237"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af862abdfe54b18ccb7e3ddfee7766237">&#9670;&nbsp;</a></span>GetRotRect()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT GetRotRect </td>
+          <td class="memname"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_rect.html">ILRect</a>* GetRotRect </td>
           <td>(</td>
-          <td class="paramtype">[out, retval] <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_rect.html">ILRect</a> **&#160;</td>
-          <td class="paramname"><em>ppVal</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>计算斑点的包围旋转矩形 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ppVal</td><td>返回旋转矩形 </td></tr>
+    <tr><td class="paramname">val</td><td>返回旋转矩形 </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html#a1d64a0a192e91609dd1af0eebb894ad9">GetRect()</a>. </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html#a298cb1d21f02123b1b52dc1dd530e4e4">GetRect()</a>. </dd></dl>
 
 </div>
 </div>
-<a id="aed0cbde17b0174e9f3a730203dc4dc4c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aed0cbde17b0174e9f3a730203dc4dc4c">&#9670;&nbsp;</a></span>ToRegion()</h2>
+<a id="a2bedd8eab75488f3be5abe93187ce028"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bedd8eab75488f3be5abe93187ce028">&#9670;&nbsp;</a></span>ToRegion()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT ToRegion </td>
+          <td class="memname"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a>* ToRegion </td>
           <td>(</td>
-          <td class="paramtype">[out, retval] <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a> **&#160;</td>
-          <td class="paramname"><em>ppRegion</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>根据该斑点的轮廓信息，生成一个区域对象 </p><dl class="retval"><dt>返回值</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">ppRegion</td><td>返回生成的区域对象 </td></tr>
+    <tr><td class="paramname">region</td><td>返回生成的区域对象 </td></tr>
   </table>
   </dd>
 </dl>
@@ -629,7 +572,12 @@ Public 成员函数</h2></td></tr>
 <!-- HTML footer for doxygen 1.9.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-© 2021 <a href="http://www.hzleaper.com/">杭州利珀科技有限公司</a>
+© 2022 <a href="http://www.hzleaper.com/">杭州利珀科技有限公司</a>
 </small></address>
+<script type="text/javascript">
+//<![CDATA[
+addTutorialsButtons();
+//]]>
+</script>
 </body>
 </html>

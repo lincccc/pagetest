@@ -9,6 +9,7 @@
 <title>LPV: How to Use LDisplay Control</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="tutorial-utils.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
@@ -78,18 +79,32 @@ $(function() {
 <div class="title">How to Use LDisplay Control </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md_Z__stonewall_doc_en_t03_use_display_control"></a> Module: <b>lpvDisplay.dll</b></p>
+<div class="toc"><h3>Table of Contents</h3>
+<ul><li class="level1"><a href="#autotoc_md11">Approach 1: Use Toolbox</a></li>
+<li class="level1"><a href="#autotoc_md12">Approach 2: Use Class Wizard (MFC)</a></li>
+<li class="level1"><a href="#autotoc_md13">Approach 3: Use #import directive (C++)</a></li>
+<li class="level1"><a href="#autotoc_md14">Approach 4: Add Reference (C#)</a></li>
+<li class="level1"><a href="#autotoc_md15">Create Display Control Programmatically</a><ul><li class="level2"><a href="#autotoc_md16">Example Code for an Application with UI</a></li>
+<li class="level2"><a href="#autotoc_md17">Example Code for a Console Application</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="textblock"><p><a class="anchor" id="md_Z__stonewall_doc_en_t03_use_display_control"></a></p>
+<p>Module: <b>lpvDisplay.dll</b></p>
 <p>NOTE: Please make sure your LPV libraries are registered and licensed.</p>
-<h1>Approach 1: Use Toolbox</h1>
+<h1><a class="anchor" id="autotoc_md11"></a>
+Approach 1: Use Toolbox</h1>
 <p><b>Step 1</b> - In the Resource View of your application, right-click anywhere in the Toolbox window, and then select <b>Choose Items</b>.</p>
 <p><img src="t03_01_rmc_choose_items.png" alt="" class="inline" title="T03 01 Rmc Choose Items"/></p>
 <p><b>Step 2</b> - This dialog box shows a list of controls that can be added to the toolbox. The check box in the selected state means those items will already be present in the toolbox.</p>
-<p><b>Step 3</b> - Select the <b>COM Components</b> tab, check the <b>LDispaly class</b> from the available list, and then click <b>OK</b>. The selected controls will now be displayed in Visual Studio toolbox.</p>
+<p><b>Step 3 (A)</b> - Select the <b>COM Components</b> tab, check the <b>LDispaly class</b> from the available list, and then click <b>OK</b>. The selected controls will now be displayed in Visual Studio toolbox.</p>
 <p><img src="t03_02_choose_items_dialog.png" alt="" class="inline" title="T03 02 Choose Items Dialog"/></p>
-<p><b>Step 4</b> - Alternatively, you can also add tools by navigating to the <b>lpvDisplay.dll</b> location.</p>
-<p><b>Step 5</b> - Once the controls are added, you can drag the control to the designer from the Visual Studio Toolbox and start using it. The assembly reference will automatically be added in the reference manager.</p>
+<p><b>Step 3 (B)</b> - Alternatively, you can also add tools by navigating to the <b>lpvDisplay.dll</b> location.</p>
+<p><b>Step 4</b> - Once the controls are added, you can drag the control to the designer from the Visual Studio Toolbox and start using it. The assembly reference will automatically be added in the reference manager.</p>
 <p><img src="t03_03_display_control_in_design.png" alt="" class="inline" title="T03 03 Display Control In Design"/></p>
-<h1>Approach 2: Use Class Wizard (MFC)</h1>
+<h1><a class="anchor" id="autotoc_md12"></a>
+Approach 2: Use Class Wizard (MFC)</h1>
 <p><b>Step 1</b> - In the Solution Explorer of your application, right-click your project, and then select <b>Class Wizard</b>.</p>
 <p><img src="t03_04_rmc_class_wizard.png" alt="" class="inline" title="T03 04 Rmc Class Wizard"/></p>
 <p><b>Step 2</b> - Select and open the <b>Add Class From ActiveX Control Wizard</b>.</p>
@@ -99,52 +114,116 @@ $(function() {
 <p><img src="t03_06_add_interface_wrapper_class.png" alt="" class="inline" title="T03 06 Add Interface Wrapper Class"/></p>
 <p><b>Step 5</b> - Click <b>Finish</b> then <b>OK</b>. CLDisplay.h and CLDisplay.cpp file is generated and added to your project.</p>
 <p><b>Step 6</b> - You can now use the display control in your application. See more detailed usage in <b>demo/mfcdemo/MFCDisplay</b>.</p>
-<p><b>Step 7</b> - Alternatively, you can also use the out-of-box wrapper class under demo/mfcdemo/Wrappers, by including <b>LPVDisplay.h</b> and <b>CLDisplay.cpp</b> to your project.</p>
-<h1>Approach 3: Create Display Control Programmatically</h1>
-<div class="fragment"><div class="line"> {c++}</div>
-<div class="line">#include &quot;../Wrappers/LPVDisplay.h&quot;</div>
-<div class="line"> </div>
-<div class="line">BOOL CMFCApplicationDlg::OnInitDialog()</div>
+<p>Alternatively, you can also use the out-of-box wrapper class under demo/mfcdemo/Wrappers, by including <b>LPVDisplay.h</b> and <b>CLDisplay.cpp</b> to your project.</p>
+<h1><a class="anchor" id="autotoc_md13"></a>
+Approach 3: Use #import directive (C++)</h1>
+<p>The preprocessor directive is used to incorporate information from a type library. For more detailed information, please refer to <a href="https://docs.microsoft.com/en-us/cpp/preprocessor/hash-import-directive-cpp">https://docs.microsoft.com/en-us/cpp/preprocessor/hash-import-directive-cpp</a> .</p>
+<p>Add the following lines:</p>
+<div class="fragment"><div class="line"><span class="comment">// use the uuid of the LPVDisplay library</span></div>
+<div class="line"><span class="preprocessor">#import &quot;libid:5b289f4f-ebc9-4a41-bd94-07f4a4e4e5f6&quot;</span></div>
+</div><!-- fragment --><p>-or-</p>
+<div class="fragment"><div class="line"><span class="comment">// use the file path of the LPVDisplay library</span></div>
+<div class="line"><span class="preprocessor">#import &quot;Y:\\runner\\x86\\lpvDisplay.dll&quot;</span></div>
+</div><!-- fragment --><p>-or-</p>
+<div class="fragment"><div class="line"><span class="comment">// use the progid of the LDisplay class</span></div>
+<div class="line"><span class="preprocessor">#import &quot;progid:LPV.LDisplay&quot;</span></div>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md14"></a>
+Approach 4: Add Reference (C#)</h1>
+<p>You could add the LDisplay library to the C# project as all other LPV libraries:</p><ol type="1">
+<li>RMC your C# project, click "Add Reference"</li>
+<li>Under COM -&gt; Type Libraries panel, search and find <a class="el" href="namespace_l_p_v_display_lib.html" title="LPV Display Library, provide ui controls for display images, regions, geometric shapes and other algo...">LPVDisplayLib</a>, then click OK to add reference (and Interop) to them in your project.</li>
+<li>In your code, add the line <code>using <a class="el" href="namespace_l_p_v_display_lib.html" title="LPV Display Library, provide ui controls for display images, regions, geometric shapes and other algo...">LPVDisplayLib</a>;</code>.</li>
+</ol>
+<h1><a class="anchor" id="autotoc_md15"></a>
+Create Display Control Programmatically</h1>
+<h2><a class="anchor" id="autotoc_md16"></a>
+Example Code for an Application with UI</h2>
+ <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'> <div class="fragment"><div class="line"><span class="keyword">class </span>CDisplayDialog : <span class="keyword">public</span> CDialog</div>
 <div class="line">{</div>
-<div class="line">    CDialogEx::OnInitDialog();</div>
+<div class="line"><span class="keyword">public</span>:</div>
+<div class="line">    <span class="keyword">explicit</span> CDisplayDialog(UINT nIDTemplate, CWnd* pParentWnd = NULL) :</div>
+<div class="line">        CDialog(nIDTemplate, pParentWnd) {}</div>
 <div class="line"> </div>
-<div class="line">    // Get the dialog&#39;s size and position</div>
-<div class="line">    RECT r;</div>
-<div class="line">    GetClientRect(&amp;r);</div>
-<div class="line"> </div>
-<div class="line">    // create a display control, add it to the dialog</div>
-<div class="line">    displayCtrl.Create(L&quot;Display Control&quot;,</div>
-<div class="line">        WS_CHILD | WS_VISIBLE,</div>
-<div class="line">        r, this, 0);</div>
-<div class="line"> </div>
-<div class="line">    return TRUE;  // return TRUE  unless you set the focus to a control</div>
-<div class="line">}</div>
-</div><!-- fragment --><div class="fragment"><div class="line"> {c#}</div>
-<div class="line">using LPVDisplayLib;</div>
-<div class="line">using AxLPVDisplayLib;</div>
-<div class="line"> </div>
-<div class="line">public partial class CSharpDisplayForm : Form</div>
-<div class="line">{</div>
-<div class="line">    public CSharpDisplayForm()</div>
+<div class="line">    CLDisplay displayCtrl;</div>
+<div class="line">    <span class="keyword">virtual</span> BOOL OnInitDialog()</div>
 <div class="line">    {</div>
-<div class="line">        InitializeComponent();</div>
-<div class="line">        </div>
-<div class="line">        // create a display control, add it to the form</div>
-<div class="line">        AxLDisplay displayCtrl = new AxLDisplay();</div>
-<div class="line">        displayCtrl.Dock = System.Windows.Forms.DockStyle.Fill;</div>
-<div class="line">        Controls.Add(displayCtrl);</div>
-<div class="line">        </div>
-<div class="line">        // set image and fit window</div>
-<div class="line">        displayCtrl.SetImage(img);</div>
-<div class="line">        displayCtrl.FitToWindow(LPVAlignment.LPVAlignCenter);</div>
+<div class="line">        CDialog::OnInitDialog();</div>
+<div class="line"> </div>
+<div class="line">        <span class="comment">// get the dialog&#39;s size and position</span></div>
+<div class="line">        RECT r;</div>
+<div class="line">        GetClientRect(&amp;r);</div>
+<div class="line"> </div>
+<div class="line">        <span class="comment">// create a display control, add it to the dialog</span></div>
+<div class="line">        displayCtrl.Create(L<span class="stringliteral">&quot;Display Control&quot;</span>,</div>
+<div class="line">            WS_CHILD | WS_VISIBLE,</div>
+<div class="line">            r, <span class="keyword">this</span>, 0);</div>
+<div class="line"> </div>
+<div class="line">        <span class="keywordflow">return</span> TRUE;</div>
 <div class="line">    }</div>
+<div class="line">};</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">void</span> CMFCDisplayDlg::OnBnClickedBtnDisplayDlg()</div>
+<div class="line">{</div>
+<div class="line">    <span class="comment">// create a prompt display dialog, see CDisplayDialog::OnInitDialog for implementation</span></div>
+<div class="line">    CDisplayDialog displayDlg(IDD_DISPLAY_DLG, <span class="keyword">this</span>);</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// show it</span></div>
+<div class="line">    displayDlg.DoModal();</div>
 <div class="line">}</div>
-</div><!-- fragment --> </div></div><!-- contents -->
+</div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'> <div class="fragment"><div class="line"><span class="keyword">namespace </span>CSharpDisplay</div>
+<div class="line">{</div>
+<div class="line">    <span class="keyword">public</span> <span class="keyword">partial class </span>CSharpDisplay : Form</div>
+<div class="line">    {</div>
+</div><!-- fragment --><div class="fragment"><div class="line">        <span class="keyword">private</span> <span class="keywordtype">void</span> btnDisplayDlg_Click(<span class="keywordtype">object</span> sender, EventArgs e)</div>
+<div class="line">        {</div>
+<div class="line">            <span class="comment">// create a prompt display dialog</span></div>
+<div class="line">            Form prompt = <span class="keyword">new</span> Form();</div>
+<div class="line">            </div>
+<div class="line">            <span class="comment">// create a display control, add it to the dialog</span></div>
+<div class="line">            AxLDisplay displayCtrlInDlg = <span class="keyword">new</span> AxLDisplay();</div>
+<div class="line">            displayCtrlInDlg.Dock = System.Windows.Forms.DockStyle.Fill;</div>
+<div class="line">            prompt.Controls.Add(displayCtrlInDlg);</div>
+<div class="line"> </div>
+<div class="line">            <span class="comment">// resize the dialog and show it</span></div>
+<div class="line">            prompt.Width = 600;</div>
+<div class="line">            prompt.Height = 400;</div>
+<div class="line">            prompt.Text = <span class="stringliteral">&quot;Display Dialog&quot;</span>;</div>
+<div class="line">            prompt.ShowDialog();</div>
+<div class="line">        }</div>
+</div><!-- fragment --><div class="fragment"><div class="line">    }</div>
+<div class="line">}</div>
+</div><!-- fragment --> </div> <h2><a class="anchor" id="autotoc_md17"></a>
+Example Code for a Console Application</h2>
+ <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'> <div class="fragment"><div class="line">    <span class="comment">// blending: average</span></div>
+<div class="line">    ILImageArithmPtr arithm(__uuidof(LImageArithm));</div>
+<div class="line">    ILImagePtr result_img(__uuidof(LImage));</div>
+<div class="line">    arithm-&gt;Blend(img_list, LPVAggregation::LPVAggAvg, result_img);</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// show result in the display control, close the window to continue</span></div>
+<div class="line">    ILDisplayPtr displayCtrl(__uuidof(LDisplay));</div>
+<div class="line">    displayCtrl-&gt;SetImage(result_img);</div>
+<div class="line">    displayCtrl-&gt;ShowDialog(L<span class="stringliteral">&quot;blend avg result&quot;</span>, 0, 0, 400, 300);</div>
+</div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'> <div class="fragment"><div class="line">    <span class="comment">// blending: average</span></div>
+<div class="line">    LImageArithm arithm = <span class="keyword">new</span> LImageArithm();</div>
+<div class="line">    LImage result_img = <span class="keyword">new</span> LImage();</div>
+<div class="line">    arithm.Blend(img_list, <a class="code" href="namespace_l_p_v_core_lib.html#a044b4c1019ab24bd62eed3e7fd764b85">LPVAggregation</a>.LPVAggAvg, result_img);</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// show result in the display control, close the window to continue</span></div>
+<div class="line">    LDisplay displayCtrl = <span class="keyword">new</span> LDisplay();</div>
+<div class="line">    displayCtrl.SetImage(result_img);</div>
+<div class="line">    displayCtrl.ShowDialog(<span class="stringliteral">&quot;blend avg result&quot;</span>);</div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a044b4c1019ab24bd62eed3e7fd764b85"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a044b4c1019ab24bd62eed3e7fd764b85">LPVCoreLib::LPVAggregation</a></div><div class="ttdeci">LPVAggregation</div><div class="ttdoc">This enumeration represents the type of an aggregation.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:463</div></div>
+</div><!-- fragment --> </div>  </div></div><!-- contents -->
 </div><!-- PageDoc -->
 <!-- HTML footer for doxygen 1.9.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-© 2021 <a href="http://www.hzleaper.com/">Hangzhou Leaper Tech. Ltd.</a>
+© 2022 <a href="http://www.hzleaper.com/">Hangzhou Leaper Tech. Ltd.</a>
 </small></address>
+<script type="text/javascript">
+//<![CDATA[
+addTutorialsButtons();
+//]]>
+</script>
 </body>
 </html>

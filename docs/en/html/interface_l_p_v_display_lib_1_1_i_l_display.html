@@ -9,6 +9,7 @@
 <title>LPV: ILDisplay Interface Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="tutorial-utils.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
@@ -97,46 +98,56 @@ Inheritance diagram for ILDisplay:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac7fe2853f236ffb60ac852495b86d2f9"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#ac7fe2853f236ffb60ac852495b86d2f9">AddObject</a> ([in] IDispatch *pDrawable, [in, defaultvalue(0)] int drawFlags, [out, retval] int *pObjectId)</td></tr>
-<tr class="separator:ac7fe2853f236ffb60ac852495b86d2f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00655d094917c7584b1e025d92e89c63"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#a00655d094917c7584b1e025d92e89c63">AddRegion</a> ([in] IDispatch *pRegion, [in, defaultvalue(-1)] VARIANT_BOOL interactable, [out, retval] int *pRegionId)</td></tr>
-<tr class="separator:a00655d094917c7584b1e025d92e89c63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5ab6d66d05d3dd3e4b60c1ff304faa0"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#ae5ab6d66d05d3dd3e4b60c1ff304faa0">FitInView</a> ([in] int tlx, [in] int tly, [in] int w, [in] int h, [in, defaultvalue(<a class="el" href="namespace_l_p_v_display_lib.html#a5361690471ec9bae7d38163800878c4ea2f83bbb1c8db0dd52f561fc2ab50968d">LPVAlignDefault</a>)] <a class="el" href="namespace_l_p_v_display_lib.html#a5361690471ec9bae7d38163800878c4e">LPVAlignment</a> alignFlags)</td></tr>
-<tr class="separator:ae5ab6d66d05d3dd3e4b60c1ff304faa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:accf0b51cbac3fa98a463abf6fbe128f6"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#accf0b51cbac3fa98a463abf6fbe128f6">FitInViewObject</a> ([in] IDispatch *pObject, [in, defaultvalue(<a class="el" href="namespace_l_p_v_display_lib.html#a5361690471ec9bae7d38163800878c4ea2f83bbb1c8db0dd52f561fc2ab50968d">LPVAlignDefault</a>)] <a class="el" href="namespace_l_p_v_display_lib.html#a5361690471ec9bae7d38163800878c4e">LPVAlignment</a> alignFlags)</td></tr>
-<tr class="separator:accf0b51cbac3fa98a463abf6fbe128f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4fdb116bac942a57d1933bd2ebd619d3"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#a4fdb116bac942a57d1933bd2ebd619d3">FitToWindow</a> ([in, defaultvalue(<a class="el" href="namespace_l_p_v_display_lib.html#a5361690471ec9bae7d38163800878c4ea2f83bbb1c8db0dd52f561fc2ab50968d">LPVAlignDefault</a>)] <a class="el" href="namespace_l_p_v_display_lib.html#a5361690471ec9bae7d38163800878c4e">LPVAlignment</a> alignFlags)</td></tr>
-<tr class="separator:a4fdb116bac942a57d1933bd2ebd619d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ca976109cceb2d0e29b4bdd9be07f0c"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#a3ca976109cceb2d0e29b4bdd9be07f0c">GetImage</a> ([out, retval] IDispatch **ppImage)</td></tr>
-<tr class="separator:a3ca976109cceb2d0e29b4bdd9be07f0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c40e93f4c0b1f3dfe2b45b046d7ccdb"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#a0c40e93f4c0b1f3dfe2b45b046d7ccdb">GetObjectByID</a> ([in] int objectId, [out, retval] IDispatch **ppDrawable)</td></tr>
-<tr class="separator:a0c40e93f4c0b1f3dfe2b45b046d7ccdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39dc5ee67e3819e812eea5f787bacf8a"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#a39dc5ee67e3819e812eea5f787bacf8a">GetRegionByID</a> ([in] int regionId, [out, retval] IDispatch **ppRegion)</td></tr>
-<tr class="separator:a39dc5ee67e3819e812eea5f787bacf8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b747bab669a654abfd48cb575e7ca90"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#a5b747bab669a654abfd48cb575e7ca90">Refresh</a> ()</td></tr>
-<tr class="separator:a5b747bab669a654abfd48cb575e7ca90"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af54059bf04d64d8f72eab3617e2c2f07"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#af54059bf04d64d8f72eab3617e2c2f07">RemoveAllObjects</a> ()</td></tr>
-<tr class="separator:af54059bf04d64d8f72eab3617e2c2f07"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac354f89feac0d87e3235e492528b106d"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#ac354f89feac0d87e3235e492528b106d">RemoveAllRegions</a> ()</td></tr>
-<tr class="separator:ac354f89feac0d87e3235e492528b106d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c2cd4d4f339e3085e1300af4552dca5"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#a3c2cd4d4f339e3085e1300af4552dca5">RemoveImage</a> ()</td></tr>
-<tr class="separator:a3c2cd4d4f339e3085e1300af4552dca5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf42c88272d32aba1e5286b04dbe5f69"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#acf42c88272d32aba1e5286b04dbe5f69">RemoveObject</a> ([in] IDispatch *pDrawable)</td></tr>
-<tr class="separator:acf42c88272d32aba1e5286b04dbe5f69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac95a3599695e52ad68ac8bcc85d75383"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#ac95a3599695e52ad68ac8bcc85d75383">RemoveObjectByID</a> ([in] int objectId)</td></tr>
-<tr class="separator:ac95a3599695e52ad68ac8bcc85d75383"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c6f3f052a7ef172413b3b27fe82441e"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#a3c6f3f052a7ef172413b3b27fe82441e">RemoveRegion</a> ([in] IDispatch *pRegion)</td></tr>
-<tr class="separator:a3c6f3f052a7ef172413b3b27fe82441e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32b33a8986777f2bcff0241c320b020d"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#a32b33a8986777f2bcff0241c320b020d">RemoveRegionByID</a> ([in] int regionId)</td></tr>
-<tr class="separator:a32b33a8986777f2bcff0241c320b020d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94d33f8bbfbcf1cd7de88bb6f0ab97c2"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#a94d33f8bbfbcf1cd7de88bb6f0ab97c2">SaveWindowToFile</a> ([in] BSTR filename, [out, retval] int *pError)</td></tr>
-<tr class="separator:a94d33f8bbfbcf1cd7de88bb6f0ab97c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaae355c9c6c3accc9f28aa3c45d792c0"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#aaae355c9c6c3accc9f28aa3c45d792c0">SetDisplayFlag</a> ([in] <a class="el" href="namespace_l_p_v_display_lib.html#abc2f2be19cc9a20d8f4b71ddb968d49b">LPVDisplayFlags</a> flag, [in, defaultvalue(-1)] VARIANT_BOOL enable)</td></tr>
-<tr class="separator:aaae355c9c6c3accc9f28aa3c45d792c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac14a4d4b25028a0583461286d5378e3d"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#ac14a4d4b25028a0583461286d5378e3d">SetImage</a> ([in] IDispatch *pImage)</td></tr>
-<tr class="separator:ac14a4d4b25028a0583461286d5378e3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95a9ff16711facc9a4c143169561efc2"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#a95a9ff16711facc9a4c143169561efc2">SetSize</a> ([in] int w, [in] int h)</td></tr>
-<tr class="separator:a95a9ff16711facc9a4c143169561efc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7e3894a65c4c00c4f37c9f709a554e4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#ad7e3894a65c4c00c4f37c9f709a554e4">AddObject</a> (IDispatch *drawable, int drawFlags)</td></tr>
+<tr class="separator:ad7e3894a65c4c00c4f37c9f709a554e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68b6649b7ed6d9c66fb7ac4de72d2977"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#a68b6649b7ed6d9c66fb7ac4de72d2977">AddReferenceLineH</a> (double position, double relativePosition, BOOL attached, OLE_COLOR clr)</td></tr>
+<tr class="separator:a68b6649b7ed6d9c66fb7ac4de72d2977"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64ce1f707c2857a5eda2d20a5e9b7803"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#a64ce1f707c2857a5eda2d20a5e9b7803">AddReferenceLineV</a> (double position, double relativePosition, BOOL attached, OLE_COLOR clr)</td></tr>
+<tr class="separator:a64ce1f707c2857a5eda2d20a5e9b7803"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6510a47b1c7a4ed58b8fef4f2cb5aef3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#a6510a47b1c7a4ed58b8fef4f2cb5aef3">AddRegion</a> (IDispatch *region, BOOL interactable)</td></tr>
+<tr class="separator:a6510a47b1c7a4ed58b8fef4f2cb5aef3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87c003e6583859dc184f710da560e5f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#a87c003e6583859dc184f710da560e5f6">FitInView</a> (int tlx, int tly, int w, int h, [in, defaultvalue(<a class="el" href="namespace_l_p_v_display_lib.html#a5361690471ec9bae7d38163800878c4ea2f83bbb1c8db0dd52f561fc2ab50968d">LPVAlignDefault</a>)] <a class="el" href="namespace_l_p_v_display_lib.html#a5361690471ec9bae7d38163800878c4e">LPVAlignment</a> alignFlags)</td></tr>
+<tr class="separator:a87c003e6583859dc184f710da560e5f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac73f41146102b0f5c6cb9d0c9015222b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#ac73f41146102b0f5c6cb9d0c9015222b">FitInViewObject</a> (IDispatch *object, [in, defaultvalue(<a class="el" href="namespace_l_p_v_display_lib.html#a5361690471ec9bae7d38163800878c4ea2f83bbb1c8db0dd52f561fc2ab50968d">LPVAlignDefault</a>)] <a class="el" href="namespace_l_p_v_display_lib.html#a5361690471ec9bae7d38163800878c4e">LPVAlignment</a> alignFlags)</td></tr>
+<tr class="separator:ac73f41146102b0f5c6cb9d0c9015222b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1948a87d956b3f38a1dc06b93cd1502"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#ac1948a87d956b3f38a1dc06b93cd1502">FitToWindow</a> ([in, defaultvalue(<a class="el" href="namespace_l_p_v_display_lib.html#a5361690471ec9bae7d38163800878c4ea2f83bbb1c8db0dd52f561fc2ab50968d">LPVAlignDefault</a>)] <a class="el" href="namespace_l_p_v_display_lib.html#a5361690471ec9bae7d38163800878c4e">LPVAlignment</a> alignFlags)</td></tr>
+<tr class="separator:ac1948a87d956b3f38a1dc06b93cd1502"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84fcfd40c2055066f24df794a4472f16"><td class="memItemLeft" align="right" valign="top">IDispatch *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#a84fcfd40c2055066f24df794a4472f16">GetImage</a> ()</td></tr>
+<tr class="separator:a84fcfd40c2055066f24df794a4472f16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23c558f540bfd45a533f7262727c3297"><td class="memItemLeft" align="right" valign="top">IDispatch *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#a23c558f540bfd45a533f7262727c3297">GetObjectByID</a> (int objectId)</td></tr>
+<tr class="separator:a23c558f540bfd45a533f7262727c3297"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf988f7210e5047feb4b74b199e3832f"><td class="memItemLeft" align="right" valign="top">IDispatch *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#acf988f7210e5047feb4b74b199e3832f">GetRegionByID</a> (int regionId)</td></tr>
+<tr class="separator:acf988f7210e5047feb4b74b199e3832f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3c6292a931287d34f6e353524a6a3d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#ac3c6292a931287d34f6e353524a6a3d0">Refresh</a> ()</td></tr>
+<tr class="separator:ac3c6292a931287d34f6e353524a6a3d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae81191ea328c320873cd960d410b881c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#ae81191ea328c320873cd960d410b881c">RemoveAllObjects</a> ()</td></tr>
+<tr class="separator:ae81191ea328c320873cd960d410b881c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4719fff6f90f1ff3fb7cc84b82785cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#ae4719fff6f90f1ff3fb7cc84b82785cf">RemoveAllReferenceLine</a> ()</td></tr>
+<tr class="separator:ae4719fff6f90f1ff3fb7cc84b82785cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09fdbfea263f717e032c18bcd68fbcef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#a09fdbfea263f717e032c18bcd68fbcef">RemoveAllRegions</a> ()</td></tr>
+<tr class="separator:a09fdbfea263f717e032c18bcd68fbcef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafb7d9b2cc66867e09157b66f674a1be"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#aafb7d9b2cc66867e09157b66f674a1be">RemoveImage</a> ()</td></tr>
+<tr class="separator:aafb7d9b2cc66867e09157b66f674a1be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e0c2a65428233b174ad026779d106fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#a7e0c2a65428233b174ad026779d106fe">RemoveObject</a> (IDispatch *drawable)</td></tr>
+<tr class="separator:a7e0c2a65428233b174ad026779d106fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a003c74bb0ae46c85a93c396026bbc67b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#a003c74bb0ae46c85a93c396026bbc67b">RemoveObjectByID</a> (int objectId)</td></tr>
+<tr class="separator:a003c74bb0ae46c85a93c396026bbc67b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a939e4c94b88e34bbb135d269880bc334"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#a939e4c94b88e34bbb135d269880bc334">RemoveReferenceLine</a> (int refLineId)</td></tr>
+<tr class="separator:a939e4c94b88e34bbb135d269880bc334"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4b0aa56be98613f314844f58a9edb19"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#ae4b0aa56be98613f314844f58a9edb19">RemoveRegion</a> (IDispatch *region)</td></tr>
+<tr class="separator:ae4b0aa56be98613f314844f58a9edb19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa7f795672b92ba60fe4a73bad70bd82"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#aaa7f795672b92ba60fe4a73bad70bd82">RemoveRegionByID</a> (int regionId)</td></tr>
+<tr class="separator:aaa7f795672b92ba60fe4a73bad70bd82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09363be5a60d131aa2dd7da89a85aef9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#a09363be5a60d131aa2dd7da89a85aef9">SaveWindowToFile</a> (BSTR filename)</td></tr>
+<tr class="separator:a09363be5a60d131aa2dd7da89a85aef9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34630d9dd2b50da9a6e3895cc43140da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#a34630d9dd2b50da9a6e3895cc43140da">SetDisplayFlag</a> (<a class="el" href="namespace_l_p_v_display_lib.html#abc2f2be19cc9a20d8f4b71ddb968d49b">LPVDisplayFlags</a> flag, BOOL enable)</td></tr>
+<tr class="separator:a34630d9dd2b50da9a6e3895cc43140da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a184a7a1072c24324870a901db09a6c03"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#a184a7a1072c24324870a901db09a6c03">SetImage</a> (IDispatch *image)</td></tr>
+<tr class="separator:a184a7a1072c24324870a901db09a6c03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c2ed3482f17828158b0a681b4e613ae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#a2c2ed3482f17828158b0a681b4e613ae">SetSize</a> (int w, int h)</td></tr>
+<tr class="separator:a2c2ed3482f17828158b0a681b4e613ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad59ddb26897c32be05a846242874b1cb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#ad59ddb26897c32be05a846242874b1cb">ShowDialog</a> (BSTR dialogName, int x, int y, int w, int h)</td></tr>
+<tr class="separator:ad59ddb26897c32be05a846242874b1cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
@@ -148,14 +159,6 @@ Properties</h2></td></tr>
 OLE_COLOR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#abe4f56038c6366eda4bd3c20347895d8">BackColor</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:abe4f56038c6366eda4bd3c20347895d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The background color of the display control. <br /></td></tr>
 <tr class="separator:abe4f56038c6366eda4bd3c20347895d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae349e9b7738d1a129b9a0fc752638818"><td class="memItemLeft" align="right" valign="top"><a id="ae349e9b7738d1a129b9a0fc752638818"></a>
-OLE_COLOR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#ae349e9b7738d1a129b9a0fc752638818">CenterCrossColor</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:ae349e9b7738d1a129b9a0fc752638818"><td class="mdescLeft">&#160;</td><td class="mdescRight">The color of the two crossed lines representing the image center. <br /></td></tr>
-<tr class="separator:ae349e9b7738d1a129b9a0fc752638818"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a026be87f21ac788ce99957e59746ca39"><td class="memItemLeft" align="right" valign="top"><a id="a026be87f21ac788ce99957e59746ca39"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#a026be87f21ac788ce99957e59746ca39">CenterCrossSize</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a026be87f21ac788ce99957e59746ca39"><td class="mdescLeft">&#160;</td><td class="mdescRight">The size of the two crossed lines representing the image center, negative(default) value means full-window size. <br /></td></tr>
-<tr class="separator:a026be87f21ac788ce99957e59746ca39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b0398ff6fa618556f94bb816c03248c"><td class="memItemLeft" align="right" valign="top"><a id="a0b0398ff6fa618556f94bb816c03248c"></a>
 <a class="el" href="namespace_l_p_v_display_lib.html#abc2f2be19cc9a20d8f4b71ddb968d49b">LPVDisplayFlags</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#a0b0398ff6fa618556f94bb816c03248c">DisplayFlags</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:a0b0398ff6fa618556f94bb816c03248c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The display flags, see LPVDisplayFlags. <br /></td></tr>
@@ -164,10 +167,10 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 <a class="el" href="namespace_l_p_v_display_lib.html#ae827e237ee170050a198405731c9be14">LPVScrollBarPolicy</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#a65e27f9bbe43fc421715b54d0a2b28df">HScrollBarPolicy</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:a65e27f9bbe43fc421715b54d0a2b28df"><td class="mdescLeft">&#160;</td><td class="mdescRight">The policy of the horizontal scroll bar, see LPVScrollBarPolicy. <br /></td></tr>
 <tr class="separator:a65e27f9bbe43fc421715b54d0a2b28df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5cdbfe6af0f1c81c72d25dfcf5794191"><td class="memItemLeft" align="right" valign="top"><a id="a5cdbfe6af0f1c81c72d25dfcf5794191"></a>
-VARIANT_BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#a5cdbfe6af0f1c81c72d25dfcf5794191">KeepAspectRatio</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a5cdbfe6af0f1c81c72d25dfcf5794191"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get/set whether the display control should keep the aspect ratio when zooming. <br /></td></tr>
-<tr class="separator:a5cdbfe6af0f1c81c72d25dfcf5794191"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ac6086a0b595642dcf0161aff3efadf"><td class="memItemLeft" align="right" valign="top"><a id="a7ac6086a0b595642dcf0161aff3efadf"></a>
+BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#a7ac6086a0b595642dcf0161aff3efadf">KeepAspectRatio</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a7ac6086a0b595642dcf0161aff3efadf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get/set whether the display control should keep the aspect ratio when zooming. <br /></td></tr>
+<tr class="separator:a7ac6086a0b595642dcf0161aff3efadf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a685cd4ccb93f6a8ef101dd27ac97fabb"><td class="memItemLeft" align="right" valign="top"><a id="a685cd4ccb93f6a8ef101dd27ac97fabb"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#a685cd4ccb93f6a8ef101dd27ac97fabb">PanX</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:a685cd4ccb93f6a8ef101dd27ac97fabb"><td class="mdescLeft">&#160;</td><td class="mdescRight">The scene's translation in the x-coordinate direction for panning. The final display x position is calculated as: \((x + panX) \times zoomX\). <br /></td></tr>
@@ -199,23 +202,24 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This interface provide functionalities of the display control. </p>
-<p>Usually you add the display control via the Toolbox in Visual Studio. This interface helps you to manage the scene in the display control, for the image, roi regions, geometric shapes and algorithms' results to shown in the control.</p>
-<p>C++: </p><div class="fragment"><div class="line"><span class="comment">// set image to the control</span></div>
+<p>Usually you add the display control via the Toolbox in Visual Studio. This interface helps you to manage the scene in the display control, for the image, regions, geometric shapes and algorithms' results to shown in the control.</p>
+<h3>Example Code </h3>
+ <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line"><span class="comment">// set image to the control</span></div>
 <div class="line">m_displayCtrl-&gt;SetImage(img);</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// add a rectangle region to the control</span></div>
-<div class="line">CLRectRegion roi;</div>
+<div class="line">ILRectRegionPtr roi(__uuidof(LRectRegion));</div>
 <div class="line">roi-&gt;SetPlacement(10, 10, 200, 100);</div>
 <div class="line">m_displayCtrl-&gt;AddRegion(roi, <span class="keyword">true</span>); <span class="comment">// it&#39;s interactive</span></div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// add a circle to the control</span></div>
-<div class="line">CLCircle circle;</div>
+<div class="line">ILCirclePtr circle(__uuidof(LCircle));</div>
 <div class="line">circle-&gt;Set(100, 50, 50);</div>
 <div class="line">m_displayCtrl-&gt;AddObject(circle, 0); <span class="comment">// use default draw flags</span></div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// add the pattern matching result to the control</span></div>
-<div class="line">m_displayCtrl-&gt;AddObject(match_results, LPVPatDrawFlags::LPVPatDrawBoundingRect | LPVPatDrawFlags::LPVPatDrawCenter);</div>
-</div><!-- fragment --><p>C#: </p><div class="fragment"><div class="line"><span class="comment">// set image to the control</span></div>
+<div class="line">m_displayCtrl-&gt;AddObject(match_results, (LPVPatDrawFlags)(LPVPatDrawFlags::LPVPatDrawBoundingRect | LPVPatDrawFlags::LPVPatDrawCenter));</div>
+</div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line"><span class="comment">// set image to the control</span></div>
 <div class="line">m_displayCtrl.SetImage(img);</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// add a rectangle region to the control</span></div>
@@ -230,31 +234,25 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 <div class="line"> </div>
 <div class="line"><span class="comment">// add the pattern matching result to the control</span></div>
 <div class="line">m_displayCtrl.AddObject(match_results, <a class="code" href="namespace_l_p_v_pat_lib.html#a38ed5c152c13123c0ab8728aa55efdf2">LPVPatDrawFlags</a>.LPVPatDrawBoundingRect | <a class="code" href="namespace_l_p_v_pat_lib.html#a38ed5c152c13123c0ab8728aa55efdf2">LPVPatDrawFlags</a>.LPVPatDrawCenter);</div>
-<div class="ttc" id="anamespace_l_p_v_pat_lib_html_a38ed5c152c13123c0ab8728aa55efdf2"><div class="ttname"><a href="namespace_l_p_v_pat_lib.html#a38ed5c152c13123c0ab8728aa55efdf2">LPVPatLib::LPVPatDrawFlags</a></div><div class="ttdeci">LPVPatDrawFlags</div><div class="ttdoc">This enumeration represents the flags to control the pattern drawing behavior.</div><div class="ttdef"><b>Definition:</b> LPVPat.idl:77</div></div>
-</div><!-- fragment --> </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ac7fe2853f236ffb60ac852495b86d2f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac7fe2853f236ffb60ac852495b86d2f9">&#9670;&nbsp;</a></span>AddObject()</h2>
+<div class="ttc" id="anamespace_l_p_v_pat_lib_html_a38ed5c152c13123c0ab8728aa55efdf2"><div class="ttname"><a href="namespace_l_p_v_pat_lib.html#a38ed5c152c13123c0ab8728aa55efdf2">LPVPatLib::LPVPatDrawFlags</a></div><div class="ttdeci">LPVPatDrawFlags</div><div class="ttdoc">This enumeration represents the flags to control the pattern drawing behavior.</div><div class="ttdef"><b>Definition:</b> LPVPat.idl:79</div></div>
+</div><!-- fragment --> </div>  </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ad7e3894a65c4c00c4f37c9f709a554e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7e3894a65c4c00c4f37c9f709a554e4">&#9670;&nbsp;</a></span>AddObject()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT AddObject </td>
+          <td class="memname">int AddObject </td>
           <td>(</td>
-          <td class="paramtype">[in] IDispatch *&#160;</td>
-          <td class="paramname"><em>pDrawable</em>, </td>
+          <td class="paramtype">IDispatch *&#160;</td>
+          <td class="paramname"><em>drawable</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in, defaultvalue(0)] int&#160;</td>
-          <td class="paramname"><em>drawFlags</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">[out, retval] int *&#160;</td>
-          <td class="paramname"><em>pObjectId</em>&#160;</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>drawFlags</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -265,43 +263,49 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 </div><div class="memdoc">
 <p>Add the drawable item to the scene. It's usually a geometric shape or some algorithm' results. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pDrawable</td><td>The object item, it should be an object implemented the <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_drawable.html">ILDrawable</a> interface, or <a class="el" href="interface_l_p_v_display_lib_1_1_i_l_text.html">LText</a> object. </td></tr>
+    <tr><td class="paramname">drawable</td><td>The object item, it should be an object implemented the <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_drawable.html">ILDrawable</a> interface, or <a class="el" href="interface_l_p_v_display_lib_1_1_i_l_text.html">LText</a> object. </td></tr>
     <tr><td class="paramname">drawFlags</td><td>The draw flags to control the item's drawing behavior. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">pObjectId</td><td>Return the ID of the new item in the scene. </td></tr>
+    <tr><td class="paramname">objectId</td><td>Return the ID of the new item in the scene. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a00655d094917c7584b1e025d92e89c63"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a00655d094917c7584b1e025d92e89c63">&#9670;&nbsp;</a></span>AddRegion()</h2>
+<a id="a68b6649b7ed6d9c66fb7ac4de72d2977"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68b6649b7ed6d9c66fb7ac4de72d2977">&#9670;&nbsp;</a></span>AddReferenceLineH()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT AddRegion </td>
+          <td class="memname">int AddReferenceLineH </td>
           <td>(</td>
-          <td class="paramtype">[in] IDispatch *&#160;</td>
-          <td class="paramname"><em>pRegion</em>, </td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>position</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in, defaultvalue(-1)] VARIANT_BOOL&#160;</td>
-          <td class="paramname"><em>interactable</em>, </td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>relativePosition</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[out, retval] int *&#160;</td>
-          <td class="paramname"><em>pRegionId</em>&#160;</td>
+          <td class="paramtype">BOOL&#160;</td>
+          <td class="paramname"><em>attached</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">OLE_COLOR&#160;</td>
+          <td class="paramname"><em>clr</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -310,50 +314,148 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Add the roi region item to the scene. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Add a horizontal reference line. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pRegion</td><td>The region item, it should be a <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">LRegion </a> instance. </td></tr>
+    <tr><td class="paramname">position</td><td>The y-coordinates of the reference line </td></tr>
+    <tr><td class="paramname">relativePosition</td><td>The relative x-coordinates of the reference line, which is calculated on the fly based on the image size. The value range is 0 ~ 1, negative value means it's not working. </td></tr>
+    <tr><td class="paramname">attached</td><td>Whether the reference line is attached to the image. Attached reference lines moves together with the image. </td></tr>
+    <tr><td class="paramname">clr</td><td>The color of the reference line, the default value is blue </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">refLineId</td><td>Return the ID of the new reference line in the scene. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a64ce1f707c2857a5eda2d20a5e9b7803"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64ce1f707c2857a5eda2d20a5e9b7803">&#9670;&nbsp;</a></span>AddReferenceLineV()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int AddReferenceLineV </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>position</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>relativePosition</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BOOL&#160;</td>
+          <td class="paramname"><em>attached</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">OLE_COLOR&#160;</td>
+          <td class="paramname"><em>clr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Add a vertical reference line. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">position</td><td>The x-coordinates of the reference line </td></tr>
+    <tr><td class="paramname">relativePosition</td><td>The relative x-coordinates of the reference line, which is calculated on the fly based on the image size. The value range is 0 ~ 1, negative value means it's not working. </td></tr>
+    <tr><td class="paramname">attached</td><td>Whether the reference line is attached to the image. Attached reference lines moves together with the image. </td></tr>
+    <tr><td class="paramname">clr</td><td>The color of the reference line, the default value is blue </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">refLineId</td><td>Return the ID of the new reference line in the scene. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6510a47b1c7a4ed58b8fef4f2cb5aef3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6510a47b1c7a4ed58b8fef4f2cb5aef3">&#9670;&nbsp;</a></span>AddRegion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int AddRegion </td>
+          <td>(</td>
+          <td class="paramtype">IDispatch *&#160;</td>
+          <td class="paramname"><em>region</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BOOL&#160;</td>
+          <td class="paramname"><em>interactable</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Add the region item to the scene. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">region</td><td>The region item, it should be a <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">LRegion </a> instance. </td></tr>
     <tr><td class="paramname">interactable</td><td>Whether the region object is interactable. By default, it's True. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">pRegionId</td><td>Return the ID of the new item in the scene. </td></tr>
+    <tr><td class="paramname">regionId</td><td>Return the ID of the new item in the scene. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="ae5ab6d66d05d3dd3e4b60c1ff304faa0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae5ab6d66d05d3dd3e4b60c1ff304faa0">&#9670;&nbsp;</a></span>FitInView()</h2>
+<a id="a87c003e6583859dc184f710da560e5f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87c003e6583859dc184f710da560e5f6">&#9670;&nbsp;</a></span>FitInView()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT FitInView </td>
+          <td class="memname">void FitInView </td>
           <td>(</td>
-          <td class="paramtype">[in] int&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>tlx</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in] int&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>tly</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in] int&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>w</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in] int&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>h</em>, </td>
         </tr>
         <tr>
@@ -382,17 +484,17 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 
 </div>
 </div>
-<a id="accf0b51cbac3fa98a463abf6fbe128f6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#accf0b51cbac3fa98a463abf6fbe128f6">&#9670;&nbsp;</a></span>FitInViewObject()</h2>
+<a id="ac73f41146102b0f5c6cb9d0c9015222b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac73f41146102b0f5c6cb9d0c9015222b">&#9670;&nbsp;</a></span>FitInViewObject()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT FitInViewObject </td>
+          <td class="memname">void FitInViewObject </td>
           <td>(</td>
-          <td class="paramtype">[in] IDispatch *&#160;</td>
-          <td class="paramname"><em>pObject</em>, </td>
+          <td class="paramtype">IDispatch *&#160;</td>
+          <td class="paramname"><em>object</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -409,7 +511,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 </div><div class="memdoc">
 <p>Zoom and translate the scene, to view the specified object and fit the window. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pObject</td><td>The object item to view. </td></tr>
+    <tr><td class="paramname">object</td><td>The object item to view. </td></tr>
     <tr><td class="paramname">alignFlags</td><td>The alignment, the control's <a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#a0660162ba193ae8500efd79bbf1eb576" title="The alignment the control is used when fit some part of the scene to the window.">Alignment</a> property is used if it's not set. </td></tr>
   </table>
   </dd>
@@ -417,14 +519,14 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 
 </div>
 </div>
-<a id="a4fdb116bac942a57d1933bd2ebd619d3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4fdb116bac942a57d1933bd2ebd619d3">&#9670;&nbsp;</a></span>FitToWindow()</h2>
+<a id="ac1948a87d956b3f38a1dc06b93cd1502"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1948a87d956b3f38a1dc06b93cd1502">&#9670;&nbsp;</a></span>FitToWindow()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT FitToWindow </td>
+          <td class="memname">void FitToWindow </td>
           <td>(</td>
           <td class="paramtype">[in, defaultvalue(LPVAlignDefault)] <a class="el" href="namespace_l_p_v_display_lib.html#a5361690471ec9bae7d38163800878c4e">LPVAlignment</a>&#160;</td>
           <td class="paramname"><em>alignFlags</em></td><td>)</td>
@@ -441,52 +543,41 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 
 </div>
 </div>
-<a id="a3ca976109cceb2d0e29b4bdd9be07f0c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3ca976109cceb2d0e29b4bdd9be07f0c">&#9670;&nbsp;</a></span>GetImage()</h2>
+<a id="a84fcfd40c2055066f24df794a4472f16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84fcfd40c2055066f24df794a4472f16">&#9670;&nbsp;</a></span>GetImage()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT GetImage </td>
+          <td class="memname">IDispatch* GetImage </td>
           <td>(</td>
-          <td class="paramtype">[out, retval] IDispatch **&#160;</td>
-          <td class="paramname"><em>ppImage</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Get the image of the scene. </p><dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">ppImage</td><td>The image object </td></tr>
+    <tr><td class="paramname">image</td><td>The image object </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a0c40e93f4c0b1f3dfe2b45b046d7ccdb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0c40e93f4c0b1f3dfe2b45b046d7ccdb">&#9670;&nbsp;</a></span>GetObjectByID()</h2>
+<a id="a23c558f540bfd45a533f7262727c3297"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23c558f540bfd45a533f7262727c3297">&#9670;&nbsp;</a></span>GetObjectByID()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT GetObjectByID </td>
+          <td class="memname">IDispatch* GetObjectByID </td>
           <td>(</td>
-          <td class="paramtype">[in] int&#160;</td>
-          <td class="paramname"><em>objectId</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>objectId</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">[out, retval] IDispatch **&#160;</td>
-          <td class="paramname"><em>ppDrawable</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -498,61 +589,51 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">ppObject</td><td>Return the object item </td></tr>
+    <tr><td class="paramname">object</td><td>Return the object item </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a39dc5ee67e3819e812eea5f787bacf8a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a39dc5ee67e3819e812eea5f787bacf8a">&#9670;&nbsp;</a></span>GetRegionByID()</h2>
+<a id="acf988f7210e5047feb4b74b199e3832f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf988f7210e5047feb4b74b199e3832f">&#9670;&nbsp;</a></span>GetRegionByID()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT GetRegionByID </td>
+          <td class="memname">IDispatch* GetRegionByID </td>
           <td>(</td>
-          <td class="paramtype">[in] int&#160;</td>
-          <td class="paramname"><em>regionId</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>regionId</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">[out, retval] IDispatch **&#160;</td>
-          <td class="paramname"><em>ppRegion</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get the roi region item by its ID in the scene </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Get the region item by its ID in the scene </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">regionId</td><td>The roi region item's ID. </td></tr>
+    <tr><td class="paramname">regionId</td><td>The region item's ID. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">ppRegion</td><td>Return the region item </td></tr>
+    <tr><td class="paramname">region</td><td>Return the region item </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a5b747bab669a654abfd48cb575e7ca90"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5b747bab669a654abfd48cb575e7ca90">&#9670;&nbsp;</a></span>Refresh()</h2>
+<a id="ac3c6292a931287d34f6e353524a6a3d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3c6292a931287d34f6e353524a6a3d0">&#9670;&nbsp;</a></span>Refresh()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT Refresh </td>
+          <td class="memname">void Refresh </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -563,14 +644,14 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 
 </div>
 </div>
-<a id="af54059bf04d64d8f72eab3617e2c2f07"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af54059bf04d64d8f72eab3617e2c2f07">&#9670;&nbsp;</a></span>RemoveAllObjects()</h2>
+<a id="ae81191ea328c320873cd960d410b881c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae81191ea328c320873cd960d410b881c">&#9670;&nbsp;</a></span>RemoveAllObjects()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT RemoveAllObjects </td>
+          <td class="memname">void RemoveAllObjects </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -581,32 +662,50 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 
 </div>
 </div>
-<a id="ac354f89feac0d87e3235e492528b106d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac354f89feac0d87e3235e492528b106d">&#9670;&nbsp;</a></span>RemoveAllRegions()</h2>
+<a id="ae4719fff6f90f1ff3fb7cc84b82785cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4719fff6f90f1ff3fb7cc84b82785cf">&#9670;&nbsp;</a></span>RemoveAllReferenceLine()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT RemoveAllRegions </td>
+          <td class="memname">void RemoveAllReferenceLine </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Remove all roi region items from the scene. </p>
+<p>Remove all reference lines from the scene. </p>
 
 </div>
 </div>
-<a id="a3c2cd4d4f339e3085e1300af4552dca5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3c2cd4d4f339e3085e1300af4552dca5">&#9670;&nbsp;</a></span>RemoveImage()</h2>
+<a id="a09fdbfea263f717e032c18bcd68fbcef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09fdbfea263f717e032c18bcd68fbcef">&#9670;&nbsp;</a></span>RemoveAllRegions()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT RemoveImage </td>
+          <td class="memname">void RemoveAllRegions </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Remove all region items from the scene. </p>
+
+</div>
+</div>
+<a id="aafb7d9b2cc66867e09157b66f674a1be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafb7d9b2cc66867e09157b66f674a1be">&#9670;&nbsp;</a></span>RemoveImage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RemoveImage </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -617,40 +716,40 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 
 </div>
 </div>
-<a id="acf42c88272d32aba1e5286b04dbe5f69"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acf42c88272d32aba1e5286b04dbe5f69">&#9670;&nbsp;</a></span>RemoveObject()</h2>
+<a id="a7e0c2a65428233b174ad026779d106fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e0c2a65428233b174ad026779d106fe">&#9670;&nbsp;</a></span>RemoveObject()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT RemoveObject </td>
+          <td class="memname">void RemoveObject </td>
           <td>(</td>
-          <td class="paramtype">[in] IDispatch *&#160;</td>
-          <td class="paramname"><em>pDrawable</em></td><td>)</td>
+          <td class="paramtype">IDispatch *&#160;</td>
+          <td class="paramname"><em>drawable</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Remove the drawable item from the scene. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pDrawable</td><td>The drawable item to be removed. </td></tr>
+    <tr><td class="paramname">drawable</td><td>The drawable item to be removed. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="ac95a3599695e52ad68ac8bcc85d75383"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac95a3599695e52ad68ac8bcc85d75383">&#9670;&nbsp;</a></span>RemoveObjectByID()</h2>
+<a id="a003c74bb0ae46c85a93c396026bbc67b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a003c74bb0ae46c85a93c396026bbc67b">&#9670;&nbsp;</a></span>RemoveObjectByID()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT RemoveObjectByID </td>
+          <td class="memname">void RemoveObjectByID </td>
           <td>(</td>
-          <td class="paramtype">[in] int&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>objectId</em></td><td>)</td>
           <td></td>
         </tr>
@@ -665,76 +764,90 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 
 </div>
 </div>
-<a id="a3c6f3f052a7ef172413b3b27fe82441e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3c6f3f052a7ef172413b3b27fe82441e">&#9670;&nbsp;</a></span>RemoveRegion()</h2>
+<a id="a939e4c94b88e34bbb135d269880bc334"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a939e4c94b88e34bbb135d269880bc334">&#9670;&nbsp;</a></span>RemoveReferenceLine()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT RemoveRegion </td>
+          <td class="memname">void RemoveReferenceLine </td>
           <td>(</td>
-          <td class="paramtype">[in] IDispatch *&#160;</td>
-          <td class="paramname"><em>pRegion</em></td><td>)</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>refLineId</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Remove the roi region item from the scene. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Remove the reference line from the scene, by its ID. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pRegion</td><td>The roi region item to be removed. </td></tr>
+    <tr><td class="paramname">refLineId</td><td>The reference line's ID. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a32b33a8986777f2bcff0241c320b020d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a32b33a8986777f2bcff0241c320b020d">&#9670;&nbsp;</a></span>RemoveRegionByID()</h2>
+<a id="ae4b0aa56be98613f314844f58a9edb19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4b0aa56be98613f314844f58a9edb19">&#9670;&nbsp;</a></span>RemoveRegion()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT RemoveRegionByID </td>
+          <td class="memname">void RemoveRegion </td>
           <td>(</td>
-          <td class="paramtype">[in] int&#160;</td>
+          <td class="paramtype">IDispatch *&#160;</td>
+          <td class="paramname"><em>region</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Remove the region item from the scene. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">region</td><td>The region item to be removed. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aaa7f795672b92ba60fe4a73bad70bd82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa7f795672b92ba60fe4a73bad70bd82">&#9670;&nbsp;</a></span>RemoveRegionByID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RemoveRegionByID </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>regionId</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Remove the roi region item from the scene, by its ID. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Remove the region item from the scene, by its ID. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">regionId</td><td>The roi region item's ID. </td></tr>
+    <tr><td class="paramname">regionId</td><td>The region item's ID. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a94d33f8bbfbcf1cd7de88bb6f0ab97c2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a94d33f8bbfbcf1cd7de88bb6f0ab97c2">&#9670;&nbsp;</a></span>SaveWindowToFile()</h2>
+<a id="a09363be5a60d131aa2dd7da89a85aef9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09363be5a60d131aa2dd7da89a85aef9">&#9670;&nbsp;</a></span>SaveWindowToFile()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT SaveWindowToFile </td>
+          <td class="memname">int SaveWindowToFile </td>
           <td>(</td>
-          <td class="paramtype">[in] BSTR&#160;</td>
-          <td class="paramname"><em>filename</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">BSTR&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">[out, retval] int *&#160;</td>
-          <td class="paramname"><em>pError</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -746,29 +859,29 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">pError</td><td>Return error code if anything is wrong. see LPVErrorCode. </td></tr>
+    <tr><td class="paramname">error</td><td>Return error code if anything is wrong. see LPVErrorCode. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="aaae355c9c6c3accc9f28aa3c45d792c0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaae355c9c6c3accc9f28aa3c45d792c0">&#9670;&nbsp;</a></span>SetDisplayFlag()</h2>
+<a id="a34630d9dd2b50da9a6e3895cc43140da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34630d9dd2b50da9a6e3895cc43140da">&#9670;&nbsp;</a></span>SetDisplayFlag()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT SetDisplayFlag </td>
+          <td class="memname">void SetDisplayFlag </td>
           <td>(</td>
-          <td class="paramtype">[in] <a class="el" href="namespace_l_p_v_display_lib.html#abc2f2be19cc9a20d8f4b71ddb968d49b">LPVDisplayFlags</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespace_l_p_v_display_lib.html#abc2f2be19cc9a20d8f4b71ddb968d49b">LPVDisplayFlags</a>&#160;</td>
           <td class="paramname"><em>flag</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in, defaultvalue(-1)] VARIANT_BOOL&#160;</td>
+          <td class="paramtype">BOOL&#160;</td>
           <td class="paramname"><em>enable</em>&#160;</td>
         </tr>
         <tr>
@@ -778,7 +891,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Enable/disable display flags for the control. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Enable / disable display flags for the control. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">flag</td><td>The display flag to be changed. </td></tr>
     <tr><td class="paramname">enable</td><td>Enables flag if enabled is true; otherwise disables flag. </td></tr>
@@ -788,46 +901,46 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 
 </div>
 </div>
-<a id="ac14a4d4b25028a0583461286d5378e3d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac14a4d4b25028a0583461286d5378e3d">&#9670;&nbsp;</a></span>SetImage()</h2>
+<a id="a184a7a1072c24324870a901db09a6c03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a184a7a1072c24324870a901db09a6c03">&#9670;&nbsp;</a></span>SetImage()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT SetImage </td>
+          <td class="memname">void SetImage </td>
           <td>(</td>
-          <td class="paramtype">[in] IDispatch *&#160;</td>
-          <td class="paramname"><em>pImage</em></td><td>)</td>
+          <td class="paramtype">IDispatch *&#160;</td>
+          <td class="paramname"><em>image</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Set the image of the scene. The size of the scene is extended to the image size. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pImage</td><td>The image item, it should be a <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">LImage </a> instance. </td></tr>
+    <tr><td class="paramname">image</td><td>The image item, it should be a <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">LImage </a> instance. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a95a9ff16711facc9a4c143169561efc2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a95a9ff16711facc9a4c143169561efc2">&#9670;&nbsp;</a></span>SetSize()</h2>
+<a id="a2c2ed3482f17828158b0a681b4e613ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c2ed3482f17828158b0a681b4e613ae">&#9670;&nbsp;</a></span>SetSize()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT SetSize </td>
+          <td class="memname">void SetSize </td>
           <td>(</td>
-          <td class="paramtype">[in] int&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>w</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in] int&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>h</em>&#160;</td>
         </tr>
         <tr>
@@ -847,11 +960,72 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 
 </div>
 </div>
+<a id="ad59ddb26897c32be05a846242874b1cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad59ddb26897c32be05a846242874b1cb">&#9670;&nbsp;</a></span>ShowDialog()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ShowDialog </td>
+          <td>(</td>
+          <td class="paramtype">BSTR&#160;</td>
+          <td class="paramname"><em>dialogName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>h</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Show the display control as a pop-up dialog. It's commonly used in a console application for debugging. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dialogName</td><td>The name of the dialog, shown in title bar. </td></tr>
+    <tr><td class="paramname">x</td><td>The x-coordinate of the window </td></tr>
+    <tr><td class="paramname">y</td><td>The y-coordinate of the window </td></tr>
+    <tr><td class="paramname">w</td><td>The width of the window </td></tr>
+    <tr><td class="paramname">h</td><td>The height of the window </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.9.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-© 2021 <a href="http://www.hzleaper.com/">Hangzhou Leaper Tech. Ltd.</a>
+© 2022 <a href="http://www.hzleaper.com/">Hangzhou Leaper Tech. Ltd.</a>
 </small></address>
+<script type="text/javascript">
+//<![CDATA[
+addTutorialsButtons();
+//]]>
+</script>
 </body>
 </html>

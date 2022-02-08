@@ -9,6 +9,7 @@
 <title>LPV: LPVDisplayLib 模块参考手册</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="tutorial-utils.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
@@ -82,7 +83,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>LPV 显示模块模块，提供 UI 控件，用于图像、ROI、几何形状及算法结果的显示和交互。  
+<p>LPV 显示模块模块，提供 UI 控件，用于图像、region、几何形状及算法结果的显示和交互。  
 <a href="namespace_l_p_v_display_lib.html#details">更多...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
@@ -123,7 +124,6 @@ $(function() {
 , <a class="el" href="namespace_l_p_v_display_lib.html#abc2f2be19cc9a20d8f4b71ddb968d49ba2af5e0dc0a3d591e11e9b8f55f386e74">LPVDisplayInteractRegion</a> = 0x08
 , <br />
 &#160;&#160;<a class="el" href="namespace_l_p_v_display_lib.html#abc2f2be19cc9a20d8f4b71ddb968d49ba89a1908c841727e26fb2727b2e14422e">LPVDisplayShowPixelUnderMouse</a> = 0x10
-, <a class="el" href="namespace_l_p_v_display_lib.html#abc2f2be19cc9a20d8f4b71ddb968d49bab862ad2ce23c9e9bd57d111bf8a8c6f0">LPVDisplayShowImageCenter</a> = 0x20
 , <a class="el" href="namespace_l_p_v_display_lib.html#abc2f2be19cc9a20d8f4b71ddb968d49ba46b7277f43b18b20a4e0b2d43a29b757">LPVDisplayDefault</a>
 , <a class="el" href="namespace_l_p_v_display_lib.html#abc2f2be19cc9a20d8f4b71ddb968d49bae146d63eac0bcf72ff43ade8f9af4a8e">LPVDisplayAll</a> = 0xff
 <br />
@@ -144,9 +144,13 @@ $(function() {
 <tr class="separator:aed764fec357cb9c2859be21e958f884f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
-<div class="textblock"><p>LPV 显示模块模块，提供 UI 控件，用于图像、ROI、几何形状及算法结果的显示和交互。 </p>
-<p><b>MFC Demo:</b> MFCDisplay <br  />
-<b>C# Demo:</b> CSharpDisplay </p>
+<div class="textblock"><p>LPV 显示模块模块，提供 UI 控件，用于图像、region、几何形状及算法结果的显示和交互。 </p>
+<h3>示例代码 </h3>
+ <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line"><span class="preprocessor">#include &quot;LPVDisplay.h&quot;</span></div>
+</div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line"><span class="keyword">using</span> <a class="code" href="namespace_l_p_v_display_lib.html">LPVDisplayLib</a>;</div>
+<div class="ttc" id="anamespace_l_p_v_display_lib_html"><div class="ttname"><a href="namespace_l_p_v_display_lib.html">LPVDisplayLib</a></div><div class="ttdoc">LPV 显示模块模块，提供 UI 控件，用于图像、region、几何形状及算法结果的显示和交互。</div><div class="ttdef"><b>Definition:</b> LPVDisplay.idl:46</div></div>
+</div><!-- fragment --> </div> <p><b>MFC Demo:</b> <a class="el" href="how_to_play_with_demo.html#demo_display">MFCDisplay</a> <br  />
+<b>C# Demo:</b> <a class="el" href="how_to_play_with_demo.html#demo_display">CSharpDisplay</a> </p>
 </div><h2 class="groupheader">枚举类型说明</h2>
 <a id="a5361690471ec9bae7d38163800878c4e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5361690471ec9bae7d38163800878c4e">&#9670;&nbsp;</a></span>LPVAlignment</h2>
@@ -202,11 +206,9 @@ $(function() {
 </td></tr>
 <tr><td class="fieldname"><a id="abc2f2be19cc9a20d8f4b71ddb968d49bac88575727a23f5e48293af093eb3c566"></a>LPVDisplayUseContextMenu&#160;</td><td class="fielddoc"><p>使用菜单，使用鼠标右键点击呼出 </p>
 </td></tr>
-<tr><td class="fieldname"><a id="abc2f2be19cc9a20d8f4b71ddb968d49ba2af5e0dc0a3d591e11e9b8f55f386e74"></a>LPVDisplayInteractRegion&#160;</td><td class="fielddoc"><p>场景中的 ROI 可交互 </p>
+<tr><td class="fieldname"><a id="abc2f2be19cc9a20d8f4b71ddb968d49ba2af5e0dc0a3d591e11e9b8f55f386e74"></a>LPVDisplayInteractRegion&#160;</td><td class="fielddoc"><p>场景中的区域对象可交互 </p>
 </td></tr>
 <tr><td class="fieldname"><a id="abc2f2be19cc9a20d8f4b71ddb968d49ba89a1908c841727e26fb2727b2e14422e"></a>LPVDisplayShowPixelUnderMouse&#160;</td><td class="fielddoc"><p>显示当前鼠标的位置和像素值 </p>
-</td></tr>
-<tr><td class="fieldname"><a id="abc2f2be19cc9a20d8f4b71ddb968d49bab862ad2ce23c9e9bd57d111bf8a8c6f0"></a>LPVDisplayShowImageCenter&#160;</td><td class="fielddoc"><p>显示图像中心，使用两条交叉的直线 </p>
 </td></tr>
 <tr><td class="fieldname"><a id="abc2f2be19cc9a20d8f4b71ddb968d49ba46b7277f43b18b20a4e0b2d43a29b757"></a>LPVDisplayDefault&#160;</td><td class="fielddoc"><p>默认显示场景参数，可移动，可缩放，可交互，使用右键菜单 </p>
 </td></tr>
@@ -268,7 +270,12 @@ $(function() {
 <!-- HTML footer for doxygen 1.9.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-© 2021 <a href="http://www.hzleaper.com/">杭州利珀科技有限公司</a>
+© 2022 <a href="http://www.hzleaper.com/">杭州利珀科技有限公司</a>
 </small></address>
+<script type="text/javascript">
+//<![CDATA[
+addTutorialsButtons();
+//]]>
+</script>
 </body>
 </html>

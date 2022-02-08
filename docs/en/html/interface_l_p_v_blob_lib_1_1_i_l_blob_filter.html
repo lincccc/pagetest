@@ -9,6 +9,7 @@
 <title>LPV: ILBlobFilter Interface Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="tutorial-utils.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
@@ -96,120 +97,101 @@ Inheritance diagram for ILBlobFilter:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac6d6d27954ceb2a9e26b12ac66843690"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_filter.html#ac6d6d27954ceb2a9e26b12ac66843690">Filter</a> ([in] <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html">ILBlob</a> *pBlob, [out, retval] VARIANT_BOOL *pVal)</td></tr>
-<tr class="separator:ac6d6d27954ceb2a9e26b12ac66843690"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2c97bca45126cbc346396b39d89ead4"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_filter.html#ae2c97bca45126cbc346396b39d89ead4">FilterResults</a> ([in] <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_results.html">ILBlobResults</a> *pBlobResults, [out, retval] <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_results.html">ILBlobResults</a> **pFilterResults)</td></tr>
-<tr class="separator:ae2c97bca45126cbc346396b39d89ead4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a828d0933abd2fa4a72950a3fee81dec6"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_filter.html#a828d0933abd2fa4a72950a3fee81dec6">Reset</a> ()</td></tr>
-<tr class="separator:a828d0933abd2fa4a72950a3fee81dec6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:accbe238a7f686c4306677e842f487bba"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_filter.html#accbe238a7f686c4306677e842f487bba">SetFilterFeature</a> ([in] <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50">LPVBlobFeatures</a> feature, [in] double lowerBound, [in] double upperBound)</td></tr>
-<tr class="separator:accbe238a7f686c4306677e842f487bba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32839c961dbfec575b0b62ea8d60d1c7"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_filter.html#a32839c961dbfec575b0b62ea8d60d1c7">Filter</a> (<a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html">ILBlob</a> *blob)</td></tr>
+<tr class="separator:a32839c961dbfec575b0b62ea8d60d1c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37787c4b035f6a97779db146da0915f1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_results.html">ILBlobResults</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_filter.html#a37787c4b035f6a97779db146da0915f1">FilterResults</a> (<a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_results.html">ILBlobResults</a> *blobResults)</td></tr>
+<tr class="separator:a37787c4b035f6a97779db146da0915f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a372de693ad40b3f42839c8ec6ac845f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_filter.html#a372de693ad40b3f42839c8ec6ac845f4">Reset</a> ()</td></tr>
+<tr class="separator:a372de693ad40b3f42839c8ec6ac845f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d432cb233a31ca0afb9cdbb94a17fee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_filter.html#a2d432cb233a31ca0afb9cdbb94a17fee">SetFilterFeature</a> (<a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50">LPVBlobFeatures</a> feature, double lowerBound, double upperBound)</td></tr>
+<tr class="separator:a2d432cb233a31ca0afb9cdbb94a17fee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This interface provide functionalities of blob filtering. </p>
 <p>Blob filter is used to filter blobs of interest according to their features. There's two common ways to use the blob filter:</p><ol type="1">
-<li>Configure a blob filter, then attach it to the blob analysis object via <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#af8afaeae6e2747c29f5f3b1019373757">ILBlobAnalysis::AddBlobFilter()</a>.</li>
-<li>Manually filter the blob results to build a new filtered collection via <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_filter.html#ae2c97bca45126cbc346396b39d89ead4">ILBlobFilter::FilterResults()</a>.</li>
+<li>Configure a blob filter, then attach it to the blob analysis object via <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#abc583ffbdc7101ddf7147f95bd7b5e8d">ILBlobAnalysis::AddBlobFilter()</a>.</li>
+<li>Manually filter the blob results to build a new filtered collection via <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_filter.html#a37787c4b035f6a97779db146da0915f1">ILBlobFilter::FilterResults()</a>.</li>
 </ol>
 <p>You can have multiple blob filters in a blob analysis object, for each blob candidate, it's reported as a result if one of the filters' criteria is satisfied.<br  />
 You can define multiple filtering features in a blob filter, for each blob candidate, it's reported as a result if all filtering features' limitations are satisfied.</p>
 <p>To use this interface, you should create a <a class="el" href="class_l_p_v_blob_lib_1_1_l_blob_filter.html">LBlobFilter</a> object.</p>
-<p>C++: </p><div class="fragment"><div class="line">CLBlobFilter m_blob_filter;</div>
-<div class="line">m_blob_filter.SetFilterFeature(LPVBlobFeatures::LPVBlobArea, 1000, -1);</div>
-<div class="line">m_blob_result2 = m_blob_filter.FilterResults(m_blob_result);</div>
-</div><!-- fragment --><p>C#: </p><div class="fragment"><div class="line">LBlobFilter m_blob_filter = <span class="keyword">new</span> LBlobFilter();</div>
+<h3>Example Code </h3>
+ <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">ILBlobFilterPtr m_blob_filter(__uuidof(LBlobFilter));</div>
+<div class="line">m_blob_filter-&gt;SetFilterFeature(LPVBlobFeatures::LPVBlobArea, 1000, -1);</div>
+<div class="line">m_blob_result2 = m_blob_filter-&gt;FilterResults(m_blob_result);</div>
+</div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LBlobFilter m_blob_filter = <span class="keyword">new</span> LBlobFilter();</div>
 <div class="line">m_blob_filter.SetFilterFeature(<a class="code" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50">LPVBlobFeatures</a>.LPVBlobArea, 1000, -1);</div>
 <div class="line">m_blob_result2 = m_blob_filter.FilterResults(m_blob_result);</div>
-<div class="ttc" id="anamespace_l_p_v_blob_lib_html_a45c2c9b22e80b8f2439fcdbcf94cec50"><div class="ttname"><a href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50">LPVBlobLib::LPVBlobFeatures</a></div><div class="ttdeci">LPVBlobFeatures</div><div class="ttdoc">This enumeration represents the numeric features of the blob.</div><div class="ttdef"><b>Definition:</b> LPVBlob.idl:54</div></div>
-</div><!-- fragment --> </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ac6d6d27954ceb2a9e26b12ac66843690"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac6d6d27954ceb2a9e26b12ac66843690">&#9670;&nbsp;</a></span>Filter()</h2>
+<div class="ttc" id="anamespace_l_p_v_blob_lib_html_a45c2c9b22e80b8f2439fcdbcf94cec50"><div class="ttname"><a href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50">LPVBlobLib::LPVBlobFeatures</a></div><div class="ttdeci">LPVBlobFeatures</div><div class="ttdoc">This enumeration represents the numeric features of the blob.</div><div class="ttdef"><b>Definition:</b> LPVBlob.idl:56</div></div>
+</div><!-- fragment --> </div>  </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a32839c961dbfec575b0b62ea8d60d1c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32839c961dbfec575b0b62ea8d60d1c7">&#9670;&nbsp;</a></span>Filter()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT Filter </td>
+          <td class="memname">BOOL Filter </td>
           <td>(</td>
-          <td class="paramtype">[in] <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html">ILBlob</a> *&#160;</td>
-          <td class="paramname"><em>pBlob</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html">ILBlob</a> *&#160;</td>
+          <td class="paramname"><em>blob</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">[out, retval] VARIANT_BOOL *&#160;</td>
-          <td class="paramname"><em>pVal</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Apply the filter on a single blob. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pBlob</td><td>The input blob. </td></tr>
+    <tr><td class="paramname">blob</td><td>The input blob. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">pVal</td><td>Return true if the input blob meet the filter's criteria; otherwise, return false. </td></tr>
+    <tr><td class="paramname">val</td><td>Return true if the input blob meet the filter's criteria; otherwise, return false. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="ae2c97bca45126cbc346396b39d89ead4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae2c97bca45126cbc346396b39d89ead4">&#9670;&nbsp;</a></span>FilterResults()</h2>
+<a id="a37787c4b035f6a97779db146da0915f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37787c4b035f6a97779db146da0915f1">&#9670;&nbsp;</a></span>FilterResults()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT FilterResults </td>
+          <td class="memname"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_results.html">ILBlobResults</a>* FilterResults </td>
           <td>(</td>
-          <td class="paramtype">[in] <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_results.html">ILBlobResults</a> *&#160;</td>
-          <td class="paramname"><em>pBlobResults</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_results.html">ILBlobResults</a> *&#160;</td>
+          <td class="paramname"><em>blobResults</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">[out, retval] <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_results.html">ILBlobResults</a> **&#160;</td>
-          <td class="paramname"><em>pFilterResults</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Apply the filter on a collection of blob, and return the filtered new collection. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pBlobResults</td><td>The input blob collection. </td></tr>
+    <tr><td class="paramname">blobResults</td><td>The input blob collection. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">pFilterResults</td><td>Return the filtered blob collection. </td></tr>
+    <tr><td class="paramname">filterResults</td><td>Return the filtered blob collection. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a828d0933abd2fa4a72950a3fee81dec6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a828d0933abd2fa4a72950a3fee81dec6">&#9670;&nbsp;</a></span>Reset()</h2>
+<a id="a372de693ad40b3f42839c8ec6ac845f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a372de693ad40b3f42839c8ec6ac845f4">&#9670;&nbsp;</a></span>Reset()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT Reset </td>
+          <td class="memname">void Reset </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -220,28 +202,28 @@ You can define multiple filtering features in a blob filter, for each blob candi
 
 </div>
 </div>
-<a id="accbe238a7f686c4306677e842f487bba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#accbe238a7f686c4306677e842f487bba">&#9670;&nbsp;</a></span>SetFilterFeature()</h2>
+<a id="a2d432cb233a31ca0afb9cdbb94a17fee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d432cb233a31ca0afb9cdbb94a17fee">&#9670;&nbsp;</a></span>SetFilterFeature()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HRESULT SetFilterFeature </td>
+          <td class="memname">void SetFilterFeature </td>
           <td>(</td>
-          <td class="paramtype">[in] <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50">LPVBlobFeatures</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50">LPVBlobFeatures</a>&#160;</td>
           <td class="paramname"><em>feature</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in] double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>lowerBound</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[in] double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>upperBound</em>&#160;</td>
         </tr>
         <tr>
@@ -266,7 +248,12 @@ You can define multiple filtering features in a blob filter, for each blob candi
 <!-- HTML footer for doxygen 1.9.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-© 2021 <a href="http://www.hzleaper.com/">Hangzhou Leaper Tech. Ltd.</a>
+© 2022 <a href="http://www.hzleaper.com/">Hangzhou Leaper Tech. Ltd.</a>
 </small></address>
+<script type="text/javascript">
+//<![CDATA[
+addTutorialsButtons();
+//]]>
+</script>
 </body>
 </html>

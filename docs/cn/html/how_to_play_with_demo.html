@@ -9,6 +9,7 @@
 <title>LPV: 玩转 DEMO</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="tutorial-utils.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
@@ -82,7 +83,8 @@ $(function() {
 <p><em>注意：DEMO 程序的平台需与安装注册的 lpv 版本对应。</em></p>
 <p><br  />
 </p>
-<h2>基础功能</h2>
+<h2><a class="anchor" id="demo_sanity"></a>
+基础功能</h2>
 <p>演示典型的视觉检测任务流程，包括图像、Region、模板、标定等基础功能。</p>
 <blockquote class="doxtable">
 <p><b>源代码 (C++)：</b> mfcdemo/MFCSanity<br  />
@@ -105,7 +107,8 @@ $(function() {
 </ol>
 <p><br  />
 </p>
-<h2>Region 操作</h2>
+<h2><a class="anchor" id="demo_region"></a>
+Region 操作</h2>
 <p>演示如何进行编辑 Region 及如何计算生成新的 Region。</p>
 <blockquote class="doxtable">
 <p><b>源代码 (C++)：</b> mfcdemo/MFCRegion<br  />
@@ -128,7 +131,8 @@ $(function() {
 </ol>
 <p><br  />
 </p>
-<h2>集成相机的采图回调</h2>
+<h2><a class="anchor" id="demo_hikcam"></a>
+集成相机的采图回调</h2>
 <p>演示如何集成相机到 LPV 程序，使用相机回调采集图像到 LImage 对象，以海康相机为例。</p>
 <blockquote class="doxtable">
 <p><b>源代码 (C#)：</b> csharpdemo/CSharpHikCam</p>
@@ -143,7 +147,8 @@ $(function() {
 </ol>
 <p><br  />
 </p>
-<h2>模板匹配</h2>
+<h2><a class="anchor" id="demo_pat"></a>
+模板匹配</h2>
 <p>演示模板匹配。</p>
 <blockquote class="doxtable">
 <p><b>源代码 (C++)：</b> mfcdemo/MFCPat<br  />
@@ -165,13 +170,14 @@ $(function() {
 </ol>
 <p><br  />
 </p>
-<h2>斑点分析</h2>
+<h2><a class="anchor" id="demo_blob"></a>
+斑点分析</h2>
 <p>演示斑点分析。</p>
 <blockquote class="doxtable">
 <p><b>源代码 (C++)：</b> mfcdemo/MFCBlob<br  />
  <b>源代码 (C#)：</b> csharpdemo/CSharpBlob<br  />
  <b>源代码 (Qt)：</b> qtdemo/QtBlob<br  />
- <b>图像文件：</b> da4b411a62df731e32ac4fb55a7492a.jpg</p>
+ <b>图像文件：</b> rou.jpg</p>
 <p><b>相关类：</b> <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html">LBlobAnalysis</a>, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_filter.html">LBlobFilter</a>, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_results.html">LBlobResults</a>, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html">LBlob</a> </p>
 </blockquote>
 <p><a href="t02_03_blob.png"><img src="t02_03_blob.png" alt="" style="float: right; height: 200px; margin-left: 20px;" class="inline"/> </a></p>
@@ -197,7 +203,8 @@ $(function() {
 </ol>
 <p><br  />
 </p>
-<h2>图像处理</h2>
+<h2><a class="anchor" id="demo_imgproc"></a>
+图像处理</h2>
 <p>演示常见的图像处理算子。</p>
 <blockquote class="doxtable">
 <p><b>源代码 (C++)：</b> mfcdemo/MFCImgProc<br  />
@@ -219,7 +226,8 @@ $(function() {
 </ol>
 <p><br  />
 </p>
-<h2>直线定位</h2>
+<h2><a class="anchor" id="demo_line"></a>
+直线定位</h2>
 <p>演示直线定位。</p>
 <blockquote class="doxtable">
 <p><b>源代码 (C++)：</b> mfcdemo/MFCLine<br  />
@@ -252,7 +260,8 @@ $(function() {
 </ol>
 <p><br  />
 </p>
-<h2>圆定位</h2>
+<h2><a class="anchor" id="demo_circle"></a>
+圆定位</h2>
 <p>演示圆定位。</p>
 <blockquote class="doxtable">
 <p><b>源代码 (C++)：</b> mfcdemo/MFCCircle<br  />
@@ -285,7 +294,8 @@ $(function() {
 </ol>
 <p><br  />
 </p>
-<h2>标定</h2>
+<h2><a class="anchor" id="demo_calib"></a>
+标定</h2>
 <p>演示相机标定。</p>
 <blockquote class="doxtable">
 <p><b>源代码 (C++)：</b> mfcdemo/MFCCalib<br  />
@@ -319,7 +329,8 @@ $(function() {
 </ol>
 <p><br  />
 </p>
-<h2>相机阵列和图像拼接</h2>
+<h2><a class="anchor" id="demo_camarray"></a>
+相机阵列和图像拼接</h2>
 <p>演示相机阵列标定和图像拼接。</p>
 <blockquote class="doxtable">
 <p><b>源代码 (C++)：</b> mfcdemo/MFCCamArray<br  />
@@ -338,7 +349,8 @@ $(function() {
 </ol>
 <p><br  />
 </p>
-<h2>几何计算和测量</h2>
+<h2><a class="anchor" id="demo_geom"></a>
+几何计算和测量</h2>
 <p>演示几何模块的常用功能，包括交点计算、距离测量、拟合等。</p>
 <blockquote class="doxtable">
 <p><b>源代码 (C++)：</b> mfcdemo/MFCGeom<br  />
@@ -349,7 +361,8 @@ $(function() {
 <p><a href="t02_08_geometry1.png"><img src="t02_08_geometry1.png" alt="" style="height: 200px;" class="inline"/> </a> <a href="t02_08_geometry2.png"><img src="t02_08_geometry2.png" alt="" style="height: 200px;" class="inline"/> </a> <a href="t02_08_geometry3.png"><img src="t02_08_geometry3.png" alt="" style="height: 200px;" class="inline"/> </a> <a href="t02_08_geometry4.png"><img src="t02_08_geometry4.png" alt="" style="height: 200px;" class="inline"/> </a></p>
 <p><br  />
 </p>
-<h2>条码检测</h2>
+<h2><a class="anchor" id="demo_barcode"></a>
+条码检测</h2>
 <p>演示一维码和二维码检测，以及条码质量评价。</p>
 <blockquote class="doxtable">
 <p><b>源代码 (C++)：</b> mfcdemo/MFCBarcode<br  />
@@ -370,7 +383,8 @@ $(function() {
 </ol>
 <p><br  />
 </p>
-<h2>显示控件</h2>
+<h2><a class="anchor" id="demo_display"></a>
+显示控件</h2>
 <p>演示如何使用显示控件。</p>
 <blockquote class="doxtable">
 <p><b>源代码 (C++)：</b> mfcdemo/MFCDisplay<br  />
@@ -397,7 +411,8 @@ $(function() {
 </ol>
 <p><br  />
 </p>
-<h2>连接到灵闪服务</h2>
+<h2><a class="anchor" id="demo_ibservice"></a>
+连接到灵闪服务</h2>
 <p>演示如何与灵闪服务集成，并使用具有强大功能的灵闪作业。</p>
 <blockquote class="doxtable">
 <p><b>源代码 (C++)：</b> mfcdemo/MFCIBService<br  />
@@ -426,7 +441,12 @@ $(function() {
 <!-- HTML footer for doxygen 1.9.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-© 2021 <a href="http://www.hzleaper.com/">杭州利珀科技有限公司</a>
+© 2022 <a href="http://www.hzleaper.com/">杭州利珀科技有限公司</a>
 </small></address>
+<script type="text/javascript">
+//<![CDATA[
+addTutorialsButtons();
+//]]>
+</script>
 </body>
 </html>
