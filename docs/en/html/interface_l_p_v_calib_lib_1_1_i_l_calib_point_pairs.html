@@ -129,7 +129,7 @@ Public Member Functions</h2></td></tr>
 <div class="line">    ILPointPtr worldPnt = m_pnt_pairs-&gt;GetWorldPoint(i);</div>
 <div class="line">    <span class="comment">// handle each point pair</span></div>
 <div class="line">}</div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">This enumeration represents the type of a LPV function error.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:155</div></div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">This enumeration represents the type of a LPV function error.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:162</div></div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LCalibPointPairs m_pnt_pairs;</div>
 <div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = (<a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>)m_calib_board.Detect(m_img, out m_pnt_pairs);</div>
 <div class="line"><span class="keywordflow">if</span> (err != <a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>.LPVNoError) <span class="keywordflow">return</span>;</div>
@@ -259,6 +259,11 @@ Public Member Functions</h2></td></tr>
 <p>Draw a image point in one point pair of given index onto provide device context. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">index</td><td>Input index, it should be a 0-based number smaller than total count. </td></tr>
+    <tr><td class="paramname">hdc</td><td>Handle to the device context of the destination window or bitmap. </td></tr>
+    <tr><td class="paramname">zoomX</td><td>Factor for zooming in or out in the x-coordinate direction. By default, it's in the true scale. </td></tr>
+    <tr><td class="paramname">zoomY</td><td>Factor for zooming in or out in the y-coordinate direction. Setting to 0 means same zoom factor as zoomX, aka. isotropic scaling. </td></tr>
+    <tr><td class="paramname">panX</td><td>translation in the x-coordinate direction for panning. The final display x position is calculated as: \((x + panX) \times zoomX\) </td></tr>
+    <tr><td class="paramname">panY</td><td>translation in the y-coordinate direction for panning. The final display y position is calculated as: \((y + panY) \times zoomY\) </td></tr>
   </table>
   </dd>
 </dl>
@@ -309,7 +314,17 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Draw all image points in the collection onto provide device context. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_point_pairs.html#af19e586c2c7bb2f3c27ada1ebaa61990">Draw()</a>. </dd></dl>
+<p>Draw all image points in the collection onto provide device context. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hdc</td><td>Handle to the device context of the destination window or bitmap. </td></tr>
+    <tr><td class="paramname">zoomX</td><td>Factor for zooming in or out in the x-coordinate direction. By default, it's in the true scale. </td></tr>
+    <tr><td class="paramname">zoomY</td><td>Factor for zooming in or out in the y-coordinate direction. Setting to 0 means same zoom factor as zoomX, aka. isotropic scaling. </td></tr>
+    <tr><td class="paramname">panX</td><td>translation in the x-coordinate direction for panning. The final display x position is calculated as: \((x + panX) \times zoomX\) </td></tr>
+    <tr><td class="paramname">panY</td><td>translation in the y-coordinate direction for panning. The final display y position is calculated as: \((y + panY) \times zoomY\) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_point_pairs.html#af19e586c2c7bb2f3c27ada1ebaa61990">Draw()</a>. </dd></dl>
 
 </div>
 </div>
@@ -388,7 +403,19 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Load the point pair collection from a specified file. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_point_pairs.html#aedf9b00d47787a935a044ce74d0df887">Save()</a> </dd></dl>
+<p>Load the point pair collection from a specified file. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>Full path of the file, it could be absolute or relative path with file name and extension. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">error</td><td>Return error code if anything is wrong. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_point_pairs.html#aedf9b00d47787a935a044ce74d0df887">Save()</a> </dd></dl>
 
 </div>
 </div>
@@ -425,7 +452,19 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Save the point pair collection to a specified file. It should be a .cpair file with the positions and corresponding information of all point pairs. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_point_pairs.html#acc33f804a59dbd9a1f824ea51862aaa2">Load()</a> </dd></dl>
+<p>Save the point pair collection to a specified file. It should be a .cpair file with the positions and corresponding information of all point pairs. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>Full path of the file, it could be absolute or relative path with file name and extension. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">error</td><td>Return error code if anything is wrong. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_point_pairs.html#acc33f804a59dbd9a1f824ea51862aaa2">Load()</a> </dd></dl>
 
 </div>
 </div>

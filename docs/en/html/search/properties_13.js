@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['verifyquality_1660',['VerifyQuality',['../interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#adf0d9099ddeafa37479161c47f75bf0a',1,'LPVBarcodeLib::ILBarcodeDetector']]],
-  ['vscrollbarpolicy_1661',['VScrollBarPolicy',['../interface_l_p_v_display_lib_1_1_i_l_display.html#a5e4301818dc221a0a7430da87c444e97',1,'LPVDisplayLib::ILDisplay']]]
+  ['usecache_1755',['UseCache',['../interface_l_p_v_pat_lib_1_1_i_l_match.html#a75ffdfc69b1a3dd711a2eaa55ef6f6bc',1,'LPVPatLib::ILMatch']]],
+  ['uselfsubpixcorner_1756',['UseLFSubPixCorner',['../interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#aa5146b955fed19ebfeb97f84fc39edc1',1,'LPVCalibLib::ILCalibBoard']]]
 ];

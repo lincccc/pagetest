@@ -1,14 +1,13 @@
 var indexSectionsWithContent =
 {
-  0: "_abcdefghiklmnoprstuvwxyz如常快玩随",
+  0: "_abcdefghiklmnopqrstuvwxyz如常快玩随",
   1: "_il",
   2: "l",
   3: "abcdefghilmoprstuvwx",
-  4: "airsxy",
+  4: "l",
   5: "l",
-  6: "l",
-  7: "abcdefghiklmnoprstuvwxyz",
-  8: "n如常快玩随"
+  6: "abcdefghiklmnopqrstuvwxyz",
+  7: "ln如常快玩随"
 };
 
 var indexSectionNames =
@@ -17,11 +16,10 @@ var indexSectionNames =
   1: "classes",
   2: "namespaces",
   3: "functions",
-  4: "variables",
-  5: "enums",
-  6: "enumvalues",
-  7: "properties",
-  8: "pages"
+  4: "enums",
+  5: "enumvalues",
+  6: "properties",
+  7: "pages"
 };
 
 var indexSectionLabels =
@@ -30,10 +28,9 @@ var indexSectionLabels =
   1: "结构体",
   2: "命名空间",
   3: "函数",
-  4: "变量",
-  5: "枚举",
-  6: "枚举值",
-  7: "属性",
-  8: "页"
+  4: "枚举",
+  5: "枚举值",
+  6: "属性",
+  7: "页"
 };
 

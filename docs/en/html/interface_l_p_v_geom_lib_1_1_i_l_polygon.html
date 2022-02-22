@@ -104,6 +104,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0cb7c47723f72f9554e3905fc94140e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d83eb9ffc3069ecdd68773a6b72de87"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html#a4d83eb9ffc3069ecdd68773a6b72de87">Draw</a> (BOOL bFill, HDC hdc, double zoomX, double zoomY, double panX, double panY)</td></tr>
 <tr class="separator:a4d83eb9ffc3069ecdd68773a6b72de87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cdf133df16733f8cfaa86e173d06193"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_point.html">ILPoint</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html#a2cdf133df16733f8cfaa86e173d06193">GetGravityCenter</a> ()</td></tr>
+<tr class="separator:a2cdf133df16733f8cfaa86e173d06193"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a80f810e51579b1908fa6cb27aa130a10"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_circle.html">ILCircle</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html#a80f810e51579b1908fa6cb27aa130a10">GetInscribedCircle</a> ()</td></tr>
 <tr class="separator:a80f810e51579b1908fa6cb27aa130a10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26fe3ece69c70adeefdeb65f5b8f83b1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_points.html">ILPoints</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html#a26fe3ece69c70adeefdeb65f5b8f83b1">GetPoints</a> ()</td></tr>
@@ -233,6 +235,34 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 <p>Draw all the points on HDC. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">bFill</td><td>Whether to fill the path using current brush. </td></tr>
+    <tr><td class="paramname">hdc</td><td>Handle to the device context of the destination window or bitmap. </td></tr>
+    <tr><td class="paramname">zoomX</td><td>Factor for zooming in or out in the x-coordinate direction. By default, it's in the true scale. </td></tr>
+    <tr><td class="paramname">zoomY</td><td>Factor for zooming in or out in the y-coordinate direction. Setting to 0 means same zoom factor as zoomX, aka. isotropic scaling. </td></tr>
+    <tr><td class="paramname">panX</td><td>translation in the x-coordinate direction for panning. The final display x position is calculated as: \((x + panX) \times zoomX\) </td></tr>
+    <tr><td class="paramname">panY</td><td>translation in the y-coordinate direction for panning. The final display y position is calculated as: \((y + panY) \times zoomY\) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2cdf133df16733f8cfaa86e173d06193"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2cdf133df16733f8cfaa86e173d06193">&#9670;&nbsp;</a></span>GetGravityCenter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_point.html">ILPoint</a>* GetGravityCenter </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get the gravity center of the polygon </p><dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">val</td><td>Return the center point </td></tr>
   </table>
   </dd>
 </dl>

@@ -103,8 +103,8 @@ Public 成员函数</h2></td></tr>
 <tr class="separator:abf6eb9241192e30fc075de26f2a5d0fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3931184d879ad244b5adeb19d56a7795"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match_results.html#a3931184d879ad244b5adeb19d56a7795">DrawAll</a> (HDC hdc, <a class="el" href="namespace_l_p_v_pat_lib.html#a38ed5c152c13123c0ab8728aa55efdf2">LPVPatDrawFlags</a> drawFlags, double zoomX, double zoomY, double panX, double panY)</td></tr>
 <tr class="separator:a3931184d879ad244b5adeb19d56a7795"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d9c1058d09f393094750fa7ee405fad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_l_p_v_pat_lib_1_1_l_match_result.html">LMatchResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match_results.html#a7d9c1058d09f393094750fa7ee405fad">Item</a> (int index)</td></tr>
-<tr class="separator:a7d9c1058d09f393094750fa7ee405fad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ba58a9e171dd44314e4d8013056ac4a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match_result.html">ILMatchResult</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match_results.html#a8ba58a9e171dd44314e4d8013056ac4a">Item</a> (int index)</td></tr>
+<tr class="separator:a8ba58a9e171dd44314e4d8013056ac4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a372de693ad40b3f42839c8ec6ac845f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match_results.html#a372de693ad40b3f42839c8ec6ac845f4">Reset</a> ()</td></tr>
 <tr class="separator:a372de693ad40b3f42839c8ec6ac845f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -117,10 +117,10 @@ Public 成员函数</h2></td></tr>
 <div class="line"><span class="keywordflow">if</span> (err != LPVErrorCode::LPVNoError) <span class="keywordflow">return</span>;</div>
 <div class="line"><span class="keywordtype">int</span> c = m_match_results-&gt;Count();</div>
 <div class="line"><span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; c; ++i) {</div>
-<div class="line">    LMatchResult result = m_match_results-&gt;Item(i);</div>
+<div class="line">    ILMatchResultPtr result = m_match_results-&gt;Item(i);</div>
 <div class="line">    <span class="comment">// handle each line result</span></div>
 <div class="line">}</div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">LPV 算法或函数运行过程中遇到的错误。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:155</div></div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">LPV 算法或函数运行过程中遇到的错误。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:162</div></div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LMatchResults m_match_results;</div>
 <div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = (<a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>)m_match.Match(m_img, (LRegion)m_roi, out m_match_results);</div>
 <div class="line"><span class="keywordflow">if</span> (err != <a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>.LPVNoError) <span class="keywordflow">return</span>;</div>
@@ -293,14 +293,14 @@ Public 成员函数</h2></td></tr>
 
 </div>
 </div>
-<a id="a7d9c1058d09f393094750fa7ee405fad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7d9c1058d09f393094750fa7ee405fad">&#9670;&nbsp;</a></span>Item()</h2>
+<a id="a8ba58a9e171dd44314e4d8013056ac4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ba58a9e171dd44314e4d8013056ac4a">&#9670;&nbsp;</a></span>Item()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_l_p_v_pat_lib_1_1_l_match_result.html">LMatchResult</a> Item </td>
+          <td class="memname"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match_result.html">ILMatchResult</a>* Item </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>index</em></td><td>)</td>

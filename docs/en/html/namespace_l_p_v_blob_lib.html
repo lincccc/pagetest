@@ -112,7 +112,7 @@ Data Structures</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:ae4c9f4d88a1bb01d41c2fb7e721d77ec"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_l_p_v_blob_lib.html#ae4c9f4d88a1bb01d41c2fb7e721d77ec">LPVBlobContourType</a> { <a class="el" href="namespace_l_p_v_blob_lib.html#ae4c9f4d88a1bb01d41c2fb7e721d77ecaefdede76d5b70a132e107d3ce8520c3b">LPVBlobContourExternal</a> = 0
-, <a class="el" href="namespace_l_p_v_blob_lib.html#ae4c9f4d88a1bb01d41c2fb7e721d77eca36b5ded68515097342703bf70a165697">LPVBlobContourHole</a>
+, <a class="el" href="namespace_l_p_v_blob_lib.html#ae4c9f4d88a1bb01d41c2fb7e721d77eca36b5ded68515097342703bf70a165697">LPVBlobContourHole</a> = 1
  }</td></tr>
 <tr class="memdesc:ae4c9f4d88a1bb01d41c2fb7e721d77ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">This enumeration represents the type of the blob contour.  <a href="namespace_l_p_v_blob_lib.html#ae4c9f4d88a1bb01d41c2fb7e721d77ec">More...</a><br /></td></tr>
 <tr class="separator:ae4c9f4d88a1bb01d41c2fb7e721d77ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -123,6 +123,7 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespace_l_p_v_blob_lib.html#a4585601573e75e76ba7f6f7eaf3566c7a60eeaeecbcbc2e64844959933ad83b70">LPVBlobDrawBoundingRect</a> = 8
 , <br />
 &#160;&#160;<a class="el" href="namespace_l_p_v_blob_lib.html#a4585601573e75e76ba7f6f7eaf3566c7adac4a2451dc8783db1409c4c40daf305">LPVBlobDrawRegion</a> = 16
+, <a class="el" href="namespace_l_p_v_blob_lib.html#a4585601573e75e76ba7f6f7eaf3566c7a04b1b5e9218543a6bab48a8d3299d134">LPVBlobDrawIndex</a> = 32
 , <a class="el" href="namespace_l_p_v_blob_lib.html#a4585601573e75e76ba7f6f7eaf3566c7a4c03af837f9fbe4e5fb8709316ee3222">LPVBlobDrawDefault</a> = LPVBlobDrawContour + LPVBlobDrawCenter
 , <a class="el" href="namespace_l_p_v_blob_lib.html#a4585601573e75e76ba7f6f7eaf3566c7aca09cb4c5b1638e2bfd9996a1518ae1f">LPVBlobDrawAll</a> = 0xff
 <br />
@@ -131,18 +132,21 @@ Enumerations</h2></td></tr>
 <tr class="separator:a4585601573e75e76ba7f6f7eaf3566c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45c2c9b22e80b8f2439fcdbcf94cec50"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50">LPVBlobFeatures</a> { <br />
 &#160;&#160;<a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50a66eee12a10fe5c774aac806ced36bbfb">LPVBlobArea</a> = 0
-, <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50a62352d145b9ec7f5a85f3a547e8eb48d">LPVBlobPerimeter</a>
-, <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50aa863f6b835230898147c1dd853f9f6ec">LPVBlobWidth</a>
-, <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50a27308e60e7ebc22158554ff923c4d4b8">LPVBlobHeight</a>
+, <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50a62352d145b9ec7f5a85f3a547e8eb48d">LPVBlobPerimeter</a> = 1
+, <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50aa863f6b835230898147c1dd853f9f6ec">LPVBlobWidth</a> = 2
+, <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50a27308e60e7ebc22158554ff923c4d4b8">LPVBlobHeight</a> = 3
 , <br />
-&#160;&#160;<a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50a59f66c483808c2e0686bc7cabdb2d90e">LPVBlobCircularity</a>
-, <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50abf93264ab50efcabe271047f6f7a3480">LPVBlobConvexity</a>
-, <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50a44a9b6cf753404db8dbf277f4e998687">LPVBlobInertia</a>
-, <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50afd1368ef32a7d7c1c56f2bf1cbdfda01">LPVBlobAspectRatio</a>
+&#160;&#160;<a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50a59f66c483808c2e0686bc7cabdb2d90e">LPVBlobCircularity</a> = 4
+, <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50abf93264ab50efcabe271047f6f7a3480">LPVBlobConvexity</a> = 5
+, <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50a44a9b6cf753404db8dbf277f4e998687">LPVBlobInertia</a> = 6
+, <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50afd1368ef32a7d7c1c56f2bf1cbdfda01">LPVBlobAspectRatio</a> = 7
 , <br />
-&#160;&#160;<a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50a14f8d83e26a56a466a688f45487d483e">LPVBlobSharpness</a>
-, <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50a205fb138cc4ff34628263ed1128daf89">LPVBlobLuminance</a>
-, <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50a791b8bb4dfb80af34632c88be591b195">LPVBlobContrast</a>
+&#160;&#160;<a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50a14f8d83e26a56a466a688f45487d483e">LPVBlobSharpness</a> = 8
+, <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50a205fb138cc4ff34628263ed1128daf89">LPVBlobLuminance</a> = 9
+, <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50a791b8bb4dfb80af34632c88be591b195">LPVBlobContrast</a> = 10
+, <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50a0f93db306f974259eed6baa7471c75fe">LPVBlobCenterX</a> = 11
+, <br />
+&#160;&#160;<a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50acd4d42d56933f3a9713168273fd3ae6f">LPVBlobCenterY</a> = 12
 <br />
  }</td></tr>
 <tr class="memdesc:a45c2c9b22e80b8f2439fcdbcf94cec50"><td class="mdescLeft">&#160;</td><td class="mdescRight">This enumeration represents the numeric features of the blob.  <a href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50">More...</a><br /></td></tr>
@@ -204,6 +208,8 @@ Enumerations</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="a4585601573e75e76ba7f6f7eaf3566c7adac4a2451dc8783db1409c4c40daf305"></a>LPVBlobDrawRegion&#160;</td><td class="fielddoc"><p>Draw all the pixels inside the blob as a mask </p>
 </td></tr>
+<tr><td class="fieldname"><a id="a4585601573e75e76ba7f6f7eaf3566c7a04b1b5e9218543a6bab48a8d3299d134"></a>LPVBlobDrawIndex&#160;</td><td class="fielddoc"><p>Draw the index of the blob right to its center </p>
+</td></tr>
 <tr><td class="fieldname"><a id="a4585601573e75e76ba7f6f7eaf3566c7a4c03af837f9fbe4e5fb8709316ee3222"></a>LPVBlobDrawDefault&#160;</td><td class="fielddoc"><p>Default draw flags, which draws the contour and the center </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a4585601573e75e76ba7f6f7eaf3566c7aca09cb4c5b1638e2bfd9996a1518ae1f"></a>LPVBlobDrawAll&#160;</td><td class="fielddoc"><p>Draw a blob with all components </p>
@@ -253,6 +259,10 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><a id="a45c2c9b22e80b8f2439fcdbcf94cec50a205fb138cc4ff34628263ed1128daf89"></a>LPVBlobLuminance&#160;</td><td class="fielddoc"><p>Average luminance calculated using all the pixels inside the blob. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a45c2c9b22e80b8f2439fcdbcf94cec50a791b8bb4dfb80af34632c88be591b195"></a>LPVBlobContrast&#160;</td><td class="fielddoc"><p>Average contrast calculated using all the pixels inside the blob. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a45c2c9b22e80b8f2439fcdbcf94cec50a0f93db306f974259eed6baa7471c75fe"></a>LPVBlobCenterX&#160;</td><td class="fielddoc"><p>The x-coordinates of the blob center </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a45c2c9b22e80b8f2439fcdbcf94cec50acd4d42d56933f3a9713168273fd3ae6f"></a>LPVBlobCenterY&#160;</td><td class="fielddoc"><p>The y-coordinates of the blob center </p>
 </td></tr>
 </table>
 

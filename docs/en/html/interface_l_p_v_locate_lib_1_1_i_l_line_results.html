@@ -105,8 +105,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a25ad77280c069294fb0ac557c50ec4b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54ab763668a5303c740f32f0c403cabf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_locate_lib_1_1_i_l_line_results.html#a54ab763668a5303c740f32f0c403cabf">DrawScoreChart</a> (HDC hdc, <a class="el" href="namespace_l_p_v_core_lib.html#a9c7c60c3ff92e1b019f872af1d31e858">LPVChartDrawFlags</a> bDrawFlags, int xGridStep, int yGridStep)</td></tr>
 <tr class="separator:a54ab763668a5303c740f32f0c403cabf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a659a12890d7237a18e4a069775fd0a7a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_l_p_v_locate_lib_1_1_l_line_result.html">LLineResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_locate_lib_1_1_i_l_line_results.html#a659a12890d7237a18e4a069775fd0a7a">Item</a> (int index)</td></tr>
-<tr class="separator:a659a12890d7237a18e4a069775fd0a7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d9430fe5b4166452cebece6fb3846b4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_locate_lib_1_1_i_l_line_result.html">ILLineResult</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_locate_lib_1_1_i_l_line_results.html#a9d9430fe5b4166452cebece6fb3846b4">Item</a> (int index)</td></tr>
+<tr class="separator:a9d9430fe5b4166452cebece6fb3846b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a372de693ad40b3f42839c8ec6ac845f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_locate_lib_1_1_i_l_line_results.html#a372de693ad40b3f42839c8ec6ac845f4">Reset</a> ()</td></tr>
 <tr class="separator:a372de693ad40b3f42839c8ec6ac845f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -119,10 +119,10 @@ Public Member Functions</h2></td></tr>
 <div class="line"><span class="keywordflow">if</span> (err != LPVErrorCode::LPVNoError) <span class="keywordflow">return</span>;</div>
 <div class="line"><span class="keywordtype">int</span> c = m_line_results-&gt;Count();</div>
 <div class="line"><span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; c; ++i) {</div>
-<div class="line">    LLineResult result = m_line_results-&gt;Item(i);</div>
+<div class="line">    ILLineResultPtr result = m_line_results-&gt;Item(i);</div>
 <div class="line">    <span class="comment">// handle each line result</span></div>
 <div class="line">}</div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">This enumeration represents the type of a LPV function error.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:155</div></div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">This enumeration represents the type of a LPV function error.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:162</div></div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LLineResults m_line_results;</div>
 <div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = (<a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>)m_line_detector.Detect(m_img, (LRotRectRegion)m_roi, out m_line_results);</div>
 <div class="line"><span class="keywordflow">if</span> (err != <a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>.LPVNoError) <span class="keywordflow">return</span>;</div>
@@ -216,6 +216,10 @@ Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">hdc</td><td>Handle to the device context of the destination window or bitmap. </td></tr>
+    <tr><td class="paramname">zoomX</td><td>Factor for zooming in or out in the x-coordinate direction. By default, it's in the true scale. </td></tr>
+    <tr><td class="paramname">zoomY</td><td>Factor for zooming in or out in the y-coordinate direction. Setting to 0 means same zoom factor as zoomX, aka. isotropic scaling. </td></tr>
+    <tr><td class="paramname">panX</td><td>translation in the x-coordinate direction for panning. The final display x position is calculated as: \((x + panX) \times zoomX\) </td></tr>
+    <tr><td class="paramname">panY</td><td>translation in the y-coordinate direction for panning. The final display y position is calculated as: \((y + panY) \times zoomY\) </td></tr>
   </table>
   </dd>
 </dl>
@@ -271,10 +275,20 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Draw all line results onto provide device context. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_locate_lib_1_1_i_l_line_results.html#a768f6dcffe07be129658e4575c762dcb">Draw()</a> </dd></dl>
+<p>Draw all line results onto provide device context. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">drawFlags</td><td>Control the drawing behavior, see LPVLineDrawFlags </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_locate_lib_1_1_i_l_line_results.html#a768f6dcffe07be129658e4575c762dcb">Draw()</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">hdc</td><td>Handle to the device context of the destination window or bitmap. </td></tr>
+    <tr><td class="paramname">zoomX</td><td>Factor for zooming in or out in the x-coordinate direction. By default, it's in the true scale. </td></tr>
+    <tr><td class="paramname">zoomY</td><td>Factor for zooming in or out in the y-coordinate direction. Setting to 0 means same zoom factor as zoomX, aka. isotropic scaling. </td></tr>
+    <tr><td class="paramname">panX</td><td>translation in the x-coordinate direction for panning. The final display x position is calculated as: \((x + panX) \times zoomX\) </td></tr>
+    <tr><td class="paramname">panY</td><td>translation in the y-coordinate direction for panning. The final display y position is calculated as: \((y + panY) \times zoomY\) </td></tr>
   </table>
   </dd>
 </dl>
@@ -330,14 +344,14 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a659a12890d7237a18e4a069775fd0a7a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a659a12890d7237a18e4a069775fd0a7a">&#9670;&nbsp;</a></span>Item()</h2>
+<a id="a9d9430fe5b4166452cebece6fb3846b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d9430fe5b4166452cebece6fb3846b4">&#9670;&nbsp;</a></span>Item()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_l_p_v_locate_lib_1_1_l_line_result.html">LLineResult</a> Item </td>
+          <td class="memname"><a class="el" href="interface_l_p_v_locate_lib_1_1_i_l_line_result.html">ILLineResult</a>* Item </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>index</em></td><td>)</td>

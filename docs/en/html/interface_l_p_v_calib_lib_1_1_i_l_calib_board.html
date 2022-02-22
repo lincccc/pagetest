@@ -159,7 +159,7 @@ We support 3 types of board, see LPVCalibBoardType for more details.</p>
 <div class="line">m_calib_board-&gt;SquareSize = 1;</div>
 <div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = m_calib_board-&gt;Detect(m_img, &amp;m_pnt_pairs);</div>
 <div class="line"><span class="keywordflow">if</span> (err != LPVErrorCode::LPVNoError) <span class="keywordflow">return</span>;</div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">This enumeration represents the type of a LPV function error.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:155</div></div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">This enumeration represents the type of a LPV function error.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:162</div></div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LCalibBoard m_calib_board = <span class="keyword">new</span> LCalibBoard();</div>
 <div class="line">m_calib_board.GridWidth = 10;</div>
 <div class="line">m_calib_board.GridHeight = 7;</div>
@@ -224,7 +224,19 @@ We support 3 types of board, see LPVCalibBoardType for more details.</p>
       </table>
 </div><div class="memdoc">
 <p>Load the calibration board object from a specified file.<br  />
-It should be a .cboard file with the calibration board configurations in it. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#aedf9b00d47787a935a044ce74d0df887">Save()</a> </dd></dl>
+It should be a .cboard file with the calibration board configurations in it. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>Full path of the file, it could be absolute or relative path with file name and extension. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">error</td><td>Return error code if anything is wrong. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#aedf9b00d47787a935a044ce74d0df887">Save()</a> </dd></dl>
 
 </div>
 </div>
@@ -244,7 +256,19 @@ It should be a .cboard file with the calibration board configurations in it. </p
       </table>
 </div><div class="memdoc">
 <p>Save the calibration board object to a specified file.<br  />
-The serialized file is .cboard file with the calibration board configurations. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#acc33f804a59dbd9a1f824ea51862aaa2">Load()</a> </dd></dl>
+The serialized file is .cboard file with the calibration board configurations. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>Full path of the file, it could be absolute or relative path with file name and extension. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">error</td><td>Return error code if anything is wrong. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#acc33f804a59dbd9a1f824ea51862aaa2">Load()</a> </dd></dl>
 
 </div>
 </div>

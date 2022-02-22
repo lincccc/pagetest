@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['玩转_20demo_837',['玩转 DEMO',['../how_to_play_with_demo.html',1,'']]]
+  ['快速上手_884',['快速上手',['../quick_guide.html',1,'']]]
 ];

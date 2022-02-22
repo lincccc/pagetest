@@ -50,7 +50,7 @@ function addButton(label, buttonName) {
 
 function buttonsToAdd($elements, $heading, $type) {
     if ($elements.length === 0) {
-        $elements = $("" + $type + ":contains(" + $heading.html() + ")").parent().prev("div.newInnerHTML");
+        $elements = $("" + $type + ":contains('" + $heading.html() + "')").parent().prev("div.newInnerHTML");
     }
     var arr = jQuery.makeArray($elements);
     var seen = {};

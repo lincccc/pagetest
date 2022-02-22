@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['quick_20guide_1677',['Quick Guide',['../quick_guide.html',1,'']]]
+  ['play_20with_20demos_1774',['Play with DEMOs',['../how_to_play_with_demo.html',1,'']]]
 ];

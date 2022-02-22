@@ -119,6 +119,12 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_rot_rect_region.html">ILRotRectRegion</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This interface expose APIs to create/modify a rotated rectangle region object.  <a href="interface_l_p_v_core_lib_1_1_i_l_rot_rect_region.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_sortable.html">ILSortable</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This interface represent a sortable LPV class.  <a href="interface_l_p_v_core_lib_1_1_i_l_sortable.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_sortables.html">ILSortables</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This interface expose APIs to sort or apply permutation to a LPV class contains a collection of sortable objects.  <a href="interface_l_p_v_core_lib_1_1_i_l_sortables.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_system.html">ILSystem</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This interface provide miscellaneous functions to change LPV system configurations globally.  <a href="interface_l_p_v_core_lib_1_1_i_l_system.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -186,8 +192,11 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespace_l_p_v_core_lib.html#a9c7c60c3ff92e1b019f872af1d31e858a12e4f579c1084f688bc3186b07fd0875">LPVChartDrawIndexLabel</a> = 8
 , <br />
 &#160;&#160;<a class="el" href="namespace_l_p_v_core_lib.html#a9c7c60c3ff92e1b019f872af1d31e858ab8ee02cc6b5912f09c340172415eebea">LPVChartDrawValueLabel</a> = 16
-, <a class="el" href="namespace_l_p_v_core_lib.html#a9c7c60c3ff92e1b019f872af1d31e858a14e3fd061825103a168036a2080849fe">LPVChartDrawDefault</a> = LPVChartDrawAsBar + LPVChartDrawIndexLabel + LPVChartDrawValueLabel
-, <a class="el" href="namespace_l_p_v_core_lib.html#a9c7c60c3ff92e1b019f872af1d31e858aa8060daedaef79ae92f4548f2154f0dd">LPVChartDrawAll</a> = 0xff
+, <a class="el" href="namespace_l_p_v_core_lib.html#a9c7c60c3ff92e1b019f872af1d31e858ad23963e21f6c148f968a67d132bbad27">LPVChartDrawAsLineDefault</a> = LPVChartDrawAsLine + LPVChartDrawIndexLabel + LPVChartDrawValueLabel
+, <a class="el" href="namespace_l_p_v_core_lib.html#a9c7c60c3ff92e1b019f872af1d31e858a88a1b09f265b25e33a798dac1978abe7">LPVChartDrawAsBarDefault</a> = LPVChartDrawAsBar + LPVChartDrawIndexLabel + LPVChartDrawValueLabel
+, <a class="el" href="namespace_l_p_v_core_lib.html#a9c7c60c3ff92e1b019f872af1d31e858a14e3fd061825103a168036a2080849fe">LPVChartDrawDefault</a> = LPVChartDrawAsBarDefault
+, <br />
+&#160;&#160;<a class="el" href="namespace_l_p_v_core_lib.html#a9c7c60c3ff92e1b019f872af1d31e858aa8060daedaef79ae92f4548f2154f0dd">LPVChartDrawAll</a> = 0xff
 <br />
  }</td></tr>
 <tr class="memdesc:a9c7c60c3ff92e1b019f872af1d31e858"><td class="mdescLeft">&#160;</td><td class="mdescRight">This enumeration represents the flags to control which part of a data chart should be drawn.  <a href="namespace_l_p_v_core_lib.html#a9c7c60c3ff92e1b019f872af1d31e858">More...</a><br /></td></tr>
@@ -261,6 +270,7 @@ Enumerations</h2></td></tr>
 , <br />
 &#160;&#160;<a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aaa9c87ef17870fb3ce00a352f4854f435">LPVErrPatFailTrain</a> = 0x81000301
 , <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aa1e66eddeb8e950570251de5a2d619859">LPVErrPatNotTrain</a> = 0x81000302
+, <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aa1c5b09b437ef1c4fc57992f99d90cb7d">LPVErrSortArrayFailed</a> = 0x81000401
 <br />
  }</td></tr>
 <tr class="memdesc:a753df57c2ab9773ee9dff5747163ee4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">This enumeration represents the type of a LPV function error.  <a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">More...</a><br /></td></tr>
@@ -306,6 +316,17 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:ad8a4d763bb82cc129119ff1cf0bc0e0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This enumeration represents the polarity of the edge or object to be located.  <a href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0b">More...</a><br /></td></tr>
 <tr class="separator:ad8a4d763bb82cc129119ff1cf0bc0e0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54c773c6f72a88ff41d8ab615b5a92f3"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_l_p_v_core_lib.html#a54c773c6f72a88ff41d8ab615b5a92f3">LPVPositionMode</a> { <br />
+&#160;&#160;<a class="el" href="namespace_l_p_v_core_lib.html#a54c773c6f72a88ff41d8ab615b5a92f3aea7d4f40ef215e315aae1663bfff8354">LPVPosModeCenter</a> = 0
+, <a class="el" href="namespace_l_p_v_core_lib.html#a54c773c6f72a88ff41d8ab615b5a92f3a8c81ce1aaf665e98989e674df00887f3">LPVPosModeTopLeft</a> = 1
+, <a class="el" href="namespace_l_p_v_core_lib.html#a54c773c6f72a88ff41d8ab615b5a92f3a4dbe1aabed3fac9e1aa869e72e8c1895">LPVPosModeTopRight</a> = 2
+, <a class="el" href="namespace_l_p_v_core_lib.html#a54c773c6f72a88ff41d8ab615b5a92f3a26d057ee4a3d95416e0bbfabf0b0110d">LPVPosModeBottomLeft</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="namespace_l_p_v_core_lib.html#a54c773c6f72a88ff41d8ab615b5a92f3aaf4af5dd64e7f5be0754788edd768d12">LPVPosModeBottomRight</a> = 4
+<br />
+ }</td></tr>
+<tr class="memdesc:a54c773c6f72a88ff41d8ab615b5a92f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">This enumeration represents which point is used as a object's position, used in sorting.  <a href="namespace_l_p_v_core_lib.html#a54c773c6f72a88ff41d8ab615b5a92f3">More...</a><br /></td></tr>
+<tr class="separator:a54c773c6f72a88ff41d8ab615b5a92f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8e2acac6c176e2f73929bab80909322"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_l_p_v_core_lib.html#ae8e2acac6c176e2f73929bab80909322">LPVRoiHandle</a> { <br />
 &#160;&#160;<a class="el" href="namespace_l_p_v_core_lib.html#ae8e2acac6c176e2f73929bab80909322a131969394a1813a27449305e7806a1bb">LPVRoiHandleUnknown</a> = -1
 , <a class="el" href="namespace_l_p_v_core_lib.html#ae8e2acac6c176e2f73929bab80909322a3dc18c99a94257cf24fe1adb3d59e513">LPVRoiHandleNone</a> = 0
@@ -330,32 +351,28 @@ Enumerations</h2></td></tr>
 <tr class="memdesc:ae8e2acac6c176e2f73929bab80909322"><td class="mdescLeft">&#160;</td><td class="mdescRight">This enumeration represents the type of a region handle for drag.  <a href="namespace_l_p_v_core_lib.html#ae8e2acac6c176e2f73929bab80909322">More...</a><br /></td></tr>
 <tr class="separator:ae8e2acac6c176e2f73929bab80909322"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1752d5f8ebb6a8f6dda700e1a87c98de"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_l_p_v_core_lib.html#a1752d5f8ebb6a8f6dda700e1a87c98de">LPVSortBy</a> { <br />
-&#160;&#160;<a class="el" href="namespace_l_p_v_core_lib.html#a1752d5f8ebb6a8f6dda700e1a87c98dea428b20c462de5f4be90877545f9497cb">LPVSortNone</a> = 0
-, <a class="el" href="namespace_l_p_v_core_lib.html#a1752d5f8ebb6a8f6dda700e1a87c98dea374181992b9389c2e267a5fc589454de">LPVSortLeftToRight</a>
-, <a class="el" href="namespace_l_p_v_core_lib.html#a1752d5f8ebb6a8f6dda700e1a87c98dea6d70862a5a38affa8b2cd8fb33984fbc">LPVSortRightToLeft</a>
-, <a class="el" href="namespace_l_p_v_core_lib.html#a1752d5f8ebb6a8f6dda700e1a87c98dea00f13134b23a93a92e2720a8ea0352cd">LPVSortTopDown</a>
+&#160;&#160;<a class="el" href="namespace_l_p_v_core_lib.html#a1752d5f8ebb6a8f6dda700e1a87c98dea3a6a628a6b36b44100605255ae4dde17">LPVSortByReserved</a> = 0
+, <a class="el" href="namespace_l_p_v_core_lib.html#a1752d5f8ebb6a8f6dda700e1a87c98dea3801a44d8593a854b0c867d2717cde43">LPVSortByX</a> = 1
+, <a class="el" href="namespace_l_p_v_core_lib.html#a1752d5f8ebb6a8f6dda700e1a87c98dea022ef0958c178dfa1207b5bb0488b3b0">LPVSortByY</a> = 2
+, <a class="el" href="namespace_l_p_v_core_lib.html#a1752d5f8ebb6a8f6dda700e1a87c98deab8ce0c0eeef0bfd23d2e55b14c7e09ca">LPVSortByScore</a> = 3
 , <br />
-&#160;&#160;<a class="el" href="namespace_l_p_v_core_lib.html#a1752d5f8ebb6a8f6dda700e1a87c98dea3cd0d290785871cc514504593ddb30ac">LPVSortDownTop</a>
-, <a class="el" href="namespace_l_p_v_core_lib.html#a1752d5f8ebb6a8f6dda700e1a87c98dea2169a921bc68c0a1a238c96cfc24c515">LPVSortAlphabetical</a>
-, <a class="el" href="namespace_l_p_v_core_lib.html#a1752d5f8ebb6a8f6dda700e1a87c98dea08eb51a671d695cc1f3b27f8376896f6">LPVSortByLength</a>
-, <a class="el" href="namespace_l_p_v_core_lib.html#a1752d5f8ebb6a8f6dda700e1a87c98deab8ce0c0eeef0bfd23d2e55b14c7e09ca">LPVSortByScore</a>
-, <br />
-&#160;&#160;<a class="el" href="namespace_l_p_v_core_lib.html#a1752d5f8ebb6a8f6dda700e1a87c98dea16c16596f579583af1f1b06834b74190">LPVSortByArea</a>
-, <a class="el" href="namespace_l_p_v_core_lib.html#a1752d5f8ebb6a8f6dda700e1a87c98dea04f5673885e41dce08855ddc8a0a3405">LPVSortByWidth</a>
-, <a class="el" href="namespace_l_p_v_core_lib.html#a1752d5f8ebb6a8f6dda700e1a87c98dea2208f55f9bed8078613e668eb1495cad">LPVSortByHeight</a>
-, <a class="el" href="namespace_l_p_v_core_lib.html#a1752d5f8ebb6a8f6dda700e1a87c98dea1cb9965260b0ad64d9352db8f25a4279">LPVSortByCircularity</a>
-, <br />
-&#160;&#160;<a class="el" href="namespace_l_p_v_core_lib.html#a1752d5f8ebb6a8f6dda700e1a87c98dea94642ae09b44c6aa4e6ceeb602480b5c">LPVSortByConvexity</a>
-, <a class="el" href="namespace_l_p_v_core_lib.html#a1752d5f8ebb6a8f6dda700e1a87c98dea1a1425525d07ca856a70a8cdb767f7cd">LPVSortByInertia</a>
-, <a class="el" href="namespace_l_p_v_core_lib.html#a1752d5f8ebb6a8f6dda700e1a87c98dea38ae4e6d98ceecb0982a2f12b4858090">LPVSortByName</a>
-, <a class="el" href="namespace_l_p_v_core_lib.html#a1752d5f8ebb6a8f6dda700e1a87c98deab37afabc26747d05c655c835cc6ba556">LPVSortByDate</a>
-, <br />
-&#160;&#160;<a class="el" href="namespace_l_p_v_core_lib.html#a1752d5f8ebb6a8f6dda700e1a87c98dea9725f7ef264e649efefb89278d133373">LPVSortByRandom</a>
-, <a class="el" href="namespace_l_p_v_core_lib.html#a1752d5f8ebb6a8f6dda700e1a87c98deae129e66d95121e410f70111c98e63df1">LPVSortByAspectRatio</a>
+&#160;&#160;<a class="el" href="namespace_l_p_v_core_lib.html#a1752d5f8ebb6a8f6dda700e1a87c98dea8fbe9268750180e7607b512fe91be6b8">LPVSortByColumn</a> = 4
+, <a class="el" href="namespace_l_p_v_core_lib.html#a1752d5f8ebb6a8f6dda700e1a87c98deae4aacdad11139178ec534b607320f6e4">LPVSortByRow</a> = 5
 <br />
  }</td></tr>
 <tr class="memdesc:a1752d5f8ebb6a8f6dda700e1a87c98de"><td class="mdescLeft">&#160;</td><td class="mdescRight">This enumeration represents the type of sorting.  <a href="namespace_l_p_v_core_lib.html#a1752d5f8ebb6a8f6dda700e1a87c98de">More...</a><br /></td></tr>
 <tr class="separator:a1752d5f8ebb6a8f6dda700e1a87c98de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38d3a87896df9ff1b8c96bee1ab58e2f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_l_p_v_core_lib.html#a38d3a87896df9ff1b8c96bee1ab58e2f">LPVSortOrder</a> { <br />
+&#160;&#160;<a class="el" href="namespace_l_p_v_core_lib.html#a38d3a87896df9ff1b8c96bee1ab58e2faa3cd168041455358a087899af206357c">LPVSortOrderRandom</a> = 1
+, <a class="el" href="namespace_l_p_v_core_lib.html#a38d3a87896df9ff1b8c96bee1ab58e2faccbd24417fbf505b986cbffe12a89f25">LPVSortOrderAscending</a> = 2
+, <a class="el" href="namespace_l_p_v_core_lib.html#a38d3a87896df9ff1b8c96bee1ab58e2fac2f0614a60fa529439dd8324063a2bbd">LPVSortOrderDescending</a> = 3
+, <a class="el" href="namespace_l_p_v_core_lib.html#a38d3a87896df9ff1b8c96bee1ab58e2fad8ae978cdb112c0fbf64207310855ad0">LPVSortOrderAscendingZigZag</a> = 4
+, <br />
+&#160;&#160;<a class="el" href="namespace_l_p_v_core_lib.html#a38d3a87896df9ff1b8c96bee1ab58e2fac88fa9773daa6256c3dc7919ca3664ec">LPVSortOrderDescendingZigZag</a> = 5
+<br />
+ }</td></tr>
+<tr class="memdesc:a38d3a87896df9ff1b8c96bee1ab58e2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This enumeration represents the order of sorting.  <a href="namespace_l_p_v_core_lib.html#a38d3a87896df9ff1b8c96bee1ab58e2f">More...</a><br /></td></tr>
+<tr class="separator:a38d3a87896df9ff1b8c96bee1ab58e2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab99c16d790cf246e4cea538c13ef4467"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_l_p_v_core_lib.html#ab99c16d790cf246e4cea538c13ef4467">LPVTransformType</a> { <a class="el" href="namespace_l_p_v_core_lib.html#ab99c16d790cf246e4cea538c13ef4467a1a78366a290d9d023bc2e67f06ba0015">LPVTransformRigid</a> = 0
 , <a class="el" href="namespace_l_p_v_core_lib.html#ab99c16d790cf246e4cea538c13ef4467aef86b2cfb75ee65896bbc451e83b6738">LPVTransformSimilar</a>
 , <a class="el" href="namespace_l_p_v_core_lib.html#ab99c16d790cf246e4cea538c13ef4467aaea8b8400b06126d07302dc8f05459ce">LPVTransformAffine</a>
@@ -370,7 +387,7 @@ Enumerations</h2></td></tr>
 <h3>Example Code </h3>
  <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line"><span class="preprocessor">#include &quot;LPVCore.h&quot;</span></div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line"><span class="keyword">using</span> <a class="code" href="namespace_l_p_v_core_lib.html">LPVCoreLib</a>;</div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html"><div class="ttname"><a href="namespace_l_p_v_core_lib.html">LPVCoreLib</a></div><div class="ttdoc">LPV Core Library, provide basic functionalities.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:93</div></div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html"><div class="ttname"><a href="namespace_l_p_v_core_lib.html">LPVCoreLib</a></div><div class="ttdoc">LPV Core Library, provide basic functionalities.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:100</div></div>
 </div><!-- fragment --> </div> <p><b>MFC Demo:</b> <a class="el" href="how_to_play_with_demo.html#demo_sanity">MFCSanity</a>, <a class="el" href="how_to_play_with_demo.html#demo_region">MFCRegion</a> <br  />
 <b>C# Demo:</b> <a class="el" href="how_to_play_with_demo.html#demo_sanity">CSharpSanity</a>, <a class="el" href="how_to_play_with_demo.html#demo_region">CSharpRegion</a>, <a class="el" href="how_to_play_with_demo.html#demo_hikcam">CSharpHikCam</a> </p>
 </div><h2 class="groupheader">Enumeration Type Documentation</h2>
@@ -430,7 +447,11 @@ Enumerations</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="a9c7c60c3ff92e1b019f872af1d31e858ab8ee02cc6b5912f09c340172415eebea"></a>LPVChartDrawValueLabel&#160;</td><td class="fielddoc"><p>Draw the value labels on Y axis </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a9c7c60c3ff92e1b019f872af1d31e858a14e3fd061825103a168036a2080849fe"></a>LPVChartDrawDefault&#160;</td><td class="fielddoc"><p>Default draw flags, which draws a bar chart with all axis labels and no grid </p>
+<tr><td class="fieldname"><a id="a9c7c60c3ff92e1b019f872af1d31e858ad23963e21f6c148f968a67d132bbad27"></a>LPVChartDrawAsLineDefault&#160;</td><td class="fielddoc"><p>Default line chart flags, which draws a line chart with all axis labels and no grid </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9c7c60c3ff92e1b019f872af1d31e858a88a1b09f265b25e33a798dac1978abe7"></a>LPVChartDrawAsBarDefault&#160;</td><td class="fielddoc"><p>Default bar chart flags, which draws a bar chart with all axis labels and no grid </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9c7c60c3ff92e1b019f872af1d31e858a14e3fd061825103a168036a2080849fe"></a>LPVChartDrawDefault&#160;</td><td class="fielddoc"><p>Default chart flags, same as LPVChartDrawAsBarDefault </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a9c7c60c3ff92e1b019f872af1d31e858aa8060daedaef79ae92f4548f2154f0dd"></a>LPVChartDrawAll&#160;</td><td class="fielddoc"><p>Draw a bar chart with all components </p>
 </td></tr>
@@ -572,6 +593,8 @@ Enumerations</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="a753df57c2ab9773ee9dff5747163ee4aa1e66eddeb8e950570251de5a2d619859"></a>LPVErrPatNotTrain&#160;</td><td class="fielddoc"><p>Pattern detector is not trained </p>
 </td></tr>
+<tr><td class="fieldname"><a id="a753df57c2ab9773ee9dff5747163ee4aa1c5b09b437ef1c4fc57992f99d90cb7d"></a>LPVErrSortArrayFailed&#160;</td><td class="fielddoc"><p>Sort to array failed, we are not able to find a proper grid for the input data </p>
+</td></tr>
 </table>
 
 </div>
@@ -706,6 +729,34 @@ Enumerations</h2></td></tr>
 
 </div>
 </div>
+<a id="a54c773c6f72a88ff41d8ab615b5a92f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54c773c6f72a88ff41d8ab615b5a92f3">&#9670;&nbsp;</a></span>LPVPositionMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespace_l_p_v_core_lib.html#a54c773c6f72a88ff41d8ab615b5a92f3">LPVPositionMode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This enumeration represents which point is used as a object's position, used in sorting. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a54c773c6f72a88ff41d8ab615b5a92f3aea7d4f40ef215e315aae1663bfff8354"></a>LPVPosModeCenter&#160;</td><td class="fielddoc"><p>Use the center point as the position </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a54c773c6f72a88ff41d8ab615b5a92f3a8c81ce1aaf665e98989e674df00887f3"></a>LPVPosModeTopLeft&#160;</td><td class="fielddoc"><p>Use the top-left corner of the object's bounding rectangle as the position </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a54c773c6f72a88ff41d8ab615b5a92f3a4dbe1aabed3fac9e1aa869e72e8c1895"></a>LPVPosModeTopRight&#160;</td><td class="fielddoc"><p>Use the top-right corner of the object's bounding rectangle as the position </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a54c773c6f72a88ff41d8ab615b5a92f3a26d057ee4a3d95416e0bbfabf0b0110d"></a>LPVPosModeBottomLeft&#160;</td><td class="fielddoc"><p>Use the bottom-left corner of the object's bounding rectangle as the position </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a54c773c6f72a88ff41d8ab615b5a92f3aaf4af5dd64e7f5be0754788edd768d12"></a>LPVPosModeBottomRight&#160;</td><td class="fielddoc"><p>Use the bottom-right corner of the object's bounding rectangle as the position </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <a id="ae8e2acac6c176e2f73929bab80909322"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae8e2acac6c176e2f73929bab80909322">&#9670;&nbsp;</a></span>LPVRoiHandle</h2>
 
@@ -768,41 +819,57 @@ Enumerations</h2></td></tr>
 
 <p>This enumeration represents the type of sorting. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a1752d5f8ebb6a8f6dda700e1a87c98dea428b20c462de5f4be90877545f9497cb"></a>LPVSortNone&#160;</td><td class="fielddoc"><p>Do nothing. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a1752d5f8ebb6a8f6dda700e1a87c98dea3a6a628a6b36b44100605255ae4dde17"></a>LPVSortByReserved&#160;</td><td class="fielddoc"><p>No specified sort-by, usually worked with random ordering. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a1752d5f8ebb6a8f6dda700e1a87c98dea374181992b9389c2e267a5fc589454de"></a>LPVSortLeftToRight&#160;</td><td class="fielddoc"><p>Sort by x position, from left to right </p>
+<tr><td class="fieldname"><a id="a1752d5f8ebb6a8f6dda700e1a87c98dea3801a44d8593a854b0c867d2717cde43"></a>LPVSortByX&#160;</td><td class="fielddoc"><p>Sort by the x-coordinates, regardless of the y-coordinates </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a1752d5f8ebb6a8f6dda700e1a87c98dea6d70862a5a38affa8b2cd8fb33984fbc"></a>LPVSortRightToLeft&#160;</td><td class="fielddoc"><p>Sort by x position, from right to left </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a1752d5f8ebb6a8f6dda700e1a87c98dea00f13134b23a93a92e2720a8ea0352cd"></a>LPVSortTopDown&#160;</td><td class="fielddoc"><p>Sort by y position, top down </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a1752d5f8ebb6a8f6dda700e1a87c98dea3cd0d290785871cc514504593ddb30ac"></a>LPVSortDownTop&#160;</td><td class="fielddoc"><p>Sort by y position, down top </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a1752d5f8ebb6a8f6dda700e1a87c98dea2169a921bc68c0a1a238c96cfc24c515"></a>LPVSortAlphabetical&#160;</td><td class="fielddoc"><p>Sort by name, alphabetically </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a1752d5f8ebb6a8f6dda700e1a87c98dea08eb51a671d695cc1f3b27f8376896f6"></a>LPVSortByLength&#160;</td><td class="fielddoc"><p>Sort by length/perimeter </p>
+<tr><td class="fieldname"><a id="a1752d5f8ebb6a8f6dda700e1a87c98dea022ef0958c178dfa1207b5bb0488b3b0"></a>LPVSortByY&#160;</td><td class="fielddoc"><p>Sort by the y-coordinates, regardless of the x-coordinates </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a1752d5f8ebb6a8f6dda700e1a87c98deab8ce0c0eeef0bfd23d2e55b14c7e09ca"></a>LPVSortByScore&#160;</td><td class="fielddoc"><p>Sort by score </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a1752d5f8ebb6a8f6dda700e1a87c98dea16c16596f579583af1f1b06834b74190"></a>LPVSortByArea&#160;</td><td class="fielddoc"><p>Sort by area </p>
+<tr><td class="fieldname"><a id="a1752d5f8ebb6a8f6dda700e1a87c98dea8fbe9268750180e7607b512fe91be6b8"></a>LPVSortByColumn&#160;</td><td class="fielddoc"><p>Sort first with respect to column, then to row. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a1752d5f8ebb6a8f6dda700e1a87c98dea04f5673885e41dce08855ddc8a0a3405"></a>LPVSortByWidth&#160;</td><td class="fielddoc"><p>Sort by width, length of object's longer axis </p>
+<tr><td class="fieldname"><a id="a1752d5f8ebb6a8f6dda700e1a87c98deae4aacdad11139178ec534b607320f6e4"></a>LPVSortByRow&#160;</td><td class="fielddoc"><p>Sort first with respect to row, then to column. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a1752d5f8ebb6a8f6dda700e1a87c98dea2208f55f9bed8078613e668eb1495cad"></a>LPVSortByHeight&#160;</td><td class="fielddoc"><p>Sort by height, length of object's shorter axis </p>
+</table>
+
+</div>
+</div>
+<a id="a38d3a87896df9ff1b8c96bee1ab58e2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38d3a87896df9ff1b8c96bee1ab58e2f">&#9670;&nbsp;</a></span>LPVSortOrder</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespace_l_p_v_core_lib.html#a38d3a87896df9ff1b8c96bee1ab58e2f">LPVSortOrder</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This enumeration represents the order of sorting. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a38d3a87896df9ff1b8c96bee1ab58e2faa3cd168041455358a087899af206357c"></a>LPVSortOrderRandom&#160;</td><td class="fielddoc"><p>Shuffle randomly </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a1752d5f8ebb6a8f6dda700e1a87c98dea1cb9965260b0ad64d9352db8f25a4279"></a>LPVSortByCircularity&#160;</td><td class="fielddoc"><p>Sort by circularity, how the object looks like a circle </p>
+<tr><td class="fieldname"><a id="a38d3a87896df9ff1b8c96bee1ab58e2faccbd24417fbf505b986cbffe12a89f25"></a>LPVSortOrderAscending&#160;</td><td class="fielddoc"><p>Sort ascendingly, for example:</p>
+<p>LPVSortByRow, LPVSortOrderAscending:<br  />
+ \(\begin{matrix}0 &amp; \rightarrow &amp; 1 &amp; \rightarrow &amp; 2\\3 &amp; \rightarrow &amp; 4 &amp; \rightarrow &amp; 5\\6 &amp; \rightarrow &amp; 7 &amp; \rightarrow &amp; 8\end{matrix}\)</p>
+<p>LPVSortByColumn, LPVSortOrderAscending:<br  />
+ \(\begin{matrix}0 &amp; 3 &amp; 6\\ \downarrow &amp; \downarrow &amp; \downarrow\\1 &amp; 4 &amp; 7\\ \downarrow &amp; \downarrow &amp; \downarrow\\2 &amp; 5 &amp; 8\end{matrix}\) </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a1752d5f8ebb6a8f6dda700e1a87c98dea94642ae09b44c6aa4e6ceeb602480b5c"></a>LPVSortByConvexity&#160;</td><td class="fielddoc"><p>Sort by convexity, how the object looks like a convex hull </p>
+<tr><td class="fieldname"><a id="a38d3a87896df9ff1b8c96bee1ab58e2fac2f0614a60fa529439dd8324063a2bbd"></a>LPVSortOrderDescending&#160;</td><td class="fielddoc"><p>Sort descendingly, for example:</p>
+<p>LPVSortByRow, LPVSortOrderDescending:<br  />
+ \(\begin{matrix}8 &amp; \leftarrow &amp; 7 &amp; \leftarrow &amp; 6\\5 &amp; \leftarrow &amp; 4 &amp; \leftarrow &amp; 3\\2 &amp; \leftarrow &amp; 1 &amp; \leftarrow &amp; 0\end{matrix}\)</p>
+<p>LPVSortByColumn, LPVSortOrderDescending:<br  />
+ \(\begin{matrix}8 &amp; 5 &amp; 2\\ \uparrow &amp; \uparrow &amp; \uparrow\\7 &amp; 4 &amp; 1\\ \uparrow &amp; \uparrow &amp; \uparrow\\6 &amp; 3 &amp; 0\end{matrix}\) </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a1752d5f8ebb6a8f6dda700e1a87c98dea1a1425525d07ca856a70a8cdb767f7cd"></a>LPVSortByInertia&#160;</td><td class="fielddoc"><p>Sort by inertia </p>
+<tr><td class="fieldname"><a id="a38d3a87896df9ff1b8c96bee1ab58e2fad8ae978cdb112c0fbf64207310855ad0"></a>LPVSortOrderAscendingZigZag&#160;</td><td class="fielddoc"><p>Sort in alternating ascending and descending orders, starting from ascending order:</p>
+<p>LPVSortByRow, LPVSortOrderAscendingZigZag:<br  />
+ \(\begin{matrix}0 &amp; \rightarrow &amp; 1 &amp; \rightarrow &amp; 2\\5 &amp; \leftarrow &amp; 4 &amp; \leftarrow &amp; 3\\6 &amp; \rightarrow &amp; 7 &amp; \rightarrow &amp; 8\end{matrix}\) </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a1752d5f8ebb6a8f6dda700e1a87c98dea38ae4e6d98ceecb0982a2f12b4858090"></a>LPVSortByName&#160;</td><td class="fielddoc"><p>Sort by name, same as LPVSortAlphabetical </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a1752d5f8ebb6a8f6dda700e1a87c98deab37afabc26747d05c655c835cc6ba556"></a>LPVSortByDate&#160;</td><td class="fielddoc"><p>Sort by date </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a1752d5f8ebb6a8f6dda700e1a87c98dea9725f7ef264e649efefb89278d133373"></a>LPVSortByRandom&#160;</td><td class="fielddoc"><p>Shuffle randomly </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a1752d5f8ebb6a8f6dda700e1a87c98deae129e66d95121e410f70111c98e63df1"></a>LPVSortByAspectRatio&#160;</td><td class="fielddoc"><p>Sort by aspect ratio of image </p>
+<tr><td class="fieldname"><a id="a38d3a87896df9ff1b8c96bee1ab58e2fac88fa9773daa6256c3dc7919ca3664ec"></a>LPVSortOrderDescendingZigZag&#160;</td><td class="fielddoc"><p>Sort in alternating ascending and descending orders, starting from descending order:</p>
+<p>LPVSortByRow, LPVSortOrderDescendingZigZag:<br  />
+ \(\begin{matrix}2 &amp; \leftarrow &amp; 1 &amp; \leftarrow &amp; 0\\3 &amp; \rightarrow &amp; 4 &amp; \rightarrow &amp; 5\\8 &amp; \leftarrow &amp; 7 &amp; \leftarrow &amp; 6\end{matrix}\) </p>
 </td></tr>
 </table>
 

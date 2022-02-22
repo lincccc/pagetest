@@ -140,9 +140,12 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 <tr class="memitem:af98b71a5ec504565e5456260acbd9ee5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#af98b71a5ec504565e5456260acbd9ee5">MaxCount</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:af98b71a5ec504565e5456260acbd9ee5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum of blobs to find. If there are more than the setting counts of blobs in the detect region, sort the candidates then pick the tops.  <a href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#af98b71a5ec504565e5456260acbd9ee5">More...</a><br /></td></tr>
 <tr class="separator:af98b71a5ec504565e5456260acbd9ee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0daa2ed2403981beedc0efd98d8129b9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a1752d5f8ebb6a8f6dda700e1a87c98de">LPVSortBy</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a0daa2ed2403981beedc0efd98d8129b9">SortBy</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a0daa2ed2403981beedc0efd98d8129b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The method used to sort all blob candidates, the top ones are reported as final results.  <a href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a0daa2ed2403981beedc0efd98d8129b9">More...</a><br /></td></tr>
-<tr class="separator:a0daa2ed2403981beedc0efd98d8129b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a848fb8adacf95a0394b3656bb53233b8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50">LPVBlobFeatures</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a848fb8adacf95a0394b3656bb53233b8">SortBy</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a848fb8adacf95a0394b3656bb53233b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The method used to sort all blob candidates, the top ones are reported as final results.  <a href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a848fb8adacf95a0394b3656bb53233b8">More...</a><br /></td></tr>
+<tr class="separator:a848fb8adacf95a0394b3656bb53233b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26bbdb0a7c27819253704905dfd3d871"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a26bbdb0a7c27819253704905dfd3d871">SortByDescending</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a26bbdb0a7c27819253704905dfd3d871"><td class="mdescLeft">&#160;</td><td class="mdescRight">Works together with <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a848fb8adacf95a0394b3656bb53233b8" title="The method used to sort all blob candidates, the top ones are reported as final results.">SortBy</a>. True to sort all blob candidates descending(from large value to small), false for sorting in ascending order.  <a href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a26bbdb0a7c27819253704905dfd3d871">More...</a><br /></td></tr>
+<tr class="separator:a26bbdb0a7c27819253704905dfd3d871"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This interface provide functionalities of blob analysis. </p>
@@ -153,7 +156,7 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 <div class="line">m_blob_ana-&gt;AddBlobRange(50, 100);</div>
 <div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = m_blob_ana-&gt;Build(m_img, m_roi, &amp;m_blob_result);</div>
 <div class="line"><span class="keywordflow">if</span> (err != LPVErrorCode::LPVNoError) <span class="keywordflow">return</span>;</div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">This enumeration represents the type of a LPV function error.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:155</div></div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">This enumeration represents the type of a LPV function error.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:162</div></div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LBlobAnalysis m_blob_ana = <span class="keyword">new</span> LBlobAnalysis();</div>
 <div class="line">m_blob_ana.AddBlobRange(50, 100);</div>
 <div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = (<a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>)m_blob_ana.Build(m_img, (LRegion)m_roi, out m_blob_result);</div>
@@ -475,6 +478,15 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
   </table>
   </dd>
 </dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">zoomX</td><td>Factor for zooming in or out in the x-coordinate direction. By default, it's in the true scale. </td></tr>
+    <tr><td class="paramname">zoomY</td><td>Factor for zooming in or out in the y-coordinate direction. Setting to 0 means same zoom factor as zoomX, aka. isotropic scaling. </td></tr>
+    <tr><td class="paramname">panX</td><td>translation in the x-coordinate direction for panning. The final display x position is calculated as: \((x + panX) \times zoomX\) </td></tr>
+    <tr><td class="paramname">panY</td><td>translation in the y-coordinate direction for panning. The final display y position is calculated as: \((y + panY) \times zoomY\) </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a28b3e77770d7ddfde96e70dcd61847fb">AddBlobRange()</a>, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#ab3dcb6d76d5d979ad8b4e7a150a8e428">AddBackgroundRange()</a>. </dd></dl>
 
 </div>
@@ -643,12 +655,12 @@ For example, if we define blob color range to be [100, 200], and soft thresholdi
 </div><div class="memdoc">
 
 <p>The maximum of blobs to find. If there are more than the setting counts of blobs in the detect region, sort the candidates then pick the tops. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a0daa2ed2403981beedc0efd98d8129b9" title="The method used to sort all blob candidates, the top ones are reported as final results.">SortBy</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a848fb8adacf95a0394b3656bb53233b8" title="The method used to sort all blob candidates, the top ones are reported as final results.">SortBy</a> </dd></dl>
 
 </div>
 </div>
-<a id="a0daa2ed2403981beedc0efd98d8129b9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0daa2ed2403981beedc0efd98d8129b9">&#9670;&nbsp;</a></span>SortBy</h2>
+<a id="a848fb8adacf95a0394b3656bb53233b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a848fb8adacf95a0394b3656bb53233b8">&#9670;&nbsp;</a></span>SortBy</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -657,7 +669,7 @@ For example, if we define blob color range to be [100, 200], and soft thresholdi
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespace_l_p_v_core_lib.html#a1752d5f8ebb6a8f6dda700e1a87c98de">LPVSortBy</a> SortBy</td>
+          <td class="memname"><a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50">LPVBlobFeatures</a> SortBy</td>
         </tr>
       </table>
   </td>
@@ -668,7 +680,32 @@ For example, if we define blob color range to be [100, 200], and soft thresholdi
 </div><div class="memdoc">
 
 <p>The method used to sort all blob candidates, the top ones are reported as final results. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#af98b71a5ec504565e5456260acbd9ee5" title="The maximum of blobs to find. If there are more than the setting counts of blobs in the detect region...">MaxCount</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#af98b71a5ec504565e5456260acbd9ee5" title="The maximum of blobs to find. If there are more than the setting counts of blobs in the detect region...">MaxCount</a>, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a26bbdb0a7c27819253704905dfd3d871" title="Works together with SortBy. True to sort all blob candidates descending(from large value to small),...">SortByDescending</a> </dd></dl>
+
+</div>
+</div>
+<a id="a26bbdb0a7c27819253704905dfd3d871"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26bbdb0a7c27819253704905dfd3d871">&#9670;&nbsp;</a></span>SortByDescending</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL SortByDescending</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Works together with <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a848fb8adacf95a0394b3656bb53233b8" title="The method used to sort all blob candidates, the top ones are reported as final results.">SortBy</a>. True to sort all blob candidates descending(from large value to small), false for sorting in ascending order. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a848fb8adacf95a0394b3656bb53233b8" title="The method used to sort all blob candidates, the top ones are reported as final results.">SortBy</a> </dd></dl>
 
 </div>
 </div>

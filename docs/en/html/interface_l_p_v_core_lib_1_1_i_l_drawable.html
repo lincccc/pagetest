@@ -119,15 +119,33 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This interface expose APIs to change graphics settings of a drawable class. </p>
 <p>All other LPV classes that provides draw functionalities implements this interface. To use this interface, you could either cast the LPV classes to <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_drawable.html" title="This interface expose APIs to change graphics settings of a drawable class.">ILDrawable</a> interface, or call <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_system.html" title="This interface provide miscellaneous functions to change LPV system configurations globally.">ILSystem</a> to do it for you. See <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_system.html" title="This interface provide miscellaneous functions to change LPV system configurations globally.">ILSystem</a> for more information.</p>
+<p>The following lists all the sortable LPV classes:</p>
+<table class="doxtable">
+<tr>
+<td><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">LRegion</a>, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_rect_region.html">LRectRegion</a>, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_rot_rect_region.html">LRotRectRegion</a>, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_circle_region.html">LCircleRegion</a>, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_poly_region.html">LPolyRegion</a>, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_mask_region.html">LMaskRegion</a>, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_annulus_region.html">LAnnulusRegion</a> </td></tr>
+<tr>
+<td><a class="el" href="class_l_p_v_pat_lib_1_1_l_match_result.html">LMatchResult</a>, <a class="el" href="class_l_p_v_pat_lib_1_1_l_match_results.html">LMatchResults</a> </td></tr>
+<tr>
+<td><a class="el" href="class_l_p_v_calib_lib_1_1_l_calib_point_pairs.html">LCalibPointPairs</a> </td></tr>
+<tr>
+<td><a class="el" href="class_l_p_v_img_proc_lib_1_1_l_histogram.html">LHistogram</a> </td></tr>
+<tr>
+<td><a class="el" href="class_l_p_v_blob_lib_1_1_l_blob.html">LBlob</a>, <a class="el" href="class_l_p_v_blob_lib_1_1_l_blob_results.html">LBlobResults</a> </td></tr>
+<tr>
+<td><a class="el" href="class_l_p_v_locate_lib_1_1_l_line_result.html">LLineResult</a>, <a class="el" href="class_l_p_v_locate_lib_1_1_l_line_results.html">LLineResults</a>, <a class="el" href="class_l_p_v_locate_lib_1_1_l_circle_result.html">LCircleResult</a>, <a class="el" href="class_l_p_v_locate_lib_1_1_l_circle_results.html">LCircleResults</a> </td></tr>
+<tr>
+<td><a class="el" href="class_l_p_v_geom_lib_1_1_l_point.html">LPoint</a>, <a class="el" href="class_l_p_v_geom_lib_1_1_l_points.html">LPoints</a>, <a class="el" href="class_l_p_v_geom_lib_1_1_l_circle.html">LCircle</a>, <a class="el" href="class_l_p_v_geom_lib_1_1_l_line.html">LLine</a>, <a class="el" href="class_l_p_v_geom_lib_1_1_l_polygon.html">LPolygon</a>, <a class="el" href="class_l_p_v_geom_lib_1_1_l_rect.html">LRect</a>, <a class="el" href="class_l_p_v_geom_lib_1_1_l_sorted_array.html">LSortedArray</a> </td></tr>
+</table>
 <h3>Example Code </h3>
  <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">ILDrawablePtr drawable = m_roi;</div>
 <div class="line">drawable-&gt;SetPenWidth(2);</div>
 <div class="line"><span class="comment">// or do it via LSystem object</span></div>
-<div class="line">m_sys-&gt;SetPen(m_roi, LPVPenStyle::LPVPenSolid, 1, m_sys-&gt;GetColorRef(255, 0, 255));</div>
+<div class="line">m_sys-&gt;SetPen(m_roi, LPVPenStyle::LPVPenSolid, 1, LPVColor::LPVYellow);</div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">((ILDrawable)m_roi).SetPenWidth(2);</div>
 <div class="line"><span class="comment">// or do it via LSystem object</span></div>
-<div class="line">m_sys.SetPen(m_roi, <a class="code" href="namespace_l_p_v_core_lib.html#a538e01db39d41ce04a34266c00d41f1f">LPVPenStyle</a>.LPVPenSolid, 1, m_sys.GetColorRef(255, 0, 255));</div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html_a538e01db39d41ce04a34266c00d41f1f"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a538e01db39d41ce04a34266c00d41f1f">LPVCoreLib::LPVPenStyle</a></div><div class="ttdeci">LPVPenStyle</div><div class="ttdoc">This enumeration represents the pen style used to draw the path.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:507</div></div>
+<div class="line">m_sys.SetPen(m_roi, <a class="code" href="namespace_l_p_v_core_lib.html#a538e01db39d41ce04a34266c00d41f1f">LPVPenStyle</a>.LPVPenSolid, 1, <a class="code" href="namespace_l_p_v_core_lib.html#a2621143506dcb8d80e6b3892ecfd8a7c">LPVColor</a>.LPVYellow);</div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a2621143506dcb8d80e6b3892ecfd8a7c"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a2621143506dcb8d80e6b3892ecfd8a7c">LPVCoreLib::LPVColor</a></div><div class="ttdeci">LPVColor</div><div class="ttdoc">This enumeration represents the commonly used colors.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:848</div></div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a538e01db39d41ce04a34266c00d41f1f"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a538e01db39d41ce04a34266c00d41f1f">LPVCoreLib::LPVPenStyle</a></div><div class="ttdeci">LPVPenStyle</div><div class="ttdoc">This enumeration represents the pen style used to draw the path.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:524</div></div>
 </div><!-- fragment --> </div>  </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a7a98c8ea7d5c76c1804095e327d30d92"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7a98c8ea7d5c76c1804095e327d30d92">&#9670;&nbsp;</a></span>SetBrushColor()</h2>

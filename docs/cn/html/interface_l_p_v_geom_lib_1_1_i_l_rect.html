@@ -106,6 +106,8 @@ Public 成员函数</h2></td></tr>
 <tr class="separator:ae172f3a2cafb9e73a483495f1b50ea80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a928b61b363688c7ea2a328f3f1fcf6e8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_point.html">ILPoint</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_rect.html#a928b61b363688c7ea2a328f3f1fcf6e8">GetBottomRight</a> ()</td></tr>
 <tr class="separator:a928b61b363688c7ea2a328f3f1fcf6e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26fe3ece69c70adeefdeb65f5b8f83b1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_points.html">ILPoints</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_rect.html#a26fe3ece69c70adeefdeb65f5b8f83b1">GetPoints</a> ()</td></tr>
+<tr class="separator:a26fe3ece69c70adeefdeb65f5b8f83b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af99ec74e878a78e34f23abbea17438d9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_point.html">ILPoint</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_rect.html#af99ec74e878a78e34f23abbea17438d9">GetTopLeft</a> ()</td></tr>
 <tr class="separator:af99ec74e878a78e34f23abbea17438d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac32de05bcfd29d53c4e8b8d65f14ef84"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_point.html">ILPoint</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_rect.html#ac32de05bcfd29d53c4e8b8d65f14ef84">GetTopRight</a> ()</td></tr>
@@ -114,6 +116,8 @@ Public 成员函数</h2></td></tr>
 <tr class="separator:a1289c9d71ccf35d16928b3e894c184be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea3f5bed3511769191e10a76f66d049f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_rect.html#aea3f5bed3511769191e10a76f66d049f">Set</a> (double x, double y, double w, double h, double a)</td></tr>
 <tr class="separator:aea3f5bed3511769191e10a76f66d049f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade0e142ef8bbe39037cfa3a84764f9e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_rect_region.html">ILRectRegion</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_rect.html#ade0e142ef8bbe39037cfa3a84764f9e4">ToRectRegion</a> ()</td></tr>
+<tr class="separator:ade0e142ef8bbe39037cfa3a84764f9e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a232bc803b091d790f1a355e3ef051524"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_rot_rect_region.html">ILRotRectRegion</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_rect.html#a232bc803b091d790f1a355e3ef051524">ToRotRectRegion</a> ()</td></tr>
 <tr class="separator:a232bc803b091d790f1a355e3ef051524"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e644817d4905b08ea6de14797f2fce2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_rect.html">ILRect</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_rect.html#a5e644817d4905b08ea6de14797f2fce2">Translate</a> (double offsetX, double offsetY)</td></tr>
@@ -251,7 +255,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="params"><dt>参数</dt><dd>
+<p>绘制矩形到给定的设备上 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramname">hdc</td><td>绘制设备，可为窗口、位图等的上下文句柄。 </td></tr>
     <tr><td class="paramname">zoomX</td><td>x 方向的缩放系数，默认为真实尺寸 100。 </td></tr>
@@ -297,6 +301,29 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
       </table>
 </div><div class="memdoc">
 <p>获取矩形的右下角点 </p>
+
+</div>
+</div>
+<a id="a26fe3ece69c70adeefdeb65f5b8f83b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26fe3ece69c70adeefdeb65f5b8f83b1">&#9670;&nbsp;</a></span>GetPoints()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_points.html">ILPoints</a>* GetPoints </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>获取矩形的所有角点到一个点集，用于进行如计算包围矩形、拟合等计算。 按以下顺序排列：左下，左上，右上，右下。 </p><dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">val</td><td>返回角点的点集 </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -416,6 +443,29 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
     <tr><td class="paramname">w</td><td>矩形的宽度 </td></tr>
     <tr><td class="paramname">h</td><td>矩形的高度 </td></tr>
     <tr><td class="paramname">a</td><td>矩形的角度，默认设置为 0，即非旋转矩形 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ade0e142ef8bbe39037cfa3a84764f9e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade0e142ef8bbe39037cfa3a84764f9e4">&#9670;&nbsp;</a></span>ToRectRegion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_rect_region.html">ILRectRegion</a>* ToRectRegion </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>根据当前矩形，生成一个矩形区域对象。 </p><dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">val</td><td>返回生成的矩形区域对象 </td></tr>
   </table>
   </dd>
 </dl>

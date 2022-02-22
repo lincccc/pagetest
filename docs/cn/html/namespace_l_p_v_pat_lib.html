@@ -77,7 +77,6 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">结构体</a> &#124;
-<a href="#typedef-members">类型定义</a> &#124;
 <a href="#enum-members">枚举</a>  </div>
   <div class="headertitle">
 <div class="title">LPVPatLib 模块参考手册</div>  </div>
@@ -92,22 +91,18 @@ $(function() {
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html">ILMatch</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">该接口提供模板匹配的功能。  <a href="interface_l_p_v_pat_lib_1_1_i_l_match.html#details">更多...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match_result.html">ILMatchResult</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">该接口提供单个模板匹配结果，可获取其具体属性。  <a href="interface_l_p_v_pat_lib_1_1_i_l_match_result.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match_results.html">ILMatchResults</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">该接口提供一组模板匹配结果的集合，包含一个或多个模板匹配结果。  <a href="interface_l_p_v_pat_lib_1_1_i_l_match_results.html#details">更多...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_p_v_pat_lib_1_1_l_match.html">LMatch</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_l_p_v_pat_lib_1_1_l_match_result.html">LMatchResult</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">该结构体表示一个模板匹配结果  <a href="struct_l_p_v_pat_lib_1_1_l_match_result.html#details">更多...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_p_v_pat_lib_1_1_l_match_result.html">LMatchResult</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_p_v_pat_lib_1_1_l_match_results.html">LMatchResults</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-类型定义</h2></td></tr>
-<tr class="memitem:a8aa3118d5b57c651392e64b5788e2c95"><td class="memItemLeft" align="right" valign="top"><a id="a8aa3118d5b57c651392e64b5788e2c95"></a>
-typedef struct <a class="el" href="struct_l_p_v_pat_lib_1_1_l_match_result.html">LPVPatLib::LMatchResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>LMatchResult</b></td></tr>
-<tr class="separator:a8aa3118d5b57c651392e64b5788e2c95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 枚举</h2></td></tr>
@@ -121,9 +116,10 @@ typedef struct <a class="el" href="struct_l_p_v_pat_lib_1_1_l_match_result.html"
 &#160;&#160;<a class="el" href="namespace_l_p_v_pat_lib.html#a38ed5c152c13123c0ab8728aa55efdf2aec7d315f51b708ff610b66178d44ba76">LPVPatDrawBoundingRect</a> = 1
 , <a class="el" href="namespace_l_p_v_pat_lib.html#a38ed5c152c13123c0ab8728aa55efdf2ac5200b42d516613eaad7751d4c2d57ee">LPVPatDrawCenter</a> = 2
 , <a class="el" href="namespace_l_p_v_pat_lib.html#a38ed5c152c13123c0ab8728aa55efdf2a39d41414f0f54501e8f64d5437fe9e5c">LPVPatDrawFeature</a> = 4
-, <a class="el" href="namespace_l_p_v_pat_lib.html#a38ed5c152c13123c0ab8728aa55efdf2a85af46428d258589f432a26ff43db9ce">LPVPatDrawDefault</a> = LPVPatDrawCenter
+, <a class="el" href="namespace_l_p_v_pat_lib.html#a38ed5c152c13123c0ab8728aa55efdf2a04e8a2c3213dae4d6f70d3d5cb978222">LPVPatDrawIndex</a> = 8
 , <br />
-&#160;&#160;<a class="el" href="namespace_l_p_v_pat_lib.html#a38ed5c152c13123c0ab8728aa55efdf2a3ff8f7d20583039f4c1beb44a3053f79">LPVPatDrawAll</a> = 0xff
+&#160;&#160;<a class="el" href="namespace_l_p_v_pat_lib.html#a38ed5c152c13123c0ab8728aa55efdf2a85af46428d258589f432a26ff43db9ce">LPVPatDrawDefault</a> = LPVPatDrawCenter
+, <a class="el" href="namespace_l_p_v_pat_lib.html#a38ed5c152c13123c0ab8728aa55efdf2a3ff8f7d20583039f4c1beb44a3053f79">LPVPatDrawAll</a> = 0xff
 <br />
  }</td></tr>
 <tr class="memdesc:a38ed5c152c13123c0ab8728aa55efdf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">该枚举用于控制模板匹配结果绘制的行为  <a href="namespace_l_p_v_pat_lib.html#a38ed5c152c13123c0ab8728aa55efdf2">更多...</a><br /></td></tr>
@@ -182,6 +178,8 @@ typedef struct <a class="el" href="struct_l_p_v_pat_lib_1_1_l_match_result.html"
 <tr><td class="fieldname"><a id="a38ed5c152c13123c0ab8728aa55efdf2ac5200b42d516613eaad7751d4c2d57ee"></a>LPVPatDrawCenter&#160;</td><td class="fielddoc"><p>绘制匹配结果的中心点 </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a38ed5c152c13123c0ab8728aa55efdf2a39d41414f0f54501e8f64d5437fe9e5c"></a>LPVPatDrawFeature&#160;</td><td class="fielddoc"><p>绘制匹配结果的特征 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a38ed5c152c13123c0ab8728aa55efdf2a04e8a2c3213dae4d6f70d3d5cb978222"></a>LPVPatDrawIndex&#160;</td><td class="fielddoc"><p>绘制匹配结果的索引，在其中心点的右下方 </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a38ed5c152c13123c0ab8728aa55efdf2a85af46428d258589f432a26ff43db9ce"></a>LPVPatDrawDefault&#160;</td><td class="fielddoc"><p>默认值，只绘制匹配结果的中心点 </p>
 </td></tr>

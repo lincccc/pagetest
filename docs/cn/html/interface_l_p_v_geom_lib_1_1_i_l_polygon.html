@@ -104,6 +104,8 @@ Public 成员函数</h2></td></tr>
 <tr class="separator:a0cb7c47723f72f9554e3905fc94140e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d83eb9ffc3069ecdd68773a6b72de87"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html#a4d83eb9ffc3069ecdd68773a6b72de87">Draw</a> (BOOL bFill, HDC hdc, double zoomX, double zoomY, double panX, double panY)</td></tr>
 <tr class="separator:a4d83eb9ffc3069ecdd68773a6b72de87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cdf133df16733f8cfaa86e173d06193"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_point.html">ILPoint</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html#a2cdf133df16733f8cfaa86e173d06193">GetGravityCenter</a> ()</td></tr>
+<tr class="separator:a2cdf133df16733f8cfaa86e173d06193"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a80f810e51579b1908fa6cb27aa130a10"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_circle.html">ILCircle</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html#a80f810e51579b1908fa6cb27aa130a10">GetInscribedCircle</a> ()</td></tr>
 <tr class="separator:a80f810e51579b1908fa6cb27aa130a10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26fe3ece69c70adeefdeb65f5b8f83b1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_points.html">ILPoints</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html#a26fe3ece69c70adeefdeb65f5b8f83b1">GetPoints</a> ()</td></tr>
@@ -238,6 +240,29 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
     <tr><td class="paramname">zoomY</td><td>y 方向的缩放系数，默认设置为 0，即与 x 方向的缩放系数相同，也就是等比缩放。 </td></tr>
     <tr><td class="paramname">panX</td><td>x 方向的平移。最终的 x 坐标按照该公式计算: \((x + panX) \times zoomX\) </td></tr>
     <tr><td class="paramname">panY</td><td>y 方向的平移。最终的 x 坐标按照该公式计算: \((x + panX) \times zoomX\) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2cdf133df16733f8cfaa86e173d06193"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2cdf133df16733f8cfaa86e173d06193">&#9670;&nbsp;</a></span>GetGravityCenter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_point.html">ILPoint</a>* GetGravityCenter </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>获取该多边形的重心 </p><dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">val</td><td>返回重心点 </td></tr>
   </table>
   </dd>
 </dl>

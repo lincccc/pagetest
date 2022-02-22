@@ -213,6 +213,11 @@ Public Member Functions</h2></td></tr>
     <tr><td class="paramname">x</td><td>The x-coordinate of the input circle's center point. </td></tr>
     <tr><td class="paramname">y</td><td>The y-coordinate of the input circle's center point. </td></tr>
     <tr><td class="paramname">bFill</td><td>Whether to fill the circle using current brush. </td></tr>
+    <tr><td class="paramname">hdc</td><td>Handle to the device context of the destination window or bitmap. </td></tr>
+    <tr><td class="paramname">zoomX</td><td>Factor for zooming in or out in the x-coordinate direction. By default, it's in the true scale. </td></tr>
+    <tr><td class="paramname">zoomY</td><td>Factor for zooming in or out in the y-coordinate direction. Setting to 0 means same zoom factor as zoomX, aka. isotropic scaling. </td></tr>
+    <tr><td class="paramname">panX</td><td>translation in the x-coordinate direction for panning. The final display x position is calculated as: \((x + panX) \times zoomX\) </td></tr>
+    <tr><td class="paramname">panY</td><td>translation in the y-coordinate direction for panning. The final display y position is calculated as: \((y + panY) \times zoomY\) </td></tr>
   </table>
   </dd>
 </dl>
@@ -292,6 +297,11 @@ Public Member Functions</h2></td></tr>
     <tr><td class="paramname">y1</td><td>The y-coordinate of the input line's start point. </td></tr>
     <tr><td class="paramname">x2</td><td>The x-coordinate of the input line's end point. </td></tr>
     <tr><td class="paramname">y2</td><td>The y-coordinate of the input line's end point. </td></tr>
+    <tr><td class="paramname">hdc</td><td>Handle to the device context of the destination window or bitmap. </td></tr>
+    <tr><td class="paramname">zoomX</td><td>Factor for zooming in or out in the x-coordinate direction. By default, it's in the true scale. </td></tr>
+    <tr><td class="paramname">zoomY</td><td>Factor for zooming in or out in the y-coordinate direction. Setting to 0 means same zoom factor as zoomX, aka. isotropic scaling. </td></tr>
+    <tr><td class="paramname">panX</td><td>translation in the x-coordinate direction for panning. The final display x position is calculated as: \((x + panX) \times zoomX\) </td></tr>
+    <tr><td class="paramname">panY</td><td>translation in the y-coordinate direction for panning. The final display y position is calculated as: \((y + panY) \times zoomY\) </td></tr>
   </table>
   </dd>
 </dl>
@@ -357,6 +367,11 @@ Public Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">x</td><td>The x-coordinate of the input point. </td></tr>
     <tr><td class="paramname">y</td><td>The y-coordinate of the input point. </td></tr>
+    <tr><td class="paramname">hdc</td><td>Handle to the device context of the destination window or bitmap. </td></tr>
+    <tr><td class="paramname">zoomX</td><td>Factor for zooming in or out in the x-coordinate direction. By default, it's in the true scale. </td></tr>
+    <tr><td class="paramname">zoomY</td><td>Factor for zooming in or out in the y-coordinate direction. Setting to 0 means same zoom factor as zoomX, aka. isotropic scaling. </td></tr>
+    <tr><td class="paramname">panX</td><td>translation in the x-coordinate direction for panning. The final display x position is calculated as: \((x + panX) \times zoomX\) </td></tr>
+    <tr><td class="paramname">panY</td><td>translation in the y-coordinate direction for panning. The final display y position is calculated as: \((y + panY) \times zoomY\) </td></tr>
   </table>
   </dd>
 </dl>
@@ -436,6 +451,11 @@ Public Member Functions</h2></td></tr>
     <tr><td class="paramname">ys</td><td>The y-coordinates of the input polygon vertexes. </td></tr>
     <tr><td class="paramname">bClosed</td><td>Whether this is a closed polygon. </td></tr>
     <tr><td class="paramname">bFill</td><td>Whether to fill the circle using current brush. </td></tr>
+    <tr><td class="paramname">hdc</td><td>Handle to the device context of the destination window or bitmap. </td></tr>
+    <tr><td class="paramname">zoomX</td><td>Factor for zooming in or out in the x-coordinate direction. By default, it's in the true scale. </td></tr>
+    <tr><td class="paramname">zoomY</td><td>Factor for zooming in or out in the y-coordinate direction. Setting to 0 means same zoom factor as zoomX, aka. isotropic scaling. </td></tr>
+    <tr><td class="paramname">panX</td><td>translation in the x-coordinate direction for panning. The final display x position is calculated as: \((x + panX) \times zoomX\) </td></tr>
+    <tr><td class="paramname">panY</td><td>translation in the y-coordinate direction for panning. The final display y position is calculated as: \((y + panY) \times zoomY\) </td></tr>
   </table>
   </dd>
 </dl>
@@ -529,6 +549,11 @@ Public Member Functions</h2></td></tr>
     <tr><td class="paramname">h</td><td>The height of the input rectangle. </td></tr>
     <tr><td class="paramname">a</td><td>The angle of the input rectangle. </td></tr>
     <tr><td class="paramname">bFill</td><td>Whether to fill the circle using current brush. </td></tr>
+    <tr><td class="paramname">hdc</td><td>Handle to the device context of the destination window or bitmap. </td></tr>
+    <tr><td class="paramname">zoomX</td><td>Factor for zooming in or out in the x-coordinate direction. By default, it's in the true scale. </td></tr>
+    <tr><td class="paramname">zoomY</td><td>Factor for zooming in or out in the y-coordinate direction. Setting to 0 means same zoom factor as zoomX, aka. isotropic scaling. </td></tr>
+    <tr><td class="paramname">panX</td><td>translation in the x-coordinate direction for panning. The final display x position is calculated as: \((x + panX) \times zoomX\) </td></tr>
+    <tr><td class="paramname">panY</td><td>translation in the y-coordinate direction for panning. The final display y position is calculated as: \((y + panY) \times zoomY\) </td></tr>
   </table>
   </dd>
 </dl>
@@ -601,6 +626,11 @@ Public Member Functions</h2></td></tr>
     <tr><td class="paramname">text</td><td>The input text string. </td></tr>
     <tr><td class="paramname">tlx</td><td>The x-coordinate of the top-left corner of the text region. </td></tr>
     <tr><td class="paramname">tly</td><td>The y-coordinate of the top-left corner of the text region. </td></tr>
+    <tr><td class="paramname">hdc</td><td>Handle to the device context of the destination window or bitmap. </td></tr>
+    <tr><td class="paramname">zoomX</td><td>Factor for zooming in or out in the x-coordinate direction. By default, it's in the true scale. </td></tr>
+    <tr><td class="paramname">zoomY</td><td>Factor for zooming in or out in the y-coordinate direction. Setting to 0 means same zoom factor as zoomX, aka. isotropic scaling. </td></tr>
+    <tr><td class="paramname">panX</td><td>translation in the x-coordinate direction for panning. The final display x position is calculated as: \((x + panX) \times zoomX\) </td></tr>
+    <tr><td class="paramname">panY</td><td>translation in the y-coordinate direction for panning. The final display y position is calculated as: \((y + panY) \times zoomY\) </td></tr>
   </table>
   </dd>
 </dl>

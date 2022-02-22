@@ -361,6 +361,16 @@ Example Code</h3>
       </table>
 </div><div class="memdoc">
 <p>Draw the region onto provide device context. </p><dl class="section remark"><dt>Remarks</dt><dd>If zooming and/or panning were used when drawing the region, the same values must be used with <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html#a76c5c6d6f3972a1ab97a0274bd29e3e9">HitTest()</a> and <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html#a3911e655a9efc485718b8edb7c06b7b1">Drag()</a>. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hdc</td><td>Handle to the device context of the destination window or bitmap. </td></tr>
+    <tr><td class="paramname">zoomX</td><td>Factor for zooming in or out in the x-coordinate direction. By default, it's in the true scale. </td></tr>
+    <tr><td class="paramname">zoomY</td><td>Factor for zooming in or out in the y-coordinate direction. Setting to 0 means same zoom factor as zoomX, aka. isotropic scaling. </td></tr>
+    <tr><td class="paramname">panX</td><td>translation in the x-coordinate direction for panning. The final display x position is calculated as: \((x + panX) \times zoomX\) </td></tr>
+    <tr><td class="paramname">panY</td><td>translation in the y-coordinate direction for panning. The final display y position is calculated as: \((y + panY) \times zoomY\) </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html#a76c5c6d6f3972a1ab97a0274bd29e3e9">HitTest()</a>, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html#a3911e655a9efc485718b8edb7c06b7b1">Drag()</a>. </dd></dl>
 
 </div>
@@ -500,7 +510,19 @@ Example Code</h3>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Load the region object from a specified file. It should be with .droi extension. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html#aedf9b00d47787a935a044ce74d0df887">Save()</a> </dd></dl>
+<p>Load the region object from a specified file. It should be with .droi extension. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>Full path of the file, it could be absolute or relative path with file name and extension. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">error</td><td>Return error code if anything is wrong. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html#aedf9b00d47787a935a044ce74d0df887">Save()</a> </dd></dl>
 
 </div>
 </div>
@@ -726,7 +748,19 @@ Example Code</h3>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Save the region object to a specified file. It should be with .droi extension. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html#acc33f804a59dbd9a1f824ea51862aaa2">Load()</a> </dd></dl>
+<p>Save the region object to a specified file. It should be with .droi extension. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>Full path of the file, it could be absolute or relative path with file name and extension. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">error</td><td>Return error code if anything is wrong. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html#acc33f804a59dbd9a1f824ea51862aaa2">Load()</a> </dd></dl>
 
 </div>
 </div>

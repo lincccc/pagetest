@@ -98,8 +98,8 @@ Inheritance diagram for ILMatch:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa2e4c7ea50be29456a6af6a3eebb841e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#aa2e4c7ea50be29456a6af6a3eebb841e">GetPatCenter</a> (double *cenX, double *cenY, double *angle)</td></tr>
-<tr class="separator:aa2e4c7ea50be29456a6af6a3eebb841e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a319b1090250f3670c6298a1c24b8eb81"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a319b1090250f3670c6298a1c24b8eb81">GetPatCenter</a> (double *cenX, double *cenY, double *cenAngle)</td></tr>
+<tr class="separator:a319b1090250f3670c6298a1c24b8eb81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a474c4d0a0472b205b58e6d8c781660ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a474c4d0a0472b205b58e6d8c781660ec">GetPatImage</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img)</td></tr>
 <tr class="separator:a474c4d0a0472b205b58e6d8c781660ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf7ff783ebac9e544ae0419cd4a2d275"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#adf7ff783ebac9e544ae0419cd4a2d275">IsLearnt</a> ()</td></tr>
@@ -112,8 +112,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:abe49710ff341978863693945ae28190b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aedf9b00d47787a935a044ce74d0df887"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#aedf9b00d47787a935a044ce74d0df887">Save</a> (BSTR filename)</td></tr>
 <tr class="separator:aedf9b00d47787a935a044ce74d0df887"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef583e1aec9aa8452c5e55e19382de42"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#aef583e1aec9aa8452c5e55e19382de42">SetPatCenter</a> (<a class="el" href="namespace_l_p_v_pat_lib.html#abd47a1f7a1a0eeeb888538e857dc5800">LPVPatCenterMode</a> centerMode, double cenX, double cenY, double angle)</td></tr>
-<tr class="separator:aef583e1aec9aa8452c5e55e19382de42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a4542c493f441196a76a5559f15f9e1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a8a4542c493f441196a76a5559f15f9e1">SetPatCenter</a> (<a class="el" href="namespace_l_p_v_pat_lib.html#abd47a1f7a1a0eeeb888538e857dc5800">LPVPatCenterMode</a> centerMode, double cenX, double cenY, double cenAngle)</td></tr>
+<tr class="separator:a8a4542c493f441196a76a5559f15f9e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
@@ -171,14 +171,14 @@ The algorithm is real-time and of sub-pixel accuracy. Detection is based mainly 
 <div class="line">m_match-&gt;Learn(m_template_img, <span class="keyword">nullptr</span>);</div>
 <div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = m_match-&gt;Match(m_img, m_roi, &amp;m_match_results);</div>
 <div class="line"><span class="keywordflow">if</span> (err != <a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>.LPVNoError) <span class="keywordflow">return</span>;</div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">This enumeration represents the type of a LPV function error.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:155</div></div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">This enumeration represents the type of a LPV function error.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:162</div></div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LMatch m_match = <span class="keyword">new</span> LMatch();</div>
 <div class="line">m_match.Learn(m_template_img, <span class="keyword">null</span>);</div>
 <div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = (<a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>)m_match.Detect(m_img, (LRegion)m_roi, out m_match_results);</div>
 <div class="line"><span class="keywordflow">if</span> (err != <a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>.LPVNoError) <span class="keywordflow">return</span>;</div>
 </div><!-- fragment --> </div>  </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="aa2e4c7ea50be29456a6af6a3eebb841e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa2e4c7ea50be29456a6af6a3eebb841e">&#9670;&nbsp;</a></span>GetPatCenter()</h2>
+<a id="a319b1090250f3670c6298a1c24b8eb81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a319b1090250f3670c6298a1c24b8eb81">&#9670;&nbsp;</a></span>GetPatCenter()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -199,7 +199,7 @@ The algorithm is real-time and of sub-pixel accuracy. Detection is based mainly 
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double *&#160;</td>
-          <td class="paramname"><em>angle</em>&#160;</td>
+          <td class="paramname"><em>cenAngle</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -212,11 +212,11 @@ The algorithm is real-time and of sub-pixel accuracy. Detection is based mainly 
   <table class="retval">
     <tr><td class="paramname">cenX</td><td>The x-coordinate of the template center. </td></tr>
     <tr><td class="paramname">cenY</td><td>The y-coordinate of the template center. </td></tr>
-    <tr><td class="paramname">angle</td><td>The angle of the template center. </td></tr>
+    <tr><td class="paramname">cenAngle</td><td>The angle of the template center. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#aef583e1aec9aa8452c5e55e19382de42">SetPatCenter()</a>. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a8a4542c493f441196a76a5559f15f9e1">SetPatCenter()</a>. </dd></dl>
 
 </div>
 </div>
@@ -305,7 +305,7 @@ The algorithm is real-time and of sub-pixel accuracy. Detection is based mainly 
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#adf7ff783ebac9e544ae0419cd4a2d275">IsLearnt()</a>, <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#aef583e1aec9aa8452c5e55e19382de42">SetPatCenter()</a>, <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#acc33f804a59dbd9a1f824ea51862aaa2">Load()</a>, <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#abe49710ff341978863693945ae28190b">Match()</a>. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#adf7ff783ebac9e544ae0419cd4a2d275">IsLearnt()</a>, <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a8a4542c493f441196a76a5559f15f9e1">SetPatCenter()</a>, <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#acc33f804a59dbd9a1f824ea51862aaa2">Load()</a>, <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#abe49710ff341978863693945ae28190b">Match()</a>. </dd></dl>
 
 </div>
 </div>
@@ -325,7 +325,19 @@ The algorithm is real-time and of sub-pixel accuracy. Detection is based mainly 
       </table>
 </div><div class="memdoc">
 <p>Load the pattern detector from a specified file.<br  />
-It could be an image file, then we'll load the image then learn pattern template from it. It could either be a .stp file with trained features and the matching parameters in it, then we'll deserialize the pattern detector from the contents. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#aedf9b00d47787a935a044ce74d0df887">Save()</a>. </dd></dl>
+It could be an image file, then we'll load the image then learn pattern template from it. It could either be a .stp file with trained features and the matching parameters in it, then we'll deserialize the pattern detector from the contents. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>Full path of the file, it could be absolute or relative path with file name and extension. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">error</td><td>Return error code if anything is wrong. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#aedf9b00d47787a935a044ce74d0df887">Save()</a>. </dd></dl>
 
 </div>
 </div>
@@ -393,12 +405,24 @@ It could be an image file, then we'll load the image then learn pattern template
       </table>
 </div><div class="memdoc">
 <p>Save the pattern detector to a specified file.<br  />
-The saving contents is chosen based on the filename extension. If a image extension (.bmp, .png, .jpg, etc.) is passed in, the image of pattern template is saved. If .stp extension is passed in, the trained features as well as the matching parameters are saved. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#acc33f804a59dbd9a1f824ea51862aaa2">Load()</a>. </dd></dl>
+The saving contents is chosen based on the filename extension. If a image extension (.bmp, .png, .jpg, etc.) is passed in, the image of pattern template is saved. If .stp extension is passed in, the trained features as well as the matching parameters are saved. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>Full path of the file, it could be absolute or relative path with file name and extension. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">error</td><td>Return error code if anything is wrong. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#acc33f804a59dbd9a1f824ea51862aaa2">Load()</a>. </dd></dl>
 
 </div>
 </div>
-<a id="aef583e1aec9aa8452c5e55e19382de42"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aef583e1aec9aa8452c5e55e19382de42">&#9670;&nbsp;</a></span>SetPatCenter()</h2>
+<a id="a8a4542c493f441196a76a5559f15f9e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a4542c493f441196a76a5559f15f9e1">&#9670;&nbsp;</a></span>SetPatCenter()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -425,7 +449,7 @@ The saving contents is chosen based on the filename extension. If a image extens
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>angle</em>&#160;</td>
+          <td class="paramname"><em>cenAngle</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -440,11 +464,11 @@ The template center indicates the report position of the matching result. For ex
     <tr><td class="paramname">centerMode</td><td>The mode of the pattern center, see LPVPatCenterMode. </td></tr>
     <tr><td class="paramname">cenX</td><td>The x-coordinate of the user-specified center, it's ignored if use other mode. </td></tr>
     <tr><td class="paramname">cenY</td><td>The y-coordinate of the user-specified center, it's ignored if use other mode. </td></tr>
-    <tr><td class="paramname">angle</td><td>The user-specified angle which will be used as 0 angle, it's ignored if use other mode. </td></tr>
+    <tr><td class="paramname">cenAngle</td><td>The user-specified angle which will be used as 0 angle, it's ignored if use other mode. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#aa2e4c7ea50be29456a6af6a3eebb841e">GetPatCenter()</a>. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a319b1090250f3670c6298a1c24b8eb81">GetPatCenter()</a>. </dd></dl>
 
 </div>
 </div>

@@ -223,7 +223,17 @@ If the current image object has its own data buffer, we'll do another clone of d
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Draw the image onto provide device context. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html#a6fa509713f05f8a8c53794e037baa51c">DrawAsMask()</a> </dd></dl>
+<p>Draw the image onto provide device context. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hdc</td><td>Handle to the device context of the destination window or bitmap. </td></tr>
+    <tr><td class="paramname">zoomX</td><td>Factor for zooming in or out in the x-coordinate direction. By default, it's in the true scale. </td></tr>
+    <tr><td class="paramname">zoomY</td><td>Factor for zooming in or out in the y-coordinate direction. Setting to 0 means same zoom factor as zoomX, aka. isotropic scaling. </td></tr>
+    <tr><td class="paramname">panX</td><td>translation in the x-coordinate direction for panning. The final display x position is calculated as: \((x + panX) \times zoomX\) </td></tr>
+    <tr><td class="paramname">panY</td><td>translation in the y-coordinate direction for panning. The final display y position is calculated as: \((y + panY) \times zoomY\) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html#a6fa509713f05f8a8c53794e037baa51c">DrawAsMask()</a> </dd></dl>
 
 </div>
 </div>
@@ -270,7 +280,17 @@ If the current image object has its own data buffer, we'll do another clone of d
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Draw the image as a mask onto provide device context, white pixels preserve the original values on HDC. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html#a0edc1aa636ff6fe09560e7f205a0633b">Draw()</a> </dd></dl>
+<p>Draw the image as a mask onto provide device context, white pixels preserve the original values on HDC. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hdc</td><td>Handle to the device context of the destination window or bitmap. </td></tr>
+    <tr><td class="paramname">zoomX</td><td>Factor for zooming in or out in the x-coordinate direction. By default, it's in the true scale. </td></tr>
+    <tr><td class="paramname">zoomY</td><td>Factor for zooming in or out in the y-coordinate direction. Setting to 0 means same zoom factor as zoomX, aka. isotropic scaling. </td></tr>
+    <tr><td class="paramname">panX</td><td>translation in the x-coordinate direction for panning. The final display x position is calculated as: \((x + panX) \times zoomX\) </td></tr>
+    <tr><td class="paramname">panY</td><td>translation in the y-coordinate direction for panning. The final display y position is calculated as: \((y + panY) \times zoomY\) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html#a0edc1aa636ff6fe09560e7f205a0633b">Draw()</a> </dd></dl>
 
 </div>
 </div>
@@ -289,7 +309,19 @@ If the current image object has its own data buffer, we'll do another clone of d
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Load the image object from a specified file. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html#a672fb545f17449e43cab82c48bc14af9">Save()</a> </dd></dl>
+<p>Load the image object from a specified file. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>Full path of the file, it could be absolute or relative path with file name and extension. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">error</td><td>Return error code if anything is wrong. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html#a672fb545f17449e43cab82c48bc14af9">Save()</a> </dd></dl>
 
 </div>
 </div>
@@ -321,6 +353,13 @@ If the current image object has its own data buffer, we'll do another clone of d
 <p>Save the image object to a specified file. The image format is chosen based on the filename extension. Currently, we support save as BMP, PNG, JPG, JPEG formats. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">region</td><td>Optional, could be null. If you want to only save part of the image, pass in a region. </td></tr>
+    <tr><td class="paramname">filename</td><td>Full path of the file, it could be absolute or relative path with file name and extension. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">error</td><td>Return error code if anything is wrong. </td></tr>
   </table>
   </dd>
 </dl>
