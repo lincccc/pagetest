@@ -127,20 +127,18 @@ Q8. Open the .net form with LPV display control, the designer report error: Coul
 <blockquote class="doxtable">
 <p>If you are using the x86 LPV libraries. You just need to compile the project in x86(32bit), then restart Visual Studio.</p>
 <p>If you are using the x64 LPV libraries. Since Visual Studio is natively 32bit, it cannot do GUI editing in some components (e.g. LDisplay control) in 64bit. To resolve this error, you should:</p><ol type="1">
-<li>Register the 32bit LPV libraries if you have not. Run <b>runner/reg_run_as_admin.bat</b> script as administrator.</li>
-<li>Change the solution to x86(32bit) or AnyCPU.</li>
-<li>Delete the obj/bin folder of the solution.</li>
-<li>Clean and rebuild the solution.</li>
-<li>Restart Visual Studio.</li>
-<li>Change the solution back to x64(64bit).</li>
-<li>Open the designer for GUI editing. </li>
+<li>Register the 32bit and 64bit LPV libraries if you have not.</li>
+<li>Change the solution to x86(32bit) and close Visual Sutdio.</li>
+<li>Open your solution or project containing LDisplay control with Visual Studio.</li>
+<li>Confirm your solution is under x86(32bit) configuration now, and open your cs file containing LDisplay control. If the error is still there, start from step 2 again more carefully.</li>
+<li>Switch your configuration to x64. Then your cs file can be opened and edited error-freely before you restart Visual Studio again. </li>
 </ol>
 </blockquote>
 <h4><a class="anchor" id="faq9"></a>
 Q9. Registration script error: Register failed, error code = 3.</h4>
 <blockquote class="doxtable">
 <p>The error occurs when the script failed to load LPV modules.<br  />
- It's commonly due to absence of the correct Visual C++ Redistributable Package¡£You may have to download then install one from Microsoft's official website(<a href="https://support.microsoft.com/en-us/topic/the-latest-supported-visual-c-downloads-2647da03-1eea-4433-9aff-95f26a218cc0">https://support.microsoft.com/en-us/topic/the-latest-supported-visual-c-downloads-2647da03-1eea-4433-9aff-95f26a218cc0</a>), or <a href="http://fileserver.hzleaper.com:8085/d/f3af040915194d27a993/">our link</a>. </p>
+ It's commonly due to absence of the correct Visual C++ Redistributable Packageï¿½ï¿½You may have to download then install one from Microsoft's official website(<a href="https://support.microsoft.com/en-us/topic/the-latest-supported-visual-c-downloads-2647da03-1eea-4433-9aff-95f26a218cc0">https://support.microsoft.com/en-us/topic/the-latest-supported-visual-c-downloads-2647da03-1eea-4433-9aff-95f26a218cc0</a>), or <a href="http://fileserver.hzleaper.com:8085/d/f3af040915194d27a993/">our link</a>. </p>
 </blockquote>
 <h4><a class="anchor" id="faq10"></a>
 Q10. Registration script error: Register failed, error code = 5.</h4>

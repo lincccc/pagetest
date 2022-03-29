@@ -102,6 +102,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6a1cdda28bba9f530e68a80e5b3a603a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0cb7c47723f72f9554e3905fc94140e4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html#a0cb7c47723f72f9554e3905fc94140e4">Count</a> ()</td></tr>
 <tr class="separator:a0cb7c47723f72f9554e3905fc94140e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b1a546c45b88da79dba6750664237fb"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html#a5b1a546c45b88da79dba6750664237fb">DistanceToPoint</a> (<a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_point.html">ILPoint</a> *point, <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_point.html">ILPoint</a> **rootPoint)</td></tr>
+<tr class="separator:a5b1a546c45b88da79dba6750664237fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01fbac4827ff9a2e9f6da7d462c993aa"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html#a01fbac4827ff9a2e9f6da7d462c993aa">DistanceToPolygon</a> (<a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a> *polygon, <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_point.html">ILPoint</a> **rootPoint1, <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_point.html">ILPoint</a> **rootPoint2)</td></tr>
+<tr class="separator:a01fbac4827ff9a2e9f6da7d462c993aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d83eb9ffc3069ecdd68773a6b72de87"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html#a4d83eb9ffc3069ecdd68773a6b72de87">Draw</a> (BOOL bFill, HDC hdc, double zoomX, double zoomY, double panX, double panY)</td></tr>
 <tr class="separator:a4d83eb9ffc3069ecdd68773a6b72de87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2cdf133df16733f8cfaa86e173d06193"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_point.html">ILPoint</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html#a2cdf133df16733f8cfaa86e173d06193">GetGravityCenter</a> ()</td></tr>
@@ -180,6 +184,98 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
       </table>
 </div><div class="memdoc">
 <p>Get count of the points. </p>
+
+</div>
+</div>
+<a id="a5b1a546c45b88da79dba6750664237fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b1a546c45b88da79dba6750664237fb">&#9670;&nbsp;</a></span>DistanceToPoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double DistanceToPoint </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_point.html">ILPoint</a> *&#160;</td>
+          <td class="paramname"><em>point</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_point.html">ILPoint</a> **&#160;</td>
+          <td class="paramname"><em>rootPoint</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Calculate the minimum distance between the input point and the polygon, it could be either the distance from the input point to any of the polygon's vertexes or segments. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">point</td><td>The input point. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">rootPoint</td><td>Output the root point, could be either a vertex or the input point's perpendicular root to a polygon segment </td></tr>
+    <tr><td class="paramname">distance</td><td>Return the minimum distance. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a01fbac4827ff9a2e9f6da7d462c993aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01fbac4827ff9a2e9f6da7d462c993aa">&#9670;&nbsp;</a></span>DistanceToPolygon()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double DistanceToPolygon </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a> *&#160;</td>
+          <td class="paramname"><em>polygon</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_point.html">ILPoint</a> **&#160;</td>
+          <td class="paramname"><em>rootPoint1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_point.html">ILPoint</a> **&#160;</td>
+          <td class="paramname"><em>rootPoint2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Calculate the minimum distance between the input polygon and this polygon, it could be either the distance between to any of the polygons' vertexes or segments. For example, the red one is this polygon, the green one is the input polygon, their minimum distance and root points are shown as below: </p><div class="image">
+<object type="image/svg+xml" data="polygon_dist.svg" width="300cm" style="pointer-events: none;"></object>
+</div>
+ <dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">polygon</td><td>The input polygon </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">rootPoint1</td><td>Output the root point on this polygon </td></tr>
+    <tr><td class="paramname">rootPoint2</td><td>Output the root point on the input polygon </td></tr>
+    <tr><td class="paramname">distance</td><td>Return the minimum distance. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

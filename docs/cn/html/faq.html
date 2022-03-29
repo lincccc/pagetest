@@ -126,14 +126,12 @@ Q7. C++ 运行时调用 CreateDispatch 失败，返回 False 且 m_lpDispatch �
 Q8. C# 及其他 .net 调用 LPV 显示控件，编辑器报错：找不到 'AxLPVDisplayLib.AxLDisplay'，请确保已引用包含此类型的程序集。</h4>
 <blockquote class="doxtable">
 <p>对 x86 平台，只需重新编译该程序的 x86(32bit) 平台，然后重启 Visual Studio。</p>
-<p>对 x64 平台，因为 Visual Studio 本身是 32 位的，其不能使用 x64 版本的控件（如 LDisplay 控件）进行图形化编辑。然后按照如下步骤：</p><ol type="1">
-<li>重新注册 LPV 模块的 32 位版本，以管理员运行 <b>runner/reg_run_as_admin.bat</b> 脚本。</li>
-<li>修改解决方案平台为 x86(32bit) 或者 AnyCPU</li>
-<li>删除解决方案文件下的 obj/bin 文件夹。</li>
-<li>清空和重新编译该解决方案。</li>
-<li>重启 Visual Studio</li>
-<li>修改解决方案平台回到 x64(64bit)</li>
-<li>打开编辑器，确认错误是否已消除 </li>
+<p>对 x64 平台，因为 Visual Studio 本身是 32 位的，其不能使用 x64 版本的控件（如 LDisplay 控件）进行图形化编辑。解决方法概括来说是保证你的 Visual Studio 启动后第一次打开包含 LPV 显示控件的 UI 文件 (比如 demo 工程 CSharpDisplay 中的 CSharpDisplay.cs) 时，用的是 x86 的配置，之后在保持 Visual Studio 不关闭的情况下，可以随意打开这个 cs 文件不会报错。但是，一旦报了一次问题中所描述的错误之后，不重启 Visual Studio 是无法解决的。因此，报错后的一种典型操作流程如下：</p><ol type="1">
+<li>保证 LPV 模块的32位版本和64位版本都已经正常注册。</li>
+<li>在 Visual Studio 关闭前，切换配置为 x86，再关闭 Visual Studio。</li>
+<li>用 Visual Studio 打开包含 LPV 显示控件的解决方案或工程。</li>
+<li>确认此时配置为 x86，并打开 UI 文件，若打开时仍报错则重新从2开始进行操作（证明你没有按照234的内容进行操作）。</li>
+<li>再切换配置为 x64，之后在重启 Visual Studio 之前，均可随意打开 UI 文件而不会发生错误。 </li>
 </ol>
 </blockquote>
 <h4><a class="anchor" id="faq9"></a>
