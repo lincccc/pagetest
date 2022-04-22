@@ -109,8 +109,8 @@ Public 成员函数</h2></td></tr>
 <tr class="separator:adf73aae50b248c203b9be96829f08389"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3520b59ae20f2d3687b43a341bb3901"><td class="memItemLeft" align="right" valign="top">SAFEARRAY *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_points.html#af3520b59ae20f2d3687b43a341bb3901">DistancesToPoints</a> (<a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_points.html">ILPoints</a> *points, SAFEARRAY **indexes)</td></tr>
 <tr class="separator:af3520b59ae20f2d3687b43a341bb3901"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33da56f9647f1d139ea03decc660caef"><td class="memItemLeft" align="right" valign="top">SAFEARRAY *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_points.html#a33da56f9647f1d139ea03decc660caef">DistancesToPolygon</a> (<a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a> *polygon)</td></tr>
-<tr class="separator:a33da56f9647f1d139ea03decc660caef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f6a564923a579f374727fa2f97528ce"><td class="memItemLeft" align="right" valign="top">SAFEARRAY *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_points.html#a8f6a564923a579f374727fa2f97528ce">DistancesToPolygon</a> (<a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a> *polygon, SAFEARRAY **rootPoints)</td></tr>
+<tr class="separator:a8f6a564923a579f374727fa2f97528ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a446c62efc2540305275dbe3fcf26fb5e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_points.html#a446c62efc2540305275dbe3fcf26fb5e">DistanceToLine</a> (<a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_line.html">ILLine</a> *line, <a class="el" href="namespace_l_p_v_core_lib.html#a044b4c1019ab24bd62eed3e7fd764b85">LPVAggregation</a> aggType)</td></tr>
 <tr class="separator:a446c62efc2540305275dbe3fcf26fb5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:affb2ddff5333aa0a801dd3c0436309e6"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_points.html#affb2ddff5333aa0a801dd3c0436309e6">DistanceToPoint</a> (<a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_point.html">ILPoint</a> *point, <a class="el" href="namespace_l_p_v_core_lib.html#a044b4c1019ab24bd62eed3e7fd764b85">LPVAggregation</a> aggType)</td></tr>
@@ -330,8 +330,8 @@ Public 成员函数</h2></td></tr>
 
 </div>
 </div>
-<a id="a33da56f9647f1d139ea03decc660caef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a33da56f9647f1d139ea03decc660caef">&#9670;&nbsp;</a></span>DistancesToPolygon()</h2>
+<a id="a8f6a564923a579f374727fa2f97528ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f6a564923a579f374727fa2f97528ce">&#9670;&nbsp;</a></span>DistancesToPolygon()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -340,12 +340,22 @@ Public 成员函数</h2></td></tr>
           <td class="memname">SAFEARRAY* DistancesToPolygon </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a> *&#160;</td>
-          <td class="paramname"><em>polygon</em></td><td>)</td>
+          <td class="paramname"><em>polygon</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">SAFEARRAY **&#160;</td>
+          <td class="paramname"><em>rootPoints</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>计算点集中的每一个点到输入多边形的距离，输出每个点对应的距离。 距离计算方式与 <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html#a5b1a546c45b88da79dba6750664237fb">ILPolygon::DistanceToPoint()</a> 相同。 </p><dl class="params"><dt>参数</dt><dd>
+<p>计算点集中的每一个点到输入多边形的距离，输出每个点对应的距离。 距离计算方式与 <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html#a43e0f950a3eacc9e431cb98a08a27291">ILPolygon::DistanceToPoint()</a> 相同。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramname">polygon</td><td>输入的多边形 </td></tr>
   </table>
@@ -353,6 +363,7 @@ Public 成员函数</h2></td></tr>
 </dl>
 <dl class="retval"><dt>返回值</dt><dd>
   <table class="retval">
+    <tr><td class="paramname">rootPoint</td><td>返回距离对应的多边形上的垂足 </td></tr>
     <tr><td class="paramname">val</td><td>返回所有距离值，与点集顺序对应。 </td></tr>
   </table>
   </dd>
@@ -508,7 +519,7 @@ Public 成员函数</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>计算点集中的每一个点到输入多边形的距离的统计值，如最大、最小或平均距离。距离计算方式与 <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html#a5b1a546c45b88da79dba6750664237fb">ILPolygon::DistanceToPoint()</a> 相同。 </p><dl class="params"><dt>参数</dt><dd>
+<p>计算点集中的每一个点到输入多边形的距离的统计值，如最大、最小或平均距离。距离计算方式与 <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html#a43e0f950a3eacc9e431cb98a08a27291">ILPolygon::DistanceToPoint()</a> 相同。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramname">polygon</td><td>输入的多边形 </td></tr>
     <tr><td class="paramname">aggType</td><td>聚合方式 </td></tr>

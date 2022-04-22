@@ -132,6 +132,10 @@ By default, it's 1, means no scale. You may change the scale factor to zoom in/o
 <a class="el" href="namespace_l_p_v_calib_lib.html#aeaed8df5d288bbe00f4074ae5e7f5990">LPVCalibModel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a5baf43154fe9d08eb332cdc9673a53d4">Model</a><code> [get]</code></td></tr>
 <tr class="memdesc:a5baf43154fe9d08eb332cdc9673a53d4 inherit properties_interface_l_p_v_calib_lib_1_1_i_l_calib"><td class="mdescLeft">&#160;</td><td class="mdescRight">The calibration model. <br /></td></tr>
 <tr class="separator:a5baf43154fe9d08eb332cdc9673a53d4 inherit properties_interface_l_p_v_calib_lib_1_1_i_l_calib"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75ffdfc69b1a3dd711a2eaa55ef6f6bc inherit properties_interface_l_p_v_calib_lib_1_1_i_l_calib"><td class="memItemLeft" align="right" valign="top"><a id="a75ffdfc69b1a3dd711a2eaa55ef6f6bc"></a>
+BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a75ffdfc69b1a3dd711a2eaa55ef6f6bc">UseCache</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a75ffdfc69b1a3dd711a2eaa55ef6f6bc inherit properties_interface_l_p_v_calib_lib_1_1_i_l_calib"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether to make use of cache which is used to speed-up the process of the image undistortion (and untilt), but consume more memory. By default, it's on. <br /></td></tr>
+<tr class="separator:a75ffdfc69b1a3dd711a2eaa55ef6f6bc inherit properties_interface_l_p_v_calib_lib_1_1_i_l_calib"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -180,8 +184,8 @@ Additional Inherited Members</h2></td></tr>
 <div class="line">m_calib-&gt;AddPoint(200, 200, 20, 20);</div>
 <div class="line">m_calib-&gt;AddPoint(200, 100, 20, 10);</div>
 <div class="line">m_calib-&gt;TransformType = LPVTransformType::LPVTransformHomography;</div>
-<div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = m_calib.Calibrate();</div>
-<div class="line"><span class="keywordflow">if</span> (err != LPVErrorCode::LPVNoError || !m_calib.IsCalibrated()) <span class="keywordflow">return</span>;</div>
+<div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = m_calib-&gt;Calibrate();</div>
+<div class="line"><span class="keywordflow">if</span> (err != LPVErrorCode::LPVNoError || !m_calib-&gt;IsCalibrated()) <span class="keywordflow">return</span>;</div>
 <div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">This enumeration represents the type of a LPV function error.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:162</div></div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LCalibNPoints m_calib = <span class="keyword">new</span> LCalibNPoints();</div>
 <div class="line">m_calib.AddPoint(100, 100, 10, 10);</div>

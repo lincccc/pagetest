@@ -118,11 +118,11 @@ Public 成员函数</h2></td></tr>
 <div class="textblock"><p>该接口提供条码检测和质量评价的功能。 </p>
 <p>支持大多数流行的一维和二维码，具体列表请查看 LPVBarcodeType。 质量评价符合 ISO-15416（一维码）和 ISO-15415（二维码）标准。</p>
 <h3>示例代码 </h3>
- <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">CLBarcodeDetector m_barcode_detector;</div>
-<div class="line">m_barcode_detector.put_Type(LPVBarcodeType::LPVBarcodeAll1D); <span class="comment">// detect all types of 1D barcode</span></div>
-<div class="line">m_barcode_detector.put_VerifyQuality(VARIANT_TRUE); <span class="comment">// do quality verification during detection</span></div>
-<div class="line">m_barcode_detector.put_MaxCount(3);</div>
-<div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = (<a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>)m_barcode_detector.Detect(m_img, m_roi, (LPDISPATCH*)&amp;m_code_results);</div>
+ <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">ILBarcodeDetectorPtr m_barcode_detector(__uuidof(LBarcodeDetector));</div>
+<div class="line">m_barcode_detector-&gt;Type = LPVBarcodeType::LPVBarcodeAll1D; <span class="comment">// detect all types of 1D barcode</span></div>
+<div class="line">m_barcode_detector-&gt;VerifyQuality = VARIANT_TRUE; <span class="comment">// do quality verification during detection</span></div>
+<div class="line">m_barcode_detector-&gt;MaxCount = 3;</div>
+<div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = m_barcode_detector-&gt;Detect(m_img, m_roi, &amp;m_code_results);</div>
 <div class="line"><span class="keywordflow">if</span> (err != <a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>.LPVNoError) <span class="keywordflow">return</span>;</div>
 <div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">LPV 算法或函数运行过程中遇到的错误。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:162</div></div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LBarcodeDetector m_barcode_detector = <span class="keyword">new</span> LBarcodeDetector();</div>

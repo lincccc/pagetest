@@ -119,11 +119,11 @@ Properties</h2></td></tr>
 <p>Most popular 1D(linear) and 2D barcode symbologies are supported, see LPVBarcodeType for detailed list. The verification follows ISO-15416 standard for 1D codes, and ISO-15415 for 2D codes.</p>
 <p>To use this interface, you should create a <a class="el" href="class_l_p_v_barcode_lib_1_1_l_barcode_detector.html">LBarcodeDetector</a> object.</p>
 <h3>Example Code </h3>
- <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">CLBarcodeDetector m_barcode_detector;</div>
-<div class="line">m_barcode_detector.put_Type(LPVBarcodeType::LPVBarcodeAll1D); <span class="comment">// detect all types of 1D barcode</span></div>
-<div class="line">m_barcode_detector.put_VerifyQuality(VARIANT_TRUE); <span class="comment">// do quality verification during detection</span></div>
-<div class="line">m_barcode_detector.put_MaxCount(3);</div>
-<div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = (<a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>)m_barcode_detector.Detect(m_img, m_roi, (LPDISPATCH*)&amp;m_code_results);</div>
+ <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">ILBarcodeDetectorPtr m_barcode_detector(__uuidof(LBarcodeDetector));</div>
+<div class="line">m_barcode_detector-&gt;Type = LPVBarcodeType::LPVBarcodeAll1D; <span class="comment">// detect all types of 1D barcode</span></div>
+<div class="line">m_barcode_detector-&gt;VerifyQuality = VARIANT_TRUE; <span class="comment">// do quality verification during detection</span></div>
+<div class="line">m_barcode_detector-&gt;MaxCount = 3;</div>
+<div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = m_barcode_detector-&gt;Detect(m_img, m_roi, &amp;m_code_results);</div>
 <div class="line"><span class="keywordflow">if</span> (err != <a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>.LPVNoError) <span class="keywordflow">return</span>;</div>
 <div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">This enumeration represents the type of a LPV function error.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:162</div></div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LBarcodeDetector m_barcode_detector = <span class="keyword">new</span> LBarcodeDetector();</div>
