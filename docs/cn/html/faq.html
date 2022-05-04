@@ -115,8 +115,20 @@ Q5. C# 编译错误 CS0246: 找不到类型或命名空间名称 'LPVXXXLib' （
 Q6. C++ 运行时调用 CreateDispatch 失败，返回错误 0x800401F0 尚未调用 CoInitialize</h4>
 <blockquote class="doxtable">
 <p>需要在程序开始处调用 CoInitializeEx，结束处调用 CoUnitialize。 需要在使用 LPV 模块前调用初始化。以 MFC 程序为例，推荐的调用位置为 MFC 程序的 InitInstance 和 ExitInstance 方法中。</p>
-<p>例如:  BOOL CMFCApp::InitInstance() { CoInitializeEx(NULL, COINIT_MULTITHREADED); // etc. CWinApp::InitInstance(); } INT CMFCApp::ExitInstance() { CoUninitialize(); return CWinApp::ExitInstance(); }  </p>
-</blockquote>
+<p>例如: </p><div class="fragment"><div class="line">BOOL CMFCApp::InitInstance()</div>
+<div class="line">{</div>
+<div class="line">    <span class="comment">// You may use COINIT_MULTITHREADED or COINIT_APARTMENTTHREADED based on the requirement of your application.</span></div>
+<div class="line">    <span class="comment">// If you are not sure, read more in https://docs.microsoft.com/en-us/windows/win32/learnwin32/initializing-the-com-library</span></div>
+<div class="line">    CoInitializeEx(NULL, COINIT_MULTITHREADED);</div>
+<div class="line">    <span class="comment">// etc.</span></div>
+<div class="line">    CWinApp::InitInstance();</div>
+<div class="line">}</div>
+<div class="line">INT CMFCApp::ExitInstance()</div>
+<div class="line">{</div>
+<div class="line">    CoUninitialize();</div>
+<div class="line">    <span class="keywordflow">return</span> CWinApp::ExitInstance();</div>
+<div class="line">}</div>
+</div><!-- fragment --> </blockquote>
 <h4><a class="anchor" id="faq7"></a>
 Q7. C++ 运行时调用 CreateDispatch 失败，返回 False 且 m_lpDispatch 为空指针</h4>
 <blockquote class="doxtable">
@@ -138,7 +150,7 @@ Q8. C# 及其他 .net 调用 LPV 显示控件，编辑器报错：找不到 'AxL
 Q9. 注册脚本提示错误 Register failed, error code = 3.</h4>
 <blockquote class="doxtable">
 <p>该错误表示注册工具无法正常加载 LPV 模块。<br  />
- 通常是由于没有安装正确版本的 Visual C++ Redistributable Package。需从<a href="https://support.microsoft.com/en-us/topic/the-latest-supported-visual-c-downloads-2647da03-1eea-4433-9aff-95f26a218cc0">微软官方网站</a>下载安装，也可以从我们提供的<a href="http://fileserver.hzleaper.com:8085/d/f3af040915194d27a993/">下载链接</a>下载。 </p>
+ 通常是由于没有安装正确版本的 Visual C++ Redistributable Package。需从<a href="https://support.microsoft.com/en-us/topic/the-latest-supported-visual-c-downloads-2647da03-1eea-4433-9aff-95f26a218cc0">微软官方网站</a>下载安装，也可以从我们提供的<a href="http://fileserver.hzleaper.com:8086/f/eea1a6598fd947d58540/">下载链接</a>下载。 </p>
 </blockquote>
 <h4><a class="anchor" id="faq10"></a>
 Q10. 注册脚本提示错误 Register failed, error code = 5.</h4>

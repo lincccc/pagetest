@@ -98,49 +98,49 @@ Inheritance diagram for ILCalibBoard:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa174ae718c73636f93cff15578386560"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#aa174ae718c73636f93cff15578386560">Detect</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_point_pairs.html">ILCalibPointPairs</a> **pointPairs)</td></tr>
-<tr class="separator:aa174ae718c73636f93cff15578386560"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc33f804a59dbd9a1f824ea51862aaa2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#acc33f804a59dbd9a1f824ea51862aaa2">Load</a> (BSTR filename)</td></tr>
-<tr class="separator:acc33f804a59dbd9a1f824ea51862aaa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aedf9b00d47787a935a044ce74d0df887"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#aedf9b00d47787a935a044ce74d0df887">Save</a> (BSTR filename)</td></tr>
 <tr class="separator:aedf9b00d47787a935a044ce74d0df887"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc33f804a59dbd9a1f824ea51862aaa2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#acc33f804a59dbd9a1f824ea51862aaa2">Load</a> (BSTR filename)</td></tr>
+<tr class="separator:acc33f804a59dbd9a1f824ea51862aaa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa174ae718c73636f93cff15578386560"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#aa174ae718c73636f93cff15578386560">Detect</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_point_pairs.html">ILCalibPointPairs</a> **pointPairs)</td></tr>
+<tr class="separator:aa174ae718c73636f93cff15578386560"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
-<tr class="memitem:a78520409e85555fd726b3eee218107aa"><td class="memItemLeft" align="right" valign="top"><a id="a78520409e85555fd726b3eee218107aa"></a>
-BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#a78520409e85555fd726b3eee218107aa">AutoRemoveBad</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a78520409e85555fd726b3eee218107aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether to evaluate and automatically remove bad points found in detection. By default, it's off. <br /></td></tr>
-<tr class="separator:a78520409e85555fd726b3eee218107aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68aaff181af41e3062684fc72690b5af"><td class="memItemLeft" align="right" valign="top"><a id="a68aaff181af41e3062684fc72690b5af"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#a68aaff181af41e3062684fc72690b5af">BoardThickness</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a68aaff181af41e3062684fc72690b5af"><td class="mdescLeft">&#160;</td><td class="mdescRight">The thickness of the calibration board, in the same unit as <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#a49e5f30b18e9d5f64878d4e45f71deec" title="The square size for the calibration board. For the chessboard or distributed Charuco board,...">SquareSize</a>.<br  />
-It will help compensate the calibration error due to mismatch of plane of calibration and detection, when using the <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_pin_hole.html">Pinhole</a> calibration model. <br /></td></tr>
-<tr class="separator:a68aaff181af41e3062684fc72690b5af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a74b04693b448c5f4979af0b16ad24b"><td class="memItemLeft" align="right" valign="top"><a id="a7a74b04693b448c5f4979af0b16ad24b"></a>
 <a class="el" href="namespace_l_p_v_calib_lib.html#ae8ce3e2cceabc23470a3ef9b2105dfb2">LPVCalibBoardType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#a7a74b04693b448c5f4979af0b16ad24b">CalibBoardType</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:a7a74b04693b448c5f4979af0b16ad24b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The type of the calibration board. <br /></td></tr>
 <tr class="separator:a7a74b04693b448c5f4979af0b16ad24b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab374253d6ea33482e6c038396d35ce70"><td class="memItemLeft" align="right" valign="top"><a id="ab374253d6ea33482e6c038396d35ce70"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#ab374253d6ea33482e6c038396d35ce70">GridHeight</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:ab374253d6ea33482e6c038396d35ce70"><td class="mdescLeft">&#160;</td><td class="mdescRight">The height for the calibration board's grid.<br  />
-You don't have the set this value for the distributed Charuco board, as it's embedded in the calibration pattern. <br /></td></tr>
-<tr class="separator:ab374253d6ea33482e6c038396d35ce70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae0dc69304ee0d7baffda597b48d919cc"><td class="memItemLeft" align="right" valign="top"><a id="ae0dc69304ee0d7baffda597b48d919cc"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#ae0dc69304ee0d7baffda597b48d919cc">GridWidth</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:ae0dc69304ee0d7baffda597b48d919cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">The width for the calibration board's grid.<br  />
 You don't have the set this value for the distributed Charuco board, as it's embedded in the calibration pattern. <br /></td></tr>
 <tr class="separator:ae0dc69304ee0d7baffda597b48d919cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca1ee917aeff5d3da717493f3a0fc734"><td class="memItemLeft" align="right" valign="top"><a id="aca1ee917aeff5d3da717493f3a0fc734"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#aca1ee917aeff5d3da717493f3a0fc734">MarkerSize</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:aca1ee917aeff5d3da717493f3a0fc734"><td class="mdescLeft">&#160;</td><td class="mdescRight">The marker size for the distributed Charuco board, in the same unit as <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#a49e5f30b18e9d5f64878d4e45f71deec" title="The square size for the calibration board. For the chessboard or distributed Charuco board,...">SquareSize</a>.<br  />
-By default, it's 0 means the marker size is 80% based on the square size. <br /></td></tr>
-<tr class="separator:aca1ee917aeff5d3da717493f3a0fc734"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab374253d6ea33482e6c038396d35ce70"><td class="memItemLeft" align="right" valign="top"><a id="ab374253d6ea33482e6c038396d35ce70"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#ab374253d6ea33482e6c038396d35ce70">GridHeight</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:ab374253d6ea33482e6c038396d35ce70"><td class="mdescLeft">&#160;</td><td class="mdescRight">The height for the calibration board's grid.<br  />
+You don't have the set this value for the distributed Charuco board, as it's embedded in the calibration pattern. <br /></td></tr>
+<tr class="separator:ab374253d6ea33482e6c038396d35ce70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49e5f30b18e9d5f64878d4e45f71deec"><td class="memItemLeft" align="right" valign="top"><a id="a49e5f30b18e9d5f64878d4e45f71deec"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#a49e5f30b18e9d5f64878d4e45f71deec">SquareSize</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:a49e5f30b18e9d5f64878d4e45f71deec"><td class="mdescLeft">&#160;</td><td class="mdescRight">The square size for the calibration board.<br  />
 For the chessboard or distributed Charuco board, it means the size of a black square.<br  />
 For the circle grid board, it means the distance between the two nearby circle dots' centers. <br /></td></tr>
 <tr class="separator:a49e5f30b18e9d5f64878d4e45f71deec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca1ee917aeff5d3da717493f3a0fc734"><td class="memItemLeft" align="right" valign="top"><a id="aca1ee917aeff5d3da717493f3a0fc734"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#aca1ee917aeff5d3da717493f3a0fc734">MarkerSize</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:aca1ee917aeff5d3da717493f3a0fc734"><td class="mdescLeft">&#160;</td><td class="mdescRight">The marker size for the distributed Charuco board, in the same unit as <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#a49e5f30b18e9d5f64878d4e45f71deec" title="The square size for the calibration board. For the chessboard or distributed Charuco board,...">SquareSize</a>.<br  />
+By default, it's 0 means the marker size is 80% based on the square size. <br /></td></tr>
+<tr class="separator:aca1ee917aeff5d3da717493f3a0fc734"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68aaff181af41e3062684fc72690b5af"><td class="memItemLeft" align="right" valign="top"><a id="a68aaff181af41e3062684fc72690b5af"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#a68aaff181af41e3062684fc72690b5af">BoardThickness</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a68aaff181af41e3062684fc72690b5af"><td class="mdescLeft">&#160;</td><td class="mdescRight">The thickness of the calibration board, in the same unit as <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#a49e5f30b18e9d5f64878d4e45f71deec" title="The square size for the calibration board. For the chessboard or distributed Charuco board,...">SquareSize</a>.<br  />
+It will help compensate the calibration error due to mismatch of plane of calibration and detection, when using the <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_pin_hole.html">Pinhole</a> calibration model. <br /></td></tr>
+<tr class="separator:a68aaff181af41e3062684fc72690b5af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78520409e85555fd726b3eee218107aa"><td class="memItemLeft" align="right" valign="top"><a id="a78520409e85555fd726b3eee218107aa"></a>
+BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#a78520409e85555fd726b3eee218107aa">AutoRemoveBad</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a78520409e85555fd726b3eee218107aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether to evaluate and automatically remove bad points found in detection. By default, it's off. <br /></td></tr>
+<tr class="separator:a78520409e85555fd726b3eee218107aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5146b955fed19ebfeb97f84fc39edc1"><td class="memItemLeft" align="right" valign="top"><a id="aa5146b955fed19ebfeb97f84fc39edc1"></a>
 BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#aa5146b955fed19ebfeb97f84fc39edc1">UseLFSubPixCorner</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:aa5146b955fed19ebfeb97f84fc39edc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether to use line-fitting method for sub-pix pattern corner detection. By default, it's off.<br  />
@@ -159,7 +159,7 @@ We support 3 types of board, see LPVCalibBoardType for more details.</p>
 <div class="line">m_calib_board-&gt;SquareSize = 1;</div>
 <div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = m_calib_board-&gt;Detect(m_img, &amp;m_pnt_pairs);</div>
 <div class="line"><span class="keywordflow">if</span> (err != LPVErrorCode::LPVNoError) <span class="keywordflow">return</span>;</div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">This enumeration represents the type of a LPV function error.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:162</div></div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">This enumeration represents the type of a LPV function error.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:177</div></div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LCalibBoard m_calib_board = <span class="keyword">new</span> LCalibBoard();</div>
 <div class="line">m_calib_board.GridWidth = 10;</div>
 <div class="line">m_calib_board.GridHeight = 7;</div>
@@ -167,44 +167,35 @@ We support 3 types of board, see LPVCalibBoardType for more details.</p>
 <div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = m_calib_board.Detect(m_img, out m_pnt_pairs);</div>
 <div class="line"><span class="keywordflow">if</span> (err != LPVErrorCode::LPVNoError) <span class="keywordflow">return</span>;</div>
 </div><!-- fragment --> </div>  </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="aa174ae718c73636f93cff15578386560"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa174ae718c73636f93cff15578386560">&#9670;&nbsp;</a></span>Detect()</h2>
+<a id="aedf9b00d47787a935a044ce74d0df887"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedf9b00d47787a935a044ce74d0df887">&#9670;&nbsp;</a></span>Save()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> Detect </td>
+          <td class="memname"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> Save </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
-          <td class="paramname"><em>img</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">BSTR&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
           <td></td>
-          <td class="paramtype"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_point_pairs.html">ILCalibPointPairs</a> **&#160;</td>
-          <td class="paramname"><em>pointPairs</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Detect the calibration pattern on the provided image, and report the generate image and world point pairs. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Save the calibration board object to a specified file.<br  />
+The serialized file is .cboard file with the calibration board configurations. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">img</td><td>The input image. </td></tr>
+    <tr><td class="paramname">filename</td><td>Full path of the file, it could be absolute or relative path with file name and extension. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">pointPairs</td><td>Return the collection of image and world point pairs. </td></tr>
     <tr><td class="paramname">error</td><td>Return error code if anything is wrong. </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#acc33f804a59dbd9a1f824ea51862aaa2">Load()</a> </dd></dl>
 
 </div>
 </div>
@@ -240,35 +231,44 @@ It should be a .cboard file with the calibration board configurations in it. </p
 
 </div>
 </div>
-<a id="aedf9b00d47787a935a044ce74d0df887"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aedf9b00d47787a935a044ce74d0df887">&#9670;&nbsp;</a></span>Save()</h2>
+<a id="aa174ae718c73636f93cff15578386560"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa174ae718c73636f93cff15578386560">&#9670;&nbsp;</a></span>Detect()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> Save </td>
+          <td class="memname"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> Detect </td>
           <td>(</td>
-          <td class="paramtype">BSTR&#160;</td>
-          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>img</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_point_pairs.html">ILCalibPointPairs</a> **&#160;</td>
+          <td class="paramname"><em>pointPairs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Save the calibration board object to a specified file.<br  />
-The serialized file is .cboard file with the calibration board configurations. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Detect the calibration pattern on the provided image, and report the generate image and world point pairs. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">filename</td><td>Full path of the file, it could be absolute or relative path with file name and extension. </td></tr>
+    <tr><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> The input image. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
+    <tr><td class="paramname">pointPairs</td><td>Return the collection of image and world point pairs. </td></tr>
     <tr><td class="paramname">error</td><td>Return error code if anything is wrong. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#acc33f804a59dbd9a1f824ea51862aaa2">Load()</a> </dd></dl>
 
 </div>
 </div>

@@ -85,7 +85,7 @@ $(function() {
 Install</h1>
 <ol type="1">
 <li>Extract lpv_xxxx.zip file to any directory.</li>
-<li>[Optional] If you don't have Visual C++ Redistributable Package 14 or higher installed on your machine, you may have to download then install one from Microsoft's official website(<a href="https://support.microsoft.com/en-us/topic/the-latest-supported-visual-c-downloads-2647da03-1eea-4433-9aff-95f26a218cc0">https://support.microsoft.com/en-us/topic/the-latest-supported-visual-c-downloads-2647da03-1eea-4433-9aff-95f26a218cc0</a>), or <a href="http://fileserver.hzleaper.com:8085/d/f3af040915194d27a993/">our link</a>.</li>
+<li><em>[Optional]</em> If you don't have Visual C++ Redistributable Package 14 or higher installed on your machine, you may have to download then install one from Microsoft's official website(<a href="https://support.microsoft.com/en-us/topic/the-latest-supported-visual-c-downloads-2647da03-1eea-4433-9aff-95f26a218cc0">https://support.microsoft.com/en-us/topic/the-latest-supported-visual-c-downloads-2647da03-1eea-4433-9aff-95f26a218cc0</a>), or <a href="http://fileserver.hzleaper.com:8086/f/eea1a6598fd947d58540/">our link</a>.</li>
 <li>According to your required develop platform (x86 or x64), you should use either runner/x64 or runner/86 as your LPV runner folder, then register and use LPV modules under that folder.</li>
 </ol>
 <h1><a class="anchor" id="autotoc_md5"></a>
@@ -119,10 +119,11 @@ Integration</h1>
 Add LPV Libraries to Visual Studio Projects</h2>
  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><ol type="1">
 <li>RMC your C# project, click "Add Reference"</li>
-<li>Under COM -&gt; Type Libraries panel, search and find <a class="el" href="namespace_l_p_v_core_lib.html" title="LPV Core Library, provide basic functionalities.">LPVCoreLib</a> (must-have) and other LPVXXXLibs according to your application, then click OK to add reference (and Interop) to them in your project.</li>
-<li>In your code, add the line <code>using <a class="el" href="namespace_l_p_v_core_lib.html" title="LPV Core Library, provide basic functionalities.">LPVCoreLib</a>;</code> to start using the LPV classes.<br  />
+<li>Under COM -&gt; Type Libraries panel, search and find <a class="el" href="namespace_l_p_v_core_lib.html" title="LPV Core Library, provide basic functionalities.">LPVCoreLib</a> (must-have), <a class="el" href="namespace_l_p_v_geom_lib.html" title="LPV Geometry Library, provide geometric functionalities.">LPVGeomLib</a> (must-have) and other LPVXXXLibs according to your application, then click OK to add reference (and Interop) to them in your project.</li>
+<li>In your code, add the line <code>using LPVXXXLib;</code> to start using the LPV classes.<br  />
 The following code show a short example: <div class="fragment"><div class="line"><span class="comment">// add using.</span></div>
 <div class="line"><span class="keyword">using</span> <a class="code" href="namespace_l_p_v_core_lib.html">LPVCoreLib</a>;</div>
+<div class="line"><span class="keyword">using</span> <a class="code" href="namespace_l_p_v_geom_lib.html">LPVGeomLib</a>;</div>
 <div class="line"><span class="keyword">using</span> <a class="code" href="namespace_l_p_v_pat_lib.html">LPVPatLib</a>;</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// add definition of LPV class.</span></div>
@@ -136,16 +137,18 @@ The following code show a short example: <div class="fragment"><div class="line"
 <div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> errCode = m_lmatch.Match(m_source_img, (LRegion)m_roi, out m_match_results);</div>
 <div class="line"><span class="keywordflow">if</span> (errCode != LPVErrorCode::LPVNoError) {}</div>
 <div class="ttc" id="anamespace_l_p_v_core_lib_html"><div class="ttname"><a href="namespace_l_p_v_core_lib.html">LPVCoreLib</a></div><div class="ttdoc">LPV Core Library, provide basic functionalities.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:100</div></div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">This enumeration represents the type of a LPV function error.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:162</div></div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">This enumeration represents the type of a LPV function error.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:177</div></div>
+<div class="ttc" id="anamespace_l_p_v_geom_lib_html"><div class="ttname"><a href="namespace_l_p_v_geom_lib.html">LPVGeomLib</a></div><div class="ttdoc">LPV Geometry Library, provide geometric functionalities.</div><div class="ttdef"><b>Definition:</b> LPVGeom.idl:50</div></div>
 <div class="ttc" id="anamespace_l_p_v_pat_lib_html"><div class="ttname"><a href="namespace_l_p_v_pat_lib.html">LPVPatLib</a></div><div class="ttdoc">LPV Pattern Library, provides functionality for pattern matching.</div><div class="ttdef"><b>Definition:</b> LPVPat.idl:46</div></div>
 </div><!-- fragment --></li>
 </ol>
  </div>  <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><p>It's recommended to use <a href="https://docs.microsoft.com/zh-cn/cpp/cpp/compiler-com-support"><b>Compiler COM Support</b></a> to directly read LPV modules out and convert it to C++ headers. Then you can use the COM interfaces as classes.</p>
 <ol type="1">
-<li>Call <a href="https://docs.microsoft.com/en-us/windows/win32/api/combaseapi/nf-combaseapi-coinitializeex">CoInitializeEx</a> when your program starts and <a href="https://docs.microsoft.com/en-us/windows/win32/api/combaseapi/nf-combaseapi-couninitialize">CoUnitialize</a> when it terminates. You should do it before create and initialize LPV classes. The best place to do this is in InitInstance and ExitInstance of your MFC application, as following: <div class="fragment"><div class="line">BOOL CMFCApp::InitInstance()</div>
+<li>Call <a href="https://docs.microsoft.com/en-us/windows/win32/api/combaseapi/nf-combaseapi-coinitializeex">CoInitializeEx</a> when your program starts and <a href="https://docs.microsoft.com/en-us/windows/win32/api/combaseapi/nf-combaseapi-couninitialize">CoUnitialize</a> when it terminates. If you create and host LPV classes in threads, you should also call the two functions when the thread start and finish its job. You should do it before create and initialize LPV classes. For example, for a MFC application, the best place to do this is in InitInstance and ExitInstance, as following: <div class="fragment"><div class="line">BOOL CMFCApp::InitInstance()</div>
 <div class="line">{</div>
-<div class="line">    <span class="comment">// for MFC application, use COINIT_APARTMENTTHREADED</span></div>
-<div class="line">    <span class="comment">// for other C++ application, use COINIT_MULTITHREADED</span></div>
+<div class="line">    <span class="comment">// You may use COINIT_MULTITHREADED or COINIT_APARTMENTTHREADED based on the requirement of your application.</span></div>
+<div class="line">    <span class="comment">// For example, use COINIT_APARTMENTTHREADED for MFC application, COINIT_MULTITHREADED for other cases.</span></div>
+<div class="line">    <span class="comment">// If you are not sure, read more in https://docs.microsoft.com/en-us/windows/win32/learnwin32/initializing-the-com-library</span></div>
 <div class="line">    CoInitializeEx(NULL, COINIT_APARTMENTTHREADED);</div>
 <div class="line">    <span class="comment">// etc.</span></div>
 <div class="line">    CWinApp::InitInstance();</div>
@@ -156,10 +159,10 @@ The following code show a short example: <div class="fragment"><div class="line"
 <div class="line">    <span class="keywordflow">return</span> CWinApp::ExitInstance();</div>
 <div class="line">}</div>
 </div><!-- fragment --></li>
-<li>Use <a href="@https://docs.microsoft.com/en-us/cpp/preprocessor/hash-import-directive-cpp">#import directive</a> to incorporate information from LPV libraries, including <a class="el" href="namespace_l_p_v_core_lib.html" title="LPV Core Library, provide basic functionalities.">LPVCoreLib</a> (must-have) and other required LPVXXXLibs.<br  />
+<li>Use <a href="@https://docs.microsoft.com/en-us/cpp/preprocessor/hash-import-directive-cpp">#import directive</a> to incorporate information from LPV libraries, including <a class="el" href="namespace_l_p_v_core_lib.html" title="LPV Core Library, provide basic functionalities.">LPVCoreLib</a> (must-have), <a class="el" href="namespace_l_p_v_geom_lib.html" title="LPV Geometry Library, provide geometric functionalities.">LPVGeomLib</a> (must-have) and other required LPVXXXLibs.<br  />
 For example, to import LPVCore library: <div class="fragment"><div class="line"><span class="comment">// use the include file under &quot;demo/include&quot; folder</span></div>
 <div class="line"><span class="comment">// You may firstly copy &quot;demo/include&quot; folder to your project folder, or add the folder to your project&#39;s include path</span></div>
-<div class="line"><span class="preprocessor">#import &quot;LPVCore.h&quot;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;LPVCore.h&quot;</span></div>
 </div><!-- fragment --> -or- <div class="fragment"><div class="line"><span class="comment">// use the file path of the library</span></div>
 <div class="line"><span class="preprocessor">#import &quot;Y:\\runner\\x86\\lpvCore.dll&quot;</span></div>
 </div><!-- fragment --> -or- <div class="fragment"><div class="line"><span class="comment">// use the progid of one class in the library</span></div>
@@ -170,6 +173,7 @@ For example, to import LPVCore library: <div class="fragment"><div class="line">
 <li>Start using the LPV classes.<br  />
 The following code show a short example: <div class="fragment"><div class="line"><span class="comment">// import libraries</span></div>
 <div class="line"><span class="preprocessor">#include &quot;LPVCore.h&quot;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;LPVGeom.h&quot;</span></div>
 <div class="line"><span class="preprocessor">#include &quot;LPVPat.h&quot;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// add definition of LPV class and create the instance</span></div>

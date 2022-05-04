@@ -115,8 +115,20 @@ Q5. C# error CS0246: The type or namespace name 'LPVXXXLib' could not be found (
 Q6. Call CreateDispatch fail with error 800401F0 CoInitialize has not been called. (C++ only)</h4>
 <blockquote class="doxtable">
 <p>You need to call CoInitializeEx when your program starts and CoUnitialize when it terminates. You should do it before create and initialize LPV classes. The best place to do this is in InitInstance and ExitInstance of your MFC application.</p>
-<p>For example:  BOOL CMFCApp::InitInstance() { CoInitializeEx(NULL, COINIT_MULTITHREADED); // etc. CWinApp::InitInstance(); } INT CMFCApp::ExitInstance() { CoUninitialize(); return CWinApp::ExitInstance(); }  </p>
-</blockquote>
+<p>For example: </p><div class="fragment"><div class="line">BOOL CMFCApp::InitInstance()</div>
+<div class="line">{</div>
+<div class="line">    <span class="comment">// 你需要根据应用程序的实际情况选择 COINIT_MULTITHREADED 或 COINIT_APARTMENTTHREADED</span></div>
+<div class="line">    <span class="comment">// 如果你并不确定，请仔细阅读文档 https://docs.microsoft.com/zh-cn/windows/win32/learnwin32/initializing-the-com-library</span></div>
+<div class="line">    CoInitializeEx(NULL, COINIT_MULTITHREADED);</div>
+<div class="line">    <span class="comment">// etc.</span></div>
+<div class="line">    CWinApp::InitInstance();</div>
+<div class="line">}</div>
+<div class="line">INT CMFCApp::ExitInstance()</div>
+<div class="line">{</div>
+<div class="line">    CoUninitialize();</div>
+<div class="line">    <span class="keywordflow">return</span> CWinApp::ExitInstance();</div>
+<div class="line">}</div>
+</div><!-- fragment --> </blockquote>
 <h4><a class="anchor" id="faq7"></a>
 Q7. Call CreateDispatch fail and return 0 with NULL m_lpDispatch. (C++ only)</h4>
 <blockquote class="doxtable">
@@ -138,7 +150,7 @@ Q8. Open the .net form with LPV display control, the designer report error: Coul
 Q9. Registration script error: Register failed, error code = 3.</h4>
 <blockquote class="doxtable">
 <p>The error occurs when the script failed to load LPV modules.<br  />
- It's commonly due to absence of the correct Visual C++ Redistributable Package��You may have to download then install one from Microsoft's official website(<a href="https://support.microsoft.com/en-us/topic/the-latest-supported-visual-c-downloads-2647da03-1eea-4433-9aff-95f26a218cc0">https://support.microsoft.com/en-us/topic/the-latest-supported-visual-c-downloads-2647da03-1eea-4433-9aff-95f26a218cc0</a>), or <a href="http://fileserver.hzleaper.com:8085/d/f3af040915194d27a993/">our link</a>. </p>
+ It's commonly due to absence of the correct Visual C++ Redistributable Package. You may have to download then install one from Microsoft's official website(<a href="https://support.microsoft.com/en-us/topic/the-latest-supported-visual-c-downloads-2647da03-1eea-4433-9aff-95f26a218cc0">https://support.microsoft.com/en-us/topic/the-latest-supported-visual-c-downloads-2647da03-1eea-4433-9aff-95f26a218cc0</a>), or <a href="http://fileserver.hzleaper.com:8086/f/eea1a6598fd947d58540/">our link</a>. </p>
 </blockquote>
 <h4><a class="anchor" id="faq10"></a>
 Q10. Registration script error: Register failed, error code = 5.</h4>

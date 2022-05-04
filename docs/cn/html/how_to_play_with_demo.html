@@ -84,11 +84,62 @@ $(function() {
 <li>带有 GUI 的 MFC/C#/QT 程序，提供可视化界面用于参数的调整、结果显示等。其可执行程序位于 demo 文件夹下的所需平台对应的文件夹内，如 demo/x64 ，并提供相应的源代码和工程文件。</li>
 <li>简单的 C++/C# 代码片段，用于演示某些功能函数如何调用。通常为一个 Main 函数体，位于 demo/snippets 文件夹内。使用方法请参考 <a class="el" href="how_to_use_code_snippets.html">如何使用 DEMO 代码片段</a>。</li>
 </ul>
-<p>以下为带有 GUI 的 DEMO 程序介绍。</p>
 <p><em>注意：DEMO 程序的平台需与安装注册的 lpv 版本对应。</em><br  />
  <em>注意：执行 DEMO 程序前，需保证 LPV 已正常注册和授权。</em></p>
+<p><b>GUI 演示程序</b></p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft"></th><th class="markdownTableHeadLeft">演示功能    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><a class="el" href="how_to_play_with_demo.html#demo_sanity">基础功能</a>   </td><td class="markdownTableBodyLeft">演示典型的视觉检测任务流程，包括图像、Region、模板、标定等基础功能。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><a class="el" href="how_to_play_with_demo.html#demo_region">Region 操作</a>   </td><td class="markdownTableBodyLeft">演示如何进行编辑 Region 及如何计算生成新的 Region。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><a class="el" href="how_to_play_with_demo.html#demo_hikcam">集成相机的采图回调</a>   </td><td class="markdownTableBodyLeft">演示如何集成相机到 LPV 程序，使用相机回调采集图像到 LImage 对象，以海康相机为例。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><a class="el" href="how_to_play_with_demo.html#demo_pat">模板匹配</a>   </td><td class="markdownTableBodyLeft">演示高精度模板匹配。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><a class="el" href="how_to_play_with_demo.html#demo_blob">斑点分析</a>   </td><td class="markdownTableBodyLeft">演示斑点分析，支持灰度和彩色模式。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><a class="el" href="how_to_play_with_demo.html#demo_imgproc">图像处理</a>   </td><td class="markdownTableBodyLeft">演示常见的图像处理算子。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><a class="el" href="how_to_play_with_demo.html#demo_line">直线定位</a>   </td><td class="markdownTableBodyLeft">演示亚像素直线定位。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><a class="el" href="how_to_play_with_demo.html#demo_circle">圆定位</a>   </td><td class="markdownTableBodyLeft">演示亚像素圆定位。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><a class="el" href="how_to_play_with_demo.html#demo_calib">标定</a>   </td><td class="markdownTableBodyLeft">演示相机标定，包括多点、针孔、FFD等相机模型，支持不同类型的标定板。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><a class="el" href="how_to_play_with_demo.html#demo_camarray">相机阵列和图像拼接</a>   </td><td class="markdownTableBodyLeft">演示相机阵列标定和图像拼接。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><a class="el" href="how_to_play_with_demo.html#demo_geom">几何计算和测量</a>   </td><td class="markdownTableBodyLeft">演示几何模块的常用功能，包括交点计算、距离测量、拟合等。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><a class="el" href="how_to_play_with_demo.html#demo_barcode">条码检测</a>   </td><td class="markdownTableBodyLeft">演示一维码和二维码检测，以及条码质量评价。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><a class="el" href="how_to_play_with_demo.html#demo_display">显示控件</a>   </td><td class="markdownTableBodyLeft">演示如何使用显示控件。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><a class="el" href="how_to_play_with_demo.html#demo_ibservice">连接到灵闪服务</a>  </td><td class="markdownTableBodyLeft">演示如何与灵闪服务集成，并使用具有强大功能的灵闪作业。  </td></tr>
+</table>
+<p><b>代码片段</b></p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft"></th><th class="markdownTableHeadLeft">源代码   </th><th class="markdownTableHeadLeft">演示功能    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><b>HDR</b>   </td><td class="markdownTableBodyLeft">HDR.cpp/cs   </td><td class="markdownTableBodyLeft">演示如何使用 HDR 算法。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><b>多帧融合</b>   </td><td class="markdownTableBodyLeft">ImageBlend.cpp/cs   </td><td class="markdownTableBodyLeft">演示多帧融合算法，通常用于降噪和获取多帧变化。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><b>最大最小距离</b>   </td><td class="markdownTableBodyLeft">MinMaxDistance.cpp/cs   </td><td class="markdownTableBodyLeft">演示如何计算多边形间的顶点或线段距离。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><b>投影和数值分析</b>   </td><td class="markdownTableBodyLeft">ProjectionAndAnalysis.cpp/cs   </td><td class="markdownTableBodyLeft">演示图像投影算法，以及基于投影结果数据的处理和分析，如数值滤波、局部极值查找等。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><b>排序</b>   </td><td class="markdownTableBodyLeft">Sort.cpp/cs   </td><td class="markdownTableBodyLeft">演示排序算法，特别是阵列排序。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><b>颜色空间转换</b>   </td><td class="markdownTableBodyLeft">ColorSpace.cpp/cs   </td><td class="markdownTableBodyLeft">演示彩色图像常用的颜色空间转换功能。   </td></tr>
+</table>
 <p><br  />
 </p>
+<hr  />
+<p>以下为带有 GUI 的 DEMO 程序介绍。</p>
 <h2><a class="anchor" id="demo_sanity"></a>
 基础功能</h2>
 <p>演示典型的视觉检测任务流程，包括图像、Region、模板、标定等基础功能。</p>
@@ -155,7 +206,7 @@ Region 操作</h2>
 </p>
 <h2><a class="anchor" id="demo_pat"></a>
 模板匹配</h2>
-<p>演示模板匹配。</p>
+<p>演示高精度模板匹配。</p>
 <blockquote class="doxtable">
 <p><b>源代码 (C++)：</b> mfcdemo/MFCPat<br  />
  <b>源代码 (C#)：</b> csharpdemo/CSharpPat<br  />
@@ -178,17 +229,20 @@ Region 操作</h2>
 </p>
 <h2><a class="anchor" id="demo_blob"></a>
 斑点分析</h2>
-<p>演示斑点分析。</p>
+<p>演示斑点分析，支持灰度和彩色模式。</p>
 <blockquote class="doxtable">
 <p><b>源代码 (C++)：</b> mfcdemo/MFCBlob<br  />
  <b>源代码 (C#)：</b> csharpdemo/CSharpBlob<br  />
  <b>源代码 (Qt)：</b> qtdemo/QtBlob<br  />
- <b>图像文件：</b> rou.jpg</p>
+ <b>Image files:</b> rou.jpg, smile.png, cat.png</p>
 <p><b>相关类：</b> <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html">LBlobAnalysis</a>, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_filter.html">LBlobFilter</a>, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_results.html">LBlobResults</a>, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html">LBlob</a> </p>
 </blockquote>
 <p><a href="t02_03_blob.png"><img src="t02_03_blob.png" alt="" style="float: right; height: 200px; margin-left: 20px;" class="inline"/> </a></p>
 <ol type="1">
-<li>点击 <b>Load Image</b> 按钮，加载图像。</li>
+<li>点击 <b>Load Image</b> 按钮，加载图像。<ul>
+<li><b>Mode</b> 根据加载的图像格式，自动切换为 <em>Grayscale</em> 或 <em>Color</em> 。</li>
+</ul>
+</li>
 <li>选择合适的 <b>Threshold</b> 类型:<ul>
 <li><b>0 Custom</b>: 使用自定义的阈值上下限。</li>
 <li><b>1 Global Adaptive</b>: 使用基于全图的自适应阈值。需设置 <b>Polarity</b> 以及修正阈值时使用的 <b>Bias</b> 数值。</li>
@@ -234,7 +288,7 @@ Region 操作</h2>
 </p>
 <h2><a class="anchor" id="demo_line"></a>
 直线定位</h2>
-<p>演示直线定位。</p>
+<p>演示亚像素直线定位。</p>
 <blockquote class="doxtable">
 <p><b>源代码 (C++)：</b> mfcdemo/MFCLine<br  />
  <b>源代码 (C#)：</b> csharpdemo/CSharpLine<br  />
@@ -268,7 +322,7 @@ Region 操作</h2>
 </p>
 <h2><a class="anchor" id="demo_circle"></a>
 圆定位</h2>
-<p>演示圆定位。</p>
+<p>演示亚像素圆定位。</p>
 <blockquote class="doxtable">
 <p><b>源代码 (C++)：</b> mfcdemo/MFCCircle<br  />
  <b>源代码 (C#)：</b> csharpdemo/CSharpCircle<br  />
@@ -302,7 +356,7 @@ Region 操作</h2>
 </p>
 <h2><a class="anchor" id="demo_calib"></a>
 标定</h2>
-<p>演示相机标定。</p>
+<p>演示相机标定，包括多点、针孔、FFD等相机模型，支持不同类型的标定板。</p>
 <blockquote class="doxtable">
 <p><b>源代码 (C++)：</b> mfcdemo/MFCCalib<br  />
  <b>源代码 (C#)：</b> csharpdemo/CSharpCalib<br  />

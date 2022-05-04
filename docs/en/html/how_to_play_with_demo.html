@@ -86,8 +86,60 @@ $(function() {
 </ul>
 <p><em>NOTE: The platform of DEMOs should be exactly the same as the LPV dlls you installed and registered.</em><br  />
  <em>NOTE: Please make sure the LPV dlls are registered and licensed before running the DEMOs.</em></p>
+<p><b>GUI DEMO</b></p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft"></th><th class="markdownTableHeadLeft">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><a class="el" href="how_to_play_with_demo.html#demo_sanity">Sanity</a>   </td><td class="markdownTableBodyLeft">Demonstrate a typical vision task involves Image, Region, Pattern matching, calibration modules.    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><a class="el" href="how_to_play_with_demo.html#demo_region">Region Manipulation</a>   </td><td class="markdownTableBodyLeft">Demonstrate how to edit regions and how to calculate and create new regions.    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><a class="el" href="how_to_play_with_demo.html#demo_hikcam">Integrate with Camera</a>   </td><td class="markdownTableBodyLeft">Demonstrate how to capture image into a LImage object with camera APIs, take Hik camera as an example.    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><a class="el" href="how_to_play_with_demo.html#demo_pat">Template Matching</a>   </td><td class="markdownTableBodyLeft">Demonstrate template matching with sub-pixel precision.    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><a class="el" href="how_to_play_with_demo.html#demo_blob">Blob Analysis</a>   </td><td class="markdownTableBodyLeft">Demonstrate blob analysis, either in grayscale or color mode.    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><a class="el" href="how_to_play_with_demo.html#demo_imgproc">Image Processing</a>   </td><td class="markdownTableBodyLeft">Demonstrate the common image processing operations.    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><a class="el" href="how_to_play_with_demo.html#demo_line">Line Detection</a>   </td><td class="markdownTableBodyLeft">Demonstrate line detection with sub-pixel precision.    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><a class="el" href="how_to_play_with_demo.html#demo_circle">Circle Detection</a>   </td><td class="markdownTableBodyLeft">Demonstrate circle detection with sub-pixel precision.    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><a class="el" href="how_to_play_with_demo.html#demo_calib">Calibration</a>   </td><td class="markdownTableBodyLeft">Demonstrate the camera calibration, including n-points, pin-hole, FFD camera models using different types of calibration boards.    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><a class="el" href="how_to_play_with_demo.html#demo_camarray">Camera Array and Image Stitching</a>   </td><td class="markdownTableBodyLeft">Demonstrate the camera array calibration and image stitching.    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><a class="el" href="how_to_play_with_demo.html#demo_geom">Geometry</a>   </td><td class="markdownTableBodyLeft">Demonstrate geometry module, including intersection calculation, gauging, fitting, etc.    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><a class="el" href="how_to_play_with_demo.html#demo_barcode">Barcode</a>   </td><td class="markdownTableBodyLeft">Demonstrate 1D/2D barcode detection and quality verification.    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><a class="el" href="how_to_play_with_demo.html#demo_display">Display Control</a>   </td><td class="markdownTableBodyLeft">Demonstrate the display control.    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><a class="el" href="how_to_play_with_demo.html#demo_ibservice">Connect to IntelliBlink Service</a>  </td><td class="markdownTableBodyLeft">Demonstrate how to integrate with and make use of powerful IntelliBlink tasks.  </td></tr>
+</table>
+<p><b>Code Snippets</b></p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft"></th><th class="markdownTableHeadLeft">Source code   </th><th class="markdownTableHeadLeft">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><b>HDR</b>   </td><td class="markdownTableBodyLeft">HDR.cpp/cs   </td><td class="markdownTableBodyLeft">Demonstrate the HDR algorithm.    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><b>Image Blend</b>   </td><td class="markdownTableBodyLeft">ImageBlend.cpp/cs   </td><td class="markdownTableBodyLeft">Demonstrate the image blending algorithm which is useful for denoising.    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><b>Min-max Distance</b>   </td><td class="markdownTableBodyLeft">MinMaxDistance.cpp/cs   </td><td class="markdownTableBodyLeft">Demonstrate how to measure the distance between polygons.    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><b>Projection and analysis</b>   </td><td class="markdownTableBodyLeft">ProjectionAndAnalysis.cpp/cs   </td><td class="markdownTableBodyLeft">Demonstrate the image projection, and data analysis on the projection result, such as filtering, local extrema detection, etc.    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><b>Sort</b>   </td><td class="markdownTableBodyLeft">Sort.cpp/cs   </td><td class="markdownTableBodyLeft">Demonstrate the sorting algorithms, especially the array sorter.    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><b>Color space conversion</b>   </td><td class="markdownTableBodyLeft">ColorSpace.cpp/cs   </td><td class="markdownTableBodyLeft">Demonstrate the conversion of the color images between common color spaces.   </td></tr>
+</table>
 <p><br  />
 </p>
+<hr  />
+<p>The followings are the introduction to the GUI DEMOs.</p>
 <h2><a class="anchor" id="demo_sanity"></a>
 Sanity</h2>
 <p>Demonstrate a typical vision task involves Image, Region, Pattern matching, calibration modules.</p>
@@ -137,7 +189,7 @@ Region Manipulation</h2>
 <p><br  />
 </p>
 <h2><a class="anchor" id="demo_hikcam"></a>
-Integrate with Camera Capture Callback</h2>
+Integrate with Camera</h2>
 <p>Demonstrate how to capture image into a LImage object with camera APIs, take Hik camera as an example.</p>
 <blockquote class="doxtable">
 <p><b>Source code (C#):</b> csharpdemo/CSharpHikCam</p>
@@ -154,7 +206,7 @@ Integrate with Camera Capture Callback</h2>
 </p>
 <h2><a class="anchor" id="demo_pat"></a>
 Template Matching</h2>
-<p>Demonstrate template matching.</p>
+<p>Demonstrate template matching with sub-pixel precision.</p>
 <blockquote class="doxtable">
 <p><b>Source code (C++):</b> mfcdemo/MFCPat<br  />
  <b>Source code (C#):</b> csharpdemo/CSharpPat<br  />
@@ -177,17 +229,20 @@ Template Matching</h2>
 </p>
 <h2><a class="anchor" id="demo_blob"></a>
 Blob Analysis</h2>
-<p>Demonstrate blob analysis.</p>
+<p>Demonstrate blob analysis, either in grayscale or color mode.</p>
 <blockquote class="doxtable">
 <p><b>Source code (C++):</b> mfcdemo/MFCBlob<br  />
  <b>Source code (C#):</b> csharpdemo/CSharpBlob<br  />
  <b>Source code (Qt):</b> qtdemo/QtBlob<br  />
- <b>Image files:</b> rou.jpg</p>
+ <b>Image files:</b> rou.jpg, smile.png, cat.png</p>
 <p><b>Related classes:</b> <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html">LBlobAnalysis</a>, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_filter.html">LBlobFilter</a>, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_results.html">LBlobResults</a>, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html">LBlob</a> </p>
 </blockquote>
 <p><a href="t02_03_blob.png"><img src="t02_03_blob.png" alt="" style="float: right; height: 200px; margin-left: 20px;" class="inline"/> </a></p>
 <ol type="1">
-<li>Click <b>Load Image</b> button, load image from file.</li>
+<li>Click <b>Load Image</b> button, load image from file.<ul>
+<li>The <b>Mode</b> changes to <em>Grayscale</em> or <em>Color</em>, according to the image format.</li>
+</ul>
+</li>
 <li>Select <b>Threshold</b> to use the proper threshold mode:<ul>
 <li><b>0 Custom</b>: use the input lower and upper threshold range.</li>
 <li><b>1 Global Adaptive</b>: use the auto-generated adaptive threshold based on the entire image and specified <b>Polarity</b>, then revised by <b>Bias</b>.</li>
@@ -233,7 +288,7 @@ Image Processing</h2>
 </p>
 <h2><a class="anchor" id="demo_line"></a>
 Line Detection</h2>
-<p>Demonstrate line detection.</p>
+<p>Demonstrate line detection with sub-pixel precision.</p>
 <blockquote class="doxtable">
 <p><b>Source code (C++):</b> mfcdemo/MFCLine<br  />
  <b>Source code (C#):</b> csharpdemo/CSharpLine<br  />
@@ -267,7 +322,7 @@ Line Detection</h2>
 </p>
 <h2><a class="anchor" id="demo_circle"></a>
 Circle Detection</h2>
-<p>Demonstrate circle detection.</p>
+<p>Demonstrate circle detection with sub-pixel precision.</p>
 <blockquote class="doxtable">
 <p><b>Source code (C++):</b> mfcdemo/MFCCircle<br  />
  <b>Source code (C#):</b> csharpdemo/CSharpCircle<br  />
@@ -301,7 +356,7 @@ Circle Detection</h2>
 </p>
 <h2><a class="anchor" id="demo_calib"></a>
 Calibration</h2>
-<p>Demonstrate camera calibration.</p>
+<p>Demonstrate the camera calibration, including n-points, pin-hole, FFD camera models using different types of calibration boards.</p>
 <blockquote class="doxtable">
 <p><b>Source code (C++):</b> mfcdemo/MFCCalib<br  />
  <b>Source code (C#):</b> csharpdemo/CSharpCalib<br  />
@@ -336,7 +391,7 @@ Calibration</h2>
 </p>
 <h2><a class="anchor" id="demo_camarray"></a>
 Camera Array and Image Stitching</h2>
-<p>Demonstrate camera array calibration and image stitching.</p>
+<p>Demonstrate the camera array calibration and image stitching.</p>
 <blockquote class="doxtable">
 <p><b>Source code (C++):</b> mfcdemo/MFCCamArray<br  />
  <b>Source code (C#):</b> csharpdemo/CSharpCamArray<br  />

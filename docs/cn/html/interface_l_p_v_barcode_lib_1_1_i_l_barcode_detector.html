@@ -103,16 +103,16 @@ Public 成员函数</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 属性</h2></td></tr>
-<tr class="memitem:a9bba598de659c48ac2711b118ceff76a"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#a9bba598de659c48ac2711b118ceff76a">AllowDup</a><code> [get, set]</code></td></tr>
-<tr class="separator:a9bba598de659c48ac2711b118ceff76a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a644de01ea48cbfdcc28697f78a7e4689"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#a644de01ea48cbfdcc28697f78a7e4689">CheckSum</a><code> [get, set]</code></td></tr>
-<tr class="separator:a644de01ea48cbfdcc28697f78a7e4689"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af98b71a5ec504565e5456260acbd9ee5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#af98b71a5ec504565e5456260acbd9ee5">MaxCount</a><code> [get, set]</code></td></tr>
-<tr class="separator:af98b71a5ec504565e5456260acbd9ee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5080d342b7871a79bc81bb98d4e5a331"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_barcode_lib.html#a8d35ae44acaae621a58bd6ac4cafb72f">LPVBarcodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#a5080d342b7871a79bc81bb98d4e5a331">Type</a><code> [get, set]</code></td></tr>
 <tr class="separator:a5080d342b7871a79bc81bb98d4e5a331"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a644de01ea48cbfdcc28697f78a7e4689"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#a644de01ea48cbfdcc28697f78a7e4689">CheckSum</a><code> [get, set]</code></td></tr>
+<tr class="separator:a644de01ea48cbfdcc28697f78a7e4689"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf0d9099ddeafa37479161c47f75bf0a"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#adf0d9099ddeafa37479161c47f75bf0a">VerifyQuality</a><code> [get, set]</code></td></tr>
 <tr class="separator:adf0d9099ddeafa37479161c47f75bf0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bba598de659c48ac2711b118ceff76a"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#a9bba598de659c48ac2711b118ceff76a">AllowDup</a><code> [get, set]</code></td></tr>
+<tr class="separator:a9bba598de659c48ac2711b118ceff76a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af98b71a5ec504565e5456260acbd9ee5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#af98b71a5ec504565e5456260acbd9ee5">MaxCount</a><code> [get, set]</code></td></tr>
+<tr class="separator:af98b71a5ec504565e5456260acbd9ee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><p>该接口提供条码检测和质量评价的功能。 </p>
@@ -124,7 +124,7 @@ Public 成员函数</h2></td></tr>
 <div class="line">m_barcode_detector-&gt;MaxCount = 3;</div>
 <div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = m_barcode_detector-&gt;Detect(m_img, m_roi, &amp;m_code_results);</div>
 <div class="line"><span class="keywordflow">if</span> (err != <a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>.LPVNoError) <span class="keywordflow">return</span>;</div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">LPV 算法或函数运行过程中遇到的错误。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:162</div></div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">LPV 算法或函数运行过程中遇到的错误。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:177</div></div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LBarcodeDetector m_barcode_detector = <span class="keyword">new</span> LBarcodeDetector();</div>
 <div class="line">m_barcode_detector.Type = <a class="code" href="namespace_l_p_v_barcode_lib.html#a8d35ae44acaae621a58bd6ac4cafb72f">LPVBarcodeType</a>.LPVBarcodeAll1D; <span class="comment">// detect all types of 1D barcode</span></div>
 <div class="line">m_barcode_detector.VerifyQuality = <span class="keyword">true</span>; <span class="comment">// do quality verification during detection</span></div>
@@ -166,7 +166,7 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>检测条码（并进行质量评价），在输入的图像和指定的区域上。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">img</td><td>输入图像 </td></tr>
+    <tr><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> 输入图像 </td></tr>
     <tr><td class="paramname">region</td><td>输入区域 </td></tr>
   </table>
   </dd>
@@ -182,8 +182,8 @@ Public 成员函数</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">属性说明</h2>
-<a id="a9bba598de659c48ac2711b118ceff76a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9bba598de659c48ac2711b118ceff76a">&#9670;&nbsp;</a></span>AllowDup</h2>
+<a id="a5080d342b7871a79bc81bb98d4e5a331"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5080d342b7871a79bc81bb98d4e5a331">&#9670;&nbsp;</a></span>Type</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -192,7 +192,7 @@ Public 成员函数</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">BOOL AllowDup</td>
+          <td class="memname"><a class="el" href="namespace_l_p_v_barcode_lib.html#a8d35ae44acaae621a58bd6ac4cafb72f">LPVBarcodeType</a> Type</td>
         </tr>
       </table>
   </td>
@@ -201,7 +201,7 @@ Public 成员函数</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>设置在解码过程中是否进行条码质量检测。默认设置为 False， 即若检测区域中有多个编码内容相同的条码，只输出第一个检测结果（忽略其他）。 </p>
+<p>设置条码检测的类型，可谓多种类型的组合。 </p>
 
 </div>
 </div>
@@ -228,52 +228,6 @@ Public 成员函数</h2></td></tr>
 
 </div>
 </div>
-<a id="af98b71a5ec504565e5456260acbd9ee5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af98b71a5ec504565e5456260acbd9ee5">&#9670;&nbsp;</a></span>MaxCount</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int MaxCount</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>设置检测的最大数量。检测过程在找到足够多数量的条码结果后，将结束检测。 </p>
-
-</div>
-</div>
-<a id="a5080d342b7871a79bc81bb98d4e5a331"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5080d342b7871a79bc81bb98d4e5a331">&#9670;&nbsp;</a></span>Type</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespace_l_p_v_barcode_lib.html#a8d35ae44acaae621a58bd6ac4cafb72f">LPVBarcodeType</a> Type</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>设置条码检测的类型，可谓多种类型的组合。 </p>
-
-</div>
-</div>
 <a id="adf0d9099ddeafa37479161c47f75bf0a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adf0d9099ddeafa37479161c47f75bf0a">&#9670;&nbsp;</a></span>VerifyQuality</h2>
 
@@ -294,6 +248,52 @@ Public 成员函数</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>设置在解码过程中是否进行条码质量检测。默认设置为 False </p>
+
+</div>
+</div>
+<a id="a9bba598de659c48ac2711b118ceff76a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9bba598de659c48ac2711b118ceff76a">&#9670;&nbsp;</a></span>AllowDup</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL AllowDup</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>设置在解码过程中是否进行条码质量检测。默认设置为 False， 即若检测区域中有多个编码内容相同的条码，只输出第一个检测结果（忽略其他）。 </p>
+
+</div>
+</div>
+<a id="af98b71a5ec504565e5456260acbd9ee5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af98b71a5ec504565e5456260acbd9ee5">&#9670;&nbsp;</a></span>MaxCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int MaxCount</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>设置检测的最大数量。检测过程在找到足够多数量的条码结果后，将结束检测。 </p>
 
 </div>
 </div>
