@@ -171,7 +171,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 <div class="line">        }</div>
 <div class="line">    }</div>
 <div class="line">}</div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html_a54c773c6f72a88ff41d8ab615b5a92f3"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a54c773c6f72a88ff41d8ab615b5a92f3">LPVCoreLib::LPVPositionMode</a></div><div class="ttdeci">LPVPositionMode</div><div class="ttdoc">This enumeration represents which point is used as a object's position, used in sorting.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:722</div></div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a54c773c6f72a88ff41d8ab615b5a92f3"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a54c773c6f72a88ff41d8ab615b5a92f3">LPVCoreLib::LPVPositionMode</a></div><div class="ttdeci">LPVPositionMode</div><div class="ttdoc">This enumeration represents which point is used as a object's position, used in sorting.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:718</div></div>
 </div><!-- fragment --> </div>  </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a4edf2d19d953cf5e6d8d6872fab2f713"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4edf2d19d953cf5e6d8d6872fab2f713">&#9670;&nbsp;</a></span>Draw()</h2>
@@ -225,14 +225,10 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 <p>Draw the indexes near the corresponding positions on HDC. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">drawFlags</td><td>Flags to control the drawing behavior, see LPVSortedArrayDrawFlags for usage. </td></tr>
-    <tr><td class="paramname">hdc</td><td>Handle to the device context of the destination window or bitmap. </td></tr>
-    <tr><td class="paramname">zoomX</td><td>Factor for zooming in or out in the x-coordinate direction. By default, it's in the true scale. </td></tr>
-    <tr><td class="paramname">zoomY</td><td>Factor for zooming in or out in the y-coordinate direction. Setting to 0 means same zoom factor as zoomX, aka. isotropic scaling. </td></tr>
-    <tr><td class="paramname">panX</td><td>translation in the x-coordinate direction for panning. The final display x position is calculated as: \((x + panX) \times zoomX\) </td></tr>
-    <tr><td class="paramname">panY</td><td>translation in the y-coordinate direction for panning. The final display y position is calculated as: \((y + panY) \times zoomY\) </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="use_draw_functions.html">Use Draw Functions</a> </dd></dl>
 
 </div>
 </div>

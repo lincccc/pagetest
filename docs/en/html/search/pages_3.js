@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ldisplay_20control_1864',['LDisplay Control',['../use_display_control.html',1,'']]]
+  ['how_20to_20use_20demo_20code_20snippets_1865',['How to Use DEMO Code Snippets',['../how_to_use_code_snippets.html',1,'']]]
 ];

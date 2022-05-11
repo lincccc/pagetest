@@ -26,8 +26,10 @@ var menudata={children:[
 {text:"Get Started",url:"usergroup0.html",children:[
 {text:"Quick Guide",url:"quick_guide.html"},
 {text:"Play with DEMOs",url:"how_to_play_with_demo.html"},
-{text:"Display Control",url:"use_display_control.html"}]},
-{text:"LPV Modules",url:"usergroup1.html",children:[
+{text:"Display",url:"usergroup1.html",children:[
+{text:"Draw Functions",url:"use_draw_functions.html"},
+{text:"Display Control",url:"use_display_control.html"}]}]},
+{text:"LPV Modules",url:"usergroup2.html",children:[
 {text:"<b>Basics</b> <i><small>lpvCore</small></i>",url:"namespace_l_p_v_core_lib.html"},
 {text:"<b>Geometry</b> <i><small>lpvGeom</small></i>",url:"namespace_l_p_v_geom_lib.html"},
 {text:"<b>Image Process</b> <i><small>lpvImgProc</small></i>",url:"namespace_l_p_v_img_proc_lib.html"},

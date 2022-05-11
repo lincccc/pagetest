@@ -26,8 +26,10 @@ var menudata={children:[
 {text:"入门指南",url:"usergroup0.html",children:[
 {text:"快速上手",url:"quick_guide.html"},
 {text:"玩转 DEMO",url:"how_to_play_with_demo.html"},
-{text:"显示控件",url:"use_display_control.html"}]},
-{text:"LPV 模块",url:"usergroup1.html",children:[
+{text:"显示",url:"usergroup1.html",children:[
+{text:"绘制函数",url:"use_draw_functions.html"},
+{text:"显示控件",url:"use_display_control.html"}]}]},
+{text:"LPV 模块",url:"usergroup2.html",children:[
 {text:"<b>基础功能</b> <i><small>lpvCore</small></i>",url:"namespace_l_p_v_core_lib.html"},
 {text:"<b>图形几何</b> <i><small>lpvGeom</small></i>",url:"namespace_l_p_v_geom_lib.html"},
 {text:"<b>图像处理</b> <i><small>lpvImgProc</small></i>",url:"namespace_l_p_v_img_proc_lib.html"},

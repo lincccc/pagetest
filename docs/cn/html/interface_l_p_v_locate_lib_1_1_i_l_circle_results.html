@@ -122,7 +122,7 @@ Public 成员函数</h2></td></tr>
 <div class="line">    LCircleResult result = m_circle_results-&gt;Item(i);</div>
 <div class="line">    <span class="comment">// handle each circle result</span></div>
 <div class="line">}</div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">LPV 算法或函数运行过程中遇到的错误。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:177</div></div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">LPV 算法或函数运行过程中遇到的错误。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:173</div></div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LCircleResults m_circle_results;</div>
 <div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = (<a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>)m_circle_detector.Detect(m_img, (LAnnulusRegion)m_roi, out m_circle_results);</div>
 <div class="line"><span class="keywordflow">if</span> (err != <a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>.LPVNoError) <span class="keywordflow">return</span>;</div>
@@ -260,17 +260,9 @@ Public 成员函数</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_locate_lib_1_1_i_l_circle_results.html#ab3ef0211af918d3ff20689eada0f182d">DrawAll()</a> </dd></dl>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">hdc</td><td>绘制设备，可为窗口、位图等的上下文句柄。 </td></tr>
-    <tr><td class="paramname">zoomX</td><td>x 方向的缩放系数，默认为真实尺寸 100。 </td></tr>
-    <tr><td class="paramname">zoomY</td><td>y 方向的缩放系数，默认设置为 0，即与 x 方向的缩放系数相同，也就是等比缩放。 </td></tr>
-    <tr><td class="paramname">panX</td><td>x 方向的平移。最终的 x 坐标按照该公式计算: \((x + panX) \times zoomX\) </td></tr>
-    <tr><td class="paramname">panY</td><td>y 方向的平移。最终的 x 坐标按照该公式计算: \((x + panX) \times zoomX\) </td></tr>
-  </table>
-  </dd>
-</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_locate_lib_1_1_i_l_circle_results.html#ab3ef0211af918d3ff20689eada0f182d">DrawAll()</a> </dd>
+<dd>
+<a class="el" href="use_draw_functions.html">Use Draw Functions</a> </dd></dl>
 
 </div>
 </div>
@@ -329,17 +321,9 @@ Public 成员函数</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_locate_lib_1_1_i_l_circle_results.html#a9c92065288fa6ec9e93cb0246d49d296">Draw()</a> </dd></dl>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">hdc</td><td>绘制设备，可为窗口、位图等的上下文句柄。 </td></tr>
-    <tr><td class="paramname">zoomX</td><td>x 方向的缩放系数，默认为真实尺寸 100。 </td></tr>
-    <tr><td class="paramname">zoomY</td><td>y 方向的缩放系数，默认设置为 0，即与 x 方向的缩放系数相同，也就是等比缩放。 </td></tr>
-    <tr><td class="paramname">panX</td><td>x 方向的平移。最终的 x 坐标按照该公式计算: \((x + panX) \times zoomX\) </td></tr>
-    <tr><td class="paramname">panY</td><td>y 方向的平移。最终的 x 坐标按照该公式计算: \((x + panX) \times zoomX\) </td></tr>
-  </table>
-  </dd>
-</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_locate_lib_1_1_i_l_circle_results.html#a9c92065288fa6ec9e93cb0246d49d296">Draw()</a> </dd>
+<dd>
+<a class="el" href="use_draw_functions.html">Use Draw Functions</a> </dd></dl>
 
 </div>
 </div>
