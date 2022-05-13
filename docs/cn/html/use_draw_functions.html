@@ -88,17 +88,18 @@ $(function() {
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> ILMatchResults::Draw (HDC hdc, <span class="keywordtype">int</span> index, LPVPatDrawFlags drawFlags, <span class="keywordtype">double</span> zoomX, <span class="keywordtype">double</span> zoomY, <span class="keywordtype">double</span> panX, <span class="keywordtype">double</span> panY)</div>
 <div class="line"><span class="keywordtype">void</span> ILMatchResults::DrawAll (HDC hdc, LPVPatDrawFlags drawFlags, <span class="keywordtype">double</span> zoomX, <span class="keywordtype">double</span> zoomY, <span class="keywordtype">double</span> panX, <span class="keywordtype">double</span> panY)</div>
-</div><!-- fragment --><p>They have the common parameters for specifying the drawing device context and controlling the view port.</p>
+</div><!-- fragment --><p>每个绘制函数通常有以下通用参数，用于指定绘制的 HDC 句柄以及视窗。</p>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">zoomX</td><td>Factor for zooming in or out in the x-coordinate direction. By default, it's in the true scale. </td></tr>
-    <tr><td class="paramname">zoomY</td><td>Factor for zooming in or out in the y-coordinate direction. Setting to 0 means same zoom factor as zoomX, aka. isotropic scaling. </td></tr>
-    <tr><td class="paramname">panX</td><td>translation in the x-coordinate direction for panning. The final display x position is calculated as: \((x + panX) \times zoomX\) </td></tr>
-    <tr><td class="paramname">panY</td><td>translation in the y-coordinate direction for panning. The final display y position is calculated as: \((y + panY) \times zoomY\)</td></tr>
+    <tr><td class="paramname">hdc</td><td>绘制设备，可为窗口、位图等的上下文句柄。 </td></tr>
+    <tr><td class="paramname">zoomX</td><td>x 方向的缩放系数，默认为真实尺寸 100。 </td></tr>
+    <tr><td class="paramname">zoomY</td><td>y 方向的缩放系数，默认设置为 0，即与 x 方向的缩放系数相同，也就是等比缩放。 </td></tr>
+    <tr><td class="paramname">panX</td><td>x 方向的平移。最终的 x 坐标按照该公式计算: \((x + panX) \times zoomX\) </td></tr>
+    <tr><td class="paramname">panY</td><td>y 方向的平移。最终的 x 坐标按照该公式计算: \((x + panX) \times zoomX\)</td></tr>
   </table>
   </dd>
 </dl>
-<p>They may also have the extra parameters to control drawing behavior.</p>
+<p>每个绘制函数可能有其他额外的参数，用于控制绘制内容和行为。</p>
 <h1><a class="anchor" id="autotoc_md23"></a>
 示例代码</h1>
 <h2><a class="anchor" id="autotoc_md24"></a>

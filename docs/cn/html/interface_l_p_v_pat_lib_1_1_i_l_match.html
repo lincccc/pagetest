@@ -108,12 +108,14 @@ Public 成员函数</h2></td></tr>
 <tr class="separator:aedf9b00d47787a935a044ce74d0df887"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc33f804a59dbd9a1f824ea51862aaa2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#acc33f804a59dbd9a1f824ea51862aaa2">Load</a> (BSTR filename)</td></tr>
 <tr class="separator:acc33f804a59dbd9a1f824ea51862aaa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a4542c493f441196a76a5559f15f9e1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a8a4542c493f441196a76a5559f15f9e1">SetPatCenter</a> (<a class="el" href="namespace_l_p_v_pat_lib.html#abd47a1f7a1a0eeeb888538e857dc5800">LPVPatCenterMode</a> centerMode, double cenX, double cenY, double cenAngle)</td></tr>
-<tr class="separator:a8a4542c493f441196a76a5559f15f9e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a319b1090250f3670c6298a1c24b8eb81"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a319b1090250f3670c6298a1c24b8eb81">GetPatCenter</a> (double *cenX, double *cenY, double *cenAngle)</td></tr>
-<tr class="separator:a319b1090250f3670c6298a1c24b8eb81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa538d53a35790aa462e9271a6efc49b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#aaa538d53a35790aa462e9271a6efc49b">SetPatCenter</a> (<a class="el" href="namespace_l_p_v_pat_lib.html#abd47a1f7a1a0eeeb888538e857dc5800">LPVPatCenterMode</a> centerMode, double patX, double patY, double patAngle)</td></tr>
+<tr class="separator:aaa538d53a35790aa462e9271a6efc49b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f7a0decad7ee6401278ff9f193e339c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a5f7a0decad7ee6401278ff9f193e339c">GetPatCenter</a> (double *patX, double *patY, double *patAngle)</td></tr>
+<tr class="separator:a5f7a0decad7ee6401278ff9f193e339c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a474c4d0a0472b205b58e6d8c781660ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a474c4d0a0472b205b58e6d8c781660ec">GetPatImage</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img)</td></tr>
 <tr class="separator:a474c4d0a0472b205b58e6d8c781660ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e4b61b4874bdd4080a8e5f6d1cda9c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a5e4b61b4874bdd4080a8e5f6d1cda9c1">GetPatMask</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *mask)</td></tr>
+<tr class="separator:a5e4b61b4874bdd4080a8e5f6d1cda9c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 属性</h2></td></tr>
@@ -171,7 +173,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 <div class="line">m_match-&gt;Learn(m_template_img, <span class="keyword">nullptr</span>);</div>
 <div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = m_match-&gt;Match(m_img, m_roi, &amp;m_match_results);</div>
 <div class="line"><span class="keywordflow">if</span> (err != <a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>.LPVNoError) <span class="keywordflow">return</span>;</div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">LPV 算法或函数运行过程中遇到的错误。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:173</div></div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">LPV 算法或函数运行过程中遇到的错误。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:159</div></div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LMatch m_match = <span class="keyword">new</span> LMatch();</div>
 <div class="line">m_match.Learn(m_template_img, <span class="keyword">null</span>);</div>
 <div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = (<a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>)m_match.Detect(m_img, (LRegion)m_roi, out m_match_results);</div>
@@ -215,7 +217,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#adf7ff783ebac9e544ae0419cd4a2d275">IsLearnt()</a>, <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a8a4542c493f441196a76a5559f15f9e1">SetPatCenter()</a>, <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#acc33f804a59dbd9a1f824ea51862aaa2">Load()</a>, <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#abe49710ff341978863693945ae28190b">Match()</a>. </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#adf7ff783ebac9e544ae0419cd4a2d275">IsLearnt()</a>, <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#aaa538d53a35790aa462e9271a6efc49b">SetPatCenter()</a>, <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#acc33f804a59dbd9a1f824ea51862aaa2">Load()</a>, <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#abe49710ff341978863693945ae28190b">Match()</a>. </dd></dl>
 
 </div>
 </div>
@@ -354,8 +356,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 
 </div>
 </div>
-<a id="a8a4542c493f441196a76a5559f15f9e1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8a4542c493f441196a76a5559f15f9e1">&#9670;&nbsp;</a></span>SetPatCenter()</h2>
+<a id="aaa538d53a35790aa462e9271a6efc49b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa538d53a35790aa462e9271a6efc49b">&#9670;&nbsp;</a></span>SetPatCenter()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -370,19 +372,19 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>cenX</em>, </td>
+          <td class="paramname"><em>patX</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>cenY</em>, </td>
+          <td class="paramname"><em>patY</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>cenAngle</em>&#160;</td>
+          <td class="paramname"><em>patAngle</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -395,18 +397,18 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 匹配结果将基于配置方式输出不同的中心点坐标。如若设置匹配图像的左上角点作为中心，所有的匹配结果将总是输出相同的左上角位置作为中心。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramname">centerMode</td><td>匹配结果中心的设置方式，查看 LPVPatCenterMode. </td></tr>
-    <tr><td class="paramname">cenX</td><td>若使用自定义位置，输入该位置的 x 坐标 </td></tr>
-    <tr><td class="paramname">cenY</td><td>若使用自定义位置，输入该位置的 y 坐标 </td></tr>
-    <tr><td class="paramname">cenAngle</td><td>若使用自定义位置，输入指定的角度作为 0° </td></tr>
+    <tr><td class="paramname">patX</td><td>若使用自定义位置，输入该位置的 x 坐标 </td></tr>
+    <tr><td class="paramname">patY</td><td>若使用自定义位置，输入该位置的 y 坐标 </td></tr>
+    <tr><td class="paramname">patAngle</td><td>若使用自定义位置，输入指定的角度作为 0° </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a319b1090250f3670c6298a1c24b8eb81">GetPatCenter()</a>. </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a5f7a0decad7ee6401278ff9f193e339c">GetPatCenter()</a>. </dd></dl>
 
 </div>
 </div>
-<a id="a319b1090250f3670c6298a1c24b8eb81"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a319b1090250f3670c6298a1c24b8eb81">&#9670;&nbsp;</a></span>GetPatCenter()</h2>
+<a id="a5f7a0decad7ee6401278ff9f193e339c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f7a0decad7ee6401278ff9f193e339c">&#9670;&nbsp;</a></span>GetPatCenter()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -415,19 +417,19 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
           <td class="memname">void GetPatCenter </td>
           <td>(</td>
           <td class="paramtype">double *&#160;</td>
-          <td class="paramname"><em>cenX</em>, </td>
+          <td class="paramname"><em>patX</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double *&#160;</td>
-          <td class="paramname"><em>cenY</em>, </td>
+          <td class="paramname"><em>patY</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double *&#160;</td>
-          <td class="paramname"><em>cenAngle</em>&#160;</td>
+          <td class="paramname"><em>patAngle</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -438,13 +440,13 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 </div><div class="memdoc">
 <p>获取当前配置的模板中心 </p><dl class="retval"><dt>返回值</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">cenX</td><td>返回模板中心的 x 坐标 </td></tr>
-    <tr><td class="paramname">cenY</td><td>返回模板中心的 y 坐标 </td></tr>
-    <tr><td class="paramname">cenAngle</td><td>返回模板的 0° 角度 </td></tr>
+    <tr><td class="paramname">patX</td><td>返回模板中心的 x 坐标 </td></tr>
+    <tr><td class="paramname">patY</td><td>返回模板中心的 y 坐标 </td></tr>
+    <tr><td class="paramname">patAngle</td><td>返回模板的 0° 角度 </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a8a4542c493f441196a76a5559f15f9e1">SetPatCenter()</a>. </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#aaa538d53a35790aa462e9271a6efc49b">SetPatCenter()</a>. </dd></dl>
 
 </div>
 </div>
@@ -466,6 +468,30 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 <p>获取模板图像 </p><dl class="retval"><dt>返回值</dt><dd>
   <table class="retval">
     <tr><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> 返回图像 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5e4b61b4874bdd4080a8e5f6d1cda9c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e4b61b4874bdd4080a8e5f6d1cda9c1">&#9670;&nbsp;</a></span>GetPatMask()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GetPatMask </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>mask</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>获取模板蒙版 </p><dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">mask</td><td><img src="color_binary.png" alt="" class="inline" title="Binary images"/> 返回蒙版图像。若当前模板没有蒙版，则返回一个空的图像。 </td></tr>
   </table>
   </dd>
 </dl>
