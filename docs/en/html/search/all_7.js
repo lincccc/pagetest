@@ -32,7 +32,7 @@ var searchData=
   ['getpatcenter_184',['GetPatCenter',['../interface_l_p_v_pat_lib_1_1_i_l_match.html#a5f7a0decad7ee6401278ff9f193e339c',1,'LPVPatLib::ILMatch']]],
   ['getpatimage_185',['GetPatImage',['../interface_l_p_v_pat_lib_1_1_i_l_match.html#a474c4d0a0472b205b58e6d8c781660ec',1,'LPVPatLib::ILMatch']]],
   ['getpatmask_186',['GetPatMask',['../interface_l_p_v_pat_lib_1_1_i_l_match.html#a5e4b61b4874bdd4080a8e5f6d1cda9c1',1,'LPVPatLib::ILMatch']]],
-  ['getpoints_187',['GetPoints',['../interface_l_p_v_geom_lib_1_1_i_l_polygon.html#a26fe3ece69c70adeefdeb65f5b8f83b1',1,'LPVGeomLib::ILPolygon::GetPoints()'],['../interface_l_p_v_geom_lib_1_1_i_l_rect.html#a26fe3ece69c70adeefdeb65f5b8f83b1',1,'LPVGeomLib::ILRect::GetPoints()']]],
+  ['getpoints_187',['GetPoints',['../interface_l_p_v_geom_lib_1_1_i_l_points.html#a75831c9bd1b100ef78e8678de6312c01',1,'LPVGeomLib::ILPoints::GetPoints()'],['../interface_l_p_v_geom_lib_1_1_i_l_polygon.html#a26fe3ece69c70adeefdeb65f5b8f83b1',1,'LPVGeomLib::ILPolygon::GetPoints()'],['../interface_l_p_v_geom_lib_1_1_i_l_rect.html#a26fe3ece69c70adeefdeb65f5b8f83b1',1,'LPVGeomLib::ILRect::GetPoints()']]],
   ['getposx_188',['GetPosX',['../interface_l_p_v_core_lib_1_1_i_l_sortable.html#af8472aa92c6ad26d104a3a347e3ee890',1,'LPVCoreLib::ILSortable']]],
   ['getposy_189',['GetPosY',['../interface_l_p_v_core_lib_1_1_i_l_sortable.html#a4b1e22111e921c1a8f664ab050b13520',1,'LPVCoreLib::ILSortable']]],
   ['getrect_190',['GetRect',['../interface_l_p_v_blob_lib_1_1_i_l_blob.html#a298cb1d21f02123b1b52dc1dd530e4e4',1,'LPVBlobLib::ILBlob::GetRect()'],['../interface_l_p_v_pat_lib_1_1_i_l_match_result.html#a298cb1d21f02123b1b52dc1dd530e4e4',1,'LPVPatLib::ILMatchResult::GetRect()']]],
