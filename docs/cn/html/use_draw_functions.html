@@ -204,11 +204,13 @@ $(function() {
 <div class="line">    m_matchResults-&gt;DrawAll(hdc, LPVPatDrawDefault, zoomx, zoomy, 0, 0);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// 其他的一些绘制逻辑</span></div>
+<div class="line">    CDialogEx::OnPaint();</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// 提示，当需要绘制的内容改变时：</span></div>
 <div class="line">    <span class="comment">// 调用 Invalidate() 请求一次重绘，这将有系统的消息循环处理，可能发生延时。单次循环内的多次请求也将被合并。</span></div>
 <div class="line">    <span class="comment">// 调用 UpdateWindow() 强制马上进行一次重绘。当你需要马上看到更新结果时使用。</span></div>
 <div class="line">    <span class="comment">// 你可以通过一些标志位来控制某些感兴趣的 LPV 对象进行绘制，同时跳过一些。</span></div>
+<div class="line">    <span class="comment">// 你可能需要用到双缓存技术，以避免窗口刷新时发生的闪烁现象，方法是先建立一个内存中的 DC 并将结果绘制上去，而后将整个内存 DC 复制到目标 DC</span></div>
 <div class="line">}</div>
 </div><!-- fragment -->  </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'> <div class="fragment"><div class="line"><span class="keyword">protected</span> <span class="keyword">override</span> <span class="keywordtype">void</span> OnPaint(PaintEventArgs e)</div>
 <div class="line">{</div>
@@ -235,6 +237,7 @@ $(function() {
 <div class="line">    <span class="comment">// 调用 Invalidate() 请求一次重绘，这将有系统的消息循环处理，可能发生延时。单次循环内的多次请求也将被合并。</span></div>
 <div class="line">    <span class="comment">// 调用 Update() 强制马上进行一次重绘。当你需要马上看到更新结果时使用。</span></div>
 <div class="line">    <span class="comment">// 你可以通过一些标志位来控制某些感兴趣的 LPV 对象进行绘制，同时跳过一些。</span></div>
+<div class="line">    <span class="comment">// 你可能需要开启窗口的双缓存功能，以避免窗口刷新时发生的闪烁现象</span></div>
 <div class="line">}</div>
 </div><!-- fragment -->  </div>  </div></div><!-- contents -->
 </div><!-- PageDoc -->

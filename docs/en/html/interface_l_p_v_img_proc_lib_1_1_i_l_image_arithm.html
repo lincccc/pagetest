@@ -107,6 +107,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6aa20ebb5264ac83616ce57a100a7da0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa24a05c09037b92bf79e964ac8118c56"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_arithm.html#aa24a05c09037b92bf79e964ac8118c56">Multiply</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img1, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img2, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *result)</td></tr>
 <tr class="separator:aa24a05c09037b92bf79e964ac8118c56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94ce706b860d77991b5447d74ab7a6ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_arithm.html#a94ce706b860d77991b5447d74ab7a6ca">Diff</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img1, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img2, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *result)</td></tr>
+<tr class="separator:a94ce706b860d77991b5447d74ab7a6ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afca3e1de386b0ff5fb6fad7fd3a54d2d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_arithm.html#afca3e1de386b0ff5fb6fad7fd3a54d2d">Min</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img1, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img2, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *result)</td></tr>
 <tr class="separator:afca3e1de386b0ff5fb6fad7fd3a54d2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7c79b8eb70dff2f1169d0a06db7bad1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_arithm.html#ae7c79b8eb70dff2f1169d0a06db7bad1">Max</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img1, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img2, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *result)</td></tr>
@@ -363,6 +365,53 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Multiply the two input images pixel by pixel, output a new result image, \(I&#39; = I_{1} \cdot I_{2}\). The two input image should have the same size. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">img1</td><td>The first input image </td></tr>
+    <tr><td class="paramname">img2</td><td>The second input image </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">result</td><td>Return result image </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a94ce706b860d77991b5447d74ab7a6ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94ce706b860d77991b5447d74ab7a6ca">&#9670;&nbsp;</a></span>Diff()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Diff </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>img1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>img2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Calculate the difference of the two input images pixel by pixel, output a new result image, \(I&#39; = abs(I_{1} - I_{2})\). The two input image should have the same size. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">img1</td><td>The first input image </td></tr>
     <tr><td class="paramname">img2</td><td>The second input image </td></tr>

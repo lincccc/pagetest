@@ -170,6 +170,10 @@ By default, it's 0, means no offset in y-coordinate. You may change the offset t
 BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a75ffdfc69b1a3dd711a2eaa55ef6f6bc">UseCache</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:a75ffdfc69b1a3dd711a2eaa55ef6f6bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether to make use of cache which is used to speed-up the process of the image undistortion (and untilt), but consume more memory. By default, it's on. <br /></td></tr>
 <tr class="separator:a75ffdfc69b1a3dd711a2eaa55ef6f6bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60bb79dec8bcc9da8e4643688bc0d839"><td class="memItemLeft" align="right" valign="top"><a id="a60bb79dec8bcc9da8e4643688bc0d839"></a>
+<a class="el" href="namespace_l_p_v_core_lib.html#a8994f6c3a4ba4e0d0e9a8eb78ac86c92">LPVInterpolationMethod</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a60bb79dec8bcc9da8e4643688bc0d839">InterpolationMethod</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a60bb79dec8bcc9da8e4643688bc0d839"><td class="mdescLeft">&#160;</td><td class="mdescRight">The interpolation method used in fix the image for undistortion (and untilt). By default, it's LPVInterCubic. <br /></td></tr>
+<tr class="separator:a60bb79dec8bcc9da8e4643688bc0d839"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This interface provide basic functionalities of the calibration object. </p>
@@ -454,7 +458,7 @@ The mapping works with a calibrated system, if not it returns the LPVErrCalibNot
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#aac70483f402f9c1e0d5c2c981a218d31" title="The mode to fix image used in FixImage().">FixImageMode</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a8c65ab87d30846912951723fc454716c" title="The scale of the fixed image used in FixImage(). By default, it&#39;s 1, means no scale....">FixImageScale</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#af72bdfca06b9bd432d2c5115005bbfbc" title="The x-coordinate offset (in pixel unit) of the fixed image used in FixImage(), used together with Fix...">FixImageOffsetX</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a21df5721e2e01bfd6eab1ece9704e4c2" title="The y-coordinate offset (in pixel unit) of the fixed image used in FixImage(), used together with Fix...">FixImageOffsetY</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#aac70483f402f9c1e0d5c2c981a218d31" title="The mode to fix image used in FixImage().">FixImageMode</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a8c65ab87d30846912951723fc454716c" title="The scale of the fixed image used in FixImage(). By default, it&#39;s 1, means no scale....">FixImageScale</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#af72bdfca06b9bd432d2c5115005bbfbc" title="The x-coordinate offset (in pixel unit) of the fixed image used in FixImage(), used together with Fix...">FixImageOffsetX</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a21df5721e2e01bfd6eab1ece9704e4c2" title="The y-coordinate offset (in pixel unit) of the fixed image used in FixImage(), used together with Fix...">FixImageOffsetY</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a60bb79dec8bcc9da8e4643688bc0d839" title="The interpolation method used in fix the image for undistortion (and untilt). By default,...">InterpolationMethod</a> </dd></dl>
 
 </div>
 </div>

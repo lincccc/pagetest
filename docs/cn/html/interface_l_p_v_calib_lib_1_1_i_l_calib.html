@@ -170,6 +170,10 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a75ffdfc69b1a3dd711a2eaa55ef6f6bc">UseCache</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:a75ffdfc69b1a3dd711a2eaa55ef6f6bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否开启缓存，缓存数据用于加速图像矫正过程，但占用更多的内存。这个配置默认开启。 <br /></td></tr>
 <tr class="separator:a75ffdfc69b1a3dd711a2eaa55ef6f6bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60bb79dec8bcc9da8e4643688bc0d839"><td class="memItemLeft" align="right" valign="top"><a id="a60bb79dec8bcc9da8e4643688bc0d839"></a>
+<a class="el" href="namespace_l_p_v_core_lib.html#a8994f6c3a4ba4e0d0e9a8eb78ac86c92">LPVInterpolationMethod</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a60bb79dec8bcc9da8e4643688bc0d839">InterpolationMethod</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a60bb79dec8bcc9da8e4643688bc0d839"><td class="mdescLeft">&#160;</td><td class="mdescRight">修正图像时所使用的插值算法，默认配置为 LPVInterCubic <br /></td></tr>
+<tr class="separator:a60bb79dec8bcc9da8e4643688bc0d839"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><p>该接口类为标定对象的基类，提供基本标定功能对应的接口。 </p>
@@ -453,7 +457,7 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#aac70483f402f9c1e0d5c2c981a218d31" title="用于 FixImage() 指定图像修正的模式。">FixImageMode</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a8c65ab87d30846912951723fc454716c" title="修正图像 FixImage() 时使用的缩放比例。 默认设置为 1，即无缩放。修改该数值可放大或缩小修正后的图像。">FixImageScale</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#af72bdfca06b9bd432d2c5115005bbfbc" title="修正图像 FixImage() 时使用的 x 方向偏移量，以像素为单位，与 FixImageOffsetY 同时使用。 默认设置为 0，即无 x 方向偏移。修改该数值可移动修正图像中有效像素的位置，如将...">FixImageOffsetX</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a21df5721e2e01bfd6eab1ece9704e4c2" title="修正图像 FixImage() 时使用的 y 方向偏移量，以像素为单位，与 FixImageOffsetY 同时使用。 默认设置为 0，即无 y 方向偏移。修改该数值可移动修正图像中有效像素的位置，如将...">FixImageOffsetY</a> </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#aac70483f402f9c1e0d5c2c981a218d31" title="用于 FixImage() 指定图像修正的模式。">FixImageMode</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a8c65ab87d30846912951723fc454716c" title="修正图像 FixImage() 时使用的缩放比例。 默认设置为 1，即无缩放。修改该数值可放大或缩小修正后的图像。">FixImageScale</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#af72bdfca06b9bd432d2c5115005bbfbc" title="修正图像 FixImage() 时使用的 x 方向偏移量，以像素为单位，与 FixImageOffsetY 同时使用。 默认设置为 0，即无 x 方向偏移。修改该数值可移动修正图像中有效像素的位置，如将...">FixImageOffsetX</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a21df5721e2e01bfd6eab1ece9704e4c2" title="修正图像 FixImage() 时使用的 y 方向偏移量，以像素为单位，与 FixImageOffsetY 同时使用。 默认设置为 0，即无 y 方向偏移。修改该数值可移动修正图像中有效像素的位置，如将...">FixImageOffsetY</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a60bb79dec8bcc9da8e4643688bc0d839" title="修正图像时所使用的插值算法，默认配置为 LPVInterCubic">InterpolationMethod</a> </dd></dl>
 
 </div>
 </div>

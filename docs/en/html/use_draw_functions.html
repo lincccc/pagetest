@@ -204,11 +204,14 @@ Draw in the OnPaint Method</h2>
 <div class="line">    m_matchResults-&gt;DrawAll(hdc, LPVPatDrawDefault, zoomx, zoomy, 0, 0);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// balabala, other painting logic</span></div>
+<div class="line">    CDialogEx::OnPaint();</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Note, when the things you want to draw changed:</span></div>
-<div class="line">    <span class="comment">// you may call Invalidate() to request a delayed repaint by the message loop system</span></div>
-<div class="line">    <span class="comment">// you may call UpdateWindow() to force a immediate repaint</span></div>
-<div class="line">    <span class="comment">// you may use some flags to control which LPV objects should be drawn</span></div>
+<div class="line">    <span class="comment">// you may call Invalidate() to request a delayed repaint by the message loop system.</span></div>
+<div class="line">    <span class="comment">// you may call UpdateWindow() to force a immediate repaint.</span></div>
+<div class="line">    <span class="comment">// you may use some flags to control which LPV objects should be drawn.</span></div>
+<div class="line">    <span class="comment">// you may use double-buffering technique to avoid flickering,</span></div>
+<div class="line">    <span class="comment">// by painting the objects on an in-memory DC first then copying the entire canvas to the target DC.</span></div>
 <div class="line">}</div>
 </div><!-- fragment -->  </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'> <div class="fragment"><div class="line"><span class="keyword">protected</span> <span class="keyword">override</span> <span class="keywordtype">void</span> OnPaint(PaintEventArgs e)</div>
 <div class="line">{</div>
@@ -234,9 +237,10 @@ Draw in the OnPaint Method</h2>
 <div class="line">    <span class="comment">// balabala, other painting logic</span></div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Note, when the things you want to draw changed:</span></div>
-<div class="line">    <span class="comment">// you may call Invalidate() to request a delayed repaint by the message loop system</span></div>
-<div class="line">    <span class="comment">// you may call Update() to force a immediate repaint</span></div>
-<div class="line">    <span class="comment">// you may use some flags to control which LPV objects should be drawn</span></div>
+<div class="line">    <span class="comment">// you may call Invalidate() to request a delayed repaint by the message loop system.</span></div>
+<div class="line">    <span class="comment">// you may call Update() to force a immediate repaint.</span></div>
+<div class="line">    <span class="comment">// you may use some flags to control which LPV objects should be drawn.</span></div>
+<div class="line">    <span class="comment">// you may enable double-buffering for your form to avoid flickering.</span></div>
 <div class="line">}</div>
 </div><!-- fragment -->  </div>  </div></div><!-- contents -->
 </div><!-- PageDoc -->
