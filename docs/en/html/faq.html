@@ -20,7 +20,7 @@
     jax: ["input/TeX","output/HTML-CSS"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.7/MathJax.js"></script>
 <link href="lpv_stylesheet.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-custom.css" rel="stylesheet" type="text/css"/>
@@ -117,8 +117,9 @@ Q6. Call CreateDispatch fail with error 800401F0 CoInitialize has not been calle
 <p>You need to call CoInitializeEx when your program starts and CoUnitialize when it terminates. You should do it before create and initialize LPV classes. The best place to do this is in InitInstance and ExitInstance of your MFC application.</p>
 <p>For example: </p><div class="fragment"><div class="line">BOOL CMFCApp::InitInstance()</div>
 <div class="line">{</div>
-<div class="line">    <span class="comment">// 你需要根据应用程序的实际情况选择 COINIT_MULTITHREADED 或 COINIT_APARTMENTTHREADED</span></div>
-<div class="line">    <span class="comment">// 如果你并不确定，请仔细阅读文档 https://docs.microsoft.com/zh-cn/windows/win32/learnwin32/initializing-the-com-library</span></div>
+<div class="line">    <span class="comment">// You may use COINIT_MULTITHREADED or COINIT_APARTMENTTHREADED based on the requirement of your application.</span></div>
+<div class="line">    <span class="comment">// For example, use COINIT_APARTMENTTHREADED for MFC application, COINIT_MULTITHREADED for other cases.</span></div>
+<div class="line">    <span class="comment">// If you are not sure, read more in https://docs.microsoft.com/en-us/windows/win32/learnwin32/initializing-the-com-library</span></div>
 <div class="line">    CoInitializeEx(NULL, COINIT_MULTITHREADED);</div>
 <div class="line">    <span class="comment">// etc.</span></div>
 <div class="line">    CWinApp::InitInstance();</div>

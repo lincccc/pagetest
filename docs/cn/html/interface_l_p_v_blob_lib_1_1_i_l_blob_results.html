@@ -20,7 +20,7 @@
     jax: ["input/TeX","output/SVG"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.7/MathJax.js"></script>
 <link href="lpv_stylesheet.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-custom.css" rel="stylesheet" type="text/css"/>
@@ -185,13 +185,13 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>获取索引对应的斑点检测结果 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">index</td><td>输入索引，从 0 开始但小于总数的数字 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>输入索引，从 0 开始但小于总数的数字 </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>返回值</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">result</td><td>返回索引对应的单个斑点检测结果 </td></tr>
+    <tr><td class="paramname">results</td><td>返回索引对应的单个斑点检测结果 </td></tr>
   </table>
   </dd>
 </dl>
@@ -215,7 +215,7 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>添加一个斑点对象到该集合 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">blob</td><td>输入的斑点对象 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">blob</td><td>输入的斑点对象 </td></tr>
   </table>
   </dd>
 </dl>
@@ -279,8 +279,8 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>绘制索引对应的斑点到给定的设备 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">index</td><td>输入索引，从 0 开始但小于总数的数字 </td></tr>
-    <tr><td class="paramname">drawFlags</td><td>控制斑点绘制内容，使用方式请查阅 LPVBlobDrawFlags </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>输入索引，从 0 开始但小于总数的数字 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">drawFlags</td><td>控制斑点绘制内容，使用方式请查阅 LPVBlobDrawFlags </td></tr>
   </table>
   </dd>
 </dl>
@@ -341,7 +341,7 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>绘制所有斑点到给定的设备 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drawFlags</td><td>控制斑点绘制内容，使用方式请查阅 LPVBlobDrawFlags </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">drawFlags</td><td>控制斑点绘制内容，使用方式请查阅 LPVBlobDrawFlags </td></tr>
   </table>
   </dd>
 </dl>

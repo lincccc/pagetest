@@ -20,7 +20,7 @@
     jax: ["input/TeX","output/HTML-CSS"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.7/MathJax.js"></script>
 <link href="lpv_stylesheet.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-custom.css" rel="stylesheet" type="text/css"/>
@@ -212,11 +212,11 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Initialize the camera array by \(vCount \times hCount\) cameras calibrated with the given calibration model. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Initialize the camera array by \( vCount \times hCount \) cameras calibrated with the given calibration model. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">calibModel</td><td>The input camera calibration model. </td></tr>
-    <tr><td class="paramname">hCount</td><td>The horizontal count of cameras, should be \(\ge 1\). </td></tr>
-    <tr><td class="paramname">vCount</td><td>The vertical count of cameras, should be \(\ge 1\). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">calibModel</td><td>The input camera calibration model. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hCount</td><td>The horizontal count of cameras, should be \( \ge 1 \) . </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">vCount</td><td>The vertical count of cameras, should be \( \ge 1 \) . </td></tr>
   </table>
   </dd>
 </dl>
@@ -274,19 +274,14 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
       </table>
 </div><div class="memdoc">
 <p>Initialize the camera array by moving one camera multiple times horizontally and vertically.<br  />
-It generates a \(vCount \times hCount\) camera array. </p><dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">calib</td><td>The input camera calibration object to move. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
+It generates a \( vCount \times hCount \) camera array. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">hCount</td><td>The horizontal count of cameras, should be \(\ge 1\). </td></tr>
-    <tr><td class="paramname">vCount</td><td>The vertical count of cameras, should be \(\ge 1\). </td></tr>
-    <tr><td class="paramname">copyCalib</td><td>True to copy the calibration matrices. If the movement steps are also available, it will also help generate a post-transform matrix on each copied camera calibration object. </td></tr>
-    <tr><td class="paramname">hStep</td><td>The distance of each horizontal movement, optional, in physical unit. </td></tr>
-    <tr><td class="paramname">vStep</td><td>The distance of each vertical movement, optional, in physical unit. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">calib</td><td>The input camera calibration object to move. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hCount</td><td>The horizontal count of cameras, should be \( \ge 1 \) . </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">vCount</td><td>The vertical count of cameras, should be \( \ge 1 \) . </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">copyCalib</td><td>True to copy the calibration matrices. If the movement steps are also available, it will also help generate a post-transform matrix on each copied camera calibration object. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hStep</td><td>The distance of each horizontal movement, optional, in physical unit. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">vStep</td><td>The distance of each vertical movement, optional, in physical unit. </td></tr>
   </table>
   </dd>
 </dl>
@@ -350,20 +345,18 @@ It generates a \(vCount \times hCount\) camera array. </p><dl class="retval"><dt
       </table>
 </div><div class="memdoc">
 <p>Similar as <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_camera_array.html#a20ee2e181bb90209d951665fd554f02e">InitByCopy()</a>, initialize the camera array by moving n cameras multiple times horizontally and vertically.<br  />
-It generates a \((vCount * rows) \times (hCount * n / rows)\) camera array.<br  />
+It generates a \( (vCount * rows) \times (hCount * n / rows) \) camera array.<br  />
 For example, given 1 2 3 4 input cameras int two rows, move it 3 times horizontally and 2 times vertically, it results in a camera array as:</p>
-<p>\(\begin{matrix}1 &amp; 2 &amp; 1 &amp; 2 &amp; 1 &amp; 2\\3 &amp; 4 &amp; 3 &amp; 4 &amp; 3 &amp; 4\\1 &amp; 2 &amp; 1 &amp; 2 &amp; 1 &amp; 2\\3 &amp; 4 &amp; 3 &amp; 4 &amp; 3 &amp; 4\end{matrix}\)</p>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">calibs</td><td>The input collection of camera calibration objects. </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>\( \begin{matrix}1 &amp; 2 &amp; 1 &amp; 2 &amp; 1 &amp; 2\\3 &amp; 4 &amp; 3 &amp; 4 &amp; 3 &amp; 4\\1 &amp; 2 &amp; 1 &amp; 2 &amp; 1 &amp; 2\\3 &amp; 4 &amp; 3 &amp; 4 &amp; 3 &amp; 4\end{matrix} \)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">rows</td><td>The count of rows of the input collection. </td></tr>
-    <tr><td class="paramname">hCount</td><td>The horizontal count of cameras, should be \(\ge 1\). </td></tr>
-    <tr><td class="paramname">vCount</td><td>The vertical count of cameras, should be \(\ge 1\). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">calibs</td><td>The input collection of camera calibration objects. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rows</td><td>The count of rows of the input collection. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hCount</td><td>The horizontal count of cameras, should be \( \ge 1 \) . </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">vCount</td><td>The vertical count of cameras, should be \( \ge 1 \) . </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">copyCalib</td><td>True to copy the calibration matrices. If the movement steps are also available, it will also help generate a post-transform matrix on each copied camera calibration object. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hStep</td><td>The distance of each horizontal movement, optional, in physical unit. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">vStep</td><td>The distance of each vertical movement, optional, in physical unit. </td></tr>
   </table>
   </dd>
 </dl>
@@ -405,7 +398,7 @@ For example, given 1 2 3 4 input cameras int two rows, move it 3 times horizonta
 </div><div class="memdoc">
 <p>Fetch one camera calibration object with the given index. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">index</td><td>Input index, it should be a 0-based number smaller than total count. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>Input index, it should be a 0-based number smaller than total count. </td></tr>
   </table>
   </dd>
 </dl>
@@ -500,7 +493,7 @@ For example, given 1 2 3 4 input cameras int two rows, move it 3 times horizonta
 <p>Save the camera array and its calibration to a specified file.<br  />
 The serialized file is .calib file with the calibrated camera matrices as well as all the calibration configurations. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">filename</td><td>Full path of the file, it could be absolute or relative path with file name and extension. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>Full path of the file, it could be absolute or relative path with file name and extension. </td></tr>
   </table>
   </dd>
 </dl>
@@ -532,7 +525,7 @@ The serialized file is .calib file with the calibrated camera matrices as well a
 <p>Load the camera array and its calibration from a specified file.<br  />
 It should be a .calib file with the calibrated camera matrices in it. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">filename</td><td>Full path of the file, it could be absolute or relative path with file name and extension. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>Full path of the file, it could be absolute or relative path with file name and extension. </td></tr>
   </table>
   </dd>
 </dl>
@@ -586,15 +579,10 @@ It should be a .calib file with the calibrated camera matrices in it. </p><dl cl
 <p>Map a point from the stitching image coordinates to the world coordinates.<br  />
 The mapping works with a calibrated system, if not it returns the LPVErrCalibNotCalib error. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">imagePointX</td><td>The x-coordinate of the stitching image point. </td></tr>
-    <tr><td class="paramname">imagePointY</td><td>The y-coordinate of the stitching image point. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">worldPointX</td><td>Return the x-coordinate of the world point. </td></tr>
-    <tr><td class="paramname">worldPointY</td><td>Return the y-coordinate of the world point. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">imagePointX</td><td>The x-coordinate of the stitching image point. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">imagePointY</td><td>The y-coordinate of the stitching image point. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">worldPointX</td><td>Return the x-coordinate of the world point. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">worldPointY</td><td>Return the y-coordinate of the world point. </td></tr>
   </table>
   </dd>
 </dl>
@@ -641,15 +629,10 @@ The mapping works with a calibrated system, if not it returns the LPVErrCalibNot
 <p>Map a point from the world coordinates to the stitching image coordinates.<br  />
 The mapping works with a calibrated system, if not it returns the LPVErrCalibNotCalib error. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">worldPointX</td><td>The x-coordinate of the world point. </td></tr>
-    <tr><td class="paramname">worldPointY</td><td>The y-coordinate of the world point. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">imagePointX</td><td>Return the x-coordinate of the stitching image point. </td></tr>
-    <tr><td class="paramname">imagePointY</td><td>Return the y-coordinate of the stitching image point. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">worldPointX</td><td>The x-coordinate of the world point. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">worldPointY</td><td>The y-coordinate of the world point. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">imagePointX</td><td>Return the x-coordinate of the stitching image point. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">imagePointY</td><td>Return the y-coordinate of the stitching image point. </td></tr>
   </table>
   </dd>
 </dl>
@@ -684,13 +667,13 @@ The mapping works with a calibrated system, if not it returns the LPVErrCalibNot
 <p>Stitch the images from all cameras in the matrix.<br  />
 The stitching works with a calibrated system, if not it returns the LPVErrCalibNotCalib error. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">images</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> The input image list, in the same order as the cameras row by row. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">images</td><td>The input image list, in the same order as the cameras row by row. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">stitchedImage</td><td>The result image. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">stitchedImage</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> The result image. </td></tr>
     <tr><td class="paramname">error</td><td>Return error code if anything is wrong. </td></tr>
   </table>
   </dd>

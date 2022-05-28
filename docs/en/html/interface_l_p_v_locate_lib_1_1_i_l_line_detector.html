@@ -20,7 +20,7 @@
     jax: ["input/TeX","output/HTML-CSS"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.7/MathJax.js"></script>
 <link href="lpv_stylesheet.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-custom.css" rel="stylesheet" type="text/css"/>
@@ -177,14 +177,14 @@ The algorithm is real-time and of sub-pixel accuracy, while the limitation is it
 </div><div class="memdoc">
 <p>Detect lines using the line detector. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> The input image. </td></tr>
-    <tr><td class="paramname">region</td><td>The input region, it should be a rotated rectangle region with its direction well-defined. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> The input image. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">region</td><td>The input region, it should be a rotated rectangle region with its direction well-defined. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">results</td><td>Return the line results. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">results</td><td>Return the line results. </td></tr>
     <tr><td class="paramname">error</td><td>Return error code if anything is wrong. </td></tr>
   </table>
   </dd>

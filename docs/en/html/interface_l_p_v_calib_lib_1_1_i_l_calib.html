@@ -20,7 +20,7 @@
     jax: ["input/TeX","output/HTML-CSS"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.7/MathJax.js"></script>
 <link href="lpv_stylesheet.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-custom.css" rel="stylesheet" type="text/css"/>
@@ -263,7 +263,7 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 <p>Save the calibration to a specified file.<br  />
 The serialized file is .calib file with the calibrated camera matrices as well as all the calibration configurations. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">filename</td><td>Full path of the file, it could be absolute or relative path with file name and extension. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>Full path of the file, it could be absolute or relative path with file name and extension. </td></tr>
   </table>
   </dd>
 </dl>
@@ -295,7 +295,7 @@ The serialized file is .calib file with the calibrated camera matrices as well a
 <p>Load the calibration from a specified file.<br  />
 It should be a .calib file with the calibrated camera matrices in it. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">filename</td><td>Full path of the file, it could be absolute or relative path with file name and extension. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>Full path of the file, it could be absolute or relative path with file name and extension. </td></tr>
   </table>
   </dd>
 </dl>
@@ -349,15 +349,10 @@ It should be a .calib file with the calibrated camera matrices in it. </p><dl cl
 <p>Map a point from the image coordinates to the world coordinates.<br  />
 The mapping works with a calibrated system, if not it returns the <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aa564aa76ea75ffa30b29cfcfb3a5b503b">LPVErrCalibNotCalib </a> error. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">imagePointX</td><td>The x-coordinate of the image point. </td></tr>
-    <tr><td class="paramname">imagePointY</td><td>The y-coordinate of the image point. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">worldPointX</td><td>Return the x-coordinate of the world point. </td></tr>
-    <tr><td class="paramname">worldPointY</td><td>Return the y-coordinate of the world point. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">imagePointX</td><td>The x-coordinate of the image point. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">imagePointY</td><td>The y-coordinate of the image point. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">worldPointX</td><td>Return the x-coordinate of the world point. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">worldPointY</td><td>Return the y-coordinate of the world point. </td></tr>
   </table>
   </dd>
 </dl>
@@ -404,15 +399,10 @@ The mapping works with a calibrated system, if not it returns the <a class="el" 
 <p>Map a point from the world coordinates to the image coordinates.<br  />
 The mapping works with a calibrated system, if not it returns the <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aa564aa76ea75ffa30b29cfcfb3a5b503b">LPVErrCalibNotCalib </a> error. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">worldPointX</td><td>The x-coordinate of the world point. </td></tr>
-    <tr><td class="paramname">worldPointY</td><td>The y-coordinate of the world point. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">imagePointX</td><td>Return the x-coordinate of the image point. </td></tr>
-    <tr><td class="paramname">imagePointY</td><td>Return the y-coordinate of the image point. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">worldPointX</td><td>The x-coordinate of the world point. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">worldPointY</td><td>The y-coordinate of the world point. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">imagePointX</td><td>Return the x-coordinate of the image point. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">imagePointY</td><td>Return the y-coordinate of the image point. </td></tr>
   </table>
   </dd>
 </dl>
@@ -447,13 +437,13 @@ The mapping works with a calibrated system, if not it returns the <a class="el" 
 <p>Fix the image for undistortion (and untilt).<br  />
 The mapping works with a calibrated system, if not it returns the LPVErrCalibNotCalib error. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">image</td><td>The input image. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">image</td><td>The input image. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">fixedImage</td><td>The fixed result image. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">fixedImage</td><td>The fixed result image. </td></tr>
     <tr><td class="paramname">error</td><td>Return error code if anything is wrong. </td></tr>
   </table>
   </dd>
@@ -497,9 +487,9 @@ The mapping works with a calibrated system, if not it returns the LPVErrCalibNot
 It is applied at the end of the image-to-world mapping, and inverted applied at the beginning of the world-to-image mapping.<br  />
 If both post-transform origin and matrix is configured, the first one is applied firstly then the later one. In the inverted transform, it's done in the reversed order. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">offsetX</td><td>The x-coordinate of offset to origin point. </td></tr>
-    <tr><td class="paramname">offsetY</td><td>The y-coordinate of offset to origin point. </td></tr>
-    <tr><td class="paramname">deltaAngle</td><td>The clockwise delta rotation angle of the coordinates. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">offsetX</td><td>The x-coordinate of offset to origin point. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">offsetY</td><td>The y-coordinate of offset to origin point. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">deltaAngle</td><td>The clockwise delta rotation angle of the coordinates. </td></tr>
   </table>
   </dd>
 </dl>
@@ -541,12 +531,12 @@ If both post-transform origin and matrix is configured, the first one is applied
 <p>Set customized post-transform to the world coordinates, using transformation matrix.<br  />
 It is applied at the end of the image-to-world mapping, and inverted applied at the beginning of the world-to-image mapping.<br  />
 If both post-transform origin and matrix is configured, the first one is applied firstly then the later one. In the inverted transform, it's done in the reversed order.<br  />
-The matrix should be either one of the following size: \(2 \times 3\), \(3 \times 3\), \(4 \times 4\), \(4 \times 4\), for different transformation DOF.<br  />
+The matrix should be either one of the following size: \( 2 \times 3, 3 \times 3, 4 \times 4 \) , for different transformation DOF.<br  />
 see <a href="https://en.wikipedia.org/wiki/Transformation_matrix">https://en.wikipedia.org/wiki/Transformation_matrix</a> for more detail. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">cols</td><td>The column count of the transformation matrix. </td></tr>
-    <tr><td class="paramname">rows</td><td>The row count of the transformation matrix. </td></tr>
-    <tr><td class="paramname">data</td><td>The data of the transformation matrix, row by row, totally \(rows \times cols\) numbers. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cols</td><td>The column count of the transformation matrix. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rows</td><td>The row count of the transformation matrix. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>The data of the transformation matrix, row by row, totally \( rows \times cols \) numbers. </td></tr>
   </table>
   </dd>
 </dl>
@@ -593,10 +583,10 @@ see <a href="https://en.wikipedia.org/wiki/Transformation_matrix">https://en.wik
 </div><div class="memdoc">
 <p>Add a new point pair for calibration. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">imagePointX</td><td>The x-coordinate of the image point. </td></tr>
-    <tr><td class="paramname">imagePointY</td><td>The y-coordinate of the image point. </td></tr>
-    <tr><td class="paramname">worldPointX</td><td>The x-coordinate of the world point. </td></tr>
-    <tr><td class="paramname">worldPointY</td><td>The y-coordinate of the world point. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">imagePointX</td><td>The x-coordinate of the image point. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">imagePointY</td><td>The y-coordinate of the image point. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">worldPointX</td><td>The x-coordinate of the world point. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">worldPointY</td><td>The y-coordinate of the world point. </td></tr>
   </table>
   </dd>
 </dl>
@@ -626,7 +616,7 @@ see <a href="https://en.wikipedia.org/wiki/Transformation_matrix">https://en.wik
 </div><div class="memdoc">
 <p>Add a collection of point pairs for calibration, usually you get these point pairs from a calibration board. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pointPairs</td><td>The collection of point pairs. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pointPairs</td><td>The collection of point pairs. </td></tr>
   </table>
   </dd>
 </dl>
@@ -667,8 +657,8 @@ see <a href="https://en.wikipedia.org/wiki/Transformation_matrix">https://en.wik
 </div><div class="memdoc">
 <p>Set the image size from camera, use for calibration process without image, such as 9 points calibration. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">w</td><td>The width of the image. </td></tr>
-    <tr><td class="paramname">h</td><td>The height of the image. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">w</td><td>The width of the image. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">h</td><td>The height of the image. </td></tr>
   </table>
   </dd>
 </dl>
@@ -690,13 +680,7 @@ see <a href="https://en.wikipedia.org/wiki/Transformation_matrix">https://en.wik
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Set customized post-transform to the world coordinates, using \(2 \times 3\) transformation matrix, which has rotation, translation and scale DOF. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">data</td><td>The \(2 \times 3\) transformation matrix </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#ab8c572785f3997e0c7af0511b97703c7">SetPostTransform()</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#ac1322fb8a9d02ee7143595fe4041690d">SetPostTransformMatrix()</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a7f7326737028f1763ca3c7518d12fac3">SetPostTransformMatrix33()</a>. </dd></dl>
+<p>Set customized post-transform to the world coordinates, using \( 2 \times 3 \) transformation matrix, which has rotation, translation and scale DOF. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#ab8c572785f3997e0c7af0511b97703c7">SetPostTransform()</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#ac1322fb8a9d02ee7143595fe4041690d">SetPostTransformMatrix()</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a7f7326737028f1763ca3c7518d12fac3">SetPostTransformMatrix33()</a>. </dd></dl>
 
 </div>
 </div>
@@ -715,13 +699,7 @@ see <a href="https://en.wikipedia.org/wiki/Transformation_matrix">https://en.wik
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Set customized post-transform to the world coordinates, using \(3 \times 3\) transformation matrix, which has rotation, translation, scale and perspective projection DOF. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">data</td><td>The \(3 \times 3\) transformation matrix </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#ab8c572785f3997e0c7af0511b97703c7">SetPostTransform()</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#ac1322fb8a9d02ee7143595fe4041690d">SetPostTransformMatrix()</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a340a8929cbbc28b8b63bb58bfd4a9a96">SetPostTransformMatrix23()</a>. </dd></dl>
+<p>Set customized post-transform to the world coordinates, using \( 3 \times 3 \) transformation matrix, which has rotation, translation, scale and perspective projection DOF. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#ab8c572785f3997e0c7af0511b97703c7">SetPostTransform()</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#ac1322fb8a9d02ee7143595fe4041690d">SetPostTransformMatrix()</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a340a8929cbbc28b8b63bb58bfd4a9a96">SetPostTransformMatrix23()</a>. </dd></dl>
 
 </div>
 </div>
@@ -742,7 +720,7 @@ see <a href="https://en.wikipedia.org/wiki/Transformation_matrix">https://en.wik
 </div><div class="memdoc">
 <p>Generate and set the post-transform matrix, according to the pairs of some pixel positions in the output fixed image and their expected world positions. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pointPairs</td><td>The collection of point pairs. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pointPairs</td><td>The collection of point pairs. </td></tr>
   </table>
   </dd>
 </dl>

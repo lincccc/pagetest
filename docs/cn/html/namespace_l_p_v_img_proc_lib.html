@@ -20,7 +20,7 @@
     jax: ["input/TeX","output/SVG"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.7/MathJax.js"></script>
 <link href="lpv_stylesheet.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-custom.css" rel="stylesheet" type="text/css"/>
@@ -179,14 +179,14 @@ $(function() {
 
 <p>描述形态学算子中所使用的核的形状 </p>
 <table class="fieldtable">
-<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a1b8145ed8b707b1177c0ab8c0bc170abab2f17e0c535c0d0d70fdd2b219936035"></a>LPVMorphRect&#160;</td><td class="fielddoc"><p>矩形核，例如 \(5 \times 5\) 如下所示：</p>
-<p>\(\begin{bmatrix}1 &amp; 1 &amp; 1 &amp; 1 &amp; 1\\1 &amp; 1 &amp; 1 &amp; 1 &amp; 1\\1 &amp; 1 &amp; 1 &amp; 1 &amp; 1\\1 &amp; 1 &amp; 1 &amp; 1 &amp; 1\\1 &amp; 1 &amp; 1 &amp; 1 &amp; 1\end{bmatrix}\) </p>
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a1b8145ed8b707b1177c0ab8c0bc170abab2f17e0c535c0d0d70fdd2b219936035"></a>LPVMorphRect&#160;</td><td class="fielddoc"><p>矩形核，例如 \( 5 \times 5 \) 如下所示：<br  />
+ \( \begin{bmatrix}1 &amp; 1 &amp; 1 &amp; 1 &amp; 1\\1 &amp; 1 &amp; 1 &amp; 1 &amp; 1\\1 &amp; 1 &amp; 1 &amp; 1 &amp; 1\\1 &amp; 1 &amp; 1 &amp; 1 &amp; 1\\1 &amp; 1 &amp; 1 &amp; 1 &amp; 1\end{bmatrix} \) </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a1b8145ed8b707b1177c0ab8c0bc170abad8b434c58080f9d683553d3ee56c396a"></a>LPVMorphCross&#160;</td><td class="fielddoc"><p>十字形核，例如 \(5 \times 5\) 如下所示：</p>
-<p>\(\begin{bmatrix}0 &amp; 0 &amp; 1 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 1 &amp; 0 &amp; 0\\1 &amp; 1 &amp; 1 &amp; 1 &amp; 1\\0 &amp; 0 &amp; 1 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 1 &amp; 0 &amp; 0\end{bmatrix}\) </p>
+<tr><td class="fieldname"><a id="a1b8145ed8b707b1177c0ab8c0bc170abad8b434c58080f9d683553d3ee56c396a"></a>LPVMorphCross&#160;</td><td class="fielddoc"><p>十字形核，例如 \( 5 \times 5 \) 如下所示：<br  />
+ \( \begin{bmatrix}0 &amp; 0 &amp; 1 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 1 &amp; 0 &amp; 0\\1 &amp; 1 &amp; 1 &amp; 1 &amp; 1\\0 &amp; 0 &amp; 1 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 1 &amp; 0 &amp; 0\end{bmatrix} \) </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a1b8145ed8b707b1177c0ab8c0bc170abada8d1902e79333dd970fa61750d4f680"></a>LPVMorphEllipse&#160;</td><td class="fielddoc"><p>椭圆形核，例如 \(5 \times 5\) 如下所示：</p>
-<p>\(\begin{bmatrix}0 &amp; 0 &amp; 1 &amp; 0 &amp; 0\\1 &amp; 1 &amp; 1 &amp; 1 &amp; 1\\1 &amp; 1 &amp; 1 &amp; 1 &amp; 1\\1 &amp; 1 &amp; 1 &amp; 1 &amp; 1\\0 &amp; 0 &amp; 1 &amp; 0 &amp; 0\end{bmatrix}\) </p>
+<tr><td class="fieldname"><a id="a1b8145ed8b707b1177c0ab8c0bc170abada8d1902e79333dd970fa61750d4f680"></a>LPVMorphEllipse&#160;</td><td class="fielddoc"><p>椭圆形核，例如 \( 5 \times 5 \) 如下所示：<br  />
+ \( \begin{bmatrix}0 &amp; 0 &amp; 1 &amp; 0 &amp; 0\\1 &amp; 1 &amp; 1 &amp; 1 &amp; 1\\1 &amp; 1 &amp; 1 &amp; 1 &amp; 1\\1 &amp; 1 &amp; 1 &amp; 1 &amp; 1\\0 &amp; 0 &amp; 1 &amp; 0 &amp; 0\end{bmatrix} \) </p>
 </td></tr>
 </table>
 
@@ -206,14 +206,14 @@ $(function() {
 
 <p>描述边缘增加算子中所使用的核的类型 </p>
 <table class="fieldtable">
-<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="ae9fce5290064b3ab00a2b0c192245c0dae3aefcc5cbf63e31b9ae096c8ed63c19"></a>LPVSobel&#160;</td><td class="fielddoc"><p>Sobel 核，该核结合了高斯模糊和差分的效果，因此对噪声的抗干扰性较强。一个典型 \(3 \times 3\) 的 x 和 y 方向的核分别如下所示：</p>
-<p>\(\begin{bmatrix}-1 &amp; 0 &amp; 1\\-2 &amp; 0 &amp; 2\\-1 &amp; 0 &amp; 1\end{bmatrix}\) \(\begin{bmatrix}-1 &amp; -2 &amp; -1\\0 &amp; 0 &amp; 0\\1 &amp; 2 &amp; 1\end{bmatrix}\) </p>
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="ae9fce5290064b3ab00a2b0c192245c0dae3aefcc5cbf63e31b9ae096c8ed63c19"></a>LPVSobel&#160;</td><td class="fielddoc"><p>Sobel 核，该核结合了高斯模糊和差分的效果，因此对噪声的抗干扰性较强。一个典型 \( 3 \times 3 \) 的 x 和 y 方向的核分别如下所示：<br  />
+ \( \begin{bmatrix}-1 &amp; 0 &amp; 1\\-2 &amp; 0 &amp; 2\\-1 &amp; 0 &amp; 1\end{bmatrix} \) \( \begin{bmatrix}-1 &amp; -2 &amp; -1\\0 &amp; 0 &amp; 0\\1 &amp; 2 &amp; 1\end{bmatrix} \) </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ae9fce5290064b3ab00a2b0c192245c0da8691a21818e71199ad96134554ee1728"></a>LPVPrewitt&#160;</td><td class="fielddoc"><p>Prewitt 核，仅支持 \(3 \times 3\)，其 x 和 y 方向的核分别如下所示：</p>
-<p>\(\begin{bmatrix}-1 &amp; 0 &amp; 1\\-1 &amp; 0 &amp; 1\\-1 &amp; 0 &amp; 1\end{bmatrix}\) \(\begin{bmatrix}-1 &amp; -1 &amp; -1\\0 &amp; 0 &amp; 0\\1 &amp; 1 &amp; 1\end{bmatrix}\) </p>
+<tr><td class="fieldname"><a id="ae9fce5290064b3ab00a2b0c192245c0da8691a21818e71199ad96134554ee1728"></a>LPVPrewitt&#160;</td><td class="fielddoc"><p>Prewitt 核，仅支持 \( 3 \times 3 \) ，其 x 和 y 方向的核分别如下所示：<br  />
+ \( \begin{bmatrix}-1 &amp; 0 &amp; 1\\-1 &amp; 0 &amp; 1\\-1 &amp; 0 &amp; 1\end{bmatrix} \) \( \begin{bmatrix}-1 &amp; -1 &amp; -1\\0 &amp; 0 &amp; 0\\1 &amp; 1 &amp; 1\end{bmatrix} \) </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ae9fce5290064b3ab00a2b0c192245c0da27bc6b77d810e49ba426b37193a121cf"></a>LPVScharr&#160;</td><td class="fielddoc"><p>Scharr 核，其精度略差于 Sobel 核但更平滑。仅支持 \(3 \times 3\)，其 x 和 y 方向的核分别如下所示：</p>
-<p>\(\begin{bmatrix}-3 &amp; 0 &amp; 3\\-10 &amp; 0 &amp; 10\\-3 &amp; 0 &amp; 3\end{bmatrix}\) \(\begin{bmatrix}-3 &amp; -10 &amp; -3\\0 &amp; 0 &amp; 0\\3 &amp; 10 &amp; 3\end{bmatrix}\) </p>
+<tr><td class="fieldname"><a id="ae9fce5290064b3ab00a2b0c192245c0da27bc6b77d810e49ba426b37193a121cf"></a>LPVScharr&#160;</td><td class="fielddoc"><p>Scharr 核，其精度略差于 Sobel 核但更平滑。仅支持 \( 3 \times 3 \) ，其 x 和 y 方向的核分别如下所示：</p>
+<p>\( \begin{bmatrix}-3 &amp; 0 &amp; 3\\-10 &amp; 0 &amp; 10\\-3 &amp; 0 &amp; 3\end{bmatrix} \) \( \begin{bmatrix}-3 &amp; -10 &amp; -3\\0 &amp; 0 &amp; 0\\3 &amp; 10 &amp; 3\end{bmatrix} \) </p>
 </td></tr>
 </table>
 

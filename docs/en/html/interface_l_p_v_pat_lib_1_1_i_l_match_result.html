@@ -20,7 +20,7 @@
     jax: ["input/TeX","output/HTML-CSS"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.7/MathJax.js"></script>
 <link href="lpv_stylesheet.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-custom.css" rel="stylesheet" type="text/css"/>
@@ -184,7 +184,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 </div><div class="memdoc">
 <p>Draw the matching result onto provide device context. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drawFlags</td><td>Control the drawing behavior, see LPVPatDrawFlags </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">drawFlags</td><td>Control the drawing behavior, see LPVPatDrawFlags </td></tr>
   </table>
   </dd>
 </dl>
@@ -206,13 +206,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get the bounding rectangle of the matching result </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">val</td><td>Return the rectangle </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section see"><dt>See also</dt><dd>GetRotRect(). </dd></dl>
+<p>Get the bounding rectangle of the matching result </p><dl class="section see"><dt>See also</dt><dd>GetRotRect(). </dd></dl>
 
 </div>
 </div>
@@ -267,33 +261,12 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 </div><div class="memdoc">
 <p>Set the match result </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">matchObject</td><td>The corresponding <a class="el" href="class_l_p_v_pat_lib_1_1_l_match.html">LMatch</a> object. It's used for generating the positions of the bounding rect and features. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">patX</td><td>The x-coordinate of the result's center point. </td></tr>
-    <tr><td class="paramname">patY</td><td>The y-coordinate of the result's center point. </td></tr>
-    <tr><td class="paramname">patAngle</td><td>The angle of the result. </td></tr>
-    <tr><td class="paramname">patScale</td><td>The scale of the result. </td></tr>
-    <tr><td class="paramname">patScore</td><td>The score of the result. 设置匹配结果 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">matchObject</td><td>指定匹配结果对应的 <a class="el" href="class_l_p_v_pat_lib_1_1_l_match.html">LMatch</a> 对象，用于生成包围盒和特征的位置。 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">patX</td><td>匹配结果中心的 x 坐标 </td></tr>
-    <tr><td class="paramname">patY</td><td>匹配结果中心的 y 坐标 </td></tr>
-    <tr><td class="paramname">patAngle</td><td>匹配结果的角度 </td></tr>
-    <tr><td class="paramname">patScale</td><td>匹配结果的缩放比例 </td></tr>
-    <tr><td class="paramname">patScore</td><td>匹配结果的分数 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">matchObject</td><td>The corresponding <a class="el" href="class_l_p_v_pat_lib_1_1_l_match.html">LMatch</a> object. It's used for generating the positions of the bounding rect and features. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">patX</td><td>The x-coordinate of the result's center point. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">patY</td><td>The y-coordinate of the result's center point. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">patAngle</td><td>The angle of the result. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">patScale</td><td>The scale of the result. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">patScore</td><td>The score of the result. </td></tr>
   </table>
   </dd>
 </dl>

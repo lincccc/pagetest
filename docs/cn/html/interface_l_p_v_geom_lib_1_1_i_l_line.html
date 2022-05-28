@@ -20,7 +20,7 @@
     jax: ["input/TeX","output/SVG"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.7/MathJax.js"></script>
 <link href="lpv_stylesheet.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-custom.css" rel="stylesheet" type="text/css"/>
@@ -243,10 +243,10 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 </div><div class="memdoc">
 <p>设置直线的位置，使用端点坐标 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">x1</td><td>直线起点的 x 坐标 </td></tr>
-    <tr><td class="paramname">y1</td><td>直线起点的 y 坐标 </td></tr>
-    <tr><td class="paramname">x2</td><td>直线终点的 x 坐标 </td></tr>
-    <tr><td class="paramname">y2</td><td>直线终点的 y 坐标 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x1</td><td>直线起点的 x 坐标 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">y1</td><td>直线起点的 y 坐标 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x2</td><td>直线终点的 x 坐标 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">y2</td><td>直线终点的 y 坐标 </td></tr>
   </table>
   </dd>
 </dl>
@@ -280,8 +280,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 </div><div class="memdoc">
 <p>平移当前直线，得到一条新的直线 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">offsetX</td><td>x 方向的平移量 </td></tr>
-    <tr><td class="paramname">offsetY</td><td>y 方向的平移量 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">offsetX</td><td>x 方向的平移量 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">offsetY</td><td>y 方向的平移量 </td></tr>
   </table>
   </dd>
 </dl>
@@ -331,12 +331,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
         </tr>
       </table>
 </div><div class="memdoc">
-<p>计算和获取直线的中点。 </p><dl class="retval"><dt>返回值</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">result</td><td>返回中点 </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>计算和获取直线的中点。 </p>
 
 </div>
 </div>
@@ -367,8 +362,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 </div><div class="memdoc">
 <p>判断当前直线和输入直线是否相交，若相交，返回交点。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">line</td><td>输入的直线 </td></tr>
-    <tr><td class="paramname">intersectPoint</td><td>返回交点 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">line</td><td>输入的直线 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">intersectPoint</td><td>返回交点 </td></tr>
   </table>
   </dd>
 </dl>
@@ -408,13 +403,13 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 </div><div class="memdoc">
 <p>判断当前直线和输入圆形是否相交，若相交，返回 1 或 2 个交点。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">circle</td><td>输入的圆形 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">circle</td><td>输入的圆形 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">intersectPoints</td><td>返回交点的点集，若当前圆形和输入直线不相交，则该点集为空，若当前圆形和输入直线相切，返回 1 个交点， 若当前圆形和输入直线相交，返回 2 个交点。 </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>返回值</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">intersectPoints</td><td>返回交点的点集，若当前圆形和输入直线不相交，则该点集为空，若当前圆形和输入直线相切，返回 1 个交点， 若当前圆形和输入直线相交，返回 2 个交点。 </td></tr>
     <tr><td class="paramname">type</td><td>返回相交的类型，与交点的个数相关， <a class="el" href="namespace_l_p_v_geom_lib.html#a9e95444de4a6d45da839995006de7ddfac05ab634cb5dc2ab6e7bfb964fd85af6">Bounded </a> (2), <a class="el" href="namespace_l_p_v_geom_lib.html#a9e95444de4a6d45da839995006de7ddfa11a4685b4ba41e4a96d9394b47e85a88">Partial </a> (1) or <a class="el" href="namespace_l_p_v_geom_lib.html#a9e95444de4a6d45da839995006de7ddfa3894cd1ab4d330314a4c8e807e77cf44">Unbounded </a> (0). </td></tr>
   </table>
   </dd>
@@ -450,13 +445,13 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 </div><div class="memdoc">
 <p>判断当前直线和输入多边形是否相交，若相交，返回一个或多个交点。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">polygon</td><td>输入的多边形 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">polygon</td><td>输入的多边形 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">intersectPoints</td><td>返回交点的点集，若当前直线和输入多边形不相交，则该点集为空，否则可能包含一个或多个点。 </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>返回值</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">intersectPoints</td><td>返回交点的点集，若当前直线和输入多边形不相交，则该点集为空，否则可能包含一个或多个点。 </td></tr>
     <tr><td class="paramname">type</td><td>返回相交的类型，与交点中在直线线段上的个数相关， <a class="el" href="namespace_l_p_v_geom_lib.html#a9e95444de4a6d45da839995006de7ddfac05ab634cb5dc2ab6e7bfb964fd85af6">Bounded </a> (所有), <a class="el" href="namespace_l_p_v_geom_lib.html#a9e95444de4a6d45da839995006de7ddfa11a4685b4ba41e4a96d9394b47e85a88">Partial</a> (部分) or <a class="el" href="namespace_l_p_v_geom_lib.html#a9e95444de4a6d45da839995006de7ddfa3894cd1ab4d330314a4c8e807e77cf44">Unbounded</a> (无). </td></tr>
   </table>
   </dd>
@@ -492,13 +487,13 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 </div><div class="memdoc">
 <p>计算输入的点到当前直线的垂足和垂直距离 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">point</td><td>输入的点 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">point</td><td>输入的点 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">rootPoint</td><td>返回垂足 </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>返回值</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">rootPoint</td><td>返回垂足 </td></tr>
     <tr><td class="paramname">distance</td><td>返回垂直距离 </td></tr>
   </table>
   </dd>
@@ -523,7 +518,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 </div><div class="memdoc">
 <p>计算当前直线和输入直线的平分线 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">line</td><td>输入的直线 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">line</td><td>输入的直线 </td></tr>
   </table>
   </dd>
 </dl>
@@ -553,7 +548,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 </div><div class="memdoc">
 <p>计算当前直线和输入直线的距离。对非平行的直线，该距离指的是直线中点到另一条直线的距离的均值。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">line</td><td>输入的直线 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">line</td><td>输入的直线 </td></tr>
   </table>
   </dd>
 </dl>
@@ -583,7 +578,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 </div><div class="memdoc">
 <p>计算当前直线和输入直线的夹角（锐角） </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">line</td><td>输入的直线 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">line</td><td>输入的直线 </td></tr>
   </table>
   </dd>
 </dl>
@@ -613,7 +608,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 </div><div class="memdoc">
 <p>评价当前直线和输入直线的平行度 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">line</td><td>输入的直线 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">line</td><td>输入的直线 </td></tr>
   </table>
   </dd>
 </dl>
@@ -643,7 +638,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 </div><div class="memdoc">
 <p>计算当前直线到输入直线的顺时针角度 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">line</td><td>输入的直线 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">line</td><td>输入的直线 </td></tr>
   </table>
   </dd>
 </dl>
@@ -695,10 +690,10 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 </div><div class="memdoc">
 <p>设置直线的位置，使用中点坐标和角度 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">midx</td><td>直线中点的 x 坐标 </td></tr>
-    <tr><td class="paramname">midy</td><td>直线中点的 y 坐标 </td></tr>
-    <tr><td class="paramname">angle</td><td>直线的角度 </td></tr>
-    <tr><td class="paramname">length</td><td>直线线段的长度 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">midx</td><td>直线中点的 x 坐标 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">midy</td><td>直线中点的 y 坐标 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">angle</td><td>直线的角度 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">length</td><td>直线线段的长度 </td></tr>
   </table>
   </dd>
 </dl>
@@ -768,7 +763,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 </div><div class="memdoc">
 <p>根据当前直线的位置和给定的扩展宽度，生成一个旋转矩形区域 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">exp</td><td>输入直线两侧的扩展宽度 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">exp</td><td>输入直线两侧的扩展宽度 </td></tr>
   </table>
   </dd>
 </dl>

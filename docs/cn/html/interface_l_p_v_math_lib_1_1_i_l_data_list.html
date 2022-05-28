@@ -20,7 +20,7 @@
     jax: ["input/TeX","output/SVG"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.7/MathJax.js"></script>
 <link href="lpv_stylesheet.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-custom.css" rel="stylesheet" type="text/css"/>
@@ -231,7 +231,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 </div><div class="memdoc">
 <p>添加数据到队列的末尾 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">data</td><td>输入数据 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>输入数据 </td></tr>
   </table>
   </dd>
 </dl>
@@ -255,7 +255,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 </div><div class="memdoc">
 <p>添加多个数据到队列的末尾 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">data</td><td>输入的数据，为 double 的集合。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>输入的数据，为 double 的集合。 </td></tr>
   </table>
   </dd>
 </dl>
@@ -279,7 +279,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 </div><div class="memdoc">
 <p>获取队列中的指定索引的数据 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">index</td><td>输入指定的索引，从 0 开始但小于总数的数字 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>输入指定的索引，从 0 开始但小于总数的数字 </td></tr>
   </table>
   </dd>
 </dl>
@@ -331,10 +331,10 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 </div><div class="memdoc">
 <p>将数据向量绘制到给定的设备。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">hdc</td><td>绘制设备，可为窗口、位图等的上下文句柄。 </td></tr>
-    <tr><td class="paramname">drawFlags</td><td>用于控制绘制的内容，查看 LPVChartDrawFlags。 </td></tr>
-    <tr><td class="paramname">xGridStep</td><td>绘制 x 轴（索引）的步长，默认设置为 0，表示按照数据向量的数值范围自动选择合适的步长。 </td></tr>
-    <tr><td class="paramname">yGridStep</td><td>绘制 y 轴（数值）的步长，默认设置为 0，表示按照数据向量的数值范围自动选择合适的步长。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hdc</td><td>绘制设备，可为窗口、位图等的上下文句柄。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">drawFlags</td><td>用于控制绘制的内容，查看 LPVChartDrawFlags。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">xGridStep</td><td>绘制 x 轴（索引）的步长，默认设置为 0，表示按照数据向量的数值范围自动选择合适的步长。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">yGridStep</td><td>绘制 y 轴（数值）的步长，默认设置为 0，表示按照数据向量的数值范围自动选择合适的步长。 </td></tr>
   </table>
   </dd>
 </dl>
@@ -432,7 +432,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 </div><div class="memdoc">
 <p>保存数据列表到指定的 .csv 或者 .txt 文件。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">filename</td><td>文件路径，可为绝对或相对路径，包含文件夹、文件名和扩展名 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>文件路径，可为绝对或相对路径，包含文件夹、文件名和扩展名 </td></tr>
   </table>
   </dd>
 </dl>
@@ -463,7 +463,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 </div><div class="memdoc">
 <p>从指定的 .csv 或者 .txt 文件中加载数据列表。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">filename</td><td>文件路径，可为绝对或相对路径，包含文件夹、文件名和扩展名 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>文件路径，可为绝对或相对路径，包含文件夹、文件名和扩展名 </td></tr>
   </table>
   </dd>
 </dl>
@@ -516,10 +516,10 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 </div><div class="memdoc">
 <p>查找数据列表中的局部最大极值。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">threshold</td><td>用于过滤数据中噪声的阈值，低于该阈值的数据在局部极值查找时不予考虑。 默认值为最小的 double 值，表示无过滤。 </td></tr>
-    <tr><td class="paramname">num</td><td>期望找到的局部极值数量。若存在多于该数量的结果，将按照给定的 #findBy 策略，选择评价靠前的若干个结果。 默认设置为 0，表示获取所有局部极值。 </td></tr>
-    <tr><td class="paramname">findBy</td><td>搜索策略 </td></tr>
-    <tr><td class="paramname">onePeakMode</td><td>是否启用单峰模式。若启用，则在阈值过滤后的同一个区域内，只产生一个最大值的点作为局部极值。默认关闭。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">threshold</td><td>用于过滤数据中噪声的阈值，低于该阈值的数据在局部极值查找时不予考虑。 默认值为最小的 double 值，表示无过滤。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num</td><td>期望找到的局部极值数量。若存在多于该数量的结果，将按照给定的 <em>findBy</em> 策略，选择评价靠前的若干个结果。 默认设置为 0，表示获取所有局部极值。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">findBy</td><td>搜索策略 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">onePeakMode</td><td>是否启用单峰模式。若启用，则在阈值过滤后的同一个区域内，只产生一个最大值的点作为局部极值。默认关闭。 </td></tr>
   </table>
   </dd>
 </dl>
@@ -572,10 +572,10 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 </div><div class="memdoc">
 <p>查找数据列表中的局部最小极值。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">threshold</td><td>用于过滤数据中噪声的阈值，低于该阈值的数据在局部极值查找时不予考虑。 默认值为最小的 double 值，表示无过滤。 </td></tr>
-    <tr><td class="paramname">num</td><td>期望找到的局部极值数量。若存在多于该数量的结果，将按照给定的 #findBy 策略，选择评价靠前的若干个结果。 默认设置为 0，表示获取所有局部极值。 </td></tr>
-    <tr><td class="paramname">findBy</td><td>搜索策略 </td></tr>
-    <tr><td class="paramname">onePeakMode</td><td>是否启用单峰模式。若启用，则在阈值过滤后的同一个区域内，只产生一个最小值的点作为局部极值。默认关闭。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">threshold</td><td>用于过滤数据中噪声的阈值，低于该阈值的数据在局部极值查找时不予考虑。 默认值为最小的 double 值，表示无过滤。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num</td><td>期望找到的局部极值数量。若存在多于该数量的结果，将按照给定的 <em>findBy</em> 策略，选择评价靠前的若干个结果。 默认设置为 0，表示获取所有局部极值。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">findBy</td><td>搜索策略 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">onePeakMode</td><td>是否启用单峰模式。若启用，则在阈值过滤后的同一个区域内，只产生一个最小值的点作为局部极值。默认关闭。 </td></tr>
   </table>
   </dd>
 </dl>
@@ -608,9 +608,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 <p class="formulaDsp">
 \[ X{i}&#39; = \sum_{j=0}^{kSize} X{i+j-kSize/2} \]
 </p>
- <dl class="params"><dt>参数</dt><dd>
+<dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">size</td><td>设置滤波算子中使用的核尺寸，需要是一个奇数，如 1, 3, 5, 7 等。默认设置为 3。 尺寸更大的滤波核尺寸通常会带来更强的滤波效果，但速度更慢。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">kSize</td><td>设置滤波算子中使用的核尺寸，需要是一个奇数，如 1, 3, 5, 7 等。默认设置为 3。 尺寸更大的滤波核尺寸通常会带来更强的滤波效果，但速度更慢。 </td></tr>
   </table>
   </dd>
 </dl>
@@ -640,7 +640,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 </div><div class="memdoc">
 <p>中值滤波，输出队列中的每个数据表示这一局部区域中所有数据的**中值**。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">size</td><td>设置滤波算子中使用的核尺寸，需要是一个奇数，如 1, 3, 5, 7 等。默认设置为 3。 尺寸更大的滤波核尺寸通常会带来更强的滤波效果，但速度更慢。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">kSize</td><td>设置滤波算子中使用的核尺寸，需要是一个奇数，如 1, 3, 5, 7 等。默认设置为 3。 尺寸更大的滤波核尺寸通常会带来更强的滤波效果，但速度更慢。 </td></tr>
   </table>
   </dd>
 </dl>
@@ -670,7 +670,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 </div><div class="memdoc">
 <p>使用高斯滤波器模糊数据，高斯滤波算子的定义与<a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_filter.html#abb994cefb8c7b8b4efa93a75a7b3af3d">图像高斯滤波</a>相同。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">size</td><td>设置滤波算子中使用的核尺寸，需要是一个奇数，如 1, 3, 5, 7 等。默认设置为 3。 尺寸更大的滤波核尺寸通常会带来更强的滤波效果，但速度更慢。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">kSize</td><td>设置滤波算子中使用的核尺寸，需要是一个奇数，如 1, 3, 5, 7 等。默认设置为 3。 尺寸更大的滤波核尺寸通常会带来更强的滤波效果，但速度更慢。 </td></tr>
   </table>
   </dd>
 </dl>
@@ -702,9 +702,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 <p class="formulaDsp">
 \[ X{i}&#39; = \max_{j=0}^{kSize} X{i+j-kSize/2} \]
 </p>
- <dl class="params"><dt>参数</dt><dd>
+<dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">size</td><td>设置滤波算子中使用的核尺寸，需要是一个奇数，如 1, 3, 5, 7 等。默认设置为 3。 尺寸更大的滤波核尺寸通常会带来更强的滤波效果，但速度更慢。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">kSize</td><td>设置滤波算子中使用的核尺寸，需要是一个奇数，如 1, 3, 5, 7 等。默认设置为 3。 尺寸更大的滤波核尺寸通常会带来更强的滤波效果，但速度更慢。 </td></tr>
   </table>
   </dd>
 </dl>
@@ -736,9 +736,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 <p class="formulaDsp">
 \[ X{i}&#39; = \min_{j=0}^{kSize} X{i+j-kSize/2} \]
 </p>
- <dl class="params"><dt>参数</dt><dd>
+<dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">size</td><td>设置滤波算子中使用的核尺寸，需要是一个奇数，如 1, 3, 5, 7 等。默认设置为 3。 尺寸更大的滤波核尺寸通常会带来更强的滤波效果，但速度更慢。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">kSize</td><td>设置滤波算子中使用的核尺寸，需要是一个奇数，如 1, 3, 5, 7 等。默认设置为 3。 尺寸更大的滤波核尺寸通常会带来更强的滤波效果，但速度更慢。 </td></tr>
   </table>
   </dd>
 </dl>
@@ -776,9 +776,10 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
         </tr>
       </table>
 </div><div class="memdoc">
-<p>数据队列中的“边缘”表示为绝对值更大的滤波结果。 若核尺寸设置为 1，将退化为 \((-1, 1)\)，指定的核类型不起作用。 </p><dl class="params"><dt>参数</dt><dd>
+<p>数据队列中的“边缘”表示为绝对值更大的滤波结果。 若核尺寸设置为 1，将退化为 \( (-1, 1) \)，指定的核类型不起作用。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">size</td><td>设置滤波算子中使用的核尺寸，需要是一个奇数，如 1, 3, 5, 7 等。默认设置为 3。 尺寸更大的滤波核尺寸通常会带来更强的滤波效果，但速度更慢。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">kType</td><td>边缘滤波所使用的核类型 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">kSize</td><td>设置滤波算子中使用的核尺寸，需要是一个奇数，如 1, 3, 5, 7 等。默认设置为 3。 尺寸更大的滤波核尺寸通常会带来更强的滤波效果，但速度更慢。 </td></tr>
   </table>
   </dd>
 </dl>
@@ -818,7 +819,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 </div><div class="memdoc">
 <p>与 <a class="el" href="interface_l_p_v_math_lib_1_1_i_l_data_list.html#a650bfd328ffd0788703b3f1486f13567">GradientFilter()</a> 类似，该滤波输出梯度强度，也就是梯度滤波的绝对值。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">size</td><td>设置滤波算子中使用的核尺寸，需要是一个奇数，如 1, 3, 5, 7 等。默认设置为 3。 尺寸更大的滤波核尺寸通常会带来更强的滤波效果，但速度更慢。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">kType</td><td>边缘滤波所使用的核类型 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">kSize</td><td>设置滤波算子中使用的核尺寸，需要是一个奇数，如 1, 3, 5, 7 等。默认设置为 3。 尺寸更大的滤波核尺寸通常会带来更强的滤波效果，但速度更慢。 </td></tr>
   </table>
   </dd>
 </dl>
@@ -855,7 +857,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 <p>数据列表的聚合度量，如均值、总值、最小值等。 </p>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">aggType</td><td>聚合方式 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aggType</td><td>聚合方式 </td></tr>
   </table>
   </dd>
 </dl>

@@ -20,7 +20,7 @@
     jax: ["input/TeX","output/HTML-CSS"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.7/MathJax.js"></script>
 <link href="lpv_stylesheet.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-custom.css" rel="stylesheet" type="text/css"/>
@@ -164,16 +164,11 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Find the pixel of minimum value in the input image, report the value and pixel's position. If there's more than one pixel with the same value, report the left-top one. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> The input image. </td></tr>
-    <tr><td class="paramname">region</td><td>Input region. It's optional, could be null. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">value</td><td>Return the minimum value. </td></tr>
-    <tr><td class="paramname">posX</td><td>Return the x-coordinate of the pixel's position with minimum value. </td></tr>
-    <tr><td class="paramname">posY</td><td>Return the y-coordinate of the pixel's position with minimum value. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> The input image. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">region</td><td>Input region. It's optional, could be null. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">value</td><td>Return the minimum value. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">posX</td><td>Return the x-coordinate of the pixel's position with minimum value. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">posY</td><td>Return the y-coordinate of the pixel's position with minimum value. </td></tr>
   </table>
   </dd>
 </dl>
@@ -225,16 +220,11 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Find the pixel of maximum value in the input image, report the value and pixel's position. If there's more than one pixel with the same value, report the left-top one. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> The input image. </td></tr>
-    <tr><td class="paramname">region</td><td>Input region. It's optional, could be null. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">value</td><td>Return the maximum value. </td></tr>
-    <tr><td class="paramname">posX</td><td>Return the x-coordinate of the pixel's position with maximum value. </td></tr>
-    <tr><td class="paramname">posY</td><td>Return the y-coordinate of the pixel's position with maximum value. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> The input image. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">region</td><td>Input region. It's optional, could be null. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">value</td><td>Return the maximum value. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">posX</td><td>Return the x-coordinate of the pixel's position with maximum value. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">posY</td><td>Return the y-coordinate of the pixel's position with maximum value. </td></tr>
   </table>
   </dd>
 </dl>
@@ -280,15 +270,10 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Calculate the mean and standard deviation of the input image. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> The input image. </td></tr>
-    <tr><td class="paramname">region</td><td>Input region. It's optional, could be null. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">meanValue</td><td>Return the mean value. </td></tr>
-    <tr><td class="paramname">stdDevValue</td><td>Return the standard deviation value. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> The input image. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">region</td><td>Input region. It's optional, could be null. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">meanValue</td><td>Return the mean value. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">stdDevValue</td><td>Return the standard deviation value. </td></tr>
   </table>
   </dd>
 </dl>
@@ -352,18 +337,13 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Count the pixels in the input image which is below, between or above the given threshold range. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> The input image. </td></tr>
-    <tr><td class="paramname">region</td><td>Input region. It's optional, could be null. </td></tr>
-    <tr><td class="paramname">lb</td><td>The lower bound of threshold value, in range of 0 ~ 255. </td></tr>
-    <tr><td class="paramname">ub</td><td>The upper bound of threshold value, in range of 0 ~ 255. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">belowCount</td><td>Return the count of pixels below the lower bound of threshold range. </td></tr>
-    <tr><td class="paramname">betweenCount</td><td>Return the count of pixels in the threshold range. </td></tr>
-    <tr><td class="paramname">aboveCount</td><td>Return the count of pixels above the upper bound of threshold range. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> The input image. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">region</td><td>Input region. It's optional, could be null. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">lb</td><td>The lower bound of threshold value, in range of 0 ~ 255. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ub</td><td>The upper bound of threshold value, in range of 0 ~ 255. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">belowCount</td><td>Return the count of pixels below the lower bound of threshold range. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">betweenCount</td><td>Return the count of pixels in the threshold range. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">aboveCount</td><td>Return the count of pixels above the upper bound of threshold range. </td></tr>
   </table>
   </dd>
 </dl>
@@ -397,8 +377,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Compute the relative sharpness of the input image, based on the edge gradients. It's usually used to automate focusing a camera lens on a scene. Note that the score may be affected by the contrast, brightness and content of the scene, thus it's meaningless to compare the sharpness scores of different scenes. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pImg</td><td>The input image. </td></tr>
-    <tr><td class="paramname">region</td><td>Input region. It's optional, could be null. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>The input image. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">region</td><td>Input region. It's optional, could be null. </td></tr>
   </table>
   </dd>
 </dl>

@@ -20,7 +20,7 @@
     jax: ["input/TeX","output/HTML-CSS"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.7/MathJax.js"></script>
 <link href="lpv_stylesheet.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-custom.css" rel="stylesheet" type="text/css"/>
@@ -209,13 +209,13 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 </div><div class="memdoc">
 <p>Fetch one algorithm result object with the given index. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">index</td><td>The input index, it should be a 0-based number smaller than total count. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>The input index, it should be a 0-based number smaller than total count. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">val</td><td>Return the algorithm result object. </td></tr>
+    <tr><td class="paramname">result</td><td>Return the algorithm result object. </td></tr>
   </table>
   </dd>
 </dl>
@@ -246,7 +246,13 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 <p>The algorithm result, queried using the algorithm name. Return null if failed to find the algorithm with the specified name. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">algoName</td><td>The unique name of the algorithm tool. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">algoName</td><td>The unique name of the algorithm tool. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">result</td><td>Return the algorithm result </td></tr>
   </table>
   </dd>
 </dl>

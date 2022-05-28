@@ -29,13 +29,14 @@ var searchData=
   ['alignto_27',['AlignTo',['../interface_l_p_v_calib_lib_1_1_i_l_calib_rotation.html#a99e9289b0f6620924b27845d1e104259',1,'LPVCalibLib::ILCalibRotation']]],
   ['allowdup_28',['AllowDup',['../interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#a9bba598de659c48ac2711b118ceff76a',1,'LPVBarcodeLib::ILBarcodeDetector']]],
   ['angle_29',['Angle',['../interface_l_p_v_barcode_lib_1_1_i_l_barcode_result.html#a8c10230001bab42de01beb2843f8c327',1,'LPVBarcodeLib::ILBarcodeResult::Angle()'],['../interface_l_p_v_core_lib_1_1_i_l_rot_rect_region.html#a8c10230001bab42de01beb2843f8c327',1,'LPVCoreLib::ILRotRectRegion::Angle()'],['../interface_l_p_v_geom_lib_1_1_i_l_rect.html#a8c10230001bab42de01beb2843f8c327',1,'LPVGeomLib::ILRect::Angle()'],['../interface_l_p_v_pat_lib_1_1_i_l_match_result.html#a8c10230001bab42de01beb2843f8c327',1,'LPVPatLib::ILMatchResult::Angle()']]],
-  ['angleto_30',['AngleTo',['../interface_l_p_v_geom_lib_1_1_i_l_line.html#a96b57b77f545fefd4e248107ea74dc90',1,'LPVGeomLib::ILLine']]],
-  ['angletolerance_31',['AngleTolerance',['../interface_l_p_v_pat_lib_1_1_i_l_match.html#a89c9e21a723b9b597dd9a0d6e603c268',1,'LPVPatLib::ILMatch']]],
-  ['applysort_32',['ApplySort',['../interface_l_p_v_core_lib_1_1_i_l_sortables.html#a53fb8ab03002983652650c985cf648f9',1,'LPVCoreLib::ILSortables']]],
-  ['attachimage_33',['AttachImage',['../interface_l_p_v_blob_lib_1_1_i_l_blob.html#a55f71d79803f0f1adca6b16788bb3421',1,'LPVBlobLib::ILBlob']]],
-  ['autoremovebad_34',['AutoRemoveBad',['../interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#a78520409e85555fd726b3eee218107aa',1,'LPVCalibLib::ILCalibBoard']]],
-  ['avgcolumnspace_35',['AvgColumnSpace',['../interface_l_p_v_geom_lib_1_1_i_l_sorted_array.html#aec7219f2778c1d8fc713e7d07b72d7de',1,'LPVGeomLib::ILSortedArray']]],
-  ['avgrowspace_36',['AvgRowSpace',['../interface_l_p_v_geom_lib_1_1_i_l_sorted_array.html#a668aa98f5cf306a2268681b17d9bb26a',1,'LPVGeomLib::ILSortedArray']]],
-  ['axisdirx_37',['AxisDirX',['../interface_l_p_v_calib_lib_1_1_i_l_calib_custom.html#a2412e74f1439f3a3c795c035d395cbc4',1,'LPVCalibLib::ILCalibCustom']]],
-  ['axisdiry_38',['AxisDirY',['../interface_l_p_v_calib_lib_1_1_i_l_calib_custom.html#a7664d923bc8fa6b37c2445c8bc0f1fdf',1,'LPVCalibLib::ILCalibCustom']]]
+  ['anglebias_30',['AngleBias',['../interface_l_p_v_pat_lib_1_1_i_l_match.html#a7a84dfa91ece8aea697fa4606afa7ce3',1,'LPVPatLib::ILMatch']]],
+  ['angleto_31',['AngleTo',['../interface_l_p_v_geom_lib_1_1_i_l_line.html#a96b57b77f545fefd4e248107ea74dc90',1,'LPVGeomLib::ILLine']]],
+  ['angletolerance_32',['AngleTolerance',['../interface_l_p_v_pat_lib_1_1_i_l_match.html#a89c9e21a723b9b597dd9a0d6e603c268',1,'LPVPatLib::ILMatch']]],
+  ['applysort_33',['ApplySort',['../interface_l_p_v_core_lib_1_1_i_l_sortables.html#a53fb8ab03002983652650c985cf648f9',1,'LPVCoreLib::ILSortables']]],
+  ['attachimage_34',['AttachImage',['../interface_l_p_v_blob_lib_1_1_i_l_blob.html#a55f71d79803f0f1adca6b16788bb3421',1,'LPVBlobLib::ILBlob']]],
+  ['autoremovebad_35',['AutoRemoveBad',['../interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#a78520409e85555fd726b3eee218107aa',1,'LPVCalibLib::ILCalibBoard']]],
+  ['avgcolumnspace_36',['AvgColumnSpace',['../interface_l_p_v_geom_lib_1_1_i_l_sorted_array.html#aec7219f2778c1d8fc713e7d07b72d7de',1,'LPVGeomLib::ILSortedArray']]],
+  ['avgrowspace_37',['AvgRowSpace',['../interface_l_p_v_geom_lib_1_1_i_l_sorted_array.html#a668aa98f5cf306a2268681b17d9bb26a',1,'LPVGeomLib::ILSortedArray']]],
+  ['axisdirx_38',['AxisDirX',['../interface_l_p_v_calib_lib_1_1_i_l_calib_custom.html#a2412e74f1439f3a3c795c035d395cbc4',1,'LPVCalibLib::ILCalibCustom']]],
+  ['axisdiry_39',['AxisDirY',['../interface_l_p_v_calib_lib_1_1_i_l_calib_custom.html#a7664d923bc8fa6b37c2445c8bc0f1fdf',1,'LPVCalibLib::ILCalibCustom']]]
 ];

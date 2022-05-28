@@ -20,7 +20,7 @@
     jax: ["input/TeX","output/SVG"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.7/MathJax.js"></script>
 <link href="lpv_stylesheet.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-custom.css" rel="stylesheet" type="text/css"/>
@@ -262,7 +262,7 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 <p>保存标定对象到指定的文件。<br  />
 标定文件为 .calib 文件，保存相机的标定矩阵及标定时所使用的参数和点对等信息。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">filename</td><td>文件路径，可为绝对或相对路径，包含文件夹、文件名和扩展名 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>文件路径，可为绝对或相对路径，包含文件夹、文件名和扩展名 </td></tr>
   </table>
   </dd>
 </dl>
@@ -294,7 +294,7 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 <p>从指定的文件读取标定对象。<br  />
 该文件为 .calib 文件，包含相机的标定矩阵及标定时所使用的参数和点对等信息。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">filename</td><td>文件路径，可为绝对或相对路径，包含文件夹、文件名和扩展名 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>文件路径，可为绝对或相对路径，包含文件夹、文件名和扩展名 </td></tr>
   </table>
   </dd>
 </dl>
@@ -348,15 +348,10 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 <p>映射点坐标从图像坐标系到物理坐标系。<br  />
 标定对象需成功标定，若未标定返回 <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aa564aa76ea75ffa30b29cfcfb3a5b503b">LPVErrCalibNotCalib </a> 错误。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">imagePointX</td><td>图像坐标系下的 x 坐标 </td></tr>
-    <tr><td class="paramname">imagePointY</td><td>图像坐标系下的 y 坐标 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>返回值</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">worldPointX</td><td>返回物理坐标系下的 x 坐标 </td></tr>
-    <tr><td class="paramname">worldPointY</td><td>返回物理坐标系下的 y 坐标 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">imagePointX</td><td>图像坐标系下的 x 坐标 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">imagePointY</td><td>图像坐标系下的 y 坐标 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">worldPointX</td><td>返回物理坐标系下的 x 坐标 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">worldPointY</td><td>返回物理坐标系下的 y 坐标 </td></tr>
   </table>
   </dd>
 </dl>
@@ -403,15 +398,10 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 <p>映射点坐标从物理坐标系到图像坐标系。<br  />
 标定对象需成功标定，若未标定返回 <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aa564aa76ea75ffa30b29cfcfb3a5b503b">LPVErrCalibNotCalib </a> 错误。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">worldPointX</td><td>物理坐标系下的 x 坐标 </td></tr>
-    <tr><td class="paramname">worldPointY</td><td>物理坐标系下的 y 坐标 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>返回值</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">imagePointX</td><td>返回图像坐标系下的 x 坐标 </td></tr>
-    <tr><td class="paramname">imagePointY</td><td>返回图像坐标系下的 y 坐标 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">worldPointX</td><td>物理坐标系下的 x 坐标 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">worldPointY</td><td>物理坐标系下的 y 坐标 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">imagePointX</td><td>返回图像坐标系下的 x 坐标 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">imagePointY</td><td>返回图像坐标系下的 y 坐标 </td></tr>
   </table>
   </dd>
 </dl>
@@ -446,13 +436,13 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 <p>修正图像的镜头畸变和相机倾斜。<br  />
 标定对象需成功标定，若未标定返回 <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aa564aa76ea75ffa30b29cfcfb3a5b503b">LPVErrCalibNotCalib </a> 错误。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">image</td><td>输入的图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">image</td><td>输入的图像 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">fixedImage</td><td>返回修正后的结果图像 </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>返回值</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">fixedImage</td><td>返回修正后的结果图像 </td></tr>
     <tr><td class="paramname">error</td><td>返回错误码 </td></tr>
   </table>
   </dd>
@@ -496,9 +486,9 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 后变换应用在图像到物理的坐标映射之后，相对的，逆向的后变换应用在物理到图像的坐标映射之前。<br  />
 若同时设置后变换原点和后变换矩阵，将先应用后变换原点，再应用后变换矩阵。在逆向的后变换中，其顺序相反。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">offsetX</td><td>后变换原点 x 方向的偏移量 </td></tr>
-    <tr><td class="paramname">offsetY</td><td>后变换原点 y 方向的偏移量 </td></tr>
-    <tr><td class="paramname">deltaAngle</td><td>坐标系的顺时针旋转角度 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">offsetX</td><td>后变换原点 x 方向的偏移量 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">offsetY</td><td>后变换原点 y 方向的偏移量 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">deltaAngle</td><td>坐标系的顺时针旋转角度 </td></tr>
   </table>
   </dd>
 </dl>
@@ -539,12 +529,12 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 </div><div class="memdoc">
 <p>设置物理坐标系的后变换，给定后变换矩阵。<br  />
 后变换应用在图像到物理的坐标映射之后，相对的，逆向的后变换应用在物理到图像的坐标映射之前。<br  />
-若同时设置后变换原点和后变换矩阵，将先应用后变换原点，再应用后变换矩阵。在逆向的后变换中，其顺序相反。 变换矩阵的尺寸可为 \(2 \times 3\), \(3 \times 3\), \(4 \times 4\), \(4 \times 4\)，对应不同的变换自由度。<br  />
+若同时设置后变换原点和后变换矩阵，将先应用后变换原点，再应用后变换矩阵。在逆向的后变换中，其顺序相反。 变换矩阵的尺寸可为 \( 2 \times 3, 3 \times 3, 4 \times 4 \) ，对应不同的变换自由度。<br  />
 更多信息查看 <a href="https://en.wikipedia.org/wiki/Transformation_matrix">https://en.wikipedia.org/wiki/Transformation_matrix</a> </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">cols</td><td>后变换矩阵的列数量 </td></tr>
-    <tr><td class="paramname">rows</td><td>后变换矩阵的行数量 </td></tr>
-    <tr><td class="paramname">data</td><td>后变换矩阵的数值，按行排列，共 \(rows \times cols\) 个数值。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cols</td><td>后变换矩阵的列数量 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rows</td><td>后变换矩阵的行数量 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>后变换矩阵的数值，按行排列，共 \( rows \times cols \) 个数值。 </td></tr>
   </table>
   </dd>
 </dl>
@@ -591,10 +581,10 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 </div><div class="memdoc">
 <p>增加一个用于标定的点对。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">imagePointX</td><td>图像点的 x 坐标 </td></tr>
-    <tr><td class="paramname">imagePointY</td><td>图像点的 y 坐标 </td></tr>
-    <tr><td class="paramname">worldPointX</td><td>物理点的 x 坐标 </td></tr>
-    <tr><td class="paramname">worldPointY</td><td>物理点的 y 坐标 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">imagePointX</td><td>图像点的 x 坐标 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">imagePointY</td><td>图像点的 y 坐标 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">worldPointX</td><td>物理点的 x 坐标 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">worldPointY</td><td>物理点的 y 坐标 </td></tr>
   </table>
   </dd>
 </dl>
@@ -624,7 +614,7 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 </div><div class="memdoc">
 <p>增加一个用于标定的点对集合，通常通过检测标定板获得大量标定用的点对。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pointPairs</td><td>用于标定的点对集合 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pointPairs</td><td>用于标定的点对集合 </td></tr>
   </table>
   </dd>
 </dl>
@@ -665,8 +655,8 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 </div><div class="memdoc">
 <p>设置相机采集到的图像的尺寸，用于不依赖图像的标定过程，如 9 点标定。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">w</td><td>图像的宽度 </td></tr>
-    <tr><td class="paramname">h</td><td>图像的高度 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">w</td><td>图像的宽度 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">h</td><td>图像的高度 </td></tr>
   </table>
   </dd>
 </dl>
@@ -688,13 +678,7 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
         </tr>
       </table>
 </div><div class="memdoc">
-<p>设置物理坐标系的后变换，使用 \(2 \times 3\) 的矩阵，具有旋转、平移、缩放的自由度。 </p><dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">data</td><td>输入 \(2 \times 3\) 的矩阵 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#ab8c572785f3997e0c7af0511b97703c7">SetPostTransform()</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#ac1322fb8a9d02ee7143595fe4041690d">SetPostTransformMatrix()</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a7f7326737028f1763ca3c7518d12fac3">SetPostTransformMatrix33()</a>. </dd></dl>
+<p>设置物理坐标系的后变换，使用 \( 2 \times 3 \) 的矩阵，具有旋转、平移、缩放的自由度。 </p><dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#ab8c572785f3997e0c7af0511b97703c7">SetPostTransform()</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#ac1322fb8a9d02ee7143595fe4041690d">SetPostTransformMatrix()</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a7f7326737028f1763ca3c7518d12fac3">SetPostTransformMatrix33()</a>. </dd></dl>
 
 </div>
 </div>
@@ -713,13 +697,7 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
         </tr>
       </table>
 </div><div class="memdoc">
-<p>设置物理坐标系的后变换，使用 \(32 \times 3\) 的矩阵，具有旋转、平移、缩放、射影变换的自由度。 </p><dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">data</td><td>输入 \(3 \times 3\) 的矩阵 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#ab8c572785f3997e0c7af0511b97703c7">SetPostTransform()</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#ac1322fb8a9d02ee7143595fe4041690d">SetPostTransformMatrix()</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a340a8929cbbc28b8b63bb58bfd4a9a96">SetPostTransformMatrix23()</a>. </dd></dl>
+<p>设置物理坐标系的后变换，使用 \( 3 \times 3 \) 的矩阵，具有旋转、平移、缩放、射影变换的自由度。 </p><dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#ab8c572785f3997e0c7af0511b97703c7">SetPostTransform()</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#ac1322fb8a9d02ee7143595fe4041690d">SetPostTransformMatrix()</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a340a8929cbbc28b8b63bb58bfd4a9a96">SetPostTransformMatrix23()</a>. </dd></dl>
 
 </div>
 </div>
@@ -740,7 +718,7 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 </div><div class="memdoc">
 <p>生成和设置后变换矩阵，基于修正后图像上的图像坐标点及其对应的期望物理坐标。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pointPairs</td><td>图像和物理点对. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pointPairs</td><td>图像和物理点对. </td></tr>
   </table>
   </dd>
 </dl>

@@ -20,7 +20,7 @@
     jax: ["input/TeX","output/HTML-CSS"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.7/MathJax.js"></script>
 <link href="lpv_stylesheet.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-custom.css" rel="stylesheet" type="text/css"/>
@@ -239,7 +239,7 @@ The center is estimated with the rotation points or pairs of points around the c
 <p>Save the calibration to a specified file.<br  />
 The serialized file is .calib file with the calibrated rotation center as well as all the calibration configurations. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">filename</td><td>Full path of the file, it could be absolute or relative path with file name and extension. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>Full path of the file, it could be absolute or relative path with file name and extension. </td></tr>
   </table>
   </dd>
 </dl>
@@ -271,7 +271,7 @@ The serialized file is .calib file with the calibrated rotation center as well a
 <p>Load the calibration from a specified file.<br  />
 It should be a .calib file with the calibrated rotation center in it. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">filename</td><td>Full path of the file, it could be absolute or relative path with file name and extension. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>Full path of the file, it could be absolute or relative path with file name and extension. </td></tr>
   </table>
   </dd>
 </dl>
@@ -318,9 +318,9 @@ It should be a .calib file with the calibrated rotation center in it. </p><dl cl
 </div><div class="memdoc">
 <p>Add a rotation point for calibration. It forms a rotation circular path around the rotation center. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pntX</td><td>The x-coordinate of the rotation point. </td></tr>
-    <tr><td class="paramname">pntY</td><td>The y-coordinate of the rotation point. </td></tr>
-    <tr><td class="paramname">angle</td><td>The rotation angle of the platform, pass in -1 (default) to ignore this value. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pntX</td><td>The x-coordinate of the rotation point. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pntY</td><td>The y-coordinate of the rotation point. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">angle</td><td>The rotation angle of the platform, pass in -1 (default) to ignore this value. </td></tr>
   </table>
   </dd>
 </dl>
@@ -372,11 +372,11 @@ It should be a .calib file with the calibrated rotation center in it. </p><dl cl
 </div><div class="memdoc">
 <p>Add a pair of rotation points for calibration. It forms two concentric circular paths around the rotation center. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pntX1</td><td>The x-coordinate of the 1st rotation point. </td></tr>
-    <tr><td class="paramname">pntY1</td><td>The y-coordinate of the 1st rotation point. </td></tr>
-    <tr><td class="paramname">pntX2</td><td>The x-coordinate of the 2nd rotation point. </td></tr>
-    <tr><td class="paramname">pntY2</td><td>The y-coordinate of the 2nd rotation point. </td></tr>
-    <tr><td class="paramname">angle</td><td>The rotation angle of the platform, pass in -1 (default) to ignore this value. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pntX1</td><td>The x-coordinate of the 1st rotation point. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pntY1</td><td>The y-coordinate of the 1st rotation point. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pntX2</td><td>The x-coordinate of the 2nd rotation point. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pntY2</td><td>The y-coordinate of the 2nd rotation point. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">angle</td><td>The rotation angle of the platform, pass in -1 (default) to ignore this value. </td></tr>
   </table>
   </dd>
 </dl>
@@ -422,10 +422,10 @@ It should be a .calib file with the calibrated rotation center in it. </p><dl cl
 </div><div class="memdoc">
 <p>Set the aligning aim position. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">aimPointX1</td><td>The x-coordinate of the 1st mark of the aim position. </td></tr>
-    <tr><td class="paramname">aimPointY1</td><td>The y-coordinate of the 1st mark of the aim position. </td></tr>
-    <tr><td class="paramname">aimPointX2</td><td>The x-coordinate of the 2nd mark of the aim position. </td></tr>
-    <tr><td class="paramname">aimPointY2</td><td>The y-coordinate of the 2nd mark of the aim position. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aimPointX1</td><td>The x-coordinate of the 1st mark of the aim position. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aimPointY1</td><td>The y-coordinate of the 1st mark of the aim position. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aimPointX2</td><td>The x-coordinate of the 2nd mark of the aim position. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aimPointY2</td><td>The y-coordinate of the 2nd mark of the aim position. </td></tr>
   </table>
   </dd>
 </dl>
@@ -490,18 +490,13 @@ It should be a .calib file with the calibrated rotation center in it. </p><dl cl
 </div><div class="memdoc">
 <p>Align the object to the configured aim position. The mapping works with a calibrated system, if not it returns the <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aa564aa76ea75ffa30b29cfcfb3a5b503b">LPVErrCalibNotCalib </a> error. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pntX1</td><td>The x-coordinate of the 1st mark of the object position. </td></tr>
-    <tr><td class="paramname">pntY1</td><td>The y-coordinate of the 1st mark of the object position. </td></tr>
-    <tr><td class="paramname">pntX2</td><td>The x-coordinate of the 2nd mark of the object position. </td></tr>
-    <tr><td class="paramname">pntY2</td><td>The y-coordinate of the 2nd mark of the object position. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">dx</td><td>Return the offset in x coordinate for the platform to align the object to the aim position. </td></tr>
-    <tr><td class="paramname">dy</td><td>Return the offset in y coordinate for the platform to align the object to the aim position. </td></tr>
-    <tr><td class="paramname">da</td><td>Return the rotation for the platform to align the object to the aim position. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pntX1</td><td>The x-coordinate of the 1st mark of the object position. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pntY1</td><td>The y-coordinate of the 1st mark of the object position. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pntX2</td><td>The x-coordinate of the 2nd mark of the object position. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pntY2</td><td>The y-coordinate of the 2nd mark of the object position. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">dx</td><td>Return the offset in x coordinate for the platform to align the object to the aim position. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">dy</td><td>Return the offset in y coordinate for the platform to align the object to the aim position. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">da</td><td>Return the rotation for the platform to align the object to the aim position. </td></tr>
   </table>
   </dd>
 </dl>
@@ -590,22 +585,17 @@ It should be a .calib file with the calibrated rotation center in it. </p><dl cl
 </div><div class="memdoc">
 <p>Align the object to the given aim position. The mapping works with a calibrated system, if not it returns the <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aa564aa76ea75ffa30b29cfcfb3a5b503b">LPVErrCalibNotCalib </a> error. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">aimPointX1</td><td>The x-coordinate of the 1st mark of the aim position. </td></tr>
-    <tr><td class="paramname">aimPointY1</td><td>The y-coordinate of the 1st mark of the aim position. </td></tr>
-    <tr><td class="paramname">aimPointX2</td><td>The x-coordinate of the 2nd mark of the aim position. </td></tr>
-    <tr><td class="paramname">aimPointY2</td><td>The y-coordinate of the 2nd mark of the aim position. </td></tr>
-    <tr><td class="paramname">pntX1</td><td>The x-coordinate of the 1st mark of the object position. </td></tr>
-    <tr><td class="paramname">pntY1</td><td>The y-coordinate of the 1st mark of the object position. </td></tr>
-    <tr><td class="paramname">pntX2</td><td>The x-coordinate of the 2nd mark of the object position. </td></tr>
-    <tr><td class="paramname">pntY2</td><td>The y-coordinate of the 2nd mark of the object position. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">dx</td><td>Return the offset in x coordinate for the platform to align the object to the aim position. </td></tr>
-    <tr><td class="paramname">dy</td><td>Return the offset in y coordinate for the platform to align the object to the aim position. </td></tr>
-    <tr><td class="paramname">da</td><td>Return the rotation for the platform to align the object to the aim position. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aimPointX1</td><td>The x-coordinate of the 1st mark of the aim position. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aimPointY1</td><td>The y-coordinate of the 1st mark of the aim position. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aimPointX2</td><td>The x-coordinate of the 2nd mark of the aim position. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aimPointY2</td><td>The y-coordinate of the 2nd mark of the aim position. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pntX1</td><td>The x-coordinate of the 1st mark of the object position. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pntY1</td><td>The y-coordinate of the 1st mark of the object position. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pntX2</td><td>The x-coordinate of the 2nd mark of the object position. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pntY2</td><td>The y-coordinate of the 2nd mark of the object position. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">dx</td><td>Return the offset in x coordinate for the platform to align the object to the aim position. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">dy</td><td>Return the offset in y coordinate for the platform to align the object to the aim position. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">da</td><td>Return the rotation for the platform to align the object to the aim position. </td></tr>
   </table>
   </dd>
 </dl>
@@ -627,12 +617,7 @@ It should be a .calib file with the calibrated rotation center in it. </p><dl cl
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get the estimated rotation center </p><dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">center</td><td>Return the rotation center. </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Get the estimated rotation center </p>
 
 </div>
 </div>

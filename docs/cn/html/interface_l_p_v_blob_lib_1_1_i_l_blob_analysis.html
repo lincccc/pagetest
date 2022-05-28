@@ -20,7 +20,7 @@
     jax: ["input/TeX","output/SVG"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.7/MathJax.js"></script>
 <link href="lpv_stylesheet.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-custom.css" rel="stylesheet" type="text/css"/>
@@ -217,8 +217,8 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 <p>添加斑点对象的灰度值范围。若像素的灰度值在该范围内，将被视为前景像素，参与生成斑点连通域。<br  />
 这表示该斑点分析工具为灰度模式，在此之前设置的彩色斑点颜色范围将被清空。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">grayLB</td><td>灰度值范围的下限，取值在 0 ~ 255 </td></tr>
-    <tr><td class="paramname">grayUB</td><td>灰度值范围的上限，取值在 0 ~ 255 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">grayLB</td><td>灰度值范围的下限，取值在 0 ~ 255 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">grayUB</td><td>灰度值范围的上限，取值在 0 ~ 255 </td></tr>
   </table>
   </dd>
 </dl>
@@ -254,8 +254,8 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 <p>添加背景的灰度值范围。若像素的灰度值在该范围内，将被视为背景，其他像素则为前景。<br  />
 这表示该斑点分析工具为灰度模式，在此之前设置的彩色斑点颜色范围将被清空。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">grayLB</td><td>灰度值范围的下限，取值在 0 ~ 255 </td></tr>
-    <tr><td class="paramname">grayUB</td><td>灰度值范围的上限，取值在 0 ~ 255 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">grayLB</td><td>灰度值范围的下限，取值在 0 ~ 255 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">grayUB</td><td>灰度值范围的上限，取值在 0 ~ 255 </td></tr>
   </table>
   </dd>
 </dl>
@@ -344,18 +344,13 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 </div><div class="memdoc">
 <p>基于输入的图像和给定的像素坐标，自动生成一个灰度值范围，可用于添加为前景或背景范围。通常在灰度模式下调用。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">image</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> 输入的图像 </td></tr>
-    <tr><td class="paramname">x</td><td>鼠标位置（选择中的）像素的 x 坐标 </td></tr>
-    <tr><td class="paramname">y</td><td>鼠标位置（选择中的）像素的 y 坐标 </td></tr>
-    <tr><td class="paramname">tolerance</td><td>生成灰度值范围时使用的最大容差值，即相较于选中点的灰度值的最大偏移量。 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>返回值</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">grayLB</td><td>返回生成的灰度值范围的下限，取值在 0 ~ 255 </td></tr>
-    <tr><td class="paramname">grayUB</td><td>返回生成的灰度值范围的上限，取值在 0 ~ 255 </td></tr>
-    <tr><td class="paramname">rangeMask</td><td><img src="color_binary.png" alt="" class="inline" title="Binary images"/> 返回选择范围的蒙版图像，其中白像素表示用于生成灰度范围的像素，可为空 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">image</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> 输入的图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td>鼠标位置（选择中的）像素的 x 坐标 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">y</td><td>鼠标位置（选择中的）像素的 y 坐标 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tolerance</td><td>生成灰度值范围时使用的最大容差值，即相较于选中点的灰度值的最大偏移量。 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">grayLB</td><td>返回生成的灰度值范围的下限，取值在 0 ~ 255 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">grayUB</td><td>返回生成的灰度值范围的上限，取值在 0 ~ 255 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">rangeMask</td><td><img src="color_binary.png" alt="" class="inline" title="Binary images"/> 返回选择范围的蒙版图像，其中白像素表示用于生成灰度范围的像素，可为空 </td></tr>
   </table>
   </dd>
 </dl>
@@ -382,7 +377,7 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 </div><div class="memdoc">
 <p>使用全局自适应阈值用于分割。自动基于整幅图像上的像素灰度值分布计算一个合适的阈值。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">blobPolarity</td><td><a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0baffd2c678a5a2ea661de262d51223adf3">LPVBlackOnWhite </a> 表示灰度值小于全局自适应阈值的像素组成斑点对象, <a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0bac595c6b549ecbabb1dbb431e374b02ad">LPVWhiteOnBlack </a> 则相反。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">blobPolarity</td><td><a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0baffd2c678a5a2ea661de262d51223adf3">LPVBlackOnWhite </a> 表示灰度值小于全局自适应阈值的像素组成斑点对象, <a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0bac595c6b549ecbabb1dbb431e374b02ad">LPVWhiteOnBlack </a> 则相反。 </td></tr>
   </table>
   </dd>
 </dl>
@@ -420,11 +415,11 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
         </tr>
       </table>
 </div><div class="memdoc">
-<p>使用局部自适应阈值用于分割。自动基于每个像素所在的 \(blockWidth \times blockHeight\) 范围内的像素灰度值分布，为每个位置计算一个合适的阈值，再减去 bias 作为最终的阈值。 </p><dl class="params"><dt>参数</dt><dd>
+<p>使用局部自适应阈值用于分割。自动基于每个像素所在的 \( blockWidth \times blockHeight \) 范围内的像素灰度值分布 为每个位置计算一个合适的阈值，再减去 bias 作为最终的阈值。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">blobPolarity</td><td><a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0baffd2c678a5a2ea661de262d51223adf3">LPVBlackOnWhite </a> 表示灰度值小于全局自适应阈值的像素组成斑点对象, <a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0bac595c6b549ecbabb1dbb431e374b02ad">LPVWhiteOnBlack </a> 则相反。 </td></tr>
-    <tr><td class="paramname">blockSize</td><td>局部区域的尺寸，需要是一个奇数，如 3, 5, 7 等。 </td></tr>
-    <tr><td class="paramname">bias</td><td>基于该位置的局部自适应阈值计算，用于生成阈值 \( t&#39; = t - bias \). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">blobPolarity</td><td><a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0baffd2c678a5a2ea661de262d51223adf3">LPVBlackOnWhite </a> 表示灰度值小于全局自适应阈值的像素组成斑点对象, <a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0bac595c6b549ecbabb1dbb431e374b02ad">LPVWhiteOnBlack </a> 则相反。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">blockSize</td><td>局部区域的尺寸，需要是一个奇数，如 3, 5, 7 等。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bias</td><td>基于该位置的局部自适应阈值计算，用于生成阈值 \( t&#39; = t - bias \). </td></tr>
   </table>
   </dd>
 </dl>
@@ -450,7 +445,7 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 用于提高斑点定位的鲁棒性和角度。<br  />
 比如，若斑点的灰度值范围为 [100, 200]，软阈值范围为 5，则 [0, 95] 和 [205, 255] 为背景范围，[105, 195] 为前景斑点范围， [96, 104] 的范围按照 0.1 ~ 0.9 的权重属于前景斑点的范围，[196, 204] 的范围按照 0.9 ~ 0.1 的权重属于前景斑点的范围。 软阈值配置后，斑点分析得到斑点对象将使用软蒙版表示前景，软蒙版中的前景像素基于其权重值影响斑点的几何和图像属性计算，如重心等。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">softRange</td><td>软阈值范围，生成 [t - softRange, t + softRange] 范围。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">softRange</td><td>软阈值范围，生成 [t - softRange, t + softRange] 范围。 </td></tr>
   </table>
   </dd>
 </dl>
@@ -474,7 +469,7 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 </div><div class="memdoc">
 <p>新增一个可选的斑点过滤器，斑点结果需满足过滤器中的至少其中一个。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">filter</td><td>新增的斑点过滤器 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">filter</td><td>新增的斑点过滤器 </td></tr>
   </table>
   </dd>
 </dl>
@@ -532,14 +527,14 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 </div><div class="memdoc">
 <p>在输入的图像和指定的区域中进行斑点分析 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">img</td><td>输入的图像。图像类型需与当前斑点分析工具的模式匹配，即灰度斑点输入的图像需为灰度图。 若不匹配，我们将在算法内部基于当前模式，自动对图像进行转换。 </td></tr>
-    <tr><td class="paramname">region</td><td>输入的区域 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>输入的图像。图像类型需与当前斑点分析工具的模式匹配，即灰度斑点输入的图像需为灰度图。 若不匹配，我们将在算法内部基于当前模式，自动对图像进行转换。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">region</td><td>输入的区域 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">results</td><td>返回斑点分析结果 </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>返回值</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">results</td><td>返回斑点分析结果 </td></tr>
     <tr><td class="paramname">error</td><td>返回错误码 </td></tr>
   </table>
   </dd>
@@ -574,13 +569,8 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 </div><div class="memdoc">
 <p>预览输入图像在当前斑点分析配置下的二值化蒙版 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">img</td><td>输入的图像。图像类型需与当前斑点分析工具的模式匹配，即灰度斑点输入的图像需为灰度图。 若不匹配，我们将在算法内部基于当前模式，自动对图像进行转换。 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>返回值</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">outputImg</td><td><img src="color_binary.png" alt="" class="inline" title="Binary images"/> 返回预览蒙版图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>输入的图像。图像类型需与当前斑点分析工具的模式匹配，即灰度斑点输入的图像需为灰度图。 若不匹配，我们将在算法内部基于当前模式，自动对图像进行转换。 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">outputImg</td><td><img src="color_binary.png" alt="" class="inline" title="Binary images"/> 返回预览蒙版图像 </td></tr>
   </table>
   </dd>
 </dl>
@@ -615,8 +605,8 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 <p>添加斑点对象的灰度值范围。若像素的灰度值在该范围内，将被视为前景像素，参与生成斑点连通域。<br  />
 这表示该斑点分析工具为彩色模式，在此之前设置的灰度斑点颜色范围将被清空。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">colorLB</td><td>颜色值范围的下限。其通道顺序和颜色空间与检测图像一致。 </td></tr>
-    <tr><td class="paramname">colorUB</td><td>颜色值范围的上限。其通道顺序和颜色空间与检测图像一致。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">colorLB</td><td>颜色值范围的下限。其通道顺序和颜色空间与检测图像一致。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">colorUB</td><td>颜色值范围的上限。其通道顺序和颜色空间与检测图像一致。 </td></tr>
   </table>
   </dd>
 </dl>
@@ -652,8 +642,8 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 <p>添加背景的灰度值范围。若像素的灰度值在该范围内，将被视为背景，其他像素则为前景。<br  />
 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">colorLB</td><td>颜色值范围的下限。其通道顺序和颜色空间与检测图像一致。 </td></tr>
-    <tr><td class="paramname">colorUB</td><td>颜色值范围的上限。其通道顺序和颜色空间与检测图像一致。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">colorLB</td><td>颜色值范围的下限。其通道顺序和颜色空间与检测图像一致。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">colorUB</td><td>颜色值范围的上限。其通道顺序和颜色空间与检测图像一致。 </td></tr>
   </table>
   </dd>
 </dl>
@@ -742,18 +732,13 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 </div><div class="memdoc">
 <p>基于输入的图像和给定的像素坐标，自动生成一个灰度值范围，可用于添加为前景或背景范围。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">image</td><td><img src="color_bgr.png" alt="" class="inline" title="Color images"/> 输入的图像 </td></tr>
-    <tr><td class="paramname">x</td><td>鼠标位置（选择中的）像素的 x 坐标 </td></tr>
-    <tr><td class="paramname">y</td><td>鼠标位置（选择中的）像素的 y 坐标 </td></tr>
-    <tr><td class="paramname">tolerance</td><td>生成灰度值范围时使用的最大容差值，即相较于选中点的灰度值的最大偏移量。 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>返回值</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">colorLB</td><td>返回生成的颜色值范围的下限。其通道顺序和颜色空间与检测图像一致。 </td></tr>
-    <tr><td class="paramname">colorUB</td><td>返回生成的颜色值范围的上限。其通道顺序和颜色空间与检测图像一致。 </td></tr>
-    <tr><td class="paramname">rangeMask</td><td><img src="color_binary.png" alt="" class="inline" title="Binary images"/> 返回选择范围的蒙版图像，其中白像素表示用于生成灰度范围的像素，可为空 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">image</td><td><img src="color_bgr.png" alt="" class="inline" title="Color images"/> 输入的图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td>鼠标位置（选择中的）像素的 x 坐标 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">y</td><td>鼠标位置（选择中的）像素的 y 坐标 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tolerance</td><td>生成灰度值范围时使用的最大容差值，即相较于选中点的灰度值的最大偏移量。 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">colorLB</td><td>返回生成的颜色值范围的下限。其通道顺序和颜色空间与检测图像一致。 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">colorUB</td><td>返回生成的颜色值范围的上限。其通道顺序和颜色空间与检测图像一致。 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">rangeMask</td><td><img src="color_binary.png" alt="" class="inline" title="Binary images"/> 返回选择范围的蒙版图像，其中白像素表示用于生成灰度范围的像素，可为空 </td></tr>
   </table>
   </dd>
 </dl>

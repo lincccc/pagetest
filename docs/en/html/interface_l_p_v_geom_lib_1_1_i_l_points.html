@@ -20,7 +20,7 @@
     jax: ["input/TeX","output/HTML-CSS"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.7/MathJax.js"></script>
 <link href="lpv_stylesheet.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-custom.css" rel="stylesheet" type="text/css"/>
@@ -210,7 +210,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Fetch one point with the given index. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">index</td><td>The input index, it should be a 0-based number smaller than total count. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>The input index, it should be a 0-based number smaller than total count. </td></tr>
   </table>
   </dd>
 </dl>
@@ -250,8 +250,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Add a point to the collection. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">x</td><td>The x-coordinates of the new point </td></tr>
-    <tr><td class="paramname">y</td><td>The y-coordinates of the new point </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td>The x-coordinates of the new point </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">y</td><td>The y-coordinates of the new point </td></tr>
   </table>
   </dd>
 </dl>
@@ -332,8 +332,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Set the points </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">xs</td><td>The x-coordinates of the points </td></tr>
-    <tr><td class="paramname">ys</td><td>The y-coordinates of the points </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">xs</td><td>The x-coordinates of the points </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ys</td><td>The y-coordinates of the points </td></tr>
   </table>
   </dd>
 </dl>
@@ -355,9 +355,9 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Add the points in the given collection to this. </p><dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">points</td><td>The input points </td></tr>
+<p>Add the points in the given collection to this. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">points</td><td>The input points </td></tr>
   </table>
   </dd>
 </dl>
@@ -403,10 +403,10 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Remove some points in the collection which is in the given range. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">lbX</td><td>The lower bound of the x-coordinate to be removed </td></tr>
-    <tr><td class="paramname">ubX</td><td>The upper bound of the x-coordinate to be removed </td></tr>
-    <tr><td class="paramname">lbY</td><td>The lower bound of the y-coordinate to be removed </td></tr>
-    <tr><td class="paramname">ubY</td><td>The upper bound of the y-coordinate to be removed </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">lbX</td><td>The lower bound of the x-coordinate to be removed </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ubX</td><td>The upper bound of the x-coordinate to be removed </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">lbY</td><td>The lower bound of the y-coordinate to be removed </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ubY</td><td>The upper bound of the y-coordinate to be removed </td></tr>
   </table>
   </dd>
 </dl>
@@ -440,14 +440,14 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Translate the points by the given offset and return a new collection of points </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">offsetX</td><td>The x-coordinate of the offset </td></tr>
-    <tr><td class="paramname">offsetY</td><td>The y-coordinate of the offset </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">offsetX</td><td>The x-coordinate of the offset </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">offsetY</td><td>The y-coordinate of the offset </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">result</td><td>Return the new collection points </td></tr>
+    <tr><td class="paramname">results</td><td>Return the new collection points </td></tr>
   </table>
   </dd>
 </dl>
@@ -481,14 +481,14 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Scale the points by the given factor and return a new collection of points </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">factorX</td><td>The scale factor of x-coordinate </td></tr>
-    <tr><td class="paramname">factorY</td><td>The scale factor of y-coordinate </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">factorX</td><td>The scale factor of x-coordinate </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">factorY</td><td>The scale factor of y-coordinate </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">result</td><td>Return the new collection of points </td></tr>
+    <tr><td class="paramname">results</td><td>Return the new collection of points </td></tr>
   </table>
   </dd>
 </dl>
@@ -511,7 +511,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Get whether this is non-empty collection </p><dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">val</td><td>True for valid, false otherwise. </td></tr>
+    <tr><td class="paramname">val</td><td>Return true for valid, false otherwise. </td></tr>
   </table>
   </dd>
 </dl>
@@ -532,12 +532,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get the bounding rectangle of all the points </p><dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">val</td><td>Return the bounding rectangle </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Get the bounding rectangle of all the points </p>
 
 </div>
 </div>
@@ -555,12 +550,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get the rotated bounding rectangle of all the points </p><dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">val</td><td>Return the rotated bounding rectangle </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Get the rotated bounding rectangle of all the points </p>
 
 </div>
 </div>
@@ -578,12 +568,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get the bounding circle of all the points </p><dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">val</td><td>Return the bounding circle </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Get the bounding circle of all the points </p>
 
 </div>
 </div>
@@ -601,12 +586,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get the bounding convex hull of all the points </p><dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">val</td><td>Return the bounding convex hull </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Get the bounding convex hull of all the points </p>
 
 </div>
 </div>
@@ -637,8 +617,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Fit a line which minimize the total distance between the result and all the points. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">fitDistThreshold</td><td>Define the minimum distance between the result and a point. Points with bigger distance than this value will be treated as out-lier then be excluded from the fitting. Pass in negative value to bypass the out-lier filtering. </td></tr>
-    <tr><td class="paramname">fitCountThreshold</td><td>Define the minimum count of points contribute to a valid fitting result. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fitDistThreshold</td><td>Define the minimum distance between the result and a point. Points with bigger distance than this value will be treated as out-lier then be excluded from the fitting. Pass in negative value to bypass the out-lier filtering. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fitCountThreshold</td><td>Define the minimum count of points contribute to a valid fitting result. </td></tr>
   </table>
   </dd>
 </dl>
@@ -679,8 +659,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Fit a circle which minimize the total distance between the result and all the points. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">fitDistThreshold</td><td>Define the minimum distance between the result and a point. Points with bigger distance than this value will be treated as out-lier then be excluded from the fitting. Pass in negative value to bypass the out-lier filtering. </td></tr>
-    <tr><td class="paramname">fitCountThreshold</td><td>Define the minimum count of points contribute to a valid fitting result. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fitDistThreshold</td><td>Define the minimum distance between the result and a point. Points with bigger distance than this value will be treated as out-lier then be excluded from the fitting. Pass in negative value to bypass the out-lier filtering. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fitCountThreshold</td><td>Define the minimum count of points contribute to a valid fitting result. </td></tr>
   </table>
   </dd>
 </dl>
@@ -708,13 +688,11 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get the center, it's averaging position of the all points, as: \((\overline{x}, \overline{y})\) </p><dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">val</td><td>Return the center point </td></tr>
-  </table>
-  </dd>
-</dl>
-
+<p>Get the center, it's averaging position of the all points, as:<br  />
+ </p><p class="formulaDsp">
+\[ (\overline{x}, \overline{y}) \]
+</p>
+ 
 </div>
 </div>
 <a id="adf73aae50b248c203b9be96829f08389"></a>
@@ -734,13 +712,13 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Calculate the distance from each point in the collection to the input point, report all the distances. The distance is defined as <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_point.html#a166665055e1c16de05a251280d45d04e">ILPoint::Distance()</a>. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">point</td><td>The input point </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">point</td><td>The input point </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">val</td><td>Return all the distances, in the same order as the points. </td></tr>
+    <tr><td class="paramname">vals</td><td>Return all the distances, in the same order as the points. </td></tr>
   </table>
   </dd>
 </dl>
@@ -764,13 +742,13 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Calculate the distance from each point in the collection to the input line, report all the distances. The distance is defined as <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_line.html#a5e55bbb16eaad0742ba2a81a41a418a4">ILLine::Perpendicular()</a>. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">line</td><td>The input line. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">line</td><td>The input line. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">val</td><td>Return all the distances, in the same order as the points. </td></tr>
+    <tr><td class="paramname">vals</td><td>Return all the distances, in the same order as the points. </td></tr>
   </table>
   </dd>
 </dl>
@@ -804,14 +782,14 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Calculate the distance from each point in the collection to the input polygon, report all the distances. The distance is defined as <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html#a43e0f950a3eacc9e431cb98a08a27291">ILPolygon::DistanceToPoint()</a>. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">polygon</td><td>The input polygon </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">polygon</td><td>The input polygon </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">rootPoints</td><td>Output the root points on the polygon </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">rootPoint</td><td>Output the root point on the polygon </td></tr>
-    <tr><td class="paramname">val</td><td>Return all the distances, in the same order as the points. </td></tr>
+    <tr><td class="paramname">vals</td><td>Return all the distances, in the same order as the points. </td></tr>
   </table>
   </dd>
 </dl>
@@ -845,13 +823,14 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Calculate the distance from each point in the collection to the nearest point in the input points, report all the distances and the index of the nearest point. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">points</td><td>The input points </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">points</td><td>The input points </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">indexes</td><td>Output the index of the nearest point in the input </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">val</td><td>Return all the distances, in the same order as the points. </td></tr>
+    <tr><td class="paramname">vals</td><td>Return all the distances, in the same order as the points. </td></tr>
   </table>
   </dd>
 </dl>
@@ -885,8 +864,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Calculate the distance from each point in the collection to the input point, report the aggregated metric such as maximum, minimum or average distance. The distance is defined as <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_point.html#a166665055e1c16de05a251280d45d04e">ILPoint::Distance()</a>. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">point</td><td>The input point </td></tr>
-    <tr><td class="paramname">aggType</td><td>The aggregation type </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">point</td><td>The input point </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aggType</td><td>The aggregation type </td></tr>
   </table>
   </dd>
 </dl>
@@ -926,8 +905,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Calculate the distance from each point in the collection to the input line, report the aggregated metric such as maximum, minimum or average distance. The distance is defined as <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_line.html#a5e55bbb16eaad0742ba2a81a41a418a4">ILLine::Perpendicular()</a>. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">line</td><td>The input Line </td></tr>
-    <tr><td class="paramname">aggType</td><td>The aggregation type </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">line</td><td>The input Line </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aggType</td><td>The aggregation type </td></tr>
   </table>
   </dd>
 </dl>
@@ -967,8 +946,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Calculate the distance from each point in the collection to the input polygon, report the aggregated metric such as maximum, minimum or average distance. The distance is defined as <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html#a43e0f950a3eacc9e431cb98a08a27291">ILPolygon::DistanceToPoint()</a>. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">polygon</td><td>The input polygon </td></tr>
-    <tr><td class="paramname">aggType</td><td>The aggregation type </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">polygon</td><td>The input polygon </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aggType</td><td>The aggregation type </td></tr>
   </table>
   </dd>
 </dl>
@@ -1008,8 +987,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Calculate the distance from each point in the collection to the nearest point in the input points, report the aggregated metric such as maximum, minimum or average distance. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">points</td><td>The input points </td></tr>
-    <tr><td class="paramname">aggType</td><td>The aggregation type </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">points</td><td>The input points </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aggType</td><td>The aggregation type </td></tr>
   </table>
   </dd>
 </dl>
@@ -1039,7 +1018,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Add all points in the given region to the collection. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">region</td><td>The input region </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">region</td><td>The input region </td></tr>
   </table>
   </dd>
 </dl>
@@ -1073,8 +1052,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Get all the points </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">xs</td><td>The x-coordinates of the points, you should get the count and reserve the array outside. </td></tr>
-    <tr><td class="paramname">ys</td><td>The y-coordinates of the points </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">xs</td><td>The x-coordinates of the points, you should get the count and reserve the array outside. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ys</td><td>The y-coordinates of the points </td></tr>
   </table>
   </dd>
 </dl>

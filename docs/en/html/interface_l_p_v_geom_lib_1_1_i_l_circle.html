@@ -20,7 +20,7 @@
     jax: ["input/TeX","output/HTML-CSS"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.7/MathJax.js"></script>
 <link href="lpv_stylesheet.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-custom.css" rel="stylesheet" type="text/css"/>
@@ -188,7 +188,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 </div><div class="memdoc">
 <p>Draw the circle on HDC. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">bFill</td><td>Whether to fill the circle using current brush. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bFill</td><td>Whether to fill the circle using current brush. </td></tr>
   </table>
   </dd>
 </dl>
@@ -229,9 +229,9 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 </div><div class="memdoc">
 <p>Set placement of the circle </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">x</td><td>The x-coordinate of the circle's center point </td></tr>
-    <tr><td class="paramname">y</td><td>The y-coordinate of the circle's center point </td></tr>
-    <tr><td class="paramname">r</td><td>The radius of the circle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td>The x-coordinate of the circle's center point </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">y</td><td>The y-coordinate of the circle's center point </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">r</td><td>The radius of the circle </td></tr>
   </table>
   </dd>
 </dl>
@@ -265,8 +265,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 </div><div class="memdoc">
 <p>Translate the circle by the given offset and return a new circle </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">offsetX</td><td>The x-coordinate of the offset </td></tr>
-    <tr><td class="paramname">offsetY</td><td>The y-coordinate of the offset </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">offsetX</td><td>The x-coordinate of the offset </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">offsetY</td><td>The y-coordinate of the offset </td></tr>
   </table>
   </dd>
 </dl>
@@ -295,7 +295,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 </div><div class="memdoc">
 <p>Get whether this is a well-initialized circle </p><dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">val</td><td>True for valid, false otherwise. </td></tr>
+    <tr><td class="paramname">val</td><td>Return true for valid, false otherwise. </td></tr>
   </table>
   </dd>
 </dl>
@@ -319,7 +319,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 </div><div class="memdoc">
 <p>Determines whether the point is inside this circle, outside, or lies on the edge </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">point</td><td>The input point </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">point</td><td>The input point </td></tr>
   </table>
   </dd>
 </dl>
@@ -349,7 +349,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 </div><div class="memdoc">
 <p>Evaluate whether this and the input circle are concentric </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">circle</td><td>The input circle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">circle</td><td>The input circle </td></tr>
   </table>
   </dd>
 </dl>
@@ -387,10 +387,15 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Determines whether this circle intersects with the given line. Return the intersection points if yes. </p><dl class="retval"><dt>Return values</dt><dd>
+<p>Determines whether this circle intersects with the given line. Return the intersection points if yes. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">line</td><td>The input line </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">intersectPoints</td><td>Output the intersection points, it should be an empty set for not-intersected case, or 1 point for tangent case, or 2 points for intersected case. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">line</td><td>The input line </td></tr>
-    <tr><td class="paramname">intersectPoints</td><td>Output the intersection points, it should be an empty set for not-intersected case, or 1 point for tangent case, or 2 points for intersected case. </td></tr>
     <tr><td class="paramname">type</td><td>Return the intersection type depends on the count of intersection points which is on the line segment, <a class="el" href="namespace_l_p_v_geom_lib.html#a9e95444de4a6d45da839995006de7ddfac05ab634cb5dc2ab6e7bfb964fd85af6">Bounded </a> (2), <a class="el" href="namespace_l_p_v_geom_lib.html#a9e95444de4a6d45da839995006de7ddfa11a4685b4ba41e4a96d9394b47e85a88">Partial </a> (1) or <a class="el" href="namespace_l_p_v_geom_lib.html#a9e95444de4a6d45da839995006de7ddfa3894cd1ab4d330314a4c8e807e77cf44">Unbounded </a> (0). </td></tr>
   </table>
   </dd>
@@ -413,12 +418,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get the center point of the circle </p><dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">val</td><td>Return the center point </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Get the center point of the circle </p>
 
 </div>
 </div>
@@ -436,12 +436,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Generate a circle region use the circle object </p><dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">val</td><td>Return the circle region </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Generate a circle region use the circle object </p>
 
 </div>
 </div>
@@ -472,8 +467,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 </div><div class="memdoc">
 <p>Generate an annulus region use the circle object with the given inside and outside expansion </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">inExp</td><td>The expansion pixels from the circle's placement that generate the inner circle of the annulus region </td></tr>
-    <tr><td class="paramname">outExp</td><td>The expansion pixels from the circle's placement that generate the inner circle of the annulus region </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">inExp</td><td>The expansion pixels from the circle's placement that generate the inner circle of the annulus region </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">outExp</td><td>The expansion pixels from the circle's placement that generate the inner circle of the annulus region </td></tr>
   </table>
   </dd>
 </dl>

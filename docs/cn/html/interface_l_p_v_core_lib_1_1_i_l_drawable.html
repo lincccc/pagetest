@@ -20,7 +20,7 @@
     jax: ["input/TeX","output/SVG"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.7/MathJax.js"></script>
 <link href="lpv_stylesheet.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-custom.css" rel="stylesheet" type="text/css"/>
@@ -144,7 +144,7 @@ Public 成员函数</h2></td></tr>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">((ILDrawable)m_roi).SetPenWidth(2);</div>
 <div class="line"><span class="comment">// or do it via LSystem object</span></div>
 <div class="line">m_sys.SetPen(m_roi, <a class="code" href="namespace_l_p_v_core_lib.html#a538e01db39d41ce04a34266c00d41f1f">LPVPenStyle</a>.LPVPenSolid, 1, <a class="code" href="namespace_l_p_v_core_lib.html#a2621143506dcb8d80e6b3892ecfd8a7c">LPVColor</a>.LPVYellow);</div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html_a2621143506dcb8d80e6b3892ecfd8a7c"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a2621143506dcb8d80e6b3892ecfd8a7c">LPVCoreLib::LPVColor</a></div><div class="ttdeci">LPVColor</div><div class="ttdoc">该枚举表示一些常用的颜色</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:845</div></div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a2621143506dcb8d80e6b3892ecfd8a7c"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a2621143506dcb8d80e6b3892ecfd8a7c">LPVCoreLib::LPVColor</a></div><div class="ttdeci">LPVColor</div><div class="ttdoc">该枚举表示一些常用的颜色</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:851</div></div>
 <div class="ttc" id="anamespace_l_p_v_core_lib_html_a538e01db39d41ce04a34266c00d41f1f"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a538e01db39d41ce04a34266c00d41f1f">LPVCoreLib::LPVPenStyle</a></div><div class="ttdeci">LPVPenStyle</div><div class="ttdoc">该枚举类型表示绘制路径用的描边风格</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:521</div></div>
 </div><!-- fragment --> </div>  </div><h2 class="groupheader">成员函数说明</h2>
 <a id="ac5d9a43892c40f2791584cb242e1a565"></a>
@@ -180,9 +180,9 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>设置用于绘制路径的描边笔。如果不设置，默认会用一个宽度为1个像素的绿色实心描边笔。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">penStyle</td><td>描边笔的风格 </td></tr>
-    <tr><td class="paramname">penWidth</td><td>描边笔的宽度，至少为1个像素宽度 </td></tr>
-    <tr><td class="paramname">penColor</td><td>描边笔的颜色，查看 <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_system.html#a5d4476f2a04f551b0912272b94dd3565">ILSystem::GetColorRef</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">penStyle</td><td>描边笔的风格 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">penWidth</td><td>描边笔的宽度，至少为1个像素宽度 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">penColor</td><td>描边笔的颜色，查看 <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_system.html#a5d4476f2a04f551b0912272b94dd3565">ILSystem::GetColorRef</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -264,7 +264,7 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>设置用于填充的笔刷颜色 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">brushColor</td><td>笔刷颜色，也可以查看 <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_system.html#a5d4476f2a04f551b0912272b94dd3565">ILSystem::GetColorRef</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">brushColor</td><td>笔刷颜色，也可以查看 <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_system.html#a5d4476f2a04f551b0912272b94dd3565">ILSystem::GetColorRef</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -328,13 +328,13 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>设置要绘制的文本的字体。如果设置 FontFamily 是 Arial 和 bold，则会优先搜索 Arial-bold 字体， 如果找不到，就使用 Arial 字体并自动生成加粗后的效果。如果不设置任何字体属性，会使用系统默认字体，通常是 MS Sans Serif。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">fontFamily</td><td>字体家族名称，比如 "Arial", "Tahomo", 和 "Sans-Serif" 等 </td></tr>
-    <tr><td class="paramname">fontHeight</td><td>逻辑单位（比如毫米）的字符或字符单元的高度 </td></tr>
-    <tr><td class="paramname">fontColor</td><td>文本颜色，也可以查看 <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_system.html#a5d4476f2a04f551b0912272b94dd3565">ILSystem::GetColorRef</a> </td></tr>
-    <tr><td class="paramname">bold</td><td><b>文本加粗</b> </td></tr>
-    <tr><td class="paramname">italic</td><td><em>斜体字符</em> </td></tr>
-    <tr><td class="paramname">underline</td><td>字符下划线 </td></tr>
-    <tr><td class="paramname">strikeOut</td><td>删除线 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fontFamily</td><td>字体家族名称，比如 "Arial", "Tahomo", 和 "Sans-Serif" 等 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fontHeight</td><td>逻辑单位（比如毫米）的字符或字符单元的高度 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fontColor</td><td>文本颜色，也可以查看 <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_system.html#a5d4476f2a04f551b0912272b94dd3565">ILSystem::GetColorRef</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bold</td><td><b>文本加粗</b> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">italic</td><td><em>斜体字符</em> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">underline</td><td>字符下划线 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">strikeOut</td><td>删除线 </td></tr>
   </table>
   </dd>
 </dl>

@@ -20,7 +20,7 @@
     jax: ["input/TeX","output/SVG"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.7/MathJax.js"></script>
 <link href="lpv_stylesheet.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-custom.css" rel="stylesheet" type="text/css"/>
@@ -124,7 +124,7 @@ Public 成员函数</h2></td></tr>
  <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">ILImageMorphPtr m_morph_op(__uuidof(LImageMorph));</div>
 <div class="line">m_morph_op-&gt;SetMorphShape(<a class="code" href="namespace_l_p_v_img_proc_lib.html#a1b8145ed8b707b1177c0ab8c0bc170abab2f17e0c535c0d0d70fdd2b219936035">LPVMorphRect</a>, 3, 3);</div>
 <div class="line">m_morph_op-&gt;Close(m_img, m_result_img);</div>
-<div class="ttc" id="anamespace_l_p_v_img_proc_lib_html_a1b8145ed8b707b1177c0ab8c0bc170abab2f17e0c535c0d0d70fdd2b219936035"><div class="ttname"><a href="namespace_l_p_v_img_proc_lib.html#a1b8145ed8b707b1177c0ab8c0bc170abab2f17e0c535c0d0d70fdd2b219936035">LPVImgProcLib::LPVMorphRect</a></div><div class="ttdeci">@ LPVMorphRect</div><div class="ttdef"><b>Definition:</b> LPVImgProc.idl:61</div></div>
+<div class="ttc" id="anamespace_l_p_v_img_proc_lib_html_a1b8145ed8b707b1177c0ab8c0bc170abab2f17e0c535c0d0d70fdd2b219936035"><div class="ttname"><a href="namespace_l_p_v_img_proc_lib.html#a1b8145ed8b707b1177c0ab8c0bc170abab2f17e0c535c0d0d70fdd2b219936035">LPVImgProcLib::LPVMorphRect</a></div><div class="ttdeci">@ LPVMorphRect</div><div class="ttdef"><b>Definition:</b> LPVImgProc.idl:62</div></div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LImageMorph m_morph_op = <span class="keyword">new</span> LImageMorph();</div>
 <div class="line">m_morph_op.SetMorphShape(<a class="code" href="namespace_l_p_v_img_proc_lib.html#a1b8145ed8b707b1177c0ab8c0bc170ab">LPVMorphShape</a>.LPVMorphRect, 3, 3);</div>
 <div class="line">m_morph_op.Close(m_img, m_result_img);</div>
@@ -163,9 +163,9 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>设置形态学算子中所使用的结构元，可指定结构元的形状和尺寸。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">shape</td><td>结构元的形状 </td></tr>
-    <tr><td class="paramname">kWidth</td><td>结构元的宽度，需要是一个奇数，如 3, 5, 7 等。 </td></tr>
-    <tr><td class="paramname">kHeight</td><td>结构元的高度，需要是一个奇数，如 3, 5, 7 等。若设置为 0，则使用与宽度相同。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">shape</td><td>结构元的形状 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">kWidth</td><td>结构元的宽度，需要是一个奇数，如 3, 5, 7 等。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">kHeight</td><td>结构元的高度，需要是一个奇数，如 3, 5, 7 等。若设置为 0，则使用与宽度相同。 </td></tr>
   </table>
   </dd>
 </dl>
@@ -203,13 +203,8 @@ Public 成员函数</h2></td></tr>
 </p>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">img</td><td>输入图像 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>返回值</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">result</td><td>输出结果图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>输入图像 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>输出结果图像 </td></tr>
   </table>
   </dd>
 </dl>
@@ -247,13 +242,8 @@ Public 成员函数</h2></td></tr>
 </p>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">img</td><td>输入图像 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>返回值</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">result</td><td>输出结果图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>输入图像 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>输出结果图像 </td></tr>
   </table>
   </dd>
 </dl>
@@ -287,13 +277,8 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>高低帽，每个像素输出高帽结果或底帽结果中的最大值。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">img</td><td>输入图像 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>返回值</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">result</td><td>输出结果图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>输入图像 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>输出结果图像 </td></tr>
   </table>
   </dd>
 </dl>
@@ -331,13 +316,8 @@ Public 成员函数</h2></td></tr>
 </p>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">img</td><td>输入图像 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>返回值</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">result</td><td>输出结果图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>输入图像 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>输出结果图像 </td></tr>
   </table>
   </dd>
 </dl>
@@ -375,13 +355,8 @@ Public 成员函数</h2></td></tr>
 </p>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">img</td><td>输入图像 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>返回值</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">result</td><td>输出结果图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>输入图像 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>输出结果图像 </td></tr>
   </table>
   </dd>
 </dl>
@@ -415,17 +390,12 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>膨胀，输出结果中的每个像素为其结构元范围内领域像素的灰度值中的最大值。</p>
 <p class="formulaDsp">
-\[ I&#39;(x,y) = \max _{(i,j): \, \texttt{element} (i,j) \ne0 } I (x+i,y+j) \]
+\[ I&#39;(x,y) = \max _{(i,j): , \texttt{element} (i,j) \ne0 } I (x+i,y+j) \]
 </p>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">img</td><td>输入图像 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>返回值</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">result</td><td>输出结果图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>输入图像 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>输出结果图像 </td></tr>
   </table>
   </dd>
 </dl>
@@ -459,17 +429,12 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>腐蚀，输出结果中的每个像素为其结构元范围内领域像素的灰度值中的最小值。</p>
 <p class="formulaDsp">
-\[ I&#39;(x,y) = \min _{(i,j): \, \texttt{element} (i,j) \ne0 } I (x+i,y+j) \]
+\[ I&#39;(x,y) = \min _{(i,j): , \texttt{element} (i,j) \ne0 } I (x+i,y+j) \]
 </p>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">img</td><td>输入图像 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>返回值</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">result</td><td>输出结果图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>输入图像 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>输出结果图像 </td></tr>
   </table>
   </dd>
 </dl>
@@ -507,13 +472,8 @@ Public 成员函数</h2></td></tr>
 </p>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">img</td><td>输入图像 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>返回值</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">result</td><td>输出结果图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>输入图像 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>输出结果图像 </td></tr>
   </table>
   </dd>
 </dl>

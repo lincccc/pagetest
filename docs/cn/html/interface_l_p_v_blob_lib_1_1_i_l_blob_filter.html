@@ -20,7 +20,7 @@
     jax: ["input/TeX","output/SVG"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.7/MathJax.js"></script>
 <link href="lpv_stylesheet.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-custom.css" rel="stylesheet" type="text/css"/>
@@ -174,9 +174,9 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>配置过滤器中的数值属性特征及其上下限。可在一个过滤其中定义多个联合的过滤配置。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">feature</td><td>需过滤的数值属性特征，查看 LPVBlobFeatures </td></tr>
-    <tr><td class="paramname">lowerBound</td><td>过滤值的下限，负值表示没有下限。 </td></tr>
-    <tr><td class="paramname">upperBound</td><td>过滤值的上限，负值表示没有上限。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">feature</td><td>需过滤的数值属性特征，查看 LPVBlobFeatures </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">lowerBound</td><td>过滤值的下限，负值表示没有下限。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">upperBound</td><td>过滤值的上限，负值表示没有上限。 </td></tr>
   </table>
   </dd>
 </dl>
@@ -200,7 +200,7 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>在一个斑点对象上应用当前过滤器。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">blob</td><td>输入的斑点对象 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">blob</td><td>输入的斑点对象 </td></tr>
   </table>
   </dd>
 </dl>
@@ -230,7 +230,7 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>过滤一个斑点对象集合，生成符合过滤条件的一个新的斑点对象集合 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">blobResults</td><td>输入的斑点对象集合 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">blobResults</td><td>输入的斑点对象集合 </td></tr>
   </table>
   </dd>
 </dl>

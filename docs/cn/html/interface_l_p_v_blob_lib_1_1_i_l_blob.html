@@ -20,7 +20,7 @@
     jax: ["input/TeX","output/SVG"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.7/MathJax.js"></script>
 <link href="lpv_stylesheet.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-custom.css" rel="stylesheet" type="text/css"/>
@@ -189,7 +189,7 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drawFlags</td><td>控制斑点绘制内容，使用方式请查阅 LPVBlobDrawFlags </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">drawFlags</td><td>控制斑点绘制内容，使用方式请查阅 LPVBlobDrawFlags </td></tr>
   </table>
   </dd>
 </dl>
@@ -247,8 +247,8 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>根据输入的区域对象，生成一个斑点对象 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">region</td><td>输入的区域对象 </td></tr>
-    <tr><td class="paramname">image</td><td>输入的图像，绑定到该斑点，用于计算图像相关的属性特征，如亮度、对比度、清晰度等。可为空。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">region</td><td>输入的区域对象 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">image</td><td>输入的图像，绑定到该斑点，用于计算图像相关的属性特征，如亮度、对比度、清晰度等。可为空。 </td></tr>
   </table>
   </dd>
 </dl>
@@ -290,8 +290,14 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>获取斑点的角度。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">alwaysUp</td><td>默认值为 False，则为该斑点的包围旋转矩形长轴方向的角度，在 (-90, 90) 范围内。<br  />
+    <tr><td class="paramdir">[in]</td><td class="paramname">alwaysUp</td><td>默认值为 False，则为该斑点的包围旋转矩形长轴方向的角度，在 (-90, 90) 范围内。<br  />
 若为 True，则总是返回包围旋转矩形朝上的轴的角度，无论是长轴还是短轴。在无法稳定区分斑点的长短轴时使用，如正方形或圆形斑点。 总是朝上的角度，取值范围在 (-135, -45)。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">val</td><td>返回角度值 </td></tr>
   </table>
   </dd>
 </dl>
@@ -315,7 +321,13 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>计算斑点的数值类型的属性特征 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">feature</td><td>指定特征的类型，查看 LPVBlobFeatures @reval pVal 返回属性特征的值 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">feature</td><td>指定特征的类型，查看 LPVBlobFeatures </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">val</td><td>返回属性特征的值 </td></tr>
   </table>
   </dd>
 </dl>
@@ -349,8 +361,14 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>计算斑点中像素亮度的统计值。仅当有图像绑定到该斑点时，可以计算。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">aggType</td><td>统计方式，查看 LPVAggregation </td></tr>
-    <tr><td class="paramname">percentage</td><td>设置统计像素在全部像素中的百分比（最高或最低）。正值表示统计数值最高的 X，负值表示统计数值最低的 X，0 表示统计所有像素。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aggType</td><td>统计方式，查看 LPVAggregation </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">percentage</td><td>设置统计像素在全部像素中的百分比（最高或最低）。正值表示统计数值最高的 X，负值表示统计数值最低的 X，0 表示统计所有像素。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">val</td><td>返回亮度统计值 </td></tr>
   </table>
   </dd>
 </dl>
@@ -384,8 +402,14 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>计算斑点中像素对比度的统计值。仅当有图像绑定到该斑点时，可以计算。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">aggType</td><td>统计方式，查看 LPVAggregation </td></tr>
-    <tr><td class="paramname">percentage</td><td>设置统计像素在全部像素中的百分比（最高或最低）。正值表示统计数值最高的 X，负值表示统计数值最低的 X，0 表示统计所有像素。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aggType</td><td>统计方式，查看 LPVAggregation </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">percentage</td><td>设置统计像素在全部像素中的百分比（最高或最低）。正值表示统计数值最高的 X，负值表示统计数值最低的 X，0 表示统计所有像素。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">val</td><td>返回对比度统计值 </td></tr>
   </table>
   </dd>
 </dl>
@@ -409,7 +433,7 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>绑定输入的图像到斑点，用于计算图像相关的属性特征，如亮度、对比度、清晰度等。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">image</td><td>输入的图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">image</td><td>输入的图像 </td></tr>
   </table>
   </dd>
 </dl>
@@ -430,13 +454,7 @@ Public 成员函数</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>计算斑点的包围矩形 </p><dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">val</td><td>返回的矩形 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html#af862abdfe54b18ccb7e3ddfee7766237">GetRotRect()</a>. </dd></dl>
+<p>计算斑点的包围矩形 </p><dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html#af862abdfe54b18ccb7e3ddfee7766237">GetRotRect()</a>. </dd></dl>
 
 </div>
 </div>
@@ -454,13 +472,7 @@ Public 成员函数</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>计算斑点的包围旋转矩形 </p><dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">val</td><td>返回旋转矩形 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html#a298cb1d21f02123b1b52dc1dd530e4e4">GetRect()</a>. </dd></dl>
+<p>计算斑点的包围旋转矩形 </p><dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html#a298cb1d21f02123b1b52dc1dd530e4e4">GetRect()</a>. </dd></dl>
 
 </div>
 </div>
@@ -478,13 +490,7 @@ Public 成员函数</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>获取斑点的外轮廓个数 </p><dl class="retval"><dt>返回值</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">val</td><td>返回个数 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html#a039b1190a5c107325664d30c346a9041">GetContour()</a>, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html#affc98cc748385ff11c7083d8b0c3c562">CountHole()</a> </dd></dl>
+<p>获取斑点的外轮廓个数 </p><dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html#a039b1190a5c107325664d30c346a9041">GetContour()</a>, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html#affc98cc748385ff11c7083d8b0c3c562">CountHole()</a> </dd></dl>
 
 </div>
 </div>
@@ -505,7 +511,12 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>获取指定索引对应的斑点外轮廓 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">index</td><td>输入指定的索引，从 0 开始但小于总数的数字 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>输入指定的索引，从 0 开始但小于总数的数字 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
     <tr><td class="paramname">val</td><td>返回外轮廓为一个多边形 </td></tr>
   </table>
   </dd>
@@ -528,13 +539,7 @@ Public 成员函数</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>获取斑点的孔洞个数 </p><dl class="retval"><dt>返回值</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">val</td><td>返回个数 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html#a4439092fc762f49f1f0650a813d8f41b">GetHole()</a>, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html#a3a90022b0fca4ee3d2f07374c8c74a58">CountContour()</a> </dd></dl>
+<p>获取斑点的孔洞个数 </p><dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html#a4439092fc762f49f1f0650a813d8f41b">GetHole()</a>, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html#a3a90022b0fca4ee3d2f07374c8c74a58">CountContour()</a> </dd></dl>
 
 </div>
 </div>
@@ -555,7 +560,12 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>获取指定索引对应的斑点孔洞轮廓 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">index</td><td>输入指定的索引，从 0 开始但小于总数的数字 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>输入指定的索引，从 0 开始但小于总数的数字 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
     <tr><td class="paramname">val</td><td>返回孔洞轮廓为一个多边形 </td></tr>
   </table>
   </dd>

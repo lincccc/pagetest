@@ -20,7 +20,7 @@
     jax: ["input/TeX","output/HTML-CSS"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.7/MathJax.js"></script>
 <link href="lpv_stylesheet.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-custom.css" rel="stylesheet" type="text/css"/>
@@ -103,15 +103,25 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
-<tr class="memitem:a5080d342b7871a79bc81bb98d4e5a331"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_barcode_lib.html#a8d35ae44acaae621a58bd6ac4cafb72f">LPVBarcodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#a5080d342b7871a79bc81bb98d4e5a331">Type</a><code> [get, set]</code></td></tr>
+<tr class="memitem:a5080d342b7871a79bc81bb98d4e5a331"><td class="memItemLeft" align="right" valign="top"><a id="a5080d342b7871a79bc81bb98d4e5a331"></a>
+<a class="el" href="namespace_l_p_v_barcode_lib.html#a8d35ae44acaae621a58bd6ac4cafb72f">LPVBarcodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#a5080d342b7871a79bc81bb98d4e5a331">Type</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a5080d342b7871a79bc81bb98d4e5a331"><td class="mdescLeft">&#160;</td><td class="mdescRight">The barcode symbologies for detection, it could be the combination of multiple symbologies. <br /></td></tr>
 <tr class="separator:a5080d342b7871a79bc81bb98d4e5a331"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a644de01ea48cbfdcc28697f78a7e4689"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#a644de01ea48cbfdcc28697f78a7e4689">CheckSum</a><code> [get, set]</code></td></tr>
+<tr class="memitem:a644de01ea48cbfdcc28697f78a7e4689"><td class="memItemLeft" align="right" valign="top"><a id="a644de01ea48cbfdcc28697f78a7e4689"></a>
+BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#a644de01ea48cbfdcc28697f78a7e4689">CheckSum</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a644de01ea48cbfdcc28697f78a7e4689"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether decode will verify the check digit. By default, it's True. <br /></td></tr>
 <tr class="separator:a644de01ea48cbfdcc28697f78a7e4689"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf0d9099ddeafa37479161c47f75bf0a"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#adf0d9099ddeafa37479161c47f75bf0a">VerifyQuality</a><code> [get, set]</code></td></tr>
+<tr class="memitem:adf0d9099ddeafa37479161c47f75bf0a"><td class="memItemLeft" align="right" valign="top"><a id="adf0d9099ddeafa37479161c47f75bf0a"></a>
+BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#adf0d9099ddeafa37479161c47f75bf0a">VerifyQuality</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:adf0d9099ddeafa37479161c47f75bf0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether to do the barcode quality verification during detection. By default, it's False. <br /></td></tr>
 <tr class="separator:adf0d9099ddeafa37479161c47f75bf0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9bba598de659c48ac2711b118ceff76a"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#a9bba598de659c48ac2711b118ceff76a">AllowDup</a><code> [get, set]</code></td></tr>
+<tr class="memitem:a9bba598de659c48ac2711b118ceff76a"><td class="memItemLeft" align="right" valign="top"><a id="a9bba598de659c48ac2711b118ceff76a"></a>
+BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#a9bba598de659c48ac2711b118ceff76a">AllowDup</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a9bba598de659c48ac2711b118ceff76a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether duplicated symbols are allowed in multi-detection. By default, it's False, means for the duplicated barcodes of the same decoded contents, only report the first one. <br /></td></tr>
 <tr class="separator:a9bba598de659c48ac2711b118ceff76a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af98b71a5ec504565e5456260acbd9ee5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#af98b71a5ec504565e5456260acbd9ee5">MaxCount</a><code> [get, set]</code></td></tr>
+<tr class="memitem:af98b71a5ec504565e5456260acbd9ee5"><td class="memItemLeft" align="right" valign="top"><a id="af98b71a5ec504565e5456260acbd9ee5"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#af98b71a5ec504565e5456260acbd9ee5">MaxCount</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:af98b71a5ec504565e5456260acbd9ee5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum of barcode results to find. The detection stops if it meets the setting maximum. <br /></td></tr>
 <tr class="separator:af98b71a5ec504565e5456260acbd9ee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -167,134 +177,18 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 <p>Detect barcode(and do quality verification) using the input image and the provided region. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> The input image </td></tr>
-    <tr><td class="paramname">region</td><td>The input region, to limit the region of detection. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> The input image </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">region</td><td>The input region, to limit the region of detection. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">results</td><td>Return the barcode results. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">results</td><td>Return the barcode results. </td></tr>
     <tr><td class="paramname">error</td><td>Return error code if anything is wrong. </td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<h2 class="groupheader">Property Documentation</h2>
-<a id="a5080d342b7871a79bc81bb98d4e5a331"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5080d342b7871a79bc81bb98d4e5a331">&#9670;&nbsp;</a></span>Type</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespace_l_p_v_barcode_lib.html#a8d35ae44acaae621a58bd6ac4cafb72f">LPVBarcodeType</a> Type</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Get/set the barcode symbologies for detection, it could be the combination of multiple symbologies. </p>
-
-</div>
-</div>
-<a id="a644de01ea48cbfdcc28697f78a7e4689"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a644de01ea48cbfdcc28697f78a7e4689">&#9670;&nbsp;</a></span>CheckSum</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">BOOL CheckSum</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Get/set whether decode will verify the check digit. By default, it's True. </p>
-
-</div>
-</div>
-<a id="adf0d9099ddeafa37479161c47f75bf0a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adf0d9099ddeafa37479161c47f75bf0a">&#9670;&nbsp;</a></span>VerifyQuality</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">BOOL VerifyQuality</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Get/set whether to do the barcode quality verification during detection. By default, it's False. </p>
-
-</div>
-</div>
-<a id="a9bba598de659c48ac2711b118ceff76a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9bba598de659c48ac2711b118ceff76a">&#9670;&nbsp;</a></span>AllowDup</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">BOOL AllowDup</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Get/set whether duplicated symbols are allowed in multi-detection. By default, it's False, means for the duplicated barcodes of the same decoded contents, only report the first one. </p>
-
-</div>
-</div>
-<a id="af98b71a5ec504565e5456260acbd9ee5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af98b71a5ec504565e5456260acbd9ee5">&#9670;&nbsp;</a></span>MaxCount</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int MaxCount</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Get/set the maximum of barcode results to find. The detection stops if it meets the setting maximum. </p>
 
 </div>
 </div>

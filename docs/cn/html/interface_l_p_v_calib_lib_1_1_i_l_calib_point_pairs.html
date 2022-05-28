@@ -20,7 +20,7 @@
     jax: ["input/TeX","output/SVG"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.7/MathJax.js"></script>
 <link href="lpv_stylesheet.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-custom.css" rel="stylesheet" type="text/css"/>
@@ -193,7 +193,7 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>获取给定索引对应的点对中的图像点。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">index</td><td>输入索引，从 0 开始但小于总数的数字 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>输入索引，从 0 开始但小于总数的数字 </td></tr>
   </table>
   </dd>
 </dl>
@@ -223,13 +223,13 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>获取给定索引对应的点对中的物理点。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">index</td><td>输入索引，从 0 开始但小于总数的数字 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>输入索引，从 0 开始但小于总数的数字 </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>返回值</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">imagePoint</td><td>返回点对中的物理点 </td></tr>
+    <tr><td class="paramname">worldPoint</td><td>返回点对中的物理点 </td></tr>
   </table>
   </dd>
 </dl>
@@ -275,10 +275,10 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>增加一个图像物理点对到该集合 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">imagePointX</td><td>图像点的 x 坐标 </td></tr>
-    <tr><td class="paramname">imagePointY</td><td>图像点的 y 坐标 </td></tr>
-    <tr><td class="paramname">worldPointX</td><td>物理点的 x 坐标 </td></tr>
-    <tr><td class="paramname">worldPointY</td><td>物理点的 y 坐标 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">imagePointX</td><td>图像点的 x 坐标 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">imagePointY</td><td>图像点的 y 坐标 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">worldPointX</td><td>物理点的 x 坐标 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">worldPointY</td><td>物理点的 y 坐标 </td></tr>
   </table>
   </dd>
 </dl>
@@ -336,7 +336,7 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>绘制索引对应的单个点对中的图像点到给定的设备。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">index</td><td>输入索引，从 0 开始但小于总数的数字 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>输入索引，从 0 开始但小于总数的数字 </td></tr>
   </table>
   </dd>
 </dl>
@@ -412,7 +412,7 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>保存该点对集合到指定的文件。 该文件为 .cpair 文件，保存集合中所有点对的位置和对应关系信息。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">filename</td><td>文件路径，可为绝对或相对路径，包含文件夹、文件名和扩展名 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>文件路径，可为绝对或相对路径，包含文件夹、文件名和扩展名 </td></tr>
   </table>
   </dd>
 </dl>
@@ -443,7 +443,7 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>从指定文件中读取点对集合。 该文件为 .cpair 文件，包括集合中所有点对的位置和对应关系信息。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">filename</td><td>文件路径，可为绝对或相对路径，包含文件夹、文件名和扩展名 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>文件路径，可为绝对或相对路径，包含文件夹、文件名和扩展名 </td></tr>
   </table>
   </dd>
 </dl>

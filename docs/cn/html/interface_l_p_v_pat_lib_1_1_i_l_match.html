@@ -20,7 +20,7 @@
     jax: ["input/TeX","output/SVG"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.7/MathJax.js"></script>
 <link href="lpv_stylesheet.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-custom.css" rel="stylesheet" type="text/css"/>
@@ -126,12 +126,22 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 <tr class="separator:a659ae867dc0562c44d5e7e23e83451d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89c9e21a723b9b597dd9a0d6e603c268"><td class="memItemLeft" align="right" valign="top"><a id="a89c9e21a723b9b597dd9a0d6e603c268"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a89c9e21a723b9b597dd9a0d6e603c268">AngleTolerance</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a89c9e21a723b9b597dd9a0d6e603c268"><td class="mdescLeft">&#160;</td><td class="mdescRight">匹配搜索的角度范围，取值在 0 ~ 180 的范围。 默认设置为 5，表示角度搜索范围为 -5° ~ 5°。 <br /></td></tr>
+<tr class="memdesc:a89c9e21a723b9b597dd9a0d6e603c268"><td class="mdescLeft">&#160;</td><td class="mdescRight">角度范围，取值在 0 ~ 180 之间。默认设置为 5。<br  />
+匹配的角度搜索区间基于角度的偏移及范围生成为 \( AngleBias \pm AngleTolerance \) <br /></td></tr>
 <tr class="separator:a89c9e21a723b9b597dd9a0d6e603c268"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a84dfa91ece8aea697fa4606afa7ce3"><td class="memItemLeft" align="right" valign="top"><a id="a7a84dfa91ece8aea697fa4606afa7ce3"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a7a84dfa91ece8aea697fa4606afa7ce3">AngleBias</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a7a84dfa91ece8aea697fa4606afa7ce3"><td class="mdescLeft">&#160;</td><td class="mdescRight">角度偏移，取值在 -180 ~ 180 之间。默认设置为 0。 <br /></td></tr>
+<tr class="separator:a7a84dfa91ece8aea697fa4606afa7ce3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ce2228fa3bc8c2d1ee84415c9cd31ef"><td class="memItemLeft" align="right" valign="top"><a id="a4ce2228fa3bc8c2d1ee84415c9cd31ef"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a4ce2228fa3bc8c2d1ee84415c9cd31ef">ScaleTolerance</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a4ce2228fa3bc8c2d1ee84415c9cd31ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">匹配搜索的缩放范围，取值在 0 ~ 50 的范围。 默认设置为 0，表示匹配过程没有缩放。若设置为 10 则指定 90% ~ 110% 的缩放比例搜索范围。 <br /></td></tr>
+<tr class="memdesc:a4ce2228fa3bc8c2d1ee84415c9cd31ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">尺寸缩放范围，取值在 0 ~ 50 百分数。默认设置为 0。<br  />
+匹配的尺寸缩放搜索区间基于缩放的偏移和缩放范围生成为 \( ScaleBias \pm ScaleTolerance \) . <br /></td></tr>
 <tr class="separator:a4ce2228fa3bc8c2d1ee84415c9cd31ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2225ed3ac6003d7115a9d538aafed356"><td class="memItemLeft" align="right" valign="top"><a id="a2225ed3ac6003d7115a9d538aafed356"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a2225ed3ac6003d7115a9d538aafed356">ScaleBias</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a2225ed3ac6003d7115a9d538aafed356"><td class="mdescLeft">&#160;</td><td class="mdescRight">尺寸缩放偏移，取值在 50 ~ 150 百分数。默认设置为 100。 <br /></td></tr>
+<tr class="separator:a2225ed3ac6003d7115a9d538aafed356"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af98b71a5ec504565e5456260acbd9ee5"><td class="memItemLeft" align="right" valign="top"><a id="af98b71a5ec504565e5456260acbd9ee5"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#af98b71a5ec504565e5456260acbd9ee5">MaxCount</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:af98b71a5ec504565e5456260acbd9ee5"><td class="mdescLeft">&#160;</td><td class="mdescRight">期望的最大匹配数量 <br /></td></tr>
@@ -160,7 +170,7 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 <tr class="memitem:a8698837361cab3af9df6444df07cb5c9"><td class="memItemLeft" align="right" valign="top"><a id="a8698837361cab3af9df6444df07cb5c9"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a8698837361cab3af9df6444df07cb5c9">GrayValueWeight</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:a8698837361cab3af9df6444df07cb5c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">融合匹配权重，用于合并基于形状相似性的匹配分数和基于灰度特征的匹配分数。<br  />
-默认设置为 0， 即灰度分数不参与匹配评价。最终匹配分数按照该公式计算: \( Score = Score_{shape} \times (1 - w) + Score_{gray} \times w \). <br /></td></tr>
+默认设置为 0， 即灰度分数不参与匹配评价。最终匹配分数按照该公式计算: \( Score = Score_{shape} \times (1 - w) + Score_{gray} \times w \) . <br /></td></tr>
 <tr class="separator:a8698837361cab3af9df6444df07cb5c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
@@ -206,8 +216,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 </div><div class="memdoc">
 <p>训练模板，使用输入的图像。模板中心可根据需求修改。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> 输入的图像 </td></tr>
-    <tr><td class="paramname">region</td><td>输入的区域，用于限定模板在输入图像中的位置。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> 输入的图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">region</td><td>输入的区域，用于限定模板在输入图像中的位置。 </td></tr>
   </table>
   </dd>
 </dl>
@@ -277,14 +287,14 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 </div><div class="memdoc">
 <p>在输入的图像中，执行模板匹配。输出的匹配位置基于该图像坐标系。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> 输入的图像 </td></tr>
-    <tr><td class="paramname">region</td><td>输入的区域，用于限定模板匹配的区域。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> 输入的图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">region</td><td>输入的区域，用于限定模板匹配的区域。 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">results</td><td>返回匹配结果 </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>返回值</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">results</td><td>返回匹配结果 </td></tr>
     <tr><td class="paramname">error</td><td>返回错误码 </td></tr>
   </table>
   </dd>
@@ -310,7 +320,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 <p>保存模板匹配类到指定的文件。<br  />
 保存内容基于给定的文件扩展名，若扩展名为图像扩展名 (.bmp, .png, .jpg, etc.) ，则保存模板图像， 若扩展名为 .stp，则保存模板图像、训练特征和匹配参数。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">filename</td><td>文件路径，可为绝对或相对路径，包含文件夹、文件名和扩展名 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>文件路径，可为绝对或相对路径，包含文件夹、文件名和扩展名 </td></tr>
   </table>
   </dd>
 </dl>
@@ -342,7 +352,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 <p>从指定文件读取模板匹配类。<br  />
 指定文件可为图像文件，将读取该图像并用于训练模板。也可为 .stp 文件，将读取其中包含的模板图像、训练特征和匹配参数。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">filename</td><td>文件路径，可为绝对或相对路径，包含文件夹、文件名和扩展名 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>文件路径，可为绝对或相对路径，包含文件夹、文件名和扩展名 </td></tr>
   </table>
   </dd>
 </dl>
@@ -396,10 +406,10 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 <p>修改模板匹配结果中心的设置方式。默认设置为使用模板图像的中心作为匹配结果中心。<br  />
 匹配结果将基于配置方式输出不同的中心点坐标。如若设置匹配图像的左上角点作为中心，所有的匹配结果将总是输出相同的左上角位置作为中心。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">centerMode</td><td>匹配结果中心的设置方式，查看 LPVPatCenterMode. </td></tr>
-    <tr><td class="paramname">patX</td><td>若使用自定义位置，输入该位置的 x 坐标 </td></tr>
-    <tr><td class="paramname">patY</td><td>若使用自定义位置，输入该位置的 y 坐标 </td></tr>
-    <tr><td class="paramname">patAngle</td><td>若使用自定义位置，输入指定的角度作为 0° </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">centerMode</td><td>匹配结果中心的设置方式，查看 LPVPatCenterMode. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">patX</td><td>若使用自定义位置，输入该位置的 x 坐标 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">patY</td><td>若使用自定义位置，输入该位置的 y 坐标 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">patAngle</td><td>若使用自定义位置，输入指定的角度作为 0° </td></tr>
   </table>
   </dd>
 </dl>
@@ -438,11 +448,11 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
         </tr>
       </table>
 </div><div class="memdoc">
-<p>获取当前配置的模板中心 </p><dl class="retval"><dt>返回值</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">patX</td><td>返回模板中心的 x 坐标 </td></tr>
-    <tr><td class="paramname">patY</td><td>返回模板中心的 y 坐标 </td></tr>
-    <tr><td class="paramname">patAngle</td><td>返回模板的 0° 角度 </td></tr>
+<p>获取当前配置的模板中心 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">patX</td><td>返回模板中心的 x 坐标 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">patY</td><td>返回模板中心的 y 坐标 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">patAngle</td><td>返回模板的 0° 角度 </td></tr>
   </table>
   </dd>
 </dl>
@@ -465,9 +475,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
         </tr>
       </table>
 </div><div class="memdoc">
-<p>获取模板图像 </p><dl class="retval"><dt>返回值</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> 返回图像 </td></tr>
+<p>获取模板图像 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> 返回图像 </td></tr>
   </table>
   </dd>
 </dl>
@@ -489,9 +499,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
         </tr>
       </table>
 </div><div class="memdoc">
-<p>获取模板蒙版 </p><dl class="retval"><dt>返回值</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">mask</td><td><img src="color_binary.png" alt="" class="inline" title="Binary images"/> 返回蒙版图像。若当前模板没有蒙版，则返回一个空的图像。 </td></tr>
+<p>获取模板蒙版 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">mask</td><td><img src="color_binary.png" alt="" class="inline" title="Binary images"/> 返回蒙版图像。若当前模板没有蒙版，则返回一个空的图像。 </td></tr>
   </table>
   </dd>
 </dl>

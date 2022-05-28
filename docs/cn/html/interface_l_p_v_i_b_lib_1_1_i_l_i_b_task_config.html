@@ -20,7 +20,7 @@
     jax: ["input/TeX","output/SVG"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.7/MathJax.js"></script>
 <link href="lpv_stylesheet.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-custom.css" rel="stylesheet" type="text/css"/>
@@ -175,13 +175,13 @@ BSTR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 </div><div class="memdoc">
 <p>获取给定索引对应的算法工具配置 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">index</td><td>输入索引，从 0 开始但小于总数的数字 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>输入索引，从 0 开始但小于总数的数字 </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>返回值</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">result</td><td>返回索引对应的单个算法工具配置 </td></tr>
+    <tr><td class="paramname">config</td><td>返回索引对应的单个算法工具配置 </td></tr>
   </table>
   </dd>
 </dl>
@@ -212,7 +212,7 @@ BSTR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 <p>算法运行结果，使用算法名称查询。若无法找到对应名称的数据，返回 null </p>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">algoName</td><td>算法工具的唯一名称。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">algoName</td><td>算法工具的唯一名称。 </td></tr>
   </table>
   </dd>
 </dl>

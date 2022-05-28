@@ -20,7 +20,7 @@
     jax: ["input/TeX","output/SVG"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.7/MathJax.js"></script>
 <link href="lpv_stylesheet.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-custom.css" rel="stylesheet" type="text/css"/>
@@ -129,7 +129,7 @@ Public 成员函数</h2></td></tr>
 <div class="line">    <a class="code" href="namespace_l_p_v_core_lib.html#a38d3a87896df9ff1b8c96bee1ab58e2f">LPVSortOrder</a>.LPVSortOrderAscending, <a class="code" href="namespace_l_p_v_core_lib.html#a54c773c6f72a88ff41d8ab615b5a92f3">LPVPositionMode</a>.LPVPosModeCenter);</div>
 <div class="ttc" id="anamespace_l_p_v_core_lib_html_a1752d5f8ebb6a8f6dda700e1a87c98de"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a1752d5f8ebb6a8f6dda700e1a87c98de">LPVCoreLib::LPVSortBy</a></div><div class="ttdeci">LPVSortBy</div><div class="ttdoc">该枚举类型表示排序的类型</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:613</div></div>
 <div class="ttc" id="anamespace_l_p_v_core_lib_html_a38d3a87896df9ff1b8c96bee1ab58e2f"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a38d3a87896df9ff1b8c96bee1ab58e2f">LPVCoreLib::LPVSortOrder</a></div><div class="ttdeci">LPVSortOrder</div><div class="ttdoc">该枚举类型表示排序的顺序</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:652</div></div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html_a54c773c6f72a88ff41d8ab615b5a92f3"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a54c773c6f72a88ff41d8ab615b5a92f3">LPVCoreLib::LPVPositionMode</a></div><div class="ttdeci">LPVPositionMode</div><div class="ttdoc">该枚举类型表示使用哪个坐标作为对象的位置，在排序中使用。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:704</div></div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a54c773c6f72a88ff41d8ab615b5a92f3"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a54c773c6f72a88ff41d8ab615b5a92f3">LPVCoreLib::LPVPositionMode</a></div><div class="ttdeci">LPVPositionMode</div><div class="ttdoc">该枚举类型表示使用哪个坐标作为对象的位置，在排序中使用。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:710</div></div>
 </div><!-- fragment --> </div>  </div><h2 class="groupheader">成员函数说明</h2>
 <a id="aa10c0127d00021ad94aaf71c23588a26"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa10c0127d00021ad94aaf71c23588a26">&#9670;&nbsp;</a></span>Sort()</h2>
@@ -164,9 +164,9 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>排序并改变源索引 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">sortBy</td><td>排序方式 </td></tr>
-    <tr><td class="paramname">sortOrder</td><td>排序顺序 </td></tr>
-    <tr><td class="paramname">posMode</td><td>设置位置计算的方式，默认值为 LPVPosModeCenter 即使用中心点坐标。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sortBy</td><td>排序方式 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sortOrder</td><td>排序顺序 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">posMode</td><td>设置位置计算的方式，默认值为 LPVPosModeCenter 即使用中心点坐标。 </td></tr>
   </table>
   </dd>
 </dl>
@@ -206,15 +206,15 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>排序并输出排序后的索引列表，但不改变源索引 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">sortBy</td><td>排序方式 </td></tr>
-    <tr><td class="paramname">sortOrder</td><td>排序顺序 </td></tr>
-    <tr><td class="paramname">posMode</td><td>设置位置计算的方式，默认值为 LPVPosModeCenter 即使用中心点坐标。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sortBy</td><td>排序方式 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sortOrder</td><td>排序顺序 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">posMode</td><td>设置位置计算的方式，默认值为 LPVPosModeCenter 即使用中心点坐标。 </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>返回值</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">sortedIndexes</td><td>排序结果，索引值为该次序对象的源索引 </td></tr>
+    <tr><td class="paramname">sortedIndexes</td><td>返回排序结果，索引值为该次序对象的源索引 </td></tr>
   </table>
   </dd>
 </dl>
@@ -238,7 +238,7 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>根据输入索引列表，改变源索引 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">sortedIndexes</td><td>输入的索引列表，通常可通过 <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_sortables.html#a565ec83605b6838423a0ca26338c6f33">SortTo()</a> 获取该列表 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sortedIndexes</td><td>输入的索引列表，通常可通过 <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_sortables.html#a565ec83605b6838423a0ca26338c6f33">SortTo()</a> 获取该列表 </td></tr>
   </table>
   </dd>
 </dl>
@@ -278,7 +278,13 @@ Public 成员函数</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>获取指定索引对应的可排序对象 </p><dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_sortables.html#ab088bf7d1e59ab0295380f800239ff9c">SortableCount()</a> </dd></dl>
+<p>获取指定索引对应的可排序对象 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>输入的索引 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_sortables.html#ab088bf7d1e59ab0295380f800239ff9c">SortableCount()</a> </dd></dl>
 
 </div>
 </div>

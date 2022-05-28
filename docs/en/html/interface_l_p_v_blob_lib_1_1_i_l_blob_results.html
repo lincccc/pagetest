@@ -20,7 +20,7 @@
     jax: ["input/TeX","output/HTML-CSS"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.7/MathJax.js"></script>
 <link href="lpv_stylesheet.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-custom.css" rel="stylesheet" type="text/css"/>
@@ -185,13 +185,13 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Fetch one result with given index. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">index</td><td>Input index, it should be a 0-based number smaller than total count. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>Input index, it should be a 0-based number smaller than total count. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">result</td><td>Return the blob result of given index. </td></tr>
+    <tr><td class="paramname">results</td><td>Return the blob result of given index. </td></tr>
   </table>
   </dd>
 </dl>
@@ -215,7 +215,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Add a blob to the collection. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">blob</td><td>The input blob object. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">blob</td><td>The input blob object. </td></tr>
   </table>
   </dd>
 </dl>
@@ -279,8 +279,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Draw one blob result of given index onto provide device context. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">index</td><td>Input index, it should be a 0-based number smaller than total count. </td></tr>
-    <tr><td class="paramname">drawFlags</td><td>Flags to control the blob drawing behavior, see LPVBlobDrawFlags for usage. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>Input index, it should be a 0-based number smaller than total count. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">drawFlags</td><td>Flags to control the blob drawing behavior, see LPVBlobDrawFlags for usage. </td></tr>
   </table>
   </dd>
 </dl>
@@ -341,7 +341,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Draw all blob results onto provide device context. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drawFlags</td><td>Flags to control the blob drawing behavior, see LPVBlobDrawFlags for usage. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">drawFlags</td><td>Flags to control the blob drawing behavior, see LPVBlobDrawFlags for usage. </td></tr>
   </table>
   </dd>
 </dl>

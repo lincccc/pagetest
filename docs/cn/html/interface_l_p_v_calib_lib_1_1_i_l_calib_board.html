@@ -20,7 +20,7 @@
     jax: ["input/TeX","output/SVG"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.7/MathJax.js"></script>
 <link href="lpv_stylesheet.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-custom.css" rel="stylesheet" type="text/css"/>
@@ -184,7 +184,7 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 <p>保存该标定板对象到指定的文件。<br  />
 标定板文件为 .cboard 文件，保存标定板的配置等信息。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">filename</td><td>文件路径，可为绝对或相对路径，包含文件夹、文件名和扩展名 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>文件路径，可为绝对或相对路径，包含文件夹、文件名和扩展名 </td></tr>
   </table>
   </dd>
 </dl>
@@ -216,7 +216,7 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 <p>从指定的文件读取标定板对象。<br  />
 标定板文件为 .cboard 文件，包括标定板的配置等信息。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">filename</td><td>文件路径，可为绝对或相对路径，包含文件夹、文件名和扩展名 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>文件路径，可为绝对或相对路径，包含文件夹、文件名和扩展名 </td></tr>
   </table>
   </dd>
 </dl>
@@ -257,13 +257,13 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 </div><div class="memdoc">
 <p>在输入的图像中检测标定板，返回生成的图像和物理点对。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> 输入的图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> 输入的图像 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">pointPairs</td><td>返回生成的图像和物理点对集合 </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>返回值</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">pointPairs</td><td>返回生成的图像和物理点对集合 </td></tr>
     <tr><td class="paramname">error</td><td>返回错误码 </td></tr>
   </table>
   </dd>

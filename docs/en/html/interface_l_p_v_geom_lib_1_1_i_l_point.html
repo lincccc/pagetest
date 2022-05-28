@@ -20,7 +20,7 @@
     jax: ["input/TeX","output/HTML-CSS"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.7/MathJax.js"></script>
 <link href="lpv_stylesheet.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-custom.css" rel="stylesheet" type="text/css"/>
@@ -207,8 +207,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 </div><div class="memdoc">
 <p>Set placement of the point </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">x</td><td>The x-coordinate of the point </td></tr>
-    <tr><td class="paramname">y</td><td>The y-coordinate of the point </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td>The x-coordinate of the point </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">y</td><td>The y-coordinate of the point </td></tr>
   </table>
   </dd>
 </dl>
@@ -232,13 +232,13 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 </div><div class="memdoc">
 <p>Get the middle point of this and the input point </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">point</td><td>The input point </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">point</td><td>The input point </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">result</td><td>Return the middle point </td></tr>
+    <tr><td class="paramname">Return</td><td>the middle point </td></tr>
   </table>
   </dd>
 </dl>
@@ -272,14 +272,14 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 </div><div class="memdoc">
 <p>Translate the point by the given offset and return a new point </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">offsetX</td><td>The x-coordinate of the offset </td></tr>
-    <tr><td class="paramname">offsetY</td><td>The y-coordinate of the offset </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">offsetX</td><td>The x-coordinate of the offset </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">offsetY</td><td>The y-coordinate of the offset </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">result</td><td>Return the new point </td></tr>
+    <tr><td class="paramname">Return</td><td>the new point </td></tr>
   </table>
   </dd>
 </dl>
@@ -313,14 +313,14 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 </div><div class="memdoc">
 <p>Scale the point by the given factor and return a new point </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">factorX</td><td>The scale factor of x-coordinate </td></tr>
-    <tr><td class="paramname">factorY</td><td>The scale factor of y-coordinate </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">factorX</td><td>The scale factor of x-coordinate </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">factorY</td><td>The scale factor of y-coordinate </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">result</td><td>Return the new point </td></tr>
+    <tr><td class="paramname">Return</td><td>the new point </td></tr>
   </table>
   </dd>
 </dl>
@@ -344,13 +344,13 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 </div><div class="memdoc">
 <p>Calculate the dot-product of this and the input point </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">point</td><td>The input point </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">point</td><td>The input point </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">result</td><td>Return the dot-product result </td></tr>
+    <tr><td class="paramname">Return</td><td>the dot-product result </td></tr>
   </table>
   </dd>
 </dl>
@@ -373,7 +373,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 </div><div class="memdoc">
 <p>Get whether this is a well-initialized point </p><dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">val</td><td>True for valid, false otherwise. </td></tr>
+    <tr><td class="paramname">Return</td><td>true for valid, false otherwise. </td></tr>
   </table>
   </dd>
 </dl>
@@ -397,13 +397,13 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 </div><div class="memdoc">
 <p>Calculate the distance between this and the input point </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">point</td><td>The input point </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">point</td><td>The input point </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">result</td><td>Return the distance </td></tr>
+    <tr><td class="paramname">Return</td><td>the distance </td></tr>
   </table>
   </dd>
 </dl>
@@ -437,14 +437,14 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 </div><div class="memdoc">
 <p>Calculate the distance between this and the input point in direction of the reference line </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">point</td><td>The input point </td></tr>
-    <tr><td class="paramname">refLine</td><td>The input reference line </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">point</td><td>The input point </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">refLine</td><td>The input reference line </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">result</td><td>Return the distance </td></tr>
+    <tr><td class="paramname">Return</td><td>the distance </td></tr>
   </table>
   </dd>
 </dl>
@@ -478,14 +478,14 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 </div><div class="memdoc">
 <p>Evaluate whether this and the two given points are collinear </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">point1</td><td>The first input point </td></tr>
-    <tr><td class="paramname">point2</td><td>The second input point </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">point1</td><td>The first input point </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">point2</td><td>The second input point </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">result</td><td>Return the evaluation result, it's a value in (0, 1). For points on a perfect line, it's 1. </td></tr>
+    <tr><td class="paramname">Return</td><td>the evaluation result, it's a value in (0, 1). For points on a perfect line, it's 1. </td></tr>
   </table>
   </dd>
 </dl>

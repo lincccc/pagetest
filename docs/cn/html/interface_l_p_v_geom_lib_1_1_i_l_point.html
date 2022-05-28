@@ -20,7 +20,7 @@
     jax: ["input/TeX","output/SVG"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.7/MathJax.js"></script>
 <link href="lpv_stylesheet.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-custom.css" rel="stylesheet" type="text/css"/>
@@ -207,8 +207,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 </div><div class="memdoc">
 <p>设置点的位置 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">x</td><td>x 坐标 </td></tr>
-    <tr><td class="paramname">y</td><td>y 坐标 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td>x 坐标 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">y</td><td>y 坐标 </td></tr>
   </table>
   </dd>
 </dl>
@@ -232,13 +232,13 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 </div><div class="memdoc">
 <p>计算当前点与输入点的中点 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">point</td><td>输入的点 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">point</td><td>输入的点 </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>返回值</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">result</td><td>返回计算得到的中点 </td></tr>
+    <tr><td class="paramname">返回计算得到的中点</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -272,14 +272,14 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 </div><div class="memdoc">
 <p>平移当前点，得到一个新的点 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">offsetX</td><td>x 方向的平移量 </td></tr>
-    <tr><td class="paramname">offsetY</td><td>y 方向的平移量 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">offsetX</td><td>x 方向的平移量 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">offsetY</td><td>y 方向的平移量 </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>返回值</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">result</td><td>返回新的点 </td></tr>
+    <tr><td class="paramname">返回新的点</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -313,14 +313,14 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 </div><div class="memdoc">
 <p>缩放当前点的坐标，得到一个新的点 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">factorX</td><td>x 方向的缩放比例 </td></tr>
-    <tr><td class="paramname">factorY</td><td>y 方向的缩放比例 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">factorX</td><td>x 方向的缩放比例 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">factorY</td><td>y 方向的缩放比例 </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>返回值</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">result</td><td>返回新的点 </td></tr>
+    <tr><td class="paramname">返回新的点</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -344,13 +344,13 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 </div><div class="memdoc">
 <p>计算当前点与输入点的点乘 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">point</td><td>输入的点 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">point</td><td>输入的点 </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>返回值</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">result</td><td>返回点乘的结果 </td></tr>
+    <tr><td class="paramname">返回点乘的结果</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -373,7 +373,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 </div><div class="memdoc">
 <p>检查当前点数据是否合法初始化 </p><dl class="retval"><dt>返回值</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">val</td><td>若点数据合法，返回 True，否则返回 False </td></tr>
+    <tr><td class="paramname">若点数据合法，返回</td><td>True，否则返回 False </td></tr>
   </table>
   </dd>
 </dl>
@@ -397,13 +397,13 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 </div><div class="memdoc">
 <p>计算当前点和输入点建的距离 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">point</td><td>输入的点 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">point</td><td>输入的点 </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>返回值</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">result</td><td>返回距离值 </td></tr>
+    <tr><td class="paramname">返回距离值</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -437,14 +437,14 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 </div><div class="memdoc">
 <p>计算当前点和输入点以参考线为基准的距离 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">point</td><td>输入的点 </td></tr>
-    <tr><td class="paramname">refLine</td><td>基准参考线 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">point</td><td>输入的点 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">refLine</td><td>基准参考线 </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>返回值</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">result</td><td>返回距离值 </td></tr>
+    <tr><td class="paramname">返回距离值</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -478,14 +478,14 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 </div><div class="memdoc">
 <p>评价当前点和输入的两个点是否共线 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">point1</td><td>输入的第一个点 </td></tr>
-    <tr><td class="paramname">point2</td><td>输入的第二个点 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">point1</td><td>输入的第一个点 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">point2</td><td>输入的第二个点 </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>返回值</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">result</td><td>返回评价值，在 (0, 1) 范围内。返回值越接近 1，共线性越佳。 </td></tr>
+    <tr><td class="paramname">返回评价值，在</td><td>(0, 1) 范围内。返回值越接近 1，共线性越佳。 </td></tr>
   </table>
   </dd>
 </dl>

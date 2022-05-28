@@ -20,7 +20,7 @@
     jax: ["input/TeX","output/SVG"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.7/MathJax.js"></script>
 <link href="lpv_stylesheet.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-custom.css" rel="stylesheet" type="text/css"/>
@@ -198,7 +198,7 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 </div><div class="memdoc">
 <p>获取多边形中的指定索引的顶点 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">index</td><td>输入指定的索引，从 0 开始但小于总数的数字 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>输入指定的索引，从 0 开始但小于总数的数字 </td></tr>
   </table>
   </dd>
 </dl>
@@ -244,9 +244,9 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 </div><div class="memdoc">
 <p>修改多边形的给定索引对应的顶点 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">index</td><td>输入指定的索引，从 0 开始但小于总数的数字，设置为 -1 在最后插入一个新的顶点 </td></tr>
-    <tr><td class="paramname">x</td><td>顶点新的 x 坐标 </td></tr>
-    <tr><td class="paramname">y</td><td>顶点新的 y 坐标 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>输入指定的索引，从 0 开始但小于总数的数字，设置为 -1 在最后插入一个新的顶点 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td>顶点新的 x 坐标 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">y</td><td>顶点新的 y 坐标 </td></tr>
   </table>
   </dd>
 </dl>
@@ -304,7 +304,7 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 </div><div class="memdoc">
 <p>绘制多边形到给定的设备上 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">bFill</td><td>是否使用当前笔刷填充该多边形 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bFill</td><td>是否使用当前笔刷填充该多边形 </td></tr>
   </table>
   </dd>
 </dl>
@@ -345,9 +345,9 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 </div><div class="memdoc">
 <p>设置多边形中的顶点 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">xs</td><td>多边形中所有顶点的 x 坐标 </td></tr>
-    <tr><td class="paramname">ys</td><td>多边形中所有顶点的 y 坐标 </td></tr>
-    <tr><td class="paramname">isClosed</td><td>是否为闭合多边形 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">xs</td><td>多边形中所有顶点的 x 坐标 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ys</td><td>多边形中所有顶点的 y 坐标 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">isClosed</td><td>是否为闭合多边形 </td></tr>
   </table>
   </dd>
 </dl>
@@ -371,7 +371,7 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 </div><div class="memdoc">
 <p>将输入点集中的点添加到多边形的末尾 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">points</td><td>输入的点集 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">points</td><td>输入的点集 </td></tr>
   </table>
   </dd>
 </dl>
@@ -417,10 +417,10 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 </div><div class="memdoc">
 <p>删除多边形中在指定范围中的顶点 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">lbX</td><td>指定删除范围的 x 坐标下限 </td></tr>
-    <tr><td class="paramname">ubX</td><td>指定删除范围的 x 坐标上限 </td></tr>
-    <tr><td class="paramname">lbY</td><td>指定删除范围的 y 坐标下限 </td></tr>
-    <tr><td class="paramname">ubY</td><td>指定删除范围的 y 坐标上限 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">lbX</td><td>指定删除范围的 x 坐标下限 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ubX</td><td>指定删除范围的 x 坐标上限 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">lbY</td><td>指定删除范围的 y 坐标下限 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ubY</td><td>指定删除范围的 y 坐标上限 </td></tr>
   </table>
   </dd>
 </dl>
@@ -454,14 +454,14 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 </div><div class="memdoc">
 <p>平移当前多边形，生成一个新的多边形 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">offsetX</td><td>x 方向的平移量 </td></tr>
-    <tr><td class="paramname">offsetY</td><td>y 方向的平移量 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">offsetX</td><td>x 方向的平移量 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">offsetY</td><td>y 方向的平移量 </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>返回值</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">result</td><td>返回新的多边形 </td></tr>
+    <tr><td class="paramname">results</td><td>返回新的多边形 </td></tr>
   </table>
   </dd>
 </dl>
@@ -531,7 +531,7 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 </div><div class="memdoc">
 <p>判断输入的点是否在多边形内部、外部或边上。 对于非闭合的多边形，点总是在多边形外部或者边上。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">point</td><td>输入的点 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">point</td><td>输入的点 </td></tr>
   </table>
   </dd>
 </dl>
@@ -571,13 +571,13 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 </div><div class="memdoc">
 <p>判断当前多边形和输入直线是否相交，若相交，返回一个或多个交点。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">line</td><td>输入的直线 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">line</td><td>输入的直线 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">intersectPoints</td><td>返回交点的点集，若当前多边形和输入直线不相交，则该点集为空，否则可能包含一个或多个点。 </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>返回值</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">intersectPoints</td><td>返回交点的点集，若当前多边形和输入直线不相交，则该点集为空，否则可能包含一个或多个点。 </td></tr>
     <tr><td class="paramname">type</td><td>返回相交的类型，与交点中在直线线段上的个数相关， <a class="el" href="namespace_l_p_v_geom_lib.html#a9e95444de4a6d45da839995006de7ddfac05ab634cb5dc2ab6e7bfb964fd85af6">Bounded </a> (所有), <a class="el" href="namespace_l_p_v_geom_lib.html#a9e95444de4a6d45da839995006de7ddfa11a4685b4ba41e4a96d9394b47e85a88">Partial</a> (部分) or <a class="el" href="namespace_l_p_v_geom_lib.html#a9e95444de4a6d45da839995006de7ddfa3894cd1ab4d330314a4c8e807e77cf44">Unbounded</a> (无). </td></tr>
   </table>
   </dd>
@@ -600,12 +600,7 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
         </tr>
       </table>
 </div><div class="memdoc">
-<p>计算该多边形的内接圆 </p><dl class="retval"><dt>返回值</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">val</td><td>返回内接圆 </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>计算该多边形的内接圆 </p>
 
 </div>
 </div>
@@ -623,12 +618,7 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
         </tr>
       </table>
 </div><div class="memdoc">
-<p>根据当前多边形的位置和顶点坐标，生成一个多边形区域 </p><dl class="retval"><dt>返回值</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">val</td><td>返回多边形区域 </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>根据当前多边形的位置和顶点坐标，生成一个多边形区域 </p>
 
 </div>
 </div>
@@ -646,12 +636,7 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
         </tr>
       </table>
 </div><div class="memdoc">
-<p>获取该多边形的重心 </p><dl class="retval"><dt>返回值</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">val</td><td>返回重心点 </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>获取该多边形的重心 </p>
 
 </div>
 </div>
@@ -688,15 +673,15 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 </div><div class="memdoc">
 <p>计算输入点到多边形顶点或边的最小距离 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">point</td><td>输入的点 </td></tr>
-    <tr><td class="paramname">aggType</td><td>聚合方式，仅接受 LPVAggMin 或 LPVAggMax </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">point</td><td>输入的点 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aggType</td><td>聚合方式，仅接受 LPVAggMin 或 LPVAggMax </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">rootPoint</td><td>返回垂足，可能是多边形的某一个顶点，或输入点到多边形的某一条边的垂足 </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>返回值</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">rootPoint</td><td>返回垂足，可能是多边形的某一个顶点，或输入点到多边形的某一条边的垂足 </td></tr>
-    <tr><td class="paramname">distance</td><td>返回最小距离 </td></tr>
+    <tr><td class="paramname">val</td><td>返回最小距离 </td></tr>
   </table>
   </dd>
 </dl>
@@ -745,16 +730,16 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 </div>
  <dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">polygon</td><td>输入的多边形 </td></tr>
-    <tr><td class="paramname">aggType</td><td>聚合方式，仅接受 LPVAggMin 或 LPVAggMax </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">polygon</td><td>输入的多边形 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aggType</td><td>聚合方式，仅接受 LPVAggMin 或 LPVAggMax </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">rootPoint1</td><td>返回当前多边形上的垂足 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">rootPoint2</td><td>返回输入前多边形上的垂足 </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>返回值</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">rootPoint1</td><td>返回当前多边形上的垂足 </td></tr>
-    <tr><td class="paramname">rootPoint2</td><td>返回输入前多边形上的垂足 </td></tr>
-    <tr><td class="paramname">distance</td><td>返回最小距离 </td></tr>
+    <tr><td class="paramname">val</td><td>返回最小距离 </td></tr>
   </table>
   </dd>
 </dl>

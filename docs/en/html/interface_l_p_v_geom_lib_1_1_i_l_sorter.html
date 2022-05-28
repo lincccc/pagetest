@@ -20,7 +20,7 @@
     jax: ["input/TeX","output/HTML-CSS"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.7/MathJax.js"></script>
 <link href="lpv_stylesheet.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-custom.css" rel="stylesheet" type="text/css"/>
@@ -128,7 +128,7 @@ Public Member Functions</h2></td></tr>
 <div class="line">LSortedArray sortedArray = sorter.SortToArray(<a class="code" href="namespace_l_p_v_core_lib.html#a54c773c6f72a88ff41d8ab615b5a92f3">LPVPositionMode</a>.LPVPosModeCenter);</div>
 <div class="ttc" id="anamespace_l_p_v_core_lib_html_a1752d5f8ebb6a8f6dda700e1a87c98de"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a1752d5f8ebb6a8f6dda700e1a87c98de">LPVCoreLib::LPVSortBy</a></div><div class="ttdeci">LPVSortBy</div><div class="ttdoc">This enumeration represents the type of sorting.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:613</div></div>
 <div class="ttc" id="anamespace_l_p_v_core_lib_html_a38d3a87896df9ff1b8c96bee1ab58e2f"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a38d3a87896df9ff1b8c96bee1ab58e2f">LPVCoreLib::LPVSortOrder</a></div><div class="ttdeci">LPVSortOrder</div><div class="ttdoc">This enumeration represents the order of sorting.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:652</div></div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html_a54c773c6f72a88ff41d8ab615b5a92f3"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a54c773c6f72a88ff41d8ab615b5a92f3">LPVCoreLib::LPVPositionMode</a></div><div class="ttdeci">LPVPositionMode</div><div class="ttdoc">This enumeration represents which point is used as a object's position, used in sorting.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:704</div></div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a54c773c6f72a88ff41d8ab615b5a92f3"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a54c773c6f72a88ff41d8ab615b5a92f3">LPVCoreLib::LPVPositionMode</a></div><div class="ttdeci">LPVPositionMode</div><div class="ttdoc">This enumeration represents which point is used as a object's position, used in sorting.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:710</div></div>
 </div><!-- fragment --> </div>  </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ad2ae710649c742ff5b69e0da4d9aba0a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad2ae710649c742ff5b69e0da4d9aba0a">&#9670;&nbsp;</a></span>SetSource()</h2>
@@ -214,16 +214,16 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Sort the source objects to an sorted array for row and column indexing and metrics calculation via <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_sorted_array.html" title="This interface holds the array-sorting result.">ILSortedArray</a> interface. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">posMode</td><td>Specify which point is used as the object's position. </td></tr>
-    <tr><td class="paramname">rowSpaceAppr</td><td>The input approximated row space used for array initialization. Set it to 0 means we'll generate a proper value on the fly, based on the positions of the source points. </td></tr>
-    <tr><td class="paramname">columnSpaceAppr</td><td>The input approximated column space used for array initialization. Set it to 0 means we'll generate a proper value on the fly, based on the positions of the source points. </td></tr>
-    <tr><td class="paramname">toleranceFactor</td><td>The factor is used to control the filtering behavior for the source points which do not locate exactly on the array's grid. It's in range 0 ~ 1, the smaller factor indicates the stricter filtering. Set it to 1 means no filtering. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">posMode</td><td>Specify which point is used as the object's position. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rowSpaceAppr</td><td>The input approximated row space used for array initialization. Set it to 0 means we'll generate a proper value on the fly, based on the positions of the source points. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">columnSpaceAppr</td><td>The input approximated column space used for array initialization. Set it to 0 means we'll generate a proper value on the fly, based on the positions of the source points. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">toleranceFactor</td><td>The factor is used to control the filtering behavior for the source points which do not locate exactly on the array's grid. It's in range 0 ~ 1, the smaller factor indicates the stricter filtering. Set it to 1 means no filtering. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">sortedResult</td><td>Return the sorted array. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">sortedResult</td><td>Return the sorted array. </td></tr>
     <tr><td class="paramname">error</td><td>Return error code if anything is wrong. </td></tr>
   </table>
   </dd>

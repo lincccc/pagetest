@@ -20,7 +20,7 @@
     jax: ["input/TeX","output/SVG"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.7/MathJax.js"></script>
 <link href="lpv_stylesheet.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-custom.css" rel="stylesheet" type="text/css"/>
@@ -572,8 +572,8 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>在给定的设备上绘制一个点，使用该系统对象的当前描边笔。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">x</td><td>点的 x 坐标。 </td></tr>
-    <tr><td class="paramname">y</td><td>点的 y 坐标。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td>点的 x 坐标。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">y</td><td>点的 y 坐标。 </td></tr>
   </table>
   </dd>
 </dl>
@@ -650,10 +650,10 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>在给定的设备上绘制一条线，使用该系统对象的当前描边笔。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">x1</td><td>直线起点的 x 坐标。 </td></tr>
-    <tr><td class="paramname">y1</td><td>直线起点的 y 坐标。 </td></tr>
-    <tr><td class="paramname">x2</td><td>直线终点的 x 坐标。 </td></tr>
-    <tr><td class="paramname">y2</td><td>直线终点的 y 坐标。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x1</td><td>直线起点的 x 坐标。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">y1</td><td>直线起点的 y 坐标。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x2</td><td>直线终点的 x 坐标。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">y2</td><td>直线终点的 y 坐标。 </td></tr>
   </table>
   </dd>
 </dl>
@@ -730,9 +730,9 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>在给定的设备上绘制一个圆，使用该系统对象的当前描边笔和笔刷。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">x</td><td>圆心的 x 坐标。 </td></tr>
-    <tr><td class="paramname">y</td><td>圆心的 y 坐标。 </td></tr>
-    <tr><td class="paramname">bFill</td><td>是否使用当前笔刷填充图形。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td>圆心的 x 坐标。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">y</td><td>圆心的 y 坐标。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bFill</td><td>是否使用当前笔刷填充图形。 </td></tr>
   </table>
   </dd>
 </dl>
@@ -821,12 +821,12 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>在给定的设备上绘制一个可旋转的矩形，使用该系统对象的当前描边笔和笔刷。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">x</td><td>矩形中心的 x 坐标。 </td></tr>
-    <tr><td class="paramname">y</td><td>矩形中心的 y 坐标。 </td></tr>
-    <tr><td class="paramname">w</td><td>矩形的宽度。 </td></tr>
-    <tr><td class="paramname">h</td><td>矩形的高度。 </td></tr>
-    <tr><td class="paramname">a</td><td>矩形的旋转角度。 </td></tr>
-    <tr><td class="paramname">bFill</td><td>是否使用当前笔刷填充图形。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td>矩形中心的 x 坐标。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">y</td><td>矩形中心的 y 坐标。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">w</td><td>矩形的宽度。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">h</td><td>矩形的高度。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td>矩形的旋转角度。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bFill</td><td>是否使用当前笔刷填充图形。 </td></tr>
   </table>
   </dd>
 </dl>
@@ -903,10 +903,10 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>在给定的设备上绘制一个多边形，使用该系统对象的当前描边笔和笔刷。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">xs</td><td>多边形顶点的所有 x 坐标。 </td></tr>
-    <tr><td class="paramname">ys</td><td>多边形顶点的所有 y 坐标。 </td></tr>
-    <tr><td class="paramname">bClosed</td><td>多边形是否封闭。 </td></tr>
-    <tr><td class="paramname">bFill</td><td>是否使用当前笔刷填充图形。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">xs</td><td>多边形顶点的所有 x 坐标。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ys</td><td>多边形顶点的所有 y 坐标。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bClosed</td><td>多边形是否封闭。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bFill</td><td>是否使用当前笔刷填充图形。 </td></tr>
   </table>
   </dd>
 </dl>
@@ -977,9 +977,9 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>在给定的设备上绘制字符串，使用该系统对象的当前描边笔。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">text</td><td>输入字符串 </td></tr>
-    <tr><td class="paramname">tlx</td><td>绘制区域的左上角点 x 坐标。 </td></tr>
-    <tr><td class="paramname">tly</td><td>绘制区域的左上角点 y 坐标。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">text</td><td>输入字符串 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tlx</td><td>绘制区域的左上角点 x 坐标。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tly</td><td>绘制区域的左上角点 y 坐标。 </td></tr>
   </table>
   </dd>
 </dl>

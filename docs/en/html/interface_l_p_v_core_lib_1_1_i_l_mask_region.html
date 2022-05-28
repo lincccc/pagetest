@@ -20,7 +20,7 @@
     jax: ["input/TeX","output/HTML-CSS"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.7/MathJax.js"></script>
 <link href="lpv_stylesheet.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-custom.css" rel="stylesheet" type="text/css"/>
@@ -133,8 +133,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6c9eb19797abac33fe2f1f3ab6b48e63 inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_region"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b7509dc313340daef8aaa5600276ae7 inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_region"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html#a0b7509dc313340daef8aaa5600276ae7">Scale</a> (double factorX, double factorY)</td></tr>
 <tr class="separator:a0b7509dc313340daef8aaa5600276ae7 inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_region"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a74066985052e5af4db8b2de183d05b inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_region"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html#a7a74066985052e5af4db8b2de183d05b">ToMask</a> (int w, int h, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> **mask)</td></tr>
-<tr class="separator:a7a74066985052e5af4db8b2de183d05b inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_region"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5491a1a6d1431f2ce82140c1061c2a9c inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_region"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html#a5491a1a6d1431f2ce82140c1061c2a9c">ToMask</a> (int w, int h)</td></tr>
+<tr class="separator:a5491a1a6d1431f2ce82140c1061c2a9c inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_region"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c5101821d263ba517c9478ef6e205f0 inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_region"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html#a6c5101821d263ba517c9478ef6e205f0">Intersect</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a> *other)</td></tr>
 <tr class="separator:a6c5101821d263ba517c9478ef6e205f0 inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_region"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e4619cfa558129ae9cf1859dad2354c inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_region"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html#a8e4619cfa558129ae9cf1859dad2354c">XOR</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a> *other)</td></tr>
@@ -204,9 +204,9 @@ By default, it's 1. Change this value to scale the reduced result image.  <a hre
 </div><div class="memdoc">
 <p>Set the mask image, place its left-top corner at the given position. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">mask</td><td><img src="color_binary.png" alt="" class="inline" title="Binary images"/> The mask image </td></tr>
-    <tr><td class="paramname">tlx</td><td>The x-coordinate of the top-left corner of the mask region. </td></tr>
-    <tr><td class="paramname">tly</td><td>The y-coordinate of the top-left corner of the mask region. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mask</td><td><img src="color_binary.png" alt="" class="inline" title="Binary images"/> The mask image </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tlx</td><td>The x-coordinate of the top-left corner of the mask region. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tly</td><td>The y-coordinate of the top-left corner of the mask region. </td></tr>
   </table>
   </dd>
 </dl>

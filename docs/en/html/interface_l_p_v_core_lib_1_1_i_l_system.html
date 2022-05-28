@@ -20,7 +20,7 @@
     jax: ["input/TeX","output/HTML-CSS"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.7/MathJax.js"></script>
 <link href="lpv_stylesheet.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-custom.css" rel="stylesheet" type="text/css"/>
@@ -572,8 +572,8 @@ Pass in null drawable object to set font for the system object. </p><dl class="s
 </div><div class="memdoc">
 <p>Draw a point on HDC. Current pen of the system object is used. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">x</td><td>The x-coordinate of the input point. </td></tr>
-    <tr><td class="paramname">y</td><td>The y-coordinate of the input point. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td>The x-coordinate of the input point. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">y</td><td>The y-coordinate of the input point. </td></tr>
   </table>
   </dd>
 </dl>
@@ -650,10 +650,10 @@ Pass in null drawable object to set font for the system object. </p><dl class="s
 </div><div class="memdoc">
 <p>Draw a line on HDC. Current pen of the system object is used. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">x1</td><td>The x-coordinate of the input line's start point. </td></tr>
-    <tr><td class="paramname">y1</td><td>The y-coordinate of the input line's start point. </td></tr>
-    <tr><td class="paramname">x2</td><td>The x-coordinate of the input line's end point. </td></tr>
-    <tr><td class="paramname">y2</td><td>The y-coordinate of the input line's end point. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x1</td><td>The x-coordinate of the input line's start point. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">y1</td><td>The y-coordinate of the input line's start point. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x2</td><td>The x-coordinate of the input line's end point. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">y2</td><td>The y-coordinate of the input line's end point. </td></tr>
   </table>
   </dd>
 </dl>
@@ -730,9 +730,9 @@ Pass in null drawable object to set font for the system object. </p><dl class="s
 </div><div class="memdoc">
 <p>Draw a circle on HDC. Current pen and brush of the system object is used. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">x</td><td>The x-coordinate of the input circle's center point. </td></tr>
-    <tr><td class="paramname">y</td><td>The y-coordinate of the input circle's center point. </td></tr>
-    <tr><td class="paramname">bFill</td><td>Whether to fill the circle using current brush. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td>The x-coordinate of the input circle's center point. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">y</td><td>The y-coordinate of the input circle's center point. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bFill</td><td>Whether to fill the circle using current brush. </td></tr>
   </table>
   </dd>
 </dl>
@@ -821,12 +821,12 @@ Pass in null drawable object to set font for the system object. </p><dl class="s
 </div><div class="memdoc">
 <p>Draw a rectangle on HDC. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">x</td><td>The x-coordinate of the input rectangle's center point. </td></tr>
-    <tr><td class="paramname">y</td><td>The y-coordinate of the input rectangle's center point. </td></tr>
-    <tr><td class="paramname">w</td><td>The width of the input rectangle. </td></tr>
-    <tr><td class="paramname">h</td><td>The height of the input rectangle. </td></tr>
-    <tr><td class="paramname">a</td><td>The angle of the input rectangle. </td></tr>
-    <tr><td class="paramname">bFill</td><td>Whether to fill the circle using current brush. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td>The x-coordinate of the input rectangle's center point. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">y</td><td>The y-coordinate of the input rectangle's center point. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">w</td><td>The width of the input rectangle. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">h</td><td>The height of the input rectangle. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td>The angle of the input rectangle. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bFill</td><td>Whether to fill the circle using current brush. </td></tr>
   </table>
   </dd>
 </dl>
@@ -903,10 +903,10 @@ Pass in null drawable object to set font for the system object. </p><dl class="s
 </div><div class="memdoc">
 <p>Draw a polygon on HDC. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">xs</td><td>The x-coordinates of the input polygon vertexes. </td></tr>
-    <tr><td class="paramname">ys</td><td>The y-coordinates of the input polygon vertexes. </td></tr>
-    <tr><td class="paramname">bClosed</td><td>Whether this is a closed polygon. </td></tr>
-    <tr><td class="paramname">bFill</td><td>Whether to fill the circle using current brush. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">xs</td><td>The x-coordinates of the input polygon vertexes. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ys</td><td>The y-coordinates of the input polygon vertexes. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bClosed</td><td>Whether this is a closed polygon. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bFill</td><td>Whether to fill the circle using current brush. </td></tr>
   </table>
   </dd>
 </dl>
@@ -977,9 +977,9 @@ Pass in null drawable object to set font for the system object. </p><dl class="s
 </div><div class="memdoc">
 <p>Draw a text string on HDC. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">text</td><td>The input text string. </td></tr>
-    <tr><td class="paramname">tlx</td><td>The x-coordinate of the top-left corner of the text region. </td></tr>
-    <tr><td class="paramname">tly</td><td>The y-coordinate of the top-left corner of the text region. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">text</td><td>The input text string. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tlx</td><td>The x-coordinate of the top-left corner of the text region. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tly</td><td>The y-coordinate of the top-left corner of the text region. </td></tr>
   </table>
   </dd>
 </dl>

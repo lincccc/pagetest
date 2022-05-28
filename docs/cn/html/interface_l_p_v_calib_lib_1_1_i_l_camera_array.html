@@ -20,7 +20,7 @@
     jax: ["input/TeX","output/SVG"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.7/MathJax.js"></script>
 <link href="lpv_stylesheet.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-custom.css" rel="stylesheet" type="text/css"/>
@@ -212,11 +212,11 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
         </tr>
       </table>
 </div><div class="memdoc">
-<p>初始化相机阵列，基于给定的相机标定模型，生成 \(vCount \times hCount\) 的矩阵。 </p><dl class="params"><dt>参数</dt><dd>
+<p>初始化相机阵列，基于给定的相机标定模型，生成 \( vCount \times hCount \) 的矩阵。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">calibModel</td><td>相机标定模型 </td></tr>
-    <tr><td class="paramname">hCount</td><td>相机阵列横向的相机个数，为 \(\ge 1\) 的数值。 </td></tr>
-    <tr><td class="paramname">vCount</td><td>相机阵列纵向的相机个数，为 \(\ge 1\) 的数值。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">calibModel</td><td>相机标定模型 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hCount</td><td>相机阵列横向的相机个数，为 \( \ge 1 \) 的数值。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">vCount</td><td>相机阵列纵向的相机个数，为 \( \ge 1 \) 的数值。 </td></tr>
   </table>
   </dd>
 </dl>
@@ -273,19 +273,14 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
         </tr>
       </table>
 </div><div class="memdoc">
-<p>初始化相机阵列，基于输入的单个相机模型，横向和纵向移动其多次，生成 \(vCount \times hCount\) 的矩阵。 </p><dl class="retval"><dt>返回值</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">calib</td><td>单个相机对象对应的标定模型 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>参数</dt><dd>
+<p>初始化相机阵列，基于输入的单个相机模型，横向和纵向移动其多次，生成 \( vCount \times hCount \) 的矩阵。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">hCount</td><td>相机阵列横向的相机个数，为 \(\ge 1\) 的数值。 </td></tr>
-    <tr><td class="paramname">vCount</td><td>相机阵列纵向的相机个数，为 \(\ge 1\) 的数值。 </td></tr>
-    <tr><td class="paramname">copyCalib</td><td>是否同时拷贝标定结果。若输入的移动步长为合法数值，则同时为每次移动生成对应的后变换矩阵。 </td></tr>
-    <tr><td class="paramname">hStep</td><td>横向移动的步长，物理单位，可为空。 </td></tr>
-    <tr><td class="paramname">vStep</td><td>纵向移动的步长，物理单位，可为空。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">calib</td><td>单个相机对象对应的标定模型 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hCount</td><td>相机阵列横向的相机个数，为 \( \ge 1 \) 的数值。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">vCount</td><td>相机阵列纵向的相机个数，为 \( \ge 1 \) 的数值。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">copyCalib</td><td>是否同时拷贝标定结果。若输入的移动步长为合法数值，则同时为每次移动生成对应的后变换矩阵。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hStep</td><td>横向移动的步长，物理单位，可为空。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">vStep</td><td>纵向移动的步长，物理单位，可为空。 </td></tr>
   </table>
   </dd>
 </dl>
@@ -348,20 +343,18 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
         </tr>
       </table>
 </div><div class="memdoc">
-<p>与 <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_camera_array.html#a20ee2e181bb90209d951665fd554f02e">InitByCopy()</a> 类似，初始化相机阵列，基于输入的多个相机对象，横向和纵向移动其多次，生成 \((vCount * rows) \times (hCount * n / rows)\) 的矩阵。<br  />
+<p>与 <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_camera_array.html#a20ee2e181bb90209d951665fd554f02e">InitByCopy()</a> 类似，初始化相机阵列，基于输入的多个相机对象，横向和纵向移动其多次 生成 \( (vCount * rows) \times (hCount * n / rows) \) 的矩阵。<br  />
 例如，给定 1 2 3 4 为输入的多个相机对象，排成 2 行，水平移动其 3 次，垂直移动其 2 次，生成的相机阵列如下:</p>
-<p>\(\begin{matrix}1 &amp; 2 &amp; 1 &amp; 2 &amp; 1 &amp; 2\\3 &amp; 4 &amp; 3 &amp; 4 &amp; 3 &amp; 4\\1 &amp; 2 &amp; 1 &amp; 2 &amp; 1 &amp; 2\\3 &amp; 4 &amp; 3 &amp; 4 &amp; 3 &amp; 4\end{matrix}\)</p>
-<dl class="retval"><dt>返回值</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">calibs</td><td>多个相机对象对应的标定模型 </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>\( \begin{matrix}1 &amp; 2 &amp; 1 &amp; 2 &amp; 1 &amp; 2\\3 &amp; 4 &amp; 3 &amp; 4 &amp; 3 &amp; 4\\1 &amp; 2 &amp; 1 &amp; 2 &amp; 1 &amp; 2\\3 &amp; 4 &amp; 3 &amp; 4 &amp; 3 &amp; 4\end{matrix} \)</p>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">rows</td><td>输入对象的排列行数 </td></tr>
-    <tr><td class="paramname">hCount</td><td>相机阵列横向的相机个数，为 \(\ge 1\) 的数值。 </td></tr>
-    <tr><td class="paramname">vCount</td><td>相机阵列纵向的相机个数，为 \(\ge 1\) 的数值。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">calibs</td><td>多个相机对象对应的标定模型 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rows</td><td>输入对象的排列行数 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hCount</td><td>相机阵列横向的相机个数，为 \( \ge 1 \) 的数值。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">vCount</td><td>相机阵列纵向的相机个数，为 \( \ge 1 \) 的数值。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">copyCalib</td><td>是否同时拷贝标定结果。若输入的移动步长为合法数值，则同时为每次移动生成对应的后变换矩阵。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hStep</td><td>横向移动的步长，物理单位，可为空。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">vStep</td><td>纵向移动的步长，物理单位，可为空。 </td></tr>
   </table>
   </dd>
 </dl>
@@ -403,7 +396,7 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 </div><div class="memdoc">
 <p>获取给定索引的相机所对应的标定模型。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">index</td><td>输入索引，从 0 开始但小于总数的数字 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>输入索引，从 0 开始但小于总数的数字 </td></tr>
   </table>
   </dd>
 </dl>
@@ -498,7 +491,7 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 <p>保存相机阵列及其标定信息到指定的文件。<br  />
 标定文件为 .calib 文件，保存该相机阵列及其中的所有单个相机的标定配置和标定结果。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">filename</td><td>文件路径，可为绝对或相对路径，包含文件夹、文件名和扩展名 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>文件路径，可为绝对或相对路径，包含文件夹、文件名和扩展名 </td></tr>
   </table>
   </dd>
 </dl>
@@ -530,7 +523,7 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 <p>从指定文件中读取相机阵列及其标定信息。<br  />
 标定文件为 .calib 文件，包括该相机阵列及其中的所有单个相机的标定配置和标定结果。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">filename</td><td>文件路径，可为绝对或相对路径，包含文件夹、文件名和扩展名 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>文件路径，可为绝对或相对路径，包含文件夹、文件名和扩展名 </td></tr>
   </table>
   </dd>
 </dl>
@@ -584,15 +577,10 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 <p>映射点坐标从拼图图像坐标系到物理坐标系。<br  />
 标定对象需成功标定，若未标定返回 <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aa564aa76ea75ffa30b29cfcfb3a5b503b">LPVErrCalibNotCalib </a> 错误。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">imagePointX</td><td>拼图图像坐标系下的 x 坐标 </td></tr>
-    <tr><td class="paramname">imagePointY</td><td>拼图图像坐标系下的 y 坐标 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>返回值</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">worldPointX</td><td>返回物理坐标系下的 x 坐标 </td></tr>
-    <tr><td class="paramname">worldPointY</td><td>返回物理坐标系下的 y 坐标 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">imagePointX</td><td>拼图图像坐标系下的 x 坐标 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">imagePointY</td><td>拼图图像坐标系下的 y 坐标 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">worldPointX</td><td>返回物理坐标系下的 x 坐标 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">worldPointY</td><td>返回物理坐标系下的 y 坐标 </td></tr>
   </table>
   </dd>
 </dl>
@@ -639,15 +627,10 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 <p>映射点坐标从物理坐标系到拼图图像坐标系。<br  />
 标定对象需成功标定，若未标定返回 <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aa564aa76ea75ffa30b29cfcfb3a5b503b">LPVErrCalibNotCalib </a> 错误。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">worldPointX</td><td>物理坐标系下的 x 坐标 </td></tr>
-    <tr><td class="paramname">worldPointY</td><td>物理坐标系下的 y 坐标 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>返回值</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">imagePointX</td><td>返回拼图图像坐标系下的 x 坐标 </td></tr>
-    <tr><td class="paramname">imagePointY</td><td>返回拼图图像坐标系下的 y 坐标 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">worldPointX</td><td>物理坐标系下的 x 坐标 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">worldPointY</td><td>物理坐标系下的 y 坐标 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">imagePointX</td><td>返回拼图图像坐标系下的 x 坐标 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">imagePointY</td><td>返回拼图图像坐标系下的 y 坐标 </td></tr>
   </table>
   </dd>
 </dl>
@@ -682,13 +665,13 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 <p>拼接阵列中所有相机的图像，生成一张大的拼图。<br  />
 标定对象需成功标定，若未标定返回 <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aa564aa76ea75ffa30b29cfcfb3a5b503b">LPVErrCalibNotCalib </a> 错误。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">images</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> 输入的图像，其顺序与相机阵列中相机的顺序对应，按行排列。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">images</td><td>输入的图像，其顺序与相机阵列中相机的顺序对应，按行排列。 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">stitchedImage</td><td>返回拼接后的图像 </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>返回值</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">stitchedImage</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> 返回拼接后的图像 </td></tr>
     <tr><td class="paramname">error</td><td>返回错误码 </td></tr>
   </table>
   </dd>

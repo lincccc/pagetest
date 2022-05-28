@@ -20,7 +20,7 @@
     jax: ["input/TeX","output/HTML-CSS"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.7/MathJax.js"></script>
 <link href="lpv_stylesheet.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-custom.css" rel="stylesheet" type="text/css"/>
@@ -124,7 +124,7 @@ Public Member Functions</h2></td></tr>
  <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">ILImageMorphPtr m_morph_op(__uuidof(LImageMorph));</div>
 <div class="line">m_morph_op-&gt;SetMorphShape(<a class="code" href="namespace_l_p_v_img_proc_lib.html#a1b8145ed8b707b1177c0ab8c0bc170abab2f17e0c535c0d0d70fdd2b219936035">LPVMorphRect</a>, 3, 3);</div>
 <div class="line">m_morph_op-&gt;Close(m_img, m_result_img);</div>
-<div class="ttc" id="anamespace_l_p_v_img_proc_lib_html_a1b8145ed8b707b1177c0ab8c0bc170abab2f17e0c535c0d0d70fdd2b219936035"><div class="ttname"><a href="namespace_l_p_v_img_proc_lib.html#a1b8145ed8b707b1177c0ab8c0bc170abab2f17e0c535c0d0d70fdd2b219936035">LPVImgProcLib::LPVMorphRect</a></div><div class="ttdeci">@ LPVMorphRect</div><div class="ttdef"><b>Definition:</b> LPVImgProc.idl:61</div></div>
+<div class="ttc" id="anamespace_l_p_v_img_proc_lib_html_a1b8145ed8b707b1177c0ab8c0bc170abab2f17e0c535c0d0d70fdd2b219936035"><div class="ttname"><a href="namespace_l_p_v_img_proc_lib.html#a1b8145ed8b707b1177c0ab8c0bc170abab2f17e0c535c0d0d70fdd2b219936035">LPVImgProcLib::LPVMorphRect</a></div><div class="ttdeci">@ LPVMorphRect</div><div class="ttdef"><b>Definition:</b> LPVImgProc.idl:62</div></div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LImageMorph m_morph_op = <span class="keyword">new</span> LImageMorph();</div>
 <div class="line">m_morph_op.SetMorphShape(<a class="code" href="namespace_l_p_v_img_proc_lib.html#a1b8145ed8b707b1177c0ab8c0bc170ab">LPVMorphShape</a>.LPVMorphRect, 3, 3);</div>
 <div class="line">m_morph_op.Close(m_img, m_result_img);</div>
@@ -163,9 +163,9 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Set the structuring element used in morphology operations of specified shape and size. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">shape</td><td>Element shape. </td></tr>
-    <tr><td class="paramname">kWidth</td><td>The width of the kernel size, should be an odd number, say, 3, 5, 7, etc. </td></tr>
-    <tr><td class="paramname">kHeight</td><td>The height of the kernel size, should be an odd number, say, 3, 5, 7, etc. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">shape</td><td>Element shape. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">kWidth</td><td>The width of the kernel size, should be an odd number, say, 3, 5, 7, etc. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">kHeight</td><td>The height of the kernel size, should be an odd number, say, 3, 5, 7, etc. </td></tr>
   </table>
   </dd>
 </dl>
@@ -203,13 +203,8 @@ Public Member Functions</h2></td></tr>
 </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">img</td><td>The input image </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">result</td><td>Return result image </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>The input image </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>Return result image </td></tr>
   </table>
   </dd>
 </dl>
@@ -247,13 +242,8 @@ Public Member Functions</h2></td></tr>
 </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">img</td><td>The input image </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">result</td><td>Return result image </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>The input image </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>Return result image </td></tr>
   </table>
   </dd>
 </dl>
@@ -287,13 +277,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Each output pixel represents the maximum value of TopHat or BottomHat. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">img</td><td>The input image </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">result</td><td>Return result image </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>The input image </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>Return result image </td></tr>
   </table>
   </dd>
 </dl>
@@ -331,13 +316,8 @@ Public Member Functions</h2></td></tr>
 </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">img</td><td>The input image </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">result</td><td>Return result image </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>The input image </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>Return result image </td></tr>
   </table>
   </dd>
 </dl>
@@ -375,13 +355,8 @@ Public Member Functions</h2></td></tr>
 </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">img</td><td>The input image </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">result</td><td>Return result image </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>The input image </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>Return result image </td></tr>
   </table>
   </dd>
 </dl>
@@ -415,17 +390,12 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Dilate operation. The value of the output pixel is the maximum value of all the pixels that fall within the structuring element's size and shape.</p>
 <p class="formulaDsp">
-\[ I&#39;(x,y) = \max _{(i,j): \, \texttt{element} (i,j) \ne0 } I (x+i,y+j) \]
+\[ I&#39;(x,y) = \max _{(i,j): , \texttt{element} (i,j) \ne0 } I (x+i,y+j) \]
 </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">img</td><td>The input image </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">result</td><td>Return result image </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>The input image </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>Return result image </td></tr>
   </table>
   </dd>
 </dl>
@@ -459,17 +429,12 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Erode operation. The value of the output pixel is the minimum value of all the pixels that fall within the structuring element's size and shape.</p>
 <p class="formulaDsp">
-\[ I&#39;(x,y) = \min _{(i,j): \, \texttt{element} (i,j) \ne0 } I (x+i,y+j) \]
+\[ I&#39;(x,y) = \min _{(i,j): , \texttt{element} (i,j) \ne0 } I (x+i,y+j) \]
 </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">img</td><td>The input image </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">result</td><td>Return result image </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>The input image </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>Return result image </td></tr>
   </table>
   </dd>
 </dl>
@@ -507,13 +472,8 @@ Public Member Functions</h2></td></tr>
 </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">img</td><td>The input image </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">result</td><td>Return result image </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>The input image </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>Return result image </td></tr>
   </table>
   </dd>
 </dl>

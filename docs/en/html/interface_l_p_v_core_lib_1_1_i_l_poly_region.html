@@ -20,7 +20,7 @@
     jax: ["input/TeX","output/HTML-CSS"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.7/MathJax.js"></script>
 <link href="lpv_stylesheet.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-custom.css" rel="stylesheet" type="text/css"/>
@@ -143,8 +143,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6c9eb19797abac33fe2f1f3ab6b48e63 inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_region"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b7509dc313340daef8aaa5600276ae7 inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_region"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html#a0b7509dc313340daef8aaa5600276ae7">Scale</a> (double factorX, double factorY)</td></tr>
 <tr class="separator:a0b7509dc313340daef8aaa5600276ae7 inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_region"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a74066985052e5af4db8b2de183d05b inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_region"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html#a7a74066985052e5af4db8b2de183d05b">ToMask</a> (int w, int h, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> **mask)</td></tr>
-<tr class="separator:a7a74066985052e5af4db8b2de183d05b inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_region"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5491a1a6d1431f2ce82140c1061c2a9c inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_region"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html#a5491a1a6d1431f2ce82140c1061c2a9c">ToMask</a> (int w, int h)</td></tr>
+<tr class="separator:a5491a1a6d1431f2ce82140c1061c2a9c inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_region"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c5101821d263ba517c9478ef6e205f0 inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_region"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html#a6c5101821d263ba517c9478ef6e205f0">Intersect</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a> *other)</td></tr>
 <tr class="separator:a6c5101821d263ba517c9478ef6e205f0 inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_region"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e4619cfa558129ae9cf1859dad2354c inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_region"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html#a8e4619cfa558129ae9cf1859dad2354c">XOR</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a> *other)</td></tr>
@@ -232,9 +232,9 @@ By default, it's 1. Change this value to scale the reduced result image.  <a hre
 </div><div class="memdoc">
 <p>Add a control vertexes to the polygon region at provided position </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">x</td><td>The x-coordinate of the new control vertex </td></tr>
-    <tr><td class="paramname">y</td><td>The y-coordinate of the new control vertex </td></tr>
-    <tr><td class="paramname">ctrlIndex</td><td>The index of the new control vertex, default to -1 means add at the end. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td>The x-coordinate of the new control vertex </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">y</td><td>The y-coordinate of the new control vertex </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ctrlIndex</td><td>The index of the new control vertex, default to -1 means add at the end. </td></tr>
   </table>
   </dd>
 </dl>
@@ -274,14 +274,9 @@ By default, it's 1. Change this value to scale the reduced result image.  <a hre
 </div><div class="memdoc">
 <p>Get position of the polygon region's control vertexes with given index </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ctrlIndex</td><td>The index of the control vertex </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">x</td><td>Return the x-coordinate of the control vertex </td></tr>
-    <tr><td class="paramname">y</td><td>Return the y-coordinate of the control vertex </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ctrlIndex</td><td>The index of the control vertex </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">x</td><td>Return the x-coordinate of the control vertex </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">y</td><td>Return the y-coordinate of the control vertex </td></tr>
   </table>
   </dd>
 </dl>
@@ -315,8 +310,8 @@ By default, it's 1. Change this value to scale the reduced result image.  <a hre
 </div><div class="memdoc">
 <p>Modify the polygon region's placement by given vertexes. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">xs</td><td>The collection of x-coordinate of the vertexes. </td></tr>
-    <tr><td class="paramname">ys</td><td>The collection of y-coordinate of the vertexes. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">xs</td><td>The collection of x-coordinate of the vertexes. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ys</td><td>The collection of y-coordinate of the vertexes. </td></tr>
   </table>
   </dd>
 </dl>
@@ -340,7 +335,7 @@ By default, it's 1. Change this value to scale the reduced result image.  <a hre
 </div><div class="memdoc">
 <p>Remove one of the polygon region's control vertexes with given index </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ctrlIndex</td><td>The index of the control vertex </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ctrlIndex</td><td>The index of the control vertex </td></tr>
   </table>
   </dd>
 </dl>
@@ -380,9 +375,9 @@ By default, it's 1. Change this value to scale the reduced result image.  <a hre
 </div><div class="memdoc">
 <p>Modify a control vertexes of the polygon region to provided position </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">x</td><td>The x-coordinate of the new position </td></tr>
-    <tr><td class="paramname">y</td><td>The y-coordinate of the new position </td></tr>
-    <tr><td class="paramname">ctrlIndex</td><td>The index of the new control vertex, default to -1 means add at the end. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td>The x-coordinate of the new position </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">y</td><td>The y-coordinate of the new position </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ctrlIndex</td><td>The index of the new control vertex, default to -1 means add at the end. </td></tr>
   </table>
   </dd>
 </dl>

@@ -20,7 +20,7 @@
     jax: ["input/TeX","output/HTML-CSS"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.7/MathJax.js"></script>
 <link href="lpv_stylesheet.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-custom.css" rel="stylesheet" type="text/css"/>
@@ -193,7 +193,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Fetch one image point with given index. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">index</td><td>Input index, it should be a 0-based number smaller than total count. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>Input index, it should be a 0-based number smaller than total count. </td></tr>
   </table>
   </dd>
 </dl>
@@ -223,13 +223,13 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Fetch one world point with given index. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">index</td><td>Input index, it should be a 0-based number smaller than total count. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>Input index, it should be a 0-based number smaller than total count. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">imagePoint</td><td>Return the world point of given index. </td></tr>
+    <tr><td class="paramname">worldPoint</td><td>Return the world point of given index. </td></tr>
   </table>
   </dd>
 </dl>
@@ -275,10 +275,10 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Add a pair of image and world points to the collection </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">imagePointX</td><td>The x-coordinate of the image point. </td></tr>
-    <tr><td class="paramname">imagePointY</td><td>The y-coordinate of the image point. </td></tr>
-    <tr><td class="paramname">worldPointX</td><td>The x-coordinate of the world point. </td></tr>
-    <tr><td class="paramname">worldPointY</td><td>The y-coordinate of the world point. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">imagePointX</td><td>The x-coordinate of the image point. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">imagePointY</td><td>The y-coordinate of the image point. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">worldPointX</td><td>The x-coordinate of the world point. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">worldPointY</td><td>The y-coordinate of the world point. </td></tr>
   </table>
   </dd>
 </dl>
@@ -336,7 +336,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Draw a image point in one point pair of given index onto provide device context. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">index</td><td>Input index, it should be a 0-based number smaller than total count. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>Input index, it should be a 0-based number smaller than total count. </td></tr>
   </table>
   </dd>
 </dl>
@@ -412,7 +412,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Save the point pair collection to a specified file. It should be a .cpair file with the positions and corresponding information of all point pairs. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">filename</td><td>Full path of the file, it could be absolute or relative path with file name and extension. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>Full path of the file, it could be absolute or relative path with file name and extension. </td></tr>
   </table>
   </dd>
 </dl>
@@ -443,7 +443,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Load the point pair collection from a specified file. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">filename</td><td>Full path of the file, it could be absolute or relative path with file name and extension. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>Full path of the file, it could be absolute or relative path with file name and extension. </td></tr>
   </table>
   </dd>
 </dl>

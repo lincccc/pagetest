@@ -20,7 +20,7 @@
     jax: ["input/TeX","output/HTML-CSS"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.7/MathJax.js"></script>
 <link href="lpv_stylesheet.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-custom.css" rel="stylesheet" type="text/css"/>
@@ -189,7 +189,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Draw the blob onto provide device context. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drawFlags</td><td>Flags to control the blob drawing behavior, see LPVBlobDrawFlags for usage. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">drawFlags</td><td>Flags to control the blob drawing behavior, see LPVBlobDrawFlags for usage. </td></tr>
   </table>
   </dd>
 </dl>
@@ -247,8 +247,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Construct the blob object from a region object. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">region</td><td>The input region object. </td></tr>
-    <tr><td class="paramname">image</td><td>The input image to be attached to the blob. It is used for image-related feature calculation, such as luminance, contrast, sharpness, etc.. Pass in null if you don't want do that. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">region</td><td>The input region object. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">image</td><td>The input image to be attached to the blob. It is used for image-related feature calculation, such as luminance, contrast, sharpness, etc.. Pass in null if you don't want do that. </td></tr>
   </table>
   </dd>
 </dl>
@@ -290,7 +290,13 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Get the angle of the blob. It's the same direction as the blob's rotate bounding rectangle's longer axis, in range of (-90, 90). </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">alwaysUp</td><td>If it's on, return the angle of the up axis, it could either the longer axis or the shorter axis. It is useful when the difference between axes is not notable, for example, it's a square object, but the rotation is slight. An always-up angle is in range of (-135, -45). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">alwaysUp</td><td>If it's on, return the angle of the up axis, it could either the longer axis or the shorter axis. It is useful when the difference between axes is not notable, for example, it's a square object, but the rotation is slight. An always-up angle is in range of (-135, -45). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">val</td><td>Return the angle </td></tr>
   </table>
   </dd>
 </dl>
@@ -314,7 +320,13 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Calculate the specified numeric feature of the blob. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">feature</td><td>Specify the required feature, see LPVBlobFeatures. @reval pVal Return the feature result. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">feature</td><td>Specify the required feature, see LPVBlobFeatures. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">val</td><td>Return the feature result. </td></tr>
   </table>
   </dd>
 </dl>
@@ -348,8 +360,14 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Calculate the aggregated luminance feature of the blob, only available when an image is attached to the blob. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">aggType</td><td>Aggregation type, see LPVAggregation for usage. </td></tr>
-    <tr><td class="paramname">percentage</td><td>Specify the top/bottom percentage of pixels used in aggregation. A positive value indicates the top X% pixels sorted by their luminance value descendingly, a negative value use the bottom X%. Pass in 0 to use all pixels. @reval pVal Return the aggregated luminance feature result. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aggType</td><td>Aggregation type, see LPVAggregation for usage. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">percentage</td><td>Specify the top/bottom percentage of pixels used in aggregation. A positive value indicates the top X% pixels sorted by their luminance value descendingly, a negative value use the bottom X%. Pass in 0 to use all pixels. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">val</td><td>Return the aggregated luminance feature result. </td></tr>
   </table>
   </dd>
 </dl>
@@ -383,8 +401,14 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Calculate the aggregated contrast feature of the blob, only available when an image is attached to the blob. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">aggType</td><td>Aggregation type, see LPVAggregation for usage. </td></tr>
-    <tr><td class="paramname">percentage</td><td>Specify the top/bottom percentage of pixels used in aggregation. A positive value indicates the top X% pixels sorted by their contrast value descendingly, a negative value use the bottom X%. Pass in 0 to use all pixels. @reval pVal Return the aggregated contrast feature result. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aggType</td><td>Aggregation type, see LPVAggregation for usage. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">percentage</td><td>Specify the top/bottom percentage of pixels used in aggregation. A positive value indicates the top X% pixels sorted by their contrast value descendingly, a negative value use the bottom X%. Pass in 0 to use all pixels. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">val</td><td>Return the aggregated contrast feature result. </td></tr>
   </table>
   </dd>
 </dl>
@@ -408,7 +432,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Attach the input image to the blob, used for image-related feature calculation, such as luminance, contrast, sharpness, etc.. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">image</td><td>The input image </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">image</td><td>The input image </td></tr>
   </table>
   </dd>
 </dl>
@@ -429,13 +453,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get the bounding rectangle of the blob </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">val</td><td>Return the rectangle </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html#af862abdfe54b18ccb7e3ddfee7766237">GetRotRect()</a>. </dd></dl>
+<p>Get the bounding rectangle of the blob </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html#af862abdfe54b18ccb7e3ddfee7766237">GetRotRect()</a>. </dd></dl>
 
 </div>
 </div>
@@ -453,13 +471,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get the rotated bounding rectangle of the blob </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">val</td><td>Return the rectangle </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html#a298cb1d21f02123b1b52dc1dd530e4e4">GetRect()</a>. </dd></dl>
+<p>Get the rotated bounding rectangle of the blob </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html#a298cb1d21f02123b1b52dc1dd530e4e4">GetRect()</a>. </dd></dl>
 
 </div>
 </div>
@@ -477,13 +489,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get count of the external contours of the blob </p><dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">val</td><td>Return the count </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html#a039b1190a5c107325664d30c346a9041">GetContour()</a>, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html#affc98cc748385ff11c7083d8b0c3c562">CountHole()</a> </dd></dl>
+<p>Get count of the external contours of the blob </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html#a039b1190a5c107325664d30c346a9041">GetContour()</a>, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html#affc98cc748385ff11c7083d8b0c3c562">CountHole()</a> </dd></dl>
 
 </div>
 </div>
@@ -504,7 +510,12 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Fetch one external contour of the blob with given index. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">index</td><td>The input index, it should be a 0-based number smaller than total count. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>The input index, it should be a 0-based number smaller than total count. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
     <tr><td class="paramname">val</td><td>Return the external contour as polygon </td></tr>
   </table>
   </dd>
@@ -527,13 +538,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get count of the external contours of the blob </p><dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">val</td><td>Return the count </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html#a4439092fc762f49f1f0650a813d8f41b">GetHole()</a>, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html#a3a90022b0fca4ee3d2f07374c8c74a58">CountContour()</a> </dd></dl>
+<p>Get count of the external contours of the blob </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html#a4439092fc762f49f1f0650a813d8f41b">GetHole()</a>, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html#a3a90022b0fca4ee3d2f07374c8c74a58">CountContour()</a> </dd></dl>
 
 </div>
 </div>
@@ -552,7 +557,19 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Fetch one hole of the blob with given index. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html#affc98cc748385ff11c7083d8b0c3c562">CountHole()</a>, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html#a039b1190a5c107325664d30c346a9041">GetContour()</a> </dd></dl>
+<p>Fetch one hole of the blob with given index. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>The input index, it should be a 0-based number smaller than total count. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">val</td><td>Return the hole contour as polygon </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html#affc98cc748385ff11c7083d8b0c3c562">CountHole()</a>, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html#a039b1190a5c107325664d30c346a9041">GetContour()</a> </dd></dl>
 
 </div>
 </div>

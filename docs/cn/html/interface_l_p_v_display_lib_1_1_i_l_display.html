@@ -20,7 +20,7 @@
     jax: ["input/TeX","output/SVG"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.7/MathJax.js"></script>
 <link href="lpv_stylesheet.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-custom.css" rel="stylesheet" type="text/css"/>
@@ -185,11 +185,11 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 <tr class="separator:ae7f979e70b4ed82a166006864dbb89cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a685cd4ccb93f6a8ef101dd27ac97fabb"><td class="memItemLeft" align="right" valign="top"><a id="a685cd4ccb93f6a8ef101dd27ac97fabb"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#a685cd4ccb93f6a8ef101dd27ac97fabb">PanX</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a685cd4ccb93f6a8ef101dd27ac97fabb"><td class="mdescLeft">&#160;</td><td class="mdescRight">场景在水平方向的位移。 最终的 x 位置按照该公式计算: \((x + panX) \times zoomX\) <br /></td></tr>
+<tr class="memdesc:a685cd4ccb93f6a8ef101dd27ac97fabb"><td class="mdescLeft">&#160;</td><td class="mdescRight">场景在水平方向的位移。 最终的 x 位置按照该公式计算: \( (x + panX) \times zoomX \) <br /></td></tr>
 <tr class="separator:a685cd4ccb93f6a8ef101dd27ac97fabb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac837bfb9690964ba54356f556961efa9"><td class="memItemLeft" align="right" valign="top"><a id="ac837bfb9690964ba54356f556961efa9"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#ac837bfb9690964ba54356f556961efa9">PanY</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:ac837bfb9690964ba54356f556961efa9"><td class="mdescLeft">&#160;</td><td class="mdescRight">场景在垂直方向的位移。 最终的 y 位置按照该公式计算: \((y + panY) \times zoomY\) <br /></td></tr>
+<tr class="memdesc:ac837bfb9690964ba54356f556961efa9"><td class="mdescLeft">&#160;</td><td class="mdescRight">场景在垂直方向的位移。 最终的 y 位置按照该公式计算: \( (y + panY) \times zoomY \) <br /></td></tr>
 <tr class="separator:ac837bfb9690964ba54356f556961efa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0660162ba193ae8500efd79bbf1eb576"><td class="memItemLeft" align="right" valign="top"><a id="a0660162ba193ae8500efd79bbf1eb576"></a>
 <a class="el" href="namespace_l_p_v_display_lib.html#a5361690471ec9bae7d38163800878c4e">LPVAlignment</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#a0660162ba193ae8500efd79bbf1eb576">Alignment</a><code> [get, set]</code></td></tr>
@@ -263,8 +263,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 </div><div class="memdoc">
 <p>设置当前场景的尺寸，以像素为单位。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">w</td><td>场景的宽度，x 方向尺寸 </td></tr>
-    <tr><td class="paramname">h</td><td>场景的高度，y 方向尺寸 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">w</td><td>场景的宽度，x 方向尺寸 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">h</td><td>场景的高度，y 方向尺寸 </td></tr>
   </table>
   </dd>
 </dl>
@@ -288,7 +288,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 </div><div class="memdoc">
 <p>设置当前场景的图像，场景尺寸将被设置为该图像的尺寸。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">image</td><td>输入图像，应当为 <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">LImage </a> 类型。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">image</td><td>输入图像，应当为 <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">LImage </a> 类型。 </td></tr>
   </table>
   </dd>
 </dl>
@@ -329,7 +329,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 </div><div class="memdoc">
 <p>获取场景中的图像对象。 </p><dl class="retval"><dt>返回值</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">image</td><td>图像对象 </td></tr>
+    <tr><td class="paramname">image</td><td>返回图像对象 </td></tr>
   </table>
   </dd>
 </dl>
@@ -363,8 +363,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 </div><div class="memdoc">
 <p>在场景中新增一个区域对象。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">region区域对象，应当为</td><td><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">LRegion </a> 类型。 </td></tr>
-    <tr><td class="paramname">interactable</td><td>该区域对象是否可交互，即使用鼠标拖动控制点以及移动、旋转该对象。默认值为 True。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">region</td><td>区域对象，应当为 <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">LRegion </a> 类型。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">interactable</td><td>该区域对象是否可交互，即使用鼠标拖动控制点以及移动、旋转该对象。默认值为 True。 </td></tr>
   </table>
   </dd>
 </dl>
@@ -394,7 +394,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 </div><div class="memdoc">
 <p>从场景中移除指定的区域对象。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">region</td><td>需要移除的区域对象 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">region</td><td>需要移除的区域对象 </td></tr>
   </table>
   </dd>
 </dl>
@@ -418,7 +418,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 </div><div class="memdoc">
 <p>从场景中移除指定 ID 的区域对象 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">regionId</td><td>对象在场景中的 ID </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">regionId</td><td>对象在场景中的 ID </td></tr>
   </table>
   </dd>
 </dl>
@@ -460,7 +460,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 </div><div class="memdoc">
 <p>获取场景中给定 ID 的区域对象 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">regionId</td><td>对象在场景中的 ID </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">regionId</td><td>对象在场景中的 ID </td></tr>
   </table>
   </dd>
 </dl>
@@ -500,8 +500,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 </div><div class="memdoc">
 <p>在场景中新增一个可绘制对象。通常是一个几何形状，或某些算法的输出结果。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drawable</td><td>可绘制对象，应当为实现 <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_drawable.html">ILDrawable</a> 的类型，或 <a class="el" href="interface_l_p_v_display_lib_1_1_i_l_text.html">LText</a> 类型。 </td></tr>
-    <tr><td class="paramname">drawFlags</td><td>该可绘制对象的绘制参数。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">drawable</td><td>可绘制对象，应当为实现 <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_drawable.html">ILDrawable</a> 的类型，或 <a class="el" href="interface_l_p_v_display_lib_1_1_i_l_text.html">LText</a> 类型。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">drawFlags</td><td>该可绘制对象的绘制参数。 </td></tr>
   </table>
   </dd>
 </dl>
@@ -531,7 +531,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 </div><div class="memdoc">
 <p>从场景中移除指定的可绘制对象。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drawable</td><td>需要移除的可绘制对象 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">drawable</td><td>需要移除的可绘制对象 </td></tr>
   </table>
   </dd>
 </dl>
@@ -555,7 +555,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 </div><div class="memdoc">
 <p>从场景中移除指定 ID 的可绘制对象 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">objectId</td><td>对象在场景中的 ID </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">objectId</td><td>对象在场景中的 ID </td></tr>
   </table>
   </dd>
 </dl>
@@ -597,13 +597,13 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 </div><div class="memdoc">
 <p>获取场景中给定 ID 的可绘制对象 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">objectId</td><td>对象在场景中的 ID </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">objectId</td><td>对象在场景中的 ID </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>返回值</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">object</td><td>返回可绘制对象 </td></tr>
+    <tr><td class="paramname">drawable</td><td>返回可绘制对象 </td></tr>
   </table>
   </dd>
 </dl>
@@ -655,11 +655,11 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 </div><div class="memdoc">
 <p>缩放和平移场景，使得指定的方形区域充满整个窗口 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">tlx</td><td>指定方形区域的左上角 x 坐标，以像素为单位。 </td></tr>
-    <tr><td class="paramname">tly</td><td>指定方形区域的左上角 y 坐标，以像素为单位。 </td></tr>
-    <tr><td class="paramname">w</td><td>指定方形区域的宽度，x 方向尺寸，以像素为单位。 </td></tr>
-    <tr><td class="paramname">h</td><td>指定方形区域的高度，y 方向尺寸，以像素为单位。 </td></tr>
-    <tr><td class="paramname">alignFlags</td><td>对齐方式，若未指定则使用显示控件的 <a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#a0660162ba193ae8500efd79bbf1eb576" title="显示控件在缩放整个场景或场景中的一部分到窗口尺寸时，所使用的对齐方式">Alignment</a> 属性。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tlx</td><td>指定方形区域的左上角 x 坐标，以像素为单位。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tly</td><td>指定方形区域的左上角 y 坐标，以像素为单位。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">w</td><td>指定方形区域的宽度，x 方向尺寸，以像素为单位。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">h</td><td>指定方形区域的高度，y 方向尺寸，以像素为单位。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">alignFlags</td><td>对齐方式，若未指定则使用显示控件的 <a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#a0660162ba193ae8500efd79bbf1eb576" title="显示控件在缩放整个场景或场景中的一部分到窗口尺寸时，所使用的对齐方式">Alignment</a> 属性。 </td></tr>
   </table>
   </dd>
 </dl>
@@ -693,8 +693,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 </div><div class="memdoc">
 <p>缩放和平移场景，使得指定对象所在的区域充满整个窗口 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">object</td><td>指定需要查看的对象 </td></tr>
-    <tr><td class="paramname">alignFlags</td><td>对齐方式，若未指定则使用显示控件的 <a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#a0660162ba193ae8500efd79bbf1eb576" title="显示控件在缩放整个场景或场景中的一部分到窗口尺寸时，所使用的对齐方式">Alignment</a> 属性。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">object</td><td>指定需要查看的对象 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">alignFlags</td><td>对齐方式，若未指定则使用显示控件的 <a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#a0660162ba193ae8500efd79bbf1eb576" title="显示控件在缩放整个场景或场景中的一部分到窗口尺寸时，所使用的对齐方式">Alignment</a> 属性。 </td></tr>
   </table>
   </dd>
 </dl>
@@ -718,7 +718,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 </div><div class="memdoc">
 <p>缩放和平移场景，使得整个场景充满整个窗口 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">alignFlags</td><td>对齐方式，若未指定则使用显示控件的 <a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#a0660162ba193ae8500efd79bbf1eb576" title="显示控件在缩放整个场景或场景中的一部分到窗口尺寸时，所使用的对齐方式">Alignment</a> 属性。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">alignFlags</td><td>对齐方式，若未指定则使用显示控件的 <a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#a0660162ba193ae8500efd79bbf1eb576" title="显示控件在缩放整个场景或场景中的一部分到窗口尺寸时，所使用的对齐方式">Alignment</a> 属性。 </td></tr>
   </table>
   </dd>
 </dl>
@@ -760,7 +760,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 </div><div class="memdoc">
 <p>保存当前窗口图像到文件，以彩色图像保存。 图像格式按照所提供的扩展名自动选择 (.bmp, .png, .jpg, etc.)。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">filename</td><td>文件路径，可为绝对或相对路径，包括所在文件夹，文件名和扩展名。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>文件路径，可为绝对或相对路径，包括所在文件夹，文件名和扩展名。 </td></tr>
   </table>
   </dd>
 </dl>
@@ -800,8 +800,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 </div><div class="memdoc">
 <p>开启或关闭指定的显示控件功能 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">flag</td><td>指定需修改的显示控件功能 </td></tr>
-    <tr><td class="paramname">enable</td><td>True 开启这个功能，反之关闭这个功能 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">flag</td><td>指定需修改的显示控件功能 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>开启或关闭这个功能 </td></tr>
   </table>
   </dd>
 </dl>
@@ -847,10 +847,10 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 </div><div class="memdoc">
 <p>增加一条水平参考线。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">position</td><td>水平参考线的 y 位置。 </td></tr>
-    <tr><td class="paramname">relativePosition</td><td>水平参考线的相对 y 位置，实时根据图像尺寸计算。取值范围为 0 ~ 1，负值表示不启用。 </td></tr>
-    <tr><td class="paramname">attached</td><td>参考线是否跟随图像一起缩放平移。 </td></tr>
-    <tr><td class="paramname">clr</td><td>参考线的颜色，默认值为红色 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">position</td><td>水平参考线的 y 位置。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">relativePosition</td><td>水平参考线的相对 y 位置，实时根据图像尺寸计算。取值范围为 0 ~ 1，负值表示不启用。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">attached</td><td>参考线是否跟随图像一起缩放平移。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">clr</td><td>参考线的颜色，默认值为红色 </td></tr>
   </table>
   </dd>
 </dl>
@@ -902,10 +902,10 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 </div><div class="memdoc">
 <p>增加一条垂直参考线。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">position</td><td>垂直参考线的 x 位置。 </td></tr>
-    <tr><td class="paramname">relativePosition</td><td>垂直参考线的相对 x 位置，实时根据图像尺寸计算。取值范围为 0 ~ 1，负值表示不启用。 </td></tr>
-    <tr><td class="paramname">attached</td><td>参考线是否跟随图像一起缩放平移。 </td></tr>
-    <tr><td class="paramname">clr</td><td>参考线的颜色，默认值为红色 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">position</td><td>垂直参考线的 x 位置。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">relativePosition</td><td>垂直参考线的相对 x 位置，实时根据图像尺寸计算。取值范围为 0 ~ 1，负值表示不启用。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">attached</td><td>参考线是否跟随图像一起缩放平移。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">clr</td><td>参考线的颜色，默认值为红色 </td></tr>
   </table>
   </dd>
 </dl>
@@ -935,7 +935,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 </div><div class="memdoc">
 <p>从场景中移除指定 ID 的参考线 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">refLineId</td><td>参考线的 ID </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">refLineId</td><td>参考线的 ID </td></tr>
   </table>
   </dd>
 </dl>
@@ -1005,11 +1005,11 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 </div><div class="memdoc">
 <p>弹窗显示该显示控件。通常用于在控制台程序中显示调试图像等信息。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">dialogName</td><td>窗口名称，显示在标题栏中 </td></tr>
-    <tr><td class="paramname">x</td><td>窗口的 x 坐标 </td></tr>
-    <tr><td class="paramname">y</td><td>窗口的 y 坐标 </td></tr>
-    <tr><td class="paramname">w</td><td>窗口的宽度 </td></tr>
-    <tr><td class="paramname">h</td><td>窗口的高度 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dialogName</td><td>窗口名称，显示在标题栏中 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td>窗口的 x 坐标 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">y</td><td>窗口的 y 坐标 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">w</td><td>窗口的宽度 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">h</td><td>窗口的高度 </td></tr>
   </table>
   </dd>
 </dl>

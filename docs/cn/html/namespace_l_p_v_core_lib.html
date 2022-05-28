@@ -20,7 +20,7 @@
     jax: ["input/TeX","output/SVG"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.7/MathJax.js"></script>
 <link href="lpv_stylesheet.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-custom.css" rel="stylesheet" type="text/css"/>
@@ -90,13 +90,13 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 结构体</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_l_p_v_core_lib_1_1_l_matrix23.html">LMatrix23</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">\(2 \times 3\) 矩阵（2行，3列）  <a href="struct_l_p_v_core_lib_1_1_l_matrix23.html#details">更多...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( 2 \times 3 \) 矩阵（2行，3列）  <a href="struct_l_p_v_core_lib_1_1_l_matrix23.html#details">更多...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_l_p_v_core_lib_1_1_l_matrix33.html">LMatrix33</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">\(3 \times 3\) 矩阵（3行，3列）  <a href="struct_l_p_v_core_lib_1_1_l_matrix33.html#details">更多...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( 3 \times 3 \) 矩阵（3行，3列）  <a href="struct_l_p_v_core_lib_1_1_l_matrix33.html#details">更多...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_l_p_v_core_lib_1_1_l_matrix44.html">LMatrix44</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">\(4 \times 4\) 矩阵（4行，4列）  <a href="struct_l_p_v_core_lib_1_1_l_matrix44.html#details">更多...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( 4 \times 4 \) 矩阵（4行，4列）  <a href="struct_l_p_v_core_lib_1_1_l_matrix44.html#details">更多...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_l_p_v_core_lib_1_1_l_color.html">LColor</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">彩色值，以三通道数值表示，每个通道的数值在 0 ~ 255 范围内  <a href="struct_l_p_v_core_lib_1_1_l_color.html#details">更多...</a><br /></td></tr>
@@ -738,23 +738,23 @@ typedef struct <a class="el" href="struct_l_p_v_core_lib_1_1_l_color.html">LPVCo
 </td></tr>
 <tr><td class="fieldname"><a id="a38d3a87896df9ff1b8c96bee1ab58e2faccbd24417fbf505b986cbffe12a89f25"></a>LPVSortOrderAscending&#160;</td><td class="fielddoc"><p>升序排列，从小到大，如：</p>
 <p>LPVSortByRow, LPVSortOrderAscending:<br  />
- \(\begin{matrix}0 &amp; \rightarrow &amp; 1 &amp; \rightarrow &amp; 2\\3 &amp; \rightarrow &amp; 4 &amp; \rightarrow &amp; 5\\6 &amp; \rightarrow &amp; 7 &amp; \rightarrow &amp; 8\end{matrix}\)</p>
+ \( \begin{matrix}0 &amp; \rightarrow &amp; 1 &amp; \rightarrow &amp; 2\\3 &amp; \rightarrow &amp; 4 &amp; \rightarrow &amp; 5\\6 &amp; \rightarrow &amp; 7 &amp; \rightarrow &amp; 8\end{matrix} \)</p>
 <p>LPVSortByColumn, LPVSortOrderAscending:<br  />
- \(\begin{matrix}0 &amp; 3 &amp; 6\\ \downarrow &amp; \downarrow &amp; \downarrow\\1 &amp; 4 &amp; 7\\ \downarrow &amp; \downarrow &amp; \downarrow\\2 &amp; 5 &amp; 8\end{matrix}\) </p>
+ \( \begin{matrix}0 &amp; 3 &amp; 6\\ \downarrow &amp; \downarrow &amp; \downarrow\\1 &amp; 4 &amp; 7\\ \downarrow &amp; \downarrow &amp; \downarrow\\2 &amp; 5 &amp; 8\end{matrix} \) </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a38d3a87896df9ff1b8c96bee1ab58e2fac2f0614a60fa529439dd8324063a2bbd"></a>LPVSortOrderDescending&#160;</td><td class="fielddoc"><p>降序排列，从大到小，如：</p>
 <p>LPVSortByRow, LPVSortOrderDescending:<br  />
- \(\begin{matrix}8 &amp; \leftarrow &amp; 7 &amp; \leftarrow &amp; 6\\5 &amp; \leftarrow &amp; 4 &amp; \leftarrow &amp; 3\\2 &amp; \leftarrow &amp; 1 &amp; \leftarrow &amp; 0\end{matrix}\)</p>
+ \( \begin{matrix}8 &amp; \leftarrow &amp; 7 &amp; \leftarrow &amp; 6\\5 &amp; \leftarrow &amp; 4 &amp; \leftarrow &amp; 3\\2 &amp; \leftarrow &amp; 1 &amp; \leftarrow &amp; 0\end{matrix} \)</p>
 <p>LPVSortByColumn, LPVSortOrderDescending:<br  />
- \(\begin{matrix}8 &amp; 5 &amp; 2\\ \uparrow &amp; \uparrow &amp; \uparrow\\7 &amp; 4 &amp; 1\\ \uparrow &amp; \uparrow &amp; \uparrow\\6 &amp; 3 &amp; 0\end{matrix}\) </p>
+ \( \begin{matrix}8 &amp; 5 &amp; 2\\ \uparrow &amp; \uparrow &amp; \uparrow\\7 &amp; 4 &amp; 1\\ \uparrow &amp; \uparrow &amp; \uparrow\\6 &amp; 3 &amp; 0\end{matrix} \) </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a38d3a87896df9ff1b8c96bee1ab58e2fad8ae978cdb112c0fbf64207310855ad0"></a>LPVSortOrderAscendingZigZag&#160;</td><td class="fielddoc"><p>交替升序再降序，从升序开始，如：</p>
 <p>LPVSortByRow, LPVSortOrderAscendingZigZag:<br  />
- \(\begin{matrix}0 &amp; \rightarrow &amp; 1 &amp; \rightarrow &amp; 2\\5 &amp; \leftarrow &amp; 4 &amp; \leftarrow &amp; 3\\6 &amp; \rightarrow &amp; 7 &amp; \rightarrow &amp; 8\end{matrix}\) </p>
+ \( \begin{matrix}0 &amp; \rightarrow &amp; 1 &amp; \rightarrow &amp; 2\\5 &amp; \leftarrow &amp; 4 &amp; \leftarrow &amp; 3\\6 &amp; \rightarrow &amp; 7 &amp; \rightarrow &amp; 8\end{matrix} \) </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a38d3a87896df9ff1b8c96bee1ab58e2fac88fa9773daa6256c3dc7919ca3664ec"></a>LPVSortOrderDescendingZigZag&#160;</td><td class="fielddoc"><p>交替升序再降序，从降序开始，如：</p>
 <p>LPVSortByRow, LPVSortOrderDescendingZigZag:<br  />
- \(\begin{matrix}2 &amp; \leftarrow &amp; 1 &amp; \leftarrow &amp; 0\\3 &amp; \rightarrow &amp; 4 &amp; \rightarrow &amp; 5\\8 &amp; \leftarrow &amp; 7 &amp; \leftarrow &amp; 6\end{matrix}\) </p>
+ \( \begin{matrix}2 &amp; \leftarrow &amp; 1 &amp; \leftarrow &amp; 0\\3 &amp; \rightarrow &amp; 4 &amp; \rightarrow &amp; 5\\8 &amp; \leftarrow &amp; 7 &amp; \leftarrow &amp; 6\end{matrix} \) </p>
 </td></tr>
 </table>
 
@@ -966,12 +966,12 @@ typedef struct <a class="el" href="struct_l_p_v_core_lib_1_1_l_color.html">LPVCo
 </td></tr>
 <tr><td class="fieldname"><a id="abc1c78dbe5bbd9696e1af6618392a083a2bdcf03bcfb797b56c086a34b5a2446c"></a>LPVColorSpaceHSV&#160;</td><td class="fielddoc"><p>HSV 颜色空间。通道顺序为：H（色度）、S（饱和度、V（亮度）</p>
 <p class="formulaDsp">
-\[ V_{max} = max(R,G,B), V_{min} = min(R,G,B) \\ V = V_{max} \\ S = \left\{ \begin{array}{ll} \frac{V - V_{min}}{V} \cdot 255 &amp; V \neq 0 \\ 0 &amp; otherwise \\ \end{array} \right. \\ h = \left\{ \begin{array}{ll} \frac{G - B}{V - V_{min}} \cdot 60 &amp; V = R \\ \frac{B - R}{V - V_{min}} \cdot 60 + 120 &amp; V = R \\ \frac{R - G}{V - V_{min}} \cdot 60 + 240 &amp; V = B \\ \end{array} \right. , H = \left\{ \begin{array}{ll} \frac{h + 360}{2} &amp; h &lt; 0\ \\ \frac{h}{2} &amp; otherwise \\ \end{array} \right. \]
+\[ V_{max} = max(R,G,B), V_{min} = min(R,G,B) \\ V = V_{max} \\ S = \left{ \begin{array}{ll} \frac{V - V_{min}}{V} \cdot 255 &amp; V \neq 0 \\ 0 &amp; otherwise \\ \end{array} \right. \\ h = \left{ \begin{array}{ll} \frac{G - B}{V - V_{min}} \cdot 60 &amp; V = R \\ \frac{B - R}{V - V_{min}} \cdot 60 + 120 &amp; V = R \\ \frac{R - G}{V - V_{min}} \cdot 60 + 240 &amp; V = B \\ \end{array} \right. , H = \left{ \begin{array}{ll} \frac{h + 360}{2} &amp; h &lt; 0\ \\ \frac{h}{2} &amp; otherwise \\ \end{array} \right. \]
 </p>
  </td></tr>
 <tr><td class="fieldname"><a id="abc1c78dbe5bbd9696e1af6618392a083a05e36ea1a23bf4914fa568ba426cbe3e"></a>LPVColorSpaceHLS&#160;</td><td class="fielddoc"><p>HLS 颜色空间。通道顺序为：H（色度）、L（亮度）、S（饱和度）</p>
 <p class="formulaDsp">
-\[ V_{max} = max(R,G,B), V_{min} = min(R,G,B) \\ L = \frac{V_{min} + V_{max}}{2} \\ S = \left\{ \begin{array}{ll} \frac{V_{max} - V_{min}}{V_{max} + V_{min}} \cdot 255 &amp; L &lt; 128 \\ \frac{V_{max} - V_{min}}{255 \cdot 2 - (V_{max} + V_{min})} \cdot 255 &amp; otherwise \\ \end{array} \right. \\ h = \left\{ \begin{array}{ll} \frac{G - B}{V_{max} - V_{min}} \cdot 60 &amp; V_{max} = R \\ \frac{B - R}{V_{max} - V_{min}} \cdot 60 + 120 &amp; V_{max} = R \\ \frac{R - G}{V_{max} - V_{min}} \cdot 60 + 240 &amp; V_{max} = B \\ \end{array} \right. , H = \left\{ \begin{array}{ll} \frac{h + 360}{2} &amp; h &lt; 0\ \\ \frac{h}{2} &amp; otherwise \\ \end{array} \right. \]
+\[ V_{max} = max(R,G,B), V_{min} = min(R,G,B) \\ L = \frac{V_{min} + V_{max}}{2} \\ S = \left{ \begin{array}{ll} \frac{V_{max} - V_{min}}{V_{max} + V_{min}} \cdot 255 &amp; L &lt; 128 \\ \frac{V_{max} - V_{min}}{255 \cdot 2 - (V_{max} + V_{min})} \cdot 255 &amp; otherwise \\ \end{array} \right. \\ h = \left{ \begin{array}{ll} \frac{G - B}{V_{max} - V_{min}} \cdot 60 &amp; V_{max} = R \\ \frac{B - R}{V_{max} - V_{min}} \cdot 60 + 120 &amp; V_{max} = R \\ \frac{R - G}{V_{max} - V_{min}} \cdot 60 + 240 &amp; V_{max} = B \\ \end{array} \right. , H = \left{ \begin{array}{ll} \frac{h + 360}{2} &amp; h &lt; 0\ \\ \frac{h}{2} &amp; otherwise \\ \end{array} \right. \]
 </p>
  </td></tr>
 <tr><td class="fieldname"><a id="abc1c78dbe5bbd9696e1af6618392a083a55371d0312c8305285cdd39074044a17"></a>LPVColorSpaceYCrCb&#160;</td><td class="fielddoc"><p>YCrCb 颜色空间。通道顺序为：Y（亮度），Cb（蓝色色度），Cr（红色色度）</p>
@@ -992,13 +992,13 @@ typedef struct <a class="el" href="struct_l_p_v_core_lib_1_1_l_color.html">LPVCo
 <tr><td class="fieldname"><a id="abc1c78dbe5bbd9696e1af6618392a083ab8114f9da47c49e3f63e8e097f02daa8"></a>LPVColorSpaceLAB&#160;</td><td class="fielddoc"><p>CIE 1976 L*a*b* 颜色空间。通道顺序为：L（亮度）、a*（红绿色度）、b*（蓝黄色度）。<br  />
 其与 BGR 颜色空间的转换基于 XYZ 颜色空间的转换结果，该转换结果使用归一化到 0 ~ 1 的 BGR 值。</p>
 <p class="formulaDsp">
-\[ l = \left\{ \begin{array}{ll} (116 \cdot Y^{\frac{1}{3}} - 16) &amp; Y &gt; 0.008856 \\ 903.3 \cdot Y &amp; otherwise \\ \end{array} \right. \\ L = l \cdot \frac{255}{100} \\ f(t) = \left\{ \begin{array}{ll} t^{\frac{1}{3}} &amp; t &gt; 0.008856 \\ 7.787 \cdot t + \frac{16}{116} &amp; otherwise \\ \end{array} \right. \\ a = (f(\frac{X}{0.950456}) - f(Y)) \cdot 500 + 255 \\ b = (f(Y) - f(\frac{X}{1.088754})) \cdot 200 + 255 \\ \]
+\[ l = \left{ \begin{array}{ll} (116 \cdot Y^{\frac{1}{3}} - 16) &amp; Y &gt; 0.008856 \\ 903.3 \cdot Y &amp; otherwise \\ \end{array} \right. \\ L = l \cdot \frac{255}{100} \\ f(t) = \left{ \begin{array}{ll} t^{\frac{1}{3}} &amp; t &gt; 0.008856 \\ 7.787 \cdot t + \frac{16}{116} &amp; otherwise \\ \end{array} \right. \\ a = (f(\frac{X}{0.950456}) - f(Y)) \cdot 500 + 255 \\ b = (f(Y) - f(\frac{X}{1.088754})) \cdot 200 + 255 \\ \]
 </p>
  </td></tr>
 <tr><td class="fieldname"><a id="abc1c78dbe5bbd9696e1af6618392a083ac9429e9db960415d48d758e115547d0a"></a>LPVColorSpaceLUV&#160;</td><td class="fielddoc"><p>CIE 1976 L*u*v* 颜色空间。通道顺序为：L*（亮度）、u*（u色度）、v*（v色度）.<br  />
 其与 BGR 颜色空间的转换基于 XYZ 颜色空间的转换结果，该转换结果使用归一化到 0 ~ 1 的 BGR 值。</p>
 <p class="formulaDsp">
-\[ l = \left\{ \begin{array}{ll} (116 \cdot Y^{\frac{1}{3}} - 16) &amp; Y &gt; 0.008856 \\ 903.3 \cdot Y &amp; otherwise \\ \end{array} \right. \\ L = l \cdot \frac{255}{100} \\ u&#39; = \frac{4 \cdot X}{X + 15 \cdot Y + 3 \cdot Z} \\ v&#39; = \frac{9 \cdot Y}{X + 15 \cdot Y + 3 \cdot Z} \\ u = (13 \cdot l \cdot (u&#39; - 0.19793943) + 134) \cdot \frac{255}{354} \\ v = (13 \cdot l \cdot (v&#39; - 0.46831096) + 140) \cdot \frac{255}{262} \\ \]
+\[ l = \left{ \begin{array}{ll} (116 \cdot Y^{\frac{1}{3}} - 16) &amp; Y &gt; 0.008856 \\ 903.3 \cdot Y &amp; otherwise \\ \end{array} \right. \\ L = l \cdot \frac{255}{100} \\ u&#39; = \frac{4 \cdot X}{X + 15 \cdot Y + 3 \cdot Z} \\ v&#39; = \frac{9 \cdot Y}{X + 15 \cdot Y + 3 \cdot Z} \\ u = (13 \cdot l \cdot (u&#39; - 0.19793943) + 134) \cdot \frac{255}{354} \\ v = (13 \cdot l \cdot (v&#39; - 0.46831096) + 140) \cdot \frac{255}{262} \\ \]
 </p>
  </td></tr>
 </table>

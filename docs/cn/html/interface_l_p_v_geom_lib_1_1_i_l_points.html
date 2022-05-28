@@ -20,7 +20,7 @@
     jax: ["input/TeX","output/SVG"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.7/MathJax.js"></script>
 <link href="lpv_stylesheet.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-custom.css" rel="stylesheet" type="text/css"/>
@@ -210,7 +210,7 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>获取点集中的指定索引的点 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">index</td><td>输入指定的索引，从 0 开始但小于总数的数字 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>输入指定的索引，从 0 开始但小于总数的数字 </td></tr>
   </table>
   </dd>
 </dl>
@@ -250,8 +250,8 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>增加一个点到该点集 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">x</td><td>新增点的 x 坐标 </td></tr>
-    <tr><td class="paramname">y</td><td>新增点的 y 坐标 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td>新增点的 x 坐标 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">y</td><td>新增点的 y 坐标 </td></tr>
   </table>
   </dd>
 </dl>
@@ -332,8 +332,8 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>设置点集中的点 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">xs</td><td>点集中所有点的 x 坐标 </td></tr>
-    <tr><td class="paramname">ys</td><td>点集中所有点的 y 坐标 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">xs</td><td>点集中所有点的 x 坐标 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ys</td><td>点集中所有点的 y 坐标 </td></tr>
   </table>
   </dd>
 </dl>
@@ -355,9 +355,9 @@ Public 成员函数</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>将输入的点集合并到该点集 </p><dl class="retval"><dt>返回值</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">points</td><td>输入的点集 </td></tr>
+<p>将输入的点集合并到该点集 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">points</td><td>输入的点集 </td></tr>
   </table>
   </dd>
 </dl>
@@ -403,10 +403,10 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>删除点集中在指定范围中的点 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">lbX</td><td>指定删除范围的 x 坐标下限 </td></tr>
-    <tr><td class="paramname">ubX</td><td>指定删除范围的 x 坐标上限 </td></tr>
-    <tr><td class="paramname">lbY</td><td>指定删除范围的 y 坐标下限 </td></tr>
-    <tr><td class="paramname">ubY</td><td>指定删除范围的 y 坐标上限 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">lbX</td><td>指定删除范围的 x 坐标下限 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ubX</td><td>指定删除范围的 x 坐标上限 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">lbY</td><td>指定删除范围的 y 坐标下限 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ubY</td><td>指定删除范围的 y 坐标上限 </td></tr>
   </table>
   </dd>
 </dl>
@@ -440,14 +440,14 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>平移当前点集，生成一个新的点集 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">offsetX</td><td>x 方向的平移量 </td></tr>
-    <tr><td class="paramname">offsetY</td><td>y 方向的平移量 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">offsetX</td><td>x 方向的平移量 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">offsetY</td><td>y 方向的平移量 </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>返回值</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">result</td><td>返回新的点集 </td></tr>
+    <tr><td class="paramname">results</td><td>返回新的点集 </td></tr>
   </table>
   </dd>
 </dl>
@@ -481,14 +481,14 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>缩放当前点集，生成一个新的点集 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">factorX</td><td>x 方向的缩放比例 </td></tr>
-    <tr><td class="paramname">factorY</td><td>y 方向的缩放比例 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">factorX</td><td>x 方向的缩放比例 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">factorY</td><td>y 方向的缩放比例 </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>返回值</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">result</td><td>返回新的点集 </td></tr>
+    <tr><td class="paramname">results</td><td>返回新的点集 </td></tr>
   </table>
   </dd>
 </dl>
@@ -532,12 +532,7 @@ Public 成员函数</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>计算点集的包围矩形 </p><dl class="retval"><dt>返回值</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">val</td><td>返回包围矩形 </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>计算点集的包围矩形 </p>
 
 </div>
 </div>
@@ -555,12 +550,7 @@ Public 成员函数</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>计算点集的包围旋转矩形 </p><dl class="retval"><dt>返回值</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">val</td><td>返回包围旋转矩形 </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>计算点集的包围旋转矩形 </p>
 
 </div>
 </div>
@@ -578,12 +568,7 @@ Public 成员函数</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>计算点集的包围圆形 </p><dl class="retval"><dt>返回值</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">val</td><td>返回包围圆形 </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>计算点集的包围圆形 </p>
 
 </div>
 </div>
@@ -601,12 +586,7 @@ Public 成员函数</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>计算点集的包围凸多边形 </p><dl class="retval"><dt>返回值</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">val</td><td>返回包围凸多边形 </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>计算点集的包围凸多边形 </p>
 
 </div>
 </div>
@@ -637,8 +617,8 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>根据该点集拟合一条直线，使得点集中的所有点到这条直线的距离之和最小。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">fitDistThreshold</td><td>指定拟合直线与点集中的用于拟合的点之间的距离阈值。拟合迭代过程中，距离大于该阈值的点将被剔除不参与拟合。 输入负值以跳过剔除过程，即所有点总是都参与拟合。 </td></tr>
-    <tr><td class="paramname">fitCountThreshold</td><td>指定用于拟合的最少点数，若点数少于该数值，将停止拟合迭代。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fitDistThreshold</td><td>指定拟合直线与点集中的用于拟合的点之间的距离阈值。拟合迭代过程中，距离大于该阈值的点将被剔除不参与拟合。 输入负值以跳过剔除过程，即所有点总是都参与拟合。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fitCountThreshold</td><td>指定用于拟合的最少点数，若点数少于该数值，将停止拟合迭代。 </td></tr>
   </table>
   </dd>
 </dl>
@@ -679,8 +659,8 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>根据该点集拟合一个圆，使得点集中的所有点到这个圆的距离之和最小。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">fitDistThreshold</td><td>指定拟合圆与点集中的用于拟合的点之间的距离阈值。拟合迭代过程中，距离大于该阈值的点将被剔除不参与拟合。 输入负值以跳过剔除过程，即所有点总是都参与拟合。 </td></tr>
-    <tr><td class="paramname">fitCountThreshold</td><td>指定用于拟合的最少点数，若点数少于该数值，将停止拟合迭代。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fitDistThreshold</td><td>指定拟合圆与点集中的用于拟合的点之间的距离阈值。拟合迭代过程中，距离大于该阈值的点将被剔除不参与拟合。 输入负值以跳过剔除过程，即所有点总是都参与拟合。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fitCountThreshold</td><td>指定用于拟合的最少点数，若点数少于该数值，将停止拟合迭代。 </td></tr>
   </table>
   </dd>
 </dl>
@@ -708,13 +688,11 @@ Public 成员函数</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>获取中心，以所有点的平均位置计算： \((\overline{x}, \overline{y})\) </p><dl class="retval"><dt>返回值</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">val</td><td>返回中心点 </td></tr>
-  </table>
-  </dd>
-</dl>
-
+<p>获取中心，以所有点的平均位置计算：<br  />
+ </p><p class="formulaDsp">
+\[ (\overline{x}, \overline{y}) \]
+</p>
+ 
 </div>
 </div>
 <a id="adf73aae50b248c203b9be96829f08389"></a>
@@ -734,13 +712,13 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>计算点集中的每一个点到输入点的距离，输出每个点对应的距离。 距离计算方式与 <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_point.html#a166665055e1c16de05a251280d45d04e">ILPoint::Distance()</a> 相同。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">point</td><td>输入的点 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">point</td><td>输入的点 </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>返回值</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">val</td><td>返回所有距离值，与点集顺序对应。 </td></tr>
+    <tr><td class="paramname">vals</td><td>返回所有距离值，与点集顺序对应。 </td></tr>
   </table>
   </dd>
 </dl>
@@ -764,13 +742,13 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>计算点集中的每一个点到输入直线的距离，输出每个点对应的距离。 距离计算方式与 <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_line.html#a5e55bbb16eaad0742ba2a81a41a418a4">ILLine::Perpendicular()</a> 相同。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">line</td><td>输入的直线 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">line</td><td>输入的直线 </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>返回值</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">val</td><td>返回所有距离值，与点集顺序对应。 </td></tr>
+    <tr><td class="paramname">vals</td><td>返回所有距离值，与点集顺序对应。 </td></tr>
   </table>
   </dd>
 </dl>
@@ -804,14 +782,14 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>计算点集中的每一个点到输入多边形的距离，输出每个点对应的距离。 距离计算方式与 <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html#a43e0f950a3eacc9e431cb98a08a27291">ILPolygon::DistanceToPoint()</a> 相同。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">polygon</td><td>输入的多边形 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">polygon</td><td>输入的多边形 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">rootPoints</td><td>返回距离对应的多边形上的垂足 </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>返回值</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">rootPoint</td><td>返回距离对应的多边形上的垂足 </td></tr>
-    <tr><td class="paramname">val</td><td>返回所有距离值，与点集顺序对应。 </td></tr>
+    <tr><td class="paramname">vals</td><td>返回所有距离值，与点集顺序对应。 </td></tr>
   </table>
   </dd>
 </dl>
@@ -845,13 +823,14 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>计算点集中的每一个点到另一个点集中所有点的最小距离，输出每个点的最小距离及对应最近点的索引。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">points</td><td>输入的点集 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">points</td><td>输入的点集 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">indexes</td><td>输出最近点在输入点集中的索引 </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>返回值</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">val</td><td>返回所有距离值，与点集顺序对应。 </td></tr>
+    <tr><td class="paramname">vals</td><td>返回所有距离值，与点集顺序对应。 </td></tr>
   </table>
   </dd>
 </dl>
@@ -885,8 +864,8 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>计算点集中的每一个点到输入多边形的距离的统计值，如最大、最小或平均距离。距离计算方式与 <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_point.html#a166665055e1c16de05a251280d45d04e">ILPoint::Distance()</a> 相同。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">point</td><td>输入的点 </td></tr>
-    <tr><td class="paramname">aggType</td><td>聚合方式 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">point</td><td>输入的点 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aggType</td><td>聚合方式 </td></tr>
   </table>
   </dd>
 </dl>
@@ -926,8 +905,8 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>计算点集中的每一个点到输入线的距离的统计值，如最大、最小或平均距离。距离计算方式与 <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_line.html#a5e55bbb16eaad0742ba2a81a41a418a4">ILLine::Perpendicular()</a> 相同。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">line</td><td>输入的直线 </td></tr>
-    <tr><td class="paramname">aggType</td><td>聚合方式 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">line</td><td>输入的直线 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aggType</td><td>聚合方式 </td></tr>
   </table>
   </dd>
 </dl>
@@ -967,8 +946,8 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>计算点集中的每一个点到输入多边形的距离的统计值，如最大、最小或平均距离。距离计算方式与 <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html#a43e0f950a3eacc9e431cb98a08a27291">ILPolygon::DistanceToPoint()</a> 相同。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">polygon</td><td>输入的多边形 </td></tr>
-    <tr><td class="paramname">aggType</td><td>聚合方式 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">polygon</td><td>输入的多边形 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aggType</td><td>聚合方式 </td></tr>
   </table>
   </dd>
 </dl>
@@ -1008,8 +987,8 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>计算点集中的每一个点到另一个点集中所有点的最小距离的统计值，如最大、最小或平均距离。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">points</td><td>输入的点集 </td></tr>
-    <tr><td class="paramname">aggType</td><td>聚合方式 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">points</td><td>输入的点集 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aggType</td><td>聚合方式 </td></tr>
   </table>
   </dd>
 </dl>
@@ -1039,7 +1018,7 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>将输入区域中的所有点，加入该点集中 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">region</td><td>输入的区域 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">region</td><td>输入的区域 </td></tr>
   </table>
   </dd>
 </dl>
@@ -1073,8 +1052,8 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>获取点集中所有的点 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">xs</td><td>点集中所有点的 x 坐标。需要在外部提起按照点的数量初始化数组。 </td></tr>
-    <tr><td class="paramname">ys</td><td>点集中所有点的 y 坐标 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">xs</td><td>点集中所有点的 x 坐标。需要在外部提起按照点的数量初始化数组。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ys</td><td>点集中所有点的 y 坐标 </td></tr>
   </table>
   </dd>
 </dl>

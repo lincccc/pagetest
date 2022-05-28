@@ -20,7 +20,7 @@
     jax: ["input/TeX","output/SVG"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.7/MathJax.js"></script>
 <link href="lpv_stylesheet.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-custom.css" rel="stylesheet" type="text/css"/>
@@ -185,11 +185,11 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>基于输入图像和区域，生成直方图。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">img</td><td>输入图像 </td></tr>
-    <tr><td class="paramname">region</td><td>输入区域，可为空（检测全图） </td></tr>
-    <tr><td class="paramname">binCount</td><td>将直方图分为若干个统计区域，推荐设置为总数据范围的因子，比如对一个灰度图，常用设置为 256 ，128，32 等。 </td></tr>
-    <tr><td class="paramname">lowerBound</td><td>统计数据范围的下限，比如对一个灰度图，常用设置为 0. </td></tr>
-    <tr><td class="paramname">upperBound</td><td>统计数据范围的上限，比如对一个灰度图，常用设置为 255. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>输入图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">region</td><td>输入区域，可为空（检测全图） </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">binCount</td><td>将直方图分为若干个统计区域，推荐设置为总数据范围的因子，比如对一个灰度图，常用设置为 256 ，128，32 等。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">lowerBound</td><td>统计数据范围的下限，比如对一个灰度图，常用设置为 0. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">upperBound</td><td>统计数据范围的上限，比如对一个灰度图，常用设置为 255. </td></tr>
   </table>
   </dd>
 </dl>
@@ -214,13 +214,13 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>获取某一个直方图区域的值，表示数值落入该区域的像素总数。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">index</td><td>直方图区域的索引。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>直方图区域的索引。 </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>返回值</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">输出该直方图区域的值。</td><td></td></tr>
+    <tr><td class="paramname">value</td><td>输出该直方图区域的值。 </td></tr>
   </table>
   </dd>
 </dl>
@@ -264,12 +264,12 @@ Public 成员函数</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>查找直方图上的最大和最小值，及其对应的索引。若有多个区域的值相同，返回第一个区域。 </p><dl class="retval"><dt>返回值</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">minIdx</td><td>返回最小值对应的索引。 </td></tr>
-    <tr><td class="paramname">minValue</td><td>返回最小值。 </td></tr>
-    <tr><td class="paramname">maxIdx</td><td>返回最大值对应的索引。 </td></tr>
-    <tr><td class="paramname">maxValue</td><td>返回最大值。 </td></tr>
+<p>查找直方图上的最大和最小值，及其对应的索引。若有多个区域的值相同，返回第一个区域。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">minIdx</td><td>返回最小值对应的索引。 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">minValue</td><td>返回最小值。 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">maxIdx</td><td>返回最大值对应的索引。 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">maxValue</td><td>返回最大值。 </td></tr>
   </table>
   </dd>
 </dl>
@@ -301,10 +301,10 @@ Public 成员函数</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>计算直方图的均值和标准差。 </p><dl class="retval"><dt>返回值</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">meanValue</td><td>返回均值。 </td></tr>
-    <tr><td class="paramname">stdDevValue</td><td>返回标准差。 </td></tr>
+<p>计算直方图的均值和标准差。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">meanValue</td><td>返回均值。 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">stdDevValue</td><td>返回标准差。 </td></tr>
   </table>
   </dd>
 </dl>
@@ -350,10 +350,10 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>将直方图绘制到给定的设备。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">hdc</td><td>绘制设备，可为窗口、位图等的上下文句柄。 </td></tr>
-    <tr><td class="paramname">drawFlags</td><td>用于控制绘制的内容，查看 LPVChartDrawFlags。 </td></tr>
-    <tr><td class="paramname">xGridStep</td><td>绘制 x 轴（索引）的步长，默认设置为 0，表示按照直方图数据自动选择合适的步长。 </td></tr>
-    <tr><td class="paramname">yGridStep</td><td>绘制 y 轴（数值）的步长，默认设置为 0，表示按照直方图数据自动选择合适的步长。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hdc</td><td>绘制设备，可为窗口、位图等的上下文句柄。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">drawFlags</td><td>用于控制绘制的内容，查看 LPVChartDrawFlags。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">xGridStep</td><td>绘制 x 轴（索引）的步长，默认设置为 0，表示按照直方图数据自动选择合适的步长。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">yGridStep</td><td>绘制 y 轴（数值）的步长，默认设置为 0，表示按照直方图数据自动选择合适的步长。 </td></tr>
   </table>
   </dd>
 </dl>
@@ -399,10 +399,10 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>基于输入图像和区域，生成直方图。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">dataVec</td><td>输入数值向量，这是一组浮点数值 </td></tr>
-    <tr><td class="paramname">binCount</td><td>将直方图分为若干个统计区域。 </td></tr>
-    <tr><td class="paramname">lowerBound</td><td>统计数据范围的下限。默认设置上下限均为 0，表示将计算和使用输入数据的最小和最大值作为上下限。 </td></tr>
-    <tr><td class="paramname">upperBound</td><td>统计数据范围的上限。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dataVec</td><td>输入数值向量，这是一组浮点数值 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">binCount</td><td>将直方图分为若干个统计区域。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">lowerBound</td><td>统计数据范围的下限。默认设置上下限均为 0，表示将计算和使用输入数据的最小和最大值作为上下限。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">upperBound</td><td>统计数据范围的上限。 </td></tr>
   </table>
   </dd>
 </dl>

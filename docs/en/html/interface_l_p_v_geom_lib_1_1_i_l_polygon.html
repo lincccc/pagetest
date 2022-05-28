@@ -20,7 +20,7 @@
     jax: ["input/TeX","output/HTML-CSS"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.7/MathJax.js"></script>
 <link href="lpv_stylesheet.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-custom.css" rel="stylesheet" type="text/css"/>
@@ -198,7 +198,7 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 </div><div class="memdoc">
 <p>Fetch one point with the given index. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">index</td><td>The input index, it should be a 0-based number smaller than total count. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>The input index, it should be a 0-based number smaller than total count. </td></tr>
   </table>
   </dd>
 </dl>
@@ -244,9 +244,9 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 </div><div class="memdoc">
 <p>Set the point of the given index to specified position. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">index</td><td>The input index, it should be a 0-based number smaller than total count. Pass in negative index to add the new point at the end. </td></tr>
-    <tr><td class="paramname">x</td><td>The x-coordinates of the new point </td></tr>
-    <tr><td class="paramname">y</td><td>The y-coordinates of the new point </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>The input index, it should be a 0-based number smaller than total count. Pass in negative index to add the new point at the end. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td>The x-coordinates of the new point </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">y</td><td>The y-coordinates of the new point </td></tr>
   </table>
   </dd>
 </dl>
@@ -304,7 +304,7 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 </div><div class="memdoc">
 <p>Draw all the points on HDC. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">bFill</td><td>Whether to fill the path using current brush. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bFill</td><td>Whether to fill the path using current brush. </td></tr>
   </table>
   </dd>
 </dl>
@@ -345,9 +345,9 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 </div><div class="memdoc">
 <p>Set the points </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">xs</td><td>The x-coordinates of the points </td></tr>
-    <tr><td class="paramname">ys</td><td>The y-coordinates of the points </td></tr>
-    <tr><td class="paramname">isClosed</td><td>Whether this is a closed polygon </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">xs</td><td>The x-coordinates of the points </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ys</td><td>The y-coordinates of the points </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">isClosed</td><td>Whether this is a closed polygon </td></tr>
   </table>
   </dd>
 </dl>
@@ -371,7 +371,7 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 </div><div class="memdoc">
 <p>Append the points in the given collection to this polygon. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">points</td><td>The input points </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">points</td><td>The input points </td></tr>
   </table>
   </dd>
 </dl>
@@ -417,16 +417,10 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 </div><div class="memdoc">
 <p>Remove some points in the collection which is in the given range. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">lbX</td><td>The lower bound of the x-coordinate to be removed </td></tr>
-    <tr><td class="paramname">ubX</td><td>The upper bound of the x-coordinate to be removed </td></tr>
-    <tr><td class="paramname">lbY</td><td>The lower bound of the y-coordinate to be removed </td></tr>
-    <tr><td class="paramname">ubY</td><td>The upper bound of the y-coordinate to be removed </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">points</td><td>The input points </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">lbX</td><td>The lower bound of the x-coordinate to be removed </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ubX</td><td>The upper bound of the x-coordinate to be removed </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">lbY</td><td>The lower bound of the y-coordinate to be removed </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ubY</td><td>The upper bound of the y-coordinate to be removed </td></tr>
   </table>
   </dd>
 </dl>
@@ -460,14 +454,14 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 </div><div class="memdoc">
 <p>Translate the polygon by the given offset and return a new polygon </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">offsetX</td><td>The x-coordinate of the offset </td></tr>
-    <tr><td class="paramname">offsetY</td><td>The y-coordinate of the offset </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">offsetX</td><td>The x-coordinate of the offset </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">offsetY</td><td>The y-coordinate of the offset </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">result</td><td>Return the new polygon </td></tr>
+    <tr><td class="paramname">results</td><td>Return the new polygon </td></tr>
   </table>
   </dd>
 </dl>
@@ -490,7 +484,7 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 </div><div class="memdoc">
 <p>Get whether this is non-empty polygon </p><dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">val</td><td>True for valid, false otherwise. </td></tr>
+    <tr><td class="paramname">val</td><td>Return true for valid, false otherwise. </td></tr>
   </table>
   </dd>
 </dl>
@@ -537,7 +531,7 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 </div><div class="memdoc">
 <p>Determines whether the point is inside this polygon, outside, or lies on the edge. For a not-closed polygon, the result is either outside or on-the-edge </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">point</td><td>The input point </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">point</td><td>The input point </td></tr>
   </table>
   </dd>
 </dl>
@@ -577,13 +571,13 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 </div><div class="memdoc">
 <p>Determines whether this polygon intersects with the given line. Return the intersection points if yes. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">line</td><td>The input line </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">line</td><td>The input line </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">intersectPoints</td><td>Output the intersection points, it should be an empty set for not-intersected case, 1 or more points for intersected case. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">intersectPoints</td><td>Output the intersection points, it should be an empty set for not-intersected case, 1 or more points for intersected case. </td></tr>
     <tr><td class="paramname">type</td><td>Return the intersection type depends on the count of intersection points which is on the line segment, LPVIntersectBounded(all), LPVIntersectBoundedPartial(part) or LPVIntersectUnbounded(none). </td></tr>
   </table>
   </dd>
@@ -606,12 +600,7 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get the inscribed circle of the polygon </p><dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">val</td><td>Return the inscribed circle </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Get the inscribed circle of the polygon </p>
 
 </div>
 </div>
@@ -629,12 +618,7 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Generate a polygon region use the polygon object </p><dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">val</td><td>Return the polygon region </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Generate a polygon region use the polygon object </p>
 
 </div>
 </div>
@@ -652,12 +636,7 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get the gravity center of the polygon </p><dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">val</td><td>Return the center point </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Get the gravity center of the polygon </p>
 
 </div>
 </div>
@@ -694,15 +673,15 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 </div><div class="memdoc">
 <p>Calculate the minimum/maximum distance between the input point and the polygon, it could be either the distance from the input point to any of the polygon's vertexes or segments. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">point</td><td>The input point. </td></tr>
-    <tr><td class="paramname">aggType</td><td>The aggregation type, only LPVAggMin or LPVAggMax is acceptable </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">point</td><td>The input point. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aggType</td><td>The aggregation type, only LPVAggMin or LPVAggMax is acceptable </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">rootPoint</td><td>Output the root point, could be either a vertex or the input point's perpendicular root to a polygon segment </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">rootPoint</td><td>Output the root point, could be either a vertex or the input point's perpendicular root to a polygon segment </td></tr>
-    <tr><td class="paramname">distance</td><td>Return the minimum distance. </td></tr>
+    <tr><td class="paramname">val</td><td>Return the minimum distance. </td></tr>
   </table>
   </dd>
 </dl>
@@ -751,16 +730,16 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 </div>
  <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">polygon</td><td>The input polygon </td></tr>
-    <tr><td class="paramname">aggType</td><td>The aggregation type, only LPVAggMin or LPVAggMax is acceptable </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">polygon</td><td>The input polygon </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aggType</td><td>The aggregation type, only LPVAggMin or LPVAggMax is acceptable </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">rootPoint1</td><td>Output the root point on this polygon </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">rootPoint2</td><td>Output the root point on the input polygon </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">rootPoint1</td><td>Output the root point on this polygon </td></tr>
-    <tr><td class="paramname">rootPoint2</td><td>Output the root point on the input polygon </td></tr>
-    <tr><td class="paramname">distance</td><td>Return the minimum distance. </td></tr>
+    <tr><td class="paramname">val</td><td>Return the minimum distance. </td></tr>
   </table>
   </dd>
 </dl>

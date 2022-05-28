@@ -20,7 +20,7 @@
     jax: ["input/TeX","output/HTML-CSS"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.7/MathJax.js"></script>
 <link href="lpv_stylesheet.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-custom.css" rel="stylesheet" type="text/css"/>
@@ -91,11 +91,11 @@ $(function() {
 </div><!-- fragment --><p>They have the common parameters for specifying the drawing device context and controlling the view port.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">hdc</td><td>Handle to the device context of the destination window or bitmap. </td></tr>
-    <tr><td class="paramname">zoomX</td><td>Factor for zooming in or out in the x-coordinate direction. By default, it's in the true scale. </td></tr>
-    <tr><td class="paramname">zoomY</td><td>Factor for zooming in or out in the y-coordinate direction. Setting to 0 means same zoom factor as zoomX, aka. isotropic scaling. </td></tr>
-    <tr><td class="paramname">panX</td><td>translation in the x-coordinate direction for panning. The final display x position is calculated as: \((x + panX) \times zoomX\) </td></tr>
-    <tr><td class="paramname">panY</td><td>translation in the y-coordinate direction for panning. The final display y position is calculated as: \((y + panY) \times zoomY\)</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hdc</td><td>Handle to the device context of the destination window or bitmap. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">zoomX</td><td>Factor for zooming in or out in the x-coordinate direction. By default, it's in the true scale. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">zoomY</td><td>Factor for zooming in or out in the y-coordinate direction. Setting to 0 means same zoom factor as zoomX, aka. isotropic scaling. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">panX</td><td>translation in the x-coordinate direction for panning. The final display x position is calculated as: \((x + panX) \times zoomX\) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">panY</td><td>translation in the y-coordinate direction for panning. The final display y position is calculated as: \((y + panY) \times zoomY\)</td></tr>
   </table>
   </dd>
 </dl>

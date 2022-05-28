@@ -20,7 +20,7 @@
     jax: ["input/TeX","output/HTML-CSS"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.7/MathJax.js"></script>
 <link href="lpv_stylesheet.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-custom.css" rel="stylesheet" type="text/css"/>
@@ -129,7 +129,7 @@ Public Member Functions</h2></td></tr>
 <div class="line">    <a class="code" href="namespace_l_p_v_core_lib.html#a38d3a87896df9ff1b8c96bee1ab58e2f">LPVSortOrder</a>.LPVSortOrderAscending, <a class="code" href="namespace_l_p_v_core_lib.html#a54c773c6f72a88ff41d8ab615b5a92f3">LPVPositionMode</a>.LPVPosModeCenter);</div>
 <div class="ttc" id="anamespace_l_p_v_core_lib_html_a1752d5f8ebb6a8f6dda700e1a87c98de"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a1752d5f8ebb6a8f6dda700e1a87c98de">LPVCoreLib::LPVSortBy</a></div><div class="ttdeci">LPVSortBy</div><div class="ttdoc">This enumeration represents the type of sorting.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:613</div></div>
 <div class="ttc" id="anamespace_l_p_v_core_lib_html_a38d3a87896df9ff1b8c96bee1ab58e2f"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a38d3a87896df9ff1b8c96bee1ab58e2f">LPVCoreLib::LPVSortOrder</a></div><div class="ttdeci">LPVSortOrder</div><div class="ttdoc">This enumeration represents the order of sorting.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:652</div></div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html_a54c773c6f72a88ff41d8ab615b5a92f3"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a54c773c6f72a88ff41d8ab615b5a92f3">LPVCoreLib::LPVPositionMode</a></div><div class="ttdeci">LPVPositionMode</div><div class="ttdoc">This enumeration represents which point is used as a object's position, used in sorting.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:704</div></div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a54c773c6f72a88ff41d8ab615b5a92f3"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a54c773c6f72a88ff41d8ab615b5a92f3">LPVCoreLib::LPVPositionMode</a></div><div class="ttdeci">LPVPositionMode</div><div class="ttdoc">This enumeration represents which point is used as a object's position, used in sorting.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:710</div></div>
 </div><!-- fragment --> </div>  </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="aa10c0127d00021ad94aaf71c23588a26"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa10c0127d00021ad94aaf71c23588a26">&#9670;&nbsp;</a></span>Sort()</h2>
@@ -164,9 +164,9 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Sort in-place, the source indexes are changed. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">sortBy</td><td>The sorting type. </td></tr>
-    <tr><td class="paramname">sortOrder</td><td>The sorting order. </td></tr>
-    <tr><td class="paramname">posMode</td><td>Specify which point is used as the object's position, by default it's LPVPosModeCenter means use the center point. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sortBy</td><td>The sorting type. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sortOrder</td><td>The sorting order. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">posMode</td><td>Specify which point is used as the object's position, by default it's LPVPosModeCenter means use the center point. </td></tr>
   </table>
   </dd>
 </dl>
@@ -206,15 +206,15 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Sort and report the sorted indexes, the source indexes are not changed. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">sortBy</td><td>The sorting type. </td></tr>
-    <tr><td class="paramname">sortOrder</td><td>The sorting order. </td></tr>
-    <tr><td class="paramname">posMode</td><td>Specify which point is used as the object's position, by default it's LPVPosModeCenter means use the center point. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sortBy</td><td>The sorting type. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sortOrder</td><td>The sorting order. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">posMode</td><td>Specify which point is used as the object's position, by default it's LPVPosModeCenter means use the center point. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">sortedIndexes</td><td>The sorted indexes, each value representing the object's index in the source. </td></tr>
+    <tr><td class="paramname">sortedIndexes</td><td>Return the sorted indexes, each value representing the object's index in the source. </td></tr>
   </table>
   </dd>
 </dl>
@@ -238,7 +238,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Change the order of the collection according to the pass-in indexes. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">sortedIndexes</td><td>The given indexes, usually you may get them from <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_sortables.html#a565ec83605b6838423a0ca26338c6f33">SortTo()</a>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sortedIndexes</td><td>The given indexes, usually you may get them from <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_sortables.html#a565ec83605b6838423a0ca26338c6f33">SortTo()</a>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -278,7 +278,13 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get the sortable object of the given index </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_sortables.html#ab088bf7d1e59ab0295380f800239ff9c">SortableCount()</a> </dd></dl>
+<p>Get the sortable object of the given index </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>The input index </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_sortables.html#ab088bf7d1e59ab0295380f800239ff9c">SortableCount()</a> </dd></dl>
 
 </div>
 </div>

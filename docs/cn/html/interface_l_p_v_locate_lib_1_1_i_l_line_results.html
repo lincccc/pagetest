@@ -20,7 +20,7 @@
     jax: ["input/TeX","output/SVG"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.7/MathJax.js"></script>
 <link href="lpv_stylesheet.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-custom.css" rel="stylesheet" type="text/css"/>
@@ -185,7 +185,7 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>获取给定索引对应的直线定位结果 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">index</td><td>输入索引，从 0 开始但小于总数的数字 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>输入索引，从 0 开始但小于总数的数字 </td></tr>
   </table>
   </dd>
 </dl>
@@ -255,8 +255,8 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>绘制索引对应的单个直线定位结果到给定设备。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">index</td><td>输入索引，从 0 开始但小于总数的数字 </td></tr>
-    <tr><td class="paramname">drawFlags</td><td>控制直线绘制内容，使用方式请查阅 LPVLineDrawFlags </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>输入索引，从 0 开始但小于总数的数字 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">drawFlags</td><td>控制直线绘制内容，使用方式请查阅 LPVLineDrawFlags </td></tr>
   </table>
   </dd>
 </dl>
@@ -317,7 +317,7 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>绘制所有直线定位结果到给定设备。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drawFlags</td><td>控制直线绘制内容，使用方式请查阅 LPVLineDrawFlags </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">drawFlags</td><td>控制直线绘制内容，使用方式请查阅 LPVLineDrawFlags </td></tr>
   </table>
   </dd>
 </dl>
@@ -366,10 +366,10 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>绘制检测分数曲线到给定的设备。该曲线表示在沿着检测区域的方向上检测分数的分布情况。通常用于为直线定位调试合适的分数阈值。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">hdc</td><td>绘制设备，可为窗口、位图等的上下文句柄。 </td></tr>
-    <tr><td class="paramname">bDrawFlags</td><td>用于控制绘制的内容，查看 LPVChartDrawFlags。 </td></tr>
-    <tr><td class="paramname">xGridStep</td><td>绘制 x 轴（区域）的步长，默认设置为 0，表示按照分数曲线数据自动选择合适的步长。 </td></tr>
-    <tr><td class="paramname">yGridStep</td><td>绘制 y 轴（分数）的步长，默认设置为 0，表示按照分数曲线数据自动选择合适的步长。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hdc</td><td>绘制设备，可为窗口、位图等的上下文句柄。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bDrawFlags</td><td>用于控制绘制的内容，查看 LPVChartDrawFlags。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">xGridStep</td><td>绘制 x 轴（区域）的步长，默认设置为 0，表示按照分数曲线数据自动选择合适的步长。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">yGridStep</td><td>绘制 y 轴（分数）的步长，默认设置为 0，表示按照分数曲线数据自动选择合适的步长。 </td></tr>
   </table>
   </dd>
 </dl>

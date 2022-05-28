@@ -20,7 +20,7 @@
     jax: ["input/TeX","output/SVG"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.7/MathJax.js"></script>
 <link href="lpv_stylesheet.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-custom.css" rel="stylesheet" type="text/css"/>
@@ -140,8 +140,8 @@ $(function() {
 </p>
 <hr  />
 <p>以下为带有 GUI 的 DEMO 程序介绍。</p>
-<h2><a class="anchor" id="demo_sanity"></a>
-基础功能</h2>
+<h1><a class="anchor" id="demo_sanity"></a>
+基础功能</h1>
 <p>演示典型的视觉检测任务流程，包括图像、Region、模板、标定等基础功能。</p>
 <blockquote class="doxtable">
 <p><b>源代码 (C++)：</b> mfcdemo/MFCSanity<br  />
@@ -164,8 +164,8 @@ $(function() {
 </ol>
 <p><br  />
 </p>
-<h2><a class="anchor" id="demo_region"></a>
-Region 操作</h2>
+<h1><a class="anchor" id="demo_region"></a>
+Region 操作</h1>
 <p>演示如何进行编辑 Region 及如何计算生成新的 Region。</p>
 <blockquote class="doxtable">
 <p><b>源代码 (C++)：</b> mfcdemo/MFCRegion<br  />
@@ -188,8 +188,8 @@ Region 操作</h2>
 </ol>
 <p><br  />
 </p>
-<h2><a class="anchor" id="demo_hikcam"></a>
-集成相机的采图回调</h2>
+<h1><a class="anchor" id="demo_hikcam"></a>
+集成相机的采图回调</h1>
 <p>演示如何集成相机到 LPV 程序，使用相机回调采集图像到 LImage 对象，以海康相机为例。</p>
 <blockquote class="doxtable">
 <p><b>源代码 (C#)：</b> csharpdemo/CSharpHikCam</p>
@@ -204,8 +204,8 @@ Region 操作</h2>
 </ol>
 <p><br  />
 </p>
-<h2><a class="anchor" id="demo_pat"></a>
-模板匹配</h2>
+<h1><a class="anchor" id="demo_pat"></a>
+模板匹配</h1>
 <p>演示高精度模板匹配。</p>
 <blockquote class="doxtable">
 <p><b>源代码 (C++)：</b> mfcdemo/MFCPat<br  />
@@ -227,8 +227,8 @@ Region 操作</h2>
 </ol>
 <p><br  />
 </p>
-<h2><a class="anchor" id="demo_blob"></a>
-斑点分析</h2>
+<h1><a class="anchor" id="demo_blob"></a>
+斑点分析</h1>
 <p>演示斑点分析，支持灰度和彩色模式。</p>
 <blockquote class="doxtable">
 <p><b>源代码 (C++)：</b> mfcdemo/MFCBlob<br  />
@@ -263,8 +263,8 @@ Region 操作</h2>
 </ol>
 <p><br  />
 </p>
-<h2><a class="anchor" id="demo_imgproc"></a>
-图像处理</h2>
+<h1><a class="anchor" id="demo_imgproc"></a>
+图像处理</h1>
 <p>演示常见的图像处理算子。</p>
 <blockquote class="doxtable">
 <p><b>源代码 (C++)：</b> mfcdemo/MFCImgProc<br  />
@@ -286,8 +286,8 @@ Region 操作</h2>
 </ol>
 <p><br  />
 </p>
-<h2><a class="anchor" id="demo_line"></a>
-直线定位</h2>
+<h1><a class="anchor" id="demo_line"></a>
+直线定位</h1>
 <p>演示亚像素直线定位。</p>
 <blockquote class="doxtable">
 <p><b>源代码 (C++)：</b> mfcdemo/MFCLine<br  />
@@ -320,8 +320,8 @@ Region 操作</h2>
 </ol>
 <p><br  />
 </p>
-<h2><a class="anchor" id="demo_circle"></a>
-圆定位</h2>
+<h1><a class="anchor" id="demo_circle"></a>
+圆定位</h1>
 <p>演示亚像素圆定位。</p>
 <blockquote class="doxtable">
 <p><b>源代码 (C++)：</b> mfcdemo/MFCCircle<br  />
@@ -354,8 +354,8 @@ Region 操作</h2>
 </ol>
 <p><br  />
 </p>
-<h2><a class="anchor" id="demo_calib"></a>
-标定</h2>
+<h1><a class="anchor" id="demo_calib"></a>
+标定</h1>
 <p>演示相机标定，包括多点、针孔、FFD等相机模型，支持不同类型的标定板。</p>
 <blockquote class="doxtable">
 <p><b>源代码 (C++)：</b> mfcdemo/MFCCalib<br  />
@@ -389,8 +389,8 @@ Region 操作</h2>
 </ol>
 <p><br  />
 </p>
-<h2><a class="anchor" id="demo_camarray"></a>
-相机阵列和图像拼接</h2>
+<h1><a class="anchor" id="demo_camarray"></a>
+相机阵列和图像拼接</h1>
 <p>演示相机阵列标定和图像拼接。</p>
 <blockquote class="doxtable">
 <p><b>源代码 (C++)：</b> mfcdemo/MFCCamArray<br  />
@@ -409,8 +409,8 @@ Region 操作</h2>
 </ol>
 <p><br  />
 </p>
-<h2><a class="anchor" id="demo_geom"></a>
-几何计算和测量</h2>
+<h1><a class="anchor" id="demo_geom"></a>
+几何计算和测量</h1>
 <p>演示几何模块的常用功能，包括交点计算、距离测量、拟合等。</p>
 <blockquote class="doxtable">
 <p><b>源代码 (C++)：</b> mfcdemo/MFCGeom<br  />
@@ -421,8 +421,8 @@ Region 操作</h2>
 <p><a href="t02_08_geometry1.png"><img src="t02_08_geometry1.png" alt="" style="height: 200px;" class="inline"/> </a> <a href="t02_08_geometry2.png"><img src="t02_08_geometry2.png" alt="" style="height: 200px;" class="inline"/> </a> <a href="t02_08_geometry3.png"><img src="t02_08_geometry3.png" alt="" style="height: 200px;" class="inline"/> </a> <a href="t02_08_geometry4.png"><img src="t02_08_geometry4.png" alt="" style="height: 200px;" class="inline"/> </a></p>
 <p><br  />
 </p>
-<h2><a class="anchor" id="demo_barcode"></a>
-条码检测</h2>
+<h1><a class="anchor" id="demo_barcode"></a>
+条码检测</h1>
 <p>演示一维码和二维码检测，以及条码质量评价。</p>
 <blockquote class="doxtable">
 <p><b>源代码 (C++)：</b> mfcdemo/MFCBarcode<br  />
@@ -443,8 +443,8 @@ Region 操作</h2>
 </ol>
 <p><br  />
 </p>
-<h2><a class="anchor" id="demo_display"></a>
-显示控件</h2>
+<h1><a class="anchor" id="demo_display"></a>
+显示控件</h1>
 <p>演示如何使用显示控件。</p>
 <blockquote class="doxtable">
 <p><b>源代码 (C++)：</b> mfcdemo/MFCDisplay<br  />
@@ -471,8 +471,8 @@ Region 操作</h2>
 </ol>
 <p><br  />
 </p>
-<h2><a class="anchor" id="demo_ibservice"></a>
-连接到灵闪服务</h2>
+<h1><a class="anchor" id="demo_ibservice"></a>
+连接到灵闪服务</h1>
 <p>演示如何与灵闪服务集成，并使用具有强大功能的灵闪作业。</p>
 <blockquote class="doxtable">
 <p><b>源代码 (C++)：</b> mfcdemo/MFCIBService<br  />

@@ -20,7 +20,7 @@
     jax: ["input/TeX","output/HTML-CSS"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.7/MathJax.js"></script>
 <link href="lpv_stylesheet.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-custom.css" rel="stylesheet" type="text/css"/>
@@ -157,7 +157,7 @@ OLE_COLOR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=
 <tr class="separator:abe4f56038c6366eda4bd3c20347895d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ac6086a0b595642dcf0161aff3efadf"><td class="memItemLeft" align="right" valign="top"><a id="a7ac6086a0b595642dcf0161aff3efadf"></a>
 BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#a7ac6086a0b595642dcf0161aff3efadf">KeepAspectRatio</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a7ac6086a0b595642dcf0161aff3efadf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get/set whether the display control should keep the aspect ratio when zooming. <br /></td></tr>
+<tr class="memdesc:a7ac6086a0b595642dcf0161aff3efadf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the display control should keep the aspect ratio when zooming. <br /></td></tr>
 <tr class="separator:a7ac6086a0b595642dcf0161aff3efadf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b0398ff6fa618556f94bb816c03248c"><td class="memItemLeft" align="right" valign="top"><a id="a0b0398ff6fa618556f94bb816c03248c"></a>
 <a class="el" href="namespace_l_p_v_display_lib.html#abc2f2be19cc9a20d8f4b71ddb968d49b">LPVDisplayFlags</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#a0b0398ff6fa618556f94bb816c03248c">DisplayFlags</a><code> [get, set]</code></td></tr>
@@ -173,7 +173,7 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 <tr class="separator:a5e4301818dc221a0a7430da87c444e97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6856314285e2e9206356a5554ad4f6c"><td class="memItemLeft" align="right" valign="top"><a id="aa6856314285e2e9206356a5554ad4f6c"></a>
 <a class="el" href="namespace_l_p_v_display_lib.html#aed764fec357cb9c2859be21e958f884f">LPVZoomAnchor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#aa6856314285e2e9206356a5554ad4f6c">ZoomAnchor</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:aa6856314285e2e9206356a5554ad4f6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get/set how the control should position the scene when resized, see LPVZoomAnchor. <br /></td></tr>
+<tr class="memdesc:aa6856314285e2e9206356a5554ad4f6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">How the control should position the scene when resized, see LPVZoomAnchor. <br /></td></tr>
 <tr class="separator:aa6856314285e2e9206356a5554ad4f6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c1af515ea7a5e282663d662775aee1c"><td class="memItemLeft" align="right" valign="top"><a id="a2c1af515ea7a5e282663d662775aee1c"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#a2c1af515ea7a5e282663d662775aee1c">ZoomX</a><code> [get, set]</code></td></tr>
@@ -185,11 +185,11 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 <tr class="separator:ae7f979e70b4ed82a166006864dbb89cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a685cd4ccb93f6a8ef101dd27ac97fabb"><td class="memItemLeft" align="right" valign="top"><a id="a685cd4ccb93f6a8ef101dd27ac97fabb"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#a685cd4ccb93f6a8ef101dd27ac97fabb">PanX</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a685cd4ccb93f6a8ef101dd27ac97fabb"><td class="mdescLeft">&#160;</td><td class="mdescRight">The scene's translation in the x-coordinate direction for panning. The final display x position is calculated as: \((x + panX) \times zoomX\). <br /></td></tr>
+<tr class="memdesc:a685cd4ccb93f6a8ef101dd27ac97fabb"><td class="mdescLeft">&#160;</td><td class="mdescRight">The scene's translation in the x-coordinate direction for panning. The final display x position is calculated as: \( (x + panX) \times zoomX \). <br /></td></tr>
 <tr class="separator:a685cd4ccb93f6a8ef101dd27ac97fabb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac837bfb9690964ba54356f556961efa9"><td class="memItemLeft" align="right" valign="top"><a id="ac837bfb9690964ba54356f556961efa9"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#ac837bfb9690964ba54356f556961efa9">PanY</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:ac837bfb9690964ba54356f556961efa9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The scene's translation in the y-coordinate direction for panning. The final display y position is calculated as: \((y + panY) \times zoomY\). <br /></td></tr>
+<tr class="memdesc:ac837bfb9690964ba54356f556961efa9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The scene's translation in the y-coordinate direction for panning. The final display y position is calculated as: \( (y + panY) \times zoomY \). <br /></td></tr>
 <tr class="separator:ac837bfb9690964ba54356f556961efa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0660162ba193ae8500efd79bbf1eb576"><td class="memItemLeft" align="right" valign="top"><a id="a0660162ba193ae8500efd79bbf1eb576"></a>
 <a class="el" href="namespace_l_p_v_display_lib.html#a5361690471ec9bae7d38163800878c4e">LPVAlignment</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#a0660162ba193ae8500efd79bbf1eb576">Alignment</a><code> [get, set]</code></td></tr>
@@ -263,8 +263,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 </div><div class="memdoc">
 <p>Set the size of the scene, in pixel unit. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">w</td><td>The width of the scene. </td></tr>
-    <tr><td class="paramname">h</td><td>The height of the scene. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">w</td><td>The width of the scene. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">h</td><td>The height of the scene. </td></tr>
   </table>
   </dd>
 </dl>
@@ -288,7 +288,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 </div><div class="memdoc">
 <p>Set the image of the scene. The size of the scene is extended to the image size. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">image</td><td>The image item, it should be a <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">LImage </a> instance. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">image</td><td>The image item, it should be a <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">LImage </a> instance. </td></tr>
   </table>
   </dd>
 </dl>
@@ -329,7 +329,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 </div><div class="memdoc">
 <p>Get the image of the scene. </p><dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">image</td><td>The image object </td></tr>
+    <tr><td class="paramname">image</td><td>Return the image object </td></tr>
   </table>
   </dd>
 </dl>
@@ -363,8 +363,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 </div><div class="memdoc">
 <p>Add the region item to the scene. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">region</td><td>The region item, it should be a <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">LRegion </a> instance. </td></tr>
-    <tr><td class="paramname">interactable</td><td>Whether the region object is interactable. By default, it's True. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">region</td><td>The region item, it should be a <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">LRegion </a> instance. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">interactable</td><td>Whether the region object is interactable. By default, it's True. </td></tr>
   </table>
   </dd>
 </dl>
@@ -394,7 +394,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 </div><div class="memdoc">
 <p>Remove the region item from the scene. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">region</td><td>The region item to be removed. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">region</td><td>The region item to be removed. </td></tr>
   </table>
   </dd>
 </dl>
@@ -418,7 +418,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 </div><div class="memdoc">
 <p>Remove the region item from the scene, by its ID. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">regionId</td><td>The region item's ID. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">regionId</td><td>The region item's ID. </td></tr>
   </table>
   </dd>
 </dl>
@@ -460,7 +460,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 </div><div class="memdoc">
 <p>Get the region item by its ID in the scene </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">regionId</td><td>The region item's ID. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">regionId</td><td>The region item's ID. </td></tr>
   </table>
   </dd>
 </dl>
@@ -500,8 +500,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 </div><div class="memdoc">
 <p>Add the drawable item to the scene. It's usually a geometric shape or some algorithm' results. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drawable</td><td>The object item, it should be an object implemented the <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_drawable.html">ILDrawable</a> interface, or <a class="el" href="interface_l_p_v_display_lib_1_1_i_l_text.html">LText</a> object. </td></tr>
-    <tr><td class="paramname">drawFlags</td><td>The draw flags to control the item's drawing behavior. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">drawable</td><td>The object item, it should be an object implemented the <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_drawable.html">ILDrawable</a> interface, or <a class="el" href="interface_l_p_v_display_lib_1_1_i_l_text.html">LText</a> object. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">drawFlags</td><td>The draw flags to control the item's drawing behavior. </td></tr>
   </table>
   </dd>
 </dl>
@@ -531,7 +531,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 </div><div class="memdoc">
 <p>Remove the drawable item from the scene. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drawable</td><td>The drawable item to be removed. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">drawable</td><td>The drawable item to be removed. </td></tr>
   </table>
   </dd>
 </dl>
@@ -555,7 +555,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 </div><div class="memdoc">
 <p>Remove the drawable item from the scene, by its ID. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">objectId</td><td>The drawable item's ID. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">objectId</td><td>The drawable item's ID. </td></tr>
   </table>
   </dd>
 </dl>
@@ -597,13 +597,13 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 </div><div class="memdoc">
 <p>Get the drawable item by its ID in the scene </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">objectId</td><td>The drawable item's ID. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">objectId</td><td>The drawable item's ID. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">object</td><td>Return the object item </td></tr>
+    <tr><td class="paramname">drawable</td><td>Return the object item </td></tr>
   </table>
   </dd>
 </dl>
@@ -655,11 +655,11 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 </div><div class="memdoc">
 <p>Zoom and translate the scene, to view the specified rectangle region and fit the window. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">tlx</td><td>The x-coordinate of the top-left corner of the rectangle region, aka. left border, in pixel unit. </td></tr>
-    <tr><td class="paramname">tly</td><td>The y-coordinate of the top-left corner of the rectangle region, aka. top border, in pixel unit. </td></tr>
-    <tr><td class="paramname">w</td><td>The width of the rectangle region, in pixel unit. </td></tr>
-    <tr><td class="paramname">h</td><td>The height of the rectangle region, in pixel unit. </td></tr>
-    <tr><td class="paramname">alignFlags</td><td>The alignment, the control's <a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#a0660162ba193ae8500efd79bbf1eb576" title="The alignment the control is used when fit some part of the scene to the window.">Alignment</a> property is used if it's not set. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tlx</td><td>The x-coordinate of the top-left corner of the rectangle region, aka. left border, in pixel unit. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tly</td><td>The y-coordinate of the top-left corner of the rectangle region, aka. top border, in pixel unit. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">w</td><td>The width of the rectangle region, in pixel unit. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">h</td><td>The height of the rectangle region, in pixel unit. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">alignFlags</td><td>The alignment, the control's <a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#a0660162ba193ae8500efd79bbf1eb576" title="The alignment the control is used when fit some part of the scene to the window.">Alignment</a> property is used if it's not set. </td></tr>
   </table>
   </dd>
 </dl>
@@ -693,8 +693,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 </div><div class="memdoc">
 <p>Zoom and translate the scene, to view the specified object and fit the window. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">object</td><td>The object item to view. </td></tr>
-    <tr><td class="paramname">alignFlags</td><td>The alignment, the control's <a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#a0660162ba193ae8500efd79bbf1eb576" title="The alignment the control is used when fit some part of the scene to the window.">Alignment</a> property is used if it's not set. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">object</td><td>The object item to view. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">alignFlags</td><td>The alignment, the control's <a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#a0660162ba193ae8500efd79bbf1eb576" title="The alignment the control is used when fit some part of the scene to the window.">Alignment</a> property is used if it's not set. </td></tr>
   </table>
   </dd>
 </dl>
@@ -718,7 +718,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 </div><div class="memdoc">
 <p>Zoom and translate the scene, to view the entire scene and fit the window. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">alignFlags</td><td>The alignment, the control's <a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#a0660162ba193ae8500efd79bbf1eb576" title="The alignment the control is used when fit some part of the scene to the window.">Alignment</a> property is used if it's not set. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">alignFlags</td><td>The alignment, the control's <a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#a0660162ba193ae8500efd79bbf1eb576" title="The alignment the control is used when fit some part of the scene to the window.">Alignment</a> property is used if it's not set. </td></tr>
   </table>
   </dd>
 </dl>
@@ -760,7 +760,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 </div><div class="memdoc">
 <p>Save the current content in the window to file as a color image. The image format is chosen based on the filename extension (.bmp, .png, .jpg, etc.). </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">filename</td><td>Full path of the file, it could be absolute or relative path with file name and extension. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>Full path of the file, it could be absolute or relative path with file name and extension. </td></tr>
   </table>
   </dd>
 </dl>
@@ -800,8 +800,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 </div><div class="memdoc">
 <p>Enable / disable display flags for the control. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">flag</td><td>The display flag to be changed. </td></tr>
-    <tr><td class="paramname">enable</td><td>Enables flag if enabled is true; otherwise disables flag. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">flag</td><td>The display flag to be changed. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>Enables or disable the display flag. </td></tr>
   </table>
   </dd>
 </dl>
@@ -847,10 +847,10 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 </div><div class="memdoc">
 <p>Add a horizontal reference line. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">position</td><td>The y-coordinates of the reference line </td></tr>
-    <tr><td class="paramname">relativePosition</td><td>The relative x-coordinates of the reference line, which is calculated on the fly based on the image size. The value range is 0 ~ 1, negative value means it's not working. </td></tr>
-    <tr><td class="paramname">attached</td><td>Whether the reference line is attached to the image. Attached reference lines moves together with the image. </td></tr>
-    <tr><td class="paramname">clr</td><td>The color of the reference line, the default value is blue </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">position</td><td>The y-coordinates of the reference line </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">relativePosition</td><td>The relative x-coordinates of the reference line, which is calculated on the fly based on the image size. The value range is 0 ~ 1, negative value means it's not working. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">attached</td><td>Whether the reference line is attached to the image. Attached reference lines moves together with the image. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">clr</td><td>The color of the reference line, the default value is blue </td></tr>
   </table>
   </dd>
 </dl>
@@ -902,10 +902,10 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 </div><div class="memdoc">
 <p>Add a vertical reference line. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">position</td><td>The x-coordinates of the reference line </td></tr>
-    <tr><td class="paramname">relativePosition</td><td>The relative x-coordinates of the reference line, which is calculated on the fly based on the image size. The value range is 0 ~ 1, negative value means it's not working. </td></tr>
-    <tr><td class="paramname">attached</td><td>Whether the reference line is attached to the image. Attached reference lines moves together with the image. </td></tr>
-    <tr><td class="paramname">clr</td><td>The color of the reference line, the default value is blue </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">position</td><td>The x-coordinates of the reference line </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">relativePosition</td><td>The relative x-coordinates of the reference line, which is calculated on the fly based on the image size. The value range is 0 ~ 1, negative value means it's not working. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">attached</td><td>Whether the reference line is attached to the image. Attached reference lines moves together with the image. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">clr</td><td>The color of the reference line, the default value is blue </td></tr>
   </table>
   </dd>
 </dl>
@@ -935,7 +935,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 </div><div class="memdoc">
 <p>Remove the reference line from the scene, by its ID. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">refLineId</td><td>The reference line's ID. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">refLineId</td><td>The reference line's ID. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1005,11 +1005,11 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 </div><div class="memdoc">
 <p>Show the display control as a pop-up dialog. It's commonly used in a console application for debugging. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">dialogName</td><td>The name of the dialog, shown in title bar. </td></tr>
-    <tr><td class="paramname">x</td><td>The x-coordinate of the window </td></tr>
-    <tr><td class="paramname">y</td><td>The y-coordinate of the window </td></tr>
-    <tr><td class="paramname">w</td><td>The width of the window </td></tr>
-    <tr><td class="paramname">h</td><td>The height of the window </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dialogName</td><td>The name of the dialog, shown in title bar. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td>The x-coordinate of the window </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">y</td><td>The y-coordinate of the window </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">w</td><td>The width of the window </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">h</td><td>The height of the window </td></tr>
   </table>
   </dd>
 </dl>

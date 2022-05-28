@@ -20,7 +20,7 @@
     jax: ["input/TeX","output/SVG"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.7/MathJax.js"></script>
 <link href="lpv_stylesheet.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-custom.css" rel="stylesheet" type="text/css"/>
@@ -176,15 +176,15 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 </div><div class="memdoc">
 <p>检测和定位圆。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> 输入的图像 </td></tr>
-    <tr><td class="paramname">region</td><td>输入的区域，一个圆环区域对象，其中心在定位圆中心的附近。<br  />
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> 输入的图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">region</td><td>输入的区域，一个圆环区域对象，其中心在定位圆中心的附近。<br  />
 若区域对象为空，则使用图像的中心为估计的圆心。 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">results</td><td>返回圆定位结果 </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>返回值</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">results</td><td>返回圆定位结果 </td></tr>
     <tr><td class="paramname">error</td><td>返回错误码 </td></tr>
   </table>
   </dd>

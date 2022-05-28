@@ -20,7 +20,7 @@
     jax: ["input/TeX","output/SVG"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.7/MathJax.js"></script>
 <link href="lpv_stylesheet.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-custom.css" rel="stylesheet" type="text/css"/>
@@ -113,11 +113,11 @@ Public 成员函数</h2></td></tr>
  <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">ILEdgeFilterPtr m_edge_filter_op(__uuidof(LEdgeFilter));</div>
 <div class="line">m_edge_filter_op-&gt;SetEdgeKernel(<a class="code" href="namespace_l_p_v_img_proc_lib.html#ae9fce5290064b3ab00a2b0c192245c0dae3aefcc5cbf63e31b9ae096c8ed63c19">LPVSobel</a>, 5, 5);</div>
 <div class="line">m_edge_filter_op-&gt;GradientFull(m_img, m_result_img);</div>
-<div class="ttc" id="anamespace_l_p_v_img_proc_lib_html_ae9fce5290064b3ab00a2b0c192245c0dae3aefcc5cbf63e31b9ae096c8ed63c19"><div class="ttname"><a href="namespace_l_p_v_img_proc_lib.html#ae9fce5290064b3ab00a2b0c192245c0dae3aefcc5cbf63e31b9ae096c8ed63c19">LPVImgProcLib::LPVSobel</a></div><div class="ttdeci">@ LPVSobel</div><div class="ttdef"><b>Definition:</b> LPVImgProc.idl:93</div></div>
+<div class="ttc" id="anamespace_l_p_v_img_proc_lib_html_ae9fce5290064b3ab00a2b0c192245c0dae3aefcc5cbf63e31b9ae096c8ed63c19"><div class="ttname"><a href="namespace_l_p_v_img_proc_lib.html#ae9fce5290064b3ab00a2b0c192245c0dae3aefcc5cbf63e31b9ae096c8ed63c19">LPVImgProcLib::LPVSobel</a></div><div class="ttdeci">@ LPVSobel</div><div class="ttdef"><b>Definition:</b> LPVImgProc.idl:97</div></div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LEdgeFilter m_edge_filter_op = <span class="keyword">new</span> LEdgeFilter();</div>
 <div class="line">m_edge_filter_op.SetEdgeKernel(<a class="code" href="namespace_l_p_v_img_proc_lib.html#ae9fce5290064b3ab00a2b0c192245c0d">LPVEdgeKernel</a>.LPVSobel, 5, 5);</div>
 <div class="line">m_edge_filter_op.GradientFull(m_img, m_result_img);</div>
-<div class="ttc" id="anamespace_l_p_v_img_proc_lib_html_ae9fce5290064b3ab00a2b0c192245c0d"><div class="ttname"><a href="namespace_l_p_v_img_proc_lib.html#ae9fce5290064b3ab00a2b0c192245c0d">LPVImgProcLib::LPVEdgeKernel</a></div><div class="ttdeci">LPVEdgeKernel</div><div class="ttdoc">描述边缘增加算子中所使用的核的类型</div><div class="ttdef"><b>Definition:</b> LPVImgProc.idl:84</div></div>
+<div class="ttc" id="anamespace_l_p_v_img_proc_lib_html_ae9fce5290064b3ab00a2b0c192245c0d"><div class="ttname"><a href="namespace_l_p_v_img_proc_lib.html#ae9fce5290064b3ab00a2b0c192245c0d">LPVImgProcLib::LPVEdgeKernel</a></div><div class="ttdeci">LPVEdgeKernel</div><div class="ttdoc">描述边缘增加算子中所使用的核的类型</div><div class="ttdef"><b>Definition:</b> LPVImgProc.idl:87</div></div>
 </div><!-- fragment --> </div>  </div><h2 class="groupheader">成员函数说明</h2>
 <a id="a99c6c95dff350aa072386e0de834c130"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a99c6c95dff350aa072386e0de834c130">&#9670;&nbsp;</a></span>SetEdgeKernel()</h2>
@@ -152,9 +152,9 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>设置图像边缘滤波器所使用的滤波核类型核尺寸。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">kType</td><td>核类型。 </td></tr>
-    <tr><td class="paramname">kWidth</td><td>滤波核的宽度，需要是一个奇数，如 1, 3, 5, 7 等。 若核尺寸设置为 1，将退化为 \((-1, 1)\)，指定的核类型不起作用。 </td></tr>
-    <tr><td class="paramname">kHeight</td><td>滤波核的高度，需要是一个奇数，如 1, 3, 5, 7 等。若设置为 0，则使用与宽度相同。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">kType</td><td>核类型。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">kWidth</td><td>滤波核的宽度，需要是一个奇数，如 1, 3, 5, 7 等。 若核尺寸设置为 1，将退化为 \( (-1, 1) \)，指定的核类型不起作用。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">kHeight</td><td>滤波核的高度，需要是一个奇数，如 1, 3, 5, 7 等。若设置为 0，则使用与宽度相同。 </td></tr>
   </table>
   </dd>
 </dl>
@@ -188,13 +188,8 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>水平梯度，水平边缘在输出图像中表现为较亮的像素。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> 输入图像 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>返回值</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">result</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> 输出结果图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> 输入图像 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> 输出结果图像 </td></tr>
   </table>
   </dd>
 </dl>
@@ -228,13 +223,8 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>垂直梯度，垂直边缘在输出图像中表现为较亮的像素。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> 输入图像 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>返回值</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">result</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> 输出结果图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> 输入图像 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> 输出结果图像 </td></tr>
   </table>
   </dd>
 </dl>
@@ -268,13 +258,8 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>全梯度，水平和垂直边缘在输出图像中均表现为较亮的像素。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> 输入图像 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>返回值</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">result</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> 输出结果图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> 输入图像 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> 输出结果图像 </td></tr>
   </table>
   </dd>
 </dl>

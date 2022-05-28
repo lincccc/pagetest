@@ -20,7 +20,7 @@
     jax: ["input/TeX","output/HTML-CSS"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.7/MathJax.js"></script>
 <link href="lpv_stylesheet.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-custom.css" rel="stylesheet" type="text/css"/>
@@ -243,10 +243,10 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 </div><div class="memdoc">
 <p>Set placement of the line use two end points </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">x1</td><td>The x-coordinate of the start point of the line </td></tr>
-    <tr><td class="paramname">y1</td><td>The y-coordinate of the start point of the line </td></tr>
-    <tr><td class="paramname">x2</td><td>The x-coordinate of the end point of the line </td></tr>
-    <tr><td class="paramname">y2</td><td>The y-coordinate of the end point of the line </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x1</td><td>The x-coordinate of the start point of the line </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">y1</td><td>The y-coordinate of the start point of the line </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x2</td><td>The x-coordinate of the end point of the line </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">y2</td><td>The y-coordinate of the end point of the line </td></tr>
   </table>
   </dd>
 </dl>
@@ -280,8 +280,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 </div><div class="memdoc">
 <p>Translate the line by the given offset and return a new line </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">offsetX</td><td>The x-coordinate of the offset </td></tr>
-    <tr><td class="paramname">offsetY</td><td>The y-coordinate of the offset </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">offsetX</td><td>The x-coordinate of the offset </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">offsetY</td><td>The y-coordinate of the offset </td></tr>
   </table>
   </dd>
 </dl>
@@ -310,7 +310,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 </div><div class="memdoc">
 <p>Get whether this is a well-initialized line </p><dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">val</td><td>True for valid, false otherwise. </td></tr>
+    <tr><td class="paramname">val</td><td>Return true for valid, false otherwise. </td></tr>
   </table>
   </dd>
 </dl>
@@ -331,12 +331,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get the middle point of the line </p><dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">result</td><td>The middle point. </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Get the middle point of the line </p>
 
 </div>
 </div>
@@ -367,8 +362,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 </div><div class="memdoc">
 <p>Determines whether this line intersects with the given line. Return the intersection point if yes. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">line</td><td>The input line </td></tr>
-    <tr><td class="paramname">intersectPoint</td><td>Output the intersection point. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">line</td><td>The input line </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">intersectPoint</td><td>Output the intersection point. </td></tr>
   </table>
   </dd>
 </dl>
@@ -408,13 +403,13 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 </div><div class="memdoc">
 <p>Determines whether this line intersects with the given circle. Return the intersection points if yes. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">circle</td><td>The input circle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">circle</td><td>The input circle </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">intersectPoints</td><td>Output the intersection points, it should be an empty set for not-intersected case, or 1 point for tangent case, or 2 points for intersected case. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">intersectPoints</td><td>Output the intersection points, it should be an empty set for not-intersected case, or 1 point for tangent case, or 2 points for intersected case. </td></tr>
     <tr><td class="paramname">type</td><td>Return the intersection type depends on the count of intersection points which is on the line segment, <a class="el" href="namespace_l_p_v_geom_lib.html#a9e95444de4a6d45da839995006de7ddfac05ab634cb5dc2ab6e7bfb964fd85af6">Bounded </a> (2), <a class="el" href="namespace_l_p_v_geom_lib.html#a9e95444de4a6d45da839995006de7ddfa11a4685b4ba41e4a96d9394b47e85a88">Partial </a> (1) or <a class="el" href="namespace_l_p_v_geom_lib.html#a9e95444de4a6d45da839995006de7ddfa3894cd1ab4d330314a4c8e807e77cf44">Unbounded </a> (0). </td></tr>
   </table>
   </dd>
@@ -450,13 +445,13 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 </div><div class="memdoc">
 <p>Determines whether this line intersects with the given polygon. Return the intersection points if yes. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">polygon</td><td>The input polygon </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">polygon</td><td>The input polygon </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">intersectPoints</td><td>Output the intersection points, it should be an empty set for not-intersected case, 1 or more points for intersected case. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">intersectPoints</td><td>Output the intersection points, it should be an empty set for not-intersected case, 1 or more points for intersected case. </td></tr>
     <tr><td class="paramname">type</td><td>Return the intersection type depends on the count of intersection points which is on the line segment, <a class="el" href="namespace_l_p_v_geom_lib.html#a9e95444de4a6d45da839995006de7ddfac05ab634cb5dc2ab6e7bfb964fd85af6">Bounded </a> (all), <a class="el" href="namespace_l_p_v_geom_lib.html#a9e95444de4a6d45da839995006de7ddfa11a4685b4ba41e4a96d9394b47e85a88">Partial</a> (part) or <a class="el" href="namespace_l_p_v_geom_lib.html#a9e95444de4a6d45da839995006de7ddfa3894cd1ab4d330314a4c8e807e77cf44">Unbounded</a> (none). </td></tr>
   </table>
   </dd>
@@ -492,13 +487,13 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 </div><div class="memdoc">
 <p>Calculate the perpendicular distance and root from the given point to this line. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">point</td><td>The input point </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">point</td><td>The input point </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">rootPoint</td><td>Output the root point. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">rootPoint</td><td>Output the root point. </td></tr>
     <tr><td class="paramname">distance</td><td>Return the distance. </td></tr>
   </table>
   </dd>
@@ -523,7 +518,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 </div><div class="memdoc">
 <p>Calculate the bisect line of this and the input line. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">line</td><td>The input line </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">line</td><td>The input line </td></tr>
   </table>
   </dd>
 </dl>
@@ -553,7 +548,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 </div><div class="memdoc">
 <p>Calculate the distance between this and the input line. For non-parallel lines, the result is calculated as the average perpendicular distance between the middle point of one line to the other. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">line</td><td>The input line </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">line</td><td>The input line </td></tr>
   </table>
   </dd>
 </dl>
@@ -583,7 +578,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 </div><div class="memdoc">
 <p>Calculate the acute angle between this and the input line. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">line</td><td>The input line </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">line</td><td>The input line </td></tr>
   </table>
   </dd>
 </dl>
@@ -613,7 +608,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 </div><div class="memdoc">
 <p>Evaluate whether this and the input line are parallel </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">line</td><td>The input line </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">line</td><td>The input line </td></tr>
   </table>
   </dd>
 </dl>
@@ -643,7 +638,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 </div><div class="memdoc">
 <p>Calculate the clockwise angle from the this line to the input line. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">line</td><td>The input line </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">line</td><td>The input line </td></tr>
   </table>
   </dd>
 </dl>
@@ -695,10 +690,10 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 </div><div class="memdoc">
 <p>Set placement of the line use the middle point and angle </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">midx</td><td>The x-coordinate of the middle point of the line </td></tr>
-    <tr><td class="paramname">midy</td><td>The y-coordinate of the middle point of the line </td></tr>
-    <tr><td class="paramname">angle</td><td>The angle of the line </td></tr>
-    <tr><td class="paramname">length</td><td>The length of the line </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">midx</td><td>The x-coordinate of the middle point of the line </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">midy</td><td>The y-coordinate of the middle point of the line </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">angle</td><td>The angle of the line </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">length</td><td>The length of the line </td></tr>
   </table>
   </dd>
 </dl>
@@ -768,7 +763,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 </div><div class="memdoc">
 <p>Generate a rotated rectangle region use the line object with the given expansion </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">exp</td><td>The expansion pixels on the both side of the line's placement </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">exp</td><td>The expansion pixels on the both side of the line's placement </td></tr>
   </table>
   </dd>
 </dl>

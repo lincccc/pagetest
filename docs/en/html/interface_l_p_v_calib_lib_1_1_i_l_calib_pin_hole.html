@@ -20,7 +20,7 @@
     jax: ["input/TeX","output/HTML-CSS"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.7/MathJax.js"></script>
 <link href="lpv_stylesheet.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-custom.css" rel="stylesheet" type="text/css"/>
@@ -187,7 +187,7 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 <p>In the pinhole camera model, a scene view is formed by projecting 3D points into the image plane using a perspective transformation, defined as: </p><p class="formulaDsp">
 \[ s \; m&#39; = K \; [R | t] \; M \]
 </p>
-<p> where \(m&#39;\) are the image points in pixels, \(M\) are the world points in physical units, \(K\) is the intrinsic camera array involves camera's principal point and focus lengths in pixel units, \([R | t]\) is the extrinsic camera array describes the camera's relative position to the view planar, \(s\) is the scale factor for the whole system.<br  />
+<p> where \( m&#39; \) are the image points in pixels, \( M \) are the world points in physical units, \( K \) is the intrinsic camera array involves camera's principal point and focus lengths in pixel units, \( [R | t] \) is the extrinsic camera array describes the camera's relative position to the view planar, \( s \) is the scale factor for the whole system.<br  />
 Intrinsic parameters are independent to the viewed scene while extrinsic parameters do, which means if we move the camera other places without changing the focusing, the intrinsic parameters stay unchanged but extrinsic parameters should be re-calibrated.<br  />
 This model support radial distortion estimation, see <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_pin_hole.html#ad8e291a42fe62ac35a4545008635bef0" title="The distortion model.">DistortionModel</a> for more details.</p>
 <p>The accuracy of the calibration result is affected by many factors:</p><ol type="1">
@@ -203,7 +203,7 @@ This model support radial distortion estimation, see <a class="el" href="interfa
 <div class="line">m_calib-&gt;DistortionModel = (<a class="code" href="namespace_l_p_v_calib_lib.html#a4b9fee61ed0c3116a02980ce0dd01127">LPVDistortionModel</a>)(LPVDistortionModel::LPVDistortionRadial + LPVDistortionModel::LPVDistortionTangential);</div>
 <div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = (<a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>)m_calib-&gt;Calibrate();</div>
 <div class="line"><span class="keywordflow">if</span> (err != LPVErrorCode::LPVNoError || !m_calib-&gt;IsCalibrated()) <span class="keywordflow">return</span>;</div>
-<div class="ttc" id="anamespace_l_p_v_calib_lib_html_a4b9fee61ed0c3116a02980ce0dd01127"><div class="ttname"><a href="namespace_l_p_v_calib_lib.html#a4b9fee61ed0c3116a02980ce0dd01127">LPVCalibLib::LPVDistortionModel</a></div><div class="ttdeci">LPVDistortionModel</div><div class="ttdoc">This enumeration represents the distortion model used in pine-hole camera model, see LCalibPinHole ....</div><div class="ttdef"><b>Definition:</b> LPVCalib.idl:141</div></div>
+<div class="ttc" id="anamespace_l_p_v_calib_lib_html_a4b9fee61ed0c3116a02980ce0dd01127"><div class="ttname"><a href="namespace_l_p_v_calib_lib.html#a4b9fee61ed0c3116a02980ce0dd01127">LPVCalibLib::LPVDistortionModel</a></div><div class="ttdeci">LPVDistortionModel</div><div class="ttdoc">This enumeration represents the distortion model used in pine-hole camera model, see ILCalibPinHole....</div><div class="ttdef"><b>Definition:</b> LPVCalib.idl:141</div></div>
 <div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">This enumeration represents the type of a LPV function error.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:159</div></div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LCalibPinHole m_calib = <span class="keyword">new</span> LCalibPinHole();</div>
 <div class="line">LCalibPointPairs pnt_pairs = m_calib_board.Detect(m_img);</div>
@@ -245,9 +245,9 @@ This model support radial distortion estimation, see <a class="el" href="interfa
 </div><div class="memdoc">
 <p>Set some property of the camera or the viewed scene, which is used in setting up initial value for calibration. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">cellSize</td><td>The cell size of camera sensor(in μm), should be available in datasheet of the camera device. We use same cell size for both x and y coordinate as in most cases they are same. </td></tr>
-    <tr><td class="paramname">focusLength</td><td>The focus length of camera sensor(in mm), should be available in datasheet of the camera device. </td></tr>
-    <tr><td class="paramname">viewDistance</td><td>The approximate distance from viewed plane to camera(in mm). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cellSize</td><td>The cell size of camera sensor(in μm), should be available in datasheet of the camera device. We use same cell size for both x and y coordinate as in most cases they are same. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">focusLength</td><td>The focus length of camera sensor(in mm), should be available in datasheet of the camera device. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">viewDistance</td><td>The approximate distance from viewed plane to camera(in mm). </td></tr>
   </table>
   </dd>
 </dl>
@@ -271,7 +271,7 @@ This model support radial distortion estimation, see <a class="el" href="interfa
 </div><div class="memdoc">
 <p>Add point pairs for multi-view calibration. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pointPairs</td><td>The collection of point pairs from assistant view. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pointPairs</td><td>The collection of point pairs from assistant view. </td></tr>
   </table>
   </dd>
 </dl>

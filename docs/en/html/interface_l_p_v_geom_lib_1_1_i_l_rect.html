@@ -20,7 +20,7 @@
     jax: ["input/TeX","output/HTML-CSS"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.7/MathJax.js"></script>
 <link href="lpv_stylesheet.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-custom.css" rel="stylesheet" type="text/css"/>
@@ -202,7 +202,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 </div><div class="memdoc">
 <p>Draw the rectangle on HDC. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">bFill</td><td>Whether to fill the circle using current brush. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bFill</td><td>Whether to fill the circle using current brush. </td></tr>
   </table>
   </dd>
 </dl>
@@ -255,11 +255,11 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 </div><div class="memdoc">
 <p>Set placement of the rectangle </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">x</td><td>The x-coordinate of the rectangle's center </td></tr>
-    <tr><td class="paramname">y</td><td>The x-coordinate of the rectangle's center </td></tr>
-    <tr><td class="paramname">w</td><td>The width of the rectangle </td></tr>
-    <tr><td class="paramname">h</td><td>The height of the rectangle </td></tr>
-    <tr><td class="paramname">a</td><td>The angle of the rectangle, by default, it's 0 means a non-rotated rectangle. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td>The x-coordinate of the rectangle's center </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">y</td><td>The x-coordinate of the rectangle's center </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">w</td><td>The width of the rectangle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">h</td><td>The height of the rectangle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td>The angle of the rectangle, by default, it's 0 means a non-rotated rectangle. </td></tr>
   </table>
   </dd>
 </dl>
@@ -293,8 +293,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 </div><div class="memdoc">
 <p>Translate the rectangle by the given offset and return a new rectangle </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">offsetX</td><td>The x-coordinate of the offset </td></tr>
-    <tr><td class="paramname">offsetY</td><td>The y-coordinate of the offset </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">offsetX</td><td>The x-coordinate of the offset </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">offsetY</td><td>The y-coordinate of the offset </td></tr>
   </table>
   </dd>
 </dl>
@@ -323,7 +323,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 </div><div class="memdoc">
 <p>Get whether this is a well-initialized rectangle </p><dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">val</td><td>True for valid, false otherwise. </td></tr>
+    <tr><td class="paramname">val</td><td>Return true for valid, false otherwise. </td></tr>
   </table>
   </dd>
 </dl>
@@ -369,10 +369,10 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 </div><div class="memdoc">
 <p>Adds dtop, dbottom, dleft and dright respectively to the existing coordinates of the rectangle and return a new rectangle </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">dtop</td><td>The top border adjustment </td></tr>
-    <tr><td class="paramname">dbottom</td><td>The bottom border adjustment </td></tr>
-    <tr><td class="paramname">dleft</td><td>The left border adjustment </td></tr>
-    <tr><td class="paramname">dright</td><td>The right border adjustment </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dtop</td><td>The top border adjustment </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dbottom</td><td>The bottom border adjustment </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dleft</td><td>The left border adjustment </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dright</td><td>The right border adjustment </td></tr>
   </table>
   </dd>
 </dl>
@@ -474,7 +474,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 </div><div class="memdoc">
 <p>Determines whether the point is inside this rectangle, outside, or lies on the edge. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">point</td><td>The input point </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">point</td><td>The input point </td></tr>
   </table>
   </dd>
 </dl>
@@ -503,7 +503,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 </div><div class="memdoc">
 <p>Generate a rotated rectangle region use the rectangle object </p><dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">val</td><td>Return the rotated rectangle region </td></tr>
+    <tr><td class="paramname">Return</td><td>the rotated rectangle region </td></tr>
   </table>
   </dd>
 </dl>

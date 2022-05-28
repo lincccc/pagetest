@@ -20,7 +20,7 @@
     jax: ["input/TeX","output/HTML-CSS"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.7/MathJax.js"></script>
 <link href="lpv_stylesheet.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-custom.css" rel="stylesheet" type="text/css"/>
@@ -170,15 +170,10 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Invert an image, \(I&#39; = 255 - I\). </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Invert an image, \( I&#39; = 255 - I \). </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">img</td><td>The input image </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">result</td><td>Return result image </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>The input image </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>Return result image </td></tr>
   </table>
   </dd>
 </dl>
@@ -222,17 +217,12 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Scale an image with the given gain value, then add the given offset value, \(I&#39; = I * gain + offset\). </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Scale an image with the given gain value, then add the given offset value, \( I&#39; = I * gain + offset \). </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">img</td><td>The input image </td></tr>
-    <tr><td class="paramname">gain</td><td>The gain value </td></tr>
-    <tr><td class="paramname">offset</td><td>The offset value </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">result</td><td>Return result image </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>The input image </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>Return result image </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">gain</td><td>The gain value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">offset</td><td>The offset value </td></tr>
   </table>
   </dd>
 </dl>
@@ -270,16 +260,11 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Add the two input images pixel by pixel, output a new result image, \(I&#39; = I_{1} + I_{2}\). The two input image should have the same size. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Add the two input images pixel by pixel, output a new result image, \( I&#39; = I_{1} + I_{2} \) . The two input image should have the same size. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">img1</td><td>The first input image </td></tr>
-    <tr><td class="paramname">img2</td><td>The second input image </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">result</td><td>Return result image </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img1</td><td>The first input image </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img2</td><td>The second input image </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>Return result image </td></tr>
   </table>
   </dd>
 </dl>
@@ -317,16 +302,11 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Subtract two input images pixel by pixel, output a new result image, \(I&#39; = I_{1} - I_{2}\). The two input image should have the same size. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Subtract two input images pixel by pixel, output a new result image, \( I&#39; = I_{1} - I_{2} \) . The two input image should have the same size. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">img1</td><td>The first input image </td></tr>
-    <tr><td class="paramname">img2</td><td>The second input image </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">result</td><td>Return result image </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img1</td><td>The first input image </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img2</td><td>The second input image </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>Return result image </td></tr>
   </table>
   </dd>
 </dl>
@@ -364,16 +344,11 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Multiply the two input images pixel by pixel, output a new result image, \(I&#39; = I_{1} \cdot I_{2}\). The two input image should have the same size. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Multiply the two input images pixel by pixel, output a new result image, \( I&#39; = I_{1} \cdot I_{2} \) . The two input image should have the same size. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">img1</td><td>The first input image </td></tr>
-    <tr><td class="paramname">img2</td><td>The second input image </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">result</td><td>Return result image </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img1</td><td>The first input image </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img2</td><td>The second input image </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>Return result image </td></tr>
   </table>
   </dd>
 </dl>
@@ -411,16 +386,11 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Calculate the difference of the two input images pixel by pixel, output a new result image, \(I&#39; = abs(I_{1} - I_{2})\). The two input image should have the same size. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Calculate the difference of the two input images pixel by pixel, output a new result image, \( I&#39; = abs(I_{1} - I_{2}) \) . The two input image should have the same size. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">img1</td><td>The first input image </td></tr>
-    <tr><td class="paramname">img2</td><td>The second input image </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">result</td><td>Return result image </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img1</td><td>The first input image </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img2</td><td>The second input image </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>Return result image </td></tr>
   </table>
   </dd>
 </dl>
@@ -458,16 +428,11 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Calculate the maximum of the two input images pixel by pixel, output a new result image, \(I&#39; = \min (I_{1}, I_{2})\). The two input image should have the same size. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Calculate the maximum of the two input images pixel by pixel, output a new result image, \( I&#39; = \min (I_{1}, I_{2}) \) . The two input image should have the same size. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">img1</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> The first input image </td></tr>
-    <tr><td class="paramname">img2</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> The second input image </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">result</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> Return result image </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img1</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> The first input image </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img2</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> The second input image </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> Return result image </td></tr>
   </table>
   </dd>
 </dl>
@@ -505,16 +470,11 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Calculate the minimum of the two input images pixel by pixel, output a new result image, \(I&#39; = \max (I_{1}, I_{2})\). The two input image should have the same size. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Calculate the minimum of the two input images pixel by pixel, output a new result image, \( I&#39; = \max (I_{1}, I_{2}) \) . The two input image should have the same size. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">img1</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> The first input image </td></tr>
-    <tr><td class="paramname">img2</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> The second input image </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">result</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> Return result image </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img1</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> The first input image </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img2</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> The second input image </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> Return result image </td></tr>
   </table>
   </dd>
 </dl>
@@ -554,14 +514,9 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Flip an image horizontally or/and vertically. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">img</td><td>The input image </td></tr>
-    <tr><td class="paramname">flipType</td><td>The type of flip </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">result</td><td>Return result image<br  />
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>The input image </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">flipType</td><td>The type of flip </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>Return result image<br  />
 If the pass-in result image object is empty, then we'll use the same size as the input. Otherwise, the original size is kept. </td></tr>
   </table>
   </dd>
@@ -609,15 +564,10 @@ If the pass-in result image object is empty, then we'll use the same size as the
 <p>Rotate an image by the given degree clockwise, using the image center as the pivot point.<br  />
 Out-of-image-bounds pixels are black. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">img</td><td>The input image </td></tr>
-    <tr><td class="paramname">angle</td><td>The rotation angle </td></tr>
-    <tr><td class="paramname">interMethod</td><td>The interpolation method used in rotation </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">result</td><td>Return result image<br  />
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>The input image </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">angle</td><td>The rotation angle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">interMethod</td><td>The interpolation method used in rotation </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>Return result image<br  />
 If the pass-in result image object is empty, then we'll use the same size as the input. Otherwise, the original size is kept. </td></tr>
   </table>
   </dd>
@@ -671,16 +621,11 @@ If the pass-in result image object is empty, then we'll use the same size as the
 </div><div class="memdoc">
 <p>Resize an image by the given scale factor, using the image center as the pivot point. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">img</td><td>The input image </td></tr>
-    <tr><td class="paramname">zoomX</td><td>Factor for zooming in or out in the x-coordinate direction. </td></tr>
-    <tr><td class="paramname">zoomY</td><td>Factor for zooming in or out in the y-coordinate direction. Setting to 0 means same zoom factor as zoomX, aka. isotropic scaling. </td></tr>
-    <tr><td class="paramname">interMethod</td><td>The interpolation method used in resizing </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">result</td><td>Return result image<br  />
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>The input image </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">zoomX</td><td>Factor for zooming in or out in the x-coordinate direction. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">zoomY</td><td>Factor for zooming in or out in the y-coordinate direction. Setting to 0 means same zoom factor as zoomX, aka. isotropic scaling. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">interMethod</td><td>The interpolation method used in resizing </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>Return result image<br  />
 If the pass-in result image object is empty, then we'll use the scaled size based on the input. Otherwise, the original size is kept. </td></tr>
   </table>
   </dd>
@@ -734,16 +679,11 @@ If the pass-in result image object is empty, then we'll use the scaled size base
 </div><div class="memdoc">
 <p>Resize an image to the given new size. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">img</td><td>The input image </td></tr>
-    <tr><td class="paramname">w</td><td>The width of the new size </td></tr>
-    <tr><td class="paramname">h</td><td>The height of the new size </td></tr>
-    <tr><td class="paramname">interMethod</td><td>The interpolation method used in resizing </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">result</td><td>Return result image </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>The input image </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">w</td><td>The width of the new size </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">h</td><td>The height of the new size </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">interMethod</td><td>The interpolation method used in resizing </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>Return result image </td></tr>
   </table>
   </dd>
 </dl>
@@ -827,21 +767,16 @@ If the pass-in result image object is empty, then we'll use the scaled size base
 <p>Scale and rotate an image, using the user-defined pivot points.<br  />
 Out-of-image-bounds pixels are black. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">img</td><td>The input image </td></tr>
-    <tr><td class="paramname">angle</td><td>The clockwise rotation angle in degree </td></tr>
-    <tr><td class="paramname">zoomX</td><td>Factor for zooming in or out in the x-coordinate direction. </td></tr>
-    <tr><td class="paramname">zoomY</td><td>Factor for zooming in or out in the y-coordinate direction. Setting to 0 means same zoom factor as zoomX, aka. isotropic scaling. </td></tr>
-    <tr><td class="paramname">pivotImgX</td><td>The x-coordinate of the pivot point on the input image. The pivot point is used as the center of the scale and rotation. </td></tr>
-    <tr><td class="paramname">pivotImgY</td><td>The y-coordinate of the pivot point on the input image. </td></tr>
-    <tr><td class="paramname">pivotResultX</td><td>The x-coordinate of the pivot point on the result image. It's the "same" pixel as the pivot point in the input image. </td></tr>
-    <tr><td class="paramname">pivotResultY</td><td>The y-coordinate of the pivot point on the result image. </td></tr>
-    <tr><td class="paramname">interMethod</td><td>The interpolation method used in resizing </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">result</td><td>Return result image<br  />
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>The input image </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">angle</td><td>The clockwise rotation angle in degree </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">zoomX</td><td>Factor for zooming in or out in the x-coordinate direction. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">zoomY</td><td>Factor for zooming in or out in the y-coordinate direction. Setting to 0 means same zoom factor as zoomX, aka. isotropic scaling. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pivotImgX</td><td>The x-coordinate of the pivot point on the input image. The pivot point is used as the center of the scale and rotation. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pivotImgY</td><td>The y-coordinate of the pivot point on the input image. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pivotResultX</td><td>The x-coordinate of the pivot point on the result image. It's the "same" pixel as the pivot point in the input image. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pivotResultY</td><td>The y-coordinate of the pivot point on the result image. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">interMethod</td><td>The interpolation method used in resizing </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>Return result image<br  />
 If the pass-in result image object is empty, then we'll use the same size as the input. Otherwise, the original size is kept. </td></tr>
   </table>
   </dd>
@@ -897,14 +832,9 @@ If the pass-in result image object is empty, then we'll use the same size as the
 <p><em>Note: other aggregation types are not supported.</em></p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">imgList</td><td>The input image list for blending. </td></tr>
-    <tr><td class="paramname">aggType</td><td>The aggregation method used for blending. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">result</td><td>Output the blending result.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">imgList</td><td>The input image list for blending. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aggType</td><td>The aggregation method used for blending. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>Output the blending result.</td></tr>
   </table>
   </dd>
 </dl>
@@ -939,8 +869,8 @@ If the pass-in result image object is empty, then we'll use the same size as the
 </div><div class="memdoc">
 <p>Projects an image horizontally, aggregating pixels on each row </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> The input image </td></tr>
-    <tr><td class="paramname">aggType</td><td>The aggregation method used for projection. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> The input image </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aggType</td><td>The aggregation method used for projection. </td></tr>
   </table>
   </dd>
 </dl>
@@ -980,8 +910,8 @@ If the pass-in result image object is empty, then we'll use the same size as the
 </div><div class="memdoc">
 <p>Projects an image vertically, aggregating pixels on each column </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> The input image </td></tr>
-    <tr><td class="paramname">aggType</td><td>The aggregation method used for projection. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> The input image </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aggType</td><td>The aggregation method used for projection. </td></tr>
   </table>
   </dd>
 </dl>

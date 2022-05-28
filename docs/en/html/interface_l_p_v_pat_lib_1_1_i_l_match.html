@@ -20,7 +20,7 @@
     jax: ["input/TeX","output/HTML-CSS"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.7/MathJax.js"></script>
 <link href="lpv_stylesheet.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-custom.css" rel="stylesheet" type="text/css"/>
@@ -126,12 +126,22 @@ The searching wouldn't go through all candidates. It firstly sort the candidates
 <tr class="separator:a659ae867dc0562c44d5e7e23e83451d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89c9e21a723b9b597dd9a0d6e603c268"><td class="memItemLeft" align="right" valign="top"><a id="a89c9e21a723b9b597dd9a0d6e603c268"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a89c9e21a723b9b597dd9a0d6e603c268">AngleTolerance</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a89c9e21a723b9b597dd9a0d6e603c268"><td class="mdescLeft">&#160;</td><td class="mdescRight">The angle range for matching, in range from 0 to 180. By default, it's 5, means we'll searching and matching from -5° to 5°. <br /></td></tr>
+<tr class="memdesc:a89c9e21a723b9b597dd9a0d6e603c268"><td class="mdescLeft">&#160;</td><td class="mdescRight">The angle tolerance in range from 0 to 180. By default, it's 5.<br  />
+The matching angle range is based on the bias and tolerance as \( AngleBias \pm AngleTolerance \) . <br /></td></tr>
 <tr class="separator:a89c9e21a723b9b597dd9a0d6e603c268"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a84dfa91ece8aea697fa4606afa7ce3"><td class="memItemLeft" align="right" valign="top"><a id="a7a84dfa91ece8aea697fa4606afa7ce3"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a7a84dfa91ece8aea697fa4606afa7ce3">AngleBias</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a7a84dfa91ece8aea697fa4606afa7ce3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The angle bias in range from -180 to 180. By default, it's 0. <br /></td></tr>
+<tr class="separator:a7a84dfa91ece8aea697fa4606afa7ce3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ce2228fa3bc8c2d1ee84415c9cd31ef"><td class="memItemLeft" align="right" valign="top"><a id="a4ce2228fa3bc8c2d1ee84415c9cd31ef"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a4ce2228fa3bc8c2d1ee84415c9cd31ef">ScaleTolerance</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a4ce2228fa3bc8c2d1ee84415c9cd31ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">The scale range for matching, in range from 0 to 50. By default, it's 0, means scale searching doesn't work. For example, set it to 10 means we'll searching and matching from 90% to 110% scale. <br /></td></tr>
+<tr class="memdesc:a4ce2228fa3bc8c2d1ee84415c9cd31ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">The scale tolerance in range from 0 to 50%. By default, it's 0.<br  />
+The matching scale range is based on the bias and tolerance as \( ScaleBias \pm ScaleTolerance \) . <br /></td></tr>
 <tr class="separator:a4ce2228fa3bc8c2d1ee84415c9cd31ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2225ed3ac6003d7115a9d538aafed356"><td class="memItemLeft" align="right" valign="top"><a id="a2225ed3ac6003d7115a9d538aafed356"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a2225ed3ac6003d7115a9d538aafed356">ScaleBias</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a2225ed3ac6003d7115a9d538aafed356"><td class="mdescLeft">&#160;</td><td class="mdescRight">The scale bias in range from 50 to 150%. By default, it's 100. <br /></td></tr>
+<tr class="separator:a2225ed3ac6003d7115a9d538aafed356"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af98b71a5ec504565e5456260acbd9ee5"><td class="memItemLeft" align="right" valign="top"><a id="af98b71a5ec504565e5456260acbd9ee5"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#af98b71a5ec504565e5456260acbd9ee5">MaxCount</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:af98b71a5ec504565e5456260acbd9ee5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The expected maximum count of the matching results. <br /></td></tr>
@@ -160,7 +170,7 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 <tr class="memitem:a8698837361cab3af9df6444df07cb5c9"><td class="memItemLeft" align="right" valign="top"><a id="a8698837361cab3af9df6444df07cb5c9"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a8698837361cab3af9df6444df07cb5c9">GrayValueWeight</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:a8698837361cab3af9df6444df07cb5c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The combination weight of the evaluation score based on the similarity of the matching result and the template image, using normalized cross correlation (NCC).<br  />
-By default, it's 0, means the gray score does not take any effect. The final score of the result is calculated as: \( Score = Score_{shape} \times (1 - w) + Score_{gray} \times w \). <br /></td></tr>
+By default, it's 0, means the gray score does not take any effect. The final score of the result is calculated as: \( Score = Score_{shape} \times (1 - w) + Score_{gray} \times w \) . <br /></td></tr>
 <tr class="separator:a8698837361cab3af9df6444df07cb5c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -206,8 +216,8 @@ The algorithm is real-time and of sub-pixel accuracy. Detection is based mainly 
 </div><div class="memdoc">
 <p>Learn the pattern template features from provide image. The template center can be modified later. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> The input image </td></tr>
-    <tr><td class="paramname">region</td><td>The input region, to limit the region of pattern template on the input image and also exclude some unwanted pixels maybe. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> The input image </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">region</td><td>The input region, to limit the region of pattern template on the input image and also exclude some unwanted pixels maybe. </td></tr>
   </table>
   </dd>
 </dl>
@@ -277,14 +287,14 @@ The algorithm is real-time and of sub-pixel accuracy. Detection is based mainly 
 </div><div class="memdoc">
 <p>Match on provide image. The returned positions are based on image coordinates. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> The input image </td></tr>
-    <tr><td class="paramname">region</td><td>The input region, to limit the region of matching. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> The input image </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">region</td><td>The input region, to limit the region of matching. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">results</td><td>Return the matching results. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">results</td><td>Return the matching results. </td></tr>
     <tr><td class="paramname">error</td><td>Return error code if anything is wrong. </td></tr>
   </table>
   </dd>
@@ -310,7 +320,7 @@ The algorithm is real-time and of sub-pixel accuracy. Detection is based mainly 
 <p>Save the pattern detector to a specified file.<br  />
 The saving contents is chosen based on the filename extension. If a image extension (.bmp, .png, .jpg, etc.) is passed in, the image of pattern template is saved. If .stp extension is passed in, the trained features as well as the matching parameters are saved. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">filename</td><td>Full path of the file, it could be absolute or relative path with file name and extension. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>Full path of the file, it could be absolute or relative path with file name and extension. </td></tr>
   </table>
   </dd>
 </dl>
@@ -342,7 +352,7 @@ The saving contents is chosen based on the filename extension. If a image extens
 <p>Load the pattern detector from a specified file.<br  />
 It could be an image file, then we'll load the image then learn pattern template from it. It could either be a .stp file with trained features and the matching parameters in it, then we'll deserialize the pattern detector from the contents. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">filename</td><td>Full path of the file, it could be absolute or relative path with file name and extension. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>Full path of the file, it could be absolute or relative path with file name and extension. </td></tr>
   </table>
   </dd>
 </dl>
@@ -396,10 +406,10 @@ It could be an image file, then we'll load the image then learn pattern template
 <p>Customize the center of the pattern template. By default, we use the template image center as pattern center.<br  />
 The template center indicates the report position of the matching result. For example, if the template center is moved to the left-top corner of the template image, we'll then always report the same left-top corner as the matching result. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">centerMode</td><td>The mode of the pattern center, see LPVPatCenterMode. </td></tr>
-    <tr><td class="paramname">patX</td><td>The x-coordinate of the user-specified center, it's ignored if use other mode. </td></tr>
-    <tr><td class="paramname">patY</td><td>The y-coordinate of the user-specified center, it's ignored if use other mode. </td></tr>
-    <tr><td class="paramname">patAngle</td><td>The user-specified angle which will be used as 0 angle, it's ignored if use other mode. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">centerMode</td><td>The mode of the pattern center, see LPVPatCenterMode. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">patX</td><td>The x-coordinate of the user-specified center, it's ignored if use other mode. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">patY</td><td>The y-coordinate of the user-specified center, it's ignored if use other mode. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">patAngle</td><td>The user-specified angle which will be used as 0 angle, it's ignored if use other mode. </td></tr>
   </table>
   </dd>
 </dl>
@@ -438,11 +448,11 @@ The template center indicates the report position of the matching result. For ex
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get the center of the pattern template. </p><dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">patX</td><td>The x-coordinate of the template center. </td></tr>
-    <tr><td class="paramname">patY</td><td>The y-coordinate of the template center. </td></tr>
-    <tr><td class="paramname">patAngle</td><td>The angle of the template center. </td></tr>
+<p>Get the center of the pattern template. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">patX</td><td>The x-coordinate of the template center. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">patY</td><td>The y-coordinate of the template center. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">patAngle</td><td>The angle of the template center. </td></tr>
   </table>
   </dd>
 </dl>
@@ -465,9 +475,9 @@ The template center indicates the report position of the matching result. For ex
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get the pattern template image. </p><dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> Return the image. </td></tr>
+<p>Get the pattern template image. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> Return the image. </td></tr>
   </table>
   </dd>
 </dl>
@@ -489,9 +499,9 @@ The template center indicates the report position of the matching result. For ex
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get the pattern template mask. </p><dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">mask</td><td><img src="color_binary.png" alt="" class="inline" title="Binary images"/> Return the mask. It will be an empty image, if the template has no mask. </td></tr>
+<p>Get the pattern template mask. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">mask</td><td><img src="color_binary.png" alt="" class="inline" title="Binary images"/> Return the mask. It will be an empty image, if the template has no mask. </td></tr>
   </table>
   </dd>
 </dl>

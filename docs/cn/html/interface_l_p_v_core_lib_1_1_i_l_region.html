@@ -20,7 +20,7 @@
     jax: ["input/TeX","output/SVG"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.7/MathJax.js"></script>
 <link href="lpv_stylesheet.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-custom.css" rel="stylesheet" type="text/css"/>
@@ -136,8 +136,8 @@ Public 成员函数</h2></td></tr>
 <tr class="separator:a6c9eb19797abac33fe2f1f3ab6b48e63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b7509dc313340daef8aaa5600276ae7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html#a0b7509dc313340daef8aaa5600276ae7">Scale</a> (double factorX, double factorY)</td></tr>
 <tr class="separator:a0b7509dc313340daef8aaa5600276ae7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a74066985052e5af4db8b2de183d05b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html#a7a74066985052e5af4db8b2de183d05b">ToMask</a> (int w, int h, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> **mask)</td></tr>
-<tr class="separator:a7a74066985052e5af4db8b2de183d05b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5491a1a6d1431f2ce82140c1061c2a9c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html#a5491a1a6d1431f2ce82140c1061c2a9c">ToMask</a> (int w, int h)</td></tr>
+<tr class="separator:a5491a1a6d1431f2ce82140c1061c2a9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c5101821d263ba517c9478ef6e205f0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html#a6c5101821d263ba517c9478ef6e205f0">Intersect</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a> *other)</td></tr>
 <tr class="separator:a6c5101821d263ba517c9478ef6e205f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e4619cfa558129ae9cf1859dad2354c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html#a8e4619cfa558129ae9cf1859dad2354c">XOR</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a> *other)</td></tr>
@@ -207,7 +207,7 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>保存该区域对象到指定的文件，以 .droi 为扩展名。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">filename</td><td>文件路径，可为绝对或相对路径，包含文件夹、文件名和扩展名 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>文件路径，可为绝对或相对路径，包含文件夹、文件名和扩展名 </td></tr>
   </table>
   </dd>
 </dl>
@@ -238,7 +238,7 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>从指定的文件读取区域对象，以 .droi 为扩展名。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">filename</td><td>文件路径，可为绝对或相对路径，包含文件夹、文件名和扩展名 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>文件路径，可为绝对或相对路径，包含文件夹、文件名和扩展名 </td></tr>
   </table>
   </dd>
 </dl>
@@ -359,8 +359,8 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>检测鼠标位置是否放置在该区域的操作句柄上 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">x</td><td>鼠标的 x 坐标 </td></tr>
-    <tr><td class="paramname">y</td><td>鼠标的 y 坐标 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td>鼠标的 x 坐标 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">y</td><td>鼠标的 y 坐标 </td></tr>
   </table>
   </dd>
 </dl>
@@ -431,9 +431,9 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>移动区域的操作句柄到新的位置，以更新区域的位置、尺寸、旋转或顶点等。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">roiHandle</td><td>输入操作句柄，通常通过 <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html#a76c5c6d6f3972a1ab97a0274bd29e3e9">HitTest()</a> 获得。 </td></tr>
-    <tr><td class="paramname">x</td><td>鼠标的 x 坐标 </td></tr>
-    <tr><td class="paramname">y</td><td>鼠标的 y 坐标 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">roiHandle</td><td>输入操作句柄，通常通过 <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html#a76c5c6d6f3972a1ab97a0274bd29e3e9">HitTest()</a> 获得。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td>鼠标的 x 坐标 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">y</td><td>鼠标的 y 坐标 </td></tr>
   </table>
   </dd>
 </dl>
@@ -458,7 +458,7 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>将当前区域和输入的区域相加，生成一个新的区域，P' = P + other. 与 <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html#ace83080e3d239ae3004735d3de4842ad">Union()</a> 相同，新的区域包含当前区域和输入区域中所包含的所有部分。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">other</td><td>输入用于相加的区域 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">other</td><td>输入用于相加的区域 </td></tr>
   </table>
   </dd>
 </dl>
@@ -489,7 +489,7 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>从当前区域中减去输入的区域，生成一个新的区域，P' = P - other. </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">other</td><td>输入用于减去的区域 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">other</td><td>输入用于减去的区域 </td></tr>
   </table>
   </dd>
 </dl>
@@ -520,7 +520,7 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>将当前区域与输入的区域进行与操作，生成一个新的区域，P' = P U other. 与 <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html#af4d00a8158cbbfa9a76a91843bfbd5f0">Add()</a> 相同，新的区域包含当前区域和输入区域中所包含的所有部分。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">other</td><td>输入用于与操作的区域 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">other</td><td>输入用于与操作的区域 </td></tr>
   </table>
   </dd>
 </dl>
@@ -608,18 +608,13 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>从输入图像中获取当前区域的子图像。去除不在区域中的像素，子图像的尺寸为当前区域的包围矩形尺寸。 若当前区域不是一个矩形，将生成一个蒙版图像，其中白像素表示在该位置包含在当前区域中。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">image</td><td>输入图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">image</td><td>输入图像 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">newImage</td><td>输出结果图像 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">newMask</td><td><img src="color_binary.png" alt="" class="inline" title="Binary images"/> 输出结果蒙版 </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="retval"><dt>返回值</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">newImage</td><td>输出结果图像 </td></tr>
-    <tr><td class="paramname">newMask</td><td><img src="color_binary.png" alt="" class="inline" title="Binary images"/> 输出结果蒙版 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html#a7a74066985052e5af4db8b2de183d05b">ToMask()</a>, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html#a60bb79dec8bcc9da8e4643688bc0d839" title="生成子图像时所使用的插值算法">InterpolationMethod</a>. </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html#a5491a1a6d1431f2ce82140c1061c2a9c">ToMask()</a>, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html#a60bb79dec8bcc9da8e4643688bc0d839" title="生成子图像时所使用的插值算法">InterpolationMethod</a>. </dd></dl>
 
 </div>
 </div>
@@ -662,15 +657,10 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>将坐标从整个图像的坐标系转换到当前区域的局部坐标系 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">imagePointX</td><td>像素在整个图像的坐标系上的 x 坐标 </td></tr>
-    <tr><td class="paramname">imagePointY</td><td>像素在整个图像的坐标系上的 y 坐标 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>返回值</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">regionPointX</td><td>输出像素在当前区域的局部坐标系上的 x 坐标 </td></tr>
-    <tr><td class="paramname">regionPointY</td><td>输出像素在当前区域的局部坐标系上的 y 坐标 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">imagePointX</td><td>像素在整个图像的坐标系上的 x 坐标 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">imagePointY</td><td>像素在整个图像的坐标系上的 y 坐标 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">regionPointX</td><td>输出像素在当前区域的局部坐标系上的 x 坐标 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">regionPointY</td><td>输出像素在当前区域的局部坐标系上的 y 坐标 </td></tr>
   </table>
   </dd>
 </dl>
@@ -717,15 +707,10 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>将坐标从当前区域的局部坐标系转换到整个图像的坐标系 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">regionPointX</td><td>像素在当前区域的局部坐标系上的 x 坐标 </td></tr>
-    <tr><td class="paramname">regionPointY</td><td>像素在当前区域的局部坐标系上的 y 坐标 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>返回值</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">imagePointX</td><td>输出像素在整个图像的坐标系上的 x 坐标 </td></tr>
-    <tr><td class="paramname">imagePointY</td><td>输出像素在整个图像的坐标系上的 y 坐标 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">regionPointX</td><td>像素在当前区域的局部坐标系上的 x 坐标 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">regionPointY</td><td>像素在当前区域的局部坐标系上的 y 坐标 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">imagePointX</td><td>输出像素在整个图像的坐标系上的 x 坐标 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">imagePointY</td><td>输出像素在整个图像的坐标系上的 y 坐标 </td></tr>
   </table>
   </dd>
 </dl>
@@ -760,8 +745,8 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>平移当前区域，生成一个新的区域对象，P' = P + offset. </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">offsetX</td><td>x 方向的平移量 </td></tr>
-    <tr><td class="paramname">offsetY</td><td>y 方向的平移量 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">offsetX</td><td>x 方向的平移量 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">offsetY</td><td>y 方向的平移量 </td></tr>
   </table>
   </dd>
 </dl>
@@ -802,8 +787,8 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>缩放当前区域，生成一个新的区域对象，P' = P * s. </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">factorX</td><td>x 方向的缩放比例 </td></tr>
-    <tr><td class="paramname">factorY</td><td>y 方向的缩放比例 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">factorX</td><td>x 方向的缩放比例 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">factorY</td><td>y 方向的缩放比例 </td></tr>
   </table>
   </dd>
 </dl>
@@ -817,14 +802,14 @@ Public 成员函数</h2></td></tr>
 
 </div>
 </div>
-<a id="a7a74066985052e5af4db8b2de183d05b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7a74066985052e5af4db8b2de183d05b">&#9670;&nbsp;</a></span>ToMask()</h2>
+<a id="a5491a1a6d1431f2ce82140c1061c2a9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5491a1a6d1431f2ce82140c1061c2a9c">&#9670;&nbsp;</a></span>ToMask()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void ToMask </td>
+          <td class="memname"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a>* ToMask </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>w</em>, </td>
@@ -833,13 +818,7 @@ Public 成员函数</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>h</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> **&#160;</td>
-          <td class="paramname"><em>mask</em>&#160;</td>
+          <td class="paramname"><em>h</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -850,14 +829,14 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>为当前区域生成一个蒙版图像，该图像为 w * h 尺寸，图像中的白i像素表示该位置包含在当前区域中。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">w</td><td>指定输出蒙版图像的宽度 </td></tr>
-    <tr><td class="paramname">h</td><td>指定输出蒙版图像的高度 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">w</td><td>指定输出蒙版图像的宽度 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">h</td><td>指定输出蒙版图像的高度 </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>返回值</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">mask</td><td><img src="color_binary.png" alt="" class="inline" title="Binary images"/> 输出生成的蒙版图像 </td></tr>
+    <tr><td class="paramname">newRegion</td><td>输出生成的蒙版图像 <img src="color_binary.png" alt="" class="inline" title="Binary images"/> </td></tr>
   </table>
   </dd>
 </dl>
@@ -882,7 +861,7 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>将当前区域与输入的区域进行并操作，生成一个新的区域, P' = P ∩ other. 新的区域仅包含同时包含在当前区域和输入区域中的部分。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">other</td><td>输入用于并操作的区域对象 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">other</td><td>输入用于并操作的区域对象 </td></tr>
   </table>
   </dd>
 </dl>
@@ -913,7 +892,7 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>将当前区域与输入的区域进行异或操作，生成一个新的区域, P' = P XOR other. 新的区域仅包含属于当前区域但不属于输入区域或属于输入区域但不属于当前区域的部分。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">other</td><td>输入用于异或操作的区域对象 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">other</td><td>输入用于异或操作的区域对象 </td></tr>
   </table>
   </dd>
 </dl>
@@ -944,7 +923,7 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>以区域中心为旋转中心顺时针旋转当前区域，生成一个新的区域。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">da</td><td>旋转角度 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">da</td><td>旋转角度 </td></tr>
   </table>
   </dd>
 </dl>

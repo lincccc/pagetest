@@ -20,7 +20,7 @@
     jax: ["input/TeX","output/HTML-CSS"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.7/MathJax.js"></script>
 <link href="lpv_stylesheet.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-custom.css" rel="stylesheet" type="text/css"/>
@@ -183,7 +183,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Fetch one result with given index. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">index</td><td>Input index, it should be a 0-based number smaller than total count. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>Input index, it should be a 0-based number smaller than total count. </td></tr>
   </table>
   </dd>
 </dl>
@@ -253,8 +253,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Draw one barcode result of given index onto provide device context. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">index</td><td>Input index, it should be a 0-based number smaller than total count. </td></tr>
-    <tr><td class="paramname">drawFlags</td><td>Flags to control the barcode drawing behavior, see LPVBarcodeDrawFlags for usage. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>Input index, it should be a 0-based number smaller than total count. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">drawFlags</td><td>Flags to control the barcode drawing behavior, see LPVBarcodeDrawFlags for usage. </td></tr>
   </table>
   </dd>
 </dl>
@@ -315,7 +315,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Draw all barcode results onto provide device context. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drawFlags</td><td>Flags to control the barcode drawing behavior, see LPVBarcodeDrawFlags for usage. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">drawFlags</td><td>Flags to control the barcode drawing behavior, see LPVBarcodeDrawFlags for usage. </td></tr>
   </table>
   </dd>
 </dl>

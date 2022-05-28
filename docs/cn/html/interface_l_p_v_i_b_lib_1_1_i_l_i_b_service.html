@@ -20,7 +20,7 @@
     jax: ["input/TeX","output/SVG"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.7/MathJax.js"></script>
 <link href="lpv_stylesheet.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-custom.css" rel="stylesheet" type="text/css"/>
@@ -175,7 +175,7 @@ Public 成员函数</h2></td></tr>
 <p>启动并连接到灵闪服务。<br  />
  需在所有 LPV IB 对象的创建和操作前调用。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ibPath</td><td>灵闪平台程序所在的根目录地址。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ibPath</td><td>灵闪平台程序所在的根目录地址。 </td></tr>
   </table>
   </dd>
 </dl>
@@ -220,7 +220,7 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>获取错误码对于的错误信息。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">errCode</td><td>错误码，由 IB 服务相关接口函数返回。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">errCode</td><td>错误码，由 IB 服务相关接口函数返回。 </td></tr>
   </table>
   </dd>
 </dl>
@@ -260,14 +260,19 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>从指定文件加载灵闪作业。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">filename</td><td>文件路径，可为绝对或相对路径，包含文件夹、文件名和扩展名 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>文件路径，可为绝对或相对路径，包含文件夹、文件名和扩展名 </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>返回值</dt><dd>
   <table class="retval">
     <tr><td class="paramname">error</td><td>返回错误码 </td></tr>
-    <tr><td class="paramname">taskId</td><td>返回灵闪作业的唯一标识 ID </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">taskId</td><td>返回灵闪作业的唯一标识 ID </td></tr>
   </table>
   </dd>
 </dl>
@@ -307,14 +312,14 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>在输入的图像上，执行灵闪作业，获得执行结果。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">taskId</td><td>灵闪作业的唯一标识 ID </td></tr>
-    <tr><td class="paramname">image</td><td>输入的图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">taskId</td><td>灵闪作业的唯一标识 ID </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">image</td><td>输入的图像 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">taskResult</td><td>返回作业的执行结果 </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>返回值</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">taskResult</td><td>返回作业的执行结果 </td></tr>
     <tr><td class="paramname">errCode</td><td>返回错误码，若成功，返回 <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aae917cd39742ab4cec9119219cae9154c">LPVNoError</a>. </td></tr>
   </table>
   </dd>
@@ -339,7 +344,7 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>获取指定 ID 的对应作业的配置。 若无法找到对应 ID 的灵闪作业，返回 null </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">taskId</td><td>灵闪作业的唯一标识 ID </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">taskId</td><td>灵闪作业的唯一标识 ID </td></tr>
   </table>
   </dd>
 </dl>
@@ -380,8 +385,8 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>应用修改过的配置到指定 ID 的对应作业。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">taskId</td><td>灵闪作业的唯一标识 ID </td></tr>
-    <tr><td class="paramname">taskConfig</td><td>修改过的作业配置 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">taskId</td><td>灵闪作业的唯一标识 ID </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">taskConfig</td><td>修改过的作业配置 </td></tr>
   </table>
   </dd>
 </dl>
@@ -424,8 +429,8 @@ Public 成员函数</h2></td></tr>
 该方法提供一种更便捷的直接获取某个算法工具配置的方式。<br  />
 若无法找到对应 ID 的灵闪作业，或无法在该作业中找到对应名称的算法工具，则返回 null </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">taskId</td><td>灵闪作业的唯一标识 ID </td></tr>
-    <tr><td class="paramname">algoName</td><td>算法工具的唯一名称 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">taskId</td><td>灵闪作业的唯一标识 ID </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">algoName</td><td>算法工具的唯一名称 </td></tr>
   </table>
   </dd>
 </dl>
@@ -472,9 +477,9 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>在指定 ID 的对应作业中，应用修改过的配置到指定名称的算法工具。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">taskId</td><td>灵闪作业的唯一标识 ID </td></tr>
-    <tr><td class="paramname">algoName</td><td>算法工具的唯一名称 </td></tr>
-    <tr><td class="paramname">algoConfig</td><td>修改过的算法工具配置 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">taskId</td><td>灵闪作业的唯一标识 ID </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">algoName</td><td>算法工具的唯一名称 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">algoConfig</td><td>修改过的算法工具配置 </td></tr>
   </table>
   </dd>
 </dl>

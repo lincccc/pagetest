@@ -20,7 +20,7 @@
     jax: ["input/TeX","output/HTML-CSS"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.7/MathJax.js"></script>
 <link href="lpv_stylesheet.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-custom.css" rel="stylesheet" type="text/css"/>
@@ -218,8 +218,8 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 <p>Add grayscale value range for blob objects. Pixels in this range will be treated as foreground, and connected to be blobs.<br  />
 It indicates this is a grayscale-mode blob analysis tool, all the previous color range setting will be cleaned up. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">grayLB</td><td>The lower bound of the grayscale value range in 0 ~ 255. </td></tr>
-    <tr><td class="paramname">grayUB</td><td>The upper bound of the grayscale value range in 0 ~ 255. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">grayLB</td><td>The lower bound of the grayscale value range in 0 ~ 255. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">grayUB</td><td>The upper bound of the grayscale value range in 0 ~ 255. </td></tr>
   </table>
   </dd>
 </dl>
@@ -255,8 +255,8 @@ It indicates this is a grayscale-mode blob analysis tool, all the previous color
 <p>Add grayscale value range for background. Pixels in this range will be treated as background.<br  />
 It indicates this is a grayscale-mode blob analysis tool, all the previous color range setting will be cleaned up. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">grayLB</td><td>The lower bound of the grayscale value range in 0 ~ 255. </td></tr>
-    <tr><td class="paramname">grayUB</td><td>The upper bound of the grayscale value range in 0 ~ 255. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">grayLB</td><td>The lower bound of the grayscale value range in 0 ~ 255. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">grayUB</td><td>The upper bound of the grayscale value range in 0 ~ 255. </td></tr>
   </table>
   </dd>
 </dl>
@@ -345,18 +345,13 @@ It indicates this is a grayscale-mode blob analysis tool, all the previous color
 </div><div class="memdoc">
 <p>Select a grayscale value range on the provided image. You should then explicitly add the range as blob or background range. It's usually called for a grayscale-mode blob analysis tool. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">image</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> The input image. </td></tr>
-    <tr><td class="paramname">x</td><td>The x-coordinate of the cursor(selected) position. </td></tr>
-    <tr><td class="paramname">y</td><td>The y-coordinate of the cursor(selected) position. </td></tr>
-    <tr><td class="paramname">tolerance</td><td>The maximum relative difference of neighbor pixels that build the selection </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">grayLB</td><td>Return the lower bound of the grayscale value range in 0 ~ 255. </td></tr>
-    <tr><td class="paramname">grayUB</td><td>Return the upper bound of the grayscale value range in 0 ~ 255. </td></tr>
-    <tr><td class="paramname">rangeMask</td><td><img src="color_binary.png" alt="" class="inline" title="Binary images"/> Return the mask image of the same size as the input image, white pixels represent the ones in selected grayscale value range in 0 ~ 255. Optional, could be null. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">image</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> The input image. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td>The x-coordinate of the cursor(selected) position. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">y</td><td>The y-coordinate of the cursor(selected) position. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tolerance</td><td>The maximum relative difference of neighbor pixels that build the selection </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">grayLB</td><td>Return the lower bound of the grayscale value range in 0 ~ 255. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">grayUB</td><td>Return the upper bound of the grayscale value range in 0 ~ 255. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">rangeMask</td><td><img src="color_binary.png" alt="" class="inline" title="Binary images"/> Return the mask image of the same size as the input image, white pixels represent the ones in selected grayscale value range in 0 ~ 255. Optional, could be null. </td></tr>
   </table>
   </dd>
 </dl>
@@ -383,7 +378,7 @@ It indicates this is a grayscale-mode blob analysis tool, all the previous color
 </div><div class="memdoc">
 <p>Use global-adaptive thresholding for segmentation. The optimal threshold value is calculated base on the entire input image. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">blobPolarity</td><td><a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0baffd2c678a5a2ea661de262d51223adf3">LPVBlackOnWhite </a> indicates black pixels with smaller value than global threshold are blobs, <a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0bac595c6b549ecbabb1dbb431e374b02ad">LPVWhiteOnBlack </a> is exactly the opposite. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">blobPolarity</td><td><a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0baffd2c678a5a2ea661de262d51223adf3">LPVBlackOnWhite </a> indicates black pixels with smaller value than global threshold are blobs, <a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0bac595c6b549ecbabb1dbb431e374b02ad">LPVWhiteOnBlack </a> is exactly the opposite. </td></tr>
   </table>
   </dd>
 </dl>
@@ -421,11 +416,11 @@ It indicates this is a grayscale-mode blob analysis tool, all the previous color
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Use local-adaptive threshold value. The optimal threshold value is calculated base on a \(blockWidth \times blockHeight\) region around individual pixel, then revised by the given bias value. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Use local-adaptive threshold value. The optimal threshold value is calculated base on a \( blockWidth \times blockHeight \) region around individual pixel, then revised by the given bias value. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">blobPolarity</td><td><a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0baffd2c678a5a2ea661de262d51223adf3">LPVBlackOnWhite </a> indicates black pixels with smaller value than global threshold are blobs, <a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0bac595c6b549ecbabb1dbb431e374b02ad">LPVWhiteOnBlack </a> is exactly the opposite. </td></tr>
-    <tr><td class="paramname">blockSize</td><td>Size of a pixel's local region, should be an odd number, say, 3, 5, 7, etc. Set it to 0 for auto-generate block size based in the input image size. </td></tr>
-    <tr><td class="paramname">bias</td><td>Revise value to optimal threshold value as \( t&#39; = t - bias \). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">blobPolarity</td><td><a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0baffd2c678a5a2ea661de262d51223adf3">LPVBlackOnWhite </a> indicates black pixels with smaller value than global threshold are blobs, <a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0bac595c6b549ecbabb1dbb431e374b02ad">LPVWhiteOnBlack </a> is exactly the opposite. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">blockSize</td><td>Size of a pixel's local region, should be an odd number, say, 3, 5, 7, etc. Set it to 0 for auto-generate block size based in the input image size. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bias</td><td>Revise value to optimal threshold value as \( t&#39; = t - bias \). </td></tr>
   </table>
   </dd>
 </dl>
@@ -451,7 +446,7 @@ It indicates this is a grayscale-mode blob analysis tool, all the previous color
 It is useful to locate blobs more robust and more accurately.<br  />
 For example, if we define blob color range to be [100, 200], and soft thresholding range to be 5, then, [0, 95] and [205, 255] are background, [105, 195] are foreground, [96, 104] are weighted as 0.1 ~ 0.9 to be foreground, [196, 204] are weighted as 0.9 ~ 0.1 to be foreground. Soft thresholding results in soft mask of the result blobs, and will affect the calculation of blob's geometric features, such as area or center. Pixels inside the blob contribute to the final result according to its weight. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">softRange</td><td>The soft thresholding range, create a [t - softRange, t + softRange] range. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">softRange</td><td>The soft thresholding range, create a [t - softRange, t + softRange] range. </td></tr>
   </table>
   </dd>
 </dl>
@@ -475,7 +470,7 @@ For example, if we define blob color range to be [100, 200], and soft thresholdi
 </div><div class="memdoc">
 <p>Add a alternative blob filter. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">filter</td><td>The new blob filter </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">filter</td><td>The new blob filter </td></tr>
   </table>
   </dd>
 </dl>
@@ -533,14 +528,14 @@ For example, if we define blob color range to be [100, 200], and soft thresholdi
 </div><div class="memdoc">
 <p>Build the blobs using the input image and the provided region. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">img</td><td>The input image. You should pass in the images of the matching format, aka. grayscale images for grayscale blob analysis mode. Otherwise, we will do the conversion automatically according to the current blob analysis mode. </td></tr>
-    <tr><td class="paramname">region</td><td>The input region. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>The input image. You should pass in the images of the matching format, aka. grayscale images for grayscale blob analysis mode. Otherwise, we will do the conversion automatically according to the current blob analysis mode. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">region</td><td>The input region. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">results</td><td>Return the blob results. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">results</td><td>Return the blob results. </td></tr>
     <tr><td class="paramname">error</td><td>Return error code if anything is wrong. </td></tr>
   </table>
   </dd>
@@ -575,13 +570,8 @@ For example, if we define blob color range to be [100, 200], and soft thresholdi
 </div><div class="memdoc">
 <p>Preview the binarized image the input image with current foreground and background range configuration. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">img</td><td>The input image. You should pass in the images of the matching format, aka. grayscale images for grayscale blob analysis mode. Otherwise, we will do the conversion automatically according to the current blob analysis mode. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">outputImg</td><td><img src="color_binary.png" alt="" class="inline" title="Binary images"/> Return the preview image. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>The input image. You should pass in the images of the matching format, aka. grayscale images for grayscale blob analysis mode. Otherwise, we will do the conversion automatically according to the current blob analysis mode. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">outputImg</td><td><img src="color_binary.png" alt="" class="inline" title="Binary images"/> Return the preview image. </td></tr>
   </table>
   </dd>
 </dl>
@@ -616,8 +606,8 @@ For example, if we define blob color range to be [100, 200], and soft thresholdi
 <p>Add RGB color value range for blob objects. Pixels in this range will be treated as foreground, and connected to be blobs.<br  />
 It indicates this is a color-mode blob analysis tool, all the previous grayscale range setting will be cleaned up. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">colorLB</td><td>The lower bound of the color value range. It's in the same channel order and color space as the source image. </td></tr>
-    <tr><td class="paramname">colorUB</td><td>The upper bound of the color value range. It's in the same channel order and color space as the source image. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">colorLB</td><td>The lower bound of the color value range. It's in the same channel order and color space as the source image. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">colorUB</td><td>The upper bound of the color value range. It's in the same channel order and color space as the source image. </td></tr>
   </table>
   </dd>
 </dl>
@@ -653,8 +643,8 @@ It indicates this is a color-mode blob analysis tool, all the previous grayscale
 <p>Add grayscale value range for background. Pixels in this range will be treated as background.<br  />
 It indicates this is a color-mode blob analysis tool, all the previous grayscale range setting will be cleaned up. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">colorLB</td><td>The lower bound of the color value range. It's in the same channel order and color space as the source image. </td></tr>
-    <tr><td class="paramname">colorUB</td><td>The upper bound of the color value range. It's in the same channel order and color space as the source image. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">colorLB</td><td>The lower bound of the color value range. It's in the same channel order and color space as the source image. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">colorUB</td><td>The upper bound of the color value range. It's in the same channel order and color space as the source image. </td></tr>
   </table>
   </dd>
 </dl>
@@ -743,18 +733,13 @@ It indicates this is a color-mode blob analysis tool, all the previous grayscale
 </div><div class="memdoc">
 <p>Select a grayscale value range on the provided image. You should then explicitly add the range as blob or background range. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">image</td><td><img src="color_bgr.png" alt="" class="inline" title="Color images"/> The input image. </td></tr>
-    <tr><td class="paramname">x</td><td>The x-coordinate of the cursor(selected) position. </td></tr>
-    <tr><td class="paramname">y</td><td>The y-coordinate of the cursor(selected) position. </td></tr>
-    <tr><td class="paramname">tolerance</td><td>The maximum relative difference of neighbor pixels that build the selection </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">colorLB</td><td>Return the lower bound of the color value range. It's in the same channel order and color space as the source image. </td></tr>
-    <tr><td class="paramname">colorUB</td><td>Return the upper bound of the color value range. It's in the same channel order and color space as the source image. </td></tr>
-    <tr><td class="paramname">rangeMask</td><td><img src="color_binary.png" alt="" class="inline" title="Binary images"/> Return the mask image of the same size as the input image, white pixels represent the ones in selected grayscale value range in 0 ~ 255. Optional, could be null. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">image</td><td><img src="color_bgr.png" alt="" class="inline" title="Color images"/> The input image. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td>The x-coordinate of the cursor(selected) position. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">y</td><td>The y-coordinate of the cursor(selected) position. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tolerance</td><td>The maximum relative difference of neighbor pixels that build the selection </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">colorLB</td><td>Return the lower bound of the color value range. It's in the same channel order and color space as the source image. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">colorUB</td><td>Return the upper bound of the color value range. It's in the same channel order and color space as the source image. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">rangeMask</td><td><img src="color_binary.png" alt="" class="inline" title="Binary images"/> Return the mask image of the same size as the input image, white pixels represent the ones in selected grayscale value range in 0 ~ 255. Optional, could be null. </td></tr>
   </table>
   </dd>
 </dl>

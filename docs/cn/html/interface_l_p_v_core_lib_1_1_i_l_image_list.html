@@ -20,7 +20,7 @@
     jax: ["input/TeX","output/SVG"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.7/MathJax.js"></script>
 <link href="lpv_stylesheet.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-custom.css" rel="stylesheet" type="text/css"/>
@@ -198,8 +198,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 </div><div class="memdoc">
 <p>添加图像到队列的末尾 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">img</td><td>输入图像 </td></tr>
-    <tr><td class="paramname">region</td><td>输入区域 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>输入图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">region</td><td>输入区域 </td></tr>
   </table>
   </dd>
 </dl>
@@ -223,7 +223,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 </div><div class="memdoc">
 <p>添加多个图像到队列的末尾 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">img</td><td>输入的图像，为 <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">LImage</a> 对象的集合。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">images</td><td>输入的图像，为 <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">LImage</a> 对象的集合。 </td></tr>
   </table>
   </dd>
 </dl>
@@ -247,7 +247,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 </div><div class="memdoc">
 <p>获取队列中的指定索引的图像 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">imgIndex</td><td>输入指定的索引，从 0 开始但小于总数的数字 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">imgIndex</td><td>输入指定的索引，从 0 开始但小于总数的数字 </td></tr>
   </table>
   </dd>
 </dl>

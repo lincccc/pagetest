@@ -20,7 +20,7 @@
     jax: ["input/TeX","output/SVG"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.7/MathJax.js"></script>
 <link href="lpv_stylesheet.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-custom.css" rel="stylesheet" type="text/css"/>
@@ -170,15 +170,10 @@ Public 成员函数</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>反转图像， \(I&#39; = 255 - I\). </p><dl class="params"><dt>参数</dt><dd>
+<p>反转图像， \( I&#39; = 255 - I \). </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">img</td><td>输入图像 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>返回值</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">result</td><td>输出结果图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>输入图像 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>输出结果图像 </td></tr>
   </table>
   </dd>
 </dl>
@@ -222,17 +217,12 @@ Public 成员函数</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>图像增益和偏移， \(I&#39; = I * gain + offset\). </p><dl class="params"><dt>参数</dt><dd>
+<p>图像增益和偏移， \( I&#39; = I * gain + offset \). </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">img</td><td>输入图像 </td></tr>
-    <tr><td class="paramname">gain</td><td>增益值 </td></tr>
-    <tr><td class="paramname">offset</td><td>偏移值 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>返回值</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">result</td><td>输出结果图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>输入图像 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>输出结果图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">gain</td><td>增益值 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">offset</td><td>偏移值 </td></tr>
   </table>
   </dd>
 </dl>
@@ -270,16 +260,11 @@ Public 成员函数</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>将两个图像逐像素相加，输出一个新图像， \(I&#39; = I_{1} + I_{2}\). </p><dl class="params"><dt>参数</dt><dd>
+<p>将两个图像逐像素相加，输出一个新图像， \( I&#39; = I_{1} + I_{2} \) . </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">img1</td><td>第一个输入图像 </td></tr>
-    <tr><td class="paramname">img2</td><td>第二个输入图像 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>返回值</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">result</td><td>输出结果图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img1</td><td>第一个输入图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img2</td><td>第二个输入图像 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>输出结果图像 </td></tr>
   </table>
   </dd>
 </dl>
@@ -317,16 +302,11 @@ Public 成员函数</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>两个图像逐像素相减，输出一个新图像， \(I&#39; = I_{1} - I_{2}\). </p><dl class="params"><dt>参数</dt><dd>
+<p>两个图像逐像素相减，输出一个新图像， \( I&#39; = I_{1} - I_{2} \) . </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">img1</td><td>第一个输入图像 </td></tr>
-    <tr><td class="paramname">img2</td><td>第二个输入图像 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>返回值</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">result</td><td>输出结果图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img1</td><td>第一个输入图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img2</td><td>第二个输入图像 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>输出结果图像 </td></tr>
   </table>
   </dd>
 </dl>
@@ -364,16 +344,11 @@ Public 成员函数</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>两个图像逐像素相乘，输出一个新图像， \(I&#39; = I_{1} \cdot I_{2}\). </p><dl class="params"><dt>参数</dt><dd>
+<p>两个图像逐像素相乘，输出一个新图像， \( I&#39; = I_{1} \cdot I_{2} \) . </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">img1</td><td>第一个输入图像 </td></tr>
-    <tr><td class="paramname">img2</td><td>第二个输入图像 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>返回值</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">result</td><td>输出结果图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img1</td><td>第一个输入图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img2</td><td>第二个输入图像 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>输出结果图像 </td></tr>
   </table>
   </dd>
 </dl>
@@ -411,16 +386,11 @@ Public 成员函数</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>两个图像逐像素差值，输出一个新图像， \(I&#39; = abs(I_{1} - I_{2})\). </p><dl class="params"><dt>参数</dt><dd>
+<p>两个图像逐像素差值，输出一个新图像， \( I&#39; = abs(I_{1} - I_{2}) \) . </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">img1</td><td>第一个输入图像 </td></tr>
-    <tr><td class="paramname">img2</td><td>第二个输入图像 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>返回值</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">result</td><td>输出结果图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img1</td><td>第一个输入图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img2</td><td>第二个输入图像 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>输出结果图像 </td></tr>
   </table>
   </dd>
 </dl>
@@ -458,16 +428,11 @@ Public 成员函数</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>两个图像逐像素比较，取其最小值，输出一个新图像， \(I&#39; = \min (I_{1}, I_{2})\). </p><dl class="params"><dt>参数</dt><dd>
+<p>两个图像逐像素比较，取其最小值，输出一个新图像， \( I&#39; = \min (I_{1}, I_{2}) \) . </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">img1</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> 第一个输入图像 </td></tr>
-    <tr><td class="paramname">img2</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> 第二个输入图像 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>返回值</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">result</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> 输出结果图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img1</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> 第一个输入图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img2</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> 第二个输入图像 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> 输出结果图像 </td></tr>
   </table>
   </dd>
 </dl>
@@ -505,16 +470,11 @@ Public 成员函数</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>两个图像逐像素比较，取其最大值，输出一个新图像， \(I&#39; = \max (I_{1}, I_{2})\). </p><dl class="params"><dt>参数</dt><dd>
+<p>两个图像逐像素比较，取其最大值，输出一个新图像， \( I&#39; = \max (I_{1}, I_{2}) \) . </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">img1</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> 第一个输入图像 </td></tr>
-    <tr><td class="paramname">img2</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> 第二个输入图像 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>返回值</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">result</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> 输出结果图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img1</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> 第一个输入图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img2</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> 第二个输入图像 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> 输出结果图像 </td></tr>
   </table>
   </dd>
 </dl>
@@ -554,14 +514,9 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>水平或垂直翻转一个图像。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">img</td><td>输入图像 </td></tr>
-    <tr><td class="paramname">flipType</td><td>翻转方式，查看 LPVFlipType。 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>返回值</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">result</td><td>输出结果图像<br  />
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>输入图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">flipType</td><td>翻转方式，查看 LPVFlipType。 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>输出结果图像<br  />
 若指定的结果图像对象为空图像，则生成和输入图像尺寸相同的图像。 否则，将保持结果图像的尺寸。 </td></tr>
   </table>
   </dd>
@@ -609,15 +564,10 @@ Public 成员函数</h2></td></tr>
 <p>顺时针旋转输入图像，输出一个新图像，使用图像中心作为旋转中心。<br  />
 超出图像范围的像素设为黑像素。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">img</td><td>输入图像 </td></tr>
-    <tr><td class="paramname">angle</td><td>旋转角度 </td></tr>
-    <tr><td class="paramname">interMethod</td><td>插值方法 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>返回值</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">result</td><td>输出结果图像<br  />
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>输入图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">angle</td><td>旋转角度 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">interMethod</td><td>插值方法 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>输出结果图像<br  />
 若指定的结果图像对象为空图像，则生成和输入图像尺寸相同的图像。 否则，将保持结果图像的尺寸。 </td></tr>
   </table>
   </dd>
@@ -671,16 +621,11 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>缩放输入图像，按照给定的缩放比例。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">img</td><td>输入图像 </td></tr>
-    <tr><td class="paramname">zoomX</td><td>x 方向的缩放比例 </td></tr>
-    <tr><td class="paramname">zoomY</td><td>y 方向的缩放比例 </td></tr>
-    <tr><td class="paramname">interMethod</td><td>插值方法 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>返回值</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">result</td><td>输出结果图像<br  />
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>输入图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">zoomX</td><td>x 方向的缩放比例 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">zoomY</td><td>y 方向的缩放比例 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">interMethod</td><td>插值方法 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>输出结果图像<br  />
 若指定的结果图像对象为空图像，则生成基于输入图像尺寸缩放的图像。 否则，将保持结果图像的尺寸。 </td></tr>
   </table>
   </dd>
@@ -734,16 +679,11 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>缩放输入图像到指定的尺寸 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">img</td><td>输入图像 </td></tr>
-    <tr><td class="paramname">w</td><td>输出图像的宽度 </td></tr>
-    <tr><td class="paramname">h</td><td>输出图像的高度 </td></tr>
-    <tr><td class="paramname">interMethod</td><td>插值方法 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>返回值</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">result</td><td>输出结果图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>输入图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">w</td><td>输出图像的宽度 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">h</td><td>输出图像的高度 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">interMethod</td><td>插值方法 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>输出结果图像 </td></tr>
   </table>
   </dd>
 </dl>
@@ -827,21 +767,16 @@ Public 成员函数</h2></td></tr>
 <p>缩放和旋转输入图像，使用用户指定的锚点。<br  />
 超出图像范围的像素设为黑像素。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">img</td><td>输入图像 </td></tr>
-    <tr><td class="paramname">angle</td><td>顺时针旋转角度 </td></tr>
-    <tr><td class="paramname">zoomX</td><td>x 方向的缩放比例 </td></tr>
-    <tr><td class="paramname">zoomY</td><td>y 方向的缩放比例 </td></tr>
-    <tr><td class="paramname">pivotImgX</td><td>输入图像上的锚点的 x 坐标。该锚点将作为缩放和旋转的中心。 </td></tr>
-    <tr><td class="paramname">pivotImgY</td><td>输入图像上的锚点的 y 坐标。 </td></tr>
-    <tr><td class="paramname">pivotResultX</td><td>结果图像上的锚点的 x 坐标。该锚点位置上的像素与输入图像锚点位置上的像素为“同一个”。 </td></tr>
-    <tr><td class="paramname">pivotResultY</td><td>结果图像上的锚点的 y 坐标。 </td></tr>
-    <tr><td class="paramname">interMethod</td><td>插值方法 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>返回值</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">result</td><td>输出结果图像<br  />
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>输入图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">angle</td><td>顺时针旋转角度 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">zoomX</td><td>x 方向的缩放比例 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">zoomY</td><td>y 方向的缩放比例 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pivotImgX</td><td>输入图像上的锚点的 x 坐标。该锚点将作为缩放和旋转的中心。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pivotImgY</td><td>输入图像上的锚点的 y 坐标。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pivotResultX</td><td>结果图像上的锚点的 x 坐标。该锚点位置上的像素与输入图像锚点位置上的像素为“同一个”。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pivotResultY</td><td>结果图像上的锚点的 y 坐标。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">interMethod</td><td>插值方法 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>输出结果图像<br  />
 若指定的结果图像对象为空图像，则生成和输入图像尺寸相同的图像。 否则，将保持结果图像的尺寸。 </td></tr>
   </table>
   </dd>
@@ -897,14 +832,9 @@ Public 成员函数</h2></td></tr>
 <p><em>注意：图像融合不支持其他为指明的聚合方式。</em></p>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">imgList</td><td>输入用于融合的图像队列 </td></tr>
-    <tr><td class="paramname">aggType</td><td>融合方式 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>返回值</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">result</td><td>输出融合结果图像</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">imgList</td><td>输入用于融合的图像队列 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aggType</td><td>融合方式 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>输出融合结果图像</td></tr>
   </table>
   </dd>
 </dl>
@@ -939,8 +869,8 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>水平投影图像，聚合每一行上的像素 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">img</td><td>输入图像 </td></tr>
-    <tr><td class="paramname">aggType</td><td>投影时所使用的聚合方式 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>输入图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aggType</td><td>投影时所使用的聚合方式 </td></tr>
   </table>
   </dd>
 </dl>
@@ -980,8 +910,8 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>垂直投影图像，聚合每一列上的像素 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">img</td><td>输入图像 </td></tr>
-    <tr><td class="paramname">aggType</td><td>投影时所使用的聚合方式 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>输入图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aggType</td><td>投影时所使用的聚合方式 </td></tr>
   </table>
   </dd>
 </dl>

@@ -20,7 +20,7 @@
     jax: ["input/TeX","output/HTML-CSS"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.7/MathJax.js"></script>
 <link href="lpv_stylesheet.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-custom.css" rel="stylesheet" type="text/css"/>
@@ -185,13 +185,13 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Fetch one result with given index. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">index</td><td>Input index, it should be a 0-based number smaller than total count. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>Input index, it should be a 0-based number smaller than total count. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">result</td><td>Return the circle result of given index. </td></tr>
+    <tr><td class="paramname">error</td><td>Return the circle result of given index. </td></tr>
   </table>
   </dd>
 </dl>
@@ -255,8 +255,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Draw one circle result of given index onto provide device context. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">index</td><td>Input index, it should be a 0-based number smaller than total count. </td></tr>
-    <tr><td class="paramname">drawFlags</td><td>Flags to control the circle drawing behavior, see LPVCircleDrawFlags for usage. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>Input index, it should be a 0-based number smaller than total count. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">drawFlags</td><td>Flags to control the circle drawing behavior, see LPVCircleDrawFlags for usage. </td></tr>
   </table>
   </dd>
 </dl>
@@ -317,7 +317,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Draw all circle results onto provide device context. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drawFlags</td><td>Control the drawing behavior, see LPVCircleDrawFlags </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">drawFlags</td><td>Control the drawing behavior, see LPVCircleDrawFlags </td></tr>
   </table>
   </dd>
 </dl>
@@ -366,10 +366,10 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Draw a score chart onto provide device context. It represents the score distributions along the region's direction. It's useful for determining a proper acceptable score. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">hdc</td><td>Handle to the device context of the destination window or bitmap. </td></tr>
-    <tr><td class="paramname">bDrawFlags</td><td>Flags to control which part of a data chart should be drawn, see LPVChartDrawFlags for usage. </td></tr>
-    <tr><td class="paramname">xGridStep</td><td>Specify the step of label on x axis(Region), 0 means we'll determine it on the fly according to the score data. </td></tr>
-    <tr><td class="paramname">yGridStep</td><td>Specify the step of label on y axis(Score), 0 means we'll determine it on the fly according to the score data. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hdc</td><td>Handle to the device context of the destination window or bitmap. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bDrawFlags</td><td>Flags to control which part of a data chart should be drawn, see LPVChartDrawFlags for usage. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">xGridStep</td><td>Specify the step of label on x axis(Region), 0 means we'll determine it on the fly according to the score data. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">yGridStep</td><td>Specify the step of label on y axis(Score), 0 means we'll determine it on the fly according to the score data. </td></tr>
   </table>
   </dd>
 </dl>

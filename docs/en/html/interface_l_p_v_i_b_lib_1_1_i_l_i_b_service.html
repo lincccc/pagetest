@@ -20,7 +20,7 @@
     jax: ["input/TeX","output/HTML-CSS"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.7/MathJax.js"></script>
 <link href="lpv_stylesheet.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-custom.css" rel="stylesheet" type="text/css"/>
@@ -175,7 +175,7 @@ Public Member Functions</h2></td></tr>
 <p>Set up the IntelliBlink service.<br  />
  It should be called at the very beginning, before using any of the LPV IB objects. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ibPath</td><td>The root folder of the IntelliBlink application. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ibPath</td><td>The root folder of the IntelliBlink application. </td></tr>
   </table>
   </dd>
 </dl>
@@ -220,7 +220,7 @@ It's Ok to omit the tear down step, we'll do it automatically when free the serv
 </div><div class="memdoc">
 <p>Get the error message with the given error code. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">errCode</td><td>The error code, returned by IB service functions. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">errCode</td><td>The error code, returned by IB service functions. </td></tr>
   </table>
   </dd>
 </dl>
@@ -260,14 +260,19 @@ It's Ok to omit the tear down step, we'll do it automatically when free the serv
 </div><div class="memdoc">
 <p>Load the IntelliBlink task from a specified file. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">filename</td><td>Full path of the file, it could be absolute or relative path with file name and extension. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>Full path of the file, it could be absolute or relative path with file name and extension. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">error</td><td>Return error code if anything is wrong. </td></tr>
-    <tr><td class="paramname">taskId</td><td>Output the unique task ID. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">taskId</td><td>Output the unique task ID. </td></tr>
   </table>
   </dd>
 </dl>
@@ -307,14 +312,14 @@ It's Ok to omit the tear down step, we'll do it automatically when free the serv
 </div><div class="memdoc">
 <p>Execute the IntelliBlink task synchronously based on the given image. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">taskId</td><td>The unique task ID. </td></tr>
-    <tr><td class="paramname">image</td><td>The input image. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">taskId</td><td>The unique task ID. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">image</td><td>The input image. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">taskResult</td><td>Output the task results. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">taskResult</td><td>Output the task results. </td></tr>
     <tr><td class="paramname">errCode</td><td>Return the error code if anything is wrong, return <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aae917cd39742ab4cec9119219cae9154c">LPVNoError</a> if succeed. </td></tr>
   </table>
   </dd>
@@ -339,7 +344,7 @@ It's Ok to omit the tear down step, we'll do it automatically when free the serv
 </div><div class="memdoc">
 <p>Get the task configuration with the given task ID. Return null if failed to find the task with the specified ID. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">taskId</td><td>The unique task ID. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">taskId</td><td>The unique task ID. </td></tr>
   </table>
   </dd>
 </dl>
@@ -380,8 +385,8 @@ It's Ok to omit the tear down step, we'll do it automatically when free the serv
 </div><div class="memdoc">
 <p>Set the changed configuration to the task with the given task ID. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">taskId</td><td>The unique task ID. </td></tr>
-    <tr><td class="paramname">taskConfig</td><td>The change configuration. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">taskId</td><td>The unique task ID. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">taskConfig</td><td>The change configuration. </td></tr>
   </table>
   </dd>
 </dl>
@@ -424,8 +429,8 @@ It's Ok to omit the tear down step, we'll do it automatically when free the serv
 It is a convenient function for you to get to the algorithm of interest directly.<br  />
 Return null if failed to find the task with the specified ID or its algorithm with specified name. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">taskId</td><td>The unique task ID. </td></tr>
-    <tr><td class="paramname">algoName</td><td>The unique name of the algorithm tool. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">taskId</td><td>The unique task ID. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">algoName</td><td>The unique name of the algorithm tool. </td></tr>
   </table>
   </dd>
 </dl>
@@ -472,9 +477,9 @@ Return null if failed to find the task with the specified ID or its algorithm wi
 </div><div class="memdoc">
 <p>Set the changed configuration to the algorithm with the given task ID and algorithm name. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">taskId</td><td>The unique task ID. </td></tr>
-    <tr><td class="paramname">algoName</td><td>The unique name of the algorithm tool. </td></tr>
-    <tr><td class="paramname">algoConfig</td><td>The change configuration. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">taskId</td><td>The unique task ID. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">algoName</td><td>The unique name of the algorithm tool. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">algoConfig</td><td>The change configuration. </td></tr>
   </table>
   </dd>
 </dl>

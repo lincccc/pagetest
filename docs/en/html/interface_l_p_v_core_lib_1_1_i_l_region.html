@@ -20,7 +20,7 @@
     jax: ["input/TeX","output/HTML-CSS"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.7/MathJax.js"></script>
 <link href="lpv_stylesheet.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-custom.css" rel="stylesheet" type="text/css"/>
@@ -136,8 +136,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6c9eb19797abac33fe2f1f3ab6b48e63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b7509dc313340daef8aaa5600276ae7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html#a0b7509dc313340daef8aaa5600276ae7">Scale</a> (double factorX, double factorY)</td></tr>
 <tr class="separator:a0b7509dc313340daef8aaa5600276ae7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a74066985052e5af4db8b2de183d05b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html#a7a74066985052e5af4db8b2de183d05b">ToMask</a> (int w, int h, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> **mask)</td></tr>
-<tr class="separator:a7a74066985052e5af4db8b2de183d05b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5491a1a6d1431f2ce82140c1061c2a9c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html#a5491a1a6d1431f2ce82140c1061c2a9c">ToMask</a> (int w, int h)</td></tr>
+<tr class="separator:a5491a1a6d1431f2ce82140c1061c2a9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c5101821d263ba517c9478ef6e205f0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html#a6c5101821d263ba517c9478ef6e205f0">Intersect</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a> *other)</td></tr>
 <tr class="separator:a6c5101821d263ba517c9478ef6e205f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e4619cfa558129ae9cf1859dad2354c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html#a8e4619cfa558129ae9cf1859dad2354c">XOR</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a> *other)</td></tr>
@@ -207,7 +207,7 @@ Example Code</h3>
 </div><div class="memdoc">
 <p>Save the region object to a specified file. It should be with .droi extension. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">filename</td><td>Full path of the file, it could be absolute or relative path with file name and extension. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>Full path of the file, it could be absolute or relative path with file name and extension. </td></tr>
   </table>
   </dd>
 </dl>
@@ -238,7 +238,7 @@ Example Code</h3>
 </div><div class="memdoc">
 <p>Load the region object from a specified file. It should be with .droi extension. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">filename</td><td>Full path of the file, it could be absolute or relative path with file name and extension. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>Full path of the file, it could be absolute or relative path with file name and extension. </td></tr>
   </table>
   </dd>
 </dl>
@@ -359,8 +359,8 @@ Example Code</h3>
 </div><div class="memdoc">
 <p>Detect if the cursor is placed over one of the dragging handles. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">x</td><td>The x-coordinate of the cursor position. </td></tr>
-    <tr><td class="paramname">y</td><td>The y-coordinate of the cursor position. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td>The x-coordinate of the cursor position. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">y</td><td>The y-coordinate of the cursor position. </td></tr>
   </table>
   </dd>
 </dl>
@@ -431,9 +431,9 @@ Example Code</h3>
 </div><div class="memdoc">
 <p>Move the specified handle to a new position and update placement of the region. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">roiHandle</td><td>Handle identifier, usually it's returned by <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html#a76c5c6d6f3972a1ab97a0274bd29e3e9">HitTest()</a>. </td></tr>
-    <tr><td class="paramname">x</td><td>The x-coordinate of the cursor position. </td></tr>
-    <tr><td class="paramname">y</td><td>The y-coordinate of the cursor position. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">roiHandle</td><td>Handle identifier, usually it's returned by <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html#a76c5c6d6f3972a1ab97a0274bd29e3e9">HitTest()</a>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td>The x-coordinate of the cursor position. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">y</td><td>The y-coordinate of the cursor position. </td></tr>
   </table>
   </dd>
 </dl>
@@ -458,7 +458,7 @@ Example Code</h3>
 </div><div class="memdoc">
 <p>Add the current and provided region, output a new one, P' = P + other. Same as <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html#ace83080e3d239ae3004735d3de4842ad">Union()</a>, parts in either regions are all included. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">other</td><td>The region to be union-ed. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">other</td><td>The region to be union-ed. </td></tr>
   </table>
   </dd>
 </dl>
@@ -489,7 +489,7 @@ Example Code</h3>
 </div><div class="memdoc">
 <p>Subtract the provided region from the current region, output a new one, P' = P - other. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">other</td><td>The region to be subtracted. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">other</td><td>The region to be subtracted. </td></tr>
   </table>
   </dd>
 </dl>
@@ -520,7 +520,7 @@ Example Code</h3>
 </div><div class="memdoc">
 <p>Union the current and provided region, output a new one, P' = P U other. Same as <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html#af4d00a8158cbbfa9a76a91843bfbd5f0">Add()</a>, parts in either regions are all included. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">other</td><td>The region to be union-ed </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">other</td><td>The region to be union-ed </td></tr>
   </table>
   </dd>
 </dl>
@@ -608,18 +608,13 @@ Example Code</h3>
 </div><div class="memdoc">
 <p>Reduce the provided image to current region. All pixels outside the bounding rectangle of the region is excluded, if the region is not a rectangle, a region mask image is generated, with pixels inside the region as white, others as black. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">image</td><td>The input image to be reduced. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">image</td><td>The input image to be reduced. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">newImage</td><td>Output the result image. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">newMask</td><td><img src="color_binary.png" alt="" class="inline" title="Binary images"/> Output the result mask. Could be null if you don't want it. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">newImage</td><td>Output the result image. </td></tr>
-    <tr><td class="paramname">newMask</td><td><img src="color_binary.png" alt="" class="inline" title="Binary images"/> Output the result mask. Could be null if you don't want it. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html#a7a74066985052e5af4db8b2de183d05b">ToMask()</a>, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html#a60bb79dec8bcc9da8e4643688bc0d839" title="The interpolation method used in image reduction.">InterpolationMethod</a>. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html#a5491a1a6d1431f2ce82140c1061c2a9c">ToMask()</a>, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html#a60bb79dec8bcc9da8e4643688bc0d839" title="The interpolation method used in image reduction.">InterpolationMethod</a>. </dd></dl>
 
 </div>
 </div>
@@ -662,15 +657,10 @@ Example Code</h3>
 </div><div class="memdoc">
 <p>Map the pixel position from image to the region's local coordinates. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">imagePointX</td><td>The x-coordinate of the pixel position in image coordinates. </td></tr>
-    <tr><td class="paramname">imagePointY</td><td>The y-coordinate of the pixel position in image coordinates. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">regionPointX</td><td>Return the x-coordinate of the pixel position in the region's local coordinates. </td></tr>
-    <tr><td class="paramname">regionPointY</td><td>Return the y-coordinate of the pixel position in the region's local coordinates. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">imagePointX</td><td>The x-coordinate of the pixel position in image coordinates. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">imagePointY</td><td>The y-coordinate of the pixel position in image coordinates. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">regionPointX</td><td>Return the x-coordinate of the pixel position in the region's local coordinates. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">regionPointY</td><td>Return the y-coordinate of the pixel position in the region's local coordinates. </td></tr>
   </table>
   </dd>
 </dl>
@@ -717,15 +707,10 @@ Example Code</h3>
 </div><div class="memdoc">
 <p>Map the pixel position the region's local coordinates to the image. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">regionPointX</td><td>The x-coordinate of the pixel position in the region's local coordinates. </td></tr>
-    <tr><td class="paramname">regionPointY</td><td>The y-coordinate of the pixel position in the region's local coordinates. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">imagePointX</td><td>Return the x-coordinate of the pixel position in image coordinates. </td></tr>
-    <tr><td class="paramname">imagePointY</td><td>Return the y-coordinate of the pixel position in image coordinates. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">regionPointX</td><td>The x-coordinate of the pixel position in the region's local coordinates. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">regionPointY</td><td>The y-coordinate of the pixel position in the region's local coordinates. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">imagePointX</td><td>Return the x-coordinate of the pixel position in image coordinates. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">imagePointY</td><td>Return the y-coordinate of the pixel position in image coordinates. </td></tr>
   </table>
   </dd>
 </dl>
@@ -760,8 +745,8 @@ Example Code</h3>
 </div><div class="memdoc">
 <p>Create a copy of the region that is moved by offset, relative to current position, P' = P + offset. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">offsetX</td><td>Offset in the x-coordinate direction. </td></tr>
-    <tr><td class="paramname">offsetY</td><td>Offset in the y-coordinate direction. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">offsetX</td><td>Offset in the x-coordinate direction. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">offsetY</td><td>Offset in the y-coordinate direction. </td></tr>
   </table>
   </dd>
 </dl>
@@ -802,8 +787,8 @@ Example Code</h3>
 </div><div class="memdoc">
 <p>Create a copy of the region that is scale by provided zoom factor, P' = P * s. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">factorX</td><td>Factor for zooming in or out in the x-coordinate direction. </td></tr>
-    <tr><td class="paramname">factorY</td><td>Factor for zooming in or out in the x-coordinate direction. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">factorX</td><td>Factor for zooming in or out in the x-coordinate direction. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">factorY</td><td>Factor for zooming in or out in the x-coordinate direction. </td></tr>
   </table>
   </dd>
 </dl>
@@ -817,14 +802,14 @@ Example Code</h3>
 
 </div>
 </div>
-<a id="a7a74066985052e5af4db8b2de183d05b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7a74066985052e5af4db8b2de183d05b">&#9670;&nbsp;</a></span>ToMask()</h2>
+<a id="a5491a1a6d1431f2ce82140c1061c2a9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5491a1a6d1431f2ce82140c1061c2a9c">&#9670;&nbsp;</a></span>ToMask()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void ToMask </td>
+          <td class="memname"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a>* ToMask </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>w</em>, </td>
@@ -833,13 +818,7 @@ Example Code</h3>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>h</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> **&#160;</td>
-          <td class="paramname"><em>mask</em>&#160;</td>
+          <td class="paramname"><em>h</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -850,14 +829,14 @@ Example Code</h3>
 </div><div class="memdoc">
 <p>Create a mask image out of the region, the mask is of w * h size. Pixels inside the region as white, others as black. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">w</td><td>The width of the mask image. </td></tr>
-    <tr><td class="paramname">h</td><td>The height of the mask image. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">w</td><td>The width of the mask image. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">h</td><td>The height of the mask image. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">mask</td><td><img src="color_binary.png" alt="" class="inline" title="Binary images"/> Return the generated mask image. </td></tr>
+    <tr><td class="paramname">newRegion</td><td>Return the generated mask image <img src="color_binary.png" alt="" class="inline" title="Binary images"/>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -882,7 +861,7 @@ Example Code</h3>
 </div><div class="memdoc">
 <p>Intersect the current and provided region, output a new one, P' = P ∩ other. Parts in both regions are included. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">other</td><td>The region to be intersected. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">other</td><td>The region to be intersected. </td></tr>
   </table>
   </dd>
 </dl>
@@ -913,7 +892,7 @@ Example Code</h3>
 </div><div class="memdoc">
 <p>Calculate the symmetric difference of the current and provided region, output a new one, P' = P XOR other. Parts in and only in one of regions are included. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">other</td><td>The region to perform the operation. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">other</td><td>The region to perform the operation. </td></tr>
   </table>
   </dd>
 </dl>
@@ -944,7 +923,7 @@ Example Code</h3>
 </div><div class="memdoc">
 <p>Create a copy of the region that is rotated by provided delta angle, around the center of the region. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">da</td><td>Rotation angle. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">da</td><td>Rotation angle. </td></tr>
   </table>
   </dd>
 </dl>
@@ -974,7 +953,7 @@ Example Code</h3>
 </div><div class="memdoc">
 <p>Copy the region object to destination. </p><dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">dstRegion</td><td>Destination region object. </td></tr>
+    <tr><td class="paramname">newRegion</td><td>Destination region object. </td></tr>
   </table>
   </dd>
 </dl>

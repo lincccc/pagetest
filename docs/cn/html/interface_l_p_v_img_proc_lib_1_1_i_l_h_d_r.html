@@ -20,7 +20,7 @@
     jax: ["input/TeX","output/SVG"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.7/MathJax.js"></script>
 <link href="lpv_stylesheet.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-custom.css" rel="stylesheet" type="text/css"/>
@@ -180,8 +180,8 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>标定相机响应曲线 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">imgList</td><td>输入的不同曝光设定下采集的图像队列 </td></tr>
-    <tr><td class="paramname">exposureTimes</td><td>图像所对应的曝光时间，以微秒为单位 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">imgList</td><td>输入的不同曝光设定下采集的图像队列 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">exposureTimes</td><td>图像所对应的曝光时间，以微秒为单位 </td></tr>
   </table>
   </dd>
 </dl>
@@ -239,16 +239,11 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>生成 HDR 图像，使用 tone-mapping 方法，需要先构建相机响应曲线。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">imgList</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> 输入的不同曝光设定下采集的图像队列 </td></tr>
-    <tr><td class="paramname">gamma</td><td>伽马校正，1（默认值）代表没有变化，大于 1 的值会使图像变亮，小于 1 的值会使图像变暗 </td></tr>
-    <tr><td class="paramname">contrastEnhance</td><td>对比度增强，在结果图像中表现为图像中的最亮和最暗像素的数值指数比，i.e. \(log(max / min)\)。默认值为 4。 </td></tr>
-    <tr><td class="paramname">saturationEnhance</td><td>饱和度增强，1（默认值）代表没有变化，大于 1 的值会增加饱和度，小于 1 的值会降低饱和度 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>返回值</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">result</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> 输出结果图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">imgList</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> 输入的不同曝光设定下采集的图像队列 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> 输出结果图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">gamma</td><td>伽马校正，1（默认值）代表没有变化，大于 1 的值会使图像变亮，小于 1 的值会使图像变暗 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">contrastEnhance</td><td>对比度增强，在结果图像中表现为图像中的最亮和最暗像素的数值指数比，i.e. \( log(max / min) \)。默认值为 4。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">saturationEnhance</td><td>饱和度增强，1（默认值）代表没有变化，大于 1 的值会增加饱和度，小于 1 的值会降低饱和度 </td></tr>
   </table>
   </dd>
 </dl>
@@ -301,16 +296,11 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>生成 HDR 图像，使用 exposure fusion 方法。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">imgList</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> 输入的不同曝光设定下采集的图像队列 </td></tr>
-    <tr><td class="paramname">contrastWeight</td><td>对比度权重，默认值为 1 </td></tr>
-    <tr><td class="paramname">saturationWeight</td><td>饱和度权重，默认值为 1 </td></tr>
-    <tr><td class="paramname">exposureWeight</td><td>曝光权重，默认值为 1 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>返回值</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">result</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> 输出结果图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">imgList</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> 输入的不同曝光设定下采集的图像队列 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> 输出结果图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">contrastWeight</td><td>对比度权重，默认值为 1 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">saturationWeight</td><td>饱和度权重，默认值为 1 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">exposureWeight</td><td>曝光权重，默认值为 1 </td></tr>
   </table>
   </dd>
 </dl>
