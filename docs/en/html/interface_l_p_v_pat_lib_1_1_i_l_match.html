@@ -172,6 +172,11 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 <tr class="memdesc:a8698837361cab3af9df6444df07cb5c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The combination weight of the evaluation score based on the similarity of the matching result and the template image, using normalized cross correlation (NCC).<br  />
 By default, it's 0, means the gray score does not take any effect. The final score of the result is calculated as: \( Score = Score_{shape} \times (1 - w) + Score_{gray} \times w \) . <br /></td></tr>
 <tr class="separator:a8698837361cab3af9df6444df07cb5c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3566610c7064816188077fe128c506e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#ad3566610c7064816188077fe128c506e">DetailLevel</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:ad3566610c7064816188077fe128c506e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Level of detail of the pattern template, in range of 0 ~ 1. By default, it's set to 0.5.<br  />
+Higher level indicates more details contained in the trained template, while it may introduce more noise and slow down the detection. After changing the level, you should re-train the template to take the effect.<br  />
+.  <a href="interface_l_p_v_pat_lib_1_1_i_l_match.html#ad3566610c7064816188077fe128c506e">More...</a><br /></td></tr>
+<tr class="separator:ad3566610c7064816188077fe128c506e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This interface provide functionalities of pattern matching. </p>
@@ -183,7 +188,7 @@ The algorithm is real-time and of sub-pixel accuracy. Detection is based mainly 
 <div class="line">m_match-&gt;Learn(m_template_img, <span class="keyword">nullptr</span>);</div>
 <div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = m_match-&gt;Match(m_img, m_roi, &amp;m_match_results);</div>
 <div class="line"><span class="keywordflow">if</span> (err != <a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>.LPVNoError) <span class="keywordflow">return</span>;</div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">This enumeration represents the type of a LPV function error.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:159</div></div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">This enumeration represents the type of a LPV function error.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:170</div></div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LMatch m_match = <span class="keyword">new</span> LMatch();</div>
 <div class="line">m_match.Learn(m_template_img, <span class="keyword">null</span>);</div>
 <div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = (<a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>)m_match.Detect(m_img, (LRegion)m_roi, out m_match_results);</div>
@@ -505,6 +510,34 @@ The template center indicates the report position of the matching result. For ex
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<h2 class="groupheader">Property Documentation</h2>
+<a id="ad3566610c7064816188077fe128c506e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3566610c7064816188077fe128c506e">&#9670;&nbsp;</a></span>DetailLevel</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double DetailLevel</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Level of detail of the pattern template, in range of 0 ~ 1. By default, it's set to 0.5.<br  />
+Higher level indicates more details contained in the trained template, while it may introduce more noise and slow down the detection. After changing the level, you should re-train the template to take the effect.<br  />
+. </p>
+<p><img src="pattern_detail.png" alt="" class="inline"/> </p>
 
 </div>
 </div>

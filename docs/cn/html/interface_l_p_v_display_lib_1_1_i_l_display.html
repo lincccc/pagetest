@@ -148,6 +148,10 @@ Public 成员函数</h2></td></tr>
 <tr class="separator:ae4719fff6f90f1ff3fb7cc84b82785cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad59ddb26897c32be05a846242874b1cb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#ad59ddb26897c32be05a846242874b1cb">ShowDialog</a> (BSTR dialogName, int x, int y, int w, int h)</td></tr>
 <tr class="separator:ad59ddb26897c32be05a846242874b1cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1b16c67cdfe35c351b12d4dadb17b83"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#aa1b16c67cdfe35c351b12d4dadb17b83">ClientToImage</a> (int x, int y, double *imageX, double *imageY)</td></tr>
+<tr class="separator:aa1b16c67cdfe35c351b12d4dadb17b83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abaf2cc841b1b4aa3c6b1a37fcd743a50"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#abaf2cc841b1b4aa3c6b1a37fcd743a50">ImageToClient</a> (double imageX, double imageY, int *x, int *y)</td></tr>
+<tr class="separator:abaf2cc841b1b4aa3c6b1a37fcd743a50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 属性</h2></td></tr>
@@ -183,6 +187,10 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#ae7f979e70b4ed82a166006864dbb89cc">ZoomY</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:ae7f979e70b4ed82a166006864dbb89cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">场景在垂直方向的缩放比例 <br /></td></tr>
 <tr class="separator:ae7f979e70b4ed82a166006864dbb89cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e089a5fee7fd471a09d154132e70d19"><td class="memItemLeft" align="right" valign="top"><a id="a0e089a5fee7fd471a09d154132e70d19"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#a0e089a5fee7fd471a09d154132e70d19">Zoom</a><code> [set]</code></td></tr>
+<tr class="memdesc:a0e089a5fee7fd471a09d154132e70d19"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置场景在水平和垂直方向的缩放比例 <br /></td></tr>
+<tr class="separator:a0e089a5fee7fd471a09d154132e70d19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a685cd4ccb93f6a8ef101dd27ac97fabb"><td class="memItemLeft" align="right" valign="top"><a id="a685cd4ccb93f6a8ef101dd27ac97fabb"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#a685cd4ccb93f6a8ef101dd27ac97fabb">PanX</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:a685cd4ccb93f6a8ef101dd27ac97fabb"><td class="mdescLeft">&#160;</td><td class="mdescRight">场景在水平方向的位移。 最终的 x 位置按照该公式计算: \( (x + panX) \times zoomX \) <br /></td></tr>
@@ -203,6 +211,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><p>该接口提供显示控件功能。 </p>
 <p>通常可通过 Visual Studio 的工具箱，将显示控件加入到应用程序窗口中。 该接口提供管理显示窗口内场景的功能，用于设置场景中的图像，增加删除场景中的 region、几何形状和算法结果等。</p>
+<p>控件事件请查看 <a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_events.html">ILDisplayEvents</a> 。</p>
 <h3>示例代码 </h3>
  <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line"><span class="comment">// set image to the control</span></div>
 <div class="line">m_displayCtrl-&gt;SetImage(img);</div>
@@ -1010,6 +1019,104 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
     <tr><td class="paramdir">[in]</td><td class="paramname">y</td><td>窗口的 y 坐标 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">w</td><td>窗口的宽度 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">h</td><td>窗口的高度 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa1b16c67cdfe35c351b12d4dadb17b83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1b16c67cdfe35c351b12d4dadb17b83">&#9670;&nbsp;</a></span>ClientToImage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ClientToImage </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>imageX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>imageY</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>转换位置坐标，从显示控件窗口坐标系到图像坐标系 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td>输入位置的 x 坐标，该坐标相对于显示控件工作区的左上角 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">y</td><td>输入位置的 y 坐标，该坐标相对于显示控件工作区的左上角 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">imageX</td><td>输出转换后的 x 坐标，该坐标相对于图像的左上角 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">imageY</td><td>输出转换后的 y 坐标，该坐标相对于图像的左上角 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="abaf2cc841b1b4aa3c6b1a37fcd743a50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abaf2cc841b1b4aa3c6b1a37fcd743a50">&#9670;&nbsp;</a></span>ImageToClient()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ImageToClient </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>imageX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>imageY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>转换位置坐标，从图像坐标系到显示控件窗口坐标系 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">imageX</td><td>输入位置的 x 坐标，该坐标相对于图像的左上角 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">imageY</td><td>输入位置的 y 坐标，该坐标相对于图像的左上角 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">x</td><td>输出转换后的 x 坐标，该坐标相对于显示控件工作区的左上角 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">y</td><td>输出转换后的 y 坐标，该坐标相对于显示控件工作区的左上角 </td></tr>
   </table>
   </dd>
 </dl>

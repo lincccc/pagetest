@@ -172,6 +172,11 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 <tr class="memdesc:a8698837361cab3af9df6444df07cb5c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">融合匹配权重，用于合并基于形状相似性的匹配分数和基于灰度特征的匹配分数。<br  />
 默认设置为 0， 即灰度分数不参与匹配评价。最终匹配分数按照该公式计算: \( Score = Score_{shape} \times (1 - w) + Score_{gray} \times w \) . <br /></td></tr>
 <tr class="separator:a8698837361cab3af9df6444df07cb5c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3566610c7064816188077fe128c506e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#ad3566610c7064816188077fe128c506e">DetailLevel</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:ad3566610c7064816188077fe128c506e"><td class="mdescLeft">&#160;</td><td class="mdescRight">模板细节程度，取值范围为 0 ~ 1，默认设置为 0.5。<br  />
+数值越高，保留的细节越多，同时也可能引入更多的噪声，并影响算法的整体性能。 修改模板细节程度后，需重新训练模板以生效。<br  />
+ <a href="interface_l_p_v_pat_lib_1_1_i_l_match.html#ad3566610c7064816188077fe128c506e">更多...</a><br /></td></tr>
+<tr class="separator:ad3566610c7064816188077fe128c506e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><p>该接口提供模板匹配的功能。 </p>
@@ -183,7 +188,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 <div class="line">m_match-&gt;Learn(m_template_img, <span class="keyword">nullptr</span>);</div>
 <div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = m_match-&gt;Match(m_img, m_roi, &amp;m_match_results);</div>
 <div class="line"><span class="keywordflow">if</span> (err != <a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>.LPVNoError) <span class="keywordflow">return</span>;</div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">LPV 算法或函数运行过程中遇到的错误。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:159</div></div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">LPV 算法或函数运行过程中遇到的错误。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:170</div></div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LMatch m_match = <span class="keyword">new</span> LMatch();</div>
 <div class="line">m_match.Learn(m_template_img, <span class="keyword">null</span>);</div>
 <div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = (<a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>)m_match.Detect(m_img, (LRegion)m_roi, out m_match_results);</div>
@@ -505,6 +510,34 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<h2 class="groupheader">属性说明</h2>
+<a id="ad3566610c7064816188077fe128c506e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3566610c7064816188077fe128c506e">&#9670;&nbsp;</a></span>DetailLevel</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double DetailLevel</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>模板细节程度，取值范围为 0 ~ 1，默认设置为 0.5。<br  />
+数值越高，保留的细节越多，同时也可能引入更多的噪声，并影响算法的整体性能。 修改模板细节程度后，需重新训练模板以生效。<br  />
+</p>
+<p><img src="pattern_detail.png" alt="" class="inline"/> </p>
 
 </div>
 </div>

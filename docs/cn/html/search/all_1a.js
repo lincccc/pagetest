@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['如何使用_20demo_20代码片段_934',['如何使用 DEMO 代码片段',['../how_to_use_code_snippets.html',1,'']]]
+  ['常见问题_974',['常见问题',['../faq.html',1,'']]]
 ];

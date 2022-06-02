@@ -1,9 +1,9 @@
 var indexSectionsWithContent =
 {
-  0: "_abcdefghiklmnopqrstuvwxyz如常快玩绘随",
-  1: "_il",
+  0: "abcdefghiklmnopqrstuvwxyz如常快玩绘随",
+  1: "il",
   2: "l",
-  3: "abcdefghilmoprstuvwx",
+  3: "abcdefghiklmoprstuvwx",
   4: "l",
   5: "l",
   6: "abcdefghiklmnopqrstuvwxyz",

@@ -1,20 +1,9 @@
 var searchData=
 [
-  ['magnitudefilter_1260',['MagnitudeFilter',['../interface_l_p_v_math_lib_1_1_i_l_data_list.html#a953e3b495d760e35083858fc5f0dac44',1,'LPVMathLib::ILDataList']]],
-  ['mapfromimage_1261',['MapFromImage',['../interface_l_p_v_core_lib_1_1_i_l_region.html#a69cf1a08f7cf018f98a611bacdce5c6e',1,'LPVCoreLib::ILRegion']]],
-  ['maptoimage_1262',['MapToImage',['../interface_l_p_v_core_lib_1_1_i_l_region.html#a93ff2f955d5eeffa9363cb29c1e8ab99',1,'LPVCoreLib::ILRegion']]],
-  ['match_1263',['Match',['../interface_l_p_v_pat_lib_1_1_i_l_match.html#abe49710ff341978863693945ae28190b',1,'LPVPatLib::ILMatch']]],
-  ['max_1264',['Max',['../interface_l_p_v_img_proc_lib_1_1_i_l_image_arithm.html#ae7c79b8eb70dff2f1169d0a06db7bad1',1,'LPVImgProcLib::ILImageArithm::Max()'],['../interface_l_p_v_img_proc_lib_1_1_i_l_image_stats.html#a0c05352fee26735f9ada6e806f0a5f8f',1,'LPVImgProcLib::ILImageStats::Max()']]],
-  ['maxfilter_1265',['MaxFilter',['../interface_l_p_v_math_lib_1_1_i_l_data_list.html#a8b178ebc1e0642435e3ce5bbf8a6fd19',1,'LPVMathLib::ILDataList']]],
-  ['maxlocalextrema_1266',['MaxLocalExtrema',['../interface_l_p_v_math_lib_1_1_i_l_data_list.html#a669da3389df982f1da608c37b4c04cbf',1,'LPVMathLib::ILDataList']]],
-  ['meanfilter_1267',['MeanFilter',['../interface_l_p_v_img_proc_lib_1_1_i_l_image_filter.html#a71bc4862887d9de4003986714e17fe06',1,'LPVImgProcLib::ILImageFilter::MeanFilter()'],['../interface_l_p_v_math_lib_1_1_i_l_data_list.html#aa08e76e07144082e1f22a766404cf787',1,'LPVMathLib::ILDataList::MeanFilter()']]],
-  ['meanstddev_1268',['MeanStdDev',['../interface_l_p_v_img_proc_lib_1_1_i_l_histogram.html#aa6645e9be5b37153839bc3ae8df272a0',1,'LPVImgProcLib::ILHistogram::MeanStdDev()'],['../interface_l_p_v_img_proc_lib_1_1_i_l_image_stats.html#ad7c3c17f9a853f57abe6c863a8d72e0a',1,'LPVImgProcLib::ILImageStats::MeanStdDev()']]],
-  ['medianfilter_1269',['MedianFilter',['../interface_l_p_v_math_lib_1_1_i_l_data_list.html#af7ad9ef18f5813f8305ff889986b5dd1',1,'LPVMathLib::ILDataList']]],
-  ['midpoint_1270',['MidPoint',['../interface_l_p_v_geom_lib_1_1_i_l_point.html#a23989349dad48ad10c46e198891c6e57',1,'LPVGeomLib::ILPoint']]],
-  ['min_1271',['Min',['../interface_l_p_v_img_proc_lib_1_1_i_l_image_arithm.html#afca3e1de386b0ff5fb6fad7fd3a54d2d',1,'LPVImgProcLib::ILImageArithm::Min()'],['../interface_l_p_v_img_proc_lib_1_1_i_l_image_stats.html#a1d1ad82fc8488d6a89dacb650615f3d2',1,'LPVImgProcLib::ILImageStats::Min()']]],
-  ['minfilter_1272',['MinFilter',['../interface_l_p_v_math_lib_1_1_i_l_data_list.html#a76e5e29156b9847f1635a9c66b73facf',1,'LPVMathLib::ILDataList']]],
-  ['minlocalextrema_1273',['MinLocalExtrema',['../interface_l_p_v_math_lib_1_1_i_l_data_list.html#ac7f703ae9da3089c2eb34853816517d6',1,'LPVMathLib::ILDataList']]],
-  ['minmax_1274',['MinMax',['../interface_l_p_v_img_proc_lib_1_1_i_l_histogram.html#a75a90d114151f990d985ea83e875b07f',1,'LPVImgProcLib::ILHistogram']]],
-  ['moveoriginto_1275',['MoveOriginTo',['../interface_l_p_v_calib_lib_1_1_i_l_calib_custom.html#a462be5e4ff9458fa410176edc80b87b2',1,'LPVCalibLib::ILCalibCustom']]],
-  ['multiply_1276',['Multiply',['../interface_l_p_v_img_proc_lib_1_1_i_l_image_arithm.html#aa24a05c09037b92bf79e964ac8118c56',1,'LPVImgProcLib::ILImageArithm']]]
+  ['learn_1298',['Learn',['../interface_l_p_v_pat_lib_1_1_i_l_match.html#aa2d7fce8c363465a0cbeb6a265fd36fb',1,'LPVPatLib::ILMatch']]],
+  ['load_1299',['Load',['../interface_l_p_v_calib_lib_1_1_i_l_calib.html#acc33f804a59dbd9a1f824ea51862aaa2',1,'LPVCalibLib::ILCalib::Load()'],['../interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#acc33f804a59dbd9a1f824ea51862aaa2',1,'LPVCalibLib::ILCalibBoard::Load()'],['../interface_l_p_v_calib_lib_1_1_i_l_calib_point_pairs.html#acc33f804a59dbd9a1f824ea51862aaa2',1,'LPVCalibLib::ILCalibPointPairs::Load()'],['../interface_l_p_v_calib_lib_1_1_i_l_calib_rotation.html#acc33f804a59dbd9a1f824ea51862aaa2',1,'LPVCalibLib::ILCalibRotation::Load()'],['../interface_l_p_v_calib_lib_1_1_i_l_camera_array.html#acc33f804a59dbd9a1f824ea51862aaa2',1,'LPVCalibLib::ILCameraArray::Load()'],['../interface_l_p_v_core_lib_1_1_i_l_image.html#acc33f804a59dbd9a1f824ea51862aaa2',1,'LPVCoreLib::ILImage::Load()'],['../interface_l_p_v_core_lib_1_1_i_l_region.html#acc33f804a59dbd9a1f824ea51862aaa2',1,'LPVCoreLib::ILRegion::Load()'],['../interface_l_p_v_math_lib_1_1_i_l_data_list.html#acc33f804a59dbd9a1f824ea51862aaa2',1,'LPVMathLib::ILDataList::Load()'],['../interface_l_p_v_pat_lib_1_1_i_l_match.html#acc33f804a59dbd9a1f824ea51862aaa2',1,'LPVPatLib::ILMatch::Load()']]],
+  ['loadtask_1300',['LoadTask',['../interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html#a37a3d7ed9bb58a6bd9683603e559af65',1,'LPVIBLib::ILIBService']]],
+  ['localmedian_1301',['LocalMedian',['../interface_l_p_v_img_proc_lib_1_1_i_l_image_filter.html#a31494eb9ec4736043691ed2a63c510b7',1,'LPVImgProcLib::ILImageFilter']]],
+  ['localmediannorm_1302',['LocalMedianNorm',['../interface_l_p_v_img_proc_lib_1_1_i_l_image_filter.html#ac6d1cbcbfcb083b32044cdf399afdf66',1,'LPVImgProcLib::ILImageFilter']]],
+  ['log_1303',['Log',['../interface_l_p_v_img_proc_lib_1_1_i_l_image_arithm.html#a09fb50f951e9df17d7243b6e7db56a9c',1,'LPVImgProcLib::ILImageArithm']]]
 ];

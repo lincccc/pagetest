@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['y_928',['Y',['../interface_l_p_v_geom_lib_1_1_i_l_point.html#ac8d59bf77d5ef21e7c7a88b08f14c825',1,'LPVGeomLib::ILPoint::Y()'],['../interface_l_p_v_geom_lib_1_1_i_l_circle.html#ac8d59bf77d5ef21e7c7a88b08f14c825',1,'LPVGeomLib::ILCircle::Y()'],['../interface_l_p_v_geom_lib_1_1_i_l_rect.html#ac8d59bf77d5ef21e7c7a88b08f14c825',1,'LPVGeomLib::ILRect::Y()']]],
-  ['y1_929',['Y1',['../interface_l_p_v_geom_lib_1_1_i_l_line.html#a7c33213e8454efc73d5cb4cbc4f92028',1,'LPVGeomLib::ILLine']]],
-  ['y2_930',['Y2',['../interface_l_p_v_geom_lib_1_1_i_l_line.html#a9140f90d0742526f008df49b76a77f73',1,'LPVGeomLib::ILLine']]]
+  ['zoom_969',['Zoom',['../interface_l_p_v_display_lib_1_1_i_l_display.html#a0e089a5fee7fd471a09d154132e70d19',1,'LPVDisplayLib::ILDisplay']]],
+  ['zoomanchor_970',['ZoomAnchor',['../interface_l_p_v_display_lib_1_1_i_l_display.html#aa6856314285e2e9206356a5554ad4f6c',1,'LPVDisplayLib::ILDisplay']]],
+  ['zoomx_971',['ZoomX',['../interface_l_p_v_display_lib_1_1_i_l_display.html#a2c1af515ea7a5e282663d662775aee1c',1,'LPVDisplayLib::ILDisplay']]],
+  ['zoomy_972',['ZoomY',['../interface_l_p_v_display_lib_1_1_i_l_display.html#ae7f979e70b4ed82a166006864dbb89cc',1,'LPVDisplayLib::ILDisplay']]]
 ];
