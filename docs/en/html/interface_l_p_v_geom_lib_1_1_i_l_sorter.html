@@ -108,7 +108,7 @@ Public Member Functions</h2></td></tr>
 <div class="textblock"><p>This interface expose APIs to sort or apply permutation to a collection of objects implemented <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_sortable.html">ILSortable</a> interface. </p>
 <p>To use this interface, you should create a <a class="el" href="class_l_p_v_geom_lib_1_1_l_sorter.html">LSorter</a> object.</p>
 <h3>Example Code </h3>
- <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">CComSafeArray&lt;ILRegionPtr&gt; regions;</div>
+ <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><p> Code snippets: snippets/Sort.cpp </p><div class="fragment"><div class="line">CComSafeArray&lt;ILRegionPtr&gt; regions;</div>
 <div class="line"><span class="comment">// add regions to the collection</span></div>
 <div class="line">ILSorterPtr sorter(__uuidof(LSorter));</div>
 <div class="line">sorter-&gt;SetSource2(regions);</div>
@@ -117,7 +117,7 @@ Public Member Functions</h2></td></tr>
 <div class="line">   LPVSortOrder::LPVSortOrderAscending, LPVPositionMode::LPVPosModeCenter);</div>
 <div class="line"><span class="comment">// sort into an array</span></div>
 <div class="line">ILSortedArray sortedArray = sorter-&gt;SortToArray(LPVPositionMode::LPVPosModeCenter);</div>
-</div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LRegion[] regions;</div>
+</div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><p> Code snippets: snippets/Sort.cs </p><div class="fragment"><div class="line">LRegion[] regions;</div>
 <div class="line"><span class="comment">// add regions to the collection</span></div>
 <div class="line">LSorter sorter = <span class="keyword">new</span> LSorter();</div>
 <div class="line">sorter.SetSource2(regions);</div>

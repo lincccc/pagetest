@@ -382,7 +382,11 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>拉伸输入图像并输出结果图像。<br  />
 若像素的灰度值在所设置的阈值范围内，则将其拉伸到 0 到 255 的数值；超出的像素设置为 0 或 255.<br  />
-如若阈值范围设置为 [100, 200]，像素灰度在 [0, 100] 设置为 0，像素灰度在 [200, 255] 设置为 255 像素灰度在 [101, 199] 之间的按照 \( p \times 255 / 200 \) 计算。 </p><dl class="params"><dt>参数</dt><dd>
+如若阈值范围设置为 [100, 200]，像素灰度在 [0, 100] 设置为 0，像素灰度在 [200, 255] 设置为 255 像素灰度在 [101, 199] 之间的按照以下公式计算：<br  />
+ </p><p class="formulaDsp">
+\[ (p - 100) \times 255 / (200 - 100) \]
+</p>
+ <dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> 输入图像 </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> 输出结果图像 </td></tr>

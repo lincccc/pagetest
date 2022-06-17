@@ -114,7 +114,7 @@ Public 成员函数</h2></td></tr>
 </ol>
 <p>使用这个接口，需要创建一个 <a class="el" href="class_l_p_v_img_proc_lib_1_1_l_h_d_r.html">LHDR</a> 对象。</p>
 <h3>示例代码 </h3>
- <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><p> Example: snippets/HDR.cpp </p><div class="fragment"><div class="line">ILHDRPtr m_hdr(__uuidof(LHDR));</div>
+ <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><p> Code snippets: snippets/HDR.cpp </p><div class="fragment"><div class="line">ILHDRPtr m_hdr(__uuidof(LHDR));</div>
 <div class="line"><span class="comment">// 1. tone mapping</span></div>
 <div class="line">CComSafeArray&lt;double&gt; exposureTimes;</div>
 <div class="line">exposureTimes.Add(10000);</div>
@@ -126,7 +126,7 @@ Public 成员函数</h2></td></tr>
 <div class="line"><span class="comment">// 2. exposure fusion</span></div>
 <div class="line">m_hdr-&gt;ExposureFusion(m_image_list, m_result_img2, 1, 1, 1);</div>
 <div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">LPV 算法或函数运行过程中遇到的错误。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:170</div></div>
-</div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><p> Example: snippets/HDR.cs </p><div class="fragment"><div class="line">LHDR m_hdr = <span class="keyword">new</span> LHDR();</div>
+</div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><p> Code snippets: snippets/HDR.cs </p><div class="fragment"><div class="line">LHDR m_hdr = <span class="keyword">new</span> LHDR();</div>
 <div class="line"><span class="comment">// 1. tone mapping</span></div>
 <div class="line"><span class="keywordtype">double</span>[] exposureTimes = { 10000, 15000, 20000 };</div>
 <div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = m_hdr.BuildCRF(m_image_list, exposureTimes);</div>

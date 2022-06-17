@@ -380,7 +380,10 @@ For example, if the threshold lower bound is 100, upper bound is 200, a pixel of
       </table>
 </div><div class="memdoc">
 <p>Stretch the pixel value within the lower and upper bound of threshold value, others is assigned to 0 or 255 respectively.<br  />
-For example, if the threshold lower bound is 100, upper bound is 200, pixel is assigned to 0 if its input value is within range [0, 100], it's assigned to 255 if within range [200, 255], it's assigned \( p \times 255 / 200 \) if within range [101, 199]. </p><dl class="params"><dt>Parameters</dt><dd>
+For example, if the threshold lower bound is 100, upper bound is 200, pixel is assigned to 0 if its input value is within range [0, 100], it's assigned to 255 if within range [200, 255], for the range [101, 199] it's assigned as: </p><p class="formulaDsp">
+\[ (p - 100) \times 255 / (200 - 100) \]
+</p>
+ <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> The input image </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> Return result image </td></tr>

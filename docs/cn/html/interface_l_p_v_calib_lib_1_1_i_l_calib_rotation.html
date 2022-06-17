@@ -137,9 +137,9 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 <p>使用这个接口，需要创建一个 <a class="el" href="class_l_p_v_calib_lib_1_1_l_calib_rotation.html">LCalibRotation</a> 对象。</p>
 <h3>示例代码 </h3>
  <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">ILCalibRotationPtr m_rot_calib(__uuidof(LCalibRotation));</div>
-<div class="line">m_rot_calib-&gt;AddRotPoint(0, 100, 0, -100, -1);</div>
-<div class="line">m_rot_calib-&gt;AddRotPoint(100, 100, -100, -100, -1);</div>
-<div class="line">m_rot_calib-&gt;AddRotPoint(0, 100, 0, -100, -1);</div>
+<div class="line">m_rot_calib-&gt;AddRotPointPair(0, 100, 0, -100, 0);</div>
+<div class="line">m_rot_calib-&gt;AddRotPointPair(100, 100, -100, -100, 45);</div>
+<div class="line">m_rot_calib-&gt;AddRotPointPair(100, 0, -100, 0, 90);</div>
 <div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = m_rot_calib-&gt;Calibrate(); <span class="comment">// the rotation center should be (0, 0)</span></div>
 <div class="line"><span class="keywordflow">if</span> (err != LPVErrorCode::LPVNoError || !m_rot_calib-&gt;IsCalibrated()) <span class="keywordflow">return</span>;</div>
 <div class="line">m_rot_calib-&gt;SetAim(0, 10, 0, 90);</div>
@@ -147,9 +147,9 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 <div class="line">m_rot_calib-&gt;Align(10, 0, 90, 0, &amp;dx, &amp;dy, &amp;da);</div>
 <div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">LPV 算法或函数运行过程中遇到的错误。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:170</div></div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LCalibRotation m_rot_calib = <span class="keyword">new</span> LCalibRotation();</div>
-<div class="line">m_rot_calib.AddRotPoint(0, 100, 0, -100, -1);</div>
-<div class="line">m_rot_calib.AddRotPoint(100, 100, -100, -100, -1);</div>
-<div class="line">m_rot_calib.AddRotPoint(0, 100, 0, -100, -1);</div>
+<div class="line">m_rot_calib.AddRotPointPair(0, 100, 0, -100, 0);</div>
+<div class="line">m_rot_calib.AddRotPointPair(100, 100, -100, -100, 45);</div>
+<div class="line">m_rot_calib.AddRotPointPair(100, 0, -100, 0, 90);</div>
 <div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = m_rot_calib.Calibrate(); <span class="comment">// the rotation center should be (0, 0)</span></div>
 <div class="line"><span class="keywordflow">if</span> (err != LPVErrorCode::LPVNoError || !m_rot_calib.IsCalibrated()) <span class="keywordflow">return</span>;</div>
 <div class="line">m_rot_calib.SetAim(0, 10, 0, 90);</div>
@@ -487,7 +487,7 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
         </tr>
       </table>
 </div><div class="memdoc">
-<p>对齐对象位置到已配置的目标位置，返回对齐所需的平移量和旋转角度。 标定对象需成功标定，若未标定返回 <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aa564aa76ea75ffa30b29cfcfb3a5b503b">LPVErrCalibNotCalib </a> 错误。 </p><dl class="params"><dt>参数</dt><dd>
+<p>对齐对象位置到已配置的目标位置，返回对齐所需的平移量和旋转角度。 标定对象需成功标定，若未标定则返回值均为 0 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">pntX1</td><td>对象位置的第一个标记点的 x 坐标 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">pntY1</td><td>对象位置的第一个标记点的 y 坐标 </td></tr>
@@ -582,7 +582,7 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
         </tr>
       </table>
 </div><div class="memdoc">
-<p>对齐对象位置到输入的目标位置，返回对齐所需的平移量和旋转角度。 标定对象需成功标定，若未标定返回 <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aa564aa76ea75ffa30b29cfcfb3a5b503b">LPVErrCalibNotCalib </a> 错误。 </p><dl class="params"><dt>参数</dt><dd>
+<p>对齐对象位置到输入的目标位置，返回对齐所需的平移量和旋转角度。 标定对象需成功标定，若未标定则返回值均为 0 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">aimPointX1</td><td>目标位置的第一个标记点的 x 坐标 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">aimPointY1</td><td>目标位置的第一个标记点的 y 坐标 </td></tr>

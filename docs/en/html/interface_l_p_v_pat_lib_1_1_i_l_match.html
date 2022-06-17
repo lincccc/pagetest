@@ -100,6 +100,10 @@ Inheritance diagram for ILMatch:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aa2d7fce8c363465a0cbeb6a265fd36fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#aa2d7fce8c363465a0cbeb6a265fd36fb">Learn</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a> *region)</td></tr>
 <tr class="separator:aa2d7fce8c363465a0cbeb6a265fd36fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9de7b208e28ff5bba230bededc3252f0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a9de7b208e28ff5bba230bededc3252f0">LearnWithShape</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a> *region, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a> *shapeRegion)</td></tr>
+<tr class="separator:a9de7b208e28ff5bba230bededc3252f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cdd0a227beed3d256cebe50c3bfe3ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a9cdd0a227beed3d256cebe50c3bfe3ab">LearnImage</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *shapeImg)</td></tr>
+<tr class="separator:a9cdd0a227beed3d256cebe50c3bfe3ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf7ff783ebac9e544ae0419cd4a2d275"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#adf7ff783ebac9e544ae0419cd4a2d275">IsLearnt</a> ()</td></tr>
 <tr class="separator:adf7ff783ebac9e544ae0419cd4a2d275"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe49710ff341978863693945ae28190b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#abe49710ff341978863693945ae28190b">Match</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a> *region, <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match_results.html">ILMatchResults</a> **results)</td></tr>
@@ -185,7 +189,7 @@ The algorithm is real-time and of sub-pixel accuracy. Detection is based mainly 
 <p>To use this interface, you should create a <a class="el" href="class_l_p_v_pat_lib_1_1_l_match.html">LMatch</a> object.</p>
 <h3>Example Code </h3>
  <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">ILMatchPtr m_match(__uuidof(LMatch));</div>
-<div class="line">m_match-&gt;Learn(m_template_img, <span class="keyword">nullptr</span>);</div>
+<div class="line">m_match-&gt;Learn(m_template_img, NULL);</div>
 <div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = m_match-&gt;Match(m_img, m_roi, &amp;m_match_results);</div>
 <div class="line"><span class="keywordflow">if</span> (err != <a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>.LPVNoError) <span class="keywordflow">return</span>;</div>
 <div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">This enumeration represents the type of a LPV function error.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:170</div></div>
@@ -219,7 +223,7 @@ The algorithm is real-time and of sub-pixel accuracy. Detection is based mainly 
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Learn the pattern template features from provide image. The template center can be modified later. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Learn the pattern template features from the provided image. The template center can be modified later. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> The input image </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">region</td><td>The input region, to limit the region of pattern template on the input image and also exclude some unwanted pixels maybe. </td></tr>
@@ -232,7 +236,96 @@ The algorithm is real-time and of sub-pixel accuracy. Detection is based mainly 
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#adf7ff783ebac9e544ae0419cd4a2d275">IsLearnt()</a>, <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#aaa538d53a35790aa462e9271a6efc49b">SetPatCenter()</a>, <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#acc33f804a59dbd9a1f824ea51862aaa2">Load()</a>, <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#abe49710ff341978863693945ae28190b">Match()</a>. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#adf7ff783ebac9e544ae0419cd4a2d275">IsLearnt()</a>, <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#aaa538d53a35790aa462e9271a6efc49b">SetPatCenter()</a>, <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#acc33f804a59dbd9a1f824ea51862aaa2">Load()</a>, <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#abe49710ff341978863693945ae28190b">Match()</a>, <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a9de7b208e28ff5bba230bededc3252f0">LearnWithShape()</a>, <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a9cdd0a227beed3d256cebe50c3bfe3ab">LearnImage()</a>. </dd></dl>
+
+</div>
+</div>
+<a id="a9de7b208e28ff5bba230bededc3252f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9de7b208e28ff5bba230bededc3252f0">&#9670;&nbsp;</a></span>LearnWithShape()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> LearnWithShape </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>img</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a> *&#160;</td>
+          <td class="paramname"><em>region</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a> *&#160;</td>
+          <td class="paramname"><em>shapeRegion</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Learn the pattern template features from the provided image. The template center can be modified later.<br  />
+The shape and polarity of the template features is described with the given shape region, adding a region produce a white-on-black shape while subtracting a region produce a black-on-white shape. </p><center><img src="pattern_shaperegion.png" alt="" class="inline"/> <img src="pattern_shaperegion.svg" alt="" style="pointer-events: none;" height="90px" class="inline"/></center> <dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> The input image </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">region</td><td>The input region, to limit the region of pattern template on the input image. and also exclude some unwanted pixels maybe. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">shapeRegion</td><td>The input shape region used to generate the template shape. It should be related to the coordinates of the input image, as same as the region parameter. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">error</td><td>Return error code if anything is wrong. It may fail if we found no proper feature on the input image. Example: snippets/LearnWithShape.cpp, snippets/LearnWithShape.cs </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#aa2d7fce8c363465a0cbeb6a265fd36fb">Learn()</a>, <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a9cdd0a227beed3d256cebe50c3bfe3ab">LearnImage()</a>. </dd></dl>
+
+</div>
+</div>
+<a id="a9cdd0a227beed3d256cebe50c3bfe3ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9cdd0a227beed3d256cebe50c3bfe3ab">&#9670;&nbsp;</a></span>LearnImage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> LearnImage </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>img</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>shapeImg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Learn the pattern template features from the provided image. The template center can be modified later.<br  />
+The shape and polarity of the template features are extracted from the shape image if it's available. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> The input image </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">shapeImg</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> The optional shape image. It should have the same size as the image parameter. <div class="image">
+<img src="pattern_shapeimage.png" alt=""/>
+</div>
+ </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -290,7 +383,7 @@ The algorithm is real-time and of sub-pixel accuracy. Detection is based mainly 
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Match on provide image. The returned positions are based on image coordinates. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Match on the provided image. The returned positions are based on image coordinates. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> The input image </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">region</td><td>The input region, to limit the region of matching. </td></tr>
@@ -537,8 +630,10 @@ The template center indicates the report position of the matching result. For ex
 <p>Level of detail of the pattern template, in range of 0 ~ 1. By default, it's set to 0.5.<br  />
 Higher level indicates more details contained in the trained template, while it may introduce more noise and slow down the detection. After changing the level, you should re-train the template to take the effect.<br  />
 . </p>
-<p><img src="pattern_detail.png" alt="" class="inline"/> </p>
-
+<div class="image">
+<img src="pattern_detail.png" alt=""/>
+</div>
+ 
 </div>
 </div>
 </div><!-- contents -->

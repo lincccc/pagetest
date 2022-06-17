@@ -161,8 +161,8 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 <div class="line">}</div>
 <div class="line"><span class="comment">// image stitching</span></div>
 <div class="line">ILImageListPtr imgList(__uuidof(LImageList));</div>
-<div class="line">imgList-&gt;Add(m_img_1, <span class="keyword">nullptr</span>);</div>
-<div class="line">imgList-&gt;Add(m_img_2, <span class="keyword">nullptr</span>);</div>
+<div class="line">imgList-&gt;Add(m_img_1, NULL);</div>
+<div class="line">imgList-&gt;Add(m_img_2, NULL);</div>
 <div class="line">m_cam_array-&gt;StitchImage(imgList, m_img_stitch);</div>
 <div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">This enumeration represents the type of a LPV function error.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:170</div></div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LCameraArray m_cam_array = <span class="keyword">new</span> LCameraArray();</div>
@@ -577,7 +577,7 @@ It should be a .calib file with the calibrated camera matrices in it. </p><dl cl
       </table>
 </div><div class="memdoc">
 <p>Map a point from the stitching image coordinates to the world coordinates.<br  />
-The mapping works with a calibrated system, if not it returns the LPVErrCalibNotCalib error. </p><dl class="params"><dt>Parameters</dt><dd>
+The mapping works with a calibrated system, if not the output world point is the same point as the input image point. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">imagePointX</td><td>The x-coordinate of the stitching image point. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">imagePointY</td><td>The y-coordinate of the stitching image point. </td></tr>
@@ -627,7 +627,7 @@ The mapping works with a calibrated system, if not it returns the LPVErrCalibNot
       </table>
 </div><div class="memdoc">
 <p>Map a point from the world coordinates to the stitching image coordinates.<br  />
-The mapping works with a calibrated system, if not it returns the LPVErrCalibNotCalib error. </p><dl class="params"><dt>Parameters</dt><dd>
+The mapping works with a calibrated system, if not the output world point is the same point as the input image point. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">worldPointX</td><td>The x-coordinate of the world point. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">worldPointY</td><td>The y-coordinate of the world point. </td></tr>

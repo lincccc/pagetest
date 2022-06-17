@@ -862,13 +862,13 @@ typedef struct <a class="el" href="struct_l_p_v_core_lib_1_1_l_color.html">LPVCo
 
 <p>该枚举表示插值方法，用于图像缩放、旋转等算法 </p>
 <table class="fieldtable">
-<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a8994f6c3a4ba4e0d0e9a8eb78ac86c92a5af290b4c3bbc1bc44b1bf3d5db4a832"></a>LPVInterNearest&#160;</td><td class="fielddoc"><p>线段起点 x 坐标 </p>
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a8994f6c3a4ba4e0d0e9a8eb78ac86c92a5af290b4c3bbc1bc44b1bf3d5db4a832"></a>LPVInterNearest&#160;</td><td class="fielddoc"><p>最近邻插值。速度较快，插值后的图像质量较差 </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a8994f6c3a4ba4e0d0e9a8eb78ac86c92ae11fc955db62bfda0494c9de23b58007"></a>LPVInterLinear&#160;</td><td class="fielddoc"><p>线段起点的 y 坐标 </p>
+<tr><td class="fieldname"><a id="a8994f6c3a4ba4e0d0e9a8eb78ac86c92ae11fc955db62bfda0494c9de23b58007"></a>LPVInterLinear&#160;</td><td class="fielddoc"><p>双线性插值 </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a8994f6c3a4ba4e0d0e9a8eb78ac86c92a640239e50a5ce97e9f8b499d5de0b409"></a>LPVInterCubic&#160;</td><td class="fielddoc"><p>线段终点的 x 坐标 </p>
+<tr><td class="fieldname"><a id="a8994f6c3a4ba4e0d0e9a8eb78ac86c92a640239e50a5ce97e9f8b499d5de0b409"></a>LPVInterCubic&#160;</td><td class="fielddoc"><p>三次曲线插值。当放大图像时，推荐使用该插值方法以获得较好图像质量。 </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a8994f6c3a4ba4e0d0e9a8eb78ac86c92abf6dd7871795cec24968f788dabbc296"></a>LPVInterArea&#160;</td><td class="fielddoc"><p>线段终点的 y 坐标 </p>
+<tr><td class="fieldname"><a id="a8994f6c3a4ba4e0d0e9a8eb78ac86c92abf6dd7871795cec24968f788dabbc296"></a>LPVInterArea&#160;</td><td class="fielddoc"><p>线段终点的 y 坐标。当缩小图像时，推荐使用该插值方法以获得较好图像质量。 </p>
 </td></tr>
 </table>
 

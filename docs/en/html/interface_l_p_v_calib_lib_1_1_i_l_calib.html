@@ -347,7 +347,7 @@ It should be a .calib file with the calibrated camera matrices in it. </p><dl cl
       </table>
 </div><div class="memdoc">
 <p>Map a point from the image coordinates to the world coordinates.<br  />
-The mapping works with a calibrated system, if not it returns the <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aa564aa76ea75ffa30b29cfcfb3a5b503b">LPVErrCalibNotCalib </a> error. </p><dl class="params"><dt>Parameters</dt><dd>
+The mapping works with a calibrated system, if not the output world point is the same point as the input image point. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">imagePointX</td><td>The x-coordinate of the image point. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">imagePointY</td><td>The y-coordinate of the image point. </td></tr>
@@ -397,7 +397,7 @@ The mapping works with a calibrated system, if not it returns the <a class="el" 
       </table>
 </div><div class="memdoc">
 <p>Map a point from the world coordinates to the image coordinates.<br  />
-The mapping works with a calibrated system, if not it returns the <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aa564aa76ea75ffa30b29cfcfb3a5b503b">LPVErrCalibNotCalib </a> error. </p><dl class="params"><dt>Parameters</dt><dd>
+The mapping works with a calibrated system, if not the output world point is the same point as the input image point. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">worldPointX</td><td>The x-coordinate of the world point. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">worldPointY</td><td>The y-coordinate of the world point. </td></tr>

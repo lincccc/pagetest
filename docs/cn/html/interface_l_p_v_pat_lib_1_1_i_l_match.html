@@ -100,6 +100,10 @@ $(function() {
 Public 成员函数</h2></td></tr>
 <tr class="memitem:aa2d7fce8c363465a0cbeb6a265fd36fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#aa2d7fce8c363465a0cbeb6a265fd36fb">Learn</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a> *region)</td></tr>
 <tr class="separator:aa2d7fce8c363465a0cbeb6a265fd36fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9de7b208e28ff5bba230bededc3252f0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a9de7b208e28ff5bba230bededc3252f0">LearnWithShape</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a> *region, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a> *shapeRegion)</td></tr>
+<tr class="separator:a9de7b208e28ff5bba230bededc3252f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cdd0a227beed3d256cebe50c3bfe3ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a9cdd0a227beed3d256cebe50c3bfe3ab">LearnImage</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *shapeImg)</td></tr>
+<tr class="separator:a9cdd0a227beed3d256cebe50c3bfe3ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf7ff783ebac9e544ae0419cd4a2d275"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#adf7ff783ebac9e544ae0419cd4a2d275">IsLearnt</a> ()</td></tr>
 <tr class="separator:adf7ff783ebac9e544ae0419cd4a2d275"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe49710ff341978863693945ae28190b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#abe49710ff341978863693945ae28190b">Match</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a> *region, <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match_results.html">ILMatchResults</a> **results)</td></tr>
@@ -185,7 +189,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 <p>使用这个接口，需要创建一个 <a class="el" href="class_l_p_v_pat_lib_1_1_l_match.html">LMatch</a> 对象。</p>
 <h3>示例代码 </h3>
  <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">ILMatchPtr m_match(__uuidof(LMatch));</div>
-<div class="line">m_match-&gt;Learn(m_template_img, <span class="keyword">nullptr</span>);</div>
+<div class="line">m_match-&gt;Learn(m_template_img, NULL);</div>
 <div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = m_match-&gt;Match(m_img, m_roi, &amp;m_match_results);</div>
 <div class="line"><span class="keywordflow">if</span> (err != <a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>.LPVNoError) <span class="keywordflow">return</span>;</div>
 <div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">LPV 算法或函数运行过程中遇到的错误。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:170</div></div>
@@ -232,7 +236,96 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#adf7ff783ebac9e544ae0419cd4a2d275">IsLearnt()</a>, <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#aaa538d53a35790aa462e9271a6efc49b">SetPatCenter()</a>, <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#acc33f804a59dbd9a1f824ea51862aaa2">Load()</a>, <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#abe49710ff341978863693945ae28190b">Match()</a>. </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#adf7ff783ebac9e544ae0419cd4a2d275">IsLearnt()</a>, <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#aaa538d53a35790aa462e9271a6efc49b">SetPatCenter()</a>, <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#acc33f804a59dbd9a1f824ea51862aaa2">Load()</a>, <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#abe49710ff341978863693945ae28190b">Match()</a>, <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a9de7b208e28ff5bba230bededc3252f0">LearnWithShape()</a>, <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a9cdd0a227beed3d256cebe50c3bfe3ab">LearnImage()</a>. </dd></dl>
+
+</div>
+</div>
+<a id="a9de7b208e28ff5bba230bededc3252f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9de7b208e28ff5bba230bededc3252f0">&#9670;&nbsp;</a></span>LearnWithShape()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> LearnWithShape </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>img</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a> *&#160;</td>
+          <td class="paramname"><em>region</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a> *&#160;</td>
+          <td class="paramname"><em>shapeRegion</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>训练模板，使用输入的图像。模板中心可根据需求修改。<br  />
+模板的形状和极性通过输入的形状区域来定义，添加区域（Add）生成黑色背景上的白色形状；减去区域（Subtract）生产白色背景上的黑色形状。 </p><center><img src="pattern_shaperegion.png" alt="" class="inline"/> <img src="pattern_shaperegion.svg" alt="" style="pointer-events: none;" height="90px" class="inline"/></center> <dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> 输入的图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">region</td><td>输入的区域，用于限定模板在输入图像中的位置。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">shapeRegion</td><td>输入的区域，用于生成模板形状。与 region 相同，都在输入图像的坐标系下。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">error</td><td>返回错误码。训练过程可能失败，若在输入图像中没有找到任何可用的特征。 Example: snippets/LearnWithShape.cpp, snippets/LearnWithShape.cs </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#aa2d7fce8c363465a0cbeb6a265fd36fb">Learn()</a>, <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a9cdd0a227beed3d256cebe50c3bfe3ab">LearnImage()</a>. </dd></dl>
+
+</div>
+</div>
+<a id="a9cdd0a227beed3d256cebe50c3bfe3ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9cdd0a227beed3d256cebe50c3bfe3ab">&#9670;&nbsp;</a></span>LearnImage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> LearnImage </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>img</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>shapeImg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>训练模板，使用输入的图像。模板中心可根据需求修改。<br  />
+若形状图像不为空，则基于该图像提取模板的形状和极性。 </p><div class="image">
+<img src="pattern_shapeimage.png" alt=""/>
+</div>
+ <dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> 输入的图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">shapeImg</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> 输入的形状图像。该图像的尺寸需与 img 参数相同。可为空。 </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -537,8 +630,10 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 <p>模板细节程度，取值范围为 0 ~ 1，默认设置为 0.5。<br  />
 数值越高，保留的细节越多，同时也可能引入更多的噪声，并影响算法的整体性能。 修改模板细节程度后，需重新训练模板以生效。<br  />
 </p>
-<p><img src="pattern_detail.png" alt="" class="inline"/> </p>
-
+<div class="image">
+<img src="pattern_detail.png" alt=""/>
+</div>
+ 
 </div>
 </div>
 </div><!-- contents -->
