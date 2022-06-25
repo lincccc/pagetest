@@ -82,30 +82,37 @@ $(function() {
 <div class="textblock"><p><a class="anchor" id="md_Z__stonewall_doc_cn_t01_quick_guide"></a> <br  />
 </p>
 <h1><a class="anchor" id="autotoc_md4"></a>
-安装</h1>
+压缩包安装</h1>
 <ol type="1">
-<li>解压 lpv_xxxx.zip 文件到任意目录。</li>
+<li>解压 lpv_sdk_x.x.x.x.zip 文件到任意目录。</li>
 <li><em>[可选]</em> 如果未安装 Visual C++ Redistributable Package 14 或以上版本，需从<a href="https://support.microsoft.com/en-us/topic/the-latest-supported-visual-c-downloads-2647da03-1eea-4433-9aff-95f26a218cc0">微软官方网站</a>下载安装，也可以从我们提供的<a href="http://fileserver.hzleaper.com:8086/f/eea1a6598fd947d58540/">下载链接</a>下载。</li>
-<li>按照所需的开发平台 (x86 或者 x64)，需选择 runner/x86 或者 runner/x64 作为 LPV 运行目录，然后注册和使用该目录下的 LPV 模块。</li>
+<li>使用压缩包安装需手动注册 LPV 模块。</li>
 </ol>
-<h1><a class="anchor" id="autotoc_md5"></a>
-注册</h1>
+<h3><a class="anchor" id="autotoc_md5"></a>
+手动注册</h3>
 <ol type="1">
 <li>右键 LPV 根目录下的 <b>reg_run_as_admin.bat</b> 文件，选择以管理员运行，在所有平台(x64和x86)下注册所有授权的 LPV 模块。</li>
 <li>双击运行 LPV 根目录下的 <b>check_lpv_module_path.bat</b> 文件，可查看已注册的 LPV 模块路径。</li>
 </ol>
 <h1><a class="anchor" id="autotoc_md6"></a>
+安装包安装</h1>
+<p>下载 lpv_x.x.x.x_installer.exe 安装包。按照安装包步骤选择合适的文件夹安装 LPV 模块。安装包将自动执行解压 LPV 各模块、安装运行时库、注册 LPV 模块等动作。</p>
+<h1><a class="anchor" id="autotoc_md7"></a>
 授权</h1>
-<h3><a class="anchor" id="autotoc_md7"></a>
+<h3><a class="anchor" id="autotoc_md8"></a>
 试用版：使用 License 文件进行授权</h3>
 <ol type="1">
 <li>运行 LPV 运行目录下的 <b>lpvKeyTool.exe</b> ，生成 <b>lpv.key</b> 文件。</li>
 <li>将生成的 lpv.key 文件放给我们或者您的 LPV SDK 技术支持，我们将为您的机器进行授权，并发回 <b>lpv.lic</b> 文件。</li>
-<li>将该 lpv.lic 文件放在 LPV 根目录下 (./runner)，保证名称与 “lpv.lic” 完全一致。</li>
-<li>或者，打开任意一个 demo 程序，弹出未授权提示，选择是并上传 lpv.lic 文件，将自动复制该文件到可授权的目录。</li>
+<li>您可按照以上任一方式部署授权文件：</li>
 </ol>
+<ul>
+<li>将 lpv.lic 文件放在 LPV 根目录下 (./runner)，保证名称与 “lpv.lic” 完全一致。</li>
+<li>将 lpv.lic 文件放在用户目录下 (AppData%/LPV)，保证名称与 “lpv.lic” 完全一致。</li>
+<li>打开任意一个 demo 程序，弹出未授权提示，选择是并上传 lpv.lic 文件，我们将自动复制该文件到可授权的目录。</li>
+</ul>
 <p><em>注：该授权方式仅提供短期试用，试用期到期后将提示过期，请联系我们或者您的 LPV SDK 技术支持。</em></p>
-<h3><a class="anchor" id="autotoc_md8"></a>
+<h3><a class="anchor" id="autotoc_md9"></a>
 正式版：使用加密狗进行授权</h3>
 <ol type="1">
 <li>插入 LPV 加密狗，检查加密狗是否亮灯。</li>
@@ -113,9 +120,9 @@ $(function() {
 </ol>
 <p><br  />
  </p><hr  />
-<h1><a class="anchor" id="autotoc_md9"></a>
+<h1><a class="anchor" id="autotoc_md10"></a>
 集成和调用</h1>
-<h2><a class="anchor" id="autotoc_md10"></a>
+<h2><a class="anchor" id="autotoc_md11"></a>
 添加库到 Visual Studio 工程</h2>
  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><ol type="1">
 <li>右键工程的 Reference 项，点击 Add Reference</li>

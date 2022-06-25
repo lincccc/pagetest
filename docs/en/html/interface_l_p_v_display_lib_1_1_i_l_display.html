@@ -134,6 +134,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aadde65986cfadd223bef04b3ce008e36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3c6292a931287d34f6e353524a6a3d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#ac3c6292a931287d34f6e353524a6a3d0">Refresh</a> ()</td></tr>
 <tr class="separator:ac3c6292a931287d34f6e353524a6a3d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9207606f0b51be7815fab8b0ed23102f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#a9207606f0b51be7815fab8b0ed23102f">RefreshImmediate</a> ()</td></tr>
+<tr class="separator:a9207606f0b51be7815fab8b0ed23102f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09363be5a60d131aa2dd7da89a85aef9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#a09363be5a60d131aa2dd7da89a85aef9">SaveWindowToFile</a> (BSTR filename)</td></tr>
 <tr class="separator:a09363be5a60d131aa2dd7da89a85aef9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34630d9dd2b50da9a6e3895cc43140da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#a34630d9dd2b50da9a6e3895cc43140da">SetDisplayFlag</a> (<a class="el" href="namespace_l_p_v_display_lib.html#abc2f2be19cc9a20d8f4b71ddb968d49b">LPVDisplayFlags</a> flag, BOOL enable)</td></tr>
@@ -748,7 +750,25 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Refresh the scene and redraw the window. </p>
+<p>Refresh the scene and redraw the window, request a delayed repaint by the message loop system. </p>
+
+</div>
+</div>
+<a id="a9207606f0b51be7815fab8b0ed23102f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9207606f0b51be7815fab8b0ed23102f">&#9670;&nbsp;</a></span>RefreshImmediate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RefreshImmediate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Refresh the scene and redraw the window immediately. </p>
 
 </div>
 </div>

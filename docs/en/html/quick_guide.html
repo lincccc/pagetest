@@ -82,30 +82,37 @@ $(function() {
 <div class="textblock"><p><a class="anchor" id="md_Z__stonewall_doc_en_t01_quick_guide"></a> <br  />
 </p>
 <h1><a class="anchor" id="autotoc_md4"></a>
-Install</h1>
+Install with Zip Package</h1>
 <ol type="1">
-<li>Extract lpv_xxxx.zip file to any directory.</li>
+<li>Extract the lpv_sdk_x.x.x.x.zip file to any directory.</li>
 <li><em>[Optional]</em> If you don't have Visual C++ Redistributable Package 14 or higher installed on your machine, you may have to download then install one from Microsoft's official website(<a href="https://support.microsoft.com/en-us/topic/the-latest-supported-visual-c-downloads-2647da03-1eea-4433-9aff-95f26a218cc0">https://support.microsoft.com/en-us/topic/the-latest-supported-visual-c-downloads-2647da03-1eea-4433-9aff-95f26a218cc0</a>), or <a href="http://fileserver.hzleaper.com:8086/f/eea1a6598fd947d58540/">our link</a>.</li>
-<li>According to your required develop platform (x86 or x64), you should use either runner/x64 or runner/86 as your LPV runner folder, then register and use LPV modules under that folder.</li>
+<li>You should then manually register the LPV dlls.</li>
 </ol>
-<h1><a class="anchor" id="autotoc_md5"></a>
-Registration</h1>
+<h3><a class="anchor" id="autotoc_md5"></a>
+Manual Registration</h3>
 <ol type="1">
 <li>RMC the <b>reg_run_as_admin.bat</b> file under the root runner folder, click Run as administrator. It will then register all licensed LPV modules of all platforms(both x86 and x64).</li>
 <li>Double click to <b>run the check_lpv_module_path.bat</b> file under the root runner folder, it will print out the path of all well-registered LPV modules.</li>
 </ol>
 <h1><a class="anchor" id="autotoc_md6"></a>
+Use the Installer</h1>
+<p>Download the lpv_x.x.x.x_installer.exe. It's a self-installing archive that includes the LPV binaries and documents. It also helps installing the VC++ Redistributable Package and registering the LPV dlls.</p>
+<h1><a class="anchor" id="autotoc_md7"></a>
 Licensing</h1>
-<h3><a class="anchor" id="autotoc_md7"></a>
+<h3><a class="anchor" id="autotoc_md8"></a>
 Trial Version: Use License File</h3>
 <ol type="1">
 <li>Run <b>lpvKeyTool.exe</b> under your LPV runner folder(either runner/x64 or runner/86). It generates a <b>lpv.key</b> file.</li>
 <li>Send the generated lpv.key file to us or your LPV SDK Tech Support. We will send you back a <b>lpv.lic</b> file.</li>
-<li>Put the license file under the root runner folder(./runner), and with the exactly name "lpv.lic".</li>
-<li>Or, open any demo application, it will pop up the unlicensed warning dialog, click YES and upload the lpv.lic file, we will copy it for you to the right folder.</li>
+<li>You may use any of the following approach to deploy the license file:</li>
 </ol>
+<ul>
+<li>Put the license file under the root runner folder(./runner), and with the exactly name "lpv.lic".</li>
+<li>Put the license file under the user folder(AppData%/LPV), and with the exactly name "lpv.lic".</li>
+<li>Open any demo application, it will pop up the unlicensed warning dialog, click YES and upload the lpv.lic file, we will copy it for you to the right folder.</li>
+</ul>
 <p><em>Note: This approach is only for short-term evaluation, you'll be notified when the trial period expired, please contact us or your LPV SDK Tech Support.</em></p>
-<h3><a class="anchor" id="autotoc_md8"></a>
+<h3><a class="anchor" id="autotoc_md9"></a>
 Full Version: Use Sentinel Protection Key</h3>
 <ol type="1">
 <li>Plug in the Sentinel Protection Key of LPV. Make sure the key blinks.</li>
@@ -113,9 +120,9 @@ Full Version: Use Sentinel Protection Key</h3>
 </ol>
 <p><br  />
  </p><hr  />
-<h1><a class="anchor" id="autotoc_md9"></a>
+<h1><a class="anchor" id="autotoc_md10"></a>
 Integration</h1>
-<h2><a class="anchor" id="autotoc_md10"></a>
+<h2><a class="anchor" id="autotoc_md11"></a>
 Add LPV Libraries to Visual Studio Projects</h2>
  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><ol type="1">
 <li>RMC your C# project, click "Add Reference"</li>
