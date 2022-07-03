@@ -120,7 +120,7 @@ Public Member Functions</h2></td></tr>
 <div class="line">exposureTimes.Add(10000);</div>
 <div class="line">exposureTimes.Add(15000);</div>
 <div class="line">exposureTimes.Add(20000);</div>
-<div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = (<a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>)m_hdr-&gt;BuildCRF(m_image_list, exposureTimes);</div>
+<div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = m_hdr-&gt;BuildCRF(m_image_list, exposureTimes);</div>
 <div class="line"><span class="keywordflow">if</span> (err != LPVErrorCode::LPVNoError) { } <span class="comment">// handle error</span></div>
 <div class="line">m_hdr-&gt;ToneMapping(m_image_list, m_result_img1, 1, 4, 1);</div>
 <div class="line"><span class="comment">// 2. exposure fusion</span></div>

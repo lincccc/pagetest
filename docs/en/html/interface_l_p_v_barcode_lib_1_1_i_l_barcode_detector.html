@@ -117,7 +117,7 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 <tr class="separator:adf0d9099ddeafa37479161c47f75bf0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9bba598de659c48ac2711b118ceff76a"><td class="memItemLeft" align="right" valign="top"><a id="a9bba598de659c48ac2711b118ceff76a"></a>
 BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#a9bba598de659c48ac2711b118ceff76a">AllowDup</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a9bba598de659c48ac2711b118ceff76a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether duplicated symbols are allowed in multi-detection. By default, it's False, means for the duplicated barcodes of the same decoded contents, only report the first one. <br /></td></tr>
+<tr class="memdesc:a9bba598de659c48ac2711b118ceff76a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether duplicated symbols are allowed in multi-detection. By default, it's False, means for the duplicated barcode of the same decoded contents, only report the first one. <br /></td></tr>
 <tr class="separator:a9bba598de659c48ac2711b118ceff76a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af98b71a5ec504565e5456260acbd9ee5"><td class="memItemLeft" align="right" valign="top"><a id="af98b71a5ec504565e5456260acbd9ee5"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#af98b71a5ec504565e5456260acbd9ee5">MaxCount</a><code> [get, set]</code></td></tr>
@@ -134,13 +134,13 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 <div class="line">m_barcode_detector-&gt;VerifyQuality = VARIANT_TRUE; <span class="comment">// do quality verification during detection</span></div>
 <div class="line">m_barcode_detector-&gt;MaxCount = 3;</div>
 <div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = m_barcode_detector-&gt;Detect(m_img, m_roi, &amp;m_code_results);</div>
-<div class="line"><span class="keywordflow">if</span> (err != <a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>.LPVNoError) <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="keywordflow">if</span> (err != LPVErrorCode::LPVNoError) <span class="keywordflow">return</span>;</div>
 <div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">This enumeration represents the type of a LPV function error.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:170</div></div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LBarcodeDetector m_barcode_detector = <span class="keyword">new</span> LBarcodeDetector();</div>
 <div class="line">m_barcode_detector.Type = <a class="code" href="namespace_l_p_v_barcode_lib.html#a8d35ae44acaae621a58bd6ac4cafb72f">LPVBarcodeType</a>.LPVBarcodeAll1D; <span class="comment">// detect all types of 1D barcode</span></div>
 <div class="line">m_barcode_detector.VerifyQuality = <span class="keyword">true</span>; <span class="comment">// do quality verification during detection</span></div>
 <div class="line">m_barcode_detector.MaxCount = 3;</div>
-<div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = (<a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>)m_barcode_detector.Detect(m_img, (LRegion)m_roi, out m_code_results);</div>
+<div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = m_barcode_detector.Detect(m_img, (LRegion)m_roi, out m_code_results);</div>
 <div class="line"><span class="keywordflow">if</span> (err != <a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>.LPVNoError) <span class="keywordflow">return</span>;</div>
 <div class="ttc" id="anamespace_l_p_v_barcode_lib_html_a8d35ae44acaae621a58bd6ac4cafb72f"><div class="ttname"><a href="namespace_l_p_v_barcode_lib.html#a8d35ae44acaae621a58bd6ac4cafb72f">LPVBarcodeLib::LPVBarcodeType</a></div><div class="ttdeci">LPVBarcodeType</div><div class="ttdoc">This enumeration represents the types of barcode symbologies.</div><div class="ttdef"><b>Definition:</b> LPVBarcode.idl:57</div></div>
 </div><!-- fragment --> </div>  </div><h2 class="groupheader">Member Function Documentation</h2>

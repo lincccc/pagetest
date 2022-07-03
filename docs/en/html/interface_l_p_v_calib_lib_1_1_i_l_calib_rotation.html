@@ -120,6 +120,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a99e9289b0f6620924b27845d1e104259"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb781fcc40b4775829323b47e9f2f3d9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_point.html">ILPoint</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_rotation.html#afb781fcc40b4775829323b47e9f2f3d9">GetRotCenter</a> ()</td></tr>
 <tr class="separator:afb781fcc40b4775829323b47e9f2f3d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1794ca543598deec15f79faf0352a95"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_rotation.html#ac1794ca543598deec15f79faf0352a95">Transform</a> (double pntX, double pntY, double dx, double dy, double da, double *newX, double *newY)</td></tr>
+<tr class="separator:ac1794ca543598deec15f79faf0352a95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
@@ -137,7 +139,8 @@ The center is estimated with the rotation points or pairs of points around the c
 <p>After calibration, you can use the center for aim-object alignment, it report the translation and rotation for align the aim and object point.</p>
 <p>To use this interface, you should create a <a class="el" href="class_l_p_v_calib_lib_1_1_l_calib_rotation.html">LCalibRotation</a> object.</p>
 <h3>Example Code </h3>
- <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">ILCalibRotationPtr m_rot_calib(__uuidof(LCalibRotation));</div>
+ <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">Code snippets: snippets/CalibRotationCenter.cpp</div>
+<div class="line">ILCalibRotationPtr m_rot_calib(__uuidof(LCalibRotation));</div>
 <div class="line">m_rot_calib-&gt;AddRotPointPair(0, 100, 0, -100, 0);</div>
 <div class="line">m_rot_calib-&gt;AddRotPointPair(100, 100, -100, -100, 45);</div>
 <div class="line">m_rot_calib-&gt;AddRotPointPair(100, 0, -100, 0, 90);</div>
@@ -147,12 +150,13 @@ The center is estimated with the rotation points or pairs of points around the c
 <div class="line"><span class="keywordtype">double</span> dx, dy, da;</div>
 <div class="line">m_rot_calib-&gt;Align(10, 0, 90, 0, &amp;dx, &amp;dy, &amp;da);</div>
 <div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">This enumeration represents the type of a LPV function error.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:170</div></div>
-</div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LCalibRotation m_rot_calib = <span class="keyword">new</span> LCalibRotation();</div>
+</div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">Code snippets: snippets/CalibRotationCenter.cs</div>
+<div class="line">LCalibRotation m_rot_calib = <span class="keyword">new</span> LCalibRotation();</div>
 <div class="line">m_rot_calib.AddRotPointPair(0, 100, 0, -100, 0);</div>
 <div class="line">m_rot_calib.AddRotPointPair(100, 100, -100, -100, 45);</div>
 <div class="line">m_rot_calib.AddRotPointPair(100, 0, -100, 0, 90);</div>
 <div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = m_rot_calib.Calibrate(); <span class="comment">// the rotation center should be (0, 0)</span></div>
-<div class="line"><span class="keywordflow">if</span> (err != LPVErrorCode::LPVNoError || !m_rot_calib.IsCalibrated()) <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="keywordflow">if</span> (err != <a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>.LPVNoError || !m_rot_calib.IsCalibrated()) <span class="keywordflow">return</span>;</div>
 <div class="line">m_rot_calib.SetAim(0, 10, 0, 90);</div>
 <div class="line"><span class="keywordtype">double</span> dx, dy, da;</div>
 <div class="line">m_rot_calib.Align(10, 0, 90, 0, out dx, out dy, out da);</div>
@@ -618,6 +622,76 @@ It should be a .calib file with the calibrated rotation center in it. </p><dl cl
       </table>
 </div><div class="memdoc">
 <p>Get the estimated rotation center </p>
+
+</div>
+</div>
+<a id="ac1794ca543598deec15f79faf0352a95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1794ca543598deec15f79faf0352a95">&#9670;&nbsp;</a></span>Transform()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Transform </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>pntX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>pntY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>dx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>dy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>da</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>newX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>newY</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Transform the given point </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pntX</td><td>The x-coordinate of the point. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pntY</td><td>The y-coordinate of the point. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dx</td><td>The offset in x coordinate. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dy</td><td>The offset in y coordinate. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">da</td><td>The rotation angle. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">newX</td><td>Output the x-coordinate of the transformed point. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">newY</td><td>Output the y-coordinate of the transformed point. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

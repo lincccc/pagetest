@@ -102,8 +102,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa2d7fce8c363465a0cbeb6a265fd36fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9de7b208e28ff5bba230bededc3252f0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a9de7b208e28ff5bba230bededc3252f0">LearnWithShape</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a> *region, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a> *shapeRegion)</td></tr>
 <tr class="separator:a9de7b208e28ff5bba230bededc3252f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9cdd0a227beed3d256cebe50c3bfe3ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a9cdd0a227beed3d256cebe50c3bfe3ab">LearnImage</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *shapeImg)</td></tr>
-<tr class="separator:a9cdd0a227beed3d256cebe50c3bfe3ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9db57f3886e6935cb7f07e892477c331"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a9db57f3886e6935cb7f07e892477c331">LearnWithShapeImage</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *shapeImg)</td></tr>
+<tr class="separator:a9db57f3886e6935cb7f07e892477c331"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf7ff783ebac9e544ae0419cd4a2d275"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#adf7ff783ebac9e544ae0419cd4a2d275">IsLearnt</a> ()</td></tr>
 <tr class="separator:adf7ff783ebac9e544ae0419cd4a2d275"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe49710ff341978863693945ae28190b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#abe49710ff341978863693945ae28190b">Match</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a> *region, <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match_results.html">ILMatchResults</a> **results)</td></tr>
@@ -191,11 +191,11 @@ The algorithm is real-time and of sub-pixel accuracy. Detection is based mainly 
  <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">ILMatchPtr m_match(__uuidof(LMatch));</div>
 <div class="line">m_match-&gt;Learn(m_template_img, NULL);</div>
 <div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = m_match-&gt;Match(m_img, m_roi, &amp;m_match_results);</div>
-<div class="line"><span class="keywordflow">if</span> (err != <a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>.LPVNoError) <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="keywordflow">if</span> (err != LPVErrorCode::LPVNoError) <span class="keywordflow">return</span>;</div>
 <div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">This enumeration represents the type of a LPV function error.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:170</div></div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LMatch m_match = <span class="keyword">new</span> LMatch();</div>
 <div class="line">m_match.Learn(m_template_img, <span class="keyword">null</span>);</div>
-<div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = (<a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>)m_match.Detect(m_img, (LRegion)m_roi, out m_match_results);</div>
+<div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = m_match.Detect(m_img, (LRegion)m_roi, out m_match_results);</div>
 <div class="line"><span class="keywordflow">if</span> (err != <a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>.LPVNoError) <span class="keywordflow">return</span>;</div>
 </div><!-- fragment --> </div>  </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="aa2d7fce8c363465a0cbeb6a265fd36fb"></a>
@@ -236,7 +236,7 @@ The algorithm is real-time and of sub-pixel accuracy. Detection is based mainly 
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#adf7ff783ebac9e544ae0419cd4a2d275">IsLearnt()</a>, <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#aaa538d53a35790aa462e9271a6efc49b">SetPatCenter()</a>, <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#acc33f804a59dbd9a1f824ea51862aaa2">Load()</a>, <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#abe49710ff341978863693945ae28190b">Match()</a>, <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a9de7b208e28ff5bba230bededc3252f0">LearnWithShape()</a>, <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a9cdd0a227beed3d256cebe50c3bfe3ab">LearnImage()</a>. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#adf7ff783ebac9e544ae0419cd4a2d275">IsLearnt()</a>, <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#aaa538d53a35790aa462e9271a6efc49b">SetPatCenter()</a>, <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#acc33f804a59dbd9a1f824ea51862aaa2">Load()</a>, <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#abe49710ff341978863693945ae28190b">Match()</a>, <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a9de7b208e28ff5bba230bededc3252f0">LearnWithShape()</a>, <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a9db57f3886e6935cb7f07e892477c331">LearnWithShapeImage()</a>. </dd></dl>
 
 </div>
 </div>
@@ -286,18 +286,18 @@ The shape and polarity of the template features is described with the given shap
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#aa2d7fce8c363465a0cbeb6a265fd36fb">Learn()</a>, <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a9cdd0a227beed3d256cebe50c3bfe3ab">LearnImage()</a>. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#aa2d7fce8c363465a0cbeb6a265fd36fb">Learn()</a>, <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a9db57f3886e6935cb7f07e892477c331">LearnWithShapeImage()</a>. </dd></dl>
 
 </div>
 </div>
-<a id="a9cdd0a227beed3d256cebe50c3bfe3ab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9cdd0a227beed3d256cebe50c3bfe3ab">&#9670;&nbsp;</a></span>LearnImage()</h2>
+<a id="a9db57f3886e6935cb7f07e892477c331"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9db57f3886e6935cb7f07e892477c331">&#9670;&nbsp;</a></span>LearnWithShapeImage()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> LearnImage </td>
+          <td class="memname"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> LearnWithShapeImage </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
           <td class="paramname"><em>img</em>, </td>

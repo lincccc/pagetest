@@ -117,6 +117,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9bed1e376c84bb1c5e0ce49efe5658fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40758abe66408c107fe07ef1d11286a7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html#a40758abe66408c107fe07ef1d11286a7">SetAlgoConfig</a> (int taskId, BSTR algoName, <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_algo_config.html">ILIBAlgoConfig</a> *algoConfig)</td></tr>
 <tr class="separator:a40758abe66408c107fe07ef1d11286a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a5cee3212ffac33458a88335bc59a98"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html#a4a5cee3212ffac33458a88335bc59a98">LoadGlobalAction</a> (BSTR filename)</td></tr>
+<tr class="separator:a4a5cee3212ffac33458a88335bc59a98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefb57c86d795c089f008a5a1e7182271"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html#aefb57c86d795c089f008a5a1e7182271">GetGlobalVariableValue</a> (BSTR gvName, <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_data.html">ILIBData</a> **val)</td></tr>
+<tr class="separator:aefb57c86d795c089f008a5a1e7182271"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d0f2aa2a440e9d4b1a46c4d0f8b5599"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html#a7d0f2aa2a440e9d4b1a46c4d0f8b5599">SetGlobalVariableValue</a> (BSTR gvName, <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_data.html">ILIBData</a> *val)</td></tr>
+<tr class="separator:a7d0f2aa2a440e9d4b1a46c4d0f8b5599"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This interface provide functionalities to connect to the IntelliBlink service. </p>
@@ -124,15 +130,48 @@ Public Member Functions</h2></td></tr>
 <p>The LPV IB service module helps you to make use of the flexible and scalable IntelliBlink tasks, to integrate, execute and manipulate them in a LPV application.</p>
 <h3>Example Code </h3>
  <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">ILIBServicePtr m_ib_service(__uuidof(LIBService));</div>
-<div class="line">m_ib_service-&gt;SetUp(L<span class="stringliteral">&quot;path to the IntelliBlink root folder, say D:/Programs/IntelliBlink/&quot;</span>);</div>
-<div class="line"><span class="keywordflow">if</span> (m_ib_service-&gt;IsReady()) <span class="keywordflow">return</span>; <span class="comment">// set up IB service failed</span></div>
-<div class="line"><span class="comment">// do stuff, like load task, execute then get result</span></div>
+<div class="line"><span class="keywordtype">int</span> errCode = m_ib_service-&gt;SetUp(L<span class="stringliteral">&quot;path to the IntelliBlink root folder, say D:/Programs/IntelliBlink/&quot;</span>);</div>
+<div class="line"><span class="keywordflow">if</span> (errCode != LPVNoError || !m_ib_service-&gt;IsReady()) <span class="keywordflow">return</span>; <span class="comment">// set up IB service failed</span></div>
+<div class="line"><span class="comment">// load task</span></div>
+<div class="line"><span class="keywordtype">int</span> taskId = 0;</div>
+<div class="line">errCode = m_ib_service-&gt;LoadTask(L<span class="stringliteral">&quot;mytask.task&quot;</span>, &amp;taskId);</div>
+<div class="line"><span class="keywordflow">if</span> (errCode != LPVNoError) <span class="keywordflow">return</span>; <span class="comment">// load failed</span></div>
+<div class="line"><span class="comment">// load global-actions</span></div>
+<div class="line">errCode = m_ib_service-&gt;LoadGlobalAction(L<span class="stringliteral">&quot;globalAction.json&quot;</span>);</div>
+<div class="line"><span class="keywordflow">if</span> (errCode != LPVNoError) <span class="keywordflow">return</span>; <span class="comment">// load failed</span></div>
+<div class="line"><span class="comment">// change some of the global variables</span></div>
+<div class="line">ILIBDataPtr newData(__uuidof(LIBData));</div>
+<div class="line">newData-&gt;FromString(L<span class="stringliteral">&quot;this is a test&quot;</span>);</div>
+<div class="line">m_ib_service-&gt;SetGlobalVariableValue(L<span class="stringliteral">&quot;test_string&quot;</span>, newData);</div>
+<div class="line"><span class="comment">// execute the task</span></div>
+<div class="line">ILIBTaskResultPtr taskResult;</div>
+<div class="line">errCode = m_ib_service-&gt;ExecuteTaskSync(taskId, img, &amp;taskResults);</div>
+<div class="line"><span class="keywordflow">if</span> (errCode != LPVNoError) <span class="keywordflow">return</span>; <span class="comment">// execution failed</span></div>
+<div class="line"><span class="comment">// do other stuff, like parse and display task result, change task configuration...</span></div>
+<div class="line"><span class="comment">// see ILIBTaskResult, ILIBTaskConfig for more details</span></div>
 <div class="line">m_ib_service-&gt;TearDown();</div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LIBService m_ib_service = <span class="keyword">new</span> LIBService();</div>
-<div class="line">m_ib_service.SetUp(<span class="stringliteral">&quot;path to the IntelliBlink root folder, say D:/Programs/IntelliBlink/&quot;</span>);</div>
-<div class="line"><span class="keywordflow">if</span> (m_ib_service.IsReady()) <span class="keywordflow">return</span>; <span class="comment">// set up IB service failed</span></div>
-<div class="line"><span class="comment">// do stuff, like load task, execute then get result</span></div>
+<div class="line"><span class="keywordtype">int</span> errCode = m_ib_service.SetUp(<span class="stringliteral">&quot;path to the IntelliBlink root folder, say D:/Programs/IntelliBlink/&quot;</span>);</div>
+<div class="line"><span class="keywordflow">if</span> (errCode != <a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>.LPVNoError || !m_ib_service.IsReady()) <span class="keywordflow">return</span>; <span class="comment">// set up IB service failed</span></div>
+<div class="line"><span class="comment">// load task</span></div>
+<div class="line"><span class="keywordtype">int</span> taskId = 0;</div>
+<div class="line">errCode = m_ib_service.LoadTask(<span class="stringliteral">&quot;mytask.task&quot;</span>, out taskId);</div>
+<div class="line"><span class="keywordflow">if</span> (errCode != <a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>.LPVNoError) <span class="keywordflow">return</span>; <span class="comment">// load failed</span></div>
+<div class="line"><span class="comment">// load global-actions</span></div>
+<div class="line">errCode = m_ib_service.LoadGlobalAction(<span class="stringliteral">&quot;globalAction.json&quot;</span>);</div>
+<div class="line"><span class="keywordflow">if</span> (errCode != <a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>.LPVNoError) <span class="keywordflow">return</span>; <span class="comment">// load failed</span></div>
+<div class="line"><span class="comment">// change some of the global variables</span></div>
+<div class="line">LIBData newData = <span class="keyword">new</span> LIBData();</div>
+<div class="line">newData.FromString(<span class="stringliteral">&quot;this is a test&quot;</span>);</div>
+<div class="line">m_ib_service.SetGlobalVariableValue(<span class="stringliteral">&quot;test_string&quot;</span>, newData);</div>
+<div class="line"><span class="comment">// execute the task</span></div>
+<div class="line">LIBTaskResult taskResult;</div>
+<div class="line">errCode = m_ib_service.ExecuteTaskSync(taskId, img, out taskResults);</div>
+<div class="line"><span class="keywordflow">if</span> (errCode != <a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>.LPVNoError) <span class="keywordflow">return</span>; <span class="comment">// execution failed</span></div>
+<div class="line"><span class="comment">// do other stuff, like parse and display task result, change task configuration...</span></div>
+<div class="line"><span class="comment">// see ILIBTaskResult, ILIBTaskConfig for more details</span></div>
 <div class="line">m_ib_service.TearDown();</div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">This enumeration represents the type of a LPV function error.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:170</div></div>
 </div><!-- fragment --> </div>  </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a06d21a51a97e29d464e5690452fe7565"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a06d21a51a97e29d464e5690452fe7565">&#9670;&nbsp;</a></span>IsReady()</h2>
@@ -490,6 +529,121 @@ Return null if failed to find the task with the specified ID or its algorithm wi
   </dd>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html#a9bed1e376c84bb1c5e0ce49efe5658fc">GetAlgoConfig()</a>, <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html#abd27a54e852e3adc33c87cd2d42fd2f6">SetTaskConfig()</a>. </dd></dl>
+
+</div>
+</div>
+<a id="a4a5cee3212ffac33458a88335bc59a98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a5cee3212ffac33458a88335bc59a98">&#9670;&nbsp;</a></span>LoadGlobalAction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int LoadGlobalAction </td>
+          <td>(</td>
+          <td class="paramtype">BSTR&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Load the global-action module from a specified file. The global action module setup the global variables which are usually used to transfer data between different tasks or execution instances. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>The path of global-action model file. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">errCode</td><td>Return the error code if anything is wrong, return LPVNoError if succeed. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html#a9bed1e376c84bb1c5e0ce49efe5658fc">GetAlgoConfig()</a>, <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html#abd27a54e852e3adc33c87cd2d42fd2f6">SetTaskConfig()</a>. </dd></dl>
+
+</div>
+</div>
+<a id="aefb57c86d795c089f008a5a1e7182271"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefb57c86d795c089f008a5a1e7182271">&#9670;&nbsp;</a></span>GetGlobalVariableValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int GetGlobalVariableValue </td>
+          <td>(</td>
+          <td class="paramtype">BSTR&#160;</td>
+          <td class="paramname"><em>gvName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_data.html">ILIBData</a> **&#160;</td>
+          <td class="paramname"><em>val</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get the value of the global variable with the given name. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">gvName</td><td>The name of the global variable. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">val</td><td>Output the value of the designated global variable. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">errCode</td><td>Return the error code if anything is wrong, return LPVNoError if succeed. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html#a7d0f2aa2a440e9d4b1a46c4d0f8b5599">SetGlobalVariableValue()</a>. </dd></dl>
+
+</div>
+</div>
+<a id="a7d0f2aa2a440e9d4b1a46c4d0f8b5599"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d0f2aa2a440e9d4b1a46c4d0f8b5599">&#9670;&nbsp;</a></span>SetGlobalVariableValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SetGlobalVariableValue </td>
+          <td>(</td>
+          <td class="paramtype">BSTR&#160;</td>
+          <td class="paramname"><em>gvName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_data.html">ILIBData</a> *&#160;</td>
+          <td class="paramname"><em>val</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set the value of the global variable with the given name. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">gvName</td><td>The name of the global variable. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">val</td><td>The value that be set to designated global variable. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">errCode</td><td>Return the error code if anything is wrong, return LPVNoError if succeed. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html#aefb57c86d795c089f008a5a1e7182271">GetGlobalVariableValue()</a>. </dd></dl>
 
 </div>
 </div>
