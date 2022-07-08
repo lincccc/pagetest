@@ -23,17 +23,21 @@
  @licend  The above is the entire license notice for the JavaScript code in this file
 */
 var menudata={children:[
-{text:"Get Started",url:"usergroup0.html",children:[
+{text:"Get Started",url:"#",children:[
 {text:"Quick Guide",url:"quick_guide.html"},
 {text:"Play with DEMOs",url:"how_to_play_with_demo.html"},
-{text:"Display",url:"usergroup1.html",children:[
+{text:"Display",url:"#",children:[
 {text:"Draw Functions",url:"use_draw_functions.html"},
 {text:"Display Control",url:"use_display_control.html"}]}]},
-{text:"LPV Modules",url:"usergroup2.html",children:[
+{text:"LPV Modules",url:"#",children:[
 {text:"<b>Basics</b> <i><small>lpvCore</small></i>",url:"namespace_l_p_v_core_lib.html"},
-{text:"<b>Geometry</b> <i><small>lpvGeom</small></i>",url:"namespace_l_p_v_geom_lib.html"},
+{text:"<b>Geometry</b>",url:"#",children:[
+{text:"<i><small>lpvGeom</small></i>",url:"namespace_l_p_v_geom_lib.html"},
+{text:"<i><small>lpvGeomX</small></i>",url:"namespace_l_p_v_geom_x_lib.html"}]},
 {text:"<b>Image Process</b> <i><small>lpvImgProc</small></i>",url:"namespace_l_p_v_img_proc_lib.html"},
-{text:"<b>Location</b> <i><small>lpvLocate</small></i>",url:"namespace_l_p_v_locate_lib.html"},
+{text:"<b>Feature Locating</b>",url:"#",children:[
+{text:"<i><small>lpvLocate</small></i>",url:"namespace_l_p_v_locate_lib.html"},
+{text:"<i><small>lpvLocateX</small></i>",url:"namespace_l_p_v_locate_x_lib.html"}]},
 {text:"<b>Pattern Matching</b> <i><small>lpvPat</small></i>",url:"namespace_l_p_v_pat_lib.html"},
 {text:"<b>Blob Analysis</b> <i><small>lpvBlob</small></i>",url:"namespace_l_p_v_blob_lib.html"},
 {text:"<b>Camera Calibration</b> <i><small>lpvCalib</small></i>",url:"namespace_l_p_v_calib_lib.html"},

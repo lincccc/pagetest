@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['acceptrelativescore_0',['AcceptRelativeScore',['../interface_l_p_v_locate_lib_1_1_i_l_path_detector.html#ad8876facee25a76cd017ef8b953f373e',1,'LPVLocateLib::ILPathDetector']]],
-  ['acceptscore_1',['AcceptScore',['../interface_l_p_v_locate_lib_1_1_i_l_line_detector.html#a659ae867dc0562c44d5e7e23e83451d1',1,'LPVLocateLib::ILLineDetector::AcceptScore()'],['../interface_l_p_v_locate_lib_1_1_i_l_circle_detector.html#a659ae867dc0562c44d5e7e23e83451d1',1,'LPVLocateLib::ILCircleDetector::AcceptScore()'],['../interface_l_p_v_locate_lib_1_1_i_l_path_detector.html#a659ae867dc0562c44d5e7e23e83451d1',1,'LPVLocateLib::ILPathDetector::AcceptScore()'],['../interface_l_p_v_pat_lib_1_1_i_l_match.html#a659ae867dc0562c44d5e7e23e83451d1',1,'LPVPatLib::ILMatch::AcceptScore()']]],
+  ['acceptrelativescore_0',['AcceptRelativeScore',['../interface_l_p_v_locate_x_lib_1_1_i_l_path_detector.html#ad8876facee25a76cd017ef8b953f373e',1,'LPVLocateXLib::ILPathDetector']]],
+  ['acceptscore_1',['AcceptScore',['../interface_l_p_v_locate_lib_1_1_i_l_line_detector.html#a659ae867dc0562c44d5e7e23e83451d1',1,'LPVLocateLib::ILLineDetector::AcceptScore()'],['../interface_l_p_v_locate_lib_1_1_i_l_circle_detector.html#a659ae867dc0562c44d5e7e23e83451d1',1,'LPVLocateLib::ILCircleDetector::AcceptScore()'],['../interface_l_p_v_locate_x_lib_1_1_i_l_path_detector.html#a659ae867dc0562c44d5e7e23e83451d1',1,'LPVLocateXLib::ILPathDetector::AcceptScore()'],['../interface_l_p_v_pat_lib_1_1_i_l_match.html#a659ae867dc0562c44d5e7e23e83451d1',1,'LPVPatLib::ILMatch::AcceptScore()']]],
   ['acuteangle_2',['AcuteAngle',['../interface_l_p_v_geom_lib_1_1_i_l_line.html#ab1df154ad7980556ecd1580fd685b693',1,'LPVGeomLib::ILLine']]],
   ['add_3',['Add',['../interface_l_p_v_blob_lib_1_1_i_l_blob_results.html#aabc7a7e4531178ddea94a7feafc67261',1,'LPVBlobLib::ILBlobResults::Add()'],['../interface_l_p_v_core_lib_1_1_i_l_region.html#af4d00a8158cbbfa9a76a91843bfbd5f0',1,'LPVCoreLib::ILRegion::Add()'],['../interface_l_p_v_core_lib_1_1_i_l_image_list.html#a876f8336ca90938c7236a1a1ea7f56ca',1,'LPVCoreLib::ILImageList::Add()'],['../interface_l_p_v_geom_lib_1_1_i_l_points.html#a22f037ed9aa9c6dc9d0d4c75bd956838',1,'LPVGeomLib::ILPoints::Add()'],['../interface_l_p_v_img_proc_lib_1_1_i_l_image_arithm.html#a3e5def54f8136e79315f20cc80992cdf',1,'LPVImgProcLib::ILImageArithm::Add()'],['../interface_l_p_v_math_lib_1_1_i_l_data_list.html#a1326e30d7ab6afbe112801377b706caa',1,'LPVMathLib::ILDataList::Add()']]],
   ['addbackgroundrange_4',['AddBackgroundRange',['../interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#ab3dcb6d76d5d979ad8b4e7a150a8e428',1,'LPVBlobLib::ILBlobAnalysis']]],
@@ -37,8 +37,8 @@ var searchData=
   ['applysort_34',['ApplySort',['../interface_l_p_v_core_lib_1_1_i_l_sortables.html#a53fb8ab03002983652650c985cf648f9',1,'LPVCoreLib::ILSortables']]],
   ['attachimage_35',['AttachImage',['../interface_l_p_v_blob_lib_1_1_i_l_blob.html#a55f71d79803f0f1adca6b16788bb3421',1,'LPVBlobLib::ILBlob']]],
   ['autoremovebad_36',['AutoRemoveBad',['../interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#a78520409e85555fd726b3eee218107aa',1,'LPVCalibLib::ILCalibBoard']]],
-  ['avgcolumnspace_37',['AvgColumnSpace',['../interface_l_p_v_geom_lib_1_1_i_l_sorted_array.html#aec7219f2778c1d8fc713e7d07b72d7de',1,'LPVGeomLib::ILSortedArray']]],
-  ['avgrowspace_38',['AvgRowSpace',['../interface_l_p_v_geom_lib_1_1_i_l_sorted_array.html#a668aa98f5cf306a2268681b17d9bb26a',1,'LPVGeomLib::ILSortedArray']]],
+  ['avgcolumnspace_37',['AvgColumnSpace',['../interface_l_p_v_geom_x_lib_1_1_i_l_sorted_array.html#aec7219f2778c1d8fc713e7d07b72d7de',1,'LPVGeomXLib::ILSortedArray']]],
+  ['avgrowspace_38',['AvgRowSpace',['../interface_l_p_v_geom_x_lib_1_1_i_l_sorted_array.html#a668aa98f5cf306a2268681b17d9bb26a',1,'LPVGeomXLib::ILSortedArray']]],
   ['axisdirx_39',['AxisDirX',['../interface_l_p_v_calib_lib_1_1_i_l_calib_custom.html#a2412e74f1439f3a3c795c035d395cbc4',1,'LPVCalibLib::ILCalibCustom']]],
   ['axisdiry_40',['AxisDirY',['../interface_l_p_v_calib_lib_1_1_i_l_calib_custom.html#a7664d923bc8fa6b37c2445c8bc0f1fdf',1,'LPVCalibLib::ILCalibCustom']]]
 ];

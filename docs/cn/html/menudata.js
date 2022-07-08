@@ -23,17 +23,21 @@
  @licend  The above is the entire license notice for the JavaScript code in this file
 */
 var menudata={children:[
-{text:"入门指南",url:"usergroup0.html",children:[
+{text:"入门指南",url:"#",children:[
 {text:"快速上手",url:"quick_guide.html"},
 {text:"玩转 DEMO",url:"how_to_play_with_demo.html"},
-{text:"显示",url:"usergroup1.html",children:[
+{text:"显示",url:"#",children:[
 {text:"绘制函数",url:"use_draw_functions.html"},
 {text:"显示控件",url:"use_display_control.html"}]}]},
-{text:"LPV 模块",url:"usergroup2.html",children:[
+{text:"LPV 模块",url:"#",children:[
 {text:"<b>基础功能</b> <i><small>lpvCore</small></i>",url:"namespace_l_p_v_core_lib.html"},
-{text:"<b>图形几何</b> <i><small>lpvGeom</small></i>",url:"namespace_l_p_v_geom_lib.html"},
+{text:"<b>图形几何</b>",url:"#",children:[
+{text:"<i><small>lpvGeom</small></i>",url:"namespace_l_p_v_geom_lib.html"},
+{text:"<i><small>lpvGeomX</small></i>",url:"namespace_l_p_v_geom_x_lib.html"}]},
 {text:"<b>图像处理</b> <i><small>lpvImgProc</small></i>",url:"namespace_l_p_v_img_proc_lib.html"},
-{text:"<b>目标定位</b> <i><small>lpvLocate</small></i>",url:"namespace_l_p_v_locate_lib.html"},
+{text:"<b>特征定位</b>",url:"#",children:[
+{text:"<i><small>lpvLocate</small></i>",url:"namespace_l_p_v_locate_lib.html"},
+{text:"<i><small>lpvLocateX</small></i>",url:"namespace_l_p_v_locate_x_lib.html"}]},
 {text:"<b>模板匹配</b> <i><small>lpvPat</small></i>",url:"namespace_l_p_v_pat_lib.html"},
 {text:"<b>斑点分析</b> <i><small>lpvBlob</small></i>",url:"namespace_l_p_v_blob_lib.html"},
 {text:"<b>相机标定</b> <i><small>lpvCalib</small></i>",url:"namespace_l_p_v_calib_lib.html"},
