@@ -137,6 +137,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 <div class="textblock"><p>该接口提供路径定位的功能。 </p>
 <p>路径定位用于在输入图像中和指定的区域中，定位一条或多条大致垂直于搜索方向的路径。<br  />
 该算法在输入图像中搜索最暗（<a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0baffd2c678a5a2ea661de262d51223adf3">LPVBlackOnWhite </a>）或最亮（<a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0bac595c6b549ecbabb1dbb431e374b02ad">LPVWhiteOnBlack </a>）的垂直路径。 这些路径沿着全局灰度总和最小或最大的区域生长，在大多数情况下，路径是平直的，但也会尝试改变方向绕过遇到的障碍物（其他前景或噪声），以获取更优质的全局优化结果。</p>
+<p>使用这个接口，需要创建一个 <a class="el" href="class_l_p_v_locate_x_lib_1_1_l_path_detector.html">LPathDetector</a> 对象。</p>
 <h3>示例代码 </h3>
  <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">ILPathDetectorPtr m_path_detector(__uuidof(LPathDetector));</div>
 <div class="line">m_path_detector-&gt;Polarity = LPVPolarity::LPVBlackOnWhite;</div>

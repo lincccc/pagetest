@@ -132,6 +132,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 <div class="textblock"><p>该接口提供直线定位的功能。 </p>
 <p>直线定位用于在输入图像中和指定的区域中，定位一条或多条直线边缘。<br  />
 该算法具有高实时性、高亚像素精度等特点，其局限性在于其定位直线的角度在给定区域的扫描方向的 (-10, +10) 范围内。 因此，使用该算法需要指定目标直线的大致方向。</p>
+<p>使用这个接口，需要创建一个 <a class="el" href="class_l_p_v_locate_lib_1_1_l_line_detector.html">LLineDetector</a> 对象。</p>
 <h3>示例代码 </h3>
  <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">ILLineDetectorPtr m_line_detector(__uuidof(LLineDetector));</div>
 <div class="line">m_line_detector-&gt;Polarity = LPVPolarity::LPVPolarityEither;</div>

@@ -128,6 +128,7 @@ Public 成员函数</h2></td></tr>
 <div class="textblock"><p>该接口提供连接到灵闪服务的功能。 </p>
 <p>灵闪是一个基于利珀科技机器视觉基础框架开发的轻便的智能算法配置及组合工具平台。 通过所见即所得的交互界面和简单的拖拽操作，用于快速开发和迭代定位、测量、缺陷检测等机器视觉任务。 灵闪平台提供一系列覆盖具体应用需求的算法工具包: 特征定位、数量检测、有无判定、基础计算、图像变换、结合测量和计算、相机标定、符号识别、物体分类等等。</p>
 <p>LPV IB 服务模块帮助用户在基于灵闪快速编辑机器视觉方案的基础上，将其集成到 LPV 应用程序中运行、操作， 实现更大程度上的灵活性和可扩展性。</p>
+<p>使用这个接口，需要创建一个 <a class="el" href="class_l_p_v_i_b_lib_1_1_l_i_b_service.html">LIBService</a> 对象。</p>
 <h3>示例代码 </h3>
  <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">ILIBServicePtr m_ib_service(__uuidof(LIBService));</div>
 <div class="line"><span class="keywordtype">int</span> errCode = m_ib_service-&gt;SetUp(L<span class="stringliteral">&quot;path to the IntelliBlink root folder, say D:/Programs/IntelliBlink/&quot;</span>);</div>

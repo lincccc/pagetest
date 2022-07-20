@@ -160,6 +160,7 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><p>该接口提供斑点分析的功能。 </p>
 <p>斑点分析是机器视觉系统中常见的前景目标分割方法，用于从背景中提取灰度值近似的连通域生成斑点对象。 再计算斑点对象的属性特征，典型的几何特征如面积、轮廓周长、圆度等，图像特征如平均亮度、对比度等， 可用于定位、测量、缺陷检测等大多数典型视觉应用场景。</p>
+<p>使用这个接口，需要创建一个 <a class="el" href="class_l_p_v_blob_lib_1_1_l_blob_analysis.html">LBlobAnalysis</a> 对象。</p>
 <h3>示例代码 </h3>
  <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">ILBlobAnalysisPtr m_blob_ana(__uuidof(LBlobAnalysis));</div>
 <div class="line">m_blob_ana-&gt;AddBlobRange(50, 100);</div>
@@ -415,11 +416,11 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
         </tr>
       </table>
 </div><div class="memdoc">
-<p>使用局部自适应阈值用于分割。自动基于每个像素所在的 \( blockWidth \times blockHeight \) 范围内的像素灰度值分布 为每个位置计算一个合适的阈值，再减去 bias 作为最终的阈值。 </p><dl class="params"><dt>参数</dt><dd>
+<p>使用局部自适应阈值用于分割。自动基于每个像素所在的 \( blockSize \times blockSize \) 范围内的像素灰度值分布 为每个位置计算一个合适的阈值，再减去 bias 作为最终的阈值。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">blobPolarity</td><td><a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0baffd2c678a5a2ea661de262d51223adf3">LPVBlackOnWhite </a> 表示灰度值小于全局自适应阈值的像素组成斑点对象, <a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0bac595c6b549ecbabb1dbb431e374b02ad">LPVWhiteOnBlack </a> 则相反。 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">blockSize</td><td>局部区域的尺寸，需要是一个奇数，如 3, 5, 7 等。 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">bias</td><td>基于该位置的局部自适应阈值计算，用于生成阈值 \( t&#39; = t - bias \). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bias</td><td>基于该位置的局部自适应阈值计算，用于生成阈值 \( t&#39; = t - bias \)（<a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0baffd2c678a5a2ea661de262d51223adf3">LPVBlackOnWhite </a>）， \( t&#39; = t + bias \)（<a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0bac595c6b549ecbabb1dbb431e374b02ad">LPVWhiteOnBlack </a>）. </td></tr>
   </table>
   </dd>
 </dl>

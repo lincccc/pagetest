@@ -107,6 +107,10 @@ $(function() {
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyLeft"><a class="el" href="how_to_play_with_demo.html#demo_circle">Circle Detection</a>   </td><td class="markdownTableBodyLeft">Demonstrate circle detection with sub-pixel precision.    </td></tr>
 <tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><a class="el" href="how_to_play_with_demo.html#demo_path">Path Detection</a>   </td><td class="markdownTableBodyLeft">Demonstrate path detection.    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><a class="el" href="how_to_play_with_demo.html#demo_contour">Contour Detection</a>   </td><td class="markdownTableBodyLeft">Demonstrate contour detection with sub-pixel precision.    </td></tr>
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyLeft"><a class="el" href="how_to_play_with_demo.html#demo_calib">Calibration</a>   </td><td class="markdownTableBodyLeft">Demonstrate the camera calibration, including n-points, pin-hole, FFD camera models using different types of calibration boards.    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyLeft"><a class="el" href="how_to_play_with_demo.html#demo_camarray">Camera Array and Image Stitching</a>   </td><td class="markdownTableBodyLeft">Demonstrate the camera array calibration and image stitching.    </td></tr>
@@ -134,7 +138,15 @@ $(function() {
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyLeft"><b>Sort</b>   </td><td class="markdownTableBodyLeft">Sort.cpp/cs   </td><td class="markdownTableBodyLeft">Demonstrate the sorting algorithms, especially the array sorter.    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyLeft"><b>Color space conversion</b>   </td><td class="markdownTableBodyLeft">ColorSpace.cpp/cs   </td><td class="markdownTableBodyLeft">Demonstrate the conversion of the color images between common color spaces.   </td></tr>
+<td class="markdownTableBodyLeft"><b>Color space conversion</b>   </td><td class="markdownTableBodyLeft">ColorSpace.cpp/cs   </td><td class="markdownTableBodyLeft">Demonstrate the conversion of the color images between common color spaces.    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><b>Template Matching with Customized Shape</b>   </td><td class="markdownTableBodyLeft">LearnWithShape.cpp/cs   </td><td class="markdownTableBodyLeft">Demonstrate how to train the template using customized shape generated via region objects.    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><b>Rotation Calibration and Alignment</b>   </td><td class="markdownTableBodyLeft">CalibRotationCenter.cpp/cs   </td><td class="markdownTableBodyLeft">Demonstrate the rotation center calibration and mark alignment.    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><b>Background Subtract</b>   </td><td class="markdownTableBodyLeft">BackgroudSubtract.cpp/cs   </td><td class="markdownTableBodyLeft">Demonstrate the detection of moving or pop-up objects in the static scene.    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><b>Data Blob Analysis</b>   </td><td class="markdownTableBodyLeft">DataBlob.cpp/cs   </td><td class="markdownTableBodyLeft">Demonstrate the defect inspection on the cutting kerf, using data blob analysis.   </td></tr>
 </table>
 <p><br  />
 </p>
@@ -300,15 +312,15 @@ Line Detection</h1>
 <li>Click <b>Load Image</b> button, load image from file.</li>
 <li>Drag the handles of the region, move, rotate or resize the rotated rectangle region.</li>
 <li>Select <b>Polarity</b> to use the proper polarity of the line edge:<ul>
-<li><b>0 Dark to Light</b>: the edge is from black(dark) pixels to white(light).</li>
-<li><b>1 Light to Dark</b>: the edge is from white(light) pixels to black(dark).</li>
-<li><b>2 Either</b>: either polarity is acceptable.</li>
+<li><b>0 Dark to Light</b>: The edge is from black(dark) pixels to white(light).</li>
+<li><b>1 Light to Dark</b>: The edge is from white(light) pixels to black(dark).</li>
+<li><b>2 Either</b>: Either polarity is acceptable.</li>
 </ul>
 </li>
 <li>Select <b>Find</b> to use the proper find-by strategy for the line selection:<ul>
-<li><b>0 Best</b>: the lines with best scores.</li>
-<li><b>1 First</b>: the first lines.</li>
-<li><b>2 Last</b>: the last lines.</li>
+<li><b>0 Best</b>: The lines with best scores.</li>
+<li><b>1 First</b>: The first lines.</li>
+<li><b>2 Last</b>: The last lines.</li>
 </ul>
 </li>
 <li>Modify <b>Accept Score</b> to filter false results with bad scores</li>
@@ -334,15 +346,15 @@ Circle Detection</h1>
 <li>Click <b>Load Image</b> button, load image from file.</li>
 <li>Drag the handles of the region, move or resize the annulus region, put its center near the center of the circle.</li>
 <li>Select <b>Polarity</b> to use the proper polarity of the circle edge:<ul>
-<li><b>0 Dark to Light</b>: the edge is from black(dark) pixels to white(light).</li>
-<li><b>1 Light to Dark</b>: the edge is from white(light) pixels to black(dark).</li>
-<li><b>2 Either</b>: either polarity is acceptable.</li>
+<li><b>0 Dark to Light</b>: The edge is from black(dark) pixels to white(light).</li>
+<li><b>1 Light to Dark</b>: The edge is from white(light) pixels to black(dark).</li>
+<li><b>2 Either</b>: Either polarity is acceptable.</li>
 </ul>
 </li>
 <li>Select <b>Find</b> to use the proper find-by strategy for the circle selection:<ul>
-<li><b>0 Best</b>: the circles with best scores.</li>
-<li><b>1 Smallest</b>: the smallest circles.</li>
-<li><b>2 Largest</b>: the largest circles.</li>
+<li><b>0 Best</b>: The circles with best scores.</li>
+<li><b>1 Smallest</b>: The smallest circles.</li>
+<li><b>2 Largest</b>: The largest circles.</li>
 </ul>
 </li>
 <li>Modify <b>Accept Score</b> to filter false results with bad scores</li>
@@ -351,6 +363,69 @@ Circle Detection</h1>
 <li>The table shows all valid results, including their center positions and radius.</li>
 <li>Select one to highlight it on the canvas.</li>
 <li>The chart shows the score distribution along the region's direction. It's useful for determining a proper accept score.</li>
+</ol>
+<p><br  />
+</p>
+<h1><a class="anchor" id="demo_path"></a>
+Path Detection</h1>
+<p>Demonstrate path detection.</p>
+<blockquote class="doxtable">
+<p><b>Source code (C++):</b> mfcdemo/MFCPath<br  />
+ <b>Source code (C#):</b> csharpdemo/CSharpPath<br  />
+ <b>Image files:</b> nline_many.png</p>
+<p><b>Related classes:</b> <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_rot_rect_region.html">LRotRectRegion</a>, LPathDetector, LPathResults </p>
+</blockquote>
+<p><a href="t02_14_path.png"><img src="t02_14_path.png" alt="" style="float: right; height: 200px; margin-left: 20px;" class="inline"/> </a></p>
+<ol type="1">
+<li>Click <b>Load Image</b> button, load image from file.</li>
+<li>Drag the handles of the region, move, rotate or resize the rotated rectangle region.</li>
+<li>Select the proper <b>Polarity</b>. to find the correct type of path:<ul>
+<li><b>0 Black on White</b>: Black(dark) path on the white(light) background.</li>
+<li><b>1 White on Black</b>: White(light) path on the black(dark) background.</li>
+</ul>
+</li>
+<li>Change the score thresholds to a proper value:<ul>
+<li><b>Score</b>: The absolute accept score.</li>
+<li><b>Relative Score</b>: The relative accept score, computed using the current and the next result candidate or background pixels.</li>
+</ul>
+</li>
+<li>Change <b>Path Width</b> to merge/separate nearby paths in multiple instances detection.</li>
+<li>Change <b>Straightness</b> , it's used to controls the trend of the path.</li>
+<li>Change <b>Max Count</b> for multiple instances detection.</li>
+<li>Click <b>Detect</b> to do path detection.</li>
+<li>The table shows all valid results, including their start position and scores.</li>
+<li>Select one to highlight it on the canvas.</li>
+</ol>
+<p><br  />
+</p>
+<h1><a class="anchor" id="demo_contour"></a>
+Contour Detection</h1>
+<p>Demonstrate contour detection with sub-pixel precision.</p>
+<blockquote class="doxtable">
+<p><b>Source code (C++):</b> mfcdemo/MFCContour<br  />
+ <b>Source code (C#):</b> csharpdemo/CSharpContour<br  />
+</p>
+<p><b>Related classes:</b> <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_rot_rect_region.html">LRotRectRegion</a>, LContourDetector, LContourResults </p>
+</blockquote>
+<p><a href="t02_15_contour.png"><img src="t02_15_contour.png" alt="" style="float: right; height: 200px; margin-left: 20px;" class="inline"/> </a></p>
+<ol type="1">
+<li>Click <b>Load Image</b> button, load image from file.</li>
+<li>Drag the handles of the region, move, rotate or resize the rotated rectangle region.</li>
+<li>Change the <b>Connect Tolerance</b> and <b>Kernel Size</b> to the proper value.</li>
+<li>Change the rejection and filtering thresholds<ul>
+<li><b>Reject Short</b> and <b>Reject Weak</b>: The absolute thresholds used to reject very Short-OR-Weak contours.</li>
+<li><b>Filter Short</b> and <b>Filter Weak</b>: The relative threshold used to filter the Short-And-Weak contours, compared with the longest/strongest contour in the candidates.</li>
+</ul>
+</li>
+<li>Click <b>Detect</b> to do contour detection.</li>
+<li>The table shows all valid results, including their average magnitude, length and scores.</li>
+<li>Select one to highlight it on the canvas.</li>
+<li>Select the proper <b>Polarity</b> then click <b>Detect With Direction</b> to do detection with direction filtering:<ul>
+<li><b>0 Dark to Light</b>: The edge is from black(dark) pixels to white(light).</li>
+<li><b>1 Light to Dark</b>: The edge is from white(light) pixels to black(dark).</li>
+<li><b>2 Either</b>: Either polarity is acceptable.</li>
+</ul>
+</li>
 </ol>
 <p><br  />
 </p>

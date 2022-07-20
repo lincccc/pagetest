@@ -132,6 +132,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 <div class="textblock"><p>该接口提供圆定位的功能。 </p>
 <p>圆定位用于在输入图像和指定的圆环区域中定位一条或多条圆形边缘。<br  />
 、 该算法具有高实时性、高亚像素精度等特点，其局限性在于其假设定位圆的中心点在指定的圆环区域中心的附近。 因此，使用该算法需要已知圆的大致圆心位置。</p>
+<p>使用这个接口，需要创建一个 <a class="el" href="class_l_p_v_locate_lib_1_1_l_circle_detector.html">LCircleDetector</a> 对象。</p>
 <h3>示例代码 </h3>
  <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">ILCircleDetectorPtr m_circle_detector(__uuidof(LCircleDetector));</div>
 <div class="line">m_circle_detector-&gt;Polarity = LPVPolarity::LPVPolarityEither;</div>

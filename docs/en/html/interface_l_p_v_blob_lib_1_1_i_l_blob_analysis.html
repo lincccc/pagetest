@@ -378,7 +378,7 @@ It indicates this is a grayscale-mode blob analysis tool, all the previous color
 </div><div class="memdoc">
 <p>Use global-adaptive thresholding for segmentation. The optimal threshold value is calculated base on the entire input image. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">blobPolarity</td><td><a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0baffd2c678a5a2ea661de262d51223adf3">LPVBlackOnWhite </a> indicates black pixels with smaller value than global threshold are blobs, <a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0bac595c6b549ecbabb1dbb431e374b02ad">LPVWhiteOnBlack </a> is exactly the opposite. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">blobPolarity</td><td><a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0baffd2c678a5a2ea661de262d51223adf3">LPVBlackOnWhite </a> indicates black pixels with smaller value than global threshold are the blobs, <a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0bac595c6b549ecbabb1dbb431e374b02ad">LPVWhiteOnBlack </a> is exactly the opposite. </td></tr>
   </table>
   </dd>
 </dl>
@@ -416,11 +416,11 @@ It indicates this is a grayscale-mode blob analysis tool, all the previous color
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Use local-adaptive threshold value. The optimal threshold value is calculated base on a \( blockWidth \times blockHeight \) region around individual pixel, then revised by the given bias value. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Use local-adaptive threshold value. The optimal threshold value is calculated base on a \( blockSize \times blockSize \) region around individual pixel, then revised by the given bias value. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">blobPolarity</td><td><a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0baffd2c678a5a2ea661de262d51223adf3">LPVBlackOnWhite </a> indicates black pixels with smaller value than global threshold are blobs, <a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0bac595c6b549ecbabb1dbb431e374b02ad">LPVWhiteOnBlack </a> is exactly the opposite. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">blobPolarity</td><td><a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0baffd2c678a5a2ea661de262d51223adf3">LPVBlackOnWhite </a> indicates black pixels with smaller value than global threshold are the blobs, <a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0bac595c6b549ecbabb1dbb431e374b02ad">LPVWhiteOnBlack </a> is exactly the opposite. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">blockSize</td><td>Size of a pixel's local region, should be an odd number, say, 3, 5, 7, etc. Set it to 0 for auto-generate block size based in the input image size. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">bias</td><td>Revise value to optimal threshold value as \( t&#39; = t - bias \). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bias</td><td>Revise value to optimal threshold value as \( t&#39; = t - bias \) for <a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0baffd2c678a5a2ea661de262d51223adf3">LPVBlackOnWhite </a>, \( t&#39; = t + bias \) for <a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0bac595c6b549ecbabb1dbb431e374b02ad">LPVWhiteOnBlack </a>. * </td></tr>
   </table>
   </dd>
 </dl>
@@ -468,7 +468,7 @@ For example, if we define blob color range to be [100, 200], and soft thresholdi
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Add a alternative blob filter. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Add an alternative blob filter. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">filter</td><td>The new blob filter </td></tr>
   </table>

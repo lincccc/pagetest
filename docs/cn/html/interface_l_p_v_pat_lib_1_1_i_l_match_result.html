@@ -100,7 +100,7 @@ $(function() {
 Public 成员函数</h2></td></tr>
 <tr class="memitem:a2c3a62088741cefcf46251862d5f70bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match_result.html#a2c3a62088741cefcf46251862d5f70bb">Draw</a> (HDC hdc, <a class="el" href="namespace_l_p_v_pat_lib.html#a38ed5c152c13123c0ab8728aa55efdf2">LPVPatDrawFlags</a> drawFlags, double zoomX, double zoomY, double panX, double panY)</td></tr>
 <tr class="separator:a2c3a62088741cefcf46251862d5f70bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a298cb1d21f02123b1b52dc1dd530e4e4"><td class="memItemLeft" align="right" valign="top">ILRect *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match_result.html#a298cb1d21f02123b1b52dc1dd530e4e4">GetRect</a> ()</td></tr>
+<tr class="memitem:a298cb1d21f02123b1b52dc1dd530e4e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_rect.html">ILRect</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match_result.html#a298cb1d21f02123b1b52dc1dd530e4e4">GetRect</a> ()</td></tr>
 <tr class="separator:a298cb1d21f02123b1b52dc1dd530e4e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98058a85e9a4aa79f4d360962de25d37"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match_result.html#a98058a85e9a4aa79f4d360962de25d37">Set</a> (<a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html">ILMatch</a> *matchObject, double patX, double patY, double patAngle, double patScale, double patScore)</td></tr>
 <tr class="separator:a98058a85e9a4aa79f4d360962de25d37"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -112,7 +112,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 <tr class="memdesc:af721a58c21e3ff2d5a67b6ed4a9df3ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">该结果的分数 <br /></td></tr>
 <tr class="separator:af721a58c21e3ff2d5a67b6ed4a9df3ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad058aa55da0641c4ba58a63ea467bc9"><td class="memItemLeft" align="right" valign="top"><a id="aad058aa55da0641c4ba58a63ea467bc9"></a>
-ILPoint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match_result.html#aad058aa55da0641c4ba58a63ea467bc9">Center</a><code> [get]</code></td></tr>
+<a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_point.html">ILPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match_result.html#aad058aa55da0641c4ba58a63ea467bc9">Center</a><code> [get]</code></td></tr>
 <tr class="memdesc:aad058aa55da0641c4ba58a63ea467bc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">该结果的中心位置 <br /></td></tr>
 <tr class="separator:aad058aa55da0641c4ba58a63ea467bc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c10230001bab42de01beb2843f8c327"><td class="memItemLeft" align="right" valign="top"><a id="a8c10230001bab42de01beb2843f8c327"></a>
@@ -123,6 +123,16 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match_result.html#a0976cb007ee40133c09b4485a717dd3f">Scale</a><code> [get]</code></td></tr>
 <tr class="memdesc:a0976cb007ee40133c09b4485a717dd3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">该结果的缩放比例，在 (0.5, 1.5) 范围内表示相对与模板 50% ~ 150% 的缩放比例。 <br /></td></tr>
 <tr class="separator:a0976cb007ee40133c09b4485a717dd3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a470e8b23a7c8f63149e2a3edfe305363"><td class="memItemLeft" align="right" valign="top"><a id="a470e8b23a7c8f63149e2a3edfe305363"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match_result.html#a470e8b23a7c8f63149e2a3edfe305363">ScaleX</a><code> [get]</code></td></tr>
+<tr class="memdesc:a470e8b23a7c8f63149e2a3edfe305363"><td class="mdescLeft">&#160;</td><td class="mdescRight">该结果在 x 方向的缩放比例，在 (0.5, 1.5) 范围内表示相对与模板 50% ~ 150% 的缩放比例。<br  />
+对于等比例缩放，::ScaleX 与 <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match_result.html#a2ad72778af9c4d47541060a07e058329" title="该结果在 y 方向的缩放比例，在 (0.5, 1.5) 范围内表示相对与模板 50% ~ 150% 的缩放比例。 对于等比例缩放，::ScaleX 与 ScaleY 数值相同。对于非等比缩放，::Sca...">ScaleY</a> 数值相同。对于非等比缩放，::Scale 为 <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match_result.html#a470e8b23a7c8f63149e2a3edfe305363" title="该结果在 x 方向的缩放比例，在 (0.5, 1.5) 范围内表示相对与模板 50% ~ 150% 的缩放比例。 对于等比例缩放，::ScaleX 与 ScaleY 数值相同。对于非等比缩放，::Sca...">ScaleX</a> 和 <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match_result.html#a2ad72778af9c4d47541060a07e058329" title="该结果在 y 方向的缩放比例，在 (0.5, 1.5) 范围内表示相对与模板 50% ~ 150% 的缩放比例。 对于等比例缩放，::ScaleX 与 ScaleY 数值相同。对于非等比缩放，::Sca...">ScaleY</a> 的均值。 <br /></td></tr>
+<tr class="separator:a470e8b23a7c8f63149e2a3edfe305363"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ad72778af9c4d47541060a07e058329"><td class="memItemLeft" align="right" valign="top"><a id="a2ad72778af9c4d47541060a07e058329"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match_result.html#a2ad72778af9c4d47541060a07e058329">ScaleY</a><code> [get]</code></td></tr>
+<tr class="memdesc:a2ad72778af9c4d47541060a07e058329"><td class="mdescLeft">&#160;</td><td class="mdescRight">该结果在 y 方向的缩放比例，在 (0.5, 1.5) 范围内表示相对与模板 50% ~ 150% 的缩放比例。<br  />
+对于等比例缩放，::ScaleX 与 <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match_result.html#a2ad72778af9c4d47541060a07e058329" title="该结果在 y 方向的缩放比例，在 (0.5, 1.5) 范围内表示相对与模板 50% ~ 150% 的缩放比例。 对于等比例缩放，::ScaleX 与 ScaleY 数值相同。对于非等比缩放，::Sca...">ScaleY</a> 数值相同。对于非等比缩放，::Scale 为 <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match_result.html#a470e8b23a7c8f63149e2a3edfe305363" title="该结果在 x 方向的缩放比例，在 (0.5, 1.5) 范围内表示相对与模板 50% ~ 150% 的缩放比例。 对于等比例缩放，::ScaleX 与 ScaleY 数值相同。对于非等比缩放，::Sca...">ScaleX</a> 和 <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match_result.html#a2ad72778af9c4d47541060a07e058329" title="该结果在 y 方向的缩放比例，在 (0.5, 1.5) 范围内表示相对与模板 50% ~ 150% 的缩放比例。 对于等比例缩放，::ScaleX 与 ScaleY 数值相同。对于非等比缩放，::Sca...">ScaleY</a> 的均值。 <br /></td></tr>
+<tr class="separator:a2ad72778af9c4d47541060a07e058329"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><p>该接口提供单个模板匹配结果，可获取其具体属性。 </p>
@@ -199,14 +209,14 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">ILRect* GetRect </td>
+          <td class="memname"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_rect.html">ILRect</a>* GetRect </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>计算该检测结果的包围矩形 </p><dl class="section see"><dt>参见</dt><dd>GetRotRect(). </dd></dl>
+<p>计算该检测结果的包围矩形 </p>
 
 </div>
 </div>
