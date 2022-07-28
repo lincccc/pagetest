@@ -112,15 +112,17 @@ Q5. C# error CS0246: The type or namespace name 'LPVXXXLib' could not be found (
 <p>Same as <a href="#faq1">Compile Failure Q1</a>, it's due to the LPV libraries are not well registered, please follow the corresponding solution. </p>
 </blockquote>
 <h4><a class="anchor" id="faq6"></a>
-Q6. Call CreateDispatch fail with error 800401F0 CoInitialize has not been called. (C++ only)</h4>
+Q6. Call CreateInstance fail with error 800401F0 CoInitialize has not been called. (C++ only)</h4>
 <blockquote class="doxtable">
-<p>You need to call CoInitializeEx when your program starts and CoUnitialize when it terminates. You should do it before create and initialize LPV classes. The best place to do this is in InitInstance and ExitInstance of your MFC application.</p>
-<p>For example: </p><div class="fragment"><div class="line">BOOL CMFCApp::InitInstance()</div>
+<p>You need to call CoInitializeEx when your program starts and CoUnitialize when it terminates.</p>
+<p>For multi-threading application, make sure you call CoInitializeEx/CoUnitialize for <b>EVERY</b> thread that create and use LPV classes.</p>
+<p>You should do it before create and initialize LPV classes.</p>
+<p>The best place to do this is in InitInstance and ExitInstance of your MFC application. For example: </p><div class="fragment"><div class="line">BOOL CMFCApp::InitInstance()</div>
 <div class="line">{</div>
 <div class="line">    <span class="comment">// You may use COINIT_MULTITHREADED or COINIT_APARTMENTTHREADED based on the requirement of your application.</span></div>
 <div class="line">    <span class="comment">// For example, use COINIT_APARTMENTTHREADED for MFC application, COINIT_MULTITHREADED for other cases.</span></div>
 <div class="line">    <span class="comment">// If you are not sure, read more in https://docs.microsoft.com/en-us/windows/win32/learnwin32/initializing-the-com-library</span></div>
-<div class="line">    CoInitializeEx(NULL, COINIT_MULTITHREADED);</div>
+<div class="line">    CoInitializeEx(NULL, COINIT_APARTMENTTHREADED);</div>
 <div class="line">    <span class="comment">// etc.</span></div>
 <div class="line">    CWinApp::InitInstance();</div>
 <div class="line">}</div>
@@ -131,9 +133,11 @@ Q6. Call CreateDispatch fail with error 800401F0 CoInitialize has not been calle
 <div class="line">}</div>
 </div><!-- fragment --> </blockquote>
 <h4><a class="anchor" id="faq7"></a>
-Q7. Call CreateDispatch fail and return 0 with NULL m_lpDispatch. (C++ only)</h4>
+Q7. Call CreateInstance fail and return 0 with NULL m_pInterface. (C++ only)</h4>
 <blockquote class="doxtable">
-<p>Same as <a href="#faq1">Compile Failure Q1</a>, it's due to the LPV libraries are not well registered, please follow the corresponding solution. </p>
+<p>1. Make sure LPV modules are well-registered and licensed. See and follow the steps in <a href="#faq1">Compile Failure Q1</a>.</p><ol type="1">
+<li>Make sure COM is well-initialized in the current thread. See the steps in <a href="#faq6">Q6</a>. </li>
+</ol>
 </blockquote>
 <h4><a class="anchor" id="faq8"></a>
 Q8. Open the .net form with LPV display control, the designer report error: Could not find type 'AxLPVDisplayLib.AxLDisplay'.</h4>
@@ -148,13 +152,21 @@ Q8. Open the .net form with LPV display control, the designer report error: Coul
 </ol>
 </blockquote>
 <h4><a class="anchor" id="faq9"></a>
-Q9. Registration script error: Register failed, error code = 3.</h4>
+Q9. C++ 创建 LPV 显示控件失败，调用 Create 接口返回 False</h4>
+<blockquote class="doxtable">
+<p>1. Make sure LDisplay module is well-registered and licensed. See and follow the steps in <a href="#faq1">Compile Failure Q1</a>.</p><ol type="1">
+<li>Make sure the thread that creating the control is initialized using COINIT_APARTMENTTHREADED, since the ActiveX control and its container needs to be running in single-thread apartment. Note: it's still allowed to initialize other threads with COINIT_MULTITHREADED.</li>
+<li>For MFC applications, make sure you call AfxEnableControlContainer() in the application's InitInstance function to enable support for containment of OLE controls. </li>
+</ol>
+</blockquote>
+<h4><a class="anchor" id="faq10"></a>
+Q10. Registration script error: Register failed, error code = 3.</h4>
 <blockquote class="doxtable">
 <p>The error occurs when the script failed to load LPV modules.<br  />
  It's commonly due to absence of the correct Visual C++ Redistributable Package. You may have to download then install one from Microsoft's official website(<a href="https://support.microsoft.com/en-us/topic/the-latest-supported-visual-c-downloads-2647da03-1eea-4433-9aff-95f26a218cc0">https://support.microsoft.com/en-us/topic/the-latest-supported-visual-c-downloads-2647da03-1eea-4433-9aff-95f26a218cc0</a>), or <a href="http://fileserver.hzleaper.com:8086/f/eea1a6598fd947d58540/">our link</a>. </p>
 </blockquote>
-<h4><a class="anchor" id="faq10"></a>
-Q10. Registration script error: Register failed, error code = 5.</h4>
+<h4><a class="anchor" id="faq11"></a>
+Q11. Registration script error: Register failed, error code = 5.</h4>
 <blockquote class="doxtable">
 <p>The error indicates the script is failed when execute the registration function.<br  />
  It's possible that you didn't run the script as administrator, or the install path of LPV contains any invalid char. Please stop the script, then follow the solution in <a href="#faq1">Q1</a> to re-check and re-register. </p>

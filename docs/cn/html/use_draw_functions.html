@@ -232,6 +232,9 @@ $(function() {
 <div class="line">    m_match_results.DrawAll(hdc,</div>
 <div class="line">        <a class="code" href="namespace_l_p_v_pat_lib.html#a38ed5c152c13123c0ab8728aa55efdf2">LPVPatDrawFlags</a>.LPVPatDrawDefault,</div>
 <div class="line">        zoomX, zoomY);</div>
+<div class="line">    </div>
+<div class="line">    <span class="comment">// 最后，释放 DC</span></div>
+<div class="line">    e.Graphics.ReleaseHdc(hdc);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// 提示，当需要绘制的内容改变时：</span></div>
 <div class="line">    <span class="comment">// 调用 Invalidate() 请求一次重绘，这将有系统的消息循环处理，可能发生延时。单次循环内的多次请求也将被合并。</span></div>

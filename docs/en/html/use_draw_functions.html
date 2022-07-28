@@ -236,6 +236,9 @@ Draw in the OnPaint Method</h2>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// balabala, other painting logic</span></div>
 <div class="line"> </div>
+<div class="line">    <span class="comment">// at the end, release handle to device context.</span></div>
+<div class="line">    e.Graphics.ReleaseHdc(hdc);</div>
+<div class="line"> </div>
 <div class="line">    <span class="comment">// Note, when the things you want to draw changed:</span></div>
 <div class="line">    <span class="comment">// you may call Invalidate() to request a delayed repaint by the message loop system.</span></div>
 <div class="line">    <span class="comment">// you may call Update() to force a immediate repaint.</span></div>

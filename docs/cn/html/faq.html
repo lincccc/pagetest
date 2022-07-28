@@ -112,14 +112,18 @@ Q5. C# 编译错误 CS0246: 找不到类型或命名空间名称 'LPVXXXLib' （
 <p>与 <a href="#faq1">Q1</a> 相同，其原因为对应平台的 LPV 模块在该机器上并未成功注册。请按相应步骤排查和解决问题。 </p>
 </blockquote>
 <h4><a class="anchor" id="faq6"></a>
-Q6. C++ 运行时调用 CreateDispatch 失败，返回错误 0x800401F0 尚未调用 CoInitialize</h4>
+Q6. C++ 运行时调用 CreateInstance 失败，返回错误 0x800401F0 尚未调用 CoInitialize</h4>
 <blockquote class="doxtable">
-<p>需要在程序开始处调用 CoInitializeEx，结束处调用 CoUnitialize。 需要在使用 LPV 模块前调用初始化。以 MFC 程序为例，推荐的调用位置为 MFC 程序的 InitInstance 和 ExitInstance 方法中。</p>
+<p>需要在程序开始处调用 CoInitializeEx，结束处调用 CoUnitialize。</p>
+<p>对于多线程程序，对于需求创建和使用 LPV 类和方法的<b>每个线程</b>，需要在线程开始处调用 CoInitializeEx，结束处调用 CoUnitialize。</p>
+<p>需要在创建和使用 LPV 模块之前调用初始化。</p>
+<p>以 MFC 程序为例，推荐的调用位置为 MFC 程序的 InitInstance 和 ExitInstance 方法中。</p>
 <p>例如: </p><div class="fragment"><div class="line">BOOL CMFCApp::InitInstance()</div>
 <div class="line">{</div>
-<div class="line">    <span class="comment">// You may use COINIT_MULTITHREADED or COINIT_APARTMENTTHREADED based on the requirement of your application.</span></div>
-<div class="line">    <span class="comment">// If you are not sure, read more in https://docs.microsoft.com/en-us/windows/win32/learnwin32/initializing-the-com-library</span></div>
-<div class="line">    CoInitializeEx(NULL, COINIT_MULTITHREADED);</div>
+<div class="line">    <span class="comment">// 你需要根据应用程序的实际情况选择 COINIT_MULTITHREADED 或 COINIT_APARTMENTTHREADED</span></div>
+<div class="line">    <span class="comment">// 如，MFC 使用 COINIT_APARTMENTTHREADED，其余情况可使用 COINIT_MULTITHREADED</span></div>
+<div class="line">    <span class="comment">// 如果你并不确定，请仔细阅读文档 https://docs.microsoft.com/zh-cn/windows/win32/learnwin32/initializing-the-com-library</span></div>
+<div class="line">    CoInitializeEx(NULL, COINIT_APARTMENTTHREADED);</div>
 <div class="line">    <span class="comment">// etc.</span></div>
 <div class="line">    CWinApp::InitInstance();</div>
 <div class="line">}</div>
@@ -130,9 +134,11 @@ Q6. C++ 运行时调用 CreateDispatch 失败，返回错误 0x800401F0 尚未�
 <div class="line">}</div>
 </div><!-- fragment --> </blockquote>
 <h4><a class="anchor" id="faq7"></a>
-Q7. C++ 运行时调用 CreateDispatch 失败，返回 False 且 m_lpDispatch 为空指针</h4>
+Q7. C++ 运行时调用 CreateInstance 失败，返回 False 且 m_pInterface 为空指针</h4>
 <blockquote class="doxtable">
-<p>与 <a href="#faq1">Q1</a> 相同，其原因为对应平台的 LPV 模块在该机器上并未成功注册。请按相应步骤排查和解决问题。 </p>
+<p>1. 确认和排查相关模块是否成功注册，参考 <a href="#faq1">Q1</a> 步骤。</p><ol type="1">
+<li>确认所在线程是否正常初始化 COM，参考 <a href="#faq6">Q6</a> 步骤。 </li>
+</ol>
 </blockquote>
 <h4><a class="anchor" id="faq8"></a>
 Q8. C# 及其他 .net 调用 LPV 显示控件，编辑器报错：找不到 'AxLPVDisplayLib.AxLDisplay'，请确保已引用包含此类型的程序集。</h4>
@@ -147,13 +153,21 @@ Q8. C# 及其他 .net 调用 LPV 显示控件，编辑器报错：找不到 'AxL
 </ol>
 </blockquote>
 <h4><a class="anchor" id="faq9"></a>
-Q9. 注册脚本提示错误 Register failed, error code = 3.</h4>
+Q9. C++ 创建 LPV 显示控件失败，调用 Create 接口返回 False</h4>
+<blockquote class="doxtable">
+<p>1. 确认和排查 LDisplay 模块是否成功注册，参考 <a href="#faq1">Q1</a> 步骤。</p><ol type="1">
+<li>确认创建控件的线程以 COINIT_APARTMENTTHREADED 初始化，ActiveX 控件要求以 STA 模式初始化，其所在线程不能使用 COINIT_MULTITHREADED 模式。注意：您仍旧可以在其他线程以 COINIT_MULTITHREADED 初始化。</li>
+<li>对于 MFC 程序，确认是否已在应用程序的 InitInstance 函数中调用 AfxEnableControlContainer() 以启用对 ActiveX 控件的调用。 更多信息，请查阅微软官方 <a href="https://docs.microsoft.com/zh-cn/cpp/mfc/reference/ole-initialization">OLE 初始化</a> 相关文档。 </li>
+</ol>
+</blockquote>
+<h4><a class="anchor" id="faq10"></a>
+Q10. 注册脚本提示错误 Register failed, error code = 3.</h4>
 <blockquote class="doxtable">
 <p>该错误表示注册工具无法正常加载 LPV 模块。<br  />
  通常是由于没有安装正确版本的 Visual C++ Redistributable Package。需从<a href="https://support.microsoft.com/en-us/topic/the-latest-supported-visual-c-downloads-2647da03-1eea-4433-9aff-95f26a218cc0">微软官方网站</a>下载安装，也可以从我们提供的<a href="http://fileserver.hzleaper.com:8086/f/eea1a6598fd947d58540/">下载链接</a>下载。 </p>
 </blockquote>
-<h4><a class="anchor" id="faq10"></a>
-Q10. 注册脚本提示错误 Register failed, error code = 5.</h4>
+<h4><a class="anchor" id="faq11"></a>
+Q11. 注册脚本提示错误 Register failed, error code = 5.</h4>
 <blockquote class="doxtable">
 <p>该错误表示注册工具无法正常执行注册任务。<br  />
  可能是由于未以管理员运行注册脚本，或者 LPV 所在的目录路径不合法。需关闭脚本，再次按照 <a href="#faq1">Q1</a> 提供的步骤确认并重新注册。 </p>

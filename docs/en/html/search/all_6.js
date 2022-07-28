@@ -18,7 +18,7 @@ var searchData=
   ['getcontour_184',['GetContour',['../interface_l_p_v_blob_lib_1_1_i_l_blob.html#a039b1190a5c107325664d30c346a9041',1,'LPVBlobLib::ILBlob']]],
   ['getcontrast_185',['GetContrast',['../interface_l_p_v_blob_lib_1_1_i_l_blob.html#a0b4e5dc2bbf9cefb5be609d31d5b0dc8',1,'LPVBlobLib::ILBlob']]],
   ['getconvexhull_186',['GetConvexHull',['../interface_l_p_v_blob_lib_1_1_i_l_blob.html#afb31c798fc29093b567d5befd570655f',1,'LPVBlobLib::ILBlob::GetConvexHull()'],['../interface_l_p_v_geom_lib_1_1_i_l_points.html#afb31c798fc29093b567d5befd570655f',1,'LPVGeomLib::ILPoints::GetConvexHull()']]],
-  ['getctrl_187',['GetCtrl',['../interface_l_p_v_core_lib_1_1_i_l_poly_region.html#a0b3e235aabc60dbd4b766856ab0e7609',1,'LPVCoreLib::ILPolyRegion']]],
+  ['getctrl_187',['GetCtrl',['../interface_l_p_v_core_lib_1_1_i_l_poly_region.html#aae130c43021a8211b3c90c396edfff44',1,'LPVCoreLib::ILPolyRegion']]],
   ['geterrmsg_188',['GetErrMsg',['../interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html#a7a82dfd725b4d9982a1eeb35fb68e463',1,'LPVIBLib::ILIBService']]],
   ['getfeature_189',['GetFeature',['../interface_l_p_v_blob_lib_1_1_i_l_blob.html#ac9343a8f047843e973e61cb311f9023f',1,'LPVBlobLib::ILBlob::GetFeature()'],['../interface_l_p_v_locate_x_lib_1_1_i_l_contour_result.html#ab6f8cbeebe78a27168f4f3e330050187',1,'LPVLocateXLib::ILContourResult::GetFeature()'],['../interface_l_p_v_math_lib_1_1_i_l_data_blob.html#a176b9c2e64946f94763c3a481df41281',1,'LPVMathLib::ILDataBlob::GetFeature()']]],
   ['getglobalvariablevalue_190',['GetGlobalVariableValue',['../interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html#aefb57c86d795c089f008a5a1e7182271',1,'LPVIBLib::ILIBService']]],
