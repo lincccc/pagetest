@@ -104,10 +104,10 @@ Public 成员函数</h2></td></tr>
 <tr class="separator:aa2f1e028b5180c68b2b14fc91e036e82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a373343b8926eafc22b685dbdaa7d496f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_math_lib_1_1_i_l_data_blob_analysis.html#a373343b8926eafc22b685dbdaa7d496f">SetBlobRange</a> (double lb, double ub)</td></tr>
 <tr class="separator:a373343b8926eafc22b685dbdaa7d496f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44f7d984fbf7906b946bc84cd9204f2c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_math_lib_1_1_i_l_data_blob_analysis.html#a44f7d984fbf7906b946bc84cd9204f2c">SetBlobRangeThresholdAdaptGlobal</a> (<a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0b">LPVPolarity</a> blobPolarity)</td></tr>
-<tr class="separator:a44f7d984fbf7906b946bc84cd9204f2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e49c8aaed67aaff0c658dcb43680727"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_math_lib_1_1_i_l_data_blob_analysis.html#a1e49c8aaed67aaff0c658dcb43680727">SetBlobRangeThresholdAdaptLocal</a> (<a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0b">LPVPolarity</a> blobPolarity, int blockSize, double bias)</td></tr>
-<tr class="separator:a1e49c8aaed67aaff0c658dcb43680727"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3e8a634acc3131a25ef9c8cf9de9610"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_math_lib_1_1_i_l_data_blob_analysis.html#ac3e8a634acc3131a25ef9c8cf9de9610">SetRangeThresholdAdaptGlobal</a> (<a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0b">LPVPolarity</a> blobPolarity)</td></tr>
+<tr class="separator:ac3e8a634acc3131a25ef9c8cf9de9610"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1481beacb5c565fe50a4fed950671619"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_math_lib_1_1_i_l_data_blob_analysis.html#a1481beacb5c565fe50a4fed950671619">SetRangeThresholdAdaptLocal</a> (<a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0b">LPVPolarity</a> blobPolarity, int blockSize, double bias)</td></tr>
+<tr class="separator:a1481beacb5c565fe50a4fed950671619"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4080475bd98f57f624e258da6f5ed17"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_math_lib_1_1_i_l_data_blob_analysis.html#ab4080475bd98f57f624e258da6f5ed17">Build</a> (<a class="el" href="interface_l_p_v_math_lib_1_1_i_l_data_list.html">ILDataList</a> *data, <a class="el" href="interface_l_p_v_math_lib_1_1_i_l_data_blob_results.html">ILDataBlobResults</a> **results)</td></tr>
 <tr class="separator:ab4080475bd98f57f624e258da6f5ed17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -135,15 +135,15 @@ Public 成员函数</h2></td></tr>
 <p>数据斑点分析用于从数据队列中提取感兴趣的数据区域。 数据队列可能是检测轮廓与目标之间的距离，使用数据斑点分析基于这些距离检测目标轮廓上的缺陷。 也可能是多帧检测结果的集合，通过数据斑点分析进行检测结果的异常分析。</p>
 <p>使用这个接口，需要创建一个 LBlobAnalysis 对象。</p>
 <h3>示例代码 </h3>
- <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><p> Code snippets: snippets/DataBlob.cpp </p><div class="fragment"><div class="line">ILBlobAnalysisPtr m_data_blob_ana(__uuidof(LBlobAnalysis));</div>
-<div class="line">m_data_blob_ana-&gt;SetBlobRangeThresholdAdaptLocal((LPVPolarity::LPVWhiteOnBlack, 99, 20);</div>
+ <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><p> Code snippets: snippets/DataBlob.cpp </p><div class="fragment"><div class="line">ILDataBlobAnalysisPtr m_data_blob_ana(__uuidof(LDataBlobAnalysis));</div>
+<div class="line">m_data_blob_ana-&gt;SetRangeThresholdAdaptLocal(LPVPolarity::LPVWhiteOnBlack, 99, 20);</div>
 <div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = m_data_blob_ana-&gt;Build(m_dataList, &amp;m_data_blob_results);</div>
 <div class="line"><span class="keywordflow">if</span> (err != LPVErrorCode::LPVNoError) <span class="keywordflow">return</span>;</div>
 <div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">LPV 算法或函数运行过程中遇到的错误。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:170</div></div>
-</div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><p> Code snippets: snippets/DataBlob.cs </p><div class="fragment"><div class="line">LBlobAnalysis m_data_blob_ana = <span class="keyword">new</span> LBlobAnalysis();</div>
-<div class="line">m_data_blob_ana.SetBlobRangeThresholdAdaptLocal((<a class="code" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0b">LPVPolarity</a>.LPVWhiteOnBlack, 99, 20);</div>
-<div class="line">LPVErrorCode err = m_data_blob_ana.Build(m_dataList, out m_data_blob_results);</div>
-<div class="line">if (err != <a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>.LPVNoError) <span class="keywordflow">return</span>;</div>
+</div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><p> Code snippets: snippets/DataBlob.cs </p><div class="fragment"><div class="line">LDataBlobAnalysis m_data_blob_ana = <span class="keyword">new</span> LDataBlobAnalysis();</div>
+<div class="line">m_data_blob_ana.SetRangeThresholdAdaptLocal(<a class="code" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0b">LPVPolarity</a>.LPVWhiteOnBlack, 99, 20);</div>
+<div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = m_data_blob_ana.Build(m_dataList, out m_data_blob_results);</div>
+<div class="line"><span class="keywordflow">if</span> (err != <a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>.LPVNoError) <span class="keywordflow">return</span>;</div>
 <div class="ttc" id="anamespace_l_p_v_core_lib_html_ad8a4d763bb82cc129119ff1cf0bc0e0b"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0b">LPVCoreLib::LPVPolarity</a></div><div class="ttdeci">LPVPolarity</div><div class="ttdoc">该枚举类型表示要定位的物体或边的极性</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:566</div></div>
 </div><!-- fragment --> </div>  </div><h2 class="groupheader">成员函数说明</h2>
 <a id="ad393462d8592edd04ea5175566339daf"></a>
@@ -223,14 +223,14 @@ Public 成员函数</h2></td></tr>
 
 </div>
 </div>
-<a id="a44f7d984fbf7906b946bc84cd9204f2c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a44f7d984fbf7906b946bc84cd9204f2c">&#9670;&nbsp;</a></span>SetBlobRangeThresholdAdaptGlobal()</h2>
+<a id="ac3e8a634acc3131a25ef9c8cf9de9610"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3e8a634acc3131a25ef9c8cf9de9610">&#9670;&nbsp;</a></span>SetRangeThresholdAdaptGlobal()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void SetBlobRangeThresholdAdaptGlobal </td>
+          <td class="memname">void SetRangeThresholdAdaptGlobal </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0b">LPVPolarity</a>&#160;</td>
           <td class="paramname"><em>blobPolarity</em></td><td>)</td>
@@ -247,14 +247,14 @@ Public 成员函数</h2></td></tr>
 
 </div>
 </div>
-<a id="a1e49c8aaed67aaff0c658dcb43680727"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1e49c8aaed67aaff0c658dcb43680727">&#9670;&nbsp;</a></span>SetBlobRangeThresholdAdaptLocal()</h2>
+<a id="a1481beacb5c565fe50a4fed950671619"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1481beacb5c565fe50a4fed950671619">&#9670;&nbsp;</a></span>SetRangeThresholdAdaptLocal()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void SetBlobRangeThresholdAdaptLocal </td>
+          <td class="memname">void SetRangeThresholdAdaptLocal </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0b">LPVPolarity</a>&#160;</td>
           <td class="paramname"><em>blobPolarity</em>, </td>
