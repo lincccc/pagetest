@@ -171,8 +171,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 <div class="line">dataList-&gt;Add(4);</div>
 <div class="line"><span class="keywordtype">double</span> meanValue = dataList-&gt;Metric[<a class="code" href="namespace_l_p_v_core_lib.html#a044b4c1019ab24bd62eed3e7fd764b85acb8fb4d24c6861dc339f3bca1597a4b9">LPVAggMax</a>];</div>
 <div class="line"><span class="keywordtype">double</span> majorValue = dataList-&gt;Metric[<a class="code" href="namespace_l_p_v_core_lib.html#a044b4c1019ab24bd62eed3e7fd764b85ab5d288892df4813e2ebc3fb946367474">LPVAggMajor</a>];</div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html_a044b4c1019ab24bd62eed3e7fd764b85ab5d288892df4813e2ebc3fb946367474"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a044b4c1019ab24bd62eed3e7fd764b85ab5d288892df4813e2ebc3fb946367474">LPVCoreLib::LPVAggMajor</a></div><div class="ttdeci">@ LPVAggMajor</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:518</div></div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html_a044b4c1019ab24bd62eed3e7fd764b85acb8fb4d24c6861dc339f3bca1597a4b9"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a044b4c1019ab24bd62eed3e7fd764b85acb8fb4d24c6861dc339f3bca1597a4b9">LPVCoreLib::LPVAggMax</a></div><div class="ttdeci">@ LPVAggMax</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:513</div></div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a044b4c1019ab24bd62eed3e7fd764b85ab5d288892df4813e2ebc3fb946367474"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a044b4c1019ab24bd62eed3e7fd764b85ab5d288892df4813e2ebc3fb946367474">LPVCoreLib::LPVAggMajor</a></div><div class="ttdeci">@ LPVAggMajor</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:532</div></div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a044b4c1019ab24bd62eed3e7fd764b85acb8fb4d24c6861dc339f3bca1597a4b9"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a044b4c1019ab24bd62eed3e7fd764b85acb8fb4d24c6861dc339f3bca1597a4b9">LPVCoreLib::LPVAggMax</a></div><div class="ttdeci">@ LPVAggMax</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:527</div></div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><p> Code snippets: snippets/ProjectionAndAnalysis.cs </p><div class="fragment"><div class="line">LDataList dataList = <span class="keyword">new</span> LDataList();</div>
 <div class="line">dataList.Add(1.1);</div>
 <div class="line">dataList.Add(2.3);</div>
@@ -331,12 +331,12 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Draw the data vector as a chart onto provide device context. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Draw the data vector as a chart onto provide device context, using the index as x axis and the value as y axis. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">hdc</td><td>Handle to the device context of the destination window or bitmap. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">drawFlags</td><td>Flags to control which part of a data chart should be drawn, see LPVChartDrawFlags for usage. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">xGridStep</td><td>Specify the step of label on x axis(Index), 0 means we'll determine it on the fly according to the data range. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">yGridStep</td><td>Specify the step of label on y axis(Value), 0 means we'll determine it on the fly according to the data range. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">xGridStep</td><td>Specify the step of label on x axis, 0 means we'll determine it on the fly according to the score data. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">yGridStep</td><td>Specify the step of label on y axis, 0 means we'll determine it on the fly according to the score data. </td></tr>
   </table>
   </dd>
 </dl>

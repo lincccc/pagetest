@@ -348,12 +348,12 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Draw the histogram as a data chart onto provide device context. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Draw the histogram as a data chart onto provide device context, using the index as x axis and the value as y axis. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">hdc</td><td>Handle to the device context of the destination window or bitmap. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">drawFlags</td><td>Flags to control which part of a data chart should be drawn, see LPVChartDrawFlags for usage. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">xGridStep</td><td>Specify the step of label on x axis(Index), 0 means we'll determine it on the fly according to the histogram data. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">yGridStep</td><td>Specify the step of label on y axis(Value), 0 means we'll determine it on the fly according to the histogram data. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">xGridStep</td><td>Specify the step of label on x axis, 0 means we'll determine it on the fly according to the score data. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">yGridStep</td><td>Specify the step of label on y axis, 0 means we'll determine it on the fly according to the score data. </td></tr>
   </table>
   </dd>
 </dl>

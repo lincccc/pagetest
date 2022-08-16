@@ -348,12 +348,12 @@ Public 成员函数</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>将直方图绘制到给定的设备。 </p><dl class="params"><dt>参数</dt><dd>
+<p>将直方图绘制到给定的设备，使用索引作为 x 轴、数值作为 y 轴。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">hdc</td><td>绘制设备，可为窗口、位图等的上下文句柄。 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">drawFlags</td><td>用于控制绘制的内容，查看 LPVChartDrawFlags。 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">xGridStep</td><td>绘制 x 轴（索引）的步长，默认设置为 0，表示按照直方图数据自动选择合适的步长。 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">yGridStep</td><td>绘制 y 轴（数值）的步长，默认设置为 0，表示按照直方图数据自动选择合适的步长。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">xGridStep</td><td>绘制 x 轴的步长，默认设置为 0，表示按照分数曲线数据自动选择合适的步长。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">yGridStep</td><td>绘制 y 轴的步长，默认设置为 0，表示按照分数曲线数据自动选择合适的步长。 </td></tr>
   </table>
   </dd>
 </dl>

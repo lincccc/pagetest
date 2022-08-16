@@ -34,6 +34,6 @@ var searchData=
   ['drawpoint_118',['DrawPoint',['../interface_l_p_v_core_lib_1_1_i_l_system.html#a4ca2cc04a9d83dedb5aa9f87de73e5c4',1,'LPVCoreLib::ILSystem']]],
   ['drawpolygon_119',['DrawPolygon',['../interface_l_p_v_core_lib_1_1_i_l_system.html#a22cb756639bb2f4a607b455f0e3ccca7',1,'LPVCoreLib::ILSystem']]],
   ['drawrect_120',['DrawRect',['../interface_l_p_v_core_lib_1_1_i_l_system.html#ab950f34906bd4be377a58d3893d4c9db',1,'LPVCoreLib::ILSystem']]],
-  ['drawscorechart_121',['DrawScoreChart',['../interface_l_p_v_locate_lib_1_1_i_l_line_results.html#a54ab763668a5303c740f32f0c403cabf',1,'LPVLocateLib::ILLineResults::DrawScoreChart()'],['../interface_l_p_v_locate_lib_1_1_i_l_circle_results.html#a54ab763668a5303c740f32f0c403cabf',1,'LPVLocateLib::ILCircleResults::DrawScoreChart()']]],
+  ['drawscorechart_121',['DrawScoreChart',['../interface_l_p_v_locate_lib_1_1_i_l_line_results.html#ab3f5656bee7a6e3d1237b3ecd64c73e7',1,'LPVLocateLib::ILLineResults::DrawScoreChart()'],['../interface_l_p_v_locate_lib_1_1_i_l_circle_results.html#ab3f5656bee7a6e3d1237b3ecd64c73e7',1,'LPVLocateLib::ILCircleResults::DrawScoreChart()']]],
   ['drawtext_122',['DrawText',['../interface_l_p_v_core_lib_1_1_i_l_system.html#aa92045160180ad2673a76b2b626c70e3',1,'LPVCoreLib::ILSystem']]]
 ];

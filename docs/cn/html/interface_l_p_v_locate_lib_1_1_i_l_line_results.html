@@ -107,8 +107,8 @@ Public 成员函数</h2></td></tr>
 <tr class="separator:a768f6dcffe07be129658e4575c762dcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25ad77280c069294fb0ac557c50ec4b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_locate_lib_1_1_i_l_line_results.html#a25ad77280c069294fb0ac557c50ec4b7">DrawAll</a> (HDC hdc, <a class="el" href="namespace_l_p_v_locate_lib.html#acc7f204b3c80e598e8752735b4e74e75">LPVLineDrawFlags</a> drawFlags, double zoomX, double zoomY, double panX, double panY)</td></tr>
 <tr class="separator:a25ad77280c069294fb0ac557c50ec4b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54ab763668a5303c740f32f0c403cabf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_locate_lib_1_1_i_l_line_results.html#a54ab763668a5303c740f32f0c403cabf">DrawScoreChart</a> (HDC hdc, <a class="el" href="namespace_l_p_v_core_lib.html#a9c7c60c3ff92e1b019f872af1d31e858">LPVChartDrawFlags</a> bDrawFlags, int xGridStep, int yGridStep)</td></tr>
-<tr class="separator:a54ab763668a5303c740f32f0c403cabf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3f5656bee7a6e3d1237b3ecd64c73e7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_locate_lib_1_1_i_l_line_results.html#ab3f5656bee7a6e3d1237b3ecd64c73e7">DrawScoreChart</a> (HDC hdc, <a class="el" href="namespace_l_p_v_core_lib.html#a9c7c60c3ff92e1b019f872af1d31e858">LPVChartDrawFlags</a> drawFlags, int xGridStep, int yGridStep)</td></tr>
+<tr class="separator:ab3f5656bee7a6e3d1237b3ecd64c73e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><p>该接口提供一个直线定位结果集合，包含一个或多个直线定位结果。 </p>
@@ -122,7 +122,7 @@ Public 成员函数</h2></td></tr>
 <div class="line">    ILLineResultPtr result = m_line_results-&gt;Item(i);</div>
 <div class="line">    <span class="comment">// handle each line result</span></div>
 <div class="line">}</div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">LPV 算法或函数运行过程中遇到的错误。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:170</div></div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">LPV 算法或函数运行过程中遇到的错误。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:184</div></div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LLineResults m_line_results;</div>
 <div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = m_line_detector.Detect(m_img, (LRotRectRegion)m_roi, out m_line_results);</div>
 <div class="line"><span class="keywordflow">if</span> (err != <a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>.LPVNoError) <span class="keywordflow">return</span>;</div>
@@ -327,8 +327,8 @@ Public 成员函数</h2></td></tr>
 
 </div>
 </div>
-<a id="a54ab763668a5303c740f32f0c403cabf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a54ab763668a5303c740f32f0c403cabf">&#9670;&nbsp;</a></span>DrawScoreChart()</h2>
+<a id="ab3f5656bee7a6e3d1237b3ecd64c73e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3f5656bee7a6e3d1237b3ecd64c73e7">&#9670;&nbsp;</a></span>DrawScoreChart()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -343,7 +343,7 @@ Public 成员函数</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="namespace_l_p_v_core_lib.html#a9c7c60c3ff92e1b019f872af1d31e858">LPVChartDrawFlags</a>&#160;</td>
-          <td class="paramname"><em>bDrawFlags</em>, </td>
+          <td class="paramname"><em>drawFlags</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -364,12 +364,12 @@ Public 成员函数</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>绘制检测分数曲线到给定的设备。该曲线表示在沿着检测区域的方向上检测分数的分布情况。通常用于为直线定位调试合适的分数阈值。 </p><dl class="params"><dt>参数</dt><dd>
+<p>绘制检测分数曲线到给定的设备。该曲线表示在沿着检测区域的方向（x 轴）上检测分数（y 轴）的分布情况。 通常用于为直线定位调试合适的分数阈值。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">hdc</td><td>绘制设备，可为窗口、位图等的上下文句柄。 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">bDrawFlags</td><td>用于控制绘制的内容，查看 LPVChartDrawFlags。 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">xGridStep</td><td>绘制 x 轴（区域）的步长，默认设置为 0，表示按照分数曲线数据自动选择合适的步长。 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">yGridStep</td><td>绘制 y 轴（分数）的步长，默认设置为 0，表示按照分数曲线数据自动选择合适的步长。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">drawFlags</td><td>用于控制绘制的内容，查看 LPVChartDrawFlags。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">xGridStep</td><td>绘制 x 轴的步长，默认设置为 0，表示按照分数曲线数据自动选择合适的步长。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">yGridStep</td><td>绘制 y 轴的步长，默认设置为 0，表示按照分数曲线数据自动选择合适的步长。 </td></tr>
   </table>
   </dd>
 </dl>
