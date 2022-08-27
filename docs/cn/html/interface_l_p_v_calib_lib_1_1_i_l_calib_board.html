@@ -145,6 +145,14 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#aa5146b955fed19ebfeb97f84fc39edc1">UseLFSubPixCorner</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:aa5146b955fed19ebfeb97f84fc39edc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否使用直线拟合方法检测标定板定位点。默认设置为关闭。仅影响棋盘格和二维码棋盘格标定板。 <br /></td></tr>
 <tr class="separator:aa5146b955fed19ebfeb97f84fc39edc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacd23f12482f7a78824ad5f3b2f5c21e"><td class="memItemLeft" align="right" valign="top"><a id="aacd23f12482f7a78824ad5f3b2f5c21e"></a>
+BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#aacd23f12482f7a78824ad5f3b2f5c21e">GuessPartialBlock</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:aacd23f12482f7a78824ad5f3b2f5c21e"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否启用对非完整块中的标定点的猜测和检测，对分散式二维码棋盘格标定板起效。 开启猜测可能获得更多标定点结果，但这些猜测的点可能精度稍低。默认开启。 <br /></td></tr>
+<tr class="separator:aacd23f12482f7a78824ad5f3b2f5c21e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a299223d3c1410cbdc6bfaeffcadcab6e"><td class="memItemLeft" align="right" valign="top"><a id="a299223d3c1410cbdc6bfaeffcadcab6e"></a>
+BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#a299223d3c1410cbdc6bfaeffcadcab6e">InvertBlock</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a299223d3c1410cbdc6bfaeffcadcab6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否翻转标定块，对分散式二维码棋盘格标定板起效。若相机采图配置为上下或左右镜像，则开启该配置以帮助算法获取正确的坐标系方向。默认关闭。 <br /></td></tr>
+<tr class="separator:a299223d3c1410cbdc6bfaeffcadcab6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><p>该接口提供标定板相关的功能。 </p>

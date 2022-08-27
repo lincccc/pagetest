@@ -117,10 +117,10 @@ Public 成员函数</h2></td></tr>
 <p>使用这个接口，需要创建一个 <a class="el" href="class_l_p_v_img_proc_lib_1_1_l_image_convert.html">LImageConvert</a> 对象。</p>
 <h3>示例代码 </h3>
  <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><p> Code snippets: snippets/ColorSpace.cpp </p><div class="fragment"><div class="line">ILImageConvertPtr m_img_convert(__uuidof(LImageConvert));</div>
-<div class="line">m_img_convert-&gt;BGRToGrayscale(m_color_img, m_gray_img);</div>
+<div class="line">m_img_convert-&gt;BGRToGray(m_color_img, m_gray_img);</div>
 <div class="line">m_img_convert-&gt;Convert(LPVColorSpaceBGR, LPVColorSpaceHSV, m_color_img, m_hsv_img);</div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><p> Code snippets: snippets/ColorSpace.cs </p><div class="fragment"><div class="line">LImageConvert m_img_convert = <span class="keyword">new</span> LImageConvert();</div>
-<div class="line">m_img_convert.BGRToGrayscale(m_color_img, m_gray_img);</div>
+<div class="line">m_img_convert.BGRToGray(m_color_img, m_gray_img);</div>
 <div class="line">m_img_convert.Convert(<a class="code" href="namespace_l_p_v_core_lib.html#abc1c78dbe5bbd9696e1af6618392a083">LPVColorSpace</a>.LPVColorSpaceBGR, <a class="code" href="namespace_l_p_v_core_lib.html#abc1c78dbe5bbd9696e1af6618392a083">LPVColorSpace</a>.LPVColorSpaceHSV, m_color_img, m_hsv_img);</div>
 <div class="ttc" id="anamespace_l_p_v_core_lib_html_abc1c78dbe5bbd9696e1af6618392a083"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#abc1c78dbe5bbd9696e1af6618392a083">LPVCoreLib::LPVColorSpace</a></div><div class="ttdeci">LPVColorSpace</div><div class="ttdoc">该枚举表示图像的颜色空间，同时指定分量通道顺序。所有通道均归一化到 0 ~ 255 范围。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:1007</div></div>
 </div><!-- fragment --> </div>  </div><h2 class="groupheader">成员函数说明</h2>

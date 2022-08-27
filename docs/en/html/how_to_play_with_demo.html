@@ -84,8 +84,9 @@ $(function() {
 <li>MFC/C#/QT programs with GUI, providing user friendly graphics interface for interactive region manipulation, parameters' tuning and results' displacement. The executable binaries are located under the demo/require_platform folder, like demo/x64. The source codes as well as the project files are available in the individual project folder.</li>
 <li>Simple C++/C# code snippets, demonstrating how some LPV functions are called. It's usually a main function body in one single source file under demo/snippet folder. For detailed usage, please refer to <a class="el" href="how_to_use_code_snippets.html">How to Use DEMO Code Snippets</a>.</li>
 </ul>
-<p><em>NOTE: The platform of DEMOs should be exactly the same as the LPV dlls you installed and registered.</em><br  />
- <em>NOTE: Please make sure the LPV dlls are registered and licensed before running the DEMOs.</em></p>
+<p><em>NOTE 1: The platform of DEMOs should be exactly the same as the LPV dlls you installed and registered.</em><br  />
+ <em>NOTE 2: Please make sure the LPV dlls are registered and licensed before running the DEMOs.</em><br  />
+ <em>NOTE 3: The out-of-box Qt DEMO executors are built with Qt5.9.4, you may install the same version from Qt's official website. Or, you may use our abridged package of only the necessary dependencies, just download(<a href="http://fileserver.hzleaper.com:8086/f/d0bca96b69ea43bbba44/">x86</a> or <a href="http://fileserver.hzleaper.com:8086/f/265acd571340457fa0d1/">x64</a>) then extract to the DEMO folder.</em></p>
 <p><b>GUI DEMO</b></p>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -157,6 +158,7 @@ Sanity</h1>
 <p>Demonstrate a typical vision task involves Image, Region, Pattern matching, calibration modules.</p>
 <blockquote class="doxtable">
 <p><b>Source code (C++):</b> mfcdemo/MFCSanity<br  />
+ <b>Source code (Qt):</b> qtdemo/QtSanity<br  />
  <b>Source code (C#):</b> csharpdemo/CSharpSanity<br  />
  <b>Image files:</b> sourceImg.png, templateImg.png</p>
 <p><b>Related classes:</b> <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">LImage</a>, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_rect_region.html">LRectRegion</a>, <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html">LMatch</a>, <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match_results.html">LMatchResults</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_n_points.html">LCalibNPoints</a> </p>
@@ -181,6 +183,7 @@ Region Manipulation</h1>
 <p>Demonstrate how to edit regions and how to calculate and create new regions.</p>
 <blockquote class="doxtable">
 <p><b>Source code (C++):</b> mfcdemo/MFCRegion<br  />
+ <b>Source code (Qt):</b> qtdemo/QtRegion<br  />
  <b>Source code (C#):</b> csharpdemo/CSharpRegion<br  />
  <b>Image files:</b> mask.png</p>
 <p><b>Related classes:</b> <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_rect_region.html">LRectRegion</a>, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_rot_rect_region.html">LRotRectRegion</a>, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_poly_region.html">LPolyRegion</a>, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_mask_region.html">LMaskRegion</a>, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_circle_region.html">LCircleRegion</a>, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_annulus_region.html">LAnnulusRegion</a> </p>
@@ -221,6 +224,7 @@ Template Matching</h1>
 <p>Demonstrate template matching with sub-pixel precision.</p>
 <blockquote class="doxtable">
 <p><b>Source code (C++):</b> mfcdemo/MFCPat<br  />
+ <b>Source code (Qt):</b> qtdemo/QtPat<br  />
  <b>Source code (C#):</b> csharpdemo/CSharpPat<br  />
  <b>Image files:</b> sourceImg.png</p>
 <p><b>Related classes:</b> <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_rect_region.html">LRectRegion</a>, <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html">LMatch</a>, <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match_results.html">LMatchResults</a> </p>
@@ -244,8 +248,8 @@ Blob Analysis</h1>
 <p>Demonstrate blob analysis, either in grayscale or color mode.</p>
 <blockquote class="doxtable">
 <p><b>Source code (C++):</b> mfcdemo/MFCBlob<br  />
- <b>Source code (C#):</b> csharpdemo/CSharpBlob<br  />
  <b>Source code (Qt):</b> qtdemo/QtBlob<br  />
+ <b>Source code (C#):</b> csharpdemo/CSharpBlob<br  />
  <b>Image files:</b> rou.jpg, smile.png, cat.png</p>
 <p><b>Related classes:</b> <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html">LBlobAnalysis</a>, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_filter.html">LBlobFilter</a>, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_results.html">LBlobResults</a>, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html">LBlob</a> </p>
 </blockquote>
@@ -280,6 +284,7 @@ Image Processing</h1>
 <p>Demonstrate the common image processing operations.</p>
 <blockquote class="doxtable">
 <p><b>Source code (C++):</b> mfcdemo/MFCImgProc<br  />
+ <b>Source code (Qt):</b> qtdemo/QtImgProc<br  />
  <b>Source code (C#):</b> csharpdemo/CSharpImgProc<br  />
 </p>
 <p><b>Related classes:</b> <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html">LImageThreshold</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_arithm.html">LImageArithm</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_filter.html">LImageFilter</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_edge_filter.html">LEdgeFilter</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_morph.html">LImageMorph</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_stats.html">LImageStats</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_histogram.html">LHistogram</a> </p>
@@ -303,6 +308,7 @@ Line Detection</h1>
 <p>Demonstrate line detection with sub-pixel precision.</p>
 <blockquote class="doxtable">
 <p><b>Source code (C++):</b> mfcdemo/MFCLine<br  />
+ <b>Source code (Qt):</b> qtdemo/QtLine<br  />
  <b>Source code (C#):</b> csharpdemo/CSharpLine<br  />
  <b>Image files:</b> nline_many.png</p>
 <p><b>Related classes:</b> <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_rot_rect_region.html">LRotRectRegion</a>, <a class="el" href="interface_l_p_v_locate_lib_1_1_i_l_line_detector.html">LLineDetector</a>, <a class="el" href="interface_l_p_v_locate_lib_1_1_i_l_line_results.html">LLineResults</a> </p>
@@ -337,6 +343,7 @@ Circle Detection</h1>
 <p>Demonstrate circle detection with sub-pixel precision.</p>
 <blockquote class="doxtable">
 <p><b>Source code (C++):</b> mfcdemo/MFCCircle<br  />
+ <b>Source code (Qt):</b> qtdemo/QtCircle<br  />
  <b>Source code (C#):</b> csharpdemo/CSharpCircle<br  />
  <b>Image files:</b> half_arc_1.png</p>
 <p><b>Related classes:</b> <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_annulus_region.html">LAnnulusRegion</a>, <a class="el" href="interface_l_p_v_locate_lib_1_1_i_l_circle_detector.html">LCircleDetector</a>, <a class="el" href="interface_l_p_v_locate_lib_1_1_i_l_circle_results.html">LCircleResults</a> </p>
@@ -371,6 +378,7 @@ Path Detection</h1>
 <p>Demonstrate path detection.</p>
 <blockquote class="doxtable">
 <p><b>Source code (C++):</b> mfcdemo/MFCPath<br  />
+ <b>Source code (Qt):</b> qtdemo/QtPath<br  />
  <b>Source code (C#):</b> csharpdemo/CSharpPath<br  />
  <b>Image files:</b> nline_many.png, leadcut.png</p>
 <p><b>Related classes:</b> <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_rot_rect_region.html">LRotRectRegion</a>, LPathDetector, LPathResults </p>
@@ -403,6 +411,7 @@ Contour Detection</h1>
 <p>Demonstrate contour detection with sub-pixel precision.</p>
 <blockquote class="doxtable">
 <p><b>Source code (C++):</b> mfcdemo/MFCContour<br  />
+ <b>Source code (Qt):</b> qtdemo/QtContour<br  />
  <b>Source code (C#):</b> csharpdemo/CSharpContour<br  />
 </p>
 <p><b>Related classes:</b> <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_rot_rect_region.html">LRotRectRegion</a>, LContourDetector, LContourResults </p>
@@ -434,6 +443,7 @@ Calibration</h1>
 <p>Demonstrate the camera calibration, including n-points, pin-hole, FFD camera models using different types of calibration boards.</p>
 <blockquote class="doxtable">
 <p><b>Source code (C++):</b> mfcdemo/MFCCalib<br  />
+ <b>Source code (Qt):</b> qtdemo/QtCalib<br  />
  <b>Source code (C#):</b> csharpdemo/CSharpCalib<br  />
  <b>Image files:</b> chessboard.png, circlegrid.png, distcharuco.jpg</p>
 <p><b>Related classes:</b> <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_n_points.html">LCalibNPoints</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_pin_hole.html">LCalibPinHole</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_f_f_d.html">LCalibFFD</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_custom.html">LCalibCustom</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html">LCalibBoard</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_point_pairs.html">LCalibPointPairs</a> </p>
@@ -469,6 +479,7 @@ Camera Array and Image Stitching</h1>
 <p>Demonstrate the camera array calibration and image stitching.</p>
 <blockquote class="doxtable">
 <p><b>Source code (C++):</b> mfcdemo/MFCCamArray<br  />
+ <b>Source code (Qt):</b> qtdemo/QtCamArray<br  />
  <b>Source code (C#):</b> csharpdemo/CSharpCamArray<br  />
  <b>Image folders:</b> camera_array</p>
 <p><b>Related classes:</b> <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_camera_array.html">LCameraArray</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html">LCalibBoard</a> </p>
@@ -489,6 +500,7 @@ Geometry</h1>
 <p>Demonstrate geometry module, including intersection calculation, gauging, fitting, etc.</p>
 <blockquote class="doxtable">
 <p><b>Source code (C++):</b> mfcdemo/MFCGeom<br  />
+ <b>Source code (Qt):</b> qtdemo/QtGeom<br  />
  <b>Source code (C#):</b> csharpdemo/CSharpGeom<br  />
 </p>
 <p><b>Related classes:</b> <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_point.html">LPoint</a>, <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_line.html">LLine</a>, <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_circle.html">LCircle</a>, <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_points.html">LPoints</a>, <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_rect.html">LRect</a>, <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">LPolygon</a> </p>
@@ -501,6 +513,7 @@ Barcode</h1>
 <p>Demonstrate 1D/2D barcode detection and quality verification.</p>
 <blockquote class="doxtable">
 <p><b>Source code (C++):</b> mfcdemo/MFCBarcode<br  />
+ <b>Source code (Qt):</b> qtdemo/QtBarcode<br  />
  <b>Source code (C#):</b> csharpdemo/CSharpBarcode<br  />
  <b>Image files:</b> barcode_code39.png, barcode_code128.png, barcode_datamatrix.png, barcode_ean13.png, barcode_i25.png, barcode_qr.png</p>
 <p><b>Related classes:</b> <a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html">LBarcodeDetector</a>, <a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_results.html">LBarcodeResults</a>, <a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_result.html">LBarcodeResult</a> </p>
@@ -523,8 +536,8 @@ Display Control</h1>
 <p>Demonstrate the display control.</p>
 <blockquote class="doxtable">
 <p><b>Source code (C++):</b> mfcdemo/MFCDisplay<br  />
- <b>Source code (C#):</b> csharpdemo/CSharpDisplay<br  />
  <b>Source code (Qt):</b> qtdemo/QtDisplay<br  />
+ <b>Source code (C#):</b> csharpdemo/CSharpDisplay<br  />
 </p>
 <p><b>Related classes:</b> <a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html">LDisplay</a> </p>
 </blockquote>
@@ -551,6 +564,7 @@ Connect to IntelliBlink Service</h1>
 <p>Demonstrate how to integrate with and make use of powerful IntelliBlink tasks.</p>
 <blockquote class="doxtable">
 <p><b>Source code (C++):</b> mfcdemo/MFCIBService<br  />
+ <b>Source code (Qt):</b> qtdemo/QtIBService<br  />
  <b>Source code (C#):</b> csharpdemo/CSharpIBService<br  />
  <b>Image folders:</b> exame_chip_1, exame_chip_2</p>
 <p><b>Related classes:</b> <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html">LIBService</a>, <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_algo_result.html">LIBAlgoResult</a>, <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_data.html">LIBData</a>, <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_algo_config.html">LIBAlgoConfig</a>, <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html">LMatch</a> </p>

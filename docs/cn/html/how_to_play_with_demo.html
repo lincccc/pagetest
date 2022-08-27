@@ -84,8 +84,9 @@ $(function() {
 <li>带有 GUI 的 MFC/C#/QT 程序，提供可视化界面用于参数的调整、结果显示等。其可执行程序位于 demo 文件夹下的所需平台对应的文件夹内，如 demo/x64 ，并提供相应的源代码和工程文件。</li>
 <li>简单的 C++/C# 代码片段，用于演示某些功能函数如何调用。通常为一个 Main 函数体，位于 demo/snippets 文件夹内。使用方法请参考 <a class="el" href="how_to_use_code_snippets.html">如何使用 DEMO 代码片段</a>。</li>
 </ul>
-<p><em>注意：DEMO 程序的平台需与安装注册的 lpv 版本对应。</em><br  />
- <em>注意：执行 DEMO 程序前，需保证 LPV 已正常注册和授权。</em></p>
+<p><em>注意 1：DEMO 程序的平台需与安装注册的 lpv 版本对应。</em><br  />
+ <em>注意 2：执行 DEMO 程序前，需保证 LPV 已正常注册和授权。</em><br  />
+ <em>注意 3：安装后自带的 Qt DEMO 程序基于 Qt 5.9.4 版本编译，运行这些 Qt DEMO 的可执行文件需要从 Qt 官方网站下载并安装对应版本。或者，使用我们提供的只包含依赖项的精简压缩包，下载后（ <a href="http://fileserver.hzleaper.com:8086/f/d0bca96b69ea43bbba44/">x86</a> 或 <a href="http://fileserver.hzleaper.com:8086/f/265acd571340457fa0d1/">x64</a> ）解压到对应的 DEMO 可执行文件的同级目录下。</em></p>
 <p><b>GUI 演示程序</b></p>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -157,6 +158,7 @@ $(function() {
 <p>演示典型的视觉检测任务流程，包括图像、Region、模板、标定等基础功能。</p>
 <blockquote class="doxtable">
 <p><b>源代码 (C++)：</b> mfcdemo/MFCSanity<br  />
+ <b>源代码 (Qt)：</b> qtdemo/QtSanity<br  />
  <b>源代码 (C#)：</b> csharpdemo/CSharpSanity<br  />
  <b>图像文件：</b> sourceImg.png，templateImg.png</p>
 <p><b>相关类：</b> <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">LImage</a>, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_rect_region.html">LRectRegion</a>, <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html">LMatch</a>, <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match_results.html">LMatchResults</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_n_points.html">LCalibNPoints</a> </p>
@@ -181,6 +183,7 @@ Region 操作</h1>
 <p>演示如何进行编辑 Region 及如何计算生成新的 Region。</p>
 <blockquote class="doxtable">
 <p><b>源代码 (C++)：</b> mfcdemo/MFCRegion<br  />
+ <b>源代码 (Qt)：</b> qtdemo/QtRegion<br  />
  <b>源代码 (C#)：</b> csharpdemo/CSharpRegion<br  />
  <b>图像文件：</b> mask.png</p>
 <p><b>相关类：</b> <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_rect_region.html">LRectRegion</a>, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_rot_rect_region.html">LRotRectRegion</a>, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_poly_region.html">LPolyRegion</a>, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_mask_region.html">LMaskRegion</a>, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_circle_region.html">LCircleRegion</a>, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_annulus_region.html">LAnnulusRegion</a> </p>
@@ -221,6 +224,7 @@ Region 操作</h1>
 <p>演示高精度模板匹配。</p>
 <blockquote class="doxtable">
 <p><b>源代码 (C++)：</b> mfcdemo/MFCPat<br  />
+ <b>源代码 (Qt)：</b> qtdemo/QtPat<br  />
  <b>源代码 (C#)：</b> csharpdemo/CSharpPat<br  />
  <b>图像文件：</b> sourceImg.png</p>
 <p><b>相关类：</b> <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_rect_region.html">LRectRegion</a>, <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html">LMatch</a>, <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match_results.html">LMatchResults</a> </p>
@@ -244,8 +248,8 @@ Region 操作</h1>
 <p>演示斑点分析，支持灰度和彩色模式。</p>
 <blockquote class="doxtable">
 <p><b>源代码 (C++)：</b> mfcdemo/MFCBlob<br  />
- <b>源代码 (C#)：</b> csharpdemo/CSharpBlob<br  />
  <b>源代码 (Qt)：</b> qtdemo/QtBlob<br  />
+ <b>源代码 (C#)：</b> csharpdemo/CSharpBlob<br  />
  <b>Image files:</b> rou.jpg, smile.png, cat.png</p>
 <p><b>相关类：</b> <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html">LBlobAnalysis</a>, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_filter.html">LBlobFilter</a>, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_results.html">LBlobResults</a>, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html">LBlob</a> </p>
 </blockquote>
@@ -280,6 +284,7 @@ Region 操作</h1>
 <p>演示常见的图像处理算子。</p>
 <blockquote class="doxtable">
 <p><b>源代码 (C++)：</b> mfcdemo/MFCImgProc<br  />
+ <b>源代码 (Qt)：</b> qtdemo/QtImgProc<br  />
  <b>源代码 (C#)：</b> csharpdemo/CSharpImgProc<br  />
 </p>
 <p><b>相关类：</b> <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html">LImageThreshold</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_arithm.html">LImageArithm</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_filter.html">LImageFilter</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_edge_filter.html">LEdgeFilter</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_morph.html">LImageMorph</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_stats.html">LImageStats</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_histogram.html">LHistogram</a> </p>
@@ -303,6 +308,7 @@ Region 操作</h1>
 <p>演示亚像素直线定位。</p>
 <blockquote class="doxtable">
 <p><b>源代码 (C++)：</b> mfcdemo/MFCLine<br  />
+ <b>源代码 (Qt)：</b> qtdemo/QtLine<br  />
  <b>源代码 (C#)：</b> csharpdemo/CSharpLine<br  />
  <b>图像文件：</b> nline_many.png</p>
 <p><b>相关类：</b> <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_rot_rect_region.html">LRotRectRegion</a>, <a class="el" href="interface_l_p_v_locate_lib_1_1_i_l_line_detector.html">LLineDetector</a>, <a class="el" href="interface_l_p_v_locate_lib_1_1_i_l_line_results.html">LLineResults</a> </p>
@@ -337,6 +343,7 @@ Region 操作</h1>
 <p>演示亚像素圆定位。</p>
 <blockquote class="doxtable">
 <p><b>源代码 (C++)：</b> mfcdemo/MFCCircle<br  />
+ <b>源代码 (Qt)：</b> qtdemo/QtCircle<br  />
  <b>源代码 (C#)：</b> csharpdemo/CSharpCircle<br  />
  <b>图像文件：</b> half_arc_1.png</p>
 <p><b>相关类：</b> <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_annulus_region.html">LAnnulusRegion</a>, <a class="el" href="interface_l_p_v_locate_lib_1_1_i_l_circle_detector.html">LCircleDetector</a>, <a class="el" href="interface_l_p_v_locate_lib_1_1_i_l_circle_results.html">LCircleResults</a> </p>
@@ -371,6 +378,7 @@ Region 操作</h1>
 <p>演示路径定位。</p>
 <blockquote class="doxtable">
 <p><b>源代码 (C++)：</b> mfcdemo/MFCPath<br  />
+ <b>源代码 (Qt)：</b> qtdemo/QtPath<br  />
  <b>源代码 (C#)：</b> csharpdemo/CSharpPath<br  />
  <b>图像文件：</b> nline_many.png, leadcut.png</p>
 <p><b>相关类：</b> <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_rot_rect_region.html">LRotRectRegion</a>, LPathDetector, LPathResults </p>
@@ -403,6 +411,7 @@ Region 操作</h1>
 <p>演示亚像素轮廓定位。</p>
 <blockquote class="doxtable">
 <p><b>源代码 (C++)：</b> mfcdemo/MFCContour<br  />
+ <b>源代码 (Qt)：</b> qtdemo/QtContour<br  />
  <b>源代码 (C#)：</b> csharpdemo/CSharpContour<br  />
 </p>
 <p><b>相关类：</b> <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_rot_rect_region.html">LRotRectRegion</a>, LContourDetector, LContourResults </p>
@@ -434,6 +443,7 @@ Region 操作</h1>
 <p>演示相机标定，包括多点、小孔、FFD等相机模型，支持不同类型的标定板。</p>
 <blockquote class="doxtable">
 <p><b>源代码 (C++)：</b> mfcdemo/MFCCalib<br  />
+ <b>源代码 (Qt)：</b> qtdemo/QtCalib<br  />
  <b>源代码 (C#)：</b> csharpdemo/CSharpCalib<br  />
  <b>图像文件：</b> chessboard.png，circlegrid.png，distcharuco.jpg</p>
 <p><b>相关类：</b> <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_n_points.html">LCalibNPoints</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_pin_hole.html">LCalibPinHole</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_f_f_d.html">LCalibFFD</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_custom.html">LCalibCustom</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html">LCalibBoard</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_point_pairs.html">LCalibPointPairs</a> </p>
@@ -469,6 +479,7 @@ Region 操作</h1>
 <p>演示相机阵列标定和图像拼接。</p>
 <blockquote class="doxtable">
 <p><b>源代码 (C++)：</b> mfcdemo/MFCCamArray<br  />
+ <b>源代码 (Qt)：</b> qtdemo/QtCamArray<br  />
  <b>源代码 (C#)：</b> csharpdemo/CSharpCamArray<br  />
  <b>图像文件夹：</b> camera_array</p>
 <p><b>相关类：</b> <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_camera_array.html">LCameraArray</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html">LCalibBoard</a> </p>
@@ -489,6 +500,7 @@ Region 操作</h1>
 <p>演示几何模块的常用功能，包括交点计算、距离测量、拟合等。</p>
 <blockquote class="doxtable">
 <p><b>源代码 (C++)：</b> mfcdemo/MFCGeom<br  />
+ <b>源代码 (Qt)：</b> qtdemo/QtGeom<br  />
  <b>源代码 (C#)：</b> csharpdemo/CSharpGeom<br  />
 </p>
 <p><b>相关类：</b> <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_point.html">LPoint</a>, <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_line.html">LLine</a>, <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_circle.html">LCircle</a>, <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_points.html">LPoints</a>, <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_rect.html">LRect</a>, <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">LPolygon</a> </p>
@@ -501,6 +513,7 @@ Region 操作</h1>
 <p>演示一维码和二维码检测，以及条码质量评价。</p>
 <blockquote class="doxtable">
 <p><b>源代码 (C++)：</b> mfcdemo/MFCBarcode<br  />
+ <b>源代码 (Qt)：</b> qtdemo/QtBarcode<br  />
  <b>源代码 (C#)：</b> csharpdemo/CSharpBarcode<br  />
  <b>图像文件：</b> barcode_code39.png，barcode_code128.png，barcode_datamatrix.png, barcode_ean13.png，barcode_i25.png，barcode_qr.png</p>
 <p><b>相关类：</b> <a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html">LBarcodeDetector</a>, <a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_results.html">LBarcodeResults</a>, <a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_result.html">LBarcodeResult</a> </p>
@@ -523,8 +536,8 @@ Region 操作</h1>
 <p>演示如何使用显示控件。</p>
 <blockquote class="doxtable">
 <p><b>源代码 (C++)：</b> mfcdemo/MFCDisplay<br  />
- <b>源代码 (C#)：</b> csharpdemo/CSharpDisplay<br  />
  <b>源代码 (Qt)：</b> qtdemo/QtDisplay<br  />
+ <b>源代码 (C#)：</b> csharpdemo/CSharpDisplay<br  />
 </p>
 <p><b>相关类：</b> <a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html">LDisplay</a> </p>
 </blockquote>
@@ -551,6 +564,7 @@ Region 操作</h1>
 <p>演示如何与灵闪服务集成，并使用具有强大功能的灵闪作业。</p>
 <blockquote class="doxtable">
 <p><b>源代码 (C++)：</b> mfcdemo/MFCIBService<br  />
+ <b>源代码 (Qt)：</b> qtdemo/QtIBService<br  />
  <b>源代码 (C#)：</b> csharpdemo/CSharpIBService<br  />
  <b>图像文件夹：</b> exame_chip_1，exame_chip_2</p>
 <p><b>相关类：</b> <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html">LIBService</a>, <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_algo_result.html">LIBAlgoResult</a>, <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_data.html">LIBData</a>, <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_algo_config.html">LIBAlgoConfig</a>, <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html">LMatch</a> </p>
