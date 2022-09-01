@@ -147,7 +147,9 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 <div class="textblock"><p>该接口表示一个阵列排序结果。 </p>
 <p>通常通过调用 <a class="el" href="interface_l_p_v_geom_x_lib_1_1_i_l_sorter.html#a4070656eb65bf9f368c4b627a67333ec">ILSorter::SortToArray()</a> 得到该结果（LSortedArray）。 可以通过该接口进行行列索引、属性计算等。</p>
 <h3>示例代码 </h3>
- <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">ILSortedArray sortedArray = sorter-&gt;SortToArray(LPVPositionMode::LPVPosModeCenter, 20, 10);</div>
+ <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">ILSortedArrayPtr sortedArray;</div>
+<div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = sorter-&gt;SortToArray(LPVPositionMode::LPVPosModeCenter, 20, 10, 1, &amp;sortedArray);</div>
+<div class="line"><span class="keywordflow">if</span> (err != LPVErrorCode::LPVNoError) <span class="keywordflow">return</span>; <span class="comment">// failed</span></div>
 <div class="line"><span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; sorter-&gt;RowCount; ++j) {</div>
 <div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; sorter-&gt;ColumnCount; ++i) {</div>
 <div class="line">        BOOL hasItem = sorter-&gt;HasItem[i][j];</div>
@@ -159,7 +161,10 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 <div class="line">        }</div>
 <div class="line">    }</div>
 <div class="line">}</div>
-</div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LSortedArray sortedArray = sorter.SortToArray(<a class="code" href="namespace_l_p_v_core_lib.html#a54c773c6f72a88ff41d8ab615b5a92f3">LPVPositionMode</a>.LPVPosModeCenter, 20, 10);</div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">LPV 算法或函数运行过程中遇到的错误。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:184</div></div>
+</div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LSortedArray sortedArray;</div>
+<div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = sorter.SortToArray(<a class="code" href="namespace_l_p_v_core_lib.html#a54c773c6f72a88ff41d8ab615b5a92f3">LPVPositionMode</a>.LPVPosModeCenter, 20, 10, 1, out sortedArray);</div>
+<div class="line"><span class="keywordflow">if</span> (err != <a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>.LPVNoError) <span class="keywordflow">return</span>; <span class="comment">// failed</span></div>
 <div class="line"><span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; sorter.RowCount; ++j) {</div>
 <div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; sorter.ColumnCount; ++i) {</div>
 <div class="line">        <span class="keywordtype">bool</span> hasItem = sorter.HasItem[i][j];</div>

@@ -113,19 +113,22 @@ Public Member Functions</h2></td></tr>
 <div class="line">ILSorterPtr sorter(__uuidof(LSorter));</div>
 <div class="line">sorter-&gt;SetSource2(regions);</div>
 <div class="line"><span class="comment">// sort into a list of indexes</span></div>
-<div class="line">CComSafeArray&lt;int&gt; sortedIndexs = ((ILSortablesPtr)sorter)-&gt;SortTo(LPVSortBy::LPVSortArrayByColumn,</div>
+<div class="line">CComSafeArray&lt;int&gt; sortedIndexs = ((ILSortablesPtr)sorter)-&gt;SortTo(LPVSortBy::LPVSortByColumn,</div>
 <div class="line">   LPVSortOrder::LPVSortOrderAscending, LPVPositionMode::LPVPosModeCenter);</div>
 <div class="line"><span class="comment">// sort into an array</span></div>
-<div class="line">ILSortedArray sortedArray = sorter-&gt;SortToArray(LPVPositionMode::LPVPosModeCenter);</div>
+<div class="line">ILSortedArrayPtr sortedArray;</div>
+<div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = sorter-&gt;SortToArray(LPVPositionMode::LPVPosModeCenter, 0, 0, 1, &amp;sortedArray);</div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">This enumeration represents the type of a LPV function error.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:184</div></div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><p> Code snippets: snippets/Sort.cs </p><div class="fragment"><div class="line">LRegion[] regions;</div>
 <div class="line"><span class="comment">// add regions to the collection</span></div>
 <div class="line">LSorter sorter = <span class="keyword">new</span> LSorter();</div>
 <div class="line">sorter.SetSource2(regions);</div>
 <div class="line"><span class="comment">// sort into a list of indexes</span></div>
-<div class="line"><span class="keywordtype">int</span>[] sortedIndexs = (<span class="keywordtype">int</span>[])((LSortables)sorter).SortTo(regions, <a class="code" href="namespace_l_p_v_core_lib.html#a1752d5f8ebb6a8f6dda700e1a87c98de">LPVSortBy</a>.LPVSortArrayByColumn,</div>
+<div class="line"><span class="keywordtype">int</span>[] sortedIndexs = (<span class="keywordtype">int</span>[])((LSortables)sorter).SortTo(regions, <a class="code" href="namespace_l_p_v_core_lib.html#a1752d5f8ebb6a8f6dda700e1a87c98de">LPVSortBy</a>.LPVSortByColumn,</div>
 <div class="line">    <a class="code" href="namespace_l_p_v_core_lib.html#a38d3a87896df9ff1b8c96bee1ab58e2f">LPVSortOrder</a>.LPVSortOrderAscending, <a class="code" href="namespace_l_p_v_core_lib.html#a54c773c6f72a88ff41d8ab615b5a92f3">LPVPositionMode</a>.LPVPosModeCenter);</div>
 <div class="line"><span class="comment">// sort into an array</span></div>
-<div class="line">LSortedArray sortedArray = sorter.SortToArray(<a class="code" href="namespace_l_p_v_core_lib.html#a54c773c6f72a88ff41d8ab615b5a92f3">LPVPositionMode</a>.LPVPosModeCenter);</div>
+<div class="line">LSortedArray sortedArray;</div>
+<div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = sorter.SortToArray(<a class="code" href="namespace_l_p_v_core_lib.html#a54c773c6f72a88ff41d8ab615b5a92f3">LPVPositionMode</a>.LPVPosModeCenter, 0, 0, 1, out sortedArray);</div>
 <div class="ttc" id="anamespace_l_p_v_core_lib_html_a1752d5f8ebb6a8f6dda700e1a87c98de"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a1752d5f8ebb6a8f6dda700e1a87c98de">LPVCoreLib::LPVSortBy</a></div><div class="ttdeci">LPVSortBy</div><div class="ttdoc">This enumeration represents the type of sorting.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:638</div></div>
 <div class="ttc" id="anamespace_l_p_v_core_lib_html_a38d3a87896df9ff1b8c96bee1ab58e2f"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a38d3a87896df9ff1b8c96bee1ab58e2f">LPVCoreLib::LPVSortOrder</a></div><div class="ttdeci">LPVSortOrder</div><div class="ttdoc">This enumeration represents the order of sorting.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:677</div></div>
 <div class="ttc" id="anamespace_l_p_v_core_lib_html_a54c773c6f72a88ff41d8ab615b5a92f3"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a54c773c6f72a88ff41d8ab615b5a92f3">LPVCoreLib::LPVPositionMode</a></div><div class="ttdeci">LPVPositionMode</div><div class="ttdoc">This enumeration represents which point is used as a object's position, used in sorting.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:735</div></div>
@@ -165,7 +168,8 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Set the source array to be sorted, it should be a collection of objects implemented <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_sortable.html">ILSortable</a> interface, including: </p>
+<p>Set the source array to be sorted, it should be a collection of objects implemented <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_sortable.html">ILSortable</a> interface, like:</p>
+<p><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_line.html">LLine</a>, <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match_result.html">LMatchResult</a>, <a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_result.html">LBarcodeResult</a> </p>
 
 </div>
 </div>
