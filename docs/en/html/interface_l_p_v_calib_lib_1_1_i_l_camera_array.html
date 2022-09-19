@@ -110,14 +110,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae04723601ec669e5a97fd47a7c37dd1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb434c2170d12543d8f9530244db555e"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_camera_array.html#adb434c2170d12543d8f9530244db555e">IsCalibrated</a> ()</td></tr>
 <tr class="separator:adb434c2170d12543d8f9530244db555e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a372de693ad40b3f42839c8ec6ac845f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_camera_array.html#a372de693ad40b3f42839c8ec6ac845f4">Reset</a> ()</td></tr>
-<tr class="separator:a372de693ad40b3f42839c8ec6ac845f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1201727fe2071c60e9c8d715a8cdc2b7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_camera_array.html#a1201727fe2071c60e9c8d715a8cdc2b7">Calibrate</a> ()</td></tr>
 <tr class="separator:a1201727fe2071c60e9c8d715a8cdc2b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aedf9b00d47787a935a044ce74d0df887"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_camera_array.html#aedf9b00d47787a935a044ce74d0df887">Save</a> (BSTR filename)</td></tr>
-<tr class="separator:aedf9b00d47787a935a044ce74d0df887"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc33f804a59dbd9a1f824ea51862aaa2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_camera_array.html#acc33f804a59dbd9a1f824ea51862aaa2">Load</a> (BSTR filename)</td></tr>
-<tr class="separator:acc33f804a59dbd9a1f824ea51862aaa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ce0cd25c9f176f2ea389900b8b807be"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_camera_array.html#a8ce0cd25c9f176f2ea389900b8b807be">ImageToWorld</a> (double imagePointX, double imagePointY, double *worldPointX, double *worldPointY)</td></tr>
 <tr class="separator:a8ce0cd25c9f176f2ea389900b8b807be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45d73ba0171b02f1f2138954332ba401"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_camera_array.html#a45d73ba0171b02f1f2138954332ba401">WorldToImage</a> (double worldPointX, double worldPointY, double *imagePointX, double *imagePointY)</td></tr>
@@ -434,24 +428,6 @@ For example, given 1 2 3 4 input cameras int two rows, move it 3 times horizonta
 
 </div>
 </div>
-<a id="a372de693ad40b3f42839c8ec6ac845f4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a372de693ad40b3f42839c8ec6ac845f4">&#9670;&nbsp;</a></span>Reset()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Reset </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Reset calibration, calibration of the camera array is cleaned up. </p>
-
-</div>
-</div>
 <a id="a1201727fe2071c60e9c8d715a8cdc2b7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1201727fe2071c60e9c8d715a8cdc2b7">&#9670;&nbsp;</a></span>Calibrate()</h2>
 
@@ -472,70 +448,6 @@ For example, given 1 2 3 4 input cameras int two rows, move it 3 times horizonta
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="aedf9b00d47787a935a044ce74d0df887"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aedf9b00d47787a935a044ce74d0df887">&#9670;&nbsp;</a></span>Save()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> Save </td>
-          <td>(</td>
-          <td class="paramtype">BSTR&#160;</td>
-          <td class="paramname"><em>filename</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Save the camera array and its calibration to a specified file.<br  />
-The serialized file is .calib file with the calibrated camera matrices as well as all the calibration configurations. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>Full path of the file, it could be absolute or relative path with file name and extension. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">error</td><td>Return error code if anything is wrong. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_camera_array.html#acc33f804a59dbd9a1f824ea51862aaa2">Load()</a>. </dd></dl>
-
-</div>
-</div>
-<a id="acc33f804a59dbd9a1f824ea51862aaa2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acc33f804a59dbd9a1f824ea51862aaa2">&#9670;&nbsp;</a></span>Load()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> Load </td>
-          <td>(</td>
-          <td class="paramtype">BSTR&#160;</td>
-          <td class="paramname"><em>filename</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Load the camera array and its calibration from a specified file.<br  />
-It should be a .calib file with the calibrated camera matrices in it. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>Full path of the file, it could be absolute or relative path with file name and extension. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">error</td><td>Return error code if anything is wrong. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_camera_array.html#aedf9b00d47787a935a044ce74d0df887">Save()</a>. </dd></dl>
 
 </div>
 </div>

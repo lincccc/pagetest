@@ -110,6 +110,8 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_sortables.html">ILSortables</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This interface expose APIs to sort or apply permutation to a LPV class contains a collection of sortable objects.  <a href="interface_l_p_v_core_lib_1_1_i_l_sortables.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_object.html">ILObject</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_system.html">ILSystem</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This interface provide miscellaneous functions to change LPV system configurations globally.  <a href="interface_l_p_v_core_lib_1_1_i_l_system.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -360,6 +362,12 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a8994f6c3a4ba4e0d0e9a8eb78ac86c92"><td class="mdescLeft">&#160;</td><td class="mdescRight">This enumeration represents the method for pixel interpolation.  <a href="namespace_l_p_v_core_lib.html#a8994f6c3a4ba4e0d0e9a8eb78ac86c92">More...</a><br /></td></tr>
 <tr class="separator:a8994f6c3a4ba4e0d0e9a8eb78ac86c92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49edb9045fb3b67439ceeab4b938909d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_l_p_v_core_lib.html#a49edb9045fb3b67439ceeab4b938909d">LPVThresholdType</a> { <a class="el" href="namespace_l_p_v_core_lib.html#a49edb9045fb3b67439ceeab4b938909da525f163f43e51395f69cd9526234eedf">LPVThresholdCustom</a> = 0
+, <a class="el" href="namespace_l_p_v_core_lib.html#a49edb9045fb3b67439ceeab4b938909da444f94bd534ec9d32c23f07dc62f0c5c">LPVThresholdAdaptGlobal</a> = 1
+, <a class="el" href="namespace_l_p_v_core_lib.html#a49edb9045fb3b67439ceeab4b938909da3a16c88fe63f2e8566545eb4acca37bf">LPVThresholdAdaptLocal</a> = 2
+ }</td></tr>
+<tr class="memdesc:a49edb9045fb3b67439ceeab4b938909d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This enumeration represents the thresholding method.  <a href="namespace_l_p_v_core_lib.html#a49edb9045fb3b67439ceeab4b938909d">More...</a><br /></td></tr>
+<tr class="separator:a49edb9045fb3b67439ceeab4b938909d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2621143506dcb8d80e6b3892ecfd8a7c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_l_p_v_core_lib.html#a2621143506dcb8d80e6b3892ecfd8a7c">LPVColor</a> { <br />
 &#160;&#160;<a class="el" href="namespace_l_p_v_core_lib.html#a2621143506dcb8d80e6b3892ecfd8a7caf10bfb2b94715c1d68ca2baadd15020a">LPVWhite</a> = 0xffffff
 , <a class="el" href="namespace_l_p_v_core_lib.html#a2621143506dcb8d80e6b3892ecfd8a7caffc035dbe9f989a90a03d56d88fee315">LPVBlack</a> = 0x000000
@@ -869,6 +877,30 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><a id="a8994f6c3a4ba4e0d0e9a8eb78ac86c92a640239e50a5ce97e9f8b499d5de0b409"></a>LPVInterCubic&#160;</td><td class="fielddoc"><p>Bicubic interpolation. This is the preferred method for enlarging image. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a8994f6c3a4ba4e0d0e9a8eb78ac86c92abf6dd7871795cec24968f788dabbc296"></a>LPVInterArea&#160;</td><td class="fielddoc"><p>Area relation based re-sampling. This is the preferred method for shrinking image. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a49edb9045fb3b67439ceeab4b938909d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49edb9045fb3b67439ceeab4b938909d">&#9670;&nbsp;</a></span>LPVThresholdType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespace_l_p_v_core_lib.html#a49edb9045fb3b67439ceeab4b938909d">LPVThresholdType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This enumeration represents the thresholding method. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a49edb9045fb3b67439ceeab4b938909da525f163f43e51395f69cd9526234eedf"></a>LPVThresholdCustom&#160;</td><td class="fielddoc"><p>Use the used-specified threshold value or range </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a49edb9045fb3b67439ceeab4b938909da444f94bd534ec9d32c23f07dc62f0c5c"></a>LPVThresholdAdaptGlobal&#160;</td><td class="fielddoc"><p>Use the optimal global-adaptive threshold value or range, which is calculated base on the entire input image. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a49edb9045fb3b67439ceeab4b938909da3a16c88fe63f2e8566545eb4acca37bf"></a>LPVThresholdAdaptLocal&#160;</td><td class="fielddoc"><p>Use the optimal local-adaptive threshold value or range, which is calculated base on the nearby region around individual position. </p>
 </td></tr>
 </table>
 

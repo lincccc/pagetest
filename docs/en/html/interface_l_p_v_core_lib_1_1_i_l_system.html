@@ -133,6 +133,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa92045160180ad2673a76b2b626c70e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab556fe7e6e867c71d1953b8e291d91b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_system.html#ab556fe7e6e867c71d1953b8e291d91b5">GetRGBFromColorRef</a> (COLORREF colorRef, int *red, int *green, int *blue)</td></tr>
 <tr class="separator:ab556fe7e6e867c71d1953b8e291d91b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32a6351b6d670be9a7f823a1d6f7dd94"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_system.html#a32a6351b6d670be9a7f823a1d6f7dd94">SetRegionHandleSize</a> (int size)</td></tr>
+<tr class="separator:a32a6351b6d670be9a7f823a1d6f7dd94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This interface provide miscellaneous functions to change LPV system configurations globally. </p>
@@ -1025,6 +1027,25 @@ Pass in null drawable object to set font for the system object. </p><dl class="s
       </table>
 </div><div class="memdoc">
 <p>Get RGB(red, green, blue) values from a 32-bit value representing the same color. The 32-bit value is in RRGGBB format. Alternatively, you could use ColorTranslator.FromWin32() for C# or GetRValue()/GetGValue()/GetBValue() macro in GDI for C++. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_system.html#a5d4476f2a04f551b0912272b94dd3565">GetColorRef()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a32a6351b6d670be9a7f823a1d6f7dd94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32a6351b6d670be9a7f823a1d6f7dd94">&#9670;&nbsp;</a></span>SetRegionHandleSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SetRegionHandleSize </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>size</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Change the size of region handles(and its interactable area) drawn on canvas globally, by default it's 7 pixels. </p>
 
 </div>
 </div>

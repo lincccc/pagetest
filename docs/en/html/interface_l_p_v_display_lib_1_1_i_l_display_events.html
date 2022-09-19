@@ -108,6 +108,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8750f9ac51c923d7068fb8efcc96f903"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee88466830204df88a29462d9f9a1531"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_events.html#aee88466830204df88a29462d9f9a1531">RegionDragFinished</a> (int regionId)</td></tr>
 <tr class="separator:aee88466830204df88a29462d9f9a1531"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1956cf8047037fa5e9c4b229aaa2ff57"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_events.html#a1956cf8047037fa5e9c4b229aaa2ff57">RegionRemoving</a> (int regionId)</td></tr>
+<tr class="separator:a1956cf8047037fa5e9c4b229aaa2ff57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cad3cc32fd911dc9f105d8b954e7c41"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_events.html#a3cad3cc32fd911dc9f105d8b954e7c41">RegionRemovingAll</a> ()</td></tr>
+<tr class="separator:a3cad3cc32fd911dc9f105d8b954e7c41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="af3647faed91a1157dd9d76c3237afbee"></a>
@@ -495,6 +499,48 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a1956cf8047037fa5e9c4b229aaa2ff57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1956cf8047037fa5e9c4b229aaa2ff57">&#9670;&nbsp;</a></span>RegionRemoving()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RegionRemoving </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>regionId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Fires before the region is removed from the display control </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">regionId</td><td>The region item's ID, you can then get back the object via GetRegionByID(). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3cad3cc32fd911dc9f105d8b954e7c41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cad3cc32fd911dc9f105d8b954e7c41">&#9670;&nbsp;</a></span>RegionRemovingAll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RegionRemovingAll </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Fires before the all regions are removed from the display control </p>
 
 </div>
 </div>

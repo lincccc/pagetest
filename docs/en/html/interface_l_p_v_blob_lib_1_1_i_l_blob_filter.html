@@ -101,6 +101,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a372de693ad40b3f42839c8ec6ac845f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d432cb233a31ca0afb9cdbb94a17fee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_filter.html#a2d432cb233a31ca0afb9cdbb94a17fee">SetFilterFeature</a> (<a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50">LPVBlobFeatures</a> feature, double lowerBound, double upperBound)</td></tr>
 <tr class="separator:a2d432cb233a31ca0afb9cdbb94a17fee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d75d5f8f8f2bba3e5f3b81153a74f3e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_filter.html#a3d75d5f8f8f2bba3e5f3b81153a74f3e">GetFilterFeature</a> (<a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50">LPVBlobFeatures</a> feature, double *lowerBound, double *upperBound)</td></tr>
+<tr class="separator:a3d75d5f8f8f2bba3e5f3b81153a74f3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32839c961dbfec575b0b62ea8d60d1c7"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_filter.html#a32839c961dbfec575b0b62ea8d60d1c7">Filter</a> (<a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html">ILBlob</a> *blob)</td></tr>
 <tr class="separator:a32839c961dbfec575b0b62ea8d60d1c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37787c4b035f6a97779db146da0915f1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_results.html">ILBlobResults</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_filter.html#a37787c4b035f6a97779db146da0915f1">FilterResults</a> (<a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_results.html">ILBlobResults</a> *blobResults)</td></tr>
@@ -176,8 +178,50 @@ You can define multiple filtering features in a blob filter, for each blob candi
 <p>Configure the filtering feature and its limitation. You can define multiple joint filtering features in one blob filter. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">feature</td><td>The filtering feature, see LPVBlobFeatures. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">lowerBound</td><td>The lower bound of the limitation. Negative value indicates to do no lower bound check. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">upperBound</td><td>The upper bound of the limitation. Negative value indicates to do no upper bound check. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">lowerBound</td><td>The lower bound of the limitation. Negative value indicates to do no lower bound check, except LPVBlobCenterX or LPVBlobCenterY. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">upperBound</td><td>The upper bound of the limitation. Negative value indicates to do no upper bound check, except LPVBlobCenterX or LPVBlobCenterY. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3d75d5f8f8f2bba3e5f3b81153a74f3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d75d5f8f8f2bba3e5f3b81153a74f3e">&#9670;&nbsp;</a></span>GetFilterFeature()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GetFilterFeature </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50">LPVBlobFeatures</a>&#160;</td>
+          <td class="paramname"><em>feature</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>lowerBound</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>upperBound</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get the filtering limitation for the specified feature </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">feature</td><td>The filtering feature, see LPVBlobFeatures. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">lowerBound</td><td>Return the lower bound of the limitation. Negative value indicates to do no lower bound check. If both the bounds are negative and same, then the specified feature is in fact not filtered. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">upperBound</td><td>Return the upper bound of the limitation. Negative value indicates to do no upper bound check. </td></tr>
   </table>
   </dd>
 </dl>

@@ -110,6 +110,8 @@ $(function() {
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_sortables.html">ILSortables</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">该接口类用于对一个可排序对象进行排序或重整为给定的顺序。  <a href="interface_l_p_v_core_lib_1_1_i_l_sortables.html#details">更多...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_object.html">ILObject</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_system.html">ILSystem</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">该接口类提供了修改 LPV 系统全局参数的功能和一些杂项帮助函数。  <a href="interface_l_p_v_core_lib_1_1_i_l_system.html#details">更多...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -360,6 +362,12 @@ typedef struct <a class="el" href="struct_l_p_v_core_lib_1_1_l_color.html">LPVCo
  }</td></tr>
 <tr class="memdesc:a8994f6c3a4ba4e0d0e9a8eb78ac86c92"><td class="mdescLeft">&#160;</td><td class="mdescRight">该枚举表示插值方法，用于图像缩放、旋转等算法  <a href="namespace_l_p_v_core_lib.html#a8994f6c3a4ba4e0d0e9a8eb78ac86c92">更多...</a><br /></td></tr>
 <tr class="separator:a8994f6c3a4ba4e0d0e9a8eb78ac86c92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49edb9045fb3b67439ceeab4b938909d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_l_p_v_core_lib.html#a49edb9045fb3b67439ceeab4b938909d">LPVThresholdType</a> { <a class="el" href="namespace_l_p_v_core_lib.html#a49edb9045fb3b67439ceeab4b938909da525f163f43e51395f69cd9526234eedf">LPVThresholdCustom</a> = 0
+, <a class="el" href="namespace_l_p_v_core_lib.html#a49edb9045fb3b67439ceeab4b938909da444f94bd534ec9d32c23f07dc62f0c5c">LPVThresholdAdaptGlobal</a> = 1
+, <a class="el" href="namespace_l_p_v_core_lib.html#a49edb9045fb3b67439ceeab4b938909da3a16c88fe63f2e8566545eb4acca37bf">LPVThresholdAdaptLocal</a> = 2
+ }</td></tr>
+<tr class="memdesc:a49edb9045fb3b67439ceeab4b938909d"><td class="mdescLeft">&#160;</td><td class="mdescRight">该枚举表示阈值方法  <a href="namespace_l_p_v_core_lib.html#a49edb9045fb3b67439ceeab4b938909d">更多...</a><br /></td></tr>
+<tr class="separator:a49edb9045fb3b67439ceeab4b938909d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2621143506dcb8d80e6b3892ecfd8a7c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_l_p_v_core_lib.html#a2621143506dcb8d80e6b3892ecfd8a7c">LPVColor</a> { <br />
 &#160;&#160;<a class="el" href="namespace_l_p_v_core_lib.html#a2621143506dcb8d80e6b3892ecfd8a7caf10bfb2b94715c1d68ca2baadd15020a">LPVWhite</a> = 0xffffff
 , <a class="el" href="namespace_l_p_v_core_lib.html#a2621143506dcb8d80e6b3892ecfd8a7caffc035dbe9f989a90a03d56d88fee315">LPVBlack</a> = 0x000000
@@ -869,6 +877,30 @@ typedef struct <a class="el" href="struct_l_p_v_core_lib_1_1_l_color.html">LPVCo
 <tr><td class="fieldname"><a id="a8994f6c3a4ba4e0d0e9a8eb78ac86c92a640239e50a5ce97e9f8b499d5de0b409"></a>LPVInterCubic&#160;</td><td class="fielddoc"><p>三次曲线插值。当放大图像时，推荐使用该插值方法以获得较好图像质量。 </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a8994f6c3a4ba4e0d0e9a8eb78ac86c92abf6dd7871795cec24968f788dabbc296"></a>LPVInterArea&#160;</td><td class="fielddoc"><p>区域插值。当缩小图像时，推荐使用该插值方法以获得较好图像质量。 </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a49edb9045fb3b67439ceeab4b938909d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49edb9045fb3b67439ceeab4b938909d">&#9670;&nbsp;</a></span>LPVThresholdType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespace_l_p_v_core_lib.html#a49edb9045fb3b67439ceeab4b938909d">LPVThresholdType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>该枚举表示阈值方法 </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a49edb9045fb3b67439ceeab4b938909da525f163f43e51395f69cd9526234eedf"></a>LPVThresholdCustom&#160;</td><td class="fielddoc"><p>使用用户自定义的固定阈值数值或范围 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a49edb9045fb3b67439ceeab4b938909da444f94bd534ec9d32c23f07dc62f0c5c"></a>LPVThresholdAdaptGlobal&#160;</td><td class="fielddoc"><p>使用全局自适应阈值，该数值或范围基于整幅图像上的像素灰度值分布获得 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a49edb9045fb3b67439ceeab4b938909da3a16c88fe63f2e8566545eb4acca37bf"></a>LPVThresholdAdaptLocal&#160;</td><td class="fielddoc"><p>使用局部自适应阈值，该数值或范围基于每个位置邻域的像素灰度值分布获得 </p>
 </td></tr>
 </table>
 
