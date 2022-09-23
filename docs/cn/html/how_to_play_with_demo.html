@@ -141,7 +141,7 @@ $(function() {
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyLeft"><b>颜色空间转换</b>   </td><td class="markdownTableBodyLeft">ColorSpace.cpp/cs   </td><td class="markdownTableBodyLeft">演示彩色图像常用的颜色空间转换功能。    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyLeft"><b>自定义模板形状</b>   </td><td class="markdownTableBodyLeft">LearnWithShape.cpp/cs   </td><td class="markdownTableBodyLeft">演示如果基于自定义的形状区域训练模板。    </td></tr>
+<td class="markdownTableBodyLeft"><b>自定义模板形状</b>   </td><td class="markdownTableBodyLeft">LearnWithShape.cpp/cs   </td><td class="markdownTableBodyLeft">演示基于自定义的形状区域训练模板。    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyLeft"><b>旋转标定</b>   </td><td class="markdownTableBodyLeft">CalibRotationCenter.cpp/cs   </td><td class="markdownTableBodyLeft">演示旋转标定和对位功能。    </td></tr>
 <tr class="markdownTableRowOdd">
@@ -165,7 +165,7 @@ $(function() {
 </blockquote>
 <p><a href="t02_01_sanity.png"><img src="t02_01_sanity.png" alt="" style="float: right; height: 200px; margin-left: 20px;" class="inline"/> </a></p>
 <ol type="1">
-<li>点击 <b>Load Image</b> 按钮，加载图片和模板。</li>
+<li>点击 <b>Load Image</b> 按钮，加载图片。</li>
 <li>点击 <b>Template Learn</b> 按钮，按照 Region 的位置抠图，学习模板。</li>
 <li>点击 <b>Template Match</b> 按钮，执行模板匹配，右侧显示像素坐标。</li>
 <li>点击 <b>Calibrate</b> 按钮，执行9点标定，右侧显示物理坐标。</li>
@@ -185,7 +185,7 @@ Region 操作</h1>
 <p><b>源代码 (C++)：</b> mfcdemo/MFCRegion<br  />
  <b>源代码 (Qt)：</b> qtdemo/QtRegion<br  />
  <b>源代码 (C#)：</b> csharpdemo/CSharpRegion<br  />
- <b>图像文件：</b> mask.png</p>
+ <b>图像文件：</b> mask.bmp</p>
 <p><b>相关类：</b> <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_rect_region.html">LRectRegion</a>, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_rot_rect_region.html">LRotRectRegion</a>, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_poly_region.html">LPolyRegion</a>, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_mask_region.html">LMaskRegion</a>, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_circle_region.html">LCircleRegion</a>, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_annulus_region.html">LAnnulusRegion</a> </p>
 </blockquote>
 <p><a href="t02_13_region.png"><img src="t02_13_region.png" alt="" style="float: right; height: 200px; margin-left: 20px;" class="inline"/> </a></p>

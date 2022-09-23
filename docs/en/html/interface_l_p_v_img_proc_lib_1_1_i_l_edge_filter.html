@@ -103,6 +103,8 @@ Inheritance diagram for ILEdgeFilter:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a99c6c95dff350aa072386e0de834c130"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_edge_filter.html#a99c6c95dff350aa072386e0de834c130">SetEdgeKernel</a> (<a class="el" href="namespace_l_p_v_img_proc_lib.html#ae9fce5290064b3ab00a2b0c192245c0d">LPVEdgeKernel</a> kType, int kWidth, int kHeight)</td></tr>
 <tr class="separator:a99c6c95dff350aa072386e0de834c130"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae57e34cd21b21266889d23b81bb50d28"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_edge_filter.html#ae57e34cd21b21266889d23b81bb50d28">SetEdgePolarity</a> (<a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0b">LPVPolarity</a> xPolarity, enum <a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0b">LPVPolarity</a> yPolarity)</td></tr>
+<tr class="separator:ae57e34cd21b21266889d23b81bb50d28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aacc229992cc3ff19fe8a365be794eeff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_edge_filter.html#aacc229992cc3ff19fe8a365be794eeff">GradientH</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *result)</td></tr>
 <tr class="separator:aacc229992cc3ff19fe8a365be794eeff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2cf1dc9c1f52b9e10e4676e015b095aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_edge_filter.html#a2cf1dc9c1f52b9e10e4676e015b095aa">GradientV</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *result)</td></tr>
@@ -128,6 +130,12 @@ Properties</h2></td></tr>
 <tr class="memitem:a642eb19286524534be26addfb391b8f7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_edge_filter.html#a642eb19286524534be26addfb391b8f7">KernelHeight</a><code> [get]</code></td></tr>
 <tr class="memdesc:a642eb19286524534be26addfb391b8f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The height of the kernel size.  <a href="interface_l_p_v_img_proc_lib_1_1_i_l_edge_filter.html#a642eb19286524534be26addfb391b8f7">More...</a><br /></td></tr>
 <tr class="separator:a642eb19286524534be26addfb391b8f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25ec6af82e57b558efa0f04d0d106a91"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0b">LPVPolarity</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_edge_filter.html#a25ec6af82e57b558efa0f04d0d106a91">EdgePolarityX</a><code> [get]</code></td></tr>
+<tr class="memdesc:a25ec6af82e57b558efa0f04d0d106a91"><td class="mdescLeft">&#160;</td><td class="mdescRight">The polarity of horizontally oriented edges in left-to-right direction.  <a href="interface_l_p_v_img_proc_lib_1_1_i_l_edge_filter.html#a25ec6af82e57b558efa0f04d0d106a91">More...</a><br /></td></tr>
+<tr class="separator:a25ec6af82e57b558efa0f04d0d106a91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ce79809ea9e5844a180c0c17395dc89"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0b">LPVPolarity</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_edge_filter.html#a5ce79809ea9e5844a180c0c17395dc89">EdgePolarityY</a><code> [get]</code></td></tr>
+<tr class="memdesc:a5ce79809ea9e5844a180c0c17395dc89"><td class="mdescLeft">&#160;</td><td class="mdescRight">The polarity of vertically oriented edges in top-down direction.  <a href="interface_l_p_v_img_proc_lib_1_1_i_l_edge_filter.html#a5ce79809ea9e5844a180c0c17395dc89">More...</a><br /></td></tr>
+<tr class="separator:a5ce79809ea9e5844a180c0c17395dc89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This interface provide functionalities of edge extraction. </p>
@@ -178,6 +186,41 @@ Properties</h2></td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">kType</td><td>The kernel Type. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">kWidth</td><td>The width of the kernel size, should be an odd number, say, 3, 5, 7, etc. If a kernel size is set to be 1, the kernel degenerated to be \( (-1, 1) \) no mater what kernel type it is. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">kHeight</td><td>The height of the kernel size, should be an odd number, say, 3, 5, 7, etc. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae57e34cd21b21266889d23b81bb50d28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae57e34cd21b21266889d23b81bb50d28">&#9670;&nbsp;</a></span>SetEdgePolarity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SetEdgePolarity </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0b">LPVPolarity</a>&#160;</td>
+          <td class="paramname"><em>xPolarity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">enum <a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0b">LPVPolarity</a>&#160;</td>
+          <td class="paramname"><em>yPolarity</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set the edge polarity of interest in edge filtering. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">xPolarity</td><td>The polarity of horizontally oriented edges in left-to-right direction. By default, it accept either polarity. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">yPolarity</td><td>The polarity of vertically oriented edges in top-down direction. By default, it accept either polarity. </td></tr>
   </table>
   </dd>
 </dl>
@@ -362,6 +405,56 @@ Properties</h2></td></tr>
 
 <p>The height of the kernel size. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_edge_filter.html#a99c6c95dff350aa072386e0de834c130">SetEdgeKernel()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a25ec6af82e57b558efa0f04d0d106a91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25ec6af82e57b558efa0f04d0d106a91">&#9670;&nbsp;</a></span>EdgePolarityX</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0b">LPVPolarity</a> EdgePolarityX</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The polarity of horizontally oriented edges in left-to-right direction. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_edge_filter.html#ae57e34cd21b21266889d23b81bb50d28">SetEdgePolarity()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a5ce79809ea9e5844a180c0c17395dc89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ce79809ea9e5844a180c0c17395dc89">&#9670;&nbsp;</a></span>EdgePolarityY</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0b">LPVPolarity</a> EdgePolarityY</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The polarity of vertically oriented edges in top-down direction. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_edge_filter.html#ae57e34cd21b21266889d23b81bb50d28">SetEdgePolarity()</a> </dd></dl>
 
 </div>
 </div>
