@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['backcolor_44',['BackColor',['../interface_l_p_v_display_lib_1_1_i_l_display.html#abe4f56038c6366eda4bd3c20347895d8',1,'LPVDisplayLib::ILDisplay']]],
+  ['backcolor_44',['BackColor',['../interface_l_p_v_display_lib_1_1_i_l_display_common.html#abe4f56038c6366eda4bd3c20347895d8',1,'LPVDisplayLib::ILDisplayCommon']]],
   ['bgrmix_45',['BGRMix',['../interface_l_p_v_img_proc_lib_1_1_i_l_image_convert.html#af2a8aada4aed77b30e5ce7ccd4858803',1,'LPVImgProcLib::ILImageConvert']]],
   ['bgrtogray_46',['BGRToGray',['../interface_l_p_v_img_proc_lib_1_1_i_l_image_convert.html#a7921292ee2561db87f57eb474d2d5ea6',1,'LPVImgProcLib::ILImageConvert']]],
   ['bgrtograycolor_47',['BGRToGrayColor',['../interface_l_p_v_img_proc_lib_1_1_i_l_image_convert.html#a7c75cafcce514a8982906d8165d38c6f',1,'LPVImgProcLib::ILImageConvert']]],
