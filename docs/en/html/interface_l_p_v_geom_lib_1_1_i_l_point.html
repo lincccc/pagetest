@@ -98,8 +98,8 @@ Inheritance diagram for ILPoint:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0edc1aa636ff6fe09560e7f205a0633b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_point.html#a0edc1aa636ff6fe09560e7f205a0633b">Draw</a> (HDC hdc, double zoomX, double zoomY, double panX, double panY)</td></tr>
-<tr class="separator:a0edc1aa636ff6fe09560e7f205a0633b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdc2c40a6f3f8dc356330022e5aea049"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_point.html#acdc2c40a6f3f8dc356330022e5aea049">Draw</a> (<a class="el" href="namespace_l_p_v_core_lib.html#a120a51e4363ae780ec1088d04f05f68f">LPVPointShape</a> shape, HDC hdc, double zoomX, double zoomY, double panX, double panY)</td></tr>
+<tr class="separator:acdc2c40a6f3f8dc356330022e5aea049"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a128f26425ca6257e6fe7d32e49f99574"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_point.html#a128f26425ca6257e6fe7d32e49f99574">Set</a> (double x, double y)</td></tr>
 <tr class="separator:a128f26425ca6257e6fe7d32e49f99574"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23989349dad48ad10c46e198891c6e57"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_point.html">ILPoint</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_point.html#a23989349dad48ad10c46e198891c6e57">MidPoint</a> (<a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_point.html">ILPoint</a> *point)</td></tr>
@@ -133,8 +133,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This interface represents a single point(LPoint object). </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a0edc1aa636ff6fe09560e7f205a0633b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0edc1aa636ff6fe09560e7f205a0633b">&#9670;&nbsp;</a></span>Draw()</h2>
+<a id="acdc2c40a6f3f8dc356330022e5aea049"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdc2c40a6f3f8dc356330022e5aea049">&#9670;&nbsp;</a></span>Draw()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -142,6 +142,12 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
         <tr>
           <td class="memname">void Draw </td>
           <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_l_p_v_core_lib.html#a120a51e4363ae780ec1088d04f05f68f">LPVPointShape</a>&#160;</td>
+          <td class="paramname"><em>shape</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">HDC&#160;</td>
           <td class="paramname"><em>hdc</em>, </td>
         </tr>
@@ -176,7 +182,13 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Draw the point on HDC. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="use_draw_functions.html">Use Draw Functions</a> </dd></dl>
+<p>Draw the point on HDC. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">shape</td><td>The shape of the point in drawing </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="use_draw_functions.html">Use Draw Functions</a> </dd></dl>
 
 </div>
 </div>

@@ -333,7 +333,7 @@ Public 成员函数</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>闭操作，减少或消除输入图像中的较暗区域。该工具等价于先腐蚀再膨胀。</p>
+<p>闭操作，减少或消除输入图像中的较暗区域。闭操作等价于先膨胀再腐蚀。</p>
 <p class="formulaDsp">
 \[ I&#39; = erode(dilate( I, element ) \]
 </p>
@@ -372,7 +372,7 @@ Public 成员函数</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>开操作，略微增强亮部区域，减少或消除输入图像中的面积较小的亮部，增强面积较大。该工具等价于先膨胀再腐蚀。</p>
+<p>开操作，略微增强亮部区域，减少或消除输入图像中的面积较小的亮部，增强面积较大。开操作等价于先腐蚀再膨胀。</p>
 <p class="formulaDsp">
 \[ I&#39; = dilate(erode( I, element ) \]
 </p>

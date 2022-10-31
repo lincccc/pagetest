@@ -629,7 +629,7 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
       </table>
 </div><div class="memdoc">
 <p>设置软阈值范围。默认值为 0，表示不开启软阈值功能。<br  />
-用于提高斑点定位的鲁棒性和角度。<br  />
+用于提高斑点定位的鲁棒性和精度。<br  />
 比如，若斑点的灰度值范围为 [100, 200]，软阈值范围为 5，则 [0, 95] 和 [205, 255] 为背景范围，[105, 195] 为前景斑点范围， [96, 104] 的范围按照 0.1 ~ 0.9 的权重属于前景斑点的范围，[196, 204] 的范围按照 0.9 ~ 0.1 的权重属于前景斑点的范围。 软阈值配置后，斑点分析得到斑点对象将使用软蒙版表示前景，软蒙版中的前景像素基于其权重值影响斑点的几何和图像属性计算，如重心等。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">softRange</td><td>软阈值范围，生成 [t - softRange, t + softRange] 范围。 </td></tr>

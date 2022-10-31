@@ -31,7 +31,7 @@ var searchData=
   ['alignment_28',['Alignment',['../interface_l_p_v_display_lib_1_1_i_l_display_common.html#a0660162ba193ae8500efd79bbf1eb576',1,'LPVDisplayLib::ILDisplayCommon::Alignment()'],['../interface_l_p_v_display_lib_1_1_i_l_text.html#a0660162ba193ae8500efd79bbf1eb576',1,'LPVDisplayLib::ILText::Alignment()']]],
   ['alignto_29',['AlignTo',['../interface_l_p_v_calib_lib_1_1_i_l_calib_rotation.html#a99e9289b0f6620924b27845d1e104259',1,'LPVCalibLib::ILCalibRotation']]],
   ['allowdup_30',['AllowDup',['../interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#a9bba598de659c48ac2711b118ceff76a',1,'LPVBarcodeLib::ILBarcodeDetector']]],
-  ['angle_31',['Angle',['../interface_l_p_v_barcode_lib_1_1_i_l_barcode_result.html#a8c10230001bab42de01beb2843f8c327',1,'LPVBarcodeLib::ILBarcodeResult::Angle()'],['../interface_l_p_v_core_lib_1_1_i_l_rot_rect_region.html#a8c10230001bab42de01beb2843f8c327',1,'LPVCoreLib::ILRotRectRegion::Angle()'],['../interface_l_p_v_geom_lib_1_1_i_l_rect.html#a8c10230001bab42de01beb2843f8c327',1,'LPVGeomLib::ILRect::Angle()'],['../interface_l_p_v_pat_lib_1_1_i_l_match_result.html#a8c10230001bab42de01beb2843f8c327',1,'LPVPatLib::ILMatchResult::Angle()']]],
+  ['angle_31',['Angle',['../interface_l_p_v_barcode_lib_1_1_i_l_barcode_result.html#a8c10230001bab42de01beb2843f8c327',1,'LPVBarcodeLib::ILBarcodeResult::Angle()'],['../interface_l_p_v_core_lib_1_1_i_l_rot_rect_region.html#a8c10230001bab42de01beb2843f8c327',1,'LPVCoreLib::ILRotRectRegion::Angle()'],['../interface_l_p_v_geom_lib_1_1_i_l_rect.html#a8c10230001bab42de01beb2843f8c327',1,'LPVGeomLib::ILRect::Angle()'],['../interface_l_p_v_geom_lib_1_1_i_l_ellipse.html#a8c10230001bab42de01beb2843f8c327',1,'LPVGeomLib::ILEllipse::Angle()'],['../interface_l_p_v_pat_lib_1_1_i_l_match_result.html#a8c10230001bab42de01beb2843f8c327',1,'LPVPatLib::ILMatchResult::Angle()']]],
   ['anglebias_32',['AngleBias',['../interface_l_p_v_pat_lib_1_1_i_l_match.html#a7a84dfa91ece8aea697fa4606afa7ce3',1,'LPVPatLib::ILMatch']]],
   ['angleto_33',['AngleTo',['../interface_l_p_v_geom_lib_1_1_i_l_line.html#a96b57b77f545fefd4e248107ea74dc90',1,'LPVGeomLib::ILLine']]],
   ['angletolerance_34',['AngleTolerance',['../interface_l_p_v_pat_lib_1_1_i_l_match.html#a89c9e21a723b9b597dd9a0d6e603c268',1,'LPVPatLib::ILMatch']]],
@@ -42,6 +42,6 @@ var searchData=
   ['autoremovebad_39',['AutoRemoveBad',['../interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#a78520409e85555fd726b3eee218107aa',1,'LPVCalibLib::ILCalibBoard']]],
   ['avgcolumnspace_40',['AvgColumnSpace',['../interface_l_p_v_geom_x_lib_1_1_i_l_sorted_array.html#aec7219f2778c1d8fc713e7d07b72d7de',1,'LPVGeomXLib::ILSortedArray']]],
   ['avgrowspace_41',['AvgRowSpace',['../interface_l_p_v_geom_x_lib_1_1_i_l_sorted_array.html#a668aa98f5cf306a2268681b17d9bb26a',1,'LPVGeomXLib::ILSortedArray']]],
-  ['axisdirx_42',['AxisDirX',['../interface_l_p_v_calib_lib_1_1_i_l_calib_custom.html#a2412e74f1439f3a3c795c035d395cbc4',1,'LPVCalibLib::ILCalibCustom']]],
-  ['axisdiry_43',['AxisDirY',['../interface_l_p_v_calib_lib_1_1_i_l_calib_custom.html#a7664d923bc8fa6b37c2445c8bc0f1fdf',1,'LPVCalibLib::ILCalibCustom']]]
+  ['axisdirx_42',['AxisDirX',['../interface_l_p_v_calib_lib_1_1_i_l_calib_custom.html#a9ef3d99aeff48c0a42c5eb179ea7c5a7',1,'LPVCalibLib::ILCalibCustom']]],
+  ['axisdiry_43',['AxisDirY',['../interface_l_p_v_calib_lib_1_1_i_l_calib_custom.html#a807f91871bbc6c28615db13a07693b23',1,'LPVCalibLib::ILCalibCustom']]]
 ];
