@@ -103,6 +103,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9e2fdb50ded7f6231c8a2cf2a655bb66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e5def54f8136e79315f20cc80992cdf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_arithm.html#a3e5def54f8136e79315f20cc80992cdf">Add</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img1, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img2, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *result)</td></tr>
 <tr class="separator:a3e5def54f8136e79315f20cc80992cdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab17bc3e2a9a5ba1e1532f5e930039970"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_arithm.html#ab17bc3e2a9a5ba1e1532f5e930039970">AddWeighted</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img1, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img2, double alpha, double beta, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *result)</td></tr>
+<tr class="separator:ab17bc3e2a9a5ba1e1532f5e930039970"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6aa20ebb5264ac83616ce57a100a7da0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_arithm.html#a6aa20ebb5264ac83616ce57a100a7da0">Sub</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img1, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img2, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *result)</td></tr>
 <tr class="separator:a6aa20ebb5264ac83616ce57a100a7da0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa24a05c09037b92bf79e964ac8118c56"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_arithm.html#aa24a05c09037b92bf79e964ac8118c56">Multiply</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img1, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img2, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *result)</td></tr>
@@ -268,6 +270,62 @@ Public Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">img1</td><td>The first input image </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">img2</td><td>The second input image </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>Return result image </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab17bc3e2a9a5ba1e1532f5e930039970"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab17bc3e2a9a5ba1e1532f5e930039970">&#9670;&nbsp;</a></span>AddWeighted()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AddWeighted </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>img1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>img2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>alpha</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>beta</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Add the two input images pixel by pixel, output a new result image, \( I&#39; = I_{1} * alpha + I_{2} * beta \) . The two input image should have the same size. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">img1</td><td>The first input image </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img2</td><td>The second input image </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">alpha</td><td>The weight of the first input image </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">beta</td><td>The weight of the second input image </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>Return result image </td></tr>
   </table>
   </dd>
