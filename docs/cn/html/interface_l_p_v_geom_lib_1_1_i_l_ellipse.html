@@ -104,6 +104,8 @@ Public 成员函数</h2></td></tr>
 <tr class="separator:aea3f5bed3511769191e10a76f66d049f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73a489f4ba37f2dfee6500e8ff54d3c3"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_ellipse.html#a73a489f4ba37f2dfee6500e8ff54d3c3">Valid</a> ()</td></tr>
 <tr class="separator:a73a489f4ba37f2dfee6500e8ff54d3c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0f9905b2560ab8a11bcb29d1a72e21b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_point.html">ILPoint</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_ellipse.html#af0f9905b2560ab8a11bcb29d1a72e21b">GetCenter</a> ()</td></tr>
+<tr class="separator:af0f9905b2560ab8a11bcb29d1a72e21b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af99ec74e878a78e34f23abbea17438d9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_point.html">ILPoint</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_ellipse.html#af99ec74e878a78e34f23abbea17438d9">GetTopLeft</a> ()</td></tr>
 <tr class="separator:af99ec74e878a78e34f23abbea17438d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac32de05bcfd29d53c4e8b8d65f14ef84"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_point.html">ILPoint</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_ellipse.html#ac32de05bcfd29d53c4e8b8d65f14ef84">GetTopRight</a> ()</td></tr>
@@ -114,6 +116,8 @@ Public 成员函数</h2></td></tr>
 <tr class="separator:a928b61b363688c7ea2a328f3f1fcf6e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5e3c29253db51af8d99459f94f31683"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_ellipse.html">ILEllipse</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_ellipse.html#ac5e3c29253db51af8d99459f94f31683">Translate</a> (double offsetX, double offsetY)</td></tr>
 <tr class="separator:ac5e3c29253db51af8d99459f94f31683"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3a1b651e0be8e21bc2849754623dcfd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_ellipse.html#ae3a1b651e0be8e21bc2849754623dcfd">SamplingByAngle</a> (double startArcAngle, double endArcAngle, double stepAngle)</td></tr>
+<tr class="separator:ae3a1b651e0be8e21bc2849754623dcfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 属性</h2></td></tr>
@@ -279,6 +283,24 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 
 </div>
 </div>
+<a id="af0f9905b2560ab8a11bcb29d1a72e21b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0f9905b2560ab8a11bcb29d1a72e21b">&#9670;&nbsp;</a></span>GetCenter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_point.html">ILPoint</a>* GetCenter </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>获取椭圆中心所在的点。 </p>
+
+</div>
+</div>
 <a id="af99ec74e878a78e34f23abbea17438d9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af99ec74e878a78e34f23abbea17438d9">&#9670;&nbsp;</a></span>GetTopLeft()</h2>
 
@@ -386,6 +408,54 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 <dl class="retval"><dt>返回值</dt><dd>
   <table class="retval">
     <tr><td class="paramname">result</td><td>返回新的椭圆 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae3a1b651e0be8e21bc2849754623dcfd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3a1b651e0be8e21bc2849754623dcfd">&#9670;&nbsp;</a></span>SamplingByAngle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a>* SamplingByAngle </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>startArcAngle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>endArcAngle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>stepAngle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>按角度采样椭圆上的点，生成一个多边形。多边形的点通过指定的开始和结束角度，沿顺时针方向生成，每个固定步长角度生成一个点。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">startArcAngle</td><td>采样开始角度 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">endArcAngle</td><td>采样结束角度 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">stepAngle</td><td>采样角度步长 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">result</td><td>返回生成的结果多边形 </td></tr>
   </table>
   </dd>
 </dl>
