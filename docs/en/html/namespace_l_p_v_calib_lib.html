@@ -135,8 +135,8 @@ Data Structures</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:ad344ab8b10fd89a846adf98b31b264aa"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_l_p_v_calib_lib.html#ad344ab8b10fd89a846adf98b31b264aa">LPVFixImageMode</a> { <a class="el" href="namespace_l_p_v_calib_lib.html#ad344ab8b10fd89a846adf98b31b264aaa8333f5d1b1274bef506a325c1e61e411">LPVFixImageNone</a> = 0
-, <a class="el" href="namespace_l_p_v_calib_lib.html#ad344ab8b10fd89a846adf98b31b264aaab476028fd5631d6ea1d07493c65d9178">LPVFixImageUndistort</a>
-, <a class="el" href="namespace_l_p_v_calib_lib.html#ad344ab8b10fd89a846adf98b31b264aaa62452e7390a6d1be2716174c7bf2495b">LPVFixImageUndistortAndUntilt</a>
+, <a class="el" href="namespace_l_p_v_calib_lib.html#ad344ab8b10fd89a846adf98b31b264aaab476028fd5631d6ea1d07493c65d9178">LPVFixImageUndistort</a> = 1
+, <a class="el" href="namespace_l_p_v_calib_lib.html#ad344ab8b10fd89a846adf98b31b264aaa62452e7390a6d1be2716174c7bf2495b">LPVFixImageUndistortAndUntilt</a> = 2
  }</td></tr>
 <tr class="memdesc:ad344ab8b10fd89a846adf98b31b264aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">This enumeration represents the mode to control image fixing after calibration.  <a href="namespace_l_p_v_calib_lib.html#ad344ab8b10fd89a846adf98b31b264aa">More...</a><br /></td></tr>
 <tr class="separator:ad344ab8b10fd89a846adf98b31b264aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -152,15 +152,15 @@ Enumerations</h2></td></tr>
 <tr class="memdesc:a4b9fee61ed0c3116a02980ce0dd01127"><td class="mdescLeft">&#160;</td><td class="mdescRight">This enumeration represents the distortion model used in pine-hole camera model, see ILCalibPinHole. You can combine multiple distortion models.  <a href="namespace_l_p_v_calib_lib.html#a4b9fee61ed0c3116a02980ce0dd01127">More...</a><br /></td></tr>
 <tr class="separator:a4b9fee61ed0c3116a02980ce0dd01127"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8ce3e2cceabc23470a3ef9b2105dfb2"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_l_p_v_calib_lib.html#ae8ce3e2cceabc23470a3ef9b2105dfb2">LPVCalibBoardType</a> { <a class="el" href="namespace_l_p_v_calib_lib.html#ae8ce3e2cceabc23470a3ef9b2105dfb2aee27f8a90452d3cc507ac65ab97e1ae3">LPVChessBoard</a> = 0
-, <a class="el" href="namespace_l_p_v_calib_lib.html#ae8ce3e2cceabc23470a3ef9b2105dfb2a1c07af3ef47a34c9a529985c9f2166d0">LPVCircleGrid</a>
-, <a class="el" href="namespace_l_p_v_calib_lib.html#ae8ce3e2cceabc23470a3ef9b2105dfb2a17d04a0c4654a82718335dc17cd4a851">LPVDistCharucoBoard</a>
+, <a class="el" href="namespace_l_p_v_calib_lib.html#ae8ce3e2cceabc23470a3ef9b2105dfb2a1c07af3ef47a34c9a529985c9f2166d0">LPVCircleGrid</a> = 1
+, <a class="el" href="namespace_l_p_v_calib_lib.html#ae8ce3e2cceabc23470a3ef9b2105dfb2a17d04a0c4654a82718335dc17cd4a851">LPVDistCharucoBoard</a> = 2
  }</td></tr>
 <tr class="memdesc:ae8ce3e2cceabc23470a3ef9b2105dfb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">This enumeration represents the type of calibration board.  <a href="namespace_l_p_v_calib_lib.html#ae8ce3e2cceabc23470a3ef9b2105dfb2">More...</a><br /></td></tr>
 <tr class="separator:ae8ce3e2cceabc23470a3ef9b2105dfb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeaed8df5d288bbe00f4074ae5e7f5990"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_l_p_v_calib_lib.html#aeaed8df5d288bbe00f4074ae5e7f5990">LPVCalibModel</a> { <a class="el" href="namespace_l_p_v_calib_lib.html#aeaed8df5d288bbe00f4074ae5e7f5990a34a928c8fa0394dd23cc759044ec6dac">LPVCalibPinHole</a> = 1
-, <a class="el" href="namespace_l_p_v_calib_lib.html#aeaed8df5d288bbe00f4074ae5e7f5990a180645ae8bf1eee891bb5ce74035fb73">LPVCalibNPoints</a>
-, <a class="el" href="namespace_l_p_v_calib_lib.html#aeaed8df5d288bbe00f4074ae5e7f5990a474686cf60c9d82e32799bb2954e0c66">LPVCalibCustom</a>
-, <a class="el" href="namespace_l_p_v_calib_lib.html#aeaed8df5d288bbe00f4074ae5e7f5990ad7c0f7d7c85f4de88689fb07b9a3740a">LPVCalibFFD</a>
+, <a class="el" href="namespace_l_p_v_calib_lib.html#aeaed8df5d288bbe00f4074ae5e7f5990a180645ae8bf1eee891bb5ce74035fb73">LPVCalibNPoints</a> = 2
+, <a class="el" href="namespace_l_p_v_calib_lib.html#aeaed8df5d288bbe00f4074ae5e7f5990a474686cf60c9d82e32799bb2954e0c66">LPVCalibCustom</a> = 3
+, <a class="el" href="namespace_l_p_v_calib_lib.html#aeaed8df5d288bbe00f4074ae5e7f5990ad7c0f7d7c85f4de88689fb07b9a3740a">LPVCalibFFD</a> = 4
  }</td></tr>
 <tr class="memdesc:aeaed8df5d288bbe00f4074ae5e7f5990"><td class="mdescLeft">&#160;</td><td class="mdescRight">This enumeration represents the calibration model.  <a href="namespace_l_p_v_calib_lib.html#aeaed8df5d288bbe00f4074ae5e7f5990">More...</a><br /></td></tr>
 <tr class="separator:aeaed8df5d288bbe00f4074ae5e7f5990"><td class="memSeparator" colspan="2">&#160;</td></tr>
