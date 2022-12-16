@@ -28,7 +28,8 @@ var menudata={children:[
 {text:"玩转 DEMO",url:"how_to_play_with_demo.html"},
 {text:"显示",url:"#",children:[
 {text:"绘制函数",url:"use_draw_functions.html"},
-{text:"显示控件",url:"use_display_control.html"}]}]},
+{text:"显示控件",url:"use_display_control.html"}]},
+{text:"灵闪工具对照",url:"ib_lookup.html"}]},
 {text:"LPV 模块",url:"#",children:[
 {text:"<b>基础功能</b> <i><small>lpvCore</small></i>",url:"namespace_l_p_v_core_lib.html"},
 {text:"<b>图形几何</b>",url:"#",children:[

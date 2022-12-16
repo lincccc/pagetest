@@ -187,7 +187,7 @@ Public 成员函数</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>设置滤波工具中使用的核尺寸，默认设置为 \( 3 \times 3 \) 大小。 尺寸更大的滤波核尺寸通常会带来更强的滤波效果，但速度更慢。<br  />
-若核尺寸设置为 0，则由 Sigma 和 Gain 值自动计算合适的核尺寸。 </p><dl class="params"><dt>参数</dt><dd>
+若核尺寸设置为 0，则由 Sigma 值自动计算合适的核尺寸。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">kWidth</td><td>滤波核的宽度，需要是一个奇数，如 3, 5, 7 等。 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">kHeight</td><td>滤波核的高度，需要是一个奇数，如 3, 5, 7 等。若设置为 0，则使用与宽度相同。 </td></tr>
@@ -223,9 +223,11 @@ Public 成员函数</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>设置滤波核的 Sigma 和 Gain 值 </p><dl class="params"><dt>参数</dt><dd>
+<p>设置高斯类滤波核的 Sigma 和 Gain 值 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">kSigma</td><td>用于控制高斯滤波核的平滑程度。若设置为 0（默认），则由核尺寸自动计算。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">kSigma</td><td>用于控制高斯滤波核的平滑程度。<br  />
+若设置为 0（默认），则由核尺寸自动计算为： \( 1/6 \) <br  />
+若核尺寸设置为 0，则由 Sigma 值自动计算合适的核尺寸，约为 \( 6 \times kSigma \) </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">kGain</td><td>用于控制核的尺寸。若核尺寸已由 <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_filter.html#ae5710ced9973e9ceb7fec75b57a20516">SetKernelSize()</a> 方法指定，则忽略 kGain 值。<br  />
 对于 <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_filter.html#af39a1675a27719f601a3799c190bd6d0">Sharpen()</a>，kGain 还用于控制锐化效果的强度。 </td></tr>
   </table>

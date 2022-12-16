@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['随时联系我们_2279',['随时联系我们',['../contact_us.html',1,'']]]
+  ['绘制函数_2288',['绘制函数',['../use_draw_functions.html',1,'']]]
 ];

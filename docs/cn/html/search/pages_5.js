@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['玩转_20demo_2277',['玩转 DEMO',['../how_to_play_with_demo.html',1,'']]]
+  ['灵闪（intelliblink）工具对照_2286',['灵闪（IntelliBlink）工具对照',['../ib_lookup.html',1,'']]]
 ];

@@ -97,6 +97,8 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
+<tr class="memitem:abe1b71ed02f499e949fdcd94b7ac1c79"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_system.html#abe1b71ed02f499e949fdcd94b7ac1c79">CheckVersion</a> (long majorVersion, long minorVersion, long microVersion)</td></tr>
+<tr class="separator:abe1b71ed02f499e949fdcd94b7ac1c79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeea32205eefb6fe3553a25da20884ec1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_system.html#aeea32205eefb6fe3553a25da20884ec1">SetPen</a> (IDispatch *drawable, <a class="el" href="namespace_l_p_v_core_lib.html#a538e01db39d41ce04a34266c00d41f1f">LPVPenStyle</a> penStyle, int penWidth, COLORREF penColor)</td></tr>
 <tr class="separator:aeea32205eefb6fe3553a25da20884ec1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3a931dc60b13c1cd4ad947fecb0ee7a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_system.html#ad3a931dc60b13c1cd4ad947fecb0ee7a">SetPenColor</a> (IDispatch *drawable, COLORREF penColor)</td></tr>
@@ -145,6 +147,49 @@ Public 成员函数</h2></td></tr>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LSystem m_sys = <span class="keyword">new</span> LSystem();</div>
 <div class="line">m_sys.SetDrawPointSize(20);</div>
 </div><!-- fragment --> </div>  </div><h2 class="groupheader">成员函数说明</h2>
+<a id="abe1b71ed02f499e949fdcd94b7ac1c79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe1b71ed02f499e949fdcd94b7ac1c79">&#9670;&nbsp;</a></span>CheckVersion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL CheckVersion </td>
+          <td>(</td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>majorVersion</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>minorVersion</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>microVersion</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>检查编译时和运行时所使用的 LPV 版本兼容性。通常按照如下方式调用： </p><div class="fragment"><div class="line">sys-&gt;CheckVersion(LPVMajorVersion, LPVMinorVersion, LPVMicroVersion);</div>
+</div><!-- fragment --><p> 若检查失败，用户需要重新安装正确的运行版本，或重新基于更新的版本编译。推荐在编译和运行时使用相同版本。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">majorVersion</td><td>编译时的版本号第一位 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">minorVersion</td><td>编译时的版本号第二位 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">microVersion</td><td>编译时的版本号第三位 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="aeea32205eefb6fe3553a25da20884ec1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aeea32205eefb6fe3553a25da20884ec1">&#9670;&nbsp;</a></span>SetPen()</h2>
 
@@ -1032,7 +1077,16 @@ Public 成员函数</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>将 RGB(red, green, blue) 值转为 32 位的数值用于表示该颜色。该 32 位的数值按照 RRGGBB 的格式。 你可以在 C# 使用系统库提供的 ColorTranslator.FromWin32() 函数，在 C++ 中使用 GDI 提供的 GetRValue()/GetGValue()/GetBValue() 宏。 </p><dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_system.html#a5d4476f2a04f551b0912272b94dd3565">GetColorRef()</a> </dd></dl>
+<p>将 RGB(red, green, blue) 值转为 32 位的数值用于表示该颜色。该 32 位的数值按照 RRGGBB 的格式。 你可以在 C# 使用系统库提供的 ColorTranslator.FromWin32() 函数，在 C++ 中使用 GDI 提供的 GetRValue()/GetGValue()/GetBValue() 宏。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">colorRef</td><td>输入颜色值 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">red</td><td>输出红色值 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">green</td><td>输出绿色值 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">blue</td><td>输出蓝色值 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_system.html#a5d4476f2a04f551b0912272b94dd3565">GetColorRef()</a> </dd></dl>
 
 </div>
 </div>
@@ -1051,7 +1105,12 @@ Public 成员函数</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>全局修改区域对象操作句柄的绘制尺寸（以及可交互范围），默认设置为 7 个像素。 </p>
+<p>全局修改区域对象操作句柄的绘制尺寸（以及可交互范围），默认设置为 7 个像素。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>所需的区域对象局部尺寸，像素单位 </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

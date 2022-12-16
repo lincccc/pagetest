@@ -153,7 +153,7 @@ Q8. C# 及其他 .net 调用 LPV 显示控件，编辑器报错：找不到 'AxL
 </ol>
 </blockquote>
 <h4><a class="anchor" id="faq9"></a>
-Q9. C++ 创建 LPV 显示控件失败，调用 Create 接口返回 False</h4>
+Q9. C++ 创建显示控件失败，调用 Create 接口返回 False</h4>
 <blockquote class="doxtable">
 <p>1. 确认和排查 LDisplay 模块是否成功注册，参考 <a href="#faq1">Q1</a> 步骤。</p><ol type="1">
 <li>确认创建控件的线程以 COINIT_APARTMENTTHREADED 初始化，ActiveX 控件要求以 STA 模式初始化，其所在线程不能使用 COINIT_MULTITHREADED 模式。注意：您仍旧可以在其他线程以 COINIT_MULTITHREADED 初始化。</li>

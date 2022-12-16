@@ -1,13 +1,13 @@
 var indexSectionsWithContent =
 {
-  0: "abcdefghiklmnopqrstuvwxyz如常快玩绘随",
+  0: "abcdefghiklmnopqrstuvwxyz如常快灵玩绘随",
   1: "il",
   2: "l",
   3: "abcdefghiklmoprstuvwx",
   4: "l",
   5: "l",
   6: "abcdefghiklmnopqrstuvwxyz",
-  7: "ln如常快玩绘随"
+  7: "ln如常快灵玩绘随"
 };
 
 var indexSectionNames =

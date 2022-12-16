@@ -107,22 +107,29 @@ $(function() {
 <li>您可按照以下任一方式部署授权文件：</li>
 </ol>
 <ul>
-<li>将 lpv.lic 文件放在 LPV 根目录下 (./runner)，保证名称与 “lpv.lic” 完全一致。</li>
+<li>将 lpv.lic 文件放在安装后的运行根目录下 (./runner)，保证名称与 “lpv.lic” 完全一致。</li>
 <li>将 lpv.lic 文件放在用户目录下 (AppData%/LPV)，保证名称与 “lpv.lic” 完全一致。</li>
 <li>打开任意一个 demo 程序，弹出未授权提示，选择是并上传 lpv.lic 文件，我们将自动复制该文件到可授权的目录。</li>
 </ul>
 <p><em>注：该授权方式仅提供短期试用，试用期到期后将提示过期，请联系我们或者您的 LPV SDK 技术支持。</em></p>
 <h3><a class="anchor" id="autotoc_md9"></a>
-正式版：使用加密狗进行授权</h3>
+正式版：使用圣天诺加密狗进行授权</h3>
 <ol type="1">
-<li>插入 LPV 加密狗，检查加密狗是否亮灯。</li>
+<li>插入 LPV 加密狗，检查加密狗是否亮灯并常亮。</li>
+<li>打开任意一个 demo 程序，检测授权是否正常。</li>
+</ol>
+<h3><a class="anchor" id="autotoc_md10"></a>
+正式版：使用深思加密狗进行授权</h3>
+<ol type="1">
+<li>下载并安装深思驱动，可从 <a href="https://lm.virbox.com/tools.html">官网</a> 或我们提供的 <a href="http://fileserver.hzleaper.com:8086/f/210d89dee4674fb98469/">链接</a> 下载。</li>
+<li>插入 LPV 加密狗，检查加密狗是否亮灯并常亮。</li>
 <li>打开任意一个 demo 程序，检测授权是否正常。</li>
 </ol>
 <p><br  />
  </p><hr  />
-<h1><a class="anchor" id="autotoc_md10"></a>
+<h1><a class="anchor" id="autotoc_md11"></a>
 集成和调用</h1>
-<h2><a class="anchor" id="autotoc_md11"></a>
+<h2><a class="anchor" id="autotoc_md12"></a>
 添加库到 Visual Studio 工程</h2>
  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><ol type="1">
 <li>右键工程的 Reference 项，点击 Add Reference</li>

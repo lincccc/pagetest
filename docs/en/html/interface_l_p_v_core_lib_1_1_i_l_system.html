@@ -97,6 +97,8 @@ Inheritance diagram for ILSystem:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:abe1b71ed02f499e949fdcd94b7ac1c79"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_system.html#abe1b71ed02f499e949fdcd94b7ac1c79">CheckVersion</a> (long majorVersion, long minorVersion, long microVersion)</td></tr>
+<tr class="separator:abe1b71ed02f499e949fdcd94b7ac1c79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeea32205eefb6fe3553a25da20884ec1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_system.html#aeea32205eefb6fe3553a25da20884ec1">SetPen</a> (IDispatch *drawable, <a class="el" href="namespace_l_p_v_core_lib.html#a538e01db39d41ce04a34266c00d41f1f">LPVPenStyle</a> penStyle, int penWidth, COLORREF penColor)</td></tr>
 <tr class="separator:aeea32205eefb6fe3553a25da20884ec1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3a931dc60b13c1cd4ad947fecb0ee7a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_system.html#ad3a931dc60b13c1cd4ad947fecb0ee7a">SetPenColor</a> (IDispatch *drawable, COLORREF penColor)</td></tr>
@@ -145,6 +147,49 @@ Public Member Functions</h2></td></tr>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LSystem m_sys = <span class="keyword">new</span> LSystem();</div>
 <div class="line">m_sys.SetDrawPointSize(20);</div>
 </div><!-- fragment --> </div>  </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="abe1b71ed02f499e949fdcd94b7ac1c79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe1b71ed02f499e949fdcd94b7ac1c79">&#9670;&nbsp;</a></span>CheckVersion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL CheckVersion </td>
+          <td>(</td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>majorVersion</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>minorVersion</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>microVersion</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Check the compatibility of the running and the compiled version of the LPV toolkit. You may call it as: </p><div class="fragment"><div class="line">sys-&gt;CheckVersion(LPVMajorVersion, LPVMinorVersion, LPVMicroVersion);</div>
+</div><!-- fragment --><p> For failed check, you may re-install the correct version. It's recommended to use the same version for compiling and running. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">majorVersion</td><td>The major version in compiling. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">minorVersion</td><td>The minor version in compiling. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">microVersion</td><td>The micro version in compiling. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="aeea32205eefb6fe3553a25da20884ec1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aeea32205eefb6fe3553a25da20884ec1">&#9670;&nbsp;</a></span>SetPen()</h2>
 
@@ -1032,7 +1077,16 @@ Pass in null drawable object to set font for the system object. </p><dl class="s
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get RGB(red, green, blue) values from a 32-bit value representing the same color. The 32-bit value is in RRGGBB format. Alternatively, you could use ColorTranslator.FromWin32() for C# or GetRValue()/GetGValue()/GetBValue() macro in GDI for C++. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_system.html#a5d4476f2a04f551b0912272b94dd3565">GetColorRef()</a> </dd></dl>
+<p>Get RGB(red, green, blue) values from a 32-bit value representing the same color. The 32-bit value is in RRGGBB format. Alternatively, you could use ColorTranslator.FromWin32() for C# or GetRValue()/GetGValue()/GetBValue() macro in GDI for C++. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">colorRef</td><td>The input color value </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">red</td><td>Output the red value </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">green</td><td>Output the green value </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">blue</td><td>Output the blue value </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_system.html#a5d4476f2a04f551b0912272b94dd3565">GetColorRef()</a> </dd></dl>
 
 </div>
 </div>
@@ -1051,7 +1105,12 @@ Pass in null drawable object to set font for the system object. </p><dl class="s
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Change the size of region handles(and its interactable area) drawn on canvas globally, by default it's 7 pixels. </p>
+<p>Change the size of region handles(and its interactable area) drawn on canvas globally, by default it's 7 pixels. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>The required handle size in pixel. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

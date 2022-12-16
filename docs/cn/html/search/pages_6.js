@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['绘制函数_2278',['绘制函数',['../use_draw_functions.html',1,'']]]
+  ['玩转_20demo_2287',['玩转 DEMO',['../how_to_play_with_demo.html',1,'']]]
 ];

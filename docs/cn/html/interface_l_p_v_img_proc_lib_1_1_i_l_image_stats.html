@@ -105,6 +105,8 @@ Public 成员函数</h2></td></tr>
 <tr class="separator:ad7c3c17f9a853f57abe6c863a8d72e0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3f0a3871e88b598bde7ed338323c821"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_stats.html#ac3f0a3871e88b598bde7ed338323c821">CountPixel</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a> *region, int lb, int ub, int *belowCount, int *betweenCount, int *aboveCount)</td></tr>
 <tr class="separator:ac3f0a3871e88b598bde7ed338323c821"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abaa3f3df34ed24eb702b5a6b0774f27a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_stats.html#abaa3f3df34ed24eb702b5a6b0774f27a">CountPixelColor</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a> *region, <a class="el" href="struct_l_p_v_core_lib_1_1_l_color.html">LColor</a> lb, struct <a class="el" href="struct_l_p_v_core_lib_1_1_l_color.html">LColor</a> ub, int *betweenCount, int *outsideCount)</td></tr>
+<tr class="separator:abaa3f3df34ed24eb702b5a6b0774f27a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a005d78785490d554c04d494ce6d4c738"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_stats.html#a005d78785490d554c04d494ce6d4c738">Sharpness</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a> *region)</td></tr>
 <tr class="separator:a005d78785490d554c04d494ce6d4c738"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -344,6 +346,70 @@ Public 成员函数</h2></td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">belowCount</td><td>输出灰度值在阈值范围以下的像素总数。 </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">betweenCount</td><td>输出灰度值在阈值范围之间的像素总数。 </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">aboveCount</td><td>输出灰度值在阈值范围以上的像素总数。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="abaa3f3df34ed24eb702b5a6b0774f27a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abaa3f3df34ed24eb702b5a6b0774f27a">&#9670;&nbsp;</a></span>CountPixelColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CountPixelColor </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>img</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a> *&#160;</td>
+          <td class="paramname"><em>region</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_l_p_v_core_lib_1_1_l_color.html">LColor</a>&#160;</td>
+          <td class="paramname"><em>lb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="struct_l_p_v_core_lib_1_1_l_color.html">LColor</a>&#160;</td>
+          <td class="paramname"><em>ub</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>betweenCount</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>outsideCount</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>计算输入彩色图像中像素值在设置范围之内、之外的像素总数。<br  />
+对于每一个像素，若其所有通道的颜色值均在指定范围内，则该像素为范围内“between”像素。 反之，若其任一通道的数值小于或大于指定颜色范围的下限或上限，则该像素为范围外“outside”像素。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_bgr.png" alt="" class="inline" title="Color images"/> 输入图像。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">region</td><td>输入区域，可为空。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">lb</td><td>颜色范围下限，所有通道的数值需均小于或等于上限 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ub</td><td>颜色范围上限，所有通道的数值需均大于或等于上限 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">betweenCount</td><td>输出颜色值在颜色范围之间的像素总数。 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">outsideCount</td><td>输出颜色值在颜色范围以外的像素总数。 </td></tr>
   </table>
   </dd>
 </dl>

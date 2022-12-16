@@ -103,6 +103,8 @@ Inheritance diagram for ILCalibBoard:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aa174ae718c73636f93cff15578386560"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#aa174ae718c73636f93cff15578386560">Detect</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_point_pairs.html">ILCalibPointPairs</a> **pointPairs)</td></tr>
 <tr class="separator:aa174ae718c73636f93cff15578386560"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abee452fce9fcd580f809b57613aab1f2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#abee452fce9fcd580f809b57613aab1f2">DetectInRegion</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a> *region, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_point_pairs.html">ILCalibPointPairs</a> **pointPairs)</td></tr>
+<tr class="separator:abee452fce9fcd580f809b57613aab1f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_interface_l_p_v_core_lib_1_1_i_l_object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_interface_l_p_v_core_lib_1_1_i_l_object')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_object.html">ILObject</a></td></tr>
 <tr class="memitem:a372de693ad40b3f42839c8ec6ac845f4 inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_object.html#a372de693ad40b3f42839c8ec6ac845f4">Reset</a> ()</td></tr>
 <tr class="separator:a372de693ad40b3f42839c8ec6ac845f4 inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -209,6 +211,54 @@ We support 3 types of board, see LPVCalibBoardType for more details.</p>
 <p>Detect the calibration pattern on the provided image, and report the generate image and world point pairs. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> The input image. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">pointPairs</td><td>Return the collection of image and world point pairs. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">error</td><td>Return error code if anything is wrong. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="abee452fce9fcd580f809b57613aab1f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abee452fce9fcd580f809b57613aab1f2">&#9670;&nbsp;</a></span>DetectInRegion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> DetectInRegion </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>img</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a> *&#160;</td>
+          <td class="paramname"><em>region</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_point_pairs.html">ILCalibPointPairs</a> **&#160;</td>
+          <td class="paramname"><em>pointPairs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Detect the calibration pattern on the provided image and region, and report the generate image and world point pairs. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> The input image. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">region</td><td>The input region, to limit the region of detection. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">pointPairs</td><td>Return the collection of image and world point pairs. </td></tr>
   </table>
   </dd>

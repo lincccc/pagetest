@@ -101,6 +101,8 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
+<tr class="memitem:a2c2ed3482f17828158b0a681b4e613ae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#a2c2ed3482f17828158b0a681b4e613ae">SetSize</a> (int w, int h)</td></tr>
+<tr class="separator:a2c2ed3482f17828158b0a681b4e613ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d913d4876cdc9d4c5e59713d218c788"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#a6d913d4876cdc9d4c5e59713d218c788">FitInView</a> (int tlx, int tly, int w, int h, <a class="el" href="namespace_l_p_v_display_lib.html#a5361690471ec9bae7d38163800878c4e">LPVAlignment</a> alignFlags)</td></tr>
 <tr class="separator:a6d913d4876cdc9d4c5e59713d218c788"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aadde65986cfadd223bef04b3ce008e36"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#aadde65986cfadd223bef04b3ce008e36">FitToWindow</a> (<a class="el" href="namespace_l_p_v_display_lib.html#a5361690471ec9bae7d38163800878c4e">LPVAlignment</a> alignFlags)</td></tr>
@@ -111,6 +113,8 @@ Public 成员函数</h2></td></tr>
 <tr class="separator:a9207606f0b51be7815fab8b0ed23102f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09363be5a60d131aa2dd7da89a85aef9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#a09363be5a60d131aa2dd7da89a85aef9">SaveWindowToFile</a> (BSTR filename)</td></tr>
 <tr class="separator:a09363be5a60d131aa2dd7da89a85aef9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48e37b945279398099875c8ca547f0e7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#a48e37b945279398099875c8ca547f0e7">SaveSceneToFile</a> (BSTR filename)</td></tr>
+<tr class="separator:a48e37b945279398099875c8ca547f0e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34630d9dd2b50da9a6e3895cc43140da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#a34630d9dd2b50da9a6e3895cc43140da">SetDisplayFlag</a> (<a class="el" href="namespace_l_p_v_display_lib.html#abc2f2be19cc9a20d8f4b71ddb968d49b">LPVDisplayFlags</a> flag, BOOL enable)</td></tr>
 <tr class="separator:a34630d9dd2b50da9a6e3895cc43140da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a68b6649b7ed6d9c66fb7ac4de72d2977"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#a68b6649b7ed6d9c66fb7ac4de72d2977">AddReferenceLineH</a> (double position, double relativePosition, BOOL attached, OLE_COLOR clr)</td></tr>
@@ -184,6 +188,41 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 <p>这是所有显示控件对象的基类，对于不同的显示内容，需选择不同的显示控件。 使用这个接口，需要创建一个显示控件对象，如:</p>
 <p><a class="el" href="class_l_p_v_display_lib_1_1_l_display.html">LDisplay</a>... </p>
 </div><h2 class="groupheader">成员函数说明</h2>
+<a id="a2c2ed3482f17828158b0a681b4e613ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c2ed3482f17828158b0a681b4e613ae">&#9670;&nbsp;</a></span>SetSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SetSize </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>h</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>设置当前场景的尺寸，以像素为单位。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">w</td><td>场景的宽度，x 方向尺寸 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">h</td><td>场景的高度，y 方向尺寸 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a6d913d4876cdc9d4c5e59713d218c788"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6d913d4876cdc9d4c5e59713d218c788">&#9670;&nbsp;</a></span>FitInView()</h2>
 
@@ -315,7 +354,37 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
         </tr>
       </table>
 </div><div class="memdoc">
-<p>保存当前窗口图像到文件，以彩色图像保存。 图像格式按照所提供的扩展名自动选择 (.bmp, .png, .jpg, etc.)。 </p><dl class="params"><dt>参数</dt><dd>
+<p>保存当前窗口截图到文件，以彩色图像保存。 图像尺寸与当前窗口尺寸相同。图像格式按照所提供的扩展名自动选择 (.bmp, .png, .jpg, etc.)。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>文件路径，可为绝对或相对路径，包括所在文件夹，文件名和扩展名。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">error</td><td>返回错误码，查看 LPVErrorCode </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a48e37b945279398099875c8ca547f0e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48e37b945279398099875c8ca547f0e7">&#9670;&nbsp;</a></span>SaveSceneToFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SaveSceneToFile </td>
+          <td>(</td>
+          <td class="paramtype">BSTR&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>保存整个场景到文件，包括图像、所有区域和绘制对象，以彩色图像保存。 图像尺寸与当前场景尺寸相同。图像格式按照所提供的扩展名自动选择 (.bmp, .png, .jpg, etc.)。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>文件路径，可为绝对或相对路径，包括所在文件夹，文件名和扩展名。 </td></tr>
   </table>

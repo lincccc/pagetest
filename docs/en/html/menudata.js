@@ -28,7 +28,8 @@ var menudata={children:[
 {text:"Play with DEMOs",url:"how_to_play_with_demo.html"},
 {text:"Display",url:"#",children:[
 {text:"Draw Functions",url:"use_draw_functions.html"},
-{text:"Display Control",url:"use_display_control.html"}]}]},
+{text:"Display Control",url:"use_display_control.html"}]},
+{text:"IntelliBlink Lookup",url:"ib_lookup.html"}]},
 {text:"LPV Modules",url:"#",children:[
 {text:"<b>Basics</b> <i><small>lpvCore</small></i>",url:"namespace_l_p_v_core_lib.html"},
 {text:"<b>Geometry</b>",url:"#",children:[

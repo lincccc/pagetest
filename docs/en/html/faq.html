@@ -152,7 +152,7 @@ Q8. Open the .net form with LPV display control, the designer report error: Coul
 </ol>
 </blockquote>
 <h4><a class="anchor" id="faq9"></a>
-Q9. C++ 创建 LPV 显示控件失败，调用 Create 接口返回 False</h4>
+Q9. C++ failed to create display control, calling to Create() returns False</h4>
 <blockquote class="doxtable">
 <p>1. Make sure LDisplay module is well-registered and licensed. See and follow the steps in <a href="#faq1">Compile Failure Q1</a>.</p><ol type="1">
 <li>Make sure the thread that creating the control is initialized using COINIT_APARTMENTTHREADED, since the ActiveX control and its container needs to be running in single-thread apartment. Note: it's still allowed to initialize other threads with COINIT_MULTITHREADED.</li>

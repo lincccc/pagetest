@@ -186,7 +186,7 @@ To use this interface, you should create a <a class="el" href="class_l_p_v_img_p
       </table>
 </div><div class="memdoc">
 <p>Change kernel size used in the filter, by default it's a \( 3 \times 3 \) kernel. Large kernel size results usually in stronger filtering effect, but also slower.<br  />
-You may set the kernel size to 0 then we'll compute a proper size from the sigma and gain value. </p><dl class="params"><dt>Parameters</dt><dd>
+You may set the kernel size to 0 then we'll compute a proper size from the sigma value. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">kWidth</td><td>The width of the kernel size, should be an odd number, say, 3, 5, 7, etc. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">kHeight</td><td>The height of the kernel size, should be an odd number, say, 3, 5, 7, etc. </td></tr>
@@ -224,9 +224,10 @@ You may set the kernel size to 0 then we'll compute a proper size from the sigma
 </div><div class="memdoc">
 <p>Change the kernel using the specified sigma and gain value. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">kSigma</td><td>The sigma value is used to control the Gaussian-like kernel's smoothness. For 0(default), the sigma value is computed from the kernel size. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">kGain</td><td>The gain value is used to adjust the kernel size. If the kernel size is specified via <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_filter.html#ae5710ced9973e9ceb7fec75b57a20516">SetKernelSize()</a>, the gain value is ignored. <br  />
-For <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_filter.html#af39a1675a27719f601a3799c190bd6d0">Sharpen()</a>, it also controls the overall strength of the sharpening effect. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">kSigma</td><td>The sigma value is used to control the Gaussian-like kernel's smoothness.<br  />
+For 0(default), the sigma value is computed as \( 1/6 \) of the kernel size.<br  />
+If the kernel size is set to all zeros, then we'll compute a proper size from the sigma value, it's around \( 6 \times kSigma \) . </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">kGain</td><td>The gain value is used to for <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_filter.html#af39a1675a27719f601a3799c190bd6d0">Sharpen()</a> to controls the overall strength of the sharpening effect. </td></tr>
   </table>
   </dd>
 </dl>

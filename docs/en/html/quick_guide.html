@@ -102,7 +102,7 @@ Licensing</h1>
 <h3><a class="anchor" id="autotoc_md8"></a>
 Trial Version: Use License File</h3>
 <ol type="1">
-<li>Run <b>lpvKeyTool.exe</b> under your LPV runner folder(either runner/x64 or runner/86). It generates a <b>lpv.key</b> file.</li>
+<li>Run <b>lpvKeyTool.exe</b> under the installed runner folder(either runner/x64 or runner/86). It generates a <b>lpv.key</b> file.</li>
 <li>Send the generated lpv.key file to us or your LPV SDK Tech Support. We will send you back a <b>lpv.lic</b> file.</li>
 <li>You may use any of the following approach to deploy the license file:</li>
 </ol>
@@ -115,14 +115,21 @@ Trial Version: Use License File</h3>
 <h3><a class="anchor" id="autotoc_md9"></a>
 Full Version: Use Sentinel Protection Key</h3>
 <ol type="1">
-<li>Plug in the Sentinel Protection Key of LPV. Make sure the key blinks.</li>
+<li>Plug in the Sentinel Protection Key of LPV. Make sure the key lights up.</li>
+<li>Open any demo application to see it if it works as expected.</li>
+</ol>
+<h3><a class="anchor" id="autotoc_md10"></a>
+Full Version: Use Sense Protection Key</h3>
+<ol type="1">
+<li>Download then install the Sense driver from the <a href="https://lm.virbox.com/tools.html">official site</a> or our download link <a href="http://fileserver.hzleaper.com:8086/f/210d89dee4674fb98469/">here</a>.</li>
+<li>Plug in the Sense Protection Key of LPV. Make sure the key lights up.</li>
 <li>Open any demo application to see it if it works as expected.</li>
 </ol>
 <p><br  />
  </p><hr  />
-<h1><a class="anchor" id="autotoc_md10"></a>
+<h1><a class="anchor" id="autotoc_md11"></a>
 Integration</h1>
-<h2><a class="anchor" id="autotoc_md11"></a>
+<h2><a class="anchor" id="autotoc_md12"></a>
 Add LPV Libraries to Visual Studio Projects</h2>
  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><ol type="1">
 <li>RMC your C# project, click "Add Reference"</li>
@@ -133,14 +140,14 @@ The following code show a short example: <div class="fragment"><div class="line"
 <div class="line"><span class="keyword">using</span> <a class="code" href="namespace_l_p_v_geom_lib.html">LPVGeomLib</a>;</div>
 <div class="line"><span class="keyword">using</span> <a class="code" href="namespace_l_p_v_pat_lib.html">LPVPatLib</a>;</div>
 <div class="line"> </div>
-<div class="line"><span class="comment">// add definition of LPV class.</span></div>
+<div class="line"><span class="comment">// add definition of @projectname class.</span></div>
 <div class="line">LMatch m_lmatch = <span class="keyword">new</span> LMatch();</div>
 <div class="line"> </div>
-<div class="line"><span class="comment">// call LPV functions, such as set pattern matching&#39;s maximum count, or angle tolerance.</span></div>
+<div class="line"><span class="comment">// call @projectname functions, such as set pattern matching&#39;s maximum count, or angle tolerance.</span></div>
 <div class="line">m_lmatch.MaxCount = 1;</div>
 <div class="line">m_lmatch.AngleTolerance = 180;</div>
 <div class="line"> </div>
-<div class="line"><span class="comment">// call LPV functions and handle the returned error code, such as do pattern matching.</span></div>
+<div class="line"><span class="comment">// call @projectname functions and handle the returned error code, such as do pattern matching.</span></div>
 <div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> errCode = m_lmatch.Match(m_source_img, (LRegion)m_roi, out m_match_results);</div>
 <div class="line"><span class="keywordflow">if</span> (errCode != <a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>.LPVNoError) {}</div>
 <div class="ttc" id="anamespace_l_p_v_core_lib_html"><div class="ttname"><a href="namespace_l_p_v_core_lib.html">LPVCoreLib</a></div><div class="ttdoc">LPV Core Library, provide basic functionalities.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:106</div></div>
@@ -183,7 +190,7 @@ The following code show a short example: <div class="fragment"><div class="line"
 <div class="line"><span class="preprocessor">#include &quot;LPVGeom.h&quot;</span></div>
 <div class="line"><span class="preprocessor">#include &quot;LPVPat.h&quot;</span></div>
 <div class="line"> </div>
-<div class="line"><span class="comment">// add definition of LPV class and create the instance</span></div>
+<div class="line"><span class="comment">// add definition of @projectname class and create the instance</span></div>
 <div class="line"><span class="comment">// the following code defined an ILMatch interface of a LMatch object,</span></div>
 <div class="line">ILMatchPtr m_lmatch(__uuidof(LMatch));</div>
 <div class="line"><span class="comment">// or you can call CreateInstance, as following:</span></div>
