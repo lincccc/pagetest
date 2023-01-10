@@ -300,19 +300,14 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>从指定文件加载灵闪作业。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>文件路径，可为绝对或相对路径，包含文件夹、文件名和扩展名 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>作业文件路径，可为绝对或相对路径，包含文件夹、文件名和扩展名 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">taskId</td><td>返回灵闪作业的唯一标识 ID </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>返回值</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">error</td><td>返回错误码 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">taskId</td><td>返回灵闪作业的唯一标识 ID </td></tr>
+    <tr><td class="paramname">errCode</td><td>返回错误码，若成功，返回 <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aae917cd39742ab4cec9119219cae9154c">LPVNoError</a>. </td></tr>
   </table>
   </dd>
 </dl>
