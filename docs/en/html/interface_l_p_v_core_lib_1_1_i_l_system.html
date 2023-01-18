@@ -131,8 +131,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab950f34906bd4be377a58d3893d4c9db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22cb756639bb2f4a607b455f0e3ccca7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_system.html#a22cb756639bb2f4a607b455f0e3ccca7">DrawPolygon</a> (SAFEARRAY *xs, SAFEARRAY *ys, BOOL bClosed, BOOL bFill, HDC hdc, double zoomX, double zoomY, double panX, double panY)</td></tr>
 <tr class="separator:a22cb756639bb2f4a607b455f0e3ccca7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa92045160180ad2673a76b2b626c70e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_system.html#aa92045160180ad2673a76b2b626c70e3">DrawText</a> (BSTR text, int tlx, int tly, HDC hdc, double zoomX, double zoomY, double panX, double panY)</td></tr>
-<tr class="separator:aa92045160180ad2673a76b2b626c70e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e9ef70750fdac83ff671471606ae1fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_system.html#a8e9ef70750fdac83ff671471606ae1fb">DrawString</a> (BSTR text, int tlx, int tly, HDC hdc, double zoomX, double zoomY, double panX, double panY)</td></tr>
+<tr class="separator:a8e9ef70750fdac83ff671471606ae1fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab556fe7e6e867c71d1953b8e291d91b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_system.html#ab556fe7e6e867c71d1953b8e291d91b5">GetRGBFromColorRef</a> (COLORREF colorRef, int *red, int *green, int *blue)</td></tr>
 <tr class="separator:ab556fe7e6e867c71d1953b8e291d91b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32a6351b6d670be9a7f823a1d6f7dd94"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_system.html#a32a6351b6d670be9a7f823a1d6f7dd94">SetRegionHandleSize</a> (int size)</td></tr>
@@ -627,6 +627,7 @@ Pass in null drawable object to set font for the system object. </p><dl class="s
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td>The x-coordinate of the input point. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">y</td><td>The y-coordinate of the input point. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">shape</td><td>The drawn shape of the point. </td></tr>
   </table>
   </dd>
 </dl>
@@ -785,6 +786,7 @@ Pass in null drawable object to set font for the system object. </p><dl class="s
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td>The x-coordinate of the input circle's center point. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">y</td><td>The y-coordinate of the input circle's center point. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">r</td><td>The radius of the input circle. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">bFill</td><td>Whether to fill the circle using current brush. </td></tr>
   </table>
   </dd>
@@ -967,14 +969,14 @@ Pass in null drawable object to set font for the system object. </p><dl class="s
 
 </div>
 </div>
-<a id="aa92045160180ad2673a76b2b626c70e3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa92045160180ad2673a76b2b626c70e3">&#9670;&nbsp;</a></span>DrawText()</h2>
+<a id="a8e9ef70750fdac83ff671471606ae1fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e9ef70750fdac83ff671471606ae1fb">&#9670;&nbsp;</a></span>DrawString()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void DrawText </td>
+          <td class="memname">void DrawString </td>
           <td>(</td>
           <td class="paramtype">BSTR&#160;</td>
           <td class="paramname"><em>text</em>, </td>

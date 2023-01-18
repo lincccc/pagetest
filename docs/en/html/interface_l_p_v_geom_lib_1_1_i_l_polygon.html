@@ -116,6 +116,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:acf8c3b75bffa6aeaf12ee41f722c4aef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a36bd88fe3f70cd2073695cf679bc0cff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html#a36bd88fe3f70cd2073695cf679bc0cff">Translate</a> (double offsetX, double offsetY)</td></tr>
 <tr class="separator:a36bd88fe3f70cd2073695cf679bc0cff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a673e2e0e246bce4ef6c3d7c9b0eea91a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html#a673e2e0e246bce4ef6c3d7c9b0eea91a">Transform</a> (<a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_transform.html">ILTransform</a> *tf)</td></tr>
+<tr class="separator:a673e2e0e246bce4ef6c3d7c9b0eea91a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73a489f4ba37f2dfee6500e8ff54d3c3"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html#a73a489f4ba37f2dfee6500e8ff54d3c3">Valid</a> ()</td></tr>
 <tr class="separator:a73a489f4ba37f2dfee6500e8ff54d3c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26fe3ece69c70adeefdeb65f5b8f83b1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_points.html">ILPoints</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html#a26fe3ece69c70adeefdeb65f5b8f83b1">GetPoints</a> ()</td></tr>
@@ -128,6 +130,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a80f810e51579b1908fa6cb27aa130a10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc3c71fa4a8320c095acb221a550f158"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_poly_region.html">ILPolyRegion</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html#acc3c71fa4a8320c095acb221a550f158">ToPolyRegion</a> ()</td></tr>
 <tr class="separator:acc3c71fa4a8320c095acb221a550f158"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0efe9b7b4a4a749ed8a5b29eba0072f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html#a0efe9b7b4a4a749ed8a5b29eba0072f9">FromPolyRegion</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_poly_region.html">ILPolyRegion</a> *val)</td></tr>
+<tr class="separator:a0efe9b7b4a4a749ed8a5b29eba0072f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2cdf133df16733f8cfaa86e173d06193"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_point.html">ILPoint</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html#a2cdf133df16733f8cfaa86e173d06193">GetGravityCenter</a> ()</td></tr>
 <tr class="separator:a2cdf133df16733f8cfaa86e173d06193"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43e0f950a3eacc9e431cb98a08a27291"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html#a43e0f950a3eacc9e431cb98a08a27291">DistanceToPoint</a> (<a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_point.html">ILPoint</a> *point, <a class="el" href="namespace_l_p_v_core_lib.html#a044b4c1019ab24bd62eed3e7fd764b85">LPVAggregation</a> aggType, <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_point.html">ILPoint</a> **rootPoint)</td></tr>
@@ -468,6 +472,36 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 
 </div>
 </div>
+<a id="a673e2e0e246bce4ef6c3d7c9b0eea91a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a673e2e0e246bce4ef6c3d7c9b0eea91a">&#9670;&nbsp;</a></span>Transform()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a>* Transform </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_transform.html">ILTransform</a> *&#160;</td>
+          <td class="paramname"><em>tf</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Transform the polygon via the given transformation and return a new polygon </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">tf</td><td>The transformation. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">Return</td><td>the new polygon </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a73a489f4ba37f2dfee6500e8ff54d3c3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a73a489f4ba37f2dfee6500e8ff54d3c3">&#9670;&nbsp;</a></span>Valid()</h2>
 
@@ -619,6 +653,25 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
       </table>
 </div><div class="memdoc">
 <p>Generate a polygon region use the polygon object </p>
+
+</div>
+</div>
+<a id="a0efe9b7b4a4a749ed8a5b29eba0072f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0efe9b7b4a4a749ed8a5b29eba0072f9">&#9670;&nbsp;</a></span>FromPolyRegion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FromPolyRegion </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_poly_region.html">ILPolyRegion</a> *&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set placement of the polygon from the input polygon region. </p>
 
 </div>
 </div>

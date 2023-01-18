@@ -127,6 +127,8 @@ Public 成员函数</h2></td></tr>
 <tr class="separator:ae4719fff6f90f1ff3fb7cc84b82785cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad59ddb26897c32be05a846242874b1cb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#ad59ddb26897c32be05a846242874b1cb">ShowDialog</a> (BSTR dialogName, int x, int y, int w, int h)</td></tr>
 <tr class="separator:ad59ddb26897c32be05a846242874b1cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5364a06cb503911a4b1b44e394d2d437"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#a5364a06cb503911a4b1b44e394d2d437">ShowDialogAsync</a> (BSTR dialogName, int x, int y, int w, int h, int refreshInterval)</td></tr>
+<tr class="separator:a5364a06cb503911a4b1b44e394d2d437"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 属性</h2></td></tr>
@@ -639,6 +641,71 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
   </table>
   </dd>
 </dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#a5364a06cb503911a4b1b44e394d2d437">ShowDialogAsync()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a5364a06cb503911a4b1b44e394d2d437"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5364a06cb503911a4b1b44e394d2d437">&#9670;&nbsp;</a></span>ShowDialogAsync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ShowDialogAsync </td>
+          <td>(</td>
+          <td class="paramtype">BSTR&#160;</td>
+          <td class="paramname"><em>dialogName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>h</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>refreshInterval</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>弹窗显示该显示控件，异步形式工作于另一个线程。通常用于在控制台程序中显示调试图像等信息。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dialogName</td><td>窗口名称，显示在标题栏中 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td>窗口的 x 坐标 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">y</td><td>窗口的 y 坐标 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">w</td><td>窗口的宽度 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">h</td><td>窗口的高度 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">refreshInterval</td><td>窗口的自动刷新时间，以毫秒为单位 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#ad59ddb26897c32be05a846242874b1cb">ShowDialog()</a> </dd></dl>
 
 </div>
 </div>

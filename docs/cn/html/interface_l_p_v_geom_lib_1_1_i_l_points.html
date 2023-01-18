@@ -117,6 +117,8 @@ Public 成员函数</h2></td></tr>
 <tr class="separator:af1239669720cdc2fb33713b5ff2ddf36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a380be6a22bdab21519150c0ee6b333dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_points.html">ILPoints</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_points.html#a380be6a22bdab21519150c0ee6b333dc">Scale</a> (double factorX, double factorY)</td></tr>
 <tr class="separator:a380be6a22bdab21519150c0ee6b333dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71f6f46d2bc5ee4b2a5564e5f3565e98"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_points.html">ILPoints</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_points.html#a71f6f46d2bc5ee4b2a5564e5f3565e98">Transform</a> (<a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_transform.html">ILTransform</a> *tf)</td></tr>
+<tr class="separator:a71f6f46d2bc5ee4b2a5564e5f3565e98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73a489f4ba37f2dfee6500e8ff54d3c3"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_points.html#a73a489f4ba37f2dfee6500e8ff54d3c3">Valid</a> ()</td></tr>
 <tr class="separator:a73a489f4ba37f2dfee6500e8ff54d3c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3fc5090c8b114f70f9c25b625fed5981"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_rect.html">ILRect</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_points.html#a3fc5090c8b114f70f9c25b625fed5981">GetBoundingRect</a> ()</td></tr>
@@ -509,6 +511,36 @@ Public 成员函数</h2></td></tr>
 
 </div>
 </div>
+<a id="a71f6f46d2bc5ee4b2a5564e5f3565e98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71f6f46d2bc5ee4b2a5564e5f3565e98">&#9670;&nbsp;</a></span>Transform()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_points.html">ILPoints</a>* Transform </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_transform.html">ILTransform</a> *&#160;</td>
+          <td class="paramname"><em>tf</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>应用指定的变换矩阵到当前点集，得到一个新的点集 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">tf</td><td>变换矩阵 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">返回新的点集</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a73a489f4ba37f2dfee6500e8ff54d3c3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a73a489f4ba37f2dfee6500e8ff54d3c3">&#9670;&nbsp;</a></span>Valid()</h2>
 
@@ -632,7 +664,7 @@ Public 成员函数</h2></td></tr>
 <p>根据该点集拟合一条直线，使得点集中的所有点到这条直线的距离之和最小。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">fitDistThreshold</td><td>指定拟合直线与点集中的用于拟合的点之间的距离阈值。拟合迭代过程中，距离大于该阈值的点将被剔除不参与拟合。 输入负值以跳过剔除过程，即所有点总是都参与拟合。 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">fitCountThreshold</td><td>指定用于拟合的最少点数，若点数少于该数值，将停止拟合迭代。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fitCountThreshold</td><td>指定用于拟合的最少点数，若点数少于该数值，将终止拟合迭代，拟合失败。 </td></tr>
   </table>
   </dd>
 </dl>
@@ -674,7 +706,7 @@ Public 成员函数</h2></td></tr>
 <p>根据该点集拟合一个圆，使得点集中的所有点到这个圆的距离之和最小。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">fitDistThreshold</td><td>指定拟合圆与点集中的用于拟合的点之间的距离阈值。拟合迭代过程中，距离大于该阈值的点将被剔除不参与拟合。 输入负值以跳过剔除过程，即所有点总是都参与拟合。 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">fitCountThreshold</td><td>指定用于拟合的最少点数，若点数少于该数值，将停止拟合迭代。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fitCountThreshold</td><td>指定用于拟合的最少点数，若点数少于该数值，将终止拟合迭代，拟合失败。 </td></tr>
   </table>
   </dd>
 </dl>

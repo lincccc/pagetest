@@ -111,6 +111,7 @@ $(function() {
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">该接口类用于对一个可排序对象进行排序或重整为给定的顺序。  <a href="interface_l_p_v_core_lib_1_1_i_l_sortables.html#details">更多...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_object.html">ILObject</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">该接口类为可序列化 LPV 对象的基类。  <a href="interface_l_p_v_core_lib_1_1_i_l_object.html#details">更多...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_system.html">ILSystem</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">该接口类提供了修改 LPV 系统全局参数的功能和一些杂项帮助函数。  <a href="interface_l_p_v_core_lib_1_1_i_l_system.html#details">更多...</a><br /></td></tr>
@@ -297,11 +298,13 @@ typedef struct <a class="el" href="struct_l_p_v_core_lib_1_1_l_color.html">LPVCo
 <tr class="separator:a120a51e4363ae780ec1088d04f05f68f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8a4d763bb82cc129119ff1cf0bc0e0b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0b">LPVPolarity</a> { <br />
 &#160;&#160;<a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0bae063535a89c7f149c8e490e3238de655">LPVBlack2White</a> = 0
-, <a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0baffd2c678a5a2ea661de262d51223adf3">LPVBlackOnWhite</a> = 0
 , <a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0ba231c29dc77dc79a18cd9fe49ba4eeca1">LPVWhite2Black</a> = 1
-, <a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0bac595c6b549ecbabb1dbb431e374b02ad">LPVWhiteOnBlack</a> = 1
+, <a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0bad0a9df3d39f3370d8594aaf9ec0744b5">LPVPolarityEitherEdge</a> = 2
+, <a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0baffd2c678a5a2ea661de262d51223adf3">LPVBlackOnWhite</a> = 3
 , <br />
-&#160;&#160;<a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0ba985da7ae09669453c24378d558557c76">LPVPolarityEither</a> = 2
+&#160;&#160;<a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0bac595c6b549ecbabb1dbb431e374b02ad">LPVWhiteOnBlack</a> = 4
+, <a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0ba0e1e682e831262bdf3c56f6c6fee4d62">LPVPolarityEitherObject</a> = 5
+, <a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0ba985da7ae09669453c24378d558557c76">LPVPolarityEither</a> = 6
 <br />
  }</td></tr>
 <tr class="memdesc:ad8a4d763bb82cc129119ff1cf0bc0e0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">该枚举类型表示要定位的物体或边的极性  <a href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0b">更多...</a><br /></td></tr>
@@ -434,6 +437,12 @@ typedef struct <a class="el" href="struct_l_p_v_core_lib_1_1_l_color.html">LPVCo
  }</td></tr>
 <tr class="memdesc:a278477804abb051cbce399675acacce4"><td class="mdescLeft">&#160;</td><td class="mdescRight">该枚举定义目标的方向或朝向  <a href="namespace_l_p_v_core_lib.html#a278477804abb051cbce399675acacce4">更多...</a><br /></td></tr>
 <tr class="separator:a278477804abb051cbce399675acacce4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a161cc4b1a61facd7b0ba3bdce897ec09"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_l_p_v_core_lib.html#a161cc4b1a61facd7b0ba3bdce897ec09">LPVAxis</a> { <a class="el" href="namespace_l_p_v_core_lib.html#a161cc4b1a61facd7b0ba3bdce897ec09aa573a5622885eae5e14840eb4ee0dee9">LPVAxisX</a> = 0
+, <a class="el" href="namespace_l_p_v_core_lib.html#a161cc4b1a61facd7b0ba3bdce897ec09aafbc8ff48ba33f9bcc0d0b94c65fe6b3">LPVAxisY</a> = 1
+, <a class="el" href="namespace_l_p_v_core_lib.html#a161cc4b1a61facd7b0ba3bdce897ec09a0d63dddd35d5bda4adaf63668f1f3d9a">LPVAxisZ</a> = 2
+ }</td></tr>
+<tr class="memdesc:a161cc4b1a61facd7b0ba3bdce897ec09"><td class="mdescLeft">&#160;</td><td class="mdescRight">该枚举定义笛卡尔坐标系下的三个坐标轴  <a href="namespace_l_p_v_core_lib.html#a161cc4b1a61facd7b0ba3bdce897ec09">更多...</a><br /></td></tr>
+<tr class="separator:a161cc4b1a61facd7b0ba3bdce897ec09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><p>LPV 基础模块，提供图像、region、绘制等基础功能。 </p>
@@ -441,7 +450,7 @@ typedef struct <a class="el" href="struct_l_p_v_core_lib_1_1_l_color.html">LPVCo
 <h3>示例代码 </h3>
  <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line"><span class="preprocessor">#include &quot;LPVCore.h&quot;</span></div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line"><span class="keyword">using</span> <a class="code" href="namespace_l_p_v_core_lib.html">LPVCoreLib</a>;</div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html"><div class="ttname"><a href="namespace_l_p_v_core_lib.html">LPVCoreLib</a></div><div class="ttdoc">LPV 基础模块，提供图像、region、绘制等基础功能。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:106</div></div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html"><div class="ttname"><a href="namespace_l_p_v_core_lib.html">LPVCoreLib</a></div><div class="ttdoc">LPV 基础模块，提供图像、region、绘制等基础功能。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:102</div></div>
 </div><!-- fragment --> </div> <p><b>MFC Demo:</b> <a class="el" href="how_to_play_with_demo.html#demo_sanity">MFCSanity</a>, <a class="el" href="how_to_play_with_demo.html#demo_region">MFCRegion</a> <br  />
 <b>C# Demo:</b> <a class="el" href="how_to_play_with_demo.html#demo_sanity">CSharpSanity</a>, <a class="el" href="how_to_play_with_demo.html#demo_region">CSharpRegion</a>, <a class="el" href="how_to_play_with_demo.html#demo_hikcam">CSharpHikCam</a> </p>
 </div><h2 class="groupheader">枚举类型说明</h2>
@@ -715,13 +724,17 @@ typedef struct <a class="el" href="struct_l_p_v_core_lib_1_1_l_color.html">LPVCo
 <table class="fieldtable">
 <tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="ad8a4d763bb82cc129119ff1cf0bc0e0bae063535a89c7f149c8e490e3238de655"></a>LPVBlack2White&#160;</td><td class="fielddoc"><p>沿着区域的扫描方向看，边处于从黑（暗）到白（亮）的边界 </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ad8a4d763bb82cc129119ff1cf0bc0e0baffd2c678a5a2ea661de262d51223adf3"></a>LPVBlackOnWhite&#160;</td><td class="fielddoc"><p>黑色（暗）物体在白色（亮）背景上 </p>
-</td></tr>
 <tr><td class="fieldname"><a id="ad8a4d763bb82cc129119ff1cf0bc0e0ba231c29dc77dc79a18cd9fe49ba4eeca1"></a>LPVWhite2Black&#160;</td><td class="fielddoc"><p>沿着区域的扫描方向看，边处于从白（亮）到黑（暗）的边界 </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ad8a4d763bb82cc129119ff1cf0bc0e0bac595c6b549ecbabb1dbb431e374b02ad"></a>LPVWhiteOnBlack&#160;</td><td class="fielddoc"><p>白色（亮）物体在黑色（暗）背景上 </p>
+<tr><td class="fieldname"><a id="ad8a4d763bb82cc129119ff1cf0bc0e0bad0a9df3d39f3370d8594aaf9ec0744b5"></a>LPVPolarityEitherEdge&#160;</td><td class="fielddoc"><p>接受任意一种边缘极性，白到黑，或者黑到白 </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ad8a4d763bb82cc129119ff1cf0bc0e0ba985da7ae09669453c24378d558557c76"></a>LPVPolarityEither&#160;</td><td class="fielddoc"><p>任意一种极性都可以 </p>
+<tr><td class="fieldname"><a id="ad8a4d763bb82cc129119ff1cf0bc0e0baffd2c678a5a2ea661de262d51223adf3"></a>LPVBlackOnWhite&#160;</td><td class="fielddoc"><p>黑色（暗）目标在白色（亮）背景上 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad8a4d763bb82cc129119ff1cf0bc0e0bac595c6b549ecbabb1dbb431e374b02ad"></a>LPVWhiteOnBlack&#160;</td><td class="fielddoc"><p>白色（亮）目标在黑色（暗）背景上 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad8a4d763bb82cc129119ff1cf0bc0e0ba0e1e682e831262bdf3c56f6c6fee4d62"></a>LPVPolarityEitherObject&#160;</td><td class="fielddoc"><p>接受任意一种目标极性，白物体黑背景，或者黑物体白背景 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad8a4d763bb82cc129119ff1cf0bc0e0ba985da7ae09669453c24378d558557c76"></a>LPVPolarityEither&#160;</td><td class="fielddoc"><p>接受任意一种极性 </p>
 </td></tr>
 </table>
 
@@ -1113,6 +1126,30 @@ typedef struct <a class="el" href="struct_l_p_v_core_lib_1_1_l_color.html">LPVCo
 <tr><td class="fieldname"><a id="a278477804abb051cbce399675acacce4aa4b8d7973055bf79b3447a92bf6d621d"></a>LPVDirUp&#160;</td><td class="fielddoc"><p>目标向上 </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a278477804abb051cbce399675acacce4afe3477c4384b874d92596e6955501836"></a>LPVDirDown&#160;</td><td class="fielddoc"><p>目标向下 </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a161cc4b1a61facd7b0ba3bdce897ec09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a161cc4b1a61facd7b0ba3bdce897ec09">&#9670;&nbsp;</a></span>LPVAxis</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespace_l_p_v_core_lib.html#a161cc4b1a61facd7b0ba3bdce897ec09">LPVAxis</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>该枚举定义笛卡尔坐标系下的三个坐标轴 </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a161cc4b1a61facd7b0ba3bdce897ec09aa573a5622885eae5e14840eb4ee0dee9"></a>LPVAxisX&#160;</td><td class="fielddoc"><p>X 轴，通常指图像的横向坐标轴，从左到右。 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a161cc4b1a61facd7b0ba3bdce897ec09aafbc8ff48ba33f9bcc0d0b94c65fe6b3"></a>LPVAxisY&#160;</td><td class="fielddoc"><p>Y 轴，通常指图像的纵向坐标轴，从上到下。 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a161cc4b1a61facd7b0ba3bdce897ec09a0d63dddd35d5bda4adaf63668f1f3d9a"></a>LPVAxisZ&#160;</td><td class="fielddoc"><p>Z 轴，通常指垂直于图像的坐标轴。 </p>
 </td></tr>
 </table>
 

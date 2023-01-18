@@ -117,6 +117,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af1239669720cdc2fb33713b5ff2ddf36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a380be6a22bdab21519150c0ee6b333dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_points.html">ILPoints</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_points.html#a380be6a22bdab21519150c0ee6b333dc">Scale</a> (double factorX, double factorY)</td></tr>
 <tr class="separator:a380be6a22bdab21519150c0ee6b333dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71f6f46d2bc5ee4b2a5564e5f3565e98"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_points.html">ILPoints</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_points.html#a71f6f46d2bc5ee4b2a5564e5f3565e98">Transform</a> (<a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_transform.html">ILTransform</a> *tf)</td></tr>
+<tr class="separator:a71f6f46d2bc5ee4b2a5564e5f3565e98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73a489f4ba37f2dfee6500e8ff54d3c3"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_points.html#a73a489f4ba37f2dfee6500e8ff54d3c3">Valid</a> ()</td></tr>
 <tr class="separator:a73a489f4ba37f2dfee6500e8ff54d3c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3fc5090c8b114f70f9c25b625fed5981"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_rect.html">ILRect</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_points.html#a3fc5090c8b114f70f9c25b625fed5981">GetBoundingRect</a> ()</td></tr>
@@ -509,6 +511,36 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a71f6f46d2bc5ee4b2a5564e5f3565e98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71f6f46d2bc5ee4b2a5564e5f3565e98">&#9670;&nbsp;</a></span>Transform()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_points.html">ILPoints</a>* Transform </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_transform.html">ILTransform</a> *&#160;</td>
+          <td class="paramname"><em>tf</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Transform the points via the given transformation and return a new collection of points </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">tf</td><td>The transformation. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">Return</td><td>the new collection of points </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a73a489f4ba37f2dfee6500e8ff54d3c3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a73a489f4ba37f2dfee6500e8ff54d3c3">&#9670;&nbsp;</a></span>Valid()</h2>
 
@@ -631,7 +663,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Fit a line which minimize the total distance between the result and all the points. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">fitDistThreshold</td><td>Define the minimum distance between the result and a point. Points with bigger distance than this value will be treated as out-lier then be excluded from the fitting. Pass in negative value to bypass the out-lier filtering. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fitDistThreshold</td><td>Define the distance threshold between the result line and a valid point. Points with a longer distance than this value will be treated as out-lier then be excluded from the fitting. Pass in negative value to bypass the out-lier filtering. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">fitCountThreshold</td><td>Define the minimum count of points contribute to a valid fitting result. </td></tr>
   </table>
   </dd>
@@ -673,7 +705,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Fit a circle which minimize the total distance between the result and all the points. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">fitDistThreshold</td><td>Define the minimum distance between the result and a point. Points with bigger distance than this value will be treated as out-lier then be excluded from the fitting. Pass in negative value to bypass the out-lier filtering. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fitDistThreshold</td><td>Define the distance threshold between the result circle and a valid point. Points with a longer distance than this value will be treated as out-lier then be excluded from the fitting. Pass in negative value to bypass the out-lier filtering. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">fitCountThreshold</td><td>Define the minimum count of points contribute to a valid fitting result. </td></tr>
   </table>
   </dd>

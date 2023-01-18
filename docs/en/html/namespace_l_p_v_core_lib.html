@@ -111,6 +111,7 @@ Data Structures</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This interface expose APIs to sort or apply permutation to a LPV class contains a collection of sortable objects.  <a href="interface_l_p_v_core_lib_1_1_i_l_sortables.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_object.html">ILObject</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This base interface for a serializable LPV object.  <a href="interface_l_p_v_core_lib_1_1_i_l_object.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_system.html">ILSystem</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This interface provide miscellaneous functions to change LPV system configurations globally.  <a href="interface_l_p_v_core_lib_1_1_i_l_system.html#details">More...</a><br /></td></tr>
@@ -297,11 +298,13 @@ Enumerations</h2></td></tr>
 <tr class="separator:a120a51e4363ae780ec1088d04f05f68f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8a4d763bb82cc129119ff1cf0bc0e0b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0b">LPVPolarity</a> { <br />
 &#160;&#160;<a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0bae063535a89c7f149c8e490e3238de655">LPVBlack2White</a> = 0
-, <a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0baffd2c678a5a2ea661de262d51223adf3">LPVBlackOnWhite</a> = 0
 , <a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0ba231c29dc77dc79a18cd9fe49ba4eeca1">LPVWhite2Black</a> = 1
-, <a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0bac595c6b549ecbabb1dbb431e374b02ad">LPVWhiteOnBlack</a> = 1
+, <a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0bad0a9df3d39f3370d8594aaf9ec0744b5">LPVPolarityEitherEdge</a> = 2
+, <a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0baffd2c678a5a2ea661de262d51223adf3">LPVBlackOnWhite</a> = 3
 , <br />
-&#160;&#160;<a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0ba985da7ae09669453c24378d558557c76">LPVPolarityEither</a> = 2
+&#160;&#160;<a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0bac595c6b549ecbabb1dbb431e374b02ad">LPVWhiteOnBlack</a> = 4
+, <a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0ba0e1e682e831262bdf3c56f6c6fee4d62">LPVPolarityEitherObject</a> = 5
+, <a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0ba985da7ae09669453c24378d558557c76">LPVPolarityEither</a> = 6
 <br />
  }</td></tr>
 <tr class="memdesc:ad8a4d763bb82cc129119ff1cf0bc0e0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This enumeration represents the polarity of the edge or object to be located.  <a href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0b">More...</a><br /></td></tr>
@@ -434,6 +437,12 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a278477804abb051cbce399675acacce4"><td class="mdescLeft">&#160;</td><td class="mdescRight">This enumeration represents the direction or orientation of the object.  <a href="namespace_l_p_v_core_lib.html#a278477804abb051cbce399675acacce4">More...</a><br /></td></tr>
 <tr class="separator:a278477804abb051cbce399675acacce4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a161cc4b1a61facd7b0ba3bdce897ec09"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_l_p_v_core_lib.html#a161cc4b1a61facd7b0ba3bdce897ec09">LPVAxis</a> { <a class="el" href="namespace_l_p_v_core_lib.html#a161cc4b1a61facd7b0ba3bdce897ec09aa573a5622885eae5e14840eb4ee0dee9">LPVAxisX</a> = 0
+, <a class="el" href="namespace_l_p_v_core_lib.html#a161cc4b1a61facd7b0ba3bdce897ec09aafbc8ff48ba33f9bcc0d0b94c65fe6b3">LPVAxisY</a> = 1
+, <a class="el" href="namespace_l_p_v_core_lib.html#a161cc4b1a61facd7b0ba3bdce897ec09a0d63dddd35d5bda4adaf63668f1f3d9a">LPVAxisZ</a> = 2
+ }</td></tr>
+<tr class="memdesc:a161cc4b1a61facd7b0ba3bdce897ec09"><td class="mdescLeft">&#160;</td><td class="mdescRight">This enumeration represents the three axes in the Cartesian coordinate system.  <a href="namespace_l_p_v_core_lib.html#a161cc4b1a61facd7b0ba3bdce897ec09">More...</a><br /></td></tr>
+<tr class="separator:a161cc4b1a61facd7b0ba3bdce897ec09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>LPV Core Library, provide basic functionalities. </p>
@@ -441,7 +450,7 @@ Enumerations</h2></td></tr>
 <h3>Example Code </h3>
  <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line"><span class="preprocessor">#include &quot;LPVCore.h&quot;</span></div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line"><span class="keyword">using</span> <a class="code" href="namespace_l_p_v_core_lib.html">LPVCoreLib</a>;</div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html"><div class="ttname"><a href="namespace_l_p_v_core_lib.html">LPVCoreLib</a></div><div class="ttdoc">LPV Core Library, provide basic functionalities.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:106</div></div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html"><div class="ttname"><a href="namespace_l_p_v_core_lib.html">LPVCoreLib</a></div><div class="ttdoc">LPV Core Library, provide basic functionalities.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:102</div></div>
 </div><!-- fragment --> </div> <p><b>MFC Demo:</b> <a class="el" href="how_to_play_with_demo.html#demo_sanity">MFCSanity</a>, <a class="el" href="how_to_play_with_demo.html#demo_region">MFCRegion</a> <br  />
 <b>C# Demo:</b> <a class="el" href="how_to_play_with_demo.html#demo_sanity">CSharpSanity</a>, <a class="el" href="how_to_play_with_demo.html#demo_region">CSharpRegion</a>, <a class="el" href="how_to_play_with_demo.html#demo_hikcam">CSharpHikCam</a> </p>
 </div><h2 class="groupheader">Enumeration Type Documentation</h2>
@@ -715,11 +724,15 @@ Enumerations</h2></td></tr>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ad8a4d763bb82cc129119ff1cf0bc0e0bae063535a89c7f149c8e490e3238de655"></a>LPVBlack2White&#160;</td><td class="fielddoc"><p>The edge is from black(dark) pixels to white(light), according to scan direction of region. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ad8a4d763bb82cc129119ff1cf0bc0e0baffd2c678a5a2ea661de262d51223adf3"></a>LPVBlackOnWhite&#160;</td><td class="fielddoc"><p>This is a black(dark) object on white(light) background. </p>
-</td></tr>
 <tr><td class="fieldname"><a id="ad8a4d763bb82cc129119ff1cf0bc0e0ba231c29dc77dc79a18cd9fe49ba4eeca1"></a>LPVWhite2Black&#160;</td><td class="fielddoc"><p>The edge is from white(light) pixels to black(dark), according to scan direction of region. </p>
 </td></tr>
+<tr><td class="fieldname"><a id="ad8a4d763bb82cc129119ff1cf0bc0e0bad0a9df3d39f3370d8594aaf9ec0744b5"></a>LPVPolarityEitherEdge&#160;</td><td class="fielddoc"><p>Either edge polarity is acceptable, black-to-white or white-to-black. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad8a4d763bb82cc129119ff1cf0bc0e0baffd2c678a5a2ea661de262d51223adf3"></a>LPVBlackOnWhite&#160;</td><td class="fielddoc"><p>This is a black(dark) object on white(light) background. </p>
+</td></tr>
 <tr><td class="fieldname"><a id="ad8a4d763bb82cc129119ff1cf0bc0e0bac595c6b549ecbabb1dbb431e374b02ad"></a>LPVWhiteOnBlack&#160;</td><td class="fielddoc"><p>This is a white(light) object on black(dark) background. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad8a4d763bb82cc129119ff1cf0bc0e0ba0e1e682e831262bdf3c56f6c6fee4d62"></a>LPVPolarityEitherObject&#160;</td><td class="fielddoc"><p>Either object polarity is acceptable. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ad8a4d763bb82cc129119ff1cf0bc0e0ba985da7ae09669453c24378d558557c76"></a>LPVPolarityEither&#160;</td><td class="fielddoc"><p>Either polarity is acceptable. </p>
 </td></tr>
@@ -1113,6 +1126,30 @@ The conversion between BGR is calculated based on XYZ values using normalized RG
 <tr><td class="fieldname"><a id="a278477804abb051cbce399675acacce4aa4b8d7973055bf79b3447a92bf6d621d"></a>LPVDirUp&#160;</td><td class="fielddoc"><p>The object is moving or pointing to the up direction. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a278477804abb051cbce399675acacce4afe3477c4384b874d92596e6955501836"></a>LPVDirDown&#160;</td><td class="fielddoc"><p>The object is moving or pointing to the down direction. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a161cc4b1a61facd7b0ba3bdce897ec09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a161cc4b1a61facd7b0ba3bdce897ec09">&#9670;&nbsp;</a></span>LPVAxis</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespace_l_p_v_core_lib.html#a161cc4b1a61facd7b0ba3bdce897ec09">LPVAxis</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This enumeration represents the three axes in the Cartesian coordinate system. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a161cc4b1a61facd7b0ba3bdce897ec09aa573a5622885eae5e14840eb4ee0dee9"></a>LPVAxisX&#160;</td><td class="fielddoc"><p>The X axis. It is usually the horizontal axis of the image, from left to right. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a161cc4b1a61facd7b0ba3bdce897ec09aafbc8ff48ba33f9bcc0d0b94c65fe6b3"></a>LPVAxisY&#160;</td><td class="fielddoc"><p>The Y axis. It is usually the vertical axis of the image, from top to bottom. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a161cc4b1a61facd7b0ba3bdce897ec09a0d63dddd35d5bda4adaf63668f1f3d9a"></a>LPVAxisZ&#160;</td><td class="fielddoc"><p>The Z axis. It is usually the axis which is perpendicular to the image. </p>
 </td></tr>
 </table>
 

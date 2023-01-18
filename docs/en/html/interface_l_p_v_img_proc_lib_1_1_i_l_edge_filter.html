@@ -95,7 +95,7 @@ Inheritance diagram for ILEdgeFilter:</div>
  <div class="center">
   <img src="interface_l_p_v_img_proc_lib_1_1_i_l_edge_filter.png" usemap="#ILEdgeFilter_map" alt=""/>
   <map id="ILEdgeFilter_map" name="ILEdgeFilter_map">
-<area href="interface_l_p_v_core_lib_1_1_i_l_object.html" alt="ILObject" shape="rect" coords="0,56,80,80"/>
+<area href="interface_l_p_v_core_lib_1_1_i_l_object.html" title="This base interface for a serializable LPV object." alt="ILObject" shape="rect" coords="0,56,80,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -144,11 +144,11 @@ Properties</h2></td></tr>
  <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">ILEdgeFilterPtr m_edge_filter_op(__uuidof(LEdgeFilter));</div>
 <div class="line">m_edge_filter_op-&gt;SetEdgeKernel(<a class="code" href="namespace_l_p_v_img_proc_lib.html#ae9fce5290064b3ab00a2b0c192245c0dae3aefcc5cbf63e31b9ae096c8ed63c19">LPVSobel</a>, 5, 5);</div>
 <div class="line">m_edge_filter_op-&gt;GradientFull(m_img, m_result_img);</div>
-<div class="ttc" id="anamespace_l_p_v_img_proc_lib_html_ae9fce5290064b3ab00a2b0c192245c0dae3aefcc5cbf63e31b9ae096c8ed63c19"><div class="ttname"><a href="namespace_l_p_v_img_proc_lib.html#ae9fce5290064b3ab00a2b0c192245c0dae3aefcc5cbf63e31b9ae096c8ed63c19">LPVImgProcLib::LPVSobel</a></div><div class="ttdeci">@ LPVSobel</div><div class="ttdef"><b>Definition:</b> LPVImgProc.idl:99</div></div>
+<div class="ttc" id="anamespace_l_p_v_img_proc_lib_html_ae9fce5290064b3ab00a2b0c192245c0dae3aefcc5cbf63e31b9ae096c8ed63c19"><div class="ttname"><a href="namespace_l_p_v_img_proc_lib.html#ae9fce5290064b3ab00a2b0c192245c0dae3aefcc5cbf63e31b9ae096c8ed63c19">LPVImgProcLib::LPVSobel</a></div><div class="ttdeci">@ LPVSobel</div><div class="ttdef"><b>Definition:</b> LPVImgProc.idl:101</div></div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LEdgeFilter m_edge_filter_op = <span class="keyword">new</span> LEdgeFilter();</div>
 <div class="line">m_edge_filter_op.SetEdgeKernel(<a class="code" href="namespace_l_p_v_img_proc_lib.html#ae9fce5290064b3ab00a2b0c192245c0d">LPVEdgeKernel</a>.LPVSobel, 5, 5);</div>
 <div class="line">m_edge_filter_op.GradientFull(m_img, m_result_img);</div>
-<div class="ttc" id="anamespace_l_p_v_img_proc_lib_html_ae9fce5290064b3ab00a2b0c192245c0d"><div class="ttname"><a href="namespace_l_p_v_img_proc_lib.html#ae9fce5290064b3ab00a2b0c192245c0d">LPVImgProcLib::LPVEdgeKernel</a></div><div class="ttdeci">LPVEdgeKernel</div><div class="ttdoc">This enumeration represents type of kernel used in edge filtering.</div><div class="ttdef"><b>Definition:</b> LPVImgProc.idl:89</div></div>
+<div class="ttc" id="anamespace_l_p_v_img_proc_lib_html_ae9fce5290064b3ab00a2b0c192245c0d"><div class="ttname"><a href="namespace_l_p_v_img_proc_lib.html#ae9fce5290064b3ab00a2b0c192245c0d">LPVImgProcLib::LPVEdgeKernel</a></div><div class="ttdeci">LPVEdgeKernel</div><div class="ttdoc">This enumeration represents type of kernel used in edge filtering.</div><div class="ttdef"><b>Definition:</b> LPVImgProc.idl:91</div></div>
 </div><!-- fragment --> </div>  </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a99c6c95dff350aa072386e0de834c130"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a99c6c95dff350aa072386e0de834c130">&#9670;&nbsp;</a></span>SetEdgeKernel()</h2>
@@ -217,7 +217,7 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Set the edge polarity of interest in edge filtering. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Set the <em>edge polarity</em> of interest in edge filtering. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">xPolarity</td><td>The polarity of horizontally oriented edges in left-to-right direction. By default, it accept either polarity. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">yPolarity</td><td>The polarity of vertically oriented edges in top-down direction. By default, it accept either polarity. </td></tr>

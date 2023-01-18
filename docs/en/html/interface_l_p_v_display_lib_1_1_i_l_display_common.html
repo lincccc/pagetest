@@ -127,6 +127,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae4719fff6f90f1ff3fb7cc84b82785cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad59ddb26897c32be05a846242874b1cb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#ad59ddb26897c32be05a846242874b1cb">ShowDialog</a> (BSTR dialogName, int x, int y, int w, int h)</td></tr>
 <tr class="separator:ad59ddb26897c32be05a846242874b1cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5364a06cb503911a4b1b44e394d2d437"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#a5364a06cb503911a4b1b44e394d2d437">ShowDialogAsync</a> (BSTR dialogName, int x, int y, int w, int h, int refreshInterval)</td></tr>
+<tr class="separator:a5364a06cb503911a4b1b44e394d2d437"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
@@ -187,7 +189,6 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 <div class="textblock"><p>This interface provide basic functionalities of the display controls. </p>
 <p>This is a base interface for all kinds of display controls. For different chosen control, the implementation varies.</p>
 <p>To use this interface, you should create a display control, such as:</p>
-<p><a class="el" href="class_l_p_v_display_lib_1_1_l_display.html">LDisplay</a>, LWaferMapDisplay...</p>
 <p><a class="el" href="class_l_p_v_display_lib_1_1_l_display.html">LDisplay</a>... </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a2c2ed3482f17828158b0a681b4e613ae"></a>
@@ -641,6 +642,71 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
   </table>
   </dd>
 </dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#a5364a06cb503911a4b1b44e394d2d437">ShowDialogAsync()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a5364a06cb503911a4b1b44e394d2d437"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5364a06cb503911a4b1b44e394d2d437">&#9670;&nbsp;</a></span>ShowDialogAsync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ShowDialogAsync </td>
+          <td>(</td>
+          <td class="paramtype">BSTR&#160;</td>
+          <td class="paramname"><em>dialogName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>h</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>refreshInterval</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Show the display control as a pop-up dialog and asynchronously working in another thread. It's commonly used in a console application for debugging. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dialogName</td><td>The name of the dialog, shown in title bar. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td>The x-coordinate of the window </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">y</td><td>The y-coordinate of the window </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">w</td><td>The width of the window </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">h</td><td>The height of the window </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">refreshInterval</td><td>The interval that the dialog is refreshed in microseconds. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#ad59ddb26897c32be05a846242874b1cb">ShowDialog()</a> </dd></dl>
 
 </div>
 </div>

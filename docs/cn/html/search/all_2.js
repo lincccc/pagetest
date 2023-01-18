@@ -37,5 +37,6 @@ var searchData=
   ['counthole_92',['CountHole',['../interface_l_p_v_blob_lib_1_1_i_l_blob.html#affc98cc748385ff11c7083d8b0c3c562',1,'LPVBlobLib::ILBlob']]],
   ['countpixel_93',['CountPixel',['../interface_l_p_v_img_proc_lib_1_1_i_l_image_stats.html#ac3f0a3871e88b598bde7ed338323c821',1,'LPVImgProcLib::ILImageStats']]],
   ['countpixelcolor_94',['CountPixelColor',['../interface_l_p_v_img_proc_lib_1_1_i_l_image_stats.html#abaa3f3df34ed24eb702b5a6b0774f27a',1,'LPVImgProcLib::ILImageStats']]],
-  ['ctrlcount_95',['CtrlCount',['../interface_l_p_v_core_lib_1_1_i_l_poly_region.html#a7169096b004a053cc5e1946bf7449f1d',1,'LPVCoreLib::ILPolyRegion']]]
+  ['countsampleregion_95',['CountSampleRegion',['../interface_l_p_v_gauge_lib_1_1_i_l_gauge_result.html#adda1fb5a7f974a8d2f56d3e0b73d9d09',1,'LPVGaugeLib::ILGaugeResult']]],
+  ['ctrlcount_96',['CtrlCount',['../interface_l_p_v_core_lib_1_1_i_l_poly_region.html#a7169096b004a053cc5e1946bf7449f1d',1,'LPVCoreLib::ILPolyRegion']]]
 ];

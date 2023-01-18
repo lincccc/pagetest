@@ -116,6 +116,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a928b61b363688c7ea2a328f3f1fcf6e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5e3c29253db51af8d99459f94f31683"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_ellipse.html">ILEllipse</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_ellipse.html#ac5e3c29253db51af8d99459f94f31683">Translate</a> (double offsetX, double offsetY)</td></tr>
 <tr class="separator:ac5e3c29253db51af8d99459f94f31683"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72170a988703fc9fd187f13a541ef1f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_ellipse.html">ILEllipse</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_ellipse.html#a72170a988703fc9fd187f13a541ef1f8">Transform</a> (<a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_transform.html">ILTransform</a> *tf)</td></tr>
+<tr class="separator:a72170a988703fc9fd187f13a541ef1f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3a1b651e0be8e21bc2849754623dcfd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_ellipse.html#ae3a1b651e0be8e21bc2849754623dcfd">SamplingByAngle</a> (double startArcAngle, double endArcAngle, double stepAngle)</td></tr>
 <tr class="separator:ae3a1b651e0be8e21bc2849754623dcfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -408,6 +410,36 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">result</td><td>Return the new ellipse </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a72170a988703fc9fd187f13a541ef1f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72170a988703fc9fd187f13a541ef1f8">&#9670;&nbsp;</a></span>Transform()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_ellipse.html">ILEllipse</a>* Transform </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_transform.html">ILTransform</a> *&#160;</td>
+          <td class="paramname"><em>tf</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Transform the ellipse via the given transformation and return a new ellipse </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">tf</td><td>The transformation. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">Return</td><td>the new ellipse </td></tr>
   </table>
   </dd>
 </dl>
