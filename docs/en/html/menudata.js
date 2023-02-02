@@ -41,6 +41,7 @@ var menudata={children:[
 {text:"<i><small>lpvLocateX</small></i>",url:"namespace_l_p_v_locate_x_lib.html"}]},
 {text:"<b>Pattern Matching</b> <i><small>lpvPat</small></i>",url:"namespace_l_p_v_pat_lib.html"},
 {text:"<b>Blob Analysis</b> <i><small>lpvBlob</small></i>",url:"namespace_l_p_v_blob_lib.html"},
+{text:"<b>Gauging</b> <i><small>lpvGauge</small></i>",url:"namespace_l_p_v_gauge_lib.html"},
 {text:"<b>Camera Calibration</b> <i><small>lpvCalib</small></i>",url:"namespace_l_p_v_calib_lib.html"},
 {text:"<b>Barcode Inspection</b> <i><small>lpvBarcode</small></i>",url:"namespace_l_p_v_barcode_lib.html"},
 {text:"<b>Math & Data Analysis</b> <i><small>lpvMath</small></i>",url:"namespace_l_p_v_math_lib.html"},

@@ -94,7 +94,7 @@ $(function() {
  <div class="center">
   <img src="interface_l_p_v_gauge_lib_1_1_i_l_line_gauge.png" usemap="#ILLineGauge_map" alt=""/>
   <map id="ILLineGauge_map" name="ILLineGauge_map">
-<area href="interface_l_p_v_gauge_lib_1_1_i_l_gauge.html" title="该接口类为标定对象的基类，提供基本标定功能对应的接口。" alt="ILGauge" shape="rect" coords="0,112,83,136"/>
+<area href="interface_l_p_v_gauge_lib_1_1_i_l_gauge.html" title="该接口类为卡尺对象的基类，提供基本卡尺工具的接口和参数。" alt="ILGauge" shape="rect" coords="0,112,83,136"/>
 <area href="interface_l_p_v_core_lib_1_1_i_l_object.html" title="该接口类为可序列化 LPV 对象的基类。" alt="ILObject" shape="rect" coords="0,56,83,80"/>
   </map>
 </div></div>
@@ -159,7 +159,21 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 <p>相比于特征定位模块中的 <a class="el" href="interface_l_p_v_locate_lib_1_1_i_l_line_detector.html">LLineDetector</a>，直线卡尺可用于检测更不明显的直线，也不容易受到检测区域方向的限制。 但对于有高定位精度要求的场景，仍旧推荐使用 <a class="el" href="interface_l_p_v_locate_lib_1_1_i_l_line_detector.html">LLineDetector</a>。</p>
 <p>使用这个接口，需要创建一个 <a class="el" href="class_l_p_v_gauge_lib_1_1_l_line_gauge.html">LLineGauge</a> 对象。</p>
 <h3>示例代码 </h3>
- <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"></div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"></div><!-- fragment --> </div>  </div><h2 class="groupheader">成员函数说明</h2>
+ <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">ILLineGaugePtr lineGauge(__uuidof(LLineGauge));</div>
+<div class="line">lineGauge-&gt;Polarity = LPVPolarity::LPVBlack2White;</div>
+<div class="line">lineGauge-&gt;AcceptScore = 40;</div>
+<div class="line">ILGaugeResultPtr lineGaugeResult;</div>
+<div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = lineGauge-&gt;Detect(img, roi, &amp;lineGaugeResult);</div>
+<div class="line"><span class="keywordflow">if</span> (err != LPVErrorCode::LPVNoError) <span class="keywordflow">return</span>;</div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">LPV 算法或函数运行过程中遇到的错误。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:190</div></div>
+</div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LLineGauge lineGauge = <span class="keyword">new</span> LLineGauge();</div>
+<div class="line">lineGauge.Polarity = <a class="code" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0b">LPVPolarity</a>.LPVBlack2White;</div>
+<div class="line">lineGauge.AcceptScore = 40;</div>
+<div class="line">LGaugeResult lineGaugeResult;</div>
+<div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = lineGauge.Detect(img, (LRotRectRegion)roi, out lineGaugeResult);</div>
+<div class="line"><span class="keywordflow">if</span> (err != <a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>.LPVNoError) <span class="keywordflow">return</span>;</div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_ad8a4d763bb82cc129119ff1cf0bc0e0b"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0b">LPVCoreLib::LPVPolarity</a></div><div class="ttdeci">LPVPolarity</div><div class="ttdoc">该枚举类型表示要定位的物体或边缘的极性</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:630</div></div>
+</div><!-- fragment --> </div>  </div><h2 class="groupheader">成员函数说明</h2>
 <a id="ab21babb951d1e26a94ff36a68ca0d642"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab21babb951d1e26a94ff36a68ca0d642">&#9670;&nbsp;</a></span>Detect()</h2>
 

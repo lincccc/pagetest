@@ -41,6 +41,7 @@ var menudata={children:[
 {text:"<i><small>lpvLocateX</small></i>",url:"namespace_l_p_v_locate_x_lib.html"}]},
 {text:"<b>模板匹配</b> <i><small>lpvPat</small></i>",url:"namespace_l_p_v_pat_lib.html"},
 {text:"<b>斑点分析</b> <i><small>lpvBlob</small></i>",url:"namespace_l_p_v_blob_lib.html"},
+{text:"<b>卡尺定位</b> <i><small>lpvGauge</small></i>",url:"namespace_l_p_v_gauge_lib.html"},
 {text:"<b>相机标定</b> <i><small>lpvCalib</small></i>",url:"namespace_l_p_v_calib_lib.html"},
 {text:"<b>条码检测</b> <i><small>lpvBarcode</small></i>",url:"namespace_l_p_v_barcode_lib.html"},
 {text:"<b>数学与分析</b> <i><small>lpvMath</small></i>",url:"namespace_l_p_v_math_lib.html"},

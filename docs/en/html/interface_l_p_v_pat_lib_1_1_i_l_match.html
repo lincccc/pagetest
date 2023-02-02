@@ -162,7 +162,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 <tr class="separator:af98b71a5ec504565e5456260acbd9ee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a565f9fc27fac6eb35a3a701be4c291fd"><td class="memItemLeft" align="right" valign="top"><a id="a565f9fc27fac6eb35a3a701be4c291fd"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a565f9fc27fac6eb35a3a701be4c291fd">Overlap</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a565f9fc27fac6eb35a3a701be4c291fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">The minimum overlap between the matching results in percentage. Missing features in a result is also considered as overlap to the background. The value range is 1 ~ 100. By default, it's 50, means 50% overlap. The recommended setting is around 30 ~ 70. <br /></td></tr>
+<tr class="memdesc:a565f9fc27fac6eb35a3a701be4c291fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum acceptable overlap between the nearby matching results in percentage. The value range is 0 ~ 100. By default, it's 50, means 50% overlap. The recommended setting is around 30 ~ 70. <br /></td></tr>
 <tr class="separator:a565f9fc27fac6eb35a3a701be4c291fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14d11d1be0054ea6ec1cbabbbb8adbf8"><td class="memItemLeft" align="right" valign="top"><a id="a14d11d1be0054ea6ec1cbabbbb8adbf8"></a>
 BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a14d11d1be0054ea6ec1cbabbbb8adbf8">IgnorePolarity</a><code> [get, set]</code></td></tr>
@@ -200,6 +200,15 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 <tr class="memdesc:a9cc83b712da903422f34af1a4b2691dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accuracy level for the matching, higher level usually means more accurate and stable result but slower.<br  />
 It should be either 0(Low), 1(Middle, default) or 2(High). <br /></td></tr>
 <tr class="separator:a9cc83b712da903422f34af1a4b2691dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbddee29bf0271b7d05f0a5ae603c449"><td class="memItemLeft" align="right" valign="top"><a id="acbddee29bf0271b7d05f0a5ae603c449"></a>
+BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#acbddee29bf0271b7d05f0a5ae603c449">IgnoreMissing</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:acbddee29bf0271b7d05f0a5ae603c449"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the missing parts contribute negatively to the matching result. By default is true, the missing features are ignored when scoring and missing percentage check is skipped. <br /></td></tr>
+<tr class="separator:acbddee29bf0271b7d05f0a5ae603c449"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f94a6c350cbb94dd399d9bab8eedbac"><td class="memItemLeft" align="right" valign="top"><a id="a8f94a6c350cbb94dd399d9bab8eedbac"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a8f94a6c350cbb94dd399d9bab8eedbac">MissingTolerance</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a8f94a6c350cbb94dd399d9bab8eedbac"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum acceptable missing rate of the matching features in percentage. The value range is 0 ~ 100. By default, it's 50, means 50% missing is acceptable.<br  />
+Note missing part check is only enabled when <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#acbddee29bf0271b7d05f0a5ae603c449" title="Whether the missing parts contribute negatively to the matching result. By default is true,...">IgnoreMissing</a> is false. <br /></td></tr>
+<tr class="separator:a8f94a6c350cbb94dd399d9bab8eedbac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This interface provide functionalities of pattern matching. </p>

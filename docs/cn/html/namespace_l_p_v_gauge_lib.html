@@ -92,7 +92,7 @@ $(function() {
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">该接口表示卡尺检测结果，可获取其具体属性。  <a href="interface_l_p_v_gauge_lib_1_1_i_l_gauge_result.html#details">更多...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_gauge_lib_1_1_i_l_gauge.html">ILGauge</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">该接口类为标定对象的基类，提供基本标定功能对应的接口。  <a href="interface_l_p_v_gauge_lib_1_1_i_l_gauge.html#details">更多...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">该接口类为卡尺对象的基类，提供基本卡尺工具的接口和参数。  <a href="interface_l_p_v_gauge_lib_1_1_i_l_gauge.html#details">更多...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_gauge_lib_1_1_i_l_line_gauge.html">ILLineGauge</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">该接口提供基于卡尺的直线检测功能。  <a href="interface_l_p_v_gauge_lib_1_1_i_l_line_gauge.html#details">更多...</a><br /></td></tr>
@@ -107,8 +107,8 @@ $(function() {
 <tr class="memitem:a5b389250582da9a00fc60e6596010467"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_l_p_v_gauge_lib.html#a5b389250582da9a00fc60e6596010467">LPVGaugeDrawFlags</a> { <br />
 &#160;&#160;<a class="el" href="namespace_l_p_v_gauge_lib.html#a5b389250582da9a00fc60e6596010467a7602feb1175411e55a9ee808330a6bae">LPVGaugeDrawResult</a> = 1
 , <a class="el" href="namespace_l_p_v_gauge_lib.html#a5b389250582da9a00fc60e6596010467a7c79cba83f09c9f9c530c15933e37615">LPVGaugeDrawSampleRegion</a> = 2
-, <a class="el" href="namespace_l_p_v_gauge_lib.html#a5b389250582da9a00fc60e6596010467a829d48a74dd572f0da477f590f871c8a">LPVGaugeDrawSamplePoint</a> = 4
-, <a class="el" href="namespace_l_p_v_gauge_lib.html#a5b389250582da9a00fc60e6596010467a850c5abf285879907c9b0547f0cf22b8">LPVGaugeDrawIndex</a> = 8
+, <a class="el" href="namespace_l_p_v_gauge_lib.html#a5b389250582da9a00fc60e6596010467a232d89a7f35b3d1c149b88de01f391e5">LPVGaugeDrawSamplePoints</a> = 4
+, <a class="el" href="namespace_l_p_v_gauge_lib.html#a5b389250582da9a00fc60e6596010467a1ea31c7d56bd7ee0d0a1dfe2be2bd6c2">LPVGaugeDrawSampleIndex</a> = 8
 , <br />
 &#160;&#160;<a class="el" href="namespace_l_p_v_gauge_lib.html#a5b389250582da9a00fc60e6596010467a7b740e42223889594b426b9a3abcde70">LPVGaugeDrawDefault</a> = LPVGaugeDrawResult
 , <a class="el" href="namespace_l_p_v_gauge_lib.html#a5b389250582da9a00fc60e6596010467a7733a826b80a7208a9fad3fdfd47b967">LPVGaugeDrawAll</a> = 0xff
@@ -145,11 +145,11 @@ $(function() {
 </td></tr>
 <tr><td class="fieldname"><a id="a5b389250582da9a00fc60e6596010467a7c79cba83f09c9f9c530c15933e37615"></a>LPVGaugeDrawSampleRegion&#160;</td><td class="fielddoc"><p>绘制卡点采样区域 </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a5b389250582da9a00fc60e6596010467a829d48a74dd572f0da477f590f871c8a"></a>LPVGaugeDrawSamplePoint&#160;</td><td class="fielddoc"><p>绘制有效卡点 </p>
+<tr><td class="fieldname"><a id="a5b389250582da9a00fc60e6596010467a232d89a7f35b3d1c149b88de01f391e5"></a>LPVGaugeDrawSamplePoints&#160;</td><td class="fielddoc"><p>绘制有效卡点 </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a5b389250582da9a00fc60e6596010467a850c5abf285879907c9b0547f0cf22b8"></a>LPVGaugeDrawIndex&#160;</td><td class="fielddoc"><p>绘制卡点采样区域的索引，在其左上角附近 </p>
+<tr><td class="fieldname"><a id="a5b389250582da9a00fc60e6596010467a1ea31c7d56bd7ee0d0a1dfe2be2bd6c2"></a>LPVGaugeDrawSampleIndex&#160;</td><td class="fielddoc"><p>绘制卡点采样区域的索引，在其左上角附近 </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a5b389250582da9a00fc60e6596010467a7b740e42223889594b426b9a3abcde70"></a>LPVGaugeDrawDefault&#160;</td><td class="fielddoc"><p>默认值，只绘制圆 </p>
+<tr><td class="fieldname"><a id="a5b389250582da9a00fc60e6596010467a7b740e42223889594b426b9a3abcde70"></a>LPVGaugeDrawDefault&#160;</td><td class="fielddoc"><p>默认值，只绘制结果对应的形状对象 </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a5b389250582da9a00fc60e6596010467a7733a826b80a7208a9fad3fdfd47b967"></a>LPVGaugeDrawAll&#160;</td><td class="fielddoc"><p>绘制所有部分 </p>
 </td></tr>

@@ -159,7 +159,21 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 <p>Compared with the feature locating tool <a class="el" href="interface_l_p_v_locate_lib_1_1_i_l_line_detector.html">LLineDetector</a>, it's more resistant to noise and less restricted to the limitation of region's direction. But for high-accuracy required task, it's recommended to use <a class="el" href="interface_l_p_v_locate_lib_1_1_i_l_line_detector.html">LLineDetector</a> instead.</p>
 <p>To use this interface, you should create a <a class="el" href="class_l_p_v_gauge_lib_1_1_l_line_gauge.html">LLineGauge</a> object.</p>
 <h3>Example Code </h3>
- <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"></div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"></div><!-- fragment --> </div>  </div><h2 class="groupheader">Member Function Documentation</h2>
+ <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">ILLineGaugePtr lineGauge(__uuidof(LLineGauge));</div>
+<div class="line">lineGauge-&gt;Polarity = LPVPolarity::LPVBlack2White;</div>
+<div class="line">lineGauge-&gt;AcceptScore = 40;</div>
+<div class="line">ILGaugeResultPtr lineGaugeResult;</div>
+<div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = lineGauge-&gt;Detect(img, roi, &amp;lineGaugeResult);</div>
+<div class="line"><span class="keywordflow">if</span> (err != LPVErrorCode::LPVNoError) <span class="keywordflow">return</span>;</div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">This enumeration represents the type of a LPV function error.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:190</div></div>
+</div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LLineGauge lineGauge = <span class="keyword">new</span> LLineGauge();</div>
+<div class="line">lineGauge.Polarity = <a class="code" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0b">LPVPolarity</a>.LPVBlack2White;</div>
+<div class="line">lineGauge.AcceptScore = 40;</div>
+<div class="line">LGaugeResult lineGaugeResult;</div>
+<div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = lineGauge.Detect(img, (LRotRectRegion)roi, out lineGaugeResult);</div>
+<div class="line"><span class="keywordflow">if</span> (err != <a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>.LPVNoError) <span class="keywordflow">return</span>;</div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_ad8a4d763bb82cc129119ff1cf0bc0e0b"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0b">LPVCoreLib::LPVPolarity</a></div><div class="ttdeci">LPVPolarity</div><div class="ttdoc">This enumeration represents the polarity of the edge or object to be located.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:630</div></div>
+</div><!-- fragment --> </div>  </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ab21babb951d1e26a94ff36a68ca0d642"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab21babb951d1e26a94ff36a68ca0d642">&#9670;&nbsp;</a></span>Detect()</h2>
 

@@ -319,9 +319,9 @@ Region 操作</h1>
 <ol type="1">
 <li>点击 <b>Load Image</b> 按钮，加载图像。</li>
 <li>拖拽 Region 句柄，移动、缩放、旋转画布中的旋转矩形 Region。</li>
-<li>选择合适的 <b>Polarity</b> ，用于检测出正确的边界类型：<ul>
-<li><b>0 Dark to Light</b> ：从黑（暗）到白（亮）的边界。</li>
-<li><b>1 Light to Dark</b> ：从白（亮）到黑（暗）的边界。</li>
+<li>选择合适的 <b>Polarity</b> ，用于检测出正确的边缘类型：<ul>
+<li><b>0 Dark to Light</b> ：从黑（暗）到白（亮）的边缘。</li>
+<li><b>1 Light to Dark</b> ：从白（亮）到黑（暗）的边缘。</li>
 <li><b>2 Either</b> ：任意一种极性都可以。</li>
 </ul>
 </li>
@@ -354,9 +354,9 @@ Region 操作</h1>
 <ol type="1">
 <li>点击 <b>Load Image</b> 按钮，加载图像。</li>
 <li>拖拽 Region 句柄，移动和缩放画布中的环形 Region，使其中心点大致位于检测圆心的附近。</li>
-<li>选择合适的 <b>Polarity</b> ，用于检测出正确的边界类型：<ul>
-<li><b>0 Dark to Light</b> ：从黑（暗）到白（亮）的边界。</li>
-<li><b>1 Light to Dark</b> ：从白（亮）到黑（暗）的边界。</li>
+<li>选择合适的 <b>Polarity</b> ，用于检测出正确的边缘类型：<ul>
+<li><b>0 Dark to Light</b> ：从黑（暗）到白（亮）的边缘。</li>
+<li><b>1 Light to Dark</b> ：从白（亮）到黑（暗）的边缘。</li>
 <li><b>2 Either</b> ：任意一种极性都可以。</li>
 </ul>
 </li>
@@ -431,12 +431,42 @@ Region 操作</h1>
 <li>点击 <b>Detect</b> 按钮，执行轮廓定位。</li>
 <li>右侧的表格显示所有检测结果，包括每条轮廓的平均强度、长度和分数。</li>
 <li>选择其中某一个结果，在画布中高亮显示。</li>
-<li>选择合适的 <b>Polarity</b> ，用于检测出正确的边界类型，点击 <b>Detect With Direction</b> 按钮，执行带方向过滤的轮廓定位：<ul>
-<li><b>0 Dark to Light</b> ：从黑（暗）到白（亮）的边界。</li>
-<li><b>1 Light to Dark</b> ：从白（亮）到黑（暗）的边界。</li>
+<li>选择合适的 <b>Polarity</b> ，用于检测出正确的边缘类型，点击 <b>Detect With Direction</b> 按钮，执行带方向过滤的轮廓定位：<ul>
+<li><b>0 Dark to Light</b> ：从黑（暗）到白（亮）的边缘。</li>
+<li><b>1 Light to Dark</b> ：从白（亮）到黑（暗）的边缘。</li>
 <li><b>2 Either</b> ：任意一种极性都可以。</li>
 </ul>
 </li>
+</ol>
+<p><br  />
+</p>
+<h1><a class="anchor" id="demo_gauge"></a>
+卡尺定位</h1>
+<p>演示各种形状的卡尺定位功能。</p>
+<blockquote class="doxtable">
+<p><b>Source code (C++):</b> mfcdemo/MFCGauge<br  />
+ <b>Source code (C#):</b> csharpdemo/CSharpGauge<br  />
+ <b>Image files:</b> cutkerf.png, leadcut.png</p>
+<p><b>Related classes:</b> <a class="el" href="interface_l_p_v_gauge_lib_1_1_i_l_line_gauge.html">LLineGauge</a> </p>
+</blockquote>
+<p><a href="t02_15_contour.png"><img src="t02_19_gauge.png" alt="" style="float: right; height: 200px; margin-left: 20px;" class="inline"/> </a></p>
+<ol type="1">
+<li>点击 <b>Load Image</b> 按钮，加载图像。</li>
+<li>点击 <b>Reset Roi</b> 按钮，按照当前图像尺寸重置roi位置。</li>
+<li>选择所需的卡尺类型，如直线卡尺。</li>
+<li>选择合适的 <b>Polarity</b> ，用于检测出正确的边缘或极性类型：<ul>
+<li><b>0 Dark to Light</b> ：从黑（暗）到白（亮）的边缘。</li>
+<li><b>1 Light to Dark</b> ：从白（亮）到黑（暗）的边缘。</li>
+<li><b>2 Either Edge</b> ：任意一种边缘极性都可以。</li>
+<li><b>3 Black on White</b>: 黑色（暗）目标在白色（亮）背景上。</li>
+<li><b>4 White on Black</b>: 白色（亮）目标在黑色（暗）背景上。</li>
+<li><b>5 Either Object</b>: 接受任意一种目标极性，白物体黑背景，或者黑物体白背景。</li>
+</ul>
+</li>
+<li>修改卡点采样区域的尺寸和间距</li>
+<li>点击 <b>Detect</b> 按钮进行卡尺定位</li>
+<li>定位结果在右侧以文本形式显示，比如直线卡尺定位结果，将输出直线的中点位置及其角度。</li>
+<li>下方的图表展示沿着 Region 搜索方向的分数分布，用于方便地设置更佳的过滤分数。</li>
 </ol>
 <p><br  />
 </p>
@@ -582,7 +612,7 @@ Region 操作</h1>
 <li>执行时间和结果显示在画布和右侧面板中。</li>
 <li>点击 <b>Refresh</b> 按钮，从灵闪服务重新加载作业的参数列表。</li>
 <li>在输入框中修改参数的数值。</li>
-<li>拖动图形界面中的 Region 边界，可移动或改变作业中 Region 的形状和位置。</li>
+<li>拖动图形界面中的 Region 边缘，可移动或改变作业中 Region 的形状和位置。</li>
 <li>点击 <b>Apply</b> 按钮，应用改动后的参数到灵闪服务，再次执行该作业将看到参数变换的影响。</li>
 </ol>
 <p><br  />
