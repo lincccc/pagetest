@@ -94,8 +94,10 @@ Inheritance diagram for ILGauge:</div>
  <div class="center">
   <img src="interface_l_p_v_gauge_lib_1_1_i_l_gauge.png" usemap="#ILGauge_map" alt=""/>
   <map id="ILGauge_map" name="ILGauge_map">
-<area href="interface_l_p_v_core_lib_1_1_i_l_object.html" title="This base interface for a serializable LPV object." alt="ILObject" shape="rect" coords="0,56,83,80"/>
-<area href="interface_l_p_v_gauge_lib_1_1_i_l_line_gauge.html" title="This interface provide functionalities of line inspection via the gauge." alt="ILLineGauge" shape="rect" coords="0,168,83,192"/>
+<area href="interface_l_p_v_core_lib_1_1_i_l_object.html" title="This base interface for a serializable LPV object." alt="ILObject" shape="rect" coords="103,56,196,80"/>
+<area href="interface_l_p_v_gauge_lib_1_1_i_l_arc_gauge.html" title="This interface provide functionalities of arc inspection via the gauge." alt="ILArcGauge" shape="rect" coords="0,168,93,192"/>
+<area href="interface_l_p_v_gauge_lib_1_1_i_l_circle_gauge.html" title="This interface provide functionalities of circle inspection via the gauge." alt="ILCircleGauge" shape="rect" coords="103,168,196,192"/>
+<area href="interface_l_p_v_gauge_lib_1_1_i_l_line_gauge.html" title="This interface provide functionalities of line inspection via the gauge." alt="ILLineGauge" shape="rect" coords="206,168,299,192"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -107,7 +109,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 <tr class="separator:a25e238989ab890015e2cf19e5212757d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a002dd3815d8ae54f08b247797d386d14"><td class="memItemLeft" align="right" valign="top"><a id="a002dd3815d8ae54f08b247797d386d14"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_gauge_lib_1_1_i_l_gauge.html#a002dd3815d8ae54f08b247797d386d14">SampleRegionHeight</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a002dd3815d8ae54f08b247797d386d14"><td class="mdescLeft">&#160;</td><td class="mdescRight">The height of the sample region, at least 5 pixels. But for the following gauges, their sample region height is controlled by the detection region:<a class="el" href="interface_l_p_v_gauge_lib_1_1_i_l_line_gauge.html">LLineGauge</a>. <br /></td></tr>
+<tr class="memdesc:a002dd3815d8ae54f08b247797d386d14"><td class="mdescLeft">&#160;</td><td class="mdescRight">The height of the sample region, at least 5 pixels. Usually the height is controlled by the detection region, except for the following gauge tools.LPolyGauge. <br /></td></tr>
 <tr class="separator:a002dd3815d8ae54f08b247797d386d14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a821c7a209bdb7403e98bb96f948b66be"><td class="memItemLeft" align="right" valign="top"><a id="a821c7a209bdb7403e98bb96f948b66be"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_gauge_lib_1_1_i_l_gauge.html#a821c7a209bdb7403e98bb96f948b66be">SampleRegionInterval</a><code> [get, set]</code></td></tr>
@@ -153,7 +155,7 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This interface provide basic functionalities of the gauge object. </p>
 <p>This is a base interface for all kinds of gauge. To use this interface, you should create a gauge object, such as:</p>
-<p><a class="el" href="interface_l_p_v_gauge_lib_1_1_i_l_line_gauge.html" title="This interface provide functionalities of line inspection via the gauge.">ILLineGauge</a>, ILEdgeGauge, ILCircleGauge... </p>
+<p><a class="el" href="interface_l_p_v_gauge_lib_1_1_i_l_line_gauge.html" title="This interface provide functionalities of line inspection via the gauge.">ILLineGauge</a>, ILEdgeGauge, <a class="el" href="interface_l_p_v_gauge_lib_1_1_i_l_circle_gauge.html" title="This interface provide functionalities of circle inspection via the gauge.">ILCircleGauge</a>... </p>
 </div><h2 class="groupheader">Property Documentation</h2>
 <a id="afad2aa7828e45b84ec1f3f80f3787305"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afad2aa7828e45b84ec1f3f80f3787305">&#9670;&nbsp;</a></span>Polarity</h2>

@@ -120,7 +120,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 <tr class="separator:a25e238989ab890015e2cf19e5212757d inherit properties_interface_l_p_v_gauge_lib_1_1_i_l_gauge"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a002dd3815d8ae54f08b247797d386d14 inherit properties_interface_l_p_v_gauge_lib_1_1_i_l_gauge"><td class="memItemLeft" align="right" valign="top"><a id="a002dd3815d8ae54f08b247797d386d14"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_gauge_lib_1_1_i_l_gauge.html#a002dd3815d8ae54f08b247797d386d14">SampleRegionHeight</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a002dd3815d8ae54f08b247797d386d14 inherit properties_interface_l_p_v_gauge_lib_1_1_i_l_gauge"><td class="mdescLeft">&#160;</td><td class="mdescRight">卡点采样区域的高度，至少 5 个像素。除以下卡尺算法，其卡点采样区域的高度由输入的检测区域控制：<a class="el" href="interface_l_p_v_gauge_lib_1_1_i_l_line_gauge.html">LLineGauge</a> <br /></td></tr>
+<tr class="memdesc:a002dd3815d8ae54f08b247797d386d14 inherit properties_interface_l_p_v_gauge_lib_1_1_i_l_gauge"><td class="mdescLeft">&#160;</td><td class="mdescRight">卡点采样区域的高度，至少 5 个像素。通常卡点采样区域的高度由输入的检测区域控制，除以下卡尺算法：LPolyGauge <br /></td></tr>
 <tr class="separator:a002dd3815d8ae54f08b247797d386d14 inherit properties_interface_l_p_v_gauge_lib_1_1_i_l_gauge"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a821c7a209bdb7403e98bb96f948b66be inherit properties_interface_l_p_v_gauge_lib_1_1_i_l_gauge"><td class="memItemLeft" align="right" valign="top"><a id="a821c7a209bdb7403e98bb96f948b66be"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_gauge_lib_1_1_i_l_gauge.html#a821c7a209bdb7403e98bb96f948b66be">SampleRegionInterval</a><code> [get, set]</code></td></tr>
@@ -155,7 +155,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><p>该接口提供基于卡尺的直线检测功能。 </p>
-<p>直线卡尺用于检测直线边界的位置和方向。通过沿着检测区域方向分布的多个边缘卡尺，定位多个有效卡点，通过拟合算法获得直线结果。</p>
+<p>直线卡尺用于检测直线边缘的位置和方向。通过沿着检测区域方向分布的多个边缘卡尺，定位多个有效卡点，最后通过拟合算法获得直线结果。</p>
 <p>相比于特征定位模块中的 <a class="el" href="interface_l_p_v_locate_lib_1_1_i_l_line_detector.html">LLineDetector</a>，直线卡尺可用于检测更不明显的直线，也不容易受到检测区域方向的限制。 但对于有高定位精度要求的场景，仍旧推荐使用 <a class="el" href="interface_l_p_v_locate_lib_1_1_i_l_line_detector.html">LLineDetector</a>。</p>
 <p>使用这个接口，需要创建一个 <a class="el" href="class_l_p_v_gauge_lib_1_1_l_line_gauge.html">LLineGauge</a> 对象。</p>
 <h3>示例代码 </h3>
@@ -163,16 +163,16 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 <div class="line">lineGauge-&gt;Polarity = LPVPolarity::LPVBlack2White;</div>
 <div class="line">lineGauge-&gt;AcceptScore = 40;</div>
 <div class="line">ILGaugeResultPtr lineGaugeResult;</div>
-<div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = lineGauge-&gt;Detect(img, roi, &amp;lineGaugeResult);</div>
+<div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = lineGauge-&gt;Detect(img, rot_rect_roi, &amp;lineGaugeResult);</div>
 <div class="line"><span class="keywordflow">if</span> (err != LPVErrorCode::LPVNoError) <span class="keywordflow">return</span>;</div>
 <div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">LPV 算法或函数运行过程中遇到的错误。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:205</div></div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LLineGauge lineGauge = <span class="keyword">new</span> LLineGauge();</div>
 <div class="line">lineGauge.Polarity = <a class="code" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0b">LPVPolarity</a>.LPVBlack2White;</div>
 <div class="line">lineGauge.AcceptScore = 40;</div>
 <div class="line">LGaugeResult lineGaugeResult;</div>
-<div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = lineGauge.Detect(img, (LRotRectRegion)roi, out lineGaugeResult);</div>
+<div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = lineGauge.Detect(img, rot_rect_roi, out lineGaugeResult);</div>
 <div class="line"><span class="keywordflow">if</span> (err != <a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>.LPVNoError) <span class="keywordflow">return</span>;</div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html_ad8a4d763bb82cc129119ff1cf0bc0e0b"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0b">LPVCoreLib::LPVPolarity</a></div><div class="ttdeci">LPVPolarity</div><div class="ttdoc">该枚举类型表示要定位的物体或边缘的极性</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:695</div></div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_ad8a4d763bb82cc129119ff1cf0bc0e0b"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0b">LPVCoreLib::LPVPolarity</a></div><div class="ttdeci">LPVPolarity</div><div class="ttdoc">该枚举类型表示要定位的物体或边缘的极性</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:701</div></div>
 </div><!-- fragment --> </div>  </div><h2 class="groupheader">成员函数说明</h2>
 <a id="ab21babb951d1e26a94ff36a68ca0d642"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab21babb951d1e26a94ff36a68ca0d642">&#9670;&nbsp;</a></span>Detect()</h2>
@@ -208,7 +208,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 <p>检测和定位直线。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> 输入的图像 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">region</td><td>输入的区域，一个旋转矩形区域对象，以其旋转角度为扫描方向。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">region</td><td>输入的区域，一个旋转矩形区域对象，以其旋转角度为扫描方向，以其高度作为卡点采样区域的高度 </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">gaugeResult</td><td>返回卡尺定位结果，包含结果直线 </td></tr>
   </table>
   </dd>

@@ -143,6 +143,12 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_annulus_region.html">ILAnnulusRegion</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This interface expose APIs to create/modify an annulus region object.  <a href="interface_l_p_v_core_lib_1_1_i_l_annulus_region.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_ellipse_region.html">ILEllipseRegion</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This interface expose APIs to create/modify an ellipse region object.  <a href="interface_l_p_v_core_lib_1_1_i_l_ellipse_region.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_annulus_sector_region.html">ILAnnulusSectorRegion</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This interface expose APIs to create/modify an annulus sector region object.  <a href="interface_l_p_v_core_lib_1_1_i_l_annulus_sector_region.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image_list.html">ILImageList</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This interface defines a list of <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">LImage</a> object.  <a href="interface_l_p_v_core_lib_1_1_i_l_image_list.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -163,6 +169,10 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_p_v_core_lib_1_1_l_mask_region.html">LMaskRegion</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_p_v_core_lib_1_1_l_annulus_region.html">LAnnulusRegion</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_p_v_core_lib_1_1_l_ellipse_region.html">LEllipseRegion</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_p_v_core_lib_1_1_l_annulus_sector_region.html">LAnnulusSectorRegion</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_p_v_core_lib_1_1_l_image_list.html">LImageList</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -265,6 +275,7 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="namespace_l_p_v_core_lib.html#ae8e2acac6c176e2f73929bab80909322a8872268b1ee2a3412ae717b76d243229">LPVRoiHandleMoveVertex</a> = 64
 , <a class="el" href="namespace_l_p_v_core_lib.html#ae8e2acac6c176e2f73929bab80909322ad8b76e09df9c96ea6b7906fef5050df0">LPVRoiHandleAddVertex</a> = 128
 , <a class="el" href="namespace_l_p_v_core_lib.html#ae8e2acac6c176e2f73929bab80909322a3c266d17b1177c15fe248b6df757cdb9">LPVRoiHandleRemoveVertex</a> = 256
+, <a class="el" href="namespace_l_p_v_core_lib.html#ae8e2acac6c176e2f73929bab80909322a0326f577c85768807fdc3cd15910cf91">LPVRoiHandleAnchor</a> = 512
 <br />
  }</td></tr>
 <tr class="memdesc:ae8e2acac6c176e2f73929bab80909322"><td class="mdescLeft">&#160;</td><td class="mdescRight">This enumeration represents the type of a region handle for drag.  <a href="namespace_l_p_v_core_lib.html#ae8e2acac6c176e2f73929bab80909322">More...</a><br /></td></tr>
@@ -615,11 +626,13 @@ Enumerations</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="ae8e2acac6c176e2f73929bab80909322a1ca3d26923245ad875e50c71f84d8649"></a>LPVRoiHandleRotation&#160;</td><td class="fielddoc"><p>Rotation handle, used to rotate the whole region around its center </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ae8e2acac6c176e2f73929bab80909322a8872268b1ee2a3412ae717b76d243229"></a>LPVRoiHandleMoveVertex&#160;</td><td class="fielddoc"><p>Vertex move handle, used to drag a region's nearest vertex to current cursor position. Works only for <a class="el" href="class_l_p_v_core_lib_1_1_l_poly_region.html">LPolyRegion</a>. </p>
+<tr><td class="fieldname"><a id="ae8e2acac6c176e2f73929bab80909322a8872268b1ee2a3412ae717b76d243229"></a>LPVRoiHandleMoveVertex&#160;</td><td class="fielddoc"><p>Vertex move handle, used to drag a region's nearest vertex to current cursor position. Works only for <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_poly_region.html">LPolyRegion</a>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ae8e2acac6c176e2f73929bab80909322ad8b76e09df9c96ea6b7906fef5050df0"></a>LPVRoiHandleAddVertex&#160;</td><td class="fielddoc"><p>Vertex add handle, used to add a new region vertex based on current cursor position. Works only for <a class="el" href="class_l_p_v_core_lib_1_1_l_poly_region.html">LPolyRegion</a>. </p>
+<tr><td class="fieldname"><a id="ae8e2acac6c176e2f73929bab80909322ad8b76e09df9c96ea6b7906fef5050df0"></a>LPVRoiHandleAddVertex&#160;</td><td class="fielddoc"><p>Vertex add handle, used to add a new region vertex based on current cursor position. Works only for <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_poly_region.html">LPolyRegion</a>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ae8e2acac6c176e2f73929bab80909322a3c266d17b1177c15fe248b6df757cdb9"></a>LPVRoiHandleRemoveVertex&#160;</td><td class="fielddoc"><p>Vertex remove handle, used to remove a region vertex based on current cursor position. Works only for <a class="el" href="class_l_p_v_core_lib_1_1_l_poly_region.html">LPolyRegion</a>. </p>
+<tr><td class="fieldname"><a id="ae8e2acac6c176e2f73929bab80909322a3c266d17b1177c15fe248b6df757cdb9"></a>LPVRoiHandleRemoveVertex&#160;</td><td class="fielddoc"><p>Vertex remove handle, used to remove a region vertex based on current cursor position. Works only for <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_poly_region.html">LPolyRegion</a>. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ae8e2acac6c176e2f73929bab80909322a0326f577c85768807fdc3cd15910cf91"></a>LPVRoiHandleAnchor&#160;</td><td class="fielddoc"><p>Anchor handle, used to drag the anchor point of the region. For <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_annulus_sector_region.html">LAnnulusSectorRegion</a>, it's used to control the bending of the region. </p>
 </td></tr>
 </table>
 

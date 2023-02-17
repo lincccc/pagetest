@@ -143,6 +143,12 @@ $(function() {
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_annulus_region.html">ILAnnulusRegion</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">该接口对应一个圆环区域对象。  <a href="interface_l_p_v_core_lib_1_1_i_l_annulus_region.html#details">更多...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_ellipse_region.html">ILEllipseRegion</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">该接口对应一个椭圆区域对象。  <a href="interface_l_p_v_core_lib_1_1_i_l_ellipse_region.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_annulus_sector_region.html">ILAnnulusSectorRegion</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">该接口对应一个环状扇形区域对象。  <a href="interface_l_p_v_core_lib_1_1_i_l_annulus_sector_region.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image_list.html">ILImageList</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">该接口类定义了一个图像队列，用于存储<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">LImage</a>对象。  <a href="interface_l_p_v_core_lib_1_1_i_l_image_list.html#details">更多...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -163,6 +169,10 @@ $(function() {
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_p_v_core_lib_1_1_l_mask_region.html">LMaskRegion</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_p_v_core_lib_1_1_l_annulus_region.html">LAnnulusRegion</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_p_v_core_lib_1_1_l_ellipse_region.html">LEllipseRegion</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_p_v_core_lib_1_1_l_annulus_sector_region.html">LAnnulusSectorRegion</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_p_v_core_lib_1_1_l_image_list.html">LImageList</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -265,6 +275,7 @@ typedef struct <a class="el" href="struct_l_p_v_core_lib_1_1_l_size.html">LPVCor
 &#160;&#160;<a class="el" href="namespace_l_p_v_core_lib.html#ae8e2acac6c176e2f73929bab80909322a8872268b1ee2a3412ae717b76d243229">LPVRoiHandleMoveVertex</a> = 64
 , <a class="el" href="namespace_l_p_v_core_lib.html#ae8e2acac6c176e2f73929bab80909322ad8b76e09df9c96ea6b7906fef5050df0">LPVRoiHandleAddVertex</a> = 128
 , <a class="el" href="namespace_l_p_v_core_lib.html#ae8e2acac6c176e2f73929bab80909322a3c266d17b1177c15fe248b6df757cdb9">LPVRoiHandleRemoveVertex</a> = 256
+, <a class="el" href="namespace_l_p_v_core_lib.html#ae8e2acac6c176e2f73929bab80909322a0326f577c85768807fdc3cd15910cf91">LPVRoiHandleAnchor</a> = 512
 <br />
  }</td></tr>
 <tr class="memdesc:ae8e2acac6c176e2f73929bab80909322"><td class="mdescLeft">&#160;</td><td class="mdescRight">区域对象的可拖拽句柄类型  <a href="namespace_l_p_v_core_lib.html#ae8e2acac6c176e2f73929bab80909322">更多...</a><br /></td></tr>
@@ -615,11 +626,13 @@ typedef struct <a class="el" href="struct_l_p_v_core_lib_1_1_l_size.html">LPVCor
 </td></tr>
 <tr><td class="fieldname"><a id="ae8e2acac6c176e2f73929bab80909322a1ca3d26923245ad875e50c71f84d8649"></a>LPVRoiHandleRotation&#160;</td><td class="fielddoc"><p>旋转句柄，用于围绕区域中心点旋转整个区域 </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ae8e2acac6c176e2f73929bab80909322a8872268b1ee2a3412ae717b76d243229"></a>LPVRoiHandleMoveVertex&#160;</td><td class="fielddoc"><p>顶点移动句柄，用于拖拽距离鼠标位置最近的区域顶点，只用于 <a class="el" href="class_l_p_v_core_lib_1_1_l_poly_region.html">LPolyRegion</a> </p>
+<tr><td class="fieldname"><a id="ae8e2acac6c176e2f73929bab80909322a8872268b1ee2a3412ae717b76d243229"></a>LPVRoiHandleMoveVertex&#160;</td><td class="fielddoc"><p>顶点移动句柄，用于拖拽距离鼠标位置最近的区域顶点，只用于 <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_poly_region.html">LPolyRegion</a>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ae8e2acac6c176e2f73929bab80909322ad8b76e09df9c96ea6b7906fef5050df0"></a>LPVRoiHandleAddVertex&#160;</td><td class="fielddoc"><p>顶点新增句柄，用于基于鼠标位置添加新的区域顶点，只用于 <a class="el" href="class_l_p_v_core_lib_1_1_l_poly_region.html">LPolyRegion</a> </p>
+<tr><td class="fieldname"><a id="ae8e2acac6c176e2f73929bab80909322ad8b76e09df9c96ea6b7906fef5050df0"></a>LPVRoiHandleAddVertex&#160;</td><td class="fielddoc"><p>顶点新增句柄，用于基于鼠标位置添加新的区域顶点，只用于 <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_poly_region.html">LPolyRegion</a>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ae8e2acac6c176e2f73929bab80909322a3c266d17b1177c15fe248b6df757cdb9"></a>LPVRoiHandleRemoveVertex&#160;</td><td class="fielddoc"><p>顶点删除句柄，用于基于鼠标位置删除区域顶点，只用于 <a class="el" href="class_l_p_v_core_lib_1_1_l_poly_region.html">LPolyRegion</a> </p>
+<tr><td class="fieldname"><a id="ae8e2acac6c176e2f73929bab80909322a3c266d17b1177c15fe248b6df757cdb9"></a>LPVRoiHandleRemoveVertex&#160;</td><td class="fielddoc"><p>顶点删除句柄，用于基于鼠标位置删除区域顶点，只用于 <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_poly_region.html">LPolyRegion</a>. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ae8e2acac6c176e2f73929bab80909322a0326f577c85768807fdc3cd15910cf91"></a>LPVRoiHandleAnchor&#160;</td><td class="fielddoc"><p>锚点句柄，用于拖拽区域的锚点位置。对于 <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_annulus_sector_region.html">LAnnulusSectorRegion</a>，用于控制这个区域的弯曲程度。 </p>
 </td></tr>
 </table>
 

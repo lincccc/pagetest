@@ -94,8 +94,10 @@ $(function() {
  <div class="center">
   <img src="interface_l_p_v_gauge_lib_1_1_i_l_gauge.png" usemap="#ILGauge_map" alt=""/>
   <map id="ILGauge_map" name="ILGauge_map">
-<area href="interface_l_p_v_core_lib_1_1_i_l_object.html" title="该接口类为可序列化 LPV 对象的基类。" alt="ILObject" shape="rect" coords="0,56,83,80"/>
-<area href="interface_l_p_v_gauge_lib_1_1_i_l_line_gauge.html" title="该接口提供基于卡尺的直线检测功能。" alt="ILLineGauge" shape="rect" coords="0,168,83,192"/>
+<area href="interface_l_p_v_core_lib_1_1_i_l_object.html" title="该接口类为可序列化 LPV 对象的基类。" alt="ILObject" shape="rect" coords="103,56,196,80"/>
+<area href="interface_l_p_v_gauge_lib_1_1_i_l_arc_gauge.html" title="该接口提供基于卡尺的圆弧检测功能。" alt="ILArcGauge" shape="rect" coords="0,168,93,192"/>
+<area href="interface_l_p_v_gauge_lib_1_1_i_l_circle_gauge.html" title="该接口提供基于卡尺的圆检测功能。" alt="ILCircleGauge" shape="rect" coords="103,168,196,192"/>
+<area href="interface_l_p_v_gauge_lib_1_1_i_l_line_gauge.html" title="该接口提供基于卡尺的直线检测功能。" alt="ILLineGauge" shape="rect" coords="206,168,299,192"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -107,7 +109,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 <tr class="separator:a25e238989ab890015e2cf19e5212757d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a002dd3815d8ae54f08b247797d386d14"><td class="memItemLeft" align="right" valign="top"><a id="a002dd3815d8ae54f08b247797d386d14"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_gauge_lib_1_1_i_l_gauge.html#a002dd3815d8ae54f08b247797d386d14">SampleRegionHeight</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a002dd3815d8ae54f08b247797d386d14"><td class="mdescLeft">&#160;</td><td class="mdescRight">卡点采样区域的高度，至少 5 个像素。除以下卡尺算法，其卡点采样区域的高度由输入的检测区域控制：<a class="el" href="interface_l_p_v_gauge_lib_1_1_i_l_line_gauge.html">LLineGauge</a> <br /></td></tr>
+<tr class="memdesc:a002dd3815d8ae54f08b247797d386d14"><td class="mdescLeft">&#160;</td><td class="mdescRight">卡点采样区域的高度，至少 5 个像素。通常卡点采样区域的高度由输入的检测区域控制，除以下卡尺算法：LPolyGauge <br /></td></tr>
 <tr class="separator:a002dd3815d8ae54f08b247797d386d14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a821c7a209bdb7403e98bb96f948b66be"><td class="memItemLeft" align="right" valign="top"><a id="a821c7a209bdb7403e98bb96f948b66be"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_gauge_lib_1_1_i_l_gauge.html#a821c7a209bdb7403e98bb96f948b66be">SampleRegionInterval</a><code> [get, set]</code></td></tr>
@@ -153,7 +155,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><p>该接口类为卡尺对象的基类，提供基本卡尺工具的接口和参数。 </p>
 <p>这是所有卡尺对象的基类，对于不同的卡尺类型，需选择不同的卡尺对象。 使用这个接口，需要创建一个卡尺对象，如:</p>
-<p><a class="el" href="interface_l_p_v_gauge_lib_1_1_i_l_line_gauge.html" title="该接口提供基于卡尺的直线检测功能。">ILLineGauge</a>, ILEdgeGauge, ILCircleGauge... </p>
+<p><a class="el" href="interface_l_p_v_gauge_lib_1_1_i_l_line_gauge.html" title="该接口提供基于卡尺的直线检测功能。">ILLineGauge</a>, ILEdgeGauge, <a class="el" href="interface_l_p_v_gauge_lib_1_1_i_l_circle_gauge.html" title="该接口提供基于卡尺的圆检测功能。">ILCircleGauge</a>... </p>
 </div><h2 class="groupheader">属性说明</h2>
 <a id="afad2aa7828e45b84ec1f3f80f3787305"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afad2aa7828e45b84ec1f3f80f3787305">&#9670;&nbsp;</a></span>Polarity</h2>

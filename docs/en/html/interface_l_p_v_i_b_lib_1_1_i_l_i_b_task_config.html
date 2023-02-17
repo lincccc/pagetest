@@ -106,6 +106,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a5f0a9f16060f01b0274d1f78a85e20f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48a5254ead05130a1a76c112d8db5eed"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_task_config.html#a48a5254ead05130a1a76c112d8db5eed">HandleEvent</a> (BSTR algoName, <a class="el" href="namespace_l_p_v_i_b_lib.html#a84279e3fef604bccf4cb7af1dc0ce8ed">LPVIBEventCode</a> evtCode, <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_data.html">ILIBData</a> *data)</td></tr>
 <tr class="separator:a48a5254ead05130a1a76c112d8db5eed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b81cb4e28b212da6dd62be52b279e08"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_task_config.html#a4b81cb4e28b212da6dd62be52b279e08">HandleEvent2</a> (BSTR algoName, BSTR evtName, <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_data.html">ILIBData</a> *data)</td></tr>
+<tr class="separator:a4b81cb4e28b212da6dd62be52b279e08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
@@ -221,11 +223,11 @@ BSTR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Call the handle event of t he algorithm tool. Check the following event table for the supported event. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Call the handle event of the algorithm tool. Check the following event table for the supported event. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">algoName</td><td>The unique name of the algorithm tool. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">evtCode</td><td>The event code. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>The input event data. It varies for individual event, see the following event table for details. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>The input event data. It varies for individual event type, see the following event table for details. </td></tr>
   </table>
   </dd>
 </dl>
@@ -245,6 +247,56 @@ BSTR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
   </table>
   </dd>
 </dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_task_config.html#a4b81cb4e28b212da6dd62be52b279e08">HandleEvent2()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a4b81cb4e28b212da6dd62be52b279e08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b81cb4e28b212da6dd62be52b279e08">&#9670;&nbsp;</a></span>HandleEvent2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int HandleEvent2 </td>
+          <td>(</td>
+          <td class="paramtype">BSTR&#160;</td>
+          <td class="paramname"><em>algoName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BSTR&#160;</td>
+          <td class="paramname"><em>evtName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_data.html">ILIBData</a> *&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Call the handle event of the algorithm tool, using the system or customized name of the event. It's commonly used for the event delegate tool. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">algoName</td><td>The unique name of the algorithm tool. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">evtName</td><td>The event name. It's the name of the handle event(the button text), or the customized name in the event delegate tool. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>The input event data. It varies for individual event type, see the event table in <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_task_config.html#a48a5254ead05130a1a76c112d8db5eed">HandleEvent()</a> for details. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">errCode</td><td>Return the error code if anything is wrong, return <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aae917cd39742ab4cec9119219cae9154c">LPVNoError</a> if succeed. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_task_config.html#a48a5254ead05130a1a76c112d8db5eed">HandleEvent()</a> </dd></dl>
 
 </div>
 </div>
