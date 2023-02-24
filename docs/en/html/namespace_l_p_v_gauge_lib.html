@@ -126,6 +126,12 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a5b389250582da9a00fc60e6596010467"><td class="mdescLeft">&#160;</td><td class="mdescRight">This enumeration represents the flags to control the drawing behavior of the gauging result.  <a href="namespace_l_p_v_gauge_lib.html#a5b389250582da9a00fc60e6596010467">More...</a><br /></td></tr>
 <tr class="separator:a5b389250582da9a00fc60e6596010467"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22453664a582d012f1cadabd405027e0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_l_p_v_gauge_lib.html#a22453664a582d012f1cadabd405027e0">LPVGaugeFeatures</a> { <a class="el" href="namespace_l_p_v_gauge_lib.html#a22453664a582d012f1cadabd405027e0a9b2353ef0024b8607b464e2f56d34dd8">LPVGaugeFeatureNone</a> = 0x0
+, <a class="el" href="namespace_l_p_v_gauge_lib.html#a22453664a582d012f1cadabd405027e0a3cb1b991164db67e54ab6ec50f5a0317">LPVGaugeFeaturePosition</a> = 0x1
+, <a class="el" href="namespace_l_p_v_gauge_lib.html#a22453664a582d012f1cadabd405027e0a9d3c3961c91f705116a1b6c7d5053886">LPVGaugeFeatureScore</a> = 0x2
+ }</td></tr>
+<tr class="memdesc:a22453664a582d012f1cadabd405027e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">This enumeration represents the features of the sample points.  <a href="namespace_l_p_v_gauge_lib.html#a22453664a582d012f1cadabd405027e0">More...</a><br /></td></tr>
+<tr class="separator:a22453664a582d012f1cadabd405027e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>LPV Gauging Library, provides classes for 1D and 2D shape metrology. </p>
@@ -162,6 +168,30 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><a id="a5b389250582da9a00fc60e6596010467a7b740e42223889594b426b9a3abcde70"></a>LPVGaugeDrawDefault&#160;</td><td class="fielddoc"><p>Default draw flags, which draws only the result shape </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a5b389250582da9a00fc60e6596010467a7733a826b80a7208a9fad3fdfd47b967"></a>LPVGaugeDrawAll&#160;</td><td class="fielddoc"><p>Draw a gauging result with all components </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a22453664a582d012f1cadabd405027e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22453664a582d012f1cadabd405027e0">&#9670;&nbsp;</a></span>LPVGaugeFeatures</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespace_l_p_v_gauge_lib.html#a22453664a582d012f1cadabd405027e0">LPVGaugeFeatures</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This enumeration represents the features of the sample points. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a22453664a582d012f1cadabd405027e0a9b2353ef0024b8607b464e2f56d34dd8"></a>LPVGaugeFeatureNone&#160;</td><td class="fielddoc"><p>The reserved none value </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a22453664a582d012f1cadabd405027e0a3cb1b991164db67e54ab6ec50f5a0317"></a>LPVGaugeFeaturePosition&#160;</td><td class="fielddoc"><p>The position of the sample point, affect by the find-by setting </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a22453664a582d012f1cadabd405027e0a9d3c3961c91f705116a1b6c7d5053886"></a>LPVGaugeFeatureScore&#160;</td><td class="fielddoc"><p>The score of the sample point, aka. the edge gradiant magnitude or grayscale intensity depends on the polarity setting </p>
 </td></tr>
 </table>
 

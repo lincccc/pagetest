@@ -111,16 +111,22 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This interface expose APIs to sort or apply permutation to a LPV class contains a collection of sortable objects. </p>
 <p>All other LPV classes that provides sort functionalities implements this interface. To use this interface, you should firstly cast the LPV classes to <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_sortables.html" title="This interface expose APIs to sort or apply permutation to a LPV class contains a collection of sorta...">ILSortables</a> interface.</p>
-<p>The following lists all the sortable LPV classes:</p>
+<p>The following lists all the sortable collection LPV classes:</p>
 <table class="markdownTable">
 <tr>
-<td><a class="el" href="class_l_p_v_geom_lib_1_1_l_points.html">LPoints</a> </td></tr>
+<td><a class="el" href="namespace_l_p_v_geom_lib.html" title="LPV Geometry Library, provide geometric functionalities.">LPVGeomLib</a></td><td><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_points.html">LPoints</a> </td></tr>
 <tr>
-<td><a class="el" href="class_l_p_v_pat_lib_1_1_l_match_results.html">LMatchResults</a> </td></tr>
+<td><a class="el" href="namespace_l_p_v_geom_x_lib.html" title="LPV Advanced Geometry Library, provide advanced geometric functionalities.">LPVGeomXLib</a></td><td><a class="el" href="interface_l_p_v_geom_x_lib_1_1_i_l_sorter.html">LSorter</a> </td></tr>
 <tr>
-<td><a class="el" href="class_l_p_v_blob_lib_1_1_l_blob_results.html">LBlobResults</a> </td></tr>
+<td><a class="el" href="namespace_l_p_v_pat_lib.html" title="LPV Pattern Library, provides functionality for pattern matching.">LPVPatLib</a></td><td><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match_results.html">LMatchResults</a> </td></tr>
 <tr>
-<td><a class="el" href="class_l_p_v_locate_lib_1_1_l_line_results.html">LLineResults</a>, <a class="el" href="class_l_p_v_locate_lib_1_1_l_circle_results.html">LCircleResults</a> </td></tr>
+<td><a class="el" href="namespace_l_p_v_blob_lib.html" title="LPV Blob Library, provides functionality for blob analysis.">LPVBlobLib</a></td><td><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_results.html">LBlobResults</a> </td></tr>
+<tr>
+<td><a class="el" href="namespace_l_p_v_locate_lib.html" title="LPV Feature Locating Library, provides classes for classic object/edge detection tasks.">LPVLocateLib</a></td><td><a class="el" href="interface_l_p_v_locate_lib_1_1_i_l_line_results.html">LLineResults</a>, <a class="el" href="interface_l_p_v_locate_lib_1_1_i_l_circle_results.html">LCircleResults</a> </td></tr>
+<tr>
+<td><a class="el" href="namespace_l_p_v_locate_x_lib.html" title="LPV Advanced Feature Locating Library, provides classes for the advanced object/edge detection tasks.">LPVLocateXLib</a></td><td><a class="el" href="interface_l_p_v_locate_x_lib_1_1_i_l_path_results.html">LPathResults</a>, <a class="el" href="interface_l_p_v_locate_x_lib_1_1_i_l_contour_results.html">LContourResults</a> </td></tr>
+<tr>
+<td><a class="el" href="namespace_l_p_v_barcode_lib.html" title="LPV Barcode Library, provides functionality for 1D/2D barcode inspection.">LPVBarcodeLib</a></td><td><a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_results.html">LBarcodeResults</a> </td></tr>
 </table>
 <h3>Example Code </h3>
  <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">((ILSortablesPtr)points)-&gt;Sort(LPVSortBy::LPVSortArrayByX,</div>

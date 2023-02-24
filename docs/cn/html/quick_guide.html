@@ -156,7 +156,7 @@ $(function() {
 </div><!-- fragment --></li>
 </ol>
  </div>  <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><p>我们推荐使用基于 <a href="https://docs.microsoft.com/zh-cn/cpp/cpp/compiler-com-support"><b>编译器 COM 支持</b></a> 的方式，将 LPV 模块编译转换为 C++ 头文件并调用。</p><ol type="1">
-<li>在程序开始处调用 <a href="https://docs.microsoft.com/en-us/windows/win32/api/combaseapi/nf-combaseapi-coinitializeex">CoInitializeEx</a>，结束处调用 <a href="https://docs.microsoft.com/en-us/windows/win32/api/combaseapi/nf-combaseapi-couninitialize">CoUnitialize</a>。如果你希望在子线程中创建和保管 LPV 实例，那么就需要在线程开始和结束时也调用这两个函数。需要在使用 LPV 模块前调用初始化。<br  />
+<li>在程序开始处调用 <a href="https://docs.microsoft.com/zh-cn/windows/win32/api/combaseapi/nf-combaseapi-coinitializeex">CoInitializeEx</a>，结束处调用 <a href="https://docs.microsoft.com/zh-cn/windows/win32/api/combaseapi/nf-combaseapi-couninitialize">CoUnitialize</a>。如果你希望在子线程中创建和保管 LPV 实例，那么就需要在线程开始和结束时也调用这两个函数。需要在使用 LPV 模块前调用初始化。<br  />
 以 MFC 程序为例，推荐的调用位置为 MFC 程序的 InitInstance 和 ExitInstance 方法中，如： <div class="fragment"><div class="line">BOOL CMFCApp::InitInstance()</div>
 <div class="line">{</div>
 <div class="line">    <span class="comment">// 你需要根据应用程序的实际情况选择 COINIT_MULTITHREADED 或 COINIT_APARTMENTTHREADED</span></div>
@@ -171,7 +171,7 @@ $(function() {
 <div class="line">    CoUninitialize();</div>
 <div class="line">    <span class="keywordflow">return</span> CWinApp::ExitInstance();</div>
 <div class="line">}</div>
-</div><!-- fragment --></li>
+</div><!-- fragment --> 对于 QT 程序，若使用 QApplication 或 QGuiApplication 可省略 CoInitializeEx 的调用，因为它们会在其构造函数中以 <a href="https://learn.microsoft.com/zh-cn/windows/win32/com/single-threaded-apartments">STA</a> 初始化 COM。但若使用 QCoreApplication，则仍需调用 CoInitializeEx。</li>
 <li>使用 <a href="https://docs.microsoft.com/zh-cn/cpp/preprocessor/hash-import-directive-cpp">#import 指令</a> 导入 LPV 类型库，包括 LPVCoreLib（必须）、LPVGeomLib（必须）及其他希望加入的 LPVXXXLib 算法库。<br  />
 以 LPVCore 模块为例，在代码中添加以下导入命令： <div class="fragment"><div class="line"><span class="comment">// 使用 demo/include 文件夹中我们为各个模块准备的 #import 用的头文件</span></div>
 <div class="line"><span class="comment">// 需先拷贝 demo/include 文件夹到工程目录，或添加该目录到工程配置中</span></div>

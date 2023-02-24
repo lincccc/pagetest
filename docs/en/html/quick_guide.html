@@ -172,7 +172,7 @@ The following code show a short example: <div class="fragment"><div class="line"
 <div class="line">    CoUninitialize();</div>
 <div class="line">    <span class="keywordflow">return</span> CWinApp::ExitInstance();</div>
 <div class="line">}</div>
-</div><!-- fragment --></li>
+</div><!-- fragment --> Note: For Qt applications which uses QApplication or QGuiApplication, you may omit the CoInitializeEx call since they will initialize COM as STA in their constructor. But for QCoreApplication, it's still required.</li>
 <li>Use <a href="@https://docs.microsoft.com/en-us/cpp/preprocessor/hash-import-directive-cpp">#import directive</a> to incorporate information from LPV libraries, including <a class="el" href="namespace_l_p_v_core_lib.html" title="LPV Core Library, provide basic functionalities.">LPVCoreLib</a> (must-have), <a class="el" href="namespace_l_p_v_geom_lib.html" title="LPV Geometry Library, provide geometric functionalities.">LPVGeomLib</a> (must-have) and other required LPVXXXLibs.<br  />
 For example, to import LPVCore library: <div class="fragment"><div class="line"><span class="comment">// use the include file under &quot;demo/include&quot; folder</span></div>
 <div class="line"><span class="comment">// You may firstly copy &quot;demo/include&quot; folder to your project folder, or add the folder to your project&#39;s include path</span></div>
