@@ -46,6 +46,7 @@ var menudata={children:[
 {text:"<b>Barcode Inspection</b> <i><small>lpvBarcode</small></i>",url:"namespace_l_p_v_barcode_lib.html"},
 {text:"<b>Math & Data Analysis</b> <i><small>lpvMath</small></i>",url:"namespace_l_p_v_math_lib.html"},
 {text:"<b>Machine Learning</b> <i><small>lpvML</small></i>",url:"namespace_l_p_v_m_l_lib.html"},
+{text:"<b>OCR</b> <i><small>lpvOCR</small></i>",url:"namespace_l_p_v_o_c_r_lib.html"},
 {text:"<b>Display Control</b> <i><small>lpvDisplay</small></i>",url:"namespace_l_p_v_display_lib.html"},
 {text:"<b>Connect to IntelliBlink</b> <i><small>lpvIB</small></i>",url:"namespace_l_p_v_i_b_lib.html"},
 {text:"Index",url:"classes.html"}]},

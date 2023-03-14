@@ -252,6 +252,18 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aa17935be1ad7b0c609b1d241556d5059b">LPVErrMLNotTrained</a> = 0x81000506
 , <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aa8664f3400046e0e829e0ddfe8ed91995">LPVErrMLTooFewSample</a> = 0x81000507
 , <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aad41d791f0ae8102aa678976c9a32d673">LPVErrMLBusy</a> = 0x81000509
+, <br />
+&#160;&#160;<a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aa160bde6abb08a1cdfdd79ad4fe96a5fb">LPVErrOCRNoFontDB</a> = 0x81000601
+, <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aace5a6c35f318f8677ff1cf0f16b3f5c5">LPVErrOCRNoCharDB</a> = 0x81000602
+, <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aa7ac024614345f05efe73f1c7d1830739">LPVErrOCRFailAddSampleToFontDB</a> = 0x81000604
+, <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aaa91603d8fc79270819e57c8560a4fd1c">LPVErrOCRFailRemoveFromFontDB</a> = 0x81000605
+, <br />
+&#160;&#160;<a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aa8a43fa959eaee033236b4390cd082a26">LPVErrOCRFailTrainFontDB</a> = 0x81000606
+, <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aa511e5270f878cbaa5f41fdd33b4e8731">LPVErrOCRFailTrainTooFewChar</a> = 0x81000607
+, <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aa982bcddb25ea1a0281566df1ad816e31">LPVErrOCRFailTrainTooFewSample</a> = 0x81000608
+, <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aae66e92a61262fd9da45dd69b77ea2582">LPVErrOCRFailTrainFailExtFeature</a> = 0x81000609
+, <br />
+&#160;&#160;<a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aa7622a4eccff7e376431c908083f66b8a">LPVErrOCRFailAddCharToFontDB</a> = 0x8100060a
 <br />
  }</td></tr>
 <tr class="memdesc:a753df57c2ab9773ee9dff5747163ee4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">This enumeration represents the type of a LPV function error.  <a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">More...</a><br /></td></tr>
@@ -602,6 +614,24 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><a id="a753df57c2ab9773ee9dff5747163ee4aa8664f3400046e0e829e0ddfe8ed91995"></a>LPVErrMLTooFewSample&#160;</td><td class="fielddoc"><p>Failed to train the classifier due to there's too few samples collected for each class. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a753df57c2ab9773ee9dff5747163ee4aad41d791f0ae8102aa678976c9a32d673"></a>LPVErrMLBusy&#160;</td><td class="fielddoc"><p>The classifier is busy with training, auto-tune, testing or other tasks, you may try later. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a753df57c2ab9773ee9dff5747163ee4aa160bde6abb08a1cdfdd79ad4fe96a5fb"></a>LPVErrOCRNoFontDB&#160;</td><td class="fielddoc"><p>Failed due to absence of the trained font database </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a753df57c2ab9773ee9dff5747163ee4aace5a6c35f318f8677ff1cf0f16b3f5c5"></a>LPVErrOCRNoCharDB&#160;</td><td class="fielddoc"><p>Failed due to absence of the character sample database </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a753df57c2ab9773ee9dff5747163ee4aa7ac024614345f05efe73f1c7d1830739"></a>LPVErrOCRFailAddSampleToFontDB&#160;</td><td class="fielddoc"><p>Failed to add new samples to the font database </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a753df57c2ab9773ee9dff5747163ee4aaa91603d8fc79270819e57c8560a4fd1c"></a>LPVErrOCRFailRemoveFromFontDB&#160;</td><td class="fielddoc"><p>Failed to remove char from the font database </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a753df57c2ab9773ee9dff5747163ee4aa8a43fa959eaee033236b4390cd082a26"></a>LPVErrOCRFailTrainFontDB&#160;</td><td class="fielddoc"><p>Failed to train classifier for the font database </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a753df57c2ab9773ee9dff5747163ee4aa511e5270f878cbaa5f41fdd33b4e8731"></a>LPVErrOCRFailTrainTooFewChar&#160;</td><td class="fielddoc"><p>Failed to train classifier for font database, you should at least add two characters </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a753df57c2ab9773ee9dff5747163ee4aa982bcddb25ea1a0281566df1ad816e31"></a>LPVErrOCRFailTrainTooFewSample&#160;</td><td class="fielddoc"><p>Failed to train classifier for font database due to empty or too few samples </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a753df57c2ab9773ee9dff5747163ee4aae66e92a61262fd9da45dd69b77ea2582"></a>LPVErrOCRFailTrainFailExtFeature&#160;</td><td class="fielddoc"><p>Failed to train classifier for font database, please check the feature configuration </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a753df57c2ab9773ee9dff5747163ee4aa7622a4eccff7e376431c908083f66b8a"></a>LPVErrOCRFailAddCharToFontDB&#160;</td><td class="fielddoc"><p>Failed to add new character to font database, a space or non-printable character is not supported </p>
 </td></tr>
 </table>
 

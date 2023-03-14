@@ -46,6 +46,7 @@ var menudata={children:[
 {text:"<b>条码检测</b> <i><small>lpvBarcode</small></i>",url:"namespace_l_p_v_barcode_lib.html"},
 {text:"<b>数学与分析</b> <i><small>lpvMath</small></i>",url:"namespace_l_p_v_math_lib.html"},
 {text:"<b>机器学习</b> <i><small>lpvML</small></i>",url:"namespace_l_p_v_m_l_lib.html"},
+{text:"<b>字符识别</b> <i><small>lpvOCR</small></i>",url:"namespace_l_p_v_o_c_r_lib.html"},
 {text:"<b>显示控件</b> <i><small>lpvDisplay</small></i>",url:"namespace_l_p_v_display_lib.html"},
 {text:"<b>连接灵闪</b> <i><small>lpvIB</small></i>",url:"namespace_l_p_v_i_b_lib.html"},
 {text:"索引",url:"classes.html"}]},

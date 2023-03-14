@@ -252,6 +252,18 @@ typedef struct <a class="el" href="struct_l_p_v_core_lib_1_1_l_size.html">LPVCor
 , <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aa17935be1ad7b0c609b1d241556d5059b">LPVErrMLNotTrained</a> = 0x81000506
 , <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aa8664f3400046e0e829e0ddfe8ed91995">LPVErrMLTooFewSample</a> = 0x81000507
 , <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aad41d791f0ae8102aa678976c9a32d673">LPVErrMLBusy</a> = 0x81000509
+, <br />
+&#160;&#160;<a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aa160bde6abb08a1cdfdd79ad4fe96a5fb">LPVErrOCRNoFontDB</a> = 0x81000601
+, <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aace5a6c35f318f8677ff1cf0f16b3f5c5">LPVErrOCRNoCharDB</a> = 0x81000602
+, <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aa7ac024614345f05efe73f1c7d1830739">LPVErrOCRFailAddSampleToFontDB</a> = 0x81000604
+, <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aaa91603d8fc79270819e57c8560a4fd1c">LPVErrOCRFailRemoveFromFontDB</a> = 0x81000605
+, <br />
+&#160;&#160;<a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aa8a43fa959eaee033236b4390cd082a26">LPVErrOCRFailTrainFontDB</a> = 0x81000606
+, <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aa511e5270f878cbaa5f41fdd33b4e8731">LPVErrOCRFailTrainTooFewChar</a> = 0x81000607
+, <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aa982bcddb25ea1a0281566df1ad816e31">LPVErrOCRFailTrainTooFewSample</a> = 0x81000608
+, <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aae66e92a61262fd9da45dd69b77ea2582">LPVErrOCRFailTrainFailExtFeature</a> = 0x81000609
+, <br />
+&#160;&#160;<a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aa7622a4eccff7e376431c908083f66b8a">LPVErrOCRFailAddCharToFontDB</a> = 0x8100060a
 <br />
  }</td></tr>
 <tr class="memdesc:a753df57c2ab9773ee9dff5747163ee4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">LPV 算法或函数运行过程中遇到的错误。  <a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">更多...</a><br /></td></tr>
@@ -602,6 +614,24 @@ typedef struct <a class="el" href="struct_l_p_v_core_lib_1_1_l_size.html">LPVCor
 <tr><td class="fieldname"><a id="a753df57c2ab9773ee9dff5747163ee4aa8664f3400046e0e829e0ddfe8ed91995"></a>LPVErrMLTooFewSample&#160;</td><td class="fielddoc"><p>分类器训练失败，单个类别收集的样本数量不足 </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a753df57c2ab9773ee9dff5747163ee4aad41d791f0ae8102aa678976c9a32d673"></a>LPVErrMLBusy&#160;</td><td class="fielddoc"><p>分类器正在进行训练、自动调参、测试或其他任务，请稍后再试 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a753df57c2ab9773ee9dff5747163ee4aa160bde6abb08a1cdfdd79ad4fe96a5fb"></a>LPVErrOCRNoFontDB&#160;</td><td class="fielddoc"><p>字库缺失或未训练 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a753df57c2ab9773ee9dff5747163ee4aace5a6c35f318f8677ff1cf0f16b3f5c5"></a>LPVErrOCRNoCharDB&#160;</td><td class="fielddoc"><p>字符样本库缺失 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a753df57c2ab9773ee9dff5747163ee4aa7ac024614345f05efe73f1c7d1830739"></a>LPVErrOCRFailAddSampleToFontDB&#160;</td><td class="fielddoc"><p>添加字符样本失败 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a753df57c2ab9773ee9dff5747163ee4aaa91603d8fc79270819e57c8560a4fd1c"></a>LPVErrOCRFailRemoveFromFontDB&#160;</td><td class="fielddoc"><p>移除字符样本失败 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a753df57c2ab9773ee9dff5747163ee4aa8a43fa959eaee033236b4390cd082a26"></a>LPVErrOCRFailTrainFontDB&#160;</td><td class="fielddoc"><p>训练字符分类器失败 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a753df57c2ab9773ee9dff5747163ee4aa511e5270f878cbaa5f41fdd33b4e8731"></a>LPVErrOCRFailTrainTooFewChar&#160;</td><td class="fielddoc"><p>训练分类器失败，需至少添加2个或以上字符 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a753df57c2ab9773ee9dff5747163ee4aa982bcddb25ea1a0281566df1ad816e31"></a>LPVErrOCRFailTrainTooFewSample&#160;</td><td class="fielddoc"><p>训练分类器失败，字库为空或单字符包含的样本量过少 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a753df57c2ab9773ee9dff5747163ee4aae66e92a61262fd9da45dd69b77ea2582"></a>LPVErrOCRFailTrainFailExtFeature&#160;</td><td class="fielddoc"><p>训练分类器失败，特征配置非法，请检查配置 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a753df57c2ab9773ee9dff5747163ee4aa7622a4eccff7e376431c908083f66b8a"></a>LPVErrOCRFailAddCharToFontDB&#160;</td><td class="fielddoc"><p>添加新字符失败，无法接受空格或无法打印的字符 </p>
 </td></tr>
 </table>
 
