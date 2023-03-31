@@ -106,8 +106,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a5f0a9f16060f01b0274d1f78a85e20f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48a5254ead05130a1a76c112d8db5eed"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_task_config.html#a48a5254ead05130a1a76c112d8db5eed">HandleEvent</a> (BSTR algoName, <a class="el" href="namespace_l_p_v_i_b_lib.html#a84279e3fef604bccf4cb7af1dc0ce8ed">LPVIBEventCode</a> evtCode, <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_data.html">ILIBData</a> *data)</td></tr>
 <tr class="separator:a48a5254ead05130a1a76c112d8db5eed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b81cb4e28b212da6dd62be52b279e08"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_task_config.html#a4b81cb4e28b212da6dd62be52b279e08">HandleEvent2</a> (BSTR algoName, BSTR evtName, <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_data.html">ILIBData</a> *data)</td></tr>
-<tr class="separator:a4b81cb4e28b212da6dd62be52b279e08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
@@ -233,70 +231,22 @@ BSTR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">errCode</td><td>Return the error code if anything is wrong, return <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aae917cd39742ab4cec9119219cae9154c">LPVNoError</a> if succeed. <table class="markdownTable">
+    <tr><td class="paramname">errCode</td><td>Return the error code if anything is wrong, you may check the <a class="el" href="ib_error.html">error code lookup table</a>, return <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aae917cd39742ab4cec9119219cae9154c">LPVNoError</a> if succeed. <table class="markdownTable">
 <tr>
 <th class="markdownTableHeadLeft">Event</th><th class="markdownTableHeadLeft">Event Code</th><th class="markdownTableHeadLeft">Event Data</th><th class="markdownTableHeadLeft">Supported IntelliBlink Tools </th></tr>
 <tr>
 <td>Reset</td><td>LPVIBEventReset</td><td>&ndash;</td><td>Statistics, NG / OK, Data Fitting, Collect Points, Foreground Detect, Multi-Frame Blending, HDR, Normal Reconstruct, Foreground Extract, Optical Flow, 4 Points Calibration, 9 Points Calibration, 1 Points Calibration In Multi-Frame, Grid Calibration, FFD Grid Calibration, Flat Field Calibration </td></tr>
 <tr>
-<td>Import</td><td>LPVIBEventImport</td><td><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_data.html#aec33093cf283fc15206b0a0d9a52b743">String</a>, the file path</td><td>Data Fitting, Import Calibration, Import Flat Field Calibration </td></tr>
+<td>Import</td><td>LPVIBEventImport</td><td>File path(<a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_data.html#aec33093cf283fc15206b0a0d9a52b743">String</a>)</td><td>Data Fitting, Import Calibration, Import Flat Field Calibration </td></tr>
 <tr>
-<td>Export</td><td>LPVIBEventExport</td><td><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_data.html#aec33093cf283fc15206b0a0d9a52b743">String</a>, the file path</td><td>Data Fitting, 4 Points Calibration, 9 Points Calibration, 1 Points Calibration In Multi-Frame, Grid Calibration, FFD Grid Calibration, Flat Field Calibration </td></tr>
+<td>Export</td><td>LPVIBEventExport</td><td>File path(<a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_data.html#aec33093cf283fc15206b0a0d9a52b743">String</a>)</td><td>Data Fitting, 4 Points Calibration, 9 Points Calibration, 1 Points Calibration In Multi-Frame, Grid Calibration, FFD Grid Calibration, Flat Field Calibration </td></tr>
+<tr>
+<td>Re-Execute</td><td>LPVIBEventReExecute</td><td>Custom event name(<a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_data.html#aec33093cf283fc15206b0a0d9a52b743">String</a>)</td><td>Event Wrapper </td></tr>
 </table>
 </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_task_config.html#a4b81cb4e28b212da6dd62be52b279e08">HandleEvent2()</a> </dd></dl>
-
-</div>
-</div>
-<a id="a4b81cb4e28b212da6dd62be52b279e08"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4b81cb4e28b212da6dd62be52b279e08">&#9670;&nbsp;</a></span>HandleEvent2()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int HandleEvent2 </td>
-          <td>(</td>
-          <td class="paramtype">BSTR&#160;</td>
-          <td class="paramname"><em>algoName</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">BSTR&#160;</td>
-          <td class="paramname"><em>evtName</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_data.html">ILIBData</a> *&#160;</td>
-          <td class="paramname"><em>data</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Call the handle event of the algorithm tool, using the system or customized name of the event. It's commonly used for the event delegate tool. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">algoName</td><td>The unique name of the algorithm tool. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">evtName</td><td>The event name. It's the name of the handle event(the button text), or the customized name in the event delegate tool. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>The input event data. It varies for individual event type, see the event table in <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_task_config.html#a48a5254ead05130a1a76c112d8db5eed">HandleEvent()</a> for details. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">errCode</td><td>Return the error code if anything is wrong, return <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aae917cd39742ab4cec9119219cae9154c">LPVNoError</a> if succeed. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_task_config.html#a48a5254ead05130a1a76c112d8db5eed">HandleEvent()</a> </dd></dl>
 
 </div>
 </div>

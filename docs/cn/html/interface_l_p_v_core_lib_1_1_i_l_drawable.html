@@ -149,8 +149,7 @@ Public 成员函数</h2></td></tr>
 <td><a class="el" href="namespace_l_p_v_o_c_r_lib.html" title="LPV 字符识别（OCR）模块，用于字符或文本的分割、识别和质量检测。">LPVOCRLib</a></td><td><a class="el" href="interface_l_p_v_o_c_r_lib_1_1_i_l_o_c_r_char.html">LOCRChar</a>, <a class="el" href="interface_l_p_v_o_c_r_lib_1_1_i_l_o_c_r_line.html">LOCRLine</a>, <a class="el" href="interface_l_p_v_o_c_r_lib_1_1_i_l_o_c_r_result.html">LOCRResult</a> </td></tr>
 </table>
 <h3>示例代码 </h3>
- <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">ILDrawablePtr drawable = roi;</div>
-<div class="line">drawable-&gt;SetPenWidth(2);</div>
+ <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">((ILDrawablePtr)drawable)-&gt;SetPenWidth(2);</div>
 <div class="line"><span class="comment">// or do it via LSystem object</span></div>
 <div class="line">sys-&gt;SetPen(roi, LPVPenStyle::LPVPenSolid, 1, LPVColor::LPVYellow);</div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">((ILDrawable)roi).SetPenWidth(2);</div>
