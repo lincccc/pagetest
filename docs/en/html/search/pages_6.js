@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['play_20with_20demos_2896',['Play with DEMOs',['../how_to_play_with_demo.html',1,'']]]
+  ['play_20with_20demos_2924',['Play with DEMOs',['../how_to_play_with_demo.html',1,'']]]
 ];
