@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['快速上手_1456',['快速上手',['../quick_guide.html',1,'']]]
+  ['快速上手_1457',['快速上手',['../quick_guide.html',1,'']]]
 ];
