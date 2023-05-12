@@ -122,6 +122,8 @@ Public 成员函数</h2></td></tr>
 <tr class="separator:aa2e822142e0f2469812405d680e802a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a514aa54b0c95fce90cfde03ac4632d52"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_arc.html#a514aa54b0c95fce90cfde03ac4632d52">FromAnnulusSectorRegion</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_annulus_sector_region.html">ILAnnulusSectorRegion</a> *val)</td></tr>
 <tr class="separator:a514aa54b0c95fce90cfde03ac4632d52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cc6a14c4251a7c9180003258522adc1"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_arc.html#a6cc6a14c4251a7c9180003258522adc1">GetLength</a> ()</td></tr>
+<tr class="separator:a6cc6a14c4251a7c9180003258522adc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 属性</h2></td></tr>
@@ -433,7 +435,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
         </tr>
       </table>
 </div><div class="memdoc">
-<p>应用指定的变换矩阵到当前圆，得到一个新的圆。 对于仿射变换及射影变换，获得的新圆弧的所在圆形为变换结果的所在圆或椭圆的包围圆。 </p><dl class="params"><dt>参数</dt><dd>
+<p>应用指定的变换矩阵到当前圆弧，得到一个新的圆圆弧。 对于仿射变换及射影变换，获得的新圆弧的所在圆形为变换结果的所在圆或椭圆的包围圆。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">tf</td><td>变换矩阵 </td></tr>
   </table>
@@ -505,6 +507,29 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
       </table>
 </div><div class="memdoc">
 <p>根据输入的环状扇形区域对象，设置该圆弧的位置。 圆弧所在圆的圆心位置与环状扇形区域对象相同，半径为其内外半径的均值，起始和终止角度与该环状扇形区域相同 </p>
+
+</div>
+</div>
+<a id="a6cc6a14c4251a7c9180003258522adc1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cc6a14c4251a7c9180003258522adc1">&#9670;&nbsp;</a></span>GetLength()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double GetLength </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>计算和获取圆弧的长度 </p><dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">result</td><td>返回圆弧的长度 </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

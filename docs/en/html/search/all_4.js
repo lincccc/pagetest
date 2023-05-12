@@ -15,5 +15,6 @@ var searchData=
   ['excludeboundarymode_182',['ExcludeBoundaryMode',['../interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a53a770cb473e4565576f64d52faf7147',1,'LPVBlobLib::ILBlobAnalysis::ExcludeBoundaryMode()'],['../interface_l_p_v_locate_x_lib_1_1_i_l_contour_detector.html#a53a770cb473e4565576f64d52faf7147',1,'LPVLocateXLib::ILContourDetector::ExcludeBoundaryMode()'],['../interface_l_p_v_math_lib_1_1_i_l_data_blob_analysis.html#a53a770cb473e4565576f64d52faf7147',1,'LPVMathLib::ILDataBlobAnalysis::ExcludeBoundaryMode()']]],
   ['exectime_183',['ExecTime',['../interface_l_p_v_i_b_lib_1_1_i_l_i_b_algo_result.html#a1f1036be3b675234a51e93edbebfab25',1,'LPVIBLib::ILIBAlgoResult::ExecTime()'],['../interface_l_p_v_i_b_lib_1_1_i_l_i_b_task_result.html#a1f1036be3b675234a51e93edbebfab25',1,'LPVIBLib::ILIBTaskResult::ExecTime()']]],
   ['executetasksync_184',['ExecuteTaskSync',['../interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html#a518d1fb020e7ce59675f45dbdd95be1c',1,'LPVIBLib::ILIBService']]],
-  ['exposurefusion_185',['ExposureFusion',['../interface_l_p_v_img_proc_lib_1_1_i_l_h_d_r.html#a352c95095228a2a9d2ceb3988dad3487',1,'LPVImgProcLib::ILHDR']]]
+  ['expand_185',['Expand',['../interface_l_p_v_geom_x_lib_1_1_i_l_polygon_clipper.html#a8a1ce261e8e9a5d4e999994e85cce89b',1,'LPVGeomXLib::ILPolygonClipper']]],
+  ['exposurefusion_186',['ExposureFusion',['../interface_l_p_v_img_proc_lib_1_1_i_l_h_d_r.html#a352c95095228a2a9d2ceb3988dad3487',1,'LPVImgProcLib::ILHDR']]]
 ];

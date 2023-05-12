@@ -123,8 +123,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_gauge_lib_1_1_i_l_gauge.html#a3615212f39922132e005858aa7f038f4">KernelSize</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:a3615212f39922132e005858aa7f038f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">梯度滤波时滤波核的尺寸，在检测边缘时使用，需要是一个 ≥ 3 的奇数，如 3, 5, 7 等。 <br /></td></tr>
 <tr class="separator:a3615212f39922132e005858aa7f038f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afad2aa7828e45b84ec1f3f80f3787305"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0b">LPVPolarity</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_gauge_lib_1_1_i_l_gauge.html#afad2aa7828e45b84ec1f3f80f3787305">Polarity</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:afad2aa7828e45b84ec1f3f80f3787305"><td class="mdescLeft">&#160;</td><td class="mdescRight">检测的极性，目标或者边缘极性均可接受  <a href="interface_l_p_v_gauge_lib_1_1_i_l_gauge.html#afad2aa7828e45b84ec1f3f80f3787305">更多...</a><br /></td></tr>
+<tr class="memitem:afad2aa7828e45b84ec1f3f80f3787305"><td class="memItemLeft" align="right" valign="top"><a id="afad2aa7828e45b84ec1f3f80f3787305"></a>
+<a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0b">LPVPolarity</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_gauge_lib_1_1_i_l_gauge.html#afad2aa7828e45b84ec1f3f80f3787305">Polarity</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:afad2aa7828e45b84ec1f3f80f3787305"><td class="mdescLeft">&#160;</td><td class="mdescRight">检测的极性，目标或者边缘极性均可接受 <br /></td></tr>
 <tr class="separator:afad2aa7828e45b84ec1f3f80f3787305"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a659ae867dc0562c44d5e7e23e83451d1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_gauge_lib_1_1_i_l_gauge.html#a659ae867dc0562c44d5e7e23e83451d1">AcceptScore</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:a659ae867dc0562c44d5e7e23e83451d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">检测的分数阈值。用于删选所有结果中高于该阈值的作为有效卡点。可根据分数图表选择合适的阈值。  <a href="interface_l_p_v_gauge_lib_1_1_i_l_gauge.html#a659ae867dc0562c44d5e7e23e83451d1">更多...</a><br /></td></tr>
@@ -166,31 +167,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 <p>这是所有卡尺对象的基类，对于不同的卡尺类型，需选择不同的卡尺对象。 使用这个接口，需要创建一个卡尺对象，如:</p>
 <p><a class="el" href="interface_l_p_v_gauge_lib_1_1_i_l_line_gauge.html" title="该接口提供基于卡尺的直线检测功能。">ILLineGauge</a>, ILEdgeGauge, <a class="el" href="interface_l_p_v_gauge_lib_1_1_i_l_circle_gauge.html" title="该接口提供基于卡尺的圆检测功能。">ILCircleGauge</a>... </p>
 </div><h2 class="groupheader">属性说明</h2>
-<a id="afad2aa7828e45b84ec1f3f80f3787305"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afad2aa7828e45b84ec1f3f80f3787305">&#9670;&nbsp;</a></span>Polarity</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0b">LPVPolarity</a> Polarity</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>检测的极性，目标或者边缘极性均可接受 </p>
-<p><img src="gauge_polarity.png" alt="" class="inline"/> </p>
-
-</div>
-</div>
 <a id="a659ae867dc0562c44d5e7e23e83451d1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a659ae867dc0562c44d5e7e23e83451d1">&#9670;&nbsp;</a></span>AcceptScore</h2>
 
@@ -237,7 +213,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 </div><div class="memdoc">
 
 <p>如何排序候选卡点。若检测区域中有多于设定的卡点，需将候选卡点排序并取其前若干个作为结果。 </p>
-<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_gauge_lib_1_1_i_l_gauge.html#a26f44356f04bd288fad589b60d809608" title="单个卡点采样区域的最大卡点检出个数">MaxSamplePointCount</a>, #SortByDescending </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_gauge_lib_1_1_i_l_gauge.html#a26f44356f04bd288fad589b60d809608" title="单个卡点采样区域的最大卡点检出个数">MaxSamplePointCount</a>, <a class="el" href="interface_l_p_v_gauge_lib_1_1_i_l_gauge.html#a1706e62b4aa8ee8a5cd088273f7b8683" title="当 SortBy 启用 LPVGaugeFeatureScore 时生效 True 表示在分数上降序排序候选卡点（数值从大到小排序，即倾向于挑选梯度或灰度强度最大的卡点），False 表示升序。">SortByScoreDescending</a> </dd></dl>
 
 </div>
 </div>

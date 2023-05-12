@@ -138,12 +138,16 @@ Public 成员函数</h2></td></tr>
 <tr class="separator:acc3c71fa4a8320c095acb221a550f158"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0efe9b7b4a4a749ed8a5b29eba0072f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html#a0efe9b7b4a4a749ed8a5b29eba0072f9">FromPolyRegion</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_poly_region.html">ILPolyRegion</a> *val)</td></tr>
 <tr class="separator:a0efe9b7b4a4a749ed8a5b29eba0072f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf33fa7ec210792c3500aa8c93ad38be"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html#adf33fa7ec210792c3500aa8c93ad38be">GetPerimeter</a> ()</td></tr>
+<tr class="separator:adf33fa7ec210792c3500aa8c93ad38be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2e307c07602a79568d0f34806b35b0e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html#ac2e307c07602a79568d0f34806b35b0e">GetArea</a> ()</td></tr>
+<tr class="separator:ac2e307c07602a79568d0f34806b35b0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 属性</h2></td></tr>
 <tr class="memitem:a7b9cbfb18f88d1a71a729acc420777f6"><td class="memItemLeft" align="right" valign="top"><a id="a7b9cbfb18f88d1a71a729acc420777f6"></a>
 BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html#a7b9cbfb18f88d1a71a729acc420777f6">Closed</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a7b9cbfb18f88d1a71a729acc420777f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">当前多边形是否闭合 <br /></td></tr>
+<tr class="memdesc:a7b9cbfb18f88d1a71a729acc420777f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">多边形是否闭合 <br /></td></tr>
 <tr class="separator:a7b9cbfb18f88d1a71a729acc420777f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
@@ -796,6 +800,52 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
       </table>
 </div><div class="memdoc">
 <p>根据输入的多边形区域对象，设置该多边形的位置和顶点坐标。 </p>
+
+</div>
+</div>
+<a id="adf33fa7ec210792c3500aa8c93ad38be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf33fa7ec210792c3500aa8c93ad38be">&#9670;&nbsp;</a></span>GetPerimeter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double GetPerimeter </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>获取多边形的周长 </p><dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">val</td><td>返回多边形的周长 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac2e307c07602a79568d0f34806b35b0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2e307c07602a79568d0f34806b35b0e">&#9670;&nbsp;</a></span>GetArea()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double GetArea </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>获取多边形的面积。对于非闭合的多边形，将连接首尾形成闭合形状。 </p><dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">val</td><td>返回多边形的面积 </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
