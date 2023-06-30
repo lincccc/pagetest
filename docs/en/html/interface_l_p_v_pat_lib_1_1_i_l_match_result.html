@@ -104,6 +104,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a298cb1d21f02123b1b52dc1dd530e4e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98058a85e9a4aa79f4d360962de25d37"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match_result.html#a98058a85e9a4aa79f4d360962de25d37">Set</a> (<a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html">ILMatch</a> *matchObject, double patX, double patY, double patAngle, double patScale, double patScore)</td></tr>
 <tr class="separator:a98058a85e9a4aa79f4d360962de25d37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e235741c0ccaa5a43667f3e69e537d1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_points.html">ILPoints</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match_result.html#a9e235741c0ccaa5a43667f3e69e537d1">GetFeature</a> ()</td></tr>
+<tr class="separator:a9e235741c0ccaa5a43667f3e69e537d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
@@ -133,6 +135,14 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 <tr class="memdesc:a2ad72778af9c4d47541060a07e058329"><td class="mdescLeft">&#160;</td><td class="mdescRight">The y-coordinate scale of the result, in range of (0.5, 1.5) means 50% ~ 150% scaled based on the template.<br  />
 For isotropic scaling, <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match_result.html#a470e8b23a7c8f63149e2a3edfe305363" title="The x-coordinate scale of the result, in range of (0.5, 1.5) means 50% ~ 150% scaled based on the tem...">ScaleX</a> and <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match_result.html#a2ad72778af9c4d47541060a07e058329" title="The y-coordinate scale of the result, in range of (0.5, 1.5) means 50% ~ 150% scaled based on the tem...">ScaleY</a> are the same. For anisotropic scaling, <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match_result.html#a0976cb007ee40133c09b4485a717dd3f" title="The scale of the result, in range of (0.5, 1.5) means 50% ~ 150% scaled based on the template.">Scale</a> is the averaging of <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match_result.html#a470e8b23a7c8f63149e2a3edfe305363" title="The x-coordinate scale of the result, in range of (0.5, 1.5) means 50% ~ 150% scaled based on the tem...">ScaleX</a> and <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match_result.html#a2ad72778af9c4d47541060a07e058329" title="The y-coordinate scale of the result, in range of (0.5, 1.5) means 50% ~ 150% scaled based on the tem...">ScaleY</a>. <br /></td></tr>
 <tr class="separator:a2ad72778af9c4d47541060a07e058329"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab699091f2880b4dde869abea89c5d107"><td class="memItemLeft" align="right" valign="top"><a id="ab699091f2880b4dde869abea89c5d107"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match_result.html#ab699091f2880b4dde869abea89c5d107">ShapeScore</a><code> [get]</code></td></tr>
+<tr class="memdesc:ab699091f2880b4dde869abea89c5d107"><td class="mdescLeft">&#160;</td><td class="mdescRight">The shape score of the result. <br /></td></tr>
+<tr class="separator:ab699091f2880b4dde869abea89c5d107"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addf0902c0c1f9c167f6e276ede568fc5"><td class="memItemLeft" align="right" valign="top"><a id="addf0902c0c1f9c167f6e276ede568fc5"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match_result.html#addf0902c0c1f9c167f6e276ede568fc5">GrayScore</a><code> [get]</code></td></tr>
+<tr class="memdesc:addf0902c0c1f9c167f6e276ede568fc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The gray score of the result. Note: The gray score is always 0 when <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a8698837361cab3af9df6444df07cb5c9">GrayValueWeight</a> is set to 0. <br /></td></tr>
+<tr class="separator:addf0902c0c1f9c167f6e276ede568fc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This interface holds a single pattern matching result and is used to access its properties. </p>
@@ -277,6 +287,29 @@ For isotropic scaling, <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match
     <tr><td class="paramdir">[in]</td><td class="paramname">patAngle</td><td>The angle of the result. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">patScale</td><td>The scale of the result. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">patScore</td><td>The score of the result. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9e235741c0ccaa5a43667f3e69e537d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e235741c0ccaa5a43667f3e69e537d1">&#9670;&nbsp;</a></span>GetFeature()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_points.html">ILPoints</a>* GetFeature </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get the transformed feature points at the match result's position. </p><dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">featurePoints</td><td>Return the feature points. </td></tr>
   </table>
   </dd>
 </dl>

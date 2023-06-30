@@ -35,7 +35,7 @@ var searchData=
   ['getedgepair_278',['GetEdgePair',['../interface_l_p_v_gauge_lib_1_1_i_l_edge_gauge_result.html#abe2e8322b02ea7eff5cd072fcc7f1538',1,'LPVGaugeLib::ILEdgeGaugeResult']]],
   ['getendpoint_279',['GetEndPoint',['../interface_l_p_v_geom_lib_1_1_i_l_arc.html#abcc6c7a657d2b9467a43bade45b42c5b',1,'LPVGeomLib::ILArc']]],
   ['geterrmsg_280',['GetErrMsg',['../interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html#a7a82dfd725b4d9982a1eeb35fb68e463',1,'LPVIBLib::ILIBService']]],
-  ['getfeature_281',['GetFeature',['../interface_l_p_v_blob_lib_1_1_i_l_blob.html#ac9343a8f047843e973e61cb311f9023f',1,'LPVBlobLib::ILBlob::GetFeature()'],['../interface_l_p_v_locate_x_lib_1_1_i_l_contour_result.html#ab6f8cbeebe78a27168f4f3e330050187',1,'LPVLocateXLib::ILContourResult::GetFeature()'],['../interface_l_p_v_math_lib_1_1_i_l_data_blob.html#a176b9c2e64946f94763c3a481df41281',1,'LPVMathLib::ILDataBlob::GetFeature()'],['../interface_l_p_v_m_l_lib_1_1_i_l_classifier.html#a18095bd6a2fb13b0da10b24937d50472',1,'LPVMLLib::ILClassifier::GetFeature()']]],
+  ['getfeature_281',['GetFeature',['../interface_l_p_v_blob_lib_1_1_i_l_blob.html#ac9343a8f047843e973e61cb311f9023f',1,'LPVBlobLib::ILBlob::GetFeature()'],['../interface_l_p_v_locate_x_lib_1_1_i_l_contour_result.html#ab6f8cbeebe78a27168f4f3e330050187',1,'LPVLocateXLib::ILContourResult::GetFeature()'],['../interface_l_p_v_math_lib_1_1_i_l_data_blob.html#a176b9c2e64946f94763c3a481df41281',1,'LPVMathLib::ILDataBlob::GetFeature()'],['../interface_l_p_v_m_l_lib_1_1_i_l_classifier.html#a18095bd6a2fb13b0da10b24937d50472',1,'LPVMLLib::ILClassifier::GetFeature()'],['../interface_l_p_v_pat_lib_1_1_i_l_match_result.html#a9e235741c0ccaa5a43667f3e69e537d1',1,'LPVPatLib::ILMatchResult::GetFeature()']]],
   ['getfilterfeature_282',['GetFilterFeature',['../interface_l_p_v_blob_lib_1_1_i_l_blob_filter.html#a3d75d5f8f8f2bba3e5f3b81153a74f3e',1,'LPVBlobLib::ILBlobFilter']]],
   ['getflatfield_283',['GetFlatField',['../interface_l_p_v_calib_lib_1_1_i_l_flat_field.html#a71068be4b0b4b6e13fb538c25f06e028',1,'LPVCalibLib::ILFlatField']]],
   ['getglobalvariablevalue_284',['GetGlobalVariableValue',['../interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html#aefb57c86d795c089f008a5a1e7182271',1,'LPVIBLib::ILIBService']]],
@@ -83,10 +83,11 @@ var searchData=
   ['gradientfull_326',['GradientFull',['../interface_l_p_v_img_proc_lib_1_1_i_l_edge_filter.html#ad99747caf49275d3dfbec65dca9617ce',1,'LPVImgProcLib::ILEdgeFilter']]],
   ['gradienth_327',['GradientH',['../interface_l_p_v_img_proc_lib_1_1_i_l_edge_filter.html#aacc229992cc3ff19fe8a365be794eeff',1,'LPVImgProcLib::ILEdgeFilter']]],
   ['gradientv_328',['GradientV',['../interface_l_p_v_img_proc_lib_1_1_i_l_edge_filter.html#a2cf1dc9c1f52b9e10e4676e015b095aa',1,'LPVImgProcLib::ILEdgeFilter']]],
-  ['graytobgr_329',['GrayToBGR',['../interface_l_p_v_img_proc_lib_1_1_i_l_image_convert.html#aba17d8fbe10ef7feaf9d29cade8bc695',1,'LPVImgProcLib::ILImageConvert']]],
-  ['graytobgrcolor_330',['GrayToBGRColor',['../interface_l_p_v_img_proc_lib_1_1_i_l_image_convert.html#a124f8ce3b59b0f7eb25fe0f879334f6a',1,'LPVImgProcLib::ILImageConvert']]],
-  ['grayvalueweight_331',['GrayValueWeight',['../interface_l_p_v_pat_lib_1_1_i_l_match.html#a8698837361cab3af9df6444df07cb5c9',1,'LPVPatLib::ILMatch']]],
-  ['gridheight_332',['GridHeight',['../interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#ab374253d6ea33482e6c038396d35ce70',1,'LPVCalibLib::ILCalibBoard']]],
-  ['gridwidth_333',['GridWidth',['../interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#ae0dc69304ee0d7baffda597b48d919cc',1,'LPVCalibLib::ILCalibBoard']]],
-  ['guesspartialblock_334',['GuessPartialBlock',['../interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#aacd23f12482f7a78824ad5f3b2f5c21e',1,'LPVCalibLib::ILCalibBoard']]]
+  ['grayscore_329',['GrayScore',['../interface_l_p_v_pat_lib_1_1_i_l_match_result.html#addf0902c0c1f9c167f6e276ede568fc5',1,'LPVPatLib::ILMatchResult']]],
+  ['graytobgr_330',['GrayToBGR',['../interface_l_p_v_img_proc_lib_1_1_i_l_image_convert.html#aba17d8fbe10ef7feaf9d29cade8bc695',1,'LPVImgProcLib::ILImageConvert']]],
+  ['graytobgrcolor_331',['GrayToBGRColor',['../interface_l_p_v_img_proc_lib_1_1_i_l_image_convert.html#a124f8ce3b59b0f7eb25fe0f879334f6a',1,'LPVImgProcLib::ILImageConvert']]],
+  ['grayvalueweight_332',['GrayValueWeight',['../interface_l_p_v_pat_lib_1_1_i_l_match.html#a8698837361cab3af9df6444df07cb5c9',1,'LPVPatLib::ILMatch']]],
+  ['gridheight_333',['GridHeight',['../interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#ab374253d6ea33482e6c038396d35ce70',1,'LPVCalibLib::ILCalibBoard']]],
+  ['gridwidth_334',['GridWidth',['../interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#ae0dc69304ee0d7baffda597b48d919cc',1,'LPVCalibLib::ILCalibBoard']]],
+  ['guesspartialblock_335',['GuessPartialBlock',['../interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#aacd23f12482f7a78824ad5f3b2f5c21e',1,'LPVCalibLib::ILCalibBoard']]]
 ];

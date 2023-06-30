@@ -104,6 +104,8 @@ Public 成员函数</h2></td></tr>
 <tr class="separator:a298cb1d21f02123b1b52dc1dd530e4e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98058a85e9a4aa79f4d360962de25d37"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match_result.html#a98058a85e9a4aa79f4d360962de25d37">Set</a> (<a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html">ILMatch</a> *matchObject, double patX, double patY, double patAngle, double patScale, double patScore)</td></tr>
 <tr class="separator:a98058a85e9a4aa79f4d360962de25d37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e235741c0ccaa5a43667f3e69e537d1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_points.html">ILPoints</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match_result.html#a9e235741c0ccaa5a43667f3e69e537d1">GetFeature</a> ()</td></tr>
+<tr class="separator:a9e235741c0ccaa5a43667f3e69e537d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 属性</h2></td></tr>
@@ -133,6 +135,14 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 <tr class="memdesc:a2ad72778af9c4d47541060a07e058329"><td class="mdescLeft">&#160;</td><td class="mdescRight">该结果在 y 方向的缩放比例，在 (0.5, 1.5) 范围内表示相对与模板 50% ~ 150% 的缩放比例。<br  />
 对于等比例缩放，::ScaleX 与 <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match_result.html#a2ad72778af9c4d47541060a07e058329" title="该结果在 y 方向的缩放比例，在 (0.5, 1.5) 范围内表示相对与模板 50% ~ 150% 的缩放比例。 对于等比例缩放，::ScaleX 与 ScaleY 数值相同。对于非等比缩放，::Sca...">ScaleY</a> 数值相同。对于非等比缩放，::Scale 为 <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match_result.html#a470e8b23a7c8f63149e2a3edfe305363" title="该结果在 x 方向的缩放比例，在 (0.5, 1.5) 范围内表示相对与模板 50% ~ 150% 的缩放比例。 对于等比例缩放，::ScaleX 与 ScaleY 数值相同。对于非等比缩放，::Sca...">ScaleX</a> 和 <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match_result.html#a2ad72778af9c4d47541060a07e058329" title="该结果在 y 方向的缩放比例，在 (0.5, 1.5) 范围内表示相对与模板 50% ~ 150% 的缩放比例。 对于等比例缩放，::ScaleX 与 ScaleY 数值相同。对于非等比缩放，::Sca...">ScaleY</a> 的均值。 <br /></td></tr>
 <tr class="separator:a2ad72778af9c4d47541060a07e058329"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab699091f2880b4dde869abea89c5d107"><td class="memItemLeft" align="right" valign="top"><a id="ab699091f2880b4dde869abea89c5d107"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match_result.html#ab699091f2880b4dde869abea89c5d107">ShapeScore</a><code> [get]</code></td></tr>
+<tr class="memdesc:ab699091f2880b4dde869abea89c5d107"><td class="mdescLeft">&#160;</td><td class="mdescRight">该结果的形状匹配分数 <br /></td></tr>
+<tr class="separator:ab699091f2880b4dde869abea89c5d107"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addf0902c0c1f9c167f6e276ede568fc5"><td class="memItemLeft" align="right" valign="top"><a id="addf0902c0c1f9c167f6e276ede568fc5"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match_result.html#addf0902c0c1f9c167f6e276ede568fc5">GrayScore</a><code> [get]</code></td></tr>
+<tr class="memdesc:addf0902c0c1f9c167f6e276ede568fc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">该结果的灰度匹配分数。注意：当 <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a8698837361cab3af9df6444df07cb5c9">GrayValueWeight</a> 设置为 0 时，并不实际进行灰度匹配，因此灰度分数总为 0. <br /></td></tr>
+<tr class="separator:addf0902c0c1f9c167f6e276ede568fc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><p>该接口提供单个模板匹配结果，可获取其具体属性。 </p>
@@ -277,6 +287,29 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
     <tr><td class="paramdir">[in]</td><td class="paramname">patAngle</td><td>匹配结果的角度 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">patScale</td><td>匹配结果的缩放比例 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">patScore</td><td>匹配结果的分数 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9e235741c0ccaa5a43667f3e69e537d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e235741c0ccaa5a43667f3e69e537d1">&#9670;&nbsp;</a></span>GetFeature()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_points.html">ILPoints</a>* GetFeature </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>获取变换到当前匹配结果位置的模板特征点 </p><dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">featurePoints</td><td>返回特征点位置 </td></tr>
   </table>
   </dd>
 </dl>
