@@ -110,8 +110,12 @@ Public 成员函数</h2></td></tr>
 <tr class="separator:a4cdcc9b967df555bd98038fa44f077ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa46ca218a9645ab612f053303c2b9fed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_point.html">ILPoint</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_point_pairs.html#aa46ca218a9645ab612f053303c2b9fed">GetImagePoint</a> (int index)</td></tr>
 <tr class="separator:aa46ca218a9645ab612f053303c2b9fed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ca37b2ac7e7c2c41b81c3f7798b045b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_points.html">ILPoints</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_point_pairs.html#a3ca37b2ac7e7c2c41b81c3f7798b045b">GetImagePoints</a> ()</td></tr>
+<tr class="separator:a3ca37b2ac7e7c2c41b81c3f7798b045b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11be8e921485589271a25e220d15703e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_point.html">ILPoint</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_point_pairs.html#a11be8e921485589271a25e220d15703e">GetWorldPoint</a> (int index)</td></tr>
 <tr class="separator:a11be8e921485589271a25e220d15703e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9dbb52d63f2daadcbc8c69336b03eccb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_points.html">ILPoints</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_point_pairs.html#a9dbb52d63f2daadcbc8c69336b03eccb">GetWorldPoints</a> ()</td></tr>
+<tr class="separator:a9dbb52d63f2daadcbc8c69336b03eccb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_interface_l_p_v_core_lib_1_1_i_l_object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_interface_l_p_v_core_lib_1_1_i_l_object')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_object.html">ILObject</a></td></tr>
 <tr class="memitem:acc33f804a59dbd9a1f824ea51862aaa2 inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_object"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_object.html#acc33f804a59dbd9a1f824ea51862aaa2">Load</a> (BSTR filename)</td></tr>
 <tr class="separator:acc33f804a59dbd9a1f824ea51862aaa2 inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -351,6 +355,29 @@ Public 成员函数</h2></td></tr>
 
 </div>
 </div>
+<a id="a3ca37b2ac7e7c2c41b81c3f7798b045b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ca37b2ac7e7c2c41b81c3f7798b045b">&#9670;&nbsp;</a></span>GetImagePoints()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_points.html">ILPoints</a>* GetImagePoints </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>获取点对中所有的图像点。 </p><dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">imagePoint</td><td>返回所有图像点的点集 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a11be8e921485589271a25e220d15703e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a11be8e921485589271a25e220d15703e">&#9670;&nbsp;</a></span>GetWorldPoint()</h2>
 
@@ -375,6 +402,29 @@ Public 成员函数</h2></td></tr>
 <dl class="retval"><dt>返回值</dt><dd>
   <table class="retval">
     <tr><td class="paramname">worldPoint</td><td>返回点对中的物理点 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9dbb52d63f2daadcbc8c69336b03eccb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9dbb52d63f2daadcbc8c69336b03eccb">&#9670;&nbsp;</a></span>GetWorldPoints()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_points.html">ILPoints</a>* GetWorldPoints </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>获取点对中所有的物理点。 </p><dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">imagePoint</td><td>返回所有物理点的点集 </td></tr>
   </table>
   </dd>
 </dl>

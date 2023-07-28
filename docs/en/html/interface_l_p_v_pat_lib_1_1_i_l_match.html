@@ -154,7 +154,8 @@ The matching angle range is based on the bias and tolerance as \( AngleBias \pm 
 <tr class="separator:a89c9e21a723b9b597dd9a0d6e603c268"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3566610c7064816188077fe128c506e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#ad3566610c7064816188077fe128c506e">DetailLevel</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:ad3566610c7064816188077fe128c506e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Level of detail of the pattern template, in range of 0 ~ 1. By default, it's set to 0.5.<br  />
-Higher level indicates more details contained in the trained template, while it may introduce more noise and slow down the detection. After changing the level, you should re-train the template to take the effect.<br  />
+Higher level indicates more details contained in the trained template, while it may introduce more noise and slow down the detection.<br  />
+You should set the proper detail level firstly, then train the template via <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#aa2d7fce8c363465a0cbeb6a265fd36fb">Learn()</a>, since the template features should be re-extracted again in the training process.<br  />
 .  <a href="interface_l_p_v_pat_lib_1_1_i_l_match.html#ad3566610c7064816188077fe128c506e">More...</a><br /></td></tr>
 <tr class="separator:ad3566610c7064816188077fe128c506e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb20124963364a91ff986cab7acaf962"><td class="memItemLeft" align="right" valign="top"><a id="acb20124963364a91ff986cab7acaf962"></a>
@@ -461,7 +462,8 @@ The algorithm is real-time and of sub-pixel accuracy. Detection is based mainly 
       </table>
 </div><div class="memdoc">
 <p>Learn the pattern template features from the provided image. The template center can be modified later.<br  />
-The shape and polarity of the template features is described with the given shape region, adding a region produce a white-on-black shape while subtracting a region produce a black-on-white shape. </p><center><img src="pattern_shaperegion.png" alt="" class="inline"/> <img src="pattern_shaperegion.svg" alt="" style="pointer-events: none;" height="140px" class="inline"/></center> <dl class="params"><dt>Parameters</dt><dd>
+The shape and polarity of the template features is described with the given shape region, adding a region produce a white-on-black shape while subtracting a region produce a black-on-white shape.<br  />
+The feature points are extracted from the given shape region, thus not affected by <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#ad3566610c7064816188077fe128c506e" title="Level of detail of the pattern template, in range of 0 ~ 1. By default, it&#39;s set to 0....">DetailLevel</a>. </p><center><img src="pattern_shaperegion.png" alt="" class="inline"/> <img src="pattern_shaperegion.svg" alt="" style="pointer-events: none;" height="140px" class="inline"/></center> <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> The input image </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">region</td><td>The optional input region, to limit the region of pattern template on the input image. and also exclude some unwanted pixels and shape. </td></tr>
@@ -511,11 +513,12 @@ The shape and polarity of the template features is described with the given shap
       </table>
 </div><div class="memdoc">
 <p>Learn the pattern template features from the provided image. The template center can be modified later.<br  />
-The shape and polarity of the template features are extracted from the shape image if it's available. </p><dl class="params"><dt>Parameters</dt><dd>
+The shape and polarity of the template features are extracted from the shape image.<br  />
+The feature points are extracted from the given shape image, thus not affected by <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#ad3566610c7064816188077fe128c506e" title="Level of detail of the pattern template, in range of 0 ~ 1. By default, it&#39;s set to 0....">DetailLevel</a>. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> The input image </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">region</td><td>The optional input region, to limit the region of pattern template on the input image. and also exclude some unwanted pixels and shape. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">shapeImg</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> The optional shape image. It should have the same size as the image parameter. <div class="image">
+    <tr><td class="paramdir">[in]</td><td class="paramname">shapeImg</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> The shape image. It should have the same size as the image parameter. <div class="image">
 <img src="pattern_shapeimage.png" alt=""/>
 </div>
  </td></tr>
@@ -646,12 +649,14 @@ The template center indicates the report position of the matching result. For ex
 </div><div class="memdoc">
 
 <p>Level of detail of the pattern template, in range of 0 ~ 1. By default, it's set to 0.5.<br  />
-Higher level indicates more details contained in the trained template, while it may introduce more noise and slow down the detection. After changing the level, you should re-train the template to take the effect.<br  />
+Higher level indicates more details contained in the trained template, while it may introduce more noise and slow down the detection.<br  />
+You should set the proper detail level firstly, then train the template via <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#aa2d7fce8c363465a0cbeb6a265fd36fb">Learn()</a>, since the template features should be re-extracted again in the training process.<br  />
 . </p>
 <div class="image">
 <img src="pattern_detail.png" alt=""/>
 </div>
- 
+ <dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#aa2d7fce8c363465a0cbeb6a265fd36fb">Learn()</a> </dd></dl>
+
 </div>
 </div>
 </div><!-- contents -->

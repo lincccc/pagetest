@@ -154,7 +154,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 <tr class="separator:a89c9e21a723b9b597dd9a0d6e603c268"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3566610c7064816188077fe128c506e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#ad3566610c7064816188077fe128c506e">DetailLevel</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:ad3566610c7064816188077fe128c506e"><td class="mdescLeft">&#160;</td><td class="mdescRight">模板细节程度，取值范围为 0 ~ 1，默认设置为 0.5。<br  />
-数值越高，保留的细节越多，同时也可能引入更多的噪声，并影响算法的整体性能。 修改模板细节程度后，需重新训练模板以生效。<br  />
+数值越高，保留的细节越多，同时也可能引入更多的噪声，并影响算法的整体性能。 设置或修改模板细节程度后，需<b>重新</b>调用 <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#aa2d7fce8c363465a0cbeb6a265fd36fb">Learn()</a> 训练模板，特征点将在新的训练过程中按照细节程度重新提取。<br  />
  <a href="interface_l_p_v_pat_lib_1_1_i_l_match.html#ad3566610c7064816188077fe128c506e">更多...</a><br /></td></tr>
 <tr class="separator:ad3566610c7064816188077fe128c506e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb20124963364a91ff986cab7acaf962"><td class="memItemLeft" align="right" valign="top"><a id="acb20124963364a91ff986cab7acaf962"></a>
@@ -461,7 +461,8 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
       </table>
 </div><div class="memdoc">
 <p>训练模板，使用输入的图像。模板中心可根据需求修改。<br  />
-模板的形状和极性通过输入的形状区域来定义，添加区域（Add）生成黑色背景上的白色形状；减去区域（Subtract）生产白色背景上的黑色形状。 </p><center><img src="pattern_shaperegion.png" alt="" class="inline"/> <img src="pattern_shaperegion.svg" alt="" style="pointer-events: none;" height="140px" class="inline"/></center> <dl class="params"><dt>参数</dt><dd>
+模板的形状和极性通过输入的形状区域来定义，添加区域（Add）生成黑色背景上的白色形状；减去区域（Subtract）生产白色背景上的黑色形状。<br  />
+特征点通过给定的形状区域提取，不受 <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#ad3566610c7064816188077fe128c506e" title="模板细节程度，取值范围为 0 ~ 1，默认设置为 0.5。 数值越高，保留的细节越多，同时也可能引入更多的噪声，并影响算法的整体性能。 设置或修改模板细节程度后，需重新调用 Learn() 训练模板，特...">DetailLevel</a> 参数的影响。 </p><center><img src="pattern_shaperegion.png" alt="" class="inline"/> <img src="pattern_shaperegion.svg" alt="" style="pointer-events: none;" height="140px" class="inline"/></center> <dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> 输入的图像 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">region</td><td>输入的区域，用于限定模板在输入图像中的位置，并用于剔除形状中超出区域的部分。可为空。 </td></tr>
@@ -511,14 +512,14 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
       </table>
 </div><div class="memdoc">
 <p>训练模板，使用输入的图像。模板中心可根据需求修改。<br  />
-若形状图像不为空，则基于该图像提取模板的形状和极性。 </p><div class="image">
+特征点通过给定的形状图像提取提取模板的形状和极性，不受 <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#ad3566610c7064816188077fe128c506e" title="模板细节程度，取值范围为 0 ~ 1，默认设置为 0.5。 数值越高，保留的细节越多，同时也可能引入更多的噪声，并影响算法的整体性能。 设置或修改模板细节程度后，需重新调用 Learn() 训练模板，特...">DetailLevel</a> 参数的影响。 </p><div class="image">
 <img src="pattern_shapeimage.png" alt=""/>
 </div>
  <dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> 输入的图像 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">region</td><td>输入的区域，用于限定模板在输入图像中的位置，并用于剔除形状中超出区域的部分。可为空。 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">shapeImg</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> 输入的形状图像。该图像的尺寸需与 img 参数相同。可为空。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">shapeImg</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> 输入的形状图像。该图像的尺寸需与 img 参数相同。 </td></tr>
   </table>
   </dd>
 </dl>
@@ -646,12 +647,13 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 </div><div class="memdoc">
 
 <p>模板细节程度，取值范围为 0 ~ 1，默认设置为 0.5。<br  />
-数值越高，保留的细节越多，同时也可能引入更多的噪声，并影响算法的整体性能。 修改模板细节程度后，需重新训练模板以生效。<br  />
+数值越高，保留的细节越多，同时也可能引入更多的噪声，并影响算法的整体性能。 设置或修改模板细节程度后，需<b>重新</b>调用 <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#aa2d7fce8c363465a0cbeb6a265fd36fb">Learn()</a> 训练模板，特征点将在新的训练过程中按照细节程度重新提取。<br  />
 </p>
 <div class="image">
 <img src="pattern_detail.png" alt=""/>
 </div>
- 
+ <dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#aa2d7fce8c363465a0cbeb6a265fd36fb">Learn()</a> </dd></dl>
+
 </div>
 </div>
 </div><!-- contents -->
