@@ -1,18 +1,18 @@
 var searchData=
 [
-  ['dataaggtype_2866',['DataAggType',['../interface_l_p_v_math_lib_1_1_i_l_data_blob_analysis.html#a62aecce1e4e2ce856f17ea5c7b16d8e6',1,'LPVMathLib::ILDataBlobAnalysis']]],
-  ['datalist_2867',['DataList',['../interface_l_p_v_math_lib_1_1_i_l_data_blob.html#a2ad4974ecd0b73f2f030610b31cd0c81',1,'LPVMathLib::ILDataBlob']]],
-  ['datapointer_2868',['DataPointer',['../interface_l_p_v_core_lib_1_1_i_l_image.html#afbd1c0823b3d1d0e1978d44bc130a63d',1,'LPVCoreLib::ILImage']]],
-  ['datatype_2869',['DataType',['../interface_l_p_v_i_b_lib_1_1_i_l_i_b_data.html#a333795769673ccf6449fbe856e8254f5',1,'LPVIBLib::ILIBData']]],
-  ['decodedstring_2870',['DecodedString',['../interface_l_p_v_barcode_lib_1_1_i_l_barcode_result.html#a59620d43d89670eae4a16512bc2da45c',1,'LPVBarcodeLib::ILBarcodeResult']]],
-  ['detaillevel_2871',['DetailLevel',['../interface_l_p_v_pat_lib_1_1_i_l_match.html#ad3566610c7064816188077fe128c506e',1,'LPVPatLib::ILMatch']]],
-  ['dirfilterrate_2872',['DirFilterRate',['../interface_l_p_v_locate_x_lib_1_1_i_l_contour_result.html#a64c9f53524909438c231c93af25a3be1',1,'LPVLocateXLib::ILContourResult']]],
-  ['displayflags_2873',['DisplayFlags',['../interface_l_p_v_display_lib_1_1_i_l_display_common.html#a0b0398ff6fa618556f94bb816c03248c',1,'LPVDisplayLib::ILDisplayCommon']]],
-  ['distance_2874',['Distance',['../interface_l_p_v_gauge_lib_1_1_i_l_edge_gauge_result.html#a6412be701b91d83dd3b31ef5cd9710a2',1,'LPVGaugeLib::ILEdgeGaugeResult::Distance()'],['../interface_l_p_v_gauge_lib_1_1_i_l_edge_gauge.html#ac67c962277a84892b503cd7cdb6908c5',1,'LPVGaugeLib::ILEdgeGauge::Distance()']]],
-  ['distancetolerance_2875',['DistanceTolerance',['../interface_l_p_v_gauge_lib_1_1_i_l_edge_gauge.html#a2f1b7d7393ddff984fffd38f93a73df4',1,'LPVGaugeLib::ILEdgeGauge']]],
-  ['distortionmodel_2876',['DistortionModel',['../interface_l_p_v_calib_lib_1_1_i_l_calib_pin_hole.html#ad8e291a42fe62ac35a4545008635bef0',1,'LPVCalibLib::ILCalibPinHole']]],
-  ['dotgap_2877',['DotGap',['../interface_l_p_v_o_c_r_lib_1_1_i_l_o_c_r.html#aa02e46fb010a87b6d106a391009d6ce8',1,'LPVOCRLib::ILOCR']]],
-  ['dotprint_2878',['DotPrint',['../interface_l_p_v_o_c_r_lib_1_1_i_l_o_c_r.html#ad5af90e0ebda600fdfd26ee35edade71',1,'LPVOCRLib::ILOCR']]],
-  ['dotsize_2879',['DotSize',['../interface_l_p_v_o_c_r_lib_1_1_i_l_o_c_r.html#aec0924b3c7cda11ca445d50ca7ea97b2',1,'LPVOCRLib::ILOCR']]],
-  ['drawingenabled_2880',['DrawingEnabled',['../interface_l_p_v_display_lib_1_1_i_l_display_common.html#a3e88f1192a056072860d67d3844c0acd',1,'LPVDisplayLib::ILDisplayCommon']]]
+  ['dataaggtype_2868',['DataAggType',['../interface_l_p_v_math_lib_1_1_i_l_data_blob_analysis.html#a62aecce1e4e2ce856f17ea5c7b16d8e6',1,'LPVMathLib::ILDataBlobAnalysis']]],
+  ['datalist_2869',['DataList',['../interface_l_p_v_math_lib_1_1_i_l_data_blob.html#a2ad4974ecd0b73f2f030610b31cd0c81',1,'LPVMathLib::ILDataBlob']]],
+  ['datapointer_2870',['DataPointer',['../interface_l_p_v_core_lib_1_1_i_l_image.html#afbd1c0823b3d1d0e1978d44bc130a63d',1,'LPVCoreLib::ILImage']]],
+  ['datatype_2871',['DataType',['../interface_l_p_v_i_b_lib_1_1_i_l_i_b_data.html#a333795769673ccf6449fbe856e8254f5',1,'LPVIBLib::ILIBData']]],
+  ['decodedstring_2872',['DecodedString',['../interface_l_p_v_barcode_lib_1_1_i_l_barcode_result.html#a59620d43d89670eae4a16512bc2da45c',1,'LPVBarcodeLib::ILBarcodeResult']]],
+  ['detaillevel_2873',['DetailLevel',['../interface_l_p_v_pat_lib_1_1_i_l_match.html#ad3566610c7064816188077fe128c506e',1,'LPVPatLib::ILMatch']]],
+  ['dirfilterrate_2874',['DirFilterRate',['../interface_l_p_v_locate_x_lib_1_1_i_l_contour_result.html#a64c9f53524909438c231c93af25a3be1',1,'LPVLocateXLib::ILContourResult']]],
+  ['displayflags_2875',['DisplayFlags',['../interface_l_p_v_display_lib_1_1_i_l_display_common.html#a0b0398ff6fa618556f94bb816c03248c',1,'LPVDisplayLib::ILDisplayCommon']]],
+  ['distance_2876',['Distance',['../interface_l_p_v_gauge_lib_1_1_i_l_edge_gauge_result.html#a6412be701b91d83dd3b31ef5cd9710a2',1,'LPVGaugeLib::ILEdgeGaugeResult::Distance()'],['../interface_l_p_v_gauge_lib_1_1_i_l_edge_gauge.html#ac67c962277a84892b503cd7cdb6908c5',1,'LPVGaugeLib::ILEdgeGauge::Distance()']]],
+  ['distancetolerance_2877',['DistanceTolerance',['../interface_l_p_v_gauge_lib_1_1_i_l_edge_gauge.html#a2f1b7d7393ddff984fffd38f93a73df4',1,'LPVGaugeLib::ILEdgeGauge']]],
+  ['distortionmodel_2878',['DistortionModel',['../interface_l_p_v_calib_lib_1_1_i_l_calib_pin_hole.html#ad8e291a42fe62ac35a4545008635bef0',1,'LPVCalibLib::ILCalibPinHole']]],
+  ['dotgap_2879',['DotGap',['../interface_l_p_v_o_c_r_lib_1_1_i_l_o_c_r.html#aa02e46fb010a87b6d106a391009d6ce8',1,'LPVOCRLib::ILOCR']]],
+  ['dotprint_2880',['DotPrint',['../interface_l_p_v_o_c_r_lib_1_1_i_l_o_c_r.html#ad5af90e0ebda600fdfd26ee35edade71',1,'LPVOCRLib::ILOCR']]],
+  ['dotsize_2881',['DotSize',['../interface_l_p_v_o_c_r_lib_1_1_i_l_o_c_r.html#aec0924b3c7cda11ca445d50ca7ea97b2',1,'LPVOCRLib::ILOCR']]],
+  ['drawingenabled_2882',['DrawingEnabled',['../interface_l_p_v_display_lib_1_1_i_l_display_common.html#a3e88f1192a056072860d67d3844c0acd',1,'LPVDisplayLib::ILDisplayCommon']]]
 ];
