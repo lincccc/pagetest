@@ -20,7 +20,7 @@
     jax: ["input/TeX","output/HTML-CSS"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.7/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="lpv_stylesheet.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-custom.css" rel="stylesheet" type="text/css"/>
@@ -138,18 +138,26 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a63734a869140124d46e534ec5fbadde3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6aa20ebb5264ac83616ce57a100a7da0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_arithm.html#a6aa20ebb5264ac83616ce57a100a7da0">Sub</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img1, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img2, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *result)</td></tr>
 <tr class="separator:a6aa20ebb5264ac83616ce57a100a7da0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a102798855741d439b8903234884713a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_arithm.html#a102798855741d439b8903234884713a8">TileX</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image_list.html">ILImageList</a> *imgList, int columnCount, BOOL compactMode, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *result)</td></tr>
+<tr class="separator:a102798855741d439b8903234884713a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ee13ea45a863b3805c6d711be3b9672"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_arithm.html#a4ee13ea45a863b3805c6d711be3b9672">TileY</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image_list.html">ILImageList</a> *imgList, int rowCount, BOOL compactMode, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *result)</td></tr>
+<tr class="separator:a4ee13ea45a863b3805c6d711be3b9672"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f47cc18862bd892bae73e722c9443d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_arithm.html#a1f47cc18862bd892bae73e722c9443d4">Transform</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_transform.html">ILTransform</a> *tf, <a class="el" href="namespace_l_p_v_core_lib.html#a8994f6c3a4ba4e0d0e9a8eb78ac86c92">LPVInterpolationMethod</a> interMethod, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *result)</td></tr>
 <tr class="separator:a1f47cc18862bd892bae73e722c9443d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
+<tr class="memitem:a2e7696fb1229d15ab0022bafe882b69f"><td class="memItemLeft" align="right" valign="top"><a id="a2e7696fb1229d15ab0022bafe882b69f"></a>
+<a class="el" href="struct_l_p_v_core_lib_1_1_l_color.html">LColor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_arithm.html#a2e7696fb1229d15ab0022bafe882b69f">BGColor</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a2e7696fb1229d15ab0022bafe882b69f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The background color, used to fill the uncovered part in operation such as <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_arithm.html#a5a2cd12aabad596e032548b18af31928">Rotate()</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_arithm.html#a102798855741d439b8903234884713a8">TileX()</a>. By default, it's black. <br /></td></tr>
+<tr class="separator:a2e7696fb1229d15ab0022bafe882b69f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac665151de36f62491cbc143500cac3cd"><td class="memItemLeft" align="right" valign="top"><a id="ac665151de36f62491cbc143500cac3cd"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_arithm.html#ac665151de36f62491cbc143500cac3cd">ResultGain</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:ac665151de36f62491cbc143500cac3cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scale the final result of the operation with the gain value. It should be a positive value, by default, it's 1, aka no scale. <br /></td></tr>
+<tr class="memdesc:ac665151de36f62491cbc143500cac3cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scale the final result of the operation with the gain value. It should be a non-zero value, by default, it's 1, aka no scale. <br /></td></tr>
 <tr class="separator:ac665151de36f62491cbc143500cac3cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa89fd99d76e4f617802fdffabe63ef9a"><td class="memItemLeft" align="right" valign="top"><a id="aa89fd99d76e4f617802fdffabe63ef9a"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_arithm.html#aa89fd99d76e4f617802fdffabe63ef9a">ResultOffset</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:aa89fd99d76e4f617802fdffabe63ef9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The offset value added to the final result of the operation, after scaled by <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_arithm.html#ac665151de36f62491cbc143500cac3cd" title="Scale the final result of the operation with the gain value. It should be a positive value,...">ResultGain</a>. Default to 0, aka no offset. <br /></td></tr>
+<tr class="memdesc:aa89fd99d76e4f617802fdffabe63ef9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The offset value added to the final result of the operation, after scaled by <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_arithm.html#ac665151de36f62491cbc143500cac3cd" title="Scale the final result of the operation with the gain value. It should be a non-zero value,...">ResultGain</a>. Default to 0, aka no offset. <br /></td></tr>
 <tr class="separator:aa89fd99d76e4f617802fdffabe63ef9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -437,12 +445,12 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Flip an image horizontally or/and vertically. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Flip an image horizontally or/and vertically.<br  />
+If the pass-in result image object is empty, then we'll use the same size as the input. Otherwise, the original size is kept and the border pixels are filled with background color(default to black). </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>The input image </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">flipType</td><td>The type of flip </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>Return result image<br  />
-If the pass-in result image object is empty, then we'll use the same size as the input. Otherwise, the original size is kept. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>Return result image Otherwise, the original size is kept. </td></tr>
   </table>
   </dd>
 </dl>
@@ -868,14 +876,14 @@ If the pass-in result image object is empty, then we'll use the same size as the
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Resize an image by the given scale factor, using the image center as the pivot point. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Resize an image by the given scale factor, using the image center as the pivot point.<br  />
+If the pass-in result image object is empty, then we'll use the same size as the input. Otherwise, the original size is kept and the border pixels are filled with background color(default to black). </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>The input image </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">zoomX</td><td>Factor for zooming in or out in the x-coordinate direction. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">zoomY</td><td>Factor for zooming in or out in the y-coordinate direction. Setting to 0 means same zoom factor as zoomX, aka. isotropic scaling. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">interMethod</td><td>The interpolation method used in resizing </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>Return result image<br  />
-If the pass-in result image object is empty, then we'll use the scaled size based on the input. Otherwise, the original size is kept. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>Return result image </td></tr>
   </table>
   </dd>
 </dl>
@@ -926,7 +934,8 @@ If the pass-in result image object is empty, then we'll use the scaled size base
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Resize an image to the given new size. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Resize an image to the given new size.<br  />
+If the pass-in result image object is empty, then we'll use the same size as the input. Otherwise, the original size is kept and the border pixels are filled with background color(default to black). </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>The input image </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">w</td><td>The width of the new size </td></tr>
@@ -978,13 +987,12 @@ If the pass-in result image object is empty, then we'll use the scaled size base
       </table>
 </div><div class="memdoc">
 <p>Rotate an image by the given degree clockwise, using the image center as the pivot point.<br  />
-Out-of-image-bounds pixels are black. </p><dl class="params"><dt>Parameters</dt><dd>
+If the pass-in result image object is empty, then we'll use the same size as the input. Otherwise, the original size is kept and the border pixels are filled with background color(default to black). </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>The input image </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">angle</td><td>The rotation angle </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">interMethod</td><td>The interpolation method used in rotation </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>Return result image<br  />
-If the pass-in result image object is empty, then we'll use the same size as the input. Otherwise, the original size is kept. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>Return result image </td></tr>
   </table>
   </dd>
 </dl>
@@ -1066,7 +1074,7 @@ If the pass-in result image object is empty, then we'll use the same size as the
       </table>
 </div><div class="memdoc">
 <p>Scale and rotate an image, using the user-defined pivot points.<br  />
-Out-of-image-bounds pixels are black. </p><dl class="params"><dt>Parameters</dt><dd>
+If the pass-in result image object is empty, then we'll use the same size as the input. Otherwise, the original size is kept and the border pixels are filled with background color(default to black). </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>The input image </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">angle</td><td>The clockwise rotation angle in degrees </td></tr>
@@ -1077,8 +1085,7 @@ Out-of-image-bounds pixels are black. </p><dl class="params"><dt>Parameters</dt>
     <tr><td class="paramdir">[in]</td><td class="paramname">pivotResultX</td><td>The x-coordinate of the pivot point on the result image. It's the "same" pixel as the pivot point in the input image. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">pivotResultY</td><td>The y-coordinate of the pivot point on the result image. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">interMethod</td><td>The interpolation method used in resizing </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>Return result image<br  />
-If the pass-in result image object is empty, then we'll use the same size as the input. Otherwise, the original size is kept. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>Return result image </td></tr>
   </table>
   </dd>
 </dl>
@@ -1128,6 +1135,106 @@ If the pass-in result image object is empty, then we'll use the same size as the
 
 </div>
 </div>
+<a id="a102798855741d439b8903234884713a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a102798855741d439b8903234884713a8">&#9670;&nbsp;</a></span>TileX()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TileX </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image_list.html">ILImageList</a> *&#160;</td>
+          <td class="paramname"><em>imgList</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>columnCount</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BOOL&#160;</td>
+          <td class="paramname"><em>compactMode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Tile a list of images into a large image horizontally. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">imgList</td><td>The input image list </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">columnCount</td><td>The number of images in one row. Pass in 0 or negative value to tile into one line.<br  />
+If the total count of the inputs is not a multiple of the specified column count, the last row are filled with background color. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">compactMode</td><td>In compact mode(True), images of different sizes in a horizontal row are copied contiguously. Otherwise(False), result size is determined by the maximum width and height, and the smaller images are copied to the center of the respective tile. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>Output the result image. Example: snippets/TileImage.cpp, snippets/TileImage.cs </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4ee13ea45a863b3805c6d711be3b9672"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ee13ea45a863b3805c6d711be3b9672">&#9670;&nbsp;</a></span>TileY()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TileY </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image_list.html">ILImageList</a> *&#160;</td>
+          <td class="paramname"><em>imgList</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>rowCount</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BOOL&#160;</td>
+          <td class="paramname"><em>compactMode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Tile a list of images into a large image vertically. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">imgList</td><td>The input image list </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rowCount</td><td>The number of images in one column. Pass in 0 or negative value to tile into one line.<br  />
+If the total count of the inputs is not a multiple of the specified row count, the last column are filled with background color. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">compactMode</td><td>In compact mode(True), images of different sizes in a vertical column are copied contiguously. Otherwise(False), result size is determined by the maximum width and height, and the smaller images are copied to the center of the respective tile. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>Output the result image. Example: snippets/TileImage.cpp, snippets/TileImage.cs </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a1f47cc18862bd892bae73e722c9443d4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1f47cc18862bd892bae73e722c9443d4">&#9670;&nbsp;</a></span>Transform()</h2>
 
@@ -1165,7 +1272,8 @@ If the pass-in result image object is empty, then we'll use the same size as the
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Transform the image via the given transformation and return a new image </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Transform the image via the given transformation and return a new image.<br  />
+If the pass-in result image object is empty, then we'll use the same size as the input. Otherwise, the original size is kept and the border pixels are filled with background color(default to black). </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>The input image. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">tf</td><td>The transformation. </td></tr>

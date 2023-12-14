@@ -138,18 +138,26 @@ Public 成员函数</h2></td></tr>
 <tr class="separator:a63734a869140124d46e534ec5fbadde3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6aa20ebb5264ac83616ce57a100a7da0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_arithm.html#a6aa20ebb5264ac83616ce57a100a7da0">Sub</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img1, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img2, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *result)</td></tr>
 <tr class="separator:a6aa20ebb5264ac83616ce57a100a7da0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a102798855741d439b8903234884713a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_arithm.html#a102798855741d439b8903234884713a8">TileX</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image_list.html">ILImageList</a> *imgList, int columnCount, BOOL compactMode, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *result)</td></tr>
+<tr class="separator:a102798855741d439b8903234884713a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ee13ea45a863b3805c6d711be3b9672"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_arithm.html#a4ee13ea45a863b3805c6d711be3b9672">TileY</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image_list.html">ILImageList</a> *imgList, int rowCount, BOOL compactMode, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *result)</td></tr>
+<tr class="separator:a4ee13ea45a863b3805c6d711be3b9672"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f47cc18862bd892bae73e722c9443d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_arithm.html#a1f47cc18862bd892bae73e722c9443d4">Transform</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_transform.html">ILTransform</a> *tf, <a class="el" href="namespace_l_p_v_core_lib.html#a8994f6c3a4ba4e0d0e9a8eb78ac86c92">LPVInterpolationMethod</a> interMethod, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *result)</td></tr>
 <tr class="separator:a1f47cc18862bd892bae73e722c9443d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 属性</h2></td></tr>
+<tr class="memitem:a2e7696fb1229d15ab0022bafe882b69f"><td class="memItemLeft" align="right" valign="top"><a id="a2e7696fb1229d15ab0022bafe882b69f"></a>
+<a class="el" href="struct_l_p_v_core_lib_1_1_l_color.html">LColor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_arithm.html#a2e7696fb1229d15ab0022bafe882b69f">BGColor</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a2e7696fb1229d15ab0022bafe882b69f"><td class="mdescLeft">&#160;</td><td class="mdescRight">背景色，用于填充计算过程中未覆盖的像素，如 <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_arithm.html#a5a2cd12aabad596e032548b18af31928">Rotate()</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_arithm.html#a102798855741d439b8903234884713a8">TileX()</a>。默认设置为黑色。 <br /></td></tr>
+<tr class="separator:a2e7696fb1229d15ab0022bafe882b69f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac665151de36f62491cbc143500cac3cd"><td class="memItemLeft" align="right" valign="top"><a id="ac665151de36f62491cbc143500cac3cd"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_arithm.html#ac665151de36f62491cbc143500cac3cd">ResultGain</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:ac665151de36f62491cbc143500cac3cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">对运算结果进行增益，放大或缩小数值分布范围。需要是一个正数，默认值为 1，即不缩放。 <br /></td></tr>
+<tr class="memdesc:ac665151de36f62491cbc143500cac3cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">对运算结果进行增益，放大或缩小数值分布范围。需要是一个非零值，默认值为 1，即不缩放。 <br /></td></tr>
 <tr class="separator:ac665151de36f62491cbc143500cac3cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa89fd99d76e4f617802fdffabe63ef9a"><td class="memItemLeft" align="right" valign="top"><a id="aa89fd99d76e4f617802fdffabe63ef9a"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_arithm.html#aa89fd99d76e4f617802fdffabe63ef9a">ResultOffset</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:aa89fd99d76e4f617802fdffabe63ef9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">将运算结果加上偏移值，在增益 <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_arithm.html#ac665151de36f62491cbc143500cac3cd" title="对运算结果进行增益，放大或缩小数值分布范围。需要是一个正数，默认值为 1，即不缩放。">ResultGain</a> 之后进行。默认值为 1，即无偏移。 <br /></td></tr>
+<tr class="memdesc:aa89fd99d76e4f617802fdffabe63ef9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">将运算结果加上偏移值，在增益 <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_arithm.html#ac665151de36f62491cbc143500cac3cd" title="对运算结果进行增益，放大或缩小数值分布范围。需要是一个非零值，默认值为 1，即不缩放。">ResultGain</a> 之后进行。默认值为 1，即无偏移。 <br /></td></tr>
 <tr class="separator:aa89fd99d76e4f617802fdffabe63ef9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
@@ -437,12 +445,12 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
         </tr>
       </table>
 </div><div class="memdoc">
-<p>水平或垂直翻转一个图像。 </p><dl class="params"><dt>参数</dt><dd>
+<p>水平或垂直翻转一个图像。<br  />
+若指定的结果图像对象为空图像，则生成和输入图像尺寸相同的图像。 否则，将保持结果图像的尺寸，超出图像范围的像素设为背景像素（默认为黑色）。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>输入图像 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">flipType</td><td>翻转方式 </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>输出结果图像<br  />
-若指定的结果图像对象为空图像，则生成和输入图像尺寸相同的图像。 否则，将保持结果图像的尺寸。 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>输出结果图像 </td></tr>
   </table>
   </dd>
 </dl>
@@ -868,14 +876,14 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
         </tr>
       </table>
 </div><div class="memdoc">
-<p>缩放输入图像，按照给定的缩放比例。 </p><dl class="params"><dt>参数</dt><dd>
+<p>缩放输入图像，按照给定的缩放比例。<br  />
+若指定的结果图像对象为空图像，则生成和输入图像尺寸相同的图像。 否则，将保持结果图像的尺寸，超出图像范围的像素设为背景像素（默认为黑色）。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>输入图像 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">zoomX</td><td>x 方向的缩放比例 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">zoomY</td><td>y 方向的缩放比例 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">interMethod</td><td>插值方法 </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>输出结果图像<br  />
-若指定的结果图像对象为空图像，则生成基于输入图像尺寸缩放的图像。 否则，将保持结果图像的尺寸。 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>输出结果图像 </td></tr>
   </table>
   </dd>
 </dl>
@@ -926,7 +934,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
         </tr>
       </table>
 </div><div class="memdoc">
-<p>缩放输入图像到指定的尺寸 </p><dl class="params"><dt>参数</dt><dd>
+<p>缩放输入图像到指定的尺寸。<br  />
+若指定的结果图像对象为空图像，则生成和输入图像尺寸相同的图像。 否则，将保持结果图像的尺寸，超出图像范围的像素设为背景像素（默认为黑色）。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>输入图像 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">w</td><td>输出图像的宽度 </td></tr>
@@ -978,13 +987,12 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
       </table>
 </div><div class="memdoc">
 <p>顺时针旋转输入图像，输出一个新图像，使用图像中心作为旋转中心。<br  />
-超出图像范围的像素设为黑像素。 </p><dl class="params"><dt>参数</dt><dd>
+若指定的结果图像对象为空图像，则生成和输入图像尺寸相同的图像。 否则，将保持结果图像的尺寸，超出图像范围的像素设为背景像素（默认为黑色）。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>输入图像 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">angle</td><td>旋转角度 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">interMethod</td><td>插值方法 </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>输出结果图像<br  />
-若指定的结果图像对象为空图像，则生成和输入图像尺寸相同的图像。 否则，将保持结果图像的尺寸。 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>输出结果图像 </td></tr>
   </table>
   </dd>
 </dl>
@@ -1066,7 +1074,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
       </table>
 </div><div class="memdoc">
 <p>缩放和旋转输入图像，使用用户指定的锚点。<br  />
-超出图像范围的像素设为黑像素。 </p><dl class="params"><dt>参数</dt><dd>
+若指定的结果图像对象为空图像，则生成和输入图像尺寸相同的图像。 否则，将保持结果图像的尺寸，超出图像范围的像素设为背景像素（默认为黑色）。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>输入图像 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">angle</td><td>顺时针旋转角度 </td></tr>
@@ -1077,8 +1085,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
     <tr><td class="paramdir">[in]</td><td class="paramname">pivotResultX</td><td>结果图像上的锚点的 x 坐标。该锚点位置上的像素与输入图像锚点位置上的像素为“同一个”。 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">pivotResultY</td><td>结果图像上的锚点的 y 坐标。 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">interMethod</td><td>插值方法 </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>输出结果图像<br  />
-若指定的结果图像对象为空图像，则生成和输入图像尺寸相同的图像。 否则，将保持结果图像的尺寸。 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>输出结果图像 </td></tr>
   </table>
   </dd>
 </dl>
@@ -1128,6 +1135,108 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 
 </div>
 </div>
+<a id="a102798855741d439b8903234884713a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a102798855741d439b8903234884713a8">&#9670;&nbsp;</a></span>TileX()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TileX </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image_list.html">ILImageList</a> *&#160;</td>
+          <td class="paramname"><em>imgList</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>columnCount</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BOOL&#160;</td>
+          <td class="paramname"><em>compactMode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>水平平铺一组图像，合成一张大尺寸图像 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>输入的图像队列 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">columnCount</td><td>每行的图像个数。若队列中的图像总数不被整除，则最后一行的剩余像素将被填充为背景色。<br  />
+传入 0 或负数，用于生成单行的合成图像。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">compactMode</td><td>在紧凑模式下（True），一行中的图像被紧密地连续排布。 否则（False），结果图像的尺寸由输入图像中的最大长宽决定，其中较小的图像将被放置在对应行列的中心。 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>输出结果图像</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Example: snippets/TileImage.cpp, snippets/TileImage.cs </p>
+
+</div>
+</div>
+<a id="a4ee13ea45a863b3805c6d711be3b9672"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ee13ea45a863b3805c6d711be3b9672">&#9670;&nbsp;</a></span>TileY()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TileY </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image_list.html">ILImageList</a> *&#160;</td>
+          <td class="paramname"><em>imgList</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>rowCount</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BOOL&#160;</td>
+          <td class="paramname"><em>compactMode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>垂直平铺一组图像，合成一张大尺寸图像 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>输入的图像队列 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rowCount</td><td>每列的图像个数。若队列中的图像总数不被整除，则最后一列的剩余像素将被填充为背景色。<br  />
+传入 0 或负数，用于生成单列的合成图像。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">compactMode</td><td>在紧凑模式下（True），一行中的图像被紧密地连续排布。 否则（False），结果图像的尺寸由输入图像中的最大长宽决定，其中较小的图像将被放置在对应行列的中心。 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>输出结果图像</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Example: snippets/TileImage.cpp, snippets/TileImage.cs </p>
+
+</div>
+</div>
 <a id="a1f47cc18862bd892bae73e722c9443d4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1f47cc18862bd892bae73e722c9443d4">&#9670;&nbsp;</a></span>Transform()</h2>
 
@@ -1165,7 +1274,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
         </tr>
       </table>
 </div><div class="memdoc">
-<p>应用指定的变换矩阵到输入图像，得到一个新的图像 </p><dl class="params"><dt>参数</dt><dd>
+<p>应用指定的变换矩阵到输入图像，得到一个新的图像。<br  />
+若指定的结果图像对象为空图像，则生成和输入图像尺寸相同的图像。 否则，将保持结果图像的尺寸，超出图像范围的像素设为背景像素（默认为黑色）。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>输入图像 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">tf</td><td>变换矩阵 </td></tr>

@@ -20,7 +20,7 @@
     jax: ["input/TeX","output/HTML-CSS"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.7/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="lpv_stylesheet.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-custom.css" rel="stylesheet" type="text/css"/>
@@ -87,7 +87,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>This interface defines a list of <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">LImage</a> object.  
+<p>This interface defines a list of images.  
  <a href="interface_l_p_v_core_lib_1_1_i_l_image_list.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for ILImageList:</div>
@@ -118,10 +118,18 @@ For example, if set to 16, it means we maintain a image cache of 16 size in the 
 If more than the setting number of images are pushed into the list, the earlier ones will be popped.<br  />
 By default, it's 0, means no limitation. <br /></td></tr>
 <tr class="separator:af98b71a5ec504565e5456260acbd9ee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae37f3680fc57337cfb68817d1318e38d"><td class="memItemLeft" align="right" valign="top"><a id="ae37f3680fc57337cfb68817d1318e38d"></a>
+BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image_list.html#ae37f3680fc57337cfb68817d1318e38d">SameSize</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:ae37f3680fc57337cfb68817d1318e38d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether to uniform the image size in the list. By default, it's on. Using the first input size as baseline, we'll check the size of every subsequent inputs. If the size does not match, crop the input with the center aligned. The entire list is cleaned up, when the option is changed. <br /></td></tr>
+<tr class="separator:ae37f3680fc57337cfb68817d1318e38d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75ffdfc69b1a3dd711a2eaa55ef6f6bc"><td class="memItemLeft" align="right" valign="top"><a id="a75ffdfc69b1a3dd711a2eaa55ef6f6bc"></a>
+BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image_list.html#a75ffdfc69b1a3dd711a2eaa55ef6f6bc">UseCache</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a75ffdfc69b1a3dd711a2eaa55ef6f6bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether to maintain a size-fixed image cache, which makes a copy of the input <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">LImage</a> object's data block. It is useful when you don't want to take care of the image data's life cycle. By default, it's off. The entire list is cleaned up, when the option is changed. <br /></td></tr>
+<tr class="separator:a75ffdfc69b1a3dd711a2eaa55ef6f6bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This interface defines a list of <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">LImage</a> object. </p>
-<p>It maintains a cache of a pre-defined size to store grabbed frames, then used in multi-frame blending, HRD or image stitching tasks.</p>
+<div class="textblock"><p>This interface defines a list of images. </p>
+<p>The list of images are usually used in multi-frame blending, HRD or image stitching tasks. It may also maintain a size-fixed cache to the store grabbed frames.</p>
 <p>To use this interface, you should create a <a class="el" href="class_l_p_v_core_lib_1_1_l_image_list.html">LImageList</a> object.</p>
 <h3>Example Code </h3>
  <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">ILImageListPtr img_list(__uuidof(LImageList));</div>

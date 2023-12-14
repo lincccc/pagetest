@@ -87,7 +87,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>该接口类定义了一个图像队列，用于存储<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">LImage</a>对象。  
+<p>该接口类定义了一个图像队列。  
  <a href="interface_l_p_v_core_lib_1_1_i_l_image_list.html#details">更多...</a></p>
 <div class="dynheader">
 类 ILImageList 继承关系图:</div>
@@ -117,10 +117,18 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 比如设置为 16 表示将保持 16 张图像的缓存。若超出该数量的图像被添加到该队列中，更早的图像将被丢弃。<br  />
 默认设置为 0，表示无限制。 <br /></td></tr>
 <tr class="separator:af98b71a5ec504565e5456260acbd9ee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae37f3680fc57337cfb68817d1318e38d"><td class="memItemLeft" align="right" valign="top"><a id="ae37f3680fc57337cfb68817d1318e38d"></a>
+BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image_list.html#ae37f3680fc57337cfb68817d1318e38d">SameSize</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:ae37f3680fc57337cfb68817d1318e38d"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否保持图像尺寸一致。这个配置默认开启。 以输入的第一张图像尺寸为基准，检查后续输入的所有图像尺寸，若尺寸不一致，则进行中心对齐的裁剪。 这个配置修改后，整个图像队列将被重置清空。 <br /></td></tr>
+<tr class="separator:ae37f3680fc57337cfb68817d1318e38d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75ffdfc69b1a3dd711a2eaa55ef6f6bc"><td class="memItemLeft" align="right" valign="top"><a id="a75ffdfc69b1a3dd711a2eaa55ef6f6bc"></a>
+BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image_list.html#a75ffdfc69b1a3dd711a2eaa55ef6f6bc">UseCache</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a75ffdfc69b1a3dd711a2eaa55ef6f6bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否开启图像缓存。这个配置默认关闭。 开启图像缓存后，将总是拷贝输入的 <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">LImage</a> 对象的图像数据，由内部管理数据的生命周期，用户无需额外保存该图像数据块。 这个配置修改后，整个图像队列将被重置清空。 <br /></td></tr>
+<tr class="separator:a75ffdfc69b1a3dd711a2eaa55ef6f6bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
-<div class="textblock"><p>该接口类定义了一个图像队列，用于存储<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">LImage</a>对象。 </p>
-<p>维护了一个预设长度的缓存池用于存储相机拍摄的多帧图像，后续可用于多帧融合、HDR或图像拼接等任务。</p>
+<div class="textblock"><p>该接口类定义了一个图像队列。 </p>
+<p>图像队列通常用于多帧融合、HDR或图像拼接等任务。 也可用于维护一个预设长度的缓存池，用于存储相机拍摄的多帧图像。</p>
 <p>使用这个接口，需要创建一个 <a class="el" href="class_l_p_v_core_lib_1_1_l_image_list.html">LImageList</a> 对象。</p>
 <h3>示例代码 </h3>
  <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">ILImageListPtr img_list(__uuidof(LImageList));</div>
