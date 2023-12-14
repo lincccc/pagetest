@@ -548,7 +548,7 @@ If copyData is set to True, we'll copy the content into the buffer owned by the 
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Change the size of image to provided size, and set all pixels to 0. If the image is already of the same, we keep the old data. Pass in 0 width or 0 height to reset the image to be empty. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Change the size of image to provided size. The pixel values are undefined. You may set them all to 0 or other preferred value via <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html#a6cfd9dbc70b93a0b757f849763326d0d">SetTo()</a> or <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html#a8a20e7ed2f207a332528a802b87def8e">SetToColor()</a>. If the image is already of the same, we keep the old data. Pass in 0 width or 0 height to reset the image to be empty. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">w</td><td>Required image width. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">h</td><td>Required image height. </td></tr>
