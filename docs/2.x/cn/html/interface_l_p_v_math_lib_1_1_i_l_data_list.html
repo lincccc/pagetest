@@ -187,7 +187,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 <div class="line">dataList.Add(4);</div>
 <div class="line"><span class="keywordtype">double</span> meanValue = dataList.Metric[<a class="code" href="namespace_l_p_v_core_lib.html#a044b4c1019ab24bd62eed3e7fd764b85">LPVAggregation</a>.LPVAggMax];</div>
 <div class="line"><span class="keywordtype">double</span> majorValue = dataList.Metric[<a class="code" href="namespace_l_p_v_core_lib.html#a044b4c1019ab24bd62eed3e7fd764b85">LPVAggregation</a>.LPVAggMajor];</div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html_a044b4c1019ab24bd62eed3e7fd764b85"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a044b4c1019ab24bd62eed3e7fd764b85">LPVCoreLib::LPVAggregation</a></div><div class="ttdeci">LPVAggregation</div><div class="ttdoc">数值统计的方式</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:959</div></div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a044b4c1019ab24bd62eed3e7fd764b85"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a044b4c1019ab24bd62eed3e7fd764b85">LPVCoreLib::LPVAggregation</a></div><div class="ttdeci">LPVAggregation</div><div class="ttdoc">数值统计的方式</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:971</div></div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='com' style='display: none;'>COM</div><div class='toggleable_div label_com' style='display: none;'> <div class="fragment"><div class="line">ILDataListPtr dataList(__uuidof(LDataList));</div>
 <div class="line">dataList-&gt;Add(1.1);</div>
 <div class="line">dataList-&gt;Add(2.3);</div>
@@ -303,10 +303,11 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
     <tr><td class="paramdir">[in]</td><td class="paramname">hdc</td><td>绘制设备，可为窗口、位图等的上下文句柄。 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">drawFlags</td><td>用于控制绘制的内容，查看 LPVChartDrawFlags。 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">xGridStep</td><td>绘制 x 轴的步长，默认设置为 0，表示按照分数曲线数据自动选择合适的步长。 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">yGridStep</td><td>绘制 y 轴的步长，默认设置为 0，表示按照分数曲线数据自动选择合适的步长。 <b>注：</b>该函数在 Linux / MacOS 平台暂不可用。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">yGridStep</td><td>绘制 y 轴的步长，默认设置为 0，表示按照分数曲线数据自动选择合适的步长。 </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section remark"><dt>备注</dt><dd>该函数在 Linux / MacOS 平台暂不可用。 </dd></dl>
 
 </div>
 </div>

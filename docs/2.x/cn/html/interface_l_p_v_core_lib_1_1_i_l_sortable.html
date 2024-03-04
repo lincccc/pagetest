@@ -146,7 +146,7 @@ Public 成员函数</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><p>该接口类用于表示一个可排序对象。 </p>
 <p>所有实现了该接口的 LPV 类，都用可以使用 <a class="el" href="interface_l_p_v_geom_x_lib_1_1_i_l_sorter.html">LSorter</a> 进行排序。 排序结果记录在 <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_sortable.html#a075e1e3c9dd399cef584d7338cc37938">Index</a> 中。</p>
-<p>以下列出了所有实现该接口的可排序 LPV 类。</p>
+<p>以下列出了一些实现该接口的可排序 LPV 类。</p>
 <table class="markdownTable">
 <tr>
 <td><a class="el" href="namespace_l_p_v_core_lib.html" title="LPV 基础模块，提供图像、检测区域、绘制等基础功能。">LPVCoreLib</a></td><td><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_rect_region.html">LRectRegion</a>, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_rot_rect_region.html">LRotRectRegion</a>, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_circle_region.html">LCircleRegion</a>, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_poly_region.html">LPolyRegion</a>, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_mask_region.html">LMaskRegion</a>, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_annulus_region.html">LAnnulusRegion</a>, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_ellipse_region.html">LEllipseRegion</a>, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_annulus_sector_region.html">LAnnulusSectorRegion</a> <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_compound_region.html">LCompoundRegion</a> </td></tr>
@@ -161,7 +161,7 @@ Public 成员函数</h2></td></tr>
 <tr>
 <td><a class="el" href="namespace_l_p_v_locate_x_lib.html" title="LPV 高级定位模块，提供用于复杂目标或边缘的定位算法。">LPVLocateXLib</a></td><td><a class="el" href="interface_l_p_v_locate_x_lib_1_1_i_l_path_result.html">LPathResult</a>, <a class="el" href="interface_l_p_v_locate_x_lib_1_1_i_l_contour_result.html">LContourResult</a> </td></tr>
 <tr>
-<td><a class="el" href="namespace_l_p_v_gauge_lib.html" title="LPV 卡尺模块，提供 1D 边缘和 2D 形状的卡尺定位和测量。">LPVGaugeLib</a></td><td>LGaugeResult </td></tr>
+<td><a class="el" href="namespace_l_p_v_gauge_lib.html" title="LPV 卡尺模块，提供 1D 边缘和 2D 形状的卡尺定位和测量。">LPVGaugeLib</a></td><td><a class="el" href="interface_l_p_v_gauge_lib_1_1_i_l_shape_gauge_result.html">LShapeGaugeResult</a> </td></tr>
 <tr>
 <td><a class="el" href="namespace_l_p_v_math_lib.html" title="LPV 数学与分析库，提供数值计算和分析功能。">LPVMathLib</a></td><td><a class="el" href="interface_l_p_v_math_lib_1_1_i_l_data_list.html">LDataList</a> </td></tr>
 <tr>
@@ -183,7 +183,7 @@ Public 成员函数</h2></td></tr>
 <div class="line"><span class="comment">// sort into an array</span></div>
 <div class="line">ILSortedArrayPtr sortedArray;</div>
 <div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = sorter-&gt;SortToArray2(regionsSortables, &amp;sortedArray);</div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">LPV 算法或函数运行过程中遇到的错误。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:528</div></div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">LPV 算法或函数运行过程中遇到的错误。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:530</div></div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">List&lt;ILRegion&gt; regions = <span class="keyword">new</span> List&lt;ILRegion&gt;();</div>
 <div class="line"><span class="comment">// ... add sortable regions to the collection</span></div>
 <div class="line">LSorter sorter = <span class="keyword">new</span> LSorter();</div>
@@ -194,7 +194,7 @@ Public 成员函数</h2></td></tr>
 <div class="line"><span class="comment">// sort into an array</span></div>
 <div class="line">LSortedArray sortedArray;</div>
 <div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = sorter.SortToArray2(regions.ToArray(), out sortedArray);</div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html_a54c773c6f72a88ff41d8ab615b5a92f3"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a54c773c6f72a88ff41d8ab615b5a92f3">LPVCoreLib::LPVPositionMode</a></div><div class="ttdeci">LPVPositionMode</div><div class="ttdoc">该枚举类型表示使用哪个坐标作为对象的位置，在排序中使用。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:1247</div></div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a54c773c6f72a88ff41d8ab615b5a92f3"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a54c773c6f72a88ff41d8ab615b5a92f3">LPVCoreLib::LPVPositionMode</a></div><div class="ttdeci">LPVPositionMode</div><div class="ttdoc">该枚举类型表示使用哪个坐标作为对象的位置，在排序中使用。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:1259</div></div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='com' style='display: none;'>COM</div><div class='toggleable_div label_com' style='display: none;'><div class="fragment"><div class="line">CComSafeArray&lt;IDispatch*&gt; regions;</div>
 <div class="line"><span class="comment">// ... add sortable regions to the collection</span></div>
 <div class="line">ILSorterPtr sorter(__uuidof(LSorter));</div>

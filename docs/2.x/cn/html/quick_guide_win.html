@@ -181,8 +181,8 @@ $(function() {
 <div class="line"><span class="comment">// 调用接口函数，处理返回错误码，如下，进行模板匹配</span></div>
 <div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> errCode = lmatch-&gt;Match(sourceImg, roi, out matchResults);</div>
 <div class="line"><span class="keywordflow">if</span> (errCode != LPVErrorCode::LPVNoError) {}</div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html"><div class="ttname"><a href="namespace_l_p_v_core_lib.html">LPVCoreLib</a></div><div class="ttdoc">LPV 基础模块，提供图像、检测区域、绘制等基础功能。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:425</div></div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">LPV 算法或函数运行过程中遇到的错误。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:528</div></div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html"><div class="ttname"><a href="namespace_l_p_v_core_lib.html">LPVCoreLib</a></div><div class="ttdoc">LPV 基础模块，提供图像、检测区域、绘制等基础功能。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:427</div></div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">LPV 算法或函数运行过程中遇到的错误。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:530</div></div>
 <div class="ttc" id="anamespace_l_p_v_geom_lib_html"><div class="ttname"><a href="namespace_l_p_v_geom_lib.html">LPVGeomLib</a></div><div class="ttdoc">LPV 几何库，提供几何形状相关的数据定义、计算和测量功能。</div><div class="ttdef"><b>Definition:</b> LPVGeom.idl:80</div></div>
 <div class="ttc" id="anamespace_l_p_v_pat_lib_html"><div class="ttname"><a href="namespace_l_p_v_pat_lib.html">LPVPatLib</a></div><div class="ttdoc">LPV 模板匹配模块，用于提供模板匹配功能。</div><div class="ttdef"><b>Definition:</b> LPVPat.idl:80</div></div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><p>在 C# 代码文件中添加 <code>using LPVXXXLib;</code> 引用所需的 LPV 模块，然后通过 <code>new LClass()</code> 形式创建 @projectnam 算法类实例。以下代码给出一个简答的示例：</p>
@@ -313,10 +313,10 @@ $(function() {
  <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><p>如果您正在使用 Qt Creator,</p>
 <ol type="1">
 <li>右键项目，选择 <b>添加库</b>.</li>
-<li>选择 <b>外部库**，然后点击下一步。</b></li>
-<li><b>将 **库文件</b> 路径指向 LPV <b>lib</b> 文件夹下的动态链接库。</li>
+<li>选择 <b>外部库</b> ，然后点击下一步。</li>
+<li>将 <b>库文件</b> 路径指向 LPV <b>lib</b> 文件夹下的动态链接库。</li>
 <li>将 <b>包含路径</b> 路径指向 LPV <b>include</b> 文件夹。</li>
-<li>勾选 <b>Windows</b> 平台和 <b>动态</b> 链接，取消勾选 **为debug版本添加 d 作为后缀**。</li>
+<li>勾选 <b>Windows</b> 平台和 <b>动态</b> 链接，取消勾选 <b>为debug版本添加 d 作为后缀</b> 。</li>
 <li>点击下一步，然后完成。</li>
 </ol>
 <p>或者，您也可以手动编辑 .pro 文件，如下所示：</p>
@@ -335,9 +335,8 @@ $(function() {
 <div class="line"> </div>
 <div class="line"><span class="preprocessor"># 添加 include 路径</span></div>
 <div class="line"><span class="preprocessor"># ${LPV_INCLUDE_PATH} 指向 include 文件夹</span></div>
-<div class="line">INCLUDEPATH += $$LPV_INCLUDE_PATH</div>
-<div class="line"><span class="keyword">@end</span>_toggle</div>
-</div><!-- fragment --></div></div><!-- contents -->
+<div class="line"><span class="preprocessor">INCLUDEPATH += $$LPV_INCLUDE_PATH</span></div>
+</div><!-- fragment --> </div>  </div></div><!-- contents -->
 </div><!-- PageDoc -->
 <!-- HTML footer for doxygen 1.9.1-->
 <!-- start footer part -->

@@ -348,7 +348,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
   </table>
   </dd>
 </dl>
-<p>Example: snippets/ImageBlend.cpp, snippets/ImageBlend.cs </p>
+<p><br  />
+<b>Example:</b> snippets/ImageBlend.cpp, snippets/ImageBlend.cs </p>
 
 </div>
 </div>
@@ -1196,15 +1197,15 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 </div><div class="memdoc">
 <p>水平平铺一组图像，合成一张大尺寸图像 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>输入的图像队列 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">imgList</td><td>输入的图像队列 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">columnCount</td><td>每行的图像个数。若队列中的图像总数不被整除，则最后一行的剩余像素将被填充为背景色。<br  />
 传入 0 或负数，用于生成单行的合成图像。 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">compactMode</td><td>在紧凑模式下（True），一行中的图像被紧密地连续排布。 否则（False），结果图像的尺寸由输入图像中的最大长宽决定，其中较小的图像将被放置在对应行列的中心。 </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>输出结果图像</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>输出结果图像 <br  />
+<b>Example:</b> snippets/TileImage.cpp, snippets/TileImage.cs </td></tr>
   </table>
   </dd>
 </dl>
-<p>Example: snippets/TileImage.cpp, snippets/TileImage.cs </p>
 
 </div>
 </div>
@@ -1247,15 +1248,15 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 </div><div class="memdoc">
 <p>垂直平铺一组图像，合成一张大尺寸图像 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>输入的图像队列 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">imgList</td><td>输入的图像队列 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">rowCount</td><td>每列的图像个数。若队列中的图像总数不被整除，则最后一列的剩余像素将被填充为背景色。<br  />
 传入 0 或负数，用于生成单列的合成图像。 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">compactMode</td><td>在紧凑模式下（True），一行中的图像被紧密地连续排布。 否则（False），结果图像的尺寸由输入图像中的最大长宽决定，其中较小的图像将被放置在对应行列的中心。 </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>输出结果图像</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>输出结果图像 <br  />
+<b>Example:</b> snippets/TileImage.cpp, snippets/TileImage.cs </td></tr>
   </table>
   </dd>
 </dl>
-<p>Example: snippets/TileImage.cpp, snippets/TileImage.cs </p>
 
 </div>
 </div>
@@ -1302,7 +1303,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
     <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>输入图像 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">tf</td><td>变换矩阵 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">interMethod</td><td>插值方法 </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>输出结果图像 Example: snippets/LinearTransform.cpp, snippets/LinearTransform.cs </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>输出结果图像 <br  />
+<b>Example:</b> snippets/LinearTransform.cpp, snippets/LinearTransform.cs </td></tr>
   </table>
   </dd>
 </dl>
