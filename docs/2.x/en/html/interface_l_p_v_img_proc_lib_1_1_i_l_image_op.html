@@ -348,8 +348,10 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
   </table>
   </dd>
 </dl>
-<p><br  />
-<b>Example:</b> snippets/ImageBlend.cpp, snippets/ImageBlend.cs </p>
+<dl>
+<dt>Example</dt>
+<dd>ImageBlend.cpp/cs</dd>
+</dl>
 
 </div>
 </div>
@@ -1201,11 +1203,15 @@ If the pass-in result image object is empty, then we'll use the same size as the
     <tr><td class="paramdir">[in]</td><td class="paramname">columnCount</td><td>The number of images in one row. Pass in 0 or negative value to tile into one line.<br  />
 If the total count of the inputs is not a multiple of the specified column count, the last row are filled with background color. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">compactMode</td><td>In compact mode(True), images of different sizes in a horizontal row are copied contiguously. Otherwise(False), result size is determined by the maximum width and height, and the smaller images are copied to the center of the respective tile. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>Output the result image. <br  />
-<b>Example:</b> snippets/TileImage.cpp, snippets/TileImage.cs </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>Output the result image. </td></tr>
   </table>
   </dd>
 </dl>
+<dl>
+<dt>Example</dt>
+<dd>TileImage.cpp/cs</dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#a4ee13ea45a863b3805c6d711be3b9672">TileY()</a> </dd></dl>
 
 </div>
 </div>
@@ -1252,11 +1258,15 @@ If the total count of the inputs is not a multiple of the specified column count
     <tr><td class="paramdir">[in]</td><td class="paramname">rowCount</td><td>The number of images in one column. Pass in 0 or negative value to tile into one line.<br  />
 If the total count of the inputs is not a multiple of the specified row count, the last column are filled with background color. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">compactMode</td><td>In compact mode(True), images of different sizes in a vertical column are copied contiguously. Otherwise(False), result size is determined by the maximum width and height, and the smaller images are copied to the center of the respective tile. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>Output the result image. <br  />
-<b>Example:</b> snippets/TileImage.cpp, snippets/TileImage.cs </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>Output the result image. </td></tr>
   </table>
   </dd>
 </dl>
+<dl>
+<dt>Example</dt>
+<dd>TileImage.cpp/cs</dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#a102798855741d439b8903234884713a8">TileX()</a> </dd></dl>
 
 </div>
 </div>
@@ -1303,10 +1313,13 @@ If the pass-in result image object is empty, then we'll use the same size as the
     <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>The input image. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">tf</td><td>The transformation. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">interMethod</td><td>The interpolation method used in resizing </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>Return result image. <br  />
-<b>Example:</b> snippets/LinearTransform.cpp, snippets/LinearTransform.cs </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>Return result image. </td></tr>
   </table>
   </dd>
+</dl>
+<dl>
+<dt>Example</dt>
+<dd>LinearTransform.cpp/cs</dd>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#a2b035d4123952719d670e3f9072029b8">Resize()</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#a3d23a653d5816ffbb6089950840fa5c5">ResizeTo()</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#a5a2cd12aabad596e032548b18af31928">Rotate()</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#a63734a869140124d46e534ec5fbadde3">ScaleRotate()</a> </dd></dl>
 
