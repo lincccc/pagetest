@@ -140,6 +140,7 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This interface provide functionalities of image comparison on pixel level. </p>
 <p>To use this interface, you should create a <a class="el" href="class_l_p_v_img_proc_lib_1_1_l_image_compare.html">LImageCompare</a> object.</p>
+<dl class="section since"><dt>Since</dt><dd>2.1.0</dd></dl>
 <h3>Example Code </h3>
  <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><p> Code snippets: snippets/CrossMarkInspect.cpp </p><div class="fragment"><div class="line">ILImageComparePtr imgCmp = LImageCompare::Create();</div>
 <div class="line">imgCmp-&gt;PixelTolerance = 20;</div>
@@ -156,11 +157,13 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 <div class="line">ILImagePtr binResult = <span class="keyword">new</span> LImage();</div>
 <div class="line">err = imgCmp.Compare(img, roi, <span class="keyword">null</span>, binResult); <span class="comment">// get the binary comparison result only</span></div>
 <div class="line"><span class="keywordflow">if</span> (err != <a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>.LPVNoError) <span class="keywordflow">return</span>; <span class="comment">// handle error</span></div>
-</div><!-- fragment --> </div>  <div class='newInnerHTML' title='com' style='display: none;'>COM</div><div class='toggleable_div label_com' style='display: none;'><p> Code snippets: snippets/CrossMarkInspect.cpp </p><div class="fragment"><div class="line">ILImageComparePtr imgCmp(__uuidof(LImageCompare));</div>
+</div><!-- fragment --> </div>  <div class='newInnerHTML' title='com' style='display: none;'>COM</div><div class='toggleable_div label_com' style='display: none;'><p> Code snippets: snippets/CrossMarkInspect.cpp </p><div class="fragment"><div class="line">ILImageComparePtr imgCmp = LImageCompare::Create();</div>
+<div class="line"><span class="comment">// or, ILImageComparePtr imgCmp(__uuidof(LImageCompare)), for absence of built-in Create functions (before 2.2.0)</span></div>
 <div class="line">imgCmp-&gt;PixelTolerance = 20;</div>
 <div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = imgCmp-&gt;SetBaseline(img, roi);</div>
 <div class="line"><span class="keywordflow">if</span> (err != LPVErrorCode::LPVNoError) <span class="keywordflow">return</span>; <span class="comment">// handle error</span></div>
-<div class="line">ILImagePtr binResult(__uuidof(LImage));</div>
+<div class="line">ILImagePtr binResult = LImage::Create();</div>
+<div class="line"><span class="comment">// or, ILImagePtr binResult(__uuidof(LImage)), for absence of built-in Create functions (before 2.2.0)</span></div>
 <div class="line">err = imgCmp-&gt;Compare(img, roi, NULL, binResult); <span class="comment">// get the binary comparison result only</span></div>
 <div class="line"><span class="keywordflow">if</span> (err != LPVErrorCode::LPVNoError) <span class="keywordflow">return</span>; <span class="comment">// handle error</span></div>
 </div><!-- fragment --> </div>  </div><h2 class="groupheader">Member Function Documentation</h2>

@@ -162,7 +162,8 @@ It's assigned when the sample is loaded in the database or from a specified file
 <div class="line">LSample sample2 = db2.GetSample(sampleName);</div>
 <div class="ttc" id="anamespace_l_p_v_m_l_lib_html_ab81fed5ed40d5c69f497afd8e5b8f61c"><div class="ttname"><a href="namespace_l_p_v_m_l_lib.html#ab81fed5ed40d5c69f497afd8e5b8f61c">LPVMLLib::LPVSampleType</a></div><div class="ttdeci">LPVSampleType</div><div class="ttdoc">This enumeration represents the type of the sample instance.</div><div class="ttdef"><b>Definition:</b> LPVML.idl:142</div></div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='com' style='display: none;'>COM</div><div class='toggleable_div label_com' style='display: none;'><div class="fragment"><div class="line"><span class="comment">// create the sample then add to the database</span></div>
-<div class="line">ILSamplePtr sample1(__uuidof(LSample));</div>
+<div class="line">ILSamplePtr sample1 = LSample::Create();</div>
+<div class="line"><span class="comment">// or, ILSamplePtr sample1(__uuidof(LSample)), for absence of built-in Create functions (before 2.2.0)</span></div>
 <div class="line">sample1-&gt;Set(img, region);</div>
 <div class="line">sampleDb-&gt;AddSample(LPVSampleType::LPVSampleTrain, sample1);</div>
 <div class="line"><span class="comment">// create then get back from the database</span></div>

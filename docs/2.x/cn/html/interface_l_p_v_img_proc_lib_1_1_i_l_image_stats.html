@@ -137,7 +137,8 @@ Public 成员函数</h2></td></tr>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LImageStats imgStats = <span class="keyword">new</span> LImageStats();</div>
 <div class="line"><span class="keywordtype">int</span> minVal, x, y;</div>
 <div class="line">imgStats.Min(img, <span class="keyword">null</span>, out minVal, out x, out y);</div>
-</div><!-- fragment --> </div>  <div class='newInnerHTML' title='com' style='display: none;'>COM</div><div class='toggleable_div label_com' style='display: none;'><div class="fragment"><div class="line">ILImageStatsPtr imgStats(__uuidof(LImageStats));</div>
+</div><!-- fragment --> </div>  <div class='newInnerHTML' title='com' style='display: none;'>COM</div><div class='toggleable_div label_com' style='display: none;'><div class="fragment"><div class="line">ILImageStatsPtr imgStats = LImageStats::Create();</div>
+<div class="line"><span class="comment">// or, ILImageStatsPtr imgStats(__uuidof(LImageStats)), for absence of built-in Create functions (before 2.2.0)</span></div>
 <div class="line"><span class="keywordtype">int</span> minVal, x, y;</div>
 <div class="line">imgStats-&gt;Min(img, NULL, &amp;minVal, &amp;x, &amp;y);</div>
 </div><!-- fragment --> </div>  </div><h2 class="groupheader">成员函数说明</h2>

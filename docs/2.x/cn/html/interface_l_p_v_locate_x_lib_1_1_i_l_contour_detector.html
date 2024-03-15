@@ -176,7 +176,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 <div class="line">contourDetector-&gt;KSize = 5;</div>
 <div class="line">contourDetector-&gt;RejectShort = 100;</div>
 <div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = contourDetector-&gt;DetectWithDir(img, rotRectRoi,</div>
-<div class="line">    LPVPolarity::LPVBlack2White, 30, 70, contourResults);</div>
+<div class="line">    LPVPolarity::LPVBlack2White, 30, 70, &amp;contourResults);</div>
 <div class="line"><span class="keywordflow">if</span> (err != LPVErrorCode::LPVNoError) <span class="keywordflow">return</span>;</div>
 <div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">LPV 算法或函数运行过程中遇到的错误。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:530</div></div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LContourDetector contourDetector = <span class="keyword">new</span> LContourDetector();</div>
@@ -187,7 +187,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 <div class="line">   <a class="code" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0b">LPVPolarity</a>.LPVBlack2White, 30, 70, out contourResults);</div>
 <div class="line"><span class="keywordflow">if</span> (err != <a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>.LPVNoError) <span class="keywordflow">return</span>;</div>
 <div class="ttc" id="anamespace_l_p_v_core_lib_html_ad8a4d763bb82cc129119ff1cf0bc0e0b"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0b">LPVCoreLib::LPVPolarity</a></div><div class="ttdeci">LPVPolarity</div><div class="ttdoc">该枚举类型表示要定位的物体或边缘的极性</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:1094</div></div>
-</div><!-- fragment --> </div>  <div class='newInnerHTML' title='com' style='display: none;'>COM</div><div class='toggleable_div label_com' style='display: none;'><div class="fragment"><div class="line">ILContourDetectorPtr contourDetector(__uuidof(LContourDetector));</div>
+</div><!-- fragment --> </div>  <div class='newInnerHTML' title='com' style='display: none;'>COM</div><div class='toggleable_div label_com' style='display: none;'><div class="fragment"><div class="line">ILContourDetectorPtr contourDetector = LContourDetector::Create();</div>
+<div class="line"><span class="comment">// or, ILContourDetectorPtr contourDetector(__uuidof(LContourDetector)), for absence of built-in Create functions (before 2.2.0)</span></div>
 <div class="line">contourDetector-&gt;ConnectTolerance = 16;</div>
 <div class="line">contourDetector-&gt;KSize = 5;</div>
 <div class="line">contourDetector-&gt;RejectShort = 100;</div>

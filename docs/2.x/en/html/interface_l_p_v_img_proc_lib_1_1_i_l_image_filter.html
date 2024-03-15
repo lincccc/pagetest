@@ -166,7 +166,8 @@ To use this interface, you should create a <a class="el" href="class_l_p_v_img_p
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LImageFilter imgfilterOp = <span class="keyword">new</span> LImageFilter();</div>
 <div class="line">imgfilterOp.SetKernelSize(5, 5);</div>
 <div class="line">imgfilterOp.Gaussian(img, resultImg);</div>
-</div><!-- fragment --> </div>  <div class='newInnerHTML' title='com' style='display: none;'>COM</div><div class='toggleable_div label_com' style='display: none;'><div class="fragment"><div class="line">ILImageFilterPtr imgfilterOp(__uuidof(LImageFilter));</div>
+</div><!-- fragment --> </div>  <div class='newInnerHTML' title='com' style='display: none;'>COM</div><div class='toggleable_div label_com' style='display: none;'><div class="fragment"><div class="line">ILImageFilterPtr imgfilterOp = LImageFilter::Create();</div>
+<div class="line"><span class="comment">// or, ILImageFilterPtr imgfilterOp(__uuidof(LImageFilter)), for absence of built-in Create functions (before 2.2.0)</span></div>
 <div class="line">imgfilterOp-&gt;SetKernelSize(5, 5);</div>
 <div class="line">imgfilterOp-&gt;Gaussian(img, resultImg);</div>
 </div><!-- fragment --> </div>  </div><h2 class="groupheader">Member Function Documentation</h2>

@@ -130,7 +130,8 @@ BSTR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 <p>使用这个接口，需要创建一个 <a class="el" href="class_l_p_v_display_lib_1_1_l_text.html">LText</a> 对象。</p>
 <h3>示例代码 </h3>
  <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line"><span class="comment">// lpvDisplay is a COM ActiveX library, it supports only COM interface</span></div>
-<div class="line">ILTextPtr myText(__uuidof(LText));</div>
+<div class="line">ILTextPtr myText = LText::Create();</div>
+<div class="line"><span class="comment">// or, ILTextPtr myText(__uuidof(LText)), for absence of built-in Create functions (before 2.2.0)</span></div>
 <div class="line">myText-&gt;Text = L<span class="stringliteral">&quot;My Text&quot;</span>;</div>
 <div class="line"><span class="comment">// put the text on (200, 200), center-aligned</span></div>
 <div class="line">myText-&gt;PosX = 200;</div>
@@ -156,7 +157,8 @@ BSTR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 <div class="line">displayCtrl.AddObject(myText, 0);</div>
 <div class="line"><span class="comment">// or, draw it in your own device context</span></div>
 <div class="line">myText.Draw(hdc, zoomX, zoomY, panX, panY);</div>
-</div><!-- fragment --> </div>  <div class='newInnerHTML' title='com' style='display: none;'>COM</div><div class='toggleable_div label_com' style='display: none;'><div class="fragment"><div class="line"> ILTextPtr myText(__uuidof(LText));</div>
+</div><!-- fragment --> </div>  <div class='newInnerHTML' title='com' style='display: none;'>COM</div><div class='toggleable_div label_com' style='display: none;'><div class="fragment"><div class="line"> ILTextPtr myText = LText::Create();</div>
+<div class="line"> <span class="comment">// or, ILTextPtr myText(__uuidof(LText)), for absence of built-in Create functions (before 2.2.0)</span></div>
 <div class="line"> myText-&gt;Text = L<span class="stringliteral">&quot;My Text&quot;</span>;</div>
 <div class="line"> <span class="comment">// put the text on (200, 200), center-aligned</span></div>
 <div class="line"> myText-&gt;PosX = 200;</div>

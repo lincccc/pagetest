@@ -237,23 +237,28 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 <h3>示例代码 </h3>
  <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line"><span class="comment">// lpvDisplay is a COM ActiveX library, it supports only COM interface.</span></div>
 <div class="line"><span class="comment">// for every pass-in LPV object, you should cast it to IDispatch via LObjectToDispatch() function.</span></div>
+<div class="line"><span class="comment">// since 2.2.0, use the built-in implicit type casting.</span></div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// set image to the control</span></div>
 <div class="line">displayCtrl-&gt;SetImage(LObjectToDispatch(*img));</div>
+<div class="line">displayCtrl-&gt;SetImage(*img); <span class="comment">// since 2.2.0</span></div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// add a rectangle region to the control</span></div>
 <div class="line">ILRectRegionPtr roi = LRectRegion::Create();</div>
 <div class="line">roi-&gt;SetPlacement(10, 10, 200, 100);</div>
-<div class="line">displayCtrl-&gt;AddRegion(LObjectToDispatch(*roi), VARIANT_TRUE); <span class="comment">// it&#39;s interactive</span></div>
+<div class="line">displayCtrl-&gt;AddRegion(LObjectToDispatch(*roi), <span class="keyword">true</span>); <span class="comment">// it&#39;s interactive</span></div>
+<div class="line">displayCtrl-&gt;AddRegion(*roi, <span class="keyword">true</span>); <span class="comment">// since 2.2.0</span></div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// add a circle to the control</span></div>
 <div class="line">ILCirclePtr circle = LCircle::Create();</div>
 <div class="line">circle-&gt;Set(100, 50, 50);</div>
 <div class="line">displayCtrl-&gt;AddObject(LObjectToDispatch(*circle), 0); <span class="comment">// use default draw flags</span></div>
+<div class="line">displayCtrl-&gt;AddObject(*circle, 0); <span class="comment">// since 2.2.0</span></div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// add the pattern matching result to the control</span></div>
 <div class="line">displayCtrl-&gt;AddObject(LObjectToDispatch(*matchResults),</div>
 <div class="line">    (LPVPatDrawFlags)(LPVPatDrawFlags::LPVPatDrawBoundingRect | LPVPatDrawFlags::LPVPatDrawCenter));</div>
+<div class="line">displayCtrl-&gt;AddObject(*matchResults, LPVPatDrawFlags::LPVPatDrawDefault); <span class="comment">// since 2.2.0</span></div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line"><span class="comment">// set image to the control</span></div>
 <div class="line">displayCtrl.SetImage(img);</div>
 <div class="line"> </div>
@@ -274,12 +279,14 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 <div class="line">displayCtrl-&gt;SetImage(img);</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// add a rectangle region to the control</span></div>
-<div class="line">ILRectRegionPtr roi(__uuidof(LRectRegion));</div>
+<div class="line">ILRectRegionPtr roi = LRectRegion::Create();</div>
+<div class="line"><span class="comment">// or, ILRectRegionPtr roi(__uuidof(LRectRegion)), for absence of built-in Create functions (before 2.2.0)</span></div>
 <div class="line">roi-&gt;SetPlacement(10, 10, 200, 100);</div>
 <div class="line">displayCtrl-&gt;AddRegion(roi, VARIANT_TRUE); <span class="comment">// it&#39;s interactive</span></div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// add a circle to the control</span></div>
-<div class="line">ILCirclePtr circle(__uuidof(LCircle));</div>
+<div class="line">ILCirclePtr circle = LCircle::Create();</div>
+<div class="line"><span class="comment">// or, ILCirclePtr circle(__uuidof(LCircle)), for absence of built-in Create functions (before 2.2.0)</span></div>
 <div class="line">circle-&gt;Set(100, 50, 50);</div>
 <div class="line">displayCtrl-&gt;AddObject(circle, 0); <span class="comment">// use default draw flags</span></div>
 <div class="line"> </div>

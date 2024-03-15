@@ -134,7 +134,7 @@ Public Member Functions</h2></td></tr>
 <p>Usually you get the <a class="el" href="class_l_p_v_pat_lib_1_1_l_match_results.html">LMatchResults</a> object from the <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#abe49710ff341978863693945ae28190b">ILMatch::Match()</a> as matching result. You can then use this interface to access individual result and draw the results on graphics windows.</p>
 <h3>Example Code </h3>
  <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">ILMatchResultsPtr matchResults;</div>
-<div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = matchTool-&gt;Match(img, roi, matchResults);</div>
+<div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = matchTool-&gt;Match(img, roi, &amp;matchResults);</div>
 <div class="line"><span class="keywordflow">if</span> (err != LPVErrorCode::LPVNoError) <span class="keywordflow">return</span>;</div>
 <div class="line"><span class="keywordtype">int</span> c = matchResults-&gt;Count();</div>
 <div class="line"><span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; c; ++i) {</div>

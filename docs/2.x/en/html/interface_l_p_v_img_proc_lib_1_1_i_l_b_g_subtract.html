@@ -167,7 +167,8 @@ Change this value will reset the background model. <br /></td></tr>
 <div class="line"><span class="comment">// subsequently processing on the foreground mask, say, count the pixels:</span></div>
 <div class="line"><span class="keywordtype">int</span> fgPixelCount = 0;</div>
 <div class="line">imgStats.CountPixel(fg_mask, <span class="keyword">null</span>, 128, 255, <span class="keyword">null</span>, out fgPixelCount, <span class="keyword">null</span>);</div>
-</div><!-- fragment --> </div>  <div class='newInnerHTML' title='com' style='display: none;'>COM</div><div class='toggleable_div label_com' style='display: none;'> <div class="fragment"><div class="line">ILBGSubtractPtr bgSubOp(__uuidof(LBGSubtract));</div>
+</div><!-- fragment --> </div>  <div class='newInnerHTML' title='com' style='display: none;'>COM</div><div class='toggleable_div label_com' style='display: none;'> <div class="fragment"><div class="line">ILBGSubtractPtr bgSubOp = LBGSubtract::Create();</div>
+<div class="line"><span class="comment">// or, ILBGSubtractPtr bgSubOp(__uuidof(LBGSubtract)), for absence of built-in Create functions (before 2.2.0)</span></div>
 <div class="line">bgSubOp-&gt;HistoryMaxCount = 1000;</div>
 <div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = bgSubOp-&gt;Apply(cur_img, cur_fg_mask, VARIANT_TRUE);</div>
 <div class="line"><span class="keywordflow">if</span> (err != LPVNoError) <span class="keywordflow">return</span>;</div>

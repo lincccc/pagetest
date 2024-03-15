@@ -183,7 +183,8 @@ Public 成员函数</h2></td></tr>
 <div class="line">maskRoi-&gt;SetPlacement(mask_img, 0, 0);</div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LMaskRegion maskRoi = <span class="keyword">new</span> LMaskRegion();</div>
 <div class="line">maskRoi.SetPlacement(mask_img, 0, 0);</div>
-</div><!-- fragment --> </div>  <div class='newInnerHTML' title='com' style='display: none;'>COM</div><div class='toggleable_div label_com' style='display: none;'><div class="fragment"><div class="line">ILMaskRegionPtr maskRoi(__uuidof(LMaskRegion));</div>
+</div><!-- fragment --> </div>  <div class='newInnerHTML' title='com' style='display: none;'>COM</div><div class='toggleable_div label_com' style='display: none;'><div class="fragment"><div class="line">ILMaskRegionPtr maskRoi = LMaskRegion::Create();</div>
+<div class="line"><span class="comment">// or, ILMaskRegionPtr maskRoi(__uuidof(LMaskRegion)), for absence of built-in Create functions (before 2.2.0)</span></div>
 <div class="line">maskRoi-&gt;SetPlacement(mask_img, 0, 0);</div>
 </div><!-- fragment --> </div>  </div><h2 class="groupheader">成员函数说明</h2>
 <a id="ab55ec61b68f0a5432d0cd75aa0216b25"></a>

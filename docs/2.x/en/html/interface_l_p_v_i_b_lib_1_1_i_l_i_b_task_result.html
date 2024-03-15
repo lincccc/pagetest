@@ -145,7 +145,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 <p>Usually you get the <a class="el" href="class_l_p_v_i_b_lib_1_1_l_i_b_task_result.html">LIBTaskResult</a> object from <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html#a518d1fb020e7ce59675f45dbdd95be1c">ILIBService::ExecuteTaskSync</a>. You can then use this interface to access individual algorithm result.</p>
 <h3>Example Code </h3>
  <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">ILIBTaskResultPtr taskResult;</div>
-<div class="line"><span class="keywordtype">int</span> err = ibService-&gt;ExecuteTaskSync(ibTaskId, image, taskResult);</div>
+<div class="line"><span class="keywordtype">int</span> err = ibService-&gt;ExecuteTaskSync(ibTaskId, image, &amp;taskResult);</div>
 <div class="line"><span class="keywordflow">if</span> (err != LPVErrorCode::LPVNoError) <span class="keywordflow">return</span>; <span class="comment">// execution failed</span></div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LIBTaskResult taskResult;</div>
 <div class="line"><span class="keywordtype">int</span> err = ibService.ExecuteTaskSync(ibTaskId, image, out taskResult);</div>

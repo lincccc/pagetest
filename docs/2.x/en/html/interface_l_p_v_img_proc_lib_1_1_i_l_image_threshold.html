@@ -165,7 +165,8 @@ Properties</h2></td></tr>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LImageThreshold thresholdOp = <span class="keyword">new</span> LImageThreshold();</div>
 <div class="line">thresholdOp.SetThreshold(100, 200);</div>
 <div class="line">thresholdOp.Binarize(img, resultImg);</div>
-</div><!-- fragment --> </div>  <div class='newInnerHTML' title='com' style='display: none;'>COM</div><div class='toggleable_div label_com' style='display: none;'><div class="fragment"><div class="line">ILImageThresholdPtr thresholdOp(__uuidof(LImageThreshold));</div>
+</div><!-- fragment --> </div>  <div class='newInnerHTML' title='com' style='display: none;'>COM</div><div class='toggleable_div label_com' style='display: none;'><div class="fragment"><div class="line">ILImageThresholdPtr thresholdOp = LImageThreshold::Create();</div>
+<div class="line"><span class="comment">// or, ILImageThresholdPtr thresholdOp(__uuidof(LImageThreshold)), for absence of built-in Create functions (before 2.2.0)</span></div>
 <div class="line">thresholdOp-&gt;SetThreshold(100, 200);</div>
 <div class="line">thresholdOp-&gt;Binarize(img, resultImg);</div>
 </div><!-- fragment --> </div>  </div><h2 class="groupheader">Member Function Documentation</h2>

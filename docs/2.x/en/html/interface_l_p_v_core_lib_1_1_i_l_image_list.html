@@ -165,7 +165,8 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 <div class="line">img_list.Add(frame2);</div>
 <div class="line">img_list.Add(frame3);</div>
 <div class="line">img_list.Add(frame4); <span class="comment">// frame 1 is popped</span></div>
-</div><!-- fragment --> </div>  <div class='newInnerHTML' title='com' style='display: none;'>COM</div><div class='toggleable_div label_com' style='display: none;'><div class="fragment"><div class="line">ILImageListPtr img_list(__uuidof(LImageList));</div>
+</div><!-- fragment --> </div>  <div class='newInnerHTML' title='com' style='display: none;'>COM</div><div class='toggleable_div label_com' style='display: none;'><div class="fragment"><div class="line">ILImageListPtr img_list = LImageList::Create();</div>
+<div class="line"><span class="comment">// or, ILImageListPtr img_list(__uuidof(LImageList)), for absence of built-in Create functions (before 2.2.0)</span></div>
 <div class="line">img_list-&gt;MaxCount = 3;</div>
 <div class="line">img_list-&gt;Add(frame1);</div>
 <div class="line">img_list-&gt;Add(frame2);</div>

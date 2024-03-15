@@ -146,7 +146,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 <div class="textblock"><p>This interface holds a shape gauging result and is used to access its properties. </p>
 <p>Usually you get the <a class="el" href="class_l_p_v_gauge_lib_1_1_l_shape_gauge_result.html">LShapeGaugeResult</a> object from the shape gauge tools like <a class="el" href="interface_l_p_v_gauge_lib_1_1_i_l_line_gauge.html">LLineGauge</a> for line shape inspection. You can then use this interface to access to the shape result and the details such as sample points, and draw the result on graphics windows.</p>
 <h3>Example Code </h3>
- <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">ILLinePtr line = lineGaugeResult-&gt;Result;</div>
+ <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">ILLinePtr line = LLine::Cast(lineGaugeResult-&gt;Result);</div>
 <div class="line">ILPointsPtr allPoints = lineGaugeResult-&gt;SamplePoints;</div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LLine line = lineGaugeResult.Result;</div>
 <div class="line">LPoints allPoints = lineGaugeResult.SamplePoints;</div>

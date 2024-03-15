@@ -134,7 +134,7 @@ Public Member Functions</h2></td></tr>
 <p>Usually you get the <a class="el" href="class_l_p_v_locate_x_lib_1_1_l_cross_mark_results.html">LCrossMarkResults</a> object from the <a class="el" href="interface_l_p_v_locate_x_lib_1_1_i_l_cross_mark_detector.html#a009f418abf0dbcef90d365b6cf9d3571">ILCrossMarkDetector::Detect()</a> as detection result. You can then use this interface to access individual result and draw the results on graphics windows.</p>
 <h3>Example Code </h3>
  <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">ILCrossMarkResultsPtr cmResults;</div>
-<div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = cmDetector-&gt;Detect(img, roi, cmResults);</div>
+<div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = cmDetector-&gt;Detect(img, roi, &amp;cmResults);</div>
 <div class="line"><span class="keywordflow">if</span> (err != LPVErrorCode::LPVNoError) <span class="keywordflow">return</span>;</div>
 <div class="line"><span class="keywordtype">int</span> c = cmResults-&gt;Count();</div>
 <div class="line"><span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; c; ++i) {</div>

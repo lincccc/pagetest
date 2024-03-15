@@ -145,7 +145,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 <p>Usually you get the <a class="el" href="class_l_p_v_i_b_lib_1_1_l_i_b_algo_result.html">LIBAlgoResult</a> object from <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_task_result.html" title="This interface holds the execution results of an IntelliBlink task which involves multiple algorithm ...">ILIBTaskResult</a>. You can then use this interface to access individual result.</p>
 <h3>Example Code </h3>
  <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">ILIBTaskResultPtr taskResult;</div>
-<div class="line"><span class="keywordtype">int</span> err = ibService-&gt;ExecuteTaskSync(ibTaskId, image, taskResult);</div>
+<div class="line"><span class="keywordtype">int</span> err = ibService-&gt;ExecuteTaskSync(ibTaskId, image, &amp;taskResult);</div>
 <div class="line"><span class="keywordflow">if</span> (err != LPVErrorCode::LPVNoError) <span class="keywordflow">return</span>; <span class="comment">// execution failed</span></div>
 <div class="line">ILIBAlgoResultPtr outputResult = taskResult-&gt;GetAlgoResult(L<span class="stringliteral">&quot;algorithm name&quot;</span>);</div>
 <div class="line"><span class="keywordtype">int</span> dataCount = outputResult-&gt;Count();</div>

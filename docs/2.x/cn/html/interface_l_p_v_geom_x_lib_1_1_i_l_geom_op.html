@@ -131,7 +131,8 @@ Public 成员函数</h2></td></tr>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'> <div class="fragment"><div class="line">LGeomOp geomOp = <span class="keyword">new</span> LGeomOp();</div>
 <div class="line">LRect resultRect = geomOp.InnerRect(mask);</div>
 <div class="line">LRect resultSquare = geomOp.InnerSquare(mask);</div>
-</div><!-- fragment --> </div>  <div class='newInnerHTML' title='com' style='display: none;'>COM</div><div class='toggleable_div label_com' style='display: none;'> <div class="fragment"><div class="line">ILGeomOpPtr geomOp(__uuidof(LGeomOp));</div>
+</div><!-- fragment --> </div>  <div class='newInnerHTML' title='com' style='display: none;'>COM</div><div class='toggleable_div label_com' style='display: none;'> <div class="fragment"><div class="line">ILGeomOpPtr geomOp = LGeomOp::Create();</div>
+<div class="line"><span class="comment">// or, ILGeomOpPtr geomOp(__uuidof(LGeomOp)), for absence of built-in Create functions (before 2.2.0)</span></div>
 <div class="line">ILRectPtr resultRect = geomOp-&gt;InnerRect(mask);</div>
 <div class="line">ILRectPtr resultSquare = geomOp-&gt;InnerSquare(mask);</div>
 </div><!-- fragment --> </div>  </div><h2 class="groupheader">成员函数说明</h2>
@@ -180,7 +181,7 @@ Public 成员函数</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>查找输入蒙版图像中最大的内接矩形，不包含和经过任何白色（非 0）像素 </p><dl class="params"><dt>参数</dt><dd>
+<p>查找输入蒙版图像中最大的内接矩形，仅包含和经过白色（非 0）像素，不包含和经过任何黑色（0）像素 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">mask</td><td><img src="color_binary.png" alt="" class="inline" title="Binary images"/> 输入的蒙版图像 </td></tr>
   </table>
@@ -211,7 +212,7 @@ Public 成员函数</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>查找输入蒙版图像中最大的内接正方形，不包含和经过任何白色（非 0）像素 </p><dl class="params"><dt>参数</dt><dd>
+<p>查找输入蒙版图像中最大的内接正方形，仅包含和经过白色（非 0）像素，不包含和经过任何黑色（0）像素 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">mask</td><td><img src="color_binary.png" alt="" class="inline" title="Binary images"/> 输入的蒙版图像 </td></tr>
   </table>

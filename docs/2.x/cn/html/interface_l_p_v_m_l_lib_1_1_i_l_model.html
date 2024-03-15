@@ -207,7 +207,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 <div class="ttc" id="anamespace_l_p_v_m_l_lib_html_a2d6a70c3d0397ec68b2468aca95a8e36"><div class="ttname"><a href="namespace_l_p_v_m_l_lib.html#a2d6a70c3d0397ec68b2468aca95a8e36">LPVMLLib::LPVSVMKernel</a></div><div class="ttdeci">LPVSVMKernel</div><div class="ttdoc">该枚举用于表示 SVM 模型使用的核类型</div><div class="ttdef"><b>Definition:</b> LPVML.idl:311</div></div>
 <div class="ttc" id="anamespace_l_p_v_m_l_lib_html_acece2a4d2c8b8503bf2f0c39cbb6550d"><div class="ttname"><a href="namespace_l_p_v_m_l_lib.html#acece2a4d2c8b8503bf2f0c39cbb6550d">LPVMLLib::LPVSVMType</a></div><div class="ttdeci">LPVSVMType</div><div class="ttdoc">该枚举用于表示 SVM 模型的类型</div><div class="ttdef"><b>Definition:</b> LPVML.idl:288</div></div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='com' style='display: none;'>COM</div><div class='toggleable_div label_com' style='display: none;'><div class="fragment"><div class="line"><span class="comment">// create a HOG feature</span></div>
-<div class="line">ILModelPtr svm(__uuidof(LModel));</div>
+<div class="line">ILModelPtr svm = LModel::Create();</div>
+<div class="line"><span class="comment">// or, ILModelPtr svm(__uuidof(LModel)), for absence of built-in Create functions (before 2.2.0)</span></div>
 <div class="line">svm-&gt;Type = LPVModelType::LPVModelSVM;</div>
 <div class="line"><span class="comment">// change its parameters</span></div>
 <div class="line">svm-&gt;ParamI[L<span class="stringliteral">&quot;svm type&quot;</span>] = LPVSVMType::LPVSVMTypeCSupport;</div>

@@ -227,7 +227,8 @@ Locale can be changed in configuration of IntelliBlink application. <br /></td><
 <div class="line">ILIBDataPtr ibDataResult = algoResult-&gt;Result[L<span class="stringliteral">&quot;Line&quot;</span>];</div>
 <div class="line">ILLinePtr line = ibDataResult.ToLine();</div>
 <div class="line"><span class="comment">// as input</span></div>
-<div class="line">ILIBDataPtr ibDataInput(__uuidof(LIBData));</div>
+<div class="line">ILIBDataPtr ibDataInput = LIBData::Create();</div>
+<div class="line"><span class="comment">// or, ILIBDataPtr ibDataInput(__uuidof(LIBData)), for absence of built-in Create functions (before 2.2.0)</span></div>
 <div class="line">ibDataInput-&gt;FromDouble(12.34);</div>
 <div class="line">algoInputs-&gt;Config[L<span class="stringliteral">&quot;Score&quot;</span>] = ibDataInput;</div>
 </div><!-- fragment --> </div> <p><b>Note:</b> This interface is currently not available on Linux / MacOS platform. </p>

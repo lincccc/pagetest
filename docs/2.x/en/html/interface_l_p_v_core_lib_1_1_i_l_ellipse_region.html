@@ -204,7 +204,8 @@ By default, it's 1. Change this value to scale the reduced result image.  <a hre
 <div class="line">annulusRoi-&gt;SetPlacement(200, 100, 50, 100, 15);</div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LEllipseRegion annulusRoi = <span class="keyword">new</span> LEllipseRegion();</div>
 <div class="line">annulusRoi.SetPlacement(200, 100, 50, 100, 15);</div>
-</div><!-- fragment --> </div>  <div class='newInnerHTML' title='com' style='display: none;'>COM</div><div class='toggleable_div label_com' style='display: none;'><div class="fragment"><div class="line">ILEllipseRegionPtr ellipseRoi(__uuidof(LEllipseRegion));</div>
+</div><!-- fragment --> </div>  <div class='newInnerHTML' title='com' style='display: none;'>COM</div><div class='toggleable_div label_com' style='display: none;'><div class="fragment"><div class="line">ILEllipseRegionPtr ellipseRoi = LEllipseRegion::Create();</div>
+<div class="line"><span class="comment">// or, ILEllipseRegionPtr ellipseRoi(__uuidof(LEllipseRegion)), for absence of built-in Create functions (before 2.2.0)</span></div>
 <div class="line">annulusRoi-&gt;SetPlacement(200, 100, 50, 100, 15);</div>
 </div><!-- fragment --> </div>  </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a8ccd931bf361ecd76b3bae09a1b03625"></a>

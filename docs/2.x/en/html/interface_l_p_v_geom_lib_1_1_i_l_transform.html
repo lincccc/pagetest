@@ -152,7 +152,8 @@ Properties</h2></td></tr>
 <div class="line">LPoint newPoint = pnt.Transform(tf);</div>
 <div class="line">LCircle newCircle = circle.Transform(tf);</div>
 <div class="ttc" id="anamespace_l_p_v_core_lib_html_ab99c16d790cf246e4cea538c13ef4467"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#ab99c16d790cf246e4cea538c13ef4467">LPVCoreLib::LPVTransformType</a></div><div class="ttdeci">LPVTransformType</div><div class="ttdoc">This enumeration represents the type of a transformation matrix.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:942</div></div>
-</div><!-- fragment --> </div>  <div class='newInnerHTML' title='com' style='display: none;'>COM</div><div class='toggleable_div label_com' style='display: none;'><div class="fragment"><div class="line">ILTransformPtr tf(__uuidof(LTransform));</div>
+</div><!-- fragment --> </div>  <div class='newInnerHTML' title='com' style='display: none;'>COM</div><div class='toggleable_div label_com' style='display: none;'><div class="fragment"><div class="line">ILTransformPtr tf = LTransform::Create();</div>
+<div class="line"><span class="comment">// or, ILTransformPtr tf(__uuidof(LTransform)), for absence of built-in Create functions (before 2.2.0)</span></div>
 <div class="line"><span class="keywordtype">double</span> err = tf.Build(srcPoints, dstPoints, LPVTransformType::LPVTransformHomography);</div>
 <div class="line"><span class="keywordflow">if</span> (err &lt; 0 || err &gt; 100) <span class="keywordflow">return</span>; <span class="comment">// failed, or the mapping error is too big</span></div>
 <div class="line">ILPointPtr newPoint = pnt-&gt;Transform(tf);</div>

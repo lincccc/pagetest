@@ -148,7 +148,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 <div class="line">fittingTool.DistThreshold = 3;</div>
 <div class="line">fittingTool.CountThreshold = 10;</div>
 <div class="line">LLine line = fittingTool.FitLine(points);</div>
-</div><!-- fragment --> </div>  <div class='newInnerHTML' title='com' style='display: none;'>COM</div><div class='toggleable_div label_com' style='display: none;'> <div class="fragment"><div class="line">ILFittingPtr fittingTool(__uuidof(LFitting));</div>
+</div><!-- fragment --> </div>  <div class='newInnerHTML' title='com' style='display: none;'>COM</div><div class='toggleable_div label_com' style='display: none;'> <div class="fragment"><div class="line">ILFittingPtr fittingTool = LFitting::Create();</div>
+<div class="line"><span class="comment">// or, ILFittingPtr fittingTool(__uuidof(LFitting)), for absence of built-in Create functions (before 2.2.0)</span></div>
 <div class="line">fittingTool-&gt;DistThreshold = 3;</div>
 <div class="line">fittingTool-&gt;CountThreshold = 10;</div>
 <div class="line">ILLinePtr line = fittingTool-&gt;FitLine(points);</div>

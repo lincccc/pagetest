@@ -146,7 +146,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 <div class="textblock"><p>该接口表示形状卡尺检测结果，可获取其具体属性。 </p>
 <p>通常通过某个形状卡尺工具的检测函数获得 <a class="el" href="class_l_p_v_gauge_lib_1_1_l_shape_gauge_result.html">LShapeGaugeResult</a> 对象，如直线卡尺 <a class="el" href="interface_l_p_v_gauge_lib_1_1_i_l_line_gauge.html">LLineGauge</a> 可获得直线形状的检测结果。 可以使用该接口访问检测的具体结果形状及细节信息，如卡点等，还可以调用绘制函数将该形状对象及卡点等绘制在界面上。</p>
 <h3>示例代码 </h3>
- <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">ILLinePtr line = lineGaugeResult-&gt;Result;</div>
+ <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">ILLinePtr line = LLine::Cast(lineGaugeResult-&gt;Result);</div>
 <div class="line">ILPointsPtr allPoints = lineGaugeResult-&gt;SamplePoints;</div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LLine line = lineGaugeResult.Result;</div>
 <div class="line">LPoints allPoints = lineGaugeResult.SamplePoints;</div>

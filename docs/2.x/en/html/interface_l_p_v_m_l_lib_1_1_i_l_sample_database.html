@@ -187,13 +187,15 @@ For the persisted database, it is used to store the sample files and management 
 <div class="line">sampleDb2.Load(<span class="stringliteral">&quot;d:/test/anotherlabel&quot;</span>);</div>
 <div class="ttc" id="anamespace_l_p_v_m_l_lib_html_ab81fed5ed40d5c69f497afd8e5b8f61c"><div class="ttname"><a href="namespace_l_p_v_m_l_lib.html#ab81fed5ed40d5c69f497afd8e5b8f61c">LPVMLLib::LPVSampleType</a></div><div class="ttdeci">LPVSampleType</div><div class="ttdoc">This enumeration represents the type of the sample instance.</div><div class="ttdef"><b>Definition:</b> LPVML.idl:142</div></div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='com' style='display: none;'>COM</div><div class='toggleable_div label_com' style='display: none;'><div class="fragment"><div class="line"><span class="comment">// create &quot;mylabel&quot; sample database</span></div>
-<div class="line">ILSampleDatabasePtr sampleDb(__uuidof(LSampleDatabase));</div>
+<div class="line">ILSampleDatabasePtr sampleDb = LSampleDatabase::Create();</div>
+<div class="line"><span class="comment">// or, ILSampleDatabasePtr sampleDb(__uuidof(LSampleDatabase)), for absence of built-in Create functions (before 2.2.0)</span></div>
 <div class="line">sampleDb-&gt;Init(L<span class="stringliteral">&quot;mylabel&quot;</span>, L<span class="stringliteral">&quot;d:/test/mylabel&quot;</span>);</div>
 <div class="line"><span class="comment">// add sample images</span></div>
 <div class="line">sampleDb-&gt;AddSampleImage(LPVSampleType::LPVSampleTrain, img1, region1);</div>
 <div class="line">sampleDb-&gt;AddSampleImage(LPVSampleType::LPVSampleTest, img2, region2);</div>
 <div class="line"><span class="comment">// load &quot;anotherlabel&quot; sample database</span></div>
-<div class="line">ILSampleDatabasePtr sampleDb2(__uuidof(LSampleDatabase));</div>
+<div class="line">ILSampleDatabasePtr sampleDb2 = LSampleDatabase::Create();</div>
+<div class="line"><span class="comment">// or, ILSampleDatabasePtr sampleDb2(__uuidof(LSampleDatabase)), for absence of built-in Create functions (before 2.2.0)</span></div>
 <div class="line">sampleDb2-&gt;Load(L<span class="stringliteral">&quot;d:/test/anotherlabel&quot;</span>);</div>
 </div><!-- fragment --> </div>  </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a901728197da02d985a101fb0c82f55b7"></a>

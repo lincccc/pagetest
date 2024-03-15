@@ -156,7 +156,7 @@ Properties</h2></td></tr>
 <p>Usually you get the <a class="el" href="class_l_p_v_o_c_r_lib_1_1_l_o_c_r_result.html">LOCRResult</a> object from the segmentation or recognition. You can then use this interface to access to the details such as the per-line or per-character result, and draw the result on graphics windows.</p>
 <h3>Example Code </h3>
  <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">ILOCRResultPtr ocrResult;</div>
-<div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = ocrTool-&gt;Detect(img, roi, ocrResult);</div>
+<div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = ocrTool-&gt;Detect(img, roi, &amp;ocrResult);</div>
 <div class="line"><span class="keywordflow">if</span> (err != LPVErrorCode::LPVNoError) <span class="keywordflow">return</span>; <span class="comment">// failed, or no result</span></div>
 <div class="line"><span class="keywordtype">int</span> lineCount = ocrResult-&gt;CountLine();</div>
 <div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">This enumeration represents the type of a LPV function error.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:530</div></div>

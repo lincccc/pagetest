@@ -136,7 +136,7 @@ Public 成员函数</h2></td></tr>
 <p>通常通过调用 <a class="el" href="interface_l_p_v_locate_lib_1_1_i_l_circle_detector.html#a82d4b13de035d99f1b5374a7617ee108">ILCircleDetector::Detect()</a> 得到该检测结果集合。 可以通过该接口访问其中的单个检测结果，绘制检测结果和分数曲线到给定的设备。</p>
 <h3>示例代码 </h3>
  <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">ILCircleResultsPtr circleResults;</div>
-<div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = circleDetector-&gt;Detect(img, roi, circleResults);</div>
+<div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = circleDetector-&gt;Detect(img, roi, &amp;circleResults);</div>
 <div class="line"><span class="keywordflow">if</span> (err != LPVErrorCode::LPVNoError) <span class="keywordflow">return</span>;</div>
 <div class="line"><span class="keywordtype">int</span> c = circleResults-&gt;Count();</div>
 <div class="line"><span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; c; ++i) {</div>

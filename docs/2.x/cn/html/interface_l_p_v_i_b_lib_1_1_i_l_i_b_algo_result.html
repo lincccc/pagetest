@@ -145,7 +145,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 <p>通常通过 <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_task_result.html" title="该接口对应整个灵闪作业的运行结果，其中包含该作业中所有算法工具的输出结果。">ILIBTaskResult</a> 接口获取 <a class="el" href="class_l_p_v_i_b_lib_1_1_l_i_b_algo_result.html">LIBAlgoResult</a> 对象。可以使用该接口访问其中的单个输出结果。</p>
 <h3>示例代码 </h3>
  <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">ILIBTaskResultPtr taskResult;</div>
-<div class="line"><span class="keywordtype">int</span> err = ibService-&gt;ExecuteTaskSync(ibTaskId, image, taskResult);</div>
+<div class="line"><span class="keywordtype">int</span> err = ibService-&gt;ExecuteTaskSync(ibTaskId, image, &amp;taskResult);</div>
 <div class="line"><span class="keywordflow">if</span> (err != LPVErrorCode::LPVNoError) <span class="keywordflow">return</span>; <span class="comment">// execution failed</span></div>
 <div class="line">ILIBAlgoResultPtr outputResult = taskResult-&gt;GetAlgoResult(L<span class="stringliteral">&quot;algorithm name&quot;</span>);</div>
 <div class="line"><span class="keywordtype">int</span> dataCount = outputResult-&gt;Count();</div>

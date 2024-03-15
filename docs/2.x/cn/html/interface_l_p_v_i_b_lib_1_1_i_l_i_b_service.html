@@ -158,7 +158,7 @@ Public 成员函数</h2></td></tr>
 <div class="line">ibService-&gt;SetGlobalVariableValue(L<span class="stringliteral">&quot;test_string&quot;</span>, newData);</div>
 <div class="line"><span class="comment">// execute the task</span></div>
 <div class="line">ILIBTaskResultPtr taskResults;</div>
-<div class="line">errCode = ibService-&gt;ExecuteTaskSync(taskId, img, taskResults);</div>
+<div class="line">errCode = ibService-&gt;ExecuteTaskSync(taskId, img, &amp;taskResults);</div>
 <div class="line"><span class="keywordflow">if</span> (errCode != LPVNoError) <span class="keywordflow">return</span>; <span class="comment">// execution failed</span></div>
 <div class="line"><span class="comment">// do other stuff, like parse and display task result, change task configuration...</span></div>
 <div class="line"><span class="comment">// see ILIBTaskResult, ILIBTaskConfig for more details</span></div>
@@ -185,7 +185,8 @@ Public 成员函数</h2></td></tr>
 <div class="line"><span class="comment">// see ILIBTaskResult, ILIBTaskConfig for more details</span></div>
 <div class="line">ibService.TearDown();</div>
 <div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">LPV 算法或函数运行过程中遇到的错误。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:530</div></div>
-</div><!-- fragment --> </div>  <div class='newInnerHTML' title='com' style='display: none;'>COM</div><div class='toggleable_div label_com' style='display: none;'><div class="fragment"><div class="line">ILIBServicePtr ibService(__uuidof(LIBService));</div>
+</div><!-- fragment --> </div>  <div class='newInnerHTML' title='com' style='display: none;'>COM</div><div class='toggleable_div label_com' style='display: none;'><div class="fragment"><div class="line">ILIBServicePtr ibService = LIBService::Create();</div>
+<div class="line"><span class="comment">// or, ILIBServicePtr ibService(__uuidof(LIBService)), for absence of built-in Create functions (before 2.2.0)</span></div>
 <div class="line"><span class="keywordtype">int</span> errCode = ibService-&gt;SetUp(L<span class="stringliteral">&quot;path to the IntelliBlink root folder, say D:/Programs/IntelliBlink/&quot;</span>);</div>
 <div class="line"><span class="keywordflow">if</span> (errCode != LPVNoError || !ibService-&gt;IsReady()) <span class="keywordflow">return</span>; <span class="comment">// set up IB service failed</span></div>
 <div class="line"><span class="comment">// load task</span></div>
@@ -196,7 +197,8 @@ Public 成员函数</h2></td></tr>
 <div class="line">errCode = ibService-&gt;LoadGlobalAction(L<span class="stringliteral">&quot;globalAction.json&quot;</span>);</div>
 <div class="line"><span class="keywordflow">if</span> (errCode != LPVNoError) <span class="keywordflow">return</span>; <span class="comment">// load failed</span></div>
 <div class="line"><span class="comment">// change some of the global variables</span></div>
-<div class="line">ILIBDataPtr newData(__uuidof(LIBData));</div>
+<div class="line">ILIBDataPtr newData = LIBData::Create();</div>
+<div class="line"><span class="comment">// or, ILIBDataPtr newData(__uuidof(LIBData)), for absence of built-in Create functions (before 2.2.0)</span></div>
 <div class="line">newData-&gt;FromString(L<span class="stringliteral">&quot;this is a test&quot;</span>);</div>
 <div class="line">ibService-&gt;SetGlobalVariableValue(L<span class="stringliteral">&quot;test_string&quot;</span>, newData);</div>
 <div class="line"><span class="comment">// execute the task</span></div>

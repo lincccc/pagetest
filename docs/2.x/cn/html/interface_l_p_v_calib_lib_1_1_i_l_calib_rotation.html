@@ -168,7 +168,8 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 <div class="line">rotCalib.SetAim(0, 10, 0, 90);</div>
 <div class="line"><span class="keywordtype">double</span> dx, dy, da;</div>
 <div class="line">rotCalib.Align(10, 0, 90, 0, out dx, out dy, out da);</div>
-</div><!-- fragment --> </div>  <div class='newInnerHTML' title='com' style='display: none;'>COM</div><div class='toggleable_div label_com' style='display: none;'> <div class="fragment"><div class="line">ILCalibRotationPtr rotCalib(__uuidof(LCalibRotation));</div>
+</div><!-- fragment --> </div>  <div class='newInnerHTML' title='com' style='display: none;'>COM</div><div class='toggleable_div label_com' style='display: none;'> <div class="fragment"><div class="line">ILCalibRotationPtr rotCalib = LCalibRotation::Create();</div>
+<div class="line"><span class="comment">// or, ILCalibRotationPtr rotCalib(__uuidof(LCalibRotation)), for absence of built-in Create functions (before 2.2.0)</span></div>
 <div class="line">rotCalib-&gt;AddRotPointPair(0, 100, 0, -100, 0);</div>
 <div class="line">rotCalib-&gt;AddRotPointPair(100, 100, -100, -100, 45);</div>
 <div class="line">rotCalib-&gt;AddRotPointPair(100, 0, -100, 0, 90);</div>

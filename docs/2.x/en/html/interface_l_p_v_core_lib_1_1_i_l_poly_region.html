@@ -193,7 +193,8 @@ By default, it's 1. Change this value to scale the reduced result image.  <a hre
 <div class="line">polyRoi-&gt;SetPlacement(20, 20, 100);</div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LPolyRegion polyRoi = <span class="keyword">new</span> LPolyRegion();</div>
 <div class="line">polyRoi.SetPlacement(20, 20, 100);</div>
-</div><!-- fragment --> </div>  <div class='newInnerHTML' title='com' style='display: none;'>COM</div><div class='toggleable_div label_com' style='display: none;'><div class="fragment"><div class="line">ILPolyRegionPtr polyRoi(__uuidof(LPolyRegion));</div>
+</div><!-- fragment --> </div>  <div class='newInnerHTML' title='com' style='display: none;'>COM</div><div class='toggleable_div label_com' style='display: none;'><div class="fragment"><div class="line">ILPolyRegionPtr polyRoi = LPolyRegion::Create();</div>
+<div class="line"><span class="comment">// or, ILPolyRegionPtr polyRoi(__uuidof(LPolyRegion)), for absence of built-in Create functions (before 2.2.0)</span></div>
 <div class="line">polyRoi-&gt;SetPlacement(20, 20, 100);</div>
 </div><!-- fragment --> </div>  </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a65b9b05f5484dd438cfae3011144198d"></a>

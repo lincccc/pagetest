@@ -156,7 +156,7 @@ Public 成员函数</h2></td></tr>
 <p>通常通过字符分割或识别获得 <a class="el" href="class_l_p_v_o_c_r_lib_1_1_l_o_c_r_result.html">LOCRResult</a> 对象。可以使用该接口访问具体的识别结果细节，如单行或单个字符结果， 还可以调用绘制函数将该结果对象绘制在界面上。</p>
 <h3>示例代码 </h3>
  <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">ILOCRResultPtr ocrResult;</div>
-<div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = ocrTool-&gt;Detect(img, roi, ocrResult);</div>
+<div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = ocrTool-&gt;Detect(img, roi, &amp;ocrResult);</div>
 <div class="line"><span class="keywordflow">if</span> (err != LPVErrorCode::LPVNoError) <span class="keywordflow">return</span>; <span class="comment">// failed, or no result</span></div>
 <div class="line"><span class="keywordtype">int</span> lineCount = ocrResult-&gt;CountLine();</div>
 <div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">LPV 算法或函数运行过程中遇到的错误。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:530</div></div>

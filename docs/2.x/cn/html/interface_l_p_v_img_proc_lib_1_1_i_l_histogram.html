@@ -136,7 +136,8 @@ Public 成员函数</h2></td></tr>
 <div class="line">histOp-&gt;Build(img, roi, 256, 0, 255);</div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LHistogram histOp = <span class="keyword">new</span> LHistogram();</div>
 <div class="line">histOp.Build(img, roi, 256, 0, 255);</div>
-</div><!-- fragment --> </div>  <div class='newInnerHTML' title='com' style='display: none;'>COM</div><div class='toggleable_div label_com' style='display: none;'><div class="fragment"><div class="line">ILHistogramPtr histOp(__uuidof(LHistogram));</div>
+</div><!-- fragment --> </div>  <div class='newInnerHTML' title='com' style='display: none;'>COM</div><div class='toggleable_div label_com' style='display: none;'><div class="fragment"><div class="line">ILHistogramPtr histOp = LHistogram::Create();</div>
+<div class="line"><span class="comment">// or, ILHistogramPtr histOp(__uuidof(LHistogram)), for absence of built-in Create functions (before 2.2.0)</span></div>
 <div class="line">histOp-&gt;Build(img, roi, 256, 0, 255);</div>
 </div><!-- fragment --> </div>  </div><h2 class="groupheader">成员函数说明</h2>
 <a id="a224974bdf8cadeeca3eeff325bb6afa4"></a>

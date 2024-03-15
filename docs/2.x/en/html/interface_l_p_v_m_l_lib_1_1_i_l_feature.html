@@ -227,7 +227,8 @@ Currently, we support following features:</p>
 <div class="line">llc.AddFeature(hog); <span class="comment">// add it to the classifier</span></div>
 <div class="ttc" id="anamespace_l_p_v_m_l_lib_html_ad34bb8b8fd27b8f7e1d922817ecd3346"><div class="ttname"><a href="namespace_l_p_v_m_l_lib.html#ad34bb8b8fd27b8f7e1d922817ecd3346">LPVMLLib::LPVFeatureType</a></div><div class="ttdeci">LPVFeatureType</div><div class="ttdoc">This enumeration represents the type of feature extracted from the image.</div><div class="ttdef"><b>Definition:</b> LPVML.idl:89</div></div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='com' style='display: none;'>COM</div><div class='toggleable_div label_com' style='display: none;'><div class="fragment"><div class="line"><span class="comment">// create a HOG feature</span></div>
-<div class="line">ILFeaturePtr hog(__uuidof(LFeature));</div>
+<div class="line">ILFeaturePtr hog = LFeature::Create();</div>
+<div class="line"><span class="comment">// or, ILFeaturePtr hog(__uuidof(LFeature)), for absence of built-in Create functions (before 2.2.0)</span></div>
 <div class="line">hog-&gt;Type = LPVFeatureType::LPVFeatureHOG;</div>
 <div class="line"><span class="comment">// change its parameters</span></div>
 <div class="line">hog-&gt;ParamSize[L<span class="stringliteral">&quot;cell size&quot;</span>] = LSize{ 8, 8 };</div>

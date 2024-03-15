@@ -142,7 +142,7 @@ Public 成员函数</h2></td></tr>
 <p>通常通过调用 <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#aa174ae718c73636f93cff15578386560">ILCalibBoard::Detect()</a> ，由标定板检测和生成该点对集合，也可以通过 <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_point_pairs.html#a5a1cbe76816d1828a1579880f39a39a7">AddPointPair()</a> 手动构建点对集合。 可以通过该接口访问其中的单个检测结果，绘制检测结果到给定的设备。</p>
 <h3>示例代码 </h3>
  <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">ILCalibPointPairsPtr pntPairs = LCalibPointPairs::Create();</div>
-<div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = calibBoard-&gt;Detect(img, pntPairs);</div>
+<div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = calibBoard-&gt;Detect(img, &amp;pntPairs);</div>
 <div class="line"><span class="keywordflow">if</span> (err != LPVErrorCode::LPVNoError) <span class="keywordflow">return</span>;</div>
 <div class="line"><span class="keywordtype">int</span> c = pntPairs-&gt;Count();</div>
 <div class="line"><span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; c; ++i) {</div>
@@ -160,7 +160,8 @@ Public 成员函数</h2></td></tr>
 <div class="line">    LPoint worldPnt = pntPairs-&gt;GetWorldPoint(i);</div>
 <div class="line">    <span class="comment">// handle each point pair</span></div>
 <div class="line">}</div>
-</div><!-- fragment --> </div>  <div class='newInnerHTML' title='com' style='display: none;'>COM</div><div class='toggleable_div label_com' style='display: none;'><div class="fragment"><div class="line">ILCalibPointPairsPtr pntPairs(__uuidof(LCalibPointPairs));</div>
+</div><!-- fragment --> </div>  <div class='newInnerHTML' title='com' style='display: none;'>COM</div><div class='toggleable_div label_com' style='display: none;'><div class="fragment"><div class="line">ILCalibPointPairsPtr pntPairs = LCalibPointPairs::Create();</div>
+<div class="line"><span class="comment">// or, ILCalibPointPairsPtr pntPairs(__uuidof(LCalibPointPairs)), for absence of built-in Create functions (before 2.2.0)</span></div>
 <div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = calibBoard-&gt;Detect(img, &amp;pntPairs);</div>
 <div class="line"><span class="keywordflow">if</span> (err != LPVErrorCode::LPVNoError) <span class="keywordflow">return</span>;</div>
 <div class="line"><span class="keywordtype">int</span> c = pntPairs-&gt;Count();</div>

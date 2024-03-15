@@ -198,9 +198,9 @@ Public 成员函数</h2></td></tr>
 <div class="line"><span class="comment">// 3. calculated using existing regions</span></div>
 <div class="line">ILCompoundRegionPtr newRoi = rectRoi-&gt;Add(rectRoiOther);</div>
 <div class="line"><span class="comment">// 4. map the position of a line from the image to the region</span></div>
-<div class="line">ILLinePtr lineInRoi = rectRoi-&gt;MapObjectFromImage(line);</div>
+<div class="line">ILLinePtr lineInRoi = LLine::Cast(rectRoi-&gt;MapObjectFromImage(line));</div>
 <div class="line"><span class="comment">// 5. map the position of the blob results from the region back to the image</span></div>
-<div class="line">ILBlobResultsPtr blobsInImg = rectRoi-&gt;MapObjectToImage(blobInRoi);</div>
+<div class="line">ILBlobResultsPtr blobsInImg = LBlobResults::Cast(rectRoi-&gt;MapObjectToImage(blobInRoi));</div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line"><span class="comment">// 1. set placement programmatically</span></div>
 <div class="line">rectRoi.SetPlacement(10, 10, 200, 100);</div>
 <div class="line"><span class="comment">// 2. drag the region</span></div>

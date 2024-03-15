@@ -163,13 +163,13 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 <p>通常通过调用 <a class="el" href="interface_l_p_v_geom_x_lib_1_1_i_l_sorter.html#a7a7cf189045f1e288f75a4f370e0e6a9">ILSorter::SortToArray()</a> 得到该结果（LSortedArray）。 可以通过该接口进行行列索引、属性计算等。</p>
 <h3>示例代码 </h3>
  <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">ILSortedArrayPtr sortedArray;</div>
-<div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = sorter-&gt;SortToArray(LPVPositionMode::LPVPosModeCenter, 20, 10, 1, sortedArray);</div>
+<div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = sorter-&gt;SortToArray(LPVPositionMode::LPVPosModeCenter, 20, 10, 1, &amp;sortedArray);</div>
 <div class="line"><span class="keywordflow">if</span> (err != LPVErrorCode::LPVNoError) <span class="keywordflow">return</span>; <span class="comment">// failed</span></div>
 <div class="line"><span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; sorter-&gt;RowCount; ++j) {</div>
 <div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; sorter-&gt;ColumnCount; ++i) {</div>
 <div class="line">        <span class="keywordtype">bool</span> hasItem = sorter-&gt;GetHasItem(i, j);</div>
 <div class="line">        <span class="keywordflow">if</span> (hasItem) {</div>
-<div class="line">            ILRegionPtr sortedRegion = sorter-&gt;GetItem(i, j);</div>
+<div class="line">            ILRegionPtr sortedRegion = LRectRegion::Cast(sorter-&gt;GetItem(i, j));</div>
 <div class="line">        }</div>
 <div class="line">        <span class="keywordflow">else</span> {</div>
 <div class="line">            ILPointPtr missingPosition = sorter-&gt;GetPosition(i, j);</div>

@@ -191,7 +191,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 <div class="line">imgOp.GainOffset(img, resultImg, 1.1, 20);</div>
 <div class="line"><span class="comment">// resultImg = avg(imgList)</span></div>
 <div class="line">imgOp.Blend(imgList, LPVAggregation::LPVAggAvg, resultImg);</div>
-</div><!-- fragment --> </div>  <div class='newInnerHTML' title='com' style='display: none;'>COM</div><div class='toggleable_div label_com' style='display: none;'><div class="fragment"><div class="line">ILImageOpPtr imgOp(__uuidof(LImageOp));</div>
+</div><!-- fragment --> </div>  <div class='newInnerHTML' title='com' style='display: none;'>COM</div><div class='toggleable_div label_com' style='display: none;'><div class="fragment"><div class="line">ILImageOpPtr imgOp = LImageOp::Create();</div>
+<div class="line"><span class="comment">// or, ILImageOpPtr imgOp(__uuidof(LImageOp)), for absence of built-in Create functions (before 2.2.0)</span></div>
 <div class="line"><span class="comment">// resultImg = img * 1.1 + 20</span></div>
 <div class="line">imgOp-&gt;GainOffset(img, resultImg, 1.1, 20);</div>
 <div class="line"><span class="comment">// resultImg = avg(imgList)</span></div>

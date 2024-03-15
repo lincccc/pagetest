@@ -141,7 +141,8 @@ Public 成员函数</h2></td></tr>
 <div class="line">sys-&gt;SetDrawPointSize(20);</div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LSystem sys = <span class="keyword">new</span> LSystem();</div>
 <div class="line">sys.SetDrawPointSize(20);</div>
-</div><!-- fragment --> </div>  <div class='newInnerHTML' title='com' style='display: none;'>COM</div><div class='toggleable_div label_com' style='display: none;'><div class="fragment"><div class="line">ILSystemPtr sys(__uuidof(LSystem));</div>
+</div><!-- fragment --> </div>  <div class='newInnerHTML' title='com' style='display: none;'>COM</div><div class='toggleable_div label_com' style='display: none;'><div class="fragment"><div class="line">ILSystemPtr sys = LSystem::Create();</div>
+<div class="line"><span class="comment">// or, ILSystemPtr sys(__uuidof(LSystem)), for absence of built-in Create functions (before 2.2.0)</span></div>
 <div class="line">sys-&gt;SetDrawPointSize(20);</div>
 </div><!-- fragment --> </div>  </div><h2 class="groupheader">成员函数说明</h2>
 <a id="a60f02f83c10395e2adb2bd9d0d929a93"></a>

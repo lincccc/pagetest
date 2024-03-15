@@ -134,7 +134,7 @@ Public 成员函数</h2></td></tr>
 <p>通常通过 <a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#a47629b3e78496fbb6515d63d72a9a5b6">ILBarcodeDetector::Detect()</a> 函数获得 <a class="el" href="class_l_p_v_barcode_lib_1_1_l_barcode_results.html">LBarcodeResults</a> 对象。 可以通过该接口访问集合中的单个条码结果，并将其绘制到图形界面上。</p>
 <h3>示例代码 </h3>
  <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">ILBarcodeResultsPtr codeResults;</div>
-<div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = barcodeDetector-&gt;Detect(img, roi, codeResults);</div>
+<div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = barcodeDetector-&gt;Detect(img, roi, &amp;codeResults);</div>
 <div class="line"><span class="keywordflow">if</span> (err != LPVErrorCode::LPVNoError) <span class="keywordflow">return</span>;</div>
 <div class="line"><span class="keywordtype">int</span> c = codeResults-&gt;Count();</div>
 <div class="line"><span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; c; ++i) {</div>

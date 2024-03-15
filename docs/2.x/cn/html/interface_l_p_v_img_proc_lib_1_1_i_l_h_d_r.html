@@ -146,7 +146,8 @@ Public 成员函数</h2></td></tr>
 <div class="line">hdrOp.ToneMapping(imgList, resultImg1, 1, 4, 1);</div>
 <div class="line"><span class="comment">// 2. exposure fusion</span></div>
 <div class="line">hdrOp.ExposureFusion(imgList, resultImg2, 1, 1, 1);</div>
-</div><!-- fragment --> </div>  <div class='newInnerHTML' title='com' style='display: none;'>COM</div><div class='toggleable_div label_com' style='display: none;'> <div class="fragment"><div class="line">ILHDRPtr hdrOp(__uuidof(LHDR));</div>
+</div><!-- fragment --> </div>  <div class='newInnerHTML' title='com' style='display: none;'>COM</div><div class='toggleable_div label_com' style='display: none;'> <div class="fragment"><div class="line">ILHDRPtr hdrOp = LHDR::Create();</div>
+<div class="line"><span class="comment">// or, ILHDRPtr hdrOp(__uuidof(LHDR)), for absence of built-in Create functions (before 2.2.0)</span></div>
 <div class="line"><span class="comment">// 1. tone mapping</span></div>
 <div class="line">CComSafeArray&lt;double&gt; exposureTimes;</div>
 <div class="line">exposureTimes.Add(10000);</div>

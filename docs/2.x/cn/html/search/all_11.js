@@ -87,7 +87,7 @@ var searchData=
   ['showdialogasync_1458',['ShowDialogAsync',['../interface_l_p_v_display_lib_1_1_i_l_display_common.html#a5364a06cb503911a4b1b44e394d2d437',1,'LPVDisplayLib::ILDisplayCommon']]],
   ['shrink_1459',['Shrink',['../interface_l_p_v_geom_x_lib_1_1_i_l_poly_clipper.html#a2790a43164771e13153b9f1b02ebe5f8',1,'LPVGeomXLib::ILPolyClipper']]],
   ['simplify_1460',['Simplify',['../interface_l_p_v_geom_x_lib_1_1_i_l_poly_clipper.html#acecabc74af0606b67050c05995a1aa88',1,'LPVGeomXLib::ILPolyClipper']]],
-  ['simplifydp_1461',['SimplifyDP',['../interface_l_p_v_geom_x_lib_1_1_i_l_poly_clipper.html#af084aa488f1a0617f2377f0a7ec7dd59',1,'LPVGeomXLib::ILPolyClipper']]],
+  ['simplifydp_1461',['SimplifyDP',['../interface_l_p_v_geom_x_lib_1_1_i_l_poly_clipper.html#a6e0ce870c53f4256eb1aa4f8b47a48bc',1,'LPVGeomXLib::ILPolyClipper']]],
   ['sizerangelb_1462',['SizeRangeLB',['../interface_l_p_v_locate_x_lib_1_1_i_l_cross_mark_detector.html#aa4cf6e8702fa68b8f8c28b8d74fcbfc8',1,'LPVLocateXLib::ILCrossMarkDetector']]],
   ['sizerangeub_1463',['SizeRangeUB',['../interface_l_p_v_locate_x_lib_1_1_i_l_cross_mark_detector.html#a01400a453ce8b8b8615aa1fbc1cabdd6',1,'LPVLocateXLib::ILCrossMarkDetector']]],
   ['smooth_1464',['Smooth',['../interface_l_p_v_geom_x_lib_1_1_i_l_poly_clipper.html#a22ed1be146327a6a28bbe753e207ce11',1,'LPVGeomXLib::ILPolyClipper']]],
