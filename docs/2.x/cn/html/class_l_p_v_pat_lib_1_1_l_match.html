@@ -37,7 +37,7 @@
    <div id="projectbrief">Leaper Vision Toolkit</div>
    <div id="projectbrief" style="margin-top: 3px;">
     <a id="cn_btn" style="cursor: pointer; color: var(--primary-color);">中文</a> / <a id="en_btn" style="cursor: pointer; color: var(--primary-color);">English</a>
-    <span id="projectnumber">2.x</span>
+    <span id="projectnumber">2.2.1.0</span>
     </div>
   </td>
  </tr>
@@ -159,6 +159,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 <tr class="memitem:ad3566610c7064816188077fe128c506e inherit properties_interface_l_p_v_pat_lib_1_1_i_l_match"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#ad3566610c7064816188077fe128c506e">DetailLevel</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:ad3566610c7064816188077fe128c506e inherit properties_interface_l_p_v_pat_lib_1_1_i_l_match"><td class="mdescLeft">&#160;</td><td class="mdescRight">模板细节程度，取值范围为 0 ~ 1，默认设置为 0.5。<br  />
 数值越高，保留的细节越多，同时也可能引入更多的噪声，并影响算法的整体性能。 设置或修改模板细节程度后，需<b>重新</b>调用 <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#aa2d7fce8c363465a0cbeb6a265fd36fb">Learn()</a> 训练模板，特征点将在新的训练过程中按照细节程度重新提取。<br  />
+若同时定义了 <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#ad3566610c7064816188077fe128c506e" title="模板细节程度，取值范围为 0 ~ 1，默认设置为 0.5。 数值越高，保留的细节越多，同时也可能引入更多的噪声，并影响算法的整体性能。 设置或修改模板细节程度后，需重新调用 Learn() 训练模板，特...">DetailLevel</a> 以及 <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#af81c77bd1cdf4bd58a6555d6026b7de7" title="用于过滤训练获得的长度较短的特征。该数值为相对于训练图像或区域长边的 0 ~ 100 的百分数， 即实际阈值的数值为  默认值为 0 表示不进行短特征过滤。 设置或修改模板的短特征过滤阈值后，需重新调用...">ShortThreshold</a> / <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a2c1e7241a7f82ad17cfe5a1ff8f40f68" title="用于过滤训练获得的对比对较弱的特征。取值范围为 0 ~ 100，默认值为 0 表示不进行弱特征过滤。 设置或修改模板的弱特征过滤阈值后，需重新调用 Learn() 训练模板，特征点将在新的训练过程中按照...">WeakThreshold</a> ，将先应用 <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#af81c77bd1cdf4bd58a6555d6026b7de7" title="用于过滤训练获得的长度较短的特征。该数值为相对于训练图像或区域长边的 0 ~ 100 的百分数， 即实际阈值的数值为  默认值为 0 表示不进行短特征过滤。 设置或修改模板的短特征过滤阈值后，需重新调用...">ShortThreshold</a> / <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a2c1e7241a7f82ad17cfe5a1ff8f40f68" title="用于过滤训练获得的对比对较弱的特征。取值范围为 0 ~ 100，默认值为 0 表示不进行弱特征过滤。 设置或修改模板的弱特征过滤阈值后，需重新调用 Learn() 训练模板，特征点将在新的训练过程中按照...">WeakThreshold</a> 过滤特征，再调整细节成都。<br  />
  <a href="interface_l_p_v_pat_lib_1_1_i_l_match.html#ad3566610c7064816188077fe128c506e">更多...</a><br /></td></tr>
 <tr class="separator:ad3566610c7064816188077fe128c506e inherit properties_interface_l_p_v_pat_lib_1_1_i_l_match"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb20124963364a91ff986cab7acaf962 inherit properties_interface_l_p_v_pat_lib_1_1_i_l_match"><td class="memItemLeft" align="right" valign="top"><a id="acb20124963364a91ff986cab7acaf962"></a>
@@ -204,6 +205,11 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 <tr class="memdesc:a4ce2228fa3bc8c2d1ee84415c9cd31ef inherit properties_interface_l_p_v_pat_lib_1_1_i_l_match"><td class="mdescLeft">&#160;</td><td class="mdescRight">尺寸缩放范围，取值在 0 ~ 50 百分数。默认设置为 0。<br  />
 匹配的尺寸缩放搜索区间基于缩放的偏移和缩放范围生成为 \( ScaleBias \pm ScaleTolerance \) . <br /></td></tr>
 <tr class="separator:a4ce2228fa3bc8c2d1ee84415c9cd31ef inherit properties_interface_l_p_v_pat_lib_1_1_i_l_match"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af81c77bd1cdf4bd58a6555d6026b7de7 inherit properties_interface_l_p_v_pat_lib_1_1_i_l_match"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#af81c77bd1cdf4bd58a6555d6026b7de7">ShortThreshold</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:af81c77bd1cdf4bd58a6555d6026b7de7 inherit properties_interface_l_p_v_pat_lib_1_1_i_l_match"><td class="mdescLeft">&#160;</td><td class="mdescRight">用于过滤训练获得的长度较短的特征。该数值为相对于训练图像或区域长边的 0 ~ 100 的百分数， 即实际阈值的数值为 \( Max(Width, Height) \times ShortThreshold / 100 \) 默认值为 0 表示不进行短特征过滤。<br  />
+设置或修改模板的短特征过滤阈值后，需<b>重新</b>调用 <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#aa2d7fce8c363465a0cbeb6a265fd36fb">Learn()</a> 训练模板，特征点将在新的训练过程中按照细节程度重新提取。<br  />
+ <a href="interface_l_p_v_pat_lib_1_1_i_l_match.html#af81c77bd1cdf4bd58a6555d6026b7de7">更多...</a><br /></td></tr>
+<tr class="separator:af81c77bd1cdf4bd58a6555d6026b7de7 inherit properties_interface_l_p_v_pat_lib_1_1_i_l_match"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7133b42ac0831a82f525fea9d2a9b0ff inherit properties_interface_l_p_v_pat_lib_1_1_i_l_match"><td class="memItemLeft" align="right" valign="top"><a id="a7133b42ac0831a82f525fea9d2a9b0ff"></a>
 BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a7133b42ac0831a82f525fea9d2a9b0ff">StrictScore</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:a7133b42ac0831a82f525fea9d2a9b0ff inherit properties_interface_l_p_v_pat_lib_1_1_i_l_match"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否在匹配过程中启用严格评分。默认关闭这个配置。<br  />
@@ -213,6 +219,11 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a75ffdfc69b1a3dd711a2eaa55ef6f6bc">UseCache</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:a75ffdfc69b1a3dd711a2eaa55ef6f6bc inherit properties_interface_l_p_v_pat_lib_1_1_i_l_match"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否在匹配过程中使用缓存数据。 开启缓存将稍微加快匹配过程，但占用更多的内存。默认开启这个配置。 <br /></td></tr>
 <tr class="separator:a75ffdfc69b1a3dd711a2eaa55ef6f6bc inherit properties_interface_l_p_v_pat_lib_1_1_i_l_match"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c1e7241a7f82ad17cfe5a1ff8f40f68 inherit properties_interface_l_p_v_pat_lib_1_1_i_l_match"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a2c1e7241a7f82ad17cfe5a1ff8f40f68">WeakThreshold</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a2c1e7241a7f82ad17cfe5a1ff8f40f68 inherit properties_interface_l_p_v_pat_lib_1_1_i_l_match"><td class="mdescLeft">&#160;</td><td class="mdescRight">用于过滤训练获得的对比对较弱的特征。取值范围为 0 ~ 100，默认值为 0 表示不进行弱特征过滤。<br  />
+设置或修改模板的弱特征过滤阈值后，需<b>重新</b>调用 <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#aa2d7fce8c363465a0cbeb6a265fd36fb">Learn()</a> 训练模板，特征点将在新的训练过程中按照细节程度重新提取。<br  />
+ <a href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a2c1e7241a7f82ad17cfe5a1ff8f40f68">更多...</a><br /></td></tr>
+<tr class="separator:a2c1e7241a7f82ad17cfe5a1ff8f40f68 inherit properties_interface_l_p_v_pat_lib_1_1_i_l_match"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><p>该类实现了 <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html" title="该接口提供模板匹配的功能。">ILMatch</a> 接口, 用于创建模板匹配工具的实例 </p>

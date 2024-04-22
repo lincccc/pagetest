@@ -1,0 +1,231 @@
+<!-- HTML header for doxygen 1.9.1-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>LPV: snippets/LinearTransform.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="tutorial-utils.js"></script>
+<script type="text/javascript" src="version.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/SVG"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.7/MathJax.js"></script>
+<link href="lpv_stylesheet.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-custom.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 100px;">
+  <td id="projectlogo" style="padding-left: 1em; text-align: center; vertical-align: middle;"><a href="index.html"><img alt="Logo" src="lpv_logo.png"/></a></td>
+  <td id="projectalign" style="padding-left: 0.5em; vertical-align: bottom; padding-bottom: 5px;">
+   <div id="projectbrief">Leaper Vision Toolkit</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">snippets/LinearTransform.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<p>应用指定的变换矩阵到输入图像，得到一个新的图像。<br  />
+若指定的结果图像对象为空图像，则生成和输入图像尺寸相同的图像。 否则，将保持结果图像的尺寸，超出图像范围的像素设为背景像素（默认为黑色）。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>输入图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tf</td><td>变换矩阵 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">interMethod</td><td>插值方法 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>输出结果图像 , snippets/LinearTransform.cs </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd>Resize(), ResizeTo(), Rotate(), ScaleRotate()</dd></dl>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &quot;LPVCore.h&quot;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;LPVGeom.h&quot;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;LPVImgProc.h&quot;</span></div>
+<div class="line"><span class="keyword">using namespace </span><a class="code" href="namespace_l_p_v_core_lib.html">LPVCoreLib</a>;</div>
+<div class="line"><span class="keyword">using namespace </span><a class="code" href="namespace_l_p_v_geom_lib.html">LPVGeomLib</a>;</div>
+<div class="line"><span class="keyword">using namespace </span><a class="code" href="namespace_l_p_v_img_proc_lib.html">LPVImgProcLib</a>;</div>
+<div class="line"> </div>
+<div class="line"><span class="preprocessor">#if !defined (NO_UI) &amp;&amp; defined(_MSC_VER) </span><span class="comment">// windows</span></div>
+<div class="line"><span class="preprocessor">#include &quot;ActiveX/LPVDisplay.h&quot;</span></div>
+<div class="line"><span class="preprocessor">#endif</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">void</span> lpvdemo_LinearTransform()</div>
+<div class="line">{</div>
+<div class="line">    ILImagePtr srcImg = LImage::Create();</div>
+<div class="line">    <a name="a0"></a><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = srcImg-&gt;Load(L<span class="stringliteral">&quot;images/cat.png&quot;</span>);</div>
+<div class="line">    <span class="keywordflow">if</span> (err != <a name="a1"></a><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aae917cd39742ab4cec9119219cae9154c">LPVNoError</a>) <span class="keywordflow">return</span>;</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// create a polygon roi to control the transform</span></div>
+<div class="line">    ILPolygonPtr srcPoly = LPolygon::Create();</div>
+<div class="line">    <span class="keywordtype">int</span> shrinkIn = 20;</div>
+<div class="line">    srcPoly-&gt;Set(0, shrinkIn, shrinkIn); <span class="comment">// top-left</span></div>
+<div class="line">    srcPoly-&gt;Set(1, srcImg-&gt;Width - shrinkIn, shrinkIn); <span class="comment">// top-right</span></div>
+<div class="line">    srcPoly-&gt;Set(2, srcImg-&gt;Width - shrinkIn, srcImg-&gt;Height - shrinkIn); <span class="comment">// bottom-right</span></div>
+<div class="line">    srcPoly-&gt;Set(3, shrinkIn, srcImg-&gt;Height - shrinkIn); <span class="comment">// bottom-left</span></div>
+<div class="line">    ILDrawable::Cast(srcPoly)-&gt;SetPen(LPVPenStyle::LPVPenDash, 1, LPVColor::LPVMagenta); <span class="comment">// dash magenta</span></div>
+<div class="line">    ILPolyRegionPtr polyRegion = srcPoly-&gt;ToPolyRegion();</div>
+<div class="line">    polyRegion-&gt;EnableHandle(LPVRoiHandle::LPVRoiHandleAddVertex, VARIANT_FALSE);</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// create some shapes</span></div>
+<div class="line">    ILPointPtr srcPnt = LPoint::Create();</div>
+<div class="line">    srcPnt-&gt;Set(100, 100);</div>
+<div class="line">    ILRectPtr srcRect = LRect::Create();</div>
+<div class="line">    srcRect-&gt;Set(200, 100, 100, 50, 15);</div>
+<div class="line">    ILCirclePtr srcCircle = LCircle::Create();</div>
+<div class="line">    srcCircle-&gt;Set(300, 300, 50);</div>
+<div class="line">    ILEllipsePtr srcEllipse = LEllipse::Create();</div>
+<div class="line">    srcEllipse-&gt;Set(100, 300, 150, 100, -30);</div>
+<div class="line">    ILLinePtr srcLine = LLine::Create();</div>
+<div class="line">    srcLine-&gt;Set(150, 50, 100, 300);</div>
+<div class="line"> </div>
+<div class="line">    ILImagePtr dstImg = LImage::Create(); <span class="comment">// the transformed image</span></div>
+<div class="line">    srcImg-&gt;CopyTo(dstImg);</div>
+<div class="line"> </div>
+<div class="line"><span class="preprocessor">#if !defined (NO_UI) &amp;&amp; defined(_MSC_VER) </span><span class="comment">// windows</span></div>
+<div class="line">    <span class="comment">// display, in another thread</span></div>
+<div class="line">    ILDisplayPtr srcDisplayCtrl(__uuidof(LDisplay));</div>
+<div class="line">    srcDisplayCtrl-&gt;SetImage(LObjectToDispatch(*srcImg));</div>
+<div class="line">    srcDisplayCtrl-&gt;AddObject(LObjectToDispatch(*srcPoly), 0);</div>
+<div class="line">    srcDisplayCtrl-&gt;AddObject(LObjectToDispatch(*srcPnt), 0);</div>
+<div class="line">    srcDisplayCtrl-&gt;AddObject(LObjectToDispatch(*srcRect), 0);</div>
+<div class="line">    srcDisplayCtrl-&gt;AddObject(LObjectToDispatch(*srcCircle), 0);</div>
+<div class="line">    srcDisplayCtrl-&gt;AddObject(LObjectToDispatch(*srcEllipse), 0);</div>
+<div class="line">    srcDisplayCtrl-&gt;AddObject(LObjectToDispatch(*srcLine), 0);</div>
+<div class="line">    srcDisplayCtrl-&gt;AddRegion(LObjectToDispatch(*polyRegion), VARIANT_TRUE);</div>
+<div class="line">    srcDisplayCtrl-&gt;ShowDialogAsync(L<span class="stringliteral">&quot;Source (Drag the polygon region to generate the transform)&quot;</span>, 0, 0, 800, 600, 0);</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// display control for the transformed results</span></div>
+<div class="line">    ILDisplayPtr dstDisplayCtrl(__uuidof(LDisplay));</div>
+<div class="line">    dstDisplayCtrl-&gt;SetImage(LObjectToDispatch(*dstImg));</div>
+<div class="line">    dstDisplayCtrl-&gt;ShowDialogAsync(L<span class="stringliteral">&quot;Transformed Results&quot;</span>, 800, 0, 800, 600, 0);</div>
+<div class="line"><span class="preprocessor">#endif</span></div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordflow">while</span> (<span class="keyword">true</span>)</div>
+<div class="line">    {</div>
+<div class="line">        <span class="comment">// do transformation per 1000ms</span></div>
+<div class="line">        Sleep(1000);</div>
+<div class="line"> </div>
+<div class="line">        <span class="comment">// get the new control polygon</span></div>
+<div class="line">        ILPolygonPtr dstPoly = LPolygon::Create();</div>
+<div class="line">        dstPoly-&gt;FromPolyRegion(polyRegion);</div>
+<div class="line"> </div>
+<div class="line">        ILTransformPtr tf = LTransform::Create();</div>
+<div class="line">        <span class="keywordtype">double</span> err = tf-&gt;Build(srcPoly-&gt;GetPoints(), dstPoly-&gt;GetPoints(), LPVTransformType::LPVTransformHomography);</div>
+<div class="line">        <span class="keywordflow">if</span> (err &lt; 0)</div>
+<div class="line">            <span class="keywordflow">continue</span>; <span class="comment">// build transform failed</span></div>
+<div class="line"> </div>
+<div class="line">        <span class="comment">// transform the image</span></div>
+<div class="line">        ILImageOpPtr imgOp = LImageOp::Create();</div>
+<div class="line">        imgOp-&gt;Transform(srcImg, tf, LPVInterpolationMethod::LPVInterLinear, dstImg);</div>
+<div class="line"> </div>
+<div class="line">        <span class="comment">// transform the shapes</span></div>
+<div class="line">        ILPointPtr dstPnt = srcPnt-&gt;Transform(tf);</div>
+<div class="line">        ILRectPtr dstRect = srcRect-&gt;Transform(tf);</div>
+<div class="line">        ILCirclePtr dstCircle = srcCircle-&gt;Transform(tf);</div>
+<div class="line">        ILEllipsePtr dstEllipse = srcEllipse-&gt;Transform(tf);</div>
+<div class="line">        ILLinePtr dstLine = srcLine-&gt;Transform(tf);</div>
+<div class="line"> </div>
+<div class="line"><span class="preprocessor">#if !defined (NO_UI) &amp;&amp; defined(_MSC_VER) </span><span class="comment">// windows</span></div>
+<div class="line">        <span class="comment">// add to the display control, and refresh</span></div>
+<div class="line">        dstDisplayCtrl-&gt;RemoveAllObjects();</div>
+<div class="line">        ILDrawable::Cast(dstPoly)-&gt;SetPen(LPVPenStyle::LPVPenDash, 1, LPVColor::LPVMagenta); <span class="comment">// dash magenta</span></div>
+<div class="line">        dstDisplayCtrl-&gt;AddObject(LObjectToDispatch(*dstPoly), 0);</div>
+<div class="line">        dstDisplayCtrl-&gt;AddObject(LObjectToDispatch(*dstPnt), 0);</div>
+<div class="line">        dstDisplayCtrl-&gt;AddObject(LObjectToDispatch(*dstRect), 0);</div>
+<div class="line">        dstDisplayCtrl-&gt;AddObject(LObjectToDispatch(*dstCircle), 0);</div>
+<div class="line">        dstDisplayCtrl-&gt;AddObject(LObjectToDispatch(*dstEllipse), 0);</div>
+<div class="line">        dstDisplayCtrl-&gt;AddObject(LObjectToDispatch(*dstLine), 0);</div>
+<div class="line">        dstDisplayCtrl-&gt;Refresh();</div>
+<div class="line"><span class="preprocessor">#endif</span></div>
+<div class="line">    }</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">int</span> main()</div>
+<div class="line">{</div>
+<div class="line"><span class="preprocessor">#if !defined (NO_UI) &amp;&amp; defined(_MSC_VER) </span><span class="comment">// windows</span></div>
+<div class="line">    <span class="comment">// initialize COM</span></div>
+<div class="line">    CoInitializeEx(<span class="keyword">nullptr</span>, COINIT_MULTITHREADED);</div>
+<div class="line"><span class="preprocessor">#endif</span></div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// lpv demo</span></div>
+<div class="line">    lpvdemo_LinearTransform();</div>
+<div class="line"> </div>
+<div class="line"><span class="preprocessor">#if !defined (NO_UI) &amp;&amp; defined(_MSC_VER) </span><span class="comment">// windows</span></div>
+<div class="line">    <span class="comment">// uninitialize COM</span></div>
+<div class="line">    CoUninitialize();</div>
+<div class="line"><span class="preprocessor">#endif</span></div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordflow">return</span> 0;</div>
+<div class="line">}</div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html"><div class="ttname"><a href="namespace_l_p_v_core_lib.html">LPVCoreLib</a></div><div class="ttdoc">LPV 基础模块，提供图像、检测区域、绘制等基础功能。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:425</div></div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">LPV 算法或函数运行过程中遇到的错误。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:528</div></div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4aae917cd39742ab4cec9119219cae9154c"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aae917cd39742ab4cec9119219cae9154c">LPVCoreLib::LPVNoError</a></div><div class="ttdeci">@ LPVNoError</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:533</div></div>
+<div class="ttc" id="anamespace_l_p_v_geom_lib_html"><div class="ttname"><a href="namespace_l_p_v_geom_lib.html">LPVGeomLib</a></div><div class="ttdoc">LPV 几何库，提供几何形状相关的数据定义、计算和测量功能。</div><div class="ttdef"><b>Definition:</b> LPVGeom.idl:80</div></div>
+<div class="ttc" id="anamespace_l_p_v_img_proc_lib_html"><div class="ttname"><a href="namespace_l_p_v_img_proc_lib.html">LPVImgProcLib</a></div><div class="ttdoc">LPV 图像处理库，提供各种用于图像处理、计算和比较的工具。</div><div class="ttdef"><b>Definition:</b> LPVImgProc.idl:79</div></div>
+</div><!-- fragment --> </div><!-- contents -->
+<!-- HTML footer for doxygen 1.9.1-->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+© 2024 <a href="http://www.hzleaper.com/">杭州利珀科技有限公司</a>
+</small></address>
+<script type="text/javascript">
+//<![CDATA[
+addTutorialsButtons();
+var cn_btn = document.getElementById("cn_btn");
+cn_btn.addEventListener("click", function(){window.location.href = window.location.href.replace("/en/", "/cn/");});
+var en_btn = document.getElementById("en_btn");
+en_btn.addEventListener("click", function(){window.location.href = window.location.href.replace("/cn/", "/en/");});
+//]]>
+</script>
+</body>
+</html>

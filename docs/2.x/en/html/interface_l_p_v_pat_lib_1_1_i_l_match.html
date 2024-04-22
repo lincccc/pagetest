@@ -37,7 +37,7 @@
    <div id="projectbrief">Leaper Vision Toolkit</div>
    <div id="projectbrief" style="margin-top: 3px;">
     <a id="cn_btn" style="cursor: pointer; color: var(--primary-color);">中文</a> / <a id="en_btn" style="cursor: pointer; color: var(--primary-color);">English</a>
-    <span id="projectnumber">2.x</span>
+    <span id="projectnumber">2.2.1.0</span>
     </div>
   </td>
  </tr>
@@ -167,6 +167,7 @@ The matching angle range is based on the bias and tolerance as \( AngleBias \pm 
 <tr class="memdesc:ad3566610c7064816188077fe128c506e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Level of detail of the pattern template, in range of 0 ~ 1. By default, it's set to 0.5.<br  />
 Higher level indicates more details contained in the trained template, while it may introduce more noise and slow down the detection.<br  />
 You should set the proper detail level firstly, then train the template via <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#aa2d7fce8c363465a0cbeb6a265fd36fb">Learn()</a>, since the template features should be re-extracted again in the training process.<br  />
+If at the same time <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#ad3566610c7064816188077fe128c506e" title="Level of detail of the pattern template, in range of 0 ~ 1. By default, it&#39;s set to 0....">DetailLevel</a> and <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#af81c77bd1cdf4bd58a6555d6026b7de7" title="The short threshold is used to filter trained feature points extracted from short edge segments....">ShortThreshold</a> / <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a2c1e7241a7f82ad17cfe5a1ff8f40f68" title="The weak threshold is used to filter trained feature points of low contrast, in range of 0 ~ 100....">WeakThreshold</a> is specified, we'll filter according to <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#af81c77bd1cdf4bd58a6555d6026b7de7" title="The short threshold is used to filter trained feature points extracted from short edge segments....">ShortThreshold</a> / <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a2c1e7241a7f82ad17cfe5a1ff8f40f68" title="The weak threshold is used to filter trained feature points of low contrast, in range of 0 ~ 100....">WeakThreshold</a> firstly, then adjust to the required detail level.<br  />
 .  <a href="interface_l_p_v_pat_lib_1_1_i_l_match.html#ad3566610c7064816188077fe128c506e">More...</a><br /></td></tr>
 <tr class="separator:ad3566610c7064816188077fe128c506e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb20124963364a91ff986cab7acaf962"><td class="memItemLeft" align="right" valign="top"><a id="acb20124963364a91ff986cab7acaf962"></a>
@@ -212,6 +213,10 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 <tr class="memdesc:a4ce2228fa3bc8c2d1ee84415c9cd31ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">The scale tolerance in range from 0 to 50%. By default, it's 0.<br  />
 The matching scale range is based on the bias and tolerance as \( ScaleBias \pm ScaleTolerance \) . <br /></td></tr>
 <tr class="separator:a4ce2228fa3bc8c2d1ee84415c9cd31ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af81c77bd1cdf4bd58a6555d6026b7de7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#af81c77bd1cdf4bd58a6555d6026b7de7">ShortThreshold</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:af81c77bd1cdf4bd58a6555d6026b7de7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The short threshold is used to filter trained feature points extracted from short edge segments. It's a 0 ~ 100 percentage value related to the longer side of the training image or region, aka. the actual threshold is calculated as \( Max(Width, Height) \times ShortThreshold / 100 \) By default, it's set to 0 to skip the filtering.<br  />
+You should set the proper short threshold firstly, then train the template via <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#aa2d7fce8c363465a0cbeb6a265fd36fb">Learn()</a>, since the template features should be re-extracted again in the training process.  <a href="interface_l_p_v_pat_lib_1_1_i_l_match.html#af81c77bd1cdf4bd58a6555d6026b7de7">More...</a><br /></td></tr>
+<tr class="separator:af81c77bd1cdf4bd58a6555d6026b7de7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7133b42ac0831a82f525fea9d2a9b0ff"><td class="memItemLeft" align="right" valign="top"><a id="a7133b42ac0831a82f525fea9d2a9b0ff"></a>
 BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a7133b42ac0831a82f525fea9d2a9b0ff">StrictScore</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:a7133b42ac0831a82f525fea9d2a9b0ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether to enable strict scoring in matching. By default, it's off.<br  />
@@ -221,6 +226,10 @@ If it's on, scoring is done on the original image with most detail information. 
 BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a75ffdfc69b1a3dd711a2eaa55ef6f6bc">UseCache</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:a75ffdfc69b1a3dd711a2eaa55ef6f6bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether to make use of cache in matching, it will slightly speed up the matching while consume more memory. By default, it's on. <br /></td></tr>
 <tr class="separator:a75ffdfc69b1a3dd711a2eaa55ef6f6bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c1e7241a7f82ad17cfe5a1ff8f40f68"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a2c1e7241a7f82ad17cfe5a1ff8f40f68">WeakThreshold</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a2c1e7241a7f82ad17cfe5a1ff8f40f68"><td class="mdescLeft">&#160;</td><td class="mdescRight">The weak threshold is used to filter trained feature points of low contrast, in range of 0 ~ 100. By default, it's set to 0 to skip the filtering.<br  />
+You should set the proper weak threshold firstly, then train the template via <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#aa2d7fce8c363465a0cbeb6a265fd36fb">Learn()</a>, since the template features should be re-extracted again in the training process.  <a href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a2c1e7241a7f82ad17cfe5a1ff8f40f68">More...</a><br /></td></tr>
+<tr class="separator:a2c1e7241a7f82ad17cfe5a1ff8f40f68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This interface provide functionalities of pattern matching. </p>
@@ -744,11 +753,66 @@ The template center indicates the report position of the matching result. For ex
 <p>Level of detail of the pattern template, in range of 0 ~ 1. By default, it's set to 0.5.<br  />
 Higher level indicates more details contained in the trained template, while it may introduce more noise and slow down the detection.<br  />
 You should set the proper detail level firstly, then train the template via <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#aa2d7fce8c363465a0cbeb6a265fd36fb">Learn()</a>, since the template features should be re-extracted again in the training process.<br  />
+If at the same time <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#ad3566610c7064816188077fe128c506e" title="Level of detail of the pattern template, in range of 0 ~ 1. By default, it&#39;s set to 0....">DetailLevel</a> and <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#af81c77bd1cdf4bd58a6555d6026b7de7" title="The short threshold is used to filter trained feature points extracted from short edge segments....">ShortThreshold</a> / <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a2c1e7241a7f82ad17cfe5a1ff8f40f68" title="The weak threshold is used to filter trained feature points of low contrast, in range of 0 ~ 100....">WeakThreshold</a> is specified, we'll filter according to <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#af81c77bd1cdf4bd58a6555d6026b7de7" title="The short threshold is used to filter trained feature points extracted from short edge segments....">ShortThreshold</a> / <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a2c1e7241a7f82ad17cfe5a1ff8f40f68" title="The weak threshold is used to filter trained feature points of low contrast, in range of 0 ~ 100....">WeakThreshold</a> firstly, then adjust to the required detail level.<br  />
 . </p>
 <div class="image">
 <img src="pattern_detail.png" alt=""/>
 </div>
- <dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#aa2d7fce8c363465a0cbeb6a265fd36fb">Learn()</a> </dd></dl>
+ <dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#aa2d7fce8c363465a0cbeb6a265fd36fb">Learn()</a>, <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a2c1e7241a7f82ad17cfe5a1ff8f40f68" title="The weak threshold is used to filter trained feature points of low contrast, in range of 0 ~ 100....">WeakThreshold</a>, <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#af81c77bd1cdf4bd58a6555d6026b7de7" title="The short threshold is used to filter trained feature points extracted from short edge segments....">ShortThreshold</a> </dd></dl>
+
+</div>
+</div>
+<a id="af81c77bd1cdf4bd58a6555d6026b7de7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af81c77bd1cdf4bd58a6555d6026b7de7">&#9670;&nbsp;</a></span>ShortThreshold</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ShortThreshold</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The short threshold is used to filter trained feature points extracted from short edge segments. It's a 0 ~ 100 percentage value related to the longer side of the training image or region, aka. the actual threshold is calculated as \( Max(Width, Height) \times ShortThreshold / 100 \) By default, it's set to 0 to skip the filtering.<br  />
+You should set the proper short threshold firstly, then train the template via <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#aa2d7fce8c363465a0cbeb6a265fd36fb">Learn()</a>, since the template features should be re-extracted again in the training process. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#aa2d7fce8c363465a0cbeb6a265fd36fb">Learn()</a>, <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#ad3566610c7064816188077fe128c506e" title="Level of detail of the pattern template, in range of 0 ~ 1. By default, it&#39;s set to 0....">DetailLevel</a>, <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a2c1e7241a7f82ad17cfe5a1ff8f40f68" title="The weak threshold is used to filter trained feature points of low contrast, in range of 0 ~ 100....">WeakThreshold</a> </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>2.2.1 </dd></dl>
+
+</div>
+</div>
+<a id="a2c1e7241a7f82ad17cfe5a1ff8f40f68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c1e7241a7f82ad17cfe5a1ff8f40f68">&#9670;&nbsp;</a></span>WeakThreshold</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int WeakThreshold</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The weak threshold is used to filter trained feature points of low contrast, in range of 0 ~ 100. By default, it's set to 0 to skip the filtering.<br  />
+You should set the proper weak threshold firstly, then train the template via <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#aa2d7fce8c363465a0cbeb6a265fd36fb">Learn()</a>, since the template features should be re-extracted again in the training process. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#aa2d7fce8c363465a0cbeb6a265fd36fb">Learn()</a>, <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#ad3566610c7064816188077fe128c506e" title="Level of detail of the pattern template, in range of 0 ~ 1. By default, it&#39;s set to 0....">DetailLevel</a>, <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#af81c77bd1cdf4bd58a6555d6026b7de7" title="The short threshold is used to filter trained feature points extracted from short edge segments....">ShortThreshold</a> </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>2.2.1 </dd></dl>
 
 </div>
 </div>
