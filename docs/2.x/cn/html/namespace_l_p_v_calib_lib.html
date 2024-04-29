@@ -37,7 +37,7 @@
    <div id="projectbrief">Leaper Vision Toolkit</div>
    <div id="projectbrief" style="margin-top: 3px;">
     <a id="cn_btn" style="cursor: pointer; color: var(--primary-color);">中文</a> / <a id="en_btn" style="cursor: pointer; color: var(--primary-color);">English</a>
-    <span id="projectnumber">2.2.1.0</span>
+    <span id="projectnumber">2.x</span>
     </div>
   </td>
  </tr>
@@ -141,10 +141,16 @@ $(function() {
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 枚举</h2></td></tr>
-<tr class="memitem:ae8ce3e2cceabc23470a3ef9b2105dfb2"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_l_p_v_calib_lib.html#ae8ce3e2cceabc23470a3ef9b2105dfb2">LPVCalibBoardType</a> { <a class="el" href="namespace_l_p_v_calib_lib.html#ae8ce3e2cceabc23470a3ef9b2105dfb2aee27f8a90452d3cc507ac65ab97e1ae3">LPVChessBoard</a> = 0
+<tr class="memitem:ae8ce3e2cceabc23470a3ef9b2105dfb2"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_l_p_v_calib_lib.html#ae8ce3e2cceabc23470a3ef9b2105dfb2">LPVCalibBoardType</a> { <br />
+&#160;&#160;<a class="el" href="namespace_l_p_v_calib_lib.html#ae8ce3e2cceabc23470a3ef9b2105dfb2aee27f8a90452d3cc507ac65ab97e1ae3">LPVChessBoard</a> = 0
 , <a class="el" href="namespace_l_p_v_calib_lib.html#ae8ce3e2cceabc23470a3ef9b2105dfb2a1c07af3ef47a34c9a529985c9f2166d0">LPVCircleGrid</a> = 1
-, <a class="el" href="namespace_l_p_v_calib_lib.html#ae8ce3e2cceabc23470a3ef9b2105dfb2a17d04a0c4654a82718335dc17cd4a851">LPVDistCharucoBoard</a> = 2
-, <a class="el" href="namespace_l_p_v_calib_lib.html#ae8ce3e2cceabc23470a3ef9b2105dfb2a62c010de8422d47262e7c5ae1904a6b9">LPVEMCircleGrid</a> = 4
+, <a class="el" href="namespace_l_p_v_calib_lib.html#ae8ce3e2cceabc23470a3ef9b2105dfb2ab469abac1bdaa6468f39e982705c587e">LPVDistCharucoBoardLarge</a> = 2
+, <b>LPVDistCharucoBoard</b> = LPVDistCharucoBoardLarge
+, <br />
+&#160;&#160;<a class="el" href="namespace_l_p_v_calib_lib.html#ae8ce3e2cceabc23470a3ef9b2105dfb2a62c010de8422d47262e7c5ae1904a6b9">LPVEMCircleGrid</a> = 4
+, <a class="el" href="namespace_l_p_v_calib_lib.html#ae8ce3e2cceabc23470a3ef9b2105dfb2ad1d7485455a7b7808f2ba71b78b7a60e">LPVDistCharucoBoardMiddle</a> = 6
+, <a class="el" href="namespace_l_p_v_calib_lib.html#ae8ce3e2cceabc23470a3ef9b2105dfb2ab701be199cb223321919c232fc9ae9ab">LPVDistCharucoBoardSmall</a> = 7
+<br />
  }</td></tr>
 <tr class="memdesc:ae8ce3e2cceabc23470a3ef9b2105dfb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">该枚举表示标定板的类型  <a href="namespace_l_p_v_calib_lib.html#ae8ce3e2cceabc23470a3ef9b2105dfb2">更多...</a><br /></td></tr>
 <tr class="separator:ae8ce3e2cceabc23470a3ef9b2105dfb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -201,9 +207,13 @@ $(function() {
 </td></tr>
 <tr><td class="fieldname"><a id="ae8ce3e2cceabc23470a3ef9b2105dfb2a1c07af3ef47a34c9a529985c9f2166d0"></a>LPVCircleGrid&#160;</td><td class="fielddoc"><p>使用经典的圆点阵标定板 </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ae8ce3e2cceabc23470a3ef9b2105dfb2a17d04a0c4654a82718335dc17cd4a851"></a>LPVDistCharucoBoard&#160;</td><td class="fielddoc"><p>使用分散式二维码棋盘格标定板 </p>
+<tr><td class="fieldname"><a id="ae8ce3e2cceabc23470a3ef9b2105dfb2ab469abac1bdaa6468f39e982705c587e"></a>LPVDistCharucoBoardLarge&#160;</td><td class="fielddoc"><p>使用分散式二维码棋盘格标定板（大型）， 横向和纵向分别支持最多 31 个标定块，每个标定块 12 个定位点，总计最多 372 个可能的 x 和 y 位置。 注意：标定图像中至少包含一个完整的标定块。如果视野无法满足，需使用更小尺寸的标定板。 </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ae8ce3e2cceabc23470a3ef9b2105dfb2a62c010de8422d47262e7c5ae1904a6b9"></a>LPVEMCircleGrid&#160;</td><td class="fielddoc"><p>使用 EM 圆点阵标定板，带有用于指定坐标轴方向的空标记 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ae8ce3e2cceabc23470a3ef9b2105dfb2ad1d7485455a7b7808f2ba71b78b7a60e"></a>LPVDistCharucoBoardMiddle&#160;</td><td class="fielddoc"><p>使用分散式二维码棋盘格标定板（中型）， 横向和纵向分别支持最多 11 个标定块，每个标定块 10 个定位点，总计最多 110 个可能的 x 和 y 位置。 注意：标定图像中至少包含一个完整的标定块。如果视野无法满足，需使用更小尺寸的标定板。 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ae8ce3e2cceabc23470a3ef9b2105dfb2ab701be199cb223321919c232fc9ae9ab"></a>LPVDistCharucoBoardSmall&#160;</td><td class="fielddoc"><p>使用分散式二维码棋盘格标定板（中型）， 横向和纵向分别支持最多 2 个标定块，每个标定块 8 个定位点，总计最多 16 个可能的 x 和 y 位置。 注意：标定图像中至少包含一个完整的标定块。如果视野无法满足，需使用更小尺寸的标定板。 </p>
 </td></tr>
 </table>
 
