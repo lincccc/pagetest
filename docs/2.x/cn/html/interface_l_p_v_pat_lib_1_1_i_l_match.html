@@ -517,7 +517,7 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 模板的形状和极性通过输入的形状区域来定义，添加区域（Add）生成黑色背景上的白色形状；减去区域（Subtract）生产白色背景上的黑色形状。<br  />
 特征点通过给定的形状区域提取，不受 <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#ad3566610c7064816188077fe128c506e" title="模板细节程度，取值范围为 0 ~ 1，默认设置为 0.5。 数值越高，保留的细节越多，同时也可能引入更多的噪声，并影响算法的整体性能。 设置或修改模板细节程度后，需重新调用 Learn() 训练模板，特...">DetailLevel</a> 参数的影响。 </p><center><img src="pattern_shaperegion.png" alt="" class="inline"/> <img src="pattern_shaperegion.svg" alt="" style="pointer-events: none;" height="140px" class="inline"/></center> <dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> 输入的图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> 输入的图像。可为空，但当其为空时，设置 <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a8698837361cab3af9df6444df07cb5c9" title="融合匹配权重，用于合并基于形状相似性的匹配分数和基于灰度特征的匹配分数。 默认设置为 0， 即灰度分数不参与匹配评价。最终匹配分数按照该公式计算:  .">GrayValueWeight</a> 并不启用任何灰度特征权重。 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">region</td><td>输入的区域，用于限定模板在输入图像中的位置，并用于剔除形状中超出区域的部分。可为空。 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">shapeRegion</td><td>输入的区域，用于生成模板形状。与 region 相同，都在输入图像的坐标系下。 </td></tr>
   </table>
@@ -574,7 +574,7 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 </div>
  <dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> 输入的图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> 输入的图像。可为空，但当其为空时，设置 <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a8698837361cab3af9df6444df07cb5c9" title="融合匹配权重，用于合并基于形状相似性的匹配分数和基于灰度特征的匹配分数。 默认设置为 0， 即灰度分数不参与匹配评价。最终匹配分数按照该公式计算:  .">GrayValueWeight</a> 并不启用任何灰度特征权重。 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">region</td><td>输入的区域，用于限定模板在输入图像中的位置，并用于剔除形状中超出区域的部分。可为空。 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">shapeImg</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> 输入的形状图像。该图像的尺寸需与 img 参数相同。 </td></tr>
   </table>
