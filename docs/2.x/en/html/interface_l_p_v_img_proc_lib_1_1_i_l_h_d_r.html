@@ -186,7 +186,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Calibrate the CRF. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">imgList</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> The input images with different exposure settings </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">imgList</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale"/> <img src="bit8.png" alt="" class="inline" title="8 Bit"/> The input images with different exposure settings </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">exposureTimes</td><td>The exposure times corresponding to the images, in μs </td></tr>
   </table>
   </dd>
@@ -245,8 +245,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>HDR imaging using exposure fusion approach. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">imgList</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> The input images with different exposure settings </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> Return result image </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">imgList</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale"/> <img src="bit8.png" alt="" class="inline" title="8 Bit"/> The input images with different exposure settings </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale"/> <img src="bit8.png" alt="" class="inline" title="8 Bit"/> Return result image </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">contrastWeight</td><td>The weight of contrast, by default, it's 1. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">saturationWeight</td><td>The weight of saturation, by default it's 1. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">exposureWeight</td><td>The weight of exposure, by default, it's 1. </td></tr>
@@ -302,7 +302,7 @@ Public Member Functions</h2></td></tr>
 <p>HDR imaging using tone-mapping approach, the CRF is required. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">imgList</td><td>The input images with different exposure settings </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> Return result image </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale"/> <img src="bit8.png" alt="" class="inline" title="8 Bit"/> Return result image </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">gamma</td><td>The gamma correction, 1(default) implies no correction, &gt; 1 brightens the image and &lt; 1 darkens it. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">contrastEnhance</td><td>The contrast enhancement, resulting on logarithmic scale, i.e. \( log(max / min) \), where max and min are maximum and minimum luminance values of the resulting image. The default value is 4. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">saturationEnhance</td><td>The saturation enhancement, 1(default) preserves saturation, &gt; 1 increase saturation while &lt; 1 decrease it. </td></tr>

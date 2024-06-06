@@ -196,11 +196,11 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Binarize the input image and return the result new image.<br  />
-If the lower bound of threshold value is smaller than the upper bound, pixels within the lower and upper bound of threshold value is set to the object level (255), otherwise, the output pixel is set to the background level (0).<br  />
+If the lower bound of threshold value is smaller than the upper bound, pixels within the lower and upper bound of threshold value is set to the object level (maximum value, 255 for 8bit images, 65536 for 16bit images), otherwise, the output pixel is set to the background level (0).<br  />
 If the lower bound of threshold value is greater than the upper bound, the output result is inverted. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> The input image </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td><img src="color_binary.png" alt="" class="inline" title="Binary images"/> Return result image </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale"/> The input image </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td><img src="color_binary.png" alt="" class="inline" title="Binary"/> Return result image </td></tr>
   </table>
   </dd>
 </dl>
@@ -235,8 +235,8 @@ If the lower bound of threshold value is greater than the upper bound, the outpu
 <p>Pixels within the lower and upper bound of threshold value is assigned the value of the input pixel, otherwise, is assigned to the value of lower or upper bound.<br  />
 For example, if the threshold lower bound is 100, upper bound is 200, a pixel of 150 value remains 150, a pixel of 230 outputs 200, a pixel of 50 outputs 100. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> The input image </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> Return result image </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale"/> The input image </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale"/> Return result image </td></tr>
   </table>
   </dd>
 </dl>
@@ -270,8 +270,8 @@ For example, if the threshold lower bound is 100, upper bound is 200, a pixel of
 </div><div class="memdoc">
 <p>Use user-specified threshold value </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">lb</td><td>The lower bound of threshold value, in range of 0 ~ 255 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">ub</td><td>The upper bound of threshold value, in range of 0 ~ 255 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">lb</td><td>The lower bound of threshold range, in range of 0 ~ 255 for 8bit images, 0 ~ 65535 for 16bit images </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ub</td><td>The upper bound of threshold range, in range of 0 ~ 255 for 8bit images, 0 ~ 65535 for 16bit images </td></tr>
   </table>
   </dd>
 </dl>
@@ -304,7 +304,7 @@ For example, if the threshold lower bound is 100, upper bound is 200, a pixel of
       </table>
 </div><div class="memdoc">
 <p>Use global-adaptive threshold value.<br  />
-The optimal threshold value is calculated base on the entire input image, then revised by the given bias value. The lower bound of threshold value is \( t - lbBias \) , the upper bound is \( t + ubBias \) . </p><dl class="params"><dt>Parameters</dt><dd>
+The optimal threshold value is calculated base on the entire input image, then revised by the given bias value. The lower bound of threshold value is @math_eq{t - lbBias} , the upper bound is @math_eq{t + ubBias} . </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">lbBias</td><td>Revise value to optimal threshold value, to generate a threshold lower bound. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">ubBias</td><td>Revise value to optimal threshold value, to generate a threshold upper bound. </td></tr>
@@ -352,7 +352,7 @@ The optimal threshold value is calculated base on the entire input image, then r
       </table>
 </div><div class="memdoc">
 <p>Use local-adaptive threshold value.<br  />
-The optimal threshold value is calculated base on a \( blockWidth \times blockHeight \) region around individual pixel, then revised by the given bias value. The lower bound of threshold value is \( t - lbBias \) , the upper bound is \( t + ubBias \) . </p><dl class="params"><dt>Parameters</dt><dd>
+The optimal threshold value is calculated base on a @math_eq{blockWidth \times blockHeight} region around individual pixel, then revised by the given bias value. The lower bound of threshold value is @math_eq{t - lbBias} , the upper bound is @math_eq{t + ubBias} . </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">blockWidth</td><td>The width of a pixel's local region, should be an odd number, say, 3, 5, 7, etc. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">blockHeight</td><td>The height of a pixel's local region, should be an odd number, say, 3, 5, 7, etc. </td></tr>
@@ -389,14 +389,14 @@ The optimal threshold value is calculated base on a \( blockWidth \times blockHe
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Stretch the pixel value within the lower and upper bound of threshold value, others is assigned to 0 or 255 respectively.<br  />
-For example, if the threshold lower bound is 100, upper bound is 200, pixel is assigned to 0 if its input value is within range [0, 100], it's assigned to 255 if within range [200, 255], for the range [101, 199] it's assigned as: </p><p class="formulaDsp">
+<p>Stretch the pixel value within the lower and upper bound of threshold value, others is assigned to 0 or maximum value respectively.<br  />
+For example for a 8bit image, if the threshold lower bound is 100, upper bound is 200, pixel is assigned to 0 if its input value is within range [0, 100], it's assigned to 255 if within range [200, 255], for the range [101, 199] it's assigned as: </p><p class="formulaDsp">
 \[ (p - 100) \times 255 / (200 - 100) \]
 </p>
  <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> The input image </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> Return result image </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale"/> The input image </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale"/> Return result image </td></tr>
   </table>
   </dd>
 </dl>
@@ -431,8 +431,8 @@ For example, if the threshold lower bound is 100, upper bound is 200, pixel is a
 <p>Each output pixel represents the difference between the greyscale value of each input pixel and the threshold lower bound.<br  />
 For example, if a pixel value is 100 and the threshold lower bound is 25, then the output pixel value will be 75。 </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> The input image </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> Return result image </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale"/> The input image </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale"/> Return result image </td></tr>
   </table>
   </dd>
 </dl>

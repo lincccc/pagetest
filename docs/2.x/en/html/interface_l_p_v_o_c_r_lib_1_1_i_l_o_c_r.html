@@ -263,7 +263,7 @@ wchar_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i
 </div><div class="memdoc">
 <p>Segment and recognize the lines and characters from the given image and region. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> The input image. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale"/> <img src="bit8.png" alt="" class="inline" title="8 Bit"/> The input image. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">region</td><td>The input region. For the <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_rot_rect_region.html">rotated rectangle region</a>, the region's angle is used as the main direction of the text line. For the others, the main direction is the image's x axis. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">results</td><td>Output the segmentation and recognition result. </td></tr>
   </table>
@@ -312,7 +312,7 @@ wchar_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i
 </div><div class="memdoc">
 <p>Segment, recognize and verify the lines and characters from the given image and region. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> The input image. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale"/> <img src="bit8.png" alt="" class="inline" title="8 Bit"/> The input image. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">region</td><td>The input region. For the <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_rot_rect_region.html">rotated rectangle region</a>, the region's angle is used as the main direction of the text line. For the others, the main direction is the image's x axis. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">results</td><td>Output the segmentation, recognition and verification result. </td></tr>
   </table>
@@ -361,7 +361,7 @@ wchar_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i
 </div><div class="memdoc">
 <p>Segment the lines and characters from the given image and region. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> The input image. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale"/> <img src="bit8.png" alt="" class="inline" title="8 Bit"/> The input image. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">region</td><td>The input region. For the <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_rot_rect_region.html">rotated rectangle region</a>, the region's angle is used as the main direction of the text line. For the others, the main direction is the image's x axis. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">results</td><td>Output the segmentation result. </td></tr>
   </table>
@@ -418,8 +418,8 @@ wchar_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">w</td><td>The estimated width. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">h</td><td>The estimated height. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">wTolerance</td><td>The tolerance of width in percentage. It generates the width bounds as \( w /times (1 - wTol \%) ~ w /times (1 + wTol \%) \) . </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">hTolerance</td><td>The tolerance of height in percentage. It generates the height bounds as \( h /times (1 - hTol \%) ~ h /times (1 + hTol \%) \) . </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">wTolerance</td><td>The tolerance of width in percentage. It generates the width bounds as @math_eq{w /times (1 - wTol %) ~ w /times (1 + wTol %)} . </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hTolerance</td><td>The tolerance of height in percentage. It generates the height bounds as @math_eq{h /times (1 - hTol %) ~ h /times (1 + hTol %)} . </td></tr>
   </table>
   </dd>
 </dl>

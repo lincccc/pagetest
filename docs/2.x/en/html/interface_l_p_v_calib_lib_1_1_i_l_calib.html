@@ -154,7 +154,7 @@ Properties</h2></td></tr>
 <tr class="memitem:a3f6872a72c3c76b0cdcb95055b99108e"><td class="memItemLeft" align="right" valign="top"><a id="a3f6872a72c3c76b0cdcb95055b99108e"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a3f6872a72c3c76b0cdcb95055b99108e">CalibError</a><code> [get]</code></td></tr>
 <tr class="memdesc:a3f6872a72c3c76b0cdcb95055b99108e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The overall RMS re-projection error for the calibration, calculated based on the distances between the image points and the projected (using the optimized calibration matrices) world points. It's defined as:<br  />
- \( \sqrt{ \frac{1}{n} \sum_{i=0}^{n} distance(p^{image}_i, p^{proj}_i)^2 } \). <br /></td></tr>
+ @math_eq{\sqrt{ \frac{1}{n} \sum_{i=0}^{n} distance(p^{image}_i, p^{proj}_i)^2 }}. <br /></td></tr>
 <tr class="separator:a3f6872a72c3c76b0cdcb95055b99108e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac70483f402f9c1e0d5c2c981a218d31"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_calib_lib.html#ad344ab8b10fd89a846adf98b31b264aa">LPVFixImageMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#aac70483f402f9c1e0d5c2c981a218d31">FixImageMode</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:aac70483f402f9c1e0d5c2c981a218d31"><td class="mdescLeft">&#160;</td><td class="mdescRight">The mode to fix image used in <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#ab3b5ec6cb9ccb7dd76b228f215137af7">FixImage()</a>.  <a href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#aac70483f402f9c1e0d5c2c981a218d31">More...</a><br /></td></tr>
@@ -570,7 +570,7 @@ If both post-transform origin and matrix is configured, the first one is applied
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Set customized post-transform to the world coordinates, using \( 2 \times 3 \) transformation matrix, which has rotation, translation and scale DOF. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#ab8c572785f3997e0c7af0511b97703c7">SetPostTransform()</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a21020952007917ee938eae8085781941">SetPostTransformMatrix()</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a7f7326737028f1763ca3c7518d12fac3">SetPostTransformMatrix33()</a>. </dd></dl>
+<p>Set customized post-transform to the world coordinates, using @math_eq{2 \times 3} transformation matrix, which has rotation, translation and scale DOF. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#ab8c572785f3997e0c7af0511b97703c7">SetPostTransform()</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a21020952007917ee938eae8085781941">SetPostTransformMatrix()</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a7f7326737028f1763ca3c7518d12fac3">SetPostTransformMatrix33()</a>. </dd></dl>
 
 </div>
 </div>
@@ -589,7 +589,7 @@ If both post-transform origin and matrix is configured, the first one is applied
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Set customized post-transform to the world coordinates, using \( 3 \times 3 \) transformation matrix, which has rotation, translation, scale and perspective projection DOF. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#ab8c572785f3997e0c7af0511b97703c7">SetPostTransform()</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a21020952007917ee938eae8085781941">SetPostTransformMatrix()</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a340a8929cbbc28b8b63bb58bfd4a9a96">SetPostTransformMatrix23()</a>. </dd></dl>
+<p>Set customized post-transform to the world coordinates, using @math_eq{3 \times 3} transformation matrix, which has rotation, translation, scale and perspective projection DOF. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#ab8c572785f3997e0c7af0511b97703c7">SetPostTransform()</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a21020952007917ee938eae8085781941">SetPostTransformMatrix()</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a340a8929cbbc28b8b63bb58bfd4a9a96">SetPostTransformMatrix23()</a>. </dd></dl>
 
 </div>
 </div>

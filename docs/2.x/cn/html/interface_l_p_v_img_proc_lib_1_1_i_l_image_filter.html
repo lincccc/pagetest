@@ -199,8 +199,8 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>均衡化，基于输入图像的直方图。该工具将归一化亮度，增加图像对比度。 均衡化工具不是一个线性滤波器，因此不需要指定滤波核尺寸。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>输入图像 </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>输出结果图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="bit8.png" alt="" class="inline" title="8 Bit"/> 输入图像 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td><img src="bit8.png" alt="" class="inline" title="8 Bit"/> 输出结果图像 </td></tr>
   </table>
   </dd>
 </dl>
@@ -307,7 +307,7 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>中值滤波，输出图像中的每个像素表示输入图像中这一局部区域中所有像素中的中值。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>输入图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>输入图像。对于非方形或核尺寸大于 5 的情况，仅支持 8 位图像。 </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>输出结果图像 </td></tr>
   </table>
   </dd>
@@ -342,7 +342,7 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>归一化中值滤波，用于从图像中去除背景像素。 该滤波器相当于输入图像与中值滤波的结果相减，然后将每个像素 \( &lt;&lt; 1 + 128 \) 。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>输入图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>输入图像。对于非方形或核尺寸大于 5 的情况，仅支持 8 位图像。 </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>输出结果图像 </td></tr>
   </table>
   </dd>
@@ -413,7 +413,7 @@ Public 成员函数</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>光密度，通过度量其通光量显露在输入图像中物体或特征的密度。 密度较高的物体或特征在输出图像中以较亮的像素表示。 该滤波器等价于 \( 45*(ln(255) - ln(I)) \) 。 </p><dl class="params"><dt>参数</dt><dd>
+<p>光密度，通过度量其通光量显露在输入图像中物体或特征的密度。 密度较高的物体或特征在输出图像中以较亮的像素表示。 该滤波器对于 8 位图，等价于 \( 45*(ln(255) - ln(I)) \) ， 对于 16 位图，等价于 \( 5909*(ln(65535) - ln(I)) \) 。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>输入图像 </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>输出结果图像 </td></tr>

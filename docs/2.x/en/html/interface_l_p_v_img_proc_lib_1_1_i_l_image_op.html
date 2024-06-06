@@ -229,7 +229,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Add the two input images pixel by pixel, output a new result image, \( I&#39; = I_{1} + I_{2} \) . The two input image should have the same size. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Add the two input images pixel by pixel, output a new result image, @math_eq{I' = I_{1} + I_{2}} . The two input image should have the same size. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">img1</td><td>The first input image </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">img2</td><td>The second input image </td></tr>
@@ -283,7 +283,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Add the two input images pixel by pixel, output a new result image, \( I&#39; = I_{1} * alpha + I_{2} * beta \) . The two input image should have the same size. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Add the two input images pixel by pixel, output a new result image, @math_eq{I' = I_{1} * alpha + I_{2} * beta} . The two input image should have the same size. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">img1</td><td>The first input image </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">img2</td><td>The second input image </td></tr>
@@ -387,7 +387,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Calculate the difference of the two input images pixel by pixel, output a new result image, \( I&#39; = abs(I_{1} - I_{2}) \) . The two input image should have the same size. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Calculate the difference of the two input images pixel by pixel, output a new result image, @math_eq{I' = abs(I_{1} - I_{2})} . The two input image should have the same size. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">img1</td><td>The first input image </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">img2</td><td>The second input image </td></tr>
@@ -429,7 +429,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Divide the first input image by the second input image pixel by pixel, output a new result image, \( I&#39; = I_{1} / I_{2} \) . The two input image should have the same size. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Divide the first input image by the second input image pixel by pixel, output a new result image, @math_eq{I' = I_{1} / I_{2}} . The two input image should have the same size. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">img1</td><td>The first input image </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">img2</td><td>The second input image </td></tr>
@@ -557,7 +557,7 @@ If the pass-in result image object is empty, then we'll use the same size as the
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Invert an image, \( I&#39; = 255 - I \). </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Invert an image, \( I&#39; = 255 - I \) for 8bit images, and \( I&#39; = 65535 - I \) for 16bit images. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>The input image </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>Return result image </td></tr>
@@ -598,7 +598,7 @@ If the pass-in result image object is empty, then we'll use the same size as the
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Calculate the logarithm of the input image pixel by pixel, output a new result image, \( I&#39; = \log_{base}{I} \) . </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Calculate the logarithm of the input image pixel by pixel, output a new result image, @math_eq{I' = \log_{base}{I}} . </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>The input image </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">base</td><td>The input base, should be a positive value </td></tr>
@@ -640,7 +640,7 @@ If the pass-in result image object is empty, then we'll use the same size as the
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Calculate the minimum of the two input images pixel by pixel, output a new result image, \( I&#39; = \max (I_{1}, I_{2}) \) . The two input image should have the same size. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Calculate the minimum of the two input images pixel by pixel, output a new result image, @math_eq{I' = \max (I_{1}, I_{2})} . The two input image should have the same size. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">img1</td><td>The first input image </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">img2</td><td>The second input image </td></tr>
@@ -682,7 +682,7 @@ If the pass-in result image object is empty, then we'll use the same size as the
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Calculate the maximum of the two input images pixel by pixel, output a new result image, \( I&#39; = \min (I_{1}, I_{2}) \) . The two input image should have the same size. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Calculate the maximum of the two input images pixel by pixel, output a new result image, @math_eq{I' = \min (I_{1}, I_{2})} . The two input image should have the same size. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">img1</td><td>The first input image </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">img2</td><td>The second input image </td></tr>
@@ -724,7 +724,7 @@ If the pass-in result image object is empty, then we'll use the same size as the
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Multiply the two input images pixel by pixel, output a new result image, \( I&#39; = I_{1} \cdot I_{2} \) . The two input image should have the same size. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Multiply the two input images pixel by pixel, output a new result image, @math_eq{I' = I_{1} \cdot I_{2}} . The two input image should have the same size. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">img1</td><td>The first input image </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">img2</td><td>The second input image </td></tr>
@@ -766,7 +766,7 @@ If the pass-in result image object is empty, then we'll use the same size as the
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Calculate the power(exponentiation) of the input image pixel by pixel, output a new result image, \( I&#39; = I^{power} \) . </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Calculate the power(exponentiation) of the input image pixel by pixel, output a new result image, @math_eq{I' = I^{power}} . </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>The input image </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">power</td><td>The input exponent or power </td></tr>
@@ -804,7 +804,7 @@ If the pass-in result image object is empty, then we'll use the same size as the
 </div><div class="memdoc">
 <p>Projects an image horizontally, aggregating pixels on each row </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> The input image </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale"/> <img src="bit8.png" alt="" class="inline" title="8 Bit"/> The input image </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">aggType</td><td>The aggregation method used for projection. </td></tr>
   </table>
   </dd>
@@ -845,7 +845,7 @@ If the pass-in result image object is empty, then we'll use the same size as the
 </div><div class="memdoc">
 <p>Projects an image vertically, aggregating pixels on each column </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> The input image </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale"/> <img src="bit8.png" alt="" class="inline" title="8 Bit"/> The input image </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">aggType</td><td>The aggregation method used for projection. </td></tr>
   </table>
   </dd>
@@ -1150,7 +1150,7 @@ If the pass-in result image object is empty, then we'll use the same size as the
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Subtract two input images pixel by pixel, output a new result image, \( I&#39; = I_{1} - I_{2} \) . The two input image should have the same size. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Subtract two input images pixel by pixel, output a new result image, @math_eq{I' = I_{1} - I_{2}} . The two input image should have the same size. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">img1</td><td>The first input image </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">img2</td><td>The second input image </td></tr>

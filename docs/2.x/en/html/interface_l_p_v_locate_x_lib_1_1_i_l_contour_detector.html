@@ -229,7 +229,7 @@ The algorithm is real-time and has accuracy of sub-pixel.</p>
 </div><div class="memdoc">
 <p>Detect contours using the contour detector. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> The input image. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale"/> <img src="bit8.png" alt="" class="inline" title="8 Bit"/> The input image. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">region</td><td>The input region. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">results</td><td>Return the contour results. </td></tr>
   </table>
@@ -296,7 +296,7 @@ The algorithm is real-time and has accuracy of sub-pixel.</p>
 <p>Detect contours and filter by their trend and edge transition direction.<br  />
 For each pixel on the contour, its edge transition direction is compared with the region's direction. The inconsistent pixels are filtered then excluded from the contour result. If there's too much excluded pixels on the contour than the setting threshold, the entire contour is filtered. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> The input image. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale"/> <img src="bit8.png" alt="" class="inline" title="8 Bit"/> The input image. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">region</td><td>The input region, it should be a rotated rectangle region with its direction well-defined. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">contourPolarity</td><td>The <em>edge polarity</em> according to region's direction. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">tolerance</td><td>The direction difference tolerance in degrees. </td></tr>

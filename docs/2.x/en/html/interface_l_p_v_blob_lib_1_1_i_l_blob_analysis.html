@@ -789,7 +789,7 @@ It indicates this is a color-mode blob analysis tool, all the previous grayscale
 <p>Preview the binarized image the input image with current foreground and background range configuration. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>The input image. You should pass in the images of the matching format, aka. grayscale images for grayscale blob analysis mode. Otherwise, we will do the conversion automatically according to the current blob analysis mode. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">outputImg</td><td><img src="color_binary.png" alt="" class="inline" title="Binary images"/> Return the preview image. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">outputImg</td><td><img src="color_binary.png" alt="" class="inline" title="Binary"/> <img src="bit8.png" alt="" class="inline" title="8 Bit"/> Return the preview image. </td></tr>
   </table>
   </dd>
 </dl>
@@ -967,13 +967,13 @@ It indicates this is a color-mode blob analysis tool, all the previous grayscale
 </div><div class="memdoc">
 <p>Select a grayscale value range on the provided image. You should then explicitly add the range as blob or background range. It's usually called for a grayscale-mode blob analysis tool. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">image</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> The input image. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">image</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale"/> <img src="bit8.png" alt="" class="inline" title="8 Bit"/> The input image. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td>The x-coordinate of the cursor(selected) position. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">y</td><td>The y-coordinate of the cursor(selected) position. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">tolerance</td><td>The maximum relative difference of neighbor pixels that build the selection </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">grayLB</td><td>Return the lower bound of the grayscale value range in 0 ~ 255. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">grayUB</td><td>Return the upper bound of the grayscale value range in 0 ~ 255. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">rangeMask</td><td><img src="color_binary.png" alt="" class="inline" title="Binary images"/> Return the mask image of the same size as the input image, white pixels represent the ones in selected grayscale value range in 0 ~ 255. Optional, could be null. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">rangeMask</td><td><img src="color_binary.png" alt="" class="inline" title="Binary"/> <img src="bit8.png" alt="" class="inline" title="8 Bit"/> Return the mask image of the same size as the input image, white pixels represent the ones in selected grayscale value range in 0 ~ 255. Optional, could be null. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1064,13 +1064,13 @@ It indicates this is a color-mode blob analysis tool, all the previous grayscale
 </div><div class="memdoc">
 <p>Select a color value range on the provided image. You should then explicitly add the range as blob or background range. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">image</td><td><img src="color_bgr.png" alt="" class="inline" title="Color images"/> The input image. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">image</td><td><img src="color_bgr.png" alt="" class="inline" title="Color"/> <img src="bit8.png" alt="" class="inline" title="8 Bit"/> The input image. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td>The x-coordinate of the cursor(selected) position. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">y</td><td>The y-coordinate of the cursor(selected) position. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">tolerance</td><td>The maximum relative difference of neighbor pixels that build the selection </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">colorLB</td><td>Return the lower bound of the color value range. It's in the same channel order and color space as the source image. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">colorUB</td><td>Return the upper bound of the color value range. It's in the same channel order and color space as the source image. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">rangeMask</td><td><img src="color_binary.png" alt="" class="inline" title="Binary images"/> Return the mask image of the same size as the input image, white pixels represent the ones in selected grayscale value range in 0 ~ 255. Optional, could be null. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">rangeMask</td><td><img src="color_binary.png" alt="" class="inline" title="Binary"/> <img src="bit8.png" alt="" class="inline" title="8 Bit"/> Return the mask image of the same size as the input image, white pixels represent the ones in selected grayscale value range in 0 ~ 255. Optional, could be null. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1135,7 +1135,7 @@ It indicates this is a color-mode blob analysis tool, all the previous grayscale
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Use local-adaptive threshold value. The optimal threshold value is calculated base on a \( blockSize \times blockSize \) region around individual pixel, then revised by the given bias value. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Use local-adaptive threshold value. The optimal threshold value is calculated base on a @math_eq{blockSize \times blockSize} region around individual pixel, then revised by the given bias value. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">blobPolarity</td><td>The <em>object polarity</em> of the blob. <a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0baffd2c678a5a2ea661de262d51223adf3">LPVBlackOnWhite </a> indicates black pixels with smaller value than global threshold are the blobs, <a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0bac595c6b549ecbabb1dbb431e374b02ad">LPVWhiteOnBlack </a> is exactly the opposite. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">blockSize</td><td>Size of a pixel's local region, should be an odd number, say, 3, 5, 7, etc. Set it to 0 for auto-generate block size based in the input image size. </td></tr>

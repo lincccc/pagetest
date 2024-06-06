@@ -365,7 +365,7 @@ If the current image object has its own data buffer, we'll do another clone of d
         </tr>
       </table>
 </div><div class="memdoc">
-<p><img src="color_binary.png" alt="" class="inline" title="Binary images"/> Draw the image as a mask onto the provided device context, white pixels preserve the original values on HDC. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html#a0edc1aa636ff6fe09560e7f205a0633b">Draw()</a> </dd>
+<p><img src="color_binary.png" alt="" class="inline" title="Binary"/> <img src="bit8.png" alt="" class="inline" title="8 Bit"/> Draw the image as a mask onto the provided device context, white pixels preserve the original values on HDC. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html#a0edc1aa636ff6fe09560e7f205a0633b">Draw()</a> </dd>
 <dd>
 <a class="el" href="use_draw_functions.html">Use Draw Functions</a> </dd></dl>
 <dl class="section remark"><dt>Remarks</dt><dd>This function is currently not available on Linux / MacOS platform. </dd></dl>
@@ -387,7 +387,7 @@ If the current image object has its own data buffer, we'll do another clone of d
         </tr>
       </table>
 </div><div class="memdoc">
-<p><img src="color_bgr.png" alt="" class="inline" title="Color images"/> Extract the channel of the given index. This function is only for a color image. </p><dl class="params"><dt>Parameters</dt><dd>
+<p><img src="color_bgr.png" alt="" class="inline" title="Color"/> <img src="bit8.png" alt="" class="inline" title="8 Bit"/> Extract the channel of the given index. This function is only for a color image. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">channelIdx</td><td>The input channel index, 0, 1 or 2. </td></tr>
   </table>
@@ -395,7 +395,7 @@ If the current image object has its own data buffer, we'll do another clone of d
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">channelImage</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> Return the channel image. It's a grayscale image of the same size as the current color image. </td></tr>
+    <tr><td class="paramname">channelImage</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale"/> <img src="bit8.png" alt="" class="inline" title="8 Bit"/> Return the channel image. It's a grayscale image of the same size as the current color image. </td></tr>
   </table>
   </dd>
 </dl>
@@ -469,10 +469,10 @@ If the current image object has its own data buffer, we'll do another clone of d
         </tr>
       </table>
 </div><div class="memdoc">
-<p><img src="color_bgr.png" alt="" class="inline" title="Color images"/> Set the channel of the given index to the input grayscale image. This function is only for a color image. </p><dl class="params"><dt>Parameters</dt><dd>
+<p><img src="color_bgr.png" alt="" class="inline" title="Color"/> <img src="bit8.png" alt="" class="inline" title="8 Bit"/> Set the channel of the given index to the input grayscale image. This function is only for a color image. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">channelIdx</td><td>The input channel index, 0, 1 or 2. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">channelImage</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> The input grayscale channel image, it should be of the same size as the current color image. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">channelImage</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale"/> <img src="bit8.png" alt="" class="inline" title="8 Bit"/> The input grayscale channel image, it should be of the same size as the current color image. </td></tr>
   </table>
   </dd>
 </dl>
@@ -597,7 +597,7 @@ If copyData is set to True, we'll copy the content into the buffer owned by the 
         </tr>
       </table>
 </div><div class="memdoc">
-<p><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> Set the pixels in the given region to the specified grayscale value. For a color image, all its channels are set to the same value. </p><dl class="params"><dt>Parameters</dt><dd>
+<p><img src="color_gray.png" alt="" class="inline" title="Grayscale"/> <img src="bit8.png" alt="" class="inline" title="8 Bit"/> Set the pixels in the given region to the specified grayscale value. For a color image, all its channels are set to the same value. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">val</td><td>The grayscale value </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">region</td><td>The input region. If the input region is bigger or outside of the image, the redundant part will be ignored. Optional, could be null, which mean the entire image. </td></tr>
@@ -632,7 +632,7 @@ If copyData is set to True, we'll copy the content into the buffer owned by the 
         </tr>
       </table>
 </div><div class="memdoc">
-<p><img src="color_bgr.png" alt="" class="inline" title="Color images"/> Set the pixels in the given region to the specified RGB color value. This function is only for a color image. </p><dl class="params"><dt>Parameters</dt><dd>
+<p><img src="color_bgr.png" alt="" class="inline" title="Color"/> <img src="bit8.png" alt="" class="inline" title="8 Bit"/> Set the pixels in the given region to the specified RGB color value. This function is only for a color image. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">val</td><td>The color value </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">region</td><td>The input region. If the input region is bigger or outside of the image, the redundant part will be ignored. Optional, could be null, which mean the entire image. </td></tr>
@@ -664,7 +664,7 @@ If copyData is set to True, we'll copy the content into the buffer owned by the 
 </div><div class="memdoc">
 
 <p></p>
-<p><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> The pixel's grayscale value. </p><dl class="params"><dt>Parameters</dt><dd>
+<p><img src="color_gray.png" alt="" class="inline" title="Grayscale"/> <img src="bit8.png" alt="" class="inline" title="8 Bit"/> The pixel's grayscale value. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td>The x-coordinate of the pixel. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">y</td><td>The y-coordinate of the pixel. </td></tr>
@@ -695,7 +695,7 @@ If copyData is set to True, we'll copy the content into the buffer owned by the 
 </div><div class="memdoc">
 
 <p></p>
-<p><img src="color_bgr.png" alt="" class="inline" title="Color images"/> The pixel's color value. </p><dl class="params"><dt>Parameters</dt><dd>
+<p><img src="color_bgr.png" alt="" class="inline" title="Color"/> <img src="bit8.png" alt="" class="inline" title="8 Bit"/> The pixel's color value. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td>The x-coordinate of the pixel. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">y</td><td>The y-coordinate of the pixel. </td></tr>

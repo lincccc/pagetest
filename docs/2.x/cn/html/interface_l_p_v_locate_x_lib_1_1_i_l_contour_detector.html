@@ -229,7 +229,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 </div><div class="memdoc">
 <p>检测和定位轮廓。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> 输入的图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale"/> <img src="bit8.png" alt="" class="inline" title="8 Bit"/> 输入的图像 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">region</td><td>输入的区域 </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">results</td><td>返回轮廓定位结果 </td></tr>
   </table>
@@ -296,7 +296,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 <p>检测和定位轮廓，并按轮廓走向和边缘转换方向过滤。<br  />
 对于轮廓中的每个像素，计算其边缘转换方向与区域扫描方向间的差异。差异过大的像素将被从轮廓中剔除。 若轮廓中存在过多的剔除像素且占比大于设定阈值，则认为轮廓的主要方向与所需不符，该其从最终结果中移除。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> 输入的图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale"/> <img src="bit8.png" alt="" class="inline" title="8 Bit"/> 输入的图像 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">region</td><td>输入的区域，一个旋转矩形区域对象，以其旋转角度为扫描方向。 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">contourPolarity</td><td><em>边缘极性</em>，相对于区域的扫描方向 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">tolerance</td><td>方向差异的角度容差 </td></tr>

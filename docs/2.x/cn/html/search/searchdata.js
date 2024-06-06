@@ -3,7 +3,7 @@ var indexSectionsWithContent =
   0: "abcdefghiklmnopqrstuvwxyz如常平快灵玩绘随",
   1: "il",
   2: "l",
-  3: "abcdefghiklmoprstuvwx",
+  3: "abcdefghiklmnoprstuvwx",
   4: "l",
   5: "l",
   6: "abcdefghiklmnopqrstuvwxyz",

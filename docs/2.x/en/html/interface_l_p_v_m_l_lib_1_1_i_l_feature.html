@@ -174,16 +174,16 @@ Currently, we support following features:</p>
 <tr>
 <th class="markdownTableHeadLeft" style="width:15%">Parameter Name</th><th class="markdownTableHeadLeft" style="width:50%">Usage</th><th class="markdownTableHeadLeft">Type</th><th class="markdownTableHeadLeft">Range</th><th class="markdownTableHeadLeft">Default </th></tr>
 <tr>
-<td>"cell size"</td><td>Size of a cell that build the histogram</td><td>Size</td><td>\( 2 \times 2 \) ~ \( 128 \times 128 \) <br  />
- must be \( 2^x \) </td><td>\( 4 \times 4 \) </td></tr>
+<td>"cell size"</td><td>Size of a cell that build the histogram</td><td>Size</td><td>@math_eq{2 \times 2} ~ @math_eq{128 \times 128} <br  />
+ must be @math_eq{2^x} </td><td>@math_eq{4 \times 4} </td></tr>
 <tr>
 <td>"bin size"</td><td>Bins of histogram, should be factor of 360 or 180, depending on whether gradient is signed</td><td>Integer</td><td>1 ~ 60</td><td>9 </td></tr>
 <tr>
-<td>"cell in block"</td><td>Count of cells in a block</td><td>Size</td><td>\( 1 \times 1 \) ~ \( 64 \times 64 \) </td><td>\( 2 \times 2 \) </td></tr>
+<td>"cell in block"</td><td>Count of cells in a block</td><td>Size</td><td>@math_eq{1 \times 1} ~ @math_eq{64 \times 64} </td><td>@math_eq{2 \times 2} </td></tr>
 <tr>
-<td>"cell in block stride"</td><td>Count of cells in a block stride</td><td>Size</td><td>\( 1 \times 1 \) ~ \( 64 \times 64 \) </td><td>\( 1 \times 1 \) </td></tr>
+<td>"cell in block stride"</td><td>Count of cells in a block stride</td><td>Size</td><td>@math_eq{1 \times 1} ~ @math_eq{64 \times 64} </td><td>@math_eq{1 \times 1} </td></tr>
 <tr>
-<td>"block stride step"</td><td>Count of stride block</td><td>Size</td><td></td><td>\( 1 \times 1 \) </td></tr>
+<td>"block stride step"</td><td>Count of stride block</td><td>Size</td><td></td><td>@math_eq{1 \times 1} </td></tr>
 <tr>
 <td>"signed gradient"</td><td>Use signed gradient or not, directions are analyzed in 360 or 180 degree</td><td>Bool</td><td></td><td>false </td></tr>
 </table>

@@ -196,11 +196,11 @@ Public 成员函数</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>二值化输入图像并输出结果图像。<br  />
-若所设置的阈值范围的下限小于上限，输入图像中灰度值在阈值范围内的像素，在结果图中将被设置为前景（255），反之，则被设置为背景（0）。<br  />
-若所设置的阈值范围的下限大于上限，输入图像中灰度值在阈值范围内的像素，在结果图中将被设置为背景（0），反之，则被设置为前景（255）。 </p><dl class="params"><dt>参数</dt><dd>
+若所设置的阈值范围的下限小于上限，输入图像中灰度值在阈值范围内的像素，在结果图中将被设置为前景（最大数值，8 位图为 255，16 位图为 65535），反之，则被设置为背景（0）。<br  />
+若所设置的阈值范围的下限大于上限，输入图像中灰度值在阈值范围内的像素，在结果图中将被设置为背景（0），反之，则被设置为前景（最大数值）。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> 输入图像 </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td><img src="color_binary.png" alt="" class="inline" title="Binary images"/> 输出结果图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale"/> 输入图像 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td><img src="color_binary.png" alt="" class="inline" title="Binary"/> 输出结果图像 </td></tr>
   </table>
   </dd>
 </dl>
@@ -236,8 +236,8 @@ Public 成员函数</h2></td></tr>
 若像素的灰度值在所设置的阈值范围内，则在结果图像中保留该灰度值，否则将被设置为阈值范围的上限或下限。<br  />
 如若阈值范围设置为 [100, 200]，像素灰度 150 的结果保留为 150，像素灰度为 230 的被设置为上限 200，像素灰度为 50 的被设置为下限 100. </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> 输入图像 </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> 输出结果图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale"/> 输入图像 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale"/> 输出结果图像 </td></tr>
   </table>
   </dd>
 </dl>
@@ -271,8 +271,8 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>设置前景像素的固定阈值范围 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">lb</td><td>阈值范围下限，数值在 0 ~ 255 范围内 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">ub</td><td>阈值范围上限，数值在 0 ~ 255 范围内 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">lb</td><td>阈值范围下限，对于 8 位图像数值在 0 ~ 255 范围内，对于 16 位图像数值在 0 ~ 65535 范围内 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ub</td><td>阈值范围上限，对于 8 位图像数值在 0 ~ 255 范围内，对于 16 位图像数值在 0 ~ 65535 范围内 </td></tr>
   </table>
   </dd>
 </dl>
@@ -391,15 +391,15 @@ Public 成员函数</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>拉伸输入图像并输出结果图像。<br  />
-若像素的灰度值在所设置的阈值范围内，则将其拉伸到 0 到 255 的数值；超出的像素设置为 0 或 255.<br  />
-如若阈值范围设置为 [100, 200]，像素灰度在 [0, 100] 设置为 0，像素灰度在 [200, 255] 设置为 255 像素灰度在 [101, 199] 之间的按照以下公式计算：<br  />
+若像素的灰度值在所设置的阈值范围内，则将其拉伸到 0 到 255 的数值；超出的像素设置为 0 或最大数值.<br  />
+例如，对于一张 8 位图像，如若阈值范围设置为 [100, 200]，像素灰度在 [0, 100] 设置为 0，像素灰度在 [200, 255] 设置为 255 像素灰度在 [101, 199] 之间的按照以下公式计算：<br  />
  </p><p class="formulaDsp">
 \[ (p - 100) \times 255 / (200 - 100) \]
 </p>
  <dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> 输入图像 </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> 输出结果图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale"/> 输入图像 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale"/> 输出结果图像 </td></tr>
   </table>
   </dd>
 </dl>
@@ -434,8 +434,8 @@ Public 成员函数</h2></td></tr>
 <p>计算输入图像中的每个像素，其灰度值与阈值范围下限的距离。<br  />
 如若阈值范围下限为 25，灰度值为 100 的像素，其输出值为 75. </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> 输入图像 </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale images"/> 输出结果图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale"/> 输入图像 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale"/> 输出结果图像 </td></tr>
   </table>
   </dd>
 </dl>

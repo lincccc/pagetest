@@ -235,7 +235,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Intersect the two input polygons, \( P = P_1 \cap P_2 \) . If the two inputs are intersected in multiple places, the results are plural.<br  />
+<p>Intersect the two input polygons, @math_eq{P = P_1 \cap P_2} . If the two inputs are intersected in multiple places, the results are plural.<br  />
 <em>Note: Only closed polygons are acceptable.</em> </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">poly1</td><td>The first input polygon object </td></tr>
@@ -537,7 +537,7 @@ If neither of them are specified, then the simplification is in fact the redunda
     <tr><td class="paramdir">[in]</td><td class="paramname">filterNbRng</td><td>The filtering neighbor range \( (-filterNbRng, filterNbRng) \) in distance measured along the polygon and interpolation is involved at the end of the neighborhood. The larger value indicates more edge normals contribute to the filtering result. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">updateNbRng</td><td>The updating neighbor range \( (-updateNbRng, updateNbRng) \) in distance measured along the polygon and interpolation is involved at the end of the neighborhood. Those neighbors are taken over to calculate the new vertex. The range is usually smaller then the filtering range. The proper value may speed up the convergence and stop the iteration earlier. It's recommended to use 2 ~ 5. By default, it's set to 0 which means 10% of the filtering range. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">maxIterCount</td><td>The maximum count of iteration. The default value is 30. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">stopCriteria</td><td>The stop criteria of the iteration. The default value is 0.001. It stops when the maximum movement of the vertexes is smaller than the criteria, or the difference of maximum movement between the two iterations is smaller than 0.1%: \( m_i &lt; criteria || (m_i - m_{i-1}) / m_{i-1} &lt; 0.1% \) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">stopCriteria</td><td>The stop criteria of the iteration. The default value is 0.001. It stops when the maximum movement of the vertexes is smaller than the criteria, or the difference of maximum movement between the two iterations is smaller than 0.1%: @math_eq{m_i &lt; criteria || (m_i - m_{i-1}) / m_{i-1} &lt; 0.1%} </td></tr>
   </table>
   </dd>
 </dl>
@@ -576,7 +576,7 @@ If neither of them are specified, then the simplification is in fact the redunda
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Subtract the two input polygons and get the differences, \( P = P_1 - P_2 \) . If the first polygon is separated into several parts by the subtraction, the results are plural.<br  />
+<p>Subtract the two input polygons and get the differences, @math_eq{P = P_1 - P_2} . If the first polygon is separated into several parts by the subtraction, the results are plural.<br  />
 <em>Note: Only closed polygons are acceptable.</em> </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">poly1</td><td>The first input polygon object </td></tr>
@@ -692,7 +692,7 @@ If neither of them are specified, then the simplification is in fact the redunda
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Union the polygons, \( P = P_1 \cup P_2 \) . For the two not-intersected inputs, the results are plural; otherwise, they are merged into one.<br  />
+<p>Union the polygons, @math_eq{P = P_1 \cup P_2} . For the two not-intersected inputs, the results are plural; otherwise, they are merged into one.<br  />
 <em>Note: Only closed polygons are acceptable.</em> </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">poly1</td><td>The first input polygon object </td></tr>
@@ -777,7 +777,7 @@ If neither of them are specified, then the simplification is in fact the redunda
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Calculate the symmetric difference of the two input polygons, \( P = P_1 \oplus P_2 \) . The results are commonly plural.<br  />
+<p>Calculate the symmetric difference of the two input polygons, @math_eq{P = P_1 \oplus P_2} . The results are commonly plural.<br  />
 <em>Note: Only closed polygons are acceptable.</em> </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">poly1</td><td>The first input polygon object </td></tr>
