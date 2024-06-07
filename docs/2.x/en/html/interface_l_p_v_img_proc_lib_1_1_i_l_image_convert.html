@@ -35,10 +35,6 @@
   <td id="projectlogo" style="padding-left: 1em; text-align: center; vertical-align: middle;"><a href="index.html"><img alt="Logo" src="lpv_logo.png"/></a></td>
   <td id="projectalign" style="padding-left: 0.5em; vertical-align: bottom; padding-bottom: 5px;">
    <div id="projectbrief">Leaper Vision Toolkit</div>
-   <div id="projectbrief" style="margin-top: 3px;">
-    <a id="cn_btn" style="cursor: pointer; color: var(--primary-color);">中文</a> / <a id="en_btn" style="cursor: pointer; color: var(--primary-color);">English</a>
-    <span id="projectnumber">2.x</span>
-    </div>
   </td>
  </tr>
  </tbody>
@@ -491,12 +487,7 @@ Public Member Functions</h2></td></tr>
 <p>Convert a 16bit image to 8bit depth, extracting the continues 8 bits from the specified index. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">img16Bit</td><td><img src="bit16.png" alt="" class="inline" title="16 Bit"/> The input 16bit image </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">fromNthBit</td><td>The starting index, in range -7 ~ 15 to ensure at least 1 valid bit </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">img8Bit</td><td><img src="bit8.png" alt="" class="inline" title="8 Bit"/> Return the result 8bit image</td></tr>
-  </table>
-  </dd>
-</dl>
-<table class="markdownTable">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fromNthBit</td><td>The starting index, in range -7 ~ 15 to ensure at least 1 valid bit <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">From Nth Bit   </th><th class="markdownTableHeadNone">Usage    </th></tr>
 <tr class="markdownTableRowOdd">
@@ -506,6 +497,11 @@ Public Member Functions</h2></td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">4   </td><td class="markdownTableBodyNone">Extract Middle 8bit   </td></tr>
 </table>
+</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">img8Bit</td><td><img src="bit8.png" alt="" class="inline" title="8 Bit"/> Return the result 8bit image </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl>
 <dt>Example</dt>
 <dd>Convert16To8Bit.cpp/cs</dd>
@@ -548,12 +544,7 @@ Public Member Functions</h2></td></tr>
 <p>Convert a 8bit image to 16bit depth, set the continues 8 bits from the specified index. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">img8Bit</td><td><img src="bit8.png" alt="" class="inline" title="8 Bit"/> The input 8bit image </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">fromNthBit</td><td>The starting index, in range -7 ~ 15 to ensure at least 1 valid bit </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">img16Bit</td><td><img src="bit16.png" alt="" class="inline" title="16 Bit"/> Return the result 16bit image</td></tr>
-  </table>
-  </dd>
-</dl>
-<table class="markdownTable">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fromNthBit</td><td>The starting index, in range -7 ~ 15 to ensure at least 1 valid bit <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">From Nth Bit   </th><th class="markdownTableHeadNone">Usage    </th></tr>
 <tr class="markdownTableRowOdd">
@@ -563,6 +554,11 @@ Public Member Functions</h2></td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">4   </td><td class="markdownTableBodyNone">Set to Middle 8bit   </td></tr>
 </table>
+</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">img16Bit</td><td><img src="bit16.png" alt="" class="inline" title="16 Bit"/> Return the result 16bit image </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section since"><dt>Since</dt><dd>2.4.0 </dd></dl>
 
 </div>
