@@ -120,6 +120,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab950f34906bd4be377a58d3893d4c9db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8cf28e9179b744616e42f622e90dc6d7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_system.html#a8cf28e9179b744616e42f622e90dc6d7">DrawString</a> (<a class="el" href="class_l_string.html">LString</a> text, int tlx, int tly, HDC hdc, double zoomX, double zoomY, double panX, double panY)</td></tr>
 <tr class="separator:a8cf28e9179b744616e42f622e90dc6d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3399345059ec8b7e4e42e7b6c976208f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_l_string.html">LString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_system.html#a3399345059ec8b7e4e42e7b6c976208f">GenKey</a> ()</td></tr>
+<tr class="separator:a3399345059ec8b7e4e42e7b6c976208f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6de277271b1f3204fa787782f9267adb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_system.html#a6de277271b1f3204fa787782f9267adb">GenKeyToFile</a> (<a class="el" href="class_l_string.html">LString</a> filename)</td></tr>
+<tr class="separator:a6de277271b1f3204fa787782f9267adb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d4476f2a04f551b0912272b94dd3565"><td class="memItemLeft" align="right" valign="top">COLORREF&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_system.html#a5d4476f2a04f551b0912272b94dd3565">GetColorRef</a> (int red, int green, int blue)</td></tr>
 <tr class="separator:a5d4476f2a04f551b0912272b94dd3565"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad5355c4ae5e54da1dd683f38ee77bc7"><td class="memItemLeft" align="right" valign="top">COLORREF&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_system.html#aad5355c4ae5e54da1dd683f38ee77bc7">GetRandomColorRef</a> ()</td></tr>
@@ -182,6 +186,7 @@ You may call it as:</p>
   </table>
   </dd>
 </dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_system.html#a76a10a7c8696e5d12827104873bd4682">CheckLicense()</a>, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_system.html#a3399345059ec8b7e4e42e7b6c976208f">GenKey()</a>, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_system.html#a6de277271b1f3204fa787782f9267adb">GenKeyToFile()</a> </dd></dl>
 
 </div>
 </div>
@@ -213,6 +218,7 @@ You may call it as:</p>
   </table>
   </dd>
 </dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_system.html#a60f02f83c10395e2adb2bd9d0d929a93">CheckLib()</a>, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_system.html#a3399345059ec8b7e4e42e7b6c976208f">GenKey()</a>, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_system.html#a6de277271b1f3204fa787782f9267adb">GenKeyToFile()</a> </dd></dl>
 
 </div>
 </div>
@@ -760,6 +766,63 @@ You may call it as:</p>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="use_draw_functions.html">Use Draw Functions</a> </dd></dl>
 <dl class="section remark"><dt>Remarks</dt><dd>This function is currently not available on Linux / MacOS platform. </dd></dl>
+
+</div>
+</div>
+<a id="a3399345059ec8b7e4e42e7b6c976208f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3399345059ec8b7e4e42e7b6c976208f">&#9670;&nbsp;</a></span>GenKey()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_l_string.html">LString</a> GenKey </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Generate the key string used for licensing. You may then save the string to a .key file and send it to us or your LPV SDK Tech Support to obtain the license. </p><dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">error</td><td>Return the key string, or null if anything is wrong. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_system.html#a6de277271b1f3204fa787782f9267adb">GenKeyToFile()</a>, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_system.html#a60f02f83c10395e2adb2bd9d0d929a93">CheckLib()</a>, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_system.html#a76a10a7c8696e5d12827104873bd4682">CheckLicense()</a> </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>2.6.0 </dd></dl>
+
+</div>
+</div>
+<a id="a6de277271b1f3204fa787782f9267adb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6de277271b1f3204fa787782f9267adb">&#9670;&nbsp;</a></span>GenKeyToFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> GenKeyToFile </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_l_string.html">LString</a>&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Generate the key string used for licensing. Please send the .key file to us or your LPV SDK Tech Support to obtain the license. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>Full path of the file, it could be absolute or relative path with file name and extension (should be .key). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">error</td><td>Return error code if anything is wrong. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_system.html#a3399345059ec8b7e4e42e7b6c976208f">GenKey()</a>, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_system.html#a60f02f83c10395e2adb2bd9d0d929a93">CheckLib()</a>, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_system.html#a76a10a7c8696e5d12827104873bd4682">CheckLicense()</a> </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>2.6.0 </dd></dl>
 
 </div>
 </div>
