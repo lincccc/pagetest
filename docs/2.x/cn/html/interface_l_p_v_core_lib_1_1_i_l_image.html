@@ -114,6 +114,8 @@ Public 成员函数</h2></td></tr>
 <tr class="separator:a6fa509713f05f8a8c53794e037baa51c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abac301e33964a208fae5da3aa71c8ed1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html#abac301e33964a208fae5da3aa71c8ed1">GetChannel</a> (int channelIdx)</td></tr>
 <tr class="separator:abac301e33964a208fae5da3aa71c8ed1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada8ef622715c5a172b3f5cc89024b38b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html#ada8ef622715c5a172b3f5cc89024b38b">LoadRawFile</a> (<a class="el" href="class_l_string.html">LString</a> filename, int w, int h, int flags)</td></tr>
+<tr class="separator:ada8ef622715c5a172b3f5cc89024b38b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0772521fac1f24bd996f05fac5cae9d7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html#a0772521fac1f24bd996f05fac5cae9d7">Save</a> (<a class="el" href="class_l_string.html">LString</a> filename, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a> *region)</td></tr>
 <tr class="separator:a0772521fac1f24bd996f05fac5cae9d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88dc5a82b65d27fb4858762e1e6d8b57"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html#a88dc5a82b65d27fb4858762e1e6d8b57">SetChannel</a> (int channelIdx, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *channelImage)</td></tr>
@@ -399,6 +401,71 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="ada8ef622715c5a172b3f5cc89024b38b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada8ef622715c5a172b3f5cc89024b38b">&#9670;&nbsp;</a></span>LoadRawFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> LoadRawFile </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_l_string.html">LString</a>&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>h</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flags</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>从 .raw 文件读取图像 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">w</td><td>图像的宽度，以像素为单位的正整数。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">h</td><td>图像的高度，以像素为单位的正整数。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">flags</td><td>控制 raw 数据的解析方式 <table class="markdownTable">
+<tr>
+<th class="markdownTableHeadLeft">Flags</th><th class="markdownTableHeadLeft">Usage </th></tr>
+<tr>
+<td>0</td><td>每个像素占用 16 位 </td></tr>
+<tr>
+<td>1</td><td>每两个 MONO-12 像素占用 24 位，各自的低 4 位合并为一个 8 位 </td></tr>
+</table>
+</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>文件路径，可为绝对或相对路径，包含文件夹、文件名和扩展名 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">error</td><td>返回错误码 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_object.html#a74069eb14437a9a889322b62e52db75f">Load()</a> </dd></dl>
+<dl class="section since"><dt>自从</dt><dd>2.7.0 </dd></dl>
 
 </div>
 </div>
