@@ -35,10 +35,6 @@
   <td id="projectlogo" style="padding-left: 1em; text-align: center; vertical-align: middle;"><a href="index.html"><img alt="Logo" src="lpv_logo.png"/></a></td>
   <td id="projectalign" style="padding-left: 0.5em; vertical-align: bottom; padding-bottom: 5px;">
    <div id="projectbrief">Leaper Vision Toolkit</div>
-   <div id="projectbrief" style="margin-top: 3px;">
-    <a id="cn_btn" style="cursor: pointer; color: var(--primary-color);">中文</a> / <a id="en_btn" style="cursor: pointer; color: var(--primary-color);">English</a>
-    <span id="projectnumber">2.x</span>
-    </div>
   </td>
  </tr>
  </tbody>
@@ -161,7 +157,7 @@ Properties</h2></td></tr>
 <p class="formulaDsp">
 \[ I&#39;(x,y) = \sum_{i,j} f(x+i, y+j) k(i,j) \]
 </p>
-<p>@math_eq{k(i,j)} is called the filtering kernel.<br  />
+<p>\( k(i,j) \) is called the filtering kernel.<br  />
 <br  />
 To use this interface, you should create a <a class="el" href="class_l_p_v_img_proc_lib_1_1_l_image_filter.html">LImageFilter</a> object. </p><h3>Example Code </h3>
  <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">ILImageFilterPtr imgfilterOp = LImageFilter::Create();</div>
@@ -335,10 +331,10 @@ To use this interface, you should create a <a class="el" href="class_l_p_v_img_p
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Blurs an image using a Gaussian filter. Two x and y order Gaussian kernel is computed as a @math_eq{\texttt{ksize} \times 1} matrix of coefficients: </p><p class="formulaDsp">
+<p>Blurs an image using a Gaussian filter. Two x and y order Gaussian kernel is computed as a \( \texttt{ksize} \times 1 \) matrix of coefficients: </p><p class="formulaDsp">
 \[ G_i= \alpha *e^{-(i-( \texttt{ksize} -1)/2)^2/(2* \texttt{sigma}^2)}, \]
 </p>
-<p>where @math_eq{i=0..\texttt{ksize}-1} , @math_eq{\alpha} is the scale factor chosen so that @math_eq{\sum_i G_i=1} , @math_eq{sigma} is set via <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_filter.html#ade4502834031624201866fe2ff1b31a2">SetKernelSigma()</a> or computed from ksize as @math_eq{ksize \times 0.6} . </p><dl class="params"><dt>Parameters</dt><dd>
+<p>where \( i=0..\texttt{ksize}-1 \) , \( \alpha \) is the scale factor chosen so that \( \sum_i G_i=1 \) , \( sigma \) is set via <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_filter.html#ade4502834031624201866fe2ff1b31a2">SetKernelSigma()</a> or computed from ksize as \( ksize \times 0.6 \) . </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>The input image </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>Return result image </td></tr>
@@ -479,7 +475,7 @@ To use this interface, you should create a <a class="el" href="class_l_p_v_img_p
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Each output pixel represents the mean pixel value of the pixel values in the kernel neighborhood. The @math_eq{3 \times 3} kernel is as below:</p>
+<p>Each output pixel represents the mean pixel value of the pixel values in the kernel neighborhood. The \( 3 \times 3 \) kernel is as below:</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>The input image </td></tr>
@@ -515,7 +511,7 @@ To use this interface, you should create a <a class="el" href="class_l_p_v_img_p
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Reveals the density of objects and features in the input image by measuring the amount of light that passes through them. Denser objects and features are represented by lighter pixels in the output image. This filter is the equivalent of @math_eq{45*(ln(255) - ln(I))} for a 8bit image, and @math_eq{5909*(ln(65535) - ln(I))} for a 16bit image. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Reveals the density of objects and features in the input image by measuring the amount of light that passes through them. Denser objects and features are represented by lighter pixels in the output image. This filter is the equivalent of \( 45*(ln(255) - ln(I)) \) for a 8bit image, and \( 5909*(ln(65535) - ln(I)) \) for a 16bit image. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>The input image </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>Return result image </td></tr>
@@ -553,8 +549,8 @@ To use this interface, you should create a <a class="el" href="class_l_p_v_img_p
 <p>Change the kernel using the specified sigma and gain value. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">kSigma</td><td>The sigma value is used to control the filter kernel's smoothness.<br  />
-For <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_filter.html#ad8a88ccde91d420b02aa23a57b9d50d9">HighPass()</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_filter.html#abb994cefb8c7b8b4efa93a75a7b3af3d">Gaussian()</a> and <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_filter.html#af39a1675a27719f601a3799c190bd6d0">Sharpen()</a> functions, if the sigma value is set to 0 then it's computed as @math_eq{1/6} of the kernel size.<br  />
-If the kernel size is set to all zeros, then we'll compute a proper size from the sigma value, it's around @math_eq{6 \times kSigma} .<br  />
+For <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_filter.html#ad8a88ccde91d420b02aa23a57b9d50d9">HighPass()</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_filter.html#abb994cefb8c7b8b4efa93a75a7b3af3d">Gaussian()</a> and <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_filter.html#af39a1675a27719f601a3799c190bd6d0">Sharpen()</a> functions, if the sigma value is set to 0 then it's computed as \( 1/6 \) of the kernel size.<br  />
+If the kernel size is set to all zeros, then we'll compute a proper size from the sigma value, it's around \( 6 \times kSigma \) .<br  />
 For <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_filter.html#a47019e073bb55ca5a89c7d8304d68c9d">EdgePreserveDenoise()</a> and <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_filter.html#af4f97cd7b9c41235318d9080749a9f23">EdgePreserveTextureEnhance()</a>, set sigma value to 0 means no extra smoothing. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">kGain</td><td>The gain value is used to for <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_filter.html#af39a1675a27719f601a3799c190bd6d0">Sharpen()</a> to controls the overall strength of the sharpening effect. </td></tr>
   </table>
@@ -589,7 +585,7 @@ For <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_filter.html#a
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Change kernel size used in the filter, by default it's a @math_eq{3 \times 3} kernel. Large kernel size results usually in stronger filtering effect, but also slower.<br  />
+<p>Change kernel size used in the filter, by default it's a \( 3 \times 3 \) kernel. Large kernel size results usually in stronger filtering effect, but also slower.<br  />
 You may set the kernel size to 0 then we'll compute a proper size from the sigma value. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">kWidth</td><td>The width of the kernel size, should be an odd number, say, 3, 5, 7, etc. </td></tr>

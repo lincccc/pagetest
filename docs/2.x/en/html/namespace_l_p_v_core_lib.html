@@ -35,10 +35,6 @@
   <td id="projectlogo" style="padding-left: 1em; text-align: center; vertical-align: middle;"><a href="index.html"><img alt="Logo" src="lpv_logo.png"/></a></td>
   <td id="projectalign" style="padding-left: 0.5em; vertical-align: bottom; padding-bottom: 5px;">
    <div id="projectbrief">Leaper Vision Toolkit</div>
-   <div id="projectbrief" style="margin-top: 3px;">
-    <a id="cn_btn" style="cursor: pointer; color: var(--primary-color);">中文</a> / <a id="en_btn" style="cursor: pointer; color: var(--primary-color);">English</a>
-    <span id="projectnumber">2.x</span>
-    </div>
   </td>
  </tr>
  </tbody>
@@ -165,13 +161,13 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_p_v_core_lib_1_1_l_mask_region.html">LMaskRegion</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_l_p_v_core_lib_1_1_l_matrix23.html">LMatrix23</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This structure represents a @math_eq{2 \times 3} matrix (2 rows, 3 columns)  <a href="struct_l_p_v_core_lib_1_1_l_matrix23.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This structure represents a \( 2 \times 3 \) matrix (2 rows, 3 columns)  <a href="struct_l_p_v_core_lib_1_1_l_matrix23.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_l_p_v_core_lib_1_1_l_matrix33.html">LMatrix33</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This structure represents a @math_eq{3 \times 3} matrix (3 rows, 3 columns)  <a href="struct_l_p_v_core_lib_1_1_l_matrix33.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This structure represents a \( 3 \times 3 \) matrix (3 rows, 3 columns)  <a href="struct_l_p_v_core_lib_1_1_l_matrix33.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_l_p_v_core_lib_1_1_l_matrix44.html">LMatrix44</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This structure represents a @math_eq{4 \times 4} matrix (4 rows, 4 columns)  <a href="struct_l_p_v_core_lib_1_1_l_matrix44.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This structure represents a \( 4 \times 4 \) matrix (4 rows, 4 columns)  <a href="struct_l_p_v_core_lib_1_1_l_matrix44.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_p_v_core_lib_1_1_l_poly_region.html">LPolyRegion</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -790,7 +786,7 @@ Enumerations</h2></td></tr>
 \[ V_{max} = max(R,G,B), V_{min} = min(R,G,B) \\ L = \frac{V_{min} + V_{max}}{2} \\ S = \left\{ \begin{array}{ll} \frac{V_{max} - V_{min}}{V_{max} + V_{min}} \cdot 255 &amp; L &lt; 128 \\ \frac{V_{max} - V_{min}}{255 \cdot 2 - (V_{max} + V_{min})} \cdot 255 &amp; otherwise \\ \end{array} \right. \\ h = \left\{ \begin{array}{ll} \frac{G - B}{V_{max} - V_{min}} \cdot 60 &amp; V_{max} = R \\ \frac{B - R}{V_{max} - V_{min}} \cdot 60 + 120 &amp; V_{max} = R \\ \frac{R - G}{V_{max} - V_{min}} \cdot 60 + 240 &amp; V_{max} = B \\ \end{array} \right. , H = \left\{ \begin{array}{ll} \frac{h + 360}{2} &amp; h &lt; 0\ \\ \frac{h}{2} &amp; otherwise \\ \end{array} \right. \]
 </p>
  </td></tr>
-<tr><td class="fieldname"><a id="abc1c78dbe5bbd9696e1af6618392a083a55371d0312c8305285cdd39074044a17"></a>LPVColorSpaceYCrCb&#160;</td><td class="fielddoc"><p>YCrCb color space. The order of channels are: Y(luminance), Cb(blue chroma), Cr(red chroma)</p>
+<tr><td class="fieldname"><a id="abc1c78dbe5bbd9696e1af6618392a083a55371d0312c8305285cdd39074044a17"></a>LPVColorSpaceYCrCb&#160;</td><td class="fielddoc"><p>YCrCb color space. The order of channels are: Y(luminance), Cr(red chroma), Cb(blue chroma)</p>
 <p class="formulaDsp">
 \[ Y = 0.299 \cdot R + 0.587 \cdot G + 0.114 \cdot B \\ Cr = 0.713 \cdot (R-Y) + 128 \\ Cb = 0.564 \cdot (B-Y) + 128 \\ \]
 </p>
@@ -861,14 +857,14 @@ The conversion between BGR is calculated based on XYZ values using normalized RG
 
 <p>This enumeration represents type of kernel used in edge filtering. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ae9fce5290064b3ab00a2b0c192245c0dae3aefcc5cbf63e31b9ae096c8ed63c19"></a>LPVSobel&#160;</td><td class="fielddoc"><p>A Sobel kernel, it combines Gaussian smoothing and differentiation, so the result is more or less resistant to the noise. A typical @math_eq{3 \times 3} x and y order kernel is:<br  />
- @math_eq{\begin{bmatrix}-1 &amp; 0 &amp; 1\-2 &amp; 0 &amp; 2\-1 &amp; 0 &amp; 1\end{bmatrix}} @math_eq{\begin{bmatrix}-1 &amp; -2 &amp; -1\0 &amp; 0 &amp; 0\1 &amp; 2 &amp; 1\end{bmatrix}} </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ae9fce5290064b3ab00a2b0c192245c0dae3aefcc5cbf63e31b9ae096c8ed63c19"></a>LPVSobel&#160;</td><td class="fielddoc"><p>A Sobel kernel, it combines Gaussian smoothing and differentiation, so the result is more or less resistant to the noise. A typical \( 3 \times 3 \) x and y order kernel is:<br  />
+ \( \begin{bmatrix}-1 &amp; 0 &amp; 1\\-2 &amp; 0 &amp; 2\\-1 &amp; 0 &amp; 1\end{bmatrix} \) \( \begin{bmatrix}-1 &amp; -2 &amp; -1\\0 &amp; 0 &amp; 0\\1 &amp; 2 &amp; 1\end{bmatrix} \) </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ae9fce5290064b3ab00a2b0c192245c0da8691a21818e71199ad96134554ee1728"></a>LPVPrewitt&#160;</td><td class="fielddoc"><p>A Prewitt kernel, only @math_eq{3 \times 3} size kernel is supported, the x and y order kernel is:<br  />
- @math_eq{\begin{bmatrix}-1 &amp; 0 &amp; 1\-1 &amp; 0 &amp; 1\-1 &amp; 0 &amp; 1\end{bmatrix}} @math_eq{\begin{bmatrix}-1 &amp; -1 &amp; -1\0 &amp; 0 &amp; 0\1 &amp; 1 &amp; 1\end{bmatrix}} </p>
+<tr><td class="fieldname"><a id="ae9fce5290064b3ab00a2b0c192245c0da8691a21818e71199ad96134554ee1728"></a>LPVPrewitt&#160;</td><td class="fielddoc"><p>A Prewitt kernel, only \( 3 \times 3 \) size kernel is supported, the x and y order kernel is:<br  />
+ \( \begin{bmatrix}-1 &amp; 0 &amp; 1\\-1 &amp; 0 &amp; 1\\-1 &amp; 0 &amp; 1\end{bmatrix} \) \( \begin{bmatrix}-1 &amp; -1 &amp; -1\\0 &amp; 0 &amp; 0\\1 &amp; 1 &amp; 1\end{bmatrix} \) </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ae9fce5290064b3ab00a2b0c192245c0da27bc6b77d810e49ba426b37193a121cf"></a>LPVScharr&#160;</td><td class="fielddoc"><p>A Scharr kernel, addresses more inaccurate derivation than Sobel kernel. Only @math_eq{3 \times 3} size kernel is supported, the x and y order kernel is:</p>
-<p>@math_eq{\begin{bmatrix}-3 &amp; 0 &amp; 3\-10 &amp; 0 &amp; 10\-3 &amp; 0 &amp; 3\end{bmatrix}} @math_eq{\begin{bmatrix}-3 &amp; -10 &amp; -3\0 &amp; 0 &amp; 0\3 &amp; 10 &amp; 3\end{bmatrix}} </p>
+<tr><td class="fieldname"><a id="ae9fce5290064b3ab00a2b0c192245c0da27bc6b77d810e49ba426b37193a121cf"></a>LPVScharr&#160;</td><td class="fielddoc"><p>A Scharr kernel, addresses more inaccurate derivation than Sobel kernel. Only \( 3 \times 3 \) size kernel is supported, the x and y order kernel is:</p>
+<p>\( \begin{bmatrix}-3 &amp; 0 &amp; 3\\-10 &amp; 0 &amp; 10\\-3 &amp; 0 &amp; 3\end{bmatrix} \) \( \begin{bmatrix}-3 &amp; -10 &amp; -3\\0 &amp; 0 &amp; 0\\3 &amp; 10 &amp; 3\end{bmatrix} \) </p>
 </td></tr>
 </table>
 
@@ -1141,14 +1137,14 @@ The conversion between BGR is calculated based on XYZ values using normalized RG
 
 <p>This enumeration represents shape of the structuring element used in morphological transformations. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a1b8145ed8b707b1177c0ab8c0bc170abab2f17e0c535c0d0d70fdd2b219936035"></a>LPVMorphRect&#160;</td><td class="fielddoc"><p>A rectangular element, for example a @math_eq{5 \times 5} element is:<br  />
- @math_eq{\begin{bmatrix}1 &amp; 1 &amp; 1 &amp; 1 &amp; 1\1 &amp; 1 &amp; 1 &amp; 1 &amp; 1\1 &amp; 1 &amp; 1 &amp; 1 &amp; 1\1 &amp; 1 &amp; 1 &amp; 1 &amp; 1\1 &amp; 1 &amp; 1 &amp; 1 &amp; 1\end{bmatrix}} </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a1b8145ed8b707b1177c0ab8c0bc170abab2f17e0c535c0d0d70fdd2b219936035"></a>LPVMorphRect&#160;</td><td class="fielddoc"><p>A rectangular element, for example a \( 5 \times 5 \) element is:<br  />
+ \( \begin{bmatrix}1 &amp; 1 &amp; 1 &amp; 1 &amp; 1\\1 &amp; 1 &amp; 1 &amp; 1 &amp; 1\\1 &amp; 1 &amp; 1 &amp; 1 &amp; 1\\1 &amp; 1 &amp; 1 &amp; 1 &amp; 1\\1 &amp; 1 &amp; 1 &amp; 1 &amp; 1\end{bmatrix} \) </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a1b8145ed8b707b1177c0ab8c0bc170abad8b434c58080f9d683553d3ee56c396a"></a>LPVMorphCross&#160;</td><td class="fielddoc"><p>A cross-shaped element, for example a @math_eq{5 \times 5} element is:<br  />
- @math_eq{\begin{bmatrix}0 &amp; 0 &amp; 1 &amp; 0 &amp; 0\0 &amp; 0 &amp; 1 &amp; 0 &amp; 0\1 &amp; 1 &amp; 1 &amp; 1 &amp; 1\0 &amp; 0 &amp; 1 &amp; 0 &amp; 0\0 &amp; 0 &amp; 1 &amp; 0 &amp; 0\end{bmatrix}} </p>
+<tr><td class="fieldname"><a id="a1b8145ed8b707b1177c0ab8c0bc170abad8b434c58080f9d683553d3ee56c396a"></a>LPVMorphCross&#160;</td><td class="fielddoc"><p>A cross-shaped element, for example a \( 5 \times 5 \) element is:<br  />
+ \( \begin{bmatrix}0 &amp; 0 &amp; 1 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 1 &amp; 0 &amp; 0\\1 &amp; 1 &amp; 1 &amp; 1 &amp; 1\\0 &amp; 0 &amp; 1 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 1 &amp; 0 &amp; 0\end{bmatrix} \) </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a1b8145ed8b707b1177c0ab8c0bc170abada8d1902e79333dd970fa61750d4f680"></a>LPVMorphEllipse&#160;</td><td class="fielddoc"><p>A filled-elliptic element, for example a @math_eq{5 \times 5} element is:<br  />
- @math_eq{\begin{bmatrix}0 &amp; 0 &amp; 1 &amp; 0 &amp; 0\1 &amp; 1 &amp; 1 &amp; 1 &amp; 1\1 &amp; 1 &amp; 1 &amp; 1 &amp; 1\1 &amp; 1 &amp; 1 &amp; 1 &amp; 1\0 &amp; 0 &amp; 1 &amp; 0 &amp; 0\end{bmatrix}} </p>
+<tr><td class="fieldname"><a id="a1b8145ed8b707b1177c0ab8c0bc170abada8d1902e79333dd970fa61750d4f680"></a>LPVMorphEllipse&#160;</td><td class="fielddoc"><p>A filled-elliptic element, for example a \( 5 \times 5 \) element is:<br  />
+ \( \begin{bmatrix}0 &amp; 0 &amp; 1 &amp; 0 &amp; 0\\1 &amp; 1 &amp; 1 &amp; 1 &amp; 1\\1 &amp; 1 &amp; 1 &amp; 1 &amp; 1\\1 &amp; 1 &amp; 1 &amp; 1 &amp; 1\\0 &amp; 0 &amp; 1 &amp; 0 &amp; 0\end{bmatrix} \) </p>
 </td></tr>
 </table>
 
@@ -1373,23 +1369,23 @@ The conversion between BGR is calculated based on XYZ values using normalized RG
 </td></tr>
 <tr><td class="fieldname"><a id="a38d3a87896df9ff1b8c96bee1ab58e2faccbd24417fbf505b986cbffe12a89f25"></a>LPVSortOrderAscending&#160;</td><td class="fielddoc"><p>Sort ascendingly, for example:</p>
 <p>LPVSortByRow, LPVSortOrderAscending:<br  />
-@math_eq{\begin{matrix}0 &amp; \rightarrow &amp; 1 &amp; \rightarrow &amp; 2\3 &amp; \rightarrow &amp; 4 &amp; \rightarrow &amp; 5\6 &amp; \rightarrow &amp; 7 &amp; \rightarrow &amp; 8\end{matrix}}</p>
+ \( \begin{matrix}0 &amp; \rightarrow &amp; 1 &amp; \rightarrow &amp; 2\\3 &amp; \rightarrow &amp; 4 &amp; \rightarrow &amp; 5\\6 &amp; \rightarrow &amp; 7 &amp; \rightarrow &amp; 8\end{matrix} \)</p>
 <p>LPVSortByColumn, LPVSortOrderAscending:<br  />
-@math_eq{\begin{matrix}0 &amp; 3 &amp; 6\ \downarrow &amp; \downarrow &amp; \downarrow\1 &amp; 4 &amp; 7\ \downarrow &amp; \downarrow &amp; \downarrow\2 &amp; 5 &amp; 8\end{matrix}} </p>
+ \( \begin{matrix}0 &amp; 3 &amp; 6\\ \downarrow &amp; \downarrow &amp; \downarrow\\1 &amp; 4 &amp; 7\\ \downarrow &amp; \downarrow &amp; \downarrow\\2 &amp; 5 &amp; 8\end{matrix} \) </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a38d3a87896df9ff1b8c96bee1ab58e2fac2f0614a60fa529439dd8324063a2bbd"></a>LPVSortOrderDescending&#160;</td><td class="fielddoc"><p>Sort descendingly, for example:</p>
 <p>LPVSortByRow, LPVSortOrderDescending:<br  />
-@math_eq{\begin{matrix}8 &amp; \leftarrow &amp; 7 &amp; \leftarrow &amp; 6\5 &amp; \leftarrow &amp; 4 &amp; \leftarrow &amp; 3\2 &amp; \leftarrow &amp; 1 &amp; \leftarrow &amp; 0\end{matrix}}</p>
+ \( \begin{matrix}8 &amp; \leftarrow &amp; 7 &amp; \leftarrow &amp; 6\\5 &amp; \leftarrow &amp; 4 &amp; \leftarrow &amp; 3\\2 &amp; \leftarrow &amp; 1 &amp; \leftarrow &amp; 0\end{matrix} \)</p>
 <p>LPVSortByColumn, LPVSortOrderDescending:<br  />
-@math_eq{\begin{matrix}8 &amp; 5 &amp; 2\ \uparrow &amp; \uparrow &amp; \uparrow\7 &amp; 4 &amp; 1\ \uparrow &amp; \uparrow &amp; \uparrow\6 &amp; 3 &amp; 0\end{matrix}} </p>
+ \( \begin{matrix}8 &amp; 5 &amp; 2\\ \uparrow &amp; \uparrow &amp; \uparrow\\7 &amp; 4 &amp; 1\\ \uparrow &amp; \uparrow &amp; \uparrow\\6 &amp; 3 &amp; 0\end{matrix} \) </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a38d3a87896df9ff1b8c96bee1ab58e2fad8ae978cdb112c0fbf64207310855ad0"></a>LPVSortOrderAscendingZigZag&#160;</td><td class="fielddoc"><p>Sort in alternating ascending and descending orders, starting from ascending order:</p>
 <p>LPVSortByRow, LPVSortOrderAscendingZigZag:<br  />
-@math_eq{\begin{matrix}0 &amp; \rightarrow &amp; 1 &amp; \rightarrow &amp; 2\5 &amp; \leftarrow &amp; 4 &amp; \leftarrow &amp; 3\6 &amp; \rightarrow &amp; 7 &amp; \rightarrow &amp; 8\end{matrix}} </p>
+ \( \begin{matrix}0 &amp; \rightarrow &amp; 1 &amp; \rightarrow &amp; 2\\5 &amp; \leftarrow &amp; 4 &amp; \leftarrow &amp; 3\\6 &amp; \rightarrow &amp; 7 &amp; \rightarrow &amp; 8\end{matrix} \) </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a38d3a87896df9ff1b8c96bee1ab58e2fac88fa9773daa6256c3dc7919ca3664ec"></a>LPVSortOrderDescendingZigZag&#160;</td><td class="fielddoc"><p>Sort in alternating ascending and descending orders, starting from descending order:</p>
 <p>LPVSortByRow, LPVSortOrderDescendingZigZag:<br  />
-@math_eq{\begin{matrix}2 &amp; \leftarrow &amp; 1 &amp; \leftarrow &amp; 0\3 &amp; \rightarrow &amp; 4 &amp; \rightarrow &amp; 5\8 &amp; \leftarrow &amp; 7 &amp; \leftarrow &amp; 6\end{matrix}} </p>
+ \( \begin{matrix}2 &amp; \leftarrow &amp; 1 &amp; \leftarrow &amp; 0\\3 &amp; \rightarrow &amp; 4 &amp; \rightarrow &amp; 5\\8 &amp; \leftarrow &amp; 7 &amp; \leftarrow &amp; 6\end{matrix} \) </p>
 </td></tr>
 </table>
 

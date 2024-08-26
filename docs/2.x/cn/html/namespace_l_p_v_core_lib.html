@@ -35,10 +35,6 @@
   <td id="projectlogo" style="padding-left: 1em; text-align: center; vertical-align: middle;"><a href="index.html"><img alt="Logo" src="lpv_logo.png"/></a></td>
   <td id="projectalign" style="padding-left: 0.5em; vertical-align: bottom; padding-bottom: 5px;">
    <div id="projectbrief">Leaper Vision Toolkit</div>
-   <div id="projectbrief" style="margin-top: 3px;">
-    <a id="cn_btn" style="cursor: pointer; color: var(--primary-color);">中文</a> / <a id="en_btn" style="cursor: pointer; color: var(--primary-color);">English</a>
-    <span id="projectnumber">2.x</span>
-    </div>
   </td>
  </tr>
  </tbody>
@@ -790,7 +786,7 @@ typedef struct <a class="el" href="struct_l_p_v_core_lib_1_1_l_size.html">LPVCor
 \[ V_{max} = max(R,G,B), V_{min} = min(R,G,B) \\ L = \frac{V_{min} + V_{max}}{2} \\ S = \left\{ \begin{array}{ll} \frac{V_{max} - V_{min}}{V_{max} + V_{min}} \cdot 255 &amp; L &lt; 128 \\ \frac{V_{max} - V_{min}}{255 \cdot 2 - (V_{max} + V_{min})} \cdot 255 &amp; otherwise \\ \end{array} \right. \\ h = \left\{ \begin{array}{ll} \frac{G - B}{V_{max} - V_{min}} \cdot 60 &amp; V_{max} = R \\ \frac{B - R}{V_{max} - V_{min}} \cdot 60 + 120 &amp; V_{max} = R \\ \frac{R - G}{V_{max} - V_{min}} \cdot 60 + 240 &amp; V_{max} = B \\ \end{array} \right. , H = \left\{ \begin{array}{ll} \frac{h + 360}{2} &amp; h &lt; 0\ \\ \frac{h}{2} &amp; otherwise \\ \end{array} \right. \]
 </p>
  </td></tr>
-<tr><td class="fieldname"><a id="abc1c78dbe5bbd9696e1af6618392a083a55371d0312c8305285cdd39074044a17"></a>LPVColorSpaceYCrCb&#160;</td><td class="fielddoc"><p>YCrCb 颜色空间。通道顺序为：Y（亮度），Cb（蓝色色度），Cr（红色色度）</p>
+<tr><td class="fieldname"><a id="abc1c78dbe5bbd9696e1af6618392a083a55371d0312c8305285cdd39074044a17"></a>LPVColorSpaceYCrCb&#160;</td><td class="fielddoc"><p>YCrCb 颜色空间。通道顺序为：Y（亮度），Cr（红色色度），Cb（蓝色色度）</p>
 <p class="formulaDsp">
 \[ Y = 0.299 \cdot R + 0.587 \cdot G + 0.114 \cdot B \\ Cr = 0.713 \cdot (R-Y) + 128 \\ Cb = 0.564 \cdot (B-Y) + 128 \\ \]
 </p>

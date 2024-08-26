@@ -35,10 +35,6 @@
   <td id="projectlogo" style="padding-left: 1em; text-align: center; vertical-align: middle;"><a href="index.html"><img alt="Logo" src="lpv_logo.png"/></a></td>
   <td id="projectalign" style="padding-left: 0.5em; vertical-align: bottom; padding-bottom: 5px;">
    <div id="projectbrief">Leaper Vision Toolkit</div>
-   <div id="projectbrief" style="margin-top: 3px;">
-    <a id="cn_btn" style="cursor: pointer; color: var(--primary-color);">中文</a> / <a id="en_btn" style="cursor: pointer; color: var(--primary-color);">English</a>
-    <span id="projectnumber">2.x</span>
-    </div>
   </td>
  </tr>
  </tbody>
@@ -1135,7 +1131,7 @@ It indicates this is a color-mode blob analysis tool, all the previous grayscale
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Use local-adaptive threshold value. The optimal threshold value is calculated base on a @math_eq{blockSize \times blockSize} region around individual pixel, then revised by the given bias value. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Use local-adaptive threshold value. The optimal threshold value is calculated base on a \( blockSize \times blockSize \) region around individual pixel, then revised by the given bias value. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">blobPolarity</td><td>The <em>object polarity</em> of the blob. <a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0baffd2c678a5a2ea661de262d51223adf3">LPVBlackOnWhite </a> indicates black pixels with smaller value than global threshold are the blobs, <a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0bac595c6b549ecbabb1dbb431e374b02ad">LPVWhiteOnBlack </a> is exactly the opposite. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">blockSize</td><td>Size of a pixel's local region, should be an odd number, say, 3, 5, 7, etc. Set it to 0 for auto-generate block size based in the input image size. </td></tr>

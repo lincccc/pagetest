@@ -35,10 +35,6 @@
   <td id="projectlogo" style="padding-left: 1em; text-align: center; vertical-align: middle;"><a href="index.html"><img alt="Logo" src="lpv_logo.png"/></a></td>
   <td id="projectalign" style="padding-left: 0.5em; vertical-align: bottom; padding-bottom: 5px;">
    <div id="projectbrief">Leaper Vision Toolkit</div>
-   <div id="projectbrief" style="margin-top: 3px;">
-    <a id="cn_btn" style="cursor: pointer; color: var(--primary-color);">中文</a> / <a id="en_btn" style="cursor: pointer; color: var(--primary-color);">English</a>
-    <span id="projectnumber">2.x</span>
-    </div>
   </td>
  </tr>
  </tbody>
@@ -304,7 +300,7 @@ For example, if the threshold lower bound is 100, upper bound is 200, a pixel of
       </table>
 </div><div class="memdoc">
 <p>Use global-adaptive threshold value.<br  />
-The optimal threshold value is calculated base on the entire input image, then revised by the given bias value. The lower bound of threshold value is @math_eq{t - lbBias} , the upper bound is @math_eq{t + ubBias} . </p><dl class="params"><dt>Parameters</dt><dd>
+The optimal threshold value is calculated base on the entire input image, then revised by the given bias value. The lower bound of threshold value is \( t - lbBias \) , the upper bound is \( t + ubBias \) . </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">lbBias</td><td>Revise value to optimal threshold value, to generate a threshold lower bound. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">ubBias</td><td>Revise value to optimal threshold value, to generate a threshold upper bound. </td></tr>
@@ -352,7 +348,7 @@ The optimal threshold value is calculated base on the entire input image, then r
       </table>
 </div><div class="memdoc">
 <p>Use local-adaptive threshold value.<br  />
-The optimal threshold value is calculated base on a @math_eq{blockWidth \times blockHeight} region around individual pixel, then revised by the given bias value. The lower bound of threshold value is @math_eq{t - lbBias} , the upper bound is @math_eq{t + ubBias} . </p><dl class="params"><dt>Parameters</dt><dd>
+The optimal threshold value is calculated base on a \( blockWidth \times blockHeight \) region around individual pixel, then revised by the given bias value. The lower bound of threshold value is \( t - lbBias \) , the upper bound is \( t + ubBias \) . </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">blockWidth</td><td>The width of a pixel's local region, should be an odd number, say, 3, 5, 7, etc. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">blockHeight</td><td>The height of a pixel's local region, should be an odd number, say, 3, 5, 7, etc. </td></tr>

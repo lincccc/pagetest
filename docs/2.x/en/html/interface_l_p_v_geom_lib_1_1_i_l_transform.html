@@ -35,10 +35,6 @@
   <td id="projectlogo" style="padding-left: 1em; text-align: center; vertical-align: middle;"><a href="index.html"><img alt="Logo" src="lpv_logo.png"/></a></td>
   <td id="projectalign" style="padding-left: 0.5em; vertical-align: bottom; padding-bottom: 5px;">
    <div id="projectbrief">Leaper Vision Toolkit</div>
-   <div id="projectbrief" style="margin-top: 3px;">
-    <a id="cn_btn" style="cursor: pointer; color: var(--primary-color);">中文</a> / <a id="en_btn" style="cursor: pointer; color: var(--primary-color);">English</a>
-    <span id="projectnumber">2.x</span>
-    </div>
   </td>
  </tr>
  </tbody>
@@ -130,12 +126,12 @@ Public Member Functions</h2></td></tr>
 Properties</h2></td></tr>
 <tr class="memitem:a6627d25fefba767808d54b09a00bd4fd"><td class="memItemLeft" align="right" valign="top"><a id="a6627d25fefba767808d54b09a00bd4fd"></a>
 <a class="el" href="struct_l_p_v_core_lib_1_1_l_matrix33.html">LMatrix33</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_transform.html#a6627d25fefba767808d54b09a00bd4fd">Matrix</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a6627d25fefba767808d54b09a00bd4fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">The @math_eq{3 \times 3} transformation matrix. By default, it's an identity matrix. <br /></td></tr>
+<tr class="memdesc:a6627d25fefba767808d54b09a00bd4fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">The \( 3 \times 3 \) transformation matrix. By default, it's an identity matrix. <br /></td></tr>
 <tr class="separator:a6627d25fefba767808d54b09a00bd4fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This interface represents 2D transformations of a coordinate system. </p>
-<p>A transformation specifies how to translate, scale, rotate or project the coordinate system, with the @math_eq{3 \times 3} matrix inside.</p>
+<p>A transformation specifies how to translate, scale, rotate or project the coordinate system, with the \( 3 \times 3 \) matrix inside.</p>
 <p>It can be built using the <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_transform.html#ab7f819c804adb7c536083aa75f27e5f4">Scale()</a>, <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_transform.html#a7a26222c9a172c2eb5768271859e552f">Rotate()</a> and <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_transform.html#a2a2a026096a70200e8265e171b286d9c">Translate()</a> functions, or modify the involved <a class="el" href="struct_l_p_v_core_lib_1_1_l_matrix33.html">LMatrix33</a> directly. Alternatively, it can be built using <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_transform.html#ad6051d2bab0f2bb06e1bf7931588e8c3">Build()</a> by computing the transformation between the corresponding point pairs.</p>
 <p>To use this interface, you should create a <a class="el" href="class_l_p_v_geom_lib_1_1_l_transform.html">LTransform</a> object.</p>
 <h3>Example Code </h3>

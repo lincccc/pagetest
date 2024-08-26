@@ -35,10 +35,6 @@
   <td id="projectlogo" style="padding-left: 1em; text-align: center; vertical-align: middle;"><a href="index.html"><img alt="Logo" src="lpv_logo.png"/></a></td>
   <td id="projectalign" style="padding-left: 0.5em; vertical-align: bottom; padding-bottom: 5px;">
    <div id="projectbrief">Leaper Vision Toolkit</div>
-   <div id="projectbrief" style="margin-top: 3px;">
-    <a id="cn_btn" style="cursor: pointer; color: var(--primary-color);">中文</a> / <a id="en_btn" style="cursor: pointer; color: var(--primary-color);">English</a>
-    <span id="projectnumber">2.x</span>
-    </div>
   </td>
  </tr>
  </tbody>
@@ -213,15 +209,15 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 
 <p>This enumeration represents the type of the conductivity coefficient used in AKAZE feature. </p>
-<p>For all the equations below, @math_eq{dL} is the first order image derivative, @math_eq{k} is the contrast factor. </p>
+<p>For all the equations below, \( dL \) is the first order image derivative, \( k \) is the contrast factor. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a8d852d131e200703af74f9e52aa1191ba4848e4eac0e385dc0d84f19be619c9b8"></a>LPVConductPMG1&#160;</td><td class="fielddoc"><p>Perona &amp; Malik G1: @math_eq{\exp{(-dL^2 / k^2)}} </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a8d852d131e200703af74f9e52aa1191ba4848e4eac0e385dc0d84f19be619c9b8"></a>LPVConductPMG1&#160;</td><td class="fielddoc"><p>Perona &amp; Malik G1: \( \exp{(-dL^2 / k^2)} \) </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a8d852d131e200703af74f9e52aa1191bad07d573aea4c34e1a0567273ee04d6b9"></a>LPVConductPMG2&#160;</td><td class="fielddoc"><p>Perona &amp; Malik G2: @math_eq{1 / (1 + dL^2 / k^2)} </p>
+<tr><td class="fieldname"><a id="a8d852d131e200703af74f9e52aa1191bad07d573aea4c34e1a0567273ee04d6b9"></a>LPVConductPMG2&#160;</td><td class="fielddoc"><p>Perona &amp; Malik G2: \( 1 / (1 + dL^2 / k^2) \) </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a8d852d131e200703af74f9e52aa1191ba4e1bf7938012f72c26ea1fe0d3af030b"></a>LPVConductWeickert&#160;</td><td class="fielddoc"><p>Weickert: @math_eq{-3.315 / (dL^2 / k^2)^4} </p>
+<tr><td class="fieldname"><a id="a8d852d131e200703af74f9e52aa1191ba4e1bf7938012f72c26ea1fe0d3af030b"></a>LPVConductWeickert&#160;</td><td class="fielddoc"><p>Weickert: \( -3.315 / (dL^2 / k^2)^4 \) </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a8d852d131e200703af74f9e52aa1191ba18f45071954be806c07d9947645a8bc3"></a>LPVConductCharbonnier&#160;</td><td class="fielddoc"><p>Charbonnier: @math_eq{1 / \sqrt{(1 + dL^2 / k^2)}} </p>
+<tr><td class="fieldname"><a id="a8d852d131e200703af74f9e52aa1191ba18f45071954be806c07d9947645a8bc3"></a>LPVConductCharbonnier&#160;</td><td class="fielddoc"><p>Charbonnier: \( 1 / \sqrt{(1 + dL^2 / k^2)} \) </p>
 </td></tr>
 </table>
 
@@ -268,17 +264,17 @@ Enumerations</h2></td></tr>
 <p>This enumeration represents the distance calculation method used in KNN model for measuring the similarity between samples. </p>
 <p>For all the equations below, x and y is the two feature vectors of the two samples to compare, i is for the i<sup>th</sup> value. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aa6a1ca1e6637ccd2dce028169943fc2aa74acd7d8a1b3c6f63c649d429e0720fe"></a>LPVKNNDistanceEuclidean&#160;</td><td class="fielddoc"><p>Euclidean(L2): @math_eq{\sum{(x_i - y_i)^2}} </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aa6a1ca1e6637ccd2dce028169943fc2aa74acd7d8a1b3c6f63c649d429e0720fe"></a>LPVKNNDistanceEuclidean&#160;</td><td class="fielddoc"><p>Euclidean(L2): \( \sum{(x_i - y_i)^2} \) </p>
 </td></tr>
-<tr><td class="fieldname"><a id="aa6a1ca1e6637ccd2dce028169943fc2aa13a2f722d1f59dbfcca26793e875fc76"></a>LPVKNNDistanceManhattan&#160;</td><td class="fielddoc"><p>Manhattan(L1): @math_eq{\sum{|x_i - y_i|}} </p>
+<tr><td class="fieldname"><a id="aa6a1ca1e6637ccd2dce028169943fc2aa13a2f722d1f59dbfcca26793e875fc76"></a>LPVKNNDistanceManhattan&#160;</td><td class="fielddoc"><p>Manhattan(L1): \( \sum{|x_i - y_i|} \) </p>
 </td></tr>
-<tr><td class="fieldname"><a id="aa6a1ca1e6637ccd2dce028169943fc2aaf5084adcb35f3e435126a493aa38b1fb"></a>LPVKNNDistanceMax&#160;</td><td class="fielddoc"><p>Maximum: @math_eq{\max{|x_i - y_i|}} Only works with <a class="el" href="namespace_l_p_v_m_l_lib.html#a13aa4ad138413a74d21124fc8c86f1c6aff068cfcb74610a3d08312331c877649">BruteForce</a> or <a class="el" href="namespace_l_p_v_m_l_lib.html#a13aa4ad138413a74d21124fc8c86f1c6ad496559105a412629be2351c11017ba6">K-Means</a> or <a class="el" href="namespace_l_p_v_m_l_lib.html#a13aa4ad138413a74d21124fc8c86f1c6a61a9be19c0913c2367df1ae65d6c6dbb">Hierarchical</a> matching </p>
+<tr><td class="fieldname"><a id="aa6a1ca1e6637ccd2dce028169943fc2aaf5084adcb35f3e435126a493aa38b1fb"></a>LPVKNNDistanceMax&#160;</td><td class="fielddoc"><p>Maximum: \( \max{|x_i - y_i|} \) Only works with <a class="el" href="namespace_l_p_v_m_l_lib.html#a13aa4ad138413a74d21124fc8c86f1c6aff068cfcb74610a3d08312331c877649">BruteForce</a> or <a class="el" href="namespace_l_p_v_m_l_lib.html#a13aa4ad138413a74d21124fc8c86f1c6ad496559105a412629be2351c11017ba6">K-Means</a> or <a class="el" href="namespace_l_p_v_m_l_lib.html#a13aa4ad138413a74d21124fc8c86f1c6a61a9be19c0913c2367df1ae65d6c6dbb">Hierarchical</a> matching </p>
 </td></tr>
-<tr><td class="fieldname"><a id="aa6a1ca1e6637ccd2dce028169943fc2aa4c3893c8d5c6baf69bd9f50a47ba81b2"></a>LPVKNNDistanceHistIntersection&#160;</td><td class="fielddoc"><p>Histogram Intersection: @math_eq{\sum{\min{(x_i, y_i)}}} </p>
+<tr><td class="fieldname"><a id="aa6a1ca1e6637ccd2dce028169943fc2aa4c3893c8d5c6baf69bd9f50a47ba81b2"></a>LPVKNNDistanceHistIntersection&#160;</td><td class="fielddoc"><p>Histogram Intersection: \( \sum{\min{(x_i, y_i)}} \) </p>
 </td></tr>
-<tr><td class="fieldname"><a id="aa6a1ca1e6637ccd2dce028169943fc2aae92989ed067f689df60e1c19ed894c1f"></a>LPVKNNDistanceHellinger&#160;</td><td class="fielddoc"><p>Hellinger: @math_eq{\sum{(\sqrt{x_i} - \sqrt{y_i})^2}} </p>
+<tr><td class="fieldname"><a id="aa6a1ca1e6637ccd2dce028169943fc2aae92989ed067f689df60e1c19ed894c1f"></a>LPVKNNDistanceHellinger&#160;</td><td class="fielddoc"><p>Hellinger: \( \sum{(\sqrt{x_i} - \sqrt{y_i})^2} \) </p>
 </td></tr>
-<tr><td class="fieldname"><a id="aa6a1ca1e6637ccd2dce028169943fc2aa399e37150e86728f85eab23beb4c5090"></a>LPVKNNDistanceChiSquare&#160;</td><td class="fielddoc"><p>Chi-Square: @math_eq{\sum{((x_i - y_i)^2/(x_i + y_i))} \text{ for } x_i + y_i &gt; 0} </p>
+<tr><td class="fieldname"><a id="aa6a1ca1e6637ccd2dce028169943fc2aa399e37150e86728f85eab23beb4c5090"></a>LPVKNNDistanceChiSquare&#160;</td><td class="fielddoc"><p>Chi-Square: \( \sum{((x_i - y_i)^2/(x_i + y_i))} \text{ for } x_i + y_i &gt; 0 \) </p>
 </td></tr>
 </table>
 
@@ -397,13 +393,13 @@ Enumerations</h2></td></tr>
 <p>This enumeration represents the type of the kernel used in the SVM model. </p>
 <p>For all the equations below, x and y is the two feature vectors of the two samples to compare, g, c and n are numeric parameters. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a2d6a70c3d0397ec68b2468aca95a8e36a18a00733e5c43707c831f33a3d77fee7"></a>LPVSVMKernelLinear&#160;</td><td class="fielddoc"><p>Linear: @math_eq{x^Ty} </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a2d6a70c3d0397ec68b2468aca95a8e36a18a00733e5c43707c831f33a3d77fee7"></a>LPVSVMKernelLinear&#160;</td><td class="fielddoc"><p>Linear: \( x^Ty \) </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a2d6a70c3d0397ec68b2468aca95a8e36a322591f8728744748f5cc8b33b2d6f06"></a>LPVSVMKernelPolynomial&#160;</td><td class="fielddoc"><p>Polynomial: @math_eq{(g \cdot x^Ty + c)^n} </p>
+<tr><td class="fieldname"><a id="a2d6a70c3d0397ec68b2468aca95a8e36a322591f8728744748f5cc8b33b2d6f06"></a>LPVSVMKernelPolynomial&#160;</td><td class="fielddoc"><p>Polynomial: \( (g \cdot x^Ty + c)^n \) </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a2d6a70c3d0397ec68b2468aca95a8e36adf84c1e7c0e3376e5941676ef68fef2b"></a>LPVSVMKernelRBF&#160;</td><td class="fielddoc"><p>RBF: @math_eq{\exp{(-g \cdot |x - y|^2)}} </p>
+<tr><td class="fieldname"><a id="a2d6a70c3d0397ec68b2468aca95a8e36adf84c1e7c0e3376e5941676ef68fef2b"></a>LPVSVMKernelRBF&#160;</td><td class="fielddoc"><p>RBF: \( \exp{(-g \cdot |x - y|^2)} \) </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a2d6a70c3d0397ec68b2468aca95a8e36aef523f3c43359a1492c2c29416e7919b"></a>LPVSVMKernelSigmoid&#160;</td><td class="fielddoc"><p>Sigmoid: @math_eq{\tanh{(g \cdot x^Ty + c)}} </p>
+<tr><td class="fieldname"><a id="a2d6a70c3d0397ec68b2468aca95a8e36aef523f3c43359a1492c2c29416e7919b"></a>LPVSVMKernelSigmoid&#160;</td><td class="fielddoc"><p>Sigmoid: \( \tanh{(g \cdot x^Ty + c)} \) </p>
 </td></tr>
 </table>
 
