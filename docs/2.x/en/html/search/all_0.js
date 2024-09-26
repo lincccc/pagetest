@@ -54,9 +54,8 @@ var searchData=
   ['autofeature_51',['AutoFeature',['../interface_l_p_v_o_c_r_lib_1_1_i_l_font_database.html#aed1c5eb64412d10a5cc2f3f041617b8f',1,'LPVOCRLib::ILFontDatabase']]],
   ['automodel_52',['AutoModel',['../interface_l_p_v_o_c_r_lib_1_1_i_l_font_database.html#a3db36e522e921e268df40b07d5d9bdd3',1,'LPVOCRLib::ILFontDatabase']]],
   ['autorefreshenabled_53',['AutoRefreshEnabled',['../interface_l_p_v_display_lib_1_1_i_l_display_common.html#a00e3be3087e839f19b33effdf7bde59d',1,'LPVDisplayLib::ILDisplayCommon']]],
-  ['autoremovebad_54',['AutoRemoveBad',['../interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#a78520409e85555fd726b3eee218107aa',1,'LPVCalibLib::ILCalibBoard']]],
-  ['avgcolumnspace_55',['AvgColumnSpace',['../interface_l_p_v_geom_x_lib_1_1_i_l_sorted_array.html#aec7219f2778c1d8fc713e7d07b72d7de',1,'LPVGeomXLib::ILSortedArray']]],
-  ['avgrowspace_56',['AvgRowSpace',['../interface_l_p_v_geom_x_lib_1_1_i_l_sorted_array.html#a668aa98f5cf306a2268681b17d9bb26a',1,'LPVGeomXLib::ILSortedArray']]],
-  ['axisdirx_57',['AxisDirX',['../interface_l_p_v_calib_lib_1_1_i_l_calib_custom.html#a9ef3d99aeff48c0a42c5eb179ea7c5a7',1,'LPVCalibLib::ILCalibCustom']]],
-  ['axisdiry_58',['AxisDirY',['../interface_l_p_v_calib_lib_1_1_i_l_calib_custom.html#a807f91871bbc6c28615db13a07693b23',1,'LPVCalibLib::ILCalibCustom']]]
+  ['avgcolumnspace_54',['AvgColumnSpace',['../interface_l_p_v_geom_x_lib_1_1_i_l_sorted_array.html#aec7219f2778c1d8fc713e7d07b72d7de',1,'LPVGeomXLib::ILSortedArray']]],
+  ['avgrowspace_55',['AvgRowSpace',['../interface_l_p_v_geom_x_lib_1_1_i_l_sorted_array.html#a668aa98f5cf306a2268681b17d9bb26a',1,'LPVGeomXLib::ILSortedArray']]],
+  ['axisdirx_56',['AxisDirX',['../interface_l_p_v_calib_lib_1_1_i_l_calib_custom.html#a9ef3d99aeff48c0a42c5eb179ea7c5a7',1,'LPVCalibLib::ILCalibCustom']]],
+  ['axisdiry_57',['AxisDirY',['../interface_l_p_v_calib_lib_1_1_i_l_calib_custom.html#a807f91871bbc6c28615db13a07693b23',1,'LPVCalibLib::ILCalibCustom']]]
 ];

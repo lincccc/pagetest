@@ -35,6 +35,10 @@
   <td id="projectlogo" style="padding-left: 1em; text-align: center; vertical-align: middle;"><a href="index.html"><img alt="Logo" src="lpv_logo.png"/></a></td>
   <td id="projectalign" style="padding-left: 0.5em; vertical-align: bottom; padding-bottom: 5px;">
    <div id="projectbrief">Leaper Vision Toolkit</div>
+   <div id="projectbrief" style="margin-top: 3px;">
+    <a id="cn_btn" style="cursor: pointer; color: var(--primary-color);">中文</a> / <a id="en_btn" style="cursor: pointer; color: var(--primary-color);">English</a>
+    <span id="projectnumber">2.x</span>
+    </div>
   </td>
  </tr>
  </tbody>
@@ -157,6 +161,17 @@ $(function() {
  }</td></tr>
 <tr class="memdesc:aeaed8df5d288bbe00f4074ae5e7f5990"><td class="mdescLeft">&#160;</td><td class="mdescRight">该枚举表示相机标定模型  <a href="namespace_l_p_v_calib_lib.html#aeaed8df5d288bbe00f4074ae5e7f5990">更多...</a><br /></td></tr>
 <tr class="separator:aeaed8df5d288bbe00f4074ae5e7f5990"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99e44d4eeb99f21d21c4e95df1559cae"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_l_p_v_calib_lib.html#a99e44d4eeb99f21d21c4e95df1559cae">LPVCalibOutlierRemovalPolicy</a> { <br />
+&#160;&#160;<a class="el" href="namespace_l_p_v_calib_lib.html#a99e44d4eeb99f21d21c4e95df1559caeac4931e344ee45e96ca6c8b4cedff6903">LPVCalibOutlierRemovalNone</a> = -1
+, <a class="el" href="namespace_l_p_v_calib_lib.html#a99e44d4eeb99f21d21c4e95df1559caeadd0a72511018cb96057b1313fcb98e1f">LPVCalibOutlierRemovalByPHCalib</a> = 0
+, <a class="el" href="namespace_l_p_v_calib_lib.html#a99e44d4eeb99f21d21c4e95df1559caea1af261f236189a6b4959c8c43eea1b3f">LPVCalibOutlierRemovalByLinearFitting</a> = 1
+, <a class="el" href="namespace_l_p_v_calib_lib.html#a99e44d4eeb99f21d21c4e95df1559caeaa0b08658544e7b8d6cb684caa6c08269">LPVCalibOutlierRemovalByParabolicFitting</a> = 2
+, <br />
+&#160;&#160;<a class="el" href="namespace_l_p_v_calib_lib.html#a99e44d4eeb99f21d21c4e95df1559caeab4f94908c42520c719b29ea99edbea08">LPVCalibOutlierRemovalBy4PolyFitting</a> = 4
+<br />
+ }</td></tr>
+<tr class="memdesc:a99e44d4eeb99f21d21c4e95df1559cae"><td class="mdescLeft">&#160;</td><td class="mdescRight">该枚举表示 LCalibBoard 用于坏点剔除和评价的策略  <a href="namespace_l_p_v_calib_lib.html#a99e44d4eeb99f21d21c4e95df1559cae">更多...</a><br /></td></tr>
+<tr class="separator:a99e44d4eeb99f21d21c4e95df1559cae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b9fee61ed0c3116a02980ce0dd01127"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_l_p_v_calib_lib.html#a4b9fee61ed0c3116a02980ce0dd01127">LPVDistortionModel</a> { <br />
 &#160;&#160;<a class="el" href="namespace_l_p_v_calib_lib.html#a4b9fee61ed0c3116a02980ce0dd01127aa2a23dfb1fe59882ea530fca291a5bcb">LPVDistortionRadial</a> = 0
 , <a class="el" href="namespace_l_p_v_calib_lib.html#a4b9fee61ed0c3116a02980ce0dd01127a76069451061f764a01229551df921d90">LPVDistortionRationalRadial</a> = 1
@@ -236,6 +251,34 @@ $(function() {
 <tr><td class="fieldname"><a id="aeaed8df5d288bbe00f4074ae5e7f5990a474686cf60c9d82e32799bb2954e0c66"></a>LPVCalibCustom&#160;</td><td class="fielddoc"><p>自定义模型（ILCalibCustom），使用用户输入的 x/y 缩放比例，中心位置和旋转。不支持镜头畸变矫正。 </p>
 </td></tr>
 <tr><td class="fieldname"><a id="aeaed8df5d288bbe00f4074ae5e7f5990ad7c0f7d7c85f4de88689fb07b9a3740a"></a>LPVCalibFFD&#160;</td><td class="fielddoc"><p>FFD模型（ILCalibFFD），使用自由形变网格描述标定信息，坐标映射中隐含畸变矫正。 </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a99e44d4eeb99f21d21c4e95df1559cae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99e44d4eeb99f21d21c4e95df1559cae">&#9670;&nbsp;</a></span>LPVCalibOutlierRemovalPolicy</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespace_l_p_v_calib_lib.html#a99e44d4eeb99f21d21c4e95df1559cae">LPVCalibOutlierRemovalPolicy</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>该枚举表示 <a class="el" href="class_l_p_v_calib_lib_1_1_l_calib_board.html">LCalibBoard</a> 用于坏点剔除和评价的策略 </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a99e44d4eeb99f21d21c4e95df1559caeac4931e344ee45e96ca6c8b4cedff6903"></a>LPVCalibOutlierRemovalNone&#160;</td><td class="fielddoc"><p>不启用坏点剔除 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a99e44d4eeb99f21d21c4e95df1559caeadd0a72511018cb96057b1313fcb98e1f"></a>LPVCalibOutlierRemovalByPHCalib&#160;</td><td class="fielddoc"><p>尝试基于单帧点对进行小孔相机模型标定。 评价值按该标定结果下所有点对的反投影误差的 RMS 计算。 坏点剔除基于图像点与其对应物理点的反投影位置间的距离进行。 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a99e44d4eeb99f21d21c4e95df1559caea1af261f236189a6b4959c8c43eea1b3f"></a>LPVCalibOutlierRemovalByLinearFitting&#160;</td><td class="fielddoc"><p>尝试对每行每列的点分别进行线性拟合。 评价值为每行列拟合的 RMS 误差。 坏点剔除基于图像点与其拟合位置的距离进行。 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a99e44d4eeb99f21d21c4e95df1559caeaa0b08658544e7b8d6cb684caa6c08269"></a>LPVCalibOutlierRemovalByParabolicFitting&#160;</td><td class="fielddoc"><p>尝试对每行每列的点分别进行抛物线拟合。 评价值为每行列拟合的 RMS 误差。 坏点剔除基于图像点与其拟合位置的距离进行。 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a99e44d4eeb99f21d21c4e95df1559caeab4f94908c42520c719b29ea99edbea08"></a>LPVCalibOutlierRemovalBy4PolyFitting&#160;</td><td class="fielddoc"><p>尝试对每行每列的点分别进行四次多项式拟合。 评价值为每行列拟合的 RMS 误差。 坏点剔除基于图像点与其拟合位置的距离进行。 </p>
 </td></tr>
 </table>
 
