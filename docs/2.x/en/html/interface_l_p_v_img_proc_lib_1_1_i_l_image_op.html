@@ -168,6 +168,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a5a2cd12aabad596e032548b18af31928"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63734a869140124d46e534ec5fbadde3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#a63734a869140124d46e534ec5fbadde3">ScaleRotate</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, double angle, double zoomX, double zoomY, double pivotImgX, double pivotImgY, double pivotResultX, double pivotResultY, <a class="el" href="namespace_l_p_v_core_lib.html#a8994f6c3a4ba4e0d0e9a8eb78ac86c92">LPVInterpolationMethod</a> interMethod, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *result)</td></tr>
 <tr class="separator:a63734a869140124d46e534ec5fbadde3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafee0b4602b5dea5c473185cd2976be3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#aafee0b4602b5dea5c473185cd2976be3">Split</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, int xCount, int xStep, int xSpace, int yCount, int yStep, int ySpace, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image_list.html">ILImageList</a> *resultList, BOOL cyclicMode, BOOL sameSize)</td></tr>
+<tr class="separator:aafee0b4602b5dea5c473185cd2976be3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8ea99043d2749a8f013eb7d92583fd6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#ad8ea99043d2749a8f013eb7d92583fd6">SplitX</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, int count, int step, int space, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image_list.html">ILImageList</a> *resultList, BOOL cyclicMode, BOOL sameSize)</td></tr>
+<tr class="separator:ad8ea99043d2749a8f013eb7d92583fd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d94a20c6f7bef41956747a5c3c6a04e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#a0d94a20c6f7bef41956747a5c3c6a04e">SplitY</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, int count, int step, int space, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image_list.html">ILImageList</a> *resultList, BOOL cyclicMode, BOOL sameSize)</td></tr>
+<tr class="separator:a0d94a20c6f7bef41956747a5c3c6a04e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6aa20ebb5264ac83616ce57a100a7da0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#a6aa20ebb5264ac83616ce57a100a7da0">Sub</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img1, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img2, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *result)</td></tr>
 <tr class="separator:a6aa20ebb5264ac83616ce57a100a7da0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4bb349dc5aeaadaacfcefde3fb283eaf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#a4bb349dc5aeaadaacfcefde3fb283eaf">SubScalar</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, double scalar, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *result, double scalar2, double scalar3)</td></tr>
@@ -1852,6 +1858,252 @@ If the pass-in result image object is empty, then we'll use the same size as the
   </dd>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#a3d23a653d5816ffbb6089950840fa5c5">ResizeTo()</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#a5a2cd12aabad596e032548b18af31928">Rotate()</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#a63734a869140124d46e534ec5fbadde3">ScaleRotate()</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#a1f47cc18862bd892bae73e722c9443d4">Transform()</a> </dd></dl>
+
+</div>
+</div>
+<a id="aafee0b4602b5dea5c473185cd2976be3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafee0b4602b5dea5c473185cd2976be3">&#9670;&nbsp;</a></span>Split()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Split </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>img</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>xCount</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>xStep</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>xSpace</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>yCount</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>yStep</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ySpace</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image_list.html">ILImageList</a> *&#160;</td>
+          <td class="paramname"><em>resultList</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BOOL&#160;</td>
+          <td class="paramname"><em>cyclicMode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BOOL&#160;</td>
+          <td class="paramname"><em>sameSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Split a image into a grid of several images. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>The input image </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">xCount,yCount</td><td>Specify the split count in column / row </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">xStep,yStep</td><td>The column / row step for individual split. For non cyclical mode, this should be the width / height of the result images. While for cyclical mode, we collect those count column / row in each cycle to form the final results. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">xSpace,ySpace</td><td>The space between split in column / row </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cyclicMode</td><td>Whether to enable cyclical mode, which will cyclically repeat the splitting until the entire image is processed. Individual splitting results are merged together as the final results. By default, it's true. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sameSize</td><td>Whether to make sure all result images have the same size. The undefined pixels are filled with background color. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>Output the result images' collection row by row from top to bottom then from left to right. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl>
+<dt>Example</dt>
+<dd>SplitImage.cpp/cs</dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#ad8ea99043d2749a8f013eb7d92583fd6">SplitX()</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#a0d94a20c6f7bef41956747a5c3c6a04e">SplitY()</a> </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>2.10.0 </dd></dl>
+
+</div>
+</div>
+<a id="ad8ea99043d2749a8f013eb7d92583fd6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8ea99043d2749a8f013eb7d92583fd6">&#9670;&nbsp;</a></span>SplitX()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SplitX </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>img</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>step</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>space</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image_list.html">ILImageList</a> *&#160;</td>
+          <td class="paramname"><em>resultList</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BOOL&#160;</td>
+          <td class="paramname"><em>cyclicMode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BOOL&#160;</td>
+          <td class="paramname"><em>sameSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Split a image horizontally into several images. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>The input image </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">count</td><td>Specify the split count </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">step</td><td>The column step for individual split. For non cyclical mode, this should be the width of the result images. While for cyclical mode, we collect those count columns in each cycle to form the final results. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">space</td><td>The space between split </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cyclicMode</td><td>Whether to enable cyclical mode, which will cyclically repeat the splitting until the entire image is processed. Individual splitting results are merged together as the final results. By default, it's true. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sameSize</td><td>Whether to make sure all result images have the same size. The undefined pixels are filled with background color. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>Output the result images' collection from left to right </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl>
+<dt>Example</dt>
+<dd>SplitImage.cpp/cs</dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#a0d94a20c6f7bef41956747a5c3c6a04e">SplitY()</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#aafee0b4602b5dea5c473185cd2976be3">Split()</a> </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>2.10.0 </dd></dl>
+
+</div>
+</div>
+<a id="a0d94a20c6f7bef41956747a5c3c6a04e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d94a20c6f7bef41956747a5c3c6a04e">&#9670;&nbsp;</a></span>SplitY()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SplitY </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>img</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>step</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>space</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image_list.html">ILImageList</a> *&#160;</td>
+          <td class="paramname"><em>resultList</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BOOL&#160;</td>
+          <td class="paramname"><em>cyclicMode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BOOL&#160;</td>
+          <td class="paramname"><em>sameSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Split a image vertically into several images. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>The input image </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">count</td><td>Specify the split count </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">step</td><td>The row step for individual split. For non cyclical mode, this should be the height of the result images. While for cyclical mode, we collect those count rows in each cycle to form the final results. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">space</td><td>The space between split </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cyclicMode</td><td>Whether to enable cyclical mode, which will cyclically repeat the splitting until the entire image is processed. Individual splitting results are merged together as the final results. By default, it's true. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sameSize</td><td>Whether to make sure all result images have the same size. The undefined pixels are filled with background color. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>Output the result images' collection from top to bottom </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl>
+<dt>Example</dt>
+<dd>SplitImage.cpp/cs</dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#ad8ea99043d2749a8f013eb7d92583fd6">SplitX()</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#aafee0b4602b5dea5c473185cd2976be3">Split()</a> </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>2.10.0 </dd></dl>
 
 </div>
 </div>
