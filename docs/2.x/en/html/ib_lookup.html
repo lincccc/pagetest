@@ -109,6 +109,28 @@ Location Tools</h1>
 <td>Coordinates Grid</td><td>&ndash; </td></tr>
 </table>
 <h1><a class="anchor" id="autotoc_md54"></a>
+Gauge</h1>
+<table class="markdownTable">
+<tr>
+<th class="markdownTableHeadLeft" style="width:30%">IntelliBlink Tool</th><th class="markdownTableHeadLeft">LPV Class / Function </th></tr>
+<tr>
+<td>Single-Side Edge / Edges</td><td><a class="el" href="interface_l_p_v_gauge_lib_1_1_i_l_edge_gauge.html#abd1936abcb7b11a00ccb7aed0263bb06">LEdgeGauge::Detect1</a> </td></tr>
+<tr>
+<td>Double-Side Edge / Edges</td><td><a class="el" href="interface_l_p_v_gauge_lib_1_1_i_l_edge_gauge.html#a6a6b6bb135330f5724bf1293ba550711">LEdgeGauge::Detect2</a> </td></tr>
+<tr>
+<td>Line</td><td><a class="el" href="interface_l_p_v_gauge_lib_1_1_i_l_line_gauge.html">LLineGauge</a> </td></tr>
+<tr>
+<td>Circle</td><td><a class="el" href="interface_l_p_v_gauge_lib_1_1_i_l_circle_gauge.html">LCircleGauge</a> </td></tr>
+<tr>
+<td>Rectangle</td><td>&ndash; </td></tr>
+<tr>
+<td>Polygon</td><td><a class="el" href="interface_l_p_v_gauge_lib_1_1_i_l_poly_gauge.html">LPolyGauge</a> </td></tr>
+<tr>
+<td>Ellipse</td><td><a class="el" href="interface_l_p_v_gauge_lib_1_1_i_l_ellipse_gauge.html">LEllipseGauge</a> </td></tr>
+<tr>
+<td>Arc</td><td><a class="el" href="interface_l_p_v_gauge_lib_1_1_i_l_arc_gauge.html">LArcGauge</a> </td></tr>
+</table>
+<h1><a class="anchor" id="autotoc_md55"></a>
 Math / Logic</h1>
 <table class="markdownTable">
 <tr>
@@ -134,7 +156,7 @@ Math / Logic</h1>
 <tr>
 <td>Data Fitting</td><td>&ndash; </td></tr>
 </table>
-<h1><a class="anchor" id="autotoc_md55"></a>
+<h1><a class="anchor" id="autotoc_md56"></a>
 Image Filter</h1>
 <table class="markdownTable">
 <tr>
@@ -144,11 +166,19 @@ Image Filter</h1>
 <tr>
 <td>Threshold - Greyscale Distance</td><td><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#a6402e4daad03df6b21ea437e9dd7a6df">LImageThreshold::ThresholdDistance</a> </td></tr>
 <tr>
+<td>Threshold - Auto</td><td><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#a6bb4173db5cfa3de10d91adcfe6b536d">LImageThreshold::SetThresholdAdaptGlobal</a> </td></tr>
+<tr>
+<td>Threshold - Adaptive</td><td><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#aae70a3231282033ea8dbb5f1e3464821">LImageThreshold::SetThresholdAdaptLocal</a> </td></tr>
+<tr>
 <td>Dual Threshold - Clip</td><td><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#aedbe4bc3544184c1281eccd57ba23d70">LImageThreshold::Clip</a> </td></tr>
 <tr>
 <td>Dual Threshold - Stretch</td><td><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#a6429d720bd21ba61c7dda9cddce9ffdb">LImageThreshold::Stretch</a> </td></tr>
 <tr>
 <td>Dual Threshold - Threshold Range</td><td><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#a59c0c39c5e80da825fc2c1d9de6c952f">LImageThreshold::Binarize</a> </td></tr>
+<tr>
+<td>Dual Threshold - Auto</td><td><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#a6bb4173db5cfa3de10d91adcfe6b536d">LImageThreshold::SetThresholdAdaptGlobal</a> </td></tr>
+<tr>
+<td>Dual Threshold - Adaptive</td><td><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#aae70a3231282033ea8dbb5f1e3464821">LImageThreshold::SetThresholdAdaptLocal</a> </td></tr>
 <tr>
 <td>Image Enhance - Equalize</td><td><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_filter.html#abb83bb7ee4950042bfb2a6d17e139668">LImageFilter::Equalize</a> </td></tr>
 <tr>
@@ -169,6 +199,10 @@ Image Filter</h1>
 <td>Image Enhance - Local Median</td><td><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_filter.html#a71bc4862887d9de4003986714e17fe06">LImageFilter::MeanFilter</a> </td></tr>
 <tr>
 <td>Image Enhance - Gain Offset</td><td><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#a9e2fdb50ded7f6231c8a2cf2a655bb66">LImageOp::GainOffset</a> </td></tr>
+<tr>
+<td>Image Enhance - Edge-preserving Denoising</td><td><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_filter.html#a47019e073bb55ca5a89c7d8304d68c9d">LImageFilter::EdgePreserveDenoise</a> </td></tr>
+<tr>
+<td>Image Enhance - Edge-preserving Denoising - Enhance Texture</td><td><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_filter.html#af4f97cd7b9c41235318d9080749a9f23">LImageFilter::EdgePreserveTextureEnhance</a> </td></tr>
 <tr>
 <td>Edge Enhance - Edge Magnitude</td><td><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_morph.html#afd31eb2d27c999c9955caa93e5b674dd">LImageMorph::Gradient</a> </td></tr>
 <tr>
@@ -194,7 +228,25 @@ Image Filter</h1>
 <tr>
 <td>Morphology - Hit-Miss</td><td>&ndash; </td></tr>
 <tr>
-<td>Color to Grayscale</td><td><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_convert.html">LImageConvert</a> </td></tr>
+<td>Color to Grayscale - RGB</td><td><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_convert.html">LImageConvert</a>, toColorSpace = <a class="el" href="namespace_l_p_v_core_lib.html#abc1c78dbe5bbd9696e1af6618392a083a9ee3caeb8bb07dd31b75de436ef986a2">LPVColorSpace::LPVColorSpaceBGR</a> </td></tr>
+<tr>
+<td>Color to Grayscale - HSV</td><td><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_convert.html">LImageConvert</a>, toColorSpace = <a class="el" href="namespace_l_p_v_core_lib.html#abc1c78dbe5bbd9696e1af6618392a083a2bdcf03bcfb797b56c086a34b5a2446c">LPVColorSpace::LPVColorSpaceHSV</a> </td></tr>
+<tr>
+<td>Color to Grayscale - HLS</td><td><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_convert.html">LImageConvert</a>, toColorSpace = <a class="el" href="namespace_l_p_v_core_lib.html#abc1c78dbe5bbd9696e1af6618392a083a05e36ea1a23bf4914fa568ba426cbe3e">LPVColorSpace::LPVColorSpaceHLS</a> </td></tr>
+<tr>
+<td>Color to Grayscale - Lab</td><td><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_convert.html">LImageConvert</a>, toColorSpace = <a class="el" href="namespace_l_p_v_core_lib.html#abc1c78dbe5bbd9696e1af6618392a083ab8114f9da47c49e3f63e8e097f02daa8">LPVColorSpace::LPVColorSpaceLAB</a> </td></tr>
+<tr>
+<td>Color to Grayscale - XYZ</td><td><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_convert.html">LImageConvert</a>, toColorSpace = <a class="el" href="namespace_l_p_v_core_lib.html#abc1c78dbe5bbd9696e1af6618392a083ab3eb85b2dea088aed7d42bc631affaf0">LPVColorSpace::LPVColorSpaceXYZ</a> </td></tr>
+<tr>
+<td>Color to Grayscale - YCrCb</td><td><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_convert.html">LImageConvert</a>, toColorSpace = <a class="el" href="namespace_l_p_v_core_lib.html#abc1c78dbe5bbd9696e1af6618392a083a55371d0312c8305285cdd39074044a17">LPVColorSpace::LPVColorSpaceYCrCb</a> </td></tr>
+<tr>
+<td>Color to Grayscale - LUV</td><td><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_convert.html">LImageConvert</a>, toColorSpace = <a class="el" href="namespace_l_p_v_core_lib.html#abc1c78dbe5bbd9696e1af6618392a083ac9429e9db960415d48d758e115547d0a">LPVColorSpace::LPVColorSpaceLUV</a> </td></tr>
+<tr>
+<td>Color to Grayscale - YUV</td><td><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_convert.html">LImageConvert</a>, toColorSpace = <a class="el" href="namespace_l_p_v_core_lib.html#abc1c78dbe5bbd9696e1af6618392a083a8e3a8e95f6d04e01835bf4d307fd6634">LPVColorSpace::LPVColorSpaceYUV</a> </td></tr>
+<tr>
+<td>Color to Grayscale - Custom</td><td><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_convert.html#af2a8aada4aed77b30e5ce7ccd4858803">LImageConvert::BGRMix</a> </td></tr>
+<tr>
+<td>Grayscale to Color</td><td><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html#a88dc5a82b65d27fb4858762e1e6d8b57">LImage::SetChannel</a> </td></tr>
 <tr>
 <td>Custom</td><td>&ndash; </td></tr>
 <tr>
@@ -220,7 +272,29 @@ Image Filter</h1>
 <tr>
 <td>Image Arithmetic - Logarithm</td><td><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#a09fb50f951e9df17d7243b6e7db56a9c">LImageOp::Log</a> </td></tr>
 <tr>
+<td>Image Arithmetic - Bitwise AND</td><td><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#ae032234dba522c2cfd59801c6aaedc01">LImageOp::BitAnd</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#a671c60c7761ad45fc101e444f5aad851">LImageOp::BitAndScalar</a> </td></tr>
+<tr>
+<td>Image Arithmetic - Bitwise OR</td><td><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#aec8d2d7d116274b3c2231b4ef71fb7ba">LImageOp::BitOr</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#a7e1ae39c4d0f8653e34c78f4ee461e3a">LImageOp::BitOrScalar</a> </td></tr>
+<tr>
+<td>Image Arithmetic - Bitwise XOR</td><td><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#ab8c138b11e25395a41672b921e9dc529">LImageOp::BitXor</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#a9fa18ce12820a75fb74f6b1ce01c47ae">LImageOp::BitXorScalar</a> </td></tr>
+<tr>
+<td>Image Arithmetic - Bitwise NOT</td><td><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#a5dd391126a76472eca8379e53cdf4e59">LImageOp::BitNot</a> </td></tr>
+<tr>
+<td>Convert to 8-Bit</td><td><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_convert.html#a75b9becd57103a3c8b4971dc137d489f">LImageConvert::Depth16To8</a> </td></tr>
+<tr>
+<td>Colormap</td><td><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_convert.html#aac069c1f4dec729c0f9a9702dc4aa317">LImageConvert::ColorMap</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_convert.html#a38189efbad8f61958961752de7144b7f">LImageConvert::ColorMapMultiBand</a> </td></tr>
+<tr>
+<td>Normalization - Min-Max Normalization</td><td><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#adf660a10ca16161030619866f2b49e55">LImageOp::Normalize</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_convert.html#a401acc2200aef341efed608a1b785fc4">LImageConvert::NormalizeTo8</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_convert.html#a28f8d473acce8d3b2cddc3fe4b02d852">LImageConvert::NormalizeTo16</a> </td></tr>
+<tr>
+<td>Normalization - Mean-StdDev Normalization</td><td><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#aa2263e543b518236ba5126bb4888e2b0">LImageOp::NormalizeMeanStdDev</a> </td></tr>
+<tr>
+<td>Free Transform</td><td><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#a1f47cc18862bd892bae73e722c9443d4">LImageOp::Transform</a> </td></tr>
+<tr>
 <td>Multi-Frame Blending</td><td><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#acfe14eacf1d5bc838d521a82f1ce0b6a">LImageOp::Blend</a> </td></tr>
+<tr>
+<td>Tile</td><td><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#a102798855741d439b8903234884713a8">LImageOp::TileX</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#a4ee13ea45a863b3805c6d711be3b9672">LImageOp::TileY</a> </td></tr>
+<tr>
+<td>Split</td><td><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#aafee0b4602b5dea5c473185cd2976be3">LImageOp::Split</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#ad8ea99043d2749a8f013eb7d92583fd6">LImageOp::SplitX</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#a0d94a20c6f7bef41956747a5c3c6a04e">LImageOp::SplitY</a> </td></tr>
 <tr>
 <td>HDR - Camera Response Calibration</td><td><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_h_d_r.html#a4d4ac9658e67d2c56a75b02f498bdeb6">LHDR::ToneMapping</a> </td></tr>
 <tr>
@@ -230,9 +304,11 @@ Image Filter</h1>
 <tr>
 <td>Foreground Extract</td><td>&ndash; </td></tr>
 <tr>
-<td>Compare</td><td>&ndash; </td></tr>
+<td>Compare</td><td><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_compare.html">LImageCompare</a> </td></tr>
 <tr>
 <td>Registration</td><td>&ndash; </td></tr>
+<tr>
+<td>Fill Hole</td><td><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_filter.html#a7323d90a89ea3ec6583a3d7855306cb3">LImageFilter::FillHole</a> </td></tr>
 <tr>
 <td>Boundary Expand</td><td>&ndash; </td></tr>
 <tr>
@@ -246,7 +322,7 @@ Image Filter</h1>
 <tr>
 <td>Polarization</td><td>&ndash; </td></tr>
 </table>
-<h1><a class="anchor" id="autotoc_md56"></a>
+<h1><a class="anchor" id="autotoc_md57"></a>
 Counting</h1>
 <table class="markdownTable">
 <tr>
@@ -266,7 +342,7 @@ Counting</h1>
 <tr>
 <td>Color Pixel</td><td><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_stats.html#abaa3f3df34ed24eb702b5a6b0774f27a">LImageStats::CountPixelColor</a> </td></tr>
 </table>
-<h1><a class="anchor" id="autotoc_md57"></a>
+<h1><a class="anchor" id="autotoc_md58"></a>
 Presence</h1>
 <table class="markdownTable">
 <tr>
@@ -292,13 +368,17 @@ Presence</h1>
 <tr>
 <td>Color Pixel</td><td><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_stats.html#abaa3f3df34ed24eb702b5a6b0774f27a">LImageStats::CountPixelColor</a>) </td></tr>
 </table>
-<h1><a class="anchor" id="autotoc_md58"></a>
+<h1><a class="anchor" id="autotoc_md59"></a>
 Measurement</h1>
 <table class="markdownTable">
 <tr>
 <th class="markdownTableHeadLeft" style="width:30%">IntelliBlink Tool</th><th class="markdownTableHeadLeft">LPV Class / Function </th></tr>
 <tr>
-<td>Angle</td><td><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_line.html#ab1df154ad7980556ecd1580fd685b693">LLine::AcuteAngle</a> </td></tr>
+<td>Line-Line Angle - Angle Range 90</td><td><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_line.html#ab1df154ad7980556ecd1580fd685b693">LLine::AcuteAngle</a>, which returns angle from 0° to 90° </td></tr>
+<tr>
+<td>Line-Line Angle - Angle Range 180</td><td>&ndash; </td></tr>
+<tr>
+<td>Line-Line Angle - Angle Range 360</td><td><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_line.html#a96b57b77f545fefd4e248107ea74dc90">LLine::AngleTo</a>, which returns angle from 0° to 360° </td></tr>
 <tr>
 <td>Line-Line Distance</td><td><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_line.html#a5666d27aa093c5e7e57db31293bb3a1c">LLine::Distance</a> </td></tr>
 <tr>
@@ -318,7 +398,51 @@ Measurement</h1>
 <tr>
 <td>Maximum Distance - Line vs. Polygon</td><td><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_points.html#a446c62efc2540305275dbe3fcf26fb5e">LPoints::DistanceToLine</a>, aggType = <a class="el" href="namespace_l_p_v_core_lib.html#a044b4c1019ab24bd62eed3e7fd764b85acb8fb4d24c6861dc339f3bca1597a4b9">LPVAggregation::LPVAggMax</a> </td></tr>
 <tr>
-<td>Maximum Distance - Polygon vs. Polygon</td><td><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html#adcd8a590ce563470ccfc422a889be99e">LPolygon::DistanceToPolygon</a>, aggType = <a class="el" href="namespace_l_p_v_core_lib.html#a044b4c1019ab24bd62eed3e7fd764b85acb8fb4d24c6861dc339f3bca1597a4b9">LPVAggregation::LPVAggMax</a> </td></tr>
+<td>Maximum Distance - Polygon vs. Polygon</td><td><p class="starttd"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html#adcd8a590ce563470ccfc422a889be99e">LPolygon::DistanceToPolygon</a>, aggType = <a class="el" href="namespace_l_p_v_core_lib.html#a044b4c1019ab24bd62eed3e7fd764b85acb8fb4d24c6861dc339f3bca1597a4b9">LPVAggregation::LPVAggMax</a></p>
+<p class="endtd"></p>
+</td></tr>
+<tr>
+<td>Minimum Distance - Point vs. Polygon</td><td><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html#a43e0f950a3eacc9e431cb98a08a27291">LPolygon::DistanceToPoint</a>, aggType = <a class="el" href="namespace_l_p_v_core_lib.html#a044b4c1019ab24bd62eed3e7fd764b85a2cdaef25a3a519c53cb48161c7969e5a">LPVAggregation::LPVAggMin</a> </td></tr>
+<tr>
+<td>Minimum Distance - Point vs. Circle</td><td>\( Abs(D - R) \), where \( D \) is the distance from the point to circle's center calculated via <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_point.html#a166665055e1c16de05a251280d45d04e">LPoint::Distance</a>, \( R \) is the circle's radius. </td></tr>
+<tr>
+<td>Minimum Distance - Point vs. Point</td><td><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_point.html#a166665055e1c16de05a251280d45d04e">LPoint::Distance</a> </td></tr>
+<tr>
+<td>Minimum Distance - Point vs. Line</td><td><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_line.html#a5e55bbb16eaad0742ba2a81a41a418a4">LLine::Perpendicular</a> </td></tr>
+<tr>
+<td>Minimum Distance - Line vs. Circle</td><td>\( Max(0, D - R) \) where \( D \) is the distance between the circle center and the line, you may firstly get the root point via <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_line.html#a5e55bbb16eaad0742ba2a81a41a418a4">ILLine::Perpendicular</a> then calculate the distance via <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_point.html#a166665055e1c16de05a251280d45d04e">LPoint::Distance</a>. \( R \) is the circle's radius. </td></tr>
+<tr>
+<td>Minimum Distance - Line vs. Polygon</td><td><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_points.html#a446c62efc2540305275dbe3fcf26fb5e">LPoints::DistanceToLine</a>, aggType = <a class="el" href="namespace_l_p_v_core_lib.html#a044b4c1019ab24bd62eed3e7fd764b85a2cdaef25a3a519c53cb48161c7969e5a">LPVAggregation::LPVAggMin</a> </td></tr>
+<tr>
+<td>Minimum Distance - Line vs. Line</td><td>Determine whether the two lines intersect firstly via <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_line.html#aebd6ae75f5dcddda7675264e82c39b89">ILLine::IntersectLine</a>. If it returns <a class="el" href="namespace_l_p_v_geom_lib.html#a9e95444de4a6d45da839995006de7ddfac05ab634cb5dc2ab6e7bfb964fd85af6">LPVIntersectType::LPVIntersectBounded</a>, then their minimum distance is 0, otherwise, calculate the distances between the 4 endpoints of two lines to the corresponding other segment via <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_line.html#a5e55bbb16eaad0742ba2a81a41a418a4">LLine::Perpendicular</a> and report the minimum. </td></tr>
+<tr>
+<td>Minimum Distance - Circle vs. Circle</td><td>\( Max(0, D - R_1 - R_2) \) , where \( D \) is the distance between two circles' centers calculated via <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_point.html#a166665055e1c16de05a251280d45d04e">LPoint::Distance</a>, \( R_1, R_2 \) is the radius of the two circles. </td></tr>
+<tr>
+<td>Minimum Distance - Circle vs. Polygon</td><td>Get the nearest point \( r \) on the polygon to the circle center via <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html#a43e0f950a3eacc9e431cb98a08a27291">LPolygon::DistanceToPoint</a> to form a line between the circle center and \( r \), then intersect with the circle to get 1 or 2 intersection points via <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_line.html#a417c0527d2d44b9f5c8e3af94157856f">LLine::IntersectCircle</a>, finally use the smaller distance between one intersection point and \( r \) as minimum distance. </td></tr>
+<tr>
+<td>Minimum Distance - Polygon vs. Polygon</td><td><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html#adcd8a590ce563470ccfc422a889be99e">LPolygon::DistanceToPolygon</a>, aggType = <a class="el" href="namespace_l_p_v_core_lib.html#a044b4c1019ab24bd62eed3e7fd764b85a2cdaef25a3a519c53cb48161c7969e5a">LPVAggregation::LPVAggMin</a> </td></tr>
+<tr>
+<td>Maximum Distance - Point vs. Polygon</td><td><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html#a43e0f950a3eacc9e431cb98a08a27291">LPolygon::DistanceToPoint</a>, aggType = <a class="el" href="namespace_l_p_v_core_lib.html#a044b4c1019ab24bd62eed3e7fd764b85acb8fb4d24c6861dc339f3bca1597a4b9">LPVAggregation::LPVAggMax</a> </td></tr>
+<tr>
+<td>Maximum Distance - Point vs. Circle</td><td>\( Abs(D + R) \), where \( D \) is the distance from the point to circle's center calculated via <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_point.html#a166665055e1c16de05a251280d45d04e">LPoint::Distance</a>, \( R \) is the circle's radius. </td></tr>
+<tr>
+<td>Maximum Distance - Point vs. Point</td><td><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_point.html#a166665055e1c16de05a251280d45d04e">LPoint::Distance</a> </td></tr>
+<tr>
+<td>Maximum Distance - Point vs. Line</td><td><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_line.html#a5e55bbb16eaad0742ba2a81a41a418a4">LLine::Perpendicular</a> </td></tr>
+<tr>
+<td>Maximum Distance - Line vs. Circle</td><td>\( D + R \) where \( D \) is the distance between the circle center and the line, you may firstly get the root point via <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_line.html#a5e55bbb16eaad0742ba2a81a41a418a4">ILLine::Perpendicular</a> then calculate the distance via <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_point.html#a166665055e1c16de05a251280d45d04e">LPoint::Distance</a>. \( R \) is the circle's radius. </td></tr>
+<tr>
+<td>Maximum Distance - Line vs. Polygon</td><td><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_points.html#a446c62efc2540305275dbe3fcf26fb5e">LPoints::DistanceToLine</a>, aggType = <a class="el" href="namespace_l_p_v_core_lib.html#a044b4c1019ab24bd62eed3e7fd764b85acb8fb4d24c6861dc339f3bca1597a4b9">LPVAggregation::LPVAggMax</a> </td></tr>
+<tr>
+<td>Maximum Distance - Line vs. Line</td><td>For non-intersected lines, calculate the maximum distance between their end points and the perpendicular root point to the other line generated via <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_line.html#a5e55bbb16eaad0742ba2a81a41a418a4">LLine::Perpendicular</a>. Intersection is determined via <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_line.html#aebd6ae75f5dcddda7675264e82c39b89">ILLine::IntersectLine</a>. </td></tr>
+<tr>
+<td>Maximum Distance - Circle vs. Circle</td><td>\( D + R_1 + R_2 \), where \( D \) is the distance between two circles' centers calculated via <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_point.html#a166665055e1c16de05a251280d45d04e">LPoint::Distance</a>, and \( R_1, R_2 \) is the radius of the two circles. </td></tr>
+<tr>
+<td>Maximum Distance - Circle vs. Polygon</td><td>Get the farthest point \( r \) on the polygon to the circle center via <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html#a43e0f950a3eacc9e431cb98a08a27291">LPolygon::DistanceToPoint</a> to form a line between the circle center and \( r \), then intersect with the circle to get 1 or 2 intersection points via <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_line.html#a417c0527d2d44b9f5c8e3af94157856f">LLine::IntersectCircle</a>, finally use the larger distance between one intersection point and \( r \) as maximum distance. </td></tr>
+<tr>
+<td>Maximum Distance - Polygon vs. Polygon</td><td><p class="starttd"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html#adcd8a590ce563470ccfc422a889be99e">LPolygon::DistanceToPolygon</a>, aggType = <a class="el" href="namespace_l_p_v_core_lib.html#a044b4c1019ab24bd62eed3e7fd764b85acb8fb4d24c6861dc339f3bca1597a4b9">LPVAggregation::LPVAggMax</a></p>
+<p class="endtd"></p>
+</td></tr>
 <tr>
 <td>Parallelism</td><td><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_line.html#a03e793ad6eef055107ba127359ea0fdf">LLine::Parallel</a> </td></tr>
 <tr>
@@ -338,7 +462,7 @@ Measurement</h1>
 <tr>
 <td>Polygon Metric - Y Coordinate of Point</td><td><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_points.html#ac76853328411ccded7f553ab732ada56">LPoints::GetPoints</a> </td></tr>
 </table>
-<h1><a class="anchor" id="autotoc_md59"></a>
+<h1><a class="anchor" id="autotoc_md60"></a>
 Geometry</h1>
 <table class="markdownTable">
 <tr>
@@ -408,7 +532,7 @@ Geometry</h1>
 <tr>
 <td>Polygon Sampling</td><td><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html#aba0cd112aa5e62d431c0472ce52e29e8">LPolygon::Resample</a>, <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html#a59a9a0d2770cd0b94662d61ca76365d2">LPolygon::ResampleByStep</a> </td></tr>
 </table>
-<h1><a class="anchor" id="autotoc_md60"></a>
+<h1><a class="anchor" id="autotoc_md61"></a>
 Calibration</h1>
 <table class="markdownTable">
 <tr>
@@ -442,7 +566,7 @@ Calibration</h1>
 <tr>
 <td>Align Two Marks</td><td><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_rotation.html#adfa38ee5c13ae77037139694636f4246">LCalibRotation::Align</a> </td></tr>
 </table>
-<h1><a class="anchor" id="autotoc_md61"></a>
+<h1><a class="anchor" id="autotoc_md62"></a>
 Identification</h1>
 <table class="markdownTable">
 <tr>
@@ -454,7 +578,7 @@ Identification</h1>
 <tr>
 <td>OCR</td><td><a class="el" href="interface_l_p_v_o_c_r_lib_1_1_i_l_o_c_r.html">LOCR</a> </td></tr>
 </table>
-<h1><a class="anchor" id="autotoc_md62"></a>
+<h1><a class="anchor" id="autotoc_md63"></a>
 Classification</h1>
 <table class="markdownTable">
 <tr>
@@ -468,7 +592,7 @@ Classification</h1>
 <tr>
 <td>Learning Based</td><td><a class="el" href="interface_l_p_v_m_l_lib_1_1_i_l_classifier.html">LClassifier</a> </td></tr>
 </table>
-<h1><a class="anchor" id="autotoc_md63"></a>
+<h1><a class="anchor" id="autotoc_md64"></a>
 Plot</h1>
 <table class="markdownTable">
 <tr>
@@ -488,7 +612,7 @@ Plot</h1>
 <tr>
 <td>Mask</td><td><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html#a5491a1a6d1431f2ce82140c1061c2a9c">LRegion::ToMask</a> </td></tr>
 </table>
-<h1><a class="anchor" id="autotoc_md64"></a>
+<h1><a class="anchor" id="autotoc_md65"></a>
 Algebra</h1>
 <table class="markdownTable">
 <tr>
@@ -528,31 +652,9 @@ Algebra</h1>
 <tr>
 <td>Matrix Generation</td><td><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_transform.html#a2a2a026096a70200e8265e171b286d9c">LTransform::Translate</a>, <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_transform.html#ab7f819c804adb7c536083aa75f27e5f4">LTransform::Scale</a>, <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_transform.html#a7a26222c9a172c2eb5768271859e552f">LTransform::Rotate</a> </td></tr>
 </table>
-<h1><a class="anchor" id="autotoc_md65"></a>
+<h1><a class="anchor" id="autotoc_md66"></a>
 Flow Logic</h1>
 <p>N.A.</p>
-<h1><a class="anchor" id="autotoc_md66"></a>
-Gauge</h1>
-<table class="markdownTable">
-<tr>
-<th class="markdownTableHeadLeft" style="width:30%">IntelliBlink Tool</th><th class="markdownTableHeadLeft">LPV Class / Function </th></tr>
-<tr>
-<td>Single-Side Edge / Edges</td><td><a class="el" href="interface_l_p_v_gauge_lib_1_1_i_l_edge_gauge.html#abd1936abcb7b11a00ccb7aed0263bb06">LEdgeGauge::Detect1</a> </td></tr>
-<tr>
-<td>Double-Side Edge / Edges</td><td><a class="el" href="interface_l_p_v_gauge_lib_1_1_i_l_edge_gauge.html#a6a6b6bb135330f5724bf1293ba550711">LEdgeGauge::Detect2</a> </td></tr>
-<tr>
-<td>Line</td><td><a class="el" href="interface_l_p_v_gauge_lib_1_1_i_l_line_gauge.html">LLineGauge</a> </td></tr>
-<tr>
-<td>Circle</td><td><a class="el" href="interface_l_p_v_gauge_lib_1_1_i_l_circle_gauge.html">LCircleGauge</a> </td></tr>
-<tr>
-<td>Rectangle</td><td>&ndash; </td></tr>
-<tr>
-<td>Polygon</td><td><a class="el" href="interface_l_p_v_gauge_lib_1_1_i_l_poly_gauge.html">LPolyGauge</a> </td></tr>
-<tr>
-<td>Ellipse</td><td><a class="el" href="interface_l_p_v_gauge_lib_1_1_i_l_ellipse_gauge.html">LEllipseGauge</a> </td></tr>
-<tr>
-<td>Arc</td><td><a class="el" href="interface_l_p_v_gauge_lib_1_1_i_l_arc_gauge.html">LArcGauge</a> </td></tr>
-</table>
 <h1><a class="anchor" id="autotoc_md67"></a>
 Defect Inspection</h1>
 <table class="markdownTable">

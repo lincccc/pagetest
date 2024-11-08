@@ -154,6 +154,10 @@ Public 成员函数</h2></td></tr>
 <tr class="separator:aa24a05c09037b92bf79e964ac8118c56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c1b15c7aadd849832317e466164e5fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#a9c1b15c7aadd849832317e466164e5fc">MultiplyScalar</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, double scalar, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *result, double scalar2, double scalar3)</td></tr>
 <tr class="separator:a9c1b15c7aadd849832317e466164e5fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf660a10ca16161030619866f2b49e55"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#adf660a10ca16161030619866f2b49e55">Normalize</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *resultImg, double fromMinValue, double fromMaxValue, double toMinValue, double toMaxValue, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *belowMask, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *aboveMask)</td></tr>
+<tr class="separator:adf660a10ca16161030619866f2b49e55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2263e543b518236ba5126bb4888e2b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#aa2263e543b518236ba5126bb4888e2b0">NormalizeMeanStdDev</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *resultImg, double k1, double k2, double toMinValue, double toMaxValue, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *belowMask, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *aboveMask)</td></tr>
+<tr class="separator:aa2263e543b518236ba5126bb4888e2b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af51684082a5ca31d6db24aba6be294b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#af51684082a5ca31d6db24aba6be294b3">Pow</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, double power, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *result)</td></tr>
 <tr class="separator:af51684082a5ca31d6db24aba6be294b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc1501a3fbcf6b7f741134d9af0ceef9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_l_array.html">LArray</a>&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#afc1501a3fbcf6b7f741134d9af0ceef9">ProjectX</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, <a class="el" href="namespace_l_p_v_core_lib.html#a044b4c1019ab24bd62eed3e7fd764b85">LPVAggregation</a> aggType)</td></tr>
@@ -1483,6 +1487,159 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 </dl>
 <dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#aa24a05c09037b92bf79e964ac8118c56">Multiply()</a> </dd></dl>
 <dl class="section since"><dt>自从</dt><dd>2.8.0 </dd></dl>
+
+</div>
+</div>
+<a id="adf660a10ca16161030619866f2b49e55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf660a10ca16161030619866f2b49e55">&#9670;&nbsp;</a></span>Normalize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Normalize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>img</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>resultImg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>fromMinValue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>fromMaxValue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>toMinValue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>toMaxValue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>belowMask</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>aboveMask</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>归一化输入图像，拉伸指定的最小最大值范围内的像素到目标数值范围。 不改变图像位深，归一化后的结果图像与输入位深相同、通道数相同。对于彩色的多通道图像，输出也是彩色多通道图像，每个通道分别独立进行归一化。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>输入的图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fromMinValue,fromMaxValue</td><td>指定感兴趣的数值范围。传入空范围 (0, 0) ，表示使用当前图像的最小值和最大值。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">toMinValue,toMaxValue</td><td>指定目标的数值范围。传入空范围 (0, 0) ，表示使用图像位深的理论数值范围，即，对于 8 位图使用 0 ~ 255，对于 16 位图使用 0 ~ 65535 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">resultImg</td><td>返回归一化后的图像 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">belowMask,aboveMask</td><td><img src="color_binary.png" alt="" class="inline" title="Binary"/> <img src="bit8.png" alt="" class="inline" title="8 Bit"/> 返回输入图图像中超出感兴趣数值范围的像素的蒙版。白色像素表示这些位置的数值小于 <code>fromMinValue</code> 或者大于 <code>fromMaxValue</code> 。 可基于该蒙版，将这些位置的数值设置为统一个黑色或目标的最小最大值，或调用 <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_filter.html#a7323d90a89ea3ec6583a3d7855306cb3">FillHole()</a> 进行修补。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>自从</dt><dd>2.11.0 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#aa2263e543b518236ba5126bb4888e2b0">NormalizeMeanStdDev()</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_convert.html#a401acc2200aef341efed608a1b785fc4">NormalizeTo8()</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_convert.html#a28f8d473acce8d3b2cddc3fe4b02d852">NormalizeTo16()</a> </dd></dl>
+
+</div>
+</div>
+<a id="aa2263e543b518236ba5126bb4888e2b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2263e543b518236ba5126bb4888e2b0">&#9670;&nbsp;</a></span>NormalizeMeanStdDev()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NormalizeMeanStdDev </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>img</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>resultImg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>k1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>k2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>toMinValue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>toMaxValue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>belowMask</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>aboveMask</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>归一化输入图像，以当前图像的均值和标准差计算感兴趣的数值范围 \( (Mean - k1 \times StdDev, Mean + k2 \times StdDev) \) ， 拉伸到目标数值范围。 不改变图像位深，归一化后的结果图像与输入位深相同、通道数相同。对于彩色的多通道图像，输出也是彩色多通道图像，每个通道分别独立进行归一化。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>输入的图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">k1</td><td>计算数值下限时使用的标准差系数 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">k2</td><td>计算数值上限时使用的标准差系数，负数表示使用与 <code>k1</code> 相同的系数 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">toMinValue,toMaxValue</td><td>指定目标的数值范围。传入空范围 (0, 0) ，表示使用图像位深的理论数值范围，即，对于 8 位图使用 0 ~ 255，对于 16 位图使用 0 ~ 65535 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">resultImg</td><td>返回归一化后的图像 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">belowMask,aboveMask</td><td><img src="color_binary.png" alt="" class="inline" title="Binary"/> <img src="bit8.png" alt="" class="inline" title="8 Bit"/> 返回输入图图像中超出感兴趣数值范围的像素的蒙版。白色像素表示这些位置的数值小于 <code>fromMinValue</code> 或者大于 <code>fromMaxValue</code> 。 可基于该蒙版，将这些位置的数值设置为统一个黑色或目标的最小最大值，或调用 FillHole() 进行修补。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>自从</dt><dd>2.11.0 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#aa2263e543b518236ba5126bb4888e2b0">NormalizeMeanStdDev()</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_convert.html#a401acc2200aef341efed608a1b785fc4">NormalizeTo8()</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_convert.html#a28f8d473acce8d3b2cddc3fe4b02d852">NormalizeTo16()</a> </dd></dl>
 
 </div>
 </div>

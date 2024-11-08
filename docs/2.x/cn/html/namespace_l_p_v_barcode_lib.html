@@ -168,11 +168,16 @@ $(function() {
 , <br />
 &#160;&#160;<a class="el" href="namespace_l_p_v_barcode_lib.html#a8d35ae44acaae621a58bd6ac4cafb72fafe8028413ca10ac481206f524e80b5f4">LPVBarcodeCode93</a> = 0x00001000
 , <a class="el" href="namespace_l_p_v_barcode_lib.html#a8d35ae44acaae621a58bd6ac4cafb72fa92dd6ee9743bcd71efd77126a40cfcfd">LPVBarcodeCode128</a> = 0x00002000
-, <a class="el" href="namespace_l_p_v_barcode_lib.html#a8d35ae44acaae621a58bd6ac4cafb72fa235a553331ca97b7ac42ce2ae7ad025e">LPVBarcodeQR</a> = 0x00100000
-, <a class="el" href="namespace_l_p_v_barcode_lib.html#a8d35ae44acaae621a58bd6ac4cafb72fa10227dca2599e1f5295140d519200f75">LPVBarcodeDataMatrix</a> = 0x00200000
+, <a class="el" href="namespace_l_p_v_barcode_lib.html#a8d35ae44acaae621a58bd6ac4cafb72fa7e49dc9a42b8a328f1731f11791dc525">LPVBarcodeDataBarLimited</a> = 0x00004000
+, <a class="el" href="namespace_l_p_v_barcode_lib.html#a8d35ae44acaae621a58bd6ac4cafb72fa1d092ab234e2315304a8f7e7914a017e">LPVBarcodeDXFilmEdge</a> = 0x00008000
 , <br />
-&#160;&#160;<a class="el" href="namespace_l_p_v_barcode_lib.html#a8d35ae44acaae621a58bd6ac4cafb72faac5755848f3435a61ea4b8c57b1b5b95">LPVBarcodePDF417</a> = 0x00400000
-, <a class="el" href="namespace_l_p_v_barcode_lib.html#a8d35ae44acaae621a58bd6ac4cafb72fa23f33c4f3496b6f1816f60638043f267">LPVBarcodeAll1D</a> = 0x00003fff
+&#160;&#160;<a class="el" href="namespace_l_p_v_barcode_lib.html#a8d35ae44acaae621a58bd6ac4cafb72fa235a553331ca97b7ac42ce2ae7ad025e">LPVBarcodeQR</a> = 0x00100000
+, <a class="el" href="namespace_l_p_v_barcode_lib.html#a8d35ae44acaae621a58bd6ac4cafb72fa10227dca2599e1f5295140d519200f75">LPVBarcodeDataMatrix</a> = 0x00200000
+, <a class="el" href="namespace_l_p_v_barcode_lib.html#a8d35ae44acaae621a58bd6ac4cafb72faac5755848f3435a61ea4b8c57b1b5b95">LPVBarcodePDF417</a> = 0x00400000
+, <a class="el" href="namespace_l_p_v_barcode_lib.html#a8d35ae44acaae621a58bd6ac4cafb72fa5ecbad55faf5af0fa6f355fd55c6ab9f">LPVBarcodeAztec</a> = 0x00800000
+, <br />
+&#160;&#160;<a class="el" href="namespace_l_p_v_barcode_lib.html#a8d35ae44acaae621a58bd6ac4cafb72faa44b21ef240eee4caef0c5a84447cb56">LPVBarcodeMaxiCode</a> = 0x01000000
+, <a class="el" href="namespace_l_p_v_barcode_lib.html#a8d35ae44acaae621a58bd6ac4cafb72fa23f33c4f3496b6f1816f60638043f267">LPVBarcodeAll1D</a> = 0x0000ffff
 , <a class="el" href="namespace_l_p_v_barcode_lib.html#a8d35ae44acaae621a58bd6ac4cafb72fa557bac5e7b96eb61d23d1e23f4e9f366">LPVBarcodeAll2D</a> = 0x01f00000
 , <a class="el" href="namespace_l_p_v_barcode_lib.html#a8d35ae44acaae621a58bd6ac4cafb72fadf55a50864377e5ab023b38138beb3cd">LPVBarcodeAll</a> = LPVBarcodeAll1D + LPVBarcodeAll2D
 <br />
@@ -334,11 +339,19 @@ $(function() {
 </td></tr>
 <tr><td class="fieldname"><a id="a8d35ae44acaae621a58bd6ac4cafb72fa92dd6ee9743bcd71efd77126a40cfcfd"></a>LPVBarcodeCode128&#160;</td><td class="fielddoc"><p>Code 128 </p>
 </td></tr>
+<tr><td class="fieldname"><a id="a8d35ae44acaae621a58bd6ac4cafb72fa7e49dc9a42b8a328f1731f11791dc525"></a>LPVBarcodeDataBarLimited&#160;</td><td class="fielddoc"><p>GS1 DataBar Limited (Smaller DataBar) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8d35ae44acaae621a58bd6ac4cafb72fa1d092ab234e2315304a8f7e7914a017e"></a>LPVBarcodeDXFilmEdge&#160;</td><td class="fielddoc"><p>DX Film Edge </p>
+</td></tr>
 <tr><td class="fieldname"><a id="a8d35ae44acaae621a58bd6ac4cafb72fa235a553331ca97b7ac42ce2ae7ad025e"></a>LPVBarcodeQR&#160;</td><td class="fielddoc"><p>QR Code </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a8d35ae44acaae621a58bd6ac4cafb72fa10227dca2599e1f5295140d519200f75"></a>LPVBarcodeDataMatrix&#160;</td><td class="fielddoc"><p>Data Matrix Code </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a8d35ae44acaae621a58bd6ac4cafb72faac5755848f3435a61ea4b8c57b1b5b95"></a>LPVBarcodePDF417&#160;</td><td class="fielddoc"><p>PDF 417 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8d35ae44acaae621a58bd6ac4cafb72fa5ecbad55faf5af0fa6f355fd55c6ab9f"></a>LPVBarcodeAztec&#160;</td><td class="fielddoc"><p>AZTEC </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8d35ae44acaae621a58bd6ac4cafb72faa44b21ef240eee4caef0c5a84447cb56"></a>LPVBarcodeMaxiCode&#160;</td><td class="fielddoc"><p>MaxiCode </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a8d35ae44acaae621a58bd6ac4cafb72fa23f33c4f3496b6f1816f60638043f267"></a>LPVBarcodeAll1D&#160;</td><td class="fielddoc"><p>所有一维码类型 </p>
 </td></tr>

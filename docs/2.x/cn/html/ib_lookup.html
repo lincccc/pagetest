@@ -109,6 +109,28 @@ $(function() {
 <td>多定位坐标系</td><td>&ndash; </td></tr>
 </table>
 <h1><a class="anchor" id="autotoc_md54"></a>
+卡尺定位</h1>
+<table class="markdownTable">
+<tr>
+<th class="markdownTableHeadLeft" style="width:30%">灵闪工具</th><th class="markdownTableHeadLeft">LPV 类 / 函数 </th></tr>
+<tr>
+<td>单边缘卡尺 / 多单边缘卡尺</td><td><a class="el" href="interface_l_p_v_gauge_lib_1_1_i_l_edge_gauge.html#abd1936abcb7b11a00ccb7aed0263bb06">LEdgeGauge::Detect1</a> </td></tr>
+<tr>
+<td>双边缘卡尺 / 多双边缘卡尺</td><td><a class="el" href="interface_l_p_v_gauge_lib_1_1_i_l_edge_gauge.html#a6a6b6bb135330f5724bf1293ba550711">LEdgeGauge::Detect2</a> </td></tr>
+<tr>
+<td>直线卡尺</td><td><a class="el" href="interface_l_p_v_gauge_lib_1_1_i_l_line_gauge.html">LLineGauge</a> </td></tr>
+<tr>
+<td>矩形卡尺</td><td>&ndash; </td></tr>
+<tr>
+<td>多边形卡尺</td><td><a class="el" href="interface_l_p_v_gauge_lib_1_1_i_l_poly_gauge.html">LPolyGauge</a> </td></tr>
+<tr>
+<td>圆卡尺</td><td><a class="el" href="interface_l_p_v_gauge_lib_1_1_i_l_circle_gauge.html">LCircleGauge</a> </td></tr>
+<tr>
+<td>椭圆卡尺</td><td><a class="el" href="interface_l_p_v_gauge_lib_1_1_i_l_ellipse_gauge.html">LEllipseGauge</a> </td></tr>
+<tr>
+<td>弧卡尺</td><td><a class="el" href="interface_l_p_v_gauge_lib_1_1_i_l_arc_gauge.html">LArcGauge</a> </td></tr>
+</table>
+<h1><a class="anchor" id="autotoc_md55"></a>
 基础计算</h1>
 <table class="markdownTable">
 <tr>
@@ -134,7 +156,7 @@ $(function() {
 <tr>
 <td>数据拟合</td><td>&ndash; </td></tr>
 </table>
-<h1><a class="anchor" id="autotoc_md55"></a>
+<h1><a class="anchor" id="autotoc_md56"></a>
 图像变换</h1>
 <table class="markdownTable">
 <tr>
@@ -144,11 +166,19 @@ $(function() {
 <tr>
 <td>单阈值 - 阈值距离</td><td><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#a6402e4daad03df6b21ea437e9dd7a6df">LImageThreshold::ThresholdDistance</a> </td></tr>
 <tr>
+<td>单阈值 - 自动阈值</td><td><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#a6bb4173db5cfa3de10d91adcfe6b536d">LImageThreshold::SetThresholdAdaptGlobal</a> </td></tr>
+<tr>
+<td>单阈值 - 自适应阈值</td><td><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#aae70a3231282033ea8dbb5f1e3464821">LImageThreshold::SetThresholdAdaptLocal</a> </td></tr>
+<tr>
 <td>双阈值 - 裁剪</td><td><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#aedbe4bc3544184c1281eccd57ba23d70">LImageThreshold::Clip</a> </td></tr>
 <tr>
 <td>双阈值 - 拉伸</td><td><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#a6429d720bd21ba61c7dda9cddce9ffdb">LImageThreshold::Stretch</a> </td></tr>
 <tr>
 <td>双阈值 - 区间</td><td><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#a59c0c39c5e80da825fc2c1d9de6c952f">LImageThreshold::Binarize</a> </td></tr>
+<tr>
+<td>双阈值 - 自动阈值</td><td><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#a6bb4173db5cfa3de10d91adcfe6b536d">LImageThreshold::SetThresholdAdaptGlobal</a> </td></tr>
+<tr>
+<td>双阈值 - 自适应阈值</td><td><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#aae70a3231282033ea8dbb5f1e3464821">LImageThreshold::SetThresholdAdaptLocal</a> </td></tr>
 <tr>
 <td>图像增强 - 均衡</td><td><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_filter.html#abb83bb7ee4950042bfb2a6d17e139668">LImageFilter::Equalize</a> </td></tr>
 <tr>
@@ -169,6 +199,10 @@ $(function() {
 <td>图像增强 - 均值</td><td><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_filter.html#a71bc4862887d9de4003986714e17fe06">LImageFilter::MeanFilter</a> </td></tr>
 <tr>
 <td>图像增强 - 灰度增益</td><td><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#a9e2fdb50ded7f6231c8a2cf2a655bb66">LImageOp::GainOffset</a> </td></tr>
+<tr>
+<td>图像增强 - 保边去噪</td><td><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_filter.html#a47019e073bb55ca5a89c7d8304d68c9d">LImageFilter::EdgePreserveDenoise</a> </td></tr>
+<tr>
+<td>图像增强 - 保边去噪 - 纹理增强</td><td><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_filter.html#af4f97cd7b9c41235318d9080749a9f23">LImageFilter::EdgePreserveTextureEnhance</a> </td></tr>
 <tr>
 <td>边缘增强 - 边缘强度</td><td><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_morph.html#afd31eb2d27c999c9955caa93e5b674dd">LImageMorph::Gradient</a> </td></tr>
 <tr>
@@ -194,7 +228,25 @@ $(function() {
 <tr>
 <td>形态学 - Hit-Miss</td><td>&ndash; </td></tr>
 <tr>
-<td>黑白</td><td><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_convert.html">LImageConvert</a> </td></tr>
+<td>黑白 - RGB</td><td><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_convert.html">LImageConvert</a>, toColorSpace = <a class="el" href="namespace_l_p_v_core_lib.html#abc1c78dbe5bbd9696e1af6618392a083a9ee3caeb8bb07dd31b75de436ef986a2">LPVColorSpace::LPVColorSpaceBGR</a> </td></tr>
+<tr>
+<td>黑白 - HSV</td><td><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_convert.html">LImageConvert</a>, toColorSpace = <a class="el" href="namespace_l_p_v_core_lib.html#abc1c78dbe5bbd9696e1af6618392a083a2bdcf03bcfb797b56c086a34b5a2446c">LPVColorSpace::LPVColorSpaceHSV</a> </td></tr>
+<tr>
+<td>黑白 - HLS</td><td><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_convert.html">LImageConvert</a>, toColorSpace = <a class="el" href="namespace_l_p_v_core_lib.html#abc1c78dbe5bbd9696e1af6618392a083a05e36ea1a23bf4914fa568ba426cbe3e">LPVColorSpace::LPVColorSpaceHLS</a> </td></tr>
+<tr>
+<td>黑白 - Lab</td><td><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_convert.html">LImageConvert</a>, toColorSpace = <a class="el" href="namespace_l_p_v_core_lib.html#abc1c78dbe5bbd9696e1af6618392a083ab8114f9da47c49e3f63e8e097f02daa8">LPVColorSpace::LPVColorSpaceLAB</a> </td></tr>
+<tr>
+<td>黑白 - XYZ</td><td><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_convert.html">LImageConvert</a>, toColorSpace = <a class="el" href="namespace_l_p_v_core_lib.html#abc1c78dbe5bbd9696e1af6618392a083ab3eb85b2dea088aed7d42bc631affaf0">LPVColorSpace::LPVColorSpaceXYZ</a> </td></tr>
+<tr>
+<td>黑白 - YCrCb</td><td><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_convert.html">LImageConvert</a>, toColorSpace = <a class="el" href="namespace_l_p_v_core_lib.html#abc1c78dbe5bbd9696e1af6618392a083a55371d0312c8305285cdd39074044a17">LPVColorSpace::LPVColorSpaceYCrCb</a> </td></tr>
+<tr>
+<td>黑白 - LUV</td><td><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_convert.html">LImageConvert</a>, toColorSpace = <a class="el" href="namespace_l_p_v_core_lib.html#abc1c78dbe5bbd9696e1af6618392a083ac9429e9db960415d48d758e115547d0a">LPVColorSpace::LPVColorSpaceLUV</a> </td></tr>
+<tr>
+<td>黑白 - YUV</td><td><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_convert.html">LImageConvert</a>, toColorSpace = <a class="el" href="namespace_l_p_v_core_lib.html#abc1c78dbe5bbd9696e1af6618392a083a8e3a8e95f6d04e01835bf4d307fd6634">LPVColorSpace::LPVColorSpaceYUV</a> </td></tr>
+<tr>
+<td>黑白 - 自定义</td><td><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_convert.html#af2a8aada4aed77b30e5ce7ccd4858803">LImageConvert::BGRMix</a> </td></tr>
+<tr>
+<td>彩色</td><td><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html#a88dc5a82b65d27fb4858762e1e6d8b57">LImage::SetChannel</a> </td></tr>
 <tr>
 <td>自定义</td><td>&ndash; </td></tr>
 <tr>
@@ -220,7 +272,29 @@ $(function() {
 <tr>
 <td>图像运算 - 对数运算</td><td><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#a09fb50f951e9df17d7243b6e7db56a9c">LImageOp::Log</a> </td></tr>
 <tr>
+<td>图像运算 - 位运算（与）</td><td><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#ae032234dba522c2cfd59801c6aaedc01">LImageOp::BitAnd</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#a671c60c7761ad45fc101e444f5aad851">LImageOp::BitAndScalar</a> </td></tr>
+<tr>
+<td>图像运算 - 位运算（或）</td><td><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#aec8d2d7d116274b3c2231b4ef71fb7ba">LImageOp::BitOr</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#a7e1ae39c4d0f8653e34c78f4ee461e3a">LImageOp::BitOrScalar</a> </td></tr>
+<tr>
+<td>图像运算 - 位运算（异或）</td><td><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#ab8c138b11e25395a41672b921e9dc529">LImageOp::BitXor</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#a9fa18ce12820a75fb74f6b1ce01c47ae">LImageOp::BitXorScalar</a> </td></tr>
+<tr>
+<td>图像运算 - 位运算（非）</td><td><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#a5dd391126a76472eca8379e53cdf4e59">LImageOp::BitNot</a> </td></tr>
+<tr>
+<td>8位转换</td><td><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_convert.html#a75b9becd57103a3c8b4971dc137d489f">LImageConvert::Depth16To8</a> </td></tr>
+<tr>
+<td>伪彩映射</td><td><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_convert.html#aac069c1f4dec729c0f9a9702dc4aa317">LImageConvert::ColorMap</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_convert.html#a38189efbad8f61958961752de7144b7f">LImageConvert::ColorMapMultiBand</a> </td></tr>
+<tr>
+<td>图像归一化 - 最大最小值归一化</td><td><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#adf660a10ca16161030619866f2b49e55">LImageOp::Normalize</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_convert.html#a401acc2200aef341efed608a1b785fc4">LImageConvert::NormalizeTo8</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_convert.html#a28f8d473acce8d3b2cddc3fe4b02d852">LImageConvert::NormalizeTo16</a> </td></tr>
+<tr>
+<td>图像归一化 - 均值标准差归一化</td><td><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#aa2263e543b518236ba5126bb4888e2b0">LImageOp::NormalizeMeanStdDev</a> </td></tr>
+<tr>
+<td>自由变换</td><td><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#a1f47cc18862bd892bae73e722c9443d4">LImageOp::Transform</a> </td></tr>
+<tr>
 <td>多帧融合</td><td><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#acfe14eacf1d5bc838d521a82f1ce0b6a">LImageOp::Blend</a> </td></tr>
+<tr>
+<td>图像平铺</td><td><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#a102798855741d439b8903234884713a8">LImageOp::TileX</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#a4ee13ea45a863b3805c6d711be3b9672">LImageOp::TileY</a> </td></tr>
+<tr>
+<td>图像拆分</td><td><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#aafee0b4602b5dea5c473185cd2976be3">LImageOp::Split</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#ad8ea99043d2749a8f013eb7d92583fd6">LImageOp::SplitX</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#a0d94a20c6f7bef41956747a5c3c6a04e">LImageOp::SplitY</a> </td></tr>
 <tr>
 <td>HDR - 相机响应曲线建模</td><td><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_h_d_r.html#a4d4ac9658e67d2c56a75b02f498bdeb6">LHDR::ToneMapping</a> </td></tr>
 <tr>
@@ -230,9 +304,11 @@ $(function() {
 <tr>
 <td>前景分割</td><td>&ndash; </td></tr>
 <tr>
-<td>比较</td><td>&ndash; </td></tr>
+<td>比较</td><td><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_compare.html">LImageCompare</a> </td></tr>
 <tr>
 <td>配准</td><td>&ndash; </td></tr>
+<tr>
+<td>图像修补</td><td><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_filter.html#a7323d90a89ea3ec6583a3d7855306cb3">LImageFilter::FillHole</a> </td></tr>
 <tr>
 <td>边界扩充</td><td>&ndash; </td></tr>
 <tr>
@@ -246,7 +322,7 @@ $(function() {
 <tr>
 <td>偏振</td><td>&ndash; </td></tr>
 </table>
-<h1><a class="anchor" id="autotoc_md56"></a>
+<h1><a class="anchor" id="autotoc_md57"></a>
 数量检测</h1>
 <table class="markdownTable">
 <tr>
@@ -266,7 +342,7 @@ $(function() {
 <tr>
 <td>彩色像素统计</td><td><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_stats.html#abaa3f3df34ed24eb702b5a6b0774f27a">LImageStats::CountPixelColor</a> </td></tr>
 </table>
-<h1><a class="anchor" id="autotoc_md57"></a>
+<h1><a class="anchor" id="autotoc_md58"></a>
 有无判定</h1>
 <table class="markdownTable">
 <tr>
@@ -292,13 +368,17 @@ $(function() {
 <tr>
 <td>彩色像素判定</td><td><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_stats.html#abaa3f3df34ed24eb702b5a6b0774f27a">LImageStats::CountPixelColor</a>) </td></tr>
 </table>
-<h1><a class="anchor" id="autotoc_md58"></a>
+<h1><a class="anchor" id="autotoc_md59"></a>
 几何测量</h1>
 <table class="markdownTable">
 <tr>
 <th class="markdownTableHeadLeft" style="width:30%">灵闪工具</th><th class="markdownTableHeadLeft">LPV 类 / 函数 </th></tr>
 <tr>
-<td>交叉角度</td><td><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_line.html#ab1df154ad7980556ecd1580fd685b693">LLine::AcuteAngle</a> </td></tr>
+<td>线到线的角度 - 角度范围为 90 时</td><td><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_line.html#ab1df154ad7980556ecd1580fd685b693">LLine::AcuteAngle</a>，输出角度范围为 0° ~ 90° </td></tr>
+<tr>
+<td>线到线的角度 - 角度范围为 180 时</td><td>调用 <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_line.html#aebd6ae75f5dcddda7675264e82c39b89">LLine::IntersectLine</a> 获得两线段（包括在延长线上）的交点到两线段的两个中点组成的两个向量的夹角，输出角度范围为 0° ~ 180° </td></tr>
+<tr>
+<td>线到线的角度 - 角度范围为 360 时</td><td><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_line.html#a96b57b77f545fefd4e248107ea74dc90">LLine::AngleTo</a>，输出角度范围为 0° ~ 360° </td></tr>
 <tr>
 <td>线到线的距离</td><td><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_line.html#a5666d27aa093c5e7e57db31293bb3a1c">LLine::Distance</a> </td></tr>
 <tr>
@@ -310,19 +390,49 @@ $(function() {
 <tr>
 <td>最短距离 - 点与多边形</td><td><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html#a43e0f950a3eacc9e431cb98a08a27291">LPolygon::DistanceToPoint</a>, aggType = <a class="el" href="namespace_l_p_v_core_lib.html#a044b4c1019ab24bd62eed3e7fd764b85a2cdaef25a3a519c53cb48161c7969e5a">LPVAggregation::LPVAggMin</a> </td></tr>
 <tr>
+<td>最短距离 - 点与圆</td><td>\( Abs(D - R) \) ，其中 \( D \) 是通过 <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_point.html#a166665055e1c16de05a251280d45d04e">LPoint::Distance</a> 获得的点和圆心的距离， \( R \) 是圆的半径 </td></tr>
+<tr>
+<td>最短距离 - 点与点</td><td><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_point.html#a166665055e1c16de05a251280d45d04e">LPoint::Distance</a> </td></tr>
+<tr>
+<td>最短距离 - 点与线</td><td><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_line.html#a5e55bbb16eaad0742ba2a81a41a418a4">LLine::Perpendicular</a> </td></tr>
+<tr>
+<td>最短距离 - 线与圆</td><td>\( Max(0, D - R) \), 其中 \( D \) 是圆心到线的距离，通过 <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_line.html#a5e55bbb16eaad0742ba2a81a41a418a4">ILLine::Perpendicular</a> 获得垂足，再通过 <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_point.html#a166665055e1c16de05a251280d45d04e">LPoint::Distance</a> 获得距离， \( R \) 是圆的半径 </td></tr>
+<tr>
 <td>最短距离 - 线与多边形</td><td><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_points.html#a446c62efc2540305275dbe3fcf26fb5e">LPoints::DistanceToLine</a>, aggType = <a class="el" href="namespace_l_p_v_core_lib.html#a044b4c1019ab24bd62eed3e7fd764b85a2cdaef25a3a519c53cb48161c7969e5a">LPVAggregation::LPVAggMin</a> </td></tr>
+<tr>
+<td>最短距离 - 线与线</td><td>调用 <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_line.html#aebd6ae75f5dcddda7675264e82c39b89">ILLine::IntersectLine</a> 若返回<a class="el" href="namespace_l_p_v_geom_lib.html#a9e95444de4a6d45da839995006de7ddfac05ab634cb5dc2ab6e7bfb964fd85af6">LPVIntersectType::LPVIntersectBounded</a>，则最短距离为 0 ，否则，调用 <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_line.html#a5e55bbb16eaad0742ba2a81a41a418a4">LLine::Perpendicular</a> 计算两个输入线段的4个端点到各自对应的另一个线段的距离，得到 4 个距离值中的最小值即为最短距离 </td></tr>
+<tr>
+<td>最短距离 - 圆与圆</td><td>\( Max(0, D - R_1 - R_2) \) ，其中 \( D \) 是通过 <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_point.html#a166665055e1c16de05a251280d45d04e">LPoint::Distance</a> 获得的两个圆心的距离， \( R_1, R_2 \) 是两个圆的半径 </td></tr>
+<tr>
+<td>最短距离 - 圆与多边形</td><td>调用 <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html#a43e0f950a3eacc9e431cb98a08a27291">LPolygon::DistanceToPoint</a> 获得多边形上离圆心最近的点 \( r \)，构造圆心到该点的直线，再调用 <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_line.html#a417c0527d2d44b9f5c8e3af94157856f">LLine::IntersectCircle</a> 获得这条线与圆的一个或两个交点，计算这两个交点到 \( r \) 的距离，通过 <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_point.html#a166665055e1c16de05a251280d45d04e">LPoint::Distance</a> ，取其中较小的距离值作为最短距离 </td></tr>
 <tr>
 <td>最短距离 - 多边形与多边形</td><td><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html#adcd8a590ce563470ccfc422a889be99e">LPolygon::DistanceToPolygon</a>, aggType = <a class="el" href="namespace_l_p_v_core_lib.html#a044b4c1019ab24bd62eed3e7fd764b85a2cdaef25a3a519c53cb48161c7969e5a">LPVAggregation::LPVAggMin</a> </td></tr>
 <tr>
 <td>最长距离 - 点与多边形</td><td><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html#a43e0f950a3eacc9e431cb98a08a27291">LPolygon::DistanceToPoint</a>, aggType = <a class="el" href="namespace_l_p_v_core_lib.html#a044b4c1019ab24bd62eed3e7fd764b85acb8fb4d24c6861dc339f3bca1597a4b9">LPVAggregation::LPVAggMax</a> </td></tr>
 <tr>
+<td>最长距离 - 点与圆</td><td>\( Abs(D + R) \) ，其中 \( D \) 是通过 <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_point.html#a166665055e1c16de05a251280d45d04e">LPoint::Distance</a> 获得的点和圆心的距离， \( R \) 是圆的半径 </td></tr>
+<tr>
+<td>最长距离 - 点与点</td><td><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_point.html#a166665055e1c16de05a251280d45d04e">LPoint::Distance</a> </td></tr>
+<tr>
+<td>最长距离 - 点与线</td><td><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_line.html#a5e55bbb16eaad0742ba2a81a41a418a4">LLine::Perpendicular</a> </td></tr>
+<tr>
+<td>最长距离 - 线与圆</td><td>\( D + R \), 其中 \( D \) 是圆心到线的距离，通过 <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_line.html#a5e55bbb16eaad0742ba2a81a41a418a4">ILLine::Perpendicular</a> 获得垂足，再通过 <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_point.html#a166665055e1c16de05a251280d45d04e">LPoint::Distance</a> 获得距离， \( R \) 是圆的半径 </td></tr>
+<tr>
 <td>最长距离 - 线与多边形</td><td><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_points.html#a446c62efc2540305275dbe3fcf26fb5e">LPoints::DistanceToLine</a>, aggType = <a class="el" href="namespace_l_p_v_core_lib.html#a044b4c1019ab24bd62eed3e7fd764b85acb8fb4d24c6861dc339f3bca1597a4b9">LPVAggregation::LPVAggMax</a> </td></tr>
+<tr>
+<td>最长距离 - 线与线</td><td>对于不相交的直线，计算直线端点到另外一条线的垂足距离，取最大值作为最长距离。垂足通过 <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_line.html#a5e55bbb16eaad0742ba2a81a41a418a4">LLine::Perpendicular</a> 计算获得。相交判断通过 <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_line.html#aebd6ae75f5dcddda7675264e82c39b89">ILLine::IntersectLine</a> 进行。 </td></tr>
+<tr>
+<td>最长距离 - 圆与圆</td><td>\( D + R_1 + R_2 \) ，其中 \( D \) 为通过 <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_point.html#a166665055e1c16de05a251280d45d04e">LPoint::Distance</a> 计算获得的圆心距离， \( R_1, R_2 \) 为两个圆的半径 </td></tr>
+<tr>
+<td>最长距离 - 圆与多边形</td><td>调用 <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html#a43e0f950a3eacc9e431cb98a08a27291">LPolygon::DistanceToPoint</a> 获得多边形上离圆心最远的点 \( r \)，构造圆心到该点的直线，再调用 <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_line.html#a417c0527d2d44b9f5c8e3af94157856f">LLine::IntersectCircle</a> 获得这条线与圆的一个或两个交点，计算这两个交点到 \( r \) 的距离，通过 <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_point.html#a166665055e1c16de05a251280d45d04e">LPoint::Distance</a> ，取其中较大的距离值作为最长距离 </td></tr>
 <tr>
 <td>最长距离 - 多边形与多边形</td><td><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html#adcd8a590ce563470ccfc422a889be99e">LPolygon::DistanceToPolygon</a>, aggType = <a class="el" href="namespace_l_p_v_core_lib.html#a044b4c1019ab24bd62eed3e7fd764b85acb8fb4d24c6861dc339f3bca1597a4b9">LPVAggregation::LPVAggMax</a> </td></tr>
 <tr>
 <td>平行度</td><td><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_line.html#a03e793ad6eef055107ba127359ea0fdf">LLine::Parallel</a> </td></tr>
 <tr>
 <td>同心率</td><td><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_circle.html#a1d3ae5ada794abfa367fa2baae388b1d">LCircle::Concentric</a> </td></tr>
+<tr>
+<td>共线性</td><td><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_point.html#ac93256eac42419cf69126c894dbfc63d">LPoint::Collinear</a> </td></tr>
 <tr>
 <td>多边形度量 - 与参考点的距离</td><td><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_points.html#ae927bda9dfd974018dd1ce7f4c82a810">LPoints::DistancesToPoint</a> </td></tr>
 <tr>
@@ -338,7 +448,7 @@ $(function() {
 <tr>
 <td>多边形度量 - 点的 y 坐标</td><td><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_points.html#ac76853328411ccded7f553ab732ada56">LPoints::GetPoints</a> </td></tr>
 </table>
-<h1><a class="anchor" id="autotoc_md59"></a>
+<h1><a class="anchor" id="autotoc_md60"></a>
 几何计算</h1>
 <table class="markdownTable">
 <tr>
@@ -408,7 +518,7 @@ $(function() {
 <tr>
 <td>多边形采样</td><td><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html#aba0cd112aa5e62d431c0472ce52e29e8">LPolygon::Resample</a>, <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html#a59a9a0d2770cd0b94662d61ca76365d2">LPolygon::ResampleByStep</a> </td></tr>
 </table>
-<h1><a class="anchor" id="autotoc_md60"></a>
+<h1><a class="anchor" id="autotoc_md61"></a>
 标定工具</h1>
 <table class="markdownTable">
 <tr>
@@ -418,15 +528,21 @@ $(function() {
 <tr>
 <td>九点标定</td><td><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_n_points.html">LCalibNPoints</a> </td></tr>
 <tr>
-<td>单点标定</td><td><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_n_points.html">LCalibNPoints</a> </td></tr>
+<td>N点标定</td><td><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_n_points.html">LCalibNPoints</a> </td></tr>
+<tr>
+<td>单点多帧标定</td><td><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_n_points.html">LCalibNPoints</a> </td></tr>
 <tr>
 <td>X / Y 缩放标定</td><td><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_custom.html">LCalibCustom</a> </td></tr>
 <tr>
 <td>网格标定</td><td><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_pin_hole.html">LCalibPinHole</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html">LCalibBoard</a> </td></tr>
 <tr>
-<td>FFD 网格标定</td><td><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_f_f_d.html">LCalibFFD</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html">LCalibBoard</a> </td></tr>
+<td>自由网格标定</td><td><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_f_f_d.html">LCalibFFD</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html">LCalibBoard</a> </td></tr>
 <tr>
 <td>导入标定参数</td><td><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_object.html#a74069eb14437a9a889322b62e52db75f">LCalib::Load</a> </td></tr>
+<tr>
+<td>场景坐标映射</td><td><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a8ce0cd25c9f176f2ea389900b8b807be">LCalib::ImageToWorld</a> </td></tr>
+<tr>
+<td>图像坐标映射</td><td><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a45d73ba0171b02f1f2138954332ba401">LCalib::WorldToImage</a> </td></tr>
 <tr>
 <td>标定评价</td><td>&ndash; </td></tr>
 <tr>
@@ -441,8 +557,10 @@ $(function() {
 <td>旋转标定</td><td><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_rotation.html">LCalibRotation</a> </td></tr>
 <tr>
 <td>两点对位</td><td><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_rotation.html#adfa38ee5c13ae77037139694636f4246">LCalibRotation::Align</a> </td></tr>
+<tr>
+<td>阵列标定</td><td><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_camera_array.html">ILCameraArray</a> </td></tr>
 </table>
-<h1><a class="anchor" id="autotoc_md61"></a>
+<h1><a class="anchor" id="autotoc_md62"></a>
 符号识别</h1>
 <table class="markdownTable">
 <tr>
@@ -454,7 +572,7 @@ $(function() {
 <tr>
 <td>OCR</td><td><a class="el" href="interface_l_p_v_o_c_r_lib_1_1_i_l_o_c_r.html">LOCR</a> </td></tr>
 </table>
-<h1><a class="anchor" id="autotoc_md62"></a>
+<h1><a class="anchor" id="autotoc_md63"></a>
 物体分类</h1>
 <table class="markdownTable">
 <tr>
@@ -468,7 +586,21 @@ $(function() {
 <tr>
 <td>学习形分类</td><td><a class="el" href="interface_l_p_v_m_l_lib_1_1_i_l_classifier.html">LClassifier</a> </td></tr>
 </table>
-<h1><a class="anchor" id="autotoc_md63"></a>
+<h1><a class="anchor" id="autotoc_md64"></a>
+缺陷检测</h1>
+<table class="markdownTable">
+<tr>
+<th class="markdownTableHeadLeft" style="width:30%">灵闪工具</th><th class="markdownTableHeadLeft">LPV 类 / 函数 </th></tr>
+<tr>
+<td>多边形比较</td><td>&ndash; </td></tr>
+<tr>
+<td>裂纹划痕检测</td><td><a class="el" href="interface_l_p_v_locate_x_lib_1_1_i_l_path_detector.html">LPathDetector</a> </td></tr>
+<tr>
+<td>直线缺陷</td><td>&ndash; </td></tr>
+<tr>
+<td>多边形缺陷</td><td>&ndash; </td></tr>
+</table>
+<h1><a class="anchor" id="autotoc_md65"></a>
 绘制工具</h1>
 <table class="markdownTable">
 <tr>
@@ -482,11 +614,17 @@ $(function() {
 <tr>
 <td>圆</td><td><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_circle.html">LCircle</a> </td></tr>
 <tr>
+<td>椭圆</td><td><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_ellipse.html">ILEllipse</a> </td></tr>
+<tr>
+<td>多边形</td><td><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a> </td></tr>
+<tr>
 <td>字符串</td><td><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_text.html">LText</a> </td></tr>
 <tr>
 <td>图片</td><td>&ndash; </td></tr>
+<tr>
+<td>蒙版</td><td><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html#a5491a1a6d1431f2ce82140c1061c2a9c">ILRegion::ToMask()</a> </td></tr>
 </table>
-<h1><a class="anchor" id="autotoc_md64"></a>
+<h1><a class="anchor" id="autotoc_md66"></a>
 代数运算</h1>
 <table class="markdownTable">
 <tr>
@@ -502,7 +640,9 @@ $(function() {
 <tr>
 <td>建立变换矩阵</td><td><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_transform.html#ad6051d2bab0f2bb06e1bf7931588e8c3">LTransform::Build</a> </td></tr>
 <tr>
-<td>点变换</td><td><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_point.html#ac69b38d8c68328770d2ed394279ca540">LPoint::Transform</a> </td></tr>
+<td>矩阵生成</td><td><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_transform.html#a2a2a026096a70200e8265e171b286d9c">LTransform::Translate</a>, <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_transform.html#ab7f819c804adb7c536083aa75f27e5f4">LTransform::Scale</a>, <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_transform.html#a7a26222c9a172c2eb5768271859e552f">LTransform::Rotate</a> </td></tr>
+<tr>
+<td>位置变换</td><td><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_point.html#ac69b38d8c68328770d2ed394279ca540">LPoint::Transform</a> </td></tr>
 <tr>
 <td>向量滤波 - 均值</td><td><a class="el" href="interface_l_p_v_math_lib_1_1_i_l_data_list.html#aa08e76e07144082e1f22a766404cf787">LDataList::MeanFilter</a> </td></tr>
 <tr>
@@ -524,50 +664,178 @@ $(function() {
 <tr>
 <td>矩阵计算</td><td>&ndash; </td></tr>
 <tr>
-<td>矩阵生成</td><td><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_transform.html#a2a2a026096a70200e8265e171b286d9c">LTransform::Translate</a>, <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_transform.html#ab7f819c804adb7c536083aa75f27e5f4">LTransform::Scale</a>, <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_transform.html#a7a26222c9a172c2eb5768271859e552f">LTransform::Rotate</a> </td></tr>
-</table>
-<h1><a class="anchor" id="autotoc_md65"></a>
-流程控制</h1>
-<p>无</p>
-<h1><a class="anchor" id="autotoc_md66"></a>
-卡尺定位</h1>
-<table class="markdownTable">
-<tr>
-<th class="markdownTableHeadLeft" style="width:30%">灵闪工具</th><th class="markdownTableHeadLeft">LPV 类 / 函数 </th></tr>
-<tr>
-<td>单边缘卡尺 / 多单边缘卡尺</td><td><a class="el" href="interface_l_p_v_gauge_lib_1_1_i_l_edge_gauge.html#abd1936abcb7b11a00ccb7aed0263bb06">LEdgeGauge::Detect1</a> </td></tr>
-<tr>
-<td>双边缘卡尺 / 多双边缘卡尺</td><td><a class="el" href="interface_l_p_v_gauge_lib_1_1_i_l_edge_gauge.html#a6a6b6bb135330f5724bf1293ba550711">LEdgeGauge::Detect2</a> </td></tr>
-<tr>
-<td>直线卡尺</td><td><a class="el" href="interface_l_p_v_gauge_lib_1_1_i_l_line_gauge.html">LLineGauge</a> </td></tr>
-<tr>
-<td>圆卡尺</td><td><a class="el" href="interface_l_p_v_gauge_lib_1_1_i_l_circle_gauge.html">LCircleGauge</a> </td></tr>
-<tr>
-<td>矩形卡尺</td><td>&ndash; </td></tr>
-<tr>
-<td>多边形卡尺</td><td><a class="el" href="interface_l_p_v_gauge_lib_1_1_i_l_poly_gauge.html">LPolyGauge</a> </td></tr>
-<tr>
-<td>椭圆卡尺</td><td><a class="el" href="interface_l_p_v_gauge_lib_1_1_i_l_ellipse_gauge.html">LEllipseGauge</a> </td></tr>
-<tr>
-<td>圆弧卡尺</td><td><a class="el" href="interface_l_p_v_gauge_lib_1_1_i_l_arc_gauge.html">LArcGauge</a> </td></tr>
+<td>相对位置</td><td><p class="starttd">&ndash;</p>
+<p class="endtd"></p>
+</td></tr>
 </table>
 <h1><a class="anchor" id="autotoc_md67"></a>
-缺陷检测</h1>
+流程控制</h1>
+<p>无</p>
+<h1><a class="anchor" id="autotoc_md68"></a>
+深度学习</h1>
+<p>无</p>
+<h1><a class="anchor" id="autotoc_md69"></a>
+3D 特征定位</h1>
 <table class="markdownTable">
 <tr>
 <th class="markdownTableHeadLeft" style="width:30%">灵闪工具</th><th class="markdownTableHeadLeft">LPV 类 / 函数 </th></tr>
 <tr>
-<td>多边形比较</td><td>&ndash; </td></tr>
+<td>3D斑点定位 / 3D多斑点定位</td><td>&ndash; </td></tr>
 <tr>
-<td>裂纹划痕检测</td><td><a class="el" href="interface_l_p_v_locate_x_lib_1_1_i_l_path_detector.html">LPathDetector</a> </td></tr>
-<tr>
-<td>直线缺陷</td><td>&ndash; </td></tr>
-<tr>
-<td>多边形缺陷</td><td>&ndash; </td></tr>
+<td>3D直线定位 / 3D多直线定位</td><td>&ndash; </td></tr>
 </table>
-<h1><a class="anchor" id="autotoc_md68"></a>
-深度学习</h1>
-<p>无 </p>
+<h1><a class="anchor" id="autotoc_md70"></a>
+3D 预处理</h1>
+<table class="markdownTable">
+<tr>
+<th class="markdownTableHeadLeft" style="width:30%">灵闪工具</th><th class="markdownTableHeadLeft">LPV 类 / 函数 </th></tr>
+<tr>
+<td>灰度图转深度图</td><td>&ndash; </td></tr>
+<tr>
+<td>深度图转法向</td><td>&ndash; </td></tr>
+<tr>
+<td>深度图降采样</td><td>&ndash; </td></tr>
+<tr>
+<td>深度图转点云</td><td>&ndash; </td></tr>
+<tr>
+<td>点云转深度图</td><td>&ndash; </td></tr>
+<tr>
+<td>深度图滤波</td><td>&ndash; </td></tr>
+<tr>
+<td>离群点剔除</td><td>&ndash; </td></tr>
+</table>
+<h1><a class="anchor" id="autotoc_md71"></a>
+3D 几何测量</h1>
+<table class="markdownTable">
+<tr>
+<th class="markdownTableHeadLeft" style="width:30%">灵闪工具</th><th class="markdownTableHeadLeft">LPV 类 / 函数 </th></tr>
+<tr>
+<td>点到点距离</td><td>&ndash; </td></tr>
+<tr>
+<td>点到线距离</td><td>&ndash; </td></tr>
+<tr>
+<td>点到平面距离</td><td>&ndash; </td></tr>
+<tr>
+<td>点到球面距离</td><td>&ndash; </td></tr>
+<tr>
+<td>点到圆柱距离</td><td>&ndash; </td></tr>
+<tr>
+<td>点到椭球距离</td><td>&ndash; </td></tr>
+<tr>
+<td>线到线距离</td><td>&ndash; </td></tr>
+<tr>
+<td>两线间最近点</td><td>&ndash; </td></tr>
+<tr>
+<td>平面到平面距离</td><td>&ndash; </td></tr>
+<tr>
+<td>线与线夹角</td><td>&ndash; </td></tr>
+<tr>
+<td>线与平面夹角</td><td>&ndash; </td></tr>
+<tr>
+<td>平面与平面夹角</td><td>&ndash; </td></tr>
+<tr>
+<td>曲面点曲率</td><td>&ndash; </td></tr>
+<tr>
+<td>线线平行度</td><td>&ndash; </td></tr>
+<tr>
+<td>面面平行度</td><td>&ndash; </td></tr>
+<tr>
+<td>点云统计</td><td>&ndash; </td></tr>
+<tr>
+<td>点到点云距离</td><td>&ndash; </td></tr>
+<tr>
+<td>点云到平面距离</td><td>&ndash; </td></tr>
+</table>
+<h1><a class="anchor" id="autotoc_md72"></a>
+3D 几何计算</h1>
+<table class="markdownTable">
+<tr>
+<th class="markdownTableHeadLeft" style="width:30%">灵闪工具</th><th class="markdownTableHeadLeft">LPV 类 / 函数 </th></tr>
+<tr>
+<td>自定义3D点</td><td>&ndash; </td></tr>
+<tr>
+<td>自定义3D线</td><td>&ndash; </td></tr>
+<tr>
+<td>自定义3D平面</td><td>&ndash; </td></tr>
+<tr>
+<td>自定义3D球面</td><td>&ndash; </td></tr>
+<tr>
+<td>自定义3D圆柱面</td><td>&ndash; </td></tr>
+<tr>
+<td>自定义3D曲面</td><td>&ndash; </td></tr>
+<tr>
+<td>自定义3D抛物面</td><td>&ndash; </td></tr>
+<tr>
+<td>自定义3D坐标系</td><td>&ndash; </td></tr>
+<tr>
+<td>自定义3D坐标系阵列</td><td>&ndash; </td></tr>
+<tr>
+<td>空间几何拟合</td><td>&ndash; </td></tr>
+<tr>
+<td>点到点连线</td><td>&ndash; </td></tr>
+<tr>
+<td>点到直线投影</td><td>&ndash; </td></tr>
+<tr>
+<td>点到平面投影</td><td>&ndash; </td></tr>
+<tr>
+<td>点到球面投影</td><td>&ndash; </td></tr>
+<tr>
+<td>线到平面投影</td><td>&ndash; </td></tr>
+<tr>
+<td>球到平面投影</td><td>&ndash; </td></tr>
+<tr>
+<td>线与线交点</td><td>&ndash; </td></tr>
+<tr>
+<td>线与平面交点</td><td>&ndash; </td></tr>
+<tr>
+<td>线与球面交点</td><td>&ndash; </td></tr>
+<tr>
+<td>线与线交点</td><td>&ndash; </td></tr>
+<tr>
+<td>线与球面交点</td><td>&ndash; </td></tr>
+<tr>
+<td>平面与平面交线</td><td>&ndash; </td></tr>
+<tr>
+<td>平分线</td><td>&ndash; </td></tr>
+</table>
+<h1><a class="anchor" id="autotoc_md73"></a>
+3D 标定工具</h1>
+<table class="markdownTable">
+<tr>
+<th class="markdownTableHeadLeft" style="width:30%">灵闪工具</th><th class="markdownTableHeadLeft">LPV 类 / 函数 </th></tr>
+<tr>
+<td>3D标定</td><td>&ndash; </td></tr>
+<tr>
+<td>导入3D标定</td><td>&ndash; </td></tr>
+<tr>
+<td>3D场景特征映射</td><td>&ndash; </td></tr>
+<tr>
+<td>3D矩阵生成</td><td>&ndash; </td></tr>
+<tr>
+<td>建立3D变换矩阵</td><td>&ndash; </td></tr>
+</table>
+<h1><a class="anchor" id="autotoc_md74"></a>
+双目标定</h1>
+<table class="markdownTable">
+<tr>
+<th class="markdownTableHeadLeft" style="width:30%">灵闪工具</th><th class="markdownTableHeadLeft">LPV 类 / 函数 </th></tr>
+<tr>
+<td>双目视觉系统标定</td><td>&ndash; </td></tr>
+<tr>
+<td>三维椭圆映射</td><td>&ndash; </td></tr>
+<tr>
+<td>三维直线映射</td><td>&ndash; </td></tr>
+<tr>
+<td>三维图像坐标映射</td><td>&ndash; </td></tr>
+<tr>
+<td>三维场景坐标映射</td><td>&ndash; </td></tr>
+<tr>
+<td>三维多边形映射</td><td>&ndash; </td></tr>
+<tr>
+<td>双目矫正</td><td>&ndash; </td></tr>
+<tr>
+<td>双目还原</td><td>&ndash; </td></tr>
+</table>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 <!-- HTML footer for doxygen 1.9.1-->
