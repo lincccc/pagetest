@@ -35,6 +35,10 @@
   <td id="projectlogo" style="padding-left: 1em; text-align: center; vertical-align: middle;"><a href="index.html"><img alt="Logo" src="lpv_logo.png"/></a></td>
   <td id="projectalign" style="padding-left: 0.5em; vertical-align: bottom; padding-bottom: 5px;">
    <div id="projectbrief">Leaper Vision Toolkit</div>
+   <div id="projectbrief" style="margin-top: 3px;">
+    <a id="cn_btn" style="cursor: pointer; color: var(--primary-color);">中文</a> / <a id="en_btn" style="cursor: pointer; color: var(--primary-color);">English</a>
+    <span id="projectnumber">2.x</span>
+    </div>
   </td>
  </tr>
  </tbody>
@@ -112,6 +116,14 @@ Public 成员函数</h2></td></tr>
 <tr class="separator:ac29558b67809128ae14f2b0eabb2b9e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a66a5b7f583b4258845812fd6700ed80d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_events.html#a66a5b7f583b4258845812fd6700ed80d">MouseWheel</a> (<a class="el" href="namespace_l_p_v_display_lib.html#af5fc4f8d5a3aebf916438d7a4a6c7769">LPVMouseButton</a> buttons, <a class="el" href="namespace_l_p_v_display_lib.html#aa2d081e107e2e8ae920db1a56073101a">LPVKeyboardModifiers</a> modifiers, int x, int y, int delta)</td></tr>
 <tr class="separator:a66a5b7f583b4258845812fd6700ed80d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae34f5b11fc612e7681adc060fb27e53e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_events.html#ae34f5b11fc612e7681adc060fb27e53e">ObjectDragFinished</a> (int objectId)</td></tr>
+<tr class="separator:ae34f5b11fc612e7681adc060fb27e53e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49a9ebf84a20a9ab7c4c95d415f64a93"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_events.html#a49a9ebf84a20a9ab7c4c95d415f64a93">ObjectDragging</a> (int objectId)</td></tr>
+<tr class="separator:a49a9ebf84a20a9ab7c4c95d415f64a93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf6962fcc06a61518d4adac43f20b0ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_events.html#acf6962fcc06a61518d4adac43f20b0ff">ObjectRemoving</a> (int objectId)</td></tr>
+<tr class="separator:acf6962fcc06a61518d4adac43f20b0ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac51db8295e7a9876639cfddf5efbe850"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_events.html#ac51db8295e7a9876639cfddf5efbe850">ObjectRemovingAll</a> ()</td></tr>
+<tr class="separator:ac51db8295e7a9876639cfddf5efbe850"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3647faed91a1157dd9d76c3237afbee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_events.html#af3647faed91a1157dd9d76c3237afbee">Refreshed</a> ()</td></tr>
 <tr class="separator:af3647faed91a1157dd9d76c3237afbee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee88466830204df88a29462d9f9a1531"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_events.html#aee88466830204df88a29462d9f9a1531">RegionDragFinished</a> (int regionId)</td></tr>
@@ -446,6 +458,96 @@ Public 成员函数</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="ae34f5b11fc612e7681adc060fb27e53e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae34f5b11fc612e7681adc060fb27e53e">&#9670;&nbsp;</a></span>ObjectDragFinished()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ObjectDragFinished </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>objectId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>用户松开鼠标左键，完成拖拽某个可交互对象 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">objectId</td><td>可交互对象在场景中的 ID，可通过 GetObjectByID() 获取该对象 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a49a9ebf84a20a9ab7c4c95d415f64a93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49a9ebf84a20a9ab7c4c95d415f64a93">&#9670;&nbsp;</a></span>ObjectDragging()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ObjectDragging </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>objectId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>用户正在拖拽某个可交互对象 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">objectId</td><td>可交互对象在场景中的 ID，可通过 GetObjectByID() 获取该对象 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="acf6962fcc06a61518d4adac43f20b0ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf6962fcc06a61518d4adac43f20b0ff">&#9670;&nbsp;</a></span>ObjectRemoving()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ObjectRemoving </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>objectId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>该显示控件正在移除某个可绘制对象 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">objectId</td><td>可绘制对象在场景中的 ID，可通过 GetObjectByID() 获取该对象 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac51db8295e7a9876639cfddf5efbe850"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac51db8295e7a9876639cfddf5efbe850">&#9670;&nbsp;</a></span>ObjectRemovingAll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ObjectRemovingAll </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>该显示控件正在移除所有可绘制对象 </p>
 
 </div>
 </div>

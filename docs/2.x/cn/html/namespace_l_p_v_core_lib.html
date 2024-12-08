@@ -35,6 +35,10 @@
   <td id="projectlogo" style="padding-left: 1em; text-align: center; vertical-align: middle;"><a href="index.html"><img alt="Logo" src="lpv_logo.png"/></a></td>
   <td id="projectalign" style="padding-left: 0.5em; vertical-align: bottom; padding-bottom: 5px;">
    <div id="projectbrief">Leaper Vision Toolkit</div>
+   <div id="projectbrief" style="margin-top: 3px;">
+    <a id="cn_btn" style="cursor: pointer; color: var(--primary-color);">中文</a> / <a id="en_btn" style="cursor: pointer; color: var(--primary-color);">English</a>
+    <span id="projectnumber">2.x</span>
+    </div>
   </td>
  </tr>
  </tbody>
@@ -127,7 +131,7 @@ $(function() {
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">该接口对应一个矩形区域对象。  <a href="interface_l_p_v_core_lib_1_1_i_l_rect_region.html#details">更多...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">该接口类提供了创建、修改、操作和绘制一个 LPV区域对象 (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_rect_region.html">LRectRegion </a>, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_rot_rect_region.html">LRotRectRegion </a>, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_circle_region.html">LCircleRegion </a>, etc.).  <a href="interface_l_p_v_core_lib_1_1_i_l_region.html#details">更多...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">该接口类提供了创建、修改、操作和绘制一个区域对象 (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_rect_region.html">LRectRegion </a>, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_rot_rect_region.html">LRotRectRegion </a>, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_circle_region.html">LCircleRegion </a>, etc.).  <a href="interface_l_p_v_core_lib_1_1_i_l_region.html#details">更多...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_rot_rect_region.html">ILRotRectRegion</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">该接口对应一个旋转矩形区域对象。  <a href="interface_l_p_v_core_lib_1_1_i_l_rot_rect_region.html#details">更多...</a><br /></td></tr>
@@ -259,6 +263,7 @@ typedef struct <a class="el" href="struct_l_p_v_core_lib_1_1_l_size.html">LPVCor
 , <br />
 &#160;&#160;<a class="el" href="namespace_l_p_v_core_lib.html#a2621143506dcb8d80e6b3892ecfd8a7ca8031cea1ae1083cca55bdb4d79407d0c">LPVLightGray</a> = 0xc0c0c0
 , <a class="el" href="namespace_l_p_v_core_lib.html#a2621143506dcb8d80e6b3892ecfd8a7ca9dd6208cc4ddfd48940233920cb04e76">LPVTransparent</a> = -1
+, <a class="el" href="namespace_l_p_v_core_lib.html#a2621143506dcb8d80e6b3892ecfd8a7ca081c70b21bcb6cd70f8c9185a564c20f">LPVColorRandom</a> = -2
 <br />
  }</td></tr>
 <tr class="memdesc:a2621143506dcb8d80e6b3892ecfd8a7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">该枚举表示一些常用的颜色  <a href="namespace_l_p_v_core_lib.html#a2621143506dcb8d80e6b3892ecfd8a7c">更多...</a><br /></td></tr>
@@ -694,6 +699,8 @@ typedef struct <a class="el" href="struct_l_p_v_core_lib_1_1_l_size.html">LPVCor
 <tr><td class="fieldname"><a id="a2621143506dcb8d80e6b3892ecfd8a7ca8031cea1ae1083cca55bdb4d79407d0c"></a>LPVLightGray&#160;</td><td class="fielddoc"><p style="background-color:#c0c0c0;border:1px solid;width:100px;text-align:center;">浅灰色 </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a2621143506dcb8d80e6b3892ecfd8a7ca9dd6208cc4ddfd48940233920cb04e76"></a>LPVTransparent&#160;</td><td class="fielddoc"><p>透明 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a2621143506dcb8d80e6b3892ecfd8a7ca081c70b21bcb6cd70f8c9185a564c20f"></a>LPVColorRandom&#160;</td><td class="fielddoc"><p>随机颜色 </p><dl class="section since"><dt>自从</dt><dd>2.12.0 </dd></dl>
 </td></tr>
 </table>
 

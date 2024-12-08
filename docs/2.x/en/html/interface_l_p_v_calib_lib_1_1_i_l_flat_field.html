@@ -35,6 +35,10 @@
   <td id="projectlogo" style="padding-left: 1em; text-align: center; vertical-align: middle;"><a href="index.html"><img alt="Logo" src="lpv_logo.png"/></a></td>
   <td id="projectalign" style="padding-left: 0.5em; vertical-align: bottom; padding-bottom: 5px;">
    <div id="projectbrief">Leaper Vision Toolkit</div>
+   <div id="projectbrief" style="margin-top: 3px;">
+    <a id="cn_btn" style="cursor: pointer; color: var(--primary-color);">中文</a> / <a id="en_btn" style="cursor: pointer; color: var(--primary-color);">English</a>
+    <span id="projectnumber">2.x</span>
+    </div>
   </td>
  </tr>
  </tbody>
@@ -156,6 +160,12 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_flat_field.html#adba3c49545ce4e4b13d63242f080cf47">UpdateRate</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:adba3c49545ce4e4b13d63242f080cf47"><td class="mdescLeft">&#160;</td><td class="mdescRight">The learning rate to control how the flat field image is updated, in 0 ~ 1. The larger value means the higher weights in updating for the new input image. It is recommended to use a higher updating rate in the first some iterations, then lower it in the laters. By default, it's 0, indicates the update rate is calculated on the fly based on the ratio of known foreground pixels. <br /></td></tr>
 <tr class="separator:adba3c49545ce4e4b13d63242f080cf47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header properties_interface_l_p_v_core_lib_1_1_i_l_object"><td colspan="2" onclick="javascript:toggleInherit('properties_interface_l_p_v_core_lib_1_1_i_l_object')"><img src="closed.png" alt="-"/>&#160;Properties inherited from <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_object.html">ILObject</a></td></tr>
+<tr class="memitem:ab8292bdf77c2bf89903956417791dbf5 inherit properties_interface_l_p_v_core_lib_1_1_i_l_object"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_l_string.html">LString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_object.html#ab8292bdf77c2bf89903956417791dbf5">Name</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:ab8292bdf77c2bf89903956417791dbf5 inherit properties_interface_l_p_v_core_lib_1_1_i_l_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of the object. By default, the object has no name.<br  />
+In most cases, LPV classes don't make use of the names.<br  />
+The name is drawn on canvas around the object if <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_drawable.html#accaf01f95e6d985d43e802714b61f499">ILDrawable::SetDrawName()</a> is enabled.  <a href="interface_l_p_v_core_lib_1_1_i_l_object.html#ab8292bdf77c2bf89903956417791dbf5">More...</a><br /></td></tr>
+<tr class="separator:ab8292bdf77c2bf89903956417791dbf5 inherit properties_interface_l_p_v_core_lib_1_1_i_l_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This interface provide functionalities of flat field calibration and correction. </p>
@@ -201,7 +211,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 <div class="line">LImage correctedImg = <span class="keyword">new</span> LImage();</div>
 <div class="line">err = ffc.FixImage(rawImg, correctedImg); <span class="comment">// do flat field correction</span></div>
 <div class="line"><span class="keywordflow">if</span> (err != <a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>.LPVNoError) <span class="keywordflow">return</span>;</div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html_a0205db5ad70eff44ebd76708a72459e0"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a0205db5ad70eff44ebd76708a72459e0">LPVCoreLib::LPVImageFormat</a></div><div class="ttdeci">LPVImageFormat</div><div class="ttdoc">This enumeration represents the format of the image.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:1645</div></div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a0205db5ad70eff44ebd76708a72459e0"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a0205db5ad70eff44ebd76708a72459e0">LPVCoreLib::LPVImageFormat</a></div><div class="ttdeci">LPVImageFormat</div><div class="ttdoc">This enumeration represents the format of the image.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:1651</div></div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='com' style='display: none;'>COM</div><div class='toggleable_div label_com' style='display: none;'> <div class="fragment"><div class="line">ILFlatFieldPtr ffc = LFlatField::Create();</div>
 <div class="line"><span class="comment">// or, ILFlatFieldPtr ffc(__uuidof(LFlatField)), for absence of built-in Create functions (before 2.2.0)</span></div>
 <div class="line"><span class="comment">// with white board</span></div>

@@ -35,6 +35,10 @@
   <td id="projectlogo" style="padding-left: 1em; text-align: center; vertical-align: middle;"><a href="index.html"><img alt="Logo" src="lpv_logo.png"/></a></td>
   <td id="projectalign" style="padding-left: 0.5em; vertical-align: bottom; padding-bottom: 5px;">
    <div id="projectbrief">Leaper Vision Toolkit</div>
+   <div id="projectbrief" style="margin-top: 3px;">
+    <a id="cn_btn" style="cursor: pointer; color: var(--primary-color);">中文</a> / <a id="en_btn" style="cursor: pointer; color: var(--primary-color);">English</a>
+    <span id="projectnumber">2.x</span>
+    </div>
   </td>
  </tr>
  </tbody>
@@ -93,8 +97,9 @@ $(function() {
  <div class="center">
   <img src="interface_l_p_v_geom_lib_1_1_i_l_line.png" usemap="#ILLine_map" alt=""/>
   <map id="ILLine_map" name="ILLine_map">
-<area href="interface_l_p_v_core_lib_1_1_i_l_object.html" title="该接口类为可序列化 LPV 对象的基类。" alt="ILObject" shape="rect" coords="0,0,59,24"/>
-<area href="class_l_p_v_geom_lib_1_1_l_line.html" alt="LLine" shape="rect" coords="0,112,59,136"/>
+<area href="interface_l_p_v_geom_lib_1_1_i_l_geom_object.html" title="该接口类为几何图元对象的基类，如点、直线、多边形等。" alt="ILGeomObject" shape="rect" coords="0,56,91,80"/>
+<area href="interface_l_p_v_core_lib_1_1_i_l_object.html" title="该接口类为可序列化 LPV 对象的基类。" alt="ILObject" shape="rect" coords="0,0,91,24"/>
+<area href="class_l_p_v_geom_lib_1_1_l_line.html" alt="LLine" shape="rect" coords="0,168,91,192"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -150,6 +155,19 @@ Public 成员函数</h2></td></tr>
 <tr class="separator:ab163d5f57c945a7ecbb507cba386cc89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f1a54e7f5459677d56251583b8129cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_line.html">ILLine</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_line.html#a1f1a54e7f5459677d56251583b8129cf">Translate</a> (double offsetX, double offsetY)</td></tr>
 <tr class="separator:a1f1a54e7f5459677d56251583b8129cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_interface_l_p_v_geom_lib_1_1_i_l_geom_object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_interface_l_p_v_geom_lib_1_1_i_l_geom_object')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_geom_object.html">ILGeomObject</a></td></tr>
+<tr class="memitem:ad0c4ec794030fe346ba1538464370bdc inherit pub_methods_interface_l_p_v_geom_lib_1_1_i_l_geom_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_geom_object.html#ad0c4ec794030fe346ba1538464370bdc">Drag</a> (<a class="el" href="namespace_l_p_v_geom_lib.html#a8c92d81f8142f3a96c75500ce0079f3d">LPVGeomHandle</a> geomHandle, int posX, int posY, double zoomX, double zoomY, double panX, double panY)</td></tr>
+<tr class="separator:ad0c4ec794030fe346ba1538464370bdc inherit pub_methods_interface_l_p_v_geom_lib_1_1_i_l_geom_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72b0a09a682fd872f0c47f269d3e28d4 inherit pub_methods_interface_l_p_v_geom_lib_1_1_i_l_geom_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_geom_object.html#a72b0a09a682fd872f0c47f269d3e28d4">EnableHandle</a> (<a class="el" href="namespace_l_p_v_geom_lib.html#a8c92d81f8142f3a96c75500ce0079f3d">LPVGeomHandle</a> geomHandle, BOOL enabled)</td></tr>
+<tr class="separator:a72b0a09a682fd872f0c47f269d3e28d4 inherit pub_methods_interface_l_p_v_geom_lib_1_1_i_l_geom_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5f53d5a25ab96cca5b80026a071cd25 inherit pub_methods_interface_l_p_v_geom_lib_1_1_i_l_geom_object"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_geom_lib.html#a8c92d81f8142f3a96c75500ce0079f3d">LPVGeomHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_geom_object.html#ad5f53d5a25ab96cca5b80026a071cd25">HitTest</a> (int posX, int posY, double zoomX, double zoomY, double panX, double panY)</td></tr>
+<tr class="separator:ad5f53d5a25ab96cca5b80026a071cd25 inherit pub_methods_interface_l_p_v_geom_lib_1_1_i_l_geom_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec5a3991d0c060220363de80aba3527d inherit pub_methods_interface_l_p_v_geom_lib_1_1_i_l_geom_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_geom_object.html#aec5a3991d0c060220363de80aba3527d">ScaleTo</a> (double factorX, double factorY)</td></tr>
+<tr class="separator:aec5a3991d0c060220363de80aba3527d inherit pub_methods_interface_l_p_v_geom_lib_1_1_i_l_geom_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3557c50f616d03485bd4fe56ae95735 inherit pub_methods_interface_l_p_v_geom_lib_1_1_i_l_geom_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_geom_object.html#af3557c50f616d03485bd4fe56ae95735">TransformTo</a> (<a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_transform.html">ILTransform</a> *tf)</td></tr>
+<tr class="separator:af3557c50f616d03485bd4fe56ae95735 inherit pub_methods_interface_l_p_v_geom_lib_1_1_i_l_geom_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a519740dc7f1d69c34d22431ddee41d5a inherit pub_methods_interface_l_p_v_geom_lib_1_1_i_l_geom_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_geom_object.html#a519740dc7f1d69c34d22431ddee41d5a">TranslateTo</a> (double offsetX, double offsetY)</td></tr>
+<tr class="separator:a519740dc7f1d69c34d22431ddee41d5a inherit pub_methods_interface_l_p_v_geom_lib_1_1_i_l_geom_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_interface_l_p_v_core_lib_1_1_i_l_object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_interface_l_p_v_core_lib_1_1_i_l_object')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_object.html">ILObject</a></td></tr>
 <tr class="memitem:aa7dcddf685e0ba4ddc2d84b0d191f3d7 inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_object"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_object.html">ILObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_object.html#aa7dcddf685e0ba4ddc2d84b0d191f3d7">Copy</a> ()</td></tr>
 <tr class="separator:aa7dcddf685e0ba4ddc2d84b0d191f3d7 inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -180,6 +198,12 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_line.html#a9140f90d0742526f008df49b76a77f73">Y2</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:a9140f90d0742526f008df49b76a77f73"><td class="mdescLeft">&#160;</td><td class="mdescRight">直线终点的 y 坐标 <br /></td></tr>
 <tr class="separator:a9140f90d0742526f008df49b76a77f73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header properties_interface_l_p_v_core_lib_1_1_i_l_object"><td colspan="2" onclick="javascript:toggleInherit('properties_interface_l_p_v_core_lib_1_1_i_l_object')"><img src="closed.png" alt="-"/>&#160;属性 继承自 <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_object.html">ILObject</a></td></tr>
+<tr class="memitem:ab8292bdf77c2bf89903956417791dbf5 inherit properties_interface_l_p_v_core_lib_1_1_i_l_object"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_l_string.html">LString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_object.html#ab8292bdf77c2bf89903956417791dbf5">Name</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:ab8292bdf77c2bf89903956417791dbf5 inherit properties_interface_l_p_v_core_lib_1_1_i_l_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">对象的名称，默认为空。<br  />
+大多数情况下，LPV 算法类并不使用这个名称。<br  />
+若 <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_drawable.html#accaf01f95e6d985d43e802714b61f499">ILDrawable::SetDrawName()</a> 启用，该名称将被绘制在对象的附近  <a href="interface_l_p_v_core_lib_1_1_i_l_object.html#ab8292bdf77c2bf89903956417791dbf5">更多...</a><br /></td></tr>
+<tr class="separator:ab8292bdf77c2bf89903956417791dbf5 inherit properties_interface_l_p_v_core_lib_1_1_i_l_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><p>该接口对应一条直线（LLine对象）。 </p>

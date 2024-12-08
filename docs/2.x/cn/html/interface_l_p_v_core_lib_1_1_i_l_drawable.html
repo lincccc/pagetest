@@ -35,6 +35,10 @@
   <td id="projectlogo" style="padding-left: 1em; text-align: center; vertical-align: middle;"><a href="index.html"><img alt="Logo" src="lpv_logo.png"/></a></td>
   <td id="projectalign" style="padding-left: 0.5em; vertical-align: bottom; padding-bottom: 5px;">
    <div id="projectbrief">Leaper Vision Toolkit</div>
+   <div id="projectbrief" style="margin-top: 3px;">
+    <a id="cn_btn" style="cursor: pointer; color: var(--primary-color);">中文</a> / <a id="en_btn" style="cursor: pointer; color: var(--primary-color);">English</a>
+    <span id="projectnumber">2.x</span>
+    </div>
   </td>
  </tr>
  </tbody>
@@ -145,6 +149,10 @@ $(function() {
 Public 成员函数</h2></td></tr>
 <tr class="memitem:a7a98c8ea7d5c76c1804095e327d30d92"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_drawable.html#a7a98c8ea7d5c76c1804095e327d30d92">SetBrushColor</a> (COLORREF brushColor)</td></tr>
 <tr class="separator:a7a98c8ea7d5c76c1804095e327d30d92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accaf01f95e6d985d43e802714b61f499"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_drawable.html#accaf01f95e6d985d43e802714b61f499">SetDrawName</a> (BOOL val)</td></tr>
+<tr class="separator:accaf01f95e6d985d43e802714b61f499"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad60911cfc9ce902451973606eb81fc83"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_drawable.html#ad60911cfc9ce902451973606eb81fc83">SetDrawPoint</a> (int size, <a class="el" href="namespace_l_p_v_core_lib.html#a120a51e4363ae780ec1088d04f05f68f">LPVPointShape</a> shape)</td></tr>
+<tr class="separator:ad60911cfc9ce902451973606eb81fc83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1acb6ab439ed8e6af9fcc65148a59272"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_drawable.html#a1acb6ab439ed8e6af9fcc65148a59272">SetFont</a> (<a class="el" href="class_l_string.html">LString</a> fontFamily, int fontHeight, COLORREF fontColor, BOOL bold, BOOL italic, BOOL underline, BOOL strikeOut)</td></tr>
 <tr class="separator:a1acb6ab439ed8e6af9fcc65148a59272"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed00bd0a80163fe3818a64e2123ac8ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_drawable.html#aed00bd0a80163fe3818a64e2123ac8ce">SetFontColor</a> (COLORREF fontColor)</td></tr>
@@ -226,6 +234,62 @@ Public 成员函数</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="accaf01f95e6d985d43e802714b61f499"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accaf01f95e6d985d43e802714b61f499">&#9670;&nbsp;</a></span>SetDrawName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SetDrawName </td>
+          <td>(</td>
+          <td class="paramtype">BOOL&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>设置是否绘制该对象的名称 </p><dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_drawable.html#a1acb6ab439ed8e6af9fcc65148a59272">SetFont()</a> </dd></dl>
+<dl class="section since"><dt>自从</dt><dd>2.12.0 </dd></dl>
+
+</div>
+</div>
+<a id="ad60911cfc9ce902451973606eb81fc83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad60911cfc9ce902451973606eb81fc83">&#9670;&nbsp;</a></span>SetDrawPoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SetDrawPoint </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_l_p_v_core_lib.html#a120a51e4363ae780ec1088d04f05f68f">LPVPointShape</a>&#160;</td>
+          <td class="paramname"><em>shape</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>设置当前对象绘制时的点绘制配置 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>设置绘制点的尺寸，默认设置为 5 个像素。传入 -1 表示使用全局配置。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">shape</td><td>设置绘制点的形状，默认设置为<a class="el" href="namespace_l_p_v_core_lib.html#a120a51e4363ae780ec1088d04f05f68fa7373785dd4339f6e3675ce1161690c7f">十字</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>自从</dt><dd>2.12.0 </dd></dl>
 
 </div>
 </div>

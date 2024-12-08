@@ -35,6 +35,10 @@
   <td id="projectlogo" style="padding-left: 1em; text-align: center; vertical-align: middle;"><a href="index.html"><img alt="Logo" src="lpv_logo.png"/></a></td>
   <td id="projectalign" style="padding-left: 0.5em; vertical-align: bottom; padding-bottom: 5px;">
    <div id="projectbrief">Leaper Vision Toolkit</div>
+   <div id="projectbrief" style="margin-top: 3px;">
+    <a id="cn_btn" style="cursor: pointer; color: var(--primary-color);">中文</a> / <a id="en_btn" style="cursor: pointer; color: var(--primary-color);">English</a>
+    <span id="projectnumber">2.x</span>
+    </div>
   </td>
  </tr>
  </tbody>
@@ -136,6 +140,15 @@ Public 成员函数</h2></td></tr>
 <tr class="separator:a86b6e3ad558d350e70a837c28554acf4 inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73a489f4ba37f2dfee6500e8ff54d3c3 inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_object"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_object.html#a73a489f4ba37f2dfee6500e8ff54d3c3">Valid</a> ()</td></tr>
 <tr class="separator:a73a489f4ba37f2dfee6500e8ff54d3c3 inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header properties_interface_l_p_v_core_lib_1_1_i_l_object"><td colspan="2" onclick="javascript:toggleInherit('properties_interface_l_p_v_core_lib_1_1_i_l_object')"><img src="closed.png" alt="-"/>&#160;属性 继承自 <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_object.html">ILObject</a></td></tr>
+<tr class="memitem:ab8292bdf77c2bf89903956417791dbf5 inherit properties_interface_l_p_v_core_lib_1_1_i_l_object"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_l_string.html">LString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_object.html#ab8292bdf77c2bf89903956417791dbf5">Name</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:ab8292bdf77c2bf89903956417791dbf5 inherit properties_interface_l_p_v_core_lib_1_1_i_l_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">对象的名称，默认为空。<br  />
+大多数情况下，LPV 算法类并不使用这个名称。<br  />
+若 <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_drawable.html#accaf01f95e6d985d43e802714b61f499">ILDrawable::SetDrawName()</a> 启用，该名称将被绘制在对象的附近  <a href="interface_l_p_v_core_lib_1_1_i_l_object.html#ab8292bdf77c2bf89903956417791dbf5">更多...</a><br /></td></tr>
+<tr class="separator:ab8292bdf77c2bf89903956417791dbf5 inherit properties_interface_l_p_v_core_lib_1_1_i_l_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><p>该接口类提供了用于图像类型转换的功能，可进行颜色空间转换、通道操作、位深转换等。 </p>
@@ -147,7 +160,7 @@ Public 成员函数</h2></td></tr>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><p> Code snippets: snippets/ColorSpace.cs </p><div class="fragment"><div class="line">LImageConvert imgCvter = <span class="keyword">new</span> LImageConvert();</div>
 <div class="line">imgCvter.BGRToGray(colorImg, grayImg);</div>
 <div class="line">imgCvter.Convert(<a class="code" href="namespace_l_p_v_core_lib.html#abc1c78dbe5bbd9696e1af6618392a083">LPVColorSpace</a>.LPVColorSpaceBGR, <a class="code" href="namespace_l_p_v_core_lib.html#abc1c78dbe5bbd9696e1af6618392a083">LPVColorSpace</a>.LPVColorSpaceHSV, colorImg, hsvImg);</div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html_abc1c78dbe5bbd9696e1af6618392a083"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#abc1c78dbe5bbd9696e1af6618392a083">LPVCoreLib::LPVColorSpace</a></div><div class="ttdeci">LPVColorSpace</div><div class="ttdoc">该枚举表示图像的颜色空间，同时指定分量通道顺序。所有通道均归一化到 0 ~ 255 范围。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:1670</div></div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_abc1c78dbe5bbd9696e1af6618392a083"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#abc1c78dbe5bbd9696e1af6618392a083">LPVCoreLib::LPVColorSpace</a></div><div class="ttdeci">LPVColorSpace</div><div class="ttdoc">该枚举表示图像的颜色空间，同时指定分量通道顺序。所有通道均归一化到 0 ~ 255 范围。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:1676</div></div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='com' style='display: none;'>COM</div><div class='toggleable_div label_com' style='display: none;'><p> Code snippets: snippets/ColorSpace.cpp </p><div class="fragment"><div class="line">ILImageConvertPtr imgCvter = LImageConvert::Create();</div>
 <div class="line"><span class="comment">// or, ILImageConvertPtr imgCvter(__uuidof(LImageConvert)), for absence of built-in Create functions (before 2.2.0)</span></div>
 <div class="line">imgCvter-&gt;BGRToGray(colorImg, grayImg);</div>

@@ -35,6 +35,10 @@
   <td id="projectlogo" style="padding-left: 1em; text-align: center; vertical-align: middle;"><a href="index.html"><img alt="Logo" src="lpv_logo.png"/></a></td>
   <td id="projectalign" style="padding-left: 0.5em; vertical-align: bottom; padding-bottom: 5px;">
    <div id="projectbrief">Leaper Vision Toolkit</div>
+   <div id="projectbrief" style="margin-top: 3px;">
+    <a id="cn_btn" style="cursor: pointer; color: var(--primary-color);">中文</a> / <a id="en_btn" style="cursor: pointer; color: var(--primary-color);">English</a>
+    <span id="projectnumber">2.x</span>
+    </div>
   </td>
  </tr>
  </tbody>
@@ -95,6 +99,9 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_ellipse.html">ILEllipse</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This interface represents an ellipse(LEllipse object)  <a href="interface_l_p_v_geom_lib_1_1_i_l_ellipse.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_geom_object.html">ILGeomObject</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a base interface for the geometric primitive objects, such as a point, a line, a polygon, etc.  <a href="interface_l_p_v_geom_lib_1_1_i_l_geom_object.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_line.html">ILLine</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This interface represents a single straight line(LLine object).  <a href="interface_l_p_v_geom_lib_1_1_i_l_line.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -134,6 +141,13 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
+<tr class="memitem:a8c92d81f8142f3a96c75500ce0079f3d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_l_p_v_geom_lib.html#a8c92d81f8142f3a96c75500ce0079f3d">LPVGeomHandle</a> { <a class="el" href="namespace_l_p_v_geom_lib.html#a8c92d81f8142f3a96c75500ce0079f3da2fde37d267942d5183ee1741ded118ba">LPVGeomHandleUnknown</a> = -1
+, <a class="el" href="namespace_l_p_v_geom_lib.html#a8c92d81f8142f3a96c75500ce0079f3da8329bfece3671911c31aa4a4a4fe2067">LPVGeomHandleNone</a> = 0
+, <a class="el" href="namespace_l_p_v_geom_lib.html#a8c92d81f8142f3a96c75500ce0079f3da52b7ba553ec8b6c9670f1045b1ef72b5">LPVGeomHandleInside</a> = 16
+, <a class="el" href="namespace_l_p_v_geom_lib.html#a8c92d81f8142f3a96c75500ce0079f3dac602214d646c22c27d0484abff03e63a">LPVGeomHandleMoveVertex</a> = 64
+ }</td></tr>
+<tr class="memdesc:a8c92d81f8142f3a96c75500ce0079f3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This enumeration represents the type of a geometric primitive handle for drag.  <a href="namespace_l_p_v_geom_lib.html#a8c92d81f8142f3a96c75500ce0079f3d">More...</a><br /></td></tr>
+<tr class="separator:a8c92d81f8142f3a96c75500ce0079f3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e95444de4a6d45da839995006de7ddf"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_l_p_v_geom_lib.html#a9e95444de4a6d45da839995006de7ddf">LPVIntersectType</a> { <br />
 &#160;&#160;<a class="el" href="namespace_l_p_v_geom_lib.html#a9e95444de4a6d45da839995006de7ddfa3894cd1ab4d330314a4c8e807e77cf44">LPVIntersectUnbounded</a> = 0
 , <a class="el" href="namespace_l_p_v_geom_lib.html#a9e95444de4a6d45da839995006de7ddfaebdad9fdfeecac447e443d0899afe3f1">LPVIntersectBoundedLeft</a> = 1
@@ -163,6 +177,32 @@ Enumerations</h2></td></tr>
 </div><!-- fragment --><p> <b>C# Demo:</b> <a class="el" href="how_to_play_with_demo.html#demo_geom">CSharpGeom</a> </p> </div>  <div class='newInnerHTML' title='com' style='display: none;'>COM</div><div class='toggleable_div label_com' style='display: none;'><div class="fragment"><div class="line"><span class="preprocessor">#define LPV_COM </span><span class="comment">// enable COM interfaces</span></div>
 <div class="line">#include &quot;LPVGeom.h&quot;</div>
 </div><!-- fragment --><p> <b>MFC Demo:</b> <a class="el" href="how_to_play_with_demo.html#demo_geom">MFCGeom</a> </p> </div>  </div><h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="a8c92d81f8142f3a96c75500ce0079f3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c92d81f8142f3a96c75500ce0079f3d">&#9670;&nbsp;</a></span>LPVGeomHandle</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespace_l_p_v_geom_lib.html#a8c92d81f8142f3a96c75500ce0079f3d">LPVGeomHandle</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This enumeration represents the type of a geometric primitive handle for drag. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a8c92d81f8142f3a96c75500ce0079f3da2fde37d267942d5183ee1741ded118ba"></a>LPVGeomHandleUnknown&#160;</td><td class="fielddoc"><p>Unknown handle, usually used as initial value </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8c92d81f8142f3a96c75500ce0079f3da8329bfece3671911c31aa4a4a4fe2067"></a>LPVGeomHandleNone&#160;</td><td class="fielddoc"><p>None, it's not a dragable handle </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8c92d81f8142f3a96c75500ce0079f3da52b7ba553ec8b6c9670f1045b1ef72b5"></a>LPVGeomHandleInside&#160;</td><td class="fielddoc"><p>Inside handle, it's inside or on the geometric primitive, used to move the object. For most geometric classes, this is only available handle. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8c92d81f8142f3a96c75500ce0079f3dac602214d646c22c27d0484abff03e63a"></a>LPVGeomHandleMoveVertex&#160;</td><td class="fielddoc"><p>Vertex move handle, used to drag a nearest vertex to current cursor position. Works for <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_line.html">LLine</a>, <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">LPolygon</a> and <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_points.html">LPoints</a>. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <a id="a9e95444de4a6d45da839995006de7ddf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9e95444de4a6d45da839995006de7ddf">&#9670;&nbsp;</a></span>LPVIntersectType</h2>
 

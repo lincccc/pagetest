@@ -35,6 +35,10 @@
   <td id="projectlogo" style="padding-left: 1em; text-align: center; vertical-align: middle;"><a href="index.html"><img alt="Logo" src="lpv_logo.png"/></a></td>
   <td id="projectalign" style="padding-left: 0.5em; vertical-align: bottom; padding-bottom: 5px;">
    <div id="projectbrief">Leaper Vision Toolkit</div>
+   <div id="projectbrief" style="margin-top: 3px;">
+    <a id="cn_btn" style="cursor: pointer; color: var(--primary-color);">中文</a> / <a id="en_btn" style="cursor: pointer; color: var(--primary-color);">English</a>
+    <span id="projectnumber">2.x</span>
+    </div>
   </td>
  </tr>
  </tbody>
@@ -100,6 +104,8 @@ Inheritance diagram for ILDisplay:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a2ec7dedf25f79790090e6ad22e614271"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#a2ec7dedf25f79790090e6ad22e614271">AddInteractableObject</a> (IDispatch *interactable, int drawFlags)</td></tr>
+<tr class="separator:a2ec7dedf25f79790090e6ad22e614271"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7e3894a65c4c00c4f37c9f709a554e4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#ad7e3894a65c4c00c4f37c9f709a554e4">AddObject</a> (IDispatch *drawable, int drawFlags)</td></tr>
 <tr class="separator:ad7e3894a65c4c00c4f37c9f709a554e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6510a47b1c7a4ed58b8fef4f2cb5aef3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#a6510a47b1c7a4ed58b8fef4f2cb5aef3">AddRegion</a> (IDispatch *region, BOOL interactable)</td></tr>
@@ -228,7 +234,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This interface provide functionalities of the display control. </p>
-<p>Usually you add the display control via the Toolbox in Visual Studio. This interface helps you to manage the scene in the display control, for the image, regions, geometric shapes and algorithms' results to shown in the control.</p>
+<p>Usually you add the display control via the Toolbox in Visual Studio. This interface helps you to manage the scene in the display control, for the image, regions, geometric primitives and algorithms' results to shown in the control.</p>
 <p>See <a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_events.html" title="The events for LDisplay control. Note: This interface is currently not available on Linux / MacOS pla...">ILDisplayEvents</a> for the control's event.</p>
 <h3>Example Code </h3>
  <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line"><span class="comment">// lpvDisplay is a COM ActiveX library, it supports only COM interface.</span></div>
@@ -290,6 +296,49 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 <div class="line">displayCtrl-&gt;AddObject(matchResults, (LPVPatDrawFlags)(LPVPatDrawFlags::LPVPatDrawBoundingRect | LPVPatDrawFlags::LPVPatDrawCenter));</div>
 </div><!-- fragment --> </div> <p><b>Note:</b> This interface is currently not available on Linux / MacOS platform. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a2ec7dedf25f79790090e6ad22e614271"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ec7dedf25f79790090e6ad22e614271">&#9670;&nbsp;</a></span>AddInteractableObject()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int AddInteractableObject </td>
+          <td>(</td>
+          <td class="paramtype">IDispatch *&#160;</td>
+          <td class="paramname"><em>interactable</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>drawFlags</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Add the interactable item to the scene. It's usually a geometric primitive. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">interactable</td><td>The object item, it should be a geometric primitive object implemented the <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_geom_object.html">ILGeomObject</a> interface and also <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_drawable.html">ILDrawable</a> interface. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">drawFlags</td><td>The draw flags to control the item's drawing behavior. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">objectId</td><td>Return the ID of the new item in the scene. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#ad7e3894a65c4c00c4f37c9f709a554e4">AddObject()</a> </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>2.12.0 </dd></dl>
+
+</div>
+</div>
 <a id="ad7e3894a65c4c00c4f37c9f709a554e4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad7e3894a65c4c00c4f37c9f709a554e4">&#9670;&nbsp;</a></span>AddObject()</h2>
 
@@ -315,7 +364,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Add the drawable item to the scene. It's usually a geometric shape or some algorithm' results. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Add the drawable item to the scene. It's usually a geometric primitive or some algorithm' results. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">drawable</td><td>The object item, it should be an object implemented the <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_drawable.html">ILDrawable</a> interface, or <a class="el" href="interface_l_p_v_display_lib_1_1_i_l_text.html">LText</a> object. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">drawFlags</td><td>The draw flags to control the item's drawing behavior. </td></tr>
@@ -328,6 +377,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
   </table>
   </dd>
 </dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display.html#a2ec7dedf25f79790090e6ad22e614271">AddInteractableObject()</a> </dd></dl>
 
 </div>
 </div>
