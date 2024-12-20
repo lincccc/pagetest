@@ -134,8 +134,8 @@ $(function() {
 <tr class="separator:a0b7509dc313340daef8aaa5600276ae7 inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_region"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a551e1dd23e3956e30f30891b39bc22c6 inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_region"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_compound_region.html">ILCompoundRegion</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html#a551e1dd23e3956e30f30891b39bc22c6">Subtract</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a> *other)</td></tr>
 <tr class="separator:a551e1dd23e3956e30f30891b39bc22c6 inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_region"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5491a1a6d1431f2ce82140c1061c2a9c inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_region"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html#a5491a1a6d1431f2ce82140c1061c2a9c">ToMask</a> (int w, int h)</td></tr>
-<tr class="separator:a5491a1a6d1431f2ce82140c1061c2a9c inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_region"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9174edd5080dc3d983d683c2afb19690 inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_region"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html#a9174edd5080dc3d983d683c2afb19690">ToMask</a> (int x, int y, int w, int h)</td></tr>
+<tr class="separator:a9174edd5080dc3d983d683c2afb19690 inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_region"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c9eb19797abac33fe2f1f3ab6b48e63 inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_region"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html#a6c9eb19797abac33fe2f1f3ab6b48e63">Translate</a> (double offsetX, double offsetY)</td></tr>
 <tr class="separator:a6c9eb19797abac33fe2f1f3ab6b48e63 inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_region"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a417176c75f2513cbf8603ad8c9a6ef65 inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_region"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_compound_region.html">ILCompoundRegion</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html#a417176c75f2513cbf8603ad8c9a6ef65">Union</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a> *other)</td></tr>
@@ -236,6 +236,18 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 <script type="text/javascript">
 //<![CDATA[
 addTutorialsButtons();
+// search by bing
+function add_search_ex() {
+  var search_field = document.getElementById("MSearchField");
+  search_field.addEventListener("keyup", function(event){
+    if (event.key === "Enter") {
+      url="https://www.bing.com/search?q=" + search_field.value + "&q1=site%3Alpv.intelliblink.com/2.x/cn/"
+      window.open(url,'_blank');
+    }
+  });
+}
+$(document).ready(add_search_ex);
+// switch language
 var cn_btn = document.getElementById("cn_btn");
 cn_btn.addEventListener("click", function(){window.location.href = window.location.href.replace("/en/", "/cn/");});
 var en_btn = document.getElementById("en_btn");

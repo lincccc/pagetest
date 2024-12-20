@@ -144,8 +144,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0b7509dc313340daef8aaa5600276ae7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a551e1dd23e3956e30f30891b39bc22c6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_compound_region.html">ILCompoundRegion</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html#a551e1dd23e3956e30f30891b39bc22c6">Subtract</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a> *other)</td></tr>
 <tr class="separator:a551e1dd23e3956e30f30891b39bc22c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5491a1a6d1431f2ce82140c1061c2a9c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html#a5491a1a6d1431f2ce82140c1061c2a9c">ToMask</a> (int w, int h)</td></tr>
-<tr class="separator:a5491a1a6d1431f2ce82140c1061c2a9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9174edd5080dc3d983d683c2afb19690"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html#a9174edd5080dc3d983d683c2afb19690">ToMask</a> (int x, int y, int w, int h)</td></tr>
+<tr class="separator:a9174edd5080dc3d983d683c2afb19690"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c9eb19797abac33fe2f1f3ab6b48e63"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html#a6c9eb19797abac33fe2f1f3ab6b48e63">Translate</a> (double offsetX, double offsetY)</td></tr>
 <tr class="separator:a6c9eb19797abac33fe2f1f3ab6b48e63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a417176c75f2513cbf8603ad8c9a6ef65"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_compound_region.html">ILCompoundRegion</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html#a417176c75f2513cbf8603ad8c9a6ef65">Union</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a> *other)</td></tr>
@@ -245,9 +245,10 @@ Example Code</h3>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Add the current and provided region, output a new one, P' = P + other. Same as <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html#a417176c75f2513cbf8603ad8c9a6ef65">Union()</a>, parts in either regions are all included. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Add the current and provided region, output a new one, \( P&#39; = P + other \).<br  />
+Same as <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html#a417176c75f2513cbf8603ad8c9a6ef65">Union()</a>, parts in either regions are all included. A region adds an empty region results a copy of itself. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">other</td><td>The region to be union-ed. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">other</td><td>The region to be added. </td></tr>
   </table>
   </dd>
 </dl>
@@ -514,7 +515,8 @@ By default, all handles are enabled. </p><dl class="params"><dt>Parameters</dt><
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Intersect the current and provided region, output a new one, P' = P ∩ other. Parts in both regions are included. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Intersect the current and provided region, output a new one, \( P&#39; = P \cap other \) .<br  />
+Parts in both regions are included. An empty region intersects with any others result in an empty region. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">other</td><td>The region to be intersected. </td></tr>
   </table>
@@ -754,7 +756,7 @@ By default, all handles are enabled. </p><dl class="params"><dt>Parameters</dt><
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html#a5491a1a6d1431f2ce82140c1061c2a9c">ToMask()</a>, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html#a60bb79dec8bcc9da8e4643688bc0d839" title="The interpolation method used in image reduction.">InterpolationMethod</a>. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html#a9174edd5080dc3d983d683c2afb19690">ToMask()</a>, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html#a60bb79dec8bcc9da8e4643688bc0d839" title="The interpolation method used in image reduction.">InterpolationMethod</a>. </dd></dl>
 
 </div>
 </div>
@@ -911,9 +913,10 @@ Notes: Anisotropic scaling is not supported for a <a class="el" href="class_l_p_
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Subtract the provided region from the current region, output a new one, P' = P - other. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Subtract the provided region from the current region, output a new one, \( P&#39; = P - other \).<br  />
+A region subtract an empty region results a copy of itself, an empty region subtract a region results the inversion of the later. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">other</td><td>The region to be subtracted. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">other</td><td>The region to subtracted. </td></tr>
   </table>
   </dd>
 </dl>
@@ -927,8 +930,8 @@ Notes: Anisotropic scaling is not supported for a <a class="el" href="class_l_p_
 
 </div>
 </div>
-<a id="a5491a1a6d1431f2ce82140c1061c2a9c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5491a1a6d1431f2ce82140c1061c2a9c">&#9670;&nbsp;</a></span>ToMask()</h2>
+<a id="a9174edd5080dc3d983d683c2afb19690"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9174edd5080dc3d983d683c2afb19690">&#9670;&nbsp;</a></span>ToMask()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -936,6 +939,18 @@ Notes: Anisotropic scaling is not supported for a <a class="el" href="class_l_p_
         <tr>
           <td class="memname"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a>* ToMask </td>
           <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>w</em>, </td>
         </tr>
@@ -952,8 +967,11 @@ Notes: Anisotropic scaling is not supported for a <a class="el" href="class_l_p_
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Create a mask image out of the region, the mask is of w * h size. Pixels inside the region as white, others as black. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Create a mask image out of the region on the specified location. Pixels inside the region as white, others as black.<br  />
+If the pass-in location is null, <code>x</code>, <code>y</code>, <code>w</code> and <code>h</code> is all 0, then the mask image is generated based on the bounding box of the region. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td>The x-coordinate of top-left corner of the mask image. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">y</td><td>The y-coordinate of top-left corner of the mask image. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">w</td><td>The width of the mask image. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">h</td><td>The height of the mask image. </td></tr>
   </table>
@@ -966,6 +984,7 @@ Notes: Anisotropic scaling is not supported for a <a class="el" href="class_l_p_
   </dd>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html#aecba35744f71051658bcfb0c04dca69f">ReduceImage()</a>. </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>2.12.1 </dd></dl>
 
 </div>
 </div>
@@ -1026,7 +1045,8 @@ Notes: Anisotropic scaling is not supported for a <a class="el" href="class_l_p_
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Union the current and provided region, output a new one, P' = P U other. Same as <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html#af937542ac028a09e07d32fe1274c8f02">Add()</a>, parts in either regions are all included. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Union the current and provided region, output a new one, \( P&#39; = P \cup other \) .<br  />
+Same as <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html#af937542ac028a09e07d32fe1274c8f02">Add()</a>, parts in either regions are all included. A region unions an empty region results a copy of itself. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">other</td><td>The region to be union-ed </td></tr>
   </table>
@@ -1057,9 +1077,10 @@ Notes: Anisotropic scaling is not supported for a <a class="el" href="class_l_p_
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Calculate the symmetric difference of the current and provided region, output a new one, P' = P XOR other. The parts in and only in one of regions are included. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Calculate the symmetric difference of the current and provided region, output a new one, \( P&#39; = P \oplus other \) .<br  />
+The parts in and only in one of regions are included. An empty region XOR with any others result in an empty region. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">other</td><td>The region to perform the operation. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">other</td><td>The region to perform the XOR operation. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1135,6 +1156,18 @@ By default, it's 1. Change this value to scale the reduced result image. </p>
 <script type="text/javascript">
 //<![CDATA[
 addTutorialsButtons();
+// search by bing
+function add_search_ex() {
+  var search_field = document.getElementById("MSearchField");
+  search_field.addEventListener("keyup", function(event){
+    if (event.key === "Enter") {
+      url="https://www.bing.com/search?q=" + search_field.value + "&q1=site%3Alpv.intelliblink.com/2.x/en/"
+      window.open(url,'_blank');
+    }
+  });
+}
+$(document).ready(add_search_ex);
+// switch language
 var cn_btn = document.getElementById("cn_btn");
 cn_btn.addEventListener("click", function(){window.location.href = window.location.href.replace("/en/", "/cn/");});
 var en_btn = document.getElementById("en_btn");

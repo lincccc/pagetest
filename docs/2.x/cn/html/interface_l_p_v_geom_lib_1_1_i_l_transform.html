@@ -149,14 +149,12 @@ Public 成员函数</h2></td></tr>
 <p>该变换矩阵可以通过 <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_transform.html#ab7f819c804adb7c536083aa75f27e5f4">Scale()</a>, <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_transform.html#a7a26222c9a172c2eb5768271859e552f">Rotate()</a> 和 <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_transform.html#a2a2a026096a70200e8265e171b286d9c">Translate()</a> 等函数构建，也可直接修改 <a class="el" href="struct_l_p_v_core_lib_1_1_l_matrix33.html">LMatrix33</a> 的数据。 或者，也可以基于多个一一对应的点对，通过 <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_transform.html#ad6051d2bab0f2bb06e1bf7931588e8c3">Build()</a> 函数计算最优的映射矩阵。</p>
 <p>使用这个接口，需要创建一个 <a class="el" href="class_l_p_v_geom_lib_1_1_l_transform.html">LTransform</a> 对象。</p>
 <h3>示例代码 </h3>
- <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">Code snippets: snippets/LinearTransform.cpp</div>
-<div class="line">ILTransformPtr tf = LTransform::Create();</div>
+ <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><p> Code snippets: snippets/LinearTransform.cpp </p><div class="fragment"><div class="line">ILTransformPtr tf = LTransform::Create();</div>
 <div class="line"><span class="keywordtype">double</span> err = tf.Build(srcPoints, dstPoints, LPVTransformType::LPVTransformHomography);</div>
 <div class="line"><span class="keywordflow">if</span> (err &lt; 0 || err &gt; 100) <span class="keywordflow">return</span>; <span class="comment">// failed, or the mapping error is too big</span></div>
 <div class="line">ILPointPtr newPoint = pnt-&gt;Transform(tf);</div>
 <div class="line">ILCirclePtr newCircle = circle-&gt;Transform(tf);</div>
-</div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">Code snippets: snippets/LinearTransform.cs</div>
-<div class="line">LTransform tf = <span class="keyword">new</span> LTransform();</div>
+</div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><p> Code snippets: snippets/LinearTransform.cs </p><div class="fragment"><div class="line">LTransform tf = <span class="keyword">new</span> LTransform();</div>
 <div class="line"><span class="keywordtype">double</span> err = tf-&gt;Build(srcPoints, dstPoints, <a class="code" href="namespace_l_p_v_core_lib.html#ab99c16d790cf246e4cea538c13ef4467">LPVTransformType</a>.LPVTransformHomography);</div>
 <div class="line"><span class="keywordflow">if</span> (err &lt; 0 || err &gt; 100) <span class="keywordflow">return</span>; <span class="comment">// failed, or the mapping error is too big</span></div>
 <div class="line">LPoint newPoint = pnt.Transform(tf);</div>
@@ -431,6 +429,18 @@ Public 成员函数</h2></td></tr>
 <script type="text/javascript">
 //<![CDATA[
 addTutorialsButtons();
+// search by bing
+function add_search_ex() {
+  var search_field = document.getElementById("MSearchField");
+  search_field.addEventListener("keyup", function(event){
+    if (event.key === "Enter") {
+      url="https://www.bing.com/search?q=" + search_field.value + "&q1=site%3Alpv.intelliblink.com/2.x/cn/"
+      window.open(url,'_blank');
+    }
+  });
+}
+$(document).ready(add_search_ex);
+// switch language
 var cn_btn = document.getElementById("cn_btn");
 cn_btn.addEventListener("click", function(){window.location.href = window.location.href.replace("/en/", "/cn/");});
 var en_btn = document.getElementById("en_btn");

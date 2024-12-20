@@ -160,8 +160,8 @@ Public 成员函数</h2></td></tr>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><p> Code snippets: snippets/ColorSpace.cs </p><div class="fragment"><div class="line">LImageConvert imgCvter = <span class="keyword">new</span> LImageConvert();</div>
 <div class="line">imgCvter.BGRToGray(colorImg, grayImg);</div>
 <div class="line">imgCvter.Convert(<a class="code" href="namespace_l_p_v_core_lib.html#abc1c78dbe5bbd9696e1af6618392a083">LPVColorSpace</a>.LPVColorSpaceBGR, <a class="code" href="namespace_l_p_v_core_lib.html#abc1c78dbe5bbd9696e1af6618392a083">LPVColorSpace</a>.LPVColorSpaceHSV, colorImg, hsvImg);</div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html_abc1c78dbe5bbd9696e1af6618392a083"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#abc1c78dbe5bbd9696e1af6618392a083">LPVCoreLib::LPVColorSpace</a></div><div class="ttdeci">LPVColorSpace</div><div class="ttdoc">该枚举表示图像的颜色空间，同时指定分量通道顺序。所有通道均归一化到 0 ~ 255 范围。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:1676</div></div>
-</div><!-- fragment --> </div>  <div class='newInnerHTML' title='com' style='display: none;'>COM</div><div class='toggleable_div label_com' style='display: none;'><p> Code snippets: snippets/ColorSpace.cpp </p><div class="fragment"><div class="line">ILImageConvertPtr imgCvter = LImageConvert::Create();</div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_abc1c78dbe5bbd9696e1af6618392a083"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#abc1c78dbe5bbd9696e1af6618392a083">LPVCoreLib::LPVColorSpace</a></div><div class="ttdeci">LPVColorSpace</div><div class="ttdoc">该枚举表示图像的颜色空间，同时指定分量通道顺序。所有通道均归一化到 0 ~ 255 范围。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:1675</div></div>
+</div><!-- fragment --> </div>  <div class='newInnerHTML' title='com' style='display: none;'>COM</div><div class='toggleable_div label_com' style='display: none;'> <div class="fragment"><div class="line">ILImageConvertPtr imgCvter = LImageConvert::Create();</div>
 <div class="line"><span class="comment">// or, ILImageConvertPtr imgCvter(__uuidof(LImageConvert)), for absence of built-in Create functions (before 2.2.0)</span></div>
 <div class="line">imgCvter-&gt;BGRToGray(colorImg, grayImg);</div>
 <div class="line">imgCvter-&gt;Convert(LPVColorSpaceBGR, LPVColorSpaceHSV, colorImg, hsvImg);</div>
@@ -842,6 +842,18 @@ Public 成员函数</h2></td></tr>
 <script type="text/javascript">
 //<![CDATA[
 addTutorialsButtons();
+// search by bing
+function add_search_ex() {
+  var search_field = document.getElementById("MSearchField");
+  search_field.addEventListener("keyup", function(event){
+    if (event.key === "Enter") {
+      url="https://www.bing.com/search?q=" + search_field.value + "&q1=site%3Alpv.intelliblink.com/2.x/cn/"
+      window.open(url,'_blank');
+    }
+  });
+}
+$(document).ready(add_search_ex);
+// switch language
 var cn_btn = document.getElementById("cn_btn");
 cn_btn.addEventListener("click", function(){window.location.href = window.location.href.replace("/en/", "/cn/");});
 var en_btn = document.getElementById("en_btn");

@@ -622,7 +622,7 @@ $(function() {
 <tr>
 <td>图片</td><td>&ndash; </td></tr>
 <tr>
-<td>蒙版</td><td><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html#a5491a1a6d1431f2ce82140c1061c2a9c">ILRegion::ToMask()</a> </td></tr>
+<td>蒙版</td><td><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html#a9174edd5080dc3d983d683c2afb19690">ILRegion::ToMask()</a> </td></tr>
 </table>
 <h1><a class="anchor" id="autotoc_md66"></a>
 代数运算</h1>
@@ -846,6 +846,18 @@ $(function() {
 <script type="text/javascript">
 //<![CDATA[
 addTutorialsButtons();
+// search by bing
+function add_search_ex() {
+  var search_field = document.getElementById("MSearchField");
+  search_field.addEventListener("keyup", function(event){
+    if (event.key === "Enter") {
+      url="https://www.bing.com/search?q=" + search_field.value + "&q1=site%3Alpv.intelliblink.com/2.x/cn/"
+      window.open(url,'_blank');
+    }
+  });
+}
+$(document).ready(add_search_ex);
+// switch language
 var cn_btn = document.getElementById("cn_btn");
 cn_btn.addEventListener("click", function(){window.location.href = window.location.href.replace("/en/", "/cn/");});
 var en_btn = document.getElementById("en_btn");

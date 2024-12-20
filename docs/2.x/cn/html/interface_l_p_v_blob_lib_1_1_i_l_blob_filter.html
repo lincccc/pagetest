@@ -136,7 +136,7 @@ Public 成员函数</h2></td></tr>
 <div class="textblock"><p>该接口提供过滤斑点的功能 </p>
 <p>斑点过滤器用于按照属性特征过滤出合适的斑点对象。可按如下两种方法使用斑点过滤器:</p><ol type="1">
 <li>配置过滤器再将其绑定到斑点分析算法上，通过 <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#abc583ffbdc7101ddf7147f95bd7b5e8d">ILBlobAnalysis::AddBlobFilter()</a>.</li>
-<li>自行调用过滤器的 <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_filter.html#a37787c4b035f6a97779db146da0915f1">ILBlobFilter::FilterResults()</a> 接口，过滤斑点分析结果生成一个新的斑点对象集合。</li>
+<li>自行调用过滤器的 <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_filter.html#a37787c4b035f6a97779db146da0915f1">ILBlobFilter::FilterResults()</a> 接口，过滤斑点分析结果生成一个新的斑点集合。</li>
 </ol>
 <p>支持在斑点分析算法中配置多个斑点过滤器，对于每一个候选斑点，若满足任意一个过滤器，则输出为最终的斑点分析结果。<br  />
 支持在单个斑点过滤器中定义多个属性过滤，对于每一个候选斑点，若满足所有属性过滤设置，则是为满足该过滤器。</p>
@@ -200,15 +200,15 @@ Public 成员函数</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>过滤一个斑点对象集合，生成符合过滤条件的一个新的斑点对象集合 </p><dl class="params"><dt>参数</dt><dd>
+<p>过滤一个斑点集合，生成符合过滤条件的一个新的斑点集合 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">blobResults</td><td>输入的斑点对象集合 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">blobResults</td><td>输入的斑点集合 </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>返回值</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">filterResults</td><td>返回过滤后的新的斑点对象集合 </td></tr>
+    <tr><td class="paramname">filterResults</td><td>返回过滤后的新的斑点集合 </td></tr>
   </table>
   </dd>
 </dl>
@@ -308,6 +308,18 @@ Public 成员函数</h2></td></tr>
 <script type="text/javascript">
 //<![CDATA[
 addTutorialsButtons();
+// search by bing
+function add_search_ex() {
+  var search_field = document.getElementById("MSearchField");
+  search_field.addEventListener("keyup", function(event){
+    if (event.key === "Enter") {
+      url="https://www.bing.com/search?q=" + search_field.value + "&q1=site%3Alpv.intelliblink.com/2.x/cn/"
+      window.open(url,'_blank');
+    }
+  });
+}
+$(document).ready(add_search_ex);
+// switch language
 var cn_btn = document.getElementById("cn_btn");
 cn_btn.addEventListener("click", function(){window.location.href = window.location.href.replace("/en/", "/cn/");});
 var en_btn = document.getElementById("en_btn");

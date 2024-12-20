@@ -144,8 +144,8 @@ Public 成员函数</h2></td></tr>
 <tr class="separator:a0b7509dc313340daef8aaa5600276ae7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a551e1dd23e3956e30f30891b39bc22c6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_compound_region.html">ILCompoundRegion</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html#a551e1dd23e3956e30f30891b39bc22c6">Subtract</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a> *other)</td></tr>
 <tr class="separator:a551e1dd23e3956e30f30891b39bc22c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5491a1a6d1431f2ce82140c1061c2a9c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html#a5491a1a6d1431f2ce82140c1061c2a9c">ToMask</a> (int w, int h)</td></tr>
-<tr class="separator:a5491a1a6d1431f2ce82140c1061c2a9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9174edd5080dc3d983d683c2afb19690"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html#a9174edd5080dc3d983d683c2afb19690">ToMask</a> (int x, int y, int w, int h)</td></tr>
+<tr class="separator:a9174edd5080dc3d983d683c2afb19690"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c9eb19797abac33fe2f1f3ab6b48e63"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html#a6c9eb19797abac33fe2f1f3ab6b48e63">Translate</a> (double offsetX, double offsetY)</td></tr>
 <tr class="separator:a6c9eb19797abac33fe2f1f3ab6b48e63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a417176c75f2513cbf8603ad8c9a6ef65"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_compound_region.html">ILCompoundRegion</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html#a417176c75f2513cbf8603ad8c9a6ef65">Union</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a> *other)</td></tr>
@@ -245,7 +245,8 @@ Public 成员函数</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>将当前区域和输入的区域相加，生成一个新的区域，P' = P + other. 与 <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html#a417176c75f2513cbf8603ad8c9a6ef65">Union()</a> 相同，新的区域包含当前区域和输入区域中所包含的所有部分。 </p><dl class="params"><dt>参数</dt><dd>
+<p>将当前区域和输入的区域相加，生成一个新的区域， \( P&#39; = P + other \).<br  />
+与 <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html#a417176c75f2513cbf8603ad8c9a6ef65">Union()</a> 相同，新的区域包含当前区域和输入区域中所包含的所有部分。 一个非空区域与空区域相加，获得该区域对象的拷贝。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">other</td><td>输入用于相加的区域 </td></tr>
   </table>
@@ -514,7 +515,8 @@ Public 成员函数</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>将当前区域与输入的区域进行并操作，生成一个新的区域, P' = P ∩ other. 新的区域仅包含同时包含在当前区域和输入区域中的部分。 </p><dl class="params"><dt>参数</dt><dd>
+<p>将当前区域与输入的区域进行并操作，生成一个新的区域, \( P&#39; = P \cap other \) .<br  />
+新的区域仅包含两个区域同时覆盖的部分。 一个空区域与任何其他区域求交，获得一个空区域对象。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">other</td><td>输入用于并操作的区域对象 </td></tr>
   </table>
@@ -754,7 +756,7 @@ Public 成员函数</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html#a5491a1a6d1431f2ce82140c1061c2a9c">ToMask()</a>, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html#a60bb79dec8bcc9da8e4643688bc0d839" title="生成子图像时所使用的插值算法">InterpolationMethod</a>. </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html#a9174edd5080dc3d983d683c2afb19690">ToMask()</a>, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html#a60bb79dec8bcc9da8e4643688bc0d839" title="生成子图像时所使用的插值算法">InterpolationMethod</a>. </dd></dl>
 
 </div>
 </div>
@@ -911,7 +913,8 @@ Public 成员函数</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>从当前区域中减去输入的区域，生成一个新的区域，P' = P - other. </p><dl class="params"><dt>参数</dt><dd>
+<p>从当前区域中减去输入的区域，生成一个新的区域， \( P&#39; = P - other \).<br  />
+一个非空区域减去空区域，获得该区域对象的拷贝。一个空区域减去一个非空区域，获得后者的取反区域 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">other</td><td>输入用于减去的区域 </td></tr>
   </table>
@@ -927,8 +930,8 @@ Public 成员函数</h2></td></tr>
 
 </div>
 </div>
-<a id="a5491a1a6d1431f2ce82140c1061c2a9c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5491a1a6d1431f2ce82140c1061c2a9c">&#9670;&nbsp;</a></span>ToMask()</h2>
+<a id="a9174edd5080dc3d983d683c2afb19690"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9174edd5080dc3d983d683c2afb19690">&#9670;&nbsp;</a></span>ToMask()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -936,6 +939,18 @@ Public 成员函数</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a>* ToMask </td>
           <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>w</em>, </td>
         </tr>
@@ -952,8 +967,10 @@ Public 成员函数</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>为当前区域生成一个蒙版图像，该图像为 w * h 尺寸，图像中的白i像素表示该位置包含在当前区域中。 </p><dl class="params"><dt>参数</dt><dd>
+<p>为当前区域生成一个蒙版图像，以指定的位置和尺寸。图像中的白像素表示该位置包含在当前区域中。 若指定的位置和尺寸均为空，即 <code>x</code>, <code>y</code>, <code>w</code> 和 <code>h</code> 均为 0，则蒙版图像基于区域的包围盒位置生成。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td>指定输出蒙版图像的左上角 x 坐标 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">y</td><td>指定输出蒙版图像的左上角 y 坐标 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">w</td><td>指定输出蒙版图像的宽度 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">h</td><td>指定输出蒙版图像的高度 </td></tr>
   </table>
@@ -966,6 +983,7 @@ Public 成员函数</h2></td></tr>
   </dd>
 </dl>
 <dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html#aecba35744f71051658bcfb0c04dca69f">ReduceImage()</a>. </dd></dl>
+<dl class="section since"><dt>自从</dt><dd>2.12.1 </dd></dl>
 
 </div>
 </div>
@@ -1026,7 +1044,8 @@ Public 成员函数</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>将当前区域与输入的区域进行与操作，生成一个新的区域，P' = P U other. 与 <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html#af937542ac028a09e07d32fe1274c8f02">Add()</a> 相同，新的区域包含当前区域和输入区域中所包含的所有部分。 </p><dl class="params"><dt>参数</dt><dd>
+<p>将当前区域与输入的区域进行与操作，生成一个新的区域， \( P&#39; = P \cup other \) .<br  />
+与 <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html#af937542ac028a09e07d32fe1274c8f02">Add()</a> 相同，新的区域包含当前区域和输入区域中所包含的所有部分。 一个非空区域与空区域求与，获得该区域对象的拷贝。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">other</td><td>输入用于与操作的区域 </td></tr>
   </table>
@@ -1057,7 +1076,8 @@ Public 成员函数</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>将当前区域与输入的区域进行异或操作，生成一个新的区域, P' = P XOR other. 新的区域仅包含属于当前区域但不属于输入区域或属于输入区域但不属于当前区域的部分。 </p><dl class="params"><dt>参数</dt><dd>
+<p>将当前区域与输入的区域进行异或操作，生成一个新的区域, \( P&#39; = P \oplus other \) .<br  />
+新的区域仅包含属于当前区域但不属于输入区域或属于输入区域但不属于当前区域的部分。 一个空区域与任何其他区域进行异或操作，获得一个空区域对象。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">other</td><td>输入用于异或操作的区域对象 </td></tr>
   </table>
@@ -1135,6 +1155,18 @@ Public 成员函数</h2></td></tr>
 <script type="text/javascript">
 //<![CDATA[
 addTutorialsButtons();
+// search by bing
+function add_search_ex() {
+  var search_field = document.getElementById("MSearchField");
+  search_field.addEventListener("keyup", function(event){
+    if (event.key === "Enter") {
+      url="https://www.bing.com/search?q=" + search_field.value + "&q1=site%3Alpv.intelliblink.com/2.x/cn/"
+      window.open(url,'_blank');
+    }
+  });
+}
+$(document).ready(add_search_ex);
+// switch language
 var cn_btn = document.getElementById("cn_btn");
 cn_btn.addEventListener("click", function(){window.location.href = window.location.href.replace("/en/", "/cn/");});
 var en_btn = document.getElementById("en_btn");

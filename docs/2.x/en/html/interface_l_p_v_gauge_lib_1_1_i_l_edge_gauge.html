@@ -180,8 +180,7 @@ The name is drawn on canvas around the object if <a class="el" href="interface_l
 <p>The edge gauge tool is used to measure the width of objects, the location of edges or features, and the location and spacing of pairs of edges in images. It locates single-side edges or double-side edge pairs by their peak locations in an image's projection applied a simple 1-D edge kernel.</p>
 <p>To use this interface, you should create a <a class="el" href="class_l_p_v_gauge_lib_1_1_l_edge_gauge.html">LEdgeGauge</a> object.</p>
 <h3>Example Code </h3>
- <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">Code snippets: snippets/PitchCount.cpp</div>
-<div class="line">ILEdgeGaugePtr edgeGauge = LEdgeGauge::Create();</div>
+ <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><p> Code snippets: snippets/PitchCount.cpp </p><div class="fragment"><div class="line">ILEdgeGaugePtr edgeGauge = LEdgeGauge::Create();</div>
 <div class="line">edgeGauge-&gt;Polarity = LPVPolarity::LPVBlack2White;</div>
 <div class="line">edgeGauge-&gt;Polarity2 = LPVPolarity::LPVWhite2Black; <span class="comment">// for double-side, the 2nd edge&#39;s polarity</span></div>
 <div class="line">edgeGauge-&gt;AcceptScore = 40;</div>
@@ -193,8 +192,7 @@ The name is drawn on canvas around the object if <a class="el" href="interface_l
 <div class="line"><span class="keywordflow">if</span> (err != LPVErrorCode::LPVNoError) <span class="keywordflow">return</span>;</div>
 <div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">This enumeration represents the type of a LPV function error.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:530</div></div>
 <div class="ttc" id="anamespace_l_p_v_gauge_lib_html_a22453664a582d012f1cadabd405027e0"><div class="ttname"><a href="namespace_l_p_v_gauge_lib.html#a22453664a582d012f1cadabd405027e0">LPVGaugeLib::LPVGaugeFeatures</a></div><div class="ttdeci">LPVGaugeFeatures</div><div class="ttdoc">This enumeration represents the features of the sample points.</div><div class="ttdef"><b>Definition:</b> LPVGauge.idl:130</div></div>
-</div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">Code snippets: snippets/PitchCount.cs</div>
-<div class="line">LEdgeGauge edgeGauge = <span class="keyword">new</span> LEdgeGauge();</div>
+</div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><p> Code snippets: snippets/PitchCount.cs </p><div class="fragment"><div class="line">LEdgeGauge edgeGauge = <span class="keyword">new</span> LEdgeGauge();</div>
 <div class="line">edgeGauge.Polarity = <a class="code" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0b">LPVPolarity</a>.LPVBlack2White;</div>
 <div class="line">edgeGauge.Polarity2 = <a class="code" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0b">LPVPolarity</a>.LPVWhite2Black; <span class="comment">// for double-side, the 2nd edge&#39;s polarity</span></div>
 <div class="line">edgeGauge.AcceptScore = 40;</div>
@@ -322,6 +320,18 @@ The name is drawn on canvas around the object if <a class="el" href="interface_l
 <script type="text/javascript">
 //<![CDATA[
 addTutorialsButtons();
+// search by bing
+function add_search_ex() {
+  var search_field = document.getElementById("MSearchField");
+  search_field.addEventListener("keyup", function(event){
+    if (event.key === "Enter") {
+      url="https://www.bing.com/search?q=" + search_field.value + "&q1=site%3Alpv.intelliblink.com/2.x/en/"
+      window.open(url,'_blank');
+    }
+  });
+}
+$(document).ready(add_search_ex);
+// switch language
 var cn_btn = document.getElementById("cn_btn");
 cn_btn.addEventListener("click", function(){window.location.href = window.location.href.replace("/en/", "/cn/");});
 var en_btn = document.getElementById("en_btn");
