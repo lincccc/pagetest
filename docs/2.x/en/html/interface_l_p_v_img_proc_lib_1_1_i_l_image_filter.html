@@ -36,6 +36,10 @@
   <td id="projectlogo" style="padding-left: 1em; text-align: center; vertical-align: middle;"><a href="index.html"><img alt="Logo" src="lpv_logo.png"/></a></td>
   <td id="projectalign" style="padding-left: 0.5em; vertical-align: bottom; padding-bottom: 5px;">
    <div id="projectbrief">Leaper Vision Toolkit</div>
+   <div id="projectbrief" style="margin-top: 3px;">
+    <a id="cn_btn" style="cursor: pointer; color: var(--primary-color);">中文</a> / <a id="en_btn" style="cursor: pointer; color: var(--primary-color);">English</a>
+    <span id="projectnumber">2.x</span>
+    </div>
   </td>
  </tr>
  </tbody>
@@ -113,6 +117,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:abb994cefb8c7b8b4efa93a75a7b3af3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8a88ccde91d420b02aa23a57b9d50d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_filter.html#ad8a88ccde91d420b02aa23a57b9d50d9">HighPass</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *result)</td></tr>
 <tr class="separator:ad8a88ccde91d420b02aa23a57b9d50d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af79908bc3ed791953e5408e70eacfe4d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_filter.html#af79908bc3ed791953e5408e70eacfe4d">LinearFilter</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, int kWidth, int kHeight, <a class="el" href="class_l_array.html">LArray</a>&lt; double &gt; kMat, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *result)</td></tr>
+<tr class="separator:af79908bc3ed791953e5408e70eacfe4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a159ad32ca0b6a30bbca4343923d79a02"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_filter.html#a159ad32ca0b6a30bbca4343923d79a02">LinearFilterAbs</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, int kWidth, int kHeight, <a class="el" href="class_l_array.html">LArray</a>&lt; double &gt; kMat, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *result)</td></tr>
+<tr class="separator:a159ad32ca0b6a30bbca4343923d79a02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31494eb9ec4736043691ed2a63c510b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_filter.html#a31494eb9ec4736043691ed2a63c510b7">LocalMedian</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *result)</td></tr>
 <tr class="separator:a31494eb9ec4736043691ed2a63c510b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6d1cbcbfcb083b32044cdf399afdf66"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_filter.html#ac6d1cbcbfcb083b32044cdf399afdf66">LocalMedianNorm</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *result)</td></tr>
@@ -432,6 +440,131 @@ To use this interface, you should create a <a class="el" href="class_l_p_v_img_p
 
 </div>
 </div>
+<a id="af79908bc3ed791953e5408e70eacfe4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af79908bc3ed791953e5408e70eacfe4d">&#9670;&nbsp;</a></span>LinearFilter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LinearFilter </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>img</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>kWidth</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>kHeight</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_l_array.html">LArray</a>&lt; double &gt;&#160;</td>
+          <td class="paramname"><em>kMat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Apply linear filtering on the given image using the custom kernel <code>kMat</code>. The result pixel values out of depth range is truncated, for example for an 8bit image, negative result pixels are set to 0, greater than 255 are set to 255. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>The input image </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">kWidth</td><td>The width of the custom kernel, in range 1 ~ 9999 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">kHeight</td><td>The height of the custom kernel, in range 1 ~ 9999 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">kMat</td><td>Data of the custom kernel, it's a collection of double values. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>Return result image <h3>Example Code </h3>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+ <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line"><span class="comment">// 1x5 kernel to extract vertical edges from black to white</span></div>
+<div class="line">imgFilter-&gt;LinearFilter(img, 5, 1, { -1, 0, 0, 0, 1 }, resultImg);</div>
+</div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line"><span class="comment">// 1x5 kernel to extract vertical edges from black to white</span></div>
+<div class="line">imgFilter.LinearFilter(img, 5, 1, <span class="keyword">new</span> <span class="keywordtype">double</span>[] { -1, 0, 0, 0, 1 }, img2);</div>
+</div><!-- fragment --> </div>  <div class='newInnerHTML' title='com' style='display: none;'>COM</div><div class='toggleable_div label_com' style='display: none;'><div class="fragment"><div class="line"><span class="comment">// 1x5 kernel to extract vertical edges from black to white</span></div>
+<div class="line">CComSafeArray&lt;double&gt; kMat;</div>
+<div class="line">kMat.Add(-1); kMat.Add(0.); kMat.Add(0.); kMat.Add(0.); kMat.Add(1);</div>
+<div class="line">imgFilter-&gt;LinearFilter(img, 5, 1, kMat, resultImg);</div>
+</div><!-- fragment --> </div>  <dl class="section since"><dt>Since</dt><dd>2.14.0 </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_filter.html#a159ad32ca0b6a30bbca4343923d79a02">LinearFilterAbs()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a159ad32ca0b6a30bbca4343923d79a02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a159ad32ca0b6a30bbca4343923d79a02">&#9670;&nbsp;</a></span>LinearFilterAbs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LinearFilterAbs </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>img</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>kWidth</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>kHeight</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_l_array.html">LArray</a>&lt; double &gt;&#160;</td>
+          <td class="paramname"><em>kMat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Apply linear filtering on the given image using the custom kernel <code>kMat</code> then report absolute value. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>The input image </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">kWidth</td><td>The width of the custom kernel, in range 1 ~ 9999 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">kHeight</td><td>The height of the custom kernel, in range 1 ~ 9999 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">kMat</td><td>Data of the custom kernel, it's a collection of double values. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>Return result image </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>2.14.0 </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_filter.html#af79908bc3ed791953e5408e70eacfe4d">LinearFilter()</a> </dd></dl>
+
+</div>
+</div>
 <a id="a31494eb9ec4736043691ed2a63c510b7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a31494eb9ec4736043691ed2a63c510b7">&#9670;&nbsp;</a></span>LocalMedian()</h2>
 
@@ -563,7 +696,7 @@ To use this interface, you should create a <a class="el" href="class_l_p_v_img_p
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Reveals the density of objects and features in the input image by measuring the amount of light that passes through them. Denser objects and features are represented by lighter pixels in the output image. This filter is the equivalent of \( 45*(ln(255) - ln(I)) \) for a 8bit image, and \( 5909*(ln(65535) - ln(I)) \) for a 16bit image. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Reveals the density of objects and features in the input image by measuring the amount of light that passes through them. Denser objects and features are represented by lighter pixels in the output image. This filter is the equivalent of \( 45*(ln(255) - ln(I)) \) for an 8bit image, and \( 5909*(ln(65535) - ln(I)) \) for a 16bit image. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>The input image </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>Return result image </td></tr>
@@ -789,7 +922,7 @@ You may set the kernel size to 0 then we'll compute a proper size from the sigma
 <!-- HTML footer for doxygen 1.9.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-© 2024 <a href="http://www.hzleaper.com/">Hangzhou Leaper Tech. Ltd.</a>
+© 2025 <a href="http://www.hzleaper.com/">Hangzhou Leaper Tech. Ltd.</a>
 </small></address>
 <script type="text/javascript">
 //<![CDATA[

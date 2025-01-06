@@ -36,6 +36,10 @@
   <td id="projectlogo" style="padding-left: 1em; text-align: center; vertical-align: middle;"><a href="index.html"><img alt="Logo" src="lpv_logo.png"/></a></td>
   <td id="projectalign" style="padding-left: 0.5em; vertical-align: bottom; padding-bottom: 5px;">
    <div id="projectbrief">Leaper Vision Toolkit</div>
+   <div id="projectbrief" style="margin-top: 3px;">
+    <a id="cn_btn" style="cursor: pointer; color: var(--primary-color);">中文</a> / <a id="en_btn" style="cursor: pointer; color: var(--primary-color);">English</a>
+    <span id="projectnumber">2.x</span>
+    </div>
   </td>
  </tr>
  </tbody>
@@ -108,6 +112,10 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:abb994cefb8c7b8b4efa93a75a7b3af3d inherit pub_methods_interface_l_p_v_img_proc_lib_1_1_i_l_image_filter"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8a88ccde91d420b02aa23a57b9d50d9 inherit pub_methods_interface_l_p_v_img_proc_lib_1_1_i_l_image_filter"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_filter.html#ad8a88ccde91d420b02aa23a57b9d50d9">HighPass</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *result)</td></tr>
 <tr class="separator:ad8a88ccde91d420b02aa23a57b9d50d9 inherit pub_methods_interface_l_p_v_img_proc_lib_1_1_i_l_image_filter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af79908bc3ed791953e5408e70eacfe4d inherit pub_methods_interface_l_p_v_img_proc_lib_1_1_i_l_image_filter"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_filter.html#af79908bc3ed791953e5408e70eacfe4d">LinearFilter</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, int kWidth, int kHeight, <a class="el" href="class_l_array.html">LArray</a>&lt; double &gt; kMat, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *result)</td></tr>
+<tr class="separator:af79908bc3ed791953e5408e70eacfe4d inherit pub_methods_interface_l_p_v_img_proc_lib_1_1_i_l_image_filter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a159ad32ca0b6a30bbca4343923d79a02 inherit pub_methods_interface_l_p_v_img_proc_lib_1_1_i_l_image_filter"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_filter.html#a159ad32ca0b6a30bbca4343923d79a02">LinearFilterAbs</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, int kWidth, int kHeight, <a class="el" href="class_l_array.html">LArray</a>&lt; double &gt; kMat, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *result)</td></tr>
+<tr class="separator:a159ad32ca0b6a30bbca4343923d79a02 inherit pub_methods_interface_l_p_v_img_proc_lib_1_1_i_l_image_filter"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31494eb9ec4736043691ed2a63c510b7 inherit pub_methods_interface_l_p_v_img_proc_lib_1_1_i_l_image_filter"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_filter.html#a31494eb9ec4736043691ed2a63c510b7">LocalMedian</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *result)</td></tr>
 <tr class="separator:a31494eb9ec4736043691ed2a63c510b7 inherit pub_methods_interface_l_p_v_img_proc_lib_1_1_i_l_image_filter"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6d1cbcbfcb083b32044cdf399afdf66 inherit pub_methods_interface_l_p_v_img_proc_lib_1_1_i_l_image_filter"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_filter.html#ac6d1cbcbfcb083b32044cdf399afdf66">LocalMedianNorm</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *result)</td></tr>
@@ -159,7 +167,7 @@ The name is drawn on canvas around the object if <a class="el" href="interface_l
 <!-- HTML footer for doxygen 1.9.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-© 2024 <a href="http://www.hzleaper.com/">Hangzhou Leaper Tech. Ltd.</a>
+© 2025 <a href="http://www.hzleaper.com/">Hangzhou Leaper Tech. Ltd.</a>
 </small></address>
 <script type="text/javascript">
 //<![CDATA[

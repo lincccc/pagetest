@@ -36,6 +36,10 @@
   <td id="projectlogo" style="padding-left: 1em; text-align: center; vertical-align: middle;"><a href="index.html"><img alt="Logo" src="lpv_logo.png"/></a></td>
   <td id="projectalign" style="padding-left: 0.5em; vertical-align: bottom; padding-bottom: 5px;">
    <div id="projectbrief">Leaper Vision Toolkit</div>
+   <div id="projectbrief" style="margin-top: 3px;">
+    <a id="cn_btn" style="cursor: pointer; color: var(--primary-color);">中文</a> / <a id="en_btn" style="cursor: pointer; color: var(--primary-color);">English</a>
+    <span id="projectnumber">2.x</span>
+    </div>
   </td>
  </tr>
  </tbody>
@@ -393,7 +397,7 @@ The optimal threshold value is calculated base on a \( blockWidth \times blockHe
       </table>
 </div><div class="memdoc">
 <p>Stretch the pixel value within the lower and upper bound of threshold value, others is assigned to 0 or maximum value respectively.<br  />
-For example for a 8bit image, if the threshold lower bound is 100, upper bound is 200, pixel is assigned to 0 if its input value is within range [0, 100], it's assigned to 255 if within range [200, 255], for the range [101, 199] it's assigned as: </p><p class="formulaDsp">
+For example for an 8bit image, if the threshold lower bound is 100, upper bound is 200, pixel is assigned to 0 if its input value is within range [0, 100], it's assigned to 255 if within range [200, 255], for the range [101, 199] it's assigned as: </p><p class="formulaDsp">
 \[ (p - 100) \times 255 / (200 - 100) \]
 </p>
  <dl class="params"><dt>Parameters</dt><dd>
@@ -622,7 +626,7 @@ For example, if a pixel value is 100 and the threshold lower bound is 25, then t
 <!-- HTML footer for doxygen 1.9.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-© 2024 <a href="http://www.hzleaper.com/">Hangzhou Leaper Tech. Ltd.</a>
+© 2025 <a href="http://www.hzleaper.com/">Hangzhou Leaper Tech. Ltd.</a>
 </small></address>
 <script type="text/javascript">
 //<![CDATA[
