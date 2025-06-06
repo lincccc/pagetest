@@ -167,7 +167,7 @@ Public 成员函数</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>检查某个模块是否合法授权。授权后，可以正常使用该模块中的类和算法函数。<br  />
+<p>检查某个模块是否合法授权。授权的模块可以正常使用其中的类和算法函数。检查失败后立刻进行一次重试。 <br  />
 通常按照如下方式调用：</p>
  <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line"><span class="keywordtype">bool</span> checkResult = sys-&gt;CheckLib(L<span class="stringliteral">&quot;lpvCore&quot;</span>);</div>
 <div class="line"><span class="keywordflow">if</span> (!checkResult) <span class="keywordflow">return</span>; <span class="comment">// return if check license failed for lpvCore library</span></div>
@@ -205,7 +205,8 @@ Public 成员函数</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>检查是否存在任一合法授权。注意：此处并不检查功能ID。功能模块的授权检查需调用 <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_system.html#a60f02f83c10395e2adb2bd9d0d929a93">CheckLib()</a>.<br  />
+<p>检查是否存在任一合法授权。检查失败后立刻进行一次重试。 注意：此处并不检查功能ID。功能模块的授权检查需调用 <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_system.html#a60f02f83c10395e2adb2bd9d0d929a93">CheckLib()</a>.<br  />
+<br  />
 通常按照如下方式调用：</p>
  <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line"><span class="keywordtype">bool</span> checkResult = sys-&gt;CheckLicense();</div>
 <div class="line"><span class="keywordflow">if</span> (!checkResult) <span class="keywordflow">return</span>; <span class="comment">// return if check license failed</span></div>

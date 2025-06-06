@@ -205,7 +205,7 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 <tr class="memdesc:a5cff8ca122008799c6417cd212772899"><td class="mdescLeft">&#160;</td><td class="mdescRight">局部阈值所使用的局部区域尺寸  <a href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a5cff8ca122008799c6417cd212772899">更多...</a><br /></td></tr>
 <tr class="separator:a5cff8ca122008799c6417cd212772899"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af98b71a5ec504565e5456260acbd9ee5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#af98b71a5ec504565e5456260acbd9ee5">MaxCount</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:af98b71a5ec504565e5456260acbd9ee5"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置检测的最大数量。若检测区域中有多于设定的斑点，需将候选斑点排序并取前若干个作为结果。  <a href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#af98b71a5ec504565e5456260acbd9ee5">更多...</a><br /></td></tr>
+<tr class="memdesc:af98b71a5ec504565e5456260acbd9ee5"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置检测的最大数量。若检测区域中有多于设定的斑点，需将候选斑点排序并取前若干个作为结果。 设置为0表示无上限，输出符合配置的所有斑点。  <a href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#af98b71a5ec504565e5456260acbd9ee5">更多...</a><br /></td></tr>
 <tr class="separator:af98b71a5ec504565e5456260acbd9ee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adbb4d38a1845bccf62e83e05f2325f26"><td class="memItemLeft" align="right" valign="top"><a id="adbb4d38a1845bccf62e83e05f2325f26"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#adbb4d38a1845bccf62e83e05f2325f26">MergeAreaLB</a><code> [get, set]</code></td></tr>
@@ -1325,7 +1325,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 </table>
 </div><div class="memdoc">
 
-<p>设置检测的最大数量。若检测区域中有多于设定的斑点，需将候选斑点排序并取前若干个作为结果。 </p>
+<p>设置检测的最大数量。若检测区域中有多于设定的斑点，需将候选斑点排序并取前若干个作为结果。 设置为0表示无上限，输出符合配置的所有斑点。 </p>
 <dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a848fb8adacf95a0394b3656bb53233b8" title="如何排序候选斑点。若检测区域中有多于设定的斑点，需将候选斑点排序并取其前若干个作为结果。">SortBy</a> </dd></dl>
 
 </div>
@@ -1351,7 +1351,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 </div><div class="memdoc">
 
 <p>如何排序候选斑点。若检测区域中有多于设定的斑点，需将候选斑点排序并取其前若干个作为结果。 </p>
-<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#af98b71a5ec504565e5456260acbd9ee5" title="设置检测的最大数量。若检测区域中有多于设定的斑点，需将候选斑点排序并取前若干个作为结果。">MaxCount</a>, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a26bbdb0a7c27819253704905dfd3d871" title="与 SortBy 一同起效。True 表示降序排序候选斑点（数值从大到小排序），False 表示升序。">SortByDescending</a> </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#af98b71a5ec504565e5456260acbd9ee5" title="设置检测的最大数量。若检测区域中有多于设定的斑点，需将候选斑点排序并取前若干个作为结果。 设置为0表示无上限，输出符合配置的所有斑点。">MaxCount</a>, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a26bbdb0a7c27819253704905dfd3d871" title="与 SortBy 一同起效。True 表示降序排序候选斑点（数值从大到小排序），False 表示升序。">SortByDescending</a> </dd></dl>
 
 </div>
 </div>

@@ -167,8 +167,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Check whether the library is licensed then you can use the algorithms in that library.<br  />
-You may call it as:</p>
+<p>Check whether the library is licensed then you can use the algorithms in that library. Retry license testing immediately if failed. \nYou may call it as:</p>
  <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line"><span class="keywordtype">bool</span> checkResult = sys-&gt;CheckLib(L<span class="stringliteral">&quot;lpvCore&quot;</span>);</div>
 <div class="line"><span class="keywordflow">if</span> (!checkResult) <span class="keywordflow">return</span>; <span class="comment">// return if check license failed for lpvCore library</span></div>
 </div><!-- fragment --> </div>   <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line"><span class="keywordtype">bool</span> checkResult = sys.CheckLib(<span class="stringliteral">&quot;lpvCore&quot;</span>);</div>
@@ -205,8 +204,7 @@ You may call it as:</p>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Check any valid license is available. Note: we won't exam the feature IDs here, you should call <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_system.html#a60f02f83c10395e2adb2bd9d0d929a93">CheckLib()</a> instead.<br  />
-You may call it as:</p>
+<p>Check any valid license is available. Retry license testing immediately if failed. Note: we won't exam the feature IDs here, you should call <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_system.html#a60f02f83c10395e2adb2bd9d0d929a93">CheckLib()</a> instead. \nYou may call it as:</p>
  <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line"><span class="keywordtype">bool</span> checkResult = sys-&gt;CheckLicense();</div>
 <div class="line"><span class="keywordflow">if</span> (!checkResult) <span class="keywordflow">return</span>; <span class="comment">// return if check license failed</span></div>
 </div><!-- fragment --> </div>   <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line"><span class="keywordtype">bool</span> checkResult = sys.CheckLicense();</div>
