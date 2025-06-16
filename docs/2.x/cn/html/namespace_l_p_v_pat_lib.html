@@ -131,6 +131,13 @@ $(function() {
  }</td></tr>
 <tr class="memdesc:a38ed5c152c13123c0ab8728aa55efdf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">该枚举用于控制模板匹配结果绘制的行为  <a href="namespace_l_p_v_pat_lib.html#a38ed5c152c13123c0ab8728aa55efdf2">更多...</a><br /></td></tr>
 <tr class="separator:a38ed5c152c13123c0ab8728aa55efdf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a05ebe91a32904ad3af3390082929fc"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_l_p_v_pat_lib.html#a6a05ebe91a32904ad3af3390082929fc">LPVPatMatchMethod</a> { <a class="el" href="namespace_l_p_v_pat_lib.html#a6a05ebe91a32904ad3af3390082929fcae3f5ba17514577805d431a5187692919">LPVPatMatchShape</a> = 0
+, <a class="el" href="namespace_l_p_v_pat_lib.html#a6a05ebe91a32904ad3af3390082929fca6592c63218f3def06fa6b6c32bd673c2">LPVPatMatchGray</a> = 1
+, <a class="el" href="namespace_l_p_v_pat_lib.html#a6a05ebe91a32904ad3af3390082929fcaf9f62af65635e6108ec0a8cc97f1c295">LPVPatMatchMixed</a> = 2
+, <a class="el" href="namespace_l_p_v_pat_lib.html#a6a05ebe91a32904ad3af3390082929fca37149d6fff3fce03355a6155804db376">LPVPatMatchAuto</a> = -1
+ }</td></tr>
+<tr class="memdesc:a6a05ebe91a32904ad3af3390082929fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">该枚举表示模板匹配使用的匹配方法  <a href="namespace_l_p_v_pat_lib.html#a6a05ebe91a32904ad3af3390082929fc">更多...</a><br /></td></tr>
+<tr class="separator:a6a05ebe91a32904ad3af3390082929fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><p>LPV 模板匹配模块，用于提供模板匹配功能。 </p>
@@ -197,6 +204,32 @@ $(function() {
 <tr><td class="fieldname"><a id="a38ed5c152c13123c0ab8728aa55efdf2a85af46428d258589f432a26ff43db9ce"></a>LPVPatDrawDefault&#160;</td><td class="fielddoc"><p>默认值，只绘制匹配结果的中心点 </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a38ed5c152c13123c0ab8728aa55efdf2a3ff8f7d20583039f4c1beb44a3053f79"></a>LPVPatDrawAll&#160;</td><td class="fielddoc"><p>绘制所有部分 </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a6a05ebe91a32904ad3af3390082929fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a05ebe91a32904ad3af3390082929fc">&#9670;&nbsp;</a></span>LPVPatMatchMethod</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespace_l_p_v_pat_lib.html#a6a05ebe91a32904ad3af3390082929fc">LPVPatMatchMethod</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>该枚举表示模板匹配使用的匹配方法 </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a6a05ebe91a32904ad3af3390082929fcae3f5ba17514577805d431a5187692919"></a>LPVPatMatchShape&#160;</td><td class="fielddoc"><p>基于形状相似性进行匹配 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6a05ebe91a32904ad3af3390082929fca6592c63218f3def06fa6b6c32bd673c2"></a>LPVPatMatchGray&#160;</td><td class="fielddoc"><p>基于灰度相似性（NCC）进行匹配 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6a05ebe91a32904ad3af3390082929fcaf9f62af65635e6108ec0a8cc97f1c295"></a>LPVPatMatchMixed&#160;</td><td class="fielddoc"><p>融合灰度和形状相似性进行匹配 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6a05ebe91a32904ad3af3390082929fca37149d6fff3fce03355a6155804db376"></a>LPVPatMatchAuto&#160;</td><td class="fielddoc"><p>由当前的融合匹配权重决定匹配方法 </p>
 </td></tr>
 </table>
 

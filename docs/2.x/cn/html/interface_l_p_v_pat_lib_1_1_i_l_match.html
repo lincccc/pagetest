@@ -174,10 +174,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#acb20124963364a91ff986cab7acaf962">ExcludeBoundary</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:acb20124963364a91ff986cab7acaf962"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否剔除图像或区域边界上的匹配结果 <br /></td></tr>
 <tr class="separator:acb20124963364a91ff986cab7acaf962"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8698837361cab3af9df6444df07cb5c9"><td class="memItemLeft" align="right" valign="top"><a id="a8698837361cab3af9df6444df07cb5c9"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a8698837361cab3af9df6444df07cb5c9">GrayValueWeight</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a8698837361cab3af9df6444df07cb5c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">融合匹配权重，用于合并基于形状相似性的匹配分数和基于灰度特征的匹配分数。<br  />
-默认设置为 0， 即灰度分数不参与匹配评价。最终匹配分数按照该公式计算: \( Score = Score_{shape} \times (1 - w) + Score_{gray} \times w \) . <br /></td></tr>
+<tr class="memitem:a8698837361cab3af9df6444df07cb5c9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a8698837361cab3af9df6444df07cb5c9">GrayValueWeight</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a8698837361cab3af9df6444df07cb5c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">融合匹配权重（百分数），用于合并基于形状相似性的匹配分数和基于灰度特征（NCC）的匹配分数。<br  />
+默认设置为 0， 即灰度分数不参与匹配评价。最终匹配分数按照该公式计算: \( Score = Score_{shape} \times (1 - w) + Score_{gray} \times w \) .  <a href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a8698837361cab3af9df6444df07cb5c9">更多...</a><br /></td></tr>
 <tr class="separator:a8698837361cab3af9df6444df07cb5c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acbddee29bf0271b7d05f0a5ae603c449"><td class="memItemLeft" align="right" valign="top"><a id="acbddee29bf0271b7d05f0a5ae603c449"></a>
 BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#acbddee29bf0271b7d05f0a5ae603c449">IgnoreMissing</a><code> [get, set]</code></td></tr>
@@ -191,6 +190,9 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#aff043561b0e1cdd45f21fde61c800e35">IsotropicScale</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:aff043561b0e1cdd45f21fde61c800e35"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否保持缩放长宽比，默认设置为 true <br /></td></tr>
 <tr class="separator:aff043561b0e1cdd45f21fde61c800e35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4550fa93e96c749783f26ffe37e62f8e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_pat_lib.html#a6a05ebe91a32904ad3af3390082929fc">LPVPatMatchMethod</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a4550fa93e96c749783f26ffe37e62f8e">MatchMethod</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a4550fa93e96c749783f26ffe37e62f8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">匹配方法，默认设置为 LPVPatMatchAuto  <a href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a4550fa93e96c749783f26ffe37e62f8e">更多...</a><br /></td></tr>
+<tr class="separator:a4550fa93e96c749783f26ffe37e62f8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af98b71a5ec504565e5456260acbd9ee5"><td class="memItemLeft" align="right" valign="top"><a id="af98b71a5ec504565e5456260acbd9ee5"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#af98b71a5ec504565e5456260acbd9ee5">MaxCount</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:af98b71a5ec504565e5456260acbd9ee5"><td class="mdescLeft">&#160;</td><td class="mdescRight">期望的最大匹配数量 <br /></td></tr>
@@ -200,6 +202,10 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 <tr class="memdesc:a8f94a6c350cbb94dd399d9bab8eedbac"><td class="mdescLeft">&#160;</td><td class="mdescRight">匹配结果的最大缺失比例（百分比）。 取值范围在 0 ~ 100 之间，为百分数。默认设置为 50，表示最多可以接受 50% 的缺失比例。<br  />
 注意缺失比例检查是否启用由 <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#acbddee29bf0271b7d05f0a5ae603c449" title="缺失部分是否负面影响最终匹配结果。默认设置为 true，即计分时忽略缺失部分、且不启用缺失比例检查。">IgnoreMissing</a> 属性控制。当 <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#acbddee29bf0271b7d05f0a5ae603c449" title="缺失部分是否负面影响最终匹配结果。默认设置为 true，即计分时忽略缺失部分、且不启用缺失比例检查。">IgnoreMissing</a> 为 False 时，启用缺失比例检查。 <br /></td></tr>
 <tr class="separator:a8f94a6c350cbb94dd399d9bab8eedbac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae33d61cde357b47b356c490d07347416"><td class="memItemLeft" align="right" valign="top"><a id="ae33d61cde357b47b356c490d07347416"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#ae33d61cde357b47b356c490d07347416">NoiseThreshold</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:ae33d61cde357b47b356c490d07347416"><td class="mdescLeft">&#160;</td><td class="mdescRight">匹配时使用的对比度阈值，用于避免噪声像素参与匹配。取值范围为 0 ~ 100. 默认设置为 0，这是一个基于模板图像的梯度分布训练获得的很低的噪声阈值，对于 8 位图像而言相当于 10 ~ 15 的灰阶差。 <br /></td></tr>
+<tr class="separator:ae33d61cde357b47b356c490d07347416"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a565f9fc27fac6eb35a3a701be4c291fd"><td class="memItemLeft" align="right" valign="top"><a id="a565f9fc27fac6eb35a3a701be4c291fd"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a565f9fc27fac6eb35a3a701be4c291fd">Overlap</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:a565f9fc27fac6eb35a3a701be4c291fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">匹配结果之间的最大重叠比例（百分比）。匹配结果中的缺失特征也计入重叠比例，视为与背景的重叠。 取值范围在 1 ~ 80 之间，为百分数。默认设置为 50，表示 50% 的重叠比例。推荐的取值在 30 ~ 70 附近。 <br /></td></tr>
@@ -555,7 +561,7 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 模板的形状和极性通过输入的形状区域来定义，添加区域（Add）生成黑色背景上的白色形状；减去区域（Subtract）生产白色背景上的黑色形状。<br  />
 特征点通过给定的形状区域提取，不受 <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#ad3566610c7064816188077fe128c506e" title="模板细节程度，取值范围为 0 ~ 1，默认设置为 0.5。 数值越高，保留的细节越多，同时也可能引入更多的噪声，并影响算法的整体性能。 设置或修改模板细节程度后，需重新调用 Learn() 训练模板，特...">DetailLevel</a> 参数的影响。 </p><center><img src="pattern_shaperegion.png" alt="" class="inline"/> <img src="pattern_shaperegion.svg" alt="" style="pointer-events: none;" height="140px" class="inline"/></center> <dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale"/> <img src="bit8.png" alt="" class="inline" title="8 Bit"/> 输入的图像。可为空，但当其为空时，设置 <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a8698837361cab3af9df6444df07cb5c9" title="融合匹配权重，用于合并基于形状相似性的匹配分数和基于灰度特征的匹配分数。 默认设置为 0， 即灰度分数不参与匹配评价。最终匹配分数按照该公式计算:  .">GrayValueWeight</a> 并不启用任何灰度特征权重。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale"/> <img src="bit8.png" alt="" class="inline" title="8 Bit"/> 输入的图像。可为空，但当其为空时，设置 <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a8698837361cab3af9df6444df07cb5c9" title="融合匹配权重（百分数），用于合并基于形状相似性的匹配分数和基于灰度特征（NCC）的匹配分数。 默认设置为 0， 即灰度分数不参与匹配评价。最终匹配分数按照该公式计算:  .">GrayValueWeight</a> 并不启用任何灰度特征权重。 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">region</td><td>输入的区域，用于限定模板在输入图像中的位置，并用于剔除形状中超出区域的部分。可为空。 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">shapeRegion</td><td>输入的区域，用于生成模板形状。与 region 相同，都在输入图像的坐标系下。 </td></tr>
   </table>
@@ -612,7 +618,7 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 </div>
  <dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale"/> <img src="bit8.png" alt="" class="inline" title="8 Bit"/> 输入的图像。可为空，但当其为空时，设置 <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a8698837361cab3af9df6444df07cb5c9" title="融合匹配权重，用于合并基于形状相似性的匹配分数和基于灰度特征的匹配分数。 默认设置为 0， 即灰度分数不参与匹配评价。最终匹配分数按照该公式计算:  .">GrayValueWeight</a> 并不启用任何灰度特征权重。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale"/> <img src="bit8.png" alt="" class="inline" title="8 Bit"/> 输入的图像。可为空，但当其为空时，设置 <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a8698837361cab3af9df6444df07cb5c9" title="融合匹配权重（百分数），用于合并基于形状相似性的匹配分数和基于灰度特征（NCC）的匹配分数。 默认设置为 0， 即灰度分数不参与匹配评价。最终匹配分数按照该公式计算:  .">GrayValueWeight</a> 并不启用任何灰度特征权重。 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">region</td><td>输入的区域，用于限定模板在输入图像中的位置，并用于剔除形状中超出区域的部分。可为空。 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">shapeImg</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale"/> <img src="bit8.png" alt="" class="inline" title="8 Bit"/> 输入的形状图像。该图像的尺寸需与 img 参数相同。 </td></tr>
   </table>
@@ -809,6 +815,79 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 <img src="pattern_detail.png" alt=""/>
 </div>
  <dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#aa2d7fce8c363465a0cbeb6a265fd36fb">Learn()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a8698837361cab3af9df6444df07cb5c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8698837361cab3af9df6444df07cb5c9">&#9670;&nbsp;</a></span>GrayValueWeight</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int GrayValueWeight</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>融合匹配权重（百分数），用于合并基于形状相似性的匹配分数和基于灰度特征（NCC）的匹配分数。<br  />
+默认设置为 0， 即灰度分数不参与匹配评价。最终匹配分数按照该公式计算: \( Score = Score_{shape} \times (1 - w) + Score_{gray} \times w \) . </p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a4550fa93e96c749783f26ffe37e62f8e" title="匹配方法，默认设置为 LPVPatMatchAuto">MatchMethod</a> </dd></dl>
+
+</div>
+</div>
+<a id="a4550fa93e96c749783f26ffe37e62f8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4550fa93e96c749783f26ffe37e62f8e">&#9670;&nbsp;</a></span>MatchMethod</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_l_p_v_pat_lib.html#a6a05ebe91a32904ad3af3390082929fc">LPVPatMatchMethod</a> MatchMethod</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>匹配方法，默认设置为 LPVPatMatchAuto </p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">匹配方法   </th><th class="markdownTableHeadNone">行为    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">LPVPatMatchShape   </td><td class="markdownTableBodyNone">完全基于形状相似性    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">LPVPatMatchGray   </td><td class="markdownTableBodyNone">完全基于图像灰度相似性    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">LPVPatMatchMixed   </td><td class="markdownTableBodyNone">融合灰度和形状相似性，权重由 <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a8698837361cab3af9df6444df07cb5c9" title="融合匹配权重（百分数），用于合并基于形状相似性的匹配分数和基于灰度特征（NCC）的匹配分数。 默认设置为 0， 即灰度分数不参与匹配评价。最终匹配分数按照该公式计算:  .">GrayValueWeight</a> 确定    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">LPVPatMatchAuto（默认）   </td><td class="markdownTableBodyNone">基于 <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a8698837361cab3af9df6444df07cb5c9" title="融合匹配权重（百分数），用于合并基于形状相似性的匹配分数和基于灰度特征（NCC）的匹配分数。 默认设置为 0， 即灰度分数不参与匹配评价。最终匹配分数按照该公式计算:  .">GrayValueWeight</a> 的数值，选择以上策略中的一种：<br  />
+<ul>
+<li>
+当 <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a8698837361cab3af9df6444df07cb5c9" title="融合匹配权重（百分数），用于合并基于形状相似性的匹配分数和基于灰度特征（NCC）的匹配分数。 默认设置为 0， 即灰度分数不参与匹配评价。最终匹配分数按照该公式计算:  .">GrayValueWeight</a> &lt; 0.3，使用 LPVPatMatchShape </li>
+<li>
+当 for <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a8698837361cab3af9df6444df07cb5c9" title="融合匹配权重（百分数），用于合并基于形状相似性的匹配分数和基于灰度特征（NCC）的匹配分数。 默认设置为 0， 即灰度分数不参与匹配评价。最终匹配分数按照该公式计算:  .">GrayValueWeight</a> &gt; 0.7，使用 LPVPatMatchGray </li>
+<li>
+其他情况，使用 LPVPatMatchMixed </li>
+</ul>
+</td></tr>
+</table>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a8698837361cab3af9df6444df07cb5c9" title="融合匹配权重（百分数），用于合并基于形状相似性的匹配分数和基于灰度特征（NCC）的匹配分数。 默认设置为 0， 即灰度分数不参与匹配评价。最终匹配分数按照该公式计算:  .">GrayValueWeight</a> </dd></dl>
+<dl class="section since"><dt>自从</dt><dd>2.16.0 </dd></dl>
 
 </div>
 </div>

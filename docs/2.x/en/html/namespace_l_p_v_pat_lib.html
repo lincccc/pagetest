@@ -131,6 +131,13 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a38ed5c152c13123c0ab8728aa55efdf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">This enumeration represents the flags to control the pattern drawing behavior.  <a href="namespace_l_p_v_pat_lib.html#a38ed5c152c13123c0ab8728aa55efdf2">More...</a><br /></td></tr>
 <tr class="separator:a38ed5c152c13123c0ab8728aa55efdf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a05ebe91a32904ad3af3390082929fc"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_l_p_v_pat_lib.html#a6a05ebe91a32904ad3af3390082929fc">LPVPatMatchMethod</a> { <a class="el" href="namespace_l_p_v_pat_lib.html#a6a05ebe91a32904ad3af3390082929fcae3f5ba17514577805d431a5187692919">LPVPatMatchShape</a> = 0
+, <a class="el" href="namespace_l_p_v_pat_lib.html#a6a05ebe91a32904ad3af3390082929fca6592c63218f3def06fa6b6c32bd673c2">LPVPatMatchGray</a> = 1
+, <a class="el" href="namespace_l_p_v_pat_lib.html#a6a05ebe91a32904ad3af3390082929fcaf9f62af65635e6108ec0a8cc97f1c295">LPVPatMatchMixed</a> = 2
+, <a class="el" href="namespace_l_p_v_pat_lib.html#a6a05ebe91a32904ad3af3390082929fca37149d6fff3fce03355a6155804db376">LPVPatMatchAuto</a> = -1
+ }</td></tr>
+<tr class="memdesc:a6a05ebe91a32904ad3af3390082929fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">This enumeration represents the matching method in use.  <a href="namespace_l_p_v_pat_lib.html#a6a05ebe91a32904ad3af3390082929fc">More...</a><br /></td></tr>
+<tr class="separator:a6a05ebe91a32904ad3af3390082929fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>LPV Pattern Library, provides functionality for pattern matching. </p>
@@ -197,6 +204,32 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><a id="a38ed5c152c13123c0ab8728aa55efdf2a85af46428d258589f432a26ff43db9ce"></a>LPVPatDrawDefault&#160;</td><td class="fielddoc"><p>Default draw flags, which draws only the center point </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a38ed5c152c13123c0ab8728aa55efdf2a3ff8f7d20583039f4c1beb44a3053f79"></a>LPVPatDrawAll&#160;</td><td class="fielddoc"><p>Draw a pattern with all components </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a6a05ebe91a32904ad3af3390082929fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a05ebe91a32904ad3af3390082929fc">&#9670;&nbsp;</a></span>LPVPatMatchMethod</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespace_l_p_v_pat_lib.html#a6a05ebe91a32904ad3af3390082929fc">LPVPatMatchMethod</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This enumeration represents the matching method in use. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a6a05ebe91a32904ad3af3390082929fcae3f5ba17514577805d431a5187692919"></a>LPVPatMatchShape&#160;</td><td class="fielddoc"><p>Matching based on shape similarity </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6a05ebe91a32904ad3af3390082929fca6592c63218f3def06fa6b6c32bd673c2"></a>LPVPatMatchGray&#160;</td><td class="fielddoc"><p>Matching based on image similarity via normalized cross correlation (NCC) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6a05ebe91a32904ad3af3390082929fcaf9f62af65635e6108ec0a8cc97f1c295"></a>LPVPatMatchMixed&#160;</td><td class="fielddoc"><p>Matching based on both shape and image similarity </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6a05ebe91a32904ad3af3390082929fca37149d6fff3fce03355a6155804db376"></a>LPVPatMatchAuto&#160;</td><td class="fielddoc"><p>Matching method is decided based on the current weight of image similarity in evaluation score </p>
 </td></tr>
 </table>
 
