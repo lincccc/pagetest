@@ -36,10 +36,6 @@
   <td id="projectlogo" style="padding-left: 1em; text-align: center; vertical-align: middle;"><a href="index.html"><img alt="Logo" src="lpv_logo.png"/></a></td>
   <td id="projectalign" style="padding-left: 0.5em; vertical-align: bottom; padding-bottom: 5px;">
    <div id="projectbrief">Leaper Vision Toolkit</div>
-   <div id="projectbrief" style="margin-top: 3px;">
-    <a id="cn_btn" style="cursor: pointer; color: var(--primary-color);">中文</a> / <a id="en_btn" style="cursor: pointer; color: var(--primary-color);">English</a>
-    <span id="projectnumber">2.x</span>
-    </div>
   </td>
  </tr>
  </tbody>
@@ -203,9 +199,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 <tr class="memdesc:a8f94a6c350cbb94dd399d9bab8eedbac"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum acceptable missing rate of the matching features in percentage. The value range is 0 ~ 100. By default, it's 50, means 50% missing is acceptable.<br  />
 Note missing part check is only enabled when <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#acbddee29bf0271b7d05f0a5ae603c449" title="Whether the missing parts contribute negatively to the matching result. By default is true,...">IgnoreMissing</a> is false. <br /></td></tr>
 <tr class="separator:a8f94a6c350cbb94dd399d9bab8eedbac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae33d61cde357b47b356c490d07347416"><td class="memItemLeft" align="right" valign="top"><a id="ae33d61cde357b47b356c490d07347416"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#ae33d61cde357b47b356c490d07347416">NoiseThreshold</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:ae33d61cde357b47b356c490d07347416"><td class="mdescLeft">&#160;</td><td class="mdescRight">The contrast threshold to avoid matching on noisy pixels, in range 0 ~ 100. By default, it's set to 0, which is a very low threshold trained based on magnitude distribution of template image, equivalent to 10 ~ 15 grayscale difference for an 8bit image. <br /></td></tr>
+<tr class="memitem:ae33d61cde357b47b356c490d07347416"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#ae33d61cde357b47b356c490d07347416">NoiseThreshold</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:ae33d61cde357b47b356c490d07347416"><td class="mdescLeft">&#160;</td><td class="mdescRight">The contrast threshold to avoid matching on noisy pixels, in range 0 ~ 100.  <a href="interface_l_p_v_pat_lib_1_1_i_l_match.html#ae33d61cde357b47b356c490d07347416">More...</a><br /></td></tr>
 <tr class="separator:ae33d61cde357b47b356c490d07347416"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a565f9fc27fac6eb35a3a701be4c291fd"><td class="memItemLeft" align="right" valign="top"><a id="a565f9fc27fac6eb35a3a701be4c291fd"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a565f9fc27fac6eb35a3a701be4c291fd">Overlap</a><code> [get, set]</code></td></tr>
@@ -891,6 +886,31 @@ otherwise, use LPVPatMatchMixed. </li>
 </table>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a8698837361cab3af9df6444df07cb5c9" title="The combination weight in percentage of the evaluation score based on the similarity of the matching ...">GrayValueWeight</a> </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>2.16.0 </dd></dl>
+
+</div>
+</div>
+<a id="ae33d61cde357b47b356c490d07347416"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae33d61cde357b47b356c490d07347416">&#9670;&nbsp;</a></span>NoiseThreshold</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int NoiseThreshold</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The contrast threshold to avoid matching on noisy pixels, in range 0 ~ 100. </p>
+<p>By default, it's set to 0, which is a very low threshold trained based on magnitude distribution of template image, equivalent to 10 ~ 15 grayscale difference for an 8bit image. </p><dl class="section since"><dt>Since</dt><dd>2.16.0 </dd></dl>
 
 </div>
 </div>

@@ -36,10 +36,6 @@
   <td id="projectlogo" style="padding-left: 1em; text-align: center; vertical-align: middle;"><a href="index.html"><img alt="Logo" src="lpv_logo.png"/></a></td>
   <td id="projectalign" style="padding-left: 0.5em; vertical-align: bottom; padding-bottom: 5px;">
    <div id="projectbrief">Leaper Vision Toolkit</div>
-   <div id="projectbrief" style="margin-top: 3px;">
-    <a id="cn_btn" style="cursor: pointer; color: var(--primary-color);">中文</a> / <a id="en_btn" style="cursor: pointer; color: var(--primary-color);">English</a>
-    <span id="projectnumber">2.x</span>
-    </div>
   </td>
  </tr>
  </tbody>
@@ -202,9 +198,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 <tr class="memdesc:a8f94a6c350cbb94dd399d9bab8eedbac"><td class="mdescLeft">&#160;</td><td class="mdescRight">匹配结果的最大缺失比例（百分比）。 取值范围在 0 ~ 100 之间，为百分数。默认设置为 50，表示最多可以接受 50% 的缺失比例。<br  />
 注意缺失比例检查是否启用由 <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#acbddee29bf0271b7d05f0a5ae603c449" title="缺失部分是否负面影响最终匹配结果。默认设置为 true，即计分时忽略缺失部分、且不启用缺失比例检查。">IgnoreMissing</a> 属性控制。当 <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#acbddee29bf0271b7d05f0a5ae603c449" title="缺失部分是否负面影响最终匹配结果。默认设置为 true，即计分时忽略缺失部分、且不启用缺失比例检查。">IgnoreMissing</a> 为 False 时，启用缺失比例检查。 <br /></td></tr>
 <tr class="separator:a8f94a6c350cbb94dd399d9bab8eedbac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae33d61cde357b47b356c490d07347416"><td class="memItemLeft" align="right" valign="top"><a id="ae33d61cde357b47b356c490d07347416"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#ae33d61cde357b47b356c490d07347416">NoiseThreshold</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:ae33d61cde357b47b356c490d07347416"><td class="mdescLeft">&#160;</td><td class="mdescRight">匹配时使用的对比度阈值，用于避免噪声像素参与匹配。取值范围为 0 ~ 100. 默认设置为 0，这是一个基于模板图像的梯度分布训练获得的很低的噪声阈值，对于 8 位图像而言相当于 10 ~ 15 的灰阶差。 <br /></td></tr>
+<tr class="memitem:ae33d61cde357b47b356c490d07347416"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#ae33d61cde357b47b356c490d07347416">NoiseThreshold</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:ae33d61cde357b47b356c490d07347416"><td class="mdescLeft">&#160;</td><td class="mdescRight">匹配时使用的对比度阈值，用于避免噪声像素参与匹配。取值范围为 0 ~ 100.  <a href="interface_l_p_v_pat_lib_1_1_i_l_match.html#ae33d61cde357b47b356c490d07347416">更多...</a><br /></td></tr>
 <tr class="separator:ae33d61cde357b47b356c490d07347416"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a565f9fc27fac6eb35a3a701be4c291fd"><td class="memItemLeft" align="right" valign="top"><a id="a565f9fc27fac6eb35a3a701be4c291fd"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a565f9fc27fac6eb35a3a701be4c291fd">Overlap</a><code> [get, set]</code></td></tr>
@@ -888,6 +883,31 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 </table>
 <dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a8698837361cab3af9df6444df07cb5c9" title="融合匹配权重（百分数），用于合并基于形状相似性的匹配分数和基于灰度特征（NCC）的匹配分数。 默认设置为 0， 即灰度分数不参与匹配评价。最终匹配分数按照该公式计算:  .">GrayValueWeight</a> </dd></dl>
 <dl class="section since"><dt>自从</dt><dd>2.16.0 </dd></dl>
+
+</div>
+</div>
+<a id="ae33d61cde357b47b356c490d07347416"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae33d61cde357b47b356c490d07347416">&#9670;&nbsp;</a></span>NoiseThreshold</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int NoiseThreshold</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>匹配时使用的对比度阈值，用于避免噪声像素参与匹配。取值范围为 0 ~ 100. </p>
+<p>默认设置为 0，这是一个基于模板图像的梯度分布训练获得的很低的噪声阈值，对于 8 位图像而言相当于 10 ~ 15 的灰阶差。 </p><dl class="section since"><dt>自从</dt><dd>2.16.0 </dd></dl>
 
 </div>
 </div>
