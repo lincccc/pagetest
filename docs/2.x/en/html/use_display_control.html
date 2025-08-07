@@ -36,6 +36,10 @@
   <td id="projectlogo" style="padding-left: 1em; text-align: center; vertical-align: middle;"><a href="index.html"><img alt="Logo" src="lpv_logo.png"/></a></td>
   <td id="projectalign" style="padding-left: 0.5em; vertical-align: bottom; padding-bottom: 5px;">
    <div id="projectbrief">Leaper Vision Toolkit</div>
+   <div id="projectbrief" style="margin-top: 3px;">
+    <a id="cn_btn" style="cursor: pointer; color: var(--primary-color);">中文</a> / <a id="en_btn" style="cursor: pointer; color: var(--primary-color);">English</a>
+    <span id="projectnumber">2.x</span>
+    </div>
   </td>
  </tr>
  </tbody>
@@ -79,14 +83,14 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="toc"><h3>Table of Contents</h3>
-<ul><li class="level1"><a href="#autotoc_md38">Add LDisplay Control to Visual Studio Projects</a><ul><li class="level2"><a href="#autotoc_md39">Approach 1: Use Toolbox</a></li>
-<li class="level2"><a href="#autotoc_md40">Approach 2: Use Class Wizard (MFC)</a></li>
-<li class="level2"><a href="#autotoc_md41">Approach 3: Use #import directive (C++)</a></li>
-<li class="level2"><a href="#autotoc_md42">Approach 4: Add Reference (C#)</a></li>
+<ul><li class="level1"><a href="#autotoc_md40">Add LDisplay Control to Visual Studio Projects</a><ul><li class="level2"><a href="#autotoc_md41">Approach 1: Use Toolbox</a></li>
+<li class="level2"><a href="#autotoc_md42">Approach 2: Use Class Wizard (MFC)</a></li>
+<li class="level2"><a href="#autotoc_md43">Approach 3: Use #import directive (C++)</a></li>
+<li class="level2"><a href="#autotoc_md44">Approach 4: Add Reference (C#)</a></li>
 </ul>
 </li>
-<li class="level1"><a href="#autotoc_md43">Create Display Control Programmatically</a><ul><li class="level2"><a href="#autotoc_md44">Example Code for an Application with UI</a></li>
-<li class="level2"><a href="#autotoc_md45">Example Code for a Console Application</a></li>
+<li class="level1"><a href="#autotoc_md45">Create Display Control Programmatically</a><ul><li class="level2"><a href="#autotoc_md46">Example Code for an Application with UI</a></li>
+<li class="level2"><a href="#autotoc_md47">Example Code for a Console Application</a></li>
 </ul>
 </li>
 </ul>
@@ -106,11 +110,11 @@ $(function() {
 </ul>
 <p><em>Alternatively, you can use the <a class="el" href="use_draw_functions.html">Draw Functions</a> of individual LPV classes.</em></p>
 <p><img src="t03_07_displayctrl.png" alt="" class="inline" title="LDisplay Control"/></p>
-<h1><a class="anchor" id="autotoc_md38"></a>
+<h1><a class="anchor" id="autotoc_md40"></a>
 Add LDisplay Control to Visual Studio Projects</h1>
 <p>Module: <b>lpvDisplay.dll</b></p>
 <p>*NOTE: Please make sure your LPV libraries are registered and licensed.**</p>
-<h2><a class="anchor" id="autotoc_md39"></a>
+<h2><a class="anchor" id="autotoc_md41"></a>
 Approach 1: Use Toolbox</h2>
 <p><b>Step 1</b> - In the Resource View of your application, right-click anywhere in the Toolbox window, and then select <b>Choose Items</b>.</p>
 <p><img src="t03_01_rmc_choose_items.png" alt="" class="inline" title="T03 01 Rmc Choose Items"/></p>
@@ -120,7 +124,7 @@ Approach 1: Use Toolbox</h2>
 <p><b>Step 3 (B)</b> - Alternatively, you can also add tools by navigating to the <b>lpvDisplay.dll</b> location.</p>
 <p><b>Step 4</b> - Once the controls are added, you can drag the control to the designer from the Visual Studio Toolbox and start using it. The assembly reference will automatically be added in the reference manager.</p>
 <p><img src="t03_03_display_control_in_design.png" alt="" class="inline" title="T03 03 Display Control In Design"/></p>
-<h2><a class="anchor" id="autotoc_md40"></a>
+<h2><a class="anchor" id="autotoc_md42"></a>
 Approach 2: Use Class Wizard (MFC)</h2>
 <p><b>Step 1</b> - In the Solution Explorer of your application, right-click your project, and then select <b>Class Wizard</b>.</p>
 <p><img src="t03_04_rmc_class_wizard.png" alt="" class="inline" title="T03 04 Rmc Class Wizard"/></p>
@@ -132,7 +136,7 @@ Approach 2: Use Class Wizard (MFC)</h2>
 <p><b>Step 5</b> - Click <b>Finish</b> then <b>OK</b>. CLDisplay.h and CLDisplay.cpp file is generated and added to your project.</p>
 <p><b>Step 6</b> - You can now use the display control in your application. See more detailed usage in <b>demo/mfcdemo/MFCDisplay</b>.</p>
 <p>Alternatively, you can also use the out-of-box wrapper class under demo/mfcdemo/Wrappers, by including <b>LPVDisplay.h</b> and <b>CLDisplay.cpp</b> to your project.</p>
-<h2><a class="anchor" id="autotoc_md41"></a>
+<h2><a class="anchor" id="autotoc_md43"></a>
 Approach 3: Use #import directive (C++)</h2>
 <p>The preprocessor directive is used to incorporate information from a type library. For more detailed information, please refer to <a href="https://docs.microsoft.com/en-us/cpp/preprocessor/hash-import-directive-cpp">https://docs.microsoft.com/en-us/cpp/preprocessor/hash-import-directive-cpp</a> .</p>
 <p>Add the following lines:</p>
@@ -144,16 +148,16 @@ Approach 3: Use #import directive (C++)</h2>
 </div><!-- fragment --><p>-or-</p>
 <div class="fragment"><div class="line"><span class="comment">// use the progid of the LDisplay class</span></div>
 <div class="line"><span class="preprocessor">#import &quot;progid:LPV.LDisplay&quot;</span></div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md42"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md44"></a>
 Approach 4: Add Reference (C#)</h2>
 <p>You could add the LDisplay library to the C# project as all other $projectname libraries:</p><ol type="1">
 <li>RMC your C# project, click "Add Reference"</li>
 <li>Under COM -&gt; Type Libraries panel, search and find <a class="el" href="namespace_l_p_v_display_lib.html" title="LPV Display Library, provide ui controls for display images, regions, geometric primitives and other ...">LPVDisplayLib</a>, then click OK to add reference (and Interop) to them in your project.</li>
 <li>In your code, add the line <code>using <a class="el" href="namespace_l_p_v_display_lib.html" title="LPV Display Library, provide ui controls for display images, regions, geometric primitives and other ...">LPVDisplayLib</a>;</code>.</li>
 </ol>
-<h1><a class="anchor" id="autotoc_md43"></a>
+<h1><a class="anchor" id="autotoc_md45"></a>
 Create Display Control Programmatically</h1>
-<h2><a class="anchor" id="autotoc_md44"></a>
+<h2><a class="anchor" id="autotoc_md46"></a>
 Example Code for an Application with UI</h2>
  <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'> <div class="fragment"><div class="line"><span class="keywordtype">void</span> QtDisplay::OnBnClickedBtnDisplayDlg()</div>
 <div class="line">{</div>
@@ -225,7 +229,7 @@ Example Code for an Application with UI</h2>
 <div class="line">    <span class="comment">// show it</span></div>
 <div class="line">    displayDlg.DoModal();</div>
 <div class="line">}</div>
-</div><!-- fragment --> </div> <h2><a class="anchor" id="autotoc_md45"></a>
+</div><!-- fragment --> </div> <h2><a class="anchor" id="autotoc_md47"></a>
 Example Code for a Console Application</h2>
  <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">ILImagePtr resultImg = LImage::Create();</div>
 <div class="line"><span class="comment">// show result in the display control, close the window to continue</span></div>

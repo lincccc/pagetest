@@ -36,6 +36,10 @@
   <td id="projectlogo" style="padding-left: 1em; text-align: center; vertical-align: middle;"><a href="index.html"><img alt="Logo" src="lpv_logo.png"/></a></td>
   <td id="projectalign" style="padding-left: 0.5em; vertical-align: bottom; padding-bottom: 5px;">
    <div id="projectbrief">Leaper Vision Toolkit</div>
+   <div id="projectbrief" style="margin-top: 3px;">
+    <a id="cn_btn" style="cursor: pointer; color: var(--primary-color);">中文</a> / <a id="en_btn" style="cursor: pointer; color: var(--primary-color);">English</a>
+    <span id="projectnumber">2.x</span>
+    </div>
   </td>
  </tr>
  </tbody>
@@ -82,15 +86,15 @@ $(function() {
 <p>To compile and run the DEMO code snippets, you should firstly create a Visual Studio project, then add or copy the code snippets file to the project. You may also modify some in the code like the image path to a true accessible path. Then, you may compile and run the project as usual. The algorithms' results are displayed via LDisplay control in the code snippets.</p>
 <p><em>NOTE: The platform of DEMOs should be exactly the same as the LPV dlls you installed and registered.</em><br  />
  <em>NOTE: Please make sure the LPV dlls are registered and licensed before running the DEMOs.</em></p>
-<h1><a class="anchor" id="autotoc_md46"></a>
+<h1><a class="anchor" id="autotoc_md48"></a>
 Create a New Visual Studio Project</h1>
-<h2><a class="anchor" id="autotoc_md47"></a>
+<h2><a class="anchor" id="autotoc_md49"></a>
 Step 1 - New a Console App Project</h2>
  <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><p>Open Visual Studio, click <b>File -&gt; New -&gt; Project</b> in the menu, create the new <b>Console App</b> project as the following.</p>
 <p><img src="t04_new_console_app_proj.png" alt="" class="inline" title="T04 New Console App Proj"/></p>
  </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><p>Open Visual Studio, click <b>File -&gt; New -&gt; Project</b>, create the <b>Console App(.NET Framework)</b> project as the following.</p>
 <p><img src="t04_new_console_app_proj_csharp.png" alt="" class="inline" title="T04 New Console App Proj Csharp"/></p>
- </div> <h2><a class="anchor" id="autotoc_md48"></a>
+ </div> <h2><a class="anchor" id="autotoc_md50"></a>
 Step 2 - Add the code snippets to the project</h2>
  <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><p>Remove the auto-generated .cpp file in the new project, right click the project and select <b>Add -&gt; Existing Item</b>, browse to the code snippets file and add it to the project.</p>
 <p>Alternatively, you may copy and paste the content of the code snippets to the auto-generated .cpp file in the new project.</p>
@@ -101,7 +105,7 @@ Step 2 - Add the code snippets to the project</h2>
 <li>RMC your C# project, click "Add Reference".</li>
 <li>Under COM -&gt; Type Libraries panel, search and find <a class="el" href="namespace_l_p_v_core_lib.html" title="LPV Core Library, provide basic functionalities.">LPVCoreLib</a> (must-have) and other LPVXXXLibs according to your application, then click OK to add reference (and Interop) to them in your project.</li>
 </ol>
- </div> <h2><a class="anchor" id="autotoc_md49"></a>
+ </div> <h2><a class="anchor" id="autotoc_md51"></a>
 Step 3 - Modify the File Paths</h2>
 <p>Modify the file paths in the code to be accessible, for example:</p>
  <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'> <div class="fragment"><div class="line">    <span class="comment">// load some images, add them to list</span></div>

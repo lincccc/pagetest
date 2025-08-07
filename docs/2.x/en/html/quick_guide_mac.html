@@ -36,6 +36,10 @@
   <td id="projectlogo" style="padding-left: 1em; text-align: center; vertical-align: middle;"><a href="index.html"><img alt="Logo" src="lpv_logo.png"/></a></td>
   <td id="projectalign" style="padding-left: 0.5em; vertical-align: bottom; padding-bottom: 5px;">
    <div id="projectbrief">Leaper Vision Toolkit</div>
+   <div id="projectbrief" style="margin-top: 3px;">
+    <a id="cn_btn" style="cursor: pointer; color: var(--primary-color);">中文</a> / <a id="en_btn" style="cursor: pointer; color: var(--primary-color);">English</a>
+    <span id="projectnumber">2.x</span>
+    </div>
   </td>
  </tr>
  </tbody>
@@ -79,56 +83,65 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="toc"><h3>Table of Contents</h3>
-<ul><li class="level1"><a href="#autotoc_md14">Requirements</a></li>
-<li class="level1"><a href="#autotoc_md15">Install</a><ul><ul><li class="level3"><a href="#autotoc_md16">Install x86_64 Package</a></li>
-<li class="level3"><a href="#autotoc_md17">Install arm64 Package</a></li>
+<ul><li class="level1"><a href="#autotoc_md15">Requirements</a></li>
+<li class="level1"><a href="#autotoc_md16">Install</a><ul><ul><li class="level3"><a href="#autotoc_md17">Install x86_64 Package</a></li>
+<li class="level3"><a href="#autotoc_md18">Install arm64 Package</a></li>
 </ul>
 </ul>
 </li>
-<li class="level1"><a href="#autotoc_md18">Licensing</a><ul><ul><li class="level3"><a href="#autotoc_md19">Using License File</a></li>
+<li class="level1"><a href="#autotoc_md19">Licensing</a><ul><ul><li class="level3"><a href="#autotoc_md20">Using Dongle</a></li>
+<li class="level3"><a href="#autotoc_md21">Using License File</a></li>
 </ul>
 </ul>
 </li>
-<li class="level1"><a href="#autotoc_md20">Integration</a><ul><ul><li class="level3"><a href="#autotoc_md21">Integrated with LPV</a></li>
-<li class="level3"><a href="#autotoc_md22">Add LPV Libraries to XCode Projects</a></li>
-<li class="level3"><a href="#autotoc_md23">Add LPV Libraries to CMake Projects</a></li>
-<li class="level3"><a href="#autotoc_md24">Add LPV Libraries to Qt Projects</a></li>
+<li class="level1"><a href="#autotoc_md22">Integration</a><ul><ul><li class="level3"><a href="#autotoc_md23">Integrated with LPV</a></li>
+<li class="level3"><a href="#autotoc_md24">Add LPV Libraries to XCode Projects</a></li>
+<li class="level3"><a href="#autotoc_md25">Add LPV Libraries to CMake Projects</a></li>
+<li class="level3"><a href="#autotoc_md26">Add LPV Libraries to Qt Projects</a></li>
 </ul>
 </ul>
 </li>
 </ul>
 </div>
 <div class="textblock"><p><a class="anchor" id="md_Z__stonewall_doc_en_t01_quick_guide_mac"></a></p>
-<h1><a class="anchor" id="autotoc_md14"></a>
+<h1><a class="anchor" id="autotoc_md15"></a>
 Requirements</h1>
 <p>LPV runs on MacOS 10 or later, either Intel or Apple M-seres processors. For more details, see <a class="el" href="sys_requirements.html">Supported Platforms and Minimum System Requirements</a> page.</p>
-<h1><a class="anchor" id="autotoc_md15"></a>
+<h1><a class="anchor" id="autotoc_md16"></a>
 Install</h1>
 <p>Download then extract the <b>lpv_sdk_x.x.x.x_linux_arch.tar.gz</b> file to any directory.</p>
-<h3><a class="anchor" id="autotoc_md16"></a>
+<h3><a class="anchor" id="autotoc_md17"></a>
 Install x86_64 Package</h3>
 <p><code>mkdir lpv &amp; tar -xf lpv_sdk_x.x.x.x_linux_x86_64.tar.gz -C lpv</code></p>
-<h3><a class="anchor" id="autotoc_md17"></a>
+<h3><a class="anchor" id="autotoc_md18"></a>
 Install arm64 Package</h3>
 <p><code>mkdir lpv &amp; tar -xf lpv_sdk_x.x.x.x_linux_arm64.tar.gz -C lpv</code></p>
-<h1><a class="anchor" id="autotoc_md18"></a>
+<h1><a class="anchor" id="autotoc_md19"></a>
 Licensing</h1>
-<h3><a class="anchor" id="autotoc_md19"></a>
+<h3><a class="anchor" id="autotoc_md20"></a>
+Using Dongle</h3>
+<ol type="1">
+<li>For Sense dongle, download then install the driver software from the <a href="https://lm.virbox.com/tools.html">official site</a> or our download link <a href="http://fileserver.hzleaper.com:8086/f/dd33a1f303094e6cb561/">here</a>.</li>
+<li>Plug in the dongle of LPV. Make sure the key lights up.</li>
+<li>Use command <code>sudo launchctl list | grep sense</code> to check if senseshield service is started.</li>
+<li>Use command <code>ssclt -l</code> to list all IDs in dongle.</li>
+</ol>
+<h3><a class="anchor" id="autotoc_md21"></a>
 Using License File</h3>
 <ol type="1">
 <li>Run <b>lpvKeyTool</b> under LPV <b>bin</b> folder. It generates a <b>lpv.key</b> file in the current folder.</li>
 <li>Send the generated lpv.key file to us or your LPV SDK Tech Support. We will send you back a <b>.lic</b> license file.</li>
 <li>You may manually place the license file into any of the following folder:<ul>
 <li>LPV <b>lib</b> folder</li>
-<li>~/Library/Application Support/LPV/</li>
+<li><b>~/Library/Application Support/LPV/</b> folder</li>
 </ul>
 </li>
 </ol>
 <p><br  />
  </p><hr  />
-<h1><a class="anchor" id="autotoc_md20"></a>
+<h1><a class="anchor" id="autotoc_md22"></a>
 Integration</h1>
-<h3><a class="anchor" id="autotoc_md21"></a>
+<h3><a class="anchor" id="autotoc_md23"></a>
 Integrated with LPV</h3>
 <p>On MacOS, LPV interfaces are exported in C symbols then wrapped into C++ classes which is much more convenient for use.</p>
 <p>In your C++ code, add <code>#include "LPVXXX.h"</code> to include the required LPV modules, then create LPV instances via static <code>LClass::Create()</code> functions.<br  />
@@ -157,7 +170,7 @@ The following code show a short example: </p><div class="fragment"><div class="l
 <div class="ttc" id="anamespace_l_p_v_pat_lib_html"><div class="ttname"><a href="namespace_l_p_v_pat_lib.html">LPVPatLib</a></div><div class="ttdoc">LPV Pattern Library, provides functionality for pattern matching.</div><div class="ttdef"><b>Definition:</b> LPVPat.idl:80</div></div>
 </div><!-- fragment --><p><br  />
 </p>
-<h3><a class="anchor" id="autotoc_md22"></a>
+<h3><a class="anchor" id="autotoc_md24"></a>
 Add LPV Libraries to XCode Projects</h3>
 <ol type="1">
 <li>Open project tab</li>
@@ -172,7 +185,7 @@ Add LPV Libraries to XCode Projects</h3>
 </ol>
 <p><br  />
 </p>
-<h3><a class="anchor" id="autotoc_md23"></a>
+<h3><a class="anchor" id="autotoc_md25"></a>
 Add LPV Libraries to CMake Projects</h3>
 <p>Edit CMakeList.txt, add include path and link libraries. </p><div class="fragment"><div class="line"><span class="preprocessor"># set C++ starndard to at least cpp11</span></div>
 <div class="line">set(CMAKE_CXX_STANDARD 11)</div>
@@ -197,7 +210,7 @@ Add LPV Libraries to CMake Projects</h3>
 <div class="line">link_lpv_lib(lpvPat)</div>
 </div><!-- fragment --><p><br  />
 </p>
-<h3><a class="anchor" id="autotoc_md24"></a>
+<h3><a class="anchor" id="autotoc_md26"></a>
 Add LPV Libraries to Qt Projects</h3>
 <p>If you are using Qt Creator,</p>
 <ol type="1">

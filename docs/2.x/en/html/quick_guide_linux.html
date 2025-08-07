@@ -36,6 +36,10 @@
   <td id="projectlogo" style="padding-left: 1em; text-align: center; vertical-align: middle;"><a href="index.html"><img alt="Logo" src="lpv_logo.png"/></a></td>
   <td id="projectalign" style="padding-left: 0.5em; vertical-align: bottom; padding-bottom: 5px;">
    <div id="projectbrief">Leaper Vision Toolkit</div>
+   <div id="projectbrief" style="margin-top: 3px;">
+    <a id="cn_btn" style="cursor: pointer; color: var(--primary-color);">中文</a> / <a id="en_btn" style="cursor: pointer; color: var(--primary-color);">English</a>
+    <span id="projectnumber">2.x</span>
+    </div>
   </td>
  </tr>
  </tbody>
@@ -85,13 +89,14 @@ $(function() {
 </ul>
 </ul>
 </li>
-<li class="level1"><a href="#autotoc_md8">Licensing</a><ul><ul><li class="level3"><a href="#autotoc_md9">Using License File</a></li>
+<li class="level1"><a href="#autotoc_md8">Licensing</a><ul><ul><li class="level3"><a href="#autotoc_md9">Using Dongle</a></li>
+<li class="level3"><a href="#autotoc_md10">Using License File</a></li>
 </ul>
 </ul>
 </li>
-<li class="level1"><a href="#autotoc_md10">Integration</a><ul><ul><li class="level3"><a href="#autotoc_md11">Integrated with LPV</a></li>
-<li class="level3"><a href="#autotoc_md12">Add LPV Libraries to CMake Projects</a></li>
-<li class="level3"><a href="#autotoc_md13">Add LPV Libraries to Qt Projects</a></li>
+<li class="level1"><a href="#autotoc_md11">Integration</a><ul><ul><li class="level3"><a href="#autotoc_md12">Integrated with LPV</a></li>
+<li class="level3"><a href="#autotoc_md13">Add LPV Libraries to CMake Projects</a></li>
+<li class="level3"><a href="#autotoc_md14">Add LPV Libraries to Qt Projects</a></li>
 </ul>
 </ul>
 </li>
@@ -113,21 +118,29 @@ Install arm64 Package</h3>
 <h1><a class="anchor" id="autotoc_md8"></a>
 Licensing</h1>
 <h3><a class="anchor" id="autotoc_md9"></a>
+Using Dongle</h3>
+<ol type="1">
+<li>For Sense dongle, download then install the driver software from the <a href="https://lm.virbox.com/tools.html">official site</a> or our download link <a href="http://fileserver.hzleaper.com:8086/d/6d40ac6add364aa0b206/">here</a>.</li>
+<li>Plug in the dongle of LPV. Make sure the key lights up.</li>
+<li>Use command <code>service senseshield status</code> or <code>systemctl status senseshield</code> to check if senseshield service is started.</li>
+<li>Use command <code>ssclt -l</code> to list all IDs in dongle.</li>
+</ol>
+<h3><a class="anchor" id="autotoc_md10"></a>
 Using License File</h3>
 <ol type="1">
 <li>Run <b>lpvKeyTool</b> under LPV <b>bin</b> folder. It generates a <b>lpv.key</b> file on your desktop.</li>
 <li>Send the generated lpv.key file to us or your LPV SDK Tech Support. We will send you back a <b>.lic</b> license file.</li>
 <li>You may manually place the license file into any of the following folder:<ul>
 <li>LPV <b>lib</b> folder</li>
-<li>/home/LPV/</li>
+<li><b>/home/LPV/</b> folder</li>
 </ul>
 </li>
 </ol>
 <p><br  />
  </p><hr  />
-<h1><a class="anchor" id="autotoc_md10"></a>
+<h1><a class="anchor" id="autotoc_md11"></a>
 Integration</h1>
-<h3><a class="anchor" id="autotoc_md11"></a>
+<h3><a class="anchor" id="autotoc_md12"></a>
 Integrated with LPV</h3>
 <p>On Linux, LPV interfaces are exported in C symbols then wrapped into C++ classes which is much more convenient for use.</p>
 <p>In your C++ code, add <code>#include "LPVXXX.h"</code> to include the required LPV modules, then create LPV instances via static <code>LClass::Create()</code> functions.<br  />
@@ -156,7 +169,7 @@ The following code show a short example: </p><div class="fragment"><div class="l
 <div class="ttc" id="anamespace_l_p_v_pat_lib_html"><div class="ttname"><a href="namespace_l_p_v_pat_lib.html">LPVPatLib</a></div><div class="ttdoc">LPV Pattern Library, provides functionality for pattern matching.</div><div class="ttdef"><b>Definition:</b> LPVPat.idl:80</div></div>
 </div><!-- fragment --><p><br  />
 </p>
-<h3><a class="anchor" id="autotoc_md12"></a>
+<h3><a class="anchor" id="autotoc_md13"></a>
 Add LPV Libraries to CMake Projects</h3>
 <p>Edit CMakeList.txt, add include path and link libraries. </p><div class="fragment"><div class="line"><span class="preprocessor"># set C++ starndard to at least cpp11</span></div>
 <div class="line">set(CMAKE_CXX_STANDARD 11)</div>
@@ -181,7 +194,7 @@ Add LPV Libraries to CMake Projects</h3>
 <div class="line">link_lpv_lib(lpvPat)</div>
 </div><!-- fragment --><p><br  />
 </p>
-<h3><a class="anchor" id="autotoc_md13"></a>
+<h3><a class="anchor" id="autotoc_md14"></a>
 Add LPV Libraries to Qt Projects</h3>
 <p>If you are using Qt Creator,</p>
 <ol type="1">

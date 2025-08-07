@@ -36,6 +36,10 @@
   <td id="projectlogo" style="padding-left: 1em; text-align: center; vertical-align: middle;"><a href="index.html"><img alt="Logo" src="lpv_logo.png"/></a></td>
   <td id="projectalign" style="padding-left: 0.5em; vertical-align: bottom; padding-bottom: 5px;">
    <div id="projectbrief">Leaper Vision Toolkit</div>
+   <div id="projectbrief" style="margin-top: 3px;">
+    <a id="cn_btn" style="cursor: pointer; color: var(--primary-color);">中文</a> / <a id="en_btn" style="cursor: pointer; color: var(--primary-color);">English</a>
+    <span id="projectnumber">2.x</span>
+    </div>
   </td>
  </tr>
  </tbody>
@@ -102,9 +106,9 @@ $(function() {
   </dd>
 </dl>
 <p>每个绘制函数可能有其他额外的参数，用于控制绘制内容和行为。</p>
-<h1><a class="anchor" id="autotoc_md50"></a>
+<h1><a class="anchor" id="autotoc_md52"></a>
 示例代码</h1>
-<h2><a class="anchor" id="autotoc_md51"></a>
+<h2><a class="anchor" id="autotoc_md53"></a>
 在 Bitmap 上绘制</h2>
  <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'> <div class="fragment"><div class="line"><span class="keywordtype">void</span> DrawImageAndResultsOnStatic(QLabel* picItem, ILImagePtr img, ILRectRegionPtr roi, ILMatchResultsPtr matchResults)</div>
 <div class="line">{</div>
@@ -202,7 +206,7 @@ $(function() {
 <div class="line">    DeleteObject(hdc);</div>
 <div class="line">    DeleteObject(bitmap);</div>
 <div class="line">}</div>
-</div><!-- fragment -->  </div> <h2><a class="anchor" id="autotoc_md52"></a>
+</div><!-- fragment -->  </div> <h2><a class="anchor" id="autotoc_md54"></a>
 在 OnPaint 方法中绘制</h2>
  <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'> <div class="fragment"><div class="line">QtDlg::QtDlg(QWidget* parent = <span class="keyword">nullptr</span>) : QDialog(parent)</div>
 <div class="line">{</div>
