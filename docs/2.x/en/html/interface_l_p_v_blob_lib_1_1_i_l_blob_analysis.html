@@ -157,6 +157,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac3e8a634acc3131a25ef9c8cf9de9610"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17a890d2df11a4c0e6bdfeec02d58e1e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a17a890d2df11a4c0e6bdfeec02d58e1e">SetRangeThresholdAdaptLocal</a> (<a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0b">LPVPolarity</a> blobPolarity, int blockSize, int bias)</td></tr>
 <tr class="separator:a17a890d2df11a4c0e6bdfeec02d58e1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c511e66205db9ad68cb9dcef3eb31ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a4c511e66205db9ad68cb9dcef3eb31ba">SetRangeThresholdAdaptLocalMean</a> (<a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0b">LPVPolarity</a> blobPolarity, int blockSize, int bias)</td></tr>
+<tr class="separator:a4c511e66205db9ad68cb9dcef3eb31ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2263709a75c206b40d9f02141a98a8b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a2263709a75c206b40d9f02141a98a8b2">SetRangeThresholdAdaptLocalMedian</a> (<a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0b">LPVPolarity</a> blobPolarity, int blockSize, int bias)</td></tr>
+<tr class="separator:a2263709a75c206b40d9f02141a98a8b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef671f7367adaf9fd523e108b1202523"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#aef671f7367adaf9fd523e108b1202523">SetSoftThresholdRange</a> (int softRange)</td></tr>
 <tr class="separator:aef671f7367adaf9fd523e108b1202523"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_interface_l_p_v_core_lib_1_1_i_l_object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_interface_l_p_v_core_lib_1_1_i_l_object')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_object.html">ILObject</a></td></tr>
@@ -235,6 +239,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#ab215c2503d86551a9cf1588da6b15882">MergeWidthUB</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:ab215c2503d86551a9cf1588da6b15882"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum acceptable width (length of longer axis) for the merged blobs. <br /></td></tr>
 <tr class="separator:ab215c2503d86551a9cf1588da6b15882"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae33d61cde357b47b356c490d07347416"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#ae33d61cde357b47b356c490d07347416">NoiseThreshold</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:ae33d61cde357b47b356c490d07347416"><td class="mdescLeft">&#160;</td><td class="mdescRight">The minimum acceptable area for blobs, by default, it's 3, used to filter noisy small blobs. You may set this value to 0 for inspection of very small components. The behavoir is the same as define an area filter.  <a href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#ae33d61cde357b47b356c490d07347416">More...</a><br /></td></tr>
+<tr class="separator:ae33d61cde357b47b356c490d07347416"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a848fb8adacf95a0394b3656bb53233b8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50">LPVBlobFeatures</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a848fb8adacf95a0394b3656bb53233b8">SortBy</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:a848fb8adacf95a0394b3656bb53233b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The method used to sort all blob candidates, the top ones are reported as final results.  <a href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a848fb8adacf95a0394b3656bb53233b8">More...</a><br /></td></tr>
 <tr class="separator:a848fb8adacf95a0394b3656bb53233b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1142,7 +1149,43 @@ It indicates this is a color-mode blob analysis tool, all the previous grayscale
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Use local-adaptive threshold value. The optimal threshold value is calculated base on a \( blockSize \times blockSize \) region around individual pixel, then revised by the given bias value. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Use local-adaptive threshold value.<br  />
+This is a legacy function and <b>deprecated</b> since 2.18.0, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a4c511e66205db9ad68cb9dcef3eb31ba">SetRangeThresholdAdaptLocalMean()</a> has the same functionality as it. It's recommended to use <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a4c511e66205db9ad68cb9dcef3eb31ba">SetRangeThresholdAdaptLocalMean()</a> or <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a2263709a75c206b40d9f02141a98a8b2">SetRangeThresholdAdaptLocalMedian()</a> instead. </p>
+
+</div>
+</div>
+<a id="a4c511e66205db9ad68cb9dcef3eb31ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c511e66205db9ad68cb9dcef3eb31ba">&#9670;&nbsp;</a></span>SetRangeThresholdAdaptLocalMean()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SetRangeThresholdAdaptLocalMean </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0b">LPVPolarity</a>&#160;</td>
+          <td class="paramname"><em>blobPolarity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>blockSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>bias</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Use local-adaptive threshold value. The optimal threshold value is calculated base on the <b>mean</b> value of \( blockSize \times blockSize \) region around individual pixel, then revised by the given <code>bias</code> value. Now, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a156c414aad3afe8be70b8192a41afd1c" title="The thresholding method used in segmentation.">ThresholdType</a> is LPVThresholdAdaptLocalMean. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">blobPolarity</td><td>The <em>object polarity</em> of the blob. <a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0baffd2c678a5a2ea661de262d51223adf3">LPVBlackOnWhite </a> indicates black pixels with smaller value than global threshold are the blobs, <a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0bac595c6b549ecbabb1dbb431e374b02ad">LPVWhiteOnBlack </a> is exactly the opposite. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">blockSize</td><td>Size of a pixel's local region, should be an odd number, say, 3, 5, 7, etc. Set it to 0 for auto-generate block size based in the input image size. </td></tr>
@@ -1150,6 +1193,52 @@ It indicates this is a color-mode blob analysis tool, all the previous grayscale
   </table>
   </dd>
 </dl>
+<dl class="section since"><dt>Since</dt><dd>2.18.0 </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a2263709a75c206b40d9f02141a98a8b2">SetRangeThresholdAdaptLocalMedian()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a2263709a75c206b40d9f02141a98a8b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2263709a75c206b40d9f02141a98a8b2">&#9670;&nbsp;</a></span>SetRangeThresholdAdaptLocalMedian()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SetRangeThresholdAdaptLocalMedian </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0b">LPVPolarity</a>&#160;</td>
+          <td class="paramname"><em>blobPolarity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>blockSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>bias</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Use local-adaptive threshold value. The optimal threshold value is calculated base on the <b>median</b> value of \( blockSize \times blockSize \) region around individual pixel, then revised by the given bias value. Now, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a156c414aad3afe8be70b8192a41afd1c" title="The thresholding method used in segmentation.">ThresholdType</a> is LPVThresholdAdaptLocalMedian. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">blobPolarity</td><td>The <em>object polarity</em> of the blob. <a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0baffd2c678a5a2ea661de262d51223adf3">LPVBlackOnWhite </a> indicates black pixels with smaller value than global threshold are the blobs, <a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0bac595c6b549ecbabb1dbb431e374b02ad">LPVWhiteOnBlack </a> is exactly the opposite. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">blockSize</td><td>Size of a pixel's local region, should be an odd number, say, 3, 5, 7, etc. Set it to 0 for auto-generate block size based in the input image size. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bias</td><td>Revise value to optimal threshold value as \( t&#39; = t - bias \) for <a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0baffd2c678a5a2ea661de262d51223adf3">LPVBlackOnWhite </a>, \( t&#39; = t + bias \) for <a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0bac595c6b549ecbabb1dbb431e374b02ad">LPVWhiteOnBlack </a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>2.18.0 </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a4c511e66205db9ad68cb9dcef3eb31ba">SetRangeThresholdAdaptLocalMean()</a> </dd></dl>
 
 </div>
 </div>
@@ -1201,7 +1290,7 @@ For example, if we define blob color range to be [100, 200], and soft thresholdi
 </div><div class="memdoc">
 
 <p>The blob's polarity defined for the global or local adaptive thresholding in segmentation. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#ac3e8a634acc3131a25ef9c8cf9de9610">SetRangeThresholdAdaptGlobal()</a>, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a17a890d2df11a4c0e6bdfeec02d58e1e">SetRangeThresholdAdaptLocal()</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#ac3e8a634acc3131a25ef9c8cf9de9610">SetRangeThresholdAdaptGlobal()</a>, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a4c511e66205db9ad68cb9dcef3eb31ba">SetRangeThresholdAdaptLocalMean()</a>, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a2263709a75c206b40d9f02141a98a8b2">SetRangeThresholdAdaptLocalMedian()</a> </dd></dl>
 
 </div>
 </div>
@@ -1276,7 +1365,7 @@ For example, if we define blob color range to be [100, 200], and soft thresholdi
 </div><div class="memdoc">
 
 <p>The revised value to generate a local adaptive threshold. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a17a890d2df11a4c0e6bdfeec02d58e1e">SetRangeThresholdAdaptLocal()</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a4c511e66205db9ad68cb9dcef3eb31ba">SetRangeThresholdAdaptLocalMean()</a>, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a2263709a75c206b40d9f02141a98a8b2">SetRangeThresholdAdaptLocalMedian()</a> </dd></dl>
 
 </div>
 </div>
@@ -1301,7 +1390,7 @@ For example, if we define blob color range to be [100, 200], and soft thresholdi
 </div><div class="memdoc">
 
 <p>The size of the local region used in local adaptive thresholding. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a17a890d2df11a4c0e6bdfeec02d58e1e">SetRangeThresholdAdaptLocal()</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a4c511e66205db9ad68cb9dcef3eb31ba">SetRangeThresholdAdaptLocalMean()</a>, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a2263709a75c206b40d9f02141a98a8b2">SetRangeThresholdAdaptLocalMedian()</a> </dd></dl>
 
 </div>
 </div>
@@ -1327,6 +1416,32 @@ For example, if we define blob color range to be [100, 200], and soft thresholdi
 
 <p>The maximum of blobs to find. If there are more than the setting counts of blobs in the detect region, sort the candidates then pick the tops. Set to 0 to find as much as possible. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a848fb8adacf95a0394b3656bb53233b8" title="The method used to sort all blob candidates, the top ones are reported as final results.">SortBy</a> </dd></dl>
+
+</div>
+</div>
+<a id="ae33d61cde357b47b356c490d07347416"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae33d61cde357b47b356c490d07347416">&#9670;&nbsp;</a></span>NoiseThreshold</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int NoiseThreshold</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The minimum acceptable area for blobs, by default, it's 3, used to filter noisy small blobs. You may set this value to 0 for inspection of very small components. The behavoir is the same as define an area filter. </p>
+<dl class="section since"><dt>Since</dt><dd>2.18.0 </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#abc583ffbdc7101ddf7147f95bd7b5e8d">AddBlobFilter()</a> </dd></dl>
 
 </div>
 </div>
@@ -1401,7 +1516,7 @@ For example, if we define blob color range to be [100, 200], and soft thresholdi
 </div><div class="memdoc">
 
 <p>The thresholding method used in segmentation. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a28b3e77770d7ddfde96e70dcd61847fb">AddBlobRange()</a>, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#aa7c4c4c30996f4c872b2cd6645e15d55">AddBlobRangeColor()</a>, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#ac3e8a634acc3131a25ef9c8cf9de9610">SetRangeThresholdAdaptGlobal()</a>, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a17a890d2df11a4c0e6bdfeec02d58e1e">SetRangeThresholdAdaptLocal()</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a28b3e77770d7ddfde96e70dcd61847fb">AddBlobRange()</a>, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#aa7c4c4c30996f4c872b2cd6645e15d55">AddBlobRangeColor()</a>, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#ac3e8a634acc3131a25ef9c8cf9de9610">SetRangeThresholdAdaptGlobal()</a>, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a4c511e66205db9ad68cb9dcef3eb31ba">SetRangeThresholdAdaptLocalMean()</a>, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a2263709a75c206b40d9f02141a98a8b2">SetRangeThresholdAdaptLocalMedian()</a> </dd></dl>
 
 </div>
 </div>

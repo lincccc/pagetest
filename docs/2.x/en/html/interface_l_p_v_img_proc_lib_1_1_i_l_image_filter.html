@@ -105,10 +105,10 @@ Inheritance diagram for ILImageFilter:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a47019e073bb55ca5a89c7d8304d68c9d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_filter.html#a47019e073bb55ca5a89c7d8304d68c9d">EdgePreserveDenoise</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *result, int speedupFactor, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *refImg)</td></tr>
-<tr class="separator:a47019e073bb55ca5a89c7d8304d68c9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af4f97cd7b9c41235318d9080749a9f23"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_filter.html#af4f97cd7b9c41235318d9080749a9f23">EdgePreserveTextureEnhance</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *result, int speedupFactor, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *refImg)</td></tr>
-<tr class="separator:af4f97cd7b9c41235318d9080749a9f23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab51ee3f1bcb5081dcccd6614b13d4b4c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_filter.html#ab51ee3f1bcb5081dcccd6614b13d4b4c">EdgePreserveDenoise</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *result, <a class="el" href="namespace_l_p_v_img_proc_lib.html#a8db27ffdbd9455cc96b3733e6391123a">LPVEdgePreserveFilter</a> filterMethod, int speedupFactor, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *refImg)</td></tr>
+<tr class="separator:ab51ee3f1bcb5081dcccd6614b13d4b4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fc730227c2bffbb5c42530eaf1881e1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_filter.html#a9fc730227c2bffbb5c42530eaf1881e1">EdgePreserveTextureEnhance</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *result, <a class="el" href="namespace_l_p_v_img_proc_lib.html#a8db27ffdbd9455cc96b3733e6391123a">LPVEdgePreserveFilter</a> filterMethod, int speedupFactor, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *refImg)</td></tr>
+<tr class="separator:a9fc730227c2bffbb5c42530eaf1881e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb83bb7ee4950042bfb2a6d17e139668"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_filter.html#abb83bb7ee4950042bfb2a6d17e139668">Equalize</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *result)</td></tr>
 <tr class="separator:abb83bb7ee4950042bfb2a6d17e139668"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7323d90a89ea3ec6583a3d7855306cb3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_filter.html#a7323d90a89ea3ec6583a3d7855306cb3">FillHole</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *mask, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *result)</td></tr>
@@ -188,8 +188,8 @@ To use this interface, you should create a <a class="el" href="class_l_p_v_img_p
 <div class="line">imgfilterOp-&gt;SetKernelSize(5, 5);</div>
 <div class="line">imgfilterOp-&gt;Gaussian(img, resultImg);</div>
 </div><!-- fragment --> </div>  </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a47019e073bb55ca5a89c7d8304d68c9d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a47019e073bb55ca5a89c7d8304d68c9d">&#9670;&nbsp;</a></span>EdgePreserveDenoise()</h2>
+<a id="ab51ee3f1bcb5081dcccd6614b13d4b4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab51ee3f1bcb5081dcccd6614b13d4b4c">&#9670;&nbsp;</a></span>EdgePreserveDenoise()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -209,6 +209,12 @@ To use this interface, you should create a <a class="el" href="class_l_p_v_img_p
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="namespace_l_p_v_img_proc_lib.html#a8db27ffdbd9455cc96b3733e6391123a">LPVEdgePreserveFilter</a>&#160;</td>
+          <td class="paramname"><em>filterMethod</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>speedupFactor</em>, </td>
         </tr>
@@ -225,21 +231,30 @@ To use this interface, you should create a <a class="el" href="class_l_p_v_img_p
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Smooth out image noise while retaining sharp edges. The smoothness of the denoising process is controlled by <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_filter.html#aea2dd0f9b1c014fe0ea65153a1b04a56" title="The sigma value for filter kernel.">KernelSigma</a> value with recommended value in 0.01 ~ 0.1. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Smooth out image noise while retaining sharp edges.<br  />
+The smoothness of the denoising process is controlled by <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_filter.html#aea2dd0f9b1c014fe0ea65153a1b04a56" title="The sigma value for filter kernel.">KernelSigma</a> value with recommended value in 0.01 ~ 0.1.<br  />
+The smoothness of preserved edges are controlled by <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_filter.html#a9a6dd07933f8c9e69545a3bacd064dff" title="The gain value for filter kernel.">KernelGain</a> value with recommended value in 0.1 ~ 2.<br  />
+</p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>The input image </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>Return result image </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">filterMethod</td><td>The method for edge-preserving filter </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">speedupFactor</td><td>To speed-up the algorithm, the suggested values are factors of the kernel's size or 1 (no speed-up). </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">refImg</td><td>Optional. The reference image provides additional edge information such as the approximate location and intensity of the edges that need to be preserved for the noise reduction process. It should have the same size as the input image. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">refImg</td><td>Optional, only works for LPVEPFFastGuided. The reference image provides additional edge information such as the approximate location and intensity of the edges that need to be preserved for the noise reduction process. It should have the same size as the input image. </td></tr>
   </table>
   </dd>
 </dl>
+<dl>
+<dt>Example</dt>
+<dd>EdgePreserveFilters.cpp/cs</dd>
+</dl>
 <dl class="section since"><dt>Since</dt><dd>2.7.0 </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_filter.html#a9fc730227c2bffbb5c42530eaf1881e1">EdgePreserveTextureEnhance()</a> </dd></dl>
 
 </div>
 </div>
-<a id="af4f97cd7b9c41235318d9080749a9f23"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af4f97cd7b9c41235318d9080749a9f23">&#9670;&nbsp;</a></span>EdgePreserveTextureEnhance()</h2>
+<a id="a9fc730227c2bffbb5c42530eaf1881e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fc730227c2bffbb5c42530eaf1881e1">&#9670;&nbsp;</a></span>EdgePreserveTextureEnhance()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -259,6 +274,12 @@ To use this interface, you should create a <a class="el" href="class_l_p_v_img_p
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="namespace_l_p_v_img_proc_lib.html#a8db27ffdbd9455cc96b3733e6391123a">LPVEdgePreserveFilter</a>&#160;</td>
+          <td class="paramname"><em>filterMethod</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>speedupFactor</em>, </td>
         </tr>
@@ -275,16 +296,21 @@ To use this interface, you should create a <a class="el" href="class_l_p_v_img_p
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Enhance the texture on image while retaining sharp edges. The smoothness of the enhancing process is controlled by <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_filter.html#aea2dd0f9b1c014fe0ea65153a1b04a56" title="The sigma value for filter kernel.">KernelSigma</a> value with recommended value in 0.01 ~ 0.1. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Enhance the texture on image while retaining sharp edges.<br  />
+The smoothness of the denoising process is controlled by <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_filter.html#aea2dd0f9b1c014fe0ea65153a1b04a56" title="The sigma value for filter kernel.">KernelSigma</a> value with recommended value in 0.01 ~ 0.1.<br  />
+The smoothness of preserved edges are controlled by <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_filter.html#a9a6dd07933f8c9e69545a3bacd064dff" title="The gain value for filter kernel.">KernelGain</a> value with recommended value in 0.1 ~ 2.<br  />
+</p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>The input image </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>Return result image </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">filterMethod</td><td>The method for edge-preserving filter </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">speedupFactor</td><td>To speed-up the algorithm, the suggested values are factors of the kernel's size or 1 (no speed-up). </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">refImg</td><td>Optional. The reference image provides additional edge information such as the approximate location and intensity of the edges that need to be preserved for the texture enhancing process. It should have the same size as the input image. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">refImg</td><td>Optional, only works for LPVEPFFastGuided. The reference image provides additional edge information such as the approximate location and intensity of the edges that need to be preserved for the texture enhancing process. It should have the same size as the input image. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section since"><dt>Since</dt><dd>2.7.0 </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_filter.html#ab51ee3f1bcb5081dcccd6614b13d4b4c">EdgePreserveDenoise()</a> </dd></dl>
 
 </div>
 </div>
@@ -736,7 +762,7 @@ To use this interface, you should create a <a class="el" href="class_l_p_v_img_p
     <tr><td class="paramdir">[in]</td><td class="paramname">kSigma</td><td>The sigma value is used to control the filter kernel's smoothness.<br  />
 For <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_filter.html#ad8a88ccde91d420b02aa23a57b9d50d9">HighPass()</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_filter.html#abb994cefb8c7b8b4efa93a75a7b3af3d">Gaussian()</a> and <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_filter.html#af39a1675a27719f601a3799c190bd6d0">Sharpen()</a> functions, if the sigma value is set to 0 then it's computed as \( 1/6 \) of the kernel size.<br  />
 If the kernel size is set to all zeros, then we'll compute a proper size from the sigma value, it's around \( 6 \times kSigma \) .<br  />
-For <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_filter.html#a47019e073bb55ca5a89c7d8304d68c9d">EdgePreserveDenoise()</a> and <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_filter.html#af4f97cd7b9c41235318d9080749a9f23">EdgePreserveTextureEnhance()</a>, set sigma value to 0 means no extra smoothing. </td></tr>
+For <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_filter.html#ab51ee3f1bcb5081dcccd6614b13d4b4c">EdgePreserveDenoise()</a> and <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_filter.html#a9fc730227c2bffbb5c42530eaf1881e1">EdgePreserveTextureEnhance()</a>, set sigma value to 0 means no extra smoothing. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">kGain</td><td>The gain value is used to for <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_filter.html#af39a1675a27719f601a3799c190bd6d0">Sharpen()</a> to controls the overall strength of the sharpening effect. </td></tr>
   </table>
   </dd>

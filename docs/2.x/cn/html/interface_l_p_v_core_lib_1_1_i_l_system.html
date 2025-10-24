@@ -131,6 +131,10 @@ Public 成员函数</h2></td></tr>
 <tr class="separator:aad5355c4ae5e54da1dd683f38ee77bc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab556fe7e6e867c71d1953b8e291d91b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_system.html#ab556fe7e6e867c71d1953b8e291d91b5">GetRGBFromColorRef</a> (COLORREF colorRef, int *red, int *green, int *blue)</td></tr>
 <tr class="separator:ab556fe7e6e867c71d1953b8e291d91b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e41abb7afcff750540091e10b1d4c99"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_l_string.html">LString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_system.html#a1e41abb7afcff750540091e10b1d4c99">GetVersion</a> ()</td></tr>
+<tr class="separator:a1e41abb7afcff750540091e10b1d4c99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a812434fe4710d6ce1b39ba0cae9eb6c0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_system.html#a812434fe4710d6ce1b39ba0cae9eb6c0">OptimizeOTM</a> (<a class="el" href="class_l_string.html">LString</a> saveDir, int maxImgDepth, int maxImgSize, int maxKSize)</td></tr>
+<tr class="separator:a812434fe4710d6ce1b39ba0cae9eb6c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37f8dbd171a65daf4dd3d86d4368361a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_system.html#a37f8dbd171a65daf4dd3d86d4368361a">RefreshDefaults</a> (<a class="el" href="class_l_string.html">LString</a> filename)</td></tr>
 <tr class="separator:a37f8dbd171a65daf4dd3d86d4368361a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1fb49fb74c8a9553e49dc91c6b6c788c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_system.html#a1fb49fb74c8a9553e49dc91c6b6c788c">SetDefault</a> (<a class="el" href="class_l_string.html">LString</a> settingName, <a class="el" href="class_l_string.html">LString</a> val)</td></tr>
@@ -282,6 +286,7 @@ Public 成员函数</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_system.html#a1e41abb7afcff750540091e10b1d4c99">GetVersion()</a> </dd></dl>
 
 </div>
 </div>
@@ -932,6 +937,92 @@ Public 成员函数</h2></td></tr>
 
 </div>
 </div>
+<a id="a1e41abb7afcff750540091e10b1d4c99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e41abb7afcff750540091e10b1d4c99">&#9670;&nbsp;</a></span>GetVersion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_l_string.html">LString</a> GetVersion </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>获取当前进程中正在运行的 LPV 的版本号，以 (.) 分割，如 "2.18.0.0" </p><dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_system.html#abe1b71ed02f499e949fdcd94b7ac1c79">CheckVersion()</a> </dd></dl>
+<dl class="section since"><dt>自从</dt><dd>2.18.0 </dd></dl>
+
+</div>
+</div>
+<a id="a812434fe4710d6ce1b39ba0cae9eb6c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a812434fe4710d6ce1b39ba0cae9eb6c0">&#9670;&nbsp;</a></span>OptimizeOTM()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> OptimizeOTM </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_l_string.html">LString</a>&#160;</td>
+          <td class="paramname"><em>saveDir</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>maxImgDepth</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>maxImgSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>maxKSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>优化算法内部用于自动并发的最佳并行策略模型（OTM，Optimal Threading Model）。<br  />
+LPV 的大部分常用算法都在接口内部有自动的多线程并发。<br  />
+从非常理想化的角度，加大并发数，总能通过提高 CPU 的利用率来尽快完成算法处理。 但是在实际系统中，受到内存竞争、计算单元竞争等多方影响，当并发数增加到一定程度后，反而会使得算法处理变慢。 更进一步，变慢的程度和发生时机，与图像的尺寸、位深以及算法参数，与 CPU 的主频、架构、缓存尺寸，与操作系统版本、内存尺寸等， 均有不同程度的相关性。这使得最优线程数无法用简单的算式来估计，它呈现出一种非线性的、不单调的、多维的复杂形态。<br  />
+因此，LPV 通过一个复杂的并行策略矩阵，记录这些常用算法在综合因素下的最佳并行策略。 在运行过程中，动态地基于算法涉及的图像尺寸、参数和既定优化策略等，自动选择合适的线程数量。<br  />
+对于常用和常见的 CPU 型号，我们预装了一些 OTM ，在 LPV 加载时，会自动按照 CPU 性能选择最匹配的策略表。<br  />
+对于性能敏感的应用，非常推荐在实际部署的机台上，生成最适配于该硬件的 OTM。步骤是：<br  />
+</p><ol type="1">
+<li><b>清理系统环境</b> 保证策略表生成过程中，不会有其他高算力要求的进程来抢占 CPU 资源，比如 Windows 更新、杀毒软件的扫盘行为等。这会很大程度上影响策略表的优化结果。</li>
+<li><b>调用优化接口</b> 在实际使用的应用程序中、或者编写一个独立的应用程序，调用 <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_system.html#a812434fe4710d6ce1b39ba0cae9eb6c0">OptimizeOTM()</a> 接口。 这个接口可能执行约几个到十几个小时的时间，涉及的算法将被重复执行几次到几十次，以获得稳定的优化结果。</li>
+<li><b>保存和部署</b> 新的 OTM 将被保存在指定目录的 .otm 文件中，你可以把它放到 LPV 的运行目录，在下一次启动时，LPV 将自动发现并加载和应用它。 也可以把它复制到相同硬件的其他机台上使用。 <dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">saveDir</td><td>文件夹路径，用于保存 .otm 文件 </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">maxImgDepth</td><td>最大的优化图像位深。可输入 -1，8 或 16，表示无限制，最高 8 位，最高 16 位。默认无限制，对所有图像格式进行优化。 </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">maxImgSize</td><td>最大的优化图像尺寸。默认设置为 -1，64位进程最大尺寸为 100M 像素，32位进程最大为 25M 像素 </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">maxKSize</td><td>最大的核尺寸。核尺寸是图像处理算法中常见的一个参数。默认 -1，表示无限制，最大核尺寸可达到 151。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">error</td><td>返回错误码 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>自从</dt><dd>2.18.0 </dd></dl>
+</li>
+</ol>
+
+</div>
+</div>
 <a id="a37f8dbd171a65daf4dd3d86d4368361a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a37f8dbd171a65daf4dd3d86d4368361a">&#9670;&nbsp;</a></span>RefreshDefaults()</h2>
 
@@ -1050,7 +1141,7 @@ Public 成员函数</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>全局修改绘制点的尺寸，默认设置为 5 个像素。 </p>
+<p>全局修改绘制点的尺寸，默认设置为 5 个像素。 </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000001">弃用:</a></b></dt><dd>使用 <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_system.html#a1fb49fb74c8a9553e49dc91c6b6c788c">SetDefault()</a> 替代，配置名为 <code>"pointSize"</code> </dd></dl>
 
 </div>
 </div>
@@ -1075,6 +1166,7 @@ Public 成员函数</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000002">弃用:</a></b></dt><dd>使用 <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_system.html#a1fb49fb74c8a9553e49dc91c6b6c788c">SetDefault()</a> 替代，配置名为 <code>"roiHandleSize"</code> </dd></dl>
 
 </div>
 </div>

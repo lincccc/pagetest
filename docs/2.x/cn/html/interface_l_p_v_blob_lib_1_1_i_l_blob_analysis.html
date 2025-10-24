@@ -157,6 +157,10 @@ Public 成员函数</h2></td></tr>
 <tr class="separator:ac3e8a634acc3131a25ef9c8cf9de9610"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17a890d2df11a4c0e6bdfeec02d58e1e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a17a890d2df11a4c0e6bdfeec02d58e1e">SetRangeThresholdAdaptLocal</a> (<a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0b">LPVPolarity</a> blobPolarity, int blockSize, int bias)</td></tr>
 <tr class="separator:a17a890d2df11a4c0e6bdfeec02d58e1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c511e66205db9ad68cb9dcef3eb31ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a4c511e66205db9ad68cb9dcef3eb31ba">SetRangeThresholdAdaptLocalMean</a> (<a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0b">LPVPolarity</a> blobPolarity, int blockSize, int bias)</td></tr>
+<tr class="separator:a4c511e66205db9ad68cb9dcef3eb31ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2263709a75c206b40d9f02141a98a8b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a2263709a75c206b40d9f02141a98a8b2">SetRangeThresholdAdaptLocalMedian</a> (<a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0b">LPVPolarity</a> blobPolarity, int blockSize, int bias)</td></tr>
+<tr class="separator:a2263709a75c206b40d9f02141a98a8b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef671f7367adaf9fd523e108b1202523"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#aef671f7367adaf9fd523e108b1202523">SetSoftThresholdRange</a> (int softRange)</td></tr>
 <tr class="separator:aef671f7367adaf9fd523e108b1202523"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_interface_l_p_v_core_lib_1_1_i_l_object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_interface_l_p_v_core_lib_1_1_i_l_object')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_object.html">ILObject</a></td></tr>
@@ -235,6 +239,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#ab215c2503d86551a9cf1588da6b15882">MergeWidthUB</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:ab215c2503d86551a9cf1588da6b15882"><td class="mdescLeft">&#160;</td><td class="mdescRight">斑点合并后的最大宽度（长轴长度） <br /></td></tr>
 <tr class="separator:ab215c2503d86551a9cf1588da6b15882"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae33d61cde357b47b356c490d07347416"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#ae33d61cde357b47b356c490d07347416">NoiseThreshold</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:ae33d61cde357b47b356c490d07347416"><td class="mdescLeft">&#160;</td><td class="mdescRight">斑点的最小面积，用于过滤图像中常见的极小噪声。默认设置为 3，即 3 个像素。 提前剔除小面积斑点，可以帮助加速后续的筛选、排序过程。 当用于极小对象的检测任务时，可设置该阈值为 0. 这个参数的行为与添加一个基于面积的斑点过滤器相同。  <a href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#ae33d61cde357b47b356c490d07347416">更多...</a><br /></td></tr>
+<tr class="separator:ae33d61cde357b47b356c490d07347416"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a848fb8adacf95a0394b3656bb53233b8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50">LPVBlobFeatures</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a848fb8adacf95a0394b3656bb53233b8">SortBy</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:a848fb8adacf95a0394b3656bb53233b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">如何排序候选斑点。若检测区域中有多于设定的斑点，需将候选斑点排序并取其前若干个作为结果。  <a href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a848fb8adacf95a0394b3656bb53233b8">更多...</a><br /></td></tr>
 <tr class="separator:a848fb8adacf95a0394b3656bb53233b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1142,7 +1149,43 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
         </tr>
       </table>
 </div><div class="memdoc">
-<p>使用局部自适应阈值用于分割。自动基于每个像素所在的 \( blockSize \times blockSize \) 范围内的像素灰度值分布 为每个位置计算一个合适的阈值，再减去 bias 作为最终的阈值。 </p><dl class="params"><dt>参数</dt><dd>
+<p>设置并使用局部自适应阈值。<br  />
+这是一个<b>已废弃</b>的旧接口（从 2.18.0 版本开始），SetRangeThresholdAdaptLocalMean() 的用途与其相同。 推荐使用新的 <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a4c511e66205db9ad68cb9dcef3eb31ba">SetRangeThresholdAdaptLocalMean()</a> 或 <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a2263709a75c206b40d9f02141a98a8b2">SetRangeThresholdAdaptLocalMedian()</a> 方法。 </p>
+
+</div>
+</div>
+<a id="a4c511e66205db9ad68cb9dcef3eb31ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c511e66205db9ad68cb9dcef3eb31ba">&#9670;&nbsp;</a></span>SetRangeThresholdAdaptLocalMean()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SetRangeThresholdAdaptLocalMean </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0b">LPVPolarity</a>&#160;</td>
+          <td class="paramname"><em>blobPolarity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>blockSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>bias</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>使用基于<b>均值</b>的局部自适应阈值用于分割。自动基于每个像素所在的 \( blockSize \times blockSize \) 范围内的均值， 为每个位置计算一个合适的阈值，再修正 <code>bias</code> 作为最终的阈值。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">blobPolarity</td><td>斑点的<em>目标极性</em>。<a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0baffd2c678a5a2ea661de262d51223adf3">LPVBlackOnWhite </a> 表示灰度值小于全局自适应阈值的像素组成斑点对象, <a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0bac595c6b549ecbabb1dbb431e374b02ad">LPVWhiteOnBlack </a> 则相反。 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">blockSize</td><td>局部区域的尺寸，需要是一个奇数，如 3, 5, 7 等。 </td></tr>
@@ -1150,6 +1193,52 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
   </table>
   </dd>
 </dl>
+<dl class="section since"><dt>自从</dt><dd>2.18.0 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a2263709a75c206b40d9f02141a98a8b2">SetRangeThresholdAdaptLocalMedian()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a2263709a75c206b40d9f02141a98a8b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2263709a75c206b40d9f02141a98a8b2">&#9670;&nbsp;</a></span>SetRangeThresholdAdaptLocalMedian()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SetRangeThresholdAdaptLocalMedian </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0b">LPVPolarity</a>&#160;</td>
+          <td class="paramname"><em>blobPolarity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>blockSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>bias</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>使用基于<b>中值</b>的局部自适应阈值用于分割。自动基于每个像素所在的 \( blockSize \times blockSize \) 范围内的中值， 为每个位置计算一个合适的阈值，再修正 bias 作为最终的阈值。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">blobPolarity</td><td>斑点的<em>目标极性</em>。<a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0baffd2c678a5a2ea661de262d51223adf3">LPVBlackOnWhite </a> 表示灰度值小于全局自适应阈值的像素组成斑点对象, <a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0bac595c6b549ecbabb1dbb431e374b02ad">LPVWhiteOnBlack </a> 则相反。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">blockSize</td><td>局部区域的尺寸，需要是一个奇数，如 3, 5, 7 等。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bias</td><td>基于该位置的局部自适应阈值计算，用于生成阈值 \( t&#39; = t - bias \)（<a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0baffd2c678a5a2ea661de262d51223adf3">LPVBlackOnWhite </a>）， \( t&#39; = t + bias \)（<a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0bac595c6b549ecbabb1dbb431e374b02ad">LPVWhiteOnBlack </a>）. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>自从</dt><dd>2.18.0 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a4c511e66205db9ad68cb9dcef3eb31ba">SetRangeThresholdAdaptLocalMean()</a> </dd></dl>
 
 </div>
 </div>
@@ -1201,7 +1290,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 </div><div class="memdoc">
 
 <p>局部或全局自适应阈值用于分割时所使用的斑点极性 </p>
-<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#ac3e8a634acc3131a25ef9c8cf9de9610">SetRangeThresholdAdaptGlobal()</a>, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a17a890d2df11a4c0e6bdfeec02d58e1e">SetRangeThresholdAdaptLocal()</a> </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#ac3e8a634acc3131a25ef9c8cf9de9610">SetRangeThresholdAdaptGlobal()</a>, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a4c511e66205db9ad68cb9dcef3eb31ba">SetRangeThresholdAdaptLocalMean()</a>, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a2263709a75c206b40d9f02141a98a8b2">SetRangeThresholdAdaptLocalMedian()</a> </dd></dl>
 
 </div>
 </div>
@@ -1276,7 +1365,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 </div><div class="memdoc">
 
 <p>局部自适应阈值的修正值 </p>
-<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a17a890d2df11a4c0e6bdfeec02d58e1e">SetRangeThresholdAdaptLocal()</a> </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a4c511e66205db9ad68cb9dcef3eb31ba">SetRangeThresholdAdaptLocalMean()</a>, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a2263709a75c206b40d9f02141a98a8b2">SetRangeThresholdAdaptLocalMedian()</a> </dd></dl>
 
 </div>
 </div>
@@ -1301,7 +1390,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 </div><div class="memdoc">
 
 <p>局部阈值所使用的局部区域尺寸 </p>
-<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a17a890d2df11a4c0e6bdfeec02d58e1e">SetRangeThresholdAdaptLocal()</a> </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a4c511e66205db9ad68cb9dcef3eb31ba">SetRangeThresholdAdaptLocalMean()</a>, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a2263709a75c206b40d9f02141a98a8b2">SetRangeThresholdAdaptLocalMedian()</a> </dd></dl>
 
 </div>
 </div>
@@ -1327,6 +1416,32 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 
 <p>设置检测的最大数量。若检测区域中有多于设定的斑点，需将候选斑点排序并取前若干个作为结果。 设置为0表示无上限，输出符合配置的所有斑点。 </p>
 <dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a848fb8adacf95a0394b3656bb53233b8" title="如何排序候选斑点。若检测区域中有多于设定的斑点，需将候选斑点排序并取其前若干个作为结果。">SortBy</a> </dd></dl>
+
+</div>
+</div>
+<a id="ae33d61cde357b47b356c490d07347416"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae33d61cde357b47b356c490d07347416">&#9670;&nbsp;</a></span>NoiseThreshold</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int NoiseThreshold</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>斑点的最小面积，用于过滤图像中常见的极小噪声。默认设置为 3，即 3 个像素。 提前剔除小面积斑点，可以帮助加速后续的筛选、排序过程。 当用于极小对象的检测任务时，可设置该阈值为 0. 这个参数的行为与添加一个基于面积的斑点过滤器相同。 </p>
+<dl class="section since"><dt>自从</dt><dd>2.18.0 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#abc583ffbdc7101ddf7147f95bd7b5e8d">AddBlobFilter()</a> </dd></dl>
 
 </div>
 </div>
@@ -1401,7 +1516,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 </div><div class="memdoc">
 
 <p>分割斑点时所使用的阈值类型 </p>
-<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a28b3e77770d7ddfde96e70dcd61847fb">AddBlobRange()</a>, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#aa7c4c4c30996f4c872b2cd6645e15d55">AddBlobRangeColor()</a>, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#ac3e8a634acc3131a25ef9c8cf9de9610">SetRangeThresholdAdaptGlobal()</a>, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a17a890d2df11a4c0e6bdfeec02d58e1e">SetRangeThresholdAdaptLocal()</a> </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a28b3e77770d7ddfde96e70dcd61847fb">AddBlobRange()</a>, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#aa7c4c4c30996f4c872b2cd6645e15d55">AddBlobRangeColor()</a>, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#ac3e8a634acc3131a25ef9c8cf9de9610">SetRangeThresholdAdaptGlobal()</a>, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a4c511e66205db9ad68cb9dcef3eb31ba">SetRangeThresholdAdaptLocalMean()</a>, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a2263709a75c206b40d9f02141a98a8b2">SetRangeThresholdAdaptLocalMedian()</a> </dd></dl>
 
 </div>
 </div>

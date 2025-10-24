@@ -115,6 +115,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6bb4173db5cfa3de10d91adcfe6b536d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae70a3231282033ea8dbb5f1e3464821"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#aae70a3231282033ea8dbb5f1e3464821">SetThresholdAdaptLocal</a> (int blockWidth, int blockHeight, int lbBias, int ubBias)</td></tr>
 <tr class="separator:aae70a3231282033ea8dbb5f1e3464821"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80c1f0a9b8b35e7edabe0b94d2bb9398"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#a80c1f0a9b8b35e7edabe0b94d2bb9398">SetThresholdAdaptLocalMean</a> (int blockWidth, int blockHeight, int lbBias, int ubBias)</td></tr>
+<tr class="separator:a80c1f0a9b8b35e7edabe0b94d2bb9398"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfd761b4c5bbe8d87707b962a3cb0c21"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#acfd761b4c5bbe8d87707b962a3cb0c21">SetThresholdAdaptLocalMedian</a> (int blockWidth, int blockHeight, int lbBias, int ubBias)</td></tr>
+<tr class="separator:acfd761b4c5bbe8d87707b962a3cb0c21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6429d720bd21ba61c7dda9cddce9ffdb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#a6429d720bd21ba61c7dda9cddce9ffdb">Stretch</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *result)</td></tr>
 <tr class="separator:a6429d720bd21ba61c7dda9cddce9ffdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6402e4daad03df6b21ea437e9dd7a6df"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#a6402e4daad03df6b21ea437e9dd7a6df">ThresholdDistance</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *result)</td></tr>
@@ -359,7 +363,50 @@ The optimal threshold value is calculated base on the entire input image, then r
       </table>
 </div><div class="memdoc">
 <p>Use local-adaptive threshold value.<br  />
-The optimal threshold value is calculated base on a \( blockWidth \times blockHeight \) region around individual pixel, then revised by the given bias value. The lower bound of threshold value is \( t - lbBias \) , the upper bound is \( t + ubBias \) . </p><dl class="params"><dt>Parameters</dt><dd>
+This is a legacy function and <b>deprecated</b> since 2.18.0, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#a80c1f0a9b8b35e7edabe0b94d2bb9398">SetThresholdAdaptLocalMean()</a> has the same functionality as it. It's recommended to use <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#a80c1f0a9b8b35e7edabe0b94d2bb9398">SetThresholdAdaptLocalMean()</a> or <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#acfd761b4c5bbe8d87707b962a3cb0c21">SetThresholdAdaptLocalMedian()</a> instead. </p>
+
+</div>
+</div>
+<a id="a80c1f0a9b8b35e7edabe0b94d2bb9398"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80c1f0a9b8b35e7edabe0b94d2bb9398">&#9670;&nbsp;</a></span>SetThresholdAdaptLocalMean()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SetThresholdAdaptLocalMean </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>blockWidth</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>blockHeight</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>lbBias</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ubBias</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Use local-adaptive threshold value.<br  />
+The optimal threshold value is calculated base on the mean value of \( blockWidth \times blockHeight \) region around individual pixels, then revised by the given bias value. The lower bound of threshold value is \( t - lbBias \) , the upper bound is \( t + ubBias \) .<br  />
+Now, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#a156c414aad3afe8be70b8192a41afd1c" title="The thresholding method.">ThresholdType</a> is LPVThresholdAdaptLocalMean. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">blockWidth</td><td>The width of a pixel's local region, should be an odd number, say, 3, 5, 7, etc. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">blockHeight</td><td>The height of a pixel's local region, should be an odd number, say, 3, 5, 7, etc. </td></tr>
@@ -368,6 +415,58 @@ The optimal threshold value is calculated base on a \( blockWidth \times blockHe
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="acfd761b4c5bbe8d87707b962a3cb0c21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfd761b4c5bbe8d87707b962a3cb0c21">&#9670;&nbsp;</a></span>SetThresholdAdaptLocalMedian()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SetThresholdAdaptLocalMedian </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>blockWidth</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>blockHeight</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>lbBias</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ubBias</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Use local-adaptive threshold value.<br  />
+The optimal threshold value is calculated base on the median value of \( blockWidth \times blockHeight \) region around individual pixels, then revised by the given bias value. The lower bound of threshold value is \( t - lbBias \) , the upper bound is \( t + ubBias \) . Now, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#a156c414aad3afe8be70b8192a41afd1c" title="The thresholding method.">ThresholdType</a> is LPVThresholdAdaptLocalMean. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">blockWidth</td><td>The width of a pixel's local region, should be an odd number, say, 3, 5, 7, etc. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">blockHeight</td><td>The height of a pixel's local region, should be an odd number, say, 3, 5, 7, etc. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">lbBias</td><td>Revise value to optimal threshold value, to generate a threshold lower bound. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ubBias</td><td>Revise value to optimal threshold value, to generate a threshold upper bound. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>2.18.0 </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#a80c1f0a9b8b35e7edabe0b94d2bb9398">SetThresholdAdaptLocalMean()</a> </dd></dl>
 
 </div>
 </div>
@@ -468,7 +567,7 @@ For example, if a pixel value is 100 and the threshold lower bound is 25, then t
 </div><div class="memdoc">
 
 <p>The height of the local region used in local adaptive thresholding. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#aae70a3231282033ea8dbb5f1e3464821">SetThresholdAdaptLocal()</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#a80c1f0a9b8b35e7edabe0b94d2bb9398">SetThresholdAdaptLocalMean()</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#acfd761b4c5bbe8d87707b962a3cb0c21">SetThresholdAdaptLocalMedian()</a> </dd></dl>
 
 </div>
 </div>
@@ -493,7 +592,7 @@ For example, if a pixel value is 100 and the threshold lower bound is 25, then t
 </div><div class="memdoc">
 
 <p>The width of the local region used in local adaptive thresholding. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#aae70a3231282033ea8dbb5f1e3464821">SetThresholdAdaptLocal()</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#a80c1f0a9b8b35e7edabe0b94d2bb9398">SetThresholdAdaptLocalMean()</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#acfd761b4c5bbe8d87707b962a3cb0c21">SetThresholdAdaptLocalMedian()</a> </dd></dl>
 
 </div>
 </div>
@@ -543,7 +642,7 @@ For example, if a pixel value is 100 and the threshold lower bound is 25, then t
 </div><div class="memdoc">
 
 <p>The revised value to generate a adaptive threshold lower bound. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#a6bb4173db5cfa3de10d91adcfe6b536d">SetThresholdAdaptGlobal()</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#aae70a3231282033ea8dbb5f1e3464821">SetThresholdAdaptLocal()</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#a6bb4173db5cfa3de10d91adcfe6b536d">SetThresholdAdaptGlobal()</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#a80c1f0a9b8b35e7edabe0b94d2bb9398">SetThresholdAdaptLocalMean()</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#acfd761b4c5bbe8d87707b962a3cb0c21">SetThresholdAdaptLocalMedian()</a> </dd></dl>
 
 </div>
 </div>
@@ -568,7 +667,7 @@ For example, if a pixel value is 100 and the threshold lower bound is 25, then t
 </div><div class="memdoc">
 
 <p>The thresholding method. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#aaec01838c8df52617fae459c70991d4e">SetThreshold()</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#a6bb4173db5cfa3de10d91adcfe6b536d">SetThresholdAdaptGlobal()</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#aae70a3231282033ea8dbb5f1e3464821">SetThresholdAdaptLocal()</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#aaec01838c8df52617fae459c70991d4e">SetThreshold()</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#a6bb4173db5cfa3de10d91adcfe6b536d">SetThresholdAdaptGlobal()</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#a80c1f0a9b8b35e7edabe0b94d2bb9398">SetThresholdAdaptLocalMean()</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#acfd761b4c5bbe8d87707b962a3cb0c21">SetThresholdAdaptLocalMedian()</a> </dd></dl>
 
 </div>
 </div>
@@ -618,7 +717,7 @@ For example, if a pixel value is 100 and the threshold lower bound is 25, then t
 </div><div class="memdoc">
 
 <p>The revised value to generate a adaptive threshold upper bound. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#a6bb4173db5cfa3de10d91adcfe6b536d">SetThresholdAdaptGlobal()</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#aae70a3231282033ea8dbb5f1e3464821">SetThresholdAdaptLocal()</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#a6bb4173db5cfa3de10d91adcfe6b536d">SetThresholdAdaptGlobal()</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#a80c1f0a9b8b35e7edabe0b94d2bb9398">SetThresholdAdaptLocalMean()</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#acfd761b4c5bbe8d87707b962a3cb0c21">SetThresholdAdaptLocalMedian()</a> </dd></dl>
 
 </div>
 </div>

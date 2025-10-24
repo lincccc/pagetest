@@ -544,9 +544,14 @@ typedef struct <a class="el" href="struct_l_p_v_core_lib_1_1_l_size.html">LPVCor
  }</td></tr>
 <tr class="memdesc:a38d3a87896df9ff1b8c96bee1ab58e2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">该枚举类型表示排序的顺序  <a href="namespace_l_p_v_core_lib.html#a38d3a87896df9ff1b8c96bee1ab58e2f">更多...</a><br /></td></tr>
 <tr class="separator:a38d3a87896df9ff1b8c96bee1ab58e2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49edb9045fb3b67439ceeab4b938909d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_l_p_v_core_lib.html#a49edb9045fb3b67439ceeab4b938909d">LPVThresholdType</a> { <a class="el" href="namespace_l_p_v_core_lib.html#a49edb9045fb3b67439ceeab4b938909da525f163f43e51395f69cd9526234eedf">LPVThresholdCustom</a> = 0
+<tr class="memitem:a49edb9045fb3b67439ceeab4b938909d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_l_p_v_core_lib.html#a49edb9045fb3b67439ceeab4b938909d">LPVThresholdType</a> { <br />
+&#160;&#160;<a class="el" href="namespace_l_p_v_core_lib.html#a49edb9045fb3b67439ceeab4b938909da525f163f43e51395f69cd9526234eedf">LPVThresholdCustom</a> = 0
 , <a class="el" href="namespace_l_p_v_core_lib.html#a49edb9045fb3b67439ceeab4b938909da444f94bd534ec9d32c23f07dc62f0c5c">LPVThresholdAdaptGlobal</a> = 1
-, <a class="el" href="namespace_l_p_v_core_lib.html#a49edb9045fb3b67439ceeab4b938909da3a16c88fe63f2e8566545eb4acca37bf">LPVThresholdAdaptLocal</a> = 2
+, <a class="el" href="namespace_l_p_v_core_lib.html#a49edb9045fb3b67439ceeab4b938909da75870283ad1917970abb4f6dfe05ba85">LPVThresholdAdaptLocalMean</a> = 2
+, <a class="el" href="namespace_l_p_v_core_lib.html#a49edb9045fb3b67439ceeab4b938909da9b17563ed5fe40d59a3dd31573bd4093">LPVThresholdAdaptLocalMedian</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="namespace_l_p_v_core_lib.html#a49edb9045fb3b67439ceeab4b938909da3a16c88fe63f2e8566545eb4acca37bf">LPVThresholdAdaptLocal</a> = LPVThresholdAdaptLocalMean
+<br />
  }</td></tr>
 <tr class="memdesc:a49edb9045fb3b67439ceeab4b938909d"><td class="mdescLeft">&#160;</td><td class="mdescRight">该枚举表示阈值方法  <a href="namespace_l_p_v_core_lib.html#a49edb9045fb3b67439ceeab4b938909d">更多...</a><br /></td></tr>
 <tr class="separator:a49edb9045fb3b67439ceeab4b938909d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1444,7 +1449,13 @@ typedef struct <a class="el" href="struct_l_p_v_core_lib_1_1_l_size.html">LPVCor
 </td></tr>
 <tr><td class="fieldname"><a id="a49edb9045fb3b67439ceeab4b938909da444f94bd534ec9d32c23f07dc62f0c5c"></a>LPVThresholdAdaptGlobal&#160;</td><td class="fielddoc"><p>使用全局自适应阈值，该数值或范围基于整幅图像上的像素灰度值分布获得 </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a49edb9045fb3b67439ceeab4b938909da3a16c88fe63f2e8566545eb4acca37bf"></a>LPVThresholdAdaptLocal&#160;</td><td class="fielddoc"><p>使用局部自适应阈值，该数值或范围基于每个位置邻域的像素灰度值分布获得 </p>
+<tr><td class="fieldname"><a id="a49edb9045fb3b67439ceeab4b938909da75870283ad1917970abb4f6dfe05ba85"></a>LPVThresholdAdaptLocalMean&#160;</td><td class="fielddoc"><p>使用局部自适应阈值，该数值或范围基于每个位置邻域的像素灰度<b>均值</b>获得<br  />
+<b>Since</b> 2.18.0 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a49edb9045fb3b67439ceeab4b938909da9b17563ed5fe40d59a3dd31573bd4093"></a>LPVThresholdAdaptLocalMedian&#160;</td><td class="fielddoc"><p>使用局部自适应阈值，该数值或范围基于每个位置邻域的像素灰度<b>中值</b>获得<br  />
+<b>Since</b> 2.18.0 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a49edb9045fb3b67439ceeab4b938909da3a16c88fe63f2e8566545eb4acca37bf"></a>LPVThresholdAdaptLocal&#160;</td><td class="fielddoc"><p>2.17.x 及之前版本使用的旧枚举值，与 LPVThresholdAdaptLocalMean 相同 </p>
 </td></tr>
 </table>
 

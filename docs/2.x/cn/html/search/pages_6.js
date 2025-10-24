@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['灵闪（intelliblink）工具对照_3421',['灵闪（IntelliBlink）工具对照',['../ib_lookup.html',1,'']]],
-  ['灵闪（intelliblink）错误码对照_3422',['灵闪（IntelliBlink）错误码对照',['../ib_error.html',1,'']]]
+  ['快速上手_20_2d_20linux_3454',['快速上手 - Linux',['../quick_guide_linux.html',1,'']]],
+  ['快速上手_20_2d_20macos_3455',['快速上手 - MacOS',['../quick_guide_mac.html',1,'']]],
+  ['快速上手_20_2d_20windows_3456',['快速上手 - Windows',['../quick_guide_win.html',1,'']]]
 ];

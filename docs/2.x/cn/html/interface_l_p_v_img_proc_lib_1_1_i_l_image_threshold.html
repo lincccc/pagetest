@@ -115,6 +115,10 @@ Public 成员函数</h2></td></tr>
 <tr class="separator:a6bb4173db5cfa3de10d91adcfe6b536d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae70a3231282033ea8dbb5f1e3464821"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#aae70a3231282033ea8dbb5f1e3464821">SetThresholdAdaptLocal</a> (int blockWidth, int blockHeight, int lbBias, int ubBias)</td></tr>
 <tr class="separator:aae70a3231282033ea8dbb5f1e3464821"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80c1f0a9b8b35e7edabe0b94d2bb9398"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#a80c1f0a9b8b35e7edabe0b94d2bb9398">SetThresholdAdaptLocalMean</a> (int blockWidth, int blockHeight, int lbBias, int ubBias)</td></tr>
+<tr class="separator:a80c1f0a9b8b35e7edabe0b94d2bb9398"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfd761b4c5bbe8d87707b962a3cb0c21"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#acfd761b4c5bbe8d87707b962a3cb0c21">SetThresholdAdaptLocalMedian</a> (int blockWidth, int blockHeight, int lbBias, int ubBias)</td></tr>
+<tr class="separator:acfd761b4c5bbe8d87707b962a3cb0c21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6429d720bd21ba61c7dda9cddce9ffdb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#a6429d720bd21ba61c7dda9cddce9ffdb">Stretch</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *result)</td></tr>
 <tr class="separator:a6429d720bd21ba61c7dda9cddce9ffdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6402e4daad03df6b21ea437e9dd7a6df"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#a6402e4daad03df6b21ea437e9dd7a6df">ThresholdDistance</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *result)</td></tr>
@@ -360,7 +364,50 @@ Public 成员函数</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>设置并使用局部自适应阈值。<br  />
-自动基于每个像素所在的 \( blockWidth \times blockHeight \) 范围内的像素灰度值分布，为每个位置计算一个合适的阈值。 该位置的局部自适应阈值范围的下限为 \( t - lbBias \) ，上限为 \( t + ubBias \) 。 </p><dl class="params"><dt>参数</dt><dd>
+这是一个<b>已废弃</b>的旧接口（从 2.18.0 版本开始），SetThresholdAdaptLocalMean() 的用途与其相同。 推荐使用新的 <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#a80c1f0a9b8b35e7edabe0b94d2bb9398">SetThresholdAdaptLocalMean()</a> 或 <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#acfd761b4c5bbe8d87707b962a3cb0c21">SetThresholdAdaptLocalMedian()</a> 方法。 </p>
+
+</div>
+</div>
+<a id="a80c1f0a9b8b35e7edabe0b94d2bb9398"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80c1f0a9b8b35e7edabe0b94d2bb9398">&#9670;&nbsp;</a></span>SetThresholdAdaptLocalMean()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SetThresholdAdaptLocalMean </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>blockWidth</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>blockHeight</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>lbBias</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ubBias</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>设置并使用基于均值的局部自适应阈值。<br  />
+自动基于每个像素所在的 \( blockWidth \times blockHeight \) 范围内的像素灰度均值，为每个位置计算一个合适的阈值。 该位置的局部自适应阈值范围的下限为 \( t - lbBias \) ，上限为 \( t + ubBias \) 。<br  />
+此时，::ThresholdType 为 LPVThresholdAdaptLocalMean. </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">blockWidth</td><td>局部区域的宽度，需要是一个奇数，如 3, 5, 7 等。 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">blockHeight</td><td>局部区域的高度，需要是一个奇数，如 3, 5, 7 等。 </td></tr>
@@ -369,6 +416,59 @@ Public 成员函数</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="acfd761b4c5bbe8d87707b962a3cb0c21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfd761b4c5bbe8d87707b962a3cb0c21">&#9670;&nbsp;</a></span>SetThresholdAdaptLocalMedian()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SetThresholdAdaptLocalMedian </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>blockWidth</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>blockHeight</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>lbBias</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ubBias</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>设置并使用基于中值的局部自适应阈值。<br  />
+自动基于每个像素所在的 \( blockWidth \times blockHeight \) 范围内的像素灰度中值，为每个位置计算一个合适的阈值。 该位置的局部自适应阈值范围的下限为 \( t - lbBias \) ，上限为 \( t + ubBias \) 。<br  />
+此时，::ThresholdType 为 LPVThresholdAdaptLocalMedian. </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">blockWidth</td><td>局部区域的宽度，需要是一个奇数，如 3, 5, 7 等。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">blockHeight</td><td>局部区域的高度，需要是一个奇数，如 3, 5, 7 等。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">lbBias</td><td>基于该位置的局部自适应阈值的下限修正值，用于生成阈值范围的下限。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ubBias</td><td>基于该位置的局部自适应阈值的上限修正值，用于生成阈值范围的上限。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>自从</dt><dd>2.18.0 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#a80c1f0a9b8b35e7edabe0b94d2bb9398">SetThresholdAdaptLocalMean()</a> </dd></dl>
 
 </div>
 </div>
@@ -471,7 +571,7 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 
 <p>局部阈值所使用的局部区域的高度 </p>
-<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#aae70a3231282033ea8dbb5f1e3464821">SetThresholdAdaptLocal()</a> </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#a80c1f0a9b8b35e7edabe0b94d2bb9398">SetThresholdAdaptLocalMean()</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#acfd761b4c5bbe8d87707b962a3cb0c21">SetThresholdAdaptLocalMedian()</a> </dd></dl>
 
 </div>
 </div>
@@ -496,7 +596,7 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 
 <p>局部阈值所使用的局部区域的宽度 </p>
-<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#aae70a3231282033ea8dbb5f1e3464821">SetThresholdAdaptLocal()</a> </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#a80c1f0a9b8b35e7edabe0b94d2bb9398">SetThresholdAdaptLocalMean()</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#acfd761b4c5bbe8d87707b962a3cb0c21">SetThresholdAdaptLocalMedian()</a> </dd></dl>
 
 </div>
 </div>
@@ -546,7 +646,7 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 
 <p>局部或全局自适应阈值的下限修正值 </p>
-<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#a6bb4173db5cfa3de10d91adcfe6b536d">SetThresholdAdaptGlobal()</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#aae70a3231282033ea8dbb5f1e3464821">SetThresholdAdaptLocal()</a> </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#a6bb4173db5cfa3de10d91adcfe6b536d">SetThresholdAdaptGlobal()</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#a80c1f0a9b8b35e7edabe0b94d2bb9398">SetThresholdAdaptLocalMean()</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#acfd761b4c5bbe8d87707b962a3cb0c21">SetThresholdAdaptLocalMedian()</a> </dd></dl>
 
 </div>
 </div>
@@ -571,7 +671,7 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 
 <p>阈值类型 </p>
-<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#aaec01838c8df52617fae459c70991d4e">SetThreshold()</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#a6bb4173db5cfa3de10d91adcfe6b536d">SetThresholdAdaptGlobal()</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#aae70a3231282033ea8dbb5f1e3464821">SetThresholdAdaptLocal()</a> </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#aaec01838c8df52617fae459c70991d4e">SetThreshold()</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#a6bb4173db5cfa3de10d91adcfe6b536d">SetThresholdAdaptGlobal()</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#a80c1f0a9b8b35e7edabe0b94d2bb9398">SetThresholdAdaptLocalMean()</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#acfd761b4c5bbe8d87707b962a3cb0c21">SetThresholdAdaptLocalMedian()</a> </dd></dl>
 
 </div>
 </div>
@@ -621,7 +721,7 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 
 <p>局部或全局自适应阈值的上限修正值 </p>
-<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#a6bb4173db5cfa3de10d91adcfe6b536d">SetThresholdAdaptGlobal()</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#aae70a3231282033ea8dbb5f1e3464821">SetThresholdAdaptLocal()</a> </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#a6bb4173db5cfa3de10d91adcfe6b536d">SetThresholdAdaptGlobal()</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#a80c1f0a9b8b35e7edabe0b94d2bb9398">SetThresholdAdaptLocalMean()</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#acfd761b4c5bbe8d87707b962a3cb0c21">SetThresholdAdaptLocalMedian()</a> </dd></dl>
 
 </div>
 </div>

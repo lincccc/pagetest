@@ -131,6 +131,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aad5355c4ae5e54da1dd683f38ee77bc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab556fe7e6e867c71d1953b8e291d91b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_system.html#ab556fe7e6e867c71d1953b8e291d91b5">GetRGBFromColorRef</a> (COLORREF colorRef, int *red, int *green, int *blue)</td></tr>
 <tr class="separator:ab556fe7e6e867c71d1953b8e291d91b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e41abb7afcff750540091e10b1d4c99"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_l_string.html">LString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_system.html#a1e41abb7afcff750540091e10b1d4c99">GetVersion</a> ()</td></tr>
+<tr class="separator:a1e41abb7afcff750540091e10b1d4c99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a812434fe4710d6ce1b39ba0cae9eb6c0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_system.html#a812434fe4710d6ce1b39ba0cae9eb6c0">OptimizeOTM</a> (<a class="el" href="class_l_string.html">LString</a> saveDir, int maxImgDepth, int maxImgSize, int maxKSize)</td></tr>
+<tr class="separator:a812434fe4710d6ce1b39ba0cae9eb6c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37f8dbd171a65daf4dd3d86d4368361a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_system.html#a37f8dbd171a65daf4dd3d86d4368361a">RefreshDefaults</a> (<a class="el" href="class_l_string.html">LString</a> filename)</td></tr>
 <tr class="separator:a37f8dbd171a65daf4dd3d86d4368361a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1fb49fb74c8a9553e49dc91c6b6c788c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_system.html#a1fb49fb74c8a9553e49dc91c6b6c788c">SetDefault</a> (<a class="el" href="class_l_string.html">LString</a> settingName, <a class="el" href="class_l_string.html">LString</a> val)</td></tr>
@@ -279,6 +283,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_system.html#a1e41abb7afcff750540091e10b1d4c99">GetVersion()</a> </dd></dl>
 
 </div>
 </div>
@@ -929,6 +934,90 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a1e41abb7afcff750540091e10b1d4c99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e41abb7afcff750540091e10b1d4c99">&#9670;&nbsp;</a></span>GetVersion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_l_string.html">LString</a> GetVersion </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get the version number of the currently running LPV toolkit, in a string with all of the segments delimited by a period (.) , like "2.18.0.0" </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_system.html#abe1b71ed02f499e949fdcd94b7ac1c79">CheckVersion()</a> </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>2.18.0 </dd></dl>
+
+</div>
+</div>
+<a id="a812434fe4710d6ce1b39ba0cae9eb6c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a812434fe4710d6ce1b39ba0cae9eb6c0">&#9670;&nbsp;</a></span>OptimizeOTM()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> OptimizeOTM </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_l_string.html">LString</a>&#160;</td>
+          <td class="paramname"><em>saveDir</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>maxImgDepth</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>maxImgSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>maxKSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Optimize the OTM (Optimal Threading Model), which is responsible for automatic concurrency of most commonly used algorithms in LPV.<br  />
+In theory, increasing the number of concurrent threads should improve CPU utilization and thus speed up algorithm execution. However, in real-world systems, factors such as memory contention and computation unit contention come into play. When the concurrency level increases beyond a certain point, the algorithm can actually become slower. Moreover, the extent and timing of this slowdown are correlated to varying degrees with factors such as image size and depth, algorithm parameters, CPU frequency and its architecture, cache size, operating system, and memory capacity. This makes it impossible to estimate the optimal number of threads with a simple formula - it exhibits a nonlinear, non-monotonic, multidimensional complexity.<br  />
+Therefore, LPV uses the sophisticated OTM to record the optimal concurrency strategies under a combination of those influencing factors. During runtime, individual operator itself dynamically selects the appropriate threads number of based on the current parameters and inputs via OTM.<br  />
+For some popular CPU models, several pre-tuned OTMs are already included. When LPV loads, the most suitable OTM are loaded according to the detected CPU model.<br  />
+For performance-sensitive applications, it is highly recommended to generate the OTM specifically optimized for the actual hardware where the software will be deployed:</p><ol type="1">
+<li><b>Clean up the system environment.</b> Ensure that during OTM generation, no other high-load processes (e.g., Windows Update, antivirus scans) are competing for CPU resources. Such interference can significantly affect the optimization results of the strategy model.</li>
+<li><b>Invoke the <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_system.html#a812434fe4710d6ce1b39ba0cae9eb6c0">OptimizeOTM()</a> interface</b> within your actual application or a standalone test program. This process may take several to dozens of hours to complete, as all the operators may be executed serveral to hunderds of time to output a stable optimization result.</li>
+<li><b>Save and deploy the new OTM.</b> The newly generated OTM will be stored as a .otm file in the specified directory. You can place it in LPV’s runner directory - on the next startup, LPV will automatically detect, load, and apply it. You can also copy it to other machines with the same hardware configuration for reuse. <dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">saveDir</td><td>The directory to save .otm file </td></tr>
+    <tr><td class="paramname">maxImgDepth</td><td>The maximum image depth in optimization, either -1, 8, or 16, means no limitation, 8-bit, or 16-bit. For no limitation, all image formats are included. </td></tr>
+    <tr><td class="paramname">maxImgSize</td><td>The maximum image size in optimization. By default (-1) image size reach up to 100 million pixels for x64 applications and 25 million pixels for x32 applications. </td></tr>
+    <tr><td class="paramname">maxKSize</td><td>The maximum kernel size in optimization. Kernel size is a common parameter in image processing operators. By default (-1) kernel size reach up to 151. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">error</td><td>Return error code if anything is wrong. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>2.18.0 </dd></dl>
+</li>
+</ol>
+
+</div>
+</div>
 <a id="a37f8dbd171a65daf4dd3d86d4368361a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a37f8dbd171a65daf4dd3d86d4368361a">&#9670;&nbsp;</a></span>RefreshDefaults()</h2>
 
@@ -1047,7 +1136,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Change the radius of point drawn on canvas globally, by default it's 5 pixels. </p>
+<p>Change the radius of point drawn on canvas globally, by default it's 5 pixels. </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000001">Deprecated:</a></b></dt><dd>Use <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_system.html#a1fb49fb74c8a9553e49dc91c6b6c788c">SetDefault()</a> instead, with setting name <code>"pointSize"</code>. </dd></dl>
 
 </div>
 </div>
@@ -1072,6 +1161,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000002">Deprecated:</a></b></dt><dd>Use <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_system.html#a1fb49fb74c8a9553e49dc91c6b6c788c">SetDefault()</a> instead, with setting name <code>"roiHandleSize"</code>. </dd></dl>
 
 </div>
 </div>

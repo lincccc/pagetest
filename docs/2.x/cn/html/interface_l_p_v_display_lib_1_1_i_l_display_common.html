@@ -123,8 +123,16 @@ Public 成员函数</h2></td></tr>
 <tr class="separator:a939e4c94b88e34bbb135d269880bc334"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62ebe2dc4a351b3a7236e946df400069"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#a62ebe2dc4a351b3a7236e946df400069">SaveSceneToFile</a> (BSTR filename, double zoomX, double zoomY)</td></tr>
 <tr class="separator:a62ebe2dc4a351b3a7236e946df400069"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a744e738b1f338a75dec6284de2ba9d64"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#a744e738b1f338a75dec6284de2ba9d64">SaveSceneToImage</a> (IDispatch *image, double zoomX, double zoomY)</td></tr>
+<tr class="separator:a744e738b1f338a75dec6284de2ba9d64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a9362b29d56554e9d30a1d043a3324a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#a5a9362b29d56554e9d30a1d043a3324a">SaveViewToFile</a> (BSTR filename, int tlx, int tly, int w, int h, double zoomX, double zoomY)</td></tr>
+<tr class="separator:a5a9362b29d56554e9d30a1d043a3324a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6287cd59cd76c59580d18c94fd1886b8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#a6287cd59cd76c59580d18c94fd1886b8">SaveViewToImage</a> (IDispatch *image, int tlx, int tly, int w, int h, double zoomX, double zoomY)</td></tr>
+<tr class="separator:a6287cd59cd76c59580d18c94fd1886b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09363be5a60d131aa2dd7da89a85aef9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#a09363be5a60d131aa2dd7da89a85aef9">SaveWindowToFile</a> (BSTR filename)</td></tr>
 <tr class="separator:a09363be5a60d131aa2dd7da89a85aef9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74746f6c65e761450422b2402ed0b076"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#a74746f6c65e761450422b2402ed0b076">SaveWindowToImage</a> (IDispatch *image)</td></tr>
+<tr class="separator:a74746f6c65e761450422b2402ed0b076"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34630d9dd2b50da9a6e3895cc43140da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#a34630d9dd2b50da9a6e3895cc43140da">SetDisplayFlag</a> (<a class="el" href="namespace_l_p_v_display_lib.html#abc2f2be19cc9a20d8f4b71ddb968d49b">LPVDisplayFlags</a> flag, BOOL enable)</td></tr>
 <tr class="separator:a34630d9dd2b50da9a6e3895cc43140da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c2ed3482f17828158b0a681b4e613ae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#a2c2ed3482f17828158b0a681b4e613ae">SetSize</a> (int w, int h)</td></tr>
@@ -508,6 +516,215 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
   </table>
   </dd>
 </dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#a744e738b1f338a75dec6284de2ba9d64">SaveSceneToImage()</a>, <a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#a5a9362b29d56554e9d30a1d043a3324a">SaveViewToFile()</a>, <a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#a62ebe2dc4a351b3a7236e946df400069">SaveSceneToFile()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a744e738b1f338a75dec6284de2ba9d64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a744e738b1f338a75dec6284de2ba9d64">&#9670;&nbsp;</a></span>SaveSceneToImage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SaveSceneToImage </td>
+          <td>(</td>
+          <td class="paramtype">IDispatch *&#160;</td>
+          <td class="paramname"><em>image</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>zoomX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>zoomY</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>保存整个场景到彩色 <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">LImage</a>，包括图像、所有区域和绘制对象。 图像尺寸与缩放后的场景尺寸相同。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">image</td><td>输入图像，应当为 <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">LImage </a> 类型。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">zoomX</td><td>x 方向的缩放系数，默认设置为 1，即真实尺寸 100% </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">zoomY</td><td>y 方向的缩放系数，默认设置为 0，即与 x 方向的缩放系数相同，也就是等比缩放。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">error</td><td>返回错误码，查看 LPVErrorCode </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="use_draw_functions.html">Use Draw Functions</a> </dd></dl>
+<dl class="section remark"><dt>备注</dt><dd>该函数在 Linux / MacOS 平台暂不可用。 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#a62ebe2dc4a351b3a7236e946df400069">SaveSceneToFile()</a>, <a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#a6287cd59cd76c59580d18c94fd1886b8">SaveViewToImage()</a>, <a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#a5a9362b29d56554e9d30a1d043a3324a">SaveViewToFile()</a> </dd></dl>
+<dl class="section since"><dt>自从</dt><dd>2.17.0 </dd></dl>
+
+</div>
+</div>
+<a id="a5a9362b29d56554e9d30a1d043a3324a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a9362b29d56554e9d30a1d043a3324a">&#9670;&nbsp;</a></span>SaveViewToFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SaveViewToFile </td>
+          <td>(</td>
+          <td class="paramtype">BSTR&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tlx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tly</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>h</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>zoomX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>zoomY</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>保存指定的观察区内的场景内容到文件，包括图像、所有区域和绘制对象，以彩色图像保存。 图像尺寸与缩放后的观察区尺寸相同。图像格式按照所提供的扩展名自动选择 (.bmp, .png, .jpg, etc.)。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>文件路径，可为绝对或相对路径，包括所在文件夹，文件名和扩展名。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tlx</td><td>指定方形区域的左上角 x 坐标，以像素为单位。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tly</td><td>指定方形区域的左上角 y 坐标，以像素为单位。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">w</td><td>指定方形区域的宽度，x 方向尺寸，以像素为单位。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">h</td><td>指定方形区域的高度，y 方向尺寸，以像素为单位。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">zoomX</td><td>x 方向的缩放系数，默认设置为 1，即真实尺寸 100% </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">zoomY</td><td>y 方向的缩放系数，默认设置为 0，即与 x 方向的缩放系数相同，也就是等比缩放。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">error</td><td>返回错误码，查看 LPVErrorCode </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#a6287cd59cd76c59580d18c94fd1886b8">SaveViewToImage()</a>, <a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#a62ebe2dc4a351b3a7236e946df400069">SaveSceneToFile()</a>, <a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#a744e738b1f338a75dec6284de2ba9d64">SaveSceneToImage()</a> </dd></dl>
+<dl class="section since"><dt>自从</dt><dd>2.17.0 </dd></dl>
+
+</div>
+</div>
+<a id="a6287cd59cd76c59580d18c94fd1886b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6287cd59cd76c59580d18c94fd1886b8">&#9670;&nbsp;</a></span>SaveViewToImage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SaveViewToImage </td>
+          <td>(</td>
+          <td class="paramtype">IDispatch *&#160;</td>
+          <td class="paramname"><em>image</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tlx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tly</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>h</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>zoomX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>zoomY</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>保存指定的观察区内的场景内容到彩色 <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">LImage</a>，包括图像、所有区域和绘制对象。 图像尺寸与缩放后的观察区尺寸相同。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">image</td><td>输入图像，应当为 <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">LImage </a> 类型。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tlx</td><td>指定方形区域的左上角 x 坐标，以像素为单位。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tly</td><td>指定方形区域的左上角 y 坐标，以像素为单位。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">w</td><td>指定方形区域的宽度，x 方向尺寸，以像素为单位。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">h</td><td>指定方形区域的高度，y 方向尺寸，以像素为单位。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">zoomX</td><td>x 方向的缩放系数，默认设置为 1，即真实尺寸 100% </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">zoomY</td><td>y 方向的缩放系数，默认设置为 0，即与 x 方向的缩放系数相同，也就是等比缩放。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">error</td><td>返回错误码，查看 LPVErrorCode </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#a5a9362b29d56554e9d30a1d043a3324a">SaveViewToFile()</a>, <a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#a62ebe2dc4a351b3a7236e946df400069">SaveSceneToFile()</a>, <a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#a744e738b1f338a75dec6284de2ba9d64">SaveSceneToImage()</a> </dd></dl>
+<dl class="section since"><dt>自从</dt><dd>2.17.0 </dd></dl>
 
 </div>
 </div>
@@ -538,6 +755,39 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
   </table>
   </dd>
 </dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#a74746f6c65e761450422b2402ed0b076">SaveWindowToImage()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a74746f6c65e761450422b2402ed0b076"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74746f6c65e761450422b2402ed0b076">&#9670;&nbsp;</a></span>SaveWindowToImage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SaveWindowToImage </td>
+          <td>(</td>
+          <td class="paramtype">IDispatch *&#160;</td>
+          <td class="paramname"><em>image</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>保存当前窗口截图到彩色 <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">LImage</a>。 图像尺寸与当前窗口尺寸相同。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">image</td><td>输入图像，应当为 <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">LImage </a> 类型。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">error</td><td>返回错误码，查看 LPVErrorCode </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#a09363be5a60d131aa2dd7da89a85aef9">SaveWindowToFile()</a> </dd></dl>
+<dl class="section since"><dt>自从</dt><dd>2.17.0 </dd></dl>
 
 </div>
 </div>

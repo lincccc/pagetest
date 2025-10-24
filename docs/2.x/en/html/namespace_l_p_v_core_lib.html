@@ -544,9 +544,14 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a38d3a87896df9ff1b8c96bee1ab58e2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This enumeration represents the order of sorting.  <a href="namespace_l_p_v_core_lib.html#a38d3a87896df9ff1b8c96bee1ab58e2f">More...</a><br /></td></tr>
 <tr class="separator:a38d3a87896df9ff1b8c96bee1ab58e2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49edb9045fb3b67439ceeab4b938909d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_l_p_v_core_lib.html#a49edb9045fb3b67439ceeab4b938909d">LPVThresholdType</a> { <a class="el" href="namespace_l_p_v_core_lib.html#a49edb9045fb3b67439ceeab4b938909da525f163f43e51395f69cd9526234eedf">LPVThresholdCustom</a> = 0
+<tr class="memitem:a49edb9045fb3b67439ceeab4b938909d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_l_p_v_core_lib.html#a49edb9045fb3b67439ceeab4b938909d">LPVThresholdType</a> { <br />
+&#160;&#160;<a class="el" href="namespace_l_p_v_core_lib.html#a49edb9045fb3b67439ceeab4b938909da525f163f43e51395f69cd9526234eedf">LPVThresholdCustom</a> = 0
 , <a class="el" href="namespace_l_p_v_core_lib.html#a49edb9045fb3b67439ceeab4b938909da444f94bd534ec9d32c23f07dc62f0c5c">LPVThresholdAdaptGlobal</a> = 1
-, <a class="el" href="namespace_l_p_v_core_lib.html#a49edb9045fb3b67439ceeab4b938909da3a16c88fe63f2e8566545eb4acca37bf">LPVThresholdAdaptLocal</a> = 2
+, <a class="el" href="namespace_l_p_v_core_lib.html#a49edb9045fb3b67439ceeab4b938909da75870283ad1917970abb4f6dfe05ba85">LPVThresholdAdaptLocalMean</a> = 2
+, <a class="el" href="namespace_l_p_v_core_lib.html#a49edb9045fb3b67439ceeab4b938909da9b17563ed5fe40d59a3dd31573bd4093">LPVThresholdAdaptLocalMedian</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="namespace_l_p_v_core_lib.html#a49edb9045fb3b67439ceeab4b938909da3a16c88fe63f2e8566545eb4acca37bf">LPVThresholdAdaptLocal</a> = LPVThresholdAdaptLocalMean
+<br />
  }</td></tr>
 <tr class="memdesc:a49edb9045fb3b67439ceeab4b938909d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This enumeration represents the thresholding method.  <a href="namespace_l_p_v_core_lib.html#a49edb9045fb3b67439ceeab4b938909d">More...</a><br /></td></tr>
 <tr class="separator:a49edb9045fb3b67439ceeab4b938909d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1444,7 +1449,13 @@ The conversion between BGR is calculated based on XYZ values using normalized RG
 </td></tr>
 <tr><td class="fieldname"><a id="a49edb9045fb3b67439ceeab4b938909da444f94bd534ec9d32c23f07dc62f0c5c"></a>LPVThresholdAdaptGlobal&#160;</td><td class="fielddoc"><p>Use the optimal global-adaptive threshold value or range, which is calculated base on the entire input image. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a49edb9045fb3b67439ceeab4b938909da3a16c88fe63f2e8566545eb4acca37bf"></a>LPVThresholdAdaptLocal&#160;</td><td class="fielddoc"><p>Use the optimal local-adaptive threshold value or range, which is calculated base on the nearby region around individual position. </p>
+<tr><td class="fieldname"><a id="a49edb9045fb3b67439ceeab4b938909da75870283ad1917970abb4f6dfe05ba85"></a>LPVThresholdAdaptLocalMean&#160;</td><td class="fielddoc"><p>Use the optimal local-adaptive threshold value or range, which is calculated base on the <b>mean</b> value of the nearby region around individual position.<br  />
+<b>Since</b> 2.18.0 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a49edb9045fb3b67439ceeab4b938909da9b17563ed5fe40d59a3dd31573bd4093"></a>LPVThresholdAdaptLocalMedian&#160;</td><td class="fielddoc"><p>Use the optimal local-adaptive threshold value or range, which is calculated base on the <b>median</b> value of the nearby region around individual position.<br  />
+<b>Since</b> 2.18.0 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a49edb9045fb3b67439ceeab4b938909da3a16c88fe63f2e8566545eb4acca37bf"></a>LPVThresholdAdaptLocal&#160;</td><td class="fielddoc"><p>Legacy enum used in 2.17.x and before, same as LPVThresholdAdaptLocalMean </p>
 </td></tr>
 </table>
 
