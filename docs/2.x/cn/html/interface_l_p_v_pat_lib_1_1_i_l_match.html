@@ -197,6 +197,10 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#af98b71a5ec504565e5456260acbd9ee5">MaxCount</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:af98b71a5ec504565e5456260acbd9ee5"><td class="mdescLeft">&#160;</td><td class="mdescRight">期望的最大匹配数量 <br /></td></tr>
 <tr class="separator:af98b71a5ec504565e5456260acbd9ee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a334717a311b23b2bacfa54857539d302"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a334717a311b23b2bacfa54857539d302">MaxDeformation</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a334717a311b23b2bacfa54857539d302"><td class="mdescLeft">&#160;</td><td class="mdescRight">相对于训练特征的最大局部形变，像素单位。<br  />
+通常有助于找到与模板相比略微变形的物体，但也增加了找到错误匹配的风险，因为强烈变形会失去其特征形状。  <a href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a334717a311b23b2bacfa54857539d302">更多...</a><br /></td></tr>
+<tr class="separator:a334717a311b23b2bacfa54857539d302"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f94a6c350cbb94dd399d9bab8eedbac"><td class="memItemLeft" align="right" valign="top"><a id="a8f94a6c350cbb94dd399d9bab8eedbac"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a8f94a6c350cbb94dd399d9bab8eedbac">MissingTolerance</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:a8f94a6c350cbb94dd399d9bab8eedbac"><td class="mdescLeft">&#160;</td><td class="mdescRight">匹配结果的最大缺失比例（百分比）。 取值范围在 0 ~ 100 之间，为百分数。默认设置为 50，表示最多可以接受 50% 的缺失比例。<br  />
@@ -890,6 +894,32 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 
 </div>
 </div>
+<a id="a334717a311b23b2bacfa54857539d302"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a334717a311b23b2bacfa54857539d302">&#9670;&nbsp;</a></span>MaxDeformation</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int MaxDeformation</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>相对于训练特征的最大局部形变，像素单位。<br  />
+通常有助于找到与模板相比略微变形的物体，但也增加了找到错误匹配的风险，因为强烈变形会失去其特征形状。 </p>
+<dl class="section since"><dt>自从</dt><dd>2.19.0 </dd></dl>
+
+</div>
+</div>
 <a id="ae33d61cde357b47b356c490d07347416"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae33d61cde357b47b356c490d07347416">&#9670;&nbsp;</a></span>NoiseThreshold</h2>
 
@@ -919,7 +949,7 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 <!-- HTML footer for doxygen 1.9.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-© 2025 <a href="http://www.hzleaper.com/">杭州利珀科技有限公司</a>
+© 2026 <a href="http://www.hzleaper.com/">杭州利珀科技有限公司</a>
 </small></address>
 <script type="text/javascript">
 //<![CDATA[

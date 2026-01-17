@@ -119,6 +119,8 @@ Public 成员函数</h2></td></tr>
 <tr class="separator:ada8ef622715c5a172b3f5cc89024b38b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0772521fac1f24bd996f05fac5cae9d7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html#a0772521fac1f24bd996f05fac5cae9d7">Save</a> (<a class="el" href="class_l_string.html">LString</a> filename, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a> *region)</td></tr>
 <tr class="separator:a0772521fac1f24bd996f05fac5cae9d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf42ad20010153098a714f899ca4adb9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html#abf42ad20010153098a714f899ca4adb9">SaveWithFormat</a> (<a class="el" href="class_l_string.html">LString</a> filename, <a class="el" href="class_l_string.html">LString</a> format, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a> *region)</td></tr>
+<tr class="separator:abf42ad20010153098a714f899ca4adb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88dc5a82b65d27fb4858762e1e6d8b57"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html#a88dc5a82b65d27fb4858762e1e6d8b57">SetChannel</a> (int channelIdx, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *channelImage)</td></tr>
 <tr class="separator:a88dc5a82b65d27fb4858762e1e6d8b57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6662dbe1cade0feda72183ddcbc77a99"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html#a6662dbe1cade0feda72183ddcbc77a99">SetImageData</a> (int w, int h, LPVOID dataPtr, int bpl, BOOL copyData)</td></tr>
@@ -501,7 +503,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
         </tr>
       </table>
 </div><div class="memdoc">
-<p>保存图像对象到指定的文件。保存格式有输入路径中的扩展名指定。当前版本，支持保存 BMP, PNG, JPG, JPEG 格式。 </p><dl class="params"><dt>参数</dt><dd>
+<p>保存图像对象到指定的文件。保存格式有输入路径中的扩展名指定。当前版本，支持保存 BMP, PNG, JPG, JPEG, TIFF, WEBP 格式。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">region</td><td>指定保存图像中的局部区域。可为空，则保持全图。 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>文件路径，可为绝对或相对路径，包含文件夹、文件名和扩展名 </td></tr>
@@ -514,7 +516,89 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
   </table>
   </dd>
 </dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_object.html#a74069eb14437a9a889322b62e52db75f">Load()</a>, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html#abf42ad20010153098a714f899ca4adb9">SaveWithFormat()</a> </dd></dl>
+
+</div>
+</div>
+<a id="abf42ad20010153098a714f899ca4adb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf42ad20010153098a714f899ca4adb9">&#9670;&nbsp;</a></span>SaveWithFormat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> SaveWithFormat </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_l_string.html">LString</a>&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_l_string.html">LString</a>&#160;</td>
+          <td class="paramname"><em>format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a> *&#160;</td>
+          <td class="paramname"><em>region</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>保存图像对象到指定的文件。保存格式有输入的 <code>format</code> 参数指定。当前版本，支持以下格式。 </p><table class="markdownTable">
+<tr>
+<th class="markdownTableHeadLeft">格式</th><th class="markdownTableHeadLeft">用途 </th></tr>
+<tr>
+<td>bmp</td><td><b>Windows-BMP 格式</b><ul>
+<li>仅支持存储 8 位的单通道（<a class="el" href="namespace_l_p_v_core_lib.html#a0205db5ad70eff44ebd76708a72459e0a84604cc9517eac21a0d71040b258789e">灰度</a>）或三通道（<a class="el" href="namespace_l_p_v_core_lib.html#a0205db5ad70eff44ebd76708a72459e0ab95ee4eae4f3d75a2b5dd5eb51e7670d">RGB 彩色</a>）图像 </li>
+</ul>
+</td></tr>
+<tr>
+<td>jpeg</td><td><b>JPEG 格式</b> - 无损压缩<ul>
+<li>仅支持存储 8 位的单通道（<a class="el" href="namespace_l_p_v_core_lib.html#a0205db5ad70eff44ebd76708a72459e0a84604cc9517eac21a0d71040b258789e">灰度</a>）或三通道（<a class="el" href="namespace_l_p_v_core_lib.html#a0205db5ad70eff44ebd76708a72459e0ab95ee4eae4f3d75a2b5dd5eb51e7670d">RGB 彩色</a>）图像</li>
+<li>可传入一个 0 ~ 100 的整数用于指定压缩率，如 jpeg 60 。默认压缩率为 95 </li>
+</ul>
+</td></tr>
+<tr>
+<td>png</td><td><b>PNG 格式</b> - 有损压缩<ul>
+<li>仅支持存储 8 位的单通道（<a class="el" href="namespace_l_p_v_core_lib.html#a0205db5ad70eff44ebd76708a72459e0a84604cc9517eac21a0d71040b258789e">灰度</a>）或三通道（<a class="el" href="namespace_l_p_v_core_lib.html#a0205db5ad70eff44ebd76708a72459e0ab95ee4eae4f3d75a2b5dd5eb51e7670d">RGB 彩色</a>）图像</li>
+<li>可传入一个 0 ~ 9 的整数用于指定压缩等级，如 png 6 。其中 0 表示无压缩，9 表示最大压缩。默认压缩等级为 0 。 </li>
+</ul>
+</td></tr>
+<tr>
+<td>tiff</td><td><b>TIFF 格式</b> - 无损压缩<ul>
+<li>支持存储所有类型的图像 </li>
+</ul>
+</td></tr>
+<tr>
+<td>webp</td><td><b>WEBP format</b> - 无损或有损压缩<ul>
+<li>仅支持存储 8 位的单通道（<a class="el" href="namespace_l_p_v_core_lib.html#a0205db5ad70eff44ebd76708a72459e0a84604cc9517eac21a0d71040b258789e">灰度</a>）或三通道（<a class="el" href="namespace_l_p_v_core_lib.html#a0205db5ad70eff44ebd76708a72459e0ab95ee4eae4f3d75a2b5dd5eb51e7670d">RGB 彩色</a>）图像</li>
+<li>可传入一个 0 ~ 100 的整数用于指定压缩率，如 webp 60 。默认压缩率为 95 </li>
+</ul>
+</td></tr>
+</table>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">format</td><td>指定保存格式。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">region</td><td>指定保存图像中的局部区域。可为空，则保持全图。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>文件路径，可为绝对或相对路径，包含文件夹、文件名和扩展名 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">error</td><td>返回错误码 </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html#a0772521fac1f24bd996f05fac5cae9d7">Save()</a>, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_object.html#a74069eb14437a9a889322b62e52db75f">Load()</a> </dd></dl>
+<dl class="section since"><dt>自从</dt><dd>2.19.0 </dd></dl>
 
 </div>
 </div>
@@ -783,7 +867,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 <!-- HTML footer for doxygen 1.9.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-© 2025 <a href="http://www.hzleaper.com/">杭州利珀科技有限公司</a>
+© 2026 <a href="http://www.hzleaper.com/">杭州利珀科技有限公司</a>
 </small></address>
 <script type="text/javascript">
 //<![CDATA[

@@ -109,6 +109,8 @@ Public 成员函数</h2></td></tr>
 <tr class="separator:a68b6649b7ed6d9c66fb7ac4de72d2977"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64ce1f707c2857a5eda2d20a5e9b7803"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#a64ce1f707c2857a5eda2d20a5e9b7803">AddReferenceLineV</a> (double position, double relativePosition, BOOL attached, OLE_COLOR clr)</td></tr>
 <tr class="separator:a64ce1f707c2857a5eda2d20a5e9b7803"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1d0b58d421ca85e6c89492e03627853"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#aa1d0b58d421ca85e6c89492e03627853">CloseDialog</a> ()</td></tr>
+<tr class="separator:aa1d0b58d421ca85e6c89492e03627853"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d913d4876cdc9d4c5e59713d218c788"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#a6d913d4876cdc9d4c5e59713d218c788">FitInView</a> (int tlx, int tly, int w, int h, <a class="el" href="namespace_l_p_v_display_lib.html#a5361690471ec9bae7d38163800878c4e">LPVAlignment</a> alignFlags)</td></tr>
 <tr class="separator:a6d913d4876cdc9d4c5e59713d218c788"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aadde65986cfadd223bef04b3ce008e36"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#aadde65986cfadd223bef04b3ce008e36">FitToWindow</a> (<a class="el" href="namespace_l_p_v_display_lib.html#a5361690471ec9bae7d38163800878c4e">LPVAlignment</a> alignFlags)</td></tr>
@@ -133,6 +135,8 @@ Public 成员函数</h2></td></tr>
 <tr class="separator:a09363be5a60d131aa2dd7da89a85aef9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74746f6c65e761450422b2402ed0b076"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#a74746f6c65e761450422b2402ed0b076">SaveWindowToImage</a> (IDispatch *image)</td></tr>
 <tr class="separator:a74746f6c65e761450422b2402ed0b076"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4ddfa0d973b79dea89de8498cc73102"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#ad4ddfa0d973b79dea89de8498cc73102">SetDialogEventSink</a> (<a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_events.html">ILDisplayEvents</a> *sink)</td></tr>
+<tr class="separator:ad4ddfa0d973b79dea89de8498cc73102"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34630d9dd2b50da9a6e3895cc43140da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#a34630d9dd2b50da9a6e3895cc43140da">SetDisplayFlag</a> (<a class="el" href="namespace_l_p_v_display_lib.html#abc2f2be19cc9a20d8f4b71ddb968d49b">LPVDisplayFlags</a> flag, BOOL enable)</td></tr>
 <tr class="separator:a34630d9dd2b50da9a6e3895cc43140da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c2ed3482f17828158b0a681b4e613ae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#a2c2ed3482f17828158b0a681b4e613ae">SetSize</a> (int w, int h)</td></tr>
@@ -310,6 +314,25 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="aa1d0b58d421ca85e6c89492e03627853"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1d0b58d421ca85e6c89492e03627853">&#9670;&nbsp;</a></span>CloseDialog()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CloseDialog </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>关闭通过 <a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#ad59ddb26897c32be05a846242874b1cb">ShowDialog()</a> 或 <a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#a5364a06cb503911a4b1b44e394d2d437">ShowDialogAsync()</a> 弹窗显示的控件 </p><dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#ad59ddb26897c32be05a846242874b1cb">ShowDialog()</a>, <a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#a5364a06cb503911a4b1b44e394d2d437">ShowDialogAsync()</a> </dd></dl>
+<dl class="section since"><dt>自从</dt><dd>2.19.0 </dd></dl>
 
 </div>
 </div>
@@ -791,6 +814,40 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 
 </div>
 </div>
+<a id="ad4ddfa0d973b79dea89de8498cc73102"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4ddfa0d973b79dea89de8498cc73102">&#9670;&nbsp;</a></span>SetDialogEventSink()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SetDialogEventSink </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_events.html">ILDisplayEvents</a> *&#160;</td>
+          <td class="paramname"><em>sink</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>为显示控件设置事件接收器，以接收鼠标、键盘等事件。 通常用于在控制台程序中显示调试图像等信息。<br  />
+我们在 LPVDisplay.h 中提供了一个方便使用的 C++ 事件接收器实现，支持设置事件对应的回调函数。 对于 C# 应用程序，更推荐以直接订阅控件的 .NET 委托事件的方式实现事件监听，这更容易实现，而不是调用此 API。 </p><h3>示例代码 </h3>
+ <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">LDisplayDialogEventSinkPtr sink = LDisplayDialogEventSink::Create();</div>
+<div class="line">sink-&gt;setCallback(<a class="code" href="namespace_l_p_v_display_lib.html#a240f4df3dc35623d3715ac7245255215a9e3177935e610795c523bea690581919">LPVDisplayEventMouseDown</a>, [](LDisplayDialogEventSink* sink, <span class="keywordtype">int</span> evt) {</div>
+<div class="line">   std::cout &lt;&lt; sink-&gt;getX() &lt;&lt; <span class="stringliteral">&quot;, &quot;</span> &lt;&lt; sink-&gt;getY() &lt;&lt; std::endl;</div>
+<div class="line">});</div>
+<div class="line">sink-&gt;setCallback(<a class="code" href="namespace_l_p_v_display_lib.html#a240f4df3dc35623d3715ac7245255215afa3fc064f24a65812045891e77f56628">LPVDisplayEventRegionDragFinished</a>, [](LDisplayDialogEventSink* sink, <span class="keywordtype">int</span> evt) {</div>
+<div class="line">   std::cout &lt;&lt; sink-&gt;getId() &lt;&lt; std::endl;</div>
+<div class="line">});</div>
+<div class="line">displayCtrl-&gt;SetDialogEventSink(sink.get());</div>
+<div class="line">displayCtrl-&gt;ShowDialog(L<span class="stringliteral">&quot;test&quot;</span>, 0, 0, 0, 0);</div>
+<div class="ttc" id="anamespace_l_p_v_display_lib_html_a240f4df3dc35623d3715ac7245255215a9e3177935e610795c523bea690581919"><div class="ttname"><a href="namespace_l_p_v_display_lib.html#a240f4df3dc35623d3715ac7245255215a9e3177935e610795c523bea690581919">LPVDisplayLib::LPVDisplayEventMouseDown</a></div><div class="ttdeci">@ LPVDisplayEventMouseDown</div><div class="ttdef"><b>Definition:</b> LPVDisplay.idl:218</div></div>
+<div class="ttc" id="anamespace_l_p_v_display_lib_html_a240f4df3dc35623d3715ac7245255215afa3fc064f24a65812045891e77f56628"><div class="ttname"><a href="namespace_l_p_v_display_lib.html#a240f4df3dc35623d3715ac7245255215afa3fc064f24a65812045891e77f56628">LPVDisplayLib::LPVDisplayEventRegionDragFinished</a></div><div class="ttdeci">@ LPVDisplayEventRegionDragFinished</div><div class="ttdef"><b>Definition:</b> LPVDisplay.idl:234</div></div>
+</div><!-- fragment --> </div> <p> <b>注：</b>该接口需在 <a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#ad59ddb26897c32be05a846242874b1cb">ShowDialog()</a> 和 <a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#a5364a06cb503911a4b1b44e394d2d437">ShowDialogAsync()</a> 之前调用。</p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#ad59ddb26897c32be05a846242874b1cb">ShowDialog()</a>, <a class="el" href="interface_l_p_v_display_lib_1_1_i_l_display_common.html#a5364a06cb503911a4b1b44e394d2d437">ShowDialogAsync()</a> </dd></dl>
+<dl class="section since"><dt>自从</dt><dd>2.19.0 </dd></dl>
+
+</div>
+</div>
 <a id="a34630d9dd2b50da9a6e3895cc43140da"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a34630d9dd2b50da9a6e3895cc43140da">&#9670;&nbsp;</a></span>SetDisplayFlag()</h2>
 
@@ -986,7 +1043,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 <!-- HTML footer for doxygen 1.9.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-© 2025 <a href="http://www.hzleaper.com/">杭州利珀科技有限公司</a>
+© 2026 <a href="http://www.hzleaper.com/">杭州利珀科技有限公司</a>
 </small></address>
 <script type="text/javascript">
 //<![CDATA[

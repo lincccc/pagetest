@@ -115,12 +115,16 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a694efb0352aa5daea86405e2579e8ff8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06d21a51a97e29d464e5690452fe7565"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html#a06d21a51a97e29d464e5690452fe7565">IsReady</a> ()</td></tr>
 <tr class="separator:a06d21a51a97e29d464e5690452fe7565"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a268fabd5c1e889742f0aabe53c77bb8d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html#a268fabd5c1e889742f0aabe53c77bb8d">LoadAlgoConfig</a> (int taskId, <a class="el" href="class_l_string.html">LString</a> algoName, BSTR filename)</td></tr>
+<tr class="separator:a268fabd5c1e889742f0aabe53c77bb8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe899b2b4b2899c58cbbe6b8d3abb5a9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html#afe899b2b4b2899c58cbbe6b8d3abb5a9">LoadGlobalAction</a> (<a class="el" href="class_l_string.html">LString</a> filename)</td></tr>
 <tr class="separator:afe899b2b4b2899c58cbbe6b8d3abb5a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ddf5b44ab2f1cc95e9119ad13fa16f1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html#a5ddf5b44ab2f1cc95e9119ad13fa16f1">LoadTask</a> (<a class="el" href="class_l_string.html">LString</a> filename, int *taskId)</td></tr>
 <tr class="separator:a5ddf5b44ab2f1cc95e9119ad13fa16f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c6acc9ff5a603a44e97b2962a152d41"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html#a8c6acc9ff5a603a44e97b2962a152d41">PrepareTask</a> (int taskId)</td></tr>
 <tr class="separator:a8c6acc9ff5a603a44e97b2962a152d41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d9cf7b8f5480393ad592d47544921a0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html#a3d9cf7b8f5480393ad592d47544921a0">SaveAlgoConfig</a> (int taskId, <a class="el" href="class_l_string.html">LString</a> algoName, BSTR filename)</td></tr>
+<tr class="separator:a3d9cf7b8f5480393ad592d47544921a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab74f08ad79efd0d924fa05380b157450"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html#ab74f08ad79efd0d924fa05380b157450">SaveTask</a> (int taskId, BSTR filename)</td></tr>
 <tr class="separator:ab74f08ad79efd0d924fa05380b157450"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f944a6c2fbcb0fbecffbfbc15102ed3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html#a4f944a6c2fbcb0fbecffbfbc15102ed3">SetAlgoConfig</a> (int taskId, <a class="el" href="class_l_string.html">LString</a> algoName, <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_algo_config.html">ILIBAlgoConfig</a> *algoConfig)</td></tr>
@@ -431,6 +435,55 @@ Return null if failed to find the task with the specified ID or its algorithm wi
 
 </div>
 </div>
+<a id="a268fabd5c1e889742f0aabe53c77bb8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a268fabd5c1e889742f0aabe53c77bb8d">&#9670;&nbsp;</a></span>LoadAlgoConfig()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int LoadAlgoConfig </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>taskId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_l_string.html">LString</a>&#160;</td>
+          <td class="paramname"><em>algoName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BSTR&#160;</td>
+          <td class="paramname"><em>filename</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Load the algorithm configuration with the given task ID and algorithm name from given file path. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">taskId</td><td>The unique task ID. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">algoName</td><td>The algorithm name. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>Full path of the algorithm configuration file to load, it could be absolute or relative path with file name and extension. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">errCode</td><td>Return the error code if anything is wrong, you may check the <a class="el" href="ib_error.html">error code lookup table</a>, return <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aae917cd39742ab4cec9119219cae9154c">LPVNoError</a> if succeed. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html#a3d9cf7b8f5480393ad592d47544921a0">SaveAlgoConfig()</a> </dd></dl>
+
+</div>
+</div>
 <a id="afe899b2b4b2899c58cbbe6b8d3abb5a9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afe899b2b4b2899c58cbbe6b8d3abb5a9">&#9670;&nbsp;</a></span>LoadGlobalAction()</h2>
 
@@ -526,6 +579,55 @@ Return null if failed to find the task with the specified ID or its algorithm wi
   </dd>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html#a5ddf5b44ab2f1cc95e9119ad13fa16f1">LoadTask()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a3d9cf7b8f5480393ad592d47544921a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d9cf7b8f5480393ad592d47544921a0">&#9670;&nbsp;</a></span>SaveAlgoConfig()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SaveAlgoConfig </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>taskId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_l_string.html">LString</a>&#160;</td>
+          <td class="paramname"><em>algoName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BSTR&#160;</td>
+          <td class="paramname"><em>filename</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Save the algorithm configuration with the given task ID and algorithm name and save path. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">taskId</td><td>The unique task ID. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">algoName</td><td>The algorithm name. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>Full path of the algorithm configuration file to save, it could be absolute or relative path with file name and extension. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">errCode</td><td>Return the error code if anything is wrong, you may check the <a class="el" href="ib_error.html">error code lookup table</a>, return <a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4aae917cd39742ab4cec9119219cae9154c">LPVNoError</a> if succeed. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html#a268fabd5c1e889742f0aabe53c77bb8d">LoadAlgoConfig()</a> </dd></dl>
 
 </div>
 </div>
@@ -780,7 +882,7 @@ It's Ok to omit the tear down step, we'll do it automatically when free the serv
 <!-- HTML footer for doxygen 1.9.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-© 2025 <a href="http://www.hzleaper.com/">Hangzhou Leaper Tech. Ltd.</a>
+© 2026 <a href="http://www.hzleaper.com/">Hangzhou Leaper Tech. Ltd.</a>
 </small></address>
 <script type="text/javascript">
 //<![CDATA[
