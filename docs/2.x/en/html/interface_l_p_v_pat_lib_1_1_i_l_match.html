@@ -249,7 +249,7 @@ The algorithm is real-time and of sub-pixel accuracy. Detection is based mainly 
 <div class="line">matchTool-&gt;Learn(m_template_img, <span class="keyword">nullptr</span>);</div>
 <div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = matchTool-&gt;Learn(img, roi);</div>
 <div class="line"><span class="keywordflow">if</span> (err != LPVErrorCode::LPVNoError) <span class="keywordflow">return</span>;</div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">This enumeration represents the type of a LPV function error.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:530</div></div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">This enumeration represents the type of a LPV function error.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:545</div></div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LMatch matchTool = <span class="keyword">new</span> LMatch();</div>
 <div class="line">matchTool.Learn(m_template_img, <span class="keyword">null</span>);</div>
 <div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = matchTool.Learn(img, (LRegion)roi);</div>
@@ -375,7 +375,7 @@ The algorithm is real-time and of sub-pixel accuracy. Detection is based mainly 
 </div><div class="memdoc">
 <p>Get the pattern template image. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale"/> <img src="bit8.png" alt="" class="inline" title="8 Bit"/> Return the image. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale image"/> <img src="bit8.png" alt="" class="inline" title="8 bits without sign"/> Return the image. </td></tr>
   </table>
   </dd>
 </dl>
@@ -399,7 +399,7 @@ The algorithm is real-time and of sub-pixel accuracy. Detection is based mainly 
 </div><div class="memdoc">
 <p>Get the pattern template mask. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">mask</td><td><img src="color_binary.png" alt="" class="inline" title="Binary"/> <img src="bit8.png" alt="" class="inline" title="8 Bit"/> Return the mask. It will be an empty image, if the template has no mask. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">mask</td><td><img src="color_binary.png" alt="" class="inline" title="Binary image"/> <img src="bit8.png" alt="" class="inline" title="8 bits without sign"/> Return the mask. It will be an empty image, if the template has no mask. </td></tr>
   </table>
   </dd>
 </dl>
@@ -423,7 +423,7 @@ The algorithm is real-time and of sub-pixel accuracy. Detection is based mainly 
 </div><div class="memdoc">
 <p>Get the prune mask. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">mask</td><td><img src="color_binary.png" alt="" class="inline" title="Binary"/> <img src="bit8.png" alt="" class="inline" title="8 Bit"/> Return the mask. It will be an empty image, if the template has been pruned. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">mask</td><td><img src="color_binary.png" alt="" class="inline" title="Binary image"/> <img src="bit8.png" alt="" class="inline" title="8 bits without sign"/> Return the mask. It will be an empty image, if the template has been pruned. </td></tr>
   </table>
   </dd>
 </dl>
@@ -515,7 +515,7 @@ The algorithm is real-time and of sub-pixel accuracy. Detection is based mainly 
 </div><div class="memdoc">
 <p>Learn the pattern template features from the provided image. The template center can be modified later. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale"/> <img src="bit8.png" alt="" class="inline" title="8 Bit"/> The input image </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale image"/> <img src="bit8.png" alt="" class="inline" title="8 bits without sign"/> The input image </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">region</td><td>The input region, to limit the region of pattern template on the input image and also exclude some not-care pixels. </td></tr>
   </table>
   </dd>
@@ -565,7 +565,7 @@ The algorithm is real-time and of sub-pixel accuracy. Detection is based mainly 
 The shape and polarity of the template features is described with the given shape region, adding a region produce a white-on-black shape while subtracting a region produce a black-on-white shape.<br  />
 The feature points are extracted from the given shape region, thus not affected by <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#ad3566610c7064816188077fe128c506e" title="Level of detail of the pattern template, in range of 0 ~ 1. By default, it&#39;s set to 0....">DetailLevel</a>. </p><center><img src="pattern_shaperegion.png" alt="" class="inline"/> <img src="pattern_shaperegion.svg" alt="" style="pointer-events: none;" height="140px" class="inline"/></center> <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale"/> <img src="bit8.png" alt="" class="inline" title="8 Bit"/> The input image. It is optional, but <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a8698837361cab3af9df6444df07cb5c9" title="The combination weight in percentage of the evaluation score based on the similarity of the matching ...">GrayValueWeight</a> does not take any effect when the source image is absent. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale image"/> <img src="bit8.png" alt="" class="inline" title="8 bits without sign"/> The input image. It is optional, but <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a8698837361cab3af9df6444df07cb5c9" title="The combination weight in percentage of the evaluation score based on the similarity of the matching ...">GrayValueWeight</a> does not take any effect when the source image is absent. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">region</td><td>The optional input region, to limit the region of pattern template on the input image. and also exclude some unwanted pixels and shape. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">shapeRegion</td><td>The input shape region used to generate the template shape. It should be related to the coordinates of the input image, as same as the region parameter. </td></tr>
   </table>
@@ -620,9 +620,9 @@ The feature points are extracted from the given shape region, thus not affected 
 The shape and polarity of the template features are extracted from the shape image.<br  />
 The feature points are extracted from the given shape image, thus not affected by <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#ad3566610c7064816188077fe128c506e" title="Level of detail of the pattern template, in range of 0 ~ 1. By default, it&#39;s set to 0....">DetailLevel</a>. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale"/> <img src="bit8.png" alt="" class="inline" title="8 Bit"/> The input image. It is optional, but <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a8698837361cab3af9df6444df07cb5c9" title="The combination weight in percentage of the evaluation score based on the similarity of the matching ...">GrayValueWeight</a> does not take any effect when the source image is absent. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale image"/> <img src="bit8.png" alt="" class="inline" title="8 bits without sign"/> The input image. It is optional, but <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a8698837361cab3af9df6444df07cb5c9" title="The combination weight in percentage of the evaluation score based on the similarity of the matching ...">GrayValueWeight</a> does not take any effect when the source image is absent. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">region</td><td>The optional input region, to limit the region of pattern template on the input image. and also exclude some unwanted pixels and shape. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">shapeImg</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale"/> <img src="bit8.png" alt="" class="inline" title="8 Bit"/> The shape image. It should have the same size as the image parameter. <div class="image">
+    <tr><td class="paramdir">[in]</td><td class="paramname">shapeImg</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale image"/> <img src="bit8.png" alt="" class="inline" title="8 bits without sign"/> The shape image. It should have the same size as the image parameter. <div class="image">
 <img src="pattern_shapeimage.png" alt=""/>
 </div>
  </td></tr>
@@ -665,7 +665,7 @@ The feature points are extracted from the given shape image, thus not affected b
 </div><div class="memdoc">
 <p>Match on the provided image. The returned positions are based on image coordinates. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale"/> <img src="bit8.png" alt="" class="inline" title="8 Bit"/> The input image </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale image"/> <img src="bit8.png" alt="" class="inline" title="8 bits without sign"/> The input image </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">region</td><td>The input region, to limit the region of matching. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">results</td><td>Return the matching results. </td></tr>
   </table>
@@ -720,7 +720,7 @@ The feature points are extracted from the given shape image, thus not affected b
 <p>Prune the trained template features, eliminate the features which are located outside of the given region or belong to the shape polylines of the given indexes.<br  />
 Pass in null region and empty shape indexes to restore the features to original. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale"/> <img src="bit8.png" alt="" class="inline" title="8 Bit"/> The input image </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale image"/> <img src="bit8.png" alt="" class="inline" title="8 bits without sign"/> The input image </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">region</td><td>The input region. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">shapeIdx0</td><td>The indexes of shape polylines in level 0 to be removed </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">shapeIdx1</td><td>The indexes of shape polylines in level 1 to be removed </td></tr>

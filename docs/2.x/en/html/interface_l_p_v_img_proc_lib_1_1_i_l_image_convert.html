@@ -161,7 +161,7 @@ The name is drawn on canvas around the object if <a class="el" href="interface_l
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><p> Code snippets: snippets/ColorSpace.cs </p><div class="fragment"><div class="line">LImageConvert imgCvter = <span class="keyword">new</span> LImageConvert();</div>
 <div class="line">imgCvter.BGRToGray(colorImg, grayImg);</div>
 <div class="line">imgCvter.Convert(<a class="code" href="namespace_l_p_v_core_lib.html#abc1c78dbe5bbd9696e1af6618392a083">LPVColorSpace</a>.LPVColorSpaceBGR, <a class="code" href="namespace_l_p_v_core_lib.html#abc1c78dbe5bbd9696e1af6618392a083">LPVColorSpace</a>.LPVColorSpaceHSV, colorImg, hsvImg);</div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html_abc1c78dbe5bbd9696e1af6618392a083"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#abc1c78dbe5bbd9696e1af6618392a083">LPVCoreLib::LPVColorSpace</a></div><div class="ttdeci">LPVColorSpace</div><div class="ttdoc">This enumeration represents the color space of the image and also indicates the order of the channels...</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:1704</div></div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_abc1c78dbe5bbd9696e1af6618392a083"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#abc1c78dbe5bbd9696e1af6618392a083">LPVCoreLib::LPVColorSpace</a></div><div class="ttdeci">LPVColorSpace</div><div class="ttdoc">This enumeration represents the color space of the image and also indicates the order of the channels...</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:1760</div></div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='com' style='display: none;'>COM</div><div class='toggleable_div label_com' style='display: none;'> <div class="fragment"><div class="line">ILImageConvertPtr imgCvter = LImageConvert::Create();</div>
 <div class="line"><span class="comment">// or, ILImageConvertPtr imgCvter(__uuidof(LImageConvert)), for absence of built-in Create functions (before 2.2.0)</span></div>
 <div class="line">imgCvter-&gt;BGRToGray(colorImg, grayImg);</div>
@@ -216,11 +216,11 @@ The name is drawn on canvas around the object if <a class="el" href="interface_l
 </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">bgrImg</td><td><img src="color_bgr.png" alt="" class="inline" title="Color"/> <img src="bit8.png" alt="" class="inline" title="8 Bit"/> The input BGR color image </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bgrImg</td><td><img src="color_bgr.png" alt="" class="inline" title="Color image"/> <img src="bit8.png" alt="" class="inline" title="8 bits without sign"/> The input BGR color image </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">w0</td><td>The weight for the 1st(Blue) channel, in range -255 ~ 255 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">w1</td><td>The weight for the 2nd(Green) channel, in range -255 ~ 255 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">w2</td><td>The weight for the 3rd(Red) channel, in range -255 ~ 255 </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">grayImg</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale"/> <img src="bit8.png" alt="" class="inline" title="8 Bit"/> Return the grayscale result image of the same size as the input. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">grayImg</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale image"/> <img src="bit8.png" alt="" class="inline" title="8 bits without sign"/> Return the grayscale result image of the same size as the input. </td></tr>
   </table>
   </dd>
 </dl>
@@ -258,8 +258,8 @@ The name is drawn on canvas around the object if <a class="el" href="interface_l
 </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">bgrImg</td><td><img src="color_bgr.png" alt="" class="inline" title="Color"/> <img src="bit8.png" alt="" class="inline" title="8 Bit"/> The input BGR color image </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">grayImg</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale"/> <img src="bit8.png" alt="" class="inline" title="8 Bit"/> Return the grayscale result image of the same size as the input.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bgrImg</td><td><img src="color_bgr.png" alt="" class="inline" title="Color image"/> <img src="bit8.png" alt="" class="inline" title="8 bits without sign"/> The input BGR color image </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">grayImg</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale image"/> <img src="bit8.png" alt="" class="inline" title="8 bits without sign"/> Return the grayscale result image of the same size as the input.</td></tr>
   </table>
   </dd>
 </dl>
@@ -357,7 +357,7 @@ The name is drawn on canvas around the object if <a class="el" href="interface_l
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>The input image </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">cmap</td><td>The applied colormap, see LPVColorMap for details </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">bgrImg</td><td><img src="color_bgr.png" alt="" class="inline" title="Color"/> <img src="bit8.png" alt="" class="inline" title="8 Bit"/> Return the result color image </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">bgrImg</td><td><img src="color_bgr.png" alt="" class="inline" title="Color image"/> <img src="bit8.png" alt="" class="inline" title="8 bits without sign"/> Return the result color image </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">inv</td><td>Whether to invert the colormap. By default, it's false. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">normalize</td><td>Whether to normalize the input image based on the minValue ~ maxValue range, before applying colormap. By default, it's false. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">minValue,maxValue</td><td>The specified value of interest for normalization. Pass in empty range (0, 0) to use the minimum of current image. </td></tr>
@@ -438,7 +438,7 @@ The name is drawn on canvas around the object if <a class="el" href="interface_l
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>The input image </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">cmap</td><td>The applied colormap, see LPVColorMap for details </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">bgrImg</td><td><img src="color_bgr.png" alt="" class="inline" title="Color"/> <img src="bit8.png" alt="" class="inline" title="8 Bit"/> Return the result color image </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">bgrImg</td><td><img src="color_bgr.png" alt="" class="inline" title="Color image"/> <img src="bit8.png" alt="" class="inline" title="8 bits without sign"/> Return the result color image </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">inv</td><td>Whether to invert the colormap. By default, it's false. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">normalize</td><td>Whether to normalize the input image based on the minValue ~ maxValue range, before applying colormap. By default, it's false. You may manually normalize the input image before calling this function via <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#adf660a10ca16161030619866f2b49e55">Normalize()</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#aa2263e543b518236ba5126bb4888e2b0">NormalizeMeanStdDev()</a>, etc. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">minValue,maxValue</td><td>The specified value of interest for normalization. Pass in empty range (0, 0) to use the minimum / maximum of current image. </td></tr>
@@ -492,8 +492,8 @@ The name is drawn on canvas around the object if <a class="el" href="interface_l
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">fromColorSpace</td><td>The current source color space </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">toColorSpace</td><td>The destination color space </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">srcColorImg</td><td><img src="color_bgr.png" alt="" class="inline" title="Color"/> <img src="bit8.png" alt="" class="inline" title="8 Bit"/> The input color image </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">dstColorImg</td><td><img src="color_bgr.png" alt="" class="inline" title="Color"/> <img src="bit8.png" alt="" class="inline" title="8 Bit"/> Return the conversion result image </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">srcColorImg</td><td><img src="color_bgr.png" alt="" class="inline" title="Color image"/> <img src="bit8.png" alt="" class="inline" title="8 bits without sign"/> The input color image </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">dstColorImg</td><td><img src="color_bgr.png" alt="" class="inline" title="Color image"/> <img src="bit8.png" alt="" class="inline" title="8 bits without sign"/> Return the conversion result image </td></tr>
   </table>
   </dd>
 </dl>
@@ -582,7 +582,7 @@ The name is drawn on canvas around the object if <a class="el" href="interface_l
 </div><div class="memdoc">
 <p>Convert a 16bit image to 8bit depth, extracting the continues 8 bits from the specified index. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">img16Bit</td><td><img src="bit16.png" alt="" class="inline" title="16 Bit"/> The input 16bit image </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img16Bit</td><td><img src="bit16.png" alt="" class="inline" title="16 bits without sign"/> The input 16bit image </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">fromNthBit</td><td>The starting index, in range -7 ~ 15 to ensure at least 1 valid bit <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">From Nth Bit   </th><th class="markdownTableHeadNone">Usage    </th></tr>
@@ -594,7 +594,7 @@ The name is drawn on canvas around the object if <a class="el" href="interface_l
 <td class="markdownTableBodyNone">4   </td><td class="markdownTableBodyNone">Extract Middle 8bit   </td></tr>
 </table>
 </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">img8Bit</td><td><img src="bit8.png" alt="" class="inline" title="8 Bit"/> Return the result 8bit image </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">img8Bit</td><td><img src="bit8.png" alt="" class="inline" title="8 bits without sign"/> Return the result 8bit image </td></tr>
   </table>
   </dd>
 </dl>
@@ -639,7 +639,7 @@ The name is drawn on canvas around the object if <a class="el" href="interface_l
 </div><div class="memdoc">
 <p>Convert an 8bit image to 16bit depth, set the continues 8 bits from the specified index. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">img8Bit</td><td><img src="bit8.png" alt="" class="inline" title="8 Bit"/> The input 8bit image </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img8Bit</td><td><img src="bit8.png" alt="" class="inline" title="8 bits without sign"/> The input 8bit image </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">fromNthBit</td><td>The starting index, in range -7 ~ 15 to ensure at least 1 valid bit <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">From Nth Bit   </th><th class="markdownTableHeadNone">Usage    </th></tr>
@@ -651,7 +651,7 @@ The name is drawn on canvas around the object if <a class="el" href="interface_l
 <td class="markdownTableBodyNone">4   </td><td class="markdownTableBodyNone">Set to Middle 8bit   </td></tr>
 </table>
 </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">img16Bit</td><td><img src="bit16.png" alt="" class="inline" title="16 Bit"/> Return the result 16bit image </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">img16Bit</td><td><img src="bit16.png" alt="" class="inline" title="16 bits without sign"/> Return the result 16bit image </td></tr>
   </table>
   </dd>
 </dl>
@@ -690,8 +690,8 @@ The name is drawn on canvas around the object if <a class="el" href="interface_l
 </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">grayImg</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale"/> <img src="bit8.png" alt="" class="inline" title="8 Bit"/> The input grayscale image </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">bgrImg</td><td><img src="color_bgr.png" alt="" class="inline" title="Color"/> <img src="bit8.png" alt="" class="inline" title="8 Bit"/> Return the BGR color image of the same size as the input</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">grayImg</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale image"/> <img src="bit8.png" alt="" class="inline" title="8 bits without sign"/> The input grayscale image </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">bgrImg</td><td><img src="color_bgr.png" alt="" class="inline" title="Color image"/> <img src="bit8.png" alt="" class="inline" title="8 bits without sign"/> Return the BGR color image of the same size as the input</td></tr>
   </table>
   </dd>
 </dl>
@@ -771,7 +771,7 @@ The name is drawn on canvas around the object if <a class="el" href="interface_l
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>The input image </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">minValue,maxValue</td><td>The specified value of interest. Pass in empty range (0, 0) to use the minimum / maximum of current image. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">img16Bit</td><td><img src="bit16.png" alt="" class="inline" title="16 Bit"/> Output the result 16bit image </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">img16Bit</td><td><img src="bit16.png" alt="" class="inline" title="16 bits without sign"/> Output the result 16bit image </td></tr>
   </table>
   </dd>
 </dl>
@@ -821,7 +821,7 @@ The name is drawn on canvas around the object if <a class="el" href="interface_l
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>The input image. For color images, it outputs a color 8bit image, each channel is normalized on its own. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">minValue,maxValue</td><td>The specified value of interest. Pass in empty range (0, 0) to use the minimum / maximum of current image. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">img8Bit</td><td><img src="bit8.png" alt="" class="inline" title="8 Bit"/> Return the result 8bit image </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">img8Bit</td><td><img src="bit8.png" alt="" class="inline" title="8 bits without sign"/> Return the result 8bit image </td></tr>
   </table>
   </dd>
 </dl>

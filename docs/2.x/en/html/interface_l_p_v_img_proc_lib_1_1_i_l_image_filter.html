@@ -341,8 +341,8 @@ The smoothness of preserved edges are controlled by <a class="el" href="interfac
 </div><div class="memdoc">
 <p>Equalizes the histogram of the input grayscale image. It will normalizes the brightness and increases the contrast of the image. This operation is not a linear filter, thus does not use the kernel size. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="bit8.png" alt="" class="inline" title="8 Bit"/> The input image </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td><img src="bit8.png" alt="" class="inline" title="8 Bit"/> Return result image </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="bit8.png" alt="" class="inline" title="8 bits without sign"/> The input image </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td><img src="bit8.png" alt="" class="inline" title="8 bits without sign"/> Return result image </td></tr>
   </table>
   </dd>
 </dl>
@@ -383,7 +383,7 @@ The smoothness of preserved edges are controlled by <a class="el" href="interfac
 <p>Restore the holes on the given image based on the neighbor pixels. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>The input image </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">mask</td><td><img src="color_binary.png" alt="" class="inline" title="Binary"/> <img src="bit8.png" alt="" class="inline" title="8 Bit"/> The hole mask, the same size as the input image. White pixels are holes. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mask</td><td><img src="color_binary.png" alt="" class="inline" title="Binary image"/> <img src="bit8.png" alt="" class="inline" title="8 bits without sign"/> The hole mask, the same size as the input image. White pixels are holes. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>Return result image </td></tr>
   </table>
   </dd>

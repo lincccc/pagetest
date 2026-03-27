@@ -185,7 +185,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 <div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = contourDetector-&gt;DetectWithDir(img, rotRectRoi,</div>
 <div class="line">    LPVPolarity::LPVBlack2White, 30, 70, &amp;contourResults);</div>
 <div class="line"><span class="keywordflow">if</span> (err != LPVErrorCode::LPVNoError) <span class="keywordflow">return</span>;</div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">LPV 算法或函数运行过程中遇到的错误。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:530</div></div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">LPV 算法或函数运行过程中遇到的错误。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:545</div></div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LContourDetector contourDetector = <span class="keyword">new</span> LContourDetector();</div>
 <div class="line">contourDetector.ConnectTolerance = 16;</div>
 <div class="line">contourDetector.KSize = 5;</div>
@@ -193,7 +193,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 <div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = contourDetector.DetectWithDir(img, rotRectRoi,</div>
 <div class="line">   <a class="code" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0b">LPVPolarity</a>.LPVBlack2White, 30, 70, out contourResults);</div>
 <div class="line"><span class="keywordflow">if</span> (err != <a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>.LPVNoError) <span class="keywordflow">return</span>;</div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html_ad8a4d763bb82cc129119ff1cf0bc0e0b"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0b">LPVCoreLib::LPVPolarity</a></div><div class="ttdeci">LPVPolarity</div><div class="ttdoc">该枚举类型表示要定位的物体或边缘的极性</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:1114</div></div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_ad8a4d763bb82cc129119ff1cf0bc0e0b"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0b">LPVCoreLib::LPVPolarity</a></div><div class="ttdeci">LPVPolarity</div><div class="ttdoc">该枚举类型表示要定位的物体或边缘的极性</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:1129</div></div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='com' style='display: none;'>COM</div><div class='toggleable_div label_com' style='display: none;'><div class="fragment"><div class="line">ILContourDetectorPtr contourDetector = LContourDetector::Create();</div>
 <div class="line"><span class="comment">// or, ILContourDetectorPtr contourDetector(__uuidof(LContourDetector)), for absence of built-in Create functions (before 2.2.0)</span></div>
 <div class="line">contourDetector-&gt;ConnectTolerance = 16;</div>
@@ -236,7 +236,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 </div><div class="memdoc">
 <p>检测和定位轮廓。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale"/> <img src="bit8.png" alt="" class="inline" title="8 Bit"/> 输入的图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="灰度图像"/> <img src="bit8.png" alt="" class="inline" title="无符号 8 位整型"/> 输入的图像 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">region</td><td>输入的区域 </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">results</td><td>返回轮廓定位结果 </td></tr>
   </table>
@@ -303,7 +303,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 <p>检测和定位轮廓，并按轮廓走向和边缘转换方向过滤。<br  />
 对于轮廓中的每个像素，计算其边缘转换方向与区域扫描方向间的差异。差异过大的像素将被从轮廓中剔除。 若轮廓中存在过多的剔除像素且占比大于设定阈值，则认为轮廓的主要方向与所需不符，该其从最终结果中移除。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale"/> <img src="bit8.png" alt="" class="inline" title="8 Bit"/> 输入的图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="灰度图像"/> <img src="bit8.png" alt="" class="inline" title="无符号 8 位整型"/> 输入的图像 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">region</td><td>输入的区域，一个旋转矩形区域对象，以其旋转角度为扫描方向。 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">contourPolarity</td><td><em>边缘极性</em>，相对于区域的扫描方向 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">tolerance</td><td>方向差异的角度容差 </td></tr>

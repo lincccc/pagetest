@@ -180,6 +180,9 @@ $(function() {
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_p_v_core_lib_1_1_l_rot_rect_region.html">LRotRectRegion</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_l_p_v_core_lib_1_1_l_scalar.html">LScalar</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">标量，最多为三通道，不满三通道时以 0 填充  <a href="struct_l_p_v_core_lib_1_1_l_scalar.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_l_p_v_core_lib_1_1_l_size.html">LSize</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">整数尺寸，指定其长宽  <a href="struct_l_p_v_core_lib_1_1_l_size.html#details">更多...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -200,6 +203,9 @@ typedef struct <a class="el" href="struct_l_p_v_core_lib_1_1_l_matrix33.html">LP
 <tr class="memitem:aeae223803787bb5e1179c48af4691888"><td class="memItemLeft" align="right" valign="top"><a id="aeae223803787bb5e1179c48af4691888"></a>
 typedef struct <a class="el" href="struct_l_p_v_core_lib_1_1_l_matrix44.html">LPVCoreLib::LMatrix44</a>&#160;</td><td class="memItemRight" valign="bottom"><b>LMatrix44</b></td></tr>
 <tr class="separator:aeae223803787bb5e1179c48af4691888"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c7b5d2911775e44814b042e28346a89"><td class="memItemLeft" align="right" valign="top"><a id="a6c7b5d2911775e44814b042e28346a89"></a>
+typedef struct <a class="el" href="struct_l_p_v_core_lib_1_1_l_scalar.html">LPVCoreLib::LScalar</a>&#160;</td><td class="memItemRight" valign="bottom"><b>LScalar</b></td></tr>
+<tr class="separator:a6c7b5d2911775e44814b042e28346a89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89125a03732c9cae422aa5c5c2cb711b"><td class="memItemLeft" align="right" valign="top"><a id="a89125a03732c9cae422aa5c5c2cb711b"></a>
 typedef struct <a class="el" href="struct_l_p_v_core_lib_1_1_l_size.html">LPVCoreLib::LSize</a>&#160;</td><td class="memItemRight" valign="bottom"><b>LSize</b></td></tr>
 <tr class="separator:a89125a03732c9cae422aa5c5c2cb711b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -430,9 +436,28 @@ typedef struct <a class="el" href="struct_l_p_v_core_lib_1_1_l_size.html">LPVCor
  }</td></tr>
 <tr class="memdesc:aca29028958a911e3c81e54458680682f"><td class="mdescLeft">&#160;</td><td class="mdescRight">描述图像翻转的方式  <a href="namespace_l_p_v_core_lib.html#aca29028958a911e3c81e54458680682f">更多...</a><br /></td></tr>
 <tr class="separator:aca29028958a911e3c81e54458680682f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0205db5ad70eff44ebd76708a72459e0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_l_p_v_core_lib.html#a0205db5ad70eff44ebd76708a72459e0">LPVImageFormat</a> { <a class="el" href="namespace_l_p_v_core_lib.html#a0205db5ad70eff44ebd76708a72459e0a84604cc9517eac21a0d71040b258789e">LPVImageFormatGrayscale8</a> = 0
-, <a class="el" href="namespace_l_p_v_core_lib.html#a0205db5ad70eff44ebd76708a72459e0ab95ee4eae4f3d75a2b5dd5eb51e7670d">LPVImageFormatColor24</a> = 1
-, <a class="el" href="namespace_l_p_v_core_lib.html#a0205db5ad70eff44ebd76708a72459e0ad08914f0a3927e622ef9dabd288a6c45">LPVImageFormatGrayscale16</a> = 2
+<tr class="memitem:a90e412106ea66b97268c27757c8e0b67"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_l_p_v_core_lib.html#a90e412106ea66b97268c27757c8e0b67">LPVFreqFilterType</a> { <a class="el" href="namespace_l_p_v_core_lib.html#a90e412106ea66b97268c27757c8e0b67aec38858de7a8ef52dc774bf9672eea97">LPVFreqFilterLowPass</a> = 0
+, <a class="el" href="namespace_l_p_v_core_lib.html#a90e412106ea66b97268c27757c8e0b67a6e7cfe3267837ee2dfb69d68fb2265c4">LPVFreqFilterHighPass</a> = 1
+, <a class="el" href="namespace_l_p_v_core_lib.html#a90e412106ea66b97268c27757c8e0b67a2699d19bf7c10517854dbe38a7c74d02">LPVFreqFilterBandPass</a> = 2
+, <a class="el" href="namespace_l_p_v_core_lib.html#a90e412106ea66b97268c27757c8e0b67ab6c3ffbf3c49ce3f6c133b046e46eff3">LPVFreqFilterBandPassDirectional</a> = 3
+ }</td></tr>
+<tr class="memdesc:a90e412106ea66b97268c27757c8e0b67"><td class="mdescLeft">&#160;</td><td class="mdescRight">该枚举表示频域滤波器类型  <a href="namespace_l_p_v_core_lib.html#a90e412106ea66b97268c27757c8e0b67">更多...</a><br /></td></tr>
+<tr class="separator:a90e412106ea66b97268c27757c8e0b67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0205db5ad70eff44ebd76708a72459e0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_l_p_v_core_lib.html#a0205db5ad70eff44ebd76708a72459e0">LPVImageFormat</a> { <br />
+&#160;&#160;<a class="el" href="namespace_l_p_v_core_lib.html#a0205db5ad70eff44ebd76708a72459e0ad244db79032451c6ca6297e4fd1d9c75">LPVImageFormatReserved</a> = -1
+, <a class="el" href="namespace_l_p_v_core_lib.html#a0205db5ad70eff44ebd76708a72459e0a2960a9eb1bc522fc2557c7ebc457c813">LPVImageFormatU8C1</a> = 0
+, <a class="el" href="namespace_l_p_v_core_lib.html#a0205db5ad70eff44ebd76708a72459e0ac64da081dec0c804c1c7293758f65044">LPVImageFormatU8C3</a> = 1
+, <a class="el" href="namespace_l_p_v_core_lib.html#a0205db5ad70eff44ebd76708a72459e0ab6c240b750f9112402e39981455d262b">LPVImageFormatU16C1</a> = 2
+, <br />
+&#160;&#160;<a class="el" href="namespace_l_p_v_core_lib.html#a0205db5ad70eff44ebd76708a72459e0a678fb0da6947aaa5ac5d81b0f4acb086">LPVImageFormatS32C1</a> = 3
+, <a class="el" href="namespace_l_p_v_core_lib.html#a0205db5ad70eff44ebd76708a72459e0a9d7954c919927119d7d6a84cb3ac3dbb">LPVImageFormatF32C1</a> = 4
+, <a class="el" href="namespace_l_p_v_core_lib.html#a0205db5ad70eff44ebd76708a72459e0a7fca33618dba8660710e5051dbcfde90">LPVImageFormatF32C2</a> = 5
+, <b>LPVImageFormatGrayscale8</b> = LPVImageFormatU8C1
+, <br />
+&#160;&#160;<b>LPVImageFormatColor24</b> = LPVImageFormatU8C3
+, <b>LPVImageFormatGrayscale16</b> = LPVImageFormatU16C1
+, <a class="el" href="namespace_l_p_v_core_lib.html#a0205db5ad70eff44ebd76708a72459e0af41fe8b846d5ab77cdf5a68a5ee69321">LPVImageFormatComplex</a> = LPVImageFormatF32C2
+<br />
  }</td></tr>
 <tr class="memdesc:a0205db5ad70eff44ebd76708a72459e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">该枚举表示图像类型  <a href="namespace_l_p_v_core_lib.html#a0205db5ad70eff44ebd76708a72459e0">更多...</a><br /></td></tr>
 <tr class="separator:a0205db5ad70eff44ebd76708a72459e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -810,12 +835,12 @@ typedef struct <a class="el" href="struct_l_p_v_core_lib_1_1_l_size.html">LPVCor
 </td></tr>
 <tr><td class="fieldname"><a id="abc1c78dbe5bbd9696e1af6618392a083a2bdcf03bcfb797b56c086a34b5a2446c"></a>LPVColorSpaceHSV&#160;</td><td class="fielddoc"><p>HSV 颜色空间。通道顺序为：H（色度）、S（饱和度、V（亮度）</p>
 <p class="formulaDsp">
-\[ V_{max} = max(R,G,B), V_{min} = min(R,G,B) \\ V = V_{max} \\ S = \left\{ \begin{array}{ll} \frac{V - V_{min}}{V} \cdot 255 &amp; V \neq 0 \\ 0 &amp; otherwise \\ \end{array} \right. \\ h = \left\{ \begin{array}{ll} \frac{G - B}{V - V_{min}} \cdot 60 &amp; V = R \\ \frac{B - R}{V - V_{min}} \cdot 60 + 120 &amp; V = R \\ \frac{R - G}{V - V_{min}} \cdot 60 + 240 &amp; V = B \\ \end{array} \right. , H = \left\{ \begin{array}{ll} \frac{h + 360}{2} &amp; h &lt; 0\ \\ \frac{h}{2} &amp; otherwise \\ \end{array} \right. \]
+\[ V_{max} = max(R,G,B), V_{min} = min(R,G,B) \\ V = V_{max} \\ S = \left\{ \begin{array}{ll} \frac{V - V_{min}}{V} \cdot 255 &amp; V \neq 0 \\ 0 &amp; otherwise \\ \end{array} \right. \\ h = \left\{ \begin{array}{ll} \frac{G - B}{V - V_{min}} \cdot 60 &amp; V = R \\ \frac{B - R}{V - V_{min}} \cdot 60 + 120 &amp; V = R \\ \frac{R - G}{V - V_{min}} \cdot 60 + 240 &amp; V = B \\ \end{array} \right. , H = \left\{ \begin{array}{ll} \frac{h + 360}{360} \cdot 255 &amp; h &lt; 0\ \\ \frac{h}{360} \cdot 255 &amp; otherwise \\ \end{array} \right. \]
 </p>
  </td></tr>
 <tr><td class="fieldname"><a id="abc1c78dbe5bbd9696e1af6618392a083a05e36ea1a23bf4914fa568ba426cbe3e"></a>LPVColorSpaceHLS&#160;</td><td class="fielddoc"><p>HLS 颜色空间。通道顺序为：H（色度）、L（亮度）、S（饱和度）</p>
 <p class="formulaDsp">
-\[ V_{max} = max(R,G,B), V_{min} = min(R,G,B) \\ L = \frac{V_{min} + V_{max}}{2} \\ S = \left\{ \begin{array}{ll} \frac{V_{max} - V_{min}}{V_{max} + V_{min}} \cdot 255 &amp; L &lt; 128 \\ \frac{V_{max} - V_{min}}{255 \cdot 2 - (V_{max} + V_{min})} \cdot 255 &amp; otherwise \\ \end{array} \right. \\ h = \left\{ \begin{array}{ll} \frac{G - B}{V_{max} - V_{min}} \cdot 60 &amp; V_{max} = R \\ \frac{B - R}{V_{max} - V_{min}} \cdot 60 + 120 &amp; V_{max} = R \\ \frac{R - G}{V_{max} - V_{min}} \cdot 60 + 240 &amp; V_{max} = B \\ \end{array} \right. , H = \left\{ \begin{array}{ll} \frac{h + 360}{2} &amp; h &lt; 0\ \\ \frac{h}{2} &amp; otherwise \\ \end{array} \right. \]
+\[ V_{max} = max(R,G,B), V_{min} = min(R,G,B) \\ L = \frac{V_{min} + V_{max}}{2} \\ S = \left\{ \begin{array}{ll} \frac{V_{max} - V_{min}}{V_{max} + V_{min}} \cdot 255 &amp; L &lt; 128 \\ \frac{V_{max} - V_{min}}{255 \cdot 2 - (V_{max} + V_{min})} \cdot 255 &amp; otherwise \\ \end{array} \right. \\ h = \left\{ \begin{array}{ll} \frac{G - B}{V_{max} - V_{min}} \cdot 60 &amp; V_{max} = R \\ \frac{B - R}{V_{max} - V_{min}} \cdot 60 + 120 &amp; V_{max} = R \\ \frac{R - G}{V_{max} - V_{min}} \cdot 60 + 240 &amp; V_{max} = B \\ \end{array} \right. , H = \left\{ \begin{array}{ll} \frac{h + 360}{360} \cdot 255 &amp; h &lt; 0\ \\ \frac{h}{360} \cdot 255 &amp; otherwise \\ \end{array} \right. \]
 </p>
  </td></tr>
 <tr><td class="fieldname"><a id="abc1c78dbe5bbd9696e1af6618392a083a55371d0312c8305285cdd39074044a17"></a>LPVColorSpaceYCrCb&#160;</td><td class="fielddoc"><p>YCrCb 颜色空间。通道顺序为：Y（亮度），Cr（红色色度），Cb（蓝色色度）</p>
@@ -1112,6 +1137,32 @@ typedef struct <a class="el" href="struct_l_p_v_core_lib_1_1_l_size.html">LPVCor
 
 </div>
 </div>
+<a id="a90e412106ea66b97268c27757c8e0b67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90e412106ea66b97268c27757c8e0b67">&#9670;&nbsp;</a></span>LPVFreqFilterType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespace_l_p_v_core_lib.html#a90e412106ea66b97268c27757c8e0b67">LPVFreqFilterType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>该枚举表示频域滤波器类型 </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a90e412106ea66b97268c27757c8e0b67aec38858de7a8ef52dc774bf9672eea97"></a>LPVFreqFilterLowPass&#160;</td><td class="fielddoc"><p>高斯形状的低通滤波器 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a90e412106ea66b97268c27757c8e0b67a6e7cfe3267837ee2dfb69d68fb2265c4"></a>LPVFreqFilterHighPass&#160;</td><td class="fielddoc"><p>高斯形状的高通滤波器 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a90e412106ea66b97268c27757c8e0b67a2699d19bf7c10517854dbe38a7c74d02"></a>LPVFreqFilterBandPass&#160;</td><td class="fielddoc"><p>高斯形状的带通滤波器 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a90e412106ea66b97268c27757c8e0b67ab6c3ffbf3c49ce3f6c133b046e46eff3"></a>LPVFreqFilterBandPassDirectional&#160;</td><td class="fielddoc"><p>高斯形状的方向滤波器，结合理想带通滤波器 </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <a id="a0205db5ad70eff44ebd76708a72459e0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0205db5ad70eff44ebd76708a72459e0">&#9670;&nbsp;</a></span>LPVImageFormat</h2>
 
@@ -1126,12 +1177,29 @@ typedef struct <a class="el" href="struct_l_p_v_core_lib_1_1_l_size.html">LPVCor
 
 <p>该枚举表示图像类型 </p>
 <table class="fieldtable">
-<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a0205db5ad70eff44ebd76708a72459e0a84604cc9517eac21a0d71040b258789e"></a>LPVImageFormatGrayscale8&#160;</td><td class="fielddoc"><p>该图像为 8 位灰度图 </p>
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a0205db5ad70eff44ebd76708a72459e0ad244db79032451c6ca6297e4fd1d9c75"></a>LPVImageFormatReserved&#160;</td><td class="fielddoc"><p>未指定的图像类型，通常用于在入参中设置默认的图像类型 </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a0205db5ad70eff44ebd76708a72459e0ab95ee4eae4f3d75a2b5dd5eb51e7670d"></a>LPVImageFormatColor24&#160;</td><td class="fielddoc"><p>该图像为 24 位 BGR 彩色图，每个通道 8 位。 </p>
+<tr><td class="fieldname"><a id="a0205db5ad70eff44ebd76708a72459e0a2960a9eb1bc522fc2557c7ebc457c813"></a>LPVImageFormatU8C1&#160;</td><td class="fielddoc"><p>该图像为 8 位单通道，像素以 <b>byte</b>（无符号 8 位整型）存储，数值范围为 0 ~ 255<br  />
+ <b>自从</b> 2.20.0 </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a0205db5ad70eff44ebd76708a72459e0ad08914f0a3927e622ef9dabd288a6c45"></a>LPVImageFormatGrayscale16&#160;</td><td class="fielddoc"><p>该图像为 16 位灰度图<br  />
- <b>自从</b> 2.4.0 </p>
+<tr><td class="fieldname"><a id="a0205db5ad70eff44ebd76708a72459e0ac64da081dec0c804c1c7293758f65044"></a>LPVImageFormatU8C3&#160;</td><td class="fielddoc"><p>该图像为 8 位 3 通道，像素以 <b>byte</b>（无符号 8 位整型）存储，每个像素包含 3 个通道，各通道的数值范围为 0 ~ 255<br  />
+ <b>自从</b> 2.20.0 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a0205db5ad70eff44ebd76708a72459e0ab6c240b750f9112402e39981455d262b"></a>LPVImageFormatU16C1&#160;</td><td class="fielddoc"><p>该图像为 16 位单通道，像素以 <b>uint2</b>（无符号 16 位整型）存储，数值范围为 0 ~ 65535<br  />
+ <b>自从</b> 2.20.0 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a0205db5ad70eff44ebd76708a72459e0a678fb0da6947aaa5ac5d81b0f4acb086"></a>LPVImageFormatS32C1&#160;</td><td class="fielddoc"><p>该图像为 32 位整型单通道，像素以 <b>int4</b>（带符号 32 位整型）存储<br  />
+ <b>自从</b> 2.20.0<br  />
+ <b>自从</b> 2.20.0 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a0205db5ad70eff44ebd76708a72459e0a9d7954c919927119d7d6a84cb3ac3dbb"></a>LPVImageFormatF32C1&#160;</td><td class="fielddoc"><p>该图像为 32 位浮点数单通道，像素以 <b>float32</b>（带符号 32 位单精度浮点数）存储<br  />
+ <b>自从</b> 2.20.0 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a0205db5ad70eff44ebd76708a72459e0a7fca33618dba8660710e5051dbcfde90"></a>LPVImageFormatF32C2&#160;</td><td class="fielddoc"><p>该图像为 32 位浮点数单通道，像素以 <b>float32</b>（带符号 32 位单精度浮点数）存储，每个像素包含 2 个通道<br  />
+ <b>自从</b> 2.20.0 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a0205db5ad70eff44ebd76708a72459e0af41fe8b846d5ab77cdf5a68a5ee69321"></a>LPVImageFormatComplex&#160;</td><td class="fielddoc"><p>复数图像，以 <code>LPVImageFormatF32C2</code> 存储，通常通过傅里叶变换获得，每个像素包含实部和虚部 2 个通道。<br  />
+ <b>自从</b> 2.20.0 </p>
 </td></tr>
 </table>
 

@@ -105,6 +105,8 @@ Inheritance diagram for ILImage:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a8ae61f0a5229c9fd4eb15075d49060b4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html#a8ae61f0a5229c9fd4eb15075d49060b4">ConvertFormat</a> (<a class="el" href="namespace_l_p_v_core_lib.html#a0205db5ad70eff44ebd76708a72459e0">LPVImageFormat</a> format, double gain, double offset)</td></tr>
+<tr class="separator:a8ae61f0a5229c9fd4eb15075d49060b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa07828faa9fef9228d5966321e0c9810"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html#aa07828faa9fef9228d5966321e0c9810">CopyFrom</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a> *region, int panX, int panY)</td></tr>
 <tr class="separator:aa07828faa9fef9228d5966321e0c9810"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a2780169698cd7fcf7a32b3b7d944ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html#a5a2780169698cd7fcf7a32b3b7d944ee">CopyTo</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *dstImg)</td></tr>
@@ -131,6 +133,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6cfd9dbc70b93a0b757f849763326d0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a20e7ed2f207a332528a802b87def8e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html#a8a20e7ed2f207a332528a802b87def8e">SetToColor</a> (<a class="el" href="struct_l_p_v_core_lib_1_1_l_color.html">LColor</a> val, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a> *region)</td></tr>
 <tr class="separator:a8a20e7ed2f207a332528a802b87def8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71a5a41780e002f3c2ceb2f80c350040"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html#a71a5a41780e002f3c2ceb2f80c350040">SetToScalar</a> (<a class="el" href="struct_l_p_v_core_lib_1_1_l_scalar.html">LScalar</a> scalar, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a> *region)</td></tr>
+<tr class="separator:a71a5a41780e002f3c2ceb2f80c350040"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_interface_l_p_v_core_lib_1_1_i_l_object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_interface_l_p_v_core_lib_1_1_i_l_object')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_object.html">ILObject</a></td></tr>
 <tr class="memitem:aa7dcddf685e0ba4ddc2d84b0d191f3d7 inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_object"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_object.html">ILObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_object.html#aa7dcddf685e0ba4ddc2d84b0d191f3d7">Copy</a> ()</td></tr>
 <tr class="separator:aa7dcddf685e0ba4ddc2d84b0d191f3d7 inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -157,14 +161,16 @@ LPVOID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html#aaadefba794062a2ca7e58ceb10b955a1">Height</a><code> [get]</code></td></tr>
 <tr class="memdesc:aaadefba794062a2ca7e58ceb10b955a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The height of the image, number of rows. <br /></td></tr>
 <tr class="separator:aaadefba794062a2ca7e58ceb10b955a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc88032761550f6da6c7d4689ad120ea"><td class="memItemLeft" align="right" valign="top"><a id="abc88032761550f6da6c7d4689ad120ea"></a>
-<a class="el" href="namespace_l_p_v_core_lib.html#a0205db5ad70eff44ebd76708a72459e0">LPVImageFormat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html#abc88032761550f6da6c7d4689ad120ea">ImageFormat</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:abc88032761550f6da6c7d4689ad120ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">The format of the image. <br /></td></tr>
+<tr class="memitem:abc88032761550f6da6c7d4689ad120ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a0205db5ad70eff44ebd76708a72459e0">LPVImageFormat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html#abc88032761550f6da6c7d4689ad120ea">ImageFormat</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:abc88032761550f6da6c7d4689ad120ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">The format of the image.  <a href="interface_l_p_v_core_lib_1_1_i_l_image.html#abc88032761550f6da6c7d4689ad120ea">More...</a><br /></td></tr>
 <tr class="separator:abc88032761550f6da6c7d4689ad120ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf8ca9df205ead6d0936d22aa19e16ff"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html#acf8ca9df205ead6d0936d22aa19e16ff">Pixel</a> (int x, int y)<code> [get, set]</code></td></tr>
 <tr class="separator:acf8ca9df205ead6d0936d22aa19e16ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a801965ab846218426c9c02f1c01094c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_l_p_v_core_lib_1_1_l_color.html">LColor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html#a801965ab846218426c9c02f1c01094c7">PixelColor</a> (int x, int y)<code> [get, set]</code></td></tr>
 <tr class="separator:a801965ab846218426c9c02f1c01094c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa648ab4309a75d646fe21da813ac803f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_l_p_v_core_lib_1_1_l_scalar.html">LScalar</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html#aa648ab4309a75d646fe21da813ac803f">PixelScalar</a> (int x, int y)<code> [get, set]</code></td></tr>
+<tr class="memdesc:aa648ab4309a75d646fe21da813ac803f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The pixel's scalar value, may have multiple channels based to the image format.  <a href="interface_l_p_v_core_lib_1_1_i_l_image.html#aa648ab4309a75d646fe21da813ac803f">More...</a><br /></td></tr>
+<tr class="separator:aa648ab4309a75d646fe21da813ac803f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abbe7749c3b402f7dfe64f936774cfcd4"><td class="memItemLeft" align="right" valign="top"><a id="abbe7749c3b402f7dfe64f936774cfcd4"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html#abbe7749c3b402f7dfe64f936774cfcd4">Width</a><code> [get]</code></td></tr>
 <tr class="memdesc:abbe7749c3b402f7dfe64f936774cfcd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The width of the image, number of columns. <br /></td></tr>
@@ -209,6 +215,49 @@ Example Code</h3>
 <div class="line">img-&gt;SetSize(100, 100);</div>
 <div class="line">img-&gt;Pixel[10][20] = 255; <span class="comment">// set (10, 20) to be a white pixel</span></div>
 </div><!-- fragment --> </div>  </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a8ae61f0a5229c9fd4eb15075d49060b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ae61f0a5229c9fd4eb15075d49060b4">&#9670;&nbsp;</a></span>ConvertFormat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a>* ConvertFormat </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_l_p_v_core_lib.html#a0205db5ad70eff44ebd76708a72459e0">LPVImageFormat</a>&#160;</td>
+          <td class="paramname"><em>format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>gain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>offset</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Convert the image's format with optional gain or offset, as \( I&#39; = I * gain + offset \), then clamped to avoid possible overflows. When converting between formats with different channels, see <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html#abc88032761550f6da6c7d4689ad120ea" title="The format of the image.">ImageFormat</a> for special handlings. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">format</td><td>The target image format </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">resultImage</td><td>Return result image </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">gain</td><td>The gain value, set to 1 means in fact no gain </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">offset</td><td>The offset value, set to 0 means in fact no offset </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="aa07828faa9fef9228d5966321e0c9810"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa07828faa9fef9228d5966321e0c9810">&#9670;&nbsp;</a></span>CopyFrom()</h2>
 
@@ -248,7 +297,7 @@ Example Code</h3>
 </div><div class="memdoc">
 <p>Copy the content of the input image and cover the current. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>The input image. If the input image is bigger or outside with the given x/y offset, the redundant part will be ignored. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>The input image. If the input image is bigger or outside with the given x/y offset, the redundant part will be ignored. If the current image is empty, we'll create a image of enough size for the copy. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">region</td><td>The input region to crop the input image. Optional, could be null. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">panX</td><td>The x-coordinate of the offset </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">panY</td><td>The y-coordinate of the offset </td></tr>
@@ -326,7 +375,18 @@ If the current image object has its own data buffer, we'll do another clone of d
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Draw the image onto the provided device context. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html#a6fa509713f05f8a8c53794e037baa51c">DrawAsMask()</a> </dd>
+<p>Draw the image onto the provided device context.</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Image Format   </th><th class="markdownTableHeadNone">Draw    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">U8C1 / U8C3   </td><td class="markdownTableBodyNone">Source image    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">U16C1 / S32C1 / F32C1   </td><td class="markdownTableBodyNone">The grayscale image by min-max normalization    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">F32C2   </td><td class="markdownTableBodyNone">Calucate the maginitude image based on the real and imaginary parts, apply the natural logarithm to the results, then display the min-max normalized grayscale image   </td></tr>
+</table>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html#a6fa509713f05f8a8c53794e037baa51c">DrawAsMask()</a> </dd>
 <dd>
 <a class="el" href="use_draw_functions.html">Use Draw Functions</a> </dd></dl>
 <dl class="section remark"><dt>Remarks</dt><dd>This function is currently not available on Linux / MacOS platform. </dd></dl>
@@ -376,7 +436,7 @@ If the current image object has its own data buffer, we'll do another clone of d
         </tr>
       </table>
 </div><div class="memdoc">
-<p><img src="color_binary.png" alt="" class="inline" title="Binary"/> <img src="bit8.png" alt="" class="inline" title="8 Bit"/> Draw the image as a mask onto the provided device context, white pixels preserve the original values on HDC. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html#a0edc1aa636ff6fe09560e7f205a0633b">Draw()</a> </dd>
+<p><img src="color_binary.png" alt="" class="inline" title="Binary image"/> <img src="bit8.png" alt="" class="inline" title="8 bits without sign"/> Draw the image as a mask onto the provided device context, white pixels preserve the original values on HDC. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html#a0edc1aa636ff6fe09560e7f205a0633b">Draw()</a> </dd>
 <dd>
 <a class="el" href="use_draw_functions.html">Use Draw Functions</a> </dd></dl>
 <dl class="section remark"><dt>Remarks</dt><dd>This function is currently not available on Linux / MacOS platform. </dd></dl>
@@ -398,7 +458,7 @@ If the current image object has its own data buffer, we'll do another clone of d
         </tr>
       </table>
 </div><div class="memdoc">
-<p><img src="color_bgr.png" alt="" class="inline" title="Color"/> <img src="bit8.png" alt="" class="inline" title="8 Bit"/> Extract the channel of the given index. This function is only for a color image. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Extract the channel of the given index. This function is only for a multi-channel image <img src="color_bgr.png" alt="" class="inline" title="Color image"/> <img src="color_complex.png" alt="" class="inline" title="Complex image"/>. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">channelIdx</td><td>The input channel index, 0, 1 or 2. </td></tr>
   </table>
@@ -406,7 +466,7 @@ If the current image object has its own data buffer, we'll do another clone of d
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">channelImage</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale"/> <img src="bit8.png" alt="" class="inline" title="8 Bit"/> Return the channel image. It's a grayscale image of the same size as the current color image. </td></tr>
+    <tr><td class="paramname">channelImage</td><td><img src="color_1chn.png" alt="" class="inline" title="Single channel image"/> Return the channel image. It's a grayscale image of the same size as the current color image. </td></tr>
   </table>
   </dd>
 </dl>
@@ -556,18 +616,18 @@ If the current image object has its own data buffer, we'll do another clone of d
 <th class="markdownTableHeadLeft">Format</th><th class="markdownTableHeadLeft">Usage </th></tr>
 <tr>
 <td>bmp</td><td><b>Windows-BMP format</b><ul>
-<li>can only store 8bit images with 1 channel (<a class="el" href="namespace_l_p_v_core_lib.html#a0205db5ad70eff44ebd76708a72459e0a84604cc9517eac21a0d71040b258789e">gray</a>) or 3 channels (<a class="el" href="namespace_l_p_v_core_lib.html#a0205db5ad70eff44ebd76708a72459e0ab95ee4eae4f3d75a2b5dd5eb51e7670d">RGB color</a>). </li>
+<li>can only store 8bit images with 1 channel (gray) or 3 channels (RGB color). </li>
 </ul>
 </td></tr>
 <tr>
 <td>jpeg</td><td><b>JPEG format</b> - lossy compression<ul>
-<li>can only store 8bit images with 1 channel (<a class="el" href="namespace_l_p_v_core_lib.html#a0205db5ad70eff44ebd76708a72459e0a84604cc9517eac21a0d71040b258789e">gray</a>) or 3 channels (<a class="el" href="namespace_l_p_v_core_lib.html#a0205db5ad70eff44ebd76708a72459e0ab95ee4eae4f3d75a2b5dd5eb51e7670d">RGB color</a>).</li>
+<li>can only store 8bit images with 1 channel (gray) or 3 channels (RGB color).</li>
 <li>pass in together with the quality value for compression rate, in 0 ~ 100, like "jpeg 60". By default, it's 95. </li>
 </ul>
 </td></tr>
 <tr>
 <td>png</td><td><b>PNG format</b> - lossless compression<ul>
-<li>can only store 8bit images with 1 channel (<a class="el" href="namespace_l_p_v_core_lib.html#a0205db5ad70eff44ebd76708a72459e0a84604cc9517eac21a0d71040b258789e">gray</a>) or 3 channels (<a class="el" href="namespace_l_p_v_core_lib.html#a0205db5ad70eff44ebd76708a72459e0ab95ee4eae4f3d75a2b5dd5eb51e7670d">RGB color</a>).</li>
+<li>can only store 8bit images with 1 channel (gray) or 3 channels (RGB color).</li>
 <li>pass in together with the quality value for compression level 0 ~ 9, like "png 6", where 0 corresponds to no compression and 9 to the best possible compression. </li>
 </ul>
 </td></tr>
@@ -578,7 +638,7 @@ If the current image object has its own data buffer, we'll do another clone of d
 </td></tr>
 <tr>
 <td>webp</td><td><b>WEBP format</b> - lossless or lossy compression<ul>
-<li>can only store 8bit images with 1 channel (<a class="el" href="namespace_l_p_v_core_lib.html#a0205db5ad70eff44ebd76708a72459e0a84604cc9517eac21a0d71040b258789e">gray</a>) or 3 channels (<a class="el" href="namespace_l_p_v_core_lib.html#a0205db5ad70eff44ebd76708a72459e0ab95ee4eae4f3d75a2b5dd5eb51e7670d">RGB color</a>).</li>
+<li>can only store 8bit images with 1 channel (gray) or 3 channels (RGB color).</li>
 <li>pass in together with the quality value for compression rate, in 0 ~ 100, like "webp 60". </li>
 </ul>
 </td></tr>
@@ -627,10 +687,10 @@ If the current image object has its own data buffer, we'll do another clone of d
         </tr>
       </table>
 </div><div class="memdoc">
-<p><img src="color_bgr.png" alt="" class="inline" title="Color"/> <img src="bit8.png" alt="" class="inline" title="8 Bit"/> Set the channel of the given index to the input grayscale image. This function is only for a color image. </p><dl class="params"><dt>Parameters</dt><dd>
+<p><img src="color_bgr.png" alt="" class="inline" title="Color image"/> <img src="color_complex.png" alt="" class="inline" title="Complex image"/> Set the channel of the given index to the input grayscale image. This function is only for a color image. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">channelIdx</td><td>The input channel index, 0, 1 or 2. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">channelImage</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale"/> <img src="bit8.png" alt="" class="inline" title="8 Bit"/> The input grayscale channel image, it should be of the same size as the current color image. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">channelImage</td><td><img src="color_1chn.png" alt="" class="inline" title="Single channel image"/> The input grayscale channel image, it should be of the same size as the current color image. </td></tr>
   </table>
   </dd>
 </dl>
@@ -681,8 +741,8 @@ If the current image object has its own data buffer, we'll do another clone of d
       </table>
 </div><div class="memdoc">
 <p>Assign data to the image object via an external allocated buffer.<br  />
-If copyData is set to False, this pointer overwrite the internally allocated buffer inside the image object. You should take the responsibility to keep the buffer alive during the entire life cycle of the image object.<br  />
-If copyData is set to True, we'll copy the content into the buffer owned by the image object. You don't need to worry about the data life cycle then. </p><dl class="params"><dt>Parameters</dt><dd>
+If <code>copyData</code> is set to False, this pointer overwrite the internally allocated buffer inside the image object. You should take the responsibility to keep the buffer alive during the entire life cycle of the image object.<br  />
+If <code>copyData</code> is set to True, we'll copy the content into the buffer owned by the image object. You don't need to worry about the data life cycle then. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">w</td><td>The width of the image in pixels, should be a positive value. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">h</td><td>The height of the image in pixels, should be a positive value. </td></tr>
@@ -755,13 +815,14 @@ If copyData is set to True, we'll copy the content into the buffer owned by the 
         </tr>
       </table>
 </div><div class="memdoc">
-<p><img src="color_gray.png" alt="" class="inline" title="Grayscale"/> <img src="bit8.png" alt="" class="inline" title="8 Bit"/> Set the pixels in the given region to the specified grayscale value. For a color image, all its channels are set to the same value. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Set the pixels in the given region to the specified value. For a multi-channle image (like LPVImageFormatColor), all its channels are set to the same value. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">val</td><td>The grayscale value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">val</td><td>The value to fill </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">region</td><td>The input region. If the input region is bigger or outside of the image, the redundant part will be ignored. Optional, could be null, which mean the entire image. </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html#a8a20e7ed2f207a332528a802b87def8e">SetToColor()</a>, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html#a71a5a41780e002f3c2ceb2f80c350040">SetToScalar()</a> </dd></dl>
 
 </div>
 </div>
@@ -790,17 +851,93 @@ If copyData is set to True, we'll copy the content into the buffer owned by the 
         </tr>
       </table>
 </div><div class="memdoc">
-<p><img src="color_bgr.png" alt="" class="inline" title="Color"/> <img src="bit8.png" alt="" class="inline" title="8 Bit"/> Set the pixels in the given region to the specified RGB color value. This function is only for a color image. </p><dl class="params"><dt>Parameters</dt><dd>
+<p><img src="color_bgr.png" alt="" class="inline" title="Color image"/> <img src="bit8.png" alt="" class="inline" title="8 bits without sign"/> Set the pixels in the given region to the specified RGB color value. This function is only for a color image. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">val</td><td>The color value </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">region</td><td>The input region. If the input region is bigger or outside of the image, the redundant part will be ignored. Optional, could be null, which mean the entire image. </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html#a6cfd9dbc70b93a0b757f849763326d0d">SetTo()</a>, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html#a71a5a41780e002f3c2ceb2f80c350040">SetToScalar()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a71a5a41780e002f3c2ceb2f80c350040"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71a5a41780e002f3c2ceb2f80c350040">&#9670;&nbsp;</a></span>SetToScalar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SetToScalar </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_l_p_v_core_lib_1_1_l_scalar.html">LScalar</a>&#160;</td>
+          <td class="paramname"><em>scalar</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a> *&#160;</td>
+          <td class="paramname"><em>region</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set the pixels in the given region to the specified <a class="el" href="struct_l_p_v_core_lib_1_1_l_scalar.html" title="This structure represents a scalar, at most have 3 channels.">LScalar</a> value. For a multi-channel image (like LPVImageFormatColor or LPVImageFormatComplex), individual values of <code>scalar</code> 's channels are set to the image's corresponding channels.<br  />
+For a single-channel image (like LPVImageFormatGrayscale8 or LPVImageFormatF32C1), the redundant channels' values are ignore. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">val</td><td>The value to fill, clamps to avoid possible overflows. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">region</td><td>The input region. If the input region is bigger or outside of the image, the redundant part will be ignored. Optional, could be null, which mean the entire image. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html#a6cfd9dbc70b93a0b757f849763326d0d">SetTo()</a>, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html#a8a20e7ed2f207a332528a802b87def8e">SetToColor()</a> </dd></dl>
 
 </div>
 </div>
 <h2 class="groupheader">Property Documentation</h2>
+<a id="abc88032761550f6da6c7d4689ad120ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc88032761550f6da6c7d4689ad120ea">&#9670;&nbsp;</a></span>ImageFormat</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_l_p_v_core_lib.html#a0205db5ad70eff44ebd76708a72459e0">LPVImageFormat</a> ImageFormat</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The format of the image. </p>
+<p>For non-empty image, if you change the image format, we'll do a simple image type conversion to match the new format.<br  />
+Generally, it converts pixel values to the target data type with no scaling, clamps to avoid possible overflows. If the target has more than 1 channels, assign the same value to all channels. The exceptions are as follows:</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">From   </th><th class="markdownTableHeadNone">To   </th><th class="markdownTableHeadNone">Conversion    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">U8C1   </td><td class="markdownTableBodyNone">U8C3   </td><td class="markdownTableBodyNone">Converts grayscale to BGR color, all 3 channels are assigned to the same value, same as <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_convert.html#aba17d8fbe10ef7feaf9d29cade8bc695">GrayToBGR()</a>    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">U8C3   </td><td class="markdownTableBodyNone">U8C1   </td><td class="markdownTableBodyNone">Converts BGR color to grayscale, same as <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_convert.html#a7921292ee2561db87f57eb474d2d5ea6">BGRToGray()</a>    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">U8C3   </td><td class="markdownTableBodyNone">U16C1 / S32C1 / F32C1 / F32C2   </td><td class="markdownTableBodyNone">Converts firstly to grayscale as <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_convert.html#a7921292ee2561db87f57eb474d2d5ea6">BGRToGray()</a>, then do the general conversion    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">F32C2   </td><td class="markdownTableBodyNone">U8C1 / U8C3 / U16C1 / S32C1 / F32C1   </td><td class="markdownTableBodyNone">Calcuates pixels' magnitude based on the real and imaginary parts, apply the natural logarithm to the result, then do the general conversion   </td></tr>
+</table>
+
+</div>
+</div>
 <a id="acf8ca9df205ead6d0936d22aa19e16ff"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acf8ca9df205ead6d0936d22aa19e16ff">&#9670;&nbsp;</a></span>Pixel</h2>
 
@@ -822,7 +959,7 @@ If copyData is set to True, we'll copy the content into the buffer owned by the 
 </div><div class="memdoc">
 
 <p></p>
-<p><img src="color_gray.png" alt="" class="inline" title="Grayscale"/> <img src="bit8.png" alt="" class="inline" title="8 Bit"/> The pixel's grayscale value. </p><dl class="params"><dt>Parameters</dt><dd>
+<p><img src="color_1chn.png" alt="" class="inline" title="Single channel image"/> The pixel's value for a single channel image, such as grayscale image. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td>The x-coordinate of the pixel. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">y</td><td>The y-coordinate of the pixel. </td></tr>
@@ -853,7 +990,38 @@ If copyData is set to True, we'll copy the content into the buffer owned by the 
 </div><div class="memdoc">
 
 <p></p>
-<p><img src="color_bgr.png" alt="" class="inline" title="Color"/> <img src="bit8.png" alt="" class="inline" title="8 Bit"/> The pixel's color value. </p><dl class="params"><dt>Parameters</dt><dd>
+<p><img src="color_bgr.png" alt="" class="inline" title="Color image"/> <img src="bit8.png" alt="" class="inline" title="8 bits without sign"/> The pixel's color value. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td>The x-coordinate of the pixel. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">y</td><td>The y-coordinate of the pixel. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa648ab4309a75d646fe21da813ac803f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa648ab4309a75d646fe21da813ac803f">&#9670;&nbsp;</a></span>PixelScalar</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_l_p_v_core_lib_1_1_l_scalar.html">LScalar</a> PixelScalar</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The pixel's scalar value, may have multiple channels based to the image format. </p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td>The x-coordinate of the pixel. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">y</td><td>The y-coordinate of the pixel. </td></tr>

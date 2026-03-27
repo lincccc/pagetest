@@ -210,8 +210,8 @@ The name is drawn on canvas around the object if <a class="el" href="interface_l
 If the lower bound of threshold value is smaller than the upper bound, pixels within the lower and upper bound of threshold value is set to the object level (maximum value, 255 for 8bit images, 65536 for 16bit images), otherwise, the output pixel is set to the background level (0).<br  />
 If the lower bound of threshold value is greater than the upper bound, the output result is inverted. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale"/> The input image </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td><img src="color_binary.png" alt="" class="inline" title="Binary"/> Return result image </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_1chn.png" alt="" class="inline" title="Single channel image"/> The input image </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td><img src="color_binary.png" alt="" class="inline" title="Binary image"/> Return result image </td></tr>
   </table>
   </dd>
 </dl>
@@ -246,8 +246,8 @@ If the lower bound of threshold value is greater than the upper bound, the outpu
 <p>Pixels within the lower and upper bound of threshold value is assigned the value of the input pixel, otherwise, is assigned to the value of lower or upper bound.<br  />
 For example, if the threshold lower bound is 100, upper bound is 200, a pixel of 150 value remains 150, a pixel of 230 outputs 200, a pixel of 50 outputs 100. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale"/> The input image </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale"/> Return result image </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_1chn.png" alt="" class="inline" title="Single channel image"/> The input image </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td><img src="color_1chn.png" alt="" class="inline" title="Single channel image"/> Return result image </td></tr>
   </table>
   </dd>
 </dl>
@@ -501,8 +501,8 @@ For example for an 8bit image, if the threshold lower bound is 100, upper bound 
 </p>
  <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale"/> The input image </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale"/> Return result image </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_1chn.png" alt="" class="inline" title="Single channel image"/> The input image </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td><img src="color_1chn.png" alt="" class="inline" title="Single channel image"/> Return result image </td></tr>
   </table>
   </dd>
 </dl>
@@ -537,8 +537,8 @@ For example for an 8bit image, if the threshold lower bound is 100, upper bound 
 <p>Each output pixel represents the difference between the greyscale value of each input pixel and the threshold lower bound.<br  />
 For example, if a pixel value is 100 and the threshold lower bound is 25, then the output pixel value will be 75。 </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale"/> The input image </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale"/> Return result image </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_1chn.png" alt="" class="inline" title="Single channel image"/> The input image </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td><img src="color_1chn.png" alt="" class="inline" title="Single channel image"/> Return result image </td></tr>
   </table>
   </dd>
 </dl>

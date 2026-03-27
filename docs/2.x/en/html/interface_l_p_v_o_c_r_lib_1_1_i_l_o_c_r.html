@@ -220,7 +220,7 @@ The name is drawn on canvas around the object if <a class="el" href="interface_l
 <div class="line">ILOCRResultPtr ocrResult;</div>
 <div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = ocrTool-&gt;Detect(img, roi, &amp;ocrResult);</div>
 <div class="line"><span class="keywordflow">if</span> (err != LPVErrorCode::LPVNoError) <span class="keywordflow">return</span>; <span class="comment">// failed, or no result</span></div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">This enumeration represents the type of a LPV function error.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:530</div></div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">This enumeration represents the type of a LPV function error.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:545</div></div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LOCR ocrTool = <span class="keyword">new</span> LOCR();</div>
 <div class="line">ocrTool.FontDatabase = fontDb;</div>
 <div class="line">ocrTool.SetCharSize(100, 150, 20, 20); <span class="comment">// 100 x 150 +- 20%</span></div>
@@ -270,7 +270,7 @@ The name is drawn on canvas around the object if <a class="el" href="interface_l
 </div><div class="memdoc">
 <p>Segment and recognize the lines and characters from the given image and region. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale"/> <img src="bit8.png" alt="" class="inline" title="8 Bit"/> The input image. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale image"/> <img src="bit8.png" alt="" class="inline" title="8 bits without sign"/> The input image. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">region</td><td>The input region. For the <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_rot_rect_region.html">rotated rectangle region</a>, the region's angle is used as the main direction of the text line. For the others, the main direction is the image's x axis. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">results</td><td>Output the segmentation and recognition result. </td></tr>
   </table>
@@ -319,7 +319,7 @@ The name is drawn on canvas around the object if <a class="el" href="interface_l
 </div><div class="memdoc">
 <p>Segment, recognize and verify the lines and characters from the given image and region. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale"/> <img src="bit8.png" alt="" class="inline" title="8 Bit"/> The input image. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale image"/> <img src="bit8.png" alt="" class="inline" title="8 bits without sign"/> The input image. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">region</td><td>The input region. For the <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_rot_rect_region.html">rotated rectangle region</a>, the region's angle is used as the main direction of the text line. For the others, the main direction is the image's x axis. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">results</td><td>Output the segmentation, recognition and verification result. </td></tr>
   </table>
@@ -368,7 +368,7 @@ The name is drawn on canvas around the object if <a class="el" href="interface_l
 </div><div class="memdoc">
 <p>Segment the lines and characters from the given image and region. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale"/> <img src="bit8.png" alt="" class="inline" title="8 Bit"/> The input image. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale image"/> <img src="bit8.png" alt="" class="inline" title="8 bits without sign"/> The input image. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">region</td><td>The input region. For the <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_rot_rect_region.html">rotated rectangle region</a>, the region's angle is used as the main direction of the text line. For the others, the main direction is the image's x axis. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">results</td><td>Output the segmentation result. </td></tr>
   </table>

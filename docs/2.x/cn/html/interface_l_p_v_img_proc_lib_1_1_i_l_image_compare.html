@@ -156,7 +156,7 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 <div class="line">ILImagePtr binResult = LImage::Create();</div>
 <div class="line">err = imgCmp-&gt;Compare(img, roi, <span class="keyword">nullptr</span>, binResult); <span class="comment">// get the binary comparison result only</span></div>
 <div class="line"><span class="keywordflow">if</span> (err != LPVErrorCode::LPVNoError) <span class="keywordflow">return</span>; <span class="comment">// handle error</span></div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">LPV 算法或函数运行过程中遇到的错误。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:530</div></div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">LPV 算法或函数运行过程中遇到的错误。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:545</div></div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><p> Code snippets: snippets/CrossMarkInspect.cs </p><div class="fragment"><div class="line">ILImageComparePtr imgCmp = <span class="keyword">new</span> LImageCompare();</div>
 <div class="line">imgCmp.PixelTolerance = 20;</div>
 <div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = imgCmp.SetBaseline(img, roi);</div>
@@ -216,7 +216,7 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
     <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>输入的图像 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">region</td><td>输入的区域，用于限定比较区域在输入图像中的位置，和剔除无关像素 </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">diffResult</td><td>像素差异图，图像类型与输入图像相同，尺寸与输入区域相同（若输入区域为空，则与输入图像相同） </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">maskResult</td><td><img src="color_binary.png" alt="" class="inline" title="Binary"/> <img src="bit8.png" alt="" class="inline" title="8 Bit"/> 像素差异蒙版图，白色像素表示差异大于 <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_compare.html#a09bac8581b29a4554bbdb5155bc60a96" title="像素数值差异的容差。取值范围为正数或 0，默认设置为 10。">PixelTolerance</a> </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">maskResult</td><td><img src="color_binary.png" alt="" class="inline" title="二值图像"/> <img src="bit8.png" alt="" class="inline" title="无符号 8 位整型"/> 像素差异蒙版图，白色像素表示差异大于 <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_compare.html#a09bac8581b29a4554bbdb5155bc60a96" title="像素数值差异的容差。取值范围为正数或 0，默认设置为 10。">PixelTolerance</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -278,7 +278,7 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
     <tr><td class="paramdir">[in]</td><td class="paramname">region</td><td>输入的区域，用于限定比较区域在输入图像中的位置，和剔除无关像素。不可为空。 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">refLine</td><td>输入的参考线，用于生成第二个对称的比较区域。 </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">diffResult</td><td>像素差异图，图像类型与输入相同，尺寸与输入区域相同 </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">maskResult</td><td><img src="color_binary.png" alt="" class="inline" title="Binary"/> <img src="bit8.png" alt="" class="inline" title="8 Bit"/> 像素差异蒙版图，白色像素表示差异大于 <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_compare.html#a09bac8581b29a4554bbdb5155bc60a96" title="像素数值差异的容差。取值范围为正数或 0，默认设置为 10。">PixelTolerance</a> </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">maskResult</td><td><img src="color_binary.png" alt="" class="inline" title="二值图像"/> <img src="bit8.png" alt="" class="inline" title="无符号 8 位整型"/> 像素差异蒙版图，白色像素表示差异大于 <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_compare.html#a09bac8581b29a4554bbdb5155bc60a96" title="像素数值差异的容差。取值范围为正数或 0，默认设置为 10。">PixelTolerance</a> </td></tr>
   </table>
   </dd>
 </dl>

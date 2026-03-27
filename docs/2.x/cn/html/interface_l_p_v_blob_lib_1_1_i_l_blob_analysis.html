@@ -267,7 +267,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 <div class="line">blobAna-&gt;AddBlobRange(50, 100);</div>
 <div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = blobAna-&gt;Build(img, roi, &amp;blobResult);</div>
 <div class="line"><span class="keywordflow">if</span> (err != LPVErrorCode::LPVNoError) <span class="keywordflow">return</span>;</div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">LPV 算法或函数运行过程中遇到的错误。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:530</div></div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">LPV 算法或函数运行过程中遇到的错误。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:545</div></div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LBlobAnalysis blobAna = <span class="keyword">new</span> LBlobAnalysis();</div>
 <div class="line">blobAna.AddBlobRange(50, 100);</div>
 <div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = blobAna.Build(img, (LRegion)roi, out blobResult);</div>
@@ -803,7 +803,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 <p>预览输入图像在当前斑点分析配置下的二值化蒙版 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>输入的图像。图像类型需与当前斑点分析工具的模式匹配，即灰度斑点输入的图像需为灰度图。 若不匹配，我们将在算法内部基于当前模式，自动对图像进行转换。 </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">outputImg</td><td><img src="color_binary.png" alt="" class="inline" title="Binary"/> <img src="bit8.png" alt="" class="inline" title="8 Bit"/> 返回预览蒙版图像 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">outputImg</td><td><img src="color_binary.png" alt="" class="inline" title="二值图像"/> <img src="bit8.png" alt="" class="inline" title="无符号 8 位整型"/> 返回预览蒙版图像 </td></tr>
   </table>
   </dd>
 </dl>
@@ -981,13 +981,13 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 </div><div class="memdoc">
 <p>基于输入的图像和给定的像素坐标，自动生成一个灰度值范围，可用于添加为前景或背景范围。通常在灰度模式下调用。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">image</td><td><img src="color_gray.png" alt="" class="inline" title="Grayscale"/> <img src="bit8.png" alt="" class="inline" title="8 Bit"/> 输入的图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">image</td><td><img src="color_gray.png" alt="" class="inline" title="灰度图像"/> <img src="bit8.png" alt="" class="inline" title="无符号 8 位整型"/> 输入的图像 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td>鼠标位置（选择中的）像素的 x 坐标 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">y</td><td>鼠标位置（选择中的）像素的 y 坐标 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">tolerance</td><td>生成灰度值范围时使用的最大容差值，即相较于选中点的灰度值的最大偏移量。 </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">grayLB</td><td>返回生成的灰度值范围的下限，取值在 0 ~ 255 </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">grayUB</td><td>返回生成的灰度值范围的上限，取值在 0 ~ 255 </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">rangeMask</td><td><img src="color_binary.png" alt="" class="inline" title="Binary"/> <img src="bit8.png" alt="" class="inline" title="8 Bit"/> 返回选择范围的蒙版图像，其中白像素表示用于生成灰度范围的像素，可为空 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">rangeMask</td><td><img src="color_binary.png" alt="" class="inline" title="二值图像"/> <img src="bit8.png" alt="" class="inline" title="无符号 8 位整型"/> 返回选择范围的蒙版图像，其中白像素表示用于生成灰度范围的像素，可为空 </td></tr>
   </table>
   </dd>
 </dl>
@@ -1078,13 +1078,13 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 </div><div class="memdoc">
 <p>基于输入的图像和给定的像素坐标，自动生成一个彩色值范围，可用于添加为前景或背景范围。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">image</td><td><img src="color_bgr.png" alt="" class="inline" title="Color"/> <img src="bit8.png" alt="" class="inline" title="8 Bit"/> 输入的图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">image</td><td><img src="color_bgr.png" alt="" class="inline" title="彩色图像"/> <img src="bit8.png" alt="" class="inline" title="无符号 8 位整型"/> 输入的图像 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td>鼠标位置（选择中的）像素的 x 坐标 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">y</td><td>鼠标位置（选择中的）像素的 y 坐标 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">tolerance</td><td>生成灰度值范围时使用的最大容差值，即相较于选中点的灰度值的最大偏移量。 </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">colorLB</td><td>返回生成的彩色值范围的下限。其通道顺序和颜色空间与检测图像一致。 </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">colorUB</td><td>返回生成的彩色值范围的上限。其通道顺序和颜色空间与检测图像一致。 </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">rangeMask</td><td><img src="color_binary.png" alt="" class="inline" title="Binary"/> <img src="bit8.png" alt="" class="inline" title="8 Bit"/> 返回选择范围的蒙版图像，其中白像素表示用于生成灰度范围的像素，可为空 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">rangeMask</td><td><img src="color_binary.png" alt="" class="inline" title="二值图像"/> <img src="bit8.png" alt="" class="inline" title="无符号 8 位整型"/> 返回选择范围的蒙版图像，其中白像素表示用于生成灰度范围的像素，可为空 </td></tr>
   </table>
   </dd>
 </dl>

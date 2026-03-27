@@ -342,8 +342,8 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>均衡化，基于输入图像的直方图。该工具将归一化亮度，增加图像对比度。 均衡化工具不是一个线性滤波器，因此不需要指定滤波核尺寸。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="bit8.png" alt="" class="inline" title="8 Bit"/> 输入图像 </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td><img src="bit8.png" alt="" class="inline" title="8 Bit"/> 输出结果图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="bit8.png" alt="" class="inline" title="无符号 8 位整型"/> 输入图像 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td><img src="bit8.png" alt="" class="inline" title="无符号 8 位整型"/> 输出结果图像 </td></tr>
   </table>
   </dd>
 </dl>
@@ -384,7 +384,7 @@ Public 成员函数</h2></td></tr>
 <p>修补输入图像中的孔洞，基于临近像素的数值重建孔洞中的缺失像素 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>输入图像 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">mask</td><td><img src="color_binary.png" alt="" class="inline" title="Binary"/> <img src="bit8.png" alt="" class="inline" title="8 Bit"/> 孔洞的蒙版图像，与输入图像尺寸相同。白色像素表示孔洞。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mask</td><td><img src="color_binary.png" alt="" class="inline" title="二值图像"/> <img src="bit8.png" alt="" class="inline" title="无符号 8 位整型"/> 孔洞的蒙版图像，与输入图像尺寸相同。白色像素表示孔洞。 </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>输出结果图像 </td></tr>
   </table>
   </dd>
