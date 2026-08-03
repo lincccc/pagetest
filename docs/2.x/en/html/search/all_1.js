@@ -19,8 +19,9 @@ var searchData=
   ['boardthickness_77',['BoardThickness',['../interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#a68aaff181af41e3062684fc72690b5af',1,'LPVCalibLib::ILCalibBoard']]],
   ['bottomhat_78',['BottomHat',['../interface_l_p_v_img_proc_lib_1_1_i_l_image_morph.html#a23926cb2e4d46e1df2663d49953f4c36',1,'LPVImgProcLib::ILImageMorph']]],
   ['boundingrect_79',['BoundingRect',['../interface_l_p_v_geom_x_lib_1_1_i_l_geom_op.html#aaa3f3bbe12393a841f690a25cf77ba98',1,'LPVGeomXLib::ILGeomOp']]],
-  ['build_80',['Build',['../interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a3fa422a523020216c502e3c17a35118e',1,'LPVBlobLib::ILBlobAnalysis::Build()'],['../interface_l_p_v_geom_lib_1_1_i_l_transform.html#ad6051d2bab0f2bb06e1bf7931588e8c3',1,'LPVGeomLib::ILTransform::Build()'],['../interface_l_p_v_img_proc_lib_1_1_i_l_histogram.html#a224974bdf8cadeeca3eeff325bb6afa4',1,'LPVImgProcLib::ILHistogram::Build()'],['../interface_l_p_v_math_lib_1_1_i_l_data_blob_analysis.html#ab4080475bd98f57f624e258da6f5ed17',1,'LPVMathLib::ILDataBlobAnalysis::Build()']]],
-  ['buildcrf_81',['BuildCRF',['../interface_l_p_v_img_proc_lib_1_1_i_l_h_d_r.html#a31cec7feed371e7eecb3e37a44866927',1,'LPVImgProcLib::ILHDR']]],
-  ['buildfromdatavec_82',['BuildFromDataVec',['../interface_l_p_v_img_proc_lib_1_1_i_l_histogram.html#afcf0f914d8dc1509e76ed928c7546a64',1,'LPVImgProcLib::ILHistogram']]],
-  ['bytesperline_83',['BytesPerLine',['../interface_l_p_v_core_lib_1_1_i_l_image.html#a6900be8e418a63e760f9672b1d60dfa1',1,'LPVCoreLib::ILImage']]]
+  ['brushcolor_80',['BrushColor',['../interface_l_p_v_core_lib_1_1_i_l_drawable.html#ab083723d1d32ebe3d9622d08f231fdea',1,'LPVCoreLib::ILDrawable']]],
+  ['build_81',['Build',['../interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a3fa422a523020216c502e3c17a35118e',1,'LPVBlobLib::ILBlobAnalysis::Build()'],['../interface_l_p_v_geom_lib_1_1_i_l_transform.html#ad6051d2bab0f2bb06e1bf7931588e8c3',1,'LPVGeomLib::ILTransform::Build()'],['../interface_l_p_v_img_proc_lib_1_1_i_l_histogram.html#a224974bdf8cadeeca3eeff325bb6afa4',1,'LPVImgProcLib::ILHistogram::Build()'],['../interface_l_p_v_math_lib_1_1_i_l_data_blob_analysis.html#ab4080475bd98f57f624e258da6f5ed17',1,'LPVMathLib::ILDataBlobAnalysis::Build()']]],
+  ['buildcrf_82',['BuildCRF',['../interface_l_p_v_img_proc_lib_1_1_i_l_h_d_r.html#a31cec7feed371e7eecb3e37a44866927',1,'LPVImgProcLib::ILHDR']]],
+  ['buildfromdatavec_83',['BuildFromDataVec',['../interface_l_p_v_img_proc_lib_1_1_i_l_histogram.html#afcf0f914d8dc1509e76ed928c7546a64',1,'LPVImgProcLib::ILHistogram']]],
+  ['bytesperline_84',['BytesPerLine',['../interface_l_p_v_core_lib_1_1_i_l_image.html#a6900be8e418a63e760f9672b1d60dfa1',1,'LPVCoreLib::ILImage']]]
 ];

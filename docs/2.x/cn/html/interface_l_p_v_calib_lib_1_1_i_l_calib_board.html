@@ -154,10 +154,9 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#a299223d3c1410cbdc6bfaeffcadcab6e">InvertBlock</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:a299223d3c1410cbdc6bfaeffcadcab6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否翻转标定块，对分散式二维码棋盘格标定板起效。若相机采图配置为上下或左右镜像，则开启该配置以帮助算法获取正确的坐标系方向。默认关闭。 <br /></td></tr>
 <tr class="separator:a299223d3c1410cbdc6bfaeffcadcab6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca1ee917aeff5d3da717493f3a0fc734"><td class="memItemLeft" align="right" valign="top"><a id="aca1ee917aeff5d3da717493f3a0fc734"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#aca1ee917aeff5d3da717493f3a0fc734">MarkerSize</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:aca1ee917aeff5d3da717493f3a0fc734"><td class="mdescLeft">&#160;</td><td class="mdescRight">分散式二维码棋盘格标定板使用的标记点尺寸，与 <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#a49e5f30b18e9d5f64878d4e45f71deec" title="标定板的网格间距。 对于棋盘格和分散式二维码棋盘格标定板，其指的是一个黑色方块的物理尺寸。 对于圆点阵标定板，其指的是相邻两个圆点中心的物理距离。">SquareSize</a> 相同单位。<br  />
-默认设置为 0，表示其尺寸固定为网格间距的 80。 <br /></td></tr>
+<tr class="memitem:aca1ee917aeff5d3da717493f3a0fc734"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#aca1ee917aeff5d3da717493f3a0fc734">MarkerSize</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:aca1ee917aeff5d3da717493f3a0fc734"><td class="mdescLeft">&#160;</td><td class="mdescRight">分散式二维码棋盘格标定板使用的标记点尺寸。<br  />
+ <a href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#aca1ee917aeff5d3da717493f3a0fc734">更多...</a><br /></td></tr>
 <tr class="separator:aca1ee917aeff5d3da717493f3a0fc734"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a339c0d3167fa8648a9ec06c80895eb53"><td class="memItemLeft" align="right" valign="top"><a id="a339c0d3167fa8648a9ec06c80895eb53"></a>
 <a class="el" href="namespace_l_p_v_calib_lib.html#a99e44d4eeb99f21d21c4e95df1559cae">LPVCalibOutlierRemovalPolicy</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#a339c0d3167fa8648a9ec06c80895eb53">OutlierPolicy</a><code> [get, set]</code></td></tr>
@@ -427,6 +426,33 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
   </dd>
 </dl>
 <dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#a7a74b04693b448c5f4979af0b16ad24b" title="标定板的类型">CalibBoardType</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#ae0dc69304ee0d7baffda597b48d919cc" title="标定板网格的横向尺寸，至少为 3。 对于分散式二维码棋盘格标定板，无需设置该尺寸，该信息隐含在标定板图案内，可由算法自行检测。">GridWidth</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#ab374253d6ea33482e6c038396d35ce70" title="标定板网格的纵向尺寸，至少为 3。 对于分散式二维码棋盘格标定板，无需设置该尺寸，该信息隐含在标定板图案内，可由算法自行检测。">GridHeight</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#a49e5f30b18e9d5f64878d4e45f71deec" title="标定板的网格间距。 对于棋盘格和分散式二维码棋盘格标定板，其指的是一个黑色方块的物理尺寸。 对于圆点阵标定板，其指的是相邻两个圆点中心的物理距离。">SquareSize</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#a23cbe645d0a9732d0f73c1e0a4e69271" title="指定标定板起始点的 x 物理坐标。起始点通常为图像中标定点的最左上点或中心点（若启用 StartFromCetner ）。 对于带有坐标系的圆点标定板，为该坐标系的原点。 对分散式二维码棋盘格标定板，因...">StartX</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#a1afd6ddf5bddb030c45eef5d2ccc1e87" title="指定标定板起始点的 y 物理坐标。起始点通常为图像中标定点的最左上点或中心点（若启用 StartFromCetner ）。">StartY</a> </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">属性说明</h2>
+<a id="aca1ee917aeff5d3da717493f3a0fc734"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca1ee917aeff5d3da717493f3a0fc734">&#9670;&nbsp;</a></span>MarkerSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double MarkerSize</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>分散式二维码棋盘格标定板使用的标记点尺寸。<br  />
+</p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000001">弃用:</a></b></dt><dd>该属性已废弃，设置和获取无任何实质效果。 </dd></dl>
 
 </div>
 </div>
