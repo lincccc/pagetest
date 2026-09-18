@@ -36,10 +36,6 @@
   <td id="projectlogo" style="padding-left: 1em; text-align: center; vertical-align: middle;"><a href="index.html"><img alt="Logo" src="lpv_logo.png"/></a></td>
   <td id="projectalign" style="padding-left: 0.5em; vertical-align: bottom; padding-bottom: 5px;">
    <div id="projectbrief">Leaper Vision Toolkit</div>
-   <div id="projectbrief" style="margin-top: 3px;">
-    <a id="cn_btn" style="cursor: pointer; color: var(--primary-color);">中文</a> / <a id="en_btn" style="cursor: pointer; color: var(--primary-color);">English</a>
-    <span id="projectnumber">2.x</span>
-    </div>
   </td>
  </tr>
  </tbody>
@@ -512,8 +508,8 @@ The smoothness of preserved edges are controlled by <a class="el" href="interfac
 <p>Apply linear filtering on the given image using the custom kernel <code>kMat</code>. The result pixel values out of depth range is truncated, for example for an 8bit image, negative result pixels are set to 0, greater than 255 are set to 255. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>The input image </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">kWidth</td><td>The width of the custom kernel, in range 1 ~ 9999 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">kHeight</td><td>The height of the custom kernel, in range 1 ~ 9999 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">kWidth</td><td>The width of the custom kernel, in range 1 ~ 999 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">kHeight</td><td>The height of the custom kernel, in range 1 ~ 999 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">kMat</td><td>Data of the custom kernel, it's a collection of double values. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>Return result image <h3>Example Code </h3>
 </td></tr>
@@ -579,8 +575,8 @@ The smoothness of preserved edges are controlled by <a class="el" href="interfac
 <p>Apply linear filtering on the given image using the custom kernel <code>kMat</code> then report absolute value. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>The input image </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">kWidth</td><td>The width of the custom kernel, in range 1 ~ 9999 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">kHeight</td><td>The height of the custom kernel, in range 1 ~ 9999 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">kWidth</td><td>The width of the custom kernel, in range 1 ~ 999 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">kHeight</td><td>The height of the custom kernel, in range 1 ~ 999 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">kMat</td><td>Data of the custom kernel, it's a collection of double values. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>Return result image </td></tr>
   </table>

@@ -36,10 +36,6 @@
   <td id="projectlogo" style="padding-left: 1em; text-align: center; vertical-align: middle;"><a href="index.html"><img alt="Logo" src="lpv_logo.png"/></a></td>
   <td id="projectalign" style="padding-left: 0.5em; vertical-align: bottom; padding-bottom: 5px;">
    <div id="projectbrief">Leaper Vision Toolkit</div>
-   <div id="projectbrief" style="margin-top: 3px;">
-    <a id="cn_btn" style="cursor: pointer; color: var(--primary-color);">中文</a> / <a id="en_btn" style="cursor: pointer; color: var(--primary-color);">English</a>
-    <span id="projectnumber">2.x</span>
-    </div>
   </td>
  </tr>
  </tbody>
@@ -565,7 +561,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 </div><div class="memdoc">
 <p>保存图像对象到指定的文件。保存格式有输入路径中的扩展名指定。当前版本，支持保存 BMP, PNG, JPG, JPEG, TIFF, WEBP 格式。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">region</td><td>指定保存图像中的局部区域。可为空，则保持全图。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">region</td><td>指定保存图像中的局部区域。可为 null，则保存全图。 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>文件路径，可为绝对或相对路径，包含文件夹、文件名和扩展名 </td></tr>
   </table>
   </dd>

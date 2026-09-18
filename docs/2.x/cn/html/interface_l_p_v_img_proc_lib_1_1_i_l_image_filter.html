@@ -36,10 +36,6 @@
   <td id="projectlogo" style="padding-left: 1em; text-align: center; vertical-align: middle;"><a href="index.html"><img alt="Logo" src="lpv_logo.png"/></a></td>
   <td id="projectalign" style="padding-left: 0.5em; vertical-align: bottom; padding-bottom: 5px;">
    <div id="projectbrief">Leaper Vision Toolkit</div>
-   <div id="projectbrief" style="margin-top: 3px;">
-    <a id="cn_btn" style="cursor: pointer; color: var(--primary-color);">中文</a> / <a id="en_btn" style="cursor: pointer; color: var(--primary-color);">English</a>
-    <span id="projectnumber">2.x</span>
-    </div>
   </td>
  </tr>
  </tbody>
@@ -513,8 +509,8 @@ Public 成员函数</h2></td></tr>
 <p>基于自定义核，对输入图像进行线性滤波。超出深度范围的结果像素值将被截断，例如，对于 8 位图像，截断到 0 ~ 255 的数值范围。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>输入图像 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">kWidth</td><td>自定义核的宽度，取值范围为 1 ~ 9999 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">kHeight</td><td>自定义核的高度，取值范围为 1 ~ 9999 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">kWidth</td><td>自定义核的宽度，取值范围为 1 ~ 999 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">kHeight</td><td>自定义核的高度，取值范围为 1 ~ 999 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">kMat</td><td>自定义核的数据，这是一组浮点数值 </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>输出结果图像 <h3>示例代码 </h3>
 </td></tr>
@@ -580,8 +576,8 @@ Public 成员函数</h2></td></tr>
 <p>基于自定义核，对输入图像进行线性滤波，输出滤波结果的绝对值 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>输入图像 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">kWidth</td><td>自定义核的宽度，取值范围为 1 ~ 9999 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">kHeight</td><td>自定义核的高度，取值范围为 1 ~ 9999 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">kWidth</td><td>自定义核的宽度，取值范围为 1 ~ 999 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">kHeight</td><td>自定义核的高度，取值范围为 1 ~ 999 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">kMat</td><td>自定义核的数据，这是一组浮点数值 </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>输出结果图像 </td></tr>
   </table>

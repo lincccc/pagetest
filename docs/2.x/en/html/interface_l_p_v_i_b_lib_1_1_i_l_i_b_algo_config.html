@@ -36,10 +36,6 @@
   <td id="projectlogo" style="padding-left: 1em; text-align: center; vertical-align: middle;"><a href="index.html"><img alt="Logo" src="lpv_logo.png"/></a></td>
   <td id="projectalign" style="padding-left: 0.5em; vertical-align: bottom; padding-bottom: 5px;">
    <div id="projectbrief">Leaper Vision Toolkit</div>
-   <div id="projectbrief" style="margin-top: 3px;">
-    <a id="cn_btn" style="cursor: pointer; color: var(--primary-color);">中文</a> / <a id="en_btn" style="cursor: pointer; color: var(--primary-color);">English</a>
-    <span id="projectnumber">2.x</span>
-    </div>
   </td>
  </tr>
  </tbody>
@@ -130,7 +126,7 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:a3209e0bd3a26f4cdddd61650b3756b37"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_data.html">ILIBData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_algo_config.html#a3209e0bd3a26f4cdddd61650b3756b37">Config</a> (<a class="el" href="class_l_string.html">LString</a> paramName)<code> [get, set]</code></td></tr>
-<tr class="memdesc:a3209e0bd3a26f4cdddd61650b3756b37"><td class="mdescLeft">&#160;</td><td class="mdescRight">The configuration of the algorithm tool's input parameter, queried by the parameter's name.  <a href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_algo_config.html#a3209e0bd3a26f4cdddd61650b3756b37">More...</a><br /></td></tr>
+<tr class="memdesc:a3209e0bd3a26f4cdddd61650b3756b37"><td class="mdescLeft">&#160;</td><td class="mdescRight">The configuration of the algorithm tool's input parameter, queried by the parameter's name. Return null if failed to find the result with the specified name.  <a href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_algo_config.html#a3209e0bd3a26f4cdddd61650b3756b37">More...</a><br /></td></tr>
 <tr class="separator:a3209e0bd3a26f4cdddd61650b3756b37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8292bdf77c2bf89903956417791dbf5"><td class="memItemLeft" align="right" valign="top"><a id="ab8292bdf77c2bf89903956417791dbf5"></a>
 <a class="el" href="class_l_string.html">LString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_algo_config.html#ab8292bdf77c2bf89903956417791dbf5">Name</a><code> [get]</code></td></tr>
@@ -230,8 +226,8 @@ The name is drawn on canvas around the object if <a class="el" href="interface_l
 </table>
 </div><div class="memdoc">
 
-<p>The configuration of the algorithm tool's input parameter, queried by the parameter's name. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>The configuration of the algorithm tool's input parameter, queried by the parameter's name. Return null if failed to find the result with the specified name. </p>
+<p>The data may be <a class="el" href="namespace_l_p_v_i_b_lib.html#a1bc97baa07160afa2699d8c58e095263a8ed4039e303c5ef477e5c53216222efd">invalid</a> or empty due to execution failure of the algorithm tool or its precedings, or the conversion of its data type is not supported yet. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">paramName</td><td>The multilingual name of the input parameter. Locale can be changed in configuration of IntelliBlink application. </td></tr>
   </table>

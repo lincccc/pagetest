@@ -36,10 +36,6 @@
   <td id="projectlogo" style="padding-left: 1em; text-align: center; vertical-align: middle;"><a href="index.html"><img alt="Logo" src="lpv_logo.png"/></a></td>
   <td id="projectalign" style="padding-left: 0.5em; vertical-align: bottom; padding-bottom: 5px;">
    <div id="projectbrief">Leaper Vision Toolkit</div>
-   <div id="projectbrief" style="margin-top: 3px;">
-    <a id="cn_btn" style="cursor: pointer; color: var(--primary-color);">中文</a> / <a id="en_btn" style="cursor: pointer; color: var(--primary-color);">English</a>
-    <span id="projectnumber">2.x</span>
-    </div>
   </td>
  </tr>
  </tbody>
@@ -223,7 +219,7 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>从指定的文件读取 LPV 对象。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>文件路径，可为绝对或相对路径，包含文件夹、文件名和扩展名 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>文件路径，可为绝对或相对路径，包含文件夹、文件名和扩展名。使用 .* 或 .? 作为扩展名，接口将基于对象类型自动确定并填入对应扩展名。 </td></tr>
   </table>
   </dd>
 </dl>
@@ -234,6 +230,8 @@ Public 成员函数</h2></td></tr>
   </dd>
 </dl>
 <dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_object.html#a86b6e3ad558d350e70a837c28554acf4">Save()</a> </dd></dl>
+
+<p>在 <a class="el" href="interface_l_p_v_m_l_lib_1_1_i_l_sample.html#a74069eb14437a9a889322b62e52db75f">ILSample</a> 内被实现.</p>
 
 </div>
 </div>
@@ -336,7 +334,7 @@ Public 成员函数</h2></td></tr>
 </table>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>文件路径，可为绝对或相对路径，包含文件夹、文件名和扩展名 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>文件路径，可为绝对或相对路径，包含文件夹、文件名和扩展名。使用 .* 或 .? 作为扩展名，接口将基于对象类型自动确定并填入对应扩展名。 </td></tr>
   </table>
   </dd>
 </dl>
@@ -347,6 +345,8 @@ Public 成员函数</h2></td></tr>
   </dd>
 </dl>
 <dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_object.html#a74069eb14437a9a889322b62e52db75f">Load()</a> </dd></dl>
+
+<p>在 <a class="el" href="interface_l_p_v_m_l_lib_1_1_i_l_sample.html#a86b6e3ad558d350e70a837c28554acf4">ILSample</a> 内被实现.</p>
 
 </div>
 </div>

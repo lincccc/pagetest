@@ -1,7 +1,7 @@
 var searchData=
 [
   ['samplingbyangle_2445',['SamplingByAngle',['../interface_l_p_v_geom_lib_1_1_i_l_ellipse.html#ae3a1b651e0be8e21bc2849754623dcfd',1,'LPVGeomLib::ILEllipse']]],
-  ['save_2446',['Save',['../interface_l_p_v_core_lib_1_1_i_l_object.html#a86b6e3ad558d350e70a837c28554acf4',1,'LPVCoreLib::ILObject::Save()'],['../interface_l_p_v_core_lib_1_1_i_l_image.html#a0772521fac1f24bd996f05fac5cae9d7',1,'LPVCoreLib::ILImage::Save()']]],
+  ['save_2446',['Save',['../interface_l_p_v_core_lib_1_1_i_l_object.html#a86b6e3ad558d350e70a837c28554acf4',1,'LPVCoreLib::ILObject::Save()'],['../interface_l_p_v_core_lib_1_1_i_l_image.html#a0772521fac1f24bd996f05fac5cae9d7',1,'LPVCoreLib::ILImage::Save()'],['../interface_l_p_v_m_l_lib_1_1_i_l_sample.html#a86b6e3ad558d350e70a837c28554acf4',1,'LPVMLLib::ILSample::Save()']]],
   ['savealgoconfig_2447',['SaveAlgoConfig',['../interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html#a3d9cf7b8f5480393ad592d47544921a0',1,'LPVIBLib::ILIBService']]],
   ['savescenetofile_2448',['SaveSceneToFile',['../interface_l_p_v_display_lib_1_1_i_l_display_common.html#a62ebe2dc4a351b3a7236e946df400069',1,'LPVDisplayLib::ILDisplayCommon']]],
   ['savescenetoimage_2449',['SaveSceneToImage',['../interface_l_p_v_display_lib_1_1_i_l_display_common.html#a744e738b1f338a75dec6284de2ba9d64',1,'LPVDisplayLib::ILDisplayCommon']]],
@@ -75,10 +75,10 @@ var searchData=
   ['setsoftthresholdrange_2517',['SetSoftThresholdRange',['../interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#aef671f7367adaf9fd523e108b1202523',1,'LPVBlobLib::ILBlobAnalysis']]],
   ['settaskconfig_2518',['SetTaskConfig',['../interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html#abd27a54e852e3adc33c87cd2d42fd2f6',1,'LPVIBLib::ILIBService']]],
   ['setthreshold_2519',['SetThreshold',['../interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#aaec01838c8df52617fae459c70991d4e',1,'LPVImgProcLib::ILImageThreshold']]],
-  ['setthresholdadaptglobal_2520',['SetThresholdAdaptGlobal',['../interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#a6bb4173db5cfa3de10d91adcfe6b536d',1,'LPVImgProcLib::ILImageThreshold']]],
-  ['setthresholdadaptlocal_2521',['SetThresholdAdaptLocal',['../interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#aae70a3231282033ea8dbb5f1e3464821',1,'LPVImgProcLib::ILImageThreshold']]],
-  ['setthresholdadaptlocalmean_2522',['SetThresholdAdaptLocalMean',['../interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#a80c1f0a9b8b35e7edabe0b94d2bb9398',1,'LPVImgProcLib::ILImageThreshold']]],
-  ['setthresholdadaptlocalmedian_2523',['SetThresholdAdaptLocalMedian',['../interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#acfd761b4c5bbe8d87707b962a3cb0c21',1,'LPVImgProcLib::ILImageThreshold']]],
+  ['setthresholdadaptglobal_2520',['SetThresholdAdaptGlobal',['../interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#ab5b8904ee806d976052e7ebf20aeb327',1,'LPVImgProcLib::ILImageThreshold']]],
+  ['setthresholdadaptlocal_2521',['SetThresholdAdaptLocal',['../interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#afb386f578b88ede7b6224ef58fca93f6',1,'LPVImgProcLib::ILImageThreshold']]],
+  ['setthresholdadaptlocalmean_2522',['SetThresholdAdaptLocalMean',['../interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#ae5a106118df703296e40be2c7e476198',1,'LPVImgProcLib::ILImageThreshold']]],
+  ['setthresholdadaptlocalmedian_2523',['SetThresholdAdaptLocalMedian',['../interface_l_p_v_img_proc_lib_1_1_i_l_image_threshold.html#a234db7583721931edc44270008f5139b',1,'LPVImgProcLib::ILImageThreshold']]],
   ['setto_2524',['SetTo',['../interface_l_p_v_core_lib_1_1_i_l_image.html#a6cfd9dbc70b93a0b757f849763326d0d',1,'LPVCoreLib::ILImage']]],
   ['settocolor_2525',['SetToColor',['../interface_l_p_v_core_lib_1_1_i_l_image.html#a8a20e7ed2f207a332528a802b87def8e',1,'LPVCoreLib::ILImage']]],
   ['settoscalar_2526',['SetToScalar',['../interface_l_p_v_core_lib_1_1_i_l_image.html#a71a5a41780e002f3c2ceb2f80c350040',1,'LPVCoreLib::ILImage']]],

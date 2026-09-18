@@ -36,10 +36,6 @@
   <td id="projectlogo" style="padding-left: 1em; text-align: center; vertical-align: middle;"><a href="index.html"><img alt="Logo" src="lpv_logo.png"/></a></td>
   <td id="projectalign" style="padding-left: 0.5em; vertical-align: bottom; padding-bottom: 5px;">
    <div id="projectbrief">Leaper Vision Toolkit</div>
-   <div id="projectbrief" style="margin-top: 3px;">
-    <a id="cn_btn" style="cursor: pointer; color: var(--primary-color);">中文</a> / <a id="en_btn" style="cursor: pointer; color: var(--primary-color);">English</a>
-    <span id="projectnumber">2.x</span>
-    </div>
   </td>
  </tr>
  </tbody>
@@ -160,7 +156,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 <tr>
 <th class="markdownTableHeadLeft" style="width:15%">参数名称</th><th class="markdownTableHeadLeft" style="width:50%">使用说明</th><th class="markdownTableHeadLeft">类型</th><th class="markdownTableHeadLeft">取值范围</th><th class="markdownTableHeadLeft">默认值 </th></tr>
 <tr>
-<td>"number of neighbors"</td><td>用来预测的最近邻数量</td><td>Integer</td><td>1 ~ 64</td><td>5 </td></tr>
+<td>"number of neighbors"</td><td>用来预测的最近邻数量</td><td>Integer</td><td>0 ~ 64，0 表示自动确定</td><td>5 </td></tr>
 <tr>
 <td>"matching algorithm"</td><td>用于最近邻搜索的算法</td><td>Integer</td><td>see <a class="el" href="namespace_l_p_v_m_l_lib.html#a13aa4ad138413a74d21124fc8c86f1c6">LPVKNNMatchAlgo</a></td><td><a class="el" href="namespace_l_p_v_m_l_lib.html#a13aa4ad138413a74d21124fc8c86f1c6aff068cfcb74610a3d08312331c877649">Brute-Force</a> </td></tr>
 <tr>
@@ -183,7 +179,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 <tr>
 <td>"kernel"</td><td>核函数</td><td>Integer</td><td>see <a class="el" href="namespace_l_p_v_m_l_lib.html#a2d6a70c3d0397ec68b2468aca95a8e36">LPVSVMKernel</a></td><td><a class="el" href="namespace_l_p_v_m_l_lib.html#a2d6a70c3d0397ec68b2468aca95a8e36a18a00733e5c43707c831f33a3d77fee7">Linear</a> </td></tr>
 <tr>
-<td>"g"</td><td>核函数中的参数 g</td><td>Double</td><td>&gt; 0, 0 for auto-estimated</td><td>0.1 </td></tr>
+<td>"g"</td><td>核函数中的参数 g</td><td>Double</td><td>&gt; 0，0 表示自动确定</td><td>0.1 </td></tr>
 <tr>
 <td>"c"</td><td>核函数中的参数 c</td><td>Double</td><td>≥ 0 </td><td>0.1 </td></tr>
 <tr>
@@ -210,9 +206,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 <div class="line">svm.ParamI[<span class="stringliteral">&quot;kernel&quot;</span>] = <a class="code" href="namespace_l_p_v_m_l_lib.html#a2d6a70c3d0397ec68b2468aca95a8e36">LPVSVMKernel</a>.LPVSVMKernelPolynomial;</div>
 <div class="line">svm.ParamF[<span class="stringliteral">&quot;c&quot;</span>] = 0.4;</div>
 <div class="line">llc.AddModel(svm); <span class="comment">// add it to the classifier</span></div>
-<div class="ttc" id="anamespace_l_p_v_m_l_lib_html_a29e060a4ae266d582101abd25d2ad91a"><div class="ttname"><a href="namespace_l_p_v_m_l_lib.html#a29e060a4ae266d582101abd25d2ad91a">LPVMLLib::LPVModelType</a></div><div class="ttdeci">LPVModelType</div><div class="ttdoc">该枚举用于表示机器学习模型类型</div><div class="ttdef"><b>Definition:</b> LPVML.idl:118</div></div>
-<div class="ttc" id="anamespace_l_p_v_m_l_lib_html_a2d6a70c3d0397ec68b2468aca95a8e36"><div class="ttname"><a href="namespace_l_p_v_m_l_lib.html#a2d6a70c3d0397ec68b2468aca95a8e36">LPVMLLib::LPVSVMKernel</a></div><div class="ttdeci">LPVSVMKernel</div><div class="ttdoc">该枚举用于表示 SVM 模型使用的核类型</div><div class="ttdef"><b>Definition:</b> LPVML.idl:311</div></div>
-<div class="ttc" id="anamespace_l_p_v_m_l_lib_html_acece2a4d2c8b8503bf2f0c39cbb6550d"><div class="ttname"><a href="namespace_l_p_v_m_l_lib.html#acece2a4d2c8b8503bf2f0c39cbb6550d">LPVMLLib::LPVSVMType</a></div><div class="ttdeci">LPVSVMType</div><div class="ttdoc">该枚举用于表示 SVM 模型的类型</div><div class="ttdef"><b>Definition:</b> LPVML.idl:288</div></div>
+<div class="ttc" id="anamespace_l_p_v_m_l_lib_html_a29e060a4ae266d582101abd25d2ad91a"><div class="ttname"><a href="namespace_l_p_v_m_l_lib.html#a29e060a4ae266d582101abd25d2ad91a">LPVMLLib::LPVModelType</a></div><div class="ttdeci">LPVModelType</div><div class="ttdoc">该枚举用于表示机器学习模型类型</div><div class="ttdef"><b>Definition:</b> LPVML.idl:97</div></div>
+<div class="ttc" id="anamespace_l_p_v_m_l_lib_html_a2d6a70c3d0397ec68b2468aca95a8e36"><div class="ttname"><a href="namespace_l_p_v_m_l_lib.html#a2d6a70c3d0397ec68b2468aca95a8e36">LPVMLLib::LPVSVMKernel</a></div><div class="ttdeci">LPVSVMKernel</div><div class="ttdoc">该枚举用于表示 SVM 模型使用的核类型</div><div class="ttdef"><b>Definition:</b> LPVML.idl:298</div></div>
+<div class="ttc" id="anamespace_l_p_v_m_l_lib_html_acece2a4d2c8b8503bf2f0c39cbb6550d"><div class="ttname"><a href="namespace_l_p_v_m_l_lib.html#acece2a4d2c8b8503bf2f0c39cbb6550d">LPVMLLib::LPVSVMType</a></div><div class="ttdeci">LPVSVMType</div><div class="ttdoc">该枚举用于表示 SVM 模型的类型</div><div class="ttdef"><b>Definition:</b> LPVML.idl:275</div></div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='com' style='display: none;'>COM</div><div class='toggleable_div label_com' style='display: none;'><div class="fragment"><div class="line"><span class="comment">// create a HOG feature</span></div>
 <div class="line">ILModelPtr svm = LModel::Create();</div>
 <div class="line"><span class="comment">// or, ILModelPtr svm(__uuidof(LModel)), for absence of built-in Create functions (before 2.2.0)</span></div>

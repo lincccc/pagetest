@@ -36,10 +36,6 @@
   <td id="projectlogo" style="padding-left: 1em; text-align: center; vertical-align: middle;"><a href="index.html"><img alt="Logo" src="lpv_logo.png"/></a></td>
   <td id="projectalign" style="padding-left: 0.5em; vertical-align: bottom; padding-bottom: 5px;">
    <div id="projectbrief">Leaper Vision Toolkit</div>
-   <div id="projectbrief" style="margin-top: 3px;">
-    <a id="cn_btn" style="cursor: pointer; color: var(--primary-color);">中文</a> / <a id="en_btn" style="cursor: pointer; color: var(--primary-color);">English</a>
-    <span id="projectnumber">2.x</span>
-    </div>
   </td>
  </tr>
  </tbody>
@@ -506,7 +502,7 @@ typedef struct <a class="el" href="struct_l_p_v_core_lib_1_1_l_size.html">LPVCor
 , <br />
 &#160;&#160;<a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0bac595c6b549ecbabb1dbb431e374b02ad">LPVWhiteOnBlack</a> = 4
 , <a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0ba0e1e682e831262bdf3c56f6c6fee4d62">LPVPolarityEitherObject</a> = 5
-, <a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0ba985da7ae09669453c24378d558557c76">LPVPolarityEither</a> = 6
+, <a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0ba985da7ae09669453c24378d558557c76">LPVPolarityEither</a> = LPVPolarityEitherEdge
 <br />
  }</td></tr>
 <tr class="memdesc:ad8a4d763bb82cc129119ff1cf0bc0e0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">该枚举类型表示要定位的物体或边缘的极性  <a href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0b">更多...</a><br /></td></tr>
@@ -594,7 +590,7 @@ typedef struct <a class="el" href="struct_l_p_v_core_lib_1_1_l_size.html">LPVCor
 <h3>示例代码 </h3>
  <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line"><span class="preprocessor">#include &quot;LPVCore.h&quot;</span></div>
 </div><!-- fragment --><p> <b>Qt Demo:</b> <a class="el" href="how_to_play_with_demo.html#demo_sanity">QtSanity</a>, <a class="el" href="how_to_play_with_demo.html#demo_region">QtRegion</a> </p> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line"><span class="keyword">using</span> <a class="code" href="namespace_l_p_v_core_lib.html">LPVCoreLib</a>;</div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html"><div class="ttname"><a href="namespace_l_p_v_core_lib.html">LPVCoreLib</a></div><div class="ttdoc">LPV 基础模块，提供图像、检测区域、绘制等基础功能。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:427</div></div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html"><div class="ttname"><a href="namespace_l_p_v_core_lib.html">LPVCoreLib</a></div><div class="ttdoc">LPV 基础模块，提供图像、检测区域、绘制等基础功能。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:401</div></div>
 </div><!-- fragment --><p> <b>C# Demo:</b> <a class="el" href="how_to_play_with_demo.html#demo_sanity">CSharpSanity</a>, <a class="el" href="how_to_play_with_demo.html#demo_region">CSharpRegion</a>, <a class="el" href="how_to_play_with_demo.html#demo_hikcam">CSharpHikCam</a> </p> </div>  <div class='newInnerHTML' title='com' style='display: none;'>COM</div><div class='toggleable_div label_com' style='display: none;'><div class="fragment"><div class="line"><span class="preprocessor">#define LPV_COM </span><span class="comment">// enable COM interfaces</span></div>
 <div class="line">#include &quot;LPVCore.h&quot;</div>
 </div><!-- fragment --><p> <b>MFC Demo:</b> <a class="el" href="how_to_play_with_demo.html#demo_sanity">MFCSanity</a>, <a class="el" href="how_to_play_with_demo.html#demo_region">MFCRegion</a> </p> </div>  </div><h2 class="groupheader">枚举类型说明</h2>
@@ -1345,7 +1341,7 @@ typedef struct <a class="el" href="struct_l_p_v_core_lib_1_1_l_size.html">LPVCor
 </td></tr>
 <tr><td class="fieldname"><a id="ad8a4d763bb82cc129119ff1cf0bc0e0ba0e1e682e831262bdf3c56f6c6fee4d62"></a>LPVPolarityEitherObject&#160;</td><td class="fielddoc"><p>接受任意一种目标极性，白物体黑背景，或者黑物体白背景 </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ad8a4d763bb82cc129119ff1cf0bc0e0ba985da7ae09669453c24378d558557c76"></a>LPVPolarityEither&#160;</td><td class="fielddoc"><p>接受任意一种极性 </p>
+<tr><td class="fieldname"><a id="ad8a4d763bb82cc129119ff1cf0bc0e0ba985da7ae09669453c24378d558557c76"></a>LPVPolarityEither&#160;</td><td class="fielddoc"><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000002">弃用:</a></b></dt><dd>使用 LPVPolarityEitherEdge 或 LPVPolarityEitherObject </dd></dl>
 </td></tr>
 </table>
 
@@ -1443,7 +1439,7 @@ typedef struct <a class="el" href="struct_l_p_v_core_lib_1_1_l_size.html">LPVCor
 
 <p>该枚举类型表示排序的类型 </p>
 <table class="fieldtable">
-<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a1752d5f8ebb6a8f6dda700e1a87c98dea3a6a628a6b36b44100605255ae4dde17"></a>LPVSortByReserved&#160;</td><td class="fielddoc"><p>无指定排序类型，通常用于随机排序 </p>
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a1752d5f8ebb6a8f6dda700e1a87c98dea3a6a628a6b36b44100605255ae4dde17"></a>LPVSortByReserved&#160;</td><td class="fielddoc"><p>无指定排序类型，只用于 <a class="el" href="namespace_l_p_v_core_lib.html#a38d3a87896df9ff1b8c96bee1ab58e2faa3cd168041455358a087899af206357c">随机</a> 排序 </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a1752d5f8ebb6a8f6dda700e1a87c98dea3801a44d8593a854b0c867d2717cde43"></a>LPVSortByX&#160;</td><td class="fielddoc"><p>按 x 坐标排序，忽略 y 坐标 </p>
 </td></tr>

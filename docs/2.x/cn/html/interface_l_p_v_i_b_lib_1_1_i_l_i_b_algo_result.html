@@ -36,10 +36,6 @@
   <td id="projectlogo" style="padding-left: 1em; text-align: center; vertical-align: middle;"><a href="index.html"><img alt="Logo" src="lpv_logo.png"/></a></td>
   <td id="projectalign" style="padding-left: 0.5em; vertical-align: bottom; padding-bottom: 5px;">
    <div id="projectbrief">Leaper Vision Toolkit</div>
-   <div id="projectbrief" style="margin-top: 3px;">
-    <a id="cn_btn" style="cursor: pointer; color: var(--primary-color);">中文</a> / <a id="en_btn" style="cursor: pointer; color: var(--primary-color);">English</a>
-    <span id="projectnumber">2.x</span>
-    </div>
   </td>
  </tr>
  </tbody>
@@ -138,7 +134,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 <tr class="memdesc:ab8292bdf77c2bf89903956417791dbf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">算法工具的名称，用于唯一标识该工具，即灵闪界面中显示的自动或用户手动修改的名称 <br /></td></tr>
 <tr class="separator:ab8292bdf77c2bf89903956417791dbf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17a7349b7f899968ace2db8f00a314a0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_data.html">ILIBData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_algo_result.html#a17a7349b7f899968ace2db8f00a314a0">Result</a> (<a class="el" href="class_l_string.html">LString</a> resultName)<code> [get]</code></td></tr>
-<tr class="memdesc:a17a7349b7f899968ace2db8f00a314a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">结果数据，以其名称查询。若无法找到对应名称的数据，返回 null  <a href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_algo_result.html#a17a7349b7f899968ace2db8f00a314a0">更多...</a><br /></td></tr>
+<tr class="memdesc:a17a7349b7f899968ace2db8f00a314a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">结果数据，以其名称查询。 若无法找到对应名称的数据，返回 null。  <a href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_algo_result.html#a17a7349b7f899968ace2db8f00a314a0">更多...</a><br /></td></tr>
 <tr class="separator:a17a7349b7f899968ace2db8f00a314a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header properties_interface_l_p_v_core_lib_1_1_i_l_object"><td colspan="2" onclick="javascript:toggleInherit('properties_interface_l_p_v_core_lib_1_1_i_l_object')"><img src="closed.png" alt="-"/>&#160;属性 继承自 <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_object.html">ILObject</a></td></tr>
 <tr class="memitem:ab8292bdf77c2bf89903956417791dbf5 inherit properties_interface_l_p_v_core_lib_1_1_i_l_object"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_l_string.html">LString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_object.html#ab8292bdf77c2bf89903956417791dbf5">Name</a><code> [get, set]</code></td></tr>
@@ -167,7 +163,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 <div class="line"><span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; dataCount; ++i) {</div>
 <div class="line">    LIBData ibData = outputResult.Item(i);</div>
 <div class="line">}</div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">LPV 算法或函数运行过程中遇到的错误。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:545</div></div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">LPV 算法或函数运行过程中遇到的错误。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:519</div></div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='com' style='display: none;'>COM</div><div class='toggleable_div label_com' style='display: none;'><div class="fragment"><div class="line">ILIBTaskResultPtr taskResult;</div>
 <div class="line"><span class="keywordtype">long</span> err = ibService-&gt;ExecuteTaskSync(ibTaskId, image, &amp;taskResult);</div>
 <div class="line"><span class="keywordflow">if</span> (err != LPVErrorCode::LPVNoError) <span class="keywordflow">return</span>; <span class="comment">// execution failed</span></div>
@@ -193,7 +189,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
         </tr>
       </table>
 </div><div class="memdoc">
-<p>获取给定索引对应的结果数据 </p><dl class="params"><dt>参数</dt><dd>
+<p>获取给定索引对应的结果数据<br  />
+当算法工具执行失败、检测结果为空时，结果数据可能为空或 <a class="el" href="namespace_l_p_v_i_b_lib.html#a1bc97baa07160afa2699d8c58e095263a8ed4039e303c5ef477e5c53216222efd">非法</a> ；对于未支持的数据类型，结果数据的数据类型 <a class="el" href="namespace_l_p_v_i_b_lib.html#a1bc97baa07160afa2699d8c58e095263a8ed4039e303c5ef477e5c53216222efd">非法</a>。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>输入索引，从 0 开始但小于总数的数字 </td></tr>
   </table>
@@ -229,8 +226,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 </table>
 </div><div class="memdoc">
 
-<p>结果数据，以其名称查询。若无法找到对应名称的数据，返回 null </p>
-<dl class="params"><dt>参数</dt><dd>
+<p>结果数据，以其名称查询。 若无法找到对应名称的数据，返回 null。 </p>
+<p>当算法工具执行失败、检测结果为空时，结果数据可能为空或 <a class="el" href="namespace_l_p_v_i_b_lib.html#a1bc97baa07160afa2699d8c58e095263a8ed4039e303c5ef477e5c53216222efd">非法</a> ；对于未支持的数据类型，结果数据的数据类型 <a class="el" href="namespace_l_p_v_i_b_lib.html#a1bc97baa07160afa2699d8c58e095263a8ed4039e303c5ef477e5c53216222efd">非法</a>。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">resultName</td><td>算法结果的本地化名称。本地区域需在灵闪平台的配置中配置。 </td></tr>
   </table>

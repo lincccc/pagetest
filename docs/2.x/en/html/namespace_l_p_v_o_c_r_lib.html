@@ -36,10 +36,6 @@
   <td id="projectlogo" style="padding-left: 1em; text-align: center; vertical-align: middle;"><a href="index.html"><img alt="Logo" src="lpv_logo.png"/></a></td>
   <td id="projectalign" style="padding-left: 0.5em; vertical-align: bottom; padding-bottom: 5px;">
    <div id="projectbrief">Leaper Vision Toolkit</div>
-   <div id="projectbrief" style="margin-top: 3px;">
-    <a id="cn_btn" style="cursor: pointer; color: var(--primary-color);">中文</a> / <a id="en_btn" style="cursor: pointer; color: var(--primary-color);">English</a>
-    <span id="projectnumber">2.x</span>
-    </div>
   </td>
  </tr>
  </tbody>
@@ -127,7 +123,7 @@ Enumerations</h2></td></tr>
 , <br />
 &#160;&#160;<a class="el" href="namespace_l_p_v_o_c_r_lib.html#af7dffce8b3eba2ba93026d6dca31d6a5a4463d28c1adb23889c6824406fe37424">LPVOCRDrawByLine</a> = 16
 , <a class="el" href="namespace_l_p_v_o_c_r_lib.html#af7dffce8b3eba2ba93026d6dca31d6a5ae4f69bfdc393dcaef648f78b7f8e040f">LPVOCRDrawDefault</a> = LPVOCRDrawString | LPVOCRDrawRegion
-, <a class="el" href="namespace_l_p_v_o_c_r_lib.html#af7dffce8b3eba2ba93026d6dca31d6a5adf651f49330443b570f9783a75e0e9db">LPVOCRDrawAll</a> = 0x0f
+, <a class="el" href="namespace_l_p_v_o_c_r_lib.html#af7dffce8b3eba2ba93026d6dca31d6a5adf651f49330443b570f9783a75e0e9db">LPVOCRDrawAll</a> = 0xff
 <br />
  }</td></tr>
 <tr class="memdesc:af7dffce8b3eba2ba93026d6dca31d6a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">This enumeration represents the flags to control the OCR results' drawing behavior.  <a href="namespace_l_p_v_o_c_r_lib.html#af7dffce8b3eba2ba93026d6dca31d6a5">More...</a><br /></td></tr>
@@ -186,7 +182,7 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="namespace_l_p_v_o_c_r_lib.html#acd61cfd1b29e77ebda65b71db4d6e863aee3830c807431d0b0421f3b0c32bd141">LPVOCVShape</a> = 0x01
 , <a class="el" href="namespace_l_p_v_o_c_r_lib.html#acd61cfd1b29e77ebda65b71db4d6e863ae7995067786f727bb0b9a2d37b87e9e5">LPVOCVGrayscale</a> = 0x02
 , <a class="el" href="namespace_l_p_v_o_c_r_lib.html#acd61cfd1b29e77ebda65b71db4d6e863a37e27ae931dd44d5ea56858524772aa8">LPVOCVMissingPart</a> = 0x04
-, <a class="el" href="namespace_l_p_v_o_c_r_lib.html#acd61cfd1b29e77ebda65b71db4d6e863adfb30a85314189cd7e0e956d886b7d8d">LPVOCVGrayScaleMissingPart</a> = 0x08
+, <a class="el" href="namespace_l_p_v_o_c_r_lib.html#acd61cfd1b29e77ebda65b71db4d6e863adfb30a85314189cd7e0e956d886b7d8d">LPVOCVGrayScaleMissingPart</a> = 0x10
 , <br />
 &#160;&#160;<a class="el" href="namespace_l_p_v_o_c_r_lib.html#acd61cfd1b29e77ebda65b71db4d6e863af33924691a8908de36f1159259c14518">LPVOCVAll</a> = 0xff
 <br />
@@ -200,7 +196,7 @@ Enumerations</h2></td></tr>
 <h3>Example Code </h3>
  <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line"><span class="preprocessor">#include &quot;LPVML.h&quot;</span></div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line"><span class="keyword">using</span> <a class="code" href="namespace_l_p_v_m_l_lib.html">LPVMLLib</a>;</div>
-<div class="ttc" id="anamespace_l_p_v_m_l_lib_html"><div class="ttname"><a href="namespace_l_p_v_m_l_lib.html">LPVMLLib</a></div><div class="ttdoc">LPV Machine learning Library, provides classes for classification/detection/inspection tasks that inv...</div><div class="ttdef"><b>Definition:</b> LPVML.idl:79</div></div>
+<div class="ttc" id="anamespace_l_p_v_m_l_lib_html"><div class="ttname"><a href="namespace_l_p_v_m_l_lib.html">LPVMLLib</a></div><div class="ttdoc">LPV Machine learning Library, provides classes for classification/detection/inspection tasks that inv...</div><div class="ttdef"><b>Definition:</b> LPVML.idl:58</div></div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='com' style='display: none;'>COM</div><div class='toggleable_div label_com' style='display: none;'><div class="fragment"><div class="line"><span class="preprocessor">#define LPV_COM </span><span class="comment">// enable COM interfaces</span></div>
 <div class="line">#include &quot;LPVML.h&quot;</div>
 </div><!-- fragment --> </div> <p><b>C++ Snippets: OCRHandWritten.cpp</b> <br  />
@@ -390,7 +386,7 @@ Enumerations</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="acd61cfd1b29e77ebda65b71db4d6e863a37e27ae931dd44d5ea56858524772aa8"></a>LPVOCVMissingPart&#160;</td><td class="fielddoc"><p>The fraction of the missing part </p>
 </td></tr>
-<tr><td class="fieldname"><a id="acd61cfd1b29e77ebda65b71db4d6e863adfb30a85314189cd7e0e956d886b7d8d"></a>LPVOCVGrayScaleMissingPart&#160;</td><td class="fielddoc"><p>The difference between the grayscale of the character's missing part and the samples </p>
+<tr><td class="fieldname"><a id="acd61cfd1b29e77ebda65b71db4d6e863adfb30a85314189cd7e0e956d886b7d8d"></a>LPVOCVGrayScaleMissingPart&#160;</td><td class="fielddoc"><p>Measure the difference of the character's missing part and the samples, based on the part's grayscale matching. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="acd61cfd1b29e77ebda65b71db4d6e863af33924691a8908de36f1159259c14518"></a>LPVOCVAll&#160;</td><td class="fielddoc"><p>Verify all parts </p>
 </td></tr>

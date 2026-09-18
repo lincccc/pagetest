@@ -36,10 +36,6 @@
   <td id="projectlogo" style="padding-left: 1em; text-align: center; vertical-align: middle;"><a href="index.html"><img alt="Logo" src="lpv_logo.png"/></a></td>
   <td id="projectalign" style="padding-left: 0.5em; vertical-align: bottom; padding-bottom: 5px;">
    <div id="projectbrief">Leaper Vision Toolkit</div>
-   <div id="projectbrief" style="margin-top: 3px;">
-    <a id="cn_btn" style="cursor: pointer; color: var(--primary-color);">中文</a> / <a id="en_btn" style="cursor: pointer; color: var(--primary-color);">English</a>
-    <span id="projectnumber">2.x</span>
-    </div>
   </td>
  </tr>
  </tbody>
@@ -506,7 +502,7 @@ Enumerations</h2></td></tr>
 , <br />
 &#160;&#160;<a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0bac595c6b549ecbabb1dbb431e374b02ad">LPVWhiteOnBlack</a> = 4
 , <a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0ba0e1e682e831262bdf3c56f6c6fee4d62">LPVPolarityEitherObject</a> = 5
-, <a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0ba985da7ae09669453c24378d558557c76">LPVPolarityEither</a> = 6
+, <a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0ba985da7ae09669453c24378d558557c76">LPVPolarityEither</a> = LPVPolarityEitherEdge
 <br />
  }</td></tr>
 <tr class="memdesc:ad8a4d763bb82cc129119ff1cf0bc0e0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This enumeration represents the polarity of the edge or object to be located.  <a href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0b">More...</a><br /></td></tr>
@@ -594,7 +590,7 @@ Enumerations</h2></td></tr>
 <h3>Example Code </h3>
  <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line"><span class="preprocessor">#include &quot;LPVCore.h&quot;</span></div>
 </div><!-- fragment --><p> <b>Qt Demo:</b> <a class="el" href="how_to_play_with_demo.html#demo_sanity">QtSanity</a>, <a class="el" href="how_to_play_with_demo.html#demo_region">QtRegion</a> </p> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line"><span class="keyword">using</span> <a class="code" href="namespace_l_p_v_core_lib.html">LPVCoreLib</a>;</div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html"><div class="ttname"><a href="namespace_l_p_v_core_lib.html">LPVCoreLib</a></div><div class="ttdoc">LPV Core Library, provide basic functionalities.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:427</div></div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html"><div class="ttname"><a href="namespace_l_p_v_core_lib.html">LPVCoreLib</a></div><div class="ttdoc">LPV Core Library, provide basic functionalities.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:401</div></div>
 </div><!-- fragment --><p> <b>C# Demo:</b> <a class="el" href="how_to_play_with_demo.html#demo_sanity">CSharpSanity</a>, <a class="el" href="how_to_play_with_demo.html#demo_region">CSharpRegion</a>, <a class="el" href="how_to_play_with_demo.html#demo_hikcam">CSharpHikCam</a> </p> </div>  <div class='newInnerHTML' title='com' style='display: none;'>COM</div><div class='toggleable_div label_com' style='display: none;'><div class="fragment"><div class="line"><span class="preprocessor">#define LPV_COM </span><span class="comment">// enable COM interfaces</span></div>
 <div class="line">#include &quot;LPVCore.h&quot;</div>
 </div><!-- fragment --><p> <b>MFC Demo:</b> <a class="el" href="how_to_play_with_demo.html#demo_sanity">MFCSanity</a>, <a class="el" href="how_to_play_with_demo.html#demo_region">MFCRegion</a> </p> </div>  </div><h2 class="groupheader">Enumeration Type Documentation</h2>
@@ -1344,7 +1340,7 @@ The conversion between BGR is calculated based on XYZ values using normalized RG
 </td></tr>
 <tr><td class="fieldname"><a id="ad8a4d763bb82cc129119ff1cf0bc0e0ba0e1e682e831262bdf3c56f6c6fee4d62"></a>LPVPolarityEitherObject&#160;</td><td class="fielddoc"><p>Either object polarity is acceptable. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ad8a4d763bb82cc129119ff1cf0bc0e0ba985da7ae09669453c24378d558557c76"></a>LPVPolarityEither&#160;</td><td class="fielddoc"><p>Either polarity is acceptable. </p>
+<tr><td class="fieldname"><a id="ad8a4d763bb82cc129119ff1cf0bc0e0ba985da7ae09669453c24378d558557c76"></a>LPVPolarityEither&#160;</td><td class="fielddoc"><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000002">Deprecated:</a></b></dt><dd>Use LPVPolarityEitherEdge or LPVPolarityEitherObject instead </dd></dl>
 </td></tr>
 </table>
 
@@ -1442,7 +1438,7 @@ The conversion between BGR is calculated based on XYZ values using normalized RG
 
 <p>This enumeration represents the type of sorting. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a1752d5f8ebb6a8f6dda700e1a87c98dea3a6a628a6b36b44100605255ae4dde17"></a>LPVSortByReserved&#160;</td><td class="fielddoc"><p>No specified sort-by, usually worked with random ordering. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a1752d5f8ebb6a8f6dda700e1a87c98dea3a6a628a6b36b44100605255ae4dde17"></a>LPVSortByReserved&#160;</td><td class="fielddoc"><p>No sort, only worked with <a class="el" href="namespace_l_p_v_core_lib.html#a38d3a87896df9ff1b8c96bee1ab58e2faa3cd168041455358a087899af206357c">random</a> ordering. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a1752d5f8ebb6a8f6dda700e1a87c98dea3801a44d8593a854b0c867d2717cde43"></a>LPVSortByX&#160;</td><td class="fielddoc"><p>Sort by the x-coordinates, regardless of the y-coordinates </p>
 </td></tr>

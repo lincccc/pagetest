@@ -5,7 +5,7 @@ var searchData=
   ['learnwithshapeimage_2343',['LearnWithShapeImage',['../interface_l_p_v_pat_lib_1_1_i_l_match.html#a13ea7d858caa641e8f13a273dfe8694f',1,'LPVPatLib::ILMatch']]],
   ['linearfilter_2344',['LinearFilter',['../interface_l_p_v_img_proc_lib_1_1_i_l_image_filter.html#af79908bc3ed791953e5408e70eacfe4d',1,'LPVImgProcLib::ILImageFilter']]],
   ['linearfilterabs_2345',['LinearFilterAbs',['../interface_l_p_v_img_proc_lib_1_1_i_l_image_filter.html#a159ad32ca0b6a30bbca4343923d79a02',1,'LPVImgProcLib::ILImageFilter']]],
-  ['load_2346',['Load',['../interface_l_p_v_core_lib_1_1_i_l_object.html#a74069eb14437a9a889322b62e52db75f',1,'LPVCoreLib::ILObject']]],
+  ['load_2346',['Load',['../interface_l_p_v_core_lib_1_1_i_l_object.html#a74069eb14437a9a889322b62e52db75f',1,'LPVCoreLib::ILObject::Load()'],['../interface_l_p_v_m_l_lib_1_1_i_l_sample.html#a74069eb14437a9a889322b62e52db75f',1,'LPVMLLib::ILSample::Load()']]],
   ['loadalgoconfig_2347',['LoadAlgoConfig',['../interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html#a268fabd5c1e889742f0aabe53c77bb8d',1,'LPVIBLib::ILIBService']]],
   ['loadglobalaction_2348',['LoadGlobalAction',['../interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html#afe899b2b4b2899c58cbbe6b8d3abb5a9',1,'LPVIBLib::ILIBService']]],
   ['loadrawfile_2349',['LoadRawFile',['../interface_l_p_v_core_lib_1_1_i_l_image.html#ada8ef622715c5a172b3f5cc89024b38b',1,'LPVCoreLib::ILImage']]],

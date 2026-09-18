@@ -36,10 +36,6 @@
   <td id="projectlogo" style="padding-left: 1em; text-align: center; vertical-align: middle;"><a href="index.html"><img alt="Logo" src="lpv_logo.png"/></a></td>
   <td id="projectalign" style="padding-left: 0.5em; vertical-align: bottom; padding-bottom: 5px;">
    <div id="projectbrief">Leaper Vision Toolkit</div>
-   <div id="projectbrief" style="margin-top: 3px;">
-    <a id="cn_btn" style="cursor: pointer; color: var(--primary-color);">中文</a> / <a id="en_btn" style="cursor: pointer; color: var(--primary-color);">English</a>
-    <span id="projectnumber">2.x</span>
-    </div>
   </td>
  </tr>
  </tbody>
@@ -191,7 +187,7 @@ Public 成员函数</h2></td></tr>
 <div class="line"><span class="comment">// do other stuff, like parse and display task result, change task configuration...</span></div>
 <div class="line"><span class="comment">// see ILIBTaskResult, ILIBTaskConfig for more details</span></div>
 <div class="line">ibService.TearDown();</div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">LPV 算法或函数运行过程中遇到的错误。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:545</div></div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a753df57c2ab9773ee9dff5747163ee4a"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVCoreLib::LPVErrorCode</a></div><div class="ttdeci">LPVErrorCode</div><div class="ttdoc">LPV 算法或函数运行过程中遇到的错误。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:519</div></div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='com' style='display: none;'>COM</div><div class='toggleable_div label_com' style='display: none;'><div class="fragment"><div class="line">ILIBServicePtr ibService = LIBService::Create();</div>
 <div class="line"><span class="comment">// or, ILIBServicePtr ibService(__uuidof(LIBService)), for absence of built-in Create functions (before 2.2.0)</span></div>
 <div class="line"><span class="keywordtype">int</span> errCode = ibService-&gt;SetUp(L<span class="stringliteral">&quot;path to the IntelliBlink root folder, say D:/Programs/IntelliBlink/&quot;</span>);</div>
@@ -829,7 +825,8 @@ Public 成员函数</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>启动并连接到灵闪服务。<br  />
- 需在所有 LPV IB 对象的创建和操作前调用。 </p><dl class="params"><dt>参数</dt><dd>
+ 需在所有 LPV IB 对象的创建和操作前调用。<br  />
+ 同进程内全局只能启动一个灵闪服务。可以创建多个 <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html">LIBService</a> 对象、调用多次 Setup()，但是事实上它们都连接到同一个灵闪服务。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">ibPath</td><td>灵闪平台程序所在的根目录地址。 </td></tr>
   </table>
@@ -855,7 +852,8 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>关闭灵闪服务。<br  />
 需在所有 LPV IB 对象的停止使用后调用。<br  />
-可不手动执行该关闭步骤，在该灵闪服务对象被释放时，将自动关闭已连接的灵闪服务。 </p><dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html#aafadd8ced297c6b1661a6e2cc43e2c66">SetUp()</a>. </dd></dl>
+可不手动执行该关闭步骤，在该 <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html">LIBService</a> 对象被释放时，将自动关闭已连接的灵闪服务。<br  />
+当存在多个 <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html">LIBService</a> 对象时，灵闪服务事实上将在最后一个对象关闭或被释放时真正关闭。 </p><dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_service.html#aafadd8ced297c6b1661a6e2cc43e2c66">SetUp()</a>. </dd></dl>
 
 </div>
 </div>
