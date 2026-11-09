@@ -180,8 +180,11 @@ Properties</h2></td></tr>
 <a class="el" href="namespace_l_p_v_core_lib.html#a0205db5ad70eff44ebd76708a72459e0">LPVImageFormat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a578080e61d50698076077b040524ba0b">ColorMode</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:a578080e61d50698076077b040524ba0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The mode of the blob analysis tool, either handling grayscale or color image. <br /></td></tr>
 <tr class="separator:a578080e61d50698076077b040524ba0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a036079c433e4524b51e3cab68eb362"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a0a036079c433e4524b51e3cab68eb362">ContourSubpix</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a0a036079c433e4524b51e3cab68eb362"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use subpixel contour for the result blobs.  <a href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a0a036079c433e4524b51e3cab68eb362">More...</a><br /></td></tr>
+<tr class="separator:a0a036079c433e4524b51e3cab68eb362"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0af46e25eefcb153ca18c7f1d13a491"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_blob_lib.html#ae4c9f4d88a1bb01d41c2fb7e721d77ec">LPVBlobContourType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#ad0af46e25eefcb153ca18c7f1d13a491">ContourType</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:ad0af46e25eefcb153ca18c7f1d13a491"><td class="mdescLeft">&#160;</td><td class="mdescRight">The type of the result blob contours, see LPVBlobContourType.  <a href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#ad0af46e25eefcb153ca18c7f1d13a491">More...</a><br /></td></tr>
+<tr class="memdesc:ad0af46e25eefcb153ca18c7f1d13a491"><td class="mdescLeft">&#160;</td><td class="mdescRight">The type of the result blob contours, see <a class="el" href="namespace_l_p_v_blob_lib.html#ae4c9f4d88a1bb01d41c2fb7e721d77ec">LPVBlobContourType</a>.  <a href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#ad0af46e25eefcb153ca18c7f1d13a491">More...</a><br /></td></tr>
 <tr class="separator:ad0af46e25eefcb153ca18c7f1d13a491"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2713e91a14a7f4322f227dbe42b43687"><td class="memItemLeft" align="right" valign="top"><a id="a2713e91a14a7f4322f227dbe42b43687"></a>
 BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a2713e91a14a7f4322f227dbe42b43687">EnableMerge</a><code> [get, set]</code></td></tr>
@@ -239,10 +242,10 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 <tr class="memdesc:ae33d61cde357b47b356c490d07347416"><td class="mdescLeft">&#160;</td><td class="mdescRight">The minimum acceptable area for blobs, by default, it's 3, used to filter noisy small blobs. You may set this value to 0 for inspection of very small components. The behavoir is the same as define an area filter.  <a href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#ae33d61cde357b47b356c490d07347416">More...</a><br /></td></tr>
 <tr class="separator:ae33d61cde357b47b356c490d07347416"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a848fb8adacf95a0394b3656bb53233b8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50">LPVBlobFeatures</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a848fb8adacf95a0394b3656bb53233b8">SortBy</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a848fb8adacf95a0394b3656bb53233b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The method used to sort all blob candidates, the top ones are reported as final results.  <a href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a848fb8adacf95a0394b3656bb53233b8">More...</a><br /></td></tr>
+<tr class="memdesc:a848fb8adacf95a0394b3656bb53233b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The method used to sort all blob candidates, the top ones are reported as final results. The sortable features are <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50a66eee12a10fe5c774aac806ced36bbfb">LPVBlobArea</a>, <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50a62352d145b9ec7f5a85f3a547e8eb48d">LPVBlobPerimeter</a>, <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50aa863f6b835230898147c1dd853f9f6ec">LPVBlobWidth</a>, <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50a27308e60e7ebc22158554ff923c4d4b8">LPVBlobHeight</a>, <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50a59f66c483808c2e0686bc7cabdb2d90e">LPVBlobCircularity</a>, <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50abf93264ab50efcabe271047f6f7a3480">LPVBlobConvexity</a>, <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50a44a9b6cf753404db8dbf277f4e998687">LPVBlobInertia</a>, <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50afd1368ef32a7d7c1c56f2bf1cbdfda01">LPVBlobAspectRatio</a>, <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50a14f8d83e26a56a466a688f45487d483e">LPVBlobSharpness</a>, <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50a205fb138cc4ff34628263ed1128daf89">LPVBlobLuminance</a>, <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50a791b8bb4dfb80af34632c88be591b195">LPVBlobContrast</a>, <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50a0f93db306f974259eed6baa7471c75fe">LPVBlobCenterX</a>, <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50acd4d42d56933f3a9713168273fd3ae6f">LPVBlobCenterY</a>, <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50ac3c811f9b9fc71e91eaf4bb759d94167">LPVBlobColorV0</a>, <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50a46917640f064bf4a4308bc1004e59c8b">LPVBlobColorV1</a> and <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50ab1aeb77180ca1654ec040af8ce4d58a1">LPVBlobColorV2</a>. The other features, such as <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50aee0f19adfbc04708fb5a0cad0106df19">LPVBlobEntropy</a>, <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50a4b51b5fdaa4942490575638e645e0fd3">LPVBlobAnisotropy</a>, <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50ad9e5b93ba5d5e0732303bbc0255cd294">LPVBlobHoleCount</a>, <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50a9e284cd1eefc21eaf2766b649630437b">LPVBlobHoleArea</a> and <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50acba46e4a2fe8c58a0f853022aa136318">LPVBlobAngle</a>, cannot be used here, an error is reported in that case.  <a href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a848fb8adacf95a0394b3656bb53233b8">More...</a><br /></td></tr>
 <tr class="separator:a848fb8adacf95a0394b3656bb53233b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26bbdb0a7c27819253704905dfd3d871"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a26bbdb0a7c27819253704905dfd3d871">SortByDescending</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a26bbdb0a7c27819253704905dfd3d871"><td class="mdescLeft">&#160;</td><td class="mdescRight">Works together with <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a848fb8adacf95a0394b3656bb53233b8" title="The method used to sort all blob candidates, the top ones are reported as final results.">SortBy</a>. True to sort all blob candidates descending(from large value to small), false for sorting in ascending order.  <a href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a26bbdb0a7c27819253704905dfd3d871">More...</a><br /></td></tr>
+<tr class="memdesc:a26bbdb0a7c27819253704905dfd3d871"><td class="mdescLeft">&#160;</td><td class="mdescRight">Works together with <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a848fb8adacf95a0394b3656bb53233b8" title="The method used to sort all blob candidates, the top ones are reported as final results....">SortBy</a>. <code>True</code> to sort all blob candidates descending(from large value to small), false for sorting in ascending order.  <a href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a26bbdb0a7c27819253704905dfd3d871">More...</a><br /></td></tr>
 <tr class="separator:a26bbdb0a7c27819253704905dfd3d871"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a156c414aad3afe8be70b8192a41afd1c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a49edb9045fb3b67439ceeab4b938909d">LPVThresholdType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a156c414aad3afe8be70b8192a41afd1c">ThresholdType</a><code> [get]</code></td></tr>
 <tr class="memdesc:a156c414aad3afe8be70b8192a41afd1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The thresholding method used in segmentation.  <a href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a156c414aad3afe8be70b8192a41afd1c">More...</a><br /></td></tr>
@@ -302,8 +305,8 @@ The name is drawn on canvas around the object if <a class="el" href="interface_l
 <p>Add grayscale value range for background. Pixels in this range will be treated as background.<br  />
 It indicates this is a grayscale-mode blob analysis tool, all the previous color range setting will be cleaned up. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">grayLB</td><td>The lower bound of the grayscale value range in 0 ~ 255. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">grayUB</td><td>The upper bound of the grayscale value range in 0 ~ 255. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">grayLB</td><td>The lower bound of the grayscale value range in <code>0 ~ 255</code>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">grayUB</td><td>The upper bound of the grayscale value range in <code>0 ~ 255</code>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -400,8 +403,8 @@ It indicates this is a color-mode blob analysis tool, all the previous grayscale
 <p>Add grayscale value range for blob objects. Pixels in this range will be treated as foreground, and connected to be blobs.<br  />
 It indicates this is a grayscale-mode blob analysis tool, all the previous color range setting will be cleaned up. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">grayLB</td><td>The lower bound of the grayscale value range in 0 ~ 255. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">grayUB</td><td>The upper bound of the grayscale value range in 0 ~ 255. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">grayLB</td><td>The lower bound of the grayscale value range in <code>0 ~ 255</code>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">grayUB</td><td>The upper bound of the grayscale value range in <code>0 ~ 255</code>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -981,9 +984,9 @@ It indicates this is a color-mode blob analysis tool, all the previous grayscale
     <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td>The x-coordinate of the cursor(selected) position. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">y</td><td>The y-coordinate of the cursor(selected) position. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">tolerance</td><td>The maximum relative difference of neighbor pixels that build the selection </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">grayLB</td><td>Return the lower bound of the grayscale value range in 0 ~ 255. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">grayUB</td><td>Return the upper bound of the grayscale value range in 0 ~ 255. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">rangeMask</td><td><img src="color_binary.png" alt="" class="inline" title="Binary image"/> <img src="bit8.png" alt="" class="inline" title="8 bits without sign"/> Return the mask image of the same size as the input image, white pixels represent the ones in selected grayscale value range in 0 ~ 255. Optional, could be null. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">grayLB</td><td>Return the lower bound of the grayscale value range in <code>0 ~ 255</code>. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">grayUB</td><td>Return the upper bound of the grayscale value range in <code>0 ~ 255</code>. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">rangeMask</td><td><img src="color_binary.png" alt="" class="inline" title="Binary image"/> <img src="bit8.png" alt="" class="inline" title="8 bits without sign"/> Return the mask image of the same size as the input image, white pixels represent the ones in selected grayscale value range in <code>0 ~ 255</code>. Optional, could be null. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1080,7 +1083,7 @@ It indicates this is a color-mode blob analysis tool, all the previous grayscale
     <tr><td class="paramdir">[in]</td><td class="paramname">tolerance</td><td>The maximum relative difference of neighbor pixels that build the selection </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">colorLB</td><td>Return the lower bound of the color value range. It's in the same channel order and color space as the source image. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">colorUB</td><td>Return the upper bound of the color value range. It's in the same channel order and color space as the source image. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">rangeMask</td><td><img src="color_binary.png" alt="" class="inline" title="Binary image"/> <img src="bit8.png" alt="" class="inline" title="8 bits without sign"/> Return the mask image of the same size as the input image, white pixels represent the ones in selected grayscale value range in 0 ~ 255. Optional, could be null. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">rangeMask</td><td><img src="color_binary.png" alt="" class="inline" title="Binary image"/> <img src="bit8.png" alt="" class="inline" title="8 bits without sign"/> Return the mask image of the same size as the input image, white pixels represent the ones in selected grayscale value range in <code>0 ~ 255</code>. Optional, could be null. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1146,7 +1149,7 @@ It indicates this is a color-mode blob analysis tool, all the previous grayscale
       </table>
 </div><div class="memdoc">
 <p>Use local-adaptive threshold value.<br  />
-This is a legacy function and <b>deprecated</b> since 2.18.0, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a4c511e66205db9ad68cb9dcef3eb31ba">SetRangeThresholdAdaptLocalMean()</a> has the same functionality as it. It's recommended to use <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a4c511e66205db9ad68cb9dcef3eb31ba">SetRangeThresholdAdaptLocalMean()</a> or <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a2263709a75c206b40d9f02141a98a8b2">SetRangeThresholdAdaptLocalMedian()</a> instead. </p>
+ </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000001">Deprecated:</a></b></dt><dd>Use <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a4c511e66205db9ad68cb9dcef3eb31ba">SetRangeThresholdAdaptLocalMean()</a> or <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a2263709a75c206b40d9f02141a98a8b2">SetRangeThresholdAdaptLocalMedian()</a> instead. </dd></dl>
 
 </div>
 </div>
@@ -1184,7 +1187,7 @@ This is a legacy function and <b>deprecated</b> since 2.18.0, <a class="el" href
 <p>Use local-adaptive threshold value. The optimal threshold value is calculated base on the <b>mean</b> value of \( blockSize \times blockSize \) region around individual pixel, then revised by the given <code>bias</code> value. Now, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a156c414aad3afe8be70b8192a41afd1c" title="The thresholding method used in segmentation.">ThresholdType</a> is LPVThresholdAdaptLocalMean. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">blobPolarity</td><td>The <em>object polarity</em> of the blob. <a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0baffd2c678a5a2ea661de262d51223adf3">LPVBlackOnWhite </a> indicates black pixels with smaller value than global threshold are the blobs, <a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0bac595c6b549ecbabb1dbb431e374b02ad">LPVWhiteOnBlack </a> is exactly the opposite. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">blockSize</td><td>Size of a pixel's local region, should be an odd number, say, 3, 5, 7, etc. Set it to 0 for auto-generate block size based in the input image size. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">blockSize</td><td>Size of a pixel's local region, should be an odd number, say, <code>3</code>, <code>5</code>, <code>7</code>, etc. Set it to 0 for auto-generate block size based in the input image size. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">bias</td><td>Revise value to optimal threshold value as \( t&#39; = t - bias \) for <a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0baffd2c678a5a2ea661de262d51223adf3">LPVBlackOnWhite </a>, \( t&#39; = t + bias \) for <a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0bac595c6b549ecbabb1dbb431e374b02ad">LPVWhiteOnBlack </a>. </td></tr>
   </table>
   </dd>
@@ -1228,7 +1231,7 @@ This is a legacy function and <b>deprecated</b> since 2.18.0, <a class="el" href
 <p>Use local-adaptive threshold value. The optimal threshold value is calculated base on the <b>median</b> value of \( blockSize \times blockSize \) region around individual pixel, then revised by the given bias value. Now, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a156c414aad3afe8be70b8192a41afd1c" title="The thresholding method used in segmentation.">ThresholdType</a> is LPVThresholdAdaptLocalMedian. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">blobPolarity</td><td>The <em>object polarity</em> of the blob. <a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0baffd2c678a5a2ea661de262d51223adf3">LPVBlackOnWhite </a> indicates black pixels with smaller value than global threshold are the blobs, <a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0bac595c6b549ecbabb1dbb431e374b02ad">LPVWhiteOnBlack </a> is exactly the opposite. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">blockSize</td><td>Size of a pixel's local region, should be an odd number, say, 3, 5, 7, etc. Set it to 0 for auto-generate block size based in the input image size. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">blockSize</td><td>Size of a pixel's local region, should be an odd number, say, <code>3</code>, <code>5</code>, <code>7</code>, etc. Set it to 0 for auto-generate block size based in the input image size. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">bias</td><td>Revise value to optimal threshold value as \( t&#39; = t - bias \) for <a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0baffd2c678a5a2ea661de262d51223adf3">LPVBlackOnWhite </a>, \( t&#39; = t + bias \) for <a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0bac595c6b549ecbabb1dbb431e374b02ad">LPVWhiteOnBlack </a>. </td></tr>
   </table>
   </dd>
@@ -1253,11 +1256,11 @@ This is a legacy function and <b>deprecated</b> since 2.18.0, <a class="el" href
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Set the weighted range of soft thresholding. By default, it's 0 which means soft thresholding is not enabled.<br  />
+<p>Set the weighted range of soft thresholding. By default, it's <code>0</code> which means soft thresholding is not enabled.<br  />
 It is useful to locate blobs more robust and more accurately.<br  />
 For example, if we define blob color range to be [100, 200], and soft thresholding range to be 5, then, [0, 95] and [205, 255] are background, [105, 195] are foreground, [96, 104] are weighted as 0.1 ~ 0.9 to be foreground, [196, 204] are weighted as 0.9 ~ 0.1 to be foreground. Soft thresholding results in soft mask of the result blobs, and will affect the calculation of blob's geometric features, such as area or center. Pixels inside the blob contribute to the final result according to its weight. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">softRange</td><td>The soft thresholding range, create a [t - softRange, t + softRange] range. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">softRange</td><td>The soft thresholding range, create a <code>[t - softRange, t + softRange]</code> range. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1290,6 +1293,33 @@ For example, if we define blob color range to be [100, 200], and soft thresholdi
 
 </div>
 </div>
+<a id="a0a036079c433e4524b51e3cab68eb362"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a036079c433e4524b51e3cab68eb362">&#9670;&nbsp;</a></span>ContourSubpix</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL ContourSubpix</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Use subpixel contour for the result blobs. </p>
+<p>By default, it's <code>False</code>. When it's <code>False</code>, the result blobs use a precise but pixel-level contour; when it's <code>True</code>, the result blobs use subpixel contours, whose point coordinates are refined by the gray value distribution along the contour, to achieve a higher measurement precision at the cost of more computation.<br  />
+It only affects the blobs built by <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a3fa422a523020216c502e3c17a35118e">Build()</a>, including the contours and holes reported by <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html#a039b1190a5c107325664d30c346a9041">LBlob::GetContour</a>, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html#a4439092fc762f49f1f0650a813d8f41b">LBlob::GetHole</a> and the feature calculations based on them. It does not affect the blobs constructed manually by <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html#adadd4ea09b8ca3d5b514078a7d4c4236">LBlob::FromRegion()</a>. </p><dl class="section since"><dt>Since</dt><dd>2.24.0 </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a3fa422a523020216c502e3c17a35118e">Build()</a> </dd></dl>
+
+</div>
+</div>
 <a id="ad0af46e25eefcb153ca18c7f1d13a491"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad0af46e25eefcb153ca18c7f1d13a491">&#9670;&nbsp;</a></span>ContourType</h2>
 
@@ -1310,7 +1340,7 @@ For example, if we define blob color range to be [100, 200], and soft thresholdi
 </table>
 </div><div class="memdoc">
 
-<p>The type of the result blob contours, see LPVBlobContourType. </p>
+<p>The type of the result blob contours, see <a class="el" href="namespace_l_p_v_blob_lib.html#ae4c9f4d88a1bb01d41c2fb7e721d77ec">LPVBlobContourType</a>. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a759c03e2b252669aee63d2e178835685" title="The hierarchy of the result blob contours. It&#39;s 0-based, negative value means all hierarchies.">Hierarchy</a>. </dd></dl>
 
 </div>
@@ -1411,7 +1441,7 @@ For example, if we define blob color range to be [100, 200], and soft thresholdi
 </div><div class="memdoc">
 
 <p>The maximum of blobs to find. If there are more than the setting counts of blobs in the detect region, sort the candidates then pick the tops. Set to 0 to find as much as possible. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a848fb8adacf95a0394b3656bb53233b8" title="The method used to sort all blob candidates, the top ones are reported as final results.">SortBy</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a848fb8adacf95a0394b3656bb53233b8" title="The method used to sort all blob candidates, the top ones are reported as final results....">SortBy</a> </dd></dl>
 
 </div>
 </div>
@@ -1461,7 +1491,7 @@ For example, if we define blob color range to be [100, 200], and soft thresholdi
 </table>
 </div><div class="memdoc">
 
-<p>The method used to sort all blob candidates, the top ones are reported as final results. </p>
+<p>The method used to sort all blob candidates, the top ones are reported as final results. The sortable features are <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50a66eee12a10fe5c774aac806ced36bbfb">LPVBlobArea</a>, <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50a62352d145b9ec7f5a85f3a547e8eb48d">LPVBlobPerimeter</a>, <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50aa863f6b835230898147c1dd853f9f6ec">LPVBlobWidth</a>, <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50a27308e60e7ebc22158554ff923c4d4b8">LPVBlobHeight</a>, <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50a59f66c483808c2e0686bc7cabdb2d90e">LPVBlobCircularity</a>, <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50abf93264ab50efcabe271047f6f7a3480">LPVBlobConvexity</a>, <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50a44a9b6cf753404db8dbf277f4e998687">LPVBlobInertia</a>, <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50afd1368ef32a7d7c1c56f2bf1cbdfda01">LPVBlobAspectRatio</a>, <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50a14f8d83e26a56a466a688f45487d483e">LPVBlobSharpness</a>, <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50a205fb138cc4ff34628263ed1128daf89">LPVBlobLuminance</a>, <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50a791b8bb4dfb80af34632c88be591b195">LPVBlobContrast</a>, <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50a0f93db306f974259eed6baa7471c75fe">LPVBlobCenterX</a>, <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50acd4d42d56933f3a9713168273fd3ae6f">LPVBlobCenterY</a>, <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50ac3c811f9b9fc71e91eaf4bb759d94167">LPVBlobColorV0</a>, <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50a46917640f064bf4a4308bc1004e59c8b">LPVBlobColorV1</a> and <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50ab1aeb77180ca1654ec040af8ce4d58a1">LPVBlobColorV2</a>. The other features, such as <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50aee0f19adfbc04708fb5a0cad0106df19">LPVBlobEntropy</a>, <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50a4b51b5fdaa4942490575638e645e0fd3">LPVBlobAnisotropy</a>, <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50ad9e5b93ba5d5e0732303bbc0255cd294">LPVBlobHoleCount</a>, <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50a9e284cd1eefc21eaf2766b649630437b">LPVBlobHoleArea</a> and <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50acba46e4a2fe8c58a0f853022aa136318">LPVBlobAngle</a>, cannot be used here, an error is reported in that case. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#af98b71a5ec504565e5456260acbd9ee5" title="The maximum of blobs to find. If there are more than the setting counts of blobs in the detect region...">MaxCount</a>, <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a26bbdb0a7c27819253704905dfd3d871" title="Works together with SortBy. True to sort all blob candidates descending(from large value to small),...">SortByDescending</a> </dd></dl>
 
 </div>
@@ -1486,8 +1516,8 @@ For example, if we define blob color range to be [100, 200], and soft thresholdi
 </table>
 </div><div class="memdoc">
 
-<p>Works together with <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a848fb8adacf95a0394b3656bb53233b8" title="The method used to sort all blob candidates, the top ones are reported as final results.">SortBy</a>. True to sort all blob candidates descending(from large value to small), false for sorting in ascending order. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a848fb8adacf95a0394b3656bb53233b8" title="The method used to sort all blob candidates, the top ones are reported as final results.">SortBy</a> </dd></dl>
+<p>Works together with <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a848fb8adacf95a0394b3656bb53233b8" title="The method used to sort all blob candidates, the top ones are reported as final results....">SortBy</a>. <code>True</code> to sort all blob candidates descending(from large value to small), false for sorting in ascending order. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a848fb8adacf95a0394b3656bb53233b8" title="The method used to sort all blob candidates, the top ones are reported as final results....">SortBy</a> </dd></dl>
 
 </div>
 </div>

@@ -175,7 +175,7 @@ Public 成员函数</h2></td></tr>
 </dl>
 <dl class="retval"><dt>返回值</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">val</td><td>若斑点对象满足当前过滤器，返回 True，否则返回 False。 </td></tr>
+    <tr><td class="paramname">val</td><td>若斑点对象满足当前过滤器，返回 <code>True</code>，否则返回 <code>False</code>。 </td></tr>
   </table>
   </dd>
 </dl>
@@ -245,8 +245,8 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>获取过滤器中指定属性特征的过滤上下限。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">feature</td><td>需过滤的数值属性特征，查看 LPVBlobFeatures </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">lowerBound</td><td>返回过滤值的下限，负值表示没有下限。若上下限均为负值且相等，则表示该属性特征无任何过滤设置。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">feature</td><td>需过滤的数值属性特征，查看 <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50">LPVBlobFeatures</a> </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">lowerBound</td><td>返回过滤值的下限，负值表示没有下限。若上下限均为负值且相等，则表示该属性特征无任何过滤设置。 对于 LPVBlobCenterX、LPVBlobCenterY、LPVBlobAngle、LPVBlobAnisotropy，返回原样配置的值。 </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">upperBound</td><td>返回过滤值的上限，负值表示没有上限。 </td></tr>
   </table>
   </dd>
@@ -285,11 +285,11 @@ Public 成员函数</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>配置过滤器中的数值属性特征及其上下限。可在一个过滤其中定义多个联合的过滤配置。 </p><dl class="params"><dt>参数</dt><dd>
+<p>配置过滤器中的数值属性特征及其上下限。可在一个过滤器内定义多个联合的过滤配置。 可过滤的特征为斑点的数值属性特征，查看 <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50">LPVBlobFeatures</a>。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">feature</td><td>需过滤的数值属性特征，查看 LPVBlobFeatures </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">lowerBound</td><td>过滤值的下限，负值表示没有下限（除 LPVBlobCenterX、LPVBlobCenterY） </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">upperBound</td><td>过滤值的上限，负值表示没有上限。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">feature</td><td>需过滤的数值属性特征，查看 <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50">LPVBlobFeatures</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">lowerBound</td><td>过滤值的下限，负值表示没有下限（除 LPVBlobCenterX、LPVBlobCenterY、 LPVBlobAngle、LPVBlobAnisotropy 四个本身的取值就包含负值的特征，它们传入的值会原样使用） </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">upperBound</td><td>过滤值的上限，负值表示没有上限（除上述四个特征）。 </td></tr>
   </table>
   </dd>
 </dl>

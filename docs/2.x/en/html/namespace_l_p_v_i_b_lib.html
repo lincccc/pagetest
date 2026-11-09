@@ -144,6 +144,11 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="namespace_l_p_v_i_b_lib.html#a1bc97baa07160afa2699d8c58e095263aecd5bf162ac7d64e24f142774b35dd7d">LPVIBDataTypeCircleList</a> = 16
 , <a class="el" href="namespace_l_p_v_i_b_lib.html#a1bc97baa07160afa2699d8c58e095263a226e7b5843c3a5d6d9cbdcdf7771bf27">LPVIBDataTypePolygonList</a> = 17
 , <a class="el" href="namespace_l_p_v_i_b_lib.html#a1bc97baa07160afa2699d8c58e095263a8712467c7deb983a99e5603c58ab9638">LPVIBDataTypeRegion</a> = 18
+, <a class="el" href="namespace_l_p_v_i_b_lib.html#a1bc97baa07160afa2699d8c58e095263aed377a8023da6fb088b37740d8900f9e">LPVIBDataTypeRect</a> = 19
+, <br />
+&#160;&#160;<a class="el" href="namespace_l_p_v_i_b_lib.html#a1bc97baa07160afa2699d8c58e095263aad8715f51673c58872da58fd2023588f">LPVIBDataTypeRectList</a> = 20
+, <a class="el" href="namespace_l_p_v_i_b_lib.html#a1bc97baa07160afa2699d8c58e095263acd230fe31bfcaac0b58f795e84c17f60">LPVIBDataTypeEllipse</a> = 21
+, <a class="el" href="namespace_l_p_v_i_b_lib.html#a1bc97baa07160afa2699d8c58e095263a2c1be19c86a6d305a461c826530c4555">LPVIBDataTypeEllipseList</a> = 22
 <br />
  }</td></tr>
 <tr class="memdesc:a1bc97baa07160afa2699d8c58e095263"><td class="mdescLeft">&#160;</td><td class="mdescRight">This enumeration represents the data type of the IntelliBlink data, see ILIBData.  <a href="namespace_l_p_v_i_b_lib.html#a1bc97baa07160afa2699d8c58e095263">More...</a><br /></td></tr>
@@ -198,11 +203,11 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><a id="a1bc97baa07160afa2699d8c58e095263ae561aa4380c350dca91aea9c4ff5070d"></a>LPVIBDataTypeCircle&#160;</td><td class="fielddoc"><p>The single circle data, should be set via <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_data.html#a4336dcae87fc545729463f0b43f3ffd7">ILIBData::FromCircle</a> and get via <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_data.html#a12cf539613a1945389595ea8bf1fba36">ILIBData::ToCircle</a>. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a1bc97baa07160afa2699d8c58e095263afb8dbc43515ab191853afdf7b07687a3"></a>LPVIBDataTypePolygon&#160;</td><td class="fielddoc"><p>The single polygon data, should be set via <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_data.html#a31e65e45940a11951afc41cefea18974">ILIBData::FromPolygon</a> and get via <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_data.html#a81d281b92dd5e73d1b539563f8b6f3e1">ILIBData::ToPolygon</a>.<br  />
-It can be converted to be a list of point(see ILIBData::ToPointList), or a point collection(see ILIBData::ToPoints). </p>
+It can be converted to be a list of point(see ILIBData::ToPointList ), or a point collection(see ILIBData::ToPoints ). </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a1bc97baa07160afa2699d8c58e095263af2bf3065faf942a421b873379c3c9f69"></a>LPVIBDataTypeImage&#160;</td><td class="fielddoc"><p>The image data, should be set via <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_data.html#a330e1f5a36d6caf333f4cdfa00ad80cd">ILIBData::FromImage</a> and get via <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_data.html#a40661ac9d953047b0c363558f16dfb29">ILIBData::ToImage</a>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a1bc97baa07160afa2699d8c58e095263a2180454088798cdf67a93b052caffaaa"></a>LPVIBDataTypeBoolList&#160;</td><td class="fielddoc"><p>A list of boolean data, should be set via <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_data.html#a247fcbee4e88009e98c9a05900bad0fa">ILIBData::FromBoolList</a> and get via <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_data.html#a9c9c3d13cd2bab8ad255f5d046256204">ILIBData::ToBoolList</a>. </p>
+<tr><td class="fieldname"><a id="a1bc97baa07160afa2699d8c58e095263a2180454088798cdf67a93b052caffaaa"></a>LPVIBDataTypeBoolList&#160;</td><td class="fielddoc"><p>A list of boolean data, should be set via <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_data.html#ab2fe1f5d95e39249cc503b7e7799d8fd">ILIBData::FromBoolList</a> and get via <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_data.html#a9f212bec6484bab97a82b3c1de24802c">ILIBData::ToBoolList</a>. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a1bc97baa07160afa2699d8c58e095263a95c164458a7fb9ade9f176bd59d99e36"></a>LPVIBDataTypeIntList&#160;</td><td class="fielddoc"><p>A list of integer data, should be set via <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_data.html#a0e11bd8b24078b6da930d6a69615860f">ILIBData::FromIntList</a> and get via <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_data.html#a972c77698668d227315d38f63dd3ca66">ILIBData::ToIntList</a>. </p>
 </td></tr>
@@ -211,7 +216,7 @@ It can be converted to be a list of point(see ILIBData::ToPointList), or a point
 <tr><td class="fieldname"><a id="a1bc97baa07160afa2699d8c58e095263aac561dcb504a8ef203accea24086231f"></a>LPVIBDataTypeStringList&#160;</td><td class="fielddoc"><p>A list of string data, should be set via <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_data.html#afe6353f44a685b1ec7fa1bb912fb7fdd">ILIBData::FromStringList</a> and get via <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_data.html#a4d2e0cdcc24a325b71177a23f3831518">ILIBData::ToStringList</a>. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a1bc97baa07160afa2699d8c58e095263a10d8bbb045a8f3e274dce0ee6c626489"></a>LPVIBDataTypePointList&#160;</td><td class="fielddoc"><p>A list of point data, should be set via <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_data.html#a71570aee7ec9597e473b13dc90e55fca">ILIBData::FromPointList</a> and get via <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_data.html#a36371cfa52c6ca143e8549524fdf02fa">ILIBData::ToPointList</a>.<br  />
-It can be converted to be a polygon(see ILIBData::ToPolygon), or a point collection(see ILIBData::ToPoints). </p>
+It can be converted to be a polygon(see ILIBData::ToPolygon ), or a point collection(see ILIBData::ToPoints ). </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a1bc97baa07160afa2699d8c58e095263a339249df266b4e87ac1b504ab2ed1b21"></a>LPVIBDataTypeLineList&#160;</td><td class="fielddoc"><p>A list of line data, should be set via <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_data.html#ae4c1f0a32e2afbf481805468ae4a4080">ILIBData::FromLineList</a> and get via <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_data.html#a16abf05198d4b6ade17dda2cad108423">ILIBData::ToLineList</a>. </p>
 </td></tr>
@@ -219,7 +224,20 @@ It can be converted to be a polygon(see ILIBData::ToPolygon), or a point collect
 </td></tr>
 <tr><td class="fieldname"><a id="a1bc97baa07160afa2699d8c58e095263a226e7b5843c3a5d6d9cbdcdf7771bf27"></a>LPVIBDataTypePolygonList&#160;</td><td class="fielddoc"><p>A list of polygon data, should be set via <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_data.html#a6c334d65163ee4de36a052dadc44b83b">ILIBData::FromPolygonList</a> and get via <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_data.html#a4765291758b60300d984cb1a79f5f225">ILIBData::ToPolygonList</a>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a1bc97baa07160afa2699d8c58e095263a8712467c7deb983a99e5603c58ab9638"></a>LPVIBDataTypeRegion&#160;</td><td class="fielddoc"><p>A region data, should be set via <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_data.html#abb51fa04c299f6a654aa4cce591bd656">ILIBData::FromRegion</a> and get via <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_data.html#a2bedd8eab75488f3be5abe93187ce028">ILIBData::ToRegion</a>. </p>
+<tr><td class="fieldname"><a id="a1bc97baa07160afa2699d8c58e095263a8712467c7deb983a99e5603c58ab9638"></a>LPVIBDataTypeRegion&#160;</td><td class="fielddoc"><p>A region data, should be set via <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_data.html#abb51fa04c299f6a654aa4cce591bd656">ILIBData::FromRegion</a> and get via <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_data.html#a2bedd8eab75488f3be5abe93187ce028">ILIBData::ToRegion</a>.<br  />
+ <b>Since</b> 2.23.0 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1bc97baa07160afa2699d8c58e095263aed377a8023da6fb088b37740d8900f9e"></a>LPVIBDataTypeRect&#160;</td><td class="fielddoc"><p>The rectangle data, should be set via <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_data.html#ae1f74ea3edd5231833907b221c1a3489">ILIBData::FromRect</a> and get via <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_data.html#a4fd35a6f61b30e7475719d726d3bf4e9">ILIBData::ToRect</a>.<br  />
+ <b>Since</b> 2.23.0 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1bc97baa07160afa2699d8c58e095263aad8715f51673c58872da58fd2023588f"></a>LPVIBDataTypeRectList&#160;</td><td class="fielddoc"><p>A list of rectangle data, should be set via <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_data.html#a56023e9d483d264e48e4f9a4ee90f7dc">ILIBData::FromRectList</a> and get via <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_data.html#ade005fb6f2291cb1a4fca2cffbc436ba">ILIBData::ToRectList</a>.<br  />
+ <b>Since</b> 2.23.0 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1bc97baa07160afa2699d8c58e095263acd230fe31bfcaac0b58f795e84c17f60"></a>LPVIBDataTypeEllipse&#160;</td><td class="fielddoc"><p>The ellipse data, should be set via <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_data.html#a1d1e5796d0955231dbaf65e91921822f">ILIBData::FromEllipse</a> and get via <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_data.html#a3757edc83f92a5b3ee9979f81c3baa9d">ILIBData::ToEllipse</a>.<br  />
+ <b>Since</b> 2.23.0 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1bc97baa07160afa2699d8c58e095263a2c1be19c86a6d305a461c826530c4555"></a>LPVIBDataTypeEllipseList&#160;</td><td class="fielddoc"><p>A list of ellipse data, should be set via <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_data.html#a6c6ced16fe8359b39c8b76231b0090e8">ILIBData::FromEllipseList</a> and get via <a class="el" href="interface_l_p_v_i_b_lib_1_1_i_l_i_b_data.html#ab324aa112949c0d81cfd3883a2da4c18">ILIBData::ToEllipseList</a>.<br  />
+ <b>Since</b> 2.23.0 </p>
 </td></tr>
 </table>
 

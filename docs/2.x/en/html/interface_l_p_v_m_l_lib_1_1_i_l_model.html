@@ -175,7 +175,7 @@ Currently, we support following models:</p>
 <tr>
 <td>"cost"</td><td>The regularization parameter C, the strength of the regularization is inversely proportional to C.</td><td>Integer</td><td>&gt; 0 </td><td>0.01 </td></tr>
 <tr>
-<td>"complexity bound"</td><td>The Nu parameter to control the number of support vectors and margin errors. It is and upper bound on the fraction of margin errors and a lower bound of the fraction of support vectors</td><td>Double</td><td>0 ~ 1</td><td>0.5 </td></tr>
+<td>"complexity bound"</td><td>The Nu parameter to control the number of support vectors and margin errors. It is and upper bound on the fraction of margin errors and a lower bound of the fraction of support vectors</td><td>Double</td><td><code>0 ~ 1</code></td><td>0.5 </td></tr>
 <tr>
 <td>"kernel"</td><td>The kernel function</td><td>Integer</td><td>see <a class="el" href="namespace_l_p_v_m_l_lib.html#a2d6a70c3d0397ec68b2468aca95a8e36">LPVSVMKernel</a></td><td><a class="el" href="namespace_l_p_v_m_l_lib.html#a2d6a70c3d0397ec68b2468aca95a8e36a18a00733e5c43707c831f33a3d77fee7">Linear</a> </td></tr>
 <tr>
@@ -184,6 +184,42 @@ Currently, we support following models:</p>
 <td>"c"</td><td>c parameter in the kernel function</td><td>Double</td><td>≥ 0 </td><td>0.1 </td></tr>
 <tr>
 <td>"n"</td><td>n parameter in the kernel function</td><td>Double</td><td>&gt; 0 </td><td>3 </td></tr>
+</table>
+</td></tr>
+<tr>
+<td>RF</td><td>Random Forest<br  />
+ <table class="markdownTable">
+<tr>
+<th class="markdownTableHeadLeft" style="width:15%">Parameter Name</th><th class="markdownTableHeadLeft" style="width:50%">Usage</th><th class="markdownTableHeadLeft">Type</th><th class="markdownTableHeadLeft">Range</th><th class="markdownTableHeadLeft">Default </th></tr>
+<tr>
+<td>"active var count"</td><td>Size of the randomly selected subset of features at each tree node, 0 for auto-estimated</td><td>Integer</td><td>≥ 0 </td><td>0 </td></tr>
+<tr>
+<td>"max depth"</td><td>Maximum possible depth of the tree</td><td>Integer</td><td><code>1 ~ 999</code></td><td>5 </td></tr>
+<tr>
+<td>"min sample count"</td><td>Minimum number of samples in a node, below which the node will not be split</td><td>Integer</td><td>≥ 1 </td><td>1 </td></tr>
+<tr>
+<td>"max categories"</td><td>Cluster possible values of a categorical variable into at most this many clusters</td><td>Integer</td><td>≥ 2 </td><td>10 </td></tr>
+<tr>
+<td>"max count"</td><td>Termination criteria: the number of trees to train</td><td>Integer</td><td>≥ 1 </td><td>50 </td></tr>
+<tr>
+<td>"epsilon"</td><td>Termination criteria: sufficient accuracy measured as OOB error</td><td>Double</td><td><code>0 ~ 1</code></td><td>0.01 </td></tr>
+</table>
+</td></tr>
+<tr>
+<td>MLP</td><td>Multi-Layer Perceptron<br  />
+ <table class="markdownTable">
+<tr>
+<th class="markdownTableHeadLeft" style="width:15%">Parameter Name</th><th class="markdownTableHeadLeft" style="width:50%">Usage</th><th class="markdownTableHeadLeft">Type</th><th class="markdownTableHeadLeft">Range</th><th class="markdownTableHeadLeft">Default </th></tr>
+<tr>
+<td>"layer size"</td><td>Number of layers of the MLP</td><td>Integer</td><td>≥ 3 </td><td>5 </td></tr>
+<tr>
+<td>"train method"</td><td>Training method of the MLP</td><td>Integer</td><td>see <a class="el" href="namespace_l_p_v_m_l_lib.html#ab8c0aa40a19c386a61b6fd5c61b9b0ac">LPVMLPTrainMethod</a></td><td><a class="el" href="namespace_l_p_v_m_l_lib.html#ab8c0aa40a19c386a61b6fd5c61b9b0aca729e3e07e73200260f3f157a318cc459">Backprop</a> </td></tr>
+<tr>
+<td>"activation function"</td><td>Activation function of each neuron</td><td>Integer</td><td>see <a class="el" href="namespace_l_p_v_m_l_lib.html#a958d08c6428b00a75d085231348f81b5">LPVMLPActivationFunction</a></td><td><a class="el" href="namespace_l_p_v_m_l_lib.html#a958d08c6428b00a75d085231348f81b5a89f7ce53e41e9b0de23897ad0fde80f2">Sigmoid Symmetric</a> </td></tr>
+<tr>
+<td>"max count"</td><td>Termination criteria: the maximum number of iterations</td><td>Integer</td><td>≥ 1 </td><td>1000 </td></tr>
+<tr>
+<td>"epsilon"</td><td>Termination criteria: sufficient accuracy</td><td>Double</td><td><code>0 ~ 1</code></td><td>0.01 </td></tr>
 </table>
 </td></tr>
 </table>
@@ -206,9 +242,9 @@ Currently, we support following models:</p>
 <div class="line">svm.ParamI[<span class="stringliteral">&quot;kernel&quot;</span>] = <a class="code" href="namespace_l_p_v_m_l_lib.html#a2d6a70c3d0397ec68b2468aca95a8e36">LPVSVMKernel</a>.LPVSVMKernelPolynomial;</div>
 <div class="line">svm.ParamF[<span class="stringliteral">&quot;c&quot;</span>] = 0.4;</div>
 <div class="line">llc.AddModel(svm); <span class="comment">// add it to the classifier</span></div>
-<div class="ttc" id="anamespace_l_p_v_m_l_lib_html_a29e060a4ae266d582101abd25d2ad91a"><div class="ttname"><a href="namespace_l_p_v_m_l_lib.html#a29e060a4ae266d582101abd25d2ad91a">LPVMLLib::LPVModelType</a></div><div class="ttdeci">LPVModelType</div><div class="ttdoc">This enumeration represents the type of machine learning model.</div><div class="ttdef"><b>Definition:</b> LPVML.idl:97</div></div>
-<div class="ttc" id="anamespace_l_p_v_m_l_lib_html_a2d6a70c3d0397ec68b2468aca95a8e36"><div class="ttname"><a href="namespace_l_p_v_m_l_lib.html#a2d6a70c3d0397ec68b2468aca95a8e36">LPVMLLib::LPVSVMKernel</a></div><div class="ttdeci">LPVSVMKernel</div><div class="ttdoc">This enumeration represents the type of the kernel used in the SVM model.</div><div class="ttdef"><b>Definition:</b> LPVML.idl:298</div></div>
-<div class="ttc" id="anamespace_l_p_v_m_l_lib_html_acece2a4d2c8b8503bf2f0c39cbb6550d"><div class="ttname"><a href="namespace_l_p_v_m_l_lib.html#acece2a4d2c8b8503bf2f0c39cbb6550d">LPVMLLib::LPVSVMType</a></div><div class="ttdeci">LPVSVMType</div><div class="ttdoc">This enumeration represents the type of the SVM model.</div><div class="ttdef"><b>Definition:</b> LPVML.idl:275</div></div>
+<div class="ttc" id="anamespace_l_p_v_m_l_lib_html_a29e060a4ae266d582101abd25d2ad91a"><div class="ttname"><a href="namespace_l_p_v_m_l_lib.html#a29e060a4ae266d582101abd25d2ad91a">LPVMLLib::LPVModelType</a></div><div class="ttdeci">LPVModelType</div><div class="ttdoc">This enumeration represents the type of machine learning model.</div><div class="ttdef"><b>Definition:</b> LPVML.idl:170</div></div>
+<div class="ttc" id="anamespace_l_p_v_m_l_lib_html_a2d6a70c3d0397ec68b2468aca95a8e36"><div class="ttname"><a href="namespace_l_p_v_m_l_lib.html#a2d6a70c3d0397ec68b2468aca95a8e36">LPVMLLib::LPVSVMKernel</a></div><div class="ttdeci">LPVSVMKernel</div><div class="ttdoc">This enumeration represents the type of the kernel used in the SVM model.</div><div class="ttdef"><b>Definition:</b> LPVML.idl:381</div></div>
+<div class="ttc" id="anamespace_l_p_v_m_l_lib_html_acece2a4d2c8b8503bf2f0c39cbb6550d"><div class="ttname"><a href="namespace_l_p_v_m_l_lib.html#acece2a4d2c8b8503bf2f0c39cbb6550d">LPVMLLib::LPVSVMType</a></div><div class="ttdeci">LPVSVMType</div><div class="ttdoc">This enumeration represents the type of the SVM model.</div><div class="ttdef"><b>Definition:</b> LPVML.idl:358</div></div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='com' style='display: none;'>COM</div><div class='toggleable_div label_com' style='display: none;'><div class="fragment"><div class="line"><span class="comment">// create a HOG feature</span></div>
 <div class="line">ILModelPtr svm = LModel::Create();</div>
 <div class="line"><span class="comment">// or, ILModelPtr svm(__uuidof(LModel)), for absence of built-in Create functions (before 2.2.0)</span></div>

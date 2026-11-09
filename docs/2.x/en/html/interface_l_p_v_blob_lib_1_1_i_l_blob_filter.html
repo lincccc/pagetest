@@ -245,8 +245,8 @@ You can define multiple filtering features in a blob filter, for each blob candi
 </div><div class="memdoc">
 <p>Get the filtering limitation for the specified feature </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">feature</td><td>The filtering feature, see LPVBlobFeatures. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">lowerBound</td><td>Return the lower bound of the limitation. Negative value indicates to do no lower bound check. If both the bounds are negative and same, then the specified feature is in fact not filtered. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">feature</td><td>The filtering feature, see <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50">LPVBlobFeatures</a>. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">lowerBound</td><td>Return the lower bound of the limitation. Negative value indicates to do no lower bound check. If both the bounds are negative and same, then the specified feature is in fact not filtered. For <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50a0f93db306f974259eed6baa7471c75fe">LPVBlobCenterX</a>, <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50acd4d42d56933f3a9713168273fd3ae6f">LPVBlobCenterY</a>, <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50acba46e4a2fe8c58a0f853022aa136318">LPVBlobAngle</a> and <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50a4b51b5fdaa4942490575638e645e0fd3">LPVBlobAnisotropy</a>, the configured value is returned as it is. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">upperBound</td><td>Return the upper bound of the limitation. Negative value indicates to do no upper bound check. </td></tr>
   </table>
   </dd>
@@ -285,11 +285,11 @@ You can define multiple filtering features in a blob filter, for each blob candi
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Configure the filtering feature and its limitation. You can define multiple joint filtering features in one blob filter. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Configure the filtering feature and its limitation. You can define multiple joint filtering features in one blob filter. The filterable features are the numeric features of the blob, see <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50">LPVBlobFeatures</a>. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">feature</td><td>The filtering feature, see LPVBlobFeatures. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">lowerBound</td><td>The lower bound of the limitation. Negative value indicates to do no lower bound check, except LPVBlobCenterX or LPVBlobCenterY. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">upperBound</td><td>The upper bound of the limitation. Negative value indicates to do no upper bound check, except LPVBlobCenterX or LPVBlobCenterY. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">feature</td><td>The filtering feature, see <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50">LPVBlobFeatures</a>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">lowerBound</td><td>The lower bound of the limitation. Negative value indicates to do no lower bound check, except <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50a0f93db306f974259eed6baa7471c75fe">LPVBlobCenterX</a>, <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50acd4d42d56933f3a9713168273fd3ae6f">LPVBlobCenterY</a>, <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50acba46e4a2fe8c58a0f853022aa136318">LPVBlobAngle</a> and <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50a4b51b5fdaa4942490575638e645e0fd3">LPVBlobAnisotropy</a>, whose value is passed in as it is since their own value range covers negative numbers. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">upperBound</td><td>The upper bound of the limitation. Negative value indicates to do no upper bound check, except <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50a0f93db306f974259eed6baa7471c75fe">LPVBlobCenterX</a>, <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50acd4d42d56933f3a9713168273fd3ae6f">LPVBlobCenterY</a>, <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50acba46e4a2fe8c58a0f853022aa136318">LPVBlobAngle</a> and <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50a4b51b5fdaa4942490575638e645e0fd3">LPVBlobAnisotropy</a>. </td></tr>
   </table>
   </dd>
 </dl>

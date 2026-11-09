@@ -118,10 +118,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab3b5ec6cb9ccb7dd76b228f215137af7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9bd59c44a47d4d60c6b93381c08f1c4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#aa9bd59c44a47d4d60c6b93381c08f1c4">GenPostTransformMatrix</a> (<a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_point_pairs.html">ILCalibPointPairs</a> *pointPairs)</td></tr>
 <tr class="separator:aa9bd59c44a47d4d60c6b93381c08f1c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4efa0f9546fda8353926da9e2c4619b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_point_pairs.html">ILCalibPointPairs</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#ac4efa0f9546fda8353926da9e2c4619b">GetPoints</a> ()</td></tr>
+<tr class="separator:ac4efa0f9546fda8353926da9e2c4619b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ce0cd25c9f176f2ea389900b8b807be"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a8ce0cd25c9f176f2ea389900b8b807be">ImageToWorld</a> (double imagePointX, double imagePointY, double *worldPointX, double *worldPointY)</td></tr>
 <tr class="separator:a8ce0cd25c9f176f2ea389900b8b807be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb434c2170d12543d8f9530244db555e"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#adb434c2170d12543d8f9530244db555e">IsCalibrated</a> ()</td></tr>
 <tr class="separator:adb434c2170d12543d8f9530244db555e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a176b3446d3e725e9715dfe08e76eaf2e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a176b3446d3e725e9715dfe08e76eaf2e">RemovePoint</a> (double imagePointX, double imagePointY, double worldPointX, double worldPointY)</td></tr>
+<tr class="separator:a176b3446d3e725e9715dfe08e76eaf2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ff6a237751631480a627fdc88add08d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a3ff6a237751631480a627fdc88add08d">SetImageSize</a> (int w, int h)</td></tr>
 <tr class="separator:a3ff6a237751631480a627fdc88add08d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8c572785f3997e0c7af0511b97703c7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#ab8c572785f3997e0c7af0511b97703c7">SetPostTransform</a> (double offsetX, double offsetY, double deltaAngle)</td></tr>
@@ -159,17 +163,17 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 <tr class="memitem:af72bdfca06b9bd432d2c5115005bbfbc"><td class="memItemLeft" align="right" valign="top"><a id="af72bdfca06b9bd432d2c5115005bbfbc"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#af72bdfca06b9bd432d2c5115005bbfbc">FixImageOffsetX</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:af72bdfca06b9bd432d2c5115005bbfbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">The x-coordinate offset (in pixel unit) of the fixed image used in <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#ab3b5ec6cb9ccb7dd76b228f215137af7">FixImage()</a>, used together with <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a21df5721e2e01bfd6eab1ece9704e4c2" title="The y-coordinate offset (in pixel unit) of the fixed image used in FixImage(), used together with Fix...">FixImageOffsetY</a>.<br  />
-By default, it's 0, means no offset in x-coordinate. You may change the offset to translate the fixed image, for example move the inspect region to the center of the fixed image. <br /></td></tr>
+By default, it's <code>0</code>, means no offset in x-coordinate. You may change the offset to translate the fixed image, for example move the inspect region to the center of the fixed image. <br /></td></tr>
 <tr class="separator:af72bdfca06b9bd432d2c5115005bbfbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21df5721e2e01bfd6eab1ece9704e4c2"><td class="memItemLeft" align="right" valign="top"><a id="a21df5721e2e01bfd6eab1ece9704e4c2"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a21df5721e2e01bfd6eab1ece9704e4c2">FixImageOffsetY</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:a21df5721e2e01bfd6eab1ece9704e4c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The y-coordinate offset (in pixel unit) of the fixed image used in <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#ab3b5ec6cb9ccb7dd76b228f215137af7">FixImage()</a>, used together with <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#af72bdfca06b9bd432d2c5115005bbfbc" title="The x-coordinate offset (in pixel unit) of the fixed image used in FixImage(), used together with Fix...">FixImageOffsetX</a>.<br  />
-By default, it's 0, means no offset in y-coordinate. You may change the offset to translate the fixed image, for example move the inspect region to the center of the fixed image. <br /></td></tr>
+By default, it's <code>0</code>, means no offset in y-coordinate. You may change the offset to translate the fixed image, for example move the inspect region to the center of the fixed image. <br /></td></tr>
 <tr class="separator:a21df5721e2e01bfd6eab1ece9704e4c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c65ab87d30846912951723fc454716c"><td class="memItemLeft" align="right" valign="top"><a id="a8c65ab87d30846912951723fc454716c"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a8c65ab87d30846912951723fc454716c">FixImageScale</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:a8c65ab87d30846912951723fc454716c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The scale of the fixed image used in <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#ab3b5ec6cb9ccb7dd76b228f215137af7">FixImage()</a>.<br  />
-By default, it's 1, means no scale. You may change the scale factor to zoom in/out the fixed image. <br /></td></tr>
+By default, it's <code>1</code>, means no scale. You may change the scale factor to zoom in/out the fixed image. <br /></td></tr>
 <tr class="separator:a8c65ab87d30846912951723fc454716c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60bb79dec8bcc9da8e4643688bc0d839"><td class="memItemLeft" align="right" valign="top"><a id="a60bb79dec8bcc9da8e4643688bc0d839"></a>
 <a class="el" href="namespace_l_p_v_core_lib.html#a8994f6c3a4ba4e0d0e9a8eb78ac86c92">LPVInterpolationMethod</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a60bb79dec8bcc9da8e4643688bc0d839">InterpolationMethod</a><code> [get, set]</code></td></tr>
@@ -378,6 +382,30 @@ The rectification works with a calibrated system, if not it returns the LPVErrCa
 
 </div>
 </div>
+<a id="ac4efa0f9546fda8353926da9e2c4619b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4efa0f9546fda8353926da9e2c4619b">&#9670;&nbsp;</a></span>GetPoints()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_point_pairs.html">ILCalibPointPairs</a>* GetPoints </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get the image and world point pairs added by <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a8dea6d64fac7b6ae78047578280d1dbe">AddPoint()</a> and <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#afc20ac1907ab5cce9d2d7bd9ff60a29c">AddPoints()</a> on the main plane. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">pointPairs</td><td>Return the collection of image and world point pairs on the main plane. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>2.23.0 </dd></dl>
+
+</div>
+</div>
 <a id="a8ce0cd25c9f176f2ea389900b8b807be"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8ce0cd25c9f176f2ea389900b8b807be">&#9670;&nbsp;</a></span>ImageToWorld()</h2>
 
@@ -444,10 +472,67 @@ The mapping works with a calibrated system, if not the output world point is the
 </div><div class="memdoc">
 <p>Check whether the calibration object is well-calibrated. </p><dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">val</td><td>Return True if it's calibrated, otherwise, return False. </td></tr>
+    <tr><td class="paramname">val</td><td>Return <code>True</code> if it's calibrated, otherwise, return <code>False</code>. </td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a176b3446d3e725e9715dfe08e76eaf2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a176b3446d3e725e9715dfe08e76eaf2e">&#9670;&nbsp;</a></span>RemovePoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> RemovePoint </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>imagePointX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>imagePointY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>worldPointX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>worldPointY</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Remove all main-plane point pairs matching both the image and world positions. All four coordinates are required and matched. The remaining point pairs keep their order.<br  />
+The existing calibration result is preserved; call <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a1201727fe2071c60e9c8d715a8cdc2b7">Calibrate()</a> explicitly to use the remaining point pairs. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">imagePointX</td><td>The x-coordinate of the image point. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">imagePointY</td><td>The y-coordinate of the image point. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">worldPointX</td><td>The x-coordinate of the world point. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">worldPointY</td><td>The y-coordinate of the world point. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">error</td><td>LPVNoError if any point pair was removed, or LPVNoResult if no match was found. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>2.24.0 </dd></dl>
 
 </div>
 </div>

@@ -97,7 +97,7 @@ $(function() {
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">该接口类提供了图像频域滤波相关的算法。  <a href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_filter.html#details">更多...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html">ILFreqTransform</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">该接口类提供了图像频域变换相关的算法，如快速离散傅里叶变换（FFT）。  <a href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html#details">更多...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">该接口类提供了图像频域变换相关的算法，如快速离散傅里叶变换（FFT）， 以及频域图像的分析，如幅值、相位和相位相关。  <a href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html#details">更多...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_h_d_r.html">ILHDR</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">该接口类提供了用于高动态范围成像（HDR）。  <a href="interface_l_p_v_img_proc_lib_1_1_i_l_h_d_r.html#details">更多...</a><br /></td></tr>
@@ -155,12 +155,30 @@ $(function() {
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 枚举</h2></td></tr>
+<tr class="memitem:abb4e5eb215b75f7bd434d92985044114"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_l_p_v_img_proc_lib.html#abb4e5eb215b75f7bd434d92985044114">LPVDCTermMode</a> { <a class="el" href="namespace_l_p_v_img_proc_lib.html#abb4e5eb215b75f7bd434d92985044114aef7a4ed9e5323ec44ca1bc0baf4ea772">LPVFreqDCCenter</a> = 0
+, <a class="el" href="namespace_l_p_v_img_proc_lib.html#abb4e5eb215b75f7bd434d92985044114a57485cb7dc7e6fde872c6ca29f2d8fb5">LPVFreqDCEdge</a> = 1
+ }</td></tr>
+<tr class="memdesc:abb4e5eb215b75f7bd434d92985044114"><td class="mdescLeft">&#160;</td><td class="mdescRight">该枚举表示频域图像中直流分量（零频分量）的位置。 枚举取值与频域算法引擎的取值对齐。  <a href="namespace_l_p_v_img_proc_lib.html#abb4e5eb215b75f7bd434d92985044114">更多...</a><br /></td></tr>
+<tr class="separator:abb4e5eb215b75f7bd434d92985044114"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8db27ffdbd9455cc96b3733e6391123a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_l_p_v_img_proc_lib.html#a8db27ffdbd9455cc96b3733e6391123a">LPVEdgePreserveFilter</a> { <a class="el" href="namespace_l_p_v_img_proc_lib.html#a8db27ffdbd9455cc96b3733e6391123aa18156ec09d31c358703c13483978dee1">LPVEPFFastGuided</a> = 0
 , <a class="el" href="namespace_l_p_v_img_proc_lib.html#a8db27ffdbd9455cc96b3733e6391123aa9e4ec9f4c17f45e333d3dad324366db8">LPVEPFWeightedLS</a> = 1
 , <a class="el" href="namespace_l_p_v_img_proc_lib.html#a8db27ffdbd9455cc96b3733e6391123aaf76422eb4efb5f40c8fbc0d8d31ee227">LPVEPFL0Smooth</a> = 2
  }</td></tr>
-<tr class="memdesc:a8db27ffdbd9455cc96b3733e6391123a"><td class="mdescLeft">&#160;</td><td class="mdescRight">该枚举用于指定保变滤波使用的方法。 有助于纹理去除、以及分割之前的边缘提取。 自从 2.17.0  <a href="namespace_l_p_v_img_proc_lib.html#a8db27ffdbd9455cc96b3733e6391123a">更多...</a><br /></td></tr>
+<tr class="memdesc:a8db27ffdbd9455cc96b3733e6391123a"><td class="mdescLeft">&#160;</td><td class="mdescRight">该枚举用于指定保变滤波使用的方法。 有助于纹理去除、以及分割之前的边缘提取。 <br  />
+<b>自从</b> 2.17.0  <a href="namespace_l_p_v_img_proc_lib.html#a8db27ffdbd9455cc96b3733e6391123a">更多...</a><br /></td></tr>
 <tr class="separator:a8db27ffdbd9455cc96b3733e6391123a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a617075093d8b687593d947f950e84f9f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_l_p_v_img_proc_lib.html#a617075093d8b687593d947f950e84f9f">LPVWindowFunction</a> { <br />
+&#160;&#160;<a class="el" href="namespace_l_p_v_img_proc_lib.html#a617075093d8b687593d947f950e84f9fa4e6bdf1eed365de75620f398cf14e32c">LPVWindowNone</a> = 0
+, <a class="el" href="namespace_l_p_v_img_proc_lib.html#a617075093d8b687593d947f950e84f9fa12ca15281f1d3a22ad7b6efe7405cd35">LPVWindowHamming</a> = 1
+, <a class="el" href="namespace_l_p_v_img_proc_lib.html#a617075093d8b687593d947f950e84f9fab5fdc58e664b8ad504e0513606ed4bd5">LPVWindowHann</a> = 2
+, <a class="el" href="namespace_l_p_v_img_proc_lib.html#a617075093d8b687593d947f950e84f9fa1a84e850d3a25b8079bb1db318578880">LPVWindowBlackman</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="namespace_l_p_v_img_proc_lib.html#a617075093d8b687593d947f950e84f9fa7a1ba1da008dc37da2c148a771218d48">LPVWindowFlattop</a> = 4
+, <a class="el" href="namespace_l_p_v_img_proc_lib.html#a617075093d8b687593d947f950e84f9fac62a6ab86ec794c81619e654b7499313">LPVWindowKaiser</a> = 5
+<br />
+ }</td></tr>
+<tr class="memdesc:a617075093d8b687593d947f950e84f9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">该枚举表示频域变换前对输入图像施加的窗函数。 窗函数可减少图像边界截断造成的频谱泄露。 枚举取值与频域算法引擎的取值对齐。  <a href="namespace_l_p_v_img_proc_lib.html#a617075093d8b687593d947f950e84f9f">更多...</a><br /></td></tr>
+<tr class="separator:a617075093d8b687593d947f950e84f9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><p>LPV 图像处理库，提供各种用于图像处理、计算和比较的工具。 </p>
@@ -168,10 +186,33 @@ $(function() {
 <h3>示例代码 </h3>
  <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line"><span class="preprocessor">#include &quot;LPVImgProc.h&quot;</span></div>
 </div><!-- fragment --><p> <b>Qt Demo:</b> <a class="el" href="how_to_play_with_demo.html#demo_imgproc">QtImgProc</a> </p> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line"><span class="keyword">using</span> <a class="code" href="namespace_l_p_v_img_proc_lib.html">LPVImgProcLib</a>;</div>
-<div class="ttc" id="anamespace_l_p_v_img_proc_lib_html"><div class="ttname"><a href="namespace_l_p_v_img_proc_lib.html">LPVImgProcLib</a></div><div class="ttdoc">LPV 图像处理库，提供各种用于图像处理、计算和比较的工具。</div><div class="ttdef"><b>Definition:</b> LPVImgProc.idl:90</div></div>
+<div class="ttc" id="anamespace_l_p_v_img_proc_lib_html"><div class="ttname"><a href="namespace_l_p_v_img_proc_lib.html">LPVImgProcLib</a></div><div class="ttdoc">LPV 图像处理库，提供各种用于图像处理、计算和比较的工具。</div><div class="ttdef"><b>Definition:</b> LPVImgProc.idl:92</div></div>
 </div><!-- fragment --><p> <b>C# Demo:</b> <a class="el" href="how_to_play_with_demo.html#demo_imgproc">CSharpImgProc</a> </p> </div>  <div class='newInnerHTML' title='com' style='display: none;'>COM</div><div class='toggleable_div label_com' style='display: none;'><div class="fragment"><div class="line"><span class="preprocessor">#define LPV_COM </span><span class="comment">// enable COM interfaces</span></div>
 <div class="line">#include &quot;LPVImgProc.h&quot;</div>
 </div><!-- fragment --><p> <b>MFC Demo:</b> <a class="el" href="how_to_play_with_demo.html#demo_imgproc">MFCImgProc</a> </p> </div>  </div><h2 class="groupheader">枚举类型说明</h2>
+<a id="abb4e5eb215b75f7bd434d92985044114"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb4e5eb215b75f7bd434d92985044114">&#9670;&nbsp;</a></span>LPVDCTermMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespace_l_p_v_img_proc_lib.html#abb4e5eb215b75f7bd434d92985044114">LPVDCTermMode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>该枚举表示频域图像中直流分量（零频分量）的位置。 枚举取值与频域算法引擎的取值对齐。 </p>
+<dl class="section since"><dt>自从</dt><dd>2.24.0 </dd></dl>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="abb4e5eb215b75f7bd434d92985044114aef7a4ed9e5323ec44ca1bc0baf4ea772"></a>LPVFreqDCCenter&#160;</td><td class="fielddoc"><p>直流分量位于频域图像的中心，便于观察频谱 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abb4e5eb215b75f7bd434d92985044114a57485cb7dc7e6fde872c6ca29f2d8fb5"></a>LPVFreqDCEdge&#160;</td><td class="fielddoc"><p>直流分量位于频域图像的左上角，即离散傅里叶变换的原始布局 </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <a id="a8db27ffdbd9455cc96b3733e6391123a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8db27ffdbd9455cc96b3733e6391123a">&#9670;&nbsp;</a></span>LPVEdgePreserveFilter</h2>
 
@@ -184,7 +225,8 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p>该枚举用于指定保变滤波使用的方法。 有助于纹理去除、以及分割之前的边缘提取。 自从 2.17.0 </p>
+<p>该枚举用于指定保变滤波使用的方法。 有助于纹理去除、以及分割之前的边缘提取。 <br  />
+<b>自从</b> 2.17.0 </p>
 <table class="fieldtable">
 <tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a8db27ffdbd9455cc96b3733e6391123aa18156ec09d31c358703c13483978dee1"></a>LPVEPFFastGuided&#160;</td><td class="fielddoc"><p>快速导向滤波，对导向滤波加速优化，且几乎没有视觉效果上的损失。<br  />
 可通过参考图提供额外的边缘信息。在强纹理附近，可能产生边缘光晕。<br  />
@@ -197,6 +239,37 @@ $(function() {
 <tr><td class="fieldname"><a id="a8db27ffdbd9455cc96b3733e6391123aaf76422eb4efb5f40c8fbc0d8d31ee227"></a>LPVEPFL0Smooth&#160;</td><td class="fielddoc"><p>该保边滤波算子以有效地将大多数梯度强制为 0 为优化目标。<br  />
 它通常会生成类似卡通效果的、局部区域为统一数值的图像。通常无边缘光晕。<br  />
 该算子的性能优于 <code>LPVEPFWeightedLS</code>，但比 <code>LPVEPFFastGuided</code> 慢。 </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a617075093d8b687593d947f950e84f9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a617075093d8b687593d947f950e84f9f">&#9670;&nbsp;</a></span>LPVWindowFunction</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespace_l_p_v_img_proc_lib.html#a617075093d8b687593d947f950e84f9f">LPVWindowFunction</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>该枚举表示频域变换前对输入图像施加的窗函数。 窗函数可减少图像边界截断造成的频谱泄露。 枚举取值与频域算法引擎的取值对齐。 </p>
+<dl class="section since"><dt>自从</dt><dd>2.24.0 </dd></dl>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a617075093d8b687593d947f950e84f9fa4e6bdf1eed365de75620f398cf14e32c"></a>LPVWindowNone&#160;</td><td class="fielddoc"><p>不使用窗函数 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a617075093d8b687593d947f950e84f9fa12ca15281f1d3a22ad7b6efe7405cd35"></a>LPVWindowHamming&#160;</td><td class="fielddoc"><p>汉明窗，两端数值为 \( 0.08 \) 的升余弦窗 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a617075093d8b687593d947f950e84f9fab5fdc58e664b8ad504e0513606ed4bd5"></a>LPVWindowHann&#160;</td><td class="fielddoc"><p>汉宁窗，两端数值为 0 的升余弦窗 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a617075093d8b687593d947f950e84f9fa1a84e850d3a25b8079bb1db318578880"></a>LPVWindowBlackman&#160;</td><td class="fielddoc"><p>布莱克曼窗，相比汉明窗和汉宁窗具有更低的旁瓣，但主瓣更宽 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a617075093d8b687593d947f950e84f9fa7a1ba1da008dc37da2c148a771218d48"></a>LPVWindowFlattop&#160;</td><td class="fielddoc"><p>平顶窗，幅度误差最小，但主瓣最宽 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a617075093d8b687593d947f950e84f9fac62a6ab86ec794c81619e654b7499313"></a>LPVWindowKaiser&#160;</td><td class="fielddoc"><p>凯塞窗，其形状由 <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html#a3ec0926ef6d40ef5eaac80655b4e6ab6">形状因子</a> 控制 </p>
 </td></tr>
 </table>
 

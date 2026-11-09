@@ -149,6 +149,14 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50ac3c811f9b9fc71e91eaf4bb759d94167">LPVBlobColorV0</a> = 13
 , <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50a46917640f064bf4a4308bc1004e59c8b">LPVBlobColorV1</a> = 14
 , <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50ab1aeb77180ca1654ec040af8ce4d58a1">LPVBlobColorV2</a> = 15
+, <br />
+&#160;&#160;<a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50ac6c014d567899d6dca37659e4b8f1bb6">LPVBlobCircularity2</a> = 16
+, <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50aee0f19adfbc04708fb5a0cad0106df19">LPVBlobEntropy</a> = 17
+, <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50a4b51b5fdaa4942490575638e645e0fd3">LPVBlobAnisotropy</a> = 18
+, <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50ad9e5b93ba5d5e0732303bbc0255cd294">LPVBlobHoleCount</a> = 19
+, <br />
+&#160;&#160;<a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50a9e284cd1eefc21eaf2766b649630437b">LPVBlobHoleArea</a> = 20
+, <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50acba46e4a2fe8c58a0f853022aa136318">LPVBlobAngle</a> = 21
 <br />
  }</td></tr>
 <tr class="memdesc:a45c2c9b22e80b8f2439fcdbcf94cec50"><td class="mdescLeft">&#160;</td><td class="mdescRight">This enumeration represents the numeric features of the blob.  <a href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50">More...</a><br /></td></tr>
@@ -256,12 +264,12 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><a id="a45c2c9b22e80b8f2439fcdbcf94cec50a59f66c483808c2e0686bc7cabdb2d90e"></a>LPVBlobCircularity&#160;</td><td class="fielddoc"><p>Shape factor for the circularity (similarity to a circle) of the blob, defined as: </p><p class="formulaDsp">
 \[ \frac{4 \pi A }{ P^2 } \]
 </p>
-<p>where \( A \) is the blob's area, \( P \) is the blob's perimeter. The value is in range of (0, 1), for a perfect circle, it's 1. </p>
+<p>where \( A \) is the blob's area, \( P \) is the blob's perimeter. The value is in range of (0, 1), for a perfect circle, it's <code>1</code>. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a45c2c9b22e80b8f2439fcdbcf94cec50abf93264ab50efcabe271047f6f7a3480"></a>LPVBlobConvexity&#160;</td><td class="fielddoc"><p>Shape factor for the convexity of he blob, defined as: </p><p class="formulaDsp">
 \[ \frac{ A }{ A_{conv} } \]
 </p>
-<p>where \( A \) is the blob's area, \( A_{conv} \) is the area of the blob' bounding convex hull. The value is in range of (0, 1), for a convex polygon, it's 1. </p>
+<p>where \( A \) is the blob's area, \( A_{conv} \) is the area of the blob' bounding convex hull. The value is in range of (0, 1), for a convex polygon, it's <code>1</code>. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a45c2c9b22e80b8f2439fcdbcf94cec50a44a9b6cf753404db8dbf277f4e998687"></a>LPVBlobInertia&#160;</td><td class="fielddoc"><p>Moment of inertia of the blob contour. </p>
 </td></tr>
@@ -282,6 +290,27 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><a id="a45c2c9b22e80b8f2439fcdbcf94cec50a46917640f064bf4a4308bc1004e59c8b"></a>LPVBlobColorV1&#160;</td><td class="fielddoc"><p>Average 1-channel value calculated using all the pixels inside the blob. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a45c2c9b22e80b8f2439fcdbcf94cec50ab1aeb77180ca1654ec040af8ce4d58a1"></a>LPVBlobColorV2&#160;</td><td class="fielddoc"><p>Average 2-channel value calculated using all the pixels inside the blob. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a45c2c9b22e80b8f2439fcdbcf94cec50ac6c014d567899d6dca37659e4b8f1bb6"></a>LPVBlobCircularity2&#160;</td><td class="fielddoc"><p>Shape factor for the circularity of the blob, defined as: </p><p class="formulaDsp">
+\[ \frac{ A }{ {d_{max}}^2 \pi } \]
+</p>
+<p> where \( A \) is the blob's area, \( d_{max} \) is the maximum distance from the blob center to all the contour pixels. The value is clipped to range of [0, 1], for a perfect circle, it's <code>1</code>. Note that the feature responds to large bulges, holes and unconnected regions: any contour pixel far from the center lowers the value, even if the blob is otherwise compact. <br  />
+<b>Since</b> 2.24.0 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a45c2c9b22e80b8f2439fcdbcf94cec50aee0f19adfbc04708fb5a0cad0106df19"></a>LPVBlobEntropy&#160;</td><td class="fielddoc"><p>Entropy of the gray value distribution inside the blob, in range of [0, 8]. It's <code>0</code> if all the pixels inside the blob share the same gray value, it's <code>8</code> if all the 256 gray values are uniformly distributed. It requires an image attached to the blob, otherwise it returns <code>0</code>. <br  />
+<b>Since</b> 2.24.0 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a45c2c9b22e80b8f2439fcdbcf94cec50a4b51b5fdaa4942490575638e645e0fd3"></a>LPVBlobAnisotropy&#160;</td><td class="fielddoc"><p>Anisotropy of the gray value distribution inside the blob, in range of [-1, 0]. It requires an image attached to the blob, otherwise it returns <code>0</code>. <br  />
+<b>Since</b> 2.24.0 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a45c2c9b22e80b8f2439fcdbcf94cec50ad9e5b93ba5d5e0732303bbc0255cd294"></a>LPVBlobHoleCount&#160;</td><td class="fielddoc"><p>Count of the holes inside the blob. It's <code>0</code> if the blob has no hole, or the holes are filled up by setting <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a77f715bc781e4a18ea0c14a21e0d8b53" title="Whether to enable the contribution of holes in the overall blob statistics. By default,...">ILBlobAnalysis::FillHole</a> to true. <br  />
+<b>Since</b> 2.24.0 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a45c2c9b22e80b8f2439fcdbcf94cec50a9e284cd1eefc21eaf2766b649630437b"></a>LPVBlobHoleArea&#160;</td><td class="fielddoc"><p>Total count of pixels inside all the holes of the blob. It's <code>0</code> if the blob has no hole, or the holes are filled up by setting <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a77f715bc781e4a18ea0c14a21e0d8b53" title="Whether to enable the contribution of holes in the overall blob statistics. By default,...">ILBlobAnalysis::FillHole</a> to true. <br  />
+<b>Since</b> 2.24.0 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a45c2c9b22e80b8f2439fcdbcf94cec50acba46e4a2fe8c58a0f853022aa136318"></a>LPVBlobAngle&#160;</td><td class="fielddoc"><p>Angle of the blob in degrees, it's the direction of the longer axis of the blob's rotated bounding rectangle, in range of (-90, 90). It's the same as <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html#a29decae96a86d21975e51e74e047053c">ILBlob::GetAngle()</a> with <code>alwaysUp</code> off. <br  />
+<b>Since</b> 2.24.0 </p>
 </td></tr>
 </table>
 

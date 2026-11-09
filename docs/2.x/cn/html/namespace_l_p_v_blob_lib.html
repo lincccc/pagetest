@@ -149,6 +149,14 @@ $(function() {
 , <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50ac3c811f9b9fc71e91eaf4bb759d94167">LPVBlobColorV0</a> = 13
 , <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50a46917640f064bf4a4308bc1004e59c8b">LPVBlobColorV1</a> = 14
 , <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50ab1aeb77180ca1654ec040af8ce4d58a1">LPVBlobColorV2</a> = 15
+, <br />
+&#160;&#160;<a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50ac6c014d567899d6dca37659e4b8f1bb6">LPVBlobCircularity2</a> = 16
+, <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50aee0f19adfbc04708fb5a0cad0106df19">LPVBlobEntropy</a> = 17
+, <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50a4b51b5fdaa4942490575638e645e0fd3">LPVBlobAnisotropy</a> = 18
+, <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50ad9e5b93ba5d5e0732303bbc0255cd294">LPVBlobHoleCount</a> = 19
+, <br />
+&#160;&#160;<a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50a9e284cd1eefc21eaf2766b649630437b">LPVBlobHoleArea</a> = 20
+, <a class="el" href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50acba46e4a2fe8c58a0f853022aa136318">LPVBlobAngle</a> = 21
 <br />
  }</td></tr>
 <tr class="memdesc:a45c2c9b22e80b8f2439fcdbcf94cec50"><td class="mdescLeft">&#160;</td><td class="mdescRight">该枚举表示斑点的数值类型的属性特征  <a href="namespace_l_p_v_blob_lib.html#a45c2c9b22e80b8f2439fcdbcf94cec50">更多...</a><br /></td></tr>
@@ -282,6 +290,27 @@ $(function() {
 <tr><td class="fieldname"><a id="a45c2c9b22e80b8f2439fcdbcf94cec50a46917640f064bf4a4308bc1004e59c8b"></a>LPVBlobColorV1&#160;</td><td class="fielddoc"><p>斑点内像素的平均 1 通道值，用于彩色斑点分析 </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a45c2c9b22e80b8f2439fcdbcf94cec50ab1aeb77180ca1654ec040af8ce4d58a1"></a>LPVBlobColorV2&#160;</td><td class="fielddoc"><p>斑点内像素的平均 2 通道值，用于彩色斑点分析 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a45c2c9b22e80b8f2439fcdbcf94cec50ac6c014d567899d6dca37659e4b8f1bb6"></a>LPVBlobCircularity2&#160;</td><td class="fielddoc"><p>斑点的圆度形状特征，定义为: </p><p class="formulaDsp">
+\[ \frac{ A }{ {d_{max}}^2 \pi } \]
+</p>
+<p> 其中， \( A \) 为斑点的面积， \( d_{max} \) 为斑点中心到所有轮廓像素的最大距离。 该属性值被截断到 [0, 1] 范围内，数值越接近 1 则斑点越圆，圆形斑点为 <code>1</code>。 需注意该特征对大幅凸起、孔洞以及不连通区域敏感： 任何远离中心的轮廓像素都会拉低该值，即使斑点其余部分是紧凑的。 <br  />
+<b>自从</b> 2.24.0 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a45c2c9b22e80b8f2439fcdbcf94cec50aee0f19adfbc04708fb5a0cad0106df19"></a>LPVBlobEntropy&#160;</td><td class="fielddoc"><p>斑点内灰度值分布的熵，取值在 [0, 8] 范围内。 若斑点内所有像素的灰度值相同，则为 <code>0</code>；若 256 个灰度值均匀分布，则为 <code>8</code>。 该特征需要斑点绑定图像后才能计算，否则返回 <code>0</code>。 <br  />
+<b>自从</b> 2.24.0 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a45c2c9b22e80b8f2439fcdbcf94cec50a4b51b5fdaa4942490575638e645e0fd3"></a>LPVBlobAnisotropy&#160;</td><td class="fielddoc"><p>斑点内灰度值分布的各向异性，取值在 [-1, 0] 范围内。 该特征需要斑点绑定图像后才能计算，否则返回 <code>0</code>。 <br  />
+<b>自从</b> 2.24.0 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a45c2c9b22e80b8f2439fcdbcf94cec50ad9e5b93ba5d5e0732303bbc0255cd294"></a>LPVBlobHoleCount&#160;</td><td class="fielddoc"><p>斑点内部孔洞的个数。若斑点没有孔洞，或通过 <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a77f715bc781e4a18ea0c14a21e0d8b53" title="是否填充斑点内部孔洞，该配置将影响检出斑点的面积、重心等几何属性的计算。默认配置为关闭。">ILBlobAnalysis::FillHole</a> 填充了孔洞，则为 <code>0</code>。 <br  />
+<b>自从</b> 2.24.0 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a45c2c9b22e80b8f2439fcdbcf94cec50a9e284cd1eefc21eaf2766b649630437b"></a>LPVBlobHoleArea&#160;</td><td class="fielddoc"><p>斑点内部所有孔洞的总像素个数。若斑点没有孔洞，或通过 <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob_analysis.html#a77f715bc781e4a18ea0c14a21e0d8b53" title="是否填充斑点内部孔洞，该配置将影响检出斑点的面积、重心等几何属性的计算。默认配置为关闭。">ILBlobAnalysis::FillHole</a> 填充了孔洞，则为 <code>0</code>。 <br  />
+<b>自从</b> 2.24.0 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a45c2c9b22e80b8f2439fcdbcf94cec50acba46e4a2fe8c58a0f853022aa136318"></a>LPVBlobAngle&#160;</td><td class="fielddoc"><p>斑点的角度，单位为度。即斑点的旋转包围盒长轴方向的角度，取值在 (-90, 90) 范围内。 该特征与 <a class="el" href="interface_l_p_v_blob_lib_1_1_i_l_blob.html#a29decae96a86d21975e51e74e047053c">ILBlob::GetAngle()</a> 在 <code>alwaysUp</code> 为 <code>False</code> 时的结果相同。 <br  />
+<b>自从</b> 2.24.0 </p>
 </td></tr>
 </table>
 

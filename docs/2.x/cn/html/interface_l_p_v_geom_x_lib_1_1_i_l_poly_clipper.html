@@ -395,8 +395,8 @@ Public 成员函数</h2></td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">poly</td><td>输入的多边形对象 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">maxVertexes</td><td>结果的最大顶点数量。可指定为 0，即剔除所有满足阈值的顶点。 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">areaThreshold</td><td>面积阈值。面积指的是删除某个顶点（及其相邻的所有已删除顶点）所造成的总缺失面积。 若该总面积小于指定的面积阈值，则该顶点为可删除顶点。 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">angleThreshold</td><td>角度阈值。角度指的是某个顶点以及与之相邻的两个其他顶点所组成的夹角。 若该角度小于角度阈值，则该顶点为可删除顶点。角度阈值的取值范围在 0 ~ 180 之间。 若同时指定了面积阈值和角度阈值，则面积和角度加权后同时参与简化过程。<br  />
-若面积阈值和角度阈值均为 0，则简化过程退化为清除所有与相邻顶点共线的冗余顶点的操作。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">angleThreshold</td><td>角度阈值。角度指的是某个顶点以及与之相邻的两个其他顶点所组成的夹角。 若该角度小于角度阈值，则该顶点为可删除顶点。角度阈值的取值范围在 <code>0 ~ 180</code> 之间。 若同时指定了面积阈值和角度阈值，则面积和角度加权后同时参与简化过程。<br  />
+若面积阈值和角度阈值均为 <code>0</code>，则简化过程退化为清除所有与相邻顶点共线的冗余顶点的操作。 </td></tr>
   </table>
   </dd>
 </dl>
@@ -541,9 +541,9 @@ Public 成员函数</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">poly</td><td>输入的多边形对象 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">filterNbRng</td><td>滤波邻域 \( (-filterNbRng, filterNbRng) \)，即沿着多边形的边长距离小于 filterNbRng 的顶点（包含临界处的插值）将参与法向滤波。 滤波邻域越大，滤波结果越平滑。 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">updateNbRng</td><td>更新邻域 \( (-updateNbRng, updateNbRng) \)，即沿着多边形的边长距离小于 filterNbRng 的顶点（包含临界处的插值）将参与更新多边形顶点。 更新邻域通常小于滤波邻域，合适的更新邻域可加速迭代过程的收敛，使得迭代提前结束。推荐使用 2 ~ 5，默认设置为 0 即使用滤波邻域的 10% 作为更新邻域。 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">maxIterCount</td><td>最大迭代次数。默认值为 30. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">stopCriteria</td><td>迭代终止条件。默认值为 0.001 。若当前迭代所有顶点的最大移动距离小于设定值，或者前后两次迭代移动距离的差值小于 10，则迭代终止，即: \( m_i &lt; criteria || (m_i - m_{i-1}) / m_{i-1} &lt; 0.1% \) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">updateNbRng</td><td>更新邻域 \( (-updateNbRng, updateNbRng) \)，即沿着多边形的边长距离小于 filterNbRng 的顶点（包含临界处的插值）将参与更新多边形顶点。 更新邻域通常小于滤波邻域，合适的更新邻域可加速迭代过程的收敛，使得迭代提前结束。推荐使用 <code>2 ~ 5</code>，默认设置为 <code>0</code> 即使用滤波邻域的 10% 作为更新邻域。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">maxIterCount</td><td>最大迭代次数。默认值为 <code>30</code>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">stopCriteria</td><td>迭代终止条件。默认值为 <code>0.001</code> 。若当前迭代所有顶点的最大移动距离小于设定值，或者前后两次迭代移动距离的差值小于 10，则迭代终止，即: \( m_i &lt; criteria || (m_i - m_{i-1}) / m_{i-1} &lt; 0.1% \) </td></tr>
   </table>
   </dd>
 </dl>

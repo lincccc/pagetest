@@ -648,8 +648,8 @@ Public 成员函数</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>绘制点集到给定的设备上 </p><dl class="section since"><dt>自从</dt><dd>2.12 shape参数被移除，可通过 <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_drawable.html#ad60911cfc9ce902451973606eb81fc83">ILDrawable::SetDrawPoint()</a> 替代设置 </dd></dl>
-<dl class="section see"><dt>参见</dt><dd><a class="el" href="use_draw_functions.html">Use Draw Functions</a> </dd></dl>
+<p>绘制点集到给定的设备上<br  />
+参数 <code>shape</code> 自 2.12 被<b>移除</b>，可通过 <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_drawable.html#ad60911cfc9ce902451973606eb81fc83">ILDrawable::SetDrawPoint()</a> 替代设置。 </p><dl class="section see"><dt>参见</dt><dd><a class="el" href="use_draw_functions.html">Use Draw Functions</a> </dd></dl>
 <dl class="section remark"><dt>备注</dt><dd>该函数在 Linux / MacOS 平台暂不可用。 </dd></dl>
 
 </div>
@@ -670,7 +670,7 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 <p>检查当前集合是否为空 </p><dl class="retval"><dt>返回值</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">若为空，返回</td><td>True，否则返回 False </td></tr>
+    <tr><td class="paramname">若为空，返回</td><td><code>True</code>，否则返回 <code>False</code> </td></tr>
   </table>
   </dd>
 </dl>
@@ -1019,7 +1019,7 @@ Public 成员函数</h2></td></tr>
 <p>缩放当前点集，生成一个新的点集 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">factorX</td><td>x 方向的缩放比例 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">factorY</td><td>y 方向的缩放比例。默认设置为 0，即与 x 方向的缩放系数相同，也就是等比缩放。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">factorY</td><td>y 方向的缩放比例。默认设置为 <code>0</code>，即与 x 方向的缩放系数相同，也就是等比缩放。 </td></tr>
   </table>
   </dd>
 </dl>

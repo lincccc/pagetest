@@ -118,8 +118,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af0f9905b2560ab8a11bcb29d1a72e21b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf33fa7ec210792c3500aa8c93ad38be"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_circle.html#adf33fa7ec210792c3500aa8c93ad38be">GetPerimeter</a> ()</td></tr>
 <tr class="separator:adf33fa7ec210792c3500aa8c93ad38be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac678278e17e0df2b314132d46a7acf74"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_circle.html#ac678278e17e0df2b314132d46a7acf74">IntersectCircle</a> (<a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_circle.html">ILCircle</a> *circle, <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_points.html">ILPoints</a> **intersectPoints)</td></tr>
+<tr class="separator:ac678278e17e0df2b314132d46a7acf74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abfdd039f303a7db96647cef0aab476d7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_geom_lib.html#a9e95444de4a6d45da839995006de7ddf">LPVIntersectType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_circle.html#abfdd039f303a7db96647cef0aab476d7">IntersectLine</a> (<a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_line.html">ILLine</a> *line, <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_points.html">ILPoints</a> **intersectPoints)</td></tr>
 <tr class="separator:abfdd039f303a7db96647cef0aab476d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19769e96d6bd97a785416c4733f01e03"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_circle.html#a19769e96d6bd97a785416c4733f01e03">IntersectPoly</a> (<a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a> *polygon, <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_points.html">ILPoints</a> **intersectPoints)</td></tr>
+<tr class="separator:a19769e96d6bd97a785416c4733f01e03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1289c9d71ccf35d16928b3e894c184be"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_geom_lib.html#a356bf5122b41e1df6078c995fe15deb8">LPVPointTestResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_circle.html#a1289c9d71ccf35d16928b3e894c184be">PointTest</a> (<a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_point.html">ILPoint</a> *point)</td></tr>
 <tr class="separator:a1289c9d71ccf35d16928b3e894c184be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba0cd112aa5e62d431c0472ce52e29e8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_circle.html#aba0cd112aa5e62d431c0472ce52e29e8">Resample</a> (int num)</td></tr>
@@ -206,7 +210,7 @@ The name is drawn on canvas around the object if <a class="el" href="interface_l
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">result</td><td>Return the evaluation result, it's a value in (0, 1). For two perfect concentric circles, it's 1. </td></tr>
+    <tr><td class="paramname">result</td><td>Return the evaluation result, it's a value in (0, 1). For two perfect concentric circles, it's <code>1</code>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -416,6 +420,49 @@ The name is drawn on canvas around the object if <a class="el" href="interface_l
 
 </div>
 </div>
+<a id="ac678278e17e0df2b314132d46a7acf74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac678278e17e0df2b314132d46a7acf74">&#9670;&nbsp;</a></span>IntersectCircle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL IntersectCircle </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_circle.html">ILCircle</a> *&#160;</td>
+          <td class="paramname"><em>circle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_points.html">ILPoints</a> **&#160;</td>
+          <td class="paramname"><em>intersectPoints</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Determines whether this circle intersects with the given circle, and output the intersection points if they are intersected. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">circle</td><td>The input another circle </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">intersectPoints</td><td>Output the intersection points, it should be an empty set for not-intersected case, 1 point for tangent case, or 2 points for crossing case. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">result</td><td>Return true if the two circles are intersected, false otherwise. Circles which are disjoint, nested or concentric produce no intersection point. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_circle.html#abfdd039f303a7db96647cef0aab476d7">IntersectLine()</a>, <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_circle.html#a19769e96d6bd97a785416c4733f01e03">IntersectPoly()</a>. </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>2.24.0 </dd></dl>
+
+</div>
+</div>
 <a id="abfdd039f303a7db96647cef0aab476d7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abfdd039f303a7db96647cef0aab476d7">&#9670;&nbsp;</a></span>IntersectLine()</h2>
 
@@ -455,6 +502,49 @@ The name is drawn on canvas around the object if <a class="el" href="interface_l
   </dd>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_line.html#a417c0527d2d44b9f5c8e3af94157856f">ILLine::IntersectCircle()</a>. </dd></dl>
+
+</div>
+</div>
+<a id="a19769e96d6bd97a785416c4733f01e03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19769e96d6bd97a785416c4733f01e03">&#9670;&nbsp;</a></span>IntersectPoly()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL IntersectPoly </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a> *&#160;</td>
+          <td class="paramname"><em>polygon</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_points.html">ILPoints</a> **&#160;</td>
+          <td class="paramname"><em>intersectPoints</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Determines whether this circle intersects with the edges of the given polygon, and output the intersection points if they are intersected. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">polygon</td><td>The input polygon, its closed property determines whether the implicit closing edge takes part in the intersection </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">intersectPoints</td><td>Output the intersection points, each crossed edge may report two points, it should be an empty set for not-intersected case. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">result</td><td>Return true if any polygon edge is crossed, false otherwise. Note that the edge intersection only reports crossings: a circle completely inside the polygon, or a polygon completely inside the circle, has no crossing point and reports false. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_circle.html#abfdd039f303a7db96647cef0aab476d7">IntersectLine()</a>, <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_circle.html#ac678278e17e0df2b314132d46a7acf74">IntersectCircle()</a>. </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>2.24.0 </dd></dl>
 
 </div>
 </div>

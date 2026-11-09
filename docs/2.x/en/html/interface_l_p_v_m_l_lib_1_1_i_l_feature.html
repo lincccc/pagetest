@@ -210,6 +210,75 @@ Currently, we support following features:</p>
 <td>"conductivity"</td><td>Conductivity coefficient</td><td>Integer</td><td>see <a class="el" href="namespace_l_p_v_m_l_lib.html#a8d852d131e200703af74f9e52aa1191b">LPVConductivity</a></td><td><a class="el" href="namespace_l_p_v_m_l_lib.html#a8d852d131e200703af74f9e52aa1191bad07d573aea4c34e1a0567273ee04d6b9">G2</a> </td></tr>
 </table>
 </td></tr>
+<tr>
+<td>PixelByPixel</td><td>Pixel-by-pixel, every pixel of the uniformed sample image forms one dimension of the feature vector<br  />
+ <table class="markdownTable">
+<tr>
+<th class="markdownTableHeadLeft" style="width:15%">Parameter Name</th><th class="markdownTableHeadLeft" style="width:50%">Usage</th><th class="markdownTableHeadLeft">Type</th><th class="markdownTableHeadLeft">Range</th><th class="markdownTableHeadLeft">Default </th></tr>
+<tr>
+<td>"uni size"</td><td>Uniformed image size for the pixel-by-pixel value collection</td><td>Size</td><td>\( 2 \times 2 \) ~ \( 64 \times 64 \) </td><td>\( 8 \times 8 \) </td></tr>
+<tr>
+<td>"pixel value"</td><td>Type of the pixel value</td><td>Integer</td><td>see <a class="el" href="namespace_l_p_v_m_l_lib.html#ac4599190266e94a740de4acccde9b1ca">LPVPixelValueType</a></td><td><a class="el" href="namespace_l_p_v_m_l_lib.html#ac4599190266e94a740de4acccde9b1caaa1ccbcb586c2404fafd961fdb6e5abb6">Gray</a> </td></tr>
+<tr>
+<td>"projection"</td><td>Type of the projection to reduce the feature vector</td><td>Integer</td><td>see <a class="el" href="namespace_l_p_v_m_l_lib.html#af7eccb5b4f0998abd9b477d5ad9dbca4">LPVProjectionType</a></td><td><a class="el" href="namespace_l_p_v_m_l_lib.html#af7eccb5b4f0998abd9b477d5ad9dbca4a00490236db8847cd643de26aa62761a4">None</a> </td></tr>
+</table>
+</td></tr>
+<tr>
+<td>SIFT</td><td>Scale-Invariant Feature Transform<br  />
+ <table class="markdownTable">
+<tr>
+<th class="markdownTableHeadLeft" style="width:15%">Parameter Name</th><th class="markdownTableHeadLeft" style="width:50%">Usage</th><th class="markdownTableHeadLeft">Type</th><th class="markdownTableHeadLeft">Range</th><th class="markdownTableHeadLeft">Default </th></tr>
+<tr>
+<td>"keypoint num"</td><td>Size of keypoint</td><td>Integer</td><td>1 ~ 3</td><td>1 </td></tr>
+<tr>
+<td>"keypoint size"</td><td>Diameter of each keypoint</td><td>Integer</td><td>≥ 0 </td><td>0 </td></tr>
+</table>
+</td></tr>
+<tr>
+<td>Haar</td><td>Haarlike<br  />
+ <table class="markdownTable">
+<tr>
+<th class="markdownTableHeadLeft" style="width:15%">Parameter Name</th><th class="markdownTableHeadLeft" style="width:50%">Usage</th><th class="markdownTableHeadLeft">Type</th><th class="markdownTableHeadLeft">Range</th><th class="markdownTableHeadLeft">Default </th></tr>
+<tr>
+<td>"bin scale"</td><td>Scale of the bin count, the bin number is calculated as \( 2^i \) </td><td>Integer</td><td>1 ~ 5</td><td>1 </td></tr>
+</table>
+</td></tr>
+<tr>
+<td>Shape</td><td>Shape context and keypoint distribution<br  />
+ <table class="markdownTable">
+<tr>
+<th class="markdownTableHeadLeft" style="width:15%">Parameter Name</th><th class="markdownTableHeadLeft" style="width:50%">Usage</th><th class="markdownTableHeadLeft">Type</th><th class="markdownTableHeadLeft">Range</th><th class="markdownTableHeadLeft">Default </th></tr>
+<tr>
+<td>"shape type"</td><td>Type of the shape feature</td><td>Integer</td><td>see <a class="el" href="namespace_l_p_v_m_l_lib.html#af96fa2db057413c5a183e3fd4b39ae12">LPVShapeType</a></td><td><a class="el" href="namespace_l_p_v_m_l_lib.html#af96fa2db057413c5a183e3fd4b39ae12aad857c0b1a57f45991913cb00607f965">KPDistrib</a> </td></tr>
+<tr>
+<td>"kernel size"</td><td>Size of the kernel</td><td>Integer</td><td>4 ~ 15</td><td>4 </td></tr>
+<tr>
+<td>"use ratio"</td><td>Ratio of the keypoints taken into use</td><td>Double</td><td>0.01 ~ 0.5</td><td>0.1 </td></tr>
+<tr>
+<td>"distance-angle bins"</td><td>Bins of the distance-angle histogram</td><td>Integer</td><td>6 ~ 36</td><td>12 </td></tr>
+<tr>
+<td>"angular bins"</td><td>Bins of the angular histogram</td><td>Integer</td><td>3 ~ 36</td><td>12 </td></tr>
+<tr>
+<td>"radial bins"</td><td>Bins of the radial histogram</td><td>Integer</td><td>1 ~ 11</td><td>5 </td></tr>
+</table>
+</td></tr>
+<tr>
+<td>NewBrief</td><td>NewBrief<br  />
+ <table class="markdownTable">
+<tr>
+<th class="markdownTableHeadLeft" style="width:15%">Parameter Name</th><th class="markdownTableHeadLeft" style="width:50%">Usage</th><th class="markdownTableHeadLeft">Type</th><th class="markdownTableHeadLeft">Range</th><th class="markdownTableHeadLeft">Default </th></tr>
+<tr>
+<td>"bin size"</td><td>Size of each bin</td><td>Integer</td><td>4 ~ 16</td><td>8 </td></tr>
+<tr>
+<td>"difference range"</td><td>Range of the difference</td><td>Integer</td><td>0 ~ 50</td><td>10 </td></tr>
+</table>
+</td></tr>
+<tr>
+<td>GGCM</td><td>Gray-Gradient Co-occurrence Matrix, no parameter </td></tr>
+<tr>
+<td>IntegralHist</td><td>Integral Histogram, no parameter </td></tr>
+<tr>
+<td>MLP</td><td>MLP, no parameter </td></tr>
 </table>
 <h3>Example Code </h3>
  <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line"><span class="comment">// create a HOG feature</span></div>

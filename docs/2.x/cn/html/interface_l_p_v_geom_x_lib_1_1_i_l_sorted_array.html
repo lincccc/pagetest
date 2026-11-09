@@ -194,7 +194,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 <div class="line">        }</div>
 <div class="line">    }</div>
 <div class="line">}</div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html_a54c773c6f72a88ff41d8ab615b5a92f3"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a54c773c6f72a88ff41d8ab615b5a92f3">LPVCoreLib::LPVPositionMode</a></div><div class="ttdeci">LPVPositionMode</div><div class="ttdoc">该枚举类型表示使用哪个坐标作为对象的位置，在排序中使用。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:1268</div></div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a54c773c6f72a88ff41d8ab615b5a92f3"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a54c773c6f72a88ff41d8ab615b5a92f3">LPVCoreLib::LPVPositionMode</a></div><div class="ttdeci">LPVPositionMode</div><div class="ttdoc">该枚举类型表示使用哪个坐标作为对象的位置，在排序中使用。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:1292</div></div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='com' style='display: none;'>COM</div><div class='toggleable_div label_com' style='display: none;'><div class="fragment"><div class="line">ILSortedArrayPtr sortedArray;</div>
 <div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = sorter-&gt;SortToArray(LPVPositionMode::LPVPosModeCenter, 20, 10, 1, &amp;sortedArray);</div>
 <div class="line"><span class="keywordflow">if</span> (err != LPVErrorCode::LPVNoError) <span class="keywordflow">return</span>; <span class="comment">// failed</span></div>
@@ -261,7 +261,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 </div><div class="memdoc">
 <p>绘制索引在对应的位置附近 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">drawFlags</td><td>控制绘制内容，使用方式请查阅 LPVSortedArrayDrawFlags </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">drawFlags</td><td>控制绘制内容，使用方式请查阅 <a class="el" href="namespace_l_p_v_geom_x_lib.html#a579a6a6fe4f217270740c3866d2e58bf">LPVSortedArrayDrawFlags</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -362,7 +362,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 </dl>
 <dl class="retval"><dt>返回值</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">val</td><td>返回 True 若给定行列号上存在对象，否则返回 False </td></tr>
+    <tr><td class="paramname">val</td><td>返回 <code>True</code> 若给定行列号上存在对象，否则返回 <code>False</code> </td></tr>
   </table>
   </dd>
 </dl>

@@ -125,10 +125,22 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a8d852d131e200703af74f9e52aa1191b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This enumeration represents the type of the conductivity coefficient used in AKAZE feature.  <a href="namespace_l_p_v_m_l_lib.html#a8d852d131e200703af74f9e52aa1191b">More...</a><br /></td></tr>
 <tr class="separator:a8d852d131e200703af74f9e52aa1191b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad34bb8b8fd27b8f7e1d922817ecd3346"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_l_p_v_m_l_lib.html#ad34bb8b8fd27b8f7e1d922817ecd3346">LPVFeatureType</a> { <a class="el" href="namespace_l_p_v_m_l_lib.html#ad34bb8b8fd27b8f7e1d922817ecd3346a378e70edc15a2cadc5893386a0e13850">LPVFeatureReserved</a> = 0
+<tr class="memitem:ad34bb8b8fd27b8f7e1d922817ecd3346"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_l_p_v_m_l_lib.html#ad34bb8b8fd27b8f7e1d922817ecd3346">LPVFeatureType</a> { <br />
+&#160;&#160;<a class="el" href="namespace_l_p_v_m_l_lib.html#ad34bb8b8fd27b8f7e1d922817ecd3346a378e70edc15a2cadc5893386a0e13850">LPVFeatureReserved</a> = 0
 , <a class="el" href="namespace_l_p_v_m_l_lib.html#ad34bb8b8fd27b8f7e1d922817ecd3346a5fcb0eeda1e6440c6a47a98c0f4aeaaf">LPVFeatureORB</a> = 1
 , <a class="el" href="namespace_l_p_v_m_l_lib.html#ad34bb8b8fd27b8f7e1d922817ecd3346a8a080ceb60a4a240c87fd5023f17ad33">LPVFeatureHOG</a> = 2
 , <a class="el" href="namespace_l_p_v_m_l_lib.html#ad34bb8b8fd27b8f7e1d922817ecd3346a2ae7532ecf883c1f08802c1cc3ccf8f8">LPVFeatureAKAZE</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="namespace_l_p_v_m_l_lib.html#ad34bb8b8fd27b8f7e1d922817ecd3346a785a24e5501b95037e1caba2affeefcd">LPVFeaturePixelByPixel</a> = 4
+, <a class="el" href="namespace_l_p_v_m_l_lib.html#ad34bb8b8fd27b8f7e1d922817ecd3346a76a463c793d708686c335d6f97c9c087">LPVFeatureSIFT</a> = 5
+, <a class="el" href="namespace_l_p_v_m_l_lib.html#ad34bb8b8fd27b8f7e1d922817ecd3346a69072c0b12e412e046c4e05e2df2755c">LPVFeatureHaar</a> = 6
+, <a class="el" href="namespace_l_p_v_m_l_lib.html#ad34bb8b8fd27b8f7e1d922817ecd3346a2af863f46098d302e19c818a505a4394">LPVFeatureShape</a> = 7
+, <br />
+&#160;&#160;<a class="el" href="namespace_l_p_v_m_l_lib.html#ad34bb8b8fd27b8f7e1d922817ecd3346a5001a4441c4f0bb37e9d7c7202f2d2ec">LPVFeatureNewBrief</a> = 8
+, <a class="el" href="namespace_l_p_v_m_l_lib.html#ad34bb8b8fd27b8f7e1d922817ecd3346aa037d550b737cd93fe9e6d52d9b3ea0a">LPVFeatureGGCM</a> = 9
+, <a class="el" href="namespace_l_p_v_m_l_lib.html#ad34bb8b8fd27b8f7e1d922817ecd3346aa22b4131e629dddc78f86cffc6ade6ea">LPVFeatureIntegralHist</a> = 10
+, <a class="el" href="namespace_l_p_v_m_l_lib.html#ad34bb8b8fd27b8f7e1d922817ecd3346af539244bd38bb802b41b6f2e1b33a435">LPVFeatureMLP</a> = 11
+<br />
  }</td></tr>
 <tr class="memdesc:ad34bb8b8fd27b8f7e1d922817ecd3346"><td class="mdescLeft">&#160;</td><td class="mdescRight">This enumeration represents the type of feature extracted from the image.  <a href="namespace_l_p_v_m_l_lib.html#ad34bb8b8fd27b8f7e1d922817ecd3346">More...</a><br /></td></tr>
 <tr class="separator:ad34bb8b8fd27b8f7e1d922817ecd3346"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -161,17 +173,54 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:ab43bd2b09dbf583191edb1988e37df35"><td class="mdescLeft">&#160;</td><td class="mdescRight">This enumeration represents the weighting method for KNN model to voting the final result label from K neighbors.  <a href="namespace_l_p_v_m_l_lib.html#ab43bd2b09dbf583191edb1988e37df35">More...</a><br /></td></tr>
 <tr class="separator:ab43bd2b09dbf583191edb1988e37df35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29e060a4ae266d582101abd25d2ad91a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_l_p_v_m_l_lib.html#a29e060a4ae266d582101abd25d2ad91a">LPVModelType</a> { <a class="el" href="namespace_l_p_v_m_l_lib.html#a29e060a4ae266d582101abd25d2ad91aafc71bd7566b7fb9b554466b4b75c93a7">LPVModelReserved</a> = 0
+<tr class="memitem:a958d08c6428b00a75d085231348f81b5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_l_p_v_m_l_lib.html#a958d08c6428b00a75d085231348f81b5">LPVMLPActivationFunction</a> { <a class="el" href="namespace_l_p_v_m_l_lib.html#a958d08c6428b00a75d085231348f81b5a89f7ce53e41e9b0de23897ad0fde80f2">LPVMLPActivationSigmoidSym</a> = 1
+, <a class="el" href="namespace_l_p_v_m_l_lib.html#a958d08c6428b00a75d085231348f81b5a3ff097e6710971ba9b78e330d8b1dde2">LPVMLPActivationGaussian</a> = 2
+, <a class="el" href="namespace_l_p_v_m_l_lib.html#a958d08c6428b00a75d085231348f81b5abb3681a1db9dcb55707d77a64a9b3611">LPVMLPActivationReLU</a> = 3
+, <a class="el" href="namespace_l_p_v_m_l_lib.html#a958d08c6428b00a75d085231348f81b5a5a718cfebc10070fe2b2bdd794707640">LPVMLPActivationLeakyReLU</a> = 4
+ }</td></tr>
+<tr class="memdesc:a958d08c6428b00a75d085231348f81b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">This enumeration represents the activation function used in the MLP model.  <a href="namespace_l_p_v_m_l_lib.html#a958d08c6428b00a75d085231348f81b5">More...</a><br /></td></tr>
+<tr class="separator:a958d08c6428b00a75d085231348f81b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8c0aa40a19c386a61b6fd5c61b9b0ac"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_l_p_v_m_l_lib.html#ab8c0aa40a19c386a61b6fd5c61b9b0ac">LPVMLPTrainMethod</a> { <a class="el" href="namespace_l_p_v_m_l_lib.html#ab8c0aa40a19c386a61b6fd5c61b9b0aca729e3e07e73200260f3f157a318cc459">LPVMLPTrainMethodBackprop</a> = 0
+, <a class="el" href="namespace_l_p_v_m_l_lib.html#ab8c0aa40a19c386a61b6fd5c61b9b0aca0f2ecf517b88f9a5f7a489f795c6ccb7">LPVMLPTrainMethodRProp</a> = 1
+ }</td></tr>
+<tr class="memdesc:ab8c0aa40a19c386a61b6fd5c61b9b0ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">This enumeration represents the training method used in the MLP model.  <a href="namespace_l_p_v_m_l_lib.html#ab8c0aa40a19c386a61b6fd5c61b9b0ac">More...</a><br /></td></tr>
+<tr class="separator:ab8c0aa40a19c386a61b6fd5c61b9b0ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29e060a4ae266d582101abd25d2ad91a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_l_p_v_m_l_lib.html#a29e060a4ae266d582101abd25d2ad91a">LPVModelType</a> { <br />
+&#160;&#160;<a class="el" href="namespace_l_p_v_m_l_lib.html#a29e060a4ae266d582101abd25d2ad91aafc71bd7566b7fb9b554466b4b75c93a7">LPVModelReserved</a> = 0
 , <a class="el" href="namespace_l_p_v_m_l_lib.html#a29e060a4ae266d582101abd25d2ad91aa91986642c7b6b6260ec6d94f653af7b5">LPVModelKNN</a> = 1
 , <a class="el" href="namespace_l_p_v_m_l_lib.html#a29e060a4ae266d582101abd25d2ad91aaaff083369ea4f993777d4d87f4a4eb26">LPVModelSVM</a> = 2
+, <a class="el" href="namespace_l_p_v_m_l_lib.html#a29e060a4ae266d582101abd25d2ad91aa7f04fd5eada907c0a1c7205278b4fc7e">LPVModelRF</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="namespace_l_p_v_m_l_lib.html#a29e060a4ae266d582101abd25d2ad91aa724347d8b09467f7c708d894578206dd">LPVModelMLP</a> = 4
+<br />
  }</td></tr>
 <tr class="memdesc:a29e060a4ae266d582101abd25d2ad91a"><td class="mdescLeft">&#160;</td><td class="mdescRight">This enumeration represents the type of machine learning model.  <a href="namespace_l_p_v_m_l_lib.html#a29e060a4ae266d582101abd25d2ad91a">More...</a><br /></td></tr>
 <tr class="separator:a29e060a4ae266d582101abd25d2ad91a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4599190266e94a740de4acccde9b1ca"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_l_p_v_m_l_lib.html#ac4599190266e94a740de4acccde9b1ca">LPVPixelValueType</a> { <a class="el" href="namespace_l_p_v_m_l_lib.html#ac4599190266e94a740de4acccde9b1caaa1ccbcb586c2404fafd961fdb6e5abb6">LPVPixelValueGray</a> = 0
+, <a class="el" href="namespace_l_p_v_m_l_lib.html#ac4599190266e94a740de4acccde9b1caa9299b105bd659bd4d8f0232d39171831">LPVPixelValueGrayNorm</a> = 1
+, <a class="el" href="namespace_l_p_v_m_l_lib.html#ac4599190266e94a740de4acccde9b1caa04db8432548386fd64770470f19fcffd">LPVPixelValueBinary</a> = 2
+, <a class="el" href="namespace_l_p_v_m_l_lib.html#ac4599190266e94a740de4acccde9b1caa00310ccf22389424ae6d4e7f8f606d11">LPVPixelValueFraction</a> = 3
+ }</td></tr>
+<tr class="memdesc:ac4599190266e94a740de4acccde9b1ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">This enumeration represents the type of the pixel value used in the PixelByPixel feature.  <a href="namespace_l_p_v_m_l_lib.html#ac4599190266e94a740de4acccde9b1ca">More...</a><br /></td></tr>
+<tr class="separator:ac4599190266e94a740de4acccde9b1ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7eccb5b4f0998abd9b477d5ad9dbca4"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_l_p_v_m_l_lib.html#af7eccb5b4f0998abd9b477d5ad9dbca4">LPVProjectionType</a> { <a class="el" href="namespace_l_p_v_m_l_lib.html#af7eccb5b4f0998abd9b477d5ad9dbca4a00490236db8847cd643de26aa62761a4">LPVProjectionNone</a> = 0
+, <a class="el" href="namespace_l_p_v_m_l_lib.html#af7eccb5b4f0998abd9b477d5ad9dbca4a75f5142d47e06ce37874092aa50089d7">LPVProjectionHorizontal</a> = 1
+, <a class="el" href="namespace_l_p_v_m_l_lib.html#af7eccb5b4f0998abd9b477d5ad9dbca4aaa7de533b21886155f8bb28a5b19eae9">LPVProjectionVertical</a> = 2
+, <a class="el" href="namespace_l_p_v_m_l_lib.html#af7eccb5b4f0998abd9b477d5ad9dbca4ab3bf1c02ba6bedc49520b6805d801f10">LPVProjectionHorizontalAndVertical</a> = 3
+ }</td></tr>
+<tr class="memdesc:af7eccb5b4f0998abd9b477d5ad9dbca4"><td class="mdescLeft">&#160;</td><td class="mdescRight">This enumeration represents the type of the projection used in the PixelByPixel feature.  <a href="namespace_l_p_v_m_l_lib.html#af7eccb5b4f0998abd9b477d5ad9dbca4">More...</a><br /></td></tr>
+<tr class="separator:af7eccb5b4f0998abd9b477d5ad9dbca4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab81fed5ed40d5c69f497afd8e5b8f61c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_l_p_v_m_l_lib.html#ab81fed5ed40d5c69f497afd8e5b8f61c">LPVSampleType</a> { <a class="el" href="namespace_l_p_v_m_l_lib.html#ab81fed5ed40d5c69f497afd8e5b8f61ca128f6defc234fca34f6dcad9cdd6f785">LPVSampleTrain</a> = 1
 , <a class="el" href="namespace_l_p_v_m_l_lib.html#ab81fed5ed40d5c69f497afd8e5b8f61ca88e70a1e099e3a62ed5d10c755dd9cd0">LPVSampleTest</a> = 2
  }</td></tr>
 <tr class="memdesc:ab81fed5ed40d5c69f497afd8e5b8f61c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This enumeration represents the type of the sample instance.  <a href="namespace_l_p_v_m_l_lib.html#ab81fed5ed40d5c69f497afd8e5b8f61c">More...</a><br /></td></tr>
 <tr class="separator:ab81fed5ed40d5c69f497afd8e5b8f61c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af96fa2db057413c5a183e3fd4b39ae12"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_l_p_v_m_l_lib.html#af96fa2db057413c5a183e3fd4b39ae12">LPVShapeType</a> { <a class="el" href="namespace_l_p_v_m_l_lib.html#af96fa2db057413c5a183e3fd4b39ae12aad857c0b1a57f45991913cb00607f965">LPVShapeKPDistrib</a> = 0
+, <a class="el" href="namespace_l_p_v_m_l_lib.html#af96fa2db057413c5a183e3fd4b39ae12a8e981118cb701c9bbb8ee0879e26f67b">LPVShapeContext</a> = 1
+, <a class="el" href="namespace_l_p_v_m_l_lib.html#af96fa2db057413c5a183e3fd4b39ae12a9dc3182521d994c76b6fbc1cbd8e5cb6">LPVShapeBoth</a> = 2
+ }</td></tr>
+<tr class="memdesc:af96fa2db057413c5a183e3fd4b39ae12"><td class="mdescLeft">&#160;</td><td class="mdescRight">This enumeration represents the type of the shape feature.  <a href="namespace_l_p_v_m_l_lib.html#af96fa2db057413c5a183e3fd4b39ae12">More...</a><br /></td></tr>
+<tr class="separator:af96fa2db057413c5a183e3fd4b39ae12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d6a70c3d0397ec68b2468aca95a8e36"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_l_p_v_m_l_lib.html#a2d6a70c3d0397ec68b2468aca95a8e36">LPVSVMKernel</a> { <a class="el" href="namespace_l_p_v_m_l_lib.html#a2d6a70c3d0397ec68b2468aca95a8e36a18a00733e5c43707c831f33a3d77fee7">LPVSVMKernelLinear</a> = 0
 , <a class="el" href="namespace_l_p_v_m_l_lib.html#a2d6a70c3d0397ec68b2468aca95a8e36a322591f8728744748f5cc8b33b2d6f06">LPVSVMKernelPolynomial</a> = 1
 , <a class="el" href="namespace_l_p_v_m_l_lib.html#a2d6a70c3d0397ec68b2468aca95a8e36adf84c1e7c0e3376e5941676ef68fef2b">LPVSVMKernelRBF</a> = 2
@@ -240,11 +289,27 @@ Enumerations</h2></td></tr>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ad34bb8b8fd27b8f7e1d922817ecd3346a378e70edc15a2cadc5893386a0e13850"></a>LPVFeatureReserved&#160;</td><td class="fielddoc"><p>Not-initialized feature. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ad34bb8b8fd27b8f7e1d922817ecd3346a5fcb0eeda1e6440c6a47a98c0f4aeaaf"></a>LPVFeatureORB&#160;</td><td class="fielddoc"><p>ORB(Oriented FAST and Rotated BRIEF) feature. </p>
+<tr><td class="fieldname"><a id="ad34bb8b8fd27b8f7e1d922817ecd3346a5fcb0eeda1e6440c6a47a98c0f4aeaaf"></a>LPVFeatureORB&#160;</td><td class="fielddoc"><p>ORB(Oriented FAST and Rotated BRIEF) feature. Combines the FAST keypoint detector with the rotation-aware BRIEF descriptor, produces binary features that are fast to extract and match. Commonly used for real-time object detection, image matching and visual odometry. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ad34bb8b8fd27b8f7e1d922817ecd3346a8a080ceb60a4a240c87fd5023f17ad33"></a>LPVFeatureHOG&#160;</td><td class="fielddoc"><p>HOG(Histogram of Oriented Gradients) feature. </p>
+<tr><td class="fieldname"><a id="ad34bb8b8fd27b8f7e1d922817ecd3346a8a080ceb60a4a240c87fd5023f17ad33"></a>LPVFeatureHOG&#160;</td><td class="fielddoc"><p>HOG(Histogram of Oriented Gradients) feature. Builds the histogram of local gradient directions in cells, which is robust to illumination change. Commonly used for pedestrian detection and general object detection. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ad34bb8b8fd27b8f7e1d922817ecd3346a2ae7532ecf883c1f08802c1cc3ccf8f8"></a>LPVFeatureAKAZE&#160;</td><td class="fielddoc"><p>AKAZE(Accelerated-KAZE) feature. </p>
+<tr><td class="fieldname"><a id="ad34bb8b8fd27b8f7e1d922817ecd3346a2ae7532ecf883c1f08802c1cc3ccf8f8"></a>LPVFeatureAKAZE&#160;</td><td class="fielddoc"><p>AKAZE(Accelerated-KAZE) feature. Detects keypoints in the nonlinear scale space built with fast explicit diffusion, and is rotation invariant. Commonly used for feature matching, image stitching and 3D reconstruction. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad34bb8b8fd27b8f7e1d922817ecd3346a785a24e5501b95037e1caba2affeefcd"></a>LPVFeaturePixelByPixel&#160;</td><td class="fielddoc"><p>Pixel-by-pixel feature. Every pixel of the uniformed sample image is taken as one dimension of the feature vector, so the spatial gray information of the sample is fully kept. Commonly used for defect inspection and small-sample classification that rely on texture or gray details. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad34bb8b8fd27b8f7e1d922817ecd3346a76a463c793d708686c335d6f97c9c087"></a>LPVFeatureSIFT&#160;</td><td class="fielddoc"><p>SIFT(Scale-Invariant Feature Transform) feature. Detects keypoints across the scale space and describes them with local gradient statistics, invariant to scale, rotation and illumination change. Commonly used for image matching, stitching, recognition and 3D reconstruction. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad34bb8b8fd27b8f7e1d922817ecd3346a69072c0b12e412e046c4e05e2df2755c"></a>LPVFeatureHaar&#160;</td><td class="fielddoc"><p>Haarlike feature. Describes the local gray difference with rectangular Haar-like templates of various scales, which can be computed fast with the integral image. Commonly used for face detection and boosting-based object detection. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad34bb8b8fd27b8f7e1d922817ecd3346a2af863f46098d302e19c818a505a4394"></a>LPVFeatureShape&#160;</td><td class="fielddoc"><p>Shape feature. Describes the sample shape with the shape context and the distribution of keypoints, capturing both local and global geometry. Commonly used for shape matching and classification of irregular or hollow parts. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad34bb8b8fd27b8f7e1d922817ecd3346a5001a4441c4f0bb37e9d7c7202f2d2ec"></a>LPVFeatureNewBrief&#160;</td><td class="fielddoc"><p>NewBrief feature. A binary descriptor of local image patches based on intensity comparisons, fast to compute and to match with the Hamming distance. Commonly used for feature matching and image retrieval. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad34bb8b8fd27b8f7e1d922817ecd3346aa037d550b737cd93fe9e6d52d9b3ea0a"></a>LPVFeatureGGCM&#160;</td><td class="fielddoc"><p>GGCM(Gray-Gradient Co-occurrence Matrix) feature. Statistics of the co-occurrence of gray levels and gradient values, which reflects the texture property of the image. Commonly used for texture analysis and surface defect classification. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad34bb8b8fd27b8f7e1d922817ecd3346aa22b4131e629dddc78f86cffc6ade6ea"></a>LPVFeatureIntegralHist&#160;</td><td class="fielddoc"><p>IntegralHist(Integral Histogram) feature. Computes the histogram of any rectangular region in constant time from an integral histogram. Commonly used for region-based texture and color statistics in object detection. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad34bb8b8fd27b8f7e1d922817ecd3346af539244bd38bb802b41b6f2e1b33a435"></a>LPVFeatureMLP&#160;</td><td class="fielddoc"><p>MLP feature. The feature vector produced by an ANN(MLP) network, which maps the raw sample to a compact learned representation. Commonly used for classification with learned features. </p>
 </td></tr>
 </table>
 
@@ -333,6 +398,54 @@ Enumerations</h2></td></tr>
 
 </div>
 </div>
+<a id="a958d08c6428b00a75d085231348f81b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a958d08c6428b00a75d085231348f81b5">&#9670;&nbsp;</a></span>LPVMLPActivationFunction</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespace_l_p_v_m_l_lib.html#a958d08c6428b00a75d085231348f81b5">LPVMLPActivationFunction</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This enumeration represents the activation function used in the MLP model. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a958d08c6428b00a75d085231348f81b5a89f7ce53e41e9b0de23897ad0fde80f2"></a>LPVMLPActivationSigmoidSym&#160;</td><td class="fielddoc"><p>Symmetric sigmoid activation function </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a958d08c6428b00a75d085231348f81b5a3ff097e6710971ba9b78e330d8b1dde2"></a>LPVMLPActivationGaussian&#160;</td><td class="fielddoc"><p>Gaussian activation function </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a958d08c6428b00a75d085231348f81b5abb3681a1db9dcb55707d77a64a9b3611"></a>LPVMLPActivationReLU&#160;</td><td class="fielddoc"><p>ReLU(Rectified Linear Unit) activation function </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a958d08c6428b00a75d085231348f81b5a5a718cfebc10070fe2b2bdd794707640"></a>LPVMLPActivationLeakyReLU&#160;</td><td class="fielddoc"><p>LeakyReLU activation function </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ab8c0aa40a19c386a61b6fd5c61b9b0ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8c0aa40a19c386a61b6fd5c61b9b0ac">&#9670;&nbsp;</a></span>LPVMLPTrainMethod</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespace_l_p_v_m_l_lib.html#ab8c0aa40a19c386a61b6fd5c61b9b0ac">LPVMLPTrainMethod</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This enumeration represents the training method used in the MLP model. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ab8c0aa40a19c386a61b6fd5c61b9b0aca729e3e07e73200260f3f157a318cc459"></a>LPVMLPTrainMethodBackprop&#160;</td><td class="fielddoc"><p>The back-propagation algorithm </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ab8c0aa40a19c386a61b6fd5c61b9b0aca0f2ecf517b88f9a5f7a489f795c6ccb7"></a>LPVMLPTrainMethodRProp&#160;</td><td class="fielddoc"><p>The RProp(resilient back-propagation) algorithm </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <a id="a29e060a4ae266d582101abd25d2ad91a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a29e060a4ae266d582101abd25d2ad91a">&#9670;&nbsp;</a></span>LPVModelType</h2>
 
@@ -352,6 +465,63 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><a id="a29e060a4ae266d582101abd25d2ad91aa91986642c7b6b6260ec6d94f653af7b5"></a>LPVModelKNN&#160;</td><td class="fielddoc"><p>KNN(K-Nearest Neighbors) model. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a29e060a4ae266d582101abd25d2ad91aaaff083369ea4f993777d4d87f4a4eb26"></a>LPVModelSVM&#160;</td><td class="fielddoc"><p>SVM(Support Vector Machine) model. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a29e060a4ae266d582101abd25d2ad91aa7f04fd5eada907c0a1c7205278b4fc7e"></a>LPVModelRF&#160;</td><td class="fielddoc"><p>RF(Random Forest) model. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a29e060a4ae266d582101abd25d2ad91aa724347d8b09467f7c708d894578206dd"></a>LPVModelMLP&#160;</td><td class="fielddoc"><p>MLP(Multi-Layer Perceptron) model. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ac4599190266e94a740de4acccde9b1ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4599190266e94a740de4acccde9b1ca">&#9670;&nbsp;</a></span>LPVPixelValueType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespace_l_p_v_m_l_lib.html#ac4599190266e94a740de4acccde9b1ca">LPVPixelValueType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This enumeration represents the type of the pixel value used in the PixelByPixel feature. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ac4599190266e94a740de4acccde9b1caaa1ccbcb586c2404fafd961fdb6e5abb6"></a>LPVPixelValueGray&#160;</td><td class="fielddoc"><p>The gray value in <code>0 ~ 1</code> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac4599190266e94a740de4acccde9b1caa9299b105bd659bd4d8f0232d39171831"></a>LPVPixelValueGrayNorm&#160;</td><td class="fielddoc"><p>The gray value normalized with maximum scaling to <code>0 ~ 1</code> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac4599190266e94a740de4acccde9b1caa04db8432548386fd64770470f19fcffd"></a>LPVPixelValueBinary&#160;</td><td class="fielddoc"><p>The binary value after auto-thresholding, bigger pixels report 1, otherwise report 0.<br  />
+If a region is available, the region's mask is used as the source; if the region is using a soft mask, a floating value between <code>0 ~ 1</code> is reported. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac4599190266e94a740de4acccde9b1caa00310ccf22389424ae6d4e7f8f606d11"></a>LPVPixelValueFraction&#160;</td><td class="fielddoc"><p>The fraction of foreground pixels after auto-thresholding </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="af7eccb5b4f0998abd9b477d5ad9dbca4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7eccb5b4f0998abd9b477d5ad9dbca4">&#9670;&nbsp;</a></span>LPVProjectionType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespace_l_p_v_m_l_lib.html#af7eccb5b4f0998abd9b477d5ad9dbca4">LPVProjectionType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This enumeration represents the type of the projection used in the PixelByPixel feature. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="af7eccb5b4f0998abd9b477d5ad9dbca4a00490236db8847cd643de26aa62761a4"></a>LPVProjectionNone&#160;</td><td class="fielddoc"><p>No projection </p>
+</td></tr>
+<tr><td class="fieldname"><a id="af7eccb5b4f0998abd9b477d5ad9dbca4a75f5142d47e06ce37874092aa50089d7"></a>LPVProjectionHorizontal&#160;</td><td class="fielddoc"><p>Horizontal projection, report the average of each row </p>
+</td></tr>
+<tr><td class="fieldname"><a id="af7eccb5b4f0998abd9b477d5ad9dbca4aaa7de533b21886155f8bb28a5b19eae9"></a>LPVProjectionVertical&#160;</td><td class="fielddoc"><p>Vertical projection, report the average of each column </p>
+</td></tr>
+<tr><td class="fieldname"><a id="af7eccb5b4f0998abd9b477d5ad9dbca4ab3bf1c02ba6bedc49520b6805d801f10"></a>LPVProjectionHorizontalAndVertical&#160;</td><td class="fielddoc"><p>Horizontal and vertical projection, report the average of each row and column </p>
 </td></tr>
 </table>
 
@@ -374,6 +544,30 @@ Enumerations</h2></td></tr>
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ab81fed5ed40d5c69f497afd8e5b8f61ca128f6defc234fca34f6dcad9cdd6f785"></a>LPVSampleTrain&#160;</td><td class="fielddoc"><p>The sample instance in train set which is used for training </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ab81fed5ed40d5c69f497afd8e5b8f61ca88e70a1e099e3a62ed5d10c755dd9cd0"></a>LPVSampleTest&#160;</td><td class="fielddoc"><p>The sample instance in test set which is used for testing </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="af96fa2db057413c5a183e3fd4b39ae12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af96fa2db057413c5a183e3fd4b39ae12">&#9670;&nbsp;</a></span>LPVShapeType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespace_l_p_v_m_l_lib.html#af96fa2db057413c5a183e3fd4b39ae12">LPVShapeType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This enumeration represents the type of the shape feature. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="af96fa2db057413c5a183e3fd4b39ae12aad857c0b1a57f45991913cb00607f965"></a>LPVShapeKPDistrib&#160;</td><td class="fielddoc"><p>Keypoint distribution based </p>
+</td></tr>
+<tr><td class="fieldname"><a id="af96fa2db057413c5a183e3fd4b39ae12a8e981118cb701c9bbb8ee0879e26f67b"></a>LPVShapeContext&#160;</td><td class="fielddoc"><p>Shape context based </p>
+</td></tr>
+<tr><td class="fieldname"><a id="af96fa2db057413c5a183e3fd4b39ae12a9dc3182521d994c76b6fbc1cbd8e5cb6"></a>LPVShapeBoth&#160;</td><td class="fielddoc"><p>Both keypoint distribution and shape context </p>
 </td></tr>
 </table>
 

@@ -181,10 +181,16 @@ Enumerations</h2></td></tr>
 <tr class="memitem:acd61cfd1b29e77ebda65b71db4d6e863"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_l_p_v_o_c_r_lib.html#acd61cfd1b29e77ebda65b71db4d6e863">LPVOCVFlags</a> { <br />
 &#160;&#160;<a class="el" href="namespace_l_p_v_o_c_r_lib.html#acd61cfd1b29e77ebda65b71db4d6e863aee3830c807431d0b0421f3b0c32bd141">LPVOCVShape</a> = 0x01
 , <a class="el" href="namespace_l_p_v_o_c_r_lib.html#acd61cfd1b29e77ebda65b71db4d6e863ae7995067786f727bb0b9a2d37b87e9e5">LPVOCVGrayscale</a> = 0x02
-, <a class="el" href="namespace_l_p_v_o_c_r_lib.html#acd61cfd1b29e77ebda65b71db4d6e863a37e27ae931dd44d5ea56858524772aa8">LPVOCVMissingPart</a> = 0x04
-, <a class="el" href="namespace_l_p_v_o_c_r_lib.html#acd61cfd1b29e77ebda65b71db4d6e863adfb30a85314189cd7e0e956d886b7d8d">LPVOCVGrayScaleMissingPart</a> = 0x10
+, <a class="el" href="namespace_l_p_v_o_c_r_lib.html#acd61cfd1b29e77ebda65b71db4d6e863ae1189a825c61cc91ddf2fe390ec3070c">LPVOCVUnderprinting</a> = 0x04
+, <a class="el" href="namespace_l_p_v_o_c_r_lib.html#acd61cfd1b29e77ebda65b71db4d6e863af2a12975cbb227604d97b0bc9393920b">LPVOCVOverprinting</a> = 0x08
 , <br />
-&#160;&#160;<a class="el" href="namespace_l_p_v_o_c_r_lib.html#acd61cfd1b29e77ebda65b71db4d6e863af33924691a8908de36f1159259c14518">LPVOCVAll</a> = 0xff
+&#160;&#160;<a class="el" href="namespace_l_p_v_o_c_r_lib.html#acd61cfd1b29e77ebda65b71db4d6e863afe9d0ea1cd041076624aeb1321cc944f">LPVOCVGrayScaleUnderprinting</a> = 0x10
+, <a class="el" href="namespace_l_p_v_o_c_r_lib.html#acd61cfd1b29e77ebda65b71db4d6e863aea711242de89570efe3b71171c644cd0">LPVOCVGrayScaleOverprinting</a> = 0x20
+, <a class="el" href="namespace_l_p_v_o_c_r_lib.html#acd61cfd1b29e77ebda65b71db4d6e863a99b530efffd49ddada8200c200add2f6">LPVOCVBlockDifference</a> = 0x40
+, <a class="el" href="namespace_l_p_v_o_c_r_lib.html#acd61cfd1b29e77ebda65b71db4d6e863af33924691a8908de36f1159259c14518">LPVOCVAll</a> = 0xff
+, <br />
+&#160;&#160;<a class="el" href="namespace_l_p_v_o_c_r_lib.html#acd61cfd1b29e77ebda65b71db4d6e863a37e27ae931dd44d5ea56858524772aa8">LPVOCVMissingPart</a> = LPVOCVUnderprinting
+, <a class="el" href="namespace_l_p_v_o_c_r_lib.html#acd61cfd1b29e77ebda65b71db4d6e863adfb30a85314189cd7e0e956d886b7d8d">LPVOCVGrayScaleMissingPart</a> = LPVOCVGrayScaleUnderprinting
 <br />
  }</td></tr>
 <tr class="memdesc:acd61cfd1b29e77ebda65b71db4d6e863"><td class="mdescLeft">&#160;</td><td class="mdescRight">This enumeration represents the verification flags for OCV.  <a href="namespace_l_p_v_o_c_r_lib.html#acd61cfd1b29e77ebda65b71db4d6e863">More...</a><br /></td></tr>
@@ -384,11 +390,21 @@ Enumerations</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="acd61cfd1b29e77ebda65b71db4d6e863ae7995067786f727bb0b9a2d37b87e9e5"></a>LPVOCVGrayscale&#160;</td><td class="fielddoc"><p>The difference between the grayscale of the character and the samples </p>
 </td></tr>
-<tr><td class="fieldname"><a id="acd61cfd1b29e77ebda65b71db4d6e863a37e27ae931dd44d5ea56858524772aa8"></a>LPVOCVMissingPart&#160;</td><td class="fielddoc"><p>The fraction of the missing part </p>
+<tr><td class="fieldname"><a id="acd61cfd1b29e77ebda65b71db4d6e863ae1189a825c61cc91ddf2fe390ec3070c"></a>LPVOCVUnderprinting&#160;</td><td class="fielddoc"><p>The fraction of the underprinting part </p>
 </td></tr>
-<tr><td class="fieldname"><a id="acd61cfd1b29e77ebda65b71db4d6e863adfb30a85314189cd7e0e956d886b7d8d"></a>LPVOCVGrayScaleMissingPart&#160;</td><td class="fielddoc"><p>Measure the difference of the character's missing part and the samples, based on the part's grayscale matching. </p>
+<tr><td class="fieldname"><a id="acd61cfd1b29e77ebda65b71db4d6e863af2a12975cbb227604d97b0bc9393920b"></a>LPVOCVOverprinting&#160;</td><td class="fielddoc"><p>The fraction of the overprinting part </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acd61cfd1b29e77ebda65b71db4d6e863afe9d0ea1cd041076624aeb1321cc944f"></a>LPVOCVGrayScaleUnderprinting&#160;</td><td class="fielddoc"><p>Measure the difference of the character's underprinting part and the samples, based on the part's grayscale matching. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acd61cfd1b29e77ebda65b71db4d6e863aea711242de89570efe3b71171c644cd0"></a>LPVOCVGrayScaleOverprinting&#160;</td><td class="fielddoc"><p>Measure the difference of the character's overprinting part and the samples, based on the part's grayscale matching. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acd61cfd1b29e77ebda65b71db4d6e863a99b530efffd49ddada8200c200add2f6"></a>LPVOCVBlockDifference&#160;</td><td class="fielddoc"><p>Difference of block number including foreground and background </p>
 </td></tr>
 <tr><td class="fieldname"><a id="acd61cfd1b29e77ebda65b71db4d6e863af33924691a8908de36f1159259c14518"></a>LPVOCVAll&#160;</td><td class="fielddoc"><p>Verify all parts </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acd61cfd1b29e77ebda65b71db4d6e863a37e27ae931dd44d5ea56858524772aa8"></a>LPVOCVMissingPart&#160;</td><td class="fielddoc"><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000018">Deprecated:</a></b></dt><dd>Use LPVOCVUnderprinting instead </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="acd61cfd1b29e77ebda65b71db4d6e863adfb30a85314189cd7e0e956d886b7d8d"></a>LPVOCVGrayScaleMissingPart&#160;</td><td class="fielddoc"><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000019">Deprecated:</a></b></dt><dd>Use LPVOCVGrayScaleUnderprinting instead </dd></dl>
 </td></tr>
 </table>
 

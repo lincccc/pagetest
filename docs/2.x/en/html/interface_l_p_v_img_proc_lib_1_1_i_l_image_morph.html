@@ -160,7 +160,7 @@ The name is drawn on canvas around the object if <a class="el" href="interface_l
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line">LImageMorph morphOp = <span class="keyword">new</span> LImageMorph();</div>
 <div class="line">morphOp.SetMorphShape(<a class="code" href="namespace_l_p_v_core_lib.html#a1b8145ed8b707b1177c0ab8c0bc170ab">LPVMorphShape</a>.LPVMorphRect, 3, 3);</div>
 <div class="line">morphOp.Close(img, resultImg);</div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html_a1b8145ed8b707b1177c0ab8c0bc170ab"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a1b8145ed8b707b1177c0ab8c0bc170ab">LPVCoreLib::LPVMorphShape</a></div><div class="ttdeci">LPVMorphShape</div><div class="ttdoc">This enumeration represents shape of the structuring element used in morphological transformations.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:1452</div></div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_a1b8145ed8b707b1177c0ab8c0bc170ab"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a1b8145ed8b707b1177c0ab8c0bc170ab">LPVCoreLib::LPVMorphShape</a></div><div class="ttdeci">LPVMorphShape</div><div class="ttdoc">This enumeration represents shape of the structuring element used in morphological transformations.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:1476</div></div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='com' style='display: none;'>COM</div><div class='toggleable_div label_com' style='display: none;'><div class="fragment"><div class="line">ILImageMorphPtr morphOp = LImageMorph::Create();</div>
 <div class="line"><span class="comment">// or, ILImageMorphPtr morphOp(__uuidof(LImageMorph)), for absence of built-in Create functions (before 2.2.0)</span></div>
 <div class="line">morphOp-&gt;SetMorphShape(LPVMorphRect, 3, 3);</div>
@@ -434,8 +434,8 @@ The name is drawn on canvas around the object if <a class="el" href="interface_l
 <p>Set the structuring element used in morphology operations of specified shape and size. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">shape</td><td>The structuring element's shape. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">kWidth</td><td>The width of the element size, should be an odd number, say, 3, 5, 7, etc. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">kHeight</td><td>The height of the element size, should be an odd number, say, 3, 5, 7, etc. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">kWidth</td><td>The width of the element size, should be an odd number, say, <code>3</code>, <code>5</code>, <code>7</code>, etc. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">kHeight</td><td>The height of the element size, should be an odd number, say, <code>3</code>, <code>5</code>, <code>7</code>, etc. </td></tr>
   </table>
   </dd>
 </dl>

@@ -157,7 +157,7 @@ Public 成员函数</h2></td></tr>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><p> Code snippets: snippets/ColorSpace.cs </p><div class="fragment"><div class="line">LImageConvert imgCvter = <span class="keyword">new</span> LImageConvert();</div>
 <div class="line">imgCvter.BGRToGray(colorImg, grayImg);</div>
 <div class="line">imgCvter.Convert(<a class="code" href="namespace_l_p_v_core_lib.html#abc1c78dbe5bbd9696e1af6618392a083">LPVColorSpace</a>.LPVColorSpaceBGR, <a class="code" href="namespace_l_p_v_core_lib.html#abc1c78dbe5bbd9696e1af6618392a083">LPVColorSpace</a>.LPVColorSpaceHSV, colorImg, hsvImg);</div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html_abc1c78dbe5bbd9696e1af6618392a083"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#abc1c78dbe5bbd9696e1af6618392a083">LPVCoreLib::LPVColorSpace</a></div><div class="ttdeci">LPVColorSpace</div><div class="ttdoc">该枚举表示图像的颜色空间，同时指定分量通道顺序。所有通道均归一化到 0 ~ 255 范围。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:1734</div></div>
+<div class="ttc" id="anamespace_l_p_v_core_lib_html_abc1c78dbe5bbd9696e1af6618392a083"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#abc1c78dbe5bbd9696e1af6618392a083">LPVCoreLib::LPVColorSpace</a></div><div class="ttdeci">LPVColorSpace</div><div class="ttdoc">该枚举表示图像的颜色空间，同时指定分量通道顺序。所有通道均归一化到 0 ~ 255 范围。</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:1758</div></div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='com' style='display: none;'>COM</div><div class='toggleable_div label_com' style='display: none;'> <div class="fragment"><div class="line">ILImageConvertPtr imgCvter = LImageConvert::Create();</div>
 <div class="line"><span class="comment">// or, ILImageConvertPtr imgCvter(__uuidof(LImageConvert)), for absence of built-in Create functions (before 2.2.0)</span></div>
 <div class="line">imgCvter-&gt;BGRToGray(colorImg, grayImg);</div>
@@ -213,9 +213,9 @@ Public 成员函数</h2></td></tr>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">bgrImg</td><td><img src="color_bgr.png" alt="" class="inline" title="彩色图像"/> <img src="bit8.png" alt="" class="inline" title="无符号 8 位整型"/> 输入的 BGR 彩色图像 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">w0</td><td>第一个（蓝色）通道的权重，取值范围在 -255 ~ 255 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">w1</td><td>第二个（绿色）通道的权重，取值范围在 -255 ~ 255 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">w2</td><td>第三个（红色）通道的权重，取值范围在 -255 ~ 255 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">w0</td><td>第一个（蓝色）通道的权重，取值范围在 <code>-255 ~ 255</code> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">w1</td><td>第二个（绿色）通道的权重，取值范围在 <code>-255 ~ 255</code> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">w2</td><td>第三个（红色）通道的权重，取值范围在 <code>-255 ~ 255</code> </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">grayImg</td><td><img src="color_gray.png" alt="" class="inline" title="灰度图像"/> <img src="bit8.png" alt="" class="inline" title="无符号 8 位整型"/> 返回灰度图像，尺寸与输入的彩色图像一致。 </td></tr>
   </table>
   </dd>
@@ -352,10 +352,10 @@ Public 成员函数</h2></td></tr>
 <p>对输入图像应用颜色映射表，生成一张伪彩图，通常用于进行数据可视化 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>输入的图像 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">cmap</td><td>指定要应用的颜色映射表，查阅 LPVColorMap </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cmap</td><td>指定要应用的颜色映射表，查看 LPVColorMap </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">bgrImg</td><td><img src="color_bgr.png" alt="" class="inline" title="彩色图像"/> <img src="bit8.png" alt="" class="inline" title="无符号 8 位整型"/> 返回彩色图像 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">inv</td><td>是否使用反向的颜色映射表。默认为否。 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">normalize</td><td>是否对输入图像进行归一化，用于将颜色映射集中到感兴趣的数值区域 minValue ~ maxValue 。默认为否。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">normalize</td><td>是否对输入图像进行归一化，用于将颜色映射集中到感兴趣的数值区域 <code>minValue ~ maxValue</code> 。默认为否。 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">minValue,maxValue</td><td>指定用于归一化的感兴趣的数值范围。传入空范围 (0, 0) ，表示使用当前图像的最小值 </td></tr>
   </table>
   </dd>
@@ -433,10 +433,10 @@ Public 成员函数</h2></td></tr>
 <p>对输入图像应用多周期的颜色映射表，生成一张伪彩图，通常用于进行数据可视化 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>输入的图像 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">cmap</td><td>指定要应用的颜色映射表，查阅 LPVColorMap </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cmap</td><td>指定要应用的颜色映射表，查看 LPVColorMap </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">bgrImg</td><td><img src="color_bgr.png" alt="" class="inline" title="彩色图像"/> <img src="bit8.png" alt="" class="inline" title="无符号 8 位整型"/> 返回彩色图像 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">inv</td><td>是否使用反向的颜色映射表。默认为否。 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">normalize</td><td>是否对输入图像进行归一化，用于将颜色映射集中到感兴趣的数值区域 minValue ~ maxValue 。默认为否。 可在调用该函数前自行归一化输入图像，如调用 <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#adf660a10ca16161030619866f2b49e55">Normalize()</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#aa2263e543b518236ba5126bb4888e2b0">NormalizeMeanStdDev()</a> 等。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">normalize</td><td>是否对输入图像进行归一化，用于将颜色映射集中到感兴趣的数值区域 <code>minValue ~ maxValue</code> 。默认为否。 可在调用该函数前自行归一化输入图像，如调用 <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#adf660a10ca16161030619866f2b49e55">Normalize()</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_image_op.html#aa2263e543b518236ba5126bb4888e2b0">NormalizeMeanStdDev()</a> 等。 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">minValue,maxValue</td><td>指定用于归一化的感兴趣的数值范围。传入空范围 (0, 0) ，表示使用当前图像的最小值和最大值。 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">bandCount</td><td>颜色映射表的周期数，默认设置为 3 </td></tr>
   </table>
@@ -579,7 +579,7 @@ Public 成员函数</h2></td></tr>
 <p>转换 16 位图像到 8 位图像，从指定索引开始提取连续 8 位。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">img16Bit</td><td><img src="bit16.png" alt="" class="inline" title="无符号 16 位整型"/> 输入的 16 位图 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">fromNthBit</td><td>指定提取的开始索引，取值范围为 -7 ~ 15 以保证至少 1 位有效位 <table class="markdownTable">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fromNthBit</td><td>指定提取的开始索引，取值范围为 <code>-7 ~ 15</code> 以保证至少 1 位有效位 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">指定索引   </th><th class="markdownTableHeadNone">用途    </th></tr>
 <tr class="markdownTableRowOdd">
@@ -636,7 +636,7 @@ Public 成员函数</h2></td></tr>
 <p>转换 8 位图像到 16 位图像，将连续的 8 位数值设置到指定索引位置。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">img16Bit</td><td><img src="bit16.png" alt="" class="inline" title="无符号 16 位整型"/> 输入的 16 位图 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">fromNthBit</td><td>指定设置的开始索引，取值范围为 -7 ~ 15 以保证至少 1 位有效位 <table class="markdownTable">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fromNthBit</td><td>指定设置的开始索引，取值范围为 <code>-7 ~ 15</code> 以保证至少 1 位有效位 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">指定索引   </th><th class="markdownTableHeadNone">用途    </th></tr>
 <tr class="markdownTableRowOdd">
@@ -763,7 +763,7 @@ Public 成员函数</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>归一化输入图像（任意位深），输出一张 16 位图，拉伸指定最小最大值范围内的像素到 0 ~ 255 </p><dl class="params"><dt>参数</dt><dd>
+<p>归一化输入图像（任意位深），输出一张 16 位图，拉伸指定最小最大值范围内的像素到 <code>0 ~ 255</code> </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>输入的图像 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">minValue,maxValue</td><td>指定感兴趣的数值范围。传入空范围 (0, 0)，表示使用当前图像的最小值和最大值。 </td></tr>
@@ -813,7 +813,7 @@ Public 成员函数</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>归一化输入图像（任意位深），输出一张 8 位图，拉伸指定最小最大值范围内的像素到 0 ~ 255 </p><dl class="params"><dt>参数</dt><dd>
+<p>归一化输入图像（任意位深），输出一张 8 位图，拉伸指定最小最大值范围内的像素到 <code>0 ~ 255</code> </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td>输入的图像。对于彩色图像输入，输出彩色 8 位图，其每个通道分别独立进行归一化。 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">minValue,maxValue</td><td>指定感兴趣的数值范围。传入空范围 (0, 0) ，表示使用当前图像的最小值和最大值。 </td></tr>

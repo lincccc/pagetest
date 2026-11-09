@@ -125,10 +125,22 @@ $(function() {
  }</td></tr>
 <tr class="memdesc:a8d852d131e200703af74f9e52aa1191b"><td class="mdescLeft">&#160;</td><td class="mdescRight">该枚举用于表示电导系数类型，在 AKAZE 特征中使用。  <a href="namespace_l_p_v_m_l_lib.html#a8d852d131e200703af74f9e52aa1191b">更多...</a><br /></td></tr>
 <tr class="separator:a8d852d131e200703af74f9e52aa1191b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad34bb8b8fd27b8f7e1d922817ecd3346"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_l_p_v_m_l_lib.html#ad34bb8b8fd27b8f7e1d922817ecd3346">LPVFeatureType</a> { <a class="el" href="namespace_l_p_v_m_l_lib.html#ad34bb8b8fd27b8f7e1d922817ecd3346a378e70edc15a2cadc5893386a0e13850">LPVFeatureReserved</a> = 0
+<tr class="memitem:ad34bb8b8fd27b8f7e1d922817ecd3346"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_l_p_v_m_l_lib.html#ad34bb8b8fd27b8f7e1d922817ecd3346">LPVFeatureType</a> { <br />
+&#160;&#160;<a class="el" href="namespace_l_p_v_m_l_lib.html#ad34bb8b8fd27b8f7e1d922817ecd3346a378e70edc15a2cadc5893386a0e13850">LPVFeatureReserved</a> = 0
 , <a class="el" href="namespace_l_p_v_m_l_lib.html#ad34bb8b8fd27b8f7e1d922817ecd3346a5fcb0eeda1e6440c6a47a98c0f4aeaaf">LPVFeatureORB</a> = 1
 , <a class="el" href="namespace_l_p_v_m_l_lib.html#ad34bb8b8fd27b8f7e1d922817ecd3346a8a080ceb60a4a240c87fd5023f17ad33">LPVFeatureHOG</a> = 2
 , <a class="el" href="namespace_l_p_v_m_l_lib.html#ad34bb8b8fd27b8f7e1d922817ecd3346a2ae7532ecf883c1f08802c1cc3ccf8f8">LPVFeatureAKAZE</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="namespace_l_p_v_m_l_lib.html#ad34bb8b8fd27b8f7e1d922817ecd3346a785a24e5501b95037e1caba2affeefcd">LPVFeaturePixelByPixel</a> = 4
+, <a class="el" href="namespace_l_p_v_m_l_lib.html#ad34bb8b8fd27b8f7e1d922817ecd3346a76a463c793d708686c335d6f97c9c087">LPVFeatureSIFT</a> = 5
+, <a class="el" href="namespace_l_p_v_m_l_lib.html#ad34bb8b8fd27b8f7e1d922817ecd3346a69072c0b12e412e046c4e05e2df2755c">LPVFeatureHaar</a> = 6
+, <a class="el" href="namespace_l_p_v_m_l_lib.html#ad34bb8b8fd27b8f7e1d922817ecd3346a2af863f46098d302e19c818a505a4394">LPVFeatureShape</a> = 7
+, <br />
+&#160;&#160;<a class="el" href="namespace_l_p_v_m_l_lib.html#ad34bb8b8fd27b8f7e1d922817ecd3346a5001a4441c4f0bb37e9d7c7202f2d2ec">LPVFeatureNewBrief</a> = 8
+, <a class="el" href="namespace_l_p_v_m_l_lib.html#ad34bb8b8fd27b8f7e1d922817ecd3346aa037d550b737cd93fe9e6d52d9b3ea0a">LPVFeatureGGCM</a> = 9
+, <a class="el" href="namespace_l_p_v_m_l_lib.html#ad34bb8b8fd27b8f7e1d922817ecd3346aa22b4131e629dddc78f86cffc6ade6ea">LPVFeatureIntegralHist</a> = 10
+, <a class="el" href="namespace_l_p_v_m_l_lib.html#ad34bb8b8fd27b8f7e1d922817ecd3346af539244bd38bb802b41b6f2e1b33a435">LPVFeatureMLP</a> = 11
+<br />
  }</td></tr>
 <tr class="memdesc:ad34bb8b8fd27b8f7e1d922817ecd3346"><td class="mdescLeft">&#160;</td><td class="mdescRight">该枚举用于表示特征类型，通常为从图像提取的特征  <a href="namespace_l_p_v_m_l_lib.html#ad34bb8b8fd27b8f7e1d922817ecd3346">更多...</a><br /></td></tr>
 <tr class="separator:ad34bb8b8fd27b8f7e1d922817ecd3346"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -161,17 +173,54 @@ $(function() {
  }</td></tr>
 <tr class="memdesc:ab43bd2b09dbf583191edb1988e37df35"><td class="mdescLeft">&#160;</td><td class="mdescRight">该枚举用于表示 KNN 模型在 K 个最近邻中计算最终结果时使用的加权方式  <a href="namespace_l_p_v_m_l_lib.html#ab43bd2b09dbf583191edb1988e37df35">更多...</a><br /></td></tr>
 <tr class="separator:ab43bd2b09dbf583191edb1988e37df35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29e060a4ae266d582101abd25d2ad91a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_l_p_v_m_l_lib.html#a29e060a4ae266d582101abd25d2ad91a">LPVModelType</a> { <a class="el" href="namespace_l_p_v_m_l_lib.html#a29e060a4ae266d582101abd25d2ad91aafc71bd7566b7fb9b554466b4b75c93a7">LPVModelReserved</a> = 0
+<tr class="memitem:a958d08c6428b00a75d085231348f81b5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_l_p_v_m_l_lib.html#a958d08c6428b00a75d085231348f81b5">LPVMLPActivationFunction</a> { <a class="el" href="namespace_l_p_v_m_l_lib.html#a958d08c6428b00a75d085231348f81b5a89f7ce53e41e9b0de23897ad0fde80f2">LPVMLPActivationSigmoidSym</a> = 1
+, <a class="el" href="namespace_l_p_v_m_l_lib.html#a958d08c6428b00a75d085231348f81b5a3ff097e6710971ba9b78e330d8b1dde2">LPVMLPActivationGaussian</a> = 2
+, <a class="el" href="namespace_l_p_v_m_l_lib.html#a958d08c6428b00a75d085231348f81b5abb3681a1db9dcb55707d77a64a9b3611">LPVMLPActivationReLU</a> = 3
+, <a class="el" href="namespace_l_p_v_m_l_lib.html#a958d08c6428b00a75d085231348f81b5a5a718cfebc10070fe2b2bdd794707640">LPVMLPActivationLeakyReLU</a> = 4
+ }</td></tr>
+<tr class="memdesc:a958d08c6428b00a75d085231348f81b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">该枚举用于表示 MLP 模型中使用的激活函数  <a href="namespace_l_p_v_m_l_lib.html#a958d08c6428b00a75d085231348f81b5">更多...</a><br /></td></tr>
+<tr class="separator:a958d08c6428b00a75d085231348f81b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8c0aa40a19c386a61b6fd5c61b9b0ac"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_l_p_v_m_l_lib.html#ab8c0aa40a19c386a61b6fd5c61b9b0ac">LPVMLPTrainMethod</a> { <a class="el" href="namespace_l_p_v_m_l_lib.html#ab8c0aa40a19c386a61b6fd5c61b9b0aca729e3e07e73200260f3f157a318cc459">LPVMLPTrainMethodBackprop</a> = 0
+, <a class="el" href="namespace_l_p_v_m_l_lib.html#ab8c0aa40a19c386a61b6fd5c61b9b0aca0f2ecf517b88f9a5f7a489f795c6ccb7">LPVMLPTrainMethodRProp</a> = 1
+ }</td></tr>
+<tr class="memdesc:ab8c0aa40a19c386a61b6fd5c61b9b0ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">该枚举用于表示 MLP 模型使用的训练方法  <a href="namespace_l_p_v_m_l_lib.html#ab8c0aa40a19c386a61b6fd5c61b9b0ac">更多...</a><br /></td></tr>
+<tr class="separator:ab8c0aa40a19c386a61b6fd5c61b9b0ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29e060a4ae266d582101abd25d2ad91a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_l_p_v_m_l_lib.html#a29e060a4ae266d582101abd25d2ad91a">LPVModelType</a> { <br />
+&#160;&#160;<a class="el" href="namespace_l_p_v_m_l_lib.html#a29e060a4ae266d582101abd25d2ad91aafc71bd7566b7fb9b554466b4b75c93a7">LPVModelReserved</a> = 0
 , <a class="el" href="namespace_l_p_v_m_l_lib.html#a29e060a4ae266d582101abd25d2ad91aa91986642c7b6b6260ec6d94f653af7b5">LPVModelKNN</a> = 1
 , <a class="el" href="namespace_l_p_v_m_l_lib.html#a29e060a4ae266d582101abd25d2ad91aaaff083369ea4f993777d4d87f4a4eb26">LPVModelSVM</a> = 2
+, <a class="el" href="namespace_l_p_v_m_l_lib.html#a29e060a4ae266d582101abd25d2ad91aa7f04fd5eada907c0a1c7205278b4fc7e">LPVModelRF</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="namespace_l_p_v_m_l_lib.html#a29e060a4ae266d582101abd25d2ad91aa724347d8b09467f7c708d894578206dd">LPVModelMLP</a> = 4
+<br />
  }</td></tr>
 <tr class="memdesc:a29e060a4ae266d582101abd25d2ad91a"><td class="mdescLeft">&#160;</td><td class="mdescRight">该枚举用于表示机器学习模型类型  <a href="namespace_l_p_v_m_l_lib.html#a29e060a4ae266d582101abd25d2ad91a">更多...</a><br /></td></tr>
 <tr class="separator:a29e060a4ae266d582101abd25d2ad91a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4599190266e94a740de4acccde9b1ca"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_l_p_v_m_l_lib.html#ac4599190266e94a740de4acccde9b1ca">LPVPixelValueType</a> { <a class="el" href="namespace_l_p_v_m_l_lib.html#ac4599190266e94a740de4acccde9b1caaa1ccbcb586c2404fafd961fdb6e5abb6">LPVPixelValueGray</a> = 0
+, <a class="el" href="namespace_l_p_v_m_l_lib.html#ac4599190266e94a740de4acccde9b1caa9299b105bd659bd4d8f0232d39171831">LPVPixelValueGrayNorm</a> = 1
+, <a class="el" href="namespace_l_p_v_m_l_lib.html#ac4599190266e94a740de4acccde9b1caa04db8432548386fd64770470f19fcffd">LPVPixelValueBinary</a> = 2
+, <a class="el" href="namespace_l_p_v_m_l_lib.html#ac4599190266e94a740de4acccde9b1caa00310ccf22389424ae6d4e7f8f606d11">LPVPixelValueFraction</a> = 3
+ }</td></tr>
+<tr class="memdesc:ac4599190266e94a740de4acccde9b1ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">该枚举用于表示逐像素特征（PixelByPixel）中使用的像素值类型  <a href="namespace_l_p_v_m_l_lib.html#ac4599190266e94a740de4acccde9b1ca">更多...</a><br /></td></tr>
+<tr class="separator:ac4599190266e94a740de4acccde9b1ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7eccb5b4f0998abd9b477d5ad9dbca4"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_l_p_v_m_l_lib.html#af7eccb5b4f0998abd9b477d5ad9dbca4">LPVProjectionType</a> { <a class="el" href="namespace_l_p_v_m_l_lib.html#af7eccb5b4f0998abd9b477d5ad9dbca4a00490236db8847cd643de26aa62761a4">LPVProjectionNone</a> = 0
+, <a class="el" href="namespace_l_p_v_m_l_lib.html#af7eccb5b4f0998abd9b477d5ad9dbca4a75f5142d47e06ce37874092aa50089d7">LPVProjectionHorizontal</a> = 1
+, <a class="el" href="namespace_l_p_v_m_l_lib.html#af7eccb5b4f0998abd9b477d5ad9dbca4aaa7de533b21886155f8bb28a5b19eae9">LPVProjectionVertical</a> = 2
+, <a class="el" href="namespace_l_p_v_m_l_lib.html#af7eccb5b4f0998abd9b477d5ad9dbca4ab3bf1c02ba6bedc49520b6805d801f10">LPVProjectionHorizontalAndVertical</a> = 3
+ }</td></tr>
+<tr class="memdesc:af7eccb5b4f0998abd9b477d5ad9dbca4"><td class="mdescLeft">&#160;</td><td class="mdescRight">该枚举用于表示逐像素特征（PixelByPixel）中使用的投影方式  <a href="namespace_l_p_v_m_l_lib.html#af7eccb5b4f0998abd9b477d5ad9dbca4">更多...</a><br /></td></tr>
+<tr class="separator:af7eccb5b4f0998abd9b477d5ad9dbca4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab81fed5ed40d5c69f497afd8e5b8f61c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_l_p_v_m_l_lib.html#ab81fed5ed40d5c69f497afd8e5b8f61c">LPVSampleType</a> { <a class="el" href="namespace_l_p_v_m_l_lib.html#ab81fed5ed40d5c69f497afd8e5b8f61ca128f6defc234fca34f6dcad9cdd6f785">LPVSampleTrain</a> = 1
 , <a class="el" href="namespace_l_p_v_m_l_lib.html#ab81fed5ed40d5c69f497afd8e5b8f61ca88e70a1e099e3a62ed5d10c755dd9cd0">LPVSampleTest</a> = 2
  }</td></tr>
 <tr class="memdesc:ab81fed5ed40d5c69f497afd8e5b8f61c"><td class="mdescLeft">&#160;</td><td class="mdescRight">该枚举用于表示样本的类型  <a href="namespace_l_p_v_m_l_lib.html#ab81fed5ed40d5c69f497afd8e5b8f61c">更多...</a><br /></td></tr>
 <tr class="separator:ab81fed5ed40d5c69f497afd8e5b8f61c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af96fa2db057413c5a183e3fd4b39ae12"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_l_p_v_m_l_lib.html#af96fa2db057413c5a183e3fd4b39ae12">LPVShapeType</a> { <a class="el" href="namespace_l_p_v_m_l_lib.html#af96fa2db057413c5a183e3fd4b39ae12aad857c0b1a57f45991913cb00607f965">LPVShapeKPDistrib</a> = 0
+, <a class="el" href="namespace_l_p_v_m_l_lib.html#af96fa2db057413c5a183e3fd4b39ae12a8e981118cb701c9bbb8ee0879e26f67b">LPVShapeContext</a> = 1
+, <a class="el" href="namespace_l_p_v_m_l_lib.html#af96fa2db057413c5a183e3fd4b39ae12a9dc3182521d994c76b6fbc1cbd8e5cb6">LPVShapeBoth</a> = 2
+ }</td></tr>
+<tr class="memdesc:af96fa2db057413c5a183e3fd4b39ae12"><td class="mdescLeft">&#160;</td><td class="mdescRight">该枚举用于表示形状特征的类型  <a href="namespace_l_p_v_m_l_lib.html#af96fa2db057413c5a183e3fd4b39ae12">更多...</a><br /></td></tr>
+<tr class="separator:af96fa2db057413c5a183e3fd4b39ae12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d6a70c3d0397ec68b2468aca95a8e36"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_l_p_v_m_l_lib.html#a2d6a70c3d0397ec68b2468aca95a8e36">LPVSVMKernel</a> { <a class="el" href="namespace_l_p_v_m_l_lib.html#a2d6a70c3d0397ec68b2468aca95a8e36a18a00733e5c43707c831f33a3d77fee7">LPVSVMKernelLinear</a> = 0
 , <a class="el" href="namespace_l_p_v_m_l_lib.html#a2d6a70c3d0397ec68b2468aca95a8e36a322591f8728744748f5cc8b33b2d6f06">LPVSVMKernelPolynomial</a> = 1
 , <a class="el" href="namespace_l_p_v_m_l_lib.html#a2d6a70c3d0397ec68b2468aca95a8e36adf84c1e7c0e3376e5941676ef68fef2b">LPVSVMKernelRBF</a> = 2
@@ -240,11 +289,27 @@ $(function() {
 <table class="fieldtable">
 <tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="ad34bb8b8fd27b8f7e1d922817ecd3346a378e70edc15a2cadc5893386a0e13850"></a>LPVFeatureReserved&#160;</td><td class="fielddoc"><p>未初始化的特征 </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ad34bb8b8fd27b8f7e1d922817ecd3346a5fcb0eeda1e6440c6a47a98c0f4aeaaf"></a>LPVFeatureORB&#160;</td><td class="fielddoc"><p>ORB 特征（Oriented FAST and Rotated BRIEF） </p>
+<tr><td class="fieldname"><a id="ad34bb8b8fd27b8f7e1d922817ecd3346a5fcb0eeda1e6440c6a47a98c0f4aeaaf"></a>LPVFeatureORB&#160;</td><td class="fielddoc"><p>ORB 特征（Oriented FAST and Rotated BRIEF）。结合 FAST 关键点检测与带旋转的 BRIEF 描述子， 特征为二值且提取、匹配速度快。常用于实时目标检测、图像匹配和视觉里程计。 </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ad34bb8b8fd27b8f7e1d922817ecd3346a8a080ceb60a4a240c87fd5023f17ad33"></a>LPVFeatureHOG&#160;</td><td class="fielddoc"><p>HOG 特征（Histogram of Oriented Gradients） </p>
+<tr><td class="fieldname"><a id="ad34bb8b8fd27b8f7e1d922817ecd3346a8a080ceb60a4a240c87fd5023f17ad33"></a>LPVFeatureHOG&#160;</td><td class="fielddoc"><p>HOG 特征（Histogram of Oriented Gradients）。统计图像局部区域（Cell）内的梯度方向直方图， 对光照变化较鲁棒。常用于行人检测及通用目标检测。 </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ad34bb8b8fd27b8f7e1d922817ecd3346a2ae7532ecf883c1f08802c1cc3ccf8f8"></a>LPVFeatureAKAZE&#160;</td><td class="fielddoc"><p>AKAZE 特征（Accelerated-KAZE） </p>
+<tr><td class="fieldname"><a id="ad34bb8b8fd27b8f7e1d922817ecd3346a2ae7532ecf883c1f08802c1cc3ccf8f8"></a>LPVFeatureAKAZE&#160;</td><td class="fielddoc"><p>AKAZE 特征（Accelerated-KAZE）。基于快速显式扩散构建非线性尺度空间并检测关键点， 具有旋转不变性。常用于特征匹配、图像拼接和三维重建。 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad34bb8b8fd27b8f7e1d922817ecd3346a785a24e5501b95037e1caba2affeefcd"></a>LPVFeaturePixelByPixel&#160;</td><td class="fielddoc"><p>逐像素特征。将统一尺寸样本图像的每个像素值作为特征向量的一个维度， 完整保留样本的空间灰度信息。常用于依赖纹理或灰度细节的缺陷检测与小样本分类。 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad34bb8b8fd27b8f7e1d922817ecd3346a76a463c793d708686c335d6f97c9c087"></a>LPVFeatureSIFT&#160;</td><td class="fielddoc"><p>SIFT 特征（Scale-Invariant Feature Transform）。在多尺度空间检测关键点，并以局部梯度统计进行描述， 对尺度、旋转和光照变化具有不变性。常用于图像匹配、拼接、识别和三维重建。 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad34bb8b8fd27b8f7e1d922817ecd3346a69072c0b12e412e046c4e05e2df2755c"></a>LPVFeatureHaar&#160;</td><td class="fielddoc"><p>Haarlike 特征。以不同尺度的矩形模板描述局部灰度差异，可借助积分图快速计算。 常用于人脸检测及基于提升（Boosting）的目标检测。 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad34bb8b8fd27b8f7e1d922817ecd3346a2af863f46098d302e19c818a505a4394"></a>LPVFeatureShape&#160;</td><td class="fielddoc"><p>形状特征。通过形状上下文（Shape Context）和关键点分布描述样本形状，兼顾局部与整体几何信息。 常用于不规则或带孔工件的形状匹配与分类。 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad34bb8b8fd27b8f7e1d922817ecd3346a5001a4441c4f0bb37e9d7c7202f2d2ec"></a>LPVFeatureNewBrief&#160;</td><td class="fielddoc"><p>NewBrief 特征。基于像素强度比较的局部图像块二值描述子，计算和以汉明距离匹配的速度都快。 常用于特征匹配和图像检索。 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad34bb8b8fd27b8f7e1d922817ecd3346aa037d550b737cd93fe9e6d52d9b3ea0a"></a>LPVFeatureGGCM&#160;</td><td class="fielddoc"><p>GGCM 特征（灰度-梯度共生矩阵）。统计图像灰度与梯度值的共生关系，反映图像的纹理特性。 常用于纹理分析及表面缺陷分类。 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad34bb8b8fd27b8f7e1d922817ecd3346aa22b4131e629dddc78f86cffc6ade6ea"></a>LPVFeatureIntegralHist&#160;</td><td class="fielddoc"><p>IntegralHist 特征（积分直方图）。基于积分直方图在常数时间内统计任意矩形区域的直方图特征。 常用于目标检测中基于区域的纹理与颜色统计。 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad34bb8b8fd27b8f7e1d922817ecd3346af539244bd38bb802b41b6f2e1b33a435"></a>LPVFeatureMLP&#160;</td><td class="fielddoc"><p>MLP 特征。由 ANN（MLP）网络产生的特征向量，将原始样本映射为紧凑的学习表示。 常用于基于学习特征的分类任务。 </p>
 </td></tr>
 </table>
 
@@ -333,6 +398,54 @@ $(function() {
 
 </div>
 </div>
+<a id="a958d08c6428b00a75d085231348f81b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a958d08c6428b00a75d085231348f81b5">&#9670;&nbsp;</a></span>LPVMLPActivationFunction</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespace_l_p_v_m_l_lib.html#a958d08c6428b00a75d085231348f81b5">LPVMLPActivationFunction</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>该枚举用于表示 MLP 模型中使用的激活函数 </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a958d08c6428b00a75d085231348f81b5a89f7ce53e41e9b0de23897ad0fde80f2"></a>LPVMLPActivationSigmoidSym&#160;</td><td class="fielddoc"><p>对称 Sigmoid 激活函数 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a958d08c6428b00a75d085231348f81b5a3ff097e6710971ba9b78e330d8b1dde2"></a>LPVMLPActivationGaussian&#160;</td><td class="fielddoc"><p>高斯（Gaussian）激活函数 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a958d08c6428b00a75d085231348f81b5abb3681a1db9dcb55707d77a64a9b3611"></a>LPVMLPActivationReLU&#160;</td><td class="fielddoc"><p>ReLU（Rectified Linear Unit）激活函数 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a958d08c6428b00a75d085231348f81b5a5a718cfebc10070fe2b2bdd794707640"></a>LPVMLPActivationLeakyReLU&#160;</td><td class="fielddoc"><p>LeakyReLU 激活函数 </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ab8c0aa40a19c386a61b6fd5c61b9b0ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8c0aa40a19c386a61b6fd5c61b9b0ac">&#9670;&nbsp;</a></span>LPVMLPTrainMethod</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespace_l_p_v_m_l_lib.html#ab8c0aa40a19c386a61b6fd5c61b9b0ac">LPVMLPTrainMethod</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>该枚举用于表示 MLP 模型使用的训练方法 </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="ab8c0aa40a19c386a61b6fd5c61b9b0aca729e3e07e73200260f3f157a318cc459"></a>LPVMLPTrainMethodBackprop&#160;</td><td class="fielddoc"><p>反向传播算法（Back-Propagation） </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ab8c0aa40a19c386a61b6fd5c61b9b0aca0f2ecf517b88f9a5f7a489f795c6ccb7"></a>LPVMLPTrainMethodRProp&#160;</td><td class="fielddoc"><p>RProp 算法（弹性反向传播，resilient back-propagation） </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <a id="a29e060a4ae266d582101abd25d2ad91a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a29e060a4ae266d582101abd25d2ad91a">&#9670;&nbsp;</a></span>LPVModelType</h2>
 
@@ -352,6 +465,63 @@ $(function() {
 <tr><td class="fieldname"><a id="a29e060a4ae266d582101abd25d2ad91aa91986642c7b6b6260ec6d94f653af7b5"></a>LPVModelKNN&#160;</td><td class="fielddoc"><p>KNN 模型（K-Nearest Neighbors） </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a29e060a4ae266d582101abd25d2ad91aaaff083369ea4f993777d4d87f4a4eb26"></a>LPVModelSVM&#160;</td><td class="fielddoc"><p>SVM 模型（支持向量机） </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a29e060a4ae266d582101abd25d2ad91aa7f04fd5eada907c0a1c7205278b4fc7e"></a>LPVModelRF&#160;</td><td class="fielddoc"><p>RF 模型（随机森林） </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a29e060a4ae266d582101abd25d2ad91aa724347d8b09467f7c708d894578206dd"></a>LPVModelMLP&#160;</td><td class="fielddoc"><p>MLP 模型（多层感知机） </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ac4599190266e94a740de4acccde9b1ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4599190266e94a740de4acccde9b1ca">&#9670;&nbsp;</a></span>LPVPixelValueType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespace_l_p_v_m_l_lib.html#ac4599190266e94a740de4acccde9b1ca">LPVPixelValueType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>该枚举用于表示逐像素特征（PixelByPixel）中使用的像素值类型 </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="ac4599190266e94a740de4acccde9b1caaa1ccbcb586c2404fafd961fdb6e5abb6"></a>LPVPixelValueGray&#160;</td><td class="fielddoc"><p>灰度值，范围 <code>0 ~ 1</code> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac4599190266e94a740de4acccde9b1caa9299b105bd659bd4d8f0232d39171831"></a>LPVPixelValueGrayNorm&#160;</td><td class="fielddoc"><p>灰度值，按最大值归一化到 <code>0 ~ 1</code> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac4599190266e94a740de4acccde9b1caa04db8432548386fd64770470f19fcffd"></a>LPVPixelValueBinary&#160;</td><td class="fielddoc"><p>自动阈值分割后的二值，像素值较大时取 1，否则取 0。<br  />
+若存在区域，将使用区域掩码作为来源；若区域使用软掩码，则输出 <code>0 ~ 1</code> 之间的浮点值。 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac4599190266e94a740de4acccde9b1caa00310ccf22389424ae6d4e7f8f606d11"></a>LPVPixelValueFraction&#160;</td><td class="fielddoc"><p>自动阈值分割后前景像素所占的比例 </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="af7eccb5b4f0998abd9b477d5ad9dbca4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7eccb5b4f0998abd9b477d5ad9dbca4">&#9670;&nbsp;</a></span>LPVProjectionType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespace_l_p_v_m_l_lib.html#af7eccb5b4f0998abd9b477d5ad9dbca4">LPVProjectionType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>该枚举用于表示逐像素特征（PixelByPixel）中使用的投影方式 </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="af7eccb5b4f0998abd9b477d5ad9dbca4a00490236db8847cd643de26aa62761a4"></a>LPVProjectionNone&#160;</td><td class="fielddoc"><p>无投影 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="af7eccb5b4f0998abd9b477d5ad9dbca4a75f5142d47e06ce37874092aa50089d7"></a>LPVProjectionHorizontal&#160;</td><td class="fielddoc"><p>水平投影，输出每一行的均值 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="af7eccb5b4f0998abd9b477d5ad9dbca4aaa7de533b21886155f8bb28a5b19eae9"></a>LPVProjectionVertical&#160;</td><td class="fielddoc"><p>垂直投影，输出每一列的均值 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="af7eccb5b4f0998abd9b477d5ad9dbca4ab3bf1c02ba6bedc49520b6805d801f10"></a>LPVProjectionHorizontalAndVertical&#160;</td><td class="fielddoc"><p>水平及垂直投影，输出每一行和每一列的均值 </p>
 </td></tr>
 </table>
 
@@ -374,6 +544,30 @@ $(function() {
 <tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="ab81fed5ed40d5c69f497afd8e5b8f61ca128f6defc234fca34f6dcad9cdd6f785"></a>LPVSampleTrain&#160;</td><td class="fielddoc"><p>样本属于训练集，用于模型训练 </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ab81fed5ed40d5c69f497afd8e5b8f61ca88e70a1e099e3a62ed5d10c755dd9cd0"></a>LPVSampleTest&#160;</td><td class="fielddoc"><p>样本属于测试集，用于模型测试 </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="af96fa2db057413c5a183e3fd4b39ae12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af96fa2db057413c5a183e3fd4b39ae12">&#9670;&nbsp;</a></span>LPVShapeType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespace_l_p_v_m_l_lib.html#af96fa2db057413c5a183e3fd4b39ae12">LPVShapeType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>该枚举用于表示形状特征的类型 </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="af96fa2db057413c5a183e3fd4b39ae12aad857c0b1a57f45991913cb00607f965"></a>LPVShapeKPDistrib&#160;</td><td class="fielddoc"><p>基于关键点分布 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="af96fa2db057413c5a183e3fd4b39ae12a8e981118cb701c9bbb8ee0879e26f67b"></a>LPVShapeContext&#160;</td><td class="fielddoc"><p>基于形状上下文（Shape Context） </p>
+</td></tr>
+<tr><td class="fieldname"><a id="af96fa2db057413c5a183e3fd4b39ae12a9dc3182521d994c76b6fbc1cbd8e5cb6"></a>LPVShapeBoth&#160;</td><td class="fielddoc"><p>同时基于关键点分布和形状上下文 </p>
 </td></tr>
 </table>
 

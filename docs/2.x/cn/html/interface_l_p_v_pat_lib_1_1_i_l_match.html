@@ -145,7 +145,7 @@ Public 成员函数</h2></td></tr>
 属性</h2></td></tr>
 <tr class="memitem:a659ae867dc0562c44d5e7e23e83451d1"><td class="memItemLeft" align="right" valign="top"><a id="a659ae867dc0562c44d5e7e23e83451d1"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a659ae867dc0562c44d5e7e23e83451d1">AcceptScore</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a659ae867dc0562c44d5e7e23e83451d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">用于筛选匹配结果的最小匹配分数，取值在 1 ~ 100 的范围。分数越高表示匹配标准越严格。<br  />
+<tr class="memdesc:a659ae867dc0562c44d5e7e23e83451d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">用于筛选匹配结果的最小匹配分数，取值在 <code>1 ~ 100</code> 的范围。分数越高表示匹配标准越严格。<br  />
 匹配搜索过程并不会遍历所有候选位置，而是先基于候选位置与模板的近似相似度进行排序，然后依次优化其最终的匹配位置、角度和缩放比例等到亚像素精度。 当找到足够多的满足匹配分数的结果时，将停止搜索。 <br /></td></tr>
 <tr class="separator:a659ae867dc0562c44d5e7e23e83451d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9cc83b712da903422f34af1a4b2691dc"><td class="memItemLeft" align="right" valign="top"><a id="a9cc83b712da903422f34af1a4b2691dc"></a>
@@ -155,15 +155,15 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 <tr class="separator:a9cc83b712da903422f34af1a4b2691dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a84dfa91ece8aea697fa4606afa7ce3"><td class="memItemLeft" align="right" valign="top"><a id="a7a84dfa91ece8aea697fa4606afa7ce3"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a7a84dfa91ece8aea697fa4606afa7ce3">AngleBias</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a7a84dfa91ece8aea697fa4606afa7ce3"><td class="mdescLeft">&#160;</td><td class="mdescRight">角度偏移，取值在 -180 ~ 180 之间。默认设置为 0。 <br /></td></tr>
+<tr class="memdesc:a7a84dfa91ece8aea697fa4606afa7ce3"><td class="mdescLeft">&#160;</td><td class="mdescRight">角度偏移，取值在 <code>-180 ~ 180</code> 之间。默认设置为 <code>0</code>。 <br /></td></tr>
 <tr class="separator:a7a84dfa91ece8aea697fa4606afa7ce3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89c9e21a723b9b597dd9a0d6e603c268"><td class="memItemLeft" align="right" valign="top"><a id="a89c9e21a723b9b597dd9a0d6e603c268"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a89c9e21a723b9b597dd9a0d6e603c268">AngleTolerance</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a89c9e21a723b9b597dd9a0d6e603c268"><td class="mdescLeft">&#160;</td><td class="mdescRight">角度范围，取值在 0 ~ 180 之间。默认设置为 5。<br  />
+<tr class="memdesc:a89c9e21a723b9b597dd9a0d6e603c268"><td class="mdescLeft">&#160;</td><td class="mdescRight">角度范围，取值在 <code>0 ~ 180</code> 之间。默认设置为 <code>5</code>。<br  />
 匹配的角度搜索区间基于角度的偏移及范围生成为 \( AngleBias \pm AngleTolerance \) <br /></td></tr>
 <tr class="separator:a89c9e21a723b9b597dd9a0d6e603c268"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3566610c7064816188077fe128c506e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#ad3566610c7064816188077fe128c506e">DetailLevel</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:ad3566610c7064816188077fe128c506e"><td class="mdescLeft">&#160;</td><td class="mdescRight">模板细节程度，取值范围为 0 ~ 1，默认设置为 0.5。<br  />
+<tr class="memdesc:ad3566610c7064816188077fe128c506e"><td class="mdescLeft">&#160;</td><td class="mdescRight">模板细节程度，取值范围为 <code>0 ~ 1</code>，默认设置为 <code>0.5</code>。<br  />
 数值越高，保留的细节越多，同时也可能引入更多的噪声，并影响算法的整体性能。 设置或修改模板细节程度后，需<b>重新</b>调用 <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#aa2d7fce8c363465a0cbeb6a265fd36fb">Learn()</a> 训练模板，特征点将在新的训练过程中按照细节程度重新提取。  <a href="interface_l_p_v_pat_lib_1_1_i_l_match.html#ad3566610c7064816188077fe128c506e">更多...</a><br /></td></tr>
 <tr class="separator:ad3566610c7064816188077fe128c506e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb20124963364a91ff986cab7acaf962"><td class="memItemLeft" align="right" valign="top"><a id="acb20124963364a91ff986cab7acaf962"></a>
@@ -172,7 +172,7 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 <tr class="separator:acb20124963364a91ff986cab7acaf962"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8698837361cab3af9df6444df07cb5c9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a8698837361cab3af9df6444df07cb5c9">GrayValueWeight</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:a8698837361cab3af9df6444df07cb5c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">融合匹配权重（百分数），用于合并基于形状相似性的匹配分数和基于灰度特征（NCC）的匹配分数。<br  />
-默认设置为 0， 即灰度分数不参与匹配评价。最终匹配分数按照该公式计算: \( Score = Score_{shape} \times (1 - w) + Score_{gray} \times w \) .  <a href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a8698837361cab3af9df6444df07cb5c9">更多...</a><br /></td></tr>
+默认设置为 <code>0</code>， 即灰度分数不参与匹配评价。最终匹配分数按照该公式计算: \( Score = Score_{shape} \times (1 - w) + Score_{gray} \times w \) .  <a href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a8698837361cab3af9df6444df07cb5c9">更多...</a><br /></td></tr>
 <tr class="separator:a8698837361cab3af9df6444df07cb5c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acbddee29bf0271b7d05f0a5ae603c449"><td class="memItemLeft" align="right" valign="top"><a id="acbddee29bf0271b7d05f0a5ae603c449"></a>
 BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#acbddee29bf0271b7d05f0a5ae603c449">IgnoreMissing</a><code> [get, set]</code></td></tr>
@@ -199,23 +199,23 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 <tr class="separator:a334717a311b23b2bacfa54857539d302"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f94a6c350cbb94dd399d9bab8eedbac"><td class="memItemLeft" align="right" valign="top"><a id="a8f94a6c350cbb94dd399d9bab8eedbac"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a8f94a6c350cbb94dd399d9bab8eedbac">MissingTolerance</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a8f94a6c350cbb94dd399d9bab8eedbac"><td class="mdescLeft">&#160;</td><td class="mdescRight">匹配结果的最大缺失比例（百分比）。 取值范围在 0 ~ 100 之间，为百分数。默认设置为 50，表示最多可以接受 50% 的缺失比例。<br  />
-注意缺失比例检查是否启用由 <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#acbddee29bf0271b7d05f0a5ae603c449" title="缺失部分是否负面影响最终匹配结果。默认设置为 true，即计分时忽略缺失部分、且不启用缺失比例检查。">IgnoreMissing</a> 属性控制。当 <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#acbddee29bf0271b7d05f0a5ae603c449" title="缺失部分是否负面影响最终匹配结果。默认设置为 true，即计分时忽略缺失部分、且不启用缺失比例检查。">IgnoreMissing</a> 为 False 时，启用缺失比例检查。 <br /></td></tr>
+<tr class="memdesc:a8f94a6c350cbb94dd399d9bab8eedbac"><td class="mdescLeft">&#160;</td><td class="mdescRight">匹配结果的最大缺失比例（百分比）。 取值范围在 <code>0 ~ 100</code> 之间，为百分数。默认设置为 <code>50</code>，表示最多可以接受 50% 的缺失比例。<br  />
+注意缺失比例检查是否启用由 <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#acbddee29bf0271b7d05f0a5ae603c449" title="缺失部分是否负面影响最终匹配结果。默认设置为 true，即计分时忽略缺失部分、且不启用缺失比例检查。">IgnoreMissing</a> 属性控制。当 <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#acbddee29bf0271b7d05f0a5ae603c449" title="缺失部分是否负面影响最终匹配结果。默认设置为 true，即计分时忽略缺失部分、且不启用缺失比例检查。">IgnoreMissing</a> 为 <code>False</code> 时，启用缺失比例检查。 <br /></td></tr>
 <tr class="separator:a8f94a6c350cbb94dd399d9bab8eedbac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae33d61cde357b47b356c490d07347416"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#ae33d61cde357b47b356c490d07347416">NoiseThreshold</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:ae33d61cde357b47b356c490d07347416"><td class="mdescLeft">&#160;</td><td class="mdescRight">匹配时使用的对比度阈值，用于避免噪声像素参与匹配。取值范围为 0 ~ 100.  <a href="interface_l_p_v_pat_lib_1_1_i_l_match.html#ae33d61cde357b47b356c490d07347416">更多...</a><br /></td></tr>
+<tr class="memdesc:ae33d61cde357b47b356c490d07347416"><td class="mdescLeft">&#160;</td><td class="mdescRight">匹配时使用的对比度阈值，用于避免噪声像素参与匹配。取值范围为 <code>0 ~ 100</code>.  <a href="interface_l_p_v_pat_lib_1_1_i_l_match.html#ae33d61cde357b47b356c490d07347416">更多...</a><br /></td></tr>
 <tr class="separator:ae33d61cde357b47b356c490d07347416"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a565f9fc27fac6eb35a3a701be4c291fd"><td class="memItemLeft" align="right" valign="top"><a id="a565f9fc27fac6eb35a3a701be4c291fd"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a565f9fc27fac6eb35a3a701be4c291fd">Overlap</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a565f9fc27fac6eb35a3a701be4c291fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">匹配结果之间的最大重叠比例（百分比）。匹配结果中的缺失特征也计入重叠比例，视为与背景的重叠。 取值范围在 1 ~ 80 之间，为百分数。默认设置为 50，表示 50% 的重叠比例。推荐的取值在 30 ~ 70 附近。 <br /></td></tr>
+<tr class="memdesc:a565f9fc27fac6eb35a3a701be4c291fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">匹配结果之间的最大重叠比例（百分比）。匹配结果中的缺失特征也计入重叠比例，视为与背景的重叠。 取值范围在 <code>1 ~ 80</code> 之间，为百分数。默认设置为 <code>50</code>，表示 <code>50%</code> 的重叠比例。推荐的取值在 <code>30 ~ 70</code> 附近。 <br /></td></tr>
 <tr class="separator:a565f9fc27fac6eb35a3a701be4c291fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2225ed3ac6003d7115a9d538aafed356"><td class="memItemLeft" align="right" valign="top"><a id="a2225ed3ac6003d7115a9d538aafed356"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a2225ed3ac6003d7115a9d538aafed356">ScaleBias</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a2225ed3ac6003d7115a9d538aafed356"><td class="mdescLeft">&#160;</td><td class="mdescRight">尺寸缩放偏移，取值在 50 ~ 150 百分数。默认设置为 100。 <br /></td></tr>
+<tr class="memdesc:a2225ed3ac6003d7115a9d538aafed356"><td class="mdescLeft">&#160;</td><td class="mdescRight">尺寸缩放偏移，取值在 <code>50 ~ 150</code> 百分数。默认设置为 <code>100</code>。 <br /></td></tr>
 <tr class="separator:a2225ed3ac6003d7115a9d538aafed356"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ce2228fa3bc8c2d1ee84415c9cd31ef"><td class="memItemLeft" align="right" valign="top"><a id="a4ce2228fa3bc8c2d1ee84415c9cd31ef"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a4ce2228fa3bc8c2d1ee84415c9cd31ef">ScaleTolerance</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a4ce2228fa3bc8c2d1ee84415c9cd31ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">尺寸缩放范围，取值在 0 ~ 50 百分数。默认设置为 0。<br  />
+<tr class="memdesc:a4ce2228fa3bc8c2d1ee84415c9cd31ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">尺寸缩放范围，取值在 <code>0 ~ 50</code> 百分数。默认设置为 <code>0</code>。<br  />
 匹配的尺寸缩放搜索区间基于缩放的偏移和缩放范围生成为 \( ScaleBias \pm ScaleTolerance \) . <br /></td></tr>
 <tr class="separator:a4ce2228fa3bc8c2d1ee84415c9cd31ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7133b42ac0831a82f525fea9d2a9b0ff"><td class="memItemLeft" align="right" valign="top"><a id="a7133b42ac0831a82f525fea9d2a9b0ff"></a>
@@ -314,7 +314,7 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 </div><div class="memdoc">
 <p>获取当前配置的模板中心设置方式 </p><dl class="retval"><dt>返回值</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">centerMode</td><td>返回模板中心的设置方式，查看 LPVPatCenterMode. </td></tr>
+    <tr><td class="paramname">centerMode</td><td>返回模板中心的设置方式，查看 <a class="el" href="namespace_l_p_v_pat_lib.html#abd47a1f7a1a0eeeb888538e857dc5800">LPVPatCenterMode</a>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -476,7 +476,7 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 </div><div class="memdoc">
 <p>检查 <a class="el" href="class_l_p_v_pat_lib_1_1_l_match.html">LMatch</a> 对象是否已训练。 </p><dl class="retval"><dt>返回值</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">val</td><td>若已训练，返回 True，否则返回 False。 </td></tr>
+    <tr><td class="paramname">val</td><td>若已训练，返回 <code>True</code>，否则返回 <code>False</code>。 </td></tr>
   </table>
   </dd>
 </dl>
@@ -776,7 +776,7 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 <p>修改模板匹配结果中心的设置方式。默认设置为使用模板图像的中心作为匹配结果中心。<br  />
 匹配结果将基于配置方式输出不同的中心点坐标。如若设置匹配图像的左上角点作为中心，所有的匹配结果将总是输出相同的左上角位置作为中心。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">centerMode</td><td>匹配结果中心的设置方式，查看 LPVPatCenterMode. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">centerMode</td><td>匹配结果中心的设置方式，查看 <a class="el" href="namespace_l_p_v_pat_lib.html#abd47a1f7a1a0eeeb888538e857dc5800">LPVPatCenterMode</a>. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">patX</td><td>若使用自定义位置，输入该位置的 x 坐标 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">patY</td><td>若使用自定义位置，输入该位置的 y 坐标 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">patAngle</td><td>若使用自定义位置，输入指定的角度作为 0° </td></tr>
@@ -808,7 +808,7 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 </table>
 </div><div class="memdoc">
 
-<p>模板细节程度，取值范围为 0 ~ 1，默认设置为 0.5。<br  />
+<p>模板细节程度，取值范围为 <code>0 ~ 1</code>，默认设置为 <code>0.5</code>。<br  />
 数值越高，保留的细节越多，同时也可能引入更多的噪声，并影响算法的整体性能。 设置或修改模板细节程度后，需<b>重新</b>调用 <a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#aa2d7fce8c363465a0cbeb6a265fd36fb">Learn()</a> 训练模板，特征点将在新的训练过程中按照细节程度重新提取。 </p>
 <div class="image">
 <img src="pattern_detail.png" alt=""/>
@@ -838,7 +838,7 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 </div><div class="memdoc">
 
 <p>融合匹配权重（百分数），用于合并基于形状相似性的匹配分数和基于灰度特征（NCC）的匹配分数。<br  />
-默认设置为 0， 即灰度分数不参与匹配评价。最终匹配分数按照该公式计算: \( Score = Score_{shape} \times (1 - w) + Score_{gray} \times w \) . </p>
+默认设置为 <code>0</code>， 即灰度分数不参与匹配评价。最终匹配分数按照该公式计算: \( Score = Score_{shape} \times (1 - w) + Score_{gray} \times w \) . </p>
 <dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_pat_lib_1_1_i_l_match.html#a4550fa93e96c749783f26ffe37e62f8e" title="匹配方法，默认设置为 LPVPatMatchAuto">MatchMethod</a> </dd></dl>
 
 </div>
@@ -936,8 +936,8 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 </table>
 </div><div class="memdoc">
 
-<p>匹配时使用的对比度阈值，用于避免噪声像素参与匹配。取值范围为 0 ~ 100. </p>
-<p>默认设置为 0，这是一个基于模板图像的梯度分布训练获得的很低的噪声阈值，对于 8 位图像而言相当于 10 ~ 15 的灰阶差。 </p><dl class="section since"><dt>自从</dt><dd>2.16.0 </dd></dl>
+<p>匹配时使用的对比度阈值，用于避免噪声像素参与匹配。取值范围为 <code>0 ~ 100</code>. </p>
+<p>默认设置为 <code>0</code>，这是一个基于模板图像的梯度分布训练获得的很低的噪声阈值，对于 8 位图像而言相当于 <code>10 ~ 15</code> 的灰阶差。 </p><dl class="section since"><dt>自从</dt><dd>2.16.0 </dd></dl>
 
 </div>
 </div>

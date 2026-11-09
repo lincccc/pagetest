@@ -79,13 +79,14 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a>  </div>
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#properties">Properties</a>  </div>
   <div class="headertitle">
 <div class="title">ILFreqTransform Interface Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>This interface provide functionalities of image frequency transform such as FFT.  
+<p>This interface provide functionalities of image frequency transform such as FFT, and the analysis of the frequency domain image, such as magnitude, phase and phase correlation.  
  <a href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for ILFreqTransform:</div>
@@ -102,10 +103,22 @@ Inheritance diagram for ILFreqTransform:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a0c8d0faade270a959b4fd19ce5221c0d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html#a0c8d0faade270a959b4fd19ce5221c0d">FFT</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *freqImg)</td></tr>
 <tr class="separator:a0c8d0faade270a959b4fd19ce5221c0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4af1ea36d2c4916a2229cc3c4c8f118c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html#a4af1ea36d2c4916a2229cc3c4c8f118c">FFTByCol</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *freqImg)</td></tr>
+<tr class="separator:a4af1ea36d2c4916a2229cc3c4c8f118c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a003e117a6ab5e7741cb36a8454523582"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html#a003e117a6ab5e7741cb36a8454523582">FFTByColInv</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *freqImg, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img)</td></tr>
+<tr class="separator:a003e117a6ab5e7741cb36a8454523582"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8ca90992cd83b2d9b96e42e23a19611"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html#ad8ca90992cd83b2d9b96e42e23a19611">FFTByRow</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *freqImg)</td></tr>
+<tr class="separator:ad8ca90992cd83b2d9b96e42e23a19611"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13914e50f840bae42c77d4be5f0a96d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html#a13914e50f840bae42c77d4be5f0a96d8">FFTByRowInv</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *freqImg, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img)</td></tr>
+<tr class="separator:a13914e50f840bae42c77d4be5f0a96d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9287956bd7938a7153fe1e20859e6cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html#ac9287956bd7938a7153fe1e20859e6cd">FFTInv</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *freqImg, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img)</td></tr>
 <tr class="separator:ac9287956bd7938a7153fe1e20859e6cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2dad524d47b7711a99a923d5604a9f8c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html#a2dad524d47b7711a99a923d5604a9f8c">Magnitude</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *freqImg, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *magImg, BOOL doLn)</td></tr>
 <tr class="separator:a2dad524d47b7711a99a923d5604a9f8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24b33c0963bed064af6d920fbb1babb9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html#a24b33c0963bed064af6d920fbb1babb9">Phase</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *freqImg, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *phaseImg, BOOL inDegree)</td></tr>
+<tr class="separator:a24b33c0963bed064af6d920fbb1babb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7df5c7100a2fd68a19237c9a82946814"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html#a7df5c7100a2fd68a19237c9a82946814">PhaseCorrelation</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *freqImg1, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *freqImg2, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *result)</td></tr>
+<tr class="separator:a7df5c7100a2fd68a19237c9a82946814"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_interface_l_p_v_core_lib_1_1_i_l_object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_interface_l_p_v_core_lib_1_1_i_l_object')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_object.html">ILObject</a></td></tr>
 <tr class="memitem:aa7dcddf685e0ba4ddc2d84b0d191f3d7 inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_object"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_object.html">ILObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_object.html#aa7dcddf685e0ba4ddc2d84b0d191f3d7">Copy</a> ()</td></tr>
 <tr class="separator:aa7dcddf685e0ba4ddc2d84b0d191f3d7 inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -118,8 +131,17 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a73a489f4ba37f2dfee6500e8ff54d3c3 inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_object"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_object.html#a73a489f4ba37f2dfee6500e8ff54d3c3">Valid</a> ()</td></tr>
 <tr class="separator:a73a489f4ba37f2dfee6500e8ff54d3c3 inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+Properties</h2></td></tr>
+<tr class="memitem:a072db33e67dc1e9412812c058cb727bf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_img_proc_lib.html#abb4e5eb215b75f7bd434d92985044114">LPVDCTermMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html#a072db33e67dc1e9412812c058cb727bf">DCTerm</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a072db33e67dc1e9412812c058cb727bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">The layout of the DC component in the frequency image, see <a class="el" href="namespace_l_p_v_img_proc_lib.html#abb4e5eb215b75f7bd434d92985044114">LPVDCTermMode</a>. The default value is LPVFreqDCCenter. The same value must be used by the forward and the inverse transform, and by the <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_filter.html" title="This interface provide functionalities of filters in frequency domain.">ILFreqFilter</a> object which generates and applies a filter to the frequency image.  <a href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html#a072db33e67dc1e9412812c058cb727bf">More...</a><br /></td></tr>
+<tr class="separator:a072db33e67dc1e9412812c058cb727bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ec0926ef6d40ef5eaac80655b4e6ab6"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html#a3ec0926ef6d40ef5eaac80655b4e6ab6">ShapeFactor</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a3ec0926ef6d40ef5eaac80655b4e6ab6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The shape factor which affects the Kaiser window function, it's only used when <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html#ab14c6ced0d57e86305ff211a0cf50554" title="The window function applied to the input image before the forward transform, used to reduce the spect...">WindowFunction</a> is LPVWindowKaiser. A larger value suppresses the leakage more strongly, while a smaller value makes the frequency peak sharper. The default value is <code>0.5</code>, the valid range is <code>0 ~ 10</code>, set out of the range throws an exception.  <a href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html#a3ec0926ef6d40ef5eaac80655b4e6ab6">More...</a><br /></td></tr>
+<tr class="separator:a3ec0926ef6d40ef5eaac80655b4e6ab6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab14c6ced0d57e86305ff211a0cf50554"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_img_proc_lib.html#a617075093d8b687593d947f950e84f9f">LPVWindowFunction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html#ab14c6ced0d57e86305ff211a0cf50554">WindowFunction</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:ab14c6ced0d57e86305ff211a0cf50554"><td class="mdescLeft">&#160;</td><td class="mdescRight">The window function applied to the input image before the forward transform, used to reduce the spectral leakage. It only affects <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html#a0c8d0faade270a959b4fd19ce5221c0d">FFT()</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html#ad8ca90992cd83b2d9b96e42e23a19611">FFTByRow()</a> and <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html#a4af1ea36d2c4916a2229cc3c4c8f118c">FFTByCol()</a>, the inverse transforms never apply a window. The default value is LPVWindowNone, see also LPVWindowFunction.  <a href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html#ab14c6ced0d57e86305ff211a0cf50554">More...</a><br /></td></tr>
+<tr class="separator:ab14c6ced0d57e86305ff211a0cf50554"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header properties_interface_l_p_v_core_lib_1_1_i_l_object"><td colspan="2" onclick="javascript:toggleInherit('properties_interface_l_p_v_core_lib_1_1_i_l_object')"><img src="closed.png" alt="-"/>&#160;Properties inherited from <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_object.html">ILObject</a></td></tr>
 <tr class="memitem:ab8292bdf77c2bf89903956417791dbf5 inherit properties_interface_l_p_v_core_lib_1_1_i_l_object"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_l_string.html">LString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_object.html#ab8292bdf77c2bf89903956417791dbf5">Name</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:ab8292bdf77c2bf89903956417791dbf5 inherit properties_interface_l_p_v_core_lib_1_1_i_l_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of the object. By default, the object has no name.<br  />
@@ -128,39 +150,48 @@ The name is drawn on canvas around the object if <a class="el" href="interface_l
 <tr class="separator:ab8292bdf77c2bf89903956417791dbf5 inherit properties_interface_l_p_v_core_lib_1_1_i_l_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This interface provide functionalities of image frequency transform such as FFT. </p>
+<div class="textblock"><p>This interface provide functionalities of image frequency transform such as FFT, and the analysis of the frequency domain image, such as magnitude, phase and phase correlation. </p>
 <p>To use this interface, you should create a <a class="el" href="class_l_p_v_img_proc_lib_1_1_l_freq_transform.html">LFreqTransform</a> object.</p>
-<dl class="section since"><dt>Since</dt><dd>2.20.0</dd></dl>
+<p>The transform always yields a full-spectrum complex image, the layout of the spectrum is controlled by <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html#a072db33e67dc1e9412812c058cb727bf" title="The layout of the DC component in the frequency image, see LPVDCTermMode. The default value is LPVFre...">DCTerm</a>. A complex image has 2 channels, channel 0 is the real part and channel 1 is the imaginary part.</p>
+<p>The properties are the setup used by the forward transforms, they don't affect any method output guarantee. </p><dl class="section since"><dt>Since</dt><dd>2.20.0</dd></dl>
 <h3>Example Code </h3>
  <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><p> Code snippets: snippets/LineEnhance.cpp </p><div class="fragment"><div class="line">ILFreqTransformPtr freqTrans = LFreqTransform::Create();</div>
 <div class="line"><span class="comment">// compute the fast Fourier transform of the image</span></div>
-<div class="line">imgfreq-&gt;FFT(img, freqImg);</div>
+<div class="line">freqTrans-&gt;FFT(img, freqImg);</div>
 <div class="line"><span class="comment">// filter to select certain frequencies</span></div>
 <div class="line">ILFreqFilterPtr freqFilter = LFreqFilter::Create();</div>
-<div class="line">freqFilter-&gt;FilterType = <a class="code" href="namespace_l_p_v_core_lib.html#a90e412106ea66b97268c27757c8e0b67ab6c3ffbf3c49ce3f6c133b046e46eff3">LPVFreqFilterBandPassDirectional</a>;</div>
-<div class="line">freqFilter-&gt;Apply(freqImg, freqFiltered);</div>
+<div class="line">ILImagePtr filterImg = LImage::Create();</div>
+<div class="line">ILImagePtr filteredFreqImg = LImage::Create();</div>
+<div class="line">freqFilter-&gt;SetTemplate(freqImg-&gt;Width, freqImg-&gt;Height, <a class="code" href="namespace_l_p_v_img_proc_lib.html#abb4e5eb215b75f7bd434d92985044114aef7a4ed9e5323ec44ca1bc0baf4ea772">LPVFreqDCCenter</a>);</div>
+<div class="line">freqFilter-&gt;GenDirectionalBandpass(0.5, 1.0, 90, 2, filterImg, <span class="keyword">false</span>);</div>
+<div class="line">freqFilter-&gt;Apply(freqImg, filterImg, filteredFreqImg);</div>
 <div class="line"><span class="comment">// compute the inverse fast Fourier transform of the image</span></div>
-<div class="line">imgfreq-&gt;FFTInv(freqFiltered, cleanImg);</div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html_a90e412106ea66b97268c27757c8e0b67ab6c3ffbf3c49ce3f6c133b046e46eff3"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a90e412106ea66b97268c27757c8e0b67ab6c3ffbf3c49ce3f6c133b046e46eff3">LPVCoreLib::LPVFreqFilterBandPassDirectional</a></div><div class="ttdeci">@ LPVFreqFilterBandPassDirectional</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:2037</div></div>
-</div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><p> Code snippets: snippets/LineEnhance.cs </p><div class="fragment"><div class="line">LFreqTransformPtr freqTrans = <span class="keyword">new</span> LFreqTransform();</div>
+<div class="line">freqTrans-&gt;FFTInv(filteredFreqImg, cleanImg);</div>
+<div class="ttc" id="anamespace_l_p_v_img_proc_lib_html_abb4e5eb215b75f7bd434d92985044114aef7a4ed9e5323ec44ca1bc0baf4ea772"><div class="ttname"><a href="namespace_l_p_v_img_proc_lib.html#abb4e5eb215b75f7bd434d92985044114aef7a4ed9e5323ec44ca1bc0baf4ea772">LPVImgProcLib::LPVFreqDCCenter</a></div><div class="ttdeci">@ LPVFreqDCCenter</div><div class="ttdef"><b>Definition:</b> LPVImgProc.idl:196</div></div>
+</div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><p> Code snippets: snippets/LineEnhance.cs </p><div class="fragment"><div class="line">LFreqTransform freqTrans = <span class="keyword">new</span> LFreqTransform();</div>
 <div class="line"><span class="comment">// compute the fast Fourier transform of the image</span></div>
-<div class="line">imgfreq.FFT(img, freqImg);</div>
+<div class="line">freqTrans.FFT(img, freqImg);</div>
 <div class="line"><span class="comment">// filter to select certain frequencies</span></div>
 <div class="line">LFreqFilter freqFilter = <span class="keyword">new</span> LFreqFilter();</div>
-<div class="line">freqFilter.FilterType = <a class="code" href="namespace_l_p_v_core_lib.html#a90e412106ea66b97268c27757c8e0b67">LPVFreqFilterType</a>.LPVFreqFilterBandPassDirectional;</div>
-<div class="line">freqFilter.Apply(freqImg, freqFiltered);</div>
+<div class="line">LImage filterImg = <span class="keyword">new</span> LImage();</div>
+<div class="line">LImage filteredFreqImg = <span class="keyword">new</span> LImage();</div>
+<div class="line">freqFilter.SetTemplate(freqImg.Width, freqImg.Height, <a class="code" href="namespace_l_p_v_img_proc_lib.html#abb4e5eb215b75f7bd434d92985044114aef7a4ed9e5323ec44ca1bc0baf4ea772">LPVFreqDCCenter</a>);</div>
+<div class="line">freqFilter.GenDirectionalBandpass(0.5, 1.0, 90, 2, filterImg, <span class="keyword">false</span>);</div>
+<div class="line">freqFilter.Apply(freqImg, filterImg, filteredFreqImg);</div>
 <div class="line"><span class="comment">// compute the inverse fast Fourier transform of the image</span></div>
-<div class="line">imgfreq.FFTInv(freqFiltered, cleanImg);</div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html_a90e412106ea66b97268c27757c8e0b67"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a90e412106ea66b97268c27757c8e0b67">LPVCoreLib::LPVFreqFilterType</a></div><div class="ttdeci">LPVFreqFilterType</div><div class="ttdoc">This enumeration represents the frequency filter types.</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:2017</div></div>
+<div class="line">freqTrans.FFTInv(filteredFreqImg, cleanImg);</div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='com' style='display: none;'>COM</div><div class='toggleable_div label_com' style='display: none;'> <div class="fragment"><div class="line">ILFreqTransformPtr freqTrans = LFreqTransform::Create();</div>
 <div class="line"><span class="comment">// compute the fast Fourier transform of the image</span></div>
-<div class="line">imgfreq-&gt;FFT(img, freqImg);</div>
+<div class="line">freqTrans-&gt;FFT(img, freqImg);</div>
 <div class="line"><span class="comment">// filter to select certain frequencies</span></div>
 <div class="line">ILFreqFilterPtr freqFilter = LFreqFilter::Create();</div>
-<div class="line">freqFilter-&gt;FilterType = <a class="code" href="namespace_l_p_v_core_lib.html#a90e412106ea66b97268c27757c8e0b67ab6c3ffbf3c49ce3f6c133b046e46eff3">LPVFreqFilterBandPassDirectional</a>;</div>
-<div class="line">freqFilter-&gt;Apply(freqImg, freqFiltered);</div>
+<div class="line">ILImagePtr filterImg = LImage::Create();</div>
+<div class="line">ILImagePtr filteredFreqImg = LImage::Create();</div>
+<div class="line">freqFilter-&gt;SetTemplate(freqImg-&gt;Width, freqImg-&gt;Height, <a class="code" href="namespace_l_p_v_img_proc_lib.html#abb4e5eb215b75f7bd434d92985044114aef7a4ed9e5323ec44ca1bc0baf4ea772">LPVFreqDCCenter</a>);</div>
+<div class="line">freqFilter-&gt;GenDirectionalBandpass(0.5, 1.0, 90, 2, filterImg, <span class="keyword">false</span>);</div>
+<div class="line">freqFilter-&gt;Apply(freqImg, filterImg, filteredFreqImg);</div>
 <div class="line"><span class="comment">// compute the inverse fast Fourier transform of the image</span></div>
-<div class="line">imgfreq-&gt;FFTInv(freqFiltered, cleanImg);</div>
+<div class="line">freqTrans-&gt;FFTInv(filteredFreqImg, cleanImg);</div>
 </div><!-- fragment --> </div>  </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a0c8d0faade270a959b4fd19ce5221c0d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0c8d0faade270a959b4fd19ce5221c0d">&#9670;&nbsp;</a></span>FFT()</h2>
@@ -187,13 +218,162 @@ The name is drawn on canvas around the object if <a class="el" href="interface_l
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Calculates the Fourier transform of the input image, transforms it into the frequency domain, using fast Fourier transform (FFT) algorithm. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Calculates the Fourier transform of the input image, transforms it into the frequency domain, using fast Fourier transform (FFT) algorithm. The input image is converted to grayscale if it's a color image, and to 32-bit float before the transform. The <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html#ab14c6ced0d57e86305ff211a0cf50554" title="The window function applied to the input image before the forward transform, used to reduce the spect...">WindowFunction</a> is applied to the input image before the transform to reduce the spectral leakage. To restore the image, call <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html#ac9287956bd7938a7153fe1e20859e6cd">FFTInv()</a> with the same <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html#a072db33e67dc1e9412812c058cb727bf" title="The layout of the DC component in the frequency image, see LPVDCTermMode. The default value is LPVFre...">DCTerm</a> . </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_1chn.png" alt="" class="inline" title="Single channel image"/> The input image </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">freqImg</td><td><img src="color_complex.png" alt="" class="inline" title="Complex image"/> Return Fourier-transformed image </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">freqImg</td><td><img src="color_complex.png" alt="" class="inline" title="Complex image"/> Return Fourier-transformed image, the size is the same as the input image </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section since"><dt>Since</dt><dd>2.20.0 </dd></dl>
+
+</div>
+</div>
+<a id="a4af1ea36d2c4916a2229cc3c4c8f118c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4af1ea36d2c4916a2229cc3c4c8f118c">&#9670;&nbsp;</a></span>FFTByCol()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FFTByCol </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>img</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>freqImg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Calculates the Fourier transform independently for each column of the input image, aka. the one dimensional transform. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_1chn.png" alt="" class="inline" title="Single channel image"/> The input image </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">freqImg</td><td><img src="color_complex.png" alt="" class="inline" title="Complex image"/> Return the column-wise Fourier transform result, the size is the same as the input image </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>2.24.0 </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html#a003e117a6ab5e7741cb36a8454523582">FFTByColInv()</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html#ad8ca90992cd83b2d9b96e42e23a19611">FFTByRow()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a003e117a6ab5e7741cb36a8454523582"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a003e117a6ab5e7741cb36a8454523582">&#9670;&nbsp;</a></span>FFTByColInv()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FFTByColInv </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>freqImg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>img</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Calculates the inverse Fourier transform independently for each column of the input frequency image. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">freqImg</td><td><img src="color_complex.png" alt="" class="inline" title="Complex image"/> The input column-wise frequency image </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">img</td><td><img src="color_1chn.png" alt="" class="inline" title="Single channel image"/> <img src="float32.png" alt="" class="inline" title="32 bits single precision floating-point"/> Return the result image, the size is the same as the input image </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>2.24.0 </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html#a4af1ea36d2c4916a2229cc3c4c8f118c">FFTByCol()</a> </dd></dl>
+
+</div>
+</div>
+<a id="ad8ca90992cd83b2d9b96e42e23a19611"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8ca90992cd83b2d9b96e42e23a19611">&#9670;&nbsp;</a></span>FFTByRow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FFTByRow </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>img</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>freqImg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Calculates the Fourier transform independently for each row of the input image, aka. the one dimensional transform. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_1chn.png" alt="" class="inline" title="Single channel image"/> The input image </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">freqImg</td><td><img src="color_complex.png" alt="" class="inline" title="Complex image"/> Return the row-wise Fourier transform result, the size is the same as the input image </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>2.24.0 </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html#a13914e50f840bae42c77d4be5f0a96d8">FFTByRowInv()</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html#a4af1ea36d2c4916a2229cc3c4c8f118c">FFTByCol()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a13914e50f840bae42c77d4be5f0a96d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13914e50f840bae42c77d4be5f0a96d8">&#9670;&nbsp;</a></span>FFTByRowInv()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FFTByRowInv </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>freqImg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>img</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Calculates the inverse Fourier transform independently for each row of the input frequency image. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">freqImg</td><td><img src="color_complex.png" alt="" class="inline" title="Complex image"/> The input row-wise frequency image </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">img</td><td><img src="color_1chn.png" alt="" class="inline" title="Single channel image"/> <img src="float32.png" alt="" class="inline" title="32 bits single precision floating-point"/> Return the result image, the size is the same as the input image </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>2.24.0 </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html#ad8ca90992cd83b2d9b96e42e23a19611">FFTByRow()</a> </dd></dl>
 
 </div>
 </div>
@@ -222,13 +402,14 @@ The name is drawn on canvas around the object if <a class="el" href="interface_l
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Calculates the inverse Fourier transform of the input image, transforms the image back into the spatial domain. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Calculates the inverse Fourier transform of the input image, transforms the image back into the spatial domain. <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html#ab14c6ced0d57e86305ff211a0cf50554" title="The window function applied to the input image before the forward transform, used to reduce the spect...">WindowFunction</a> is not applied by the inverse transform. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">freqImg</td><td><img src="color_complex.png" alt="" class="inline" title="Complex image"/> The input image in the frequency domain </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">img</td><td><img src="color_1chn.png" alt="" class="inline" title="Single channel image"/> <img src="float32.png" alt="" class="inline" title="32 bits single precision floating-point"/> Return inverse-Fourier-transformed image. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">img</td><td><img src="color_1chn.png" alt="" class="inline" title="Single channel image"/> <img src="float32.png" alt="" class="inline" title="32 bits single precision floating-point"/> Return inverse-Fourier-transformed image, the size is the same as the frequency image </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section since"><dt>Since</dt><dd>2.20.0 </dd></dl>
 
 </div>
 </div>
@@ -264,15 +445,185 @@ The name is drawn on canvas around the object if <a class="el" href="interface_l
       </table>
 </div><div class="memdoc">
 <p>Calculates magnitude of the frequency domain image, the modulus of the frequencies, as: \( \sqrt{r^2 + i^2} \) . <br  />
-If <code>doLn</code> is set to True, then additionally, the natural logarithm is applied to the result, as: \( \ln{\sqrt{r^2 + i^2}} \) . <br  />
+If <code>doLn</code> is set to <code>True</code>, then additionally, the natural logarithm is applied to the result, as: \( \ln{\sqrt{r^2 + i^2}} \) . <br  />
 </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">freqImg</td><td><img src="color_complex.png" alt="" class="inline" title="Complex image"/> The input image in the frequency domain </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">magImg</td><td><img src="color_1chn.png" alt="" class="inline" title="Single channel image"/> <img src="float32.png" alt="" class="inline" title="32 bits single precision floating-point"/> Return the magnitude image. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">doLn</td><td>Whether the natural logarithm is applied. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">magImg</td><td><img src="color_1chn.png" alt="" class="inline" title="Single channel image"/> <img src="float32.png" alt="" class="inline" title="32 bits single precision floating-point"/> Return the magnitude image </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">doLn</td><td>Whether the natural logarithm is applied, default to <code>False</code>. </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section since"><dt>Since</dt><dd>2.20.0 </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html#a24b33c0963bed064af6d920fbb1babb9">Phase()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a24b33c0963bed064af6d920fbb1babb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24b33c0963bed064af6d920fbb1babb9">&#9670;&nbsp;</a></span>Phase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Phase </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>freqImg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>phaseImg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BOOL&#160;</td>
+          <td class="paramname"><em>inDegree</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Calculates the phase of the frequency domain image, the argument of the complex pixel, as: \( \operatorname{atan2}(i, r) \) . <br  />
+</p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">freqImg</td><td><img src="color_complex.png" alt="" class="inline" title="Complex image"/> The input image in the frequency domain </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">phaseImg</td><td><img src="color_1chn.png" alt="" class="inline" title="Single channel image"/> <img src="float32.png" alt="" class="inline" title="32 bits single precision floating-point"/> Return the phase image. If <code>inDegree</code> is <code>False</code>, the phase is in radian and in range \( [-\pi, \pi) \) , otherwise it's in degree and in range \( [0, 360) \) . </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">inDegree</td><td>Whether the phase is calculated in degree, default to <code>False</code> for radian. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>2.24.0 </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html#a2dad524d47b7711a99a923d5604a9f8c">Magnitude()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a7df5c7100a2fd68a19237c9a82946814"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7df5c7100a2fd68a19237c9a82946814">&#9670;&nbsp;</a></span>PhaseCorrelation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PhaseCorrelation </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>freqImg1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>freqImg2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Calculates the normalized cross-power spectrum of the 2 input frequency images, used for the phase correlation. It's computed as: \( \frac{conj(F_1) \cdot F_2}{|conj(F_1) \cdot F_2|} \) . <br  />
+The result is still a frequency domain image, to locate the peak (aka. the shift between the 2 input images), transform it back into the spatial domain with <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html#ac9287956bd7938a7153fe1e20859e6cd">FFTInv()</a>. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">freqImg1</td><td><img src="color_complex.png" alt="" class="inline" title="Complex image"/> The first input image in the frequency domain </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">freqImg2</td><td><img src="color_complex.png" alt="" class="inline" title="Complex image"/> The second input image in the frequency domain </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td><img src="color_complex.png" alt="" class="inline" title="Complex image"/> Return the normalized cross-power spectrum, the size is the same as the inputs </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>2.24.0 </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Property Documentation</h2>
+<a id="a072db33e67dc1e9412812c058cb727bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a072db33e67dc1e9412812c058cb727bf">&#9670;&nbsp;</a></span>DCTerm</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_l_p_v_img_proc_lib.html#abb4e5eb215b75f7bd434d92985044114">LPVDCTermMode</a> DCTerm</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The layout of the DC component in the frequency image, see <a class="el" href="namespace_l_p_v_img_proc_lib.html#abb4e5eb215b75f7bd434d92985044114">LPVDCTermMode</a>. The default value is LPVFreqDCCenter. The same value must be used by the forward and the inverse transform, and by the <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_filter.html" title="This interface provide functionalities of filters in frequency domain.">ILFreqFilter</a> object which generates and applies a filter to the frequency image. </p>
+<dl class="section since"><dt>Since</dt><dd>2.24.0 </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_filter.html" title="This interface provide functionalities of filters in frequency domain.">ILFreqFilter</a>::<a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html#a072db33e67dc1e9412812c058cb727bf" title="The layout of the DC component in the frequency image, see LPVDCTermMode. The default value is LPVFre...">DCTerm</a> </dd></dl>
+
+</div>
+</div>
+<a id="a3ec0926ef6d40ef5eaac80655b4e6ab6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ec0926ef6d40ef5eaac80655b4e6ab6">&#9670;&nbsp;</a></span>ShapeFactor</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ShapeFactor</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The shape factor which affects the Kaiser window function, it's only used when <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html#ab14c6ced0d57e86305ff211a0cf50554" title="The window function applied to the input image before the forward transform, used to reduce the spect...">WindowFunction</a> is LPVWindowKaiser. A larger value suppresses the leakage more strongly, while a smaller value makes the frequency peak sharper. The default value is <code>0.5</code>, the valid range is <code>0 ~ 10</code>, set out of the range throws an exception. </p>
+<dl class="section since"><dt>Since</dt><dd>2.24.0 </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html#ab14c6ced0d57e86305ff211a0cf50554" title="The window function applied to the input image before the forward transform, used to reduce the spect...">WindowFunction</a> </dd></dl>
+
+</div>
+</div>
+<a id="ab14c6ced0d57e86305ff211a0cf50554"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab14c6ced0d57e86305ff211a0cf50554">&#9670;&nbsp;</a></span>WindowFunction</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_l_p_v_img_proc_lib.html#a617075093d8b687593d947f950e84f9f">LPVWindowFunction</a> WindowFunction</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The window function applied to the input image before the forward transform, used to reduce the spectral leakage. It only affects <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html#a0c8d0faade270a959b4fd19ce5221c0d">FFT()</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html#ad8ca90992cd83b2d9b96e42e23a19611">FFTByRow()</a> and <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html#a4af1ea36d2c4916a2229cc3c4c8f118c">FFTByCol()</a>, the inverse transforms never apply a window. The default value is LPVWindowNone, see also LPVWindowFunction. </p>
+<dl class="section since"><dt>Since</dt><dd>2.24.0 </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html#a3ec0926ef6d40ef5eaac80655b4e6ab6" title="The shape factor which affects the Kaiser window function, it&#39;s only used when WindowFunction is LPVW...">ShapeFactor</a> </dd></dl>
 
 </div>
 </div>

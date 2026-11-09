@@ -120,13 +120,13 @@ Public 成员函数</h2></td></tr>
 <tr class="memitem:ad8876facee25a76cd017ef8b953f373e"><td class="memItemLeft" align="right" valign="top"><a id="ad8876facee25a76cd017ef8b953f373e"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_locate_x_lib_1_1_i_l_path_detector.html#ad8876facee25a76cd017ef8b953f373e">AcceptRelativeScore</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:ad8876facee25a76cd017ef8b953f373e"><td class="mdescLeft">&#160;</td><td class="mdescRight">检测的相对分数阈值，通常用于剔除错误检出结果。 相对分数基于当前和下一个候选结果或背景像素计算，为 \( Abs(e - e&#39;) / Max(e, e&#39;) * 100% \) ，若相对分数大于设定阈值，则视为一个可接收的检出结果。<br  />
-相对分数阈值的取值范围为 0 ~ 100，默认设置为 20。数值越小，检出越灵敏。若路径相对于背景的灰度差较小，则需减小该数值。设置为 0 表示不启用。<br  />
+相对分数阈值的取值范围为 <code>0 ~ 100</code>，默认设置为 <code>20</code>。数值越小，检出越灵敏。若路径相对于背景的灰度差较小，则需减小该数值。设置为 <code>0</code> 表示不启用。<br  />
 若同时定义了分数和相对分数阈值，则检出结果需满足至少其中一个限制要求。 <br /></td></tr>
 <tr class="separator:ad8876facee25a76cd017ef8b953f373e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a659ae867dc0562c44d5e7e23e83451d1"><td class="memItemLeft" align="right" valign="top"><a id="a659ae867dc0562c44d5e7e23e83451d1"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_locate_x_lib_1_1_i_l_path_detector.html#a659ae867dc0562c44d5e7e23e83451d1">AcceptScore</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:a659ae867dc0562c44d5e7e23e83451d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">检测的分数阈值。用于删选候选结果，对于 <a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0bac595c6b549ecbabb1dbb431e374b02ad">LPVWhiteOnBlack </a> 取高于该阈值的路径， 对于 <a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0baffd2c678a5a2ea661de262d51223adf3">LPVBlackOnWhite </a> 取低于该阈值的路径。<br  />
-取值范围为 0 ~ 255，默认设置为 0 即不启用。 <br /></td></tr>
+取值范围为 <code>0 ~ 255</code>，默认设置为 <code>0</code> 即不启用。 <br /></td></tr>
 <tr class="separator:a659ae867dc0562c44d5e7e23e83451d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af98b71a5ec504565e5456260acbd9ee5"><td class="memItemLeft" align="right" valign="top"><a id="af98b71a5ec504565e5456260acbd9ee5"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_locate_x_lib_1_1_i_l_path_detector.html#af98b71a5ec504565e5456260acbd9ee5">MaxCount</a><code> [get, set]</code></td></tr>
@@ -135,7 +135,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 <tr class="memitem:a5137ac74c589b677950b86dc2e74726a"><td class="memItemLeft" align="right" valign="top"><a id="a5137ac74c589b677950b86dc2e74726a"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_locate_x_lib_1_1_i_l_path_detector.html#a5137ac74c589b677950b86dc2e74726a">PathWidth</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:a5137ac74c589b677950b86dc2e74726a"><td class="mdescLeft">&#160;</td><td class="mdescRight">路径的宽度。若两条路径的间距小于宽度设置，则被视为同一条路径。<br  />
-取值范围为 1 ~ 100 像素，默认设置为 10。 <br /></td></tr>
+取值范围为 <code>1 ~ 100</code> 像素，默认设置为 <code>10</code>。 <br /></td></tr>
 <tr class="separator:a5137ac74c589b677950b86dc2e74726a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afad2aa7828e45b84ec1f3f80f3787305"><td class="memItemLeft" align="right" valign="top"><a id="afad2aa7828e45b84ec1f3f80f3787305"></a>
 <a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0b">LPVPolarity</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_locate_x_lib_1_1_i_l_path_detector.html#afad2aa7828e45b84ec1f3f80f3787305">Polarity</a><code> [get, set]</code></td></tr>
@@ -145,7 +145,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 <tr class="separator:afad2aa7828e45b84ec1f3f80f3787305"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c50f58ca21af4202a513e65a38c66be"><td class="memItemLeft" align="right" valign="top"><a id="a1c50f58ca21af4202a513e65a38c66be"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_locate_x_lib_1_1_i_l_path_detector.html#a1c50f58ca21af4202a513e65a38c66be">Straightness</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a1c50f58ca21af4202a513e65a38c66be"><td class="mdescLeft">&#160;</td><td class="mdescRight">路径平直控制。取值范围为 0 ~ 100，100表示生成一条完全平直的线，0（默认参数）表示对转向无额外惩罚。 <br /></td></tr>
+<tr class="memdesc:a1c50f58ca21af4202a513e65a38c66be"><td class="mdescLeft">&#160;</td><td class="mdescRight">路径平直控制。取值范围为 <code>0 ~ 100</code>，100表示生成一条完全平直的线，0（默认参数）表示对转向无额外惩罚。 <br /></td></tr>
 <tr class="separator:a1c50f58ca21af4202a513e65a38c66be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header properties_interface_l_p_v_core_lib_1_1_i_l_object"><td colspan="2" onclick="javascript:toggleInherit('properties_interface_l_p_v_core_lib_1_1_i_l_object')"><img src="closed.png" alt="-"/>&#160;属性 继承自 <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_object.html">ILObject</a></td></tr>
 <tr class="memitem:ab8292bdf77c2bf89903956417791dbf5 inherit properties_interface_l_p_v_core_lib_1_1_i_l_object"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_l_string.html">LString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_object.html#ab8292bdf77c2bf89903956417791dbf5">Name</a><code> [get, set]</code></td></tr>

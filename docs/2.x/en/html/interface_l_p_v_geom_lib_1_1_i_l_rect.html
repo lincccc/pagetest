@@ -700,7 +700,7 @@ The name is drawn on canvas around the object if <a class="el" href="interface_l
 <p>Resample the rectangle object into a closed polygon, based on the given fixed interval step. The 4 corner points are always kept in the resampled result. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">step</td><td>The interval step. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">stepThreshold</td><td>The last resampling vertex of a segment should be omitted if the remaining length to the rectangle corner is smaller than the threshold. By default, it's 0 means \( Step / 4 \). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">stepThreshold</td><td>The last resampling vertex of a segment should be omitted if the remaining length to the rectangle corner is smaller than the threshold. By default, it's <code>0</code> means \( Step / 4 \). </td></tr>
   </table>
   </dd>
 </dl>
@@ -763,7 +763,7 @@ The name is drawn on canvas around the object if <a class="el" href="interface_l
     <tr><td class="paramdir">[in]</td><td class="paramname">y</td><td>The x-coordinate of the rectangle's center </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">w</td><td>The width of the rectangle </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">h</td><td>The height of the rectangle </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td>The angle of the rectangle, by default, it's 0 means a non-rotated rectangle. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td>The angle of the rectangle, by default, it's <code>0</code> means a non-rotated rectangle. </td></tr>
   </table>
   </dd>
 </dl>

@@ -115,6 +115,8 @@ Public 成员函数</h2></td></tr>
 <tr class="separator:abac301e33964a208fae5da3aa71c8ed1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada8ef622715c5a172b3f5cc89024b38b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html#ada8ef622715c5a172b3f5cc89024b38b">LoadRawFile</a> (<a class="el" href="class_l_string.html">LString</a> filename, int w, int h, int flags)</td></tr>
 <tr class="separator:ada8ef622715c5a172b3f5cc89024b38b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16c1f03d56d3f32749201a3540a02d6c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html#a16c1f03d56d3f32749201a3540a02d6c">ReorderChannel</a> (int idx0, int idx1, int idx2)</td></tr>
+<tr class="separator:a16c1f03d56d3f32749201a3540a02d6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0772521fac1f24bd996f05fac5cae9d7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html#a0772521fac1f24bd996f05fac5cae9d7">Save</a> (<a class="el" href="class_l_string.html">LString</a> filename, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a> *region)</td></tr>
 <tr class="separator:a0772521fac1f24bd996f05fac5cae9d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf42ad20010153098a714f899ca4adb9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html#abf42ad20010153098a714f899ca4adb9">SaveWithFormat</a> (<a class="el" href="class_l_string.html">LString</a> filename, <a class="el" href="class_l_string.html">LString</a> format, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a> *region)</td></tr>
@@ -246,8 +248,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">format</td><td>目标图像类型 </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">resultImage</td><td>输出结果图像 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">gain</td><td>增益值，设置为 1 则事实上不作增益 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">offset</td><td>偏移值，设置为 0 则事实上不作偏移 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">gain</td><td>增益值，设置为 <code>1</code> 则事实上不作增益 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">offset</td><td>偏移值，设置为 <code>0</code> 则事实上不作偏移 </td></tr>
   </table>
   </dd>
 </dl>
@@ -462,7 +464,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 </dl>
 <dl class="retval"><dt>返回值</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">channelImage</td><td><img src="color_1chn.png" alt="" class="inline" title="单通道图像"/> 返回通道图像。这是一张灰度图，尺寸与当前的彩色图像相同。 </td></tr>
+    <tr><td class="paramname">channelImage</td><td><img src="color_1chn.png" alt="" class="inline" title="单通道图像"/> 返回通道图像。这是一张灰度图，尺寸与当前的多通道图像相同。 </td></tr>
   </table>
   </dd>
 </dl>
@@ -531,6 +533,61 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 </dl>
 <dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_object.html#a74069eb14437a9a889322b62e52db75f">Load()</a> </dd></dl>
 <dl class="section since"><dt>自从</dt><dd>2.7.0 </dd></dl>
+
+</div>
+</div>
+<a id="a16c1f03d56d3f32749201a3540a02d6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16c1f03d56d3f32749201a3540a02d6c">&#9670;&nbsp;</a></span>ReorderChannel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a>* ReorderChannel </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>idx0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>idx1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>idx2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>调整多通道图像的通道顺序，返回调整后的新图像。当前图像不会被修改。 <code>idx0、<code>idx1</code> 和</code> <code>idx2</code> 分别指定结果图各通道对应的原图像通道索引，其中第 3 个索引仅用于三通道图像。 <code>idx1</code> 和 <code>idx2</code> 默认为 <code>-1</code>，表示对应通道保持原位置不变。 结果图像的尺寸、类型和深度与当前图像相同。</p>
+<p>以 BGR 彩色图为例：</p><ul>
+<li><code>ReorderChannel(2, 1, 0)</code> 返回 RGB 图像，即 BGR -&gt; RGB</li>
+<li><code>ReorderChannel(1, 2, 0)</code> 返回 GRB 图像，即 BGR -&gt; GRB，原 0 通道移到 2 通道，原 1 通道移到 0 通道，原 2 通道移到 1 通道</li>
+<li><code>ReorderChannel(2)</code> 返回的图像其 0 通道来自原 2 通道，其他通道保持不变</li>
+</ul>
+<p>对于双通道图像（如 <img src="color_complex.png" alt="" class="inline" title="复数图像"/>），仅使用 <code>idx0</code> 和 <code>idx1，<code>idx2</code> 被忽略。</code> 允许重复索引，如 <code>ReorderChannel(0, 0, 0)</code> 将原 0 通道赋给所有通道。 该接口对单通道图像 <img src="color_1chn.png" alt="" class="inline" title="单通道图像"/> 无效，将返回非法参数错误。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">idx0</td><td>结果图像第 1 个通道对应的原通道索引，必填，不小于 <code>0</code> 且小于当前图像的通道数 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">idx1</td><td>结果图像第 2 个通道对应的原通道索引，负值表示不变 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">idx2</td><td>结果图像第 3 个通道对应的原通道索引，负值表示不变 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">resultImage</td><td>输出通道调整后的新图像，其尺寸、类型和深度与当前图像相同 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>自从</dt><dd>2.23.0 </dd></dl>
 
 </div>
 </div>
@@ -618,13 +675,13 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 <tr>
 <td>jpeg</td><td><b>JPEG 格式</b> - 无损压缩<ul>
 <li>仅支持存储 8 位的单通道（灰度）或三通道（RGB 彩色）图像</li>
-<li>可传入一个 0 ~ 100 的整数用于指定压缩率，如 jpeg 60 。默认压缩率为 95 </li>
+<li>可传入一个 <code>0 ~ 100</code> 的整数用于指定压缩率，如 "jpeg 60" 。默认压缩率为 95 </li>
 </ul>
 </td></tr>
 <tr>
 <td>png</td><td><b>PNG 格式</b> - 有损压缩<ul>
 <li>仅支持存储 8 位的单通道（灰度）或三通道（RGB 彩色）图像</li>
-<li>可传入一个 0 ~ 9 的整数用于指定压缩等级，如 png 6 。其中 0 表示无压缩，9 表示最大压缩。默认压缩等级为 0 。 </li>
+<li>可传入一个 0 ~ 9 的整数用于指定压缩等级，如 "png 6" 。其中 0 表示无压缩，9 表示最大压缩。默认压缩等级为 0 。 </li>
 </ul>
 </td></tr>
 <tr>
@@ -635,7 +692,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 <tr>
 <td>webp</td><td><b>WEBP format</b> - 无损或有损压缩<ul>
 <li>仅支持存储 8 位的单通道（灰度）或三通道（RGB 彩色）图像</li>
-<li>可传入一个 0 ~ 100 的整数用于指定压缩率，如 webp 60 。默认压缩率为 95 </li>
+<li>可传入一个 <code>0 ~ 100</code> 的整数用于指定压缩率，如 "webp 60" 。默认压缩率为 95 </li>
 </ul>
 </td></tr>
 </table>
@@ -683,10 +740,10 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
         </tr>
       </table>
 </div><div class="memdoc">
-<p><img src="color_bgr.png" alt="" class="inline" title="彩色图像"/> <img src="color_complex.png" alt="" class="inline" title="复数图像"/> 设置彩色图像中某一个给定索引的通道图像。仅用于彩色图像。 </p><dl class="params"><dt>参数</dt><dd>
+<p><img src="color_bgr.png" alt="" class="inline" title="彩色图像"/> <img src="color_complex.png" alt="" class="inline" title="复数图像"/> 设置彩色图像中某一个给定索引的通道图像。仅用于多通道图像。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">channelIdx</td><td>输入的通道索引，可为 0，1 或 2 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">channelImage</td><td><img src="color_1chn.png" alt="" class="inline" title="单通道图像"/> 输入的通道图像。这是一张灰度图，尺寸与当前的彩色图像相同。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">channelImage</td><td><img src="color_1chn.png" alt="" class="inline" title="单通道图像"/> 输入的通道图像。这是一张灰度图，尺寸与当前的多通道图像相同。 </td></tr>
   </table>
   </dd>
 </dl>
@@ -737,13 +794,13 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
       </table>
 </div><div class="memdoc">
 <p>通过外部创建和管理的数据块，初始化图像数据。<br  />
-若 <code>copyData</code> 设置为 False，该外部数据块覆盖当前图像类内部创建的数据块，用户需要保证在图像类的整个生命周期里，该外部数据块始终存活。<br  />
-若 <code>copyData</code> 设置为 True，图像类将会把数据从外部数据块中拷贝到其内部创建的数据块中，并在内部管理其生命周期，用户无需额外保存该外部数据块。 </p><dl class="params"><dt>参数</dt><dd>
+若 <code>copyData</code> 设置为 <code>False</code>，该外部数据块覆盖当前图像类内部创建的数据块，用户需要保证在图像类的整个生命周期里，该外部数据块始终存活。<br  />
+若 <code>copyData</code> 设置为 <code>True</code>，图像类将会把数据从外部数据块中拷贝到其内部创建的数据块中，并在内部管理其生命周期，用户无需额外保存该外部数据块。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">w</td><td>图像的宽度，以像素为单位的正整数。 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">h</td><td>图像的高度，以像素为单位的正整数。 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">dataPtr</td><td>指向外部数据块的数据指针 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">bpl</td><td>每行像素数据的字节数，包含行末用于对齐的字节。若设置为 0，则按照无对齐的假设，以图像宽度和每个像素的字节数自动计算。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bpl</td><td>每行像素数据的字节数，包含行末用于对齐的字节。若设置为 <code>0</code>，则按照无对齐的假设，以图像宽度和每个像素的字节数自动计算。 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">copyData</td><td>是否拷贝外部数据块的内容。 </td></tr>
   </table>
   </dd>
@@ -776,7 +833,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
         </tr>
       </table>
 </div><div class="memdoc">
-<p>设置图像为指定尺寸。像素的数值为未定义的，可调用 <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html#a6cfd9dbc70b93a0b757f849763326d0d">SetTo()</a> 或 <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html#a8a20e7ed2f207a332528a802b87def8e">SetToColor()</a> 接口将其全部设置为 0 或其他数值。 如果当前图像尺寸与设置尺寸相同，保留当前数据。 输入 0 的宽度和高度，将重置该图像为空。 </p><dl class="params"><dt>参数</dt><dd>
+<p>设置图像为指定尺寸。像素的数值为未定义的，可调用 <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html#a6cfd9dbc70b93a0b757f849763326d0d">SetTo()</a> 或 <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html#a8a20e7ed2f207a332528a802b87def8e">SetToColor()</a> 接口将其全部设置为 <code>0</code> 或其他数值。 如果当前图像尺寸与设置尺寸相同，保留当前数据。 输入 0 的宽度和高度，将重置该图像为空。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">w</td><td>输入图像宽度 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">h</td><td>输入图像高度 </td></tr>

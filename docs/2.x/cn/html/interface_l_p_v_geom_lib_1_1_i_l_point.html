@@ -354,8 +354,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
         </tr>
       </table>
 </div><div class="memdoc">
-<p>绘制点到给定的设备 </p><dl class="section since"><dt>自从</dt><dd>2.12 shape参数被移除，可通过 <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_drawable.html#ad60911cfc9ce902451973606eb81fc83">ILDrawable::SetDrawPoint()</a> 替代设置 </dd></dl>
-<dl class="section see"><dt>参见</dt><dd><a class="el" href="use_draw_functions.html">Use Draw Functions</a> </dd></dl>
+<p>绘制点到给定的设备<br  />
+参数 <code>shape</code> 自 2.12 被<b>移除</b>，可通过 <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_drawable.html#ad60911cfc9ce902451973606eb81fc83">ILDrawable::SetDrawPoint()</a> 替代设置。 </p><dl class="section see"><dt>参见</dt><dd><a class="el" href="use_draw_functions.html">Use Draw Functions</a> </dd></dl>
 <dl class="section remark"><dt>备注</dt><dd>该函数在 Linux / MacOS 平台暂不可用。 </dd></dl>
 
 </div>
@@ -453,7 +453,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 <p>缩放当前点的坐标，得到一个新的点 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">factorX</td><td>x 方向的缩放比例 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">factorY</td><td>y 方向的缩放比例。默认设置为 0，即与 x 方向的缩放系数相同，也就是等比缩放。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">factorY</td><td>y 方向的缩放比例。默认设置为 <code>0</code>，即与 x 方向的缩放系数相同，也就是等比缩放。 </td></tr>
   </table>
   </dd>
 </dl>

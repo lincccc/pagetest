@@ -700,7 +700,7 @@ The name is drawn on canvas around the object if <a class="el" href="interface_l
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">result</td><td>Return the evaluation result, it's a value in (0, 1). For two perfect parallel lines, it's 1. </td></tr>
+    <tr><td class="paramname">result</td><td>Return the evaluation result, it's a value in (0, 1). For two perfect parallel lines, it's <code>1</code>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -807,7 +807,7 @@ The name is drawn on canvas around the object if <a class="el" href="interface_l
 <p>Resample the line object into an open polygon, based on the given fixed interval step. The start and end point is always kept in the resampled result. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">step</td><td>The interval step. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">stepThreshold</td><td>The last resampling vertex (near the end point of the line) should be omitted if the remaining length is smaller than the threshold. By default, it's 0 means \( Step / 4 \). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">stepThreshold</td><td>The last resampling vertex (near the end point of the line) should be omitted if the remaining length is smaller than the threshold. By default, it's <code>0</code> means \( Step / 4 \). </td></tr>
   </table>
   </dd>
 </dl>

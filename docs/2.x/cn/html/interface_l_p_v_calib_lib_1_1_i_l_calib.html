@@ -118,10 +118,14 @@ Public 成员函数</h2></td></tr>
 <tr class="separator:ab3b5ec6cb9ccb7dd76b228f215137af7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9bd59c44a47d4d60c6b93381c08f1c4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#aa9bd59c44a47d4d60c6b93381c08f1c4">GenPostTransformMatrix</a> (<a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_point_pairs.html">ILCalibPointPairs</a> *pointPairs)</td></tr>
 <tr class="separator:aa9bd59c44a47d4d60c6b93381c08f1c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4efa0f9546fda8353926da9e2c4619b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_point_pairs.html">ILCalibPointPairs</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#ac4efa0f9546fda8353926da9e2c4619b">GetPoints</a> ()</td></tr>
+<tr class="separator:ac4efa0f9546fda8353926da9e2c4619b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ce0cd25c9f176f2ea389900b8b807be"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a8ce0cd25c9f176f2ea389900b8b807be">ImageToWorld</a> (double imagePointX, double imagePointY, double *worldPointX, double *worldPointY)</td></tr>
 <tr class="separator:a8ce0cd25c9f176f2ea389900b8b807be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb434c2170d12543d8f9530244db555e"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#adb434c2170d12543d8f9530244db555e">IsCalibrated</a> ()</td></tr>
 <tr class="separator:adb434c2170d12543d8f9530244db555e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a176b3446d3e725e9715dfe08e76eaf2e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a176b3446d3e725e9715dfe08e76eaf2e">RemovePoint</a> (double imagePointX, double imagePointY, double worldPointX, double worldPointY)</td></tr>
+<tr class="separator:a176b3446d3e725e9715dfe08e76eaf2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ff6a237751631480a627fdc88add08d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a3ff6a237751631480a627fdc88add08d">SetImageSize</a> (int w, int h)</td></tr>
 <tr class="separator:a3ff6a237751631480a627fdc88add08d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8c572785f3997e0c7af0511b97703c7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#ab8c572785f3997e0c7af0511b97703c7">SetPostTransform</a> (double offsetX, double offsetY, double deltaAngle)</td></tr>
@@ -159,17 +163,17 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 <tr class="memitem:af72bdfca06b9bd432d2c5115005bbfbc"><td class="memItemLeft" align="right" valign="top"><a id="af72bdfca06b9bd432d2c5115005bbfbc"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#af72bdfca06b9bd432d2c5115005bbfbc">FixImageOffsetX</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:af72bdfca06b9bd432d2c5115005bbfbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">修正图像 <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#ab3b5ec6cb9ccb7dd76b228f215137af7">FixImage()</a> 时使用的 x 方向偏移量，以像素为单位，与 <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a21df5721e2e01bfd6eab1ece9704e4c2" title="修正图像 FixImage() 时使用的 y 方向偏移量，以像素为单位，与 FixImageOffsetY 同时使用。 默认设置为 0，即无 y 方向偏移。修改该数值可移动修正图像中有效像素的位置，如将...">FixImageOffsetY</a> 同时使用。<br  />
-默认设置为 0，即无 x 方向偏移。修改该数值可移动修正图像中有效像素的位置，如将检测区域移动到修正图像的中心附近。 <br /></td></tr>
+默认设置为 <code>0</code>，即无 x 方向偏移。修改该数值可移动修正图像中有效像素的位置，如将检测区域移动到修正图像的中心附近。 <br /></td></tr>
 <tr class="separator:af72bdfca06b9bd432d2c5115005bbfbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21df5721e2e01bfd6eab1ece9704e4c2"><td class="memItemLeft" align="right" valign="top"><a id="a21df5721e2e01bfd6eab1ece9704e4c2"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a21df5721e2e01bfd6eab1ece9704e4c2">FixImageOffsetY</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:a21df5721e2e01bfd6eab1ece9704e4c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">修正图像 <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#ab3b5ec6cb9ccb7dd76b228f215137af7">FixImage()</a> 时使用的 y 方向偏移量，以像素为单位，与 <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a21df5721e2e01bfd6eab1ece9704e4c2" title="修正图像 FixImage() 时使用的 y 方向偏移量，以像素为单位，与 FixImageOffsetY 同时使用。 默认设置为 0，即无 y 方向偏移。修改该数值可移动修正图像中有效像素的位置，如将...">FixImageOffsetY</a> 同时使用。<br  />
-默认设置为 0，即无 y 方向偏移。修改该数值可移动修正图像中有效像素的位置，如将检测区域移动到修正图像的中心附近。 <br /></td></tr>
+默认设置为 <code>0</code>，即无 y 方向偏移。修改该数值可移动修正图像中有效像素的位置，如将检测区域移动到修正图像的中心附近。 <br /></td></tr>
 <tr class="separator:a21df5721e2e01bfd6eab1ece9704e4c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c65ab87d30846912951723fc454716c"><td class="memItemLeft" align="right" valign="top"><a id="a8c65ab87d30846912951723fc454716c"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a8c65ab87d30846912951723fc454716c">FixImageScale</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:a8c65ab87d30846912951723fc454716c"><td class="mdescLeft">&#160;</td><td class="mdescRight">修正图像 <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#ab3b5ec6cb9ccb7dd76b228f215137af7">FixImage()</a> 时使用的缩放比例。<br  />
-默认设置为 1，即无缩放。修改该数值可放大或缩小修正后的图像。 <br /></td></tr>
+默认设置为 <code>1</code>，即无缩放。修改该数值可放大或缩小修正后的图像。 <br /></td></tr>
 <tr class="separator:a8c65ab87d30846912951723fc454716c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60bb79dec8bcc9da8e4643688bc0d839"><td class="memItemLeft" align="right" valign="top"><a id="a60bb79dec8bcc9da8e4643688bc0d839"></a>
 <a class="el" href="namespace_l_p_v_core_lib.html#a8994f6c3a4ba4e0d0e9a8eb78ac86c92">LPVInterpolationMethod</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a60bb79dec8bcc9da8e4643688bc0d839">InterpolationMethod</a><code> [get, set]</code></td></tr>
@@ -377,6 +381,30 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 
 </div>
 </div>
+<a id="ac4efa0f9546fda8353926da9e2c4619b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4efa0f9546fda8353926da9e2c4619b">&#9670;&nbsp;</a></span>GetPoints()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_point_pairs.html">ILCalibPointPairs</a>* GetPoints </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>获取主平面上通过 <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a8dea6d64fac7b6ae78047578280d1dbe">AddPoint()</a>、AddPoints() 添加的图像和物理点对。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">pointPairs</td><td>返回主平面的图像和物理点对集合 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>自从</dt><dd>2.23.0 </dd></dl>
+
+</div>
+</div>
 <a id="a8ce0cd25c9f176f2ea389900b8b807be"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8ce0cd25c9f176f2ea389900b8b807be">&#9670;&nbsp;</a></span>ImageToWorld()</h2>
 
@@ -443,10 +471,67 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 </div><div class="memdoc">
 <p>检查是否标定成功 </p><dl class="retval"><dt>返回值</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">val</td><td>若标定成功，返回 True，否则，返回 False </td></tr>
+    <tr><td class="paramname">val</td><td>若标定成功，返回 <code>True</code>，否则，返回 <code>False</code> </td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a176b3446d3e725e9715dfe08e76eaf2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a176b3446d3e725e9715dfe08e76eaf2e">&#9670;&nbsp;</a></span>RemovePoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> RemovePoint </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>imagePointX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>imagePointY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>worldPointX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>worldPointY</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>删除主平面上图像位置与物理位置均匹配的所有点对。 四个坐标均须提供，并逐一进行比较。剩余点对的顺序不变。<br  />
+已有标定结果保持不变；需显式调用 <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib.html#a1201727fe2071c60e9c8d715a8cdc2b7">Calibrate()</a> 才会使用剩余点对重新标定。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">imagePointX</td><td>图像点的 x 坐标 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">imagePointY</td><td>图像点的 y 坐标 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">worldPointX</td><td>物理点的 x 坐标 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">worldPointY</td><td>物理点的 y 坐标 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">error</td><td>成功删除返回 LPVNoError，未找到匹配点对时返回 LPVNoResult </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>自从</dt><dd>2.24.0 </dd></dl>
 
 </div>
 </div>

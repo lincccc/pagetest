@@ -175,7 +175,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 <tr>
 <td>"cost"</td><td>正则化参数 C，正则化的强度和 C 成反比</td><td>Integer</td><td>&gt; 0 </td><td>0.01 </td></tr>
 <tr>
-<td>"complexity bound"</td><td>该参数影响支持向量的最小数量，以及错分样本的最大数量，该参数越大意味着更多的支持向量（即模型更加复杂），以及对错分样本更多的容忍度</td><td>Double</td><td>0 ~ 1</td><td>0.5 </td></tr>
+<td>"complexity bound"</td><td>该参数影响支持向量的最小数量，以及错分样本的最大数量，该参数越大意味着更多的支持向量（即模型更加复杂），以及对错分样本更多的容忍度</td><td>Double</td><td><code>0 ~ 1</code></td><td>0.5 </td></tr>
 <tr>
 <td>"kernel"</td><td>核函数</td><td>Integer</td><td>see <a class="el" href="namespace_l_p_v_m_l_lib.html#a2d6a70c3d0397ec68b2468aca95a8e36">LPVSVMKernel</a></td><td><a class="el" href="namespace_l_p_v_m_l_lib.html#a2d6a70c3d0397ec68b2468aca95a8e36a18a00733e5c43707c831f33a3d77fee7">Linear</a> </td></tr>
 <tr>
@@ -184,6 +184,42 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 <td>"c"</td><td>核函数中的参数 c</td><td>Double</td><td>≥ 0 </td><td>0.1 </td></tr>
 <tr>
 <td>"n"</td><td>核函数中的参数 n</td><td>Double</td><td>&gt; 0 </td><td>3 </td></tr>
+</table>
+</td></tr>
+<tr>
+<td>RF</td><td>随机森林<br  />
+ <table class="markdownTable">
+<tr>
+<th class="markdownTableHeadLeft" style="width:15%">参数名称</th><th class="markdownTableHeadLeft" style="width:50%">使用说明</th><th class="markdownTableHeadLeft">类型</th><th class="markdownTableHeadLeft">取值范围</th><th class="markdownTableHeadLeft">默认值 </th></tr>
+<tr>
+<td>"active var count"</td><td>每个树节点上随机选取的特征子集大小，0 表示自动确定</td><td>整数</td><td>≥ 0 </td><td>0 </td></tr>
+<tr>
+<td>"max depth"</td><td>树的最大深度</td><td>整数</td><td><code>1 ~ 999</code></td><td>5 </td></tr>
+<tr>
+<td>"min sample count"</td><td>节点中样本数的最小值，低于该值节点不再分裂</td><td>整数</td><td>≥ 1 </td><td>1 </td></tr>
+<tr>
+<td>"max categories"</td><td>分类变量取值聚类为不超过该数量的簇，以寻找次优分裂</td><td>整数</td><td>≥ 2 </td><td>10 </td></tr>
+<tr>
+<td>"max count"</td><td>终止条件：训练的树的数量</td><td>整数</td><td>≥ 1 </td><td>50 </td></tr>
+<tr>
+<td>"epsilon"</td><td>终止条件：以 OOB 误差衡量的足够精度</td><td>浮点数</td><td><code>0 ~ 1</code></td><td>0.01 </td></tr>
+</table>
+</td></tr>
+<tr>
+<td>MLP</td><td>多层感知机<br  />
+ <table class="markdownTable">
+<tr>
+<th class="markdownTableHeadLeft" style="width:15%">参数名称</th><th class="markdownTableHeadLeft" style="width:50%">使用说明</th><th class="markdownTableHeadLeft">类型</th><th class="markdownTableHeadLeft">取值范围</th><th class="markdownTableHeadLeft">默认值 </th></tr>
+<tr>
+<td>"layer size"</td><td>MLP 的网络层数</td><td>整数</td><td>≥ 3 </td><td>5 </td></tr>
+<tr>
+<td>"train method"</td><td>MLP 的训练方法</td><td>整数</td><td>查阅 <a class="el" href="namespace_l_p_v_m_l_lib.html#ab8c0aa40a19c386a61b6fd5c61b9b0ac">LPVMLPTrainMethod</a></td><td><a class="el" href="namespace_l_p_v_m_l_lib.html#ab8c0aa40a19c386a61b6fd5c61b9b0aca729e3e07e73200260f3f157a318cc459">Backprop</a> </td></tr>
+<tr>
+<td>"activation function"</td><td>每个神经元的激活函数</td><td>整数</td><td>查阅 <a class="el" href="namespace_l_p_v_m_l_lib.html#a958d08c6428b00a75d085231348f81b5">LPVMLPActivationFunction</a></td><td><a class="el" href="namespace_l_p_v_m_l_lib.html#a958d08c6428b00a75d085231348f81b5a89f7ce53e41e9b0de23897ad0fde80f2">Sigmoid Symmetric</a> </td></tr>
+<tr>
+<td>"max count"</td><td>终止条件：最大迭代次数</td><td>整数</td><td>≥ 1 </td><td>1000 </td></tr>
+<tr>
+<td>"epsilon"</td><td>终止条件：足够精度</td><td>浮点数</td><td><code>0 ~ 1</code></td><td>0.01 </td></tr>
 </table>
 </td></tr>
 </table>
@@ -206,9 +242,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 <div class="line">svm.ParamI[<span class="stringliteral">&quot;kernel&quot;</span>] = <a class="code" href="namespace_l_p_v_m_l_lib.html#a2d6a70c3d0397ec68b2468aca95a8e36">LPVSVMKernel</a>.LPVSVMKernelPolynomial;</div>
 <div class="line">svm.ParamF[<span class="stringliteral">&quot;c&quot;</span>] = 0.4;</div>
 <div class="line">llc.AddModel(svm); <span class="comment">// add it to the classifier</span></div>
-<div class="ttc" id="anamespace_l_p_v_m_l_lib_html_a29e060a4ae266d582101abd25d2ad91a"><div class="ttname"><a href="namespace_l_p_v_m_l_lib.html#a29e060a4ae266d582101abd25d2ad91a">LPVMLLib::LPVModelType</a></div><div class="ttdeci">LPVModelType</div><div class="ttdoc">该枚举用于表示机器学习模型类型</div><div class="ttdef"><b>Definition:</b> LPVML.idl:97</div></div>
-<div class="ttc" id="anamespace_l_p_v_m_l_lib_html_a2d6a70c3d0397ec68b2468aca95a8e36"><div class="ttname"><a href="namespace_l_p_v_m_l_lib.html#a2d6a70c3d0397ec68b2468aca95a8e36">LPVMLLib::LPVSVMKernel</a></div><div class="ttdeci">LPVSVMKernel</div><div class="ttdoc">该枚举用于表示 SVM 模型使用的核类型</div><div class="ttdef"><b>Definition:</b> LPVML.idl:298</div></div>
-<div class="ttc" id="anamespace_l_p_v_m_l_lib_html_acece2a4d2c8b8503bf2f0c39cbb6550d"><div class="ttname"><a href="namespace_l_p_v_m_l_lib.html#acece2a4d2c8b8503bf2f0c39cbb6550d">LPVMLLib::LPVSVMType</a></div><div class="ttdeci">LPVSVMType</div><div class="ttdoc">该枚举用于表示 SVM 模型的类型</div><div class="ttdef"><b>Definition:</b> LPVML.idl:275</div></div>
+<div class="ttc" id="anamespace_l_p_v_m_l_lib_html_a29e060a4ae266d582101abd25d2ad91a"><div class="ttname"><a href="namespace_l_p_v_m_l_lib.html#a29e060a4ae266d582101abd25d2ad91a">LPVMLLib::LPVModelType</a></div><div class="ttdeci">LPVModelType</div><div class="ttdoc">该枚举用于表示机器学习模型类型</div><div class="ttdef"><b>Definition:</b> LPVML.idl:170</div></div>
+<div class="ttc" id="anamespace_l_p_v_m_l_lib_html_a2d6a70c3d0397ec68b2468aca95a8e36"><div class="ttname"><a href="namespace_l_p_v_m_l_lib.html#a2d6a70c3d0397ec68b2468aca95a8e36">LPVMLLib::LPVSVMKernel</a></div><div class="ttdeci">LPVSVMKernel</div><div class="ttdoc">该枚举用于表示 SVM 模型使用的核类型</div><div class="ttdef"><b>Definition:</b> LPVML.idl:381</div></div>
+<div class="ttc" id="anamespace_l_p_v_m_l_lib_html_acece2a4d2c8b8503bf2f0c39cbb6550d"><div class="ttname"><a href="namespace_l_p_v_m_l_lib.html#acece2a4d2c8b8503bf2f0c39cbb6550d">LPVMLLib::LPVSVMType</a></div><div class="ttdeci">LPVSVMType</div><div class="ttdoc">该枚举用于表示 SVM 模型的类型</div><div class="ttdef"><b>Definition:</b> LPVML.idl:358</div></div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='com' style='display: none;'>COM</div><div class='toggleable_div label_com' style='display: none;'><div class="fragment"><div class="line"><span class="comment">// create a HOG feature</span></div>
 <div class="line">ILModelPtr svm = LModel::Create();</div>
 <div class="line"><span class="comment">// or, ILModelPtr svm(__uuidof(LModel)), for absence of built-in Create functions (before 2.2.0)</span></div>

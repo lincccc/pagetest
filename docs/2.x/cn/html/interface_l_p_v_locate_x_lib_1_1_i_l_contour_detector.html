@@ -121,7 +121,7 @@ Public 成员函数</h2></td></tr>
 属性</h2></td></tr>
 <tr class="memitem:a61fc9bd69932aef6182c4e247ae012c4"><td class="memItemLeft" align="right" valign="top"><a id="a61fc9bd69932aef6182c4e247ae012c4"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_locate_x_lib_1_1_i_l_contour_detector.html#a61fc9bd69932aef6182c4e247ae012c4">ConnectTolerance</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a61fc9bd69932aef6182c4e247ae012c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">轮廓连接阈值。若两个候选轮廓的端点相近，将连接合并这两个候选轮廓为一个结果。 默认设置为 1 表示不进行额外的轮廓连接。 <br /></td></tr>
+<tr class="memdesc:a61fc9bd69932aef6182c4e247ae012c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">轮廓连接阈值。若两个候选轮廓的端点相近，将连接合并这两个候选轮廓为一个结果。 默认设置为 <code>1</code> 表示不进行额外的轮廓连接。 <br /></td></tr>
 <tr class="separator:a61fc9bd69932aef6182c4e247ae012c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53a770cb473e4565576f64d52faf7147"><td class="memItemLeft" align="right" valign="top"><a id="a53a770cb473e4565576f64d52faf7147"></a>
 <a class="el" href="namespace_l_p_v_core_lib.html#a94e1c7f9477f3336e89b598280ef0ebe">LPVExcludeBoundaryMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_locate_x_lib_1_1_i_l_contour_detector.html#a53a770cb473e4565576f64d52faf7147">ExcludeBoundaryMode</a><code> [get, set]</code></td></tr>
@@ -137,14 +137,14 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 <tr class="separator:a20b4c315808c572790572a24261c3755"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5c153e22afa0fd9ad60b8db28c1baf9"><td class="memItemLeft" align="right" valign="top"><a id="ab5c153e22afa0fd9ad60b8db28c1baf9"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_locate_x_lib_1_1_i_l_contour_detector.html#ab5c153e22afa0fd9ad60b8db28c1baf9">KSize</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:ab5c153e22afa0fd9ad60b8db28c1baf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">边缘滤波所使用的核尺寸，需要是一个奇数，如 3, 5, 7 等。默认设置为 3 。 对于模糊的图像，可能需要设置更大的核尺寸。 <br /></td></tr>
+<tr class="memdesc:ab5c153e22afa0fd9ad60b8db28c1baf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">边缘滤波所使用的核尺寸，需要是一个奇数，如 <code>3</code>, <code>5</code>, <code>7</code> 等。默认设置为 3 。 对于模糊的图像，可能需要设置更大的核尺寸。 <br /></td></tr>
 <tr class="separator:ab5c153e22afa0fd9ad60b8db28c1baf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af98b71a5ec504565e5456260acbd9ee5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_locate_x_lib_1_1_i_l_contour_detector.html#af98b71a5ec504565e5456260acbd9ee5">MaxCount</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:af98b71a5ec504565e5456260acbd9ee5"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置检测的最大数量。若检测到多于设定的轮廓，需将候选轮廓排序并取前若干个作为结果。  <a href="interface_l_p_v_locate_x_lib_1_1_i_l_contour_detector.html#af98b71a5ec504565e5456260acbd9ee5">更多...</a><br /></td></tr>
 <tr class="separator:af98b71a5ec504565e5456260acbd9ee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac127df4df3b16b3e7060399bd85fbad2"><td class="memItemLeft" align="right" valign="top"><a id="ac127df4df3b16b3e7060399bd85fbad2"></a>
 BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_locate_x_lib_1_1_i_l_contour_detector.html#ac127df4df3b16b3e7060399bd85fbad2">OnlyClosed</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:ac127df4df3b16b3e7060399bd85fbad2"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否只检测闭合轮廓，默认设置为 false <br /></td></tr>
+<tr class="memdesc:ac127df4df3b16b3e7060399bd85fbad2"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否只检测闭合轮廓，默认设置为 <code>False</code> <br /></td></tr>
 <tr class="separator:ac127df4df3b16b3e7060399bd85fbad2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d5b8716a1877ab6fe5713f16095714d"><td class="memItemLeft" align="right" valign="top"><a id="a5d5b8716a1877ab6fe5713f16095714d"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_locate_x_lib_1_1_i_l_contour_detector.html#a5d5b8716a1877ab6fe5713f16095714d">RejectShort</a><code> [get, set]</code></td></tr>
@@ -158,7 +158,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 <tr class="memdesc:a1cae9b5ce5e25610160b8cf4d7c19cb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">如何排序候选轮廓。若检测区域中有多于设定的轮廓，需将候选轮廓排序并取前若干个作为结果。  <a href="interface_l_p_v_locate_x_lib_1_1_i_l_contour_detector.html#a1cae9b5ce5e25610160b8cf4d7c19cb8">更多...</a><br /></td></tr>
 <tr class="separator:a1cae9b5ce5e25610160b8cf4d7c19cb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26bbdb0a7c27819253704905dfd3d871"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_locate_x_lib_1_1_i_l_contour_detector.html#a26bbdb0a7c27819253704905dfd3d871">SortByDescending</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a26bbdb0a7c27819253704905dfd3d871"><td class="mdescLeft">&#160;</td><td class="mdescRight">与 <a class="el" href="interface_l_p_v_locate_x_lib_1_1_i_l_contour_detector.html#a1cae9b5ce5e25610160b8cf4d7c19cb8" title="如何排序候选轮廓。若检测区域中有多于设定的轮廓，需将候选轮廓排序并取前若干个作为结果。">SortBy</a> 一同起效。True 表示降序排序候选轮廓（数值从大到小排序），False 表示升序。  <a href="interface_l_p_v_locate_x_lib_1_1_i_l_contour_detector.html#a26bbdb0a7c27819253704905dfd3d871">更多...</a><br /></td></tr>
+<tr class="memdesc:a26bbdb0a7c27819253704905dfd3d871"><td class="mdescLeft">&#160;</td><td class="mdescRight">与 <a class="el" href="interface_l_p_v_locate_x_lib_1_1_i_l_contour_detector.html#a1cae9b5ce5e25610160b8cf4d7c19cb8" title="如何排序候选轮廓。若检测区域中有多于设定的轮廓，需将候选轮廓排序并取前若干个作为结果。">SortBy</a> 一同起效。<code>True</code> 表示降序排序候选轮廓（数值从大到小排序），<code>False</code> 表示升序。  <a href="interface_l_p_v_locate_x_lib_1_1_i_l_contour_detector.html#a26bbdb0a7c27819253704905dfd3d871">更多...</a><br /></td></tr>
 <tr class="separator:a26bbdb0a7c27819253704905dfd3d871"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header properties_interface_l_p_v_core_lib_1_1_i_l_object"><td colspan="2" onclick="javascript:toggleInherit('properties_interface_l_p_v_core_lib_1_1_i_l_object')"><img src="closed.png" alt="-"/>&#160;属性 继承自 <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_object.html">ILObject</a></td></tr>
 <tr class="memitem:ab8292bdf77c2bf89903956417791dbf5 inherit properties_interface_l_p_v_core_lib_1_1_i_l_object"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_l_string.html">LString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_object.html#ab8292bdf77c2bf89903956417791dbf5">Name</a><code> [get, set]</code></td></tr>
@@ -388,7 +388,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 </table>
 </div><div class="memdoc">
 
-<p>与 <a class="el" href="interface_l_p_v_locate_x_lib_1_1_i_l_contour_detector.html#a1cae9b5ce5e25610160b8cf4d7c19cb8" title="如何排序候选轮廓。若检测区域中有多于设定的轮廓，需将候选轮廓排序并取前若干个作为结果。">SortBy</a> 一同起效。True 表示降序排序候选轮廓（数值从大到小排序），False 表示升序。 </p>
+<p>与 <a class="el" href="interface_l_p_v_locate_x_lib_1_1_i_l_contour_detector.html#a1cae9b5ce5e25610160b8cf4d7c19cb8" title="如何排序候选轮廓。若检测区域中有多于设定的轮廓，需将候选轮廓排序并取前若干个作为结果。">SortBy</a> 一同起效。<code>True</code> 表示降序排序候选轮廓（数值从大到小排序），<code>False</code> 表示升序。 </p>
 <dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_locate_x_lib_1_1_i_l_contour_detector.html#a1cae9b5ce5e25610160b8cf4d7c19cb8" title="如何排序候选轮廓。若检测区域中有多于设定的轮廓，需将候选轮廓排序并取前若干个作为结果。">SortBy</a> </dd></dl>
 
 </div>

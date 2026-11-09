@@ -103,6 +103,11 @@ $(function() {
 Public 成员函数</h2></td></tr>
 <tr class="memitem:a47629b3e78496fbb6515d63d72a9a5b6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#a47629b3e78496fbb6515d63d72a9a5b6">Detect</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a> *region, <a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_results.html">ILBarcodeResults</a> **results)</td></tr>
 <tr class="separator:a47629b3e78496fbb6515d63d72a9a5b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a647cef32f42a8fe40df0ad48c60bea90"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#a647cef32f42a8fe40df0ad48c60bea90">SetSymbolSizeRange</a> (int minSize, int maxSize)</td></tr>
+<tr class="memdesc:a647cef32f42a8fe40df0ad48c60bea90"><td class="mdescLeft">&#160;</td><td class="mdescRight">一次设置可接受的符号尺寸范围的下限与上限。<br  />
+等价于一次调用分别设置 <a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#a07dd7d3d3aadb81c533da5bb2b4b7c87" title="符号尺寸范围的下限，以符号每边的模块数表示。 默认设置为 0，表示没有下限。 符号的每一条边都不小于该值时才会被搜索；对边长为 N 的方形码，要求 N 不小于 #SymbolSizeMin； 对矩形符号...">SymbolSizeMin</a> 与 #SymbolSizeMax；当任一取值非法时整体拒绝，即下限与上限都保持不变。<br  />
+取值为 <code>0</code> 表示该侧不设下限或上限。 非零值必须是所检测码制允许的符号尺寸，见 <a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#a096267ef6ed173819a900a48035903c1" title="预期的符号尺寸，以符号每边的模块数表示。 默认设置为 0，表示不限制符号尺寸。 设置为非零值时要求符号是恰好该尺寸的方形码，并同时把 SymbolSizeMin 与 SymbolSizeMax 设置为该...">SymbolSize</a> 中的表格。 当下限与上限均非零时，<code>minSize</code> 不得大于 <code>maxSize</code>。 当下限与上限相等时，等价于把 <a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#a096267ef6ed173819a900a48035903c1" title="预期的符号尺寸，以符号每边的模块数表示。 默认设置为 0，表示不限制符号尺寸。 设置为非零值时要求符号是恰好该尺寸的方形码，并同时把 SymbolSizeMin 与 SymbolSizeMax 设置为该...">SymbolSize</a> 设置为该值。  <a href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#a647cef32f42a8fe40df0ad48c60bea90">更多...</a><br /></td></tr>
+<tr class="separator:a647cef32f42a8fe40df0ad48c60bea90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_interface_l_p_v_core_lib_1_1_i_l_object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_interface_l_p_v_core_lib_1_1_i_l_object')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_object.html">ILObject</a></td></tr>
 <tr class="memitem:aa7dcddf685e0ba4ddc2d84b0d191f3d7 inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_object"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_object.html">ILObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_object.html#aa7dcddf685e0ba4ddc2d84b0d191f3d7">Copy</a> ()</td></tr>
 <tr class="separator:aa7dcddf685e0ba4ddc2d84b0d191f3d7 inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -119,24 +124,72 @@ Public 成员函数</h2></td></tr>
 属性</h2></td></tr>
 <tr class="memitem:a9bba598de659c48ac2711b118ceff76a"><td class="memItemLeft" align="right" valign="top"><a id="a9bba598de659c48ac2711b118ceff76a"></a>
 BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#a9bba598de659c48ac2711b118ceff76a">AllowDup</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a9bba598de659c48ac2711b118ceff76a"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置在解码过程中是否进行剔除重复内容的条码结果。默认设置为 False， 即若检测区域中有多个编码内容相同的条码，只输出第一个检测结果（忽略其他）。 <br /></td></tr>
+<tr class="memdesc:a9bba598de659c48ac2711b118ceff76a"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置在解码过程中是否进行剔除重复内容的条码结果。默认设置为 <code>False</code>， 即若检测区域中有多个编码内容相同的条码，只输出第一个检测结果（忽略其他）。 <br /></td></tr>
 <tr class="separator:a9bba598de659c48ac2711b118ceff76a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7e10307f5b1781141a4edde811c3019"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#af7e10307f5b1781141a4edde811c3019">AllowGridDeformation</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:af7e10307f5b1781141a4edde811c3019"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否允许模块网格发生局部形变或偏移。 默认设置为 <code>False</code>，表示要求均匀间距的网格；<code>True</code> 表示允许非均匀网格。<br  />
+当前该设置仅对 Data Matrix 码生效。  <a href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#af7e10307f5b1781141a4edde811c3019">更多...</a><br /></td></tr>
+<tr class="separator:af7e10307f5b1781141a4edde811c3019"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a644de01ea48cbfdcc28697f78a7e4689"><td class="memItemLeft" align="right" valign="top"><a id="a644de01ea48cbfdcc28697f78a7e4689"></a>
 BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#a644de01ea48cbfdcc28697f78a7e4689">CheckSum</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a644de01ea48cbfdcc28697f78a7e4689"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置在解码过程中是否校验条码。默认设置为 True <br /></td></tr>
+<tr class="memdesc:a644de01ea48cbfdcc28697f78a7e4689"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置在解码过程中是否校验条码。默认设置为 <code>True</code> <br /></td></tr>
 <tr class="separator:a644de01ea48cbfdcc28697f78a7e4689"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab07a60d4a5158ea075909661d0759acc"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#ab07a60d4a5158ea075909661d0759acc">EnableDPM</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:ab07a60d4a5158ea075909661d0759acc"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否启用点阵码（DPM 打标）的解码。<br  />
+默认设置为 <code>False</code>，表示按常规连续模块的码进行解码；设置为 <code>True</code> 时，启用由分离的点构成的码的解码，例如使用点阵针打（dot peen）工艺打标得到的码。<br  />
+当前该设置仅对 Data Matrix 码生效。  <a href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#ab07a60d4a5158ea075909661d0759acc">更多...</a><br /></td></tr>
+<tr class="separator:ab07a60d4a5158ea075909661d0759acc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af98b71a5ec504565e5456260acbd9ee5"><td class="memItemLeft" align="right" valign="top"><a id="af98b71a5ec504565e5456260acbd9ee5"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#af98b71a5ec504565e5456260acbd9ee5">MaxCount</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:af98b71a5ec504565e5456260acbd9ee5"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置检测的最大数量。检测过程在找到足够多数量的条码结果后，将结束检测。 <br /></td></tr>
 <tr class="separator:af98b71a5ec504565e5456260acbd9ee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a9933e9cdd94804baf048198c7b1a84"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a89572bb76377970becfbef5dff0df869">LPVBoolMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#a7a9933e9cdd94804baf048198c7b1a84">MirrorMode</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a7a9933e9cdd94804baf048198c7b1a84"><td class="mdescLeft">&#160;</td><td class="mdescRight">条码检测的镜像处理模式。 默认设置为 <code>False</code>，仅识别正常（非镜像）条码；<code>True</code> 仅识别镜像条码；Auto 同时识别正常条码与镜像条码。<br  />
+当前该设置仅对 Data Matrix 码生效。  <a href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#a7a9933e9cdd94804baf048198c7b1a84">更多...</a><br /></td></tr>
+<tr class="separator:a7a9933e9cdd94804baf048198c7b1a84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9129becdc5971cac9fc3f3d5cb430ae1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_barcode_lib.html#af6822103ddf40c292fc6e8f089b942f6">LPVBarcodeModuleSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#a9129becdc5971cac9fc3f3d5cb430ae1">ModuleSize</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a9129becdc5971cac9fc3f3d5cb430ae1"><td class="mdescLeft">&#160;</td><td class="mdescRight">预期的模块相对于整个条码尺寸的大小等级。 选择小、中（默认）、大三档，不表示像素尺寸，也不包含自动判断模式。 对于点阵 Data Matrix 码，模块尺寸指相邻点的中心间距；对于普通 Data Matrix 码，指黑白小块的尺寸。<br  />
+当前该设置仅对 Data Matrix 码生效。  <a href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#a9129becdc5971cac9fc3f3d5cb430ae1">更多...</a><br /></td></tr>
+<tr class="separator:a9129becdc5971cac9fc3f3d5cb430ae1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ecf770d994cc21c58205be8daead43d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#a2ecf770d994cc21c58205be8daead43d">SearchLevel</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a2ecf770d994cc21c58205be8daead43d"><td class="mdescLeft">&#160;</td><td class="mdescRight">大范围粗定位搜索的等级。<br  />
+取值范围为 <code>1 ~ 9</code>，默认设置为 <code>5</code>。 数值越大，搜索越精细、定位越准确，但耗时越长；数值越小，搜索越粗略、速度越快。<br  />
+当前该设置仅对 Data Matrix 码生效。  <a href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#a2ecf770d994cc21c58205be8daead43d">更多...</a><br /></td></tr>
+<tr class="separator:a2ecf770d994cc21c58205be8daead43d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a780ce34d8b3b9cabe961cbe807619236"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_barcode_lib.html#a9ed5a16909e939e7893edafda8f6ac79">LPVBarcodeSymbolShape</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#a780ce34d8b3b9cabe961cbe807619236">SymbolShape</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a780ce34d8b3b9cabe961cbe807619236"><td class="mdescLeft">&#160;</td><td class="mdescRight">预期的符号形状。<br  />
+默认设置为 <code>LPVBarcodeSymbolShapeAny</code>，接受任意形状的符号。<br  />
+<code>LPVBarcodeSymbolShapeSquare</code> 把检测限定为方形符号， <code>LPVBarcodeSymbolShapeRectangle</code> 限定为矩形符号（如 \( 8 \times 18 \) ）。<br  />
+形状为 <code>LPVBarcodeSymbolShapeRectangle</code> 时，精确尺寸 <a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#a096267ef6ed173819a900a48035903c1" title="预期的符号尺寸，以符号每边的模块数表示。 默认设置为 0，表示不限制符号尺寸。 设置为非零值时要求符号是恰好该尺寸的方形码，并同时把 SymbolSizeMin 与 SymbolSizeMax 设置为该...">SymbolSize</a> 必须为 <code>0</code>， 因为矩形符号无法用单一模块数描述；请改用 <a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#a07dd7d3d3aadb81c533da5bb2b4b7c87" title="符号尺寸范围的下限，以符号每边的模块数表示。 默认设置为 0，表示没有下限。 符号的每一条边都不小于该值时才会被搜索；对边长为 N 的方形码，要求 N 不小于 #SymbolSizeMin； 对矩形符号...">SymbolSizeMin</a> 与 #SymbolSizeMax。 两个边界对所有形状都生效：矩形符号的短边不小于 <a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#a07dd7d3d3aadb81c533da5bb2b4b7c87" title="符号尺寸范围的下限，以符号每边的模块数表示。 默认设置为 0，表示没有下限。 符号的每一条边都不小于该值时才会被搜索；对边长为 N 的方形码，要求 N 不小于 #SymbolSizeMin； 对矩形符号...">SymbolSizeMin</a> 且长边不大于 <a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#a781ad1ac466ccfdb225c6b9ebd5adb6a" title="符号尺寸范围的上限，以符号每边的模块数表示。 默认设置为 0，表示没有上限。 符号的每一条边都不大于该值时才会被搜索；对边长为 N 的方形码，要求 N 不大于 #SymbolSizeMax； 对矩形符号...">SymbolSizeMax</a> 时才会被搜索；若范围匹配不到任何矩形尺寸则被拒绝。<br  />
+形状为 <code>LPVBarcodeSymbolShapeAny</code> 时，方形与矩形符号都会被搜索； 符号的每一条边都落在该范围内时才会被接受。 当上下限相等时，只搜索恰好为该尺寸的符号。  <a href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#a780ce34d8b3b9cabe961cbe807619236">更多...</a><br /></td></tr>
+<tr class="separator:a780ce34d8b3b9cabe961cbe807619236"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a096267ef6ed173819a900a48035903c1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#a096267ef6ed173819a900a48035903c1">SymbolSize</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a096267ef6ed173819a900a48035903c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">预期的符号尺寸，以符号每边的模块数表示。<br  />
+默认设置为 <code>0</code>，表示不限制符号尺寸。<br  />
+设置为非零值时要求符号是恰好该尺寸的方形码，并同时把 <a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#a07dd7d3d3aadb81c533da5bb2b4b7c87" title="符号尺寸范围的下限，以符号每边的模块数表示。 默认设置为 0，表示没有下限。 符号的每一条边都不小于该值时才会被搜索；对边长为 N 的方形码，要求 N 不小于 #SymbolSizeMin； 对矩形符号...">SymbolSizeMin</a> 与 <a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#a781ad1ac466ccfdb225c6b9ebd5adb6a" title="符号尺寸范围的上限，以符号每边的模块数表示。 默认设置为 0，表示没有上限。 符号的每一条边都不大于该值时才会被搜索；对边长为 N 的方形码，要求 N 不大于 #SymbolSizeMax； 对矩形符号...">SymbolSizeMax</a> 设置为该值。 仅当可接受的尺寸收敛为这一个方形码时，读取该属性才返回该值，否则返回 <code>0</code>。<br  />
+注意该属性表示符号中模块的数量，不是单个模块的尺寸，后者见 <a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#a9129becdc5971cac9fc3f3d5cb430ae1" title="预期的模块相对于整个条码尺寸的大小等级。 选择小、中（默认）、大三档，不表示像素尺寸，也不包含自动判断模式。 对于点阵 Data Matrix 码，模块尺寸指相邻点的中心间距；对于普通 Data Mat...">ModuleSize</a> 。  <a href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#a096267ef6ed173819a900a48035903c1">更多...</a><br /></td></tr>
+<tr class="separator:a096267ef6ed173819a900a48035903c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a781ad1ac466ccfdb225c6b9ebd5adb6a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#a781ad1ac466ccfdb225c6b9ebd5adb6a">SymbolSizeMax</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a781ad1ac466ccfdb225c6b9ebd5adb6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">符号尺寸范围的上限，以符号每边的模块数表示。<br  />
+默认设置为 <code>0</code>，表示没有上限。<br  />
+符号的每一条边都不大于该值时才会被搜索；对边长为 <code>N</code> 的方形码，要求 <code>N</code> 不大于 #SymbolSizeMax； 对矩形符号，要求其长边不大于 <a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#a781ad1ac466ccfdb225c6b9ebd5adb6a" title="符号尺寸范围的上限，以符号每边的模块数表示。 默认设置为 0，表示没有上限。 符号的每一条边都不大于该值时才会被搜索；对边长为 N 的方形码，要求 N 不大于 #SymbolSizeMax； 对矩形符号...">SymbolSizeMax</a> 。  <a href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#a781ad1ac466ccfdb225c6b9ebd5adb6a">更多...</a><br /></td></tr>
+<tr class="separator:a781ad1ac466ccfdb225c6b9ebd5adb6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07dd7d3d3aadb81c533da5bb2b4b7c87"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#a07dd7d3d3aadb81c533da5bb2b4b7c87">SymbolSizeMin</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a07dd7d3d3aadb81c533da5bb2b4b7c87"><td class="mdescLeft">&#160;</td><td class="mdescRight">符号尺寸范围的下限，以符号每边的模块数表示。<br  />
+默认设置为 <code>0</code>，表示没有下限。<br  />
+符号的每一条边都不小于该值时才会被搜索；对边长为 <code>N</code> 的方形码，要求 <code>N</code> 不小于 #SymbolSizeMin； 对矩形符号（如 \( 8 \times 18 \) ），要求其短边不小于 #SymbolSizeMin。  <a href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#a07dd7d3d3aadb81c533da5bb2b4b7c87">更多...</a><br /></td></tr>
+<tr class="separator:a07dd7d3d3aadb81c533da5bb2b4b7c87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5080d342b7871a79bc81bb98d4e5a331"><td class="memItemLeft" align="right" valign="top"><a id="a5080d342b7871a79bc81bb98d4e5a331"></a>
 <a class="el" href="namespace_l_p_v_barcode_lib.html#a8d35ae44acaae621a58bd6ac4cafb72f">LPVBarcodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#a5080d342b7871a79bc81bb98d4e5a331">Type</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:a5080d342b7871a79bc81bb98d4e5a331"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置条码检测的类型，可谓多种类型的组合。 <br /></td></tr>
 <tr class="separator:a5080d342b7871a79bc81bb98d4e5a331"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf0d9099ddeafa37479161c47f75bf0a"><td class="memItemLeft" align="right" valign="top"><a id="adf0d9099ddeafa37479161c47f75bf0a"></a>
-BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#adf0d9099ddeafa37479161c47f75bf0a">VerifyQuality</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:adf0d9099ddeafa37479161c47f75bf0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置在解码过程中是否进行条码质量检测。默认设置为 False <br /></td></tr>
+<tr class="memitem:adf0d9099ddeafa37479161c47f75bf0a"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#adf0d9099ddeafa37479161c47f75bf0a">VerifyQuality</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:adf0d9099ddeafa37479161c47f75bf0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置在解码过程中是否进行条码质量检测。默认设置为 <code>False</code>.  <a href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#adf0d9099ddeafa37479161c47f75bf0a">更多...</a><br /></td></tr>
 <tr class="separator:adf0d9099ddeafa37479161c47f75bf0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a510bc7fe08fa3057efc8e8f19b3befb6"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#a510bc7fe08fa3057efc8e8f19b3befb6">WideSearch</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a510bc7fe08fa3057efc8e8f19b3befb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否启用解码前的大范围粗定位搜索。<br  />
+默认设置为 <code>True</code>，表示在精确解码前先在整个检测区域内搜索候选条码区域，适合在较大区域内定位条码； 设置为 <code>False</code> 时跳过粗定位搜索而直接解码，速度更快，通常在感兴趣区域较小时足够。  <a href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#a510bc7fe08fa3057efc8e8f19b3befb6">更多...</a><br /></td></tr>
+<tr class="separator:a510bc7fe08fa3057efc8e8f19b3befb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header properties_interface_l_p_v_core_lib_1_1_i_l_object"><td colspan="2" onclick="javascript:toggleInherit('properties_interface_l_p_v_core_lib_1_1_i_l_object')"><img src="closed.png" alt="-"/>&#160;属性 继承自 <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_object.html">ILObject</a></td></tr>
 <tr class="memitem:ab8292bdf77c2bf89903956417791dbf5 inherit properties_interface_l_p_v_core_lib_1_1_i_l_object"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_l_string.html">LString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_object.html#ab8292bdf77c2bf89903956417791dbf5">Name</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:ab8292bdf77c2bf89903956417791dbf5 inherit properties_interface_l_p_v_core_lib_1_1_i_l_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">对象的名称，默认为空。<br  />
@@ -146,7 +199,7 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><p>该接口提供条码检测和质量评价的功能。 </p>
-<p>支持大多数流行的一维和二维码，具体列表请查看 LPVBarcodeType。 质量评价符合 ISO-15416（一维码）和 ISO-15415（二维码）标准。</p>
+<p>支持大多数流行的一维和二维码，具体列表请查看 <a class="el" href="namespace_l_p_v_barcode_lib.html#a8d35ae44acaae621a58bd6ac4cafb72f">LPVBarcodeType</a> 。 质量评价符合 ISO-15416（一维码）和 ISO-15415（二维码）标准。</p>
 <h3>示例代码 </h3>
  <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line">ILBarcodeDetectorPtr barcodeDetector = LBarcodeDetector::Create();</div>
 <div class="line">barcodeDetector-&gt;Type = LPVBarcodeType::LPVBarcodeAll1D; <span class="comment">// detect all types of 1D barcode</span></div>
@@ -161,7 +214,7 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 <div class="line">barcodeDetector.MaxCount = 3;</div>
 <div class="line"><a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a> err = barcodeDetector.Detect(img, (LRegion)roi, out codeResults);</div>
 <div class="line"><span class="keywordflow">if</span> (err != <a class="code" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>.LPVNoError) <span class="keywordflow">return</span>;</div>
-<div class="ttc" id="anamespace_l_p_v_barcode_lib_html_a8d35ae44acaae621a58bd6ac4cafb72f"><div class="ttname"><a href="namespace_l_p_v_barcode_lib.html#a8d35ae44acaae621a58bd6ac4cafb72f">LPVBarcodeLib::LPVBarcodeType</a></div><div class="ttdeci">LPVBarcodeType</div><div class="ttdoc">定义条码类型</div><div class="ttdef"><b>Definition:</b> LPVBarcode.idl:72</div></div>
+<div class="ttc" id="anamespace_l_p_v_barcode_lib_html_a8d35ae44acaae621a58bd6ac4cafb72f"><div class="ttname"><a href="namespace_l_p_v_barcode_lib.html#a8d35ae44acaae621a58bd6ac4cafb72f">LPVBarcodeLib::LPVBarcodeType</a></div><div class="ttdeci">LPVBarcodeType</div><div class="ttdoc">定义条码类型</div><div class="ttdef"><b>Definition:</b> LPVBarcode.idl:69</div></div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='com' style='display: none;'>COM</div><div class='toggleable_div label_com' style='display: none;'><div class="fragment"><div class="line">ILBarcodeDetectorPtr barcodeDetector = LBarcodeDetector::Create();</div>
 <div class="line"><span class="comment">// or, ILBarcodeDetectorPtr barcodeDetector(__uuidof(LBarcodeDetector)), for absence of built-in Create functions (before 2.2.0)</span></div>
 <div class="line">barcodeDetector-&gt;Type = LPVBarcodeType::LPVBarcodeAll1D; <span class="comment">// detect all types of 1D barcode</span></div>
@@ -216,6 +269,379 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a647cef32f42a8fe40df0ad48c60bea90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a647cef32f42a8fe40df0ad48c60bea90">&#9670;&nbsp;</a></span>SetSymbolSizeRange()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SetSymbolSizeRange </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>minSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>maxSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>一次设置可接受的符号尺寸范围的下限与上限。<br  />
+等价于一次调用分别设置 <a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#a07dd7d3d3aadb81c533da5bb2b4b7c87" title="符号尺寸范围的下限，以符号每边的模块数表示。 默认设置为 0，表示没有下限。 符号的每一条边都不小于该值时才会被搜索；对边长为 N 的方形码，要求 N 不小于 #SymbolSizeMin； 对矩形符号...">SymbolSizeMin</a> 与 #SymbolSizeMax；当任一取值非法时整体拒绝，即下限与上限都保持不变。<br  />
+取值为 <code>0</code> 表示该侧不设下限或上限。 非零值必须是所检测码制允许的符号尺寸，见 <a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#a096267ef6ed173819a900a48035903c1" title="预期的符号尺寸，以符号每边的模块数表示。 默认设置为 0，表示不限制符号尺寸。 设置为非零值时要求符号是恰好该尺寸的方形码，并同时把 SymbolSizeMin 与 SymbolSizeMax 设置为该...">SymbolSize</a> 中的表格。 当下限与上限均非零时，<code>minSize</code> 不得大于 <code>maxSize</code>。 当下限与上限相等时，等价于把 <a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#a096267ef6ed173819a900a48035903c1" title="预期的符号尺寸，以符号每边的模块数表示。 默认设置为 0，表示不限制符号尺寸。 设置为非零值时要求符号是恰好该尺寸的方形码，并同时把 SymbolSizeMin 与 SymbolSizeMax 设置为该...">SymbolSize</a> 设置为该值。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">minSize</td><td>下限，见 <a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#a07dd7d3d3aadb81c533da5bb2b4b7c87" title="符号尺寸范围的下限，以符号每边的模块数表示。 默认设置为 0，表示没有下限。 符号的每一条边都不小于该值时才会被搜索；对边长为 N 的方形码，要求 N 不小于 #SymbolSizeMin； 对矩形符号...">SymbolSizeMin</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">maxSize</td><td>上限，见 <a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#a781ad1ac466ccfdb225c6b9ebd5adb6a" title="符号尺寸范围的上限，以符号每边的模块数表示。 默认设置为 0，表示没有上限。 符号的每一条边都不大于该值时才会被搜索；对边长为 N 的方形码，要求 N 不大于 #SymbolSizeMax； 对矩形符号...">SymbolSizeMax</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>自从</dt><dd>2.23.0 </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">属性说明</h2>
+<a id="af7e10307f5b1781141a4edde811c3019"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7e10307f5b1781141a4edde811c3019">&#9670;&nbsp;</a></span>AllowGridDeformation</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL AllowGridDeformation</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>是否允许模块网格发生局部形变或偏移。 默认设置为 <code>False</code>，表示要求均匀间距的网格；<code>True</code> 表示允许非均匀网格。<br  />
+当前该设置仅对 Data Matrix 码生效。 </p>
+<dl class="section since"><dt>自从</dt><dd>2.23.0 </dd></dl>
+
+</div>
+</div>
+<a id="ab07a60d4a5158ea075909661d0759acc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab07a60d4a5158ea075909661d0759acc">&#9670;&nbsp;</a></span>EnableDPM</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL EnableDPM</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>是否启用点阵码（DPM 打标）的解码。<br  />
+默认设置为 <code>False</code>，表示按常规连续模块的码进行解码；设置为 <code>True</code> 时，启用由分离的点构成的码的解码，例如使用点阵针打（dot peen）工艺打标得到的码。<br  />
+当前该设置仅对 Data Matrix 码生效。 </p>
+<dl class="section since"><dt>自从</dt><dd>2.23.0 </dd></dl>
+
+</div>
+</div>
+<a id="a7a9933e9cdd94804baf048198c7b1a84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a9933e9cdd94804baf048198c7b1a84">&#9670;&nbsp;</a></span>MirrorMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_l_p_v_core_lib.html#a89572bb76377970becfbef5dff0df869">LPVBoolMode</a> MirrorMode</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>条码检测的镜像处理模式。 默认设置为 <code>False</code>，仅识别正常（非镜像）条码；<code>True</code> 仅识别镜像条码；Auto 同时识别正常条码与镜像条码。<br  />
+当前该设置仅对 Data Matrix 码生效。 </p>
+<dl class="section since"><dt>自从</dt><dd>2.23.0 </dd></dl>
+
+</div>
+</div>
+<a id="a9129becdc5971cac9fc3f3d5cb430ae1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9129becdc5971cac9fc3f3d5cb430ae1">&#9670;&nbsp;</a></span>ModuleSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_l_p_v_barcode_lib.html#af6822103ddf40c292fc6e8f089b942f6">LPVBarcodeModuleSize</a> ModuleSize</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>预期的模块相对于整个条码尺寸的大小等级。 选择小、中（默认）、大三档，不表示像素尺寸，也不包含自动判断模式。 对于点阵 Data Matrix 码，模块尺寸指相邻点的中心间距；对于普通 Data Matrix 码，指黑白小块的尺寸。<br  />
+当前该设置仅对 Data Matrix 码生效。 </p>
+<table style="padding:10px;">
+<tr>
+<td style="vertical-align:bottom; border-right:1px solid;padding:10px;"><img src="modulesize_dot_small.svg" alt="" style="pointer-events: none;" class="inline"/> </td><td style="vertical-align:bottom; border-right:1px solid;padding:10px;"><img src="modulesize_dot_medium.svg" alt="" style="pointer-events: none;" class="inline"/> </td><td style="vertical-align:bottom; padding:10px;"><img src="modulesize_dot_large.svg" alt="" style="pointer-events: none;" class="inline"/>  </td></tr>
+</table>
+<dl class="section since"><dt>自从</dt><dd>2.23.0 </dd></dl>
+
+</div>
+</div>
+<a id="a2ecf770d994cc21c58205be8daead43d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ecf770d994cc21c58205be8daead43d">&#9670;&nbsp;</a></span>SearchLevel</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SearchLevel</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>大范围粗定位搜索的等级。<br  />
+取值范围为 <code>1 ~ 9</code>，默认设置为 <code>5</code>。 数值越大，搜索越精细、定位越准确，但耗时越长；数值越小，搜索越粗略、速度越快。<br  />
+当前该设置仅对 Data Matrix 码生效。 </p>
+<dl class="section since"><dt>自从</dt><dd>2.23.0 </dd></dl>
+
+</div>
+</div>
+<a id="a780ce34d8b3b9cabe961cbe807619236"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a780ce34d8b3b9cabe961cbe807619236">&#9670;&nbsp;</a></span>SymbolShape</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_l_p_v_barcode_lib.html#a9ed5a16909e939e7893edafda8f6ac79">LPVBarcodeSymbolShape</a> SymbolShape</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>预期的符号形状。<br  />
+默认设置为 <code>LPVBarcodeSymbolShapeAny</code>，接受任意形状的符号。<br  />
+<code>LPVBarcodeSymbolShapeSquare</code> 把检测限定为方形符号， <code>LPVBarcodeSymbolShapeRectangle</code> 限定为矩形符号（如 \( 8 \times 18 \) ）。<br  />
+形状为 <code>LPVBarcodeSymbolShapeRectangle</code> 时，精确尺寸 <a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#a096267ef6ed173819a900a48035903c1" title="预期的符号尺寸，以符号每边的模块数表示。 默认设置为 0，表示不限制符号尺寸。 设置为非零值时要求符号是恰好该尺寸的方形码，并同时把 SymbolSizeMin 与 SymbolSizeMax 设置为该...">SymbolSize</a> 必须为 <code>0</code>， 因为矩形符号无法用单一模块数描述；请改用 <a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#a07dd7d3d3aadb81c533da5bb2b4b7c87" title="符号尺寸范围的下限，以符号每边的模块数表示。 默认设置为 0，表示没有下限。 符号的每一条边都不小于该值时才会被搜索；对边长为 N 的方形码，要求 N 不小于 #SymbolSizeMin； 对矩形符号...">SymbolSizeMin</a> 与 #SymbolSizeMax。 两个边界对所有形状都生效：矩形符号的短边不小于 <a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#a07dd7d3d3aadb81c533da5bb2b4b7c87" title="符号尺寸范围的下限，以符号每边的模块数表示。 默认设置为 0，表示没有下限。 符号的每一条边都不小于该值时才会被搜索；对边长为 N 的方形码，要求 N 不小于 #SymbolSizeMin； 对矩形符号...">SymbolSizeMin</a> 且长边不大于 <a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#a781ad1ac466ccfdb225c6b9ebd5adb6a" title="符号尺寸范围的上限，以符号每边的模块数表示。 默认设置为 0，表示没有上限。 符号的每一条边都不大于该值时才会被搜索；对边长为 N 的方形码，要求 N 不大于 #SymbolSizeMax； 对矩形符号...">SymbolSizeMax</a> 时才会被搜索；若范围匹配不到任何矩形尺寸则被拒绝。<br  />
+形状为 <code>LPVBarcodeSymbolShapeAny</code> 时，方形与矩形符号都会被搜索； 符号的每一条边都落在该范围内时才会被接受。 当上下限相等时，只搜索恰好为该尺寸的符号。 </p>
+<p>当前该设置仅对 Data Matrix 码生效。 </p><dl class="section since"><dt>自从</dt><dd>2.23.0 </dd></dl>
+
+</div>
+</div>
+<a id="a096267ef6ed173819a900a48035903c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a096267ef6ed173819a900a48035903c1">&#9670;&nbsp;</a></span>SymbolSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SymbolSize</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>预期的符号尺寸，以符号每边的模块数表示。<br  />
+默认设置为 <code>0</code>，表示不限制符号尺寸。<br  />
+设置为非零值时要求符号是恰好该尺寸的方形码，并同时把 <a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#a07dd7d3d3aadb81c533da5bb2b4b7c87" title="符号尺寸范围的下限，以符号每边的模块数表示。 默认设置为 0，表示没有下限。 符号的每一条边都不小于该值时才会被搜索；对边长为 N 的方形码，要求 N 不小于 #SymbolSizeMin； 对矩形符号...">SymbolSizeMin</a> 与 <a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#a781ad1ac466ccfdb225c6b9ebd5adb6a" title="符号尺寸范围的上限，以符号每边的模块数表示。 默认设置为 0，表示没有上限。 符号的每一条边都不大于该值时才会被搜索；对边长为 N 的方形码，要求 N 不大于 #SymbolSizeMax； 对矩形符号...">SymbolSizeMax</a> 设置为该值。 仅当可接受的尺寸收敛为这一个方形码时，读取该属性才返回该值，否则返回 <code>0</code>。<br  />
+注意该属性表示符号中模块的数量，不是单个模块的尺寸，后者见 <a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#a9129becdc5971cac9fc3f3d5cb430ae1" title="预期的模块相对于整个条码尺寸的大小等级。 选择小、中（默认）、大三档，不表示像素尺寸，也不包含自动判断模式。 对于点阵 Data Matrix 码，模块尺寸指相邻点的中心间距；对于普通 Data Mat...">ModuleSize</a> 。 </p>
+<p>非零值必须是所检测码制（见 #Type）允许的符号尺寸，否则被拒绝。 各码制的实际生效范围如下：<br  />
+</p><table style="padding:10px;">
+<tr>
+<td><b>码制</b></td><td><b>实际生效范围（每边模块数）</b> </td></tr>
+<tr>
+<td>Data Matrix（ECC 200）</td><td>方形 <code>10×10</code> … <code>144×144</code>；矩形 <code>8×18</code> … <code>16×48</code> </td></tr>
+<tr>
+<td>Micro QR</td><td><code>11×11</code>、<code>13×13</code>、<code>15×15</code>、<code>17×17</code> </td></tr>
+<tr>
+<td>QR 码</td><td><code>21×21</code> … <code>177×177</code>（version 1~40，步长 4） </td></tr>
+<tr>
+<td>Aztec</td><td><code>15×15</code> … <code>151×151</code>（compact 15~27，full range 19~151） </td></tr>
+<tr>
+<td>PDF417</td><td>行 <code>3</code>~<code>90</code>、数据列 <code>1</code>~<code>30</code>（非模块边长） </td></tr>
+<tr>
+<td>MaxiCode</td><td>固定 <code>30×33</code> 六边形网格，无尺寸选项 </td></tr>
+</table>
+<p>矩形符号（如 \( 8 \times 18 \) ）无法用这一个数值表达，仅在该属性为 <code>0</code> 时才会被搜索。 如需按尺寸范围限制矩形码，请使用 <a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#a07dd7d3d3aadb81c533da5bb2b4b7c87" title="符号尺寸范围的下限，以符号每边的模块数表示。 默认设置为 0，表示没有下限。 符号的每一条边都不小于该值时才会被搜索；对边长为 N 的方形码，要求 N 不小于 #SymbolSizeMin； 对矩形符号...">SymbolSizeMin</a> 与 <a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#a781ad1ac466ccfdb225c6b9ebd5adb6a" title="符号尺寸范围的上限，以符号每边的模块数表示。 默认设置为 0，表示没有上限。 符号的每一条边都不大于该值时才会被搜索；对边长为 N 的方形码，要求 N 不大于 #SymbolSizeMax； 对矩形符号...">SymbolSizeMax</a> 。 </p><dl class="section since"><dt>自从</dt><dd>2.23.0 </dd></dl>
+
+</div>
+</div>
+<a id="a781ad1ac466ccfdb225c6b9ebd5adb6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a781ad1ac466ccfdb225c6b9ebd5adb6a">&#9670;&nbsp;</a></span>SymbolSizeMax</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SymbolSizeMax</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>符号尺寸范围的上限，以符号每边的模块数表示。<br  />
+默认设置为 <code>0</code>，表示没有上限。<br  />
+符号的每一条边都不大于该值时才会被搜索；对边长为 <code>N</code> 的方形码，要求 <code>N</code> 不大于 #SymbolSizeMax； 对矩形符号，要求其长边不大于 <a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#a781ad1ac466ccfdb225c6b9ebd5adb6a" title="符号尺寸范围的上限，以符号每边的模块数表示。 默认设置为 0，表示没有上限。 符号的每一条边都不大于该值时才会被搜索；对边长为 N 的方形码，要求 N 不大于 #SymbolSizeMax； 对矩形符号...">SymbolSizeMax</a> 。 </p>
+<p>非零值必须是所检测码制允许的符号尺寸，见 <a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#a096267ef6ed173819a900a48035903c1" title="预期的符号尺寸，以符号每边的模块数表示。 默认设置为 0，表示不限制符号尺寸。 设置为非零值时要求符号是恰好该尺寸的方形码，并同时把 SymbolSizeMin 与 SymbolSizeMax 设置为该...">SymbolSize</a> 中的表格。 小于当前 <a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#a07dd7d3d3aadb81c533da5bb2b4b7c87" title="符号尺寸范围的下限，以符号每边的模块数表示。 默认设置为 0，表示没有下限。 符号的每一条边都不小于该值时才会被搜索；对边长为 N 的方形码，要求 N 不小于 #SymbolSizeMin； 对矩形符号...">SymbolSizeMin</a> 的取值将被拒绝。 与 <a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#a9129becdc5971cac9fc3f3d5cb430ae1" title="预期的模块相对于整个条码尺寸的大小等级。 选择小、中（默认）、大三档，不表示像素尺寸，也不包含自动判断模式。 对于点阵 Data Matrix 码，模块尺寸指相邻点的中心间距；对于普通 Data Mat...">ModuleSize</a> 的区别见 <a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#a096267ef6ed173819a900a48035903c1" title="预期的符号尺寸，以符号每边的模块数表示。 默认设置为 0，表示不限制符号尺寸。 设置为非零值时要求符号是恰好该尺寸的方形码，并同时把 SymbolSizeMin 与 SymbolSizeMax 设置为该...">SymbolSize</a> 。 </p><dl class="section since"><dt>自从</dt><dd>2.23.0 </dd></dl>
+
+</div>
+</div>
+<a id="a07dd7d3d3aadb81c533da5bb2b4b7c87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07dd7d3d3aadb81c533da5bb2b4b7c87">&#9670;&nbsp;</a></span>SymbolSizeMin</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SymbolSizeMin</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>符号尺寸范围的下限，以符号每边的模块数表示。<br  />
+默认设置为 <code>0</code>，表示没有下限。<br  />
+符号的每一条边都不小于该值时才会被搜索；对边长为 <code>N</code> 的方形码，要求 <code>N</code> 不小于 #SymbolSizeMin； 对矩形符号（如 \( 8 \times 18 \) ），要求其短边不小于 #SymbolSizeMin。 </p>
+<p>非零值必须是所检测码制允许的符号尺寸，见 <a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#a096267ef6ed173819a900a48035903c1" title="预期的符号尺寸，以符号每边的模块数表示。 默认设置为 0，表示不限制符号尺寸。 设置为非零值时要求符号是恰好该尺寸的方形码，并同时把 SymbolSizeMin 与 SymbolSizeMax 设置为该...">SymbolSize</a> 中的表格。 大于当前 <a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#a781ad1ac466ccfdb225c6b9ebd5adb6a" title="符号尺寸范围的上限，以符号每边的模块数表示。 默认设置为 0，表示没有上限。 符号的每一条边都不大于该值时才会被搜索；对边长为 N 的方形码，要求 N 不大于 #SymbolSizeMax； 对矩形符号...">SymbolSizeMax</a> 的取值将被拒绝。 与 <a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#a9129becdc5971cac9fc3f3d5cb430ae1" title="预期的模块相对于整个条码尺寸的大小等级。 选择小、中（默认）、大三档，不表示像素尺寸，也不包含自动判断模式。 对于点阵 Data Matrix 码，模块尺寸指相邻点的中心间距；对于普通 Data Mat...">ModuleSize</a> 的区别见 <a class="el" href="interface_l_p_v_barcode_lib_1_1_i_l_barcode_detector.html#a096267ef6ed173819a900a48035903c1" title="预期的符号尺寸，以符号每边的模块数表示。 默认设置为 0，表示不限制符号尺寸。 设置为非零值时要求符号是恰好该尺寸的方形码，并同时把 SymbolSizeMin 与 SymbolSizeMax 设置为该...">SymbolSize</a> 。 </p><dl class="section since"><dt>自从</dt><dd>2.23.0 </dd></dl>
+
+</div>
+</div>
+<a id="adf0d9099ddeafa37479161c47f75bf0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf0d9099ddeafa37479161c47f75bf0a">&#9670;&nbsp;</a></span>VerifyQuality</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL VerifyQuality</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置在解码过程中是否进行条码质量检测。默认设置为 <code>False</code>. </p>
+<p>当期支持质量检测的码制有：<br  />
+ <a class="el" href="namespace_l_p_v_barcode_lib.html#a8d35ae44acaae621a58bd6ac4cafb72fa235a553331ca97b7ac42ce2ae7ad025e">QR Code</a><br  />
+<a class="el" href="namespace_l_p_v_barcode_lib.html#a8d35ae44acaae621a58bd6ac4cafb72fa10227dca2599e1f5295140d519200f75">Data Matrix</a> ECC200<br  />
+<a class="el" href="namespace_l_p_v_barcode_lib.html#a8d35ae44acaae621a58bd6ac4cafb72faaccb17a2801f9402add1a118560eb36d">EAN-8</a><br  />
+ <a class="el" href="namespace_l_p_v_barcode_lib.html#a8d35ae44acaae621a58bd6ac4cafb72fa074374aebfdc4a4ea14f04b74e0ebd44">EAN-13</a><br  />
+ <a class="el" href="namespace_l_p_v_barcode_lib.html#a8d35ae44acaae621a58bd6ac4cafb72fadb633f3eaf4946208a0525901d8c8063">UPC-A</a><br  />
+ <a class="el" href="namespace_l_p_v_barcode_lib.html#a8d35ae44acaae621a58bd6ac4cafb72fa41c41aac66f097f3fa38425c994dab5b">UPC-E</a><br  />
+ <a class="el" href="namespace_l_p_v_barcode_lib.html#a8d35ae44acaae621a58bd6ac4cafb72fa30c6a7caa96836832c4a851c27d35d9a">ISBN-10</a><br  />
+ <a class="el" href="namespace_l_p_v_barcode_lib.html#a8d35ae44acaae621a58bd6ac4cafb72fa2dc1cb2a0e0d58221646223cc3fbe6c5">ISBN-13</a><br  />
+ <a class="el" href="namespace_l_p_v_barcode_lib.html#a8d35ae44acaae621a58bd6ac4cafb72fa3c9312d8c052936cd3c153543e1d261c">Interleaved 2 of 5</a><br  />
+ <a class="el" href="namespace_l_p_v_barcode_lib.html#a8d35ae44acaae621a58bd6ac4cafb72fae9063420db3b47f42a3d625cd7fad3b4">Code 39</a><br  />
+ <a class="el" href="namespace_l_p_v_barcode_lib.html#a8d35ae44acaae621a58bd6ac4cafb72fafe8028413ca10ac481206f524e80b5f4">Code 93</a><br  />
+ <a class="el" href="namespace_l_p_v_barcode_lib.html#a8d35ae44acaae621a58bd6ac4cafb72fa92dd6ee9743bcd71efd77126a40cfcfd">Code 128</a><br  />
+ <a class="el" href="namespace_l_p_v_barcode_lib.html#a8d35ae44acaae621a58bd6ac4cafb72fa46448ec9a41d9edf27b99dad814d50e3">GS1 DataBar</a><br  />
+ <a class="el" href="namespace_l_p_v_barcode_lib.html#a8d35ae44acaae621a58bd6ac4cafb72fa7e49dc9a42b8a328f1731f11791dc525">GS1 DataBar Limited</a><br  />
+ <a class="el" href="namespace_l_p_v_barcode_lib.html#a8d35ae44acaae621a58bd6ac4cafb72fa3ac3e65f1896408e75a54657613047d2">CodaBar</a></p>
+<p>未支持的码制，总是返回 F 等级。 </p>
+
+</div>
+</div>
+<a id="a510bc7fe08fa3057efc8e8f19b3befb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a510bc7fe08fa3057efc8e8f19b3befb6">&#9670;&nbsp;</a></span>WideSearch</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL WideSearch</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>是否启用解码前的大范围粗定位搜索。<br  />
+默认设置为 <code>True</code>，表示在精确解码前先在整个检测区域内搜索候选条码区域，适合在较大区域内定位条码； 设置为 <code>False</code> 时跳过粗定位搜索而直接解码，速度更快，通常在感兴趣区域较小时足够。 </p>
+<p>开启时耗时可能明显增加。<br  />
+当前该设置仅对 Data Matrix 码生效。 </p><dl class="section since"><dt>自从</dt><dd>2.23.0 </dd></dl>
 
 </div>
 </div>

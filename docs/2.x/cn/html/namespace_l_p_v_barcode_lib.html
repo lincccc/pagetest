@@ -117,6 +117,12 @@ $(function() {
  }</td></tr>
 <tr class="memdesc:a84df8395b042233913ed7ab7ac86aec9"><td class="mdescLeft">&#160;</td><td class="mdescRight">描述条码的绘制行为  <a href="namespace_l_p_v_barcode_lib.html#a84df8395b042233913ed7ab7ac86aec9">更多...</a><br /></td></tr>
 <tr class="separator:a84df8395b042233913ed7ab7ac86aec9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6822103ddf40c292fc6e8f089b942f6"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_l_p_v_barcode_lib.html#af6822103ddf40c292fc6e8f089b942f6">LPVBarcodeModuleSize</a> { <a class="el" href="namespace_l_p_v_barcode_lib.html#af6822103ddf40c292fc6e8f089b942f6a5b76c2632876663db10f12fd2cd138d2">LPVBarcodeModuleSizeSmall</a> = 0
+, <a class="el" href="namespace_l_p_v_barcode_lib.html#af6822103ddf40c292fc6e8f089b942f6aaafed37f290857d0e21462cae254a3bf">LPVBarcodeModuleSizeMedium</a> = 1
+, <a class="el" href="namespace_l_p_v_barcode_lib.html#af6822103ddf40c292fc6e8f089b942f6a3c6899987eaaf0479c72dcd4fb0fe458">LPVBarcodeModuleSizeLarge</a> = 2
+ }</td></tr>
+<tr class="memdesc:af6822103ddf40c292fc6e8f089b942f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">描述模块相对于整个条码尺寸的大小等级，而非像素尺寸。  <a href="namespace_l_p_v_barcode_lib.html#af6822103ddf40c292fc6e8f089b942f6">更多...</a><br /></td></tr>
+<tr class="separator:af6822103ddf40c292fc6e8f089b942f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30448639d7ee070028ecf22e707e1951"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_l_p_v_barcode_lib.html#a30448639d7ee070028ecf22e707e1951">LPVBarcodeQualityGrade</a> { <br />
 &#160;&#160;<a class="el" href="namespace_l_p_v_barcode_lib.html#a30448639d7ee070028ecf22e707e1951a2cb11b345fc4be494600185e727ed79a">LPVBarcodeQualityGradeF</a> = 0
 , <a class="el" href="namespace_l_p_v_barcode_lib.html#a30448639d7ee070028ecf22e707e1951abe93a7cfa028b231cb094e410817d067">LPVBarcodeQualityGradeD</a> = 1
@@ -147,6 +153,12 @@ $(function() {
  }</td></tr>
 <tr class="memdesc:ae2c805658fd677520e4953101b586020"><td class="mdescLeft">&#160;</td><td class="mdescRight">描述条码质量检测的类别  <a href="namespace_l_p_v_barcode_lib.html#ae2c805658fd677520e4953101b586020">更多...</a><br /></td></tr>
 <tr class="separator:ae2c805658fd677520e4953101b586020"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ed5a16909e939e7893edafda8f6ac79"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_l_p_v_barcode_lib.html#a9ed5a16909e939e7893edafda8f6ac79">LPVBarcodeSymbolShape</a> { <a class="el" href="namespace_l_p_v_barcode_lib.html#a9ed5a16909e939e7893edafda8f6ac79a3fce8df431131aee6886726fb1f24a34">LPVBarcodeSymbolShapeAny</a> = 0
+, <a class="el" href="namespace_l_p_v_barcode_lib.html#a9ed5a16909e939e7893edafda8f6ac79a036bf20c2747c40533031ed06fd948ed">LPVBarcodeSymbolShapeSquare</a> = 1
+, <a class="el" href="namespace_l_p_v_barcode_lib.html#a9ed5a16909e939e7893edafda8f6ac79aeb765a60ff8036fb432e0fcedd83315e">LPVBarcodeSymbolShapeRectangle</a> = 2
+ }</td></tr>
+<tr class="memdesc:a9ed5a16909e939e7893edafda8f6ac79"><td class="mdescLeft">&#160;</td><td class="mdescRight">描述待搜索的符号的形状。  <a href="namespace_l_p_v_barcode_lib.html#a9ed5a16909e939e7893edafda8f6ac79">更多...</a><br /></td></tr>
+<tr class="separator:a9ed5a16909e939e7893edafda8f6ac79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d35ae44acaae621a58bd6ac4cafb72f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_l_p_v_barcode_lib.html#a8d35ae44acaae621a58bd6ac4cafb72f">LPVBarcodeType</a> { <br />
 &#160;&#160;<a class="el" href="namespace_l_p_v_barcode_lib.html#a8d35ae44acaae621a58bd6ac4cafb72faaccb17a2801f9402add1a118560eb36d">LPVBarcodeEAN8</a> = 0x00000001
 , <a class="el" href="namespace_l_p_v_barcode_lib.html#a8d35ae44acaae621a58bd6ac4cafb72fa41c41aac66f097f3fa38425c994dab5b">LPVBarcodeUPCE</a> = 0x00000002
@@ -188,11 +200,10 @@ $(function() {
 <h3>示例代码 </h3>
  <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line"><span class="preprocessor">#include &quot;LPVBarcode.h&quot;</span></div>
 </div><!-- fragment --><p> <b>Qt Demo:</b> <a class="el" href="how_to_play_with_demo.html#demo_barcode">QtBarcode</a> </p> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line"><span class="keyword">using</span> <a class="code" href="namespace_l_p_v_barcode_lib.html">LPVBarcodeLib</a>;</div>
-<div class="ttc" id="anamespace_l_p_v_barcode_lib_html"><div class="ttname"><a href="namespace_l_p_v_barcode_lib.html">LPVBarcodeLib</a></div><div class="ttdoc">LPV 条码库，提供一维和二维条码的检测功能。</div><div class="ttdef"><b>Definition:</b> LPVBarcode.idl:62</div></div>
+<div class="ttc" id="anamespace_l_p_v_barcode_lib_html"><div class="ttname"><a href="namespace_l_p_v_barcode_lib.html">LPVBarcodeLib</a></div><div class="ttdoc">LPV 条码库，提供一维和二维条码的检测功能。</div><div class="ttdef"><b>Definition:</b> LPVBarcode.idl:59</div></div>
 </div><!-- fragment --><p> <b>C# Demo:</b> <a class="el" href="how_to_play_with_demo.html#demo_barcode">CSharpBarcode</a> </p> </div>  <div class='newInnerHTML' title='com' style='display: none;'>COM</div><div class='toggleable_div label_com' style='display: none;'><div class="fragment"><div class="line"><span class="preprocessor">#define LPV_COM </span><span class="comment">// enable COM interfaces</span></div>
 <div class="line">#include &quot;LPVBarcode.h&quot;</div>
-</div><!-- fragment --><p> <b>MFC Demo:</b> <a class="el" href="how_to_play_with_demo.html#demo_barcode">MFCBarcode</a> </p> </div> <p><b>注：</b>该模块在 Linux / MacOS 平台暂不可用。 </p>
-</div><h2 class="groupheader">枚举类型说明</h2>
+</div><!-- fragment --><p> <b>MFC Demo:</b> <a class="el" href="how_to_play_with_demo.html#demo_barcode">MFCBarcode</a> </p> </div>  </div><h2 class="groupheader">枚举类型说明</h2>
 <a id="a84df8395b042233913ed7ab7ac86aec9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a84df8395b042233913ed7ab7ac86aec9">&#9670;&nbsp;</a></span>LPVBarcodeDrawFlags</h2>
 
@@ -218,6 +229,30 @@ $(function() {
 <tr><td class="fieldname"><a id="a84df8395b042233913ed7ab7ac86aec9acd2c9dfcc28d103720511f6847c531bc"></a>LPVBarcodeDrawDefault&#160;</td><td class="fielddoc"><p>默认，绘制条码的四边形检出区域 </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a84df8395b042233913ed7ab7ac86aec9a57037add95f956877c39092ee5c3b093"></a>LPVBarcodeDrawAll&#160;</td><td class="fielddoc"><p>绘制所有部分 </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="af6822103ddf40c292fc6e8f089b942f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6822103ddf40c292fc6e8f089b942f6">&#9670;&nbsp;</a></span>LPVBarcodeModuleSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespace_l_p_v_barcode_lib.html#af6822103ddf40c292fc6e8f089b942f6">LPVBarcodeModuleSize</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>描述模块相对于整个条码尺寸的大小等级，而非像素尺寸。 </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="af6822103ddf40c292fc6e8f089b942f6a5b76c2632876663db10f12fd2cd138d2"></a>LPVBarcodeModuleSizeSmall&#160;</td><td class="fielddoc"><p>较小的相对模块尺寸 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="af6822103ddf40c292fc6e8f089b942f6aaafed37f290857d0e21462cae254a3bf"></a>LPVBarcodeModuleSizeMedium&#160;</td><td class="fielddoc"><p>中等的相对模块尺寸 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="af6822103ddf40c292fc6e8f089b942f6a3c6899987eaaf0479c72dcd4fb0fe458"></a>LPVBarcodeModuleSizeLarge&#160;</td><td class="fielddoc"><p>较大的相对模块尺寸 </p>
 </td></tr>
 </table>
 
@@ -289,6 +324,30 @@ $(function() {
 <tr><td class="fieldname"><a id="ae2c805658fd677520e4953101b586020a622b51ebfcfadd2e65aa1671a332b851"></a>LPVBarcodeQualityUEC&#160;</td><td class="fielddoc"><p>未使用的纠错，衡量为纠正符号局部或点的各种错误所消耗的纠错容量 </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ae2c805658fd677520e4953101b586020aeb27c38723319ebdb62cc6030d4e87b5"></a>LPVBarcodeQualityRM&#160;</td><td class="fielddoc"><p>模校调制比，衡量每一个模块在和整体阈值比较后能被正确判断为深色模块或浅色模块的可辨识度 </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a9ed5a16909e939e7893edafda8f6ac79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ed5a16909e939e7893edafda8f6ac79">&#9670;&nbsp;</a></span>LPVBarcodeSymbolShape</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespace_l_p_v_barcode_lib.html#a9ed5a16909e939e7893edafda8f6ac79">LPVBarcodeSymbolShape</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>描述待搜索的符号的形状。 </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a9ed5a16909e939e7893edafda8f6ac79a3fce8df431131aee6886726fb1f24a34"></a>LPVBarcodeSymbolShapeAny&#160;</td><td class="fielddoc"><p>接受任意形状的符号 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9ed5a16909e939e7893edafda8f6ac79a036bf20c2747c40533031ed06fd948ed"></a>LPVBarcodeSymbolShapeSquare&#160;</td><td class="fielddoc"><p>仅接受方形符号 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9ed5a16909e939e7893edafda8f6ac79aeb765a60ff8036fb432e0fcedd83315e"></a>LPVBarcodeSymbolShapeRectangle&#160;</td><td class="fielddoc"><p>仅接受矩形符号 </p>
 </td></tr>
 </table>
 

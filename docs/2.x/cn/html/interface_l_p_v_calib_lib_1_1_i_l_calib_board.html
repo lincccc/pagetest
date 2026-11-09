@@ -107,8 +107,8 @@ Public 成员函数</h2></td></tr>
 <tr class="separator:abee452fce9fcd580f809b57613aab1f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad01319513d26526ad6dfce768c1589c6"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#ad01319513d26526ad6dfce768c1589c6">Evaluate</a> (<a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_point_pairs.html">ILCalibPointPairs</a> *pointPairs, <a class="el" href="namespace_l_p_v_calib_lib.html#a99e44d4eeb99f21d21c4e95df1559cae">LPVCalibOutlierRemovalPolicy</a> policy)</td></tr>
 <tr class="separator:ad01319513d26526ad6dfce768c1589c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef55e1eefddce8a8c94c9c6f52a8ce11"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#aef55e1eefddce8a8c94c9c6f52a8ce11">GeneratePointPairs</a> (<a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_points.html">ILPoints</a> *imgPoints, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_point_pairs.html">ILCalibPointPairs</a> **pointPairs)</td></tr>
-<tr class="separator:aef55e1eefddce8a8c94c9c6f52a8ce11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7949cf6a1801ed4e289c02eac83157fc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#a7949cf6a1801ed4e289c02eac83157fc">GeneratePointPairs</a> (<a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_points.html">ILPoints</a> *imgPoints, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_point_pairs.html">ILCalibPointPairs</a> **pointPairs, double startCornerX, double startCornerY, double xAxisAngle)</td></tr>
+<tr class="separator:a7949cf6a1801ed4e289c02eac83157fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_interface_l_p_v_core_lib_1_1_i_l_object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_interface_l_p_v_core_lib_1_1_i_l_object')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_object.html">ILObject</a></td></tr>
 <tr class="memitem:aa7dcddf685e0ba4ddc2d84b0d191f3d7 inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_object"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_object.html">ILObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_object.html#aa7dcddf685e0ba4ddc2d84b0d191f3d7">Copy</a> ()</td></tr>
 <tr class="separator:aa7dcddf685e0ba4ddc2d84b0d191f3d7 inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -161,12 +161,12 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 <tr class="memitem:a945422890074fda2758b4b028760bf32"><td class="memItemLeft" align="right" valign="top"><a id="a945422890074fda2758b4b028760bf32"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#a945422890074fda2758b4b028760bf32">OutlierSigma</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:a945422890074fda2758b4b028760bf32"><td class="mdescLeft">&#160;</td><td class="mdescRight">用于生成确定坏点的相对阈值，即图像点和其反投影位置（或拟合位置，由 <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#a339c0d3167fa8648a9ec06c80895eb53" title="用于坏点剔除和评价的策略。默认设置为 LPVCalibOutlierRemovalNone ，即不启用坏点剔除。">OutlierPolicy</a> 确定）之间的距离均值，再加上 <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#a945422890074fda2758b4b028760bf32" title="用于生成确定坏点的相对阈值，即图像点和其反投影位置（或拟合位置，由 OutlierPolicy 确定）之间的距离均值，再加上 OutlierSigma x 标准差。 距离大于该固定阈值的点对将被视为坏点...">OutlierSigma</a> x 标准差。 距离大于该固定阈值的点对将被视为坏点，并剔除。<br  />
-默认设置为 0，表示跳过基于相对阈值的坏点剔除。 <br /></td></tr>
+默认设置为 <code>0</code>，表示跳过基于相对阈值的坏点剔除。 <br /></td></tr>
 <tr class="separator:a945422890074fda2758b4b028760bf32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a260d008dbab63c3d2e6e779a4770388a"><td class="memItemLeft" align="right" valign="top"><a id="a260d008dbab63c3d2e6e779a4770388a"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#a260d008dbab63c3d2e6e779a4770388a">OutlierThreshold</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:a260d008dbab63c3d2e6e779a4770388a"><td class="mdescLeft">&#160;</td><td class="mdescRight">固定距离阈值，以像素为单位，用于过滤图像点和其反投影位置（或拟合位置，由 <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#a339c0d3167fa8648a9ec06c80895eb53" title="用于坏点剔除和评价的策略。默认设置为 LPVCalibOutlierRemovalNone ，即不启用坏点剔除。">OutlierPolicy</a> 确定）之间的距离。 距离大于该固定阈值的点对将被视为坏点，并剔除。<br  />
-默认设置为 0.1 像素。设置为 0 或负数，以跳过基于固定阈值的坏点剔除。 <br /></td></tr>
+默认设置为 <code>0.1</code> 像素。设置为 <code>0</code> 或负数，以跳过基于固定阈值的坏点剔除。 <br /></td></tr>
 <tr class="separator:a260d008dbab63c3d2e6e779a4770388a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49e5f30b18e9d5f64878d4e45f71deec"><td class="memItemLeft" align="right" valign="top"><a id="a49e5f30b18e9d5f64878d4e45f71deec"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#a49e5f30b18e9d5f64878d4e45f71deec">SquareSize</a><code> [get, set]</code></td></tr>
@@ -382,8 +382,8 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 
 </div>
 </div>
-<a id="aef55e1eefddce8a8c94c9c6f52a8ce11"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aef55e1eefddce8a8c94c9c6f52a8ce11">&#9670;&nbsp;</a></span>GeneratePointPairs()</h2>
+<a id="a7949cf6a1801ed4e289c02eac83157fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7949cf6a1801ed4e289c02eac83157fc">&#9670;&nbsp;</a></span>GeneratePointPairs()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -398,7 +398,25 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_point_pairs.html">ILCalibPointPairs</a> **&#160;</td>
-          <td class="paramname"><em>pointPairs</em>&#160;</td>
+          <td class="paramname"><em>pointPairs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>startCornerX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>startCornerY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>xAxisAngle</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -408,10 +426,14 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
       </table>
 </div><div class="memdoc">
 <p>基于输入的图像坐标点集，生成点对。<br  />
-输入的图像坐标点集将被按行从上到下、行内从左到右排序，其对应的物理坐标由当前的标定板设置从左上角开始自动生成。 除了 EM 圆点阵标定板，其起始点和坐标轴朝向由图像坐标点的分布情况决定。 </p><dl class="params"><dt>参数</dt><dd>
+输入的图像坐标点集将按阵列网格分布自动重排，默认以网格的左上角点作为起始点，按行从左到右的顺序排列； 生成的物理坐标默认 x 轴正方向朝右、Y轴正方向朝下，由当前的标定板设置（如网格、起始位置和尺寸）自动生成，与设定的 <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#a7a74b04693b448c5f4979af0b16ad24b" title="标定板的类型">CalibBoardType</a> 无关。 若指定了起始角点和 x 轴方向，则以此调整重排网格。<br  />
+<b>注意</b>：当网格呈 45° 菱形排布时，因左上角定义的歧义，自动确定的起始点可能不符合预期，推荐手动指定起始点。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">imgPoints</td><td>输入的图像坐标点集，通常通过其他定位工具获得 </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">pointPairs</td><td>返回生成的图像和物理点对集合 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">startCornerX</td><td>作为起始点的网格角点在图像中的 x 坐标，需为网格 4 个角点之一。 传入负值（默认）表示由算法根据图像坐标点的分布情况自动确定起始点。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">startCornerY</td><td>作为起始点的网格角点在图像中的 y 坐标。 仅当 #startCornerX 和 #startCornerY 均不为负时该起始角点生效，否则两者都被忽略。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">xAxisAngle</td><td>物理 x 轴在图像中的方向，单位为度，<code>0</code> 表示 x 轴指向图像右侧。 仅在起始角点有效时生效，自动模式下被忽略。 </td></tr>
   </table>
   </dd>
 </dl>
@@ -421,7 +443,7 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#a7a74b04693b448c5f4979af0b16ad24b" title="标定板的类型">CalibBoardType</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#ae0dc69304ee0d7baffda597b48d919cc" title="标定板网格的横向尺寸，至少为 3。 对于分散式二维码棋盘格标定板，无需设置该尺寸，该信息隐含在标定板图案内，可由算法自行检测。">GridWidth</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#ab374253d6ea33482e6c038396d35ce70" title="标定板网格的纵向尺寸，至少为 3。 对于分散式二维码棋盘格标定板，无需设置该尺寸，该信息隐含在标定板图案内，可由算法自行检测。">GridHeight</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#a49e5f30b18e9d5f64878d4e45f71deec" title="标定板的网格间距。 对于棋盘格和分散式二维码棋盘格标定板，其指的是一个黑色方块的物理尺寸。 对于圆点阵标定板，其指的是相邻两个圆点中心的物理距离。">SquareSize</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#a23cbe645d0a9732d0f73c1e0a4e69271" title="指定标定板起始点的 x 物理坐标。起始点通常为图像中标定点的最左上点或中心点（若启用 StartFromCetner ）。 对于带有坐标系的圆点标定板，为该坐标系的原点。 对分散式二维码棋盘格标定板，因...">StartX</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#a1afd6ddf5bddb030c45eef5d2ccc1e87" title="指定标定板起始点的 y 物理坐标。起始点通常为图像中标定点的最左上点或中心点（若启用 StartFromCetner ）。">StartY</a> </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#a7a74b04693b448c5f4979af0b16ad24b" title="标定板的类型">CalibBoardType</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#ae0dc69304ee0d7baffda597b48d919cc" title="标定板网格的横向尺寸，至少为 3。 对于分散式二维码棋盘格标定板，无需设置该尺寸，该信息隐含在标定板图案内，可由算法自行检测。">GridWidth</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#ab374253d6ea33482e6c038396d35ce70" title="标定板网格的纵向尺寸，至少为 3。 对于分散式二维码棋盘格标定板，无需设置该尺寸，该信息隐含在标定板图案内，可由算法自行检测。">GridHeight</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#a49e5f30b18e9d5f64878d4e45f71deec" title="标定板的网格间距。 对于棋盘格和分散式二维码棋盘格标定板，其指的是一个黑色方块的物理尺寸。 对于圆点阵标定板，其指的是相邻两个圆点中心的物理距离。">SquareSize</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#a23cbe645d0a9732d0f73c1e0a4e69271" title="指定标定板起始点的 x 物理坐标。起始点通常为图像中标定点的最左上点或中心点（若启用 StartFromCetner ）。 对于带有坐标系的圆点标定板，为该坐标系的原点。 对分散式二维码棋盘格标定板，因...">StartX</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#a1afd6ddf5bddb030c45eef5d2ccc1e87" title="指定标定板起始点的 y 物理坐标。起始点通常为图像中标定点的最左上点或中心点（若启用 StartFromCetner ）。">StartY</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#aa42cf83ede3a96bae0942c15805a18a7" title="是否将网格的中心点作为标定板起始点。默认不开启，即网格的左上角点作为起始点。">StartFromCetner</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#a2f5f8853353d6cc2b720adfff409612c" title="是否交换输出物理点的 x/y 坐标">SwapXY</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#a043f4284e5135d40b0fd289880ca6ada" title="生成输出物理坐标时的横向移动步长，即起始点与其图像上的右侧点的场景间距。生成步长在 SwapXY 之前应用。 若 X 轴朝右，该步长数值为正；若 X 轴朝左，该步长数值为负。若该步长数值为 0，则使用 ...">StepX</a>, <a class="el" href="interface_l_p_v_calib_lib_1_1_i_l_calib_board.html#a3c6adad7936e3d87468ae5aa847c862d" title="生成输出物理坐标时的纵向移动步长，即起始点与其图像上的下方点（下一行）的场景间距。生成步长在 SwapXY 之前应用。 若 Y 轴朝下，该步长数值为正；若 Y 轴朝上，该步长数值为负。若该步长数值为 0...">StepY</a> </dd></dl>
 
 </div>
 </div>
@@ -448,7 +470,7 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 
 <p>分散式二维码棋盘格标定板使用的标记点尺寸。<br  />
 </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000001">弃用:</a></b></dt><dd>该属性已废弃，设置和获取无任何实质效果。 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000002">弃用:</a></b></dt><dd>该属性已废弃，设置和获取无任何实质效果。 </dd></dl>
 
 </div>
 </div>

@@ -210,6 +210,75 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter
 <td>"conductivity"</td><td>电导系数类型</td><td>整数</td><td>查阅 <a class="el" href="namespace_l_p_v_m_l_lib.html#a8d852d131e200703af74f9e52aa1191b">LPVConductivity</a></td><td><a class="el" href="namespace_l_p_v_m_l_lib.html#a8d852d131e200703af74f9e52aa1191bad07d573aea4c34e1a0567273ee04d6b9">G2</a> </td></tr>
 </table>
 </td></tr>
+<tr>
+<td>PixelByPixel</td><td>逐像素，将统一尺寸样本图像的每个像素作为特征向量的一个维度<br  />
+ <table class="markdownTable">
+<tr>
+<th class="markdownTableHeadLeft" style="width:15%">参数名称</th><th class="markdownTableHeadLeft" style="width:50%">使用说明</th><th class="markdownTableHeadLeft">类型</th><th class="markdownTableHeadLeft">取值范围</th><th class="markdownTableHeadLeft">默认值 </th></tr>
+<tr>
+<td>"uni size"</td><td>逐像素取值的统一样本图像尺寸</td><td>尺寸</td><td>\( 2 \times 2 \) ~ \( 64 \times 64 \) </td><td>\( 8 \times 8 \) </td></tr>
+<tr>
+<td>"pixel value"</td><td>像素值的类型</td><td>整数</td><td>查阅 <a class="el" href="namespace_l_p_v_m_l_lib.html#ac4599190266e94a740de4acccde9b1ca">LPVPixelValueType</a></td><td><a class="el" href="namespace_l_p_v_m_l_lib.html#ac4599190266e94a740de4acccde9b1caaa1ccbcb586c2404fafd961fdb6e5abb6">Gray</a> </td></tr>
+<tr>
+<td>"projection"</td><td>用于缩减特征向量的投影方式</td><td>整数</td><td>查阅 <a class="el" href="namespace_l_p_v_m_l_lib.html#af7eccb5b4f0998abd9b477d5ad9dbca4">LPVProjectionType</a></td><td><a class="el" href="namespace_l_p_v_m_l_lib.html#af7eccb5b4f0998abd9b477d5ad9dbca4a00490236db8847cd643de26aa62761a4">None</a> </td></tr>
+</table>
+</td></tr>
+<tr>
+<td>SIFT</td><td>Scale-Invariant Feature Transform<br  />
+ <table class="markdownTable">
+<tr>
+<th class="markdownTableHeadLeft" style="width:15%">参数名称</th><th class="markdownTableHeadLeft" style="width:50%">使用说明</th><th class="markdownTableHeadLeft">类型</th><th class="markdownTableHeadLeft">取值范围</th><th class="markdownTableHeadLeft">默认值 </th></tr>
+<tr>
+<td>"keypoint num"</td><td>关键点尺寸</td><td>整数</td><td>1 ~ 3</td><td>1 </td></tr>
+<tr>
+<td>"keypoint size"</td><td>每个关键点的直径</td><td>整数</td><td>≥ 0 </td><td>0 </td></tr>
+</table>
+</td></tr>
+<tr>
+<td>Haar</td><td>Haarlike<br  />
+ <table class="markdownTable">
+<tr>
+<th class="markdownTableHeadLeft" style="width:15%">参数名称</th><th class="markdownTableHeadLeft" style="width:50%">使用说明</th><th class="markdownTableHeadLeft">类型</th><th class="markdownTableHeadLeft">取值范围</th><th class="markdownTableHeadLeft">默认值 </th></tr>
+<tr>
+<td>"bin scale"</td><td>直方图统计区域的缩放级别，bin 数量按 \( 2^i \) 计算</td><td>整数</td><td>1 ~ 5</td><td>1 </td></tr>
+</table>
+</td></tr>
+<tr>
+<td>Shape</td><td>形状上下文与关键点分布<br  />
+ <table class="markdownTable">
+<tr>
+<th class="markdownTableHeadLeft" style="width:15%">参数名称</th><th class="markdownTableHeadLeft" style="width:50%">使用说明</th><th class="markdownTableHeadLeft">类型</th><th class="markdownTableHeadLeft">取值范围</th><th class="markdownTableHeadLeft">默认值 </th></tr>
+<tr>
+<td>"shape type"</td><td>形状特征的类型</td><td>整数</td><td>查阅 <a class="el" href="namespace_l_p_v_m_l_lib.html#af96fa2db057413c5a183e3fd4b39ae12">LPVShapeType</a></td><td><a class="el" href="namespace_l_p_v_m_l_lib.html#af96fa2db057413c5a183e3fd4b39ae12aad857c0b1a57f45991913cb00607f965">KPDistrib</a> </td></tr>
+<tr>
+<td>"kernel size"</td><td>核尺寸</td><td>整数</td><td>4 ~ 15</td><td>4 </td></tr>
+<tr>
+<td>"use ratio"</td><td>实际使用的关键点比例</td><td>浮点数</td><td>0.01 ~ 0.5</td><td>0.1 </td></tr>
+<tr>
+<td>"distance-angle bins"</td><td>距离-角度直方图的统计区域个数</td><td>整数</td><td>6 ~ 36</td><td>12 </td></tr>
+<tr>
+<td>"angular bins"</td><td>角度直方图的统计区域个数</td><td>整数</td><td>3 ~ 36</td><td>12 </td></tr>
+<tr>
+<td>"radial bins"</td><td>径向直方图的统计区域个数</td><td>整数</td><td>1 ~ 11</td><td>5 </td></tr>
+</table>
+</td></tr>
+<tr>
+<td>NewBrief</td><td>NewBrief<br  />
+ <table class="markdownTable">
+<tr>
+<th class="markdownTableHeadLeft" style="width:15%">参数名称</th><th class="markdownTableHeadLeft" style="width:50%">使用说明</th><th class="markdownTableHeadLeft">类型</th><th class="markdownTableHeadLeft">取值范围</th><th class="markdownTableHeadLeft">默认值 </th></tr>
+<tr>
+<td>"bin size"</td><td>每个统计区域的大小</td><td>整数</td><td>4 ~ 16</td><td>8 </td></tr>
+<tr>
+<td>"difference range"</td><td>差值的取值范围</td><td>整数</td><td>0 ~ 50</td><td>10 </td></tr>
+</table>
+</td></tr>
+<tr>
+<td>GGCM</td><td>灰度-梯度共生矩阵，无参数 </td></tr>
+<tr>
+<td>IntegralHist</td><td>积分直方图，无参数 </td></tr>
+<tr>
+<td>MLP</td><td>MLP，无参数 </td></tr>
 </table>
 <h3>示例代码 </h3>
  <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line"><span class="comment">// create a HOG feature</span></div>

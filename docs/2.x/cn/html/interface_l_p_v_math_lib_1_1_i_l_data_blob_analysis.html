@@ -141,7 +141,7 @@ Public 成员函数</h2></td></tr>
 <tr class="memdesc:afd91c5f36407b929b4758b1b50308827"><td class="mdescLeft">&#160;</td><td class="mdescRight">如何排序候选数据斑点。若检测区域中有多于设定的数据斑点，需将候选数据斑点排序并取前若干个作为结果。  <a href="interface_l_p_v_math_lib_1_1_i_l_data_blob_analysis.html#afd91c5f36407b929b4758b1b50308827">更多...</a><br /></td></tr>
 <tr class="separator:afd91c5f36407b929b4758b1b50308827"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26bbdb0a7c27819253704905dfd3d871"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_math_lib_1_1_i_l_data_blob_analysis.html#a26bbdb0a7c27819253704905dfd3d871">SortByDescending</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a26bbdb0a7c27819253704905dfd3d871"><td class="mdescLeft">&#160;</td><td class="mdescRight">与 <a class="el" href="interface_l_p_v_math_lib_1_1_i_l_data_blob_analysis.html#afd91c5f36407b929b4758b1b50308827" title="如何排序候选数据斑点。若检测区域中有多于设定的数据斑点，需将候选数据斑点排序并取前若干个作为结果。">SortBy</a> 一同起效。True 表示降序排序候选数据斑点（数值从大到小排序），False 表示升序。  <a href="interface_l_p_v_math_lib_1_1_i_l_data_blob_analysis.html#a26bbdb0a7c27819253704905dfd3d871">更多...</a><br /></td></tr>
+<tr class="memdesc:a26bbdb0a7c27819253704905dfd3d871"><td class="mdescLeft">&#160;</td><td class="mdescRight">与 <a class="el" href="interface_l_p_v_math_lib_1_1_i_l_data_blob_analysis.html#afd91c5f36407b929b4758b1b50308827" title="如何排序候选数据斑点。若检测区域中有多于设定的数据斑点，需将候选数据斑点排序并取前若干个作为结果。">SortBy</a> 一同起效。<code>True</code> 表示降序排序候选数据斑点（数值从大到小排序），<code>False</code> 表示升序。  <a href="interface_l_p_v_math_lib_1_1_i_l_data_blob_analysis.html#a26bbdb0a7c27819253704905dfd3d871">更多...</a><br /></td></tr>
 <tr class="separator:a26bbdb0a7c27819253704905dfd3d871"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header properties_interface_l_p_v_core_lib_1_1_i_l_object"><td colspan="2" onclick="javascript:toggleInherit('properties_interface_l_p_v_core_lib_1_1_i_l_object')"><img src="closed.png" alt="-"/>&#160;属性 继承自 <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_object.html">ILObject</a></td></tr>
 <tr class="memitem:ab8292bdf77c2bf89903956417791dbf5 inherit properties_interface_l_p_v_core_lib_1_1_i_l_object"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_l_string.html">LString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_object.html#ab8292bdf77c2bf89903956417791dbf5">Name</a><code> [get, set]</code></td></tr>
@@ -347,7 +347,7 @@ Public 成员函数</h2></td></tr>
 <p>使用局部自适应阈值用于分割。自动基于每个数值所在的 \( \pm blockSize / 2 \) 邻域内的数值分布 为每个位置计算一个合适的阈值，再减去 bias 作为最终的阈值。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">blobPolarity</td><td>斑点的<em>目标极性</em>。<a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0baffd2c678a5a2ea661de262d51223adf3">LPVBlackOnWhite </a> 表示数值小于该自适应阈值的像素组成斑点对象, <a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0bac595c6b549ecbabb1dbb431e374b02ad">LPVWhiteOnBlack </a> 则相反。 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">blockSize</td><td>局部区域的尺寸，需要是一个奇数，如 3, 5, 7 等。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">blockSize</td><td>局部区域的尺寸，需要是一个奇数，如 <code>3</code>, <code>5</code>, <code>7</code> 等。 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">bias</td><td>基于该位置的局部自适应阈值计算，用于生成阈值 \( t&#39; = t - bias \)（<a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0baffd2c678a5a2ea661de262d51223adf3">LPVBlackOnWhite </a>）， \( t&#39; = t + bias \)（<a class="el" href="namespace_l_p_v_core_lib.html#ad8a4d763bb82cc129119ff1cf0bc0e0bac595c6b549ecbabb1dbb431e374b02ad">LPVWhiteOnBlack </a>）. </td></tr>
   </table>
   </dd>
@@ -451,7 +451,7 @@ Public 成员函数</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>与 <a class="el" href="interface_l_p_v_math_lib_1_1_i_l_data_blob_analysis.html#afd91c5f36407b929b4758b1b50308827" title="如何排序候选数据斑点。若检测区域中有多于设定的数据斑点，需将候选数据斑点排序并取前若干个作为结果。">SortBy</a> 一同起效。True 表示降序排序候选数据斑点（数值从大到小排序），False 表示升序。 </p>
+<p>与 <a class="el" href="interface_l_p_v_math_lib_1_1_i_l_data_blob_analysis.html#afd91c5f36407b929b4758b1b50308827" title="如何排序候选数据斑点。若检测区域中有多于设定的数据斑点，需将候选数据斑点排序并取前若干个作为结果。">SortBy</a> 一同起效。<code>True</code> 表示降序排序候选数据斑点（数值从大到小排序），<code>False</code> 表示升序。 </p>
 <dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_math_lib_1_1_i_l_data_blob_analysis.html#afd91c5f36407b929b4758b1b50308827" title="如何排序候选数据斑点。若检测区域中有多于设定的数据斑点，需将候选数据斑点排序并取前若干个作为结果。">SortBy</a> </dd></dl>
 
 </div>

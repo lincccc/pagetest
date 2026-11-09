@@ -97,7 +97,7 @@ Data Structures</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This interface provide functionalities of filters in frequency domain.  <a href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_filter.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html">ILFreqTransform</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This interface provide functionalities of image frequency transform such as FFT.  <a href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This interface provide functionalities of image frequency transform such as FFT, and the analysis of the frequency domain image, such as magnitude, phase and phase correlation.  <a href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_h_d_r.html">ILHDR</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This interface provide functionalities of High Dynamic Range Imaging(HDR).  <a href="interface_l_p_v_img_proc_lib_1_1_i_l_h_d_r.html#details">More...</a><br /></td></tr>
@@ -155,12 +155,30 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
+<tr class="memitem:abb4e5eb215b75f7bd434d92985044114"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_l_p_v_img_proc_lib.html#abb4e5eb215b75f7bd434d92985044114">LPVDCTermMode</a> { <a class="el" href="namespace_l_p_v_img_proc_lib.html#abb4e5eb215b75f7bd434d92985044114aef7a4ed9e5323ec44ca1bc0baf4ea772">LPVFreqDCCenter</a> = 0
+, <a class="el" href="namespace_l_p_v_img_proc_lib.html#abb4e5eb215b75f7bd434d92985044114a57485cb7dc7e6fde872c6ca29f2d8fb5">LPVFreqDCEdge</a> = 1
+ }</td></tr>
+<tr class="memdesc:abb4e5eb215b75f7bd434d92985044114"><td class="mdescLeft">&#160;</td><td class="mdescRight">This enumeration represents the position of the direct current (DC) component, aka. the zero frequency, in a frequency domain image. The value is aligned with the one used by the frequency processing engine.  <a href="namespace_l_p_v_img_proc_lib.html#abb4e5eb215b75f7bd434d92985044114">More...</a><br /></td></tr>
+<tr class="separator:abb4e5eb215b75f7bd434d92985044114"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8db27ffdbd9455cc96b3733e6391123a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_l_p_v_img_proc_lib.html#a8db27ffdbd9455cc96b3733e6391123a">LPVEdgePreserveFilter</a> { <a class="el" href="namespace_l_p_v_img_proc_lib.html#a8db27ffdbd9455cc96b3733e6391123aa18156ec09d31c358703c13483978dee1">LPVEPFFastGuided</a> = 0
 , <a class="el" href="namespace_l_p_v_img_proc_lib.html#a8db27ffdbd9455cc96b3733e6391123aa9e4ec9f4c17f45e333d3dad324366db8">LPVEPFWeightedLS</a> = 1
 , <a class="el" href="namespace_l_p_v_img_proc_lib.html#a8db27ffdbd9455cc96b3733e6391123aaf76422eb4efb5f40c8fbc0d8d31ee227">LPVEPFL0Smooth</a> = 2
  }</td></tr>
-<tr class="memdesc:a8db27ffdbd9455cc96b3733e6391123a"><td class="mdescLeft">&#160;</td><td class="mdescRight">This enumeration represents the method for edge-preserving filter, useful for edge extraction, texture removal before segmentation. Since 2.17.0.  <a href="namespace_l_p_v_img_proc_lib.html#a8db27ffdbd9455cc96b3733e6391123a">More...</a><br /></td></tr>
+<tr class="memdesc:a8db27ffdbd9455cc96b3733e6391123a"><td class="mdescLeft">&#160;</td><td class="mdescRight">This enumeration represents the method for edge-preserving filter, useful for edge extraction, texture removal before segmentation. <br  />
+<b>Since</b> 2.17.0.  <a href="namespace_l_p_v_img_proc_lib.html#a8db27ffdbd9455cc96b3733e6391123a">More...</a><br /></td></tr>
 <tr class="separator:a8db27ffdbd9455cc96b3733e6391123a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a617075093d8b687593d947f950e84f9f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_l_p_v_img_proc_lib.html#a617075093d8b687593d947f950e84f9f">LPVWindowFunction</a> { <br />
+&#160;&#160;<a class="el" href="namespace_l_p_v_img_proc_lib.html#a617075093d8b687593d947f950e84f9fa4e6bdf1eed365de75620f398cf14e32c">LPVWindowNone</a> = 0
+, <a class="el" href="namespace_l_p_v_img_proc_lib.html#a617075093d8b687593d947f950e84f9fa12ca15281f1d3a22ad7b6efe7405cd35">LPVWindowHamming</a> = 1
+, <a class="el" href="namespace_l_p_v_img_proc_lib.html#a617075093d8b687593d947f950e84f9fab5fdc58e664b8ad504e0513606ed4bd5">LPVWindowHann</a> = 2
+, <a class="el" href="namespace_l_p_v_img_proc_lib.html#a617075093d8b687593d947f950e84f9fa1a84e850d3a25b8079bb1db318578880">LPVWindowBlackman</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="namespace_l_p_v_img_proc_lib.html#a617075093d8b687593d947f950e84f9fa7a1ba1da008dc37da2c148a771218d48">LPVWindowFlattop</a> = 4
+, <a class="el" href="namespace_l_p_v_img_proc_lib.html#a617075093d8b687593d947f950e84f9fac62a6ab86ec794c81619e654b7499313">LPVWindowKaiser</a> = 5
+<br />
+ }</td></tr>
+<tr class="memdesc:a617075093d8b687593d947f950e84f9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This enumeration represents the window function applied to the input image before a frequency transform. The window function reduces the spectral leakage caused by the image border truncation. The value is aligned with the one used by the frequency processing engine.  <a href="namespace_l_p_v_img_proc_lib.html#a617075093d8b687593d947f950e84f9f">More...</a><br /></td></tr>
+<tr class="separator:a617075093d8b687593d947f950e84f9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>LPV Image Process Library, provides classes for various image processing operations. </p>
@@ -168,10 +186,33 @@ Enumerations</h2></td></tr>
 <h3>Example Code </h3>
  <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><div class="fragment"><div class="line"><span class="preprocessor">#include &quot;LPVImgProc.h&quot;</span></div>
 </div><!-- fragment --><p> <b>Qt Demo:</b> <a class="el" href="how_to_play_with_demo.html#demo_imgproc">QtImgProc</a> </p> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><div class="fragment"><div class="line"><span class="keyword">using</span> <a class="code" href="namespace_l_p_v_img_proc_lib.html">LPVImgProcLib</a>;</div>
-<div class="ttc" id="anamespace_l_p_v_img_proc_lib_html"><div class="ttname"><a href="namespace_l_p_v_img_proc_lib.html">LPVImgProcLib</a></div><div class="ttdoc">LPV Image Process Library, provides classes for various image processing operations.</div><div class="ttdef"><b>Definition:</b> LPVImgProc.idl:90</div></div>
+<div class="ttc" id="anamespace_l_p_v_img_proc_lib_html"><div class="ttname"><a href="namespace_l_p_v_img_proc_lib.html">LPVImgProcLib</a></div><div class="ttdoc">LPV Image Process Library, provides classes for various image processing operations.</div><div class="ttdef"><b>Definition:</b> LPVImgProc.idl:92</div></div>
 </div><!-- fragment --><p> <b>C# Demo:</b> <a class="el" href="how_to_play_with_demo.html#demo_imgproc">CSharpImgProc</a> </p> </div>  <div class='newInnerHTML' title='com' style='display: none;'>COM</div><div class='toggleable_div label_com' style='display: none;'><div class="fragment"><div class="line"><span class="preprocessor">#define LPV_COM </span><span class="comment">// enable COM interfaces</span></div>
 <div class="line">#include &quot;LPVImgProc.h&quot;</div>
 </div><!-- fragment --><p> <b>MFC Demo:</b> <a class="el" href="how_to_play_with_demo.html#demo_imgproc">MFCImgProc</a> </p> </div>  </div><h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="abb4e5eb215b75f7bd434d92985044114"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb4e5eb215b75f7bd434d92985044114">&#9670;&nbsp;</a></span>LPVDCTermMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespace_l_p_v_img_proc_lib.html#abb4e5eb215b75f7bd434d92985044114">LPVDCTermMode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This enumeration represents the position of the direct current (DC) component, aka. the zero frequency, in a frequency domain image. The value is aligned with the one used by the frequency processing engine. </p>
+<dl class="section since"><dt>Since</dt><dd>2.24.0 </dd></dl>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="abb4e5eb215b75f7bd434d92985044114aef7a4ed9e5323ec44ca1bc0baf4ea772"></a>LPVFreqDCCenter&#160;</td><td class="fielddoc"><p>The DC component is located at the center of the frequency image, it's easier to observe the spectrum. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abb4e5eb215b75f7bd434d92985044114a57485cb7dc7e6fde872c6ca29f2d8fb5"></a>LPVFreqDCEdge&#160;</td><td class="fielddoc"><p>The DC component is located at the left-top corner of the frequency image, it's the natural layout of a discrete Fourier transform. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <a id="a8db27ffdbd9455cc96b3733e6391123a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8db27ffdbd9455cc96b3733e6391123a">&#9670;&nbsp;</a></span>LPVEdgePreserveFilter</h2>
 
@@ -184,7 +225,8 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>This enumeration represents the method for edge-preserving filter, useful for edge extraction, texture removal before segmentation. Since 2.17.0. </p>
+<p>This enumeration represents the method for edge-preserving filter, useful for edge extraction, texture removal before segmentation. <br  />
+<b>Since</b> 2.17.0. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a8db27ffdbd9455cc96b3733e6391123aa18156ec09d31c358703c13483978dee1"></a>LPVEPFFastGuided&#160;</td><td class="fielddoc"><p>Fast guided filter, which speed up guided filter with almost no visible degradation.<br  />
 It may use a reference image to provide additional edge information. It may produce halo artifacts near strong textures.<br  />
@@ -197,6 +239,37 @@ But it's much slower than the other methods and use more memory. </p>
 <tr><td class="fieldname"><a id="a8db27ffdbd9455cc96b3733e6391123aaf76422eb4efb5f40c8fbc0d8d31ee227"></a>LPVEPFL0Smooth&#160;</td><td class="fielddoc"><p>Edge-preserving smoothing operator effectively forces most gradients to zero.<br  />
 It usually produces cartoon-like, piecewise-constant images. No halo artifacts are introduced.<br  />
 It's slower than <code>LPVEPFFastGuided</code>, faster than <code>LPVEPFWeightedLS</code>. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a617075093d8b687593d947f950e84f9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a617075093d8b687593d947f950e84f9f">&#9670;&nbsp;</a></span>LPVWindowFunction</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespace_l_p_v_img_proc_lib.html#a617075093d8b687593d947f950e84f9f">LPVWindowFunction</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This enumeration represents the window function applied to the input image before a frequency transform. The window function reduces the spectral leakage caused by the image border truncation. The value is aligned with the one used by the frequency processing engine. </p>
+<dl class="section since"><dt>Since</dt><dd>2.24.0 </dd></dl>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a617075093d8b687593d947f950e84f9fa4e6bdf1eed365de75620f398cf14e32c"></a>LPVWindowNone&#160;</td><td class="fielddoc"><p>No window function is applied. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a617075093d8b687593d947f950e84f9fa12ca15281f1d3a22ad7b6efe7405cd35"></a>LPVWindowHamming&#160;</td><td class="fielddoc"><p>Hamming window, a raised cosine window that reaches \( 0.08 \) at the borders. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a617075093d8b687593d947f950e84f9fab5fdc58e664b8ad504e0513606ed4bd5"></a>LPVWindowHann&#160;</td><td class="fielddoc"><p>Hann window, a raised cosine window that reaches zero at the borders. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a617075093d8b687593d947f950e84f9fa1a84e850d3a25b8079bb1db318578880"></a>LPVWindowBlackman&#160;</td><td class="fielddoc"><p>Blackman window, it has a lower side lobe than Hamming and Hann window, at the cost of a wider main lobe. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a617075093d8b687593d947f950e84f9fa7a1ba1da008dc37da2c148a771218d48"></a>LPVWindowFlattop&#160;</td><td class="fielddoc"><p>Flat top window, it has the lowest amplitude error but the widest main lobe. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a617075093d8b687593d947f950e84f9fac62a6ab86ec794c81619e654b7499313"></a>LPVWindowKaiser&#160;</td><td class="fielddoc"><p>Kaiser window, its shape is controlled by <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html#a3ec0926ef6d40ef5eaac80655b4e6ab6">ShapeFactor</a>. </p>
 </td></tr>
 </table>
 

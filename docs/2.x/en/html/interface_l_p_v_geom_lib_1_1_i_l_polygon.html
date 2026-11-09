@@ -124,6 +124,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:adf33fa7ec210792c3500aa8c93ad38be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26fe3ece69c70adeefdeb65f5b8f83b1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_points.html">ILPoints</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html#a26fe3ece69c70adeefdeb65f5b8f83b1">GetPoints</a> ()</td></tr>
 <tr class="separator:a26fe3ece69c70adeefdeb65f5b8f83b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac678278e17e0df2b314132d46a7acf74"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html#ac678278e17e0df2b314132d46a7acf74">IntersectCircle</a> (<a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_circle.html">ILCircle</a> *circle, <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_points.html">ILPoints</a> **intersectPoints)</td></tr>
+<tr class="separator:ac678278e17e0df2b314132d46a7acf74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abfdd039f303a7db96647cef0aab476d7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_geom_lib.html#a9e95444de4a6d45da839995006de7ddf">LPVIntersectType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html#abfdd039f303a7db96647cef0aab476d7">IntersectLine</a> (<a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_line.html">ILLine</a> *line, <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_points.html">ILPoints</a> **intersectPoints)</td></tr>
 <tr class="separator:abfdd039f303a7db96647cef0aab476d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91603715db9e887b79f6274d3442d365"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html#a91603715db9e887b79f6274d3442d365">IntersectPolygon</a> (<a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a> *polygon, <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_points.html">ILPoints</a> **intersectPoints)</td></tr>
@@ -521,6 +523,49 @@ The name is drawn on canvas around the object if <a class="el" href="interface_l
 
 </div>
 </div>
+<a id="ac678278e17e0df2b314132d46a7acf74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac678278e17e0df2b314132d46a7acf74">&#9670;&nbsp;</a></span>IntersectCircle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL IntersectCircle </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_circle.html">ILCircle</a> *&#160;</td>
+          <td class="paramname"><em>circle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_points.html">ILPoints</a> **&#160;</td>
+          <td class="paramname"><em>intersectPoints</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Determines whether the edges of this polygon intersect with the given circle, and output the intersection points if they are intersected. It reports the same result as <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_circle.html#a19769e96d6bd97a785416c4733f01e03">ILCircle::IntersectPoly()</a>. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">circle</td><td>The input circle </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">intersectPoints</td><td>Output the intersection points, each crossed edge may report two points, it should be an empty set for not-intersected case. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">result</td><td>Return true if any polygon edge is crossed, false otherwise. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_circle.html#a19769e96d6bd97a785416c4733f01e03">ILCircle::IntersectPoly()</a>, <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html#abfdd039f303a7db96647cef0aab476d7">IntersectLine()</a>, <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html#a91603715db9e887b79f6274d3442d365">IntersectPolygon()</a>. </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>2.24.0 </dd></dl>
+
+</div>
+</div>
 <a id="abfdd039f303a7db96647cef0aab476d7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abfdd039f303a7db96647cef0aab476d7">&#9670;&nbsp;</a></span>IntersectLine()</h2>
 
@@ -772,7 +817,7 @@ The name is drawn on canvas around the object if <a class="el" href="interface_l
 <p>Resample the polygon object into another polygon, based on the given fixed interval step. For an open polygon, the two end points are always kept in the resampled result. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">step</td><td>The interval step. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">stepThreshold</td><td>The last resampling vertex should be omitted if the remaining length to the end point is smaller than the threshold. By default, it's 0 means \( Step / 4 \). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">stepThreshold</td><td>The last resampling vertex should be omitted if the remaining length to the end point is smaller than the threshold. By default, it's <code>0</code> means \( Step / 4 \). </td></tr>
   </table>
   </dd>
 </dl>

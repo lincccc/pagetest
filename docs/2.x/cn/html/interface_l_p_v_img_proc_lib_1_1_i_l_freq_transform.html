@@ -79,13 +79,14 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public 成员函数</a>  </div>
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#properties">属性</a>  </div>
   <div class="headertitle">
 <div class="title">ILFreqTransform接口 参考</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>该接口类提供了图像频域变换相关的算法，如快速离散傅里叶变换（FFT）。  
+<p>该接口类提供了图像频域变换相关的算法，如快速离散傅里叶变换（FFT）， 以及频域图像的分析，如幅值、相位和相位相关。  
  <a href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html#details">更多...</a></p>
 <div class="dynheader">
 类 ILFreqTransform 继承关系图:</div>
@@ -102,10 +103,22 @@ $(function() {
 Public 成员函数</h2></td></tr>
 <tr class="memitem:a0c8d0faade270a959b4fd19ce5221c0d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html#a0c8d0faade270a959b4fd19ce5221c0d">FFT</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *freqImg)</td></tr>
 <tr class="separator:a0c8d0faade270a959b4fd19ce5221c0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4af1ea36d2c4916a2229cc3c4c8f118c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html#a4af1ea36d2c4916a2229cc3c4c8f118c">FFTByCol</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *freqImg)</td></tr>
+<tr class="separator:a4af1ea36d2c4916a2229cc3c4c8f118c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a003e117a6ab5e7741cb36a8454523582"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html#a003e117a6ab5e7741cb36a8454523582">FFTByColInv</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *freqImg, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img)</td></tr>
+<tr class="separator:a003e117a6ab5e7741cb36a8454523582"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8ca90992cd83b2d9b96e42e23a19611"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html#ad8ca90992cd83b2d9b96e42e23a19611">FFTByRow</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *freqImg)</td></tr>
+<tr class="separator:ad8ca90992cd83b2d9b96e42e23a19611"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13914e50f840bae42c77d4be5f0a96d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html#a13914e50f840bae42c77d4be5f0a96d8">FFTByRowInv</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *freqImg, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img)</td></tr>
+<tr class="separator:a13914e50f840bae42c77d4be5f0a96d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9287956bd7938a7153fe1e20859e6cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html#ac9287956bd7938a7153fe1e20859e6cd">FFTInv</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *freqImg, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *img)</td></tr>
 <tr class="separator:ac9287956bd7938a7153fe1e20859e6cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2dad524d47b7711a99a923d5604a9f8c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html#a2dad524d47b7711a99a923d5604a9f8c">Magnitude</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *freqImg, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *magImg, BOOL doLn)</td></tr>
 <tr class="separator:a2dad524d47b7711a99a923d5604a9f8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24b33c0963bed064af6d920fbb1babb9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html#a24b33c0963bed064af6d920fbb1babb9">Phase</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *freqImg, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *phaseImg, BOOL inDegree)</td></tr>
+<tr class="separator:a24b33c0963bed064af6d920fbb1babb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7df5c7100a2fd68a19237c9a82946814"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html#a7df5c7100a2fd68a19237c9a82946814">PhaseCorrelation</a> (<a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *freqImg1, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *freqImg2, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *result)</td></tr>
+<tr class="separator:a7df5c7100a2fd68a19237c9a82946814"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_interface_l_p_v_core_lib_1_1_i_l_object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_interface_l_p_v_core_lib_1_1_i_l_object')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_object.html">ILObject</a></td></tr>
 <tr class="memitem:aa7dcddf685e0ba4ddc2d84b0d191f3d7 inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_object"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_object.html">ILObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_object.html#aa7dcddf685e0ba4ddc2d84b0d191f3d7">Copy</a> ()</td></tr>
 <tr class="separator:aa7dcddf685e0ba4ddc2d84b0d191f3d7 inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -118,8 +131,17 @@ Public 成员函数</h2></td></tr>
 <tr class="memitem:a73a489f4ba37f2dfee6500e8ff54d3c3 inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_object"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_object.html#a73a489f4ba37f2dfee6500e8ff54d3c3">Valid</a> ()</td></tr>
 <tr class="separator:a73a489f4ba37f2dfee6500e8ff54d3c3 inherit pub_methods_interface_l_p_v_core_lib_1_1_i_l_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-额外继承的成员函数</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+属性</h2></td></tr>
+<tr class="memitem:a072db33e67dc1e9412812c058cb727bf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_img_proc_lib.html#abb4e5eb215b75f7bd434d92985044114">LPVDCTermMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html#a072db33e67dc1e9412812c058cb727bf">DCTerm</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a072db33e67dc1e9412812c058cb727bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">频域图像中直流分量的布局，查看 <a class="el" href="namespace_l_p_v_img_proc_lib.html#abb4e5eb215b75f7bd434d92985044114">LPVDCTermMode</a> 。 默认值为 LPVFreqDCCenter 。 正变换、逆变换、以及为频域图像生成并应用滤波器的 <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_filter.html" title="该接口类提供了图像频域滤波相关的算法。">ILFreqFilter</a> 对象必须使用相同的取值。  <a href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html#a072db33e67dc1e9412812c058cb727bf">更多...</a><br /></td></tr>
+<tr class="separator:a072db33e67dc1e9412812c058cb727bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ec0926ef6d40ef5eaac80655b4e6ab6"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html#a3ec0926ef6d40ef5eaac80655b4e6ab6">ShapeFactor</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a3ec0926ef6d40ef5eaac80655b4e6ab6"><td class="mdescLeft">&#160;</td><td class="mdescRight">影响凯塞窗形状的形状因子，仅在 <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html#ab14c6ced0d57e86305ff211a0cf50554" title="正变换前对输入图像施加的窗函数，用于减少频谱泄露。 该属性仅影响 FFT()，FFTByRow() 和 FFTByCol() ，逆变换不会加窗。 默认值为 LPVWindowNone，查阅 LPVWin...">WindowFunction</a> 为 LPVWindowKaiser 时生效。 数值增大可更强地抑制泄露，数值减小可让频率峰值更尖锐。 默认值为 <code>0.5</code> ，有效范围为 <code>0 ~ 10</code> ，越界设置会抛出异常。  <a href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html#a3ec0926ef6d40ef5eaac80655b4e6ab6">更多...</a><br /></td></tr>
+<tr class="separator:a3ec0926ef6d40ef5eaac80655b4e6ab6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab14c6ced0d57e86305ff211a0cf50554"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_img_proc_lib.html#a617075093d8b687593d947f950e84f9f">LPVWindowFunction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html#ab14c6ced0d57e86305ff211a0cf50554">WindowFunction</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:ab14c6ced0d57e86305ff211a0cf50554"><td class="mdescLeft">&#160;</td><td class="mdescRight">正变换前对输入图像施加的窗函数，用于减少频谱泄露。 该属性仅影响 <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html#a0c8d0faade270a959b4fd19ce5221c0d">FFT()</a>，FFTByRow() 和 <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html#a4af1ea36d2c4916a2229cc3c4c8f118c">FFTByCol()</a> ，逆变换不会加窗。 默认值为 LPVWindowNone，查阅 LPVWindowFunction 。  <a href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html#ab14c6ced0d57e86305ff211a0cf50554">更多...</a><br /></td></tr>
+<tr class="separator:ab14c6ced0d57e86305ff211a0cf50554"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header properties_interface_l_p_v_core_lib_1_1_i_l_object"><td colspan="2" onclick="javascript:toggleInherit('properties_interface_l_p_v_core_lib_1_1_i_l_object')"><img src="closed.png" alt="-"/>&#160;属性 继承自 <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_object.html">ILObject</a></td></tr>
 <tr class="memitem:ab8292bdf77c2bf89903956417791dbf5 inherit properties_interface_l_p_v_core_lib_1_1_i_l_object"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_l_string.html">LString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_object.html#ab8292bdf77c2bf89903956417791dbf5">Name</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:ab8292bdf77c2bf89903956417791dbf5 inherit properties_interface_l_p_v_core_lib_1_1_i_l_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">对象的名称，默认为空。<br  />
@@ -128,39 +150,49 @@ Public 成员函数</h2></td></tr>
 <tr class="separator:ab8292bdf77c2bf89903956417791dbf5 inherit properties_interface_l_p_v_core_lib_1_1_i_l_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
-<div class="textblock"><p>该接口类提供了图像频域变换相关的算法，如快速离散傅里叶变换（FFT）。 </p>
+<div class="textblock"><p>该接口类提供了图像频域变换相关的算法，如快速离散傅里叶变换（FFT）， 以及频域图像的分析，如幅值、相位和相位相关。 </p>
 <p>使用这个接口，需要创建一个 <a class="el" href="class_l_p_v_img_proc_lib_1_1_l_freq_transform.html">LFreqTransform</a> 对象。</p>
+<p>变换总是输出全谱复数图像，频谱的布局由 <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html#a072db33e67dc1e9412812c058cb727bf" title="频域图像中直流分量的布局，查看 LPVDCTermMode 。 默认值为 LPVFreqDCCenter 。 正变换、逆变换、以及为频域图像生成并应用滤波器的 ILFreqFilter 对象必须使用相同...">DCTerm</a> 控制。 复数图像包含 2 个通道，通道 0 为实部，通道 1 为虚部。</p>
+<p>各属性用于配置正变换，不影响各方法的输出契约。</p>
 <dl class="section since"><dt>自从</dt><dd>2.20.0</dd></dl>
 <h3>示例代码 </h3>
  <div class='newInnerHTML' title='cpp' style='display: none;'>C++</div><div class='toggleable_div label_cpp' style='display: none;'><p> Code snippets: snippets/LineEnhance.cpp </p><div class="fragment"><div class="line">ILFreqTransformPtr freqTrans = LFreqTransform::Create();</div>
 <div class="line"><span class="comment">// compute the fast Fourier transform of the image</span></div>
-<div class="line">imgfreq-&gt;FFT(img, freqImg);</div>
+<div class="line">freqTrans-&gt;FFT(img, freqImg);</div>
 <div class="line"><span class="comment">// filter to select certain frequencies</span></div>
 <div class="line">ILFreqFilterPtr freqFilter = LFreqFilter::Create();</div>
-<div class="line">freqFilter-&gt;FilterType = <a class="code" href="namespace_l_p_v_core_lib.html#a90e412106ea66b97268c27757c8e0b67ab6c3ffbf3c49ce3f6c133b046e46eff3">LPVFreqFilterBandPassDirectional</a>;</div>
-<div class="line">freqFilter-&gt;Apply(freqImg, freqFiltered);</div>
+<div class="line">ILImagePtr filterImg = LImage::Create();</div>
+<div class="line">ILImagePtr filteredFreqImg = LImage::Create();</div>
+<div class="line">freqFilter-&gt;SetTemplate(freqImg-&gt;Width, freqImg-&gt;Height, <a class="code" href="namespace_l_p_v_img_proc_lib.html#abb4e5eb215b75f7bd434d92985044114aef7a4ed9e5323ec44ca1bc0baf4ea772">LPVFreqDCCenter</a>);</div>
+<div class="line">freqFilter-&gt;GenDirectionalBandpass(0.5, 1.0, 90, 2, filterImg, <span class="keyword">false</span>);</div>
+<div class="line">freqFilter-&gt;Apply(freqImg, filterImg, filteredFreqImg);</div>
 <div class="line"><span class="comment">// compute the inverse fast Fourier transform of the image</span></div>
-<div class="line">imgfreq-&gt;FFTInv(freqFiltered, cleanImg);</div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html_a90e412106ea66b97268c27757c8e0b67ab6c3ffbf3c49ce3f6c133b046e46eff3"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a90e412106ea66b97268c27757c8e0b67ab6c3ffbf3c49ce3f6c133b046e46eff3">LPVCoreLib::LPVFreqFilterBandPassDirectional</a></div><div class="ttdeci">@ LPVFreqFilterBandPassDirectional</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:2037</div></div>
-</div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><p> Code snippets: snippets/LineEnhance.cs </p><div class="fragment"><div class="line">LFreqTransformPtr freqTrans = <span class="keyword">new</span> LFreqTransform();</div>
+<div class="line">freqTrans-&gt;FFTInv(filteredFreqImg, cleanImg);</div>
+<div class="ttc" id="anamespace_l_p_v_img_proc_lib_html_abb4e5eb215b75f7bd434d92985044114aef7a4ed9e5323ec44ca1bc0baf4ea772"><div class="ttname"><a href="namespace_l_p_v_img_proc_lib.html#abb4e5eb215b75f7bd434d92985044114aef7a4ed9e5323ec44ca1bc0baf4ea772">LPVImgProcLib::LPVFreqDCCenter</a></div><div class="ttdeci">@ LPVFreqDCCenter</div><div class="ttdef"><b>Definition:</b> LPVImgProc.idl:196</div></div>
+</div><!-- fragment --> </div>  <div class='newInnerHTML' title='csharp' style='display: none;'>C#</div><div class='toggleable_div label_csharp' style='display: none;'><p> Code snippets: snippets/LineEnhance.cs </p><div class="fragment"><div class="line">LFreqTransform freqTrans = <span class="keyword">new</span> LFreqTransform();</div>
 <div class="line"><span class="comment">// compute the fast Fourier transform of the image</span></div>
-<div class="line">imgfreq.FFT(img, freqImg);</div>
+<div class="line">freqTrans.FFT(img, freqImg);</div>
 <div class="line"><span class="comment">// filter to select certain frequencies</span></div>
 <div class="line">LFreqFilter freqFilter = <span class="keyword">new</span> LFreqFilter();</div>
-<div class="line">freqFilter.FilterType = <a class="code" href="namespace_l_p_v_core_lib.html#a90e412106ea66b97268c27757c8e0b67">LPVFreqFilterType</a>.LPVFreqFilterBandPassDirectional;</div>
-<div class="line">freqFilter.Apply(freqImg, freqFiltered);</div>
+<div class="line">LImage filterImg = <span class="keyword">new</span> LImage();</div>
+<div class="line">LImage filteredFreqImg = <span class="keyword">new</span> LImage();</div>
+<div class="line">freqFilter.SetTemplate(freqImg.Width, freqImg.Height, <a class="code" href="namespace_l_p_v_img_proc_lib.html#abb4e5eb215b75f7bd434d92985044114aef7a4ed9e5323ec44ca1bc0baf4ea772">LPVFreqDCCenter</a>);</div>
+<div class="line">freqFilter.GenDirectionalBandpass(0.5, 1.0, 90, 2, filterImg, <span class="keyword">false</span>);</div>
+<div class="line">freqFilter.Apply(freqImg, filterImg, filteredFreqImg);</div>
 <div class="line"><span class="comment">// compute the inverse fast Fourier transform of the image</span></div>
-<div class="line">imgfreq.FFTInv(freqFiltered, cleanImg);</div>
-<div class="ttc" id="anamespace_l_p_v_core_lib_html_a90e412106ea66b97268c27757c8e0b67"><div class="ttname"><a href="namespace_l_p_v_core_lib.html#a90e412106ea66b97268c27757c8e0b67">LPVCoreLib::LPVFreqFilterType</a></div><div class="ttdeci">LPVFreqFilterType</div><div class="ttdoc">该枚举表示频域滤波器类型</div><div class="ttdef"><b>Definition:</b> LPVCore.idl:2017</div></div>
+<div class="line">freqTrans.FFTInv(filteredFreqImg, cleanImg);</div>
 </div><!-- fragment --> </div>  <div class='newInnerHTML' title='com' style='display: none;'>COM</div><div class='toggleable_div label_com' style='display: none;'> <div class="fragment"><div class="line">ILFreqTransformPtr freqTrans = LFreqTransform::Create();</div>
 <div class="line"><span class="comment">// compute the fast Fourier transform of the image</span></div>
-<div class="line">imgfreq-&gt;FFT(img, freqImg);</div>
+<div class="line">freqTrans-&gt;FFT(img, freqImg);</div>
 <div class="line"><span class="comment">// filter to select certain frequencies</span></div>
 <div class="line">ILFreqFilterPtr freqFilter = LFreqFilter::Create();</div>
-<div class="line">freqFilter-&gt;FilterType = <a class="code" href="namespace_l_p_v_core_lib.html#a90e412106ea66b97268c27757c8e0b67ab6c3ffbf3c49ce3f6c133b046e46eff3">LPVFreqFilterBandPassDirectional</a>;</div>
-<div class="line">freqFilter-&gt;Apply(freqImg, freqFiltered);</div>
+<div class="line">ILImagePtr filterImg = LImage::Create();</div>
+<div class="line">ILImagePtr filteredFreqImg = LImage::Create();</div>
+<div class="line">freqFilter-&gt;SetTemplate(freqImg-&gt;Width, freqImg-&gt;Height, <a class="code" href="namespace_l_p_v_img_proc_lib.html#abb4e5eb215b75f7bd434d92985044114aef7a4ed9e5323ec44ca1bc0baf4ea772">LPVFreqDCCenter</a>);</div>
+<div class="line">freqFilter-&gt;GenDirectionalBandpass(0.5, 1.0, 90, 2, filterImg, <span class="keyword">false</span>);</div>
+<div class="line">freqFilter-&gt;Apply(freqImg, filterImg, filteredFreqImg);</div>
 <div class="line"><span class="comment">// compute the inverse fast Fourier transform of the image</span></div>
-<div class="line">imgfreq-&gt;FFTInv(freqFiltered, cleanImg);</div>
+<div class="line">freqTrans-&gt;FFTInv(filteredFreqImg, cleanImg);</div>
 </div><!-- fragment --> </div>  </div><h2 class="groupheader">成员函数说明</h2>
 <a id="a0c8d0faade270a959b4fd19ce5221c0d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0c8d0faade270a959b4fd19ce5221c0d">&#9670;&nbsp;</a></span>FFT()</h2>
@@ -187,13 +219,162 @@ Public 成员函数</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>计算图像的傅里叶变换，将图像转换到频域，使用快速傅里叶变换算法 </p><dl class="params"><dt>参数</dt><dd>
+<p>计算图像的傅里叶变换，将图像转换到频域，使用快速傅里叶变换算法。 若输入为彩色图像则先转为灰度图像，并统一转为 32 位浮点后再进行变换。 变换前会根据 <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html#ab14c6ced0d57e86305ff211a0cf50554" title="正变换前对输入图像施加的窗函数，用于减少频谱泄露。 该属性仅影响 FFT()，FFTByRow() 和 FFTByCol() ，逆变换不会加窗。 默认值为 LPVWindowNone，查阅 LPVWin...">WindowFunction</a> 对输入图像加窗，以减少频谱泄露。 如需还原图像，调用 <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html#ac9287956bd7938a7153fe1e20859e6cd">FFTInv()</a> 时使用相同的 <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html#a072db33e67dc1e9412812c058cb727bf" title="频域图像中直流分量的布局，查看 LPVDCTermMode 。 默认值为 LPVFreqDCCenter 。 正变换、逆变换、以及为频域图像生成并应用滤波器的 ILFreqFilter 对象必须使用相同...">DCTerm</a> 。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_1chn.png" alt="" class="inline" title="单通道图像"/> 输入的图像 </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">freqImg</td><td><img src="color_complex.png" alt="" class="inline" title="复数图像"/> 返回傅里叶变换后的结果图 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">freqImg</td><td><img src="color_complex.png" alt="" class="inline" title="复数图像"/> 返回傅里叶变换后的结果图，尺寸与输入图像相同 </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section since"><dt>自从</dt><dd>2.20.0 </dd></dl>
+
+</div>
+</div>
+<a id="a4af1ea36d2c4916a2229cc3c4c8f118c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4af1ea36d2c4916a2229cc3c4c8f118c">&#9670;&nbsp;</a></span>FFTByCol()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FFTByCol </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>img</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>freqImg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>对输入图像的每一列分别进行傅里叶变换，即一维变换。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_1chn.png" alt="" class="inline" title="单通道图像"/> 输入的图像 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">freqImg</td><td><img src="color_complex.png" alt="" class="inline" title="复数图像"/> 返回逐列傅里叶变换后的结果图，尺寸与输入图像相同 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>自从</dt><dd>2.24.0 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html#a003e117a6ab5e7741cb36a8454523582">FFTByColInv()</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html#ad8ca90992cd83b2d9b96e42e23a19611">FFTByRow()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a003e117a6ab5e7741cb36a8454523582"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a003e117a6ab5e7741cb36a8454523582">&#9670;&nbsp;</a></span>FFTByColInv()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FFTByColInv </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>freqImg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>img</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>对输入频域图像的每一列分别进行逆傅里叶变换。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">freqImg</td><td><img src="color_complex.png" alt="" class="inline" title="复数图像"/> 输入的逐列频域图像 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">img</td><td><img src="color_1chn.png" alt="" class="inline" title="单通道图像"/> <img src="float32.png" alt="" class="inline" title="带符号 32 位单精度浮点数"/> 返回结果图像，尺寸与输入图像相同 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>自从</dt><dd>2.24.0 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html#a4af1ea36d2c4916a2229cc3c4c8f118c">FFTByCol()</a> </dd></dl>
+
+</div>
+</div>
+<a id="ad8ca90992cd83b2d9b96e42e23a19611"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8ca90992cd83b2d9b96e42e23a19611">&#9670;&nbsp;</a></span>FFTByRow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FFTByRow </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>img</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>freqImg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>对输入图像的每一行分别进行傅里叶变换，即一维变换。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_1chn.png" alt="" class="inline" title="单通道图像"/> 输入的图像 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">freqImg</td><td><img src="color_complex.png" alt="" class="inline" title="复数图像"/> 返回逐行傅里叶变换后的结果图，尺寸与输入图像相同 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>自从</dt><dd>2.24.0 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html#a13914e50f840bae42c77d4be5f0a96d8">FFTByRowInv()</a>, <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html#a4af1ea36d2c4916a2229cc3c4c8f118c">FFTByCol()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a13914e50f840bae42c77d4be5f0a96d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13914e50f840bae42c77d4be5f0a96d8">&#9670;&nbsp;</a></span>FFTByRowInv()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FFTByRowInv </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>freqImg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>img</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>对输入频域图像的每一行分别进行逆傅里叶变换。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">freqImg</td><td><img src="color_complex.png" alt="" class="inline" title="复数图像"/> 输入的逐行频域图像 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">img</td><td><img src="color_1chn.png" alt="" class="inline" title="单通道图像"/> <img src="float32.png" alt="" class="inline" title="带符号 32 位单精度浮点数"/> 返回结果图像，尺寸与输入图像相同 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>自从</dt><dd>2.24.0 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html#ad8ca90992cd83b2d9b96e42e23a19611">FFTByRow()</a> </dd></dl>
 
 </div>
 </div>
@@ -222,13 +403,14 @@ Public 成员函数</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>计算图像的逆傅里叶变换，将图像从频域转回空间域 </p><dl class="params"><dt>参数</dt><dd>
+<p>计算图像的逆傅里叶变换，将图像从频域转回空间域。 逆变换不会应用 <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html#ab14c6ced0d57e86305ff211a0cf50554" title="正变换前对输入图像施加的窗函数，用于减少频谱泄露。 该属性仅影响 FFT()，FFTByRow() 和 FFTByCol() ，逆变换不会加窗。 默认值为 LPVWindowNone，查阅 LPVWin...">WindowFunction</a> 。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">freqImg</td><td><img src="color_complex.png" alt="" class="inline" title="复数图像"/> 输入的频域图像 </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">img</td><td><img src="color_1chn.png" alt="" class="inline" title="单通道图像"/> <img src="float32.png" alt="" class="inline" title="带符号 32 位单精度浮点数"/> 返回逆傅里叶变换后的结果图 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">img</td><td><img src="color_1chn.png" alt="" class="inline" title="单通道图像"/> <img src="float32.png" alt="" class="inline" title="带符号 32 位单精度浮点数"/> 返回逆傅里叶变换后的结果图，尺寸与频域图像相同 </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section since"><dt>自从</dt><dd>2.20.0 </dd></dl>
 
 </div>
 </div>
@@ -264,15 +446,185 @@ Public 成员函数</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>计算频域图像的幅值图，即频率的模： \( \sqrt{r^2 + i^2} \) . <br  />
-若 <code>doLn</code> 设置为 True，则在结果上再计算自然对数： \( \ln{\sqrt{r^2 + i^2}} \) . <br  />
+若 <code>doLn</code> 设置为 <code>True</code>，则在结果上再计算自然对数： \( \ln{\sqrt{r^2 + i^2}} \) . <br  />
 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">img</td><td><img src="color_complex.png" alt="" class="inline" title="复数图像"/> 输入的频域图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">freqImg</td><td><img src="color_complex.png" alt="" class="inline" title="复数图像"/> 输入的频域图像 </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">magImg</td><td><img src="color_1chn.png" alt="" class="inline" title="单通道图像"/> <img src="float32.png" alt="" class="inline" title="带符号 32 位单精度浮点数"/> 返回幅值图 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">doLn</td><td>是否计算对数 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">doLn</td><td>是否计算对数，默认为 <code>False</code> </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section since"><dt>自从</dt><dd>2.20.0 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html#a24b33c0963bed064af6d920fbb1babb9">Phase()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a24b33c0963bed064af6d920fbb1babb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24b33c0963bed064af6d920fbb1babb9">&#9670;&nbsp;</a></span>Phase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Phase </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>freqImg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>phaseImg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BOOL&#160;</td>
+          <td class="paramname"><em>inDegree</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>计算频域图像的相位图，即复数像素的幅角： \( \operatorname{atan2}(i, r) \) 。<br  />
+</p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">freqImg</td><td><img src="color_complex.png" alt="" class="inline" title="复数图像"/> 输入的频域图像 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">phaseImg</td><td><img src="color_1chn.png" alt="" class="inline" title="单通道图像"/> <img src="float32.png" alt="" class="inline" title="带符号 32 位单精度浮点数"/> 返回相位图。 若 <code>inDegree</code> 为 <code>False</code> ，相位以弧度表示，范围为 \( [-\pi, \pi) \) ； 否则以度表示，范围为 \( [0, 360) \) 。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">inDegree</td><td>是否以度为单位计算相位，默认为 <code>False</code> ，即使用弧度 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>自从</dt><dd>2.24.0 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html#a2dad524d47b7711a99a923d5604a9f8c">Magnitude()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a7df5c7100a2fd68a19237c9a82946814"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7df5c7100a2fd68a19237c9a82946814">&#9670;&nbsp;</a></span>PhaseCorrelation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PhaseCorrelation </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>freqImg1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>freqImg2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>计算两个频域图像的归一化互功率谱，用于相位相关计算。公式如下： \( \frac{conj(F_1) \cdot F_2}{|conj(F_1) \cdot F_2|} \) 。<br  />
+结果仍为频域图像，若需定位峰值（即两个输入图像之间的位移），可再调用 <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html#ac9287956bd7938a7153fe1e20859e6cd">FFTInv()</a> 将其转回空间域。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">freqImg1</td><td><img src="color_complex.png" alt="" class="inline" title="复数图像"/> 第一个输入的频域图像 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">freqImg2</td><td><img src="color_complex.png" alt="" class="inline" title="复数图像"/> 第二个输入的频域图像 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td><img src="color_complex.png" alt="" class="inline" title="复数图像"/> 返回归一化的互功率谱，尺寸与输入相同 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>自从</dt><dd>2.24.0 </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">属性说明</h2>
+<a id="a072db33e67dc1e9412812c058cb727bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a072db33e67dc1e9412812c058cb727bf">&#9670;&nbsp;</a></span>DCTerm</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_l_p_v_img_proc_lib.html#abb4e5eb215b75f7bd434d92985044114">LPVDCTermMode</a> DCTerm</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>频域图像中直流分量的布局，查看 <a class="el" href="namespace_l_p_v_img_proc_lib.html#abb4e5eb215b75f7bd434d92985044114">LPVDCTermMode</a> 。 默认值为 LPVFreqDCCenter 。 正变换、逆变换、以及为频域图像生成并应用滤波器的 <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_filter.html" title="该接口类提供了图像频域滤波相关的算法。">ILFreqFilter</a> 对象必须使用相同的取值。 </p>
+<dl class="section since"><dt>自从</dt><dd>2.24.0 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_filter.html" title="该接口类提供了图像频域滤波相关的算法。">ILFreqFilter</a>::<a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html#a072db33e67dc1e9412812c058cb727bf" title="频域图像中直流分量的布局，查看 LPVDCTermMode 。 默认值为 LPVFreqDCCenter 。 正变换、逆变换、以及为频域图像生成并应用滤波器的 ILFreqFilter 对象必须使用相同...">DCTerm</a> </dd></dl>
+
+</div>
+</div>
+<a id="a3ec0926ef6d40ef5eaac80655b4e6ab6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ec0926ef6d40ef5eaac80655b4e6ab6">&#9670;&nbsp;</a></span>ShapeFactor</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ShapeFactor</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>影响凯塞窗形状的形状因子，仅在 <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html#ab14c6ced0d57e86305ff211a0cf50554" title="正变换前对输入图像施加的窗函数，用于减少频谱泄露。 该属性仅影响 FFT()，FFTByRow() 和 FFTByCol() ，逆变换不会加窗。 默认值为 LPVWindowNone，查阅 LPVWin...">WindowFunction</a> 为 LPVWindowKaiser 时生效。 数值增大可更强地抑制泄露，数值减小可让频率峰值更尖锐。 默认值为 <code>0.5</code> ，有效范围为 <code>0 ~ 10</code> ，越界设置会抛出异常。 </p>
+<dl class="section since"><dt>自从</dt><dd>2.24.0 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html#ab14c6ced0d57e86305ff211a0cf50554" title="正变换前对输入图像施加的窗函数，用于减少频谱泄露。 该属性仅影响 FFT()，FFTByRow() 和 FFTByCol() ，逆变换不会加窗。 默认值为 LPVWindowNone，查阅 LPVWin...">WindowFunction</a> </dd></dl>
+
+</div>
+</div>
+<a id="ab14c6ced0d57e86305ff211a0cf50554"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab14c6ced0d57e86305ff211a0cf50554">&#9670;&nbsp;</a></span>WindowFunction</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_l_p_v_img_proc_lib.html#a617075093d8b687593d947f950e84f9f">LPVWindowFunction</a> WindowFunction</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>正变换前对输入图像施加的窗函数，用于减少频谱泄露。 该属性仅影响 <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html#a0c8d0faade270a959b4fd19ce5221c0d">FFT()</a>，FFTByRow() 和 <a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html#a4af1ea36d2c4916a2229cc3c4c8f118c">FFTByCol()</a> ，逆变换不会加窗。 默认值为 LPVWindowNone，查阅 LPVWindowFunction 。 </p>
+<dl class="section since"><dt>自从</dt><dd>2.24.0 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_img_proc_lib_1_1_i_l_freq_transform.html#a3ec0926ef6d40ef5eaac80655b4e6ab6" title="影响凯塞窗形状的形状因子，仅在 WindowFunction 为 LPVWindowKaiser 时生效。 数值增大可更强地抑制泄露，数值减小可让频率峰值更尖锐。 默认值为 0....">ShapeFactor</a> </dd></dl>
 
 </div>
 </div>

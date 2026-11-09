@@ -115,6 +115,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:abac301e33964a208fae5da3aa71c8ed1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada8ef622715c5a172b3f5cc89024b38b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html#ada8ef622715c5a172b3f5cc89024b38b">LoadRawFile</a> (<a class="el" href="class_l_string.html">LString</a> filename, int w, int h, int flags)</td></tr>
 <tr class="separator:ada8ef622715c5a172b3f5cc89024b38b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16c1f03d56d3f32749201a3540a02d6c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html#a16c1f03d56d3f32749201a3540a02d6c">ReorderChannel</a> (int idx0, int idx1, int idx2)</td></tr>
+<tr class="separator:a16c1f03d56d3f32749201a3540a02d6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0772521fac1f24bd996f05fac5cae9d7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html#a0772521fac1f24bd996f05fac5cae9d7">Save</a> (<a class="el" href="class_l_string.html">LString</a> filename, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a> *region)</td></tr>
 <tr class="separator:a0772521fac1f24bd996f05fac5cae9d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf42ad20010153098a714f899ca4adb9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_core_lib.html#a753df57c2ab9773ee9dff5747163ee4a">LPVErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html#abf42ad20010153098a714f899ca4adb9">SaveWithFormat</a> (<a class="el" href="class_l_string.html">LString</a> filename, <a class="el" href="class_l_string.html">LString</a> format, <a class="el" href="interface_l_p_v_core_lib_1_1_i_l_region.html">ILRegion</a> *region)</td></tr>
@@ -246,8 +248,8 @@ Example Code</h3>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">format</td><td>The target image format </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">resultImage</td><td>Return result image </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">gain</td><td>The gain value, set to 1 means in fact no gain </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">offset</td><td>The offset value, set to 0 means in fact no offset </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">gain</td><td>The gain value, set to <code>1</code> means in fact no gain </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">offset</td><td>The offset value, set to <code>0</code> means in fact no offset </td></tr>
   </table>
   </dd>
 </dl>
@@ -462,7 +464,7 @@ If the current image object has its own data buffer, we'll do another clone of d
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">channelImage</td><td><img src="color_1chn.png" alt="" class="inline" title="Single channel image"/> Return the channel image. It's a grayscale image of the same size as the current color image. </td></tr>
+    <tr><td class="paramname">channelImage</td><td><img src="color_1chn.png" alt="" class="inline" title="Single channel image"/> Return the channel image. It's a grayscale image of the same size as the current multi-channel image. </td></tr>
   </table>
   </dd>
 </dl>
@@ -531,6 +533,61 @@ If the current image object has its own data buffer, we'll do another clone of d
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_object.html#a74069eb14437a9a889322b62e52db75f">Load()</a> </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>2.7.0 </dd></dl>
+
+</div>
+</div>
+<a id="a16c1f03d56d3f32749201a3540a02d6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16c1f03d56d3f32749201a3540a02d6c">&#9670;&nbsp;</a></span>ReorderChannel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interface_l_p_v_core_lib_1_1_i_l_image.html">ILImage</a>* ReorderChannel </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>idx0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>idx1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>idx2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Reorder the channels of a multi-channel image and return the new image. The current image is not modified. <code>idx0</code>, <code>idx1</code> and <code>idx2</code> give the source channel index for the channels of the result image, where the 3rd one is used only by a 3-channel image. <code>idx1</code> and <code>idx2</code> default to <code>-1</code>, which means keeping the corresponding channel of the current image at the same position, ie. no change for that channel. The result image is of the same size, format and depth as the current image.</p>
+<p>Take a BGR color image for example:</p><ul>
+<li><code>ReorderChannel(2, 1, 0)</code> returns a RGB image, ie. BGR -&gt; RGB</li>
+<li><code>ReorderChannel(1, 2, 0)</code> returns a GRB image, ie. BGR -&gt; GRB, the 0th channel is moved to the 2nd one, the 1st one to the 0th one and the 2nd one to the 1st one</li>
+<li><code>ReorderChannel(2)</code> returns an image whose 0th channel comes from the 2nd one while the other channels stay</li>
+</ul>
+<p>For a 2-channel image (like <img src="color_complex.png" alt="" class="inline" title="Complex image"/>), only <code>idx0</code> and <code>idx1</code> are used and <code>idx2</code> is ignored. A duplicate index is allowed, like <code>ReorderChannel(0, 0, 0)</code> assigns the 0th channel to all of them. This function is invalid for a single channel image <img src="color_1chn.png" alt="" class="inline" title="Single channel image"/> and returns an invalid-argument error. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">idx0</td><td>The source channel index for the 1st channel of the result image, mandatory, <code>0</code> or more and less than the channel count of the current image. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">idx1</td><td>The source channel index for the 2nd channel of the result image. Negative means no change. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">idx2</td><td>The source channel index for the 3rd channel of the result image. Negative means no change. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">resultImage</td><td>Return the new image of the reordered channels. It's of the same size, format and depth as the current image. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>2.23.0 </dd></dl>
 
 </div>
 </div>
@@ -618,7 +675,7 @@ If the current image object has its own data buffer, we'll do another clone of d
 <tr>
 <td>jpeg</td><td><b>JPEG format</b> - lossy compression<ul>
 <li>can only store 8bit images with 1 channel (gray) or 3 channels (RGB color).</li>
-<li>pass in together with the quality value for compression rate, in 0 ~ 100, like "jpeg 60". By default, it's 95. </li>
+<li>pass in together with the quality value for compression rate, in <code>0 ~ 100</code>, like "jpeg 60". By default, it's 95. </li>
 </ul>
 </td></tr>
 <tr>
@@ -635,7 +692,7 @@ If the current image object has its own data buffer, we'll do another clone of d
 <tr>
 <td>webp</td><td><b>WEBP format</b> - lossless or lossy compression<ul>
 <li>can only store 8bit images with 1 channel (gray) or 3 channels (RGB color).</li>
-<li>pass in together with the quality value for compression rate, in 0 ~ 100, like "webp 60". </li>
+<li>pass in together with the quality value for compression rate, in <code>0 ~ 100</code>, like "webp 60". </li>
 </ul>
 </td></tr>
 </table>
@@ -683,10 +740,10 @@ If the current image object has its own data buffer, we'll do another clone of d
         </tr>
       </table>
 </div><div class="memdoc">
-<p><img src="color_bgr.png" alt="" class="inline" title="Color image"/> <img src="color_complex.png" alt="" class="inline" title="Complex image"/> Set the channel of the given index to the input grayscale image. This function is only for a color image. </p><dl class="params"><dt>Parameters</dt><dd>
+<p><img src="color_bgr.png" alt="" class="inline" title="Color image"/> <img src="color_complex.png" alt="" class="inline" title="Complex image"/> Set the channel of the given index to the input grayscale image. This function is only for a multi-channel image. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">channelIdx</td><td>The input channel index, 0, 1 or 2. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">channelImage</td><td><img src="color_1chn.png" alt="" class="inline" title="Single channel image"/> The input grayscale channel image, it should be of the same size as the current color image. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">channelImage</td><td><img src="color_1chn.png" alt="" class="inline" title="Single channel image"/> The input grayscale channel image, it should be of the same size as the current multi-channel image. </td></tr>
   </table>
   </dd>
 </dl>
@@ -737,13 +794,13 @@ If the current image object has its own data buffer, we'll do another clone of d
       </table>
 </div><div class="memdoc">
 <p>Assign data to the image object via an external allocated buffer.<br  />
-If <code>copyData</code> is set to False, this pointer overwrite the internally allocated buffer inside the image object. You should take the responsibility to keep the buffer alive during the entire life cycle of the image object.<br  />
-If <code>copyData</code> is set to True, we'll copy the content into the buffer owned by the image object. You don't need to worry about the data life cycle then. </p><dl class="params"><dt>Parameters</dt><dd>
+If <code>copyData</code> is set to <code>False</code>, this pointer overwrite the internally allocated buffer inside the image object. You should take the responsibility to keep the buffer alive during the entire life cycle of the image object.<br  />
+If <code>copyData</code> is set to <code>True</code>, we'll copy the content into the buffer owned by the image object. You don't need to worry about the data life cycle then. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">w</td><td>The width of the image in pixels, should be a positive value. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">h</td><td>The height of the image in pixels, should be a positive value. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">dataPtr</td><td>Pointer to the external image data buffer. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">bpl</td><td>Bytes per line, the number of bytes contained in a row. The value should include the padding bytes. at the end of each row, if any. If set to 0, no padding is assumed and the actual stride is calculated as column number * pixel size(sizeof(char)). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bpl</td><td>Bytes per line, the number of bytes contained in a row. The value should include the padding bytes. at the end of each row, if any. If set to <code>0</code>, no padding is assumed and the actual stride is calculated as column number * pixel size(sizeof(char)). </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">copyData</td><td>Whether to copy the data into owned buffer of the image object. </td></tr>
   </table>
   </dd>

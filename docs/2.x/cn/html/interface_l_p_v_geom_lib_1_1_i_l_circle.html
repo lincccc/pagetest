@@ -118,8 +118,12 @@ Public 成员函数</h2></td></tr>
 <tr class="separator:af0f9905b2560ab8a11bcb29d1a72e21b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf33fa7ec210792c3500aa8c93ad38be"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_circle.html#adf33fa7ec210792c3500aa8c93ad38be">GetPerimeter</a> ()</td></tr>
 <tr class="separator:adf33fa7ec210792c3500aa8c93ad38be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac678278e17e0df2b314132d46a7acf74"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_circle.html#ac678278e17e0df2b314132d46a7acf74">IntersectCircle</a> (<a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_circle.html">ILCircle</a> *circle, <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_points.html">ILPoints</a> **intersectPoints)</td></tr>
+<tr class="separator:ac678278e17e0df2b314132d46a7acf74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abfdd039f303a7db96647cef0aab476d7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_geom_lib.html#a9e95444de4a6d45da839995006de7ddf">LPVIntersectType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_circle.html#abfdd039f303a7db96647cef0aab476d7">IntersectLine</a> (<a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_line.html">ILLine</a> *line, <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_points.html">ILPoints</a> **intersectPoints)</td></tr>
 <tr class="separator:abfdd039f303a7db96647cef0aab476d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19769e96d6bd97a785416c4733f01e03"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_circle.html#a19769e96d6bd97a785416c4733f01e03">IntersectPoly</a> (<a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a> *polygon, <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_points.html">ILPoints</a> **intersectPoints)</td></tr>
+<tr class="separator:a19769e96d6bd97a785416c4733f01e03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1289c9d71ccf35d16928b3e894c184be"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_l_p_v_geom_lib.html#a356bf5122b41e1df6078c995fe15deb8">LPVPointTestResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_circle.html#a1289c9d71ccf35d16928b3e894c184be">PointTest</a> (<a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_point.html">ILPoint</a> *point)</td></tr>
 <tr class="separator:a1289c9d71ccf35d16928b3e894c184be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba0cd112aa5e62d431c0472ce52e29e8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_circle.html#aba0cd112aa5e62d431c0472ce52e29e8">Resample</a> (int num)</td></tr>
@@ -416,6 +420,49 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
 
 </div>
 </div>
+<a id="ac678278e17e0df2b314132d46a7acf74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac678278e17e0df2b314132d46a7acf74">&#9670;&nbsp;</a></span>IntersectCircle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL IntersectCircle </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_circle.html">ILCircle</a> *&#160;</td>
+          <td class="paramname"><em>circle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_points.html">ILPoints</a> **&#160;</td>
+          <td class="paramname"><em>intersectPoints</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>判断当前圆形和输入的另一个圆形是否相交，若相交，返回交点。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">circle</td><td>输入的另一个圆形 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">intersectPoints</td><td>返回交点的点集，若两个圆形不相交，该点集为空，若两个圆形相切，返回 1 个交点， 若两个圆形相交，返回 2 个交点。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">result</td><td>若两个圆形相交，返回 <code>True</code>，否则返回 <code>False</code>。 相离、内含或同心的两个圆形不会产生交点。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_circle.html#abfdd039f303a7db96647cef0aab476d7">IntersectLine()</a>, <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_circle.html#a19769e96d6bd97a785416c4733f01e03">IntersectPoly()</a>. </dd></dl>
+<dl class="section since"><dt>自从</dt><dd>2.24.0 </dd></dl>
+
+</div>
+</div>
 <a id="abfdd039f303a7db96647cef0aab476d7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abfdd039f303a7db96647cef0aab476d7">&#9670;&nbsp;</a></span>IntersectLine()</h2>
 
@@ -455,6 +502,49 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in
   </dd>
 </dl>
 <dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_line.html#a417c0527d2d44b9f5c8e3af94157856f">ILLine::IntersectCircle()</a>. </dd></dl>
+
+</div>
+</div>
+<a id="a19769e96d6bd97a785416c4733f01e03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19769e96d6bd97a785416c4733f01e03">&#9670;&nbsp;</a></span>IntersectPoly()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL IntersectPoly </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_polygon.html">ILPolygon</a> *&#160;</td>
+          <td class="paramname"><em>polygon</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_points.html">ILPoints</a> **&#160;</td>
+          <td class="paramname"><em>intersectPoints</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>判断当前圆形和输入多边形的边是否相交，若相交，返回所有交点。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">polygon</td><td>输入的多边形，其闭合属性决定是否将隐含的闭合边纳入求交 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">intersectPoints</td><td>返回交点的点集，每条被穿越的边可能给出 2 个交点， 若无相交，该点集为空。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">result</td><td>若多边形的任意边与圆形相交，返回 <code>True</code>，否则返回 <code>False</code>。 注意该接口只报告边穿越：圆形完全位于多边形内部，或多边形完全位于圆形内部，均没有交点，返回 <code>False</code>。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_circle.html#abfdd039f303a7db96647cef0aab476d7">IntersectLine()</a>, <a class="el" href="interface_l_p_v_geom_lib_1_1_i_l_circle.html#ac678278e17e0df2b314132d46a7acf74">IntersectCircle()</a>. </dd></dl>
+<dl class="section since"><dt>自从</dt><dd>2.24.0 </dd></dl>
 
 </div>
 </div>
